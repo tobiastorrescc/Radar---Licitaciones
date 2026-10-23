@@ -5,11 +5,15 @@ from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 
 
+def mostrar(*mensaje):
+    print(*mensaje, flush=True)
+
+
 def cargar_fuentes():
     archivo = Path("fuentes.txt")
 
     if not archivo.exists():
-        print("ERROR: No se encontró fuentes.txt")
+        mostrar("ERROR: No se encontró fuentes.txt")
         return []
 
     fuentes = []
@@ -25,7 +29,7 @@ def cargar_fuentes():
 
 
 def revisar_fuente(url):
-    print("Revisando:", url)
+    mostrar("Revisando:", url)
 
     try:
         solicitud = Request(
@@ -35,25 +39,29 @@ def revisar_fuente(url):
             }
         )
 
-        with urlopen(solicitud, timeout=20) as respuesta:
+        with urlopen(solicitud, timeout=8) as respuesta:
             codigo = respuesta.status
-            contenido = respuesta.read(200000)
+            contenido = respuesta.read(50000)
 
-            print("Estado HTTP:", codigo)
-            print("Contenido descargado:", len(contenido), "bytes")
+            mostrar("Estado HTTP:", codigo)
+            mostrar("Bytes descargados:", len(contenido))
 
             return True
 
     except HTTPError as error:
-        print("Error HTTP:", error.code)
+        mostrar("Error HTTP:", error.code)
         return False
 
     except URLError as error:
-        print("Error de conexión:", error.reason)
+        mostrar("Error de conexión:", error.reason)
+        return False
+
+    except TimeoutError:
+        mostrar("Tiempo de espera agotado")
         return False
 
     except Exception as error:
-        print("Error:", str(error))
+        mostrar("Error:", str(error))
         return False
 
 
@@ -62,34 +70,32 @@ def ejecutar_radar():
         ZoneInfo("America/Argentina/Buenos_Aires")
     )
 
-    print("RADAR DE LICITACIONES")
-    print("Fecha:", fecha)
-    print("Zonas: Santa Fe, Entre Ríos y Buenos Aires")
+    mostrar("RADAR DE LICITACIONES")
+    mostrar("Fecha:", fecha)
+    mostrar("Zonas: Santa Fe, Entre Ríos y Buenos Aires")
 
     fuentes = cargar_fuentes()
 
-    print("Total de fuentes cargadas:", len(fuentes))
+    mostrar("Total de fuentes:", len(fuentes))
 
     correctas = 0
     fallidas = 0
 
     for numero, fuente in enumerate(fuentes, start=1):
-        print()
-        print("FUENTE", numero, "DE", len(fuentes))
+        mostrar()
+        mostrar("FUENTE", numero, "DE", len(fuentes))
 
-        resultado = revisar_fuente(fuente)
-
-        if resultado:
+        if revisar_fuente(fuente):
             correctas += 1
         else:
             fallidas += 1
 
-    print()
-    print("RESUMEN DEL RADAR")
-    print("Fuentes revisadas:", len(fuentes))
-    print("Con respuesta correcta:", correctas)
-    print("Con errores:", fallidas)
-    print("Revisión finalizada")
+    mostrar()
+    mostrar("RESUMEN FINAL")
+    mostrar("Fuentes revisadas:", len(fuentes))
+    mostrar("Con respuesta correcta:", correctas)
+    mostrar("Con errores:", fallidas)
+    mostrar("PROCESO FINALIZADO")
 
 
 if __name__ == "__main__":
