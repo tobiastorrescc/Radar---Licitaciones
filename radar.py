@@ -3,30 +3,9 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
+from urllib.parse import urljoin, urlparse
 from html.parser import HTMLParser
 import unicodedata
-
-
-class ExtractorTexto(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.textos = []
-        self.ignorar = 0
-
-    def handle_starttag(self, etiqueta, atributos):
-        if etiqueta in ("script", "style"):
-            self.ignorar += 1
-
-    def handle_endtag(self, etiqueta):
-        if etiqueta in ("script", "style"):
-            self.ignorar = max(0, self.ignorar - 1)
-
-    def handle_data(self, texto):
-        if self.ignorar == 0:
-            self.textos.append(texto)
-
-    def obtener_texto(self):
-        return " ".join(self.textos)
 
 
 def mostrar(*mensaje):
@@ -34,12 +13,10 @@ def mostrar(*mensaje):
 
 
 def normalizar(texto):
-    texto = texto.lower()
-    texto = unicodedata.normalize("NFD", texto)
+    texto = unicodedata.normalize("NFD", texto.lower())
 
     return "".join(
-        letra
-        for letra in texto
+        letra for letra in texto
         if unicodedata.category(letra) != "Mn"
     )
 
@@ -60,8 +37,45 @@ def cargar_archivo(nombre):
         ]
 
 
+class ExtractorEnlaces(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.enlaces = []
+        self.enlace_actual = None
+        self.texto_actual = []
+        self.ignorar = 0
+
+    def handle_starttag(self, etiqueta, atributos):
+        if etiqueta in ("script", "style"):
+            self.ignorar += 1
+
+        if etiqueta == "a" and self.ignorar == 0:
+            datos = dict(atributos)
+            self.enlace_actual = datos.get("href")
+            self.texto_actual = []
+
+    def handle_data(self, texto):
+        if self.enlace_actual is not None:
+            self.texto_actual.append(texto)
+
+    def handle_endtag(self, etiqueta):
+        if etiqueta == "a" and self.enlace_actual is not None:
+            titulo = " ".join(self.texto_actual).strip()
+
+            self.enlaces.append(
+                (titulo, self.enlace_actual)
+            )
+
+            self.enlace_actual = None
+            self.texto_actual = []
+
+        if etiqueta in ("script", "style"):
+            self.ignorar = max(0, self.ignorar - 1)
+
+
 def revisar_fuente(url, patrones):
-    mostrar("Revisando:", url)
+    mostrar()
+    mostrar("REVISANDO:", url)
 
     try:
         solicitud = Request(
@@ -72,27 +86,39 @@ def revisar_fuente(url, patrones):
         with urlopen(solicitud, timeout=8) as respuesta:
             contenido = respuesta.read(200000)
             tipo = respuesta.headers.get_content_charset() or "utf-8"
+            url_final = respuesta.geturl()
 
         html = contenido.decode(tipo, errors="replace")
 
-        extractor = ExtractorTexto()
+        extractor = ExtractorEnlaces()
         extractor.feed(html)
 
-        texto = normalizar(extractor.obtener_texto())
-
         encontrados = []
+        vistos = set()
 
-        for patron in patrones:
-            if normalizar(patron) in texto:
-                encontrados.append(patron)
+        for titulo, enlace in extractor.enlaces:
+            direccion = urljoin(url_final, enlace)
+
+            if urlparse(direccion).scheme not in ("http", "https"):
+                continue
+
+            texto = normalizar(titulo + " " + direccion)
+
+            if any(normalizar(patron) in texto for patron in patrones):
+                if direccion not in vistos:
+                    vistos.add(direccion)
+                    encontrados.append((titulo, direccion))
 
         mostrar("Conexión correcta")
-        mostrar("Palabras clave encontradas:", len(encontrados))
+        mostrar("Enlaces candidatos:", len(encontrados))
 
-        for patron in encontrados:
-            mostrar(" -", patron)
+        for numero, (titulo, direccion) in enumerate(encontrados, 1):
+            mostrar()
+            mostrar("CANDIDATO", numero)
+            mostrar("Título:", titulo or "Sin título")
+            mostrar("Enlace:", direccion)
 
-        return True
+        return True, encontrados
 
     except HTTPError as error:
         mostrar("Error HTTP:", error.code)
@@ -103,7 +129,7 @@ def revisar_fuente(url, patrones):
     except Exception as error:
         mostrar("Error:", str(error))
 
-    return False
+    return False, []
 
 
 def ejecutar_radar():
@@ -118,8 +144,7 @@ def ejecutar_radar():
     patrones = cargar_archivo("patrones.txt")
 
     fuentes = [
-        fuente
-        for fuente in fuentes
+        fuente for fuente in fuentes
         if fuente.startswith(("http://", "https://"))
     ]
 
@@ -128,21 +153,28 @@ def ejecutar_radar():
 
     correctas = 0
     errores = 0
+    candidatos = {}
 
-    for numero, fuente in enumerate(fuentes, start=1):
+    for numero, fuente in enumerate(fuentes, 1):
         mostrar()
         mostrar("FUENTE", numero, "DE", len(fuentes))
 
-        if revisar_fuente(fuente, patrones):
+        correcta, encontrados = revisar_fuente(fuente, patrones)
+
+        if correcta:
             correctas += 1
         else:
             errores += 1
+
+        for titulo, direccion in encontrados:
+            candidatos[direccion] = titulo
 
     mostrar()
     mostrar("RESUMEN FINAL")
     mostrar("Fuentes revisadas:", len(fuentes))
     mostrar("Con respuesta correcta:", correctas)
     mostrar("Con errores:", errores)
+    mostrar("Total de enlaces candidatos únicos:", len(candidatos))
     mostrar("PROCESO FINALIZADO")
 
 
