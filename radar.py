@@ -7,5 +7,5 @@ def ejecutar_radar():
     print("Zonas: Santa Fe, Entre Ríos y Buenos Aires")
     print("Estado: programa iniciado")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     ejecutar_radar()
