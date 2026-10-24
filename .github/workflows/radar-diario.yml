@@ -3,10 +3,14 @@ name: Radar diario de licitaciones
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 12 * * *'
+    - cron: '0 11 * * *'
 
 permissions:
   contents: read
+
+concurrency:
+  group: radar-diario
+  cancel-in-progress: false
 
 jobs:
   ejecutar-radar:
@@ -23,3 +27,15 @@ jobs:
 
       - name: Ejecutar radar
         run: python radar.py
+
+      - name: Guardar resultados
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: radar-resultados
+          path: |
+            radar_estado.json
+            licitaciones_nuevas.json
+            auditoria_fuentes.json
+          if-no-files-found: warn
+          retention-days: 30
