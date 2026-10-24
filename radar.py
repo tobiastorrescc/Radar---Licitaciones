@@ -502,4 +502,45 @@ def ejecutar():
         auditoria.append({
             "fuente": fuente,
             "fecha": fecha,
-            "paginas_visit
+            "paginas_visitadas": resultado[
+                "paginas_visitadas"
+            ],
+            "candidatos": len(oportunidades),
+            "errores": resultado["errores"],
+        })
+
+    nuevas.sort(key=prioridad_comercial)
+
+    guardar_json(
+        ARCHIVO_RESULTADOS,
+        {
+            "fecha": fecha,
+            "total_nuevas": len(nuevas),
+            "oportunidades": nuevas,
+        },
+    )
+
+    guardar_json(
+        ARCHIVO_ESTADO,
+        {
+            "ultima_ejecucion": fecha,
+            "oportunidades": historial,
+        },
+    )
+
+    guardar_json(
+        ARCHIVO_AUDITORIA,
+        {
+            "fecha": fecha,
+            "fuentes": auditoria,
+        },
+    )
+
+    print("Fuentes revisadas:", len(fuentes))
+    print("Candidatos detectados:", len(encontradas))
+    print("Oportunidades nuevas:", len(nuevas))
+    print("Radar finalizado correctamente.")
+
+
+if __name__ == "__main__":
+    ejecutar()
