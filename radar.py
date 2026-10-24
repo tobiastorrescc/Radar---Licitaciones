@@ -5,311 +5,126 @@ from urllib.request import Request, urlopen
 from urllib.parse import urljoin, urlparse, urldefrag
 from html.parser import HTMLParser
 import json
-import re
 import unicodedata
 
 ROSARIO = "https://www.rosario.gob.ar/inicio/compras-y-licitaciones"
+CLAVES = ("licitacion", "concurso", "contratacion", "compra directa",
+          "cotizacion", "pliego", "convocatoria", "compra agil")
+EXCLUIR = ("buscar", "inicio", "contacto", "informacion general",
+           "compras y licitaciones", "normativa", "tramites")
 
-ESTADO = Path("radar_estado.json")
-SALIDA = Path("licitaciones_nuevas.json")
-
-PALABRAS = (
-    "licitacion",
-    "concurso de precios",
-    "compra directa",
-    "contratacion",
-    "cotizacion",
-    "subasta",
-    "pliego",
-    "convocatoria",
-    "compra agil",
-    "segundo llamado",
-    "pedido de precios",
-    "solicitud de cotizacion",
-    "licitacion privada",
-    "licitacion publica",
-)
-
-DESCARTAR = (
-    "buscar",
-    "ir al contenido principal",
-    "informacion general",
-    "normativa",
-    "inicio",
-    "contacto",
-    "tramites",
-    "compras y licitaciones",
-    "licitaciones",
-    "buscar licitaciones",
-    "oferentes y/o adjudicatarios",
-)
-
-
-def normalizar(texto):
-    texto = unicodedata.normalize(
-        "NFD",
-        texto.lower()
-    )
-
-    return "".join(
-        c for c in texto
-        if unicodedata.category(c) != "Mn"
-    )
-
+def normalizar(s):
+    s = unicodedata.normalize("NFD", s.lower())
+    return "".join(c for c in s if unicodedata.category(c) != "Mn")
 
 def cargar(nombre):
-    ruta = Path(nombre)
-
-    if not ruta.exists():
-        print(
-            "AVISO: falta el archivo:",
-            nombre,
-            flush=True
-        )
+    p = Path(nombre)
+    if not p.exists():
+        print("FALTA:", nombre, flush=True)
         return []
-
-    return [
-        x.strip()
-        for x in ruta.read_text(
-            encoding="utf-8"
-        ).splitlines()
-        if x.strip()
-        and not x.lstrip().startswith("#")
-    ]
-
+    return [s.strip() for s in p.read_text(encoding="utf-8").splitlines()
+            if s.strip() and not s.lstrip().startswith("#")]
 
 class Enlaces(HTMLParser):
-
     def __init__(self):
         super().__init__()
-        self.resultados = []
-        self.actual = None
-        self.partes = []
+        self.items = []
+        self.href = None
+        self.texto = []
 
     def handle_starttag(self, tag, attrs):
         if tag == "a":
-            self.actual = dict(attrs).get("href")
-            self.partes = []
+            self.href = dict(attrs).get("href")
+            self.texto = []
 
     def handle_data(self, data):
-        if self.actual is not None:
-            self.partes.append(data)
+        if self.href is not None:
+            self.texto.append(data)
 
     def handle_endtag(self, tag):
         if tag == "a":
-            if self.actual:
-                titulo = " ".join(
-                    " ".join(self.partes).split()
-                )
-
-                self.resultados.append(
-                    (titulo, self.actual)
-                )
-
-            self.actual = None
-            self.partes = []
-
+            if self.href:
+                self.items.append((" ".join(" ".join(self.texto).split()), self.href))
+            self.href = None
+            self.texto = []
 
 def descargar(url):
-    pedido = Request(
-        url,
-        headers={
-            "User-Agent": "Mozilla/5.0"
-        }
-    )
-
-    with urlopen(
-        pedido,
-        timeout=20
-    ) as respuesta:
-
-        tipo = respuesta.headers.get(
-            "Content-Type",
-            ""
-        )
-
-        if "html" not in tipo.lower():
+    req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urlopen(req, timeout=15) as r:
+        if "html" not in r.headers.get("Content-Type", "").lower():
             return []
-
-        html = respuesta.read(2000000)
-
-        charset = (
-            respuesta.headers.get_content_charset()
-            or "utf-8"
-        )
-
-        final = respuesta.geturl()
-
-    extractor = Enlaces()
-
-    extractor.feed(
-        html.decode(
-            charset,
-            errors="replace"
-        )
-    )
-
-    return [
-        (
-            titulo,
-            urldefrag(
-                urljoin(final, href)
-            )[0]
-        )
-        for titulo, href in extractor.resultados
-    ]
-
-
-def es_candidato(titulo, destino, patrones):
-    titulo_normal = normalizar(titulo).strip()
-    destino_normal = normalizar(destino)
-
-    if not titulo_normal:
-        return False
-
-    if len(titulo_normal) < 12:
-        return False
-
-    if titulo_normal in DESCARTAR:
-        return False
-
-    if any(
-        x in destino_normal
-        for x in (
-            "/result-busq",
-            "/informacion-general",
-            "/normativa",
-            "/oferentes"
-        )
-    ):
-        return False
-
-    claves = list(PALABRAS)
-
-    claves.extend(
-        p for p in patrones
-        if len(p) >= 5
-    )
-
-    return any(
-        palabra in titulo_normal
-        or palabra in destino_normal
-        for palabra in claves
-    )
-
+        html = r.read(2000000)
+        charset = r.headers.get_content_charset() or "utf-8"
+        final = r.geturl()
+    parser = Enlaces()
+    parser.feed(html.decode(charset, errors="replace"))
+    return [(titulo, urldefrag(urljoin(final, href))[0])
+            for titulo, href in parser.items]
 
 def ejecutar():
-
-    print(
-        "INICIANDO RADAR DE LICITACIONES",
-        flush=True
-    )
-
-    ahora = datetime.now(
-        ZoneInfo(
-            "America/Argentina/Buenos_Aires"
-        )
-    )
-
-    print(
-        "Fecha Argentina:",
-        ahora.isoformat(),
-        flush=True
-    )
-
-    fuentes = cargar("fuentes.txt")
-
-    patrones = [
-        normalizar(p)
-        for p in cargar("patrones.txt")
-    ]
-
-    urls = list(
-        dict.fromkeys(
-            [
-                u for u in fuentes
-                if u.startswith(
-                    ("https://", "http://")
-                )
-            ] + [ROSARIO]
-        )
-    )
-
-    print(
-        "Fuentes programadas:",
-        len(urls),
-        flush=True
-    )
-
-    print(
-        "Patrones cargados:",
-        len(patrones),
-        flush=True
-    )
-
-    visitadas = set()
-    candidatas = {}
-
-    correctas = 0
-    fallidas = 0
-
-    for origen in urls:
-
-        print(
-            "\nREVISANDO FUENTE:",
-            origen,
-            flush=True
-        )
-
+    print("INICIANDO RADAR DE LICITACIONES", flush=True)
+    print("Fecha:", datetime.now(ZoneInfo("America/Argentina/Buenos_Aires")))
+    fuentes = list(dict.fromkeys(
+        [u for u in cargar("fuentes.txt") if u.startswith(("https://", "http://"))]
+        + [ROSARIO]))
+    patrones = [normalizar(p) for p in cargar("patrones.txt") if len(p) >= 5]
+    claves = CLAVES + tuple(patrones)
+    visitadas, candidatos = set(), {}
+    correctas = fallidas = 0
+    for origen in fuentes:
+        print("FUENTE:", origen, flush=True)
+        dominio = urlparse(origen).netloc.lower()
         pendientes = [(origen, 0)]
-
-        dominio = (
-            urlparse(origen)
-            .netloc.lower()
-            .removeprefix("www.")
-        )
-
-        paginas = 0
-
-        while pendientes and paginas < 12:
-
-            pagina, profundidad = pendientes.pop(0)
-
+        procesadas = 0
+        while pendientes and procesadas < 12:
+            pagina, nivel = pendientes.pop(0)
             if pagina in visitadas:
                 continue
-
             visitadas.add(pagina)
-            paginas += 1
-
+            procesadas += 1
             try:
                 enlaces = descargar(pagina)
-
                 correctas += 1
-
-                print(
-                    "CONEXION CORRECTA:",
-                    pagina,
-                    "| Enlaces:",
-                    len(enlaces),
-                    flush=True
-                )
-
-            except Exception as error:
-
+                print("OK:", pagina, "enlaces:", len(enlaces), flush=True)
+            except Exception as e:
                 fallidas += 1
-
-                print(
-                    "ERROR:",
-                    pagina,
-                    type(error).__name__,
-                    str(error),
-                    flush=True
-                )
-
+                print("ERROR:", pagina, str(e), flush=True)
                 continue
-
             for titulo, destino in enlaces:
-
                 parsed = urlparse(destino)
+                if parsed.scheme not in ("http", "https"):
+                    continue
+                nombre = normalizar(titulo).strip()
+                ruta = normalizar(parsed.path)
+                if (len(nombre) >= 12 and nombre not in EXCLUIR
+                        and any(k in nombre or k in ruta for k in claves)):
+                    candidatos.setdefault(destino, {
+                        "titulo": titulo, "url": destino, "fuente": origen})
+                if (nivel < 2 and parsed.netloc.lower() == dominio
+                        and destino not in visitadas
+                        and not ruta.endswith((".pdf", ".zip", ".doc", ".docx"))
+                        and any(k in nombre or k in ruta for k in CLAVES)):
+                    if destino not in [u for u, _ in pendientes]:
+                        pendientes.append((destino, nivel + 1))
+    archivo = Path("radar_estado.json")
+    anteriores = {}
+    if archivo.exists():
+        anteriores = json.loads(archivo.read_text(encoding="utf-8"))
+        if not isinstance(anteriores, dict):
+            raise ValueError("Historial invalido")
+    nuevas = [v for u, v in candidatos.items() if u not in anteriores]
+    anteriores.update(candidatos)
+    archivo.write_text(json.dumps(anteriores, ensure_ascii=False, indent=2),
+                       encoding="utf-8")
+    Path("licitaciones_nuevas.json").write_text(
+        json.dumps(nuevas, ensure_ascii=False, indent=2), encoding="utf-8")
+    print("CANDIDATOS NUEVOS:", len(nuevas), flush=True)
+    for i, item in enumerate(nuevas, 1):
+        print(i, item["titulo"], item["url"], flush=True)
+    print("RESUMEN: paginas OK:", correctas, "errores:", fallidas,
+          "candidatos:", len(candidatos), flush=True)
+    print("AVISO: candidatos sin verificar pliegos ni fechas.")
+    print("PROCESO FINALIZADO", flush=True)
 
-                if parsed.scheme
+if __name__ == "__main__":
+    ejecutar()
