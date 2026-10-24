@@ -1,56 +1,40 @@
-name: Radar diario de licitaciones
+from __future__ import annotations
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 11 * * *'
+import json
+import time
+import unicodedata
 
-permissions:
-  contents: write
+from datetime import datetime
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.parse import (
+    urljoin,
+    urlparse,
+    urldefrag,
+    parse_qsl,
+    urlencode,
+    urlunparse,
+)
+from urllib.request import Request, urlopen
+from zoneinfo import ZoneInfo
 
-concurrency:
-  group: radar-diario
-  cancel-in-progress: false
 
-jobs:
-  ejecutar-radar:
-    runs-on: ubuntu-latest
+ZONA = ZoneInfo("America/Argentina/Buenos_Aires")
 
-    steps:
-      - name: Descargar archivos
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          persist-credentials: true
+ARCHIVO_ESTADO = Path("radar_estado.json")
 
-      - name: Preparar Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+ROSARIO = (
+    "https://www.rosario.gob.ar/"
+    "inicio/compras-y-licitaciones"
+)
 
-      - name: Ejecutar radar
-        run: python radar.py
+MAX_PAGINAS = 40
+MAX_PROFUNDIDAD = 3
+TIMEOUT = 15
 
-      - name: Guardar resultados descargables
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: radar-resultados
-          path: |
-            radar_estado.json
-            licitaciones_nuevas.json
-            auditoria_fuentes.json
-          if-no-files-found: warn
-          retention-days: 30
+EXTENSIONES = (
+    ".pdf", ".doc", ".docx",
+    ".xls", ".xlsx", ".zip"
+)
 
-      - name: Persistir historial en el repositorio
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add radar_estado.json licitaciones_nuevas.json auditoria_fuentes.json
-          if ! git diff --cached --quiet; then
-            git commit -m 'Actualizar historial de licitaciones [skip ci]'
-            git push origin HEAD:main
-          else
-            echo 'Sin cambios para guardar'
-          fi
+PALABRAS_OPORTUNIDAD = (
