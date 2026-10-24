@@ -1,60 +1,12 @@
-[
-  {
-    "fuente": "https://www.santafe.gov.ar/",
-    "paginas_html_revisadas": 0,
-    "paginas_no_html": 0,
-    "errores": [
-      {
-        "url": "https://www.santafe.gov.ar/",
-        "error": "<urlopen error timed out>"
-      }
-    ],
-    "paginas_pendientes_por_limite": 0,
-    "estado": "ERROR"
-  },
-  {
-    "fuente": "https://www.santafe.gob.ar/boletinoficial",
-    "paginas_html_revisadas": 0,
-    "paginas_no_html": 0,
-    "errores": [
-      {
-        "url": "https://www.santafe.gob.ar/boletinoficial",
-        "error": "<urlopen error timed out>"
-      }
-    ],
-    "paginas_pendientes_por_limite": 0,
-    "estado": "ERROR"
-  },
-  {
-    "fuente": "https://www.rosario.gob.ar/",
-    "paginas_html_revisadas": 6,
-    "paginas_no_html": 0,
-    "errores": [],
-    "paginas_pendientes_por_limite": 0,
-    "estado": "REVISADA"
-  },
-  {
-    "fuente": "https://www.entrerios.gov.ar/",
-    "paginas_html_revisadas": 1,
-    "paginas_no_html": 0,
-    "errores": [],
-    "paginas_pendientes_por_limite": 0,
-    "estado": "REVISADA"
-  },
-  {
-    "fuente": "https://www.gba.gob.ar/",
-    "paginas_html_revisadas": 1,
-    "paginas_no_html": 0,
-    "errores": [],
-    "paginas_pendientes_por_limite": 0,
-    "estado": "REVISADA"
-  },
-  {
-    "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
-    "paginas_html_revisadas": 0,
-    "paginas_no_html": 0,
-    "errores": [],
-    "paginas_pendientes_por_limite": 0,
-    "estado": "REVISADA"
-  }
-]
+{
+  "fecha": "2026-10-24T02:59:40.296102+00:00",
+  "fuentes": [
+    {
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "fecha": "2026-10-24T02:59:40.296102+00:00",
+      "paginas_visitadas": 40,
+      "candidatos": 233,
+      "errores": []
+    }
+  ]
+}
