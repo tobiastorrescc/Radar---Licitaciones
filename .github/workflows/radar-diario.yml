@@ -107,3 +107,22 @@ jobs:
           path: work/verificacion/
           if-no-files-found: error
           retention-days: 90
+  auditar-conectores:
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/download-artifact@v4
+        with:
+          name: verificacion-fuentes-40253451095
+          path: work/auditoria35
+          run-id: 40253451095
+          github-token: ${{ github.token }}
+      - run: python -u tools/auditar_conectores.py
