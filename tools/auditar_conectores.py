@@ -20,9 +20,10 @@ def main():
         f=json.loads(args.worker)
         try:
             raw,tipo,final=conectores.descargar(f['url'],conexion_timeout=5,lectura_timeout=8)
-            truncada=len(raw)>500_000
+            raw=__import__('re').sub(rb'data:image/[^;]+;base64,[A-Za-z0-9+/=\s]+',b'data:image/omitida',raw)
+            truncada=len(raw)>2_000_000
             print('MUESTRA_JSON '+json.dumps({'id':f['id'],'url':f['url'],'final':final,'tipo':tipo,
-                'truncada':truncada,'gzip_b64':base64.b64encode(gzip.compress(raw[:500_000])).decode()}))
+                'truncada':truncada,'gzip_b64':base64.b64encode(gzip.compress(raw[:2_000_000])).decode()}))
         except Exception as e:
             print('MUESTRA_JSON '+json.dumps({'id':f['id'],'url':f['url'],'error':str(e),'tipo_error':type(e).__name__}))
         return
@@ -42,6 +43,7 @@ def main():
     else:
         raise RuntimeError('No se encontró la auditoría original')
     fuentes=[f for f in json.loads(Path('inventario/fuentes.json').read_text()) if f['incorporada']]
+    fuentes += json.loads(Path('tools/objetivos_conectores.json').read_text())
     def capturar(f):
         try:
             r=subprocess.run([sys.executable,__file__,'--worker',json.dumps(f)],capture_output=True,text=True,timeout=20)

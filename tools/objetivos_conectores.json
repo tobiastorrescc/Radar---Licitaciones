@@ -1,0 +1,54 @@
+[
+  {
+    "id": "rosario-resultados",
+    "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura"
+  },
+  {
+    "id": "roldan-publicas",
+    "url": "https://www.roldan.gov.ar/wp/documents/licitaciones-publicas/"
+  },
+  {
+    "id": "roldan-ficha",
+    "url": "https://www.roldan.gov.ar/wp/documents/licitacion-publica-n-003-2026/"
+  },
+  {
+    "id": "lapaz-licitaciones",
+    "url": "https://haciendalapaz.gob.ar/licitaciones"
+  },
+  {
+    "id": "lapaz-concursos",
+    "url": "https://haciendalapaz.gob.ar/concursos-de-precios"
+  },
+  {
+    "id": "villaguay-2026",
+    "url": "https://villaguay.gob.ar/boletindigital/licitaciones-2026/"
+  },
+  {
+    "id": "baradero-publica",
+    "url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica"
+  },
+  {
+    "id": "baradero-privada",
+    "url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Privada"
+  },
+  {
+    "id": "nogoya-transparencia",
+    "url": "https://nuevo.nogoya.gob.ar/transparencia/compras-licitaciones-y-concursos/"
+  },
+  {
+    "id": "crespo-publicas",
+    "url": "https://www.crespo.gob.ar/licitaciones-publicas-2026/"
+  },
+  {
+    "id": "santotome-santafe",
+    "url": "https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia"
+  },
+  {
+    "id": "vialidad-2026",
+    "url": "https://www.dpver.gov.ar/category/licitaciones-2026/"
+  },
+  {
+    "id": "pergamino-boletin",
+    "url": "https://www.pergamino.gob.ar/programas/boletin/decretoslist.php"
+  }
+]
