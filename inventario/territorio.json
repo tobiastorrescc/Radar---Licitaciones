@@ -1,0 +1,755 @@
+{
+  "exhaustivo": false,
+  "fecha": "2026-10-25",
+  "advertencia": "Lista de trabajo inicial, no padrón completo. Sin cobertura operativa demostrada en las tres provincias.",
+  "padron_santa_fe": "https://www.santafe.gob.ar/index.php/web/content/view/full/78993/",
+  "padron_santa_fe_fecha": "2018-01-01; requiere actualización; descarga web posterior falló por timeout",
+  "municipios": [
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Rosario",
+      "fuentes": [
+        "fuente-001"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Casilda",
+      "fuentes": [
+        "fuente-008"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Carcarañá",
+      "fuentes": [
+        "fuente-009"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Cañada de Gómez",
+      "fuentes": [
+        "fuente-010"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Armstrong",
+      "fuentes": [
+        "fuente-011"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Las Parejas",
+      "fuentes": [
+        "fuente-012"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Alvear",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Funes",
+      "fuentes": [
+        "fuente-013"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Roldán",
+      "fuentes": [
+        "fuente-014"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Pérez",
+      "fuentes": [
+        "fuente-015"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Villa Gobernador Gálvez",
+      "fuentes": [
+        "fuente-016"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Santo Tomé",
+      "fuentes": [
+        "fuente-017"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Santa Fe",
+      "fuentes": [
+        "fuente-018",
+        "fuente-019"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Rafaela",
+      "fuentes": [
+        "fuente-020"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Venado Tuerto",
+      "fuentes": [
+        "fuente-021"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Reconquista",
+      "fuentes": [
+        "fuente-022"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "San Lorenzo",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Capitán Bermúdez",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Fray Luis Beltrán",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Granadero Baigorria",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Puerto General San Martín",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Pueblo Esther",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "General Lagos",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Arroyo Seco",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Ibarlucea",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Soldini",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Zavalla",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Álvarez",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Piñero",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Acebal",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Luis Palacios",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Ricardone",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Timbúes",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Pujato",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Villa Constitución",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Correa",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Bustinza",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Arequito",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Chabás",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Bigand",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Fuentes",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Arteaga",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "San Jerónimo Sud",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "San Jerónimo Norte",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Esperanza",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Sunchales",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Firmat",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Santa Fe",
+      "localidad": "Rufino",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Entre Ríos",
+      "localidad": "Paraná",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Entre Ríos",
+      "localidad": "Victoria",
+      "fuentes": [
+        "fuente-031"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Entre Ríos",
+      "localidad": "San José",
+      "fuentes": [
+        "fuente-032"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Entre Ríos",
+      "localidad": "Colón",
+      "fuentes": [
+        "fuente-033"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Entre Ríos",
+      "localidad": "Concordia",
+      "fuentes": [
+        "fuente-034"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Entre Ríos",
+      "localidad": "Concepción del Uruguay",
+      "fuentes": [
+        "fuente-035"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Entre Ríos",
+      "localidad": "Gualeguaychú",
+      "fuentes": [
+        "fuente-036"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Entre Ríos",
+      "localidad": "Gualeguay",
+      "fuentes": [
+        "fuente-037"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Entre Ríos",
+      "localidad": "Crespo",
+      "fuentes": [
+        "fuente-038",
+        "fuente-039"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Entre Ríos",
+      "localidad": "Chajarí",
+      "fuentes": [
+        "fuente-040"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Entre Ríos",
+      "localidad": "Federación",
+      "fuentes": [
+        "fuente-041"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Entre Ríos",
+      "localidad": "Diamante",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Entre Ríos",
+      "localidad": "Nogoyá",
+      "fuentes": [
+        "fuente-042"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Entre Ríos",
+      "localidad": "La Paz",
+      "fuentes": [
+        "fuente-043"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Entre Ríos",
+      "localidad": "Villaguay",
+      "fuentes": [
+        "fuente-044"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Entre Ríos",
+      "localidad": "Rosario del Tala",
+      "fuentes": [
+        "fuente-045"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "San Nicolás",
+      "fuentes": [
+        "fuente-046"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "San Pedro",
+      "fuentes": [
+        "fuente-047"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "Ramallo",
+      "fuentes": [
+        "fuente-048"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "Pergamino",
+      "fuentes": [
+        "fuente-049"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "Arrecifes",
+      "fuentes": [
+        "fuente-050"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "Baradero",
+      "fuentes": [
+        "fuente-051"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "Rojas",
+      "fuentes": [
+        "fuente-052",
+        "fuente-053"
+      ],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "Colón",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "Salto",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "Capitán Sarmiento",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "San Antonio de Areco",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "Carmen de Areco",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "Zárate",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "Campana",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "San Andrés de Giles",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "Junín",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "General Arenales",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "Leandro N. Alem",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    },
+    {
+      "provincia": "Buenos Aires",
+      "localidad": "Chacabuco",
+      "fuentes": [],
+      "estado": "SIN_COBERTURA_OPERATIVA",
+      "distancia_desde_rosario_km": null,
+      "criterio": "Prioridad solicitada / expansión; radio bonaerense pendiente de medición por ruta"
+    }
+  ],
+  "organismos_pendientes": [
+    "Hospitales provinciales y municipales de Santa Fe (padrón pendiente)",
+    "SAMCo de toda Santa Fe (padrón pendiente)",
+    "Entes descentralizados de Santa Fe (padrón pendiente)",
+    "Gobierno provincial de Buenos Aires: boletines y compras como fuentes complementarias",
+    "Resto de municipios y comunas de Santa Fe y Entre Ríos (padrón completo pendiente)"
+  ]
+}

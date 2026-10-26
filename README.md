@@ -1,44 +1,34 @@
 # Radar de licitaciones
 
-Radar exploratorio de enlaces candidatos, sin filtros por monto, rubro o capacidad financiera y sin limite de resultados. **No garantiza detectar todas las oportunidades**. Los candidatos no equivalen a procedimientos verificados.
+Radar de publicaciones públicas sin filtros por rubro, monto ni financiación y sin límite de resultados. El inventario territorial sigue en construcción: ver [informe de cobertura](INFORME_COBERTURA.md). Incorporar una URL a configuración no equivale a verificar que funciona.
 
-## Auditoria inicial
+## Ejecutar
 
-- `fuentes.txt` contenia YAML de GitHub Actions: solo se consultaba Rosario por una constante en el codigo.
-- La exploracion se detenía a las 40 paginas / profundidad 3 sin avisar. Los errores tampoco afectaban el resultado final.
-- No habia pruebas, lectura de PDF, JavaScript, paginacion especializada ni extraccion de fichas de procedimientos.
-- El historial deduplicaba por URL; no identificaba republicaciones ni distintos procesos en una misma URL.
-- `patrones.txt` y `agente-radar.m` no eran utilizados por `radar.py`.
-
-## Cambios verificables
-
-Fuentes validadas sintacticamente, metadatos separados en `fuentes.json`, escritura atomica de JSON y fallo ante historial corrupto. Estados ERROR, PARCIAL y EXPLORADA con limites y errores por URL. EXPLORADA significa que termino el recorrido de enlaces admitidos, nunca cobertura exhaustiva del portal. Limites de seguridad configurables por RADAR_MAX_PAGINAS y RADAR_MAX_PROFUNDIDAD; no limitan el numero de candidatos informados.
-
-Orden orientativo por pago contado/contra entrega, luego llamados especiales; no se infiere rentabilidad del presupuesto. Los campos sin evidencia permanecen null. Las estimaciones requieren cantidades, cotizaciones de adquisicion, precios de venta, impuestos y logistica; actualmente no hay datos suficientes ni motor de estimacion implementado.
-
-## Ejecucion y pruebas
-
-Python 3.11 o superior, sin dependencias externas:
+Python 3.11+ y `pdftotext` (paquete `poppler-utils`). Desde la raíz:
 
 ```sh
 python -m unittest discover -s tests -v
 python radar.py
+python tools/verificar_fuentes.py
+python tools/informe_cobertura.py
 ```
 
-Ejecutar desde la raiz del repositorio. Codigo de salida 2 si alguna fuente falla totalmente. Los errores parciales quedan en auditoria. No ejecutar dos procesos simultaneos contra los mismos archivos locales.
+`radar.py` conserva `radar_estado.json`, resultados completos en `licitaciones_nuevas.json` y auditoría en `auditoria_fuentes.json`. El verificador separado no toca esos archivos. Lectura corrupta falla sin borrar historial. No ejecutar dos procesos contra los mismos archivos. Mantener copias de seguridad del historial.
 
-Actions ejecuta pruebas en PR y cambios relevantes. La ejecucion diaria es a las 11 UTC (08 Argentina) en main, con artefactos 90 dias, logs y persistencia del historial aun con fallas de fuentes. La rama main debe permitir commits de github-actions; de lo contrario el push fallara explicitamente. El cambio del workflow no queda activo hasta fusionar el PR. GitHub no garantiza ejecucion puntual del cron.
+`fuentes.txt` contiene las consultas activadas; `fuentes.json`, sus metadatos y conector. `inventario/fuentes.json` incluye también las fuentes que necesitan un adaptador; `inventario/territorio.json`, las localidades y categorías pendientes. `inventario/verificacion.json` guarda la observación real del executor, separada de la evidencia web del inventario.
 
-## Cobertura real y pendientes
+## Estados y extracción
 
-Inventario configurado: **1 fuente**, Municipalidad de Rosario. Fuente heredada con evidencia historica en `auditoria_fuentes.json`, no comprobada en vivo durante esta revision: el proxy del entorno no responde. Fuentes funcionando comprobadas actualmente: **0**. Consulta bloqueada por conectividad: **1**. Nuevas fuentes verificadas incorporadas: **0**.
+OPERATIVA requiere publicaciones numeradas detectadas; SIN_PUBLICACIONES_NUEVAS requiere extracción válida de publicaciones ya conocidas. PENDIENTE cubre contenido vacío/no reconocido, formatos y adaptadores faltantes; BLOQUEADA indica error de acceso sin contenido; PARCIAL conserva publicaciones con errores o límites. Ninguno implica cobertura exhaustiva. Un sitio JavaScript vacío nunca se marca como sin novedades.
 
-Santa Fe: falta inventariar y verificar municipios y comunas restantes, organismos provinciales, EPE, ASSA, hospitales, universidades y entes descentralizados. Gran Rosario solo tiene la fuente de Rosario y su extraccion sigue siendo generica.
+HTML de enlaces, filas y bloques, paginación explícita y PDF con texto. El conector heredado se conserva para compatibilidad, con candidatos no verificados. Nuevas fuentes usan `publicaciones`. PDF escaneado requiere OCR pendiente; JavaScript, formularios ASP.NET y APIs necesitan adaptadores específicos comprobados. Cada portal necesita todavía fixtures y contraste en vivo antes de declararse operativo.
 
-Entre Rios: sin fuentes incorporadas; faltan provincia y portales individuales de municipios y organismos.
+Deduplicación persistente por fuente/URL/procedimiento/llamado/situación, conservando primeras y últimas detecciones. Cambios de llamado o declaración de desierta pueden generar una novedad. No hay garantía de deduplicación semántica entre portales o URLs documentales diferentes. Los campos comerciales sin evidencia permanecen nulos. El orden orientativo prioriza pago contado/contra entrega y llamados especiales; no es una estimación de rentabilidad ni confirma que el llamado siga abierto.
 
-Buenos Aires: sin fuentes incorporadas; falta definir si 280 km se mide por ruta o distancia geodesica, construir el inventario municipal y comprobar cada portal.
+## Automatización
 
-El numero total de fuentes faltantes **es desconocido**, porque no existe un inventario territorial exhaustivo. No se declara cobertura provincial. No se agregaron direcciones supuestas. La proxima ampliacion necesita acceso de red a portales oficiales, inventario con evidencia de descubrimiento, adaptadores por portal, muestras reales, extraccion de detalle y pliegos, paginacion y deteccion de cambios de procedimientos y llamados en la misma URL.
+Se conserva el workflow diario a las 11 UTC (08 Argentina), con pruebas en PR, logs/artefactos por 90 días y persistencia del historial ante fallas de consulta. Usa main: los cambios de esta rama no están activos hasta fusionar el PR, acción todavía no autorizada. GitHub puede retrasar el cron. Se requiere que github-actions pueda escribir historial en main.
 
-Limitaciones conservadas: candidatos por palabras en enlaces, posibles falsos positivos de navegacion, documentos no leidos, datos comerciales incompletos, sin deduplicacion semantica entre portales, sin garantia de todos los tipos ni del 100% de novedades. Los archivos de resultados versionados anteriores son historicos, no una validacion de esta revision.
+RADAR_MAX_PAGINAS y RADAR_MAX_PROFUNDIDAD mantienen límites de seguridad (el segundo aplica al conector heredado). No limitan resultados. Un recorrido truncado se informa en auditoría. Salida 2 ante fuentes bloqueadas, pendientes o parciales; las demás fuentes continúan. Los archivos versionados de resultados previos son históricos, no prueba de esta etapa.
+
+Alternativa de red: ejecutar manualmente el workflow sobre esta rama activa un trabajo de verificación con permisos de lectura y artefactos. No escribe el historial de main. La verificación de red es explícita y separada de las pruebas reproducibles del PR.

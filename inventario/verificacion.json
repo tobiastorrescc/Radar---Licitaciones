@@ -1,0 +1,582 @@
+{
+  "fecha": "2026-10-25T21:14:16.261623-03:00",
+  "metodo": "conector HTTP del executor",
+  "observaciones": [
+    {
+      "id": "fuente-001",
+      "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-002",
+      "url": "https://compras.santafe.gob.ar/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://compras.santafe.gob.ar/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-003",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-006",
+      "url": "https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-007",
+      "url": "https://aeropuertorosario.com/institucional/licitaciones/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://aeropuertorosario.com/institucional/licitaciones/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-008",
+      "url": "https://www.casilda.gob.ar/web/licitaciones-casilda/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://www.casilda.gob.ar/web/licitaciones-casilda/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-010",
+      "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-014",
+      "url": "https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-017",
+      "url": "https://municipiosantotome.gob.ar/boletin-oficial/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://municipiosantotome.gob.ar/boletin-oficial/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-018",
+      "url": "https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-019",
+      "url": "https://transparencia.santafeciudad.gov.ar/contrataciones-obra/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://transparencia.santafeciudad.gov.ar/contrataciones-obra/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-021",
+      "url": "https://venadotuerto.gob.ar/licitaciones/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://venadotuerto.gob.ar/licitaciones/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-022",
+      "url": "https://reconquista.gob.ar/licitaciones/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://reconquista.gob.ar/licitaciones/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-024",
+      "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-025",
+      "url": "https://cafesg.gob.ar/cafesg2/licitaciones/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://cafesg.gob.ar/cafesg2/licitaciones/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-026",
+      "url": "https://www.jusentrerios.gov.ar/contrataciones/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://www.jusentrerios.gov.ar/contrataciones/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-027",
+      "url": "https://www.ater.gob.ar/ater2/licitaciones.asp",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://www.ater.gob.ar/ater2/licitaciones.asp",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-028",
+      "url": "https://aplicaciones.vialidadentrerios.gob.ar/obralic/web/licitacion/listado",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://aplicaciones.vialidadentrerios.gob.ar/obralic/web/licitacion/listado",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-029",
+      "url": "https://www.enersa.com.ar/area-proveedores/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://www.enersa.com.ar/area-proveedores/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-030",
+      "url": "https://institutobecario.gov.ar/licitaciones.php",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://institutobecario.gov.ar/licitaciones.php",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-032",
+      "url": "https://sanjose.gob.ar/concursos-licitaciones/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://sanjose.gob.ar/concursos-licitaciones/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-035",
+      "url": "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-037",
+      "url": "https://municipalidad.gualeguay.gob.ar/modulos/transparencia/licitaciones_publicas.php",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://municipalidad.gualeguay.gob.ar/modulos/transparencia/licitaciones_publicas.php",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-038",
+      "url": "https://www.crespo.gob.ar/licitaciones-privadas-2026/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://www.crespo.gob.ar/licitaciones-privadas-2026/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-039",
+      "url": "https://www.crespo.gob.ar/category/licitacion-publica/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://www.crespo.gob.ar/category/licitacion-publica/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-041",
+      "url": "https://www.federacion.gob.ar/licitaciones",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://www.federacion.gob.ar/licitaciones",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-042",
+      "url": "https://nuevo.nogoya.gob.ar/compras-licitaciones-y-concursos-nuevo/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://nuevo.nogoya.gob.ar/compras-licitaciones-y-concursos-nuevo/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-043",
+      "url": "https://haciendalapaz.gob.ar/compras/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://haciendalapaz.gob.ar/compras/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-044",
+      "url": "https://villaguay.gob.ar/boletindigital/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://villaguay.gob.ar/boletindigital/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-045",
+      "url": "https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-046",
+      "url": "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-049",
+      "url": "https://compras.pergamino.gob.ar/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://compras.pergamino.gob.ar/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-050",
+      "url": "https://arrecifes.gob.ar/informacion-publica/licitaciones/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://arrecifes.gob.ar/informacion-publica/licitaciones/",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-051",
+      "url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-052",
+      "url": "https://transparencia.rojas.gov.ar/index.php?action=17",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://transparencia.rojas.gov.ar/index.php?action=17",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    },
+    {
+      "id": "fuente-053",
+      "url": "https://transparencia.rojas.gov.ar/index.php?action=18",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "paginas_visitadas": 1,
+      "limites": [],
+      "errores": [
+        {
+          "url": "https://transparencia.rojas.gov.ar/index.php?action=18",
+          "tipo": "URLError",
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ]
+    }
+  ]
+}

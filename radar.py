@@ -9,6 +9,7 @@ import unicodedata
 import time
 import os
 import logging
+import conectores
 from collections import deque
 from zoneinfo import ZoneInfo
 
@@ -472,10 +473,8 @@ def ejecutar():
         {},
     )
 
-    if not isinstance(
-        estado_anterior, dict
-    ):
-        estado_anterior = {}
+    if not isinstance(estado_anterior, dict):
+        raise RuntimeError("Historial inválido: se preserva el archivo")
 
     if "oportunidades" in estado_anterior:
         historial = estado_anterior[
@@ -485,7 +484,7 @@ def ejecutar():
         historial = estado_anterior
 
     if not isinstance(historial, dict):
-        historial = {}
+        raise RuntimeError("Historial inválido: oportunidades debe ser un objeto")
 
     metadatos = cargar_json("fuentes.json", {})
     nuevas = []
@@ -502,9 +501,11 @@ def ejecutar():
             fuente,
         )
 
-        resultado = explorar_fuente(
-            fuente
-        )
+        config = metadatos.get(fuente, {})
+        if config.get("conector") == "publicaciones":
+            resultado = conectores.explorar(fuente, config, max_paginas=MAX_PAGINAS)
+        else:
+            resultado = explorar_fuente(fuente)
 
         oportunidades = resultado[
             "oportunidades"
@@ -522,11 +523,16 @@ def ejecutar():
 
         for oportunidad in oportunidades:
             url = oportunidad["url"]
+            clave = oportunidad.get("id", url)
 
             oportunidad.update({k: metadatos.get(fuente, {}).get(k) for k in ("organismo", "localidad", "provincia")})
             encontradas[url] = oportunidad
 
-            if url not in historial:
+            anterior = historial.get(clave)
+            if anterior is None and clave != url and url in historial:
+                if normalizar(historial[url].get("titulo", "")) == normalizar(oportunidad["titulo"]):
+                    anterior = historial[url]
+            if anterior is None:
                 oportunidad[
                     "primera_deteccion"
                 ] = fecha
@@ -535,16 +541,25 @@ def ejecutar():
                     oportunidad
                 )
 
-                historial[url] = oportunidad
+                historial[clave] = dict(oportunidad)
 
                 print(
                     "NUEVA:",
                     oportunidad["titulo"],
                 )
 
+            else:
+                historial[clave] = {**anterior, **oportunidad,
+                                    "primera_deteccion": anterior.get("primera_deteccion", fecha)}
+            historial[clave]["ultima_deteccion"] = fecha
+
+        estado_fuente = resultado["estado"]
+        if estado_fuente == "OPERATIVA" and not any(o["fuente"] == fuente for o in nuevas):
+            estado_fuente = "SIN_PUBLICACIONES_NUEVAS"
         auditoria.append({
             "fuente": fuente,
-            "estado": resultado["estado"],
+            "estado": estado_fuente,
+            "publicaciones_detectadas": sum(o.get("estado") == "PUBLICACION_DETECTADA" for o in oportunidades),
             "limites": resultado["limites"],
             "paginas_correctas": resultado["paginas_correctas"],
             "cobertura_completa": False,
@@ -572,6 +587,7 @@ def ejecutar():
         {
             "ultima_ejecucion": fecha,
             "oportunidades": historial,
+            "auditorias": estado_anterior.get("auditorias", []) + [{"fecha": fecha, "fuentes": auditoria}],
         },
     )
 
@@ -586,10 +602,11 @@ def ejecutar():
     print("Fuentes revisadas:", len(fuentes))
     print("Candidatos detectados:", len(encontradas))
     print("Oportunidades nuevas:", len(nuevas))
-    fallas = sum(f["estado"] == "ERROR" for f in auditoria)
+    fallas = sum(f["estado"] in ("ERROR", "BLOQUEADA", "PENDIENTE", "PARCIAL") for f in auditoria)
     print(f"Fuentes con error: {fallas}. Cobertura territorial incompleta.")
     return 2 if fallas else 0
 
 
 if __name__ == "__main__":
     raise SystemExit(ejecutar())
+
