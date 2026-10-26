@@ -1,5 +1,5 @@
 {
-  "ultima_ejecucion": "2026-10-25T11:22:57.399853+00:00",
+  "ultima_ejecucion": "2026-10-26T11:36:50.902940+00:00",
   "oportunidades": {
     "version": 2,
     "candidatos": {},
@@ -3211,6 +3211,750 @@
       "pago_prioritario": false,
       "estado": "CANDIDATO_NO_VERIFICADO",
       "primera_deteccion": "2026-10-25T11:22:57.399853+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38443": {
+      "titulo": "Ir al contenido principal",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38443",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38598?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "131491/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38598?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38604?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "110841/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38604?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38575?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "110821/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38575?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38576?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "110811/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38576?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38574?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "101231/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38574?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38603?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "101221/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38603?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38602?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "101211/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38602?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38589?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "101201/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38589?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38590?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "101191/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38590?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38573?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "101181/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38573?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38548?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "101171/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38548?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38550?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "81481/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38550?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38609?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "71171/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38609?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38582?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "71161/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38582?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38580?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "71151/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38580?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38527?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "71131/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38527?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38579?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "60671/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38579?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38569?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "40581/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38569?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38607?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "35873/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38607?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38608?sid=a220c982-6530-4890-b78b-d42ec0425ce3": {
+      "titulo": "35850/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38608?sid=a220c982-6530-4890-b78b-d42ec0425ce3",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38585?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "120110/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38585?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38581?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "110470/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38581?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38538?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "110460/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38538?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38493?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "110450/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38493?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38491?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "80230/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38491?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38551?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "35090/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38551?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38552?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "35088/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38552?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38502?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "33354/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38502?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38532?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "32751/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38532?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38593?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "20250/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38593?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38519?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "20230/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38519?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38467?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "16197/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38467?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38518?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "10250/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38518?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38485?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "10240/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38485?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38572?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "10/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38572?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38588?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "7/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38588?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38494?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44": {
+      "titulo": "2/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38494?sid=1f57f60f-9c70-4abf-9f0a-1c3aa0478c44",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38606?sid=60171b60-787a-4904-85f8-7f72fa710205": {
+      "titulo": "35316/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38606?sid=60171b60-787a-4904-85f8-7f72fa710205",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38460?sid=60171b60-787a-4904-85f8-7f72fa710205": {
+      "titulo": "33244/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38460?sid=60171b60-787a-4904-85f8-7f72fa710205",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38440?sid=60171b60-787a-4904-85f8-7f72fa710205": {
+      "titulo": "31309/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38440?sid=60171b60-787a-4904-85f8-7f72fa710205",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/37368?sid=60171b60-787a-4904-85f8-7f72fa710205": {
+      "titulo": "2/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/37368?sid=60171b60-787a-4904-85f8-7f72fa710205",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38509?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "131481/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38509?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38530?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "120791/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38530?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38501?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "120781/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38501?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38497?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "120771/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38497?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38492?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "120761/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38492?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38545?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "110801/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38545?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38537?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "110791/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38537?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38536?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "110781/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38536?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38505?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "110771/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38505?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38482?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "110761/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38482?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38458?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "110751/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38458?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38446?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "110741/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38446?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38348?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "110731/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38348?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38522?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "101161/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38522?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38521?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "101141/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38521?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38495?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "101131/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38495?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38477?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "101121/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38477?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38456?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "101101/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38456?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38457?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "101091/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38457?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38368?sid=e131dad6-02b4-41ba-87c8-7dee86718637": {
+      "titulo": "101071/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38368?sid=e131dad6-02b4-41ba-87c8-7dee86718637",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38474?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f": {
+      "titulo": "130070/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38474?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38386?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f": {
+      "titulo": "80220/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38386?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38367?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f": {
+      "titulo": "80210/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38367?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38362?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f": {
+      "titulo": "50130/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38362?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38443?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f": {
+      "titulo": "40150/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38443?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38359?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f": {
+      "titulo": "28463/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38359?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38469?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f": {
+      "titulo": "26317/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38469?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38436?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f": {
+      "titulo": "20240/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38436?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38380?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f": {
+      "titulo": "17/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38380?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38381?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f": {
+      "titulo": "16/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38381?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38390?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f": {
+      "titulo": "15/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38390?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38375?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f": {
+      "titulo": "14/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38375?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38378?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f": {
+      "titulo": "13/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38378?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38379?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f": {
+      "titulo": "10/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38379?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38382?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f": {
+      "titulo": "8/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38382?sid=e7c1ba25-eff3-444c-ab52-0a43c9606b7f",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38388?sid=7c3a467a-13d4-420b-92d0-8d60a019c38b": {
+      "titulo": "26/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38388?sid=7c3a467a-13d4-420b-92d0-8d60a019c38b",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38391?sid=7c3a467a-13d4-420b-92d0-8d60a019c38b": {
+      "titulo": "23/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38391?sid=7c3a467a-13d4-420b-92d0-8d60a019c38b",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38387?sid=7c3a467a-13d4-420b-92d0-8d60a019c38b": {
+      "titulo": "22/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38387?sid=7c3a467a-13d4-420b-92d0-8d60a019c38b",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/perfildigital/contrataciones/ddj/38362": {
+      "titulo": "Completar DDJJ",
+      "url": "https://www.rosario.gob.ar/inicio/perfildigital/contrataciones/ddj/38362",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38362/documentos/102266": {
+      "titulo": "lp13-26-especificacioneszapatilladeseguridad.pdf",
+      "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38362/documentos/102266",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38362/documentos/102265": {
+      "titulo": "lp13-2026-especificacionestecnicadelasprendasycalzado.pdf",
+      "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38362/documentos/102265",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38362/documentos/102264": {
+      "titulo": "lp13-2026-uniformesycalzadopersonal.pdf",
+      "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38362/documentos/102264",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://siat.rosario.gob.ar/siat/seg/Login.do?method=anonimo&url=/bal/AdministrarIngBoletaCobro.do?method=inicializar&idRecurso=462&codatr1=idlicitacion&valatr1=38443&codatr2=licitacion&valatr2=15%2F2026&codatr3=nroExpediente&valatr3=40150%2F2026": {
+      "titulo": "Sellado",
+      "url": "https://siat.rosario.gob.ar/siat/seg/Login.do?method=anonimo&url=/bal/AdministrarIngBoletaCobro.do?method=inicializar&idRecurso=462&codatr1=idlicitacion&valatr1=38443&codatr2=licitacion&valatr2=15%2F2026&codatr3=nroExpediente&valatr3=40150%2F2026",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://www.rosario.gob.ar/inicio/perfildigital/contrataciones/ddj/38443": {
+      "titulo": "Completar DDJJ",
+      "url": "https://www.rosario.gob.ar/inicio/perfildigital/contrataciones/ddj/38443",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38443/documentos/102460": {
+      "titulo": "anexoúnico2026.pdf",
+      "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38443/documentos/102460",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38443/documentos/102459": {
+      "titulo": "basesycondicioneslavanderíaderespaldo.pdf",
+      "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38443/documentos/102459",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38443/documentos/102458": {
+      "titulo": "015-lavanderiaderespaldo16.10.26.pdf",
+      "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38443/documentos/102458",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38388/documentos/102343": {
+      "titulo": "ord6394.97.pdf",
+      "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38388/documentos/102343",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38388/documentos/102333": {
+      "titulo": "26-2026-pliegodecondicionesgenerales.pdf",
+      "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38388/documentos/102333",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38391/documentos/102341": {
+      "titulo": "ord6394.97.pdf",
+      "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38391/documentos/102341",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
+    },
+    "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38391/documentos/102340": {
+      "titulo": "23.2026.gaseosa.pdf",
+      "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38391/documentos/102340",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "pago_prioritario": false,
+      "estado": "CANDIDATO_NO_VERIFICADO",
+      "primera_deteccion": "2026-10-26T11:36:50.902940+00:00"
     }
   }
 }

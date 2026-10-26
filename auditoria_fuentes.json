@@ -1,11 +1,11 @@
 {
-  "fecha": "2026-10-25T11:22:57.399853+00:00",
+  "fecha": "2026-10-26T11:36:50.902940+00:00",
   "fuentes": [
     {
       "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
-      "fecha": "2026-10-25T11:22:57.399853+00:00",
+      "fecha": "2026-10-26T11:36:50.902940+00:00",
       "paginas_visitadas": 40,
-      "candidatos": 233,
+      "candidatos": 228,
       "errores": []
     }
   ]
