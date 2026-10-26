@@ -11,6 +11,7 @@ import unicodedata
 
 def norm(t):
     t=re.sub(r'/\s*\(\s*(20\d{2})\s*\)',r'/\1',str(t))
+    t=re.sub(r'(\d+)\s*\(\s*(20\d{2})\s*\)',r'\1/\2',t)
     return re.sub(r'\s+',' ',''.join(c for c in unicodedata.normalize('NFKD',str(t).lower()) if not unicodedata.combining(c))).strip()
 
 
@@ -79,14 +80,14 @@ class Nodo:
     def enlaces(self,base):
         links=[]
         for n in self.iter():
-            href=n.attrs.get('href')
+            href=n.attrs.get('href') or n.attrs.get('data-next-page')
             onclick=n.attrs.get('onclick','')
             m=re.search(r"DownloadFile\(\s*'([^']+)'\s*,\s*'([^']+)'",onclick)
             if m:href=m[1]+m[2]
             if n.tag=='iframe':href=n.attrs.get('src')
             if not href:continue
             url=url_publica(href,base)
-            if url:links.append({'url':url,'texto':n.text,'rel':n.attrs.get('rel',''),
+            if url:links.append({'url':url,'texto':n.text,'rel':n.attrs.get('rel','next' if n.attrs.get('data-next-page') else ''),
                                  'tag':n.tag,'node':n})
         return links
 

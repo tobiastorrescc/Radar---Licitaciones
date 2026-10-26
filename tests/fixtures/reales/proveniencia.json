@@ -159,5 +159,12 @@
     "run_id": 40255237183,
     "metodo": "Script RSC público completo; se decodifica como JSON sin ejecutar JavaScript",
     "sha256_respuesta_capturada": "7c110f176c8fd9ccaf622d5b79d6c50336dc749735e0b4a3d6a11458181c4893"
+  },
+  {
+    "archivo": "baradero-privada.html",
+    "url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Privada",
+    "run_id": 40255237183,
+    "metodo": "Respuesta HTML original del listado público, sin ejecutar JS",
+    "sha256_respuesta_capturada": "868ae3f7813f3847432ddcc9d3cf32ad1981d37e10ec8d9969e018f483abb1a9"
   }
 ]

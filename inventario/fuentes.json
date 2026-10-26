@@ -23,7 +23,7 @@
       "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura"
     ],
     "seguir_patrones": [
-      "/inicio/result-busq-compras-licitaciones\\\\?recomendada=apertura&tipoRecomendada="
+      "/inicio/result-busq-compras-licitaciones[?]recomendada=apertura&tipoRecomendada="
     ]
   },
   {
@@ -561,7 +561,9 @@
     "url_anterior_404": "https://aplicaciones.vialidadentrerios.gob.ar/obralic/web/licitacion/listado",
     "seguir_patrones": [
       "/category/licitaciones-2026/page/"
-    ]
+    ],
+    "requerir_ficha": true,
+    "detectar_carga_dinamica": true
   },
   {
     "id": "fuente-029",
@@ -1054,14 +1056,18 @@
     },
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "urls_inicio": [
+      "https://transparencia.rojas.gov.ar/index.php?action=17",
+      "https://transparencia.rojas.gov.ar/index.php?action=23"
+    ]
   },
   {
     "id": "fuente-053",
     "organismo": "Municipalidad de Rojas",
     "localidad": "Rojas",
     "provincia": "Buenos Aires",
-    "url": "https://transparencia.rojas.gov.ar/index.php?action=18",
+    "url": "https://transparencia.rojas.gov.ar/index.php?action=24",
     "tipo_portal": "tabla",
     "estado_verificacion": "PENDIENTE_EJECUCION",
     "incorporada": true,
@@ -1075,6 +1081,9 @@
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "adaptador": "rojas-compras"
+    "adaptador": "generico",
+    "url_anterior_ordenes_compra": "https://transparencia.rojas.gov.ar/index.php?action=18",
+    "correccion_alcance": "La ruta action18 publica ejecución de órdenes de compra, no es el listado de licitaciones privadas enlazado por el municipio.",
+    "marcador_vacio": "no se encontraron documentos[.]"
   }
 ]

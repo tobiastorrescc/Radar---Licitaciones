@@ -50,6 +50,50 @@ class ExtraccionRealTests(unittest.TestCase):
         self.assertTrue(all(r['detalle_completo'] for r in regs))
         self.assertTrue(any('Alimentario' in r['objeto'] and r['numero_procedimiento']=='1/2026' for r in regs))
 
+    def test_baradero_privadas_anio_entre_parentesis_no_duplica(self):
+        r=self.registros('baradero-privada',adaptador='baradero')
+        self.assertTrue(r)
+        self.assertTrue(all(x['detalle_completo'] for x in r))
+        self.assertTrue(all('/' in x['numero_procedimiento'] for x in r))
+
+    def test_elementor_data_next_page_es_paginacion_real(self):
+        html='<div class="e-load-more-anchor" data-page="1" data-next-page="https://example.org/contrataciones/2/"></div>'
+        _,links,_=e.extraer(html,'https://example.org/contrataciones/')
+        self.assertEqual(links[0]['url'],'https://example.org/contrataciones/2/')
+        self.assertEqual(links[0]['rel'],'next')
+
+    def test_rosario_sigue_todos_los_listados_por_tipo(self):
+        inicial=(FIX/'rosario-resultados.html').read_text()
+        metadata=json.loads(Path('fuentes.json').read_text())['https://www.rosario.gob.ar/inicio/compras-y-licitaciones']
+        calls=[]
+        def fetch(u):
+            calls.append(u)
+            if 'tipoRecomendada' in u:
+                return b'<div><a href="/inicio/compras-licitaciones/detalle/999">123/2026</a> ProvisiOn de papel</div>','text/html',u
+            return inicial.encode(),'text/html',u
+        r=c.explorar('https://www.rosario.gob.ar/inicio/compras-y-licitaciones',metadata,fetch=fetch)
+        self.assertTrue(any('tipoRecomendada=' in u for u in calls))
+        self.assertTrue(any('123/2026' in p.get('procedimiento','') for p in r['oportunidades']))
+
+    def test_numero_y_fecha_solos_no_sustituyen_la_ficha(self):
+        cf={'requerir_ficha':True,'lectura_adjuntos':'necesarios'}
+        def fetch(u):
+            if u.endswith('/detalle'):return b'<article>Licitacion publica 2/2026 provisiOn de hormigOn</article>','text/html',u
+            return b'<article><a href="/detalle">Licitacion publica 2/2026</a> Autor Juan Perez Fecha 02/10/2026</article>','text/html',u
+        r=c.explorar('https://example.org/',cf,fetch=fetch)
+        self.assertEqual(r['estado'],'OPERATIVA')
+        self.assertTrue(any('hormigOn' in p['objeto'] for p in r['oportunidades']))
+
+    def test_imagen_de_llamado_con_ocr(self):
+        with patch.object(documentos.subprocess,'run',return_value=SimpleNamespace(stdout='Licitación pública 2/2026 hormigón')):
+            self.assertIn('hormigón',documentos.leer(b'PNG-falso para mock','image/png','licitacion.png',ocr=True))
+
+    def test_cargar_mas_pendiente_no_se_declara_exhaustivo(self):
+        r=c.explorar('https://example.org/',{'detectar_carga_dinamica':True},
+            fetch=lambda u:(b'<li>Licitacion publica 1/2026 papel</li><button>cargas mas</button>','text/html',u))
+        self.assertEqual(r['estado'],'PARCIAL')
+        self.assertEqual(r['errores'][0]['tipo'],'PaginacionDinamicaPendiente')
+
     def test_ater_abreviatura_y_numeros_sin_pdf(self):
         regs=self.registros('fuente-027')
         self.assertEqual(len(regs),2)

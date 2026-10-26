@@ -12,7 +12,7 @@
       "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura"
     ],
     "seguir_patrones": [
-      "/inicio/result-busq-compras-licitaciones\\\\?recomendada=apertura&tipoRecomendada="
+      "/inicio/result-busq-compras-licitaciones[?]recomendada=apertura&tipoRecomendada="
     ]
   },
   "https://compras.santafe.gob.ar/": {
@@ -341,17 +341,11 @@
     "conector": "publicaciones",
     "tipo_portal": "html_pdf",
     "lectura_adjuntos": "necesarios",
-    "ocr": true
-  },
-  "https://transparencia.rojas.gov.ar/index.php?action=18": {
-    "organismo": "Municipalidad de Rojas",
-    "localidad": "Rojas",
-    "provincia": "Buenos Aires",
-    "conector": "publicaciones",
-    "tipo_portal": "tabla",
-    "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "adaptador": "rojas-compras"
+    "urls_inicio": [
+      "https://transparencia.rojas.gov.ar/index.php?action=17",
+      "https://transparencia.rojas.gov.ar/index.php?action=23"
+    ]
   },
   "https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia": {
     "organismo": "Municipalidad de Santo Tomé",
@@ -372,6 +366,19 @@
     "ocr": true,
     "seguir_patrones": [
       "/category/licitaciones-2026/page/"
-    ]
+    ],
+    "requerir_ficha": true,
+    "detectar_carga_dinamica": true
+  },
+  "https://transparencia.rojas.gov.ar/index.php?action=24": {
+    "organismo": "Municipalidad de Rojas",
+    "localidad": "Rojas",
+    "provincia": "Buenos Aires",
+    "conector": "publicaciones",
+    "tipo_portal": "tabla",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "adaptador": "generico",
+    "marcador_vacio": "no se encontraron documentos[.]"
   }
 }

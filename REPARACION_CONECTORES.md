@@ -41,7 +41,7 @@ El resultado anterior de Rosario era un falso positivo: el teléfono de Compras 
 | fuente-050 | PARCIAL | ValueError | Objetos en HTML, DOCX y anexos; pliegos auxiliares no se contabilizan como llamados distintos. |
 | fuente-051 | PENDIENTE | SinPublicacionesDetectadas | Datos React públicos serializados: objeto/motivo, año y documento sin ejecutar JS ni inventar endpoints. |
 | fuente-052 | PENDIENTE | SinPublicacionesDetectadas | Recuperar URL pública del botón DownloadFile, unir la carátula y el objeto. |
-| fuente-053 | OPERATIVA | Sin error técnico; revisar calidad de detección | Tabla: construir identificador con número/año/tipo. La fecha de pago no es número de procedimiento; conservar situación histórica. |
+| fuente-053 | OPERATIVA | Sin error técnico; revisar calidad de detección | La ruta action18 era ejecución de órdenes de compra, no licitaciones privadas. Se reemplaza por action24 enlazada por el municipio; el mensaje explícito sin documentos se informa por separado. No se cuentan 1.641 órdenes de compra como llamados. |
 
 La clasificación OPERATIVA se limita al alcance declarado del conector: extraer las publicaciones del listado y su objeto, con enlaces de documentos. No certifica que todos los adjuntos estén descargados ni que el organismo publique todos sus procedimientos. Si el objeto depende de un PDF/DOCX/ZIP, su extracción es obligatoria y un error deja la fuente parcial. No se truncan novedades ni se filtra por monto, rubro o financiación.
 
@@ -50,3 +50,5 @@ Un listado sin coincidencias queda PENDIENTE. SIN_PUBLICACIONES requiere una dec
 Se preserva el historial de producción. Las muestras de regresión incluyen extractos reales con URL, run y hash de la respuesta en tests/fixtures/reales/proveniencia.json. La comparación de cantidades contra #35 debe considerar eliminación de falsos positivos, anexos duplicados y números tomados de teléfonos/fechas.
 
 La nueva corrida de Actions y sus resultados individuales se enlazan en la descripción del PR #1. El PR permanece sin fusionar.
+
+La segunda revisión corrige el acceso a todos los tipos de Rosario, data-next-page de Elementor, títulos de Baradero con año entre paréntesis y exige la ficha para obtener el objeto de Vialidad. Cargar más sin URL verificable queda parcial. Imágenes de llamados pueden leerse con OCR. Los listados sin documentos se informan como tales, sin inventar oportunidades.

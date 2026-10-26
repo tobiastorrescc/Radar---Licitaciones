@@ -282,10 +282,14 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             texto=normalizar(dom.root.text)
             # El vacío debe estar publicado explícitamente; no se infiere de falta de matches.
             m=re.search(r'no (?:hay|existen|se encontraron) (?:licitaciones|publicaciones|procesos de compra)|sin licitaciones vigentes',texto)
+            if not m and config.get('marcador_vacio'):m=re.search(config['marcador_vacio'],texto)
+            if clase=='LISTADO' and config.get('detectar_carga_dinamica') and re.search(r'cargas? mas|load more',texto):
+                errors.append({'url':url,'tipo':'PaginacionDinamicaPendiente','categoria':'EXTRACCION','timeout':False,'error':'Control cargar más sin enlace de siguiente página verificable'})
             if m:vacios.append({'url':url,'texto':m.group(0)})
             if not registros and re.search(r'inicia sesi[oó]n para|solo esta disponible dentro de la red|debe iniciar sesi[oó]n',texto):
                 errors.append({'url':url,'tipo':'AccesoRestringido','categoria':'ACCESO','timeout':False,'error':'El portal requiere autenticación o red privada; no se elude'})
             for r in registros:
+                if config.get('requerir_ficha') and clase=='LISTADO':r['detalle_completo']=False
                 key=agregar(r)
                 if clase=='DETALLE' and referencia in items and r.get('detalle_completo'):
                     items[referencia]['objeto']=r['objeto'];items[referencia]['detalle_completo']=True
@@ -300,9 +304,10 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             for l in links:
                 destino=l['url'];et=normalizar(l['texto']);path=urlparse(destino).path
                 if _host(destino) not in hosts or destino in seen or destino==url:continue
-                raiz=urlparse(fuente).path.rstrip('/')
+                raices={urlparse(u).path.rstrip('/') for u in config.get('urls_inicio',[fuente])}
+                raices.update((urlparse(fuente).path.rstrip('/'),urlparse(url).path.rstrip('/')))
                 pagina=clase=='LISTADO' and (('next' in l['rel'].split() or et in ('siguiente','siguiente »','next','»','›') or
-                          bool(re.search(r'/page/\d+|[?&](?:page|pagina|start)=\d+',destino))) and path.startswith(raiz))
+                          bool(re.search(r'/page/\d+|[?&](?:page|pagina|start)=\d+',destino))) and any(path.startswith(raiz) for raiz in raices))
                 navegar=any(re.search(patron,destino) for patron in config.get('seguir_patrones',[]))
                 if pagina or navegar:
                     contexto={'tipo_contexto':l.get('tipo_contexto',pagina_config.get('tipo_contexto'))}

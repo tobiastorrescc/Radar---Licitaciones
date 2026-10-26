@@ -42,6 +42,13 @@ def pdf(datos,ocr=False,progreso=None):
 
 def leer(datos,tipo,url,ocr=False,progreso=None):
     if datos.startswith(b'%PDF-') or 'pdf' in tipo.lower():return pdf(datos,ocr,progreso)
+    if tipo.lower().startswith(('image/jpeg','image/png')):
+        if not ocr:raise ValueError('Imagen de publicación requiere OCR')
+        with tempfile.TemporaryDirectory() as d:
+            image=Path(d)/'publicacion';image.write_bytes(datos)
+            r=subprocess.run(['tesseract',str(image),'stdout','-l','spa+eng'],capture_output=True,text=True,check=True,timeout=20)
+            if not r.stdout.strip():raise ValueError('Imagen sin texto reconocido')
+            return r.stdout
     if datos.startswith(b'PK'):
         with zipfile.ZipFile(BytesIO(datos)) as z:
             if 'word/document.xml' in z.namelist():return docx(datos)
