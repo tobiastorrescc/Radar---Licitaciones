@@ -1,56 +1,65 @@
 name: Radar diario de licitaciones
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 11 * * *'
-
+    - cron: '0 11 * * *' # 08:00 Argentina; GitHub puede retrasar la ejecucion
+  pull_request:
+  push:
+    paths: ['radar.py', 'tests/**', '.github/workflows/**', 'fuentes*']
 permissions:
-  contents: write
-
+  contents: read
 concurrency:
-  group: radar-diario
+  group: radar-${{ github.ref }}
   cancel-in-progress: false
-
 jobs:
-  ejecutar-radar:
+  pruebas:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Descargar archivos
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          persist-credentials: true
-
-      - name: Preparar Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
+      - run: python -m unittest discover -s tests -v
+  ejecutar-radar:
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
+    needs: pruebas
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
       - name: Ejecutar radar
+        id: radar
+        continue-on-error: true
         run: python radar.py
-
-      - name: Guardar resultados descargables
+      - name: Guardar resultados y errores
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: radar-resultados
+          name: radar-${{ github.run_id }}
           path: |
             radar_estado.json
             licitaciones_nuevas.json
             auditoria_fuentes.json
-          if-no-files-found: warn
-          retention-days: 30
-
-      - name: Persistir historial en el repositorio
+            radar.log
+          retention-days: 90
+      - name: Persistir historial incluso ante fallos parciales
+        if: always() && steps.radar.outcome != 'skipped'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add radar_estado.json licitaciones_nuevas.json auditoria_fuentes.json
           if ! git diff --cached --quiet; then
             git commit -m 'Actualizar historial de licitaciones [skip ci]'
+            git pull --rebase origin main
             git push origin HEAD:main
-          else
-            echo 'Sin cambios para guardar'
           fi
+      - name: Reportar fallos de consulta
+        if: steps.radar.outcome == 'failure'
+        run: exit 1
