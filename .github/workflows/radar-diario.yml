@@ -67,10 +67,10 @@ jobs:
         run: exit 1
 
   verificar-fuentes-rama:
-    if: github.event_name == 'workflow_dispatch' && github.ref != 'refs/heads/main'
+    if: (github.event_name == 'workflow_dispatch' && github.ref != 'refs/heads/main') || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository)
     needs: pruebas
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -78,11 +78,32 @@ jobs:
           python-version: '3.11'
       - run: sudo apt-get update && sudo apt-get install -y poppler-utils
       - name: Verificar sin modificar historial de producción
-        run: python tools/verificar_fuentes.py
+        id: verificar
+        continue-on-error: true # Diagnóstico de fuentes; no confundir disponibilidad con pruebas unitarias.
+        timeout-minutes: 12
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: python -u tools/verificar_fuentes.py --salida work/verificacion/verificacion.json --concurrencia 4 --conexion 5 --lectura 10 --por-fuente 60 --total 600
+      - name: Resumen de fuentes en Actions
+        if: always()
+        run: |
+          python - <<'PYCODE' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          p = Path('work/verificacion/verificacion.json')
+          r = json.loads(p.read_text())
+          if r.get('schema_version') != 2:
+              raise SystemExit('No hay un informe actual del verificador')
+          print('### Verificación de fuentes: ' + r['estado_ejecucion'])
+          print('La disponibilidad de portales es un diagnóstico separado de las pruebas automáticas.')
+          for k, v in r['resumen'].items():
+              print(f'- {k}: {v}')
+          PYCODE
       - name: Guardar evidencia de verificación
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: verificacion-fuentes-${{ github.run_id }}
-          path: inventario/verificacion.json
+          path: work/verificacion/
+          if-no-files-found: error
           retention-days: 90

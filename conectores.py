@@ -3,7 +3,9 @@ from collections import deque
 from hashlib import sha256
 from html.parser import HTMLParser
 from urllib.parse import urljoin, urlparse, urldefrag
-from urllib.request import Request, urlopen
+from urllib.request import Request, build_opener, HTTPHandler, HTTPSHandler
+from http.client import HTTPConnection, HTTPSConnection
+import socket
 from urllib.error import HTTPError, URLError
 import re
 import subprocess
@@ -103,12 +105,71 @@ def extraer_pdf(datos):
     return texto
 
 
-def descargar(url):
-    with urlopen(Request(url, headers={'User-Agent': 'RadarLicitaciones/2.0'}), timeout=15) as r:
+class _LecturaAcotada:
+    """DNS/TCP/proxy/TLS usan timeout de conexión; headers/body, de lectura.
+
+    El supervisor del verificador impone además un plazo de pared, incluso ante
+    DNS bloqueado o un servidor que envía bytes indefinidamente.
+    """
+    def __init__(self, *args, lectura_timeout=10, **kwargs):
+        self.lectura_timeout = lectura_timeout
+        super().__init__(*args, **kwargs)
+
+    def connect(self):
+        super().connect()
+        self.sock.settimeout(self.lectura_timeout)
+
+
+class _HTTPAcotada(_LecturaAcotada, HTTPConnection):
+    pass
+
+
+class _HTTPSAcotada(_LecturaAcotada, HTTPSConnection):
+    pass
+
+
+class _HTTPHandler(HTTPHandler):
+    def __init__(self, lectura_timeout):
+        super().__init__()
+        self.lectura_timeout = lectura_timeout
+
+    def http_open(self, req):
+        return self.do_open(lambda *a, **kw: _HTTPAcotada(*a, lectura_timeout=self.lectura_timeout, **kw), req)
+
+
+class _HTTPSHandler(HTTPSHandler):
+    def __init__(self, lectura_timeout):
+        super().__init__()
+        self.lectura_timeout = lectura_timeout
+
+    def https_open(self, req):
+        return self.do_open(lambda *a, **kw: _HTTPSAcotada(*a, lectura_timeout=self.lectura_timeout, **kw),
+                            req, context=self._context)
+
+
+def descargar(url, conexion_timeout=5, lectura_timeout=10):
+    # build_opener conserva proxies del entorno y validación TLS predeterminada.
+    opener = build_opener(_HTTPHandler(lectura_timeout), _HTTPSHandler(lectura_timeout))
+    with opener.open(Request(url, headers={'User-Agent': 'RadarLicitaciones/2.0'}),
+                     timeout=conexion_timeout) as r:
         datos = r.read(12_000_001)
         if len(datos) > 12_000_000:
             raise ValueError('Respuesta supera 12 MB; recorrido parcial')
         return datos, r.headers.get('Content-Type', ''), r.geturl()
+
+
+def clasificar_error(error, fase):
+    timeout = isinstance(error, (TimeoutError, socket.timeout)) or (
+        isinstance(error, URLError) and isinstance(error.reason, (TimeoutError, socket.timeout)))
+    if fase == 'DESCARGA' and isinstance(error, (URLError, OSError, HTTPError)):
+        categoria = 'RED'
+    else:
+        categoria = 'EXTRACCION'
+    result = {'tipo': type(error).__name__, 'categoria': categoria,
+              'timeout': timeout or isinstance(error, subprocess.TimeoutExpired), 'error': str(error)}
+    if isinstance(error, HTTPError):
+        result['http_status'] = error.code
+    return result
 
 
 def identidad(fuente, titulo, url):
@@ -119,11 +180,21 @@ def identidad(fuente, titulo, url):
     return sha256(clave.encode()).hexdigest()
 
 
-def explorar(fuente, config, fetch=None, max_paginas=1000):
+def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
     fetch = fetch or descargar
     pending, seen, items, errors = deque([fuente]), set(), {}, []
     limits, correctas, documentos = [], 0, 0
     hosts = {urlparse(fuente).netloc, *config.get('dominios_documentos', [])}
+    def snapshot(fase, actual=None, finalizado=False):
+        result = {'oportunidades': list(items.values()), 'errores': list(errors),
+                  'limites': list(limits), 'paginas_visitadas': len(seen),
+                  'paginas_correctas': correctas, 'documentos_leidos': documentos,
+                  'cobertura_completa': False, 'fase': fase, 'url_actual': actual,
+                  'finalizado': finalizado}
+        if progreso:
+            progreso(result)
+        return result
+
     while pending:
         if len(seen) >= max_paginas:
             limits.append('max_paginas'); break
@@ -131,8 +202,12 @@ def explorar(fuente, config, fetch=None, max_paginas=1000):
         if url in seen or urlparse(url).scheme not in ('https', 'http') or urlparse(url).netloc not in hosts:
             continue
         seen.add(url)
+        fase = 'DESCARGA'
+        snapshot(fase, url)
         try:
             datos, tipo, final = fetch(url)
+            fase = 'EXTRACCION'
+            snapshot(fase, url)
             if urlparse(final).netloc not in hosts:
                 raise ValueError('Redirección fuera de dominios declarados')
             if 'pdf' in tipo.lower() or datos.startswith(b'%PDF-'):
@@ -175,12 +250,20 @@ def explorar(fuente, config, fetch=None, max_paginas=1000):
                         if target not in seen:
                             pending.append(target)
         except Exception as e:
-            errors.append({'url': url, 'tipo': type(e).__name__, 'error': str(e)})
+            errors.append({'url': url, **clasificar_error(e, fase)})
+        snapshot('PAGINA_FINALIZADA', url)
     estado = 'OPERATIVA' if items else 'PENDIENTE'
     if not correctas and errors:
-        estado = 'BLOQUEADA' if all(e['tipo'] in ('HTTPError', 'URLError', 'ConnectionError', 'TimeoutError', 'OSError') for e in errors) else 'PENDIENTE'
+        estado = 'BLOQUEADA' if all(e['categoria'] == 'RED' for e in errors) else 'PENDIENTE'
     if items and (errors or limits):
         estado = 'PARCIAL'
-    return {'estado': estado, 'oportunidades': list(items.values()), 'errores': errors,
-            'limites': limits, 'paginas_visitadas': len(seen), 'paginas_correctas': correctas,
-            'documentos_leidos': documentos, 'cobertura_completa': False}
+    result = snapshot('FINALIZADA', finalizado=True)
+    result['estado'] = estado
+    # Un HTTP 200 sin publicaciones no demuestra éxito de extracción.
+    if not items and not errors and correctas:
+        result['errores'].append({'url': fuente, 'tipo': 'SinPublicacionesDetectadas',
+            'categoria': 'EXTRACCION', 'timeout': False,
+            'error': 'No se reconocieron publicaciones; revisar estructura, JavaScript o listado vacío'})
+    if progreso:
+        progreso(result)
+    return result
