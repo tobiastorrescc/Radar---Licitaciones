@@ -63,7 +63,6 @@ class VerificadorTests(unittest.TestCase):
         self.assertEqual(r['resumen']['fuentes_error_red'],1)
         self.assertEqual(r['resumen']['fuentes_error_extraccion'],1)
         self.assertTrue(any('CONSULTANDO' in s for s in self.logs))
-        self.assertTrue(any('PROGRESO' in s for s in self.logs))
         self.assertTrue(any('segundos' in s and 'FIN' in s for s in self.logs))
 
     def test_timeout_duro_no_espera_worker_terco(self):
@@ -72,6 +71,7 @@ class VerificadorTests(unittest.TestCase):
         self.assertLess(time.monotonic()-inicio,3)
         self.assertEqual(r['observaciones'][0]['estado'],'TIEMPO_FUENTE')
         self.assertEqual(r['resumen']['fuentes_timeout'],1)
+        self.assertTrue(any('PROGRESO' in s for s in self.logs))
         self.assertEqual(r['resumen']['funcionaron'],1)
         self.assertEqual(r['resumen']['fuentes_error_red'],1)
 
