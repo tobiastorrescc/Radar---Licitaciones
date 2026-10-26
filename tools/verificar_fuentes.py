@@ -42,7 +42,7 @@ def worker(config, checkpoint, conexion, lectura, max_paginas):
         guardar(checkpoint, {**r, 'actualizado': ahora(), 'duracion_segundos': round(time.monotonic()-inicio, 3)})
     try:
         r = conectores.explorar(fuente['url'], fuente, max_paginas=max_paginas, progreso=progreso,
-            fetch=partial(conectores.descargar, conexion_timeout=conexion, lectura_timeout=lectura))
+            fetch=partial(conectores.descargar, conexion_timeout=fuente.get('conexion_timeout',conexion), lectura_timeout=fuente.get('lectura_timeout',lectura)))
     except Exception as e:
         r = {**leer_checkpoint(checkpoint), 'estado': 'ERROR', 'finalizado': True,
              'errores': [{'categoria': 'INTERNO', 'tipo': type(e).__name__, 'timeout': False, 'error': str(e)}]}
@@ -64,11 +64,13 @@ def detener(proceso):
 def resumen(observaciones):
     terminadas = [r for r in observaciones if r['estado'] not in ('NO_INICIADA', 'EN_CURSO')]
     intentadas = [r for r in observaciones if r['iniciada']]
-    exitosas = [r for r in terminadas if r['estado'] == 'OPERATIVA']
-    fallidas = [r for r in terminadas if r['iniciada'] and r['estado'] != 'OPERATIVA']
+    exitosas = [r for r in terminadas if r['estado'] in ('OPERATIVA','SIN_PUBLICACIONES')]
+    fallidas = [r for r in terminadas if r['iniciada'] and r['estado'] not in ('OPERATIVA','SIN_PUBLICACIONES')]
     errores = Counter(e['categoria'] for r in intentadas for e in r.get('errores', []))
     return {'configuradas': len(observaciones), 'consultadas': len(intentadas),
         'finalizadas': sum(r['iniciada'] for r in terminadas), 'funcionaron': len(exitosas),
+        'parciales_con_publicaciones': sum(r.get('publicaciones_detectadas',0)>0 and r['estado']!='OPERATIVA' for r in terminadas),
+        'sin_publicaciones_confirmado': sum(r['estado']=='SIN_PUBLICACIONES' for r in terminadas),
         'con_publicaciones': sum(r.get('publicaciones_detectadas', 0) > 0 for r in intentadas),
         'con_respuesta_procesada': sum(r.get('paginas_correctas', 0) > 0 for r in intentadas),
         'fallaron': len(fallidas), 'no_iniciadas': len(observaciones)-len(intentadas),
@@ -140,7 +142,7 @@ def ejecutar(fuentes, salida, *, concurrencia=4, conexion=5, lectura=10,
             return
         r = info['registro']
         r.update({k:avance[k] for k in ('paginas_correctas','paginas_visitadas','errores','limites',
-                 'fase','url_actual','documentos_leidos') if k in avance})
+                 'fase','url_actual','documentos_leidos','alcance','documentos_pendientes','evidencias_listado_vacio') if k in avance})
         r['publicaciones_detectadas'] = len(avance.get('oportunidades', []))
         r['duracion_segundos'] = round(time.monotonic()-info['inicio'],3)
     def finalizar(info, motivo=None):
@@ -165,7 +167,9 @@ def ejecutar(fuentes, salida, *, concurrencia=4, conexion=5, lectura=10,
                 'oportunidades':avance.get('oportunidades',[])})
         info['stderr'].close()
         evento('FIN', id=r['id'], url=r['url'], estado=r['estado'], segundos=r['duracion_segundos'],
-               publicaciones=r['publicaciones_detectadas'], errores=[e['categoria'] for e in r['errores']])
+               publicaciones=r['publicaciones_detectadas'], errores=dict(Counter(e['categoria'] for e in r['errores'])),
+               muestras_errores=list({(e['tipo'],e['error']):{'tipo':e['tipo'],'error':e['error'],'url':e.get('url')} for e in r['errores']}.values())[:5],
+               muestra_publicaciones=[{'titulo':p.get('titulo','')[:300],'objeto':p.get('objeto','')[:300],'url':p.get('url')} for p in avance.get('oportunidades',[])[:2]])
     def cancelar(signum, frame):
         cancelada.append(signum)
     anteriores = {}

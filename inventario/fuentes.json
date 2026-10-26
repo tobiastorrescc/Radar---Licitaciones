@@ -15,7 +15,16 @@
       "fecha": "2026-10-25",
       "observacion": "Fuente heredada; pendiente detección estructurada"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "adaptador": "rosario",
+    "urls_inicio": [
+      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura"
+    ],
+    "seguir_patrones": [
+      "/inicio/result-busq-compras-licitaciones\\\\?recomendada=apertura&tipoRecomendada="
+    ]
   },
   {
     "id": "fuente-002",
@@ -33,7 +42,11 @@
       "fecha": "2026-10-25",
       "observacion": "Cartelera indexada; consulta web directa agotó tiempo"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "conexion_timeout": 12,
+    "lectura_timeout": 12
   },
   {
     "id": "fuente-003",
@@ -51,7 +64,10 @@
       "fecha": "2026-10-25",
       "observacion": "Listado indexado con publicaciones y enlaces de apertura"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "adaptador": "epe"
   },
   {
     "id": "fuente-004",
@@ -105,7 +121,11 @@
       "fecha": "2026-10-25",
       "observacion": "Publicaciones indexadas con número de procedimiento"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "conexion_timeout": 12,
+    "lectura_timeout": 12
   },
   {
     "id": "fuente-007",
@@ -123,7 +143,10 @@
       "fecha": "2026-10-25",
       "observacion": "Listado leído por web; fichas y páginas 2 a 5 localizadas"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "organismos_multiples": true
   },
   {
     "id": "fuente-008",
@@ -141,7 +164,9 @@
       "fecha": "2026-10-25",
       "observacion": "Listado indexado incluye decretos de llamados"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   {
     "id": "fuente-009",
@@ -177,7 +202,9 @@
       "fecha": "2026-10-25",
       "observacion": "Listado indexado con convocatoria de vigilancia"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   {
     "id": "fuente-011",
@@ -249,7 +276,13 @@
       "fecha": "2026-10-25",
       "observacion": "Licitación pública 003/2026 indexada"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "seguir_patrones": [
+      "/wp/documents/(?:licitacion-|concurso-de-precios-|segundo-llamado-)"
+    ],
+    "descubrir_menu": true
   },
   {
     "id": "fuente-015",
@@ -292,18 +325,20 @@
     "organismo": "Municipalidad de Santo Tomé",
     "localidad": "Santo Tomé",
     "provincia": "Santa Fe",
-    "url": "https://municipiosantotome.gob.ar/boletin-oficial/",
+    "url": "https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia",
     "tipo_portal": "boletin_pdf",
     "estado_verificacion": "PENDIENTE_EJECUCION",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
-      "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
-      "url": "https://municipiosantotome.gob.ar/boletin-oficial/",
-      "fecha": "2026-10-25",
-      "observacion": "Índice oficial de boletines localizado; extracción por PDF pendiente de red"
+      "url": "https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia",
+      "observacion": "Sitio santafesino validado: Iriondo1649, CP3016. La URL anterior correspondía a Corrientes y se descarta.",
+      "fecha": "2026-10-25"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "url_anterior_incorrecta": "https://municipiosantotome.gob.ar/boletin-oficial/"
   },
   {
     "id": "fuente-018",
@@ -321,7 +356,9 @@
       "fecha": "2026-10-25",
       "observacion": "Concursos públicos y privados indexados"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   {
     "id": "fuente-019",
@@ -339,7 +376,9 @@
       "fecha": "2026-10-25",
       "observacion": "Publicaciones de obras indexadas"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   {
     "id": "fuente-020",
@@ -375,7 +414,9 @@
       "fecha": "2026-10-25",
       "observacion": "Listado 2026 indexado"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   {
     "id": "fuente-022",
@@ -393,7 +434,9 @@
       "fecha": "2026-10-25",
       "observacion": "Publicaciones numeradas indexadas"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   {
     "id": "fuente-023",
@@ -429,7 +472,11 @@
       "fecha": "2026-10-25",
       "observacion": "Listado oficial indexado con llamados 2026 e históricos"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "organismos_multiples": true,
+    "adaptador": "minplan"
   },
   {
     "id": "fuente-025",
@@ -447,7 +494,9 @@
       "fecha": "2026-10-25",
       "observacion": "Listado leído vía web; públicas, privadas, directa, desiertas y segundos llamados"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   {
     "id": "fuente-026",
@@ -465,7 +514,9 @@
       "fecha": "2026-10-25",
       "observacion": "Concursos y licitaciones indexados"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   {
     "id": "fuente-027",
@@ -483,14 +534,17 @@
       "fecha": "2026-10-25",
       "observacion": "Listado oficial indexado"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "encoding": "cp1252"
   },
   {
     "id": "fuente-028",
     "organismo": "Vialidad Entre Ríos",
     "localidad": "Paraná",
     "provincia": "Entre Ríos",
-    "url": "https://aplicaciones.vialidadentrerios.gob.ar/obralic/web/licitacion/listado",
+    "url": "https://www.dpver.gov.ar/category/licitaciones-2026/",
     "tipo_portal": "html_pdf",
     "estado_verificacion": "PENDIENTE_EJECUCION",
     "incorporada": true,
@@ -501,7 +555,13 @@
       "fecha": "2026-10-25",
       "observacion": "Listado oficial indexado con objeto y fecha"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "url_anterior_404": "https://aplicaciones.vialidadentrerios.gob.ar/obralic/web/licitacion/listado",
+    "seguir_patrones": [
+      "/category/licitaciones-2026/page/"
+    ]
   },
   {
     "id": "fuente-029",
@@ -519,7 +579,9 @@
       "fecha": "2026-10-25",
       "observacion": "Convocatorias numeradas indexadas"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   {
     "id": "fuente-030",
@@ -537,7 +599,9 @@
       "fecha": "2026-10-25",
       "observacion": "Listado oficial indexado con transporte escolar"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   {
     "id": "fuente-031",
@@ -573,7 +637,9 @@
       "fecha": "2026-10-25",
       "observacion": "Listado oficial indexado: públicas, privadas, segundo llamado, desierta"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   {
     "id": "fuente-033",
@@ -627,7 +693,10 @@
       "fecha": "2026-10-25",
       "observacion": "Listado oficial indexado; antigüedad requiere comprobación"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "adaptador": "cdelu"
   },
   {
     "id": "fuente-036",
@@ -663,7 +732,9 @@
       "fecha": "2026-10-25",
       "observacion": "Listado indexado con decretos de llamados"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   {
     "id": "fuente-038",
@@ -681,7 +752,10 @@
       "fecha": "2026-10-25",
       "observacion": "Tabla oficial anual indexada"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "tipo_tabla": "Licitación Privada"
   },
   {
     "id": "fuente-039",
@@ -699,7 +773,13 @@
       "fecha": "2026-10-25",
       "observacion": "Archivo oficial de licitaciones públicas indexado"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "tipo_tabla": "Licitación Pública",
+    "seguir_patrones": [
+      "/licitaciones-publicas-\\d{4}/"
+    ]
   },
   {
     "id": "fuente-040",
@@ -735,7 +815,9 @@
       "fecha": "2026-10-25",
       "observacion": "Publicaciones oficiales antiguas 2022-2023; no inferir ausencia de nuevas"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   {
     "id": "fuente-042",
@@ -753,7 +835,12 @@
       "fecha": "2026-10-25",
       "observacion": "Sección oficial indexada; extracción pendiente"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "urls_inicio": [
+      "https://nuevo.nogoya.gob.ar/transparencia/compras-licitaciones-y-concursos/"
+    ]
   },
   {
     "id": "fuente-043",
@@ -771,7 +858,14 @@
       "fecha": "2026-10-25",
       "observacion": "Sección oficial de compras indexada"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "adaptador": "lapaz",
+    "urls_inicio": [
+      "https://haciendalapaz.gob.ar/licitaciones",
+      "https://haciendalapaz.gob.ar/concursos-de-precios"
+    ]
   },
   {
     "id": "fuente-044",
@@ -789,7 +883,13 @@
       "fecha": "2026-10-25",
       "observacion": "Boletín oficial digital municipal indexado"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "seguir_patrones": [
+      "/licitaciones-\\d{4}/?$"
+    ],
+    "indice_documentos": true
   },
   {
     "id": "fuente-045",
@@ -807,7 +907,9 @@
       "fecha": "2026-10-25",
       "observacion": "Listado oficial indexado con 2024 e históricos"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   {
     "id": "fuente-046",
@@ -825,7 +927,10 @@
       "fecha": "2026-10-25",
       "observacion": "Sección oficial de públicas, concursos y directas indexada"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "incluir_aside": true
   },
   {
     "id": "fuente-047",
@@ -879,7 +984,12 @@
       "fecha": "2026-10-25",
       "observacion": "Portal municipal indexado; prueba de detección pendiente"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "dominios_documentos": [
+      "aplicativos.pergamino.gob.ar"
+    ]
   },
   {
     "id": "fuente-050",
@@ -897,7 +1007,9 @@
       "fecha": "2026-10-25",
       "observacion": "Llamados públicos 2026 indexados"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   {
     "id": "fuente-051",
@@ -915,7 +1027,14 @@
       "fecha": "2026-10-25",
       "observacion": "Portal oficial indexado; verificar destinos de listados"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "adaptador": "baradero",
+    "urls_inicio": [
+      "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica",
+      "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Privada"
+    ]
   },
   {
     "id": "fuente-052",
@@ -933,7 +1052,9 @@
       "fecha": "2026-10-25",
       "observacion": "Listado oficial de públicas con objetos indexado"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   {
     "id": "fuente-053",
@@ -951,6 +1072,9 @@
       "fecha": "2026-10-25",
       "observacion": "Listado oficial de privadas indexado"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "adaptador": "rojas-compras"
   }
 ]

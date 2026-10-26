@@ -10,6 +10,10 @@ from urllib.error import HTTPError, URLError
 import re
 import subprocess
 import unicodedata
+import extractores
+import documentos
+import gzip
+import json
 
 
 def normalizar(texto):
@@ -150,11 +154,15 @@ class _HTTPSHandler(HTTPSHandler):
 def descargar(url, conexion_timeout=5, lectura_timeout=10):
     # build_opener conserva proxies del entorno y validación TLS predeterminada.
     opener = build_opener(_HTTPHandler(lectura_timeout), _HTTPSHandler(lectura_timeout))
+    url = extractores.url_publica(url)
     with opener.open(Request(url, headers={'User-Agent': 'RadarLicitaciones/2.0'}),
                      timeout=conexion_timeout) as r:
         datos = r.read(12_000_001)
         if len(datos) > 12_000_000:
             raise ValueError('Respuesta supera 12 MB; recorrido parcial')
+        if r.headers.get('Content-Encoding', '').lower()=='gzip' or datos.startswith(b'\x1f\x8b'):
+            datos=gzip.decompress(datos)
+            if len(datos)>12_000_000:raise ValueError('Contenido descomprimido supera 12 MB')
         return datos, r.headers.get('Content-Type', ''), r.geturl()
 
 
@@ -180,90 +188,143 @@ def identidad(fuente, titulo, url):
     return sha256(clave.encode()).hexdigest()
 
 
-def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
-    fetch = fetch or descargar
-    pending, seen, items, errors = deque([fuente]), set(), {}, []
-    limits, correctas, documentos = [], 0, 0
-    hosts = {urlparse(fuente).netloc, *config.get('dominios_documentos', [])}
-    def snapshot(fase, actual=None, finalizado=False):
-        result = {'oportunidades': list(items.values()), 'errores': list(errors),
-                  'limites': list(limits), 'paginas_visitadas': len(seen),
-                  'paginas_correctas': correctas, 'documentos_leidos': documentos,
-                  'cobertura_completa': False, 'fase': fase, 'url_actual': actual,
-                  'finalizado': finalizado}
-        if progreso:
-            progreso(result)
-        return result
+def decodificar_html(datos,tipo):
+    m=re.search(r'charset=["\']?([\w-]+)',tipo,re.I)
+    if not m:
+        m=re.search(rb'charset=["\']?([\w-]+)',datos[:6000],re.I)
+    encoding=m[1] if m else None
+    if isinstance(encoding,bytes):encoding=encoding.decode('ascii')
+    if encoding:
+        try:return datos.decode(encoding)
+        except (UnicodeDecodeError,LookupError):pass
+    try:return datos.decode('utf-8-sig')
+    except UnicodeDecodeError:return datos.decode('cp1252',errors='replace')
 
+
+def _host(url):
+    return (urlparse(url).hostname or '').lower().removeprefix('www.')
+
+
+def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
+    fetch=fetch or descargar
+    pending=deque([(u,'LISTADO',None) for u in config.get('urls_inicio',[fuente])])
+    seen=set();items={};errors=[];limits=[];correctas=0;documentos_leidos=0
+    hosts={_host(fuente),*(_host('https://'+h) for h in config.get('dominios_documentos',[]))}
+    documento_pendiente={};vacios=[]
+    modo=config.get('lectura_adjuntos','todos')
+    def snapshot(fase,actual=None,finalizado=False):
+        r={'oportunidades':list(items.values()),'errores':list(errors),'limites':list(limits),
+           'paginas_visitadas':len(seen),'paginas_correctas':correctas,'documentos_leidos':documentos_leidos,
+           'cobertura_completa':False,'fase':fase,'url_actual':actual,'finalizado':finalizado,
+           'alcance':'Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto',
+           'documentos_pendientes':list(documento_pendiente.values()),'evidencias_listado_vacio':list(vacios)}
+        if progreso:progreso(r)
+        return r
+    def agregar(r):
+        key=sha256('|'.join((fuente,r['url'],normalizar(r['titulo']))).encode()).hexdigest()
+        # Agrupar los anexos de la misma publicación, preservando nuevos llamados/situaciones.
+        if r.get('procedimiento'):
+            entidad=r['url'] if config.get('organismos_multiples') else ''
+            key=sha256('|'.join((fuente,r['procedimiento'],r.get('evento_publicado') or '',r.get('situacion_publicada') or '',entidad)).encode()).hexdigest()
+        anterior=items.get(key,{})
+        docs={d['url']:d for d in anterior.get('documentos',[])+r.get('documentos',[])}
+        if anterior and len(anterior['titulo'])>len(r['titulo']):
+            r={**r,**anterior}
+        c=clasificar(r['titulo'])
+        registro={'id':key,'fuente':fuente,'estado':'PUBLICACION_DETECTADA',
+             'organismo':config.get('organismo'),'localidad':config.get('localidad'),'provincia':config.get('provincia'),
+             'presupuesto':None,'fecha_apertura':None,'condiciones_pago':None,'estimacion_comercial':None,
+             'motivo_sin_estimacion':'Faltan costos y precios comprobables',**c,**r,
+             'documentos':list(docs.values()),'pago_prioritario':any(x in normalizar(r['titulo']) for x in ('pago contado','pago al contado','contra entrega','pago inmediato'))}
+        registro['enlace_pliego']=next((d['url'] for d in registro['documentos'] if 'pliego' in normalizar(d.get('titulo') or '')),registro['documentos'][0]['url'] if registro['documentos'] else None)
+        items[key]=registro
+        return key
+    def texto_documento(texto,url,referencia=None):
+        lineas=texto.splitlines()
+        posiciones=[i for i,l in enumerate(lineas) if extractores.procesos(l)]
+        if not posiciones and referencia and texto.strip():
+            p=dict(items[referencia]);p['objeto']=texto;p['texto_documento']=texto;p['detalle_completo']=True
+            items[referencia]=p
+            return
+        for n,i in enumerate(posiciones):
+            t=' '.join(lineas[i:posiciones[n+1] if n+1<len(posiciones) else len(lineas)])
+            ps=extractores.procesos(t)
+            if not ps:continue
+            p=ps[0]
+            evento='|'.join(sorted(set(extractores.EVENTO.findall(normalizar(t))))) or None
+            r={'titulo':t,'objeto':t,'url':url,'evidencia_url':url,'documentos':[{'url':url,'titulo':'Documento'}],
+               'procedimiento':p['procedimiento'],'evento_publicado':evento,'detalle_completo':True}
+            agregar(r)
+            if referencia in items:
+                items[referencia]['objeto']=texto
+                items[referencia]['texto_documento']=texto
+                items[referencia]['detalle_completo']=True
     while pending:
-        if len(seen) >= max_paginas:
-            limits.append('max_paginas'); break
-        url = urldefrag(pending.popleft())[0]
-        if url in seen or urlparse(url).scheme not in ('https', 'http') or urlparse(url).netloc not in hosts:
-            continue
-        seen.add(url)
-        fase = 'DESCARGA'
-        snapshot(fase, url)
+        if len(seen)>=max_paginas:limits.append('max_paginas');break
+        url,clase,referencia=pending.popleft();url=extractores.url_publica(url)
+        if not url or url in seen or _host(url) not in hosts:continue
+        seen.add(url);fase='DESCARGA';snapshot(fase,url)
         try:
-            datos, tipo, final = fetch(url)
-            fase = 'EXTRACCION'
-            snapshot(fase, url)
-            if urlparse(final).netloc not in hosts:
-                raise ValueError('Redirección fuera de dominios declarados')
-            if 'pdf' in tipo.lower() or datos.startswith(b'%PDF-'):
-                texto = extraer_pdf(datos)
-                documentos += 1
-                # Separación por encabezados de procedimiento dentro de boletines.
-                lineas = texto.splitlines()
-                inicios = [i for i, line in enumerate(lineas) if PUBLICACION.search(normalizar(line))]
-                registros = [(' '.join(lineas[i:inicios[n+1] if n+1 < len(inicios) else len(lineas)]), url)
-                             for n, i in enumerate(inicios)]
-                parser = None
-            elif 'html' in tipo.lower():
-                registros, parser = extraer_html(datos.decode('utf-8', errors='replace'), final)
-            else:
-                raise ValueError('Formato pendiente de adaptador: ' + tipo)
-            correctas += 1
-            for titulo, target in registros:
-                if urlparse(target).scheme not in ('http', 'https'):
-                    continue
-                c = clasificar(titulo)
-                key = identidad(fuente, titulo, target)
-                items[key] = {'id': key, 'titulo': titulo.strip(), 'objeto': titulo.strip(), 'url': target,
-                    'fuente': fuente, 'evidencia_url': url, **c, 'estado': 'PUBLICACION_DETECTADA',
-                    'organismo': config.get('organismo'), 'localidad': config.get('localidad'),
-                    'provincia': config.get('provincia'), 'pago_prioritario': any(x in normalizar(titulo)
-                      for x in ('pago contado', 'pago al contado', 'contra entrega', 'pago inmediato')),
-                    'fecha_apertura': None, 'presupuesto': None, 'condiciones_pago': None,
-                    'estimacion_comercial': None, 'motivo_sin_estimacion': 'Faltan costos y precios comprobables',
-                    'enlace_pliego': target if urlparse(target).path.lower().endswith('.pdf') else None}
-            if parser:
-                for link in parser.links:
-                    target = urljoin(final, link['url'])
-                    t = normalizar(link['texto'])
-                    path = urlparse(target).path.lower()
-                    paginacion = ('next' in link['rel'].split() or t in ('siguiente', 'siguiente »', 'next', '»', '›')
-                                  or bool(re.search(r'/page/\d+|[?&](?:page|pagina|start)=\d+', target)))
-                    documento = path.endswith('.pdf')
-                    detalle = bool(PUBLICACION.search(t))
-                    if paginacion or documento or detalle:
-                        if target not in seen:
-                            pending.append(target)
+            datos,tipo,final=fetch(url)
+            fase='EXTRACCION';snapshot(fase,url)
+            if _host(final) not in hosts:raise ValueError('Redirección fuera de dominios oficiales declarados')
+            es_html='html' in tipo.lower() and not datos.startswith(b'%PDF-')
+            if not es_html:
+                texto=documentos.leer(datos,tipo,url,ocr=config.get('ocr',False),
+                    progreso=lambda t:(texto_documento(t,url,referencia),snapshot('EXTRACCION',url)))
+                texto_documento(texto,url,referencia);documentos_leidos+=1;correctas+=1
+                documento_pendiente.pop(url,None)
+                snapshot('PAGINA_FINALIZADA',url);continue
+            html=decodificar_html(datos,tipo)
+            pagina_config={**config,**(referencia if isinstance(referencia,dict) else {})}
+            registros,links,dom=extractores.extraer(html,final,pagina_config)
+            correctas+=1
+            texto=normalizar(dom.root.text)
+            # El vacío debe estar publicado explícitamente; no se infiere de falta de matches.
+            m=re.search(r'no (?:hay|existen|se encontraron) (?:licitaciones|publicaciones|procesos de compra)|sin licitaciones vigentes',texto)
+            if m:vacios.append({'url':url,'texto':m.group(0)})
+            if not registros and re.search(r'inicia sesi[oó]n para|solo esta disponible dentro de la red|debe iniciar sesi[oó]n',texto):
+                errors.append({'url':url,'tipo':'AccesoRestringido','categoria':'ACCESO','timeout':False,'error':'El portal requiere autenticación o red privada; no se elude'})
+            for r in registros:
+                key=agregar(r)
+                if clase=='DETALLE' and referencia in items and r.get('detalle_completo'):
+                    items[referencia]['objeto']=r['objeto'];items[referencia]['detalle_completo']=True
+                for doc in r.get('documentos',[]):
+                    destino=doc['url']
+                    necesario=modo=='todos' or not r.get('detalle_completo')
+                    if necesario and _host(destino) in hosts and destino not in seen:
+                        documento_pendiente[destino]={'url':destino,'publicacion_id':key}
+                        pending.append((destino,'DOCUMENTO',key))
+                if not r.get('detalle_completo') and r['url']!=url and not urlparse(r['url']).path.lower().endswith(extractores.ADJUNTOS):
+                    pending.append((r['url'],'DETALLE',key))
+            for l in links:
+                destino=l['url'];et=normalizar(l['texto']);path=urlparse(destino).path
+                if _host(destino) not in hosts or destino in seen or destino==url:continue
+                raiz=urlparse(fuente).path.rstrip('/')
+                pagina=clase=='LISTADO' and (('next' in l['rel'].split() or et in ('siguiente','siguiente »','next','»','›') or
+                          bool(re.search(r'/page/\d+|[?&](?:page|pagina|start)=\d+',destino))) and path.startswith(raiz))
+                navegar=any(re.search(patron,destino) for patron in config.get('seguir_patrones',[]))
+                if pagina or navegar:
+                    contexto={'tipo_contexto':l.get('tipo_contexto',pagina_config.get('tipo_contexto'))}
+                    pending.appendleft((destino,'LISTADO',contexto))
+                # Un documento del índice de boletines puede contener llamados sin título HTML.
+                if not registros and config.get('indice_documentos') and path.lower().endswith(extractores.ADJUNTOS):
+                    pending.append((destino,'DOCUMENTO',None))
+            snapshot('PAGINA_FINALIZADA',url)
         except Exception as e:
-            errors.append({'url': url, **clasificar_error(e, fase)})
-        snapshot('PAGINA_FINALIZADA', url)
-    estado = 'OPERATIVA' if items else 'PENDIENTE'
-    if not correctas and errors:
-        estado = 'BLOQUEADA' if all(e['categoria'] == 'RED' for e in errors) else 'PENDIENTE'
-    if items and (errors or limits):
-        estado = 'PARCIAL'
-    result = snapshot('FINALIZADA', finalizado=True)
-    result['estado'] = estado
-    # Un HTTP 200 sin publicaciones no demuestra éxito de extracción.
-    if not items and not errors and correctas:
-        result['errores'].append({'url': fuente, 'tipo': 'SinPublicacionesDetectadas',
-            'categoria': 'EXTRACCION', 'timeout': False,
-            'error': 'No se reconocieron publicaciones; revisar estructura, JavaScript o listado vacío'})
-    if progreso:
-        progreso(result)
+            errors.append({'url':url,**clasificar_error(e,fase)})
+            snapshot('PAGINA_FINALIZADA',url)
+    incompletas=[r['id'] for r in items.values() if not r.get('detalle_completo')]
+    if incompletas:
+        errors.append({'url':fuente,'tipo':'DetalleIncompleto','categoria':'EXTRACCION','timeout':False,
+                       'error':'Publicaciones identificadas sin objeto completo','publicaciones':incompletas})
+    estado='OPERATIVA' if items else 'PENDIENTE'
+    if not items and vacios and not errors and not limits:estado='SIN_PUBLICACIONES'
+    if not correctas and errors:estado='BLOQUEADA' if all(e['categoria']=='RED' for e in errors) else 'PENDIENTE'
+    if items and (errors or limits):estado='PARCIAL'
+    if not items and not vacios and not errors:
+        errors.append({'url':fuente,'tipo':'SinPublicacionesDetectadas','categoria':'EXTRACCION','timeout':False,
+                       'error':'Listado no reconocido; no se declara vacío'})
+    result=snapshot('FINALIZADA',finalizado=True);result['estado']=estado
+    if progreso:progreso(result)
     return result

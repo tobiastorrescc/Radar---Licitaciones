@@ -1,4 +1,4 @@
-# Fuentes incorporadas para consulta; verificación operativa pendiente. Véase inventario/fuentes.json
+# Fuentes activadas; estado y evidencia en inventario/fuentes.json
 https://www.rosario.gob.ar/inicio/compras-y-licitaciones
 https://compras.santafe.gob.ar/
 https://www.epe.santafe.gov.ar/app2/aperturas
@@ -7,7 +7,7 @@ https://aeropuertorosario.com/institucional/licitaciones/
 https://www.casilda.gob.ar/web/licitaciones-casilda/
 https://cdg.gob.ar/transparencia/licitaciones-y-concursos/
 https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/
-https://municipiosantotome.gob.ar/boletin-oficial/
+https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia
 https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/
 https://transparencia.santafeciudad.gov.ar/contrataciones-obra/
 https://venadotuerto.gob.ar/licitaciones/
@@ -16,7 +16,7 @@ https://www.entrerios.gov.ar/minplan/licitaciones
 https://cafesg.gob.ar/cafesg2/licitaciones/
 https://www.jusentrerios.gov.ar/contrataciones/
 https://www.ater.gob.ar/ater2/licitaciones.asp
-https://aplicaciones.vialidadentrerios.gob.ar/obralic/web/licitacion/listado
+https://www.dpver.gov.ar/category/licitaciones-2026/
 https://www.enersa.com.ar/area-proveedores/
 https://institutobecario.gov.ar/licitaciones.php
 https://sanjose.gob.ar/concursos-licitaciones/

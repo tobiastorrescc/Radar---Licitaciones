@@ -4,251 +4,374 @@
     "localidad": "Rosario",
     "provincia": "Santa Fe",
     "conector": "publicaciones",
-    "tipo_portal": "html"
+    "tipo_portal": "html",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "adaptador": "rosario",
+    "urls_inicio": [
+      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura"
+    ],
+    "seguir_patrones": [
+      "/inicio/result-busq-compras-licitaciones\\\\?recomendada=apertura&tipoRecomendada="
+    ]
   },
   "https://compras.santafe.gob.ar/": {
     "organismo": "Gobierno de Santa Fe",
     "localidad": "Santa Fe",
     "provincia": "Santa Fe",
     "conector": "publicaciones",
-    "tipo_portal": "tabla"
+    "tipo_portal": "tabla",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "conexion_timeout": 12,
+    "lectura_timeout": 12
   },
   "https://www.epe.santafe.gov.ar/app2/aperturas": {
     "organismo": "EPE",
     "localidad": "Santa Fe",
     "provincia": "Santa Fe",
     "conector": "publicaciones",
-    "tipo_portal": "tabla"
+    "tipo_portal": "tabla",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "adaptador": "epe"
   },
   "https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/": {
     "organismo": "Poder Judicial de Santa Fe",
     "localidad": "Santa Fe",
     "provincia": "Santa Fe",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "conexion_timeout": 12,
+    "lectura_timeout": 12
   },
   "https://aeropuertorosario.com/institucional/licitaciones/": {
     "organismo": "Aeropuerto Internacional Rosario",
     "localidad": "Rosario",
     "provincia": "Santa Fe",
     "conector": "publicaciones",
-    "tipo_portal": "html_paginado_pdf"
+    "tipo_portal": "html_paginado_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "organismos_multiples": true
   },
   "https://www.casilda.gob.ar/web/licitaciones-casilda/": {
     "organismo": "Municipalidad de Casilda",
     "localidad": "Casilda",
     "provincia": "Santa Fe",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/": {
     "organismo": "Municipalidad de Cañada de Gómez",
     "localidad": "Cañada de Gómez",
     "provincia": "Santa Fe",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   "https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/": {
     "organismo": "Municipalidad de Roldán",
     "localidad": "Roldán",
     "provincia": "Santa Fe",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
-  },
-  "https://municipiosantotome.gob.ar/boletin-oficial/": {
-    "organismo": "Municipalidad de Santo Tomé",
-    "localidad": "Santo Tomé",
-    "provincia": "Santa Fe",
-    "conector": "publicaciones",
-    "tipo_portal": "boletin_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "seguir_patrones": [
+      "/wp/documents/(?:licitacion-|concurso-de-precios-|segundo-llamado-)"
+    ],
+    "descubrir_menu": true
   },
   "https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/": {
     "organismo": "Municipalidad de Santa Fe",
     "localidad": "Santa Fe",
     "provincia": "Santa Fe",
     "conector": "publicaciones",
-    "tipo_portal": "html_paginado_pdf"
+    "tipo_portal": "html_paginado_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   "https://transparencia.santafeciudad.gov.ar/contrataciones-obra/": {
     "organismo": "Municipalidad de Santa Fe",
     "localidad": "Santa Fe",
     "provincia": "Santa Fe",
     "conector": "publicaciones",
-    "tipo_portal": "html_paginado_pdf"
+    "tipo_portal": "html_paginado_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   "https://venadotuerto.gob.ar/licitaciones/": {
     "organismo": "Municipalidad de Venado Tuerto",
     "localidad": "Venado Tuerto",
     "provincia": "Santa Fe",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   "https://reconquista.gob.ar/licitaciones/": {
     "organismo": "Municipalidad de Reconquista",
     "localidad": "Reconquista",
     "provincia": "Santa Fe",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   "https://www.entrerios.gov.ar/minplan/licitaciones": {
     "organismo": "Ministerio de Planeamiento e Infraestructura",
     "localidad": "Paraná",
     "provincia": "Entre Ríos",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "organismos_multiples": true,
+    "adaptador": "minplan"
   },
   "https://cafesg.gob.ar/cafesg2/licitaciones/": {
     "organismo": "CAFESG",
     "localidad": "Concordia",
     "provincia": "Entre Ríos",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   "https://www.jusentrerios.gov.ar/contrataciones/": {
     "organismo": "Poder Judicial de Entre Ríos",
     "localidad": "Paraná",
     "provincia": "Entre Ríos",
     "conector": "publicaciones",
-    "tipo_portal": "html_paginado_pdf"
+    "tipo_portal": "html_paginado_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   "https://www.ater.gob.ar/ater2/licitaciones.asp": {
     "organismo": "ATER",
     "localidad": "Paraná",
     "provincia": "Entre Ríos",
     "conector": "publicaciones",
-    "tipo_portal": "tabla_pdf"
-  },
-  "https://aplicaciones.vialidadentrerios.gob.ar/obralic/web/licitacion/listado": {
-    "organismo": "Vialidad Entre Ríos",
-    "localidad": "Paraná",
-    "provincia": "Entre Ríos",
-    "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "tabla_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "encoding": "cp1252"
   },
   "https://www.enersa.com.ar/area-proveedores/": {
     "organismo": "ENERSA",
     "localidad": "Paraná",
     "provincia": "Entre Ríos",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   "https://institutobecario.gov.ar/licitaciones.php": {
     "organismo": "Instituto Becario",
     "localidad": "Paraná",
     "provincia": "Entre Ríos",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   "https://sanjose.gob.ar/concursos-licitaciones/": {
     "organismo": "Municipalidad de San José",
     "localidad": "San José",
     "provincia": "Entre Ríos",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones": {
     "organismo": "Municipalidad de Concepción del Uruguay",
     "localidad": "Concepción del Uruguay",
     "provincia": "Entre Ríos",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "adaptador": "cdelu"
   },
   "https://municipalidad.gualeguay.gob.ar/modulos/transparencia/licitaciones_publicas.php": {
     "organismo": "Municipalidad de Gualeguay",
     "localidad": "Gualeguay",
     "provincia": "Entre Ríos",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   "https://www.crespo.gob.ar/licitaciones-privadas-2026/": {
     "organismo": "Municipalidad de Crespo",
     "localidad": "Crespo",
     "provincia": "Entre Ríos",
     "conector": "publicaciones",
-    "tipo_portal": "tabla_pdf"
+    "tipo_portal": "tabla_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "tipo_tabla": "Licitación Privada"
   },
   "https://www.crespo.gob.ar/category/licitacion-publica/": {
     "organismo": "Municipalidad de Crespo",
     "localidad": "Crespo",
     "provincia": "Entre Ríos",
     "conector": "publicaciones",
-    "tipo_portal": "html_paginado_pdf"
+    "tipo_portal": "html_paginado_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "tipo_tabla": "Licitación Pública",
+    "seguir_patrones": [
+      "/licitaciones-publicas-\\d{4}/"
+    ]
   },
   "https://www.federacion.gob.ar/licitaciones": {
     "organismo": "Municipalidad de Federación",
     "localidad": "Federación",
     "provincia": "Entre Ríos",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   "https://nuevo.nogoya.gob.ar/compras-licitaciones-y-concursos-nuevo/": {
     "organismo": "Municipalidad de Nogoyá",
     "localidad": "Nogoyá",
     "provincia": "Entre Ríos",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "urls_inicio": [
+      "https://nuevo.nogoya.gob.ar/transparencia/compras-licitaciones-y-concursos/"
+    ]
   },
   "https://haciendalapaz.gob.ar/compras/": {
     "organismo": "Municipalidad de La Paz",
     "localidad": "La Paz",
     "provincia": "Entre Ríos",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "adaptador": "lapaz",
+    "urls_inicio": [
+      "https://haciendalapaz.gob.ar/licitaciones",
+      "https://haciendalapaz.gob.ar/concursos-de-precios"
+    ]
   },
   "https://villaguay.gob.ar/boletindigital/": {
     "organismo": "Municipalidad de Villaguay",
     "localidad": "Villaguay",
     "provincia": "Entre Ríos",
     "conector": "publicaciones",
-    "tipo_portal": "boletin_pdf"
+    "tipo_portal": "boletin_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "seguir_patrones": [
+      "/licitaciones-\\d{4}/?$"
+    ],
+    "indice_documentos": true
   },
   "https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas": {
     "organismo": "Municipalidad de Rosario del Tala",
     "localidad": "Rosario del Tala",
     "provincia": "Entre Ríos",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos": {
     "organismo": "Municipalidad de San Nicolás",
     "localidad": "San Nicolás",
     "provincia": "Buenos Aires",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "incluir_aside": true
   },
   "https://compras.pergamino.gob.ar/": {
     "organismo": "Municipalidad de Pergamino",
     "localidad": "Pergamino",
     "provincia": "Buenos Aires",
     "conector": "publicaciones",
-    "tipo_portal": "html"
+    "tipo_portal": "html",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "dominios_documentos": [
+      "aplicativos.pergamino.gob.ar"
+    ]
   },
   "https://arrecifes.gob.ar/informacion-publica/licitaciones/": {
     "organismo": "Municipalidad de Arrecifes",
     "localidad": "Arrecifes",
     "provincia": "Buenos Aires",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones": {
     "organismo": "Municipalidad de Baradero",
     "localidad": "Baradero",
     "provincia": "Buenos Aires",
     "conector": "publicaciones",
-    "tipo_portal": "html"
+    "tipo_portal": "html",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "adaptador": "baradero",
+    "urls_inicio": [
+      "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica",
+      "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Privada"
+    ]
   },
   "https://transparencia.rojas.gov.ar/index.php?action=17": {
     "organismo": "Municipalidad de Rojas",
     "localidad": "Rojas",
     "provincia": "Buenos Aires",
     "conector": "publicaciones",
-    "tipo_portal": "html_pdf"
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
   },
   "https://transparencia.rojas.gov.ar/index.php?action=18": {
     "organismo": "Municipalidad de Rojas",
     "localidad": "Rojas",
     "provincia": "Buenos Aires",
     "conector": "publicaciones",
-    "tipo_portal": "tabla"
+    "tipo_portal": "tabla",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "adaptador": "rojas-compras"
+  },
+  "https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia": {
+    "organismo": "Municipalidad de Santo Tomé",
+    "localidad": "Santo Tomé",
+    "provincia": "Santa Fe",
+    "conector": "publicaciones",
+    "tipo_portal": "boletin_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true
+  },
+  "https://www.dpver.gov.ar/category/licitaciones-2026/": {
+    "organismo": "Vialidad Entre Ríos",
+    "localidad": "Paraná",
+    "provincia": "Entre Ríos",
+    "conector": "publicaciones",
+    "tipo_portal": "html_pdf",
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "seguir_patrones": [
+      "/category/licitaciones-2026/page/"
+    ]
   }
 }

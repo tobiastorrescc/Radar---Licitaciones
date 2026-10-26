@@ -1,0 +1,163 @@
+[
+  {
+    "archivo": "fuente-003.html",
+    "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "de74f0cf43c66ad4750713b70c330666717d9c82e9a8c3c1a92aa645e5fd284e"
+  },
+  {
+    "archivo": "fuente-007.html",
+    "url": "https://aeropuertorosario.com/institucional/licitaciones/",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "c82d8b621a812aaf05adb93ad21b56d0bcd7b7ca8cf5137bfe39275709f7814c"
+  },
+  {
+    "archivo": "fuente-008.html",
+    "url": "https://www.casilda.gob.ar/web/licitaciones-casilda/",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "cc2d73e087252fe71ee1ac89c9bc6842e6e089ba11fb048e0c3fe4c812996598"
+  },
+  {
+    "archivo": "roldan-ficha.html",
+    "url": "https://www.roldan.gov.ar/wp/documents/licitacion-publica-n-003-2026/",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "2bb29f7c31b922e379cf9379e6fbda2fb29b8b6e7647df4caf739e255e3afb6e"
+  },
+  {
+    "archivo": "fuente-021.html",
+    "url": "https://venadotuerto.gob.ar/licitaciones/",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "7dcc08be307d9ec75460cd7f77488cd974e9fdf3933e30f3f865e2f696260250"
+  },
+  {
+    "archivo": "fuente-022.html",
+    "url": "https://reconquista.gob.ar/licitaciones/",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "bf806eb605ca460640c589938748d23e448ae2f651a55639edcdfcc416002938"
+  },
+  {
+    "archivo": "fuente-024.html",
+    "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "cf5fd44fc9fc37a3e71124100ff4e3891e30d9bd116573d860452bd0bb4bf250"
+  },
+  {
+    "archivo": "fuente-025.html",
+    "url": "https://cafesg.gob.ar/cafesg2/licitaciones/",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "4cd4d8077827639ea46a5d9022a11289f62cd92e92bedbc5bc8106d06dbd718a"
+  },
+  {
+    "archivo": "fuente-026.html",
+    "url": "https://www.jusentrerios.gov.ar/contrataciones/",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "085a9a07721e5db8b22224fb0386f7f0d2a8dbe1d91810509d98f7e549a9f5db"
+  },
+  {
+    "archivo": "fuente-027.html",
+    "url": "https://www.ater.gob.ar/ater2/licitaciones.asp",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "ef93a032cf81bb6726715f71fb60dc5e3ee1b3af50742ccab7ab010398e06f43"
+  },
+  {
+    "archivo": "fuente-032.html",
+    "url": "https://sanjose.gob.ar/concursos-licitaciones/",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "50fe350012442b66319a69c6ef4152a5f0a934873b43c21994d9d2b4b5bb4278"
+  },
+  {
+    "archivo": "fuente-038.html",
+    "url": "https://www.crespo.gob.ar/licitaciones-privadas-2026/",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "d53e8589792979b63474a2d10bfc303564aaba323528c553d0159b37341f7f6f"
+  },
+  {
+    "archivo": "fuente-041.html",
+    "url": "https://www.federacion.gob.ar/licitaciones",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "ef377a4db3fb05aa5eba845e5ed9661291b37e9bd9dadca21cb5ecacee3801d2"
+  },
+  {
+    "archivo": "fuente-045.html",
+    "url": "https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "c132cb9012218f69bafa52b446cf9126defd98e5b2773d5b1df54b3672632c51"
+  },
+  {
+    "archivo": "fuente-046.html",
+    "url": "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "a17c2008fb1483af44b7181198b9f0fee2d22992487214b08b3daa272682b029"
+  },
+  {
+    "archivo": "fuente-050.html",
+    "url": "https://arrecifes.gob.ar/informacion-publica/licitaciones/",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "19092d6d5d002d1a181342e9c2b386398089ae2c348871d03298b2a1d318a6bd"
+  },
+  {
+    "archivo": "fuente-052.html",
+    "url": "https://transparencia.rojas.gov.ar/index.php?action=17",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "a96b6578d087728ce8c611ea109bb2ebd88a2777bc53ec31c0d00becd1be85f2"
+  },
+  {
+    "archivo": "rosario-resultados.html",
+    "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "877340b6ecee85666ae97142265ac102e9c2faa0e53fc6588e0d90ddcda89bde"
+  },
+  {
+    "archivo": "lapaz-licitaciones.html",
+    "url": "https://haciendalapaz.gob.ar/licitaciones/2026/",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "a3a5c3c8d0d1c5830a46543e01c37b90441a22017d7802c332fc1e6bfa73e58f"
+  },
+  {
+    "archivo": "nogoya-transparencia.html",
+    "url": "https://nuevo.nogoya.gob.ar/transparencia/compras-licitaciones-y-concursos/",
+    "run_id": 40255237183,
+    "metodo": "extracto de nodos HTML reales; sin cambiar contenido de la publicación",
+    "sha256_respuesta_capturada": "67003639bee6b54663fa82a032afe5b63f84ecdff1741ee41077300ca1fd6769"
+  },
+  {
+    "archivo": "rosario-contacto.html",
+    "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+    "run_id": 40255237183,
+    "metodo": "Extracto HTML real del contacto; regresión de falso positivo",
+    "sha256_respuesta_capturada": "7b21258bb13461419b128e3010a9cb5b6f3ee4376fedc1e79241944b28e2e61d"
+  },
+  {
+    "archivo": "cdelu-datos.html",
+    "url": "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones",
+    "run_id": 40255237183,
+    "metodo": "Primeros dos objetos JSON originales; envoltorio script reducido sin ejecutar código",
+    "sha256_respuesta_capturada": "85e10a545ec49de130a74e784b6d6c198ef2082a1ca2b3e5ee9cbd3fde1c36e7"
+  },
+  {
+    "archivo": "baradero-flight.html",
+    "url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica",
+    "run_id": 40255237183,
+    "metodo": "Script RSC público completo; se decodifica como JSON sin ejecutar JavaScript",
+    "sha256_respuesta_capturada": "7c110f176c8fd9ccaf622d5b79d6c50336dc749735e0b4a3d6a11458181c4893"
+  }
+]

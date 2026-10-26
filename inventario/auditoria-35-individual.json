@@ -1,0 +1,1356 @@
+{
+  "run": 40253451095,
+  "fuentes": [
+    {
+      "id": "fuente-001",
+      "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "estado": "OPERATIVA",
+      "publicaciones_detectadas": 1,
+      "paginas_correctas": 1,
+      "duracion_segundos": 1.878,
+      "causas": []
+    },
+    {
+      "id": "fuente-002",
+      "url": "https://compras.santafe.gob.ar/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "duracion_segundos": 6.08,
+      "causas": [
+        {
+          "tipo": "URLError",
+          "error": "<urlopen error timed out>",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-003",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "estado": "PENDIENTE",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 1,
+      "duracion_segundos": 3.037,
+      "causas": [
+        {
+          "tipo": "SinPublicacionesDetectadas",
+          "error": "No se reconocieron publicaciones; revisar estructura, JavaScript o listado vacío",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-006",
+      "url": "https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "duracion_segundos": 5.609,
+      "causas": [
+        {
+          "tipo": "URLError",
+          "error": "<urlopen error timed out>",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-007",
+      "url": "https://aeropuertorosario.com/institucional/licitaciones/",
+      "estado": "TIEMPO_FUENTE",
+      "publicaciones_detectadas": 30,
+      "paginas_correctas": 29,
+      "duracion_segundos": 60.04,
+      "causas": [
+        {
+          "tipo": "TIEMPO_FUENTE",
+          "error": "Plazo agotado; se conserva lo extraído",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-008",
+      "url": "https://www.casilda.gob.ar/web/licitaciones-casilda/",
+      "estado": "TIEMPO_FUENTE",
+      "publicaciones_detectadas": 29,
+      "paginas_correctas": 2,
+      "duracion_segundos": 60.03,
+      "causas": [
+        {
+          "tipo": "ValueError",
+          "error": "PDF sin texto: requiere OCR; no se declara vacío",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "UnicodeEncodeError",
+          "error": "'ascii' codec can't encode character '\\xb0' in position 45: ordinal not in range(128)",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "UnicodeEncodeError",
+          "error": "'ascii' codec can't encode character '\\xb0' in position 71: ordinal not in range(128)",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "UnicodeEncodeError",
+          "error": "'ascii' codec can't encode character '\\xb0' in position 79: ordinal not in range(128)",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "UnicodeEncodeError",
+          "error": "'ascii' codec can't encode character '\\xb0' in position 54: ordinal not in range(128)",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "UnicodeEncodeError",
+          "error": "'ascii' codec can't encode character '\\xb0' in position 46: ordinal not in range(128)",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "UnicodeEncodeError",
+          "error": "'ascii' codec can't encode character '\\xb0' in position 72: ordinal not in range(128)",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "UnicodeEncodeError",
+          "error": "'ascii' codec can't encode character '\\xb0' in position 78: ordinal not in range(128)",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "UnicodeEncodeError",
+          "error": "'ascii' codec can't encode character '\\xb0' in position 73: ordinal not in range(128)",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "TIEMPO_FUENTE",
+          "error": "Plazo agotado; se conserva lo extraído",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-010",
+      "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "duracion_segundos": 0.356,
+      "causas": [
+        {
+          "tipo": "HTTPError",
+          "error": "HTTP Error 403: Forbidden",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-014",
+      "url": "https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/",
+      "estado": "TIEMPO_FUENTE",
+      "publicaciones_detectadas": 199,
+      "paginas_correctas": 29,
+      "duracion_segundos": 60.056,
+      "causas": [
+        {
+          "tipo": "TIEMPO_FUENTE",
+          "error": "Plazo agotado; se conserva lo extraído",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-017",
+      "url": "https://municipiosantotome.gob.ar/boletin-oficial/",
+      "estado": "PENDIENTE",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 1,
+      "duracion_segundos": 4.173,
+      "causas": [
+        {
+          "tipo": "SinPublicacionesDetectadas",
+          "error": "No se reconocieron publicaciones; revisar estructura, JavaScript o listado vacío",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-018",
+      "url": "https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "duracion_segundos": 0.361,
+      "causas": [
+        {
+          "tipo": "HTTPError",
+          "error": "HTTP Error 403: Forbidden",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-019",
+      "url": "https://transparencia.santafeciudad.gov.ar/contrataciones-obra/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "duracion_segundos": 0.156,
+      "causas": [
+        {
+          "tipo": "HTTPError",
+          "error": "HTTP Error 403: Forbidden",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-021",
+      "url": "https://venadotuerto.gob.ar/licitaciones/",
+      "estado": "PARCIAL",
+      "publicaciones_detectadas": 11,
+      "paginas_correctas": 15,
+      "duracion_segundos": 42.804,
+      "causas": [
+        {
+          "tipo": "UnicodeEncodeError",
+          "error": "'ascii' codec can't encode character '\\xb0' in position 59: ordinal not in range(128)",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "ValueError",
+          "error": "PDF sin texto: requiere OCR; no se declara vacío",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "UnicodeEncodeError",
+          "error": "'ascii' codec can't encode character '\\xb0' in position 41: ordinal not in range(128)",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "UnicodeEncodeError",
+          "error": "'ascii' codec can't encode character '\\xb0' in position 42: ordinal not in range(128)",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-022",
+      "url": "https://reconquista.gob.ar/licitaciones/",
+      "estado": "TIEMPO_FUENTE",
+      "publicaciones_detectadas": 13,
+      "paginas_correctas": 24,
+      "duracion_segundos": 60.013,
+      "causas": [
+        {
+          "tipo": "ValueError",
+          "error": "PDF sin texto: requiere OCR; no se declara vacío",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "TIEMPO_FUENTE",
+          "error": "Plazo agotado; se conserva lo extraído",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-024",
+      "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "estado": "TIEMPO_FUENTE",
+      "publicaciones_detectadas": 533,
+      "paginas_correctas": 75,
+      "duracion_segundos": 60.059,
+      "causas": [
+        {
+          "tipo": "TIEMPO_FUENTE",
+          "error": "Plazo agotado; se conserva lo extraído",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-025",
+      "url": "https://cafesg.gob.ar/cafesg2/licitaciones/",
+      "estado": "TIEMPO_FUENTE",
+      "publicaciones_detectadas": 163,
+      "paginas_correctas": 38,
+      "duracion_segundos": 60.006,
+      "causas": [
+        {
+          "tipo": "TIEMPO_FUENTE",
+          "error": "Plazo agotado; se conserva lo extraído",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-026",
+      "url": "https://www.jusentrerios.gov.ar/contrataciones/",
+      "estado": "TIEMPO_FUENTE",
+      "publicaciones_detectadas": 44,
+      "paginas_correctas": 14,
+      "duracion_segundos": 60.045,
+      "causas": [
+        {
+          "tipo": "ValueError",
+          "error": "Formato pendiente de adaptador: application/zip",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "TIEMPO_FUENTE",
+          "error": "Plazo agotado; se conserva lo extraído",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-027",
+      "url": "https://www.ater.gob.ar/ater2/licitaciones.asp",
+      "estado": "TIEMPO_FUENTE",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 44,
+      "duracion_segundos": 60.03,
+      "causas": [
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/08-2026PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/08-2026PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/08-2026PRIV/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/08-2026PRIV/MODELO DE CONTRATO DE SERVICIO DE SOPORTE Y ACTUALIZACI�N.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/07-2026PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/07-2026PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/07-2026PRIV/Pliego Tecnico.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2026PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2026PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2026PRIV/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2026PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2026PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2026PRIV/MODELO CONTRATO DE SERVICIO.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2026PRIV/CONSTANCIA DE VISITA.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/03-2026PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/03-2026PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/02-2026PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/02-2026PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/02-2026PRIV/MODELO CONTRATO DE SERVICIO.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/02-2026PRIV/ANEXO I.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/02-2026PRIV/ANEXO II.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/02-2026PRIV/ANEXO III.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2024BIS/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2024BIS/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2024BIS/Pliego Incendio ATER Casa Central final.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2024BIS/MODELO DE CONTRATO DE SERVICIO.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2024BIS/CONSTANCIA DE VISITA.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/01-2026PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/01-2026PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/01-2026PRIV/PLIEGO DE CONDICIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/14-2025PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/14-2025PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/14-2025PRIV/CERTIFICADO DE VERIFICACI�N.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/13-2025PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/13-2025PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/13-2025PRIV/MODELO DE CONTRATO DE SERVICIO.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/09-2025PRIV BIS/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/09-2025PRIV BIS/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/09-2025PRIV BIS/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/09-2025PRIV BIS/CONSTANCIA.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/12-2025PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/12-2025PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/12-2025PRIV/MODELO DE CONTRATO DE SERVICIO.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/12-2025PRIV/CERTIFICADO DE VERIFICACI�N.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/11-2025PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/11-2025PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/11-2025PRIV/MODELO DE CONTRATO.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/11-2025PRIV/CONSTANCIA DE VISITA.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/10-2025PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/10-2025PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/10-2025PRIV/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/10-2025PRIV/MODELO DE CONTRATO.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2025BIS/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2025BIS/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2025BIS/ANEXO I.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2025BIS/ANEXO II.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2025BIS/MODELO CONTRATO DE SERVICIO.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/07-2025/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/07-2025/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/07-2025/Pliego de Especificaciones T�cnicas.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/07-2025/CONTRATO DE SERVICIOS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/09-2025PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/09-2025PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/09-2025PRIV/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/08-2025PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/08-2025PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/08-2025PRIV/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/08-2025PRIV/MODELO CONTRATO.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/06-2025/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/06-2025/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/06-2025/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/06-2025/CONTRATO DE SERVICIOS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2025/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2025/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2025/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2025/MODELO DE CONTRATO DE SERVICIO.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/03-2025PRIVBIS/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/03-2025PRIVBIS/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/03-2025PRIVBIS/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/07-2025PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/07-2025PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/07-2025PRIV/MODELO CONTRATO DE SERVICIO.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/07-2025PRIV/CONSTANCIA DE VISITA.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/06-2025PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/06-2025PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2025/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2025/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2025/ANEXO I.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2025/ANEXO II.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2025/MODELO CONTRATO DE SERVICIO.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2025PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2025PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2025PRIV/MODELO DE CONTRATO DE SERVICIO.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2025PRIV/CERTIFICADO DE VERIFICACI�N.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/03-2025/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/03-2025/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2025PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2025PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/04-2025PRIV/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/03-2025PRIV/Pliegos Condiciones Generales.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/03-2025PRIV/Pliego Condiciones Particulares.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/03-2025PRIV/Pliego Especificaciones Tecnicas.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/02-2025/Pliego de Condiciones Generales.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/02-2025/Pliego de Condiciones Particulares.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/02-2025/CONTRATO Modelo - SegmentacionLAN.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/01-2025/Pliego de Condiciones Generales.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/01-2025/Pliego de Condiciones Particulares.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/01-2025/CONTRATO Modelo - SeguridadEndPoint.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/02-2025PRIV/Pliegos Condiciones Generales.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/02-2025PRIV/Pliegos Condiciones Particulares.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/02-2025PRIV/Pliego Especificaciones Tecnicas.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/01-2025PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/01-2025PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/01-2025PRIV/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/01-2025PRIV/MODELO DE CONTRATO.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/14-2024PRIVBIS/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/14-2024PRIVBIS/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/14-2024PRIVBIS/Pliego de Condiciones T�cnicas.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/06-2024/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/06-2024/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/06-2024/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/06-2024/CONTRATO DE LOCACI�N DE SERVICIOS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/18-2024PRIVBIS/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/18-2024PRIVBIS/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/18-2024PRIVBIS/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/18-2024PRIVBIS/CONSTANCIA DE VISITA.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/23-2024PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/23-2024PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/23-2024PRIV/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/23-2024PRIV/Anexo II.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2024/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2024/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2024/MODELO DE CONTRATO.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/05-2024/CONSTANCIA DE VISITA.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/20-2024PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/20-2024PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/20-2024PRIV/PLIEGO DE ESPECIFICACIONES TECNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/19-2024PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/19-2024PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/19-2024PRIV/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/18-2024PRIV/PLIEGO DE BASES Y CONDICIONES GENERALES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/18-2024PRIV/PLIEGO DE CONDICIONES PARTICULARES.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "InvalidURL",
+          "error": "URL can't contain control characters. '/ater2/Archivos/Licitaciones/18-2024PRIV/PLIEGO DE ESPECIFICACIONES T�CNICAS.pdf' (found at least ' ')",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "TIEMPO_FUENTE",
+          "error": "Plazo agotado; se conserva lo extraído",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-028",
+      "url": "https://aplicaciones.vialidadentrerios.gob.ar/obralic/web/licitacion/listado",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "duracion_segundos": 1.093,
+      "causas": [
+        {
+          "tipo": "HTTPError",
+          "error": "HTTP Error 404: Not Found",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-029",
+      "url": "https://www.enersa.com.ar/area-proveedores/",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "duracion_segundos": 0.633,
+      "causas": [
+        {
+          "tipo": "URLError",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-030",
+      "url": "https://institutobecario.gov.ar/licitaciones.php",
+      "estado": "BLOQUEADA",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "duracion_segundos": 0.84,
+      "causas": [
+        {
+          "tipo": "URLError",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-032",
+      "url": "https://sanjose.gob.ar/concursos-licitaciones/",
+      "estado": "OPERATIVA",
+      "publicaciones_detectadas": 3,
+      "paginas_correctas": 1,
+      "duracion_segundos": 3.034,
+      "causas": []
+    },
+    {
+      "id": "fuente-035",
+      "url": "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones",
+      "estado": "PENDIENTE",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 6,
+      "duracion_segundos": 2.102,
+      "causas": [
+        {
+          "tipo": "ValueError",
+          "error": "Respuesta supera 12 MB; recorrido parcial",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-037",
+      "url": "https://municipalidad.gualeguay.gob.ar/modulos/transparencia/licitaciones_publicas.php",
+      "estado": "PENDIENTE",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 1,
+      "duracion_segundos": 4.018,
+      "causas": [
+        {
+          "tipo": "SinPublicacionesDetectadas",
+          "error": "No se reconocieron publicaciones; revisar estructura, JavaScript o listado vacío",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-038",
+      "url": "https://www.crespo.gob.ar/licitaciones-privadas-2026/",
+      "estado": "TIEMPO_FUENTE",
+      "publicaciones_detectadas": 31,
+      "paginas_correctas": 68,
+      "duracion_segundos": 60.006,
+      "causas": [
+        {
+          "tipo": "UnicodeEncodeError",
+          "error": "'ascii' codec can't encode character '\\xb0' in position 69: ordinal not in range(128)",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "UnicodeEncodeError",
+          "error": "'ascii' codec can't encode character '\\xb0' in position 53: ordinal not in range(128)",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "UnicodeEncodeError",
+          "error": "'ascii' codec can't encode character '\\xb0' in position 82: ordinal not in range(128)",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "UnicodeEncodeError",
+          "error": "'ascii' codec can't encode character '\\xb0' in position 65: ordinal not in range(128)",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "ValueError",
+          "error": "PDF sin texto: requiere OCR; no se declara vacío",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "TIEMPO_FUENTE",
+          "error": "Plazo agotado; se conserva lo extraído",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-039",
+      "url": "https://www.crespo.gob.ar/category/licitacion-publica/",
+      "estado": "PENDIENTE",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 4,
+      "duracion_segundos": 2.527,
+      "causas": [
+        {
+          "tipo": "SinPublicacionesDetectadas",
+          "error": "No se reconocieron publicaciones; revisar estructura, JavaScript o listado vacío",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-041",
+      "url": "https://www.federacion.gob.ar/licitaciones",
+      "estado": "TIEMPO_FUENTE",
+      "publicaciones_detectadas": 39,
+      "paginas_correctas": 1,
+      "duracion_segundos": 60.032,
+      "causas": [
+        {
+          "tipo": "ValueError",
+          "error": "PDF sin texto: requiere OCR; no se declara vacío",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "TIEMPO_FUENTE",
+          "error": "Plazo agotado; se conserva lo extraído",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-042",
+      "url": "https://nuevo.nogoya.gob.ar/compras-licitaciones-y-concursos-nuevo/",
+      "estado": "PENDIENTE",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 1,
+      "duracion_segundos": 0.968,
+      "causas": [
+        {
+          "tipo": "SinPublicacionesDetectadas",
+          "error": "No se reconocieron publicaciones; revisar estructura, JavaScript o listado vacío",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-043",
+      "url": "https://haciendalapaz.gob.ar/compras/",
+      "estado": "PENDIENTE",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 1,
+      "duracion_segundos": 1.22,
+      "causas": [
+        {
+          "tipo": "SinPublicacionesDetectadas",
+          "error": "No se reconocieron publicaciones; revisar estructura, JavaScript o listado vacío",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-044",
+      "url": "https://villaguay.gob.ar/boletindigital/",
+      "estado": "PENDIENTE",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 1,
+      "duracion_segundos": 1.733,
+      "causas": [
+        {
+          "tipo": "SinPublicacionesDetectadas",
+          "error": "No se reconocieron publicaciones; revisar estructura, JavaScript o listado vacío",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-045",
+      "url": "https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas",
+      "estado": "TIEMPO_FUENTE",
+      "publicaciones_detectadas": 6,
+      "paginas_correctas": 4,
+      "duracion_segundos": 60.021,
+      "causas": [
+        {
+          "tipo": "ValueError",
+          "error": "PDF sin texto: requiere OCR; no se declara vacío",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "TIEMPO_FUENTE",
+          "error": "Plazo agotado; se conserva lo extraído",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-046",
+      "url": "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos",
+      "estado": "PARCIAL",
+      "publicaciones_detectadas": 9,
+      "paginas_correctas": 1,
+      "duracion_segundos": 32.425,
+      "causas": [
+        {
+          "tipo": "ValueError",
+          "error": "PDF sin texto: requiere OCR; no se declara vacío",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-049",
+      "url": "https://compras.pergamino.gob.ar/",
+      "estado": "PENDIENTE",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "duracion_segundos": 2.588,
+      "causas": [
+        {
+          "tipo": "ValueError",
+          "error": "Redirección fuera de dominios declarados",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-050",
+      "url": "https://arrecifes.gob.ar/informacion-publica/licitaciones/",
+      "estado": "PARCIAL",
+      "publicaciones_detectadas": 24,
+      "paginas_correctas": 7,
+      "duracion_segundos": 25.314,
+      "causas": [
+        {
+          "tipo": "ValueError",
+          "error": "Formato pendiente de adaptador: application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "repeticiones": 1
+        },
+        {
+          "tipo": "ValueError",
+          "error": "PDF sin texto: requiere OCR; no se declara vacío",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-051",
+      "url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones",
+      "estado": "PENDIENTE",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 1,
+      "duracion_segundos": 0.658,
+      "causas": [
+        {
+          "tipo": "SinPublicacionesDetectadas",
+          "error": "No se reconocieron publicaciones; revisar estructura, JavaScript o listado vacío",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-052",
+      "url": "https://transparencia.rojas.gov.ar/index.php?action=17",
+      "estado": "PENDIENTE",
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 1,
+      "duracion_segundos": 0.772,
+      "causas": [
+        {
+          "tipo": "SinPublicacionesDetectadas",
+          "error": "No se reconocieron publicaciones; revisar estructura, JavaScript o listado vacío",
+          "repeticiones": 1
+        }
+      ]
+    },
+    {
+      "id": "fuente-053",
+      "url": "https://transparencia.rojas.gov.ar/index.php?action=18",
+      "estado": "OPERATIVA",
+      "publicaciones_detectadas": 67,
+      "paginas_correctas": 1,
+      "duracion_segundos": 5.071,
+      "causas": []
+    }
+  ],
+  "correcciones_de_clasificacion": {
+    "fuente-001": "La supuesta publicación era un teléfono: falso positivo confirmado",
+    "fuente-017": "URL de Santo Tomé Corrientes: reemplazada por dominio oficial de Santo Tomé Santa Fe"
+  }
+}

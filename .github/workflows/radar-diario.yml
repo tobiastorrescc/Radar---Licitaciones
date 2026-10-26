@@ -5,7 +5,7 @@ on:
     - cron: '0 11 * * *' # 08:00 Argentina; GitHub puede retrasar la ejecucion
   pull_request:
   push:
-    paths: ['radar.py', 'conectores.py', 'inventario/**', 'tools/**', 'tests/**', '.github/workflows/**', 'fuentes*']
+    paths: ['radar.py', 'conectores.py', 'extractores.py', 'documentos.py', 'inventario/**', 'tools/**', 'tests/**', '.github/workflows/**', 'fuentes*']
 permissions:
   contents: read
 concurrency:
@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-spa
       - run: python -m unittest discover -s tests -v
   ejecutar-radar:
     if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
@@ -35,7 +35,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-spa
       - name: Ejecutar radar
         id: radar
         continue-on-error: true
@@ -76,7 +76,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-spa
       - name: Verificar sin modificar historial de producción
         id: verificar
         continue-on-error: true # Diagnóstico de fuentes; no confundir disponibilidad con pruebas unitarias.
@@ -107,22 +107,3 @@ jobs:
           path: work/verificacion/
           if-no-files-found: error
           retention-days: 90
-  auditar-conectores:
-    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
-    runs-on: ubuntu-latest
-    timeout-minutes: 6
-    permissions:
-      contents: read
-      actions: read
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - uses: actions/download-artifact@v4
-        with:
-          name: verificacion-fuentes-40253451095
-          path: work/auditoria35
-          run-id: 40253451095
-          github-token: ${{ github.token }}
-      - run: python -u tools/auditar_conectores.py
