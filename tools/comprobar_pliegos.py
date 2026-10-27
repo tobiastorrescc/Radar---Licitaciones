@@ -4,6 +4,7 @@ from datetime import datetime
 from hashlib import sha256
 import json
 import os
+import re
 from pathlib import Path
 import signal
 import subprocess
@@ -28,11 +29,33 @@ def worker(url):
         texto=documentos.leer(raw,tipo,final,ocr=False)
         ps=extractores.procesos(texto)
         r['procedimientos']=sorted({o.procedimiento_canonico({'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'url':final}) for p in ps}-{None})
-        r['contiene_pliego']='pliego' in o.norm(texto[:16000])
+        r['encabezado_pliego']=bool(re.search(r'(?im)^\s*pliego\s+(?:de\s+)?(?:bases|condiciones|especificaciones)',texto[:4000]))
+        r['encabezado']=o.norm(texto[:500])
         r['presupuesto'],fragmento=o.monto(o.norm(texto))
         if fragmento:r['evidencia_presupuesto']={'url':final,'texto':fragmento}
     except Exception as e:r['lectura_pendiente']=str(e)
     return r
+
+
+def pertenece_a(procs,proc):
+    if procs==[proc]:return True
+    def nucleo(p):
+        codigo=re.search(r'\b(LPU|LPR|CPRV|CD)-(20\d{2})-(\d+)(.*)$',p or '',re.I)
+        if codigo:return (p[:codigo.start()].strip(),str(int(codigo[3]))+'/'+codigo[2],bool(codigo[4]))
+        m=re.fullmatch(r'(.*?) (\d+/20\d{2})',p or '')
+        return (m[1],m[2],False) if m else None
+    # Número anual sin serie en el PDF, relacionado explícitamente desde la ficha.
+    a=nucleo(procs[0]) if len(procs)==1 else None;b=nucleo(proc)
+    return bool(a and b and not a[2] and a[:2]==b[:2])
+
+
+def prioridad_pliego(valor,etiqueta,proc):
+    nombre=valor['url'].rsplit('/',1)[-1].lower()
+    if re.search(r'^(?:resconj|resolucion|decreto|adjudicacion)',nombre) or re.match(r'^(?:resolucion|decreto)\b',o.norm(etiqueta)):
+        return 0
+    if re.search(r'\bplieg(?:o|os)?(?:\b|[-_.])',o.norm(etiqueta)+' '+nombre):return 2
+    if valor.get('encabezado_pliego') and pertenece_a(valor.get('procedimientos',[]),proc):return 1
+    return 0
 
 
 def terminar(proceso):
@@ -75,16 +98,16 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
         terminar(p);p.communicate();candidatos[url]={'url':url,'estado':'TIEMPO_TOTAL'}
     for u in pendientes:candidatos[u]={'url':u,'estado':'NO_INICIADO_PLAZO_TOTAL'}
     for valor in candidatos.values():
-        valor['fecha_comprobacion']=fecha
+        valor['fecha_comprobacion']=datetime.now(o.ZONA).isoformat()
         for r in vinculos.get(valor['url'],[]):
             r.setdefault('auditoria_documentos',[]).append(valor)
             proc=o.procedimiento_canonico(r)
             procs=valor.get('procedimientos',[])
-            pertenece=procs==[proc]
+            pertenece=pertenece_a(procs,proc)
             etiqueta=next((d.get('titulo','') for d in r.get('documentos',[]) if d['url']==valor['url']),'')
-            es_pliego='pliego' in o.norm(etiqueta) or (pertenece and valor.get('contiene_pliego'))
-            if es_pliego and valor['estado']=='DOCUMENTO_ACCESIBLE':
-                r['enlace_pliego']=valor['url'];r['comprobacion_pliego']={**valor,'identificacion':'ENLACE_OFICIAL_ETIQUETADO' if 'pliego' in o.norm(etiqueta) else 'CONTENIDO_Y_PROCEDIMIENTO'}
+            prioridad=prioridad_pliego(valor,etiqueta,proc)
+            if prioridad and valor['estado']=='DOCUMENTO_ACCESIBLE' and prioridad>r.get('comprobacion_pliego',{}).get('prioridad_identificacion',0):
+                r['enlace_pliego']=valor['url'];r['comprobacion_pliego']={**valor,'prioridad_identificacion':prioridad,'identificacion':'ENLACE_OFICIAL_ETIQUETADO' if prioridad==2 else 'ENCABEZADO_Y_PROCEDIMIENTO'}
             if pertenece and valor.get('presupuesto') and not r.get('presupuesto'):
                 r['presupuesto']=valor['presupuesto'];r.setdefault('evidencias_campos',{})['presupuesto']=valor['evidencia_presupuesto']
         print('AUDITORIA_ADJUNTO '+json.dumps(valor,ensure_ascii=False),flush=True)

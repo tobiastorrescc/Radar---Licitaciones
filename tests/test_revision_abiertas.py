@@ -140,3 +140,22 @@ class RevisionAbiertasTests(unittest.TestCase):
             self.assertEqual(resumen['registros_unicos'],1)
             for nombre in ['oportunidades_abiertas.json','oportunidades_proximas_a_vencer.md','revision_11_abiertas54.json','auditoria_enlaces.json','nuevas_simulacion.json']:self.assertTrue((raiz/'salida'/nombre).exists())
             self.assertEqual(estado.read_bytes(),antes)
+
+    def test_resolucion_que_menciona_pliego_no_es_el_pliego_regresion59(self):
+        from tools import comprobar_pliegos as c
+        doc={'url':'https://aeropuertorosario.com/RESCONJ-2026-00000319-APPSF-ODAeroRosMEyD-AIR-ROS.pdf','encabezado_pliego':True,'procedimientos':['licitacion privada LPR-2026-2-APPSF-OD-COM-CON-AIR-ROS']}
+        self.assertEqual(c.prioridad_pliego(doc,'RESCONJ-2026-00000319.pdf',doc['procedimientos'][0]),0)
+        doc['url']='https://aeropuertorosario.com/Pliego-tecnico-jardineria-2026.pdf'
+        self.assertEqual(c.prioridad_pliego(doc,'Pliego técnico jardinería',doc['procedimientos'][0]),2)
+    def test_mencionar_pliego_en_documento_no_prueba_encabezado(self):
+        from tools import comprobar_pliegos as c
+        doc={'url':'https://aeropuertorosario.com/anexo.pdf','encabezado_pliego':False,'procedimientos':['licitacion privada LPR-2026-2-APPSF-OD-COM-CON-AIR-ROS']}
+        self.assertEqual(c.prioridad_pliego(doc,'Anexo',doc['procedimientos'][0]),0)
+    def test_pdf_numero_anual_compatible_con_ficha_sin_fusionar_series(self):
+        from tools import comprobar_pliegos as c
+        self.assertTrue(c.pertenece_a(['licitacion privada 2/2026'],'licitacion privada LPR-2026-2-APPSF-OD-COM-CON-AIR-ROS'))
+        self.assertFalse(c.pertenece_a(['licitacion publica LPU-2026-2-APPSF-OD-OF-LEGALES-AIR-ROS'],'licitacion publica LPU-2026-2-APPSF-OD-COM-CON-AIR-ROS'))
+    def test_estado_oficial_cerrado_prevalece_sobre_fecha_futura(self):
+        h=Path('tests/fixtures/reales/aeropuerto-jardineria-57.html').read_text().replace('Vigente','Adjudicada')
+        rs,_,_=extractores.extraer(h,'https://aeropuertorosario.com/licitaciones/ficha/',{'adaptador':'aeropuerto'})
+        self.assertEqual(o.normalizar({**self.base(),**rs[0]},AHORA)['vigencia'],'VENCIDA')

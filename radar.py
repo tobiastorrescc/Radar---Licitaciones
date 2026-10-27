@@ -551,6 +551,7 @@ def ejecutar():
 
     registros=comercial.deduplicar(list(encontradas.values()),fecha)
     comprobar_pliegos.comprobar(registros,fecha,[{**c,'url':u} for u,c in metadatos.items()])
+    fecha=datetime.now(ZoneInfo('America/Argentina/Buenos_Aires')).isoformat()
     registros=[comercial.normalizar(r,fecha) for r in registros]
     nuevas=comercial.incorporar(historial,registros,fecha)
     nuevas_fuentes={u for r in nuevas for u in r.get('fuentes_observadas',[])+[r.get('fuente')]}

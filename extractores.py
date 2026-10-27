@@ -315,7 +315,7 @@ def extraer(html,url,config=None):
             r={'titulo':numero+' '+campos['asunto'],'objeto':campos['asunto'],'numero_procedimiento':numero,'tipo_procedimiento':p['tipo'],
                'procedimiento':p['procedimiento'],'url':url,'evidencia_url':url,'documentos':docs,'detalle_completo':True,'registro_estructurado':True,
                'fecha_apertura_texto':campos.get('fecha de apertura'),'presupuesto_texto':presupuestos[0] if len(presupuestos)==1 else None,
-               'evento_publicado':None,'llamado_especial':False,'situacion_publicada':None,'campos_oficiales':campos}
+               'evento_publicado':None,'llamado_especial':False,'situacion_publicada':situacion(campos.get('estado','')),'campos_oficiales':campos}
             agrupados={(p['procedimiento'],None,None):r}
             break
     enlaces=(dom.root if config.get('descubrir_menu') else raiz).enlaces(url)

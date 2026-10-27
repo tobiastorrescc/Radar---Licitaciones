@@ -1,5 +1,6 @@
 """Reporta evidencia de la verificación en un área aislada, sin escribir producción."""
 import argparse
+from datetime import datetime
 from collections import Counter
 import json
 from pathlib import Path
@@ -29,6 +30,7 @@ def ejecutar(informe,salida,historial):
     registros=oportunidades.deduplicar(registros,fecha)
     configuraciones=json.loads(Path('inventario/fuentes.json').read_text())
     enlaces=comprobar_pliegos.comprobar(registros,fecha,configuraciones)
+    fecha=datetime.now(oportunidades.ZONA).isoformat()
     registros=[oportunidades.normalizar(i,fecha) for i in registros]
     vistas=oportunidades.guardar_vistas(registros,fecha,raiz)
     base=Path('tests/fixtures/reales/abiertas54.json')
