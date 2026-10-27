@@ -96,5 +96,22 @@ class DescubrimientoTests(unittest.TestCase):
         with patch('cache_documentos.leer_texto',return_value=('Objeto: compra de hormigón',{})):
             r=conectores.explorar('https://colon.gob.ar/',{'adaptador':'colon-pba','documentos_imagen':True,'lectura_adjuntos':'necesarios'},fetch=fetch)
         self.assertEqual(visitas[1],'https://colon.gob.ar/z.jpg');self.assertEqual(len(r['oportunidades']),2)
+    def test_funes_post_publicado_pagina_hasta_total_sin_confundir_fechas(self):
+        import conectores
+        from urllib.parse import parse_qs
+        html='<h1>Municipalidad de Funes</h1><table id="licitacionesTable"></table><script>const url = "/ajax/data-licitaciones-web.ajax.php";ajax: {type: "POST"}</script>'
+        cuerpos=[]
+        def fetch(url,datos_post=None):
+            if datos_post is None:return html.encode(),'text/html',url
+            q=parse_qs(datos_post.decode());cuerpos.append(q);inicio=int(q['start'][0]);numero=inicio+1
+            fila={'id_licitacion':numero,'numero_licitacion':str(numero),'titulo_licitacion':f'Licitación Pública {numero}/2026 Objeto: compra de hormigón elaborado para obras','date_created_licitacion':'2026-10-22 10:00:00','documentos':[]}
+            return json.dumps({'recordsTotal':2,'recordsFiltered':2,'data':[fila]}).encode(),'application/json',url
+        r=conectores.explorar('https://funes.gob.ar/boletin_oficial',{'organismo':'Municipalidad de Funes'},fetch=fetch)
+        self.assertEqual(r['estado'],'OPERATIVA');self.assertEqual(len(r['oportunidades']),2);self.assertEqual([q['start'][0] for q in cuerpos],['0','1'])
+        self.assertTrue(all(i['fecha_publicacion']=='2026-10-22' and i['fecha_apertura'] is None for i in r['oportunidades']))
+    def test_funes_esquema_invalido_y_paginacion_repetida_no_se_declaran_exitosos(self):
+        from extractores_lotes import extraer_funes
+        with self.assertRaises(ValueError):extraer_funes('{}','https://funes.gob.ar/')
+        with self.assertRaises(ValueError):extraer_funes('{"data":[],"recordsTotal":20,"recordsFiltered":10}','https://funes.gob.ar/')
 
 if __name__=='__main__':unittest.main()

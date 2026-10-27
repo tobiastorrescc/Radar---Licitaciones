@@ -125,11 +125,12 @@ def worker(entrada,salida):
         config={'organismo':identidad['organismo'],'localidad':identidad['localidad'],'provincia':c['provincia'],
             'conector':'publicaciones','descubrir_menu':True,'descubrir_contrataciones':True,'lectura_adjuntos':'necesarios','ocr':True}
         inicial={url:(datos,tipo,final)}
-        def fetch(u):
+        def fetch(u,datos_post=None):
             if u in inicial:return inicial.pop(u)
             import cache_documentos
             from functools import partial
             transporte=partial(conectores.descargar,conexion_timeout=4,lectura_timeout=6)
+            if datos_post is not None:return transporte(u,datos_post=datos_post)
             if urlparse(u).path.lower().endswith(extractores.ADJUNTOS):return cache_documentos.obtener(u,transport=transporte)[:3]
             return transporte(u)
         def progreso(r):guardar(salida,{**r,'identidad':identidad,'config':config,'finalizado':False})
@@ -209,7 +210,7 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24):
         if f.get('incorporada'):continue
         key='inventario-'+f['id']
         estado['candidatos'].setdefault(key,{**f,'tipo':'TERRITORIAL','id':'auto-'+key,'clave':key,'origen':'INVENTARIO_PREVIO','fecha_descubrimiento':fecha})
-    elegibles=[c for c in estado['candidatos'].values() if c['url'] not in existentes and (not c.get('ultima_revision') or datetime.fromisoformat(c['ultima_revision'])<datetime.now(timezone.utc)-timedelta(days=7))]
+    elegibles=[c for c in estado['candidatos'].values() if c['url'] not in existentes and (c.get('version_verificador')!=2 or not c.get('ultima_revision') or datetime.fromisoformat(c['ultima_revision'])<datetime.now(timezone.utc)-timedelta(days=7))]
     # Rotación persistente: pendientes se reintentan en ciclos posteriores, sin monopolizar.
     elegibles.sort(key=lambda c:(c.get('ultima_revision',''),c.get('fecha_descubrimiento',''),c['id']))
     lote=elegibles[:candidatos];limite=max(1,total-(time.monotonic()-inicio)-3)
@@ -227,7 +228,7 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24):
         v=r.get('validacion') or {'estado':'PENDIENTE','motivo':'Plazo agotado o worker incompleto; resultados parciales conservados'}
         # El supervisor decide completitud; un checkpoint anterior no autoriza promoción.
         if obs['estado']!='OPERATIVA':v={**v,'estado':'PENDIENTE','motivo':v.get('motivo') or 'Consulta no finalizada sin incidencias'}
-        c.update(ultima_revision=fecha,validacion=v,errores=obs.get('errores',[]),resultado_archivo=str(p))
+        c.update(ultima_revision=fecha,version_verificador=2,validacion=v,errores=obs.get('errores',[]),resultado_archivo=str(p))
         if v['estado']=='VALIDADA':
             validadas+=1
             if c['url'] not in existentes:

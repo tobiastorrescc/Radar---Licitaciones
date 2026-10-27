@@ -2,7 +2,7 @@
 from collections import deque
 from hashlib import sha256
 from html.parser import HTMLParser
-from urllib.parse import urljoin, urlparse, urldefrag
+from urllib.parse import urljoin, urlparse, urldefrag,urlencode
 from urllib.request import Request, build_opener, HTTPHandler, HTTPSHandler
 from http.client import HTTPConnection, HTTPSConnection
 import socket
@@ -154,11 +154,11 @@ class _HTTPSHandler(HTTPSHandler):
                             req, context=self._context)
 
 
-def descargar(url, conexion_timeout=5, lectura_timeout=10, headers_extra=None, devolver_headers=False):
+def descargar(url, conexion_timeout=5, lectura_timeout=10, headers_extra=None, devolver_headers=False,datos_post=None):
     # build_opener conserva proxies del entorno y validación TLS predeterminada.
     opener = build_opener(_HTTPHandler(lectura_timeout), _HTTPSHandler(lectura_timeout))
     url = extractores.url_publica(url)
-    with opener.open(Request(url, headers={'User-Agent': 'RadarLicitaciones/2.0',**(headers_extra or {})}),
+    with opener.open(Request(url,data=datos_post, headers={'User-Agent': 'RadarLicitaciones/2.0',**(headers_extra or {})}),
                      timeout=conexion_timeout) as r:
         longitud=r.headers.get('Content-Length')
         if longitud and longitud.isdigit() and int(longitud)>12_000_000:raise ValueError('Respuesta supera 12 MB; recorrido parcial')
@@ -216,7 +216,8 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
         from functools import partial
         fetch=partial(descargar)
         transporte=fetch
-        def fetch(url):
+        def fetch(url,datos_post=None):
+            if datos_post is not None:return transporte(url,datos_post=datos_post)
             if urlparse(url).path.lower().endswith((*extractores.ADJUNTOS,'.jpg','.jpeg','.png')) or any(re.search(p,url) for p in config.get('patrones_documentos',[])):
                 import cache_documentos
                 return cache_documentos.obtener(url,transport=transporte)[:3]
@@ -224,7 +225,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
     pending=deque([(u,'LISTADO',None) for u in config.get('urls_inicio',[fuente])])
     seen=set();items={};errors=[];limits=[];correctas=0;documentos_leidos=0
     hosts={_host(fuente),*(_host('https://'+h) for h in config.get('dominios_documentos',[]))}
-    documento_pendiente={};vacios=[]
+    documento_pendiente={};vacios=[];paginas_api=set()
     modo=config.get('lectura_adjuntos','todos')
     def snapshot(fase,actual=None,finalizado=False):
         r={'oportunidades':list(items.values()),'errores':list(errors),'limites':list(limits),
@@ -284,12 +285,33 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
     while pending:
         if len(seen)>=max_paginas:limits.append('max_paginas');break
         url,clase,referencia=pending.popleft();url=extractores.url_publica(url)
-        if not url or url in seen or _host(url) not in hosts:continue
-        seen.add(url);fase='DESCARGA';snapshot(fase,url)
+        post=urlencode(referencia['post']).encode() if clase=='DATATABLES' else None
+        peticion=url+('#POST:'+sha256(post).hexdigest() if post is not None else '') if url else None
+        if not url or peticion in seen or _host(url) not in hosts:continue
+        seen.add(peticion);fase='DESCARGA';snapshot(fase,url)
         try:
-            datos,tipo,final=fetch(url)
+            datos,tipo,final=fetch(url,datos_post=post) if post is not None else fetch(url)
             fase='EXTRACCION';snapshot(fase,url)
             if _host(final) not in hosts:raise ValueError('Redirección fuera de dominios oficiales declarados')
+            if clase=='DATATABLES':
+                from extractores_lotes import extraer_funes
+                registros,total,filas=extraer_funes(datos,final)
+                huella=sha256(json.dumps(filas,sort_keys=True).encode()).hexdigest()
+                if filas and huella in paginas_api:raise ValueError('DataTables repite una página: no se declara completo')
+                paginas_api.add(huella)
+                for r in registros:
+                    key=agregar(r)
+                    for doc in r.get('documentos',[]):
+                        destino=doc['url']
+                        if (modo=='todos' or not r.get('detalle_completo')) and _host(destino) in hosts and destino not in seen:
+                            documento_pendiente[destino]={'url':destino,'publicacion_id':key}
+                            pending.append((destino,'DOCUMENTO',key))
+                parametros=referencia['post'];siguiente=int(parametros['start'])+len(filas)
+                if siguiente<total:
+                    if not filas:raise ValueError('DataTables vacío antes de alcanzar el total publicado')
+                    pending.append((url,'DATATABLES',{'post':{**parametros,'start':siguiente,'draw':int(parametros['draw'])+1}}))
+                if total==0:vacios.append({'url':url,'texto':'DataTables oficial informa recordsTotal=0'})
+                correctas+=1;snapshot('PAGINA_FINALIZADA',url);continue
             if config.get('adaptador')=='vgg' and 'json' in tipo.lower():
                 from extractores_lotes import extraer_vgg
                 registros=extraer_vgg(datos,final)
@@ -305,6 +327,12 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 documento_pendiente.pop(url,None)
                 snapshot('PAGINA_FINALIZADA',url);continue
             html=decodificar_html(datos,tipo)
+            from extractores_lotes import endpoint_funes
+            endpoint=endpoint_funes(html,final)
+            if endpoint:
+                parametros={'draw':1,'start':0,'length':100,'search[value]':'','order[0][column]':0,'order[0][dir]':'desc'}
+                for i,campo in enumerate(('numero_licitacion','date_created_licitacion','titulo_licitacion','documentos')):parametros[f'columns[{i}][data]']=campo
+                pending.append((endpoint,'DATATABLES',{'post':parametros}))
             pagina_config={**config,**(referencia if isinstance(referencia,dict) else {})}
             registros,links,dom=extractores.extraer(html,final,pagina_config)
             if config.get('adaptador')=='vgg':

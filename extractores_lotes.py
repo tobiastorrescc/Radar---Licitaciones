@@ -122,6 +122,36 @@ def acordeones_zarate(raiz,url):
             'documentos':docs,'detalle_completo':True,'registro_estructurado':True,'evento_publicado':evento,'llamado_especial':bool(evento)})
     return resultado
 
+def endpoint_funes(html,url):
+    """Endpoint y método publicados en el inicializador DataTables de licitaciones."""
+    from extractores import url_publica
+    if 'id="licitacionesTable"' not in html and "id='licitacionesTable'" not in html:return None
+    m=re.search(r'''const\s+url\s*=\s*['"]([^'"]*/data-licitaciones-web\.ajax\.php)['"]''',html)
+    if not m or not re.search(r"type:\s*['\"]POST['\"]",html):return None
+    destino=url_publica(m[1],url)
+    return destino if destino and urlsplit(destino).hostname==urlsplit(url).hostname else None
+
+def extraer_funes(datos,url):
+    from extractores import procesos,url_publica
+    import json
+    data=json.loads(datos)
+    if not isinstance(data,dict) or not isinstance(data.get('data'),list):raise ValueError('DataTables de Funes sin listado data')
+    total=data.get('recordsTotal');filtrado=data.get('recordsFiltered')
+    if not isinstance(total,int) or total<0 or filtrado!=total:raise ValueError('Total DataTables ausente o respuesta filtrada')
+    resultado=[]
+    for f in data['data']:
+        if not isinstance(f,dict) or not isinstance(f.get('titulo_licitacion'),str):raise ValueError('Fila de Funes sin título verificable')
+        titulo=f['titulo_licitacion'];ps=procesos(titulo);p=ps[0] if len(ps)==1 else {}
+        docs=[]
+        for d in f.get('documentos') or []:
+            if not isinstance(d,dict):raise ValueError('Documento de Funes no reconocido')
+            enlace=url_publica(d.get('url') or '',url)
+            if enlace:docs.append({'url':enlace,'titulo':d.get('titulo') or 'Documento'})
+        resultado.append({'titulo':titulo,'objeto':titulo,'numero_procedimiento':p.get('numero'),'tipo_procedimiento':p.get('tipo'),'procedimiento':p.get('procedimiento'),
+            'registro_estructurado':True,'detalle_completo':len(titulo)>40,'url':url,'evidencia_url':url,'documentos':docs,
+            'fecha_publicacion_texto':f.get('date_created_licitacion'),'id_origen':f.get('id_licitacion'),'numero_oficial_sin_interpretar':f.get('numero_licitacion')})
+    return resultado,total,data['data']
+
 
 def endpoints_vgg(dom,html,url):
     from extractores import url_publica
