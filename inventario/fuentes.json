@@ -76,16 +76,21 @@
     "provincia": "Santa Fe",
     "url": "https://www.aguassantafesinas.com.ar/portal/licitaciones",
     "tipo_portal": "javascript",
-    "estado_verificacion": "PENDIENTE_ADAPTADOR",
-    "incorporada": false,
-    "conector": null,
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://www.aguassantafesinas.com.ar/portal/licitaciones",
       "fecha": "2026-10-25",
       "observacion": "Página oficial muestra Cargando licitaciones; requiere API comprobada"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "cobertura-2026-10-27"
   },
   {
     "id": "fuente-005",
@@ -94,16 +99,21 @@
     "provincia": "Santa Fe",
     "url": "https://compras.unr.edu.ar/",
     "tipo_portal": "siu_diaguita",
-    "estado_verificacion": "PENDIENTE_ADAPTADOR",
-    "incorporada": false,
-    "conector": null,
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://compras.unr.edu.ar/",
       "fecha": "2026-10-25",
       "observacion": "URL enlazada por https://unr.edu.ar/compras-y-licitaciones/; falta inspeccionar listado"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "cobertura-2026-10-27"
   },
   {
     "id": "fuente-006",
@@ -176,16 +186,21 @@
     "provincia": "Santa Fe",
     "url": "https://xn--carcaraa-j3a.gob.ar/",
     "tipo_portal": "institucional",
-    "estado_verificacion": "PENDIENTE_ADAPTADOR",
-    "incorporada": false,
-    "conector": null,
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://xn--carcaraa-j3a.gob.ar/",
       "fecha": "2026-10-25",
       "observacion": "Sitio oficial localizado; falta ruta de contrataciones"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "cobertura-2026-10-27"
   },
   {
     "id": "fuente-010",
@@ -214,16 +229,28 @@
     "provincia": "Santa Fe",
     "url": "https://armstrong.gov.ar/index.php/transparencia",
     "tipo_portal": "html",
-    "estado_verificacion": "PENDIENTE_ADAPTADOR",
-    "incorporada": false,
-    "conector": null,
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://armstrong.gov.ar/index.php/transparencia",
       "fecha": "2026-10-25",
       "observacion": "Ruta indexada; lectura web directa devuelve 403; localizar sección específica"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "cobertura-2026-10-27",
+    "urls_inicio": [
+      "https://armstrong.gov.ar/index.php/descargas?catid=42&view=category"
+    ],
+    "seguir_patrones": [
+      "catid=42",
+      "task=download.send"
+    ]
   },
   {
     "id": "fuente-012",
@@ -232,16 +259,21 @@
     "provincia": "Santa Fe",
     "url": "https://lasparejas.gov.ar/",
     "tipo_portal": "institucional",
-    "estado_verificacion": "PENDIENTE_ADAPTADOR",
-    "incorporada": false,
-    "conector": null,
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://lasparejas.gov.ar/",
       "fecha": "2026-10-25",
       "observacion": "Sitio oficial localizado; falta ruta específica"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "cobertura-2026-10-27"
   },
   {
     "id": "fuente-013",
@@ -250,16 +282,21 @@
     "provincia": "Santa Fe",
     "url": "https://funes.gob.ar/",
     "tipo_portal": "institucional",
-    "estado_verificacion": "PENDIENTE_ADAPTADOR",
-    "incorporada": false,
-    "conector": null,
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://funes.gob.ar/",
       "fecha": "2026-10-25",
       "observacion": "URL publicada en Boletín Oficial provincial; falta ruta específica"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "cobertura-2026-10-27"
   },
   {
     "id": "fuente-014",
@@ -292,16 +329,21 @@
     "provincia": "Santa Fe",
     "url": "https://perez.opendata.junar.com/home/",
     "tipo_portal": "datos_abiertos",
-    "estado_verificacion": "PENDIENTE_ADAPTADOR",
-    "incorporada": false,
-    "conector": null,
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://perez.opendata.junar.com/home/",
       "fecha": "2026-10-25",
       "observacion": "Listado municipal localizado; validar enlace institucional y recursos descargables"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "cobertura-2026-10-27"
   },
   {
     "id": "fuente-016",
@@ -310,16 +352,21 @@
     "provincia": "Santa Fe",
     "url": "https://vggmunicipalidad.gov.ar/licitaciones/",
     "tipo_portal": "javascript",
-    "estado_verificacion": "PENDIENTE_ADAPTADOR",
-    "incorporada": false,
-    "conector": null,
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://vggmunicipalidad.gov.ar/licitaciones/",
       "fecha": "2026-10-25",
       "observacion": "Resultados web inconsistentes: vacío actual y tabla histórica; no asumir sin novedades"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "cobertura-2026-10-27"
   },
   {
     "id": "fuente-017",
@@ -388,16 +435,27 @@
     "provincia": "Santa Fe",
     "url": "https://www.rafaela.gob.ar/gobiernoabierto/Licitaciones.aspx",
     "tipo_portal": "aspx",
-    "estado_verificacion": "PENDIENTE_ADAPTADOR",
-    "incorporada": false,
-    "conector": null,
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://www.rafaela.gob.ar/gobiernoabierto/Licitaciones.aspx",
       "fecha": "2026-10-25",
       "observacion": "Índice con rutas a públicas, privadas y concursos; falta inspeccionar destinos"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "seguir_patrones": [
+      "ProcesosLicitaciones",
+      "LicitacionesPublicas",
+      "LicitacionesPrivadas"
+    ]
   },
   {
     "id": "fuente-021",
@@ -446,16 +504,21 @@
     "provincia": "Entre Ríos",
     "url": "https://portal.entrerios.gov.ar/haciendayfinanzas/contrataciones/",
     "tipo_portal": "javascript",
-    "estado_verificacion": "PENDIENTE_ADAPTADOR",
-    "incorporada": false,
-    "conector": null,
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://portal.entrerios.gov.ar/haciendayfinanzas/contrataciones/",
       "fecha": "2026-10-25",
       "observacion": "Página oficial exige JavaScript; no hay publicaciones en HTML"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "cobertura-2026-10-27"
   },
   {
     "id": "fuente-024",
@@ -611,18 +674,28 @@
     "organismo": "Municipalidad de Victoria",
     "localidad": "Victoria",
     "provincia": "Entre Ríos",
-    "url": "https://victoria.gob.ar/es/",
+    "url": "https://victoria.gob.ar/web-compras/Invitaciones-Compras/concurso-de-precios/",
     "tipo_portal": "institucional",
-    "estado_verificacion": "PENDIENTE_ADAPTADOR",
-    "incorporada": false,
-    "conector": null,
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://victoria.gob.ar/es/",
       "fecha": "2026-10-25",
       "observacion": "Sitio oficial localizado; falta ruta de compras"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "cobertura-2026-10-27",
+    "seguir_patrones": [
+      "/web-compras/Invitaciones-Compras/",
+      "/web-compras/.*licitaci",
+      "/web-compras/.*concurso"
+    ]
   },
   {
     "id": "fuente-032",
@@ -651,16 +724,21 @@
     "provincia": "Entre Ríos",
     "url": "https://colon.gov.ar/compras-contratos-suministros/licitaciones/",
     "tipo_portal": "iframe",
-    "estado_verificacion": "PENDIENTE_ADAPTADOR",
-    "incorporada": false,
-    "conector": null,
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://colon.gov.ar/compras-contratos-suministros/licitaciones/",
       "fecha": "2026-10-25",
       "observacion": "Cuatro iframes: públicas y privadas abiertas y cerradas; destinos pendientes"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "cobertura-2026-10-27"
   },
   {
     "id": "fuente-034",
@@ -708,16 +786,21 @@
     "provincia": "Entre Ríos",
     "url": "https://w3.gualeguaychu.gov.ar/tramites/compras-y-licitaciones/acceso-a-licitaciones-p%C3%BAblicas",
     "tipo_portal": "tramite",
-    "estado_verificacion": "PENDIENTE_ADAPTADOR",
-    "incorporada": false,
-    "conector": null,
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://w3.gualeguaychu.gov.ar/tramites/compras-y-licitaciones/acceso-a-licitaciones-p%C3%BAblicas",
       "fecha": "2026-10-25",
       "observacion": "Guía oficial; falta seguir enlace de listado público"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "cobertura-2026-10-27"
   },
   {
     "id": "fuente-037",
@@ -791,16 +874,27 @@
     "provincia": "Entre Ríos",
     "url": "https://chajari.gob.ar/",
     "tipo_portal": "institucional",
-    "estado_verificacion": "PENDIENTE_ADAPTADOR",
-    "incorporada": false,
-    "conector": null,
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://chajari.gob.ar/",
       "fecha": "2026-10-25",
       "observacion": "Nuevo sitio oficial enlaza plataforma digital; destino pendiente"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "cobertura-2026-10-27",
+    "urls_inicio": [
+      "https://licitaciones.chajari.gob.ar/"
+    ],
+    "dominios_documentos": [
+      "licitaciones.chajari.gob.ar"
+    ]
   },
   {
     "id": "fuente-041",
@@ -942,16 +1036,25 @@
     "provincia": "Buenos Aires",
     "url": "https://sanpedro.net.ar/portal.php",
     "tipo_portal": "institucional",
-    "estado_verificacion": "PENDIENTE_ADAPTADOR",
-    "incorporada": false,
-    "conector": null,
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://sanpedro.net.ar/portal.php",
       "fecha": "2026-10-25",
       "observacion": "Portal municipal localizado; falta ruta de contrataciones"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "cobertura-2026-10-27",
+    "urls_inicio": [
+      "https://www.sanpedro.net.ar/legislacion/boletin.php"
+    ],
+    "indice_documentos": true
   },
   {
     "id": "fuente-048",
@@ -1086,5 +1189,199 @@
     "url_anterior_ordenes_compra": "https://transparencia.rojas.gov.ar/index.php?action=18",
     "correccion_alcance": "La ruta action18 publica ejecución de órdenes de compra, no es el listado de licitaciones privadas enlazado por el municipio.",
     "marcador_vacio": "no se encontraron documentos[.]"
+  },
+  {
+    "id": "fuente-054",
+    "organismo": "Ente Administrador Puerto Rosario (ENAPRO)",
+    "localidad": "Rosario",
+    "provincia": "Santa Fe",
+    "url": "https://enapro.com.ar/category/licitaciones/",
+    "tipo_portal": "html_paginado",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda y apertura web oficial; pendiente conector real",
+      "url": "https://enapro.com.ar/category/licitaciones/"
+    },
+    "enriquecer_fichas": true
+  },
+  {
+    "id": "fuente-055",
+    "organismo": "Municipalidad de Alvear",
+    "localidad": "Alvear",
+    "provincia": "Santa Fe",
+    "url": "https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones",
+    "tipo_portal": "html_fichas",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda y apertura web oficial; pendiente conector real",
+      "url": "https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones"
+    },
+    "seguir_patrones": [
+      "pagina=licitaciones",
+      "pagina=licitacion",
+      "pagina=detalle"
+    ],
+    "enriquecer_fichas": true
+  },
+  {
+    "id": "fuente-056",
+    "organismo": "Municipalidad de San Lorenzo",
+    "localidad": "San Lorenzo",
+    "provincia": "Santa Fe",
+    "url": "https://sanlorenzo.gob.ar/licitaciones/",
+    "tipo_portal": "javascript",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda y apertura web oficial; pendiente conector real",
+      "url": "https://sanlorenzo.gob.ar/licitaciones/"
+    }
+  },
+  {
+    "id": "fuente-057",
+    "organismo": "IAFAS",
+    "localidad": "Paraná",
+    "provincia": "Entre Ríos",
+    "url": "https://www.iafas.gov.ar/proveedores/licitaciones/",
+    "tipo_portal": "encabezados_pdf",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda y apertura web oficial; pendiente conector real",
+      "url": "https://www.iafas.gov.ar/proveedores/licitaciones/"
+    },
+    "adaptador": "encabezados"
+  },
+  {
+    "id": "fuente-058",
+    "organismo": "Universidad Nacional de Entre Ríos (UNER)",
+    "localidad": "Concepción del Uruguay",
+    "provincia": "Entre Ríos",
+    "url": "https://compras.uner.edu.ar/",
+    "tipo_portal": "siu_diaguita",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda y apertura web oficial; pendiente conector real",
+      "url": "https://compras.uner.edu.ar/"
+    }
+  },
+  {
+    "id": "fuente-059",
+    "organismo": "Municipalidad de Colón",
+    "localidad": "Colón",
+    "provincia": "Buenos Aires",
+    "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+    "tipo_portal": "imagenes",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda y apertura web oficial; pendiente conector real",
+      "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+    },
+    "adaptador": "colon-pba",
+    "documentos_imagen": true
+  },
+  {
+    "id": "fuente-060",
+    "organismo": "Boletín Oficial de Santa Fe",
+    "localidad": null,
+    "provincia": "Santa Fe",
+    "url": "https://www.santafe.gov.ar/boletinoficial/",
+    "tipo_portal": "boletin_html",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda y apertura web oficial; pendiente conector real",
+      "url": "https://www.santafe.gov.ar/boletinoficial/"
+    },
+    "organismos_multiples": true,
+    "seguir_patrones": [
+      "ver.php.*licitaciones",
+      "fecha="
+    ],
+    "adaptador": "boletin-sf"
+  },
+  {
+    "id": "fuente-061",
+    "organismo": "Boletín Oficial de Entre Ríos",
+    "localidad": null,
+    "provincia": "Entre Ríos",
+    "url": "https://www.entrerios.gov.ar/boletin/",
+    "tipo_portal": "boletin_pdf",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "investigar_scripts": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda y apertura web oficial; pendiente conector real",
+      "url": "https://www.entrerios.gov.ar/boletin/"
+    },
+    "organismos_multiples": true,
+    "indice_documentos": true
   }
 ]

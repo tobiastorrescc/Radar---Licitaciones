@@ -319,6 +319,10 @@ def extraer(html,url,config=None):
                'evento_publicado':None,'llamado_especial':False,'situacion_publicada':situacion(campos.get('estado','')),'campos_oficiales':campos}
             agrupados={(p['procedimiento'],None,None):r}
             break
+    if config.get('adaptador') in ('encabezados','colon-pba'):
+        from extractores_lotes import encabezados
+        secciones=encabezados(raiz,url,config)
+        if secciones:agrupados={(r['procedimiento'],r['evento_publicado']):r for r in secciones}
     enlaces=(dom.root if config.get('descubrir_menu') else raiz).enlaces(url)
     if config.get('adaptador')=='rosario':
         for l in enlaces:

@@ -5,7 +5,7 @@ on:
     - cron: '0 11 * * *' # 08:00 Argentina; GitHub puede retrasar la ejecucion
   pull_request:
   push:
-    paths: ['radar.py', 'conectores.py', 'extractores.py', 'documentos.py', 'oportunidades.py', 'pagos.py', 'cache_documentos.py', 'inventario/**', 'tools/**', 'tests/**', '.github/workflows/**', 'fuentes*']
+    paths: ['radar.py', 'conectores.py', 'extractores.py', 'extractores_lotes.py', 'documentos.py', 'oportunidades.py', 'pagos.py', 'cache_documentos.py', 'inventario/**', 'tools/**', 'tests/**', '.github/workflows/**', 'fuentes*']
 permissions:
   contents: read
 concurrency:
@@ -93,6 +93,9 @@ jobs:
           path: work/cache-documentos
           key: textos-v1-${{ github.run_id }}
           restore-keys: textos-v1-
+      - name: Relevar padrón territorial oficial sin escribir producción
+        timeout-minutes: 2
+        run: python tools/padron_territorial.py
       - name: Verificar sin modificar historial de producción
         id: verificar
         continue-on-error: true # Diagnóstico de fuentes; no confundir disponibilidad con pruebas unitarias.

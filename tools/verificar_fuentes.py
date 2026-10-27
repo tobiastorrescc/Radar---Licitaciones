@@ -44,6 +44,15 @@ def worker(config, checkpoint, conexion, lectura, max_paginas):
         guardar(checkpoint, {**r, 'actualizado': ahora(), 'duracion_segundos': round(time.monotonic()-inicio, 3)})
     transporte=partial(conectores.descargar, conexion_timeout=fuente.get('conexion_timeout',conexion), lectura_timeout=fuente.get('lectura_timeout',lectura))
     def fetch(url):
+        if fuente.get('capturar_respuestas') and not urlparse(url).path.lower().endswith(('.pdf','.docx','.zip','.jpg','.jpeg','.png')):
+            from hashlib import sha256
+            datos,tipo,final=transporte(url)
+            if 'html' in tipo.lower() or 'json' in tipo.lower():
+                base=Path(checkpoint).parent/'capturas'/fuente['id'];base.mkdir(parents=True,exist_ok=True)
+                nombre=sha256(url.encode()).hexdigest()
+                (base/(nombre+'.txt')).write_bytes(datos)
+                guardar(base/(nombre+'.json'),{'url':url,'final':final,'tipo':tipo,'sha256':sha256(datos).hexdigest()})
+            return datos,tipo,final
         if urlparse(url).path.lower().endswith(('.pdf','.docx','.zip','.jpg','.jpeg','.png')):return cache_documentos.obtener(url,transport=transporte)[:3]
         return transporte(url)
     try:
