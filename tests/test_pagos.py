@@ -212,3 +212,7 @@ class ReporteCamposPreviosTests(unittest.TestCase):
         r={'organismo':'Municipio','numero_procedimiento':'1/2026','localidad':'Rosario','provincia':'Santa Fe','presupuesto':'$36.000.000','fecha_apertura':'2026-10-28','fecha_hora_apertura':'2026-10-28T10:00:00-03:00','fecha_publicacion':'2026-10-20','enlace_pliego':URL,'url':URL,'titulo':'Servicio','vigencia':'ABIERTA'}
         reporte=o.reporte([r],'2026-10-27')
         for dato in ['Rosario / Santa Fe','$36.000.000','2026-10-28T10:00:00-03:00','2026-10-20','[Pliego]('+URL+')','Condiciones de pago','Documento de respaldo','Pago no informado']:self.assertIn(dato,reporte)
+        r['presupuesto']={'importe':'36000000','moneda':None}
+        reporte=o.reporte([r],'2026-10-27')
+        self.assertIn('36000000 (moneda no informada)',reporte)
+        self.assertNotIn("{'importe':",reporte)
