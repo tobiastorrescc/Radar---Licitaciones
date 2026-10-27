@@ -47,6 +47,11 @@ class DescubrimientoTests(unittest.TestCase):
     def test_un_portal_en_dos_busquedas_no_infla_fuentes(self):
         cs=[{'url':'https://colon.gob.ar/a','validacion':{'estado':'PENDIENTE'}},{'url':'https://colon.gob.ar/a','validacion':{'estado':'VALIDADA'}},{'url':'https://otro.gob.ar/a'}]
         self.assertEqual(d.contar_portales(cs),{'VALIDADA':1,'PENDIENTE':1})
+    def test_funes_registro_sin_numero_normalizable_deduplica_dos_accesos(self):
+        r={'titulo':'Modalidad sin reconocer, compra de hormigón','objeto':'Compra de hormigón','organismo':'Municipalidad de Funes','provincia':'Santa Fe','registro_estructurado':True,'numero_oficial_sin_interpretar':'PUBLICADA 000A/2026','evidencia_url':'https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php','url':'https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php','fuente':'https://funes.gob.ar/'}
+        registros=o.deduplicar([r,{**r,'fuente':'https://funes.gob.ar/boletin_oficial'}],'2026-10-27')
+        self.assertEqual(len(registros),1);self.assertIsNone(registros[0]['numero_procedimiento'])
+        self.assertEqual(len(o.deduplicar([r,{**r,'numero_oficial_sin_interpretar':'PUBLICADA 000B/2026'}],'2026-10-27')),2)
     def test_padron_y_sectores_se_consultan_sin_inventar_urls(self):
         padron={'municipios':[{'codigo':'01','localidad':'Comuna Pequeña','provincia':'Santa Fe','tipo_gobierno':'Comuna'}]}
         r=d.objetivos(padron,[])

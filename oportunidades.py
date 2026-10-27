@@ -232,6 +232,9 @@ def identidad(r):
     org=norm(r.get('organismo'))
     if proc:
         partes=[norm(r.get('provincia')),org or r.get('fuente',''),proc,convocatoria(r),r.get('identidad_ambito','')]
+    elif r.get('registro_estructurado') and r.get('numero_oficial_sin_interpretar') and r.get('evidencia_url'):
+        # Dos accesos al mismo registro API: igualdad literal comprobada sin inventar número.
+        partes=[norm(r.get('provincia')),org,r['evidencia_url'],str(r['numero_oficial_sin_interpretar']),norm(r.get('titulo')),convocatoria(r)]
     else:
         partes=[r.get('fuente',''),r.get('id') or r.get('url',''),norm(r.get('titulo'))]
     return sha256('|'.join(partes).encode()).hexdigest()
