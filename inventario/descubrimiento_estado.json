@@ -144,7 +144,31 @@
     "territorio:060497": "2026-10-27T23:37:27.076662+00:00",
     "territorio:822133": "2026-10-27T23:37:27.076662+00:00",
     "territorio:309795": "2026-10-27T23:37:27.076662+00:00",
-    "territorio:060515": "2026-10-27T23:37:27.076662+00:00"
+    "territorio:060515": "2026-10-27T23:37:27.076662+00:00",
+    "territorio:822140": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:309615": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:060525": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:822042": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:309832": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:060532": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:822770": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:309192": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:060539": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:823736": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:309625": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:060560": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:822049": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:309190": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:060568": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:822420": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:309193": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:060574": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:822007": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:300413": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:060638": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:822882": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:309520": "2026-10-27T23:41:52.726355+00:00",
+    "territorio:060665": "2026-10-27T23:41:52.726355+00:00"
   },
   "candidatos": {
     "inventario-fuente-034": {
@@ -2315,6 +2339,989 @@
       },
       "errores": [],
       "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T233730-416c3996/0000.json"
+    },
+    "99e988c76d5d22c48f60": {
+      "clave": "territorio:309832",
+      "localidad": "Arroyo Gená",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Arroyo Gená",
+      "consulta": "\"Arroyo Gená\" \"Entre Ríos\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-99e988c76d5d22c48f60",
+      "url": "https://www.sanisidro.gob.ar/",
+      "titulo": "San Isidro",
+      "busqueda_url": "https://www.bing.com/search?q=%22Arroyo+Gen%C3%A1%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0023.json"
+    },
+    "b286ea8eabf6c0c4d715": {
+      "clave": "territorio:309832",
+      "localidad": "Arroyo Gená",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Arroyo Gená",
+      "consulta": "\"Arroyo Gená\" \"Entre Ríos\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-b286ea8eabf6c0c4d715",
+      "url": "https://www.sanisidro.gob.ar/municipio/turismo",
+      "titulo": "Turismo - San Isidro",
+      "busqueda_url": "https://www.bing.com/search?q=%22Arroyo+Gen%C3%A1%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "5141d883564029231f6f": {
+      "clave": "territorio:309625",
+      "localidad": "Arroyo Palo Seco",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Arroyo Palo Seco",
+      "consulta": "\"Arroyo Palo Seco\" \"Entre Ríos\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-5141d883564029231f6f",
+      "url": "https://ingenieria.uncuyo.edu.ar/upload/estructuras-laminares-07.pdf",
+      "titulo": "Facultad de Ingeniería - Universidad Nacional de Cuyo",
+      "busqueda_url": "https://www.bing.com/search?q=%22Arroyo+Palo+Seco%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "La identidad requiere una página HTML oficial; PDF aislado queda pendiente",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "ValueError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "La identidad requiere una página HTML oficial; PDF aislado queda pendiente"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0012.json"
+    },
+    "11067128dbb3bebc9eca": {
+      "clave": "territorio:060560",
+      "localidad": "Moreno",
+      "provincia": "Buenos Aires",
+      "organismo": "Municipalidad de Moreno",
+      "consulta": "\"Moreno\" \"Buenos Aires\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-11067128dbb3bebc9eca",
+      "url": "https://www.argentina.gob.ar/noticias/un-regimiento-aislado-en-la-isla-gran-malvina-y-las-operaciones-para-abastecerlo",
+      "titulo": "Un regimiento aislado en la Isla Gran Malvina y las operaciones para ...",
+      "busqueda_url": "https://www.bing.com/search?q=%22Moreno%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Moreno",
+          "localidad": "Moreno",
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": false,
+          "url": "https://www.argentina.gob.ar/noticias/un-regimiento-aislado-en-la-isla-gran-malvina-y-las-operaciones-para-abastecerlo",
+          "sha256": "98dc56fd119e3170cc41e7d601ed44faa9b7b45c2020046e5a993bcd0e14481d",
+          "cabecera": " Un regimiento aislado en la Isla Gran Malvina y las operaciones para abastecerlo | Argentina.gob.ar Presidencia de la Nación Un regimiento aislado en la Isla Gran Malvina y las operaciones para abastecerlo Noticias relacionadas Trámites Acerca de la República Argentina Acerca de Argentina.gob.ar",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-10-27T23:42:02.509668+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0005.json"
+    },
+    "60537a70ef522fb5c4ad": {
+      "clave": "territorio:060560",
+      "localidad": "Moreno",
+      "provincia": "Buenos Aires",
+      "organismo": "Municipalidad de Moreno",
+      "consulta": "\"Moreno\" \"Buenos Aires\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-60537a70ef522fb5c4ad",
+      "url": "https://observatoriomalvinas.legisrn.gov.ar/relieve-flora-y-fauna-de-las-islas-malvinas/",
+      "titulo": "Relieve, flora y fauna de las Islas Malvinas",
+      "busqueda_url": "https://www.bing.com/search?q=%22Moreno%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Moreno",
+          "localidad": "Moreno",
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": false,
+          "url": "https://observatoriomalvinas.legisrn.gov.ar/relieve-flora-y-fauna-de-las-islas-malvinas/",
+          "sha256": "372c324e02bde44b05dde45e8b7c10940360f63ef2a8abfd83d08b6af04e80dd",
+          "cabecera": "Relieve, flora y fauna de las Islas Malvinas – Observatorio Malvinas – Río Negro Observatorio Malvinas – Río Negro Relieve, flora y fauna de las Islas Malvinas Su ciudad más importante Su relieve y geografía Su fauna Su flora Sus recursos naturales Navegación de entradas",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-10-27T23:42:10.190451+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0015.json"
+    },
+    "969e6775e57dec57df31": {
+      "clave": "territorio:822420",
+      "localidad": "Bombal",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bombal",
+      "consulta": "\"Bombal\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-969e6775e57dec57df31",
+      "url": "https://www.entrerios.gov.ar/registrocivil/index.html",
+      "titulo": "Gobierno de Entre Ríos",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bombal%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Redirección a otro dominio: requiere contraste independiente",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "ValueError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Redirección a otro dominio: requiere contraste independiente"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0020.json"
+    },
+    "971de468cb21dcc524db": {
+      "clave": "territorio:822420",
+      "localidad": "Bombal",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bombal",
+      "consulta": "\"Bombal\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-971de468cb21dcc524db",
+      "url": "https://www.entrerios.gov.ar/registrocivil/",
+      "titulo": "Gobierno de Entre Ríos",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bombal%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Redirección a otro dominio: requiere contraste independiente",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "ValueError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Redirección a otro dominio: requiere contraste independiente"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0021.json"
+    },
+    "d18ec97b01c57933ef0f": {
+      "clave": "territorio:822420",
+      "localidad": "Bombal",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bombal",
+      "consulta": "\"Bombal\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-d18ec97b01c57933ef0f",
+      "url": "https://www.casadeentrerios.gov.ar/?page_id=494",
+      "titulo": "Solicitud Partidas | Casa de la Provincia de Entre Ríos",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bombal%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "6e36655a10388af81174": {
+      "clave": "territorio:822420",
+      "localidad": "Bombal",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bombal",
+      "consulta": "\"Bombal\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-6e36655a10388af81174",
+      "url": "https://www.casadeentrerios.gov.ar/?page_id=925",
+      "titulo": "Area Registro Civil | Casa de la Provincia de Entre Ríos",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bombal%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Comuna de Bombal",
+          "localidad": "Bombal",
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": false,
+          "url": "https://www.casadeentrerios.gov.ar/?page_id=925",
+          "sha256": "81e35ec56acf89e49cacf579940af3d111ab15a80ea03485740d5d861628555a",
+          "cabecera": "Area Registro Civil | Casa de la Provincia de Entre Ríos  Registro Civil",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-10-27T23:42:11.044053+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0016.json"
+    },
+    "a13080634032dc6af8fd": {
+      "clave": "territorio:822420",
+      "localidad": "Bombal",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bombal",
+      "consulta": "\"Bombal\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-a13080634032dc6af8fd",
+      "url": "https://www.crespo.gob.ar/",
+      "titulo": "Municipalidad de la Ciudad de Crespo | Municipalidad de Crespo",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bombal%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "f9ef5b76b8d2495a0abf": {
+      "clave": "territorio:060574",
+      "localidad": "Navarro",
+      "provincia": "Buenos Aires",
+      "organismo": "Municipalidad de Navarro",
+      "consulta": "\"Navarro\" \"Buenos Aires\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-f9ef5b76b8d2495a0abf",
+      "url": "https://navarro.gob.ar/",
+      "titulo": "Municipalidad de Navarro",
+      "busqueda_url": "https://www.bing.com/search?q=%22Navarro%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "2570282b3909432c5395": {
+      "clave": "territorio:300413",
+      "localidad": "Basavilbaso",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Basavilbaso",
+      "consulta": "\"Basavilbaso\" \"Entre Ríos\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-2570282b3909432c5395",
+      "url": "https://dgr.lapampa.gob.ar/ServiciosEnLinea/",
+      "titulo": "Direccion General de Rentas - La Pampa Province",
+      "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error timed out>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0008.json"
+    },
+    "40efe7c5132b53d98c81": {
+      "clave": "territorio:300413",
+      "localidad": "Basavilbaso",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Basavilbaso",
+      "consulta": "\"Basavilbaso\" \"Entre Ríos\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-40efe7c5132b53d98c81",
+      "url": "https://www.lapampa.gob.ar/algarrobo-del-aguila.html",
+      "titulo": "Algarrobo del Águila - Sitio Oficial del Gobierno de La Pampa",
+      "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Basavilbaso",
+          "localidad": "Basavilbaso",
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": false,
+          "url": "https://www.lapampa.gob.ar/algarrobo-del-aguila.html",
+          "sha256": "7e9666c4a64ae537369ac8c9ba809d2cf424f8c1d99c732203f28f5a7e78144b",
+          "cabecera": "Algarrobo del Águila - Sitio Oficial del Gobierno de La Pampa Algarrobo del Águila",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-10-27T23:42:07.153815+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0009.json"
+    },
+    "558e731694a0c49ec8b4": {
+      "clave": "territorio:300413",
+      "localidad": "Basavilbaso",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Basavilbaso",
+      "consulta": "\"Basavilbaso\" \"Entre Ríos\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-558e731694a0c49ec8b4",
+      "url": "https://drn.lapampa.gob.ar/temporada-de-caza-1.html",
+      "titulo": "Temporada de Caza - Dirección de Recursos Naturales - La Pampa Province",
+      "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error timed out>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0014.json"
+    },
+    "4b76ebbce7581f7ff0d4": {
+      "clave": "territorio:300413",
+      "localidad": "Basavilbaso",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Basavilbaso",
+      "consulta": "\"Basavilbaso\" \"Entre Ríos\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-4b76ebbce7581f7ff0d4",
+      "url": "https://www.lapampa.gob.ar/gobernador-duval.html",
+      "titulo": "Gobernador Duval - Sitio Oficial del Gobierno de La Pampa",
+      "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Basavilbaso",
+          "localidad": "Basavilbaso",
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": false,
+          "url": "https://www.lapampa.gob.ar/gobernador-duval.html",
+          "sha256": "b1911afc9a20527cb05e9fcb8cb30695fb54f59968f2ea121a8195bafa9512db",
+          "cabecera": "Gobernador Duval - Sitio Oficial del Gobierno de La Pampa Gobernador Duval",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-10-27T23:42:07.993753+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0010.json"
+    },
+    "0db6740540d1ec91d640": {
+      "clave": "territorio:300413",
+      "localidad": "Basavilbaso",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Basavilbaso",
+      "consulta": "\"Basavilbaso\" \"Entre Ríos\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-0db6740540d1ec91d640",
+      "url": "https://drn.lapampa.gob.ar/cotos-habilitados.html",
+      "titulo": "Cotos Habilitados - Dirección de Recursos Naturales - La Pampa Province",
+      "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error timed out>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0004.json"
+    },
+    "b62be39f8b4a0bb3a39d": {
+      "clave": "territorio:300413",
+      "localidad": "Basavilbaso",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Basavilbaso",
+      "consulta": "\"Basavilbaso\" \"Entre Ríos\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-b62be39f8b4a0bb3a39d",
+      "url": "https://turismo.lapampa.gob.ar/rural.html",
+      "titulo": "Rural - Secretaría de Turismo - La Pampa Original",
+      "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "07d727fc3f6cd37258b0": {
+      "clave": "territorio:300413",
+      "localidad": "Basavilbaso",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Basavilbaso",
+      "consulta": "\"Basavilbaso\" \"Entre Ríos\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-07d727fc3f6cd37258b0",
+      "url": "https://justicia.lapampa.gob.ar/institucional/circunscripciones-judiciales",
+      "titulo": "Circunscripciones Judiciales - Justicia La Pampa",
+      "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error timed out>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0003.json"
+    },
+    "99ae75779d3a399cb3c3": {
+      "clave": "territorio:300413",
+      "localidad": "Basavilbaso",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Basavilbaso",
+      "consulta": "\"Basavilbaso\" \"Entre Ríos\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-99ae75779d3a399cb3c3",
+      "url": "https://justicia.lapampa.gob.ar/informacion/personal.html",
+      "titulo": "Personal - Justicia La Pampa",
+      "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error timed out>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0022.json"
+    },
+    "0060809e2c357c41bf33": {
+      "clave": "territorio:300413",
+      "localidad": "Basavilbaso",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Basavilbaso",
+      "consulta": "\"Basavilbaso\" \"Entre Ríos\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-0060809e2c357c41bf33",
+      "url": "https://turismo.lapampa.gob.ar/salinas-pampeanas.html",
+      "titulo": "Salinas Pampeanas - Secretaría de Turismo - La Pampa Original",
+      "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error timed out>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0000.json"
+    },
+    "787ee1d5824a9522423b": {
+      "clave": "territorio:300413",
+      "localidad": "Basavilbaso",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Basavilbaso",
+      "consulta": "\"Basavilbaso\" \"Entre Ríos\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-787ee1d5824a9522423b",
+      "url": "https://tarjetajoven.lapampa.gob.ar/",
+      "titulo": "La Pampa Province - CIPADI - CIUDADANÍA Pampeana Digital",
+      "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error timed out>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0018.json"
+    },
+    "b8f29f9ba65fa1c47817": {
+      "clave": "territorio:060638",
+      "localidad": "Pilar",
+      "provincia": "Buenos Aires",
+      "organismo": "Municipalidad de Pilar",
+      "consulta": "\"Pilar\" \"Buenos Aires\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-b8f29f9ba65fa1c47817",
+      "url": "https://dgr.lapampa.gob.ar/ServiciosEnLinea/",
+      "titulo": "Direccion General de Rentas - La Pampa Province",
+      "busqueda_url": "https://www.bing.com/search?q=%22Pilar%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "a1a523350e98ee566dbb": {
+      "clave": "territorio:060638",
+      "localidad": "Pilar",
+      "provincia": "Buenos Aires",
+      "organismo": "Municipalidad de Pilar",
+      "consulta": "\"Pilar\" \"Buenos Aires\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-a1a523350e98ee566dbb",
+      "url": "https://www.lapampa.gob.ar/algarrobo-del-aguila.html",
+      "titulo": "Algarrobo del Águila - Sitio Oficial del Gobierno de La Pampa",
+      "busqueda_url": "https://www.bing.com/search?q=%22Pilar%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "4bc715341e9ff1ab3939": {
+      "clave": "territorio:060638",
+      "localidad": "Pilar",
+      "provincia": "Buenos Aires",
+      "organismo": "Municipalidad de Pilar",
+      "consulta": "\"Pilar\" \"Buenos Aires\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-4bc715341e9ff1ab3939",
+      "url": "https://drn.lapampa.gob.ar/temporada-de-caza-1.html",
+      "titulo": "Temporada de Caza - Dirección de Recursos Naturales - La Pampa Province",
+      "busqueda_url": "https://www.bing.com/search?q=%22Pilar%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error timed out>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0011.json"
+    },
+    "b8d9ac7491986ade6420": {
+      "clave": "territorio:060638",
+      "localidad": "Pilar",
+      "provincia": "Buenos Aires",
+      "organismo": "Municipalidad de Pilar",
+      "consulta": "\"Pilar\" \"Buenos Aires\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-b8d9ac7491986ade6420",
+      "url": "https://www.lapampa.gob.ar/gobernador-duval.html",
+      "titulo": "Gobernador Duval - Sitio Oficial del Gobierno de La Pampa",
+      "busqueda_url": "https://www.bing.com/search?q=%22Pilar%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "e63a762dfed6b4663a99": {
+      "clave": "territorio:060638",
+      "localidad": "Pilar",
+      "provincia": "Buenos Aires",
+      "organismo": "Municipalidad de Pilar",
+      "consulta": "\"Pilar\" \"Buenos Aires\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-e63a762dfed6b4663a99",
+      "url": "https://drn.lapampa.gob.ar/cotos-habilitados.html",
+      "titulo": "Cotos Habilitados - Dirección de Recursos Naturales - La Pampa Province",
+      "busqueda_url": "https://www.bing.com/search?q=%22Pilar%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "1254a4ae84264dfaa90e": {
+      "clave": "territorio:060638",
+      "localidad": "Pilar",
+      "provincia": "Buenos Aires",
+      "organismo": "Municipalidad de Pilar",
+      "consulta": "\"Pilar\" \"Buenos Aires\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-1254a4ae84264dfaa90e",
+      "url": "https://turismo.lapampa.gob.ar/rural.html",
+      "titulo": "Rural - Secretaría de Turismo - La Pampa Original",
+      "busqueda_url": "https://www.bing.com/search?q=%22Pilar%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error timed out>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0006.json"
+    },
+    "be7f5e20a0ac9c23b76f": {
+      "clave": "territorio:060638",
+      "localidad": "Pilar",
+      "provincia": "Buenos Aires",
+      "organismo": "Municipalidad de Pilar",
+      "consulta": "\"Pilar\" \"Buenos Aires\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-be7f5e20a0ac9c23b76f",
+      "url": "https://justicia.lapampa.gob.ar/institucional/circunscripciones-judiciales",
+      "titulo": "Circunscripciones Judiciales - Justicia La Pampa",
+      "busqueda_url": "https://www.bing.com/search?q=%22Pilar%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "a7a6d80da256c63cad49": {
+      "clave": "territorio:060638",
+      "localidad": "Pilar",
+      "provincia": "Buenos Aires",
+      "organismo": "Municipalidad de Pilar",
+      "consulta": "\"Pilar\" \"Buenos Aires\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-a7a6d80da256c63cad49",
+      "url": "https://justicia.lapampa.gob.ar/informacion/personal.html",
+      "titulo": "Personal - Justicia La Pampa",
+      "busqueda_url": "https://www.bing.com/search?q=%22Pilar%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "1f96aa071e98d3511574": {
+      "clave": "territorio:060638",
+      "localidad": "Pilar",
+      "provincia": "Buenos Aires",
+      "organismo": "Municipalidad de Pilar",
+      "consulta": "\"Pilar\" \"Buenos Aires\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-1f96aa071e98d3511574",
+      "url": "https://turismo.lapampa.gob.ar/salinas-pampeanas.html",
+      "titulo": "Salinas Pampeanas - Secretaría de Turismo - La Pampa Original",
+      "busqueda_url": "https://www.bing.com/search?q=%22Pilar%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error timed out>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0007.json"
+    },
+    "9c502c37264eb6327b24": {
+      "clave": "territorio:060638",
+      "localidad": "Pilar",
+      "provincia": "Buenos Aires",
+      "organismo": "Municipalidad de Pilar",
+      "consulta": "\"Pilar\" \"Buenos Aires\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-9c502c37264eb6327b24",
+      "url": "https://tarjetajoven.lapampa.gob.ar/",
+      "titulo": "La Pampa Province - CIPADI - CIUDADANÍA Pampeana Digital",
+      "busqueda_url": "https://www.bing.com/search?q=%22Pilar%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "76179c09f4492fac61b2": {
+      "clave": "territorio:822882",
+      "localidad": "Bustinza",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bustinza",
+      "consulta": "\"Bustinza\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-76179c09f4492fac61b2",
+      "url": "https://www.sanisidro.gob.ar/",
+      "titulo": "San Isidro",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bustinza%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0017.json"
+    },
+    "841390f54cec54441701": {
+      "clave": "territorio:822882",
+      "localidad": "Bustinza",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bustinza",
+      "consulta": "\"Bustinza\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-841390f54cec54441701",
+      "url": "https://www.sanisidro.gob.ar/tramites/pago-de-tasas-y-abl",
+      "titulo": "ABL Y TASAS | San Isidro",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bustinza%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0019.json"
+    },
+    "e559ba1f30a02bd0a8fa": {
+      "clave": "territorio:822882",
+      "localidad": "Bustinza",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bustinza",
+      "consulta": "\"Bustinza\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-e559ba1f30a02bd0a8fa",
+      "url": "https://tesi.sanisidro.gob.ar/",
+      "titulo": "TESI San Isidro | TESI · Ingresar",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bustinza%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "d3c62d1dbfb61afe6bfc": {
+      "clave": "territorio:822882",
+      "localidad": "Bustinza",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bustinza",
+      "consulta": "\"Bustinza\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-d3c62d1dbfb61afe6bfc",
+      "url": "https://boletines.sanisidro.gob.ar/index.php/digesto",
+      "titulo": "Dirección General de Despacho y Legislación - San Isidro",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bustinza%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "a5b50cac6df5203f3fc2": {
+      "clave": "territorio:822882",
+      "localidad": "Bustinza",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bustinza",
+      "consulta": "\"Bustinza\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-a5b50cac6df5203f3fc2",
+      "url": "https://proveedores.sanisidro.gob.ar/",
+      "titulo": "Portal de Proveedores",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bustinza%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "edbaf740070866d16c29": {
+      "clave": "territorio:822882",
+      "localidad": "Bustinza",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bustinza",
+      "consulta": "\"Bustinza\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-edbaf740070866d16c29",
+      "url": "https://mi.sanisidro.gob.ar/",
+      "titulo": "Ingresar · Intranet San Isidro",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bustinza%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "06bb733024651fe494fb": {
+      "clave": "territorio:822882",
+      "localidad": "Bustinza",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bustinza",
+      "consulta": "\"Bustinza\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-06bb733024651fe494fb",
+      "url": "https://hcd.sanisidro.gob.ar/",
+      "titulo": "Inicio - Honorable Concejo Deliberante de San Isidro",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bustinza%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Comuna de Bustinza",
+          "localidad": "Bustinza",
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": false,
+          "url": "https://hcd.sanisidro.gob.ar/",
+          "sha256": "37e65c254e29bc3a602d9641ead3f5ee853ccbcd5abe3809378ac7e3108e70c6",
+          "cabecera": "Inicio - Honorable Concejo Deliberante de San Isidro  Convocatoria de Artistas 2027 Campaña de Recolección de Residuos Eléctricos y Electrónicos (RAEES) EL HCD SERÁ SEDE DE UN TALLER VIVENCIAL PARA MAYORES DE 60 AÑOS EL CONCEJO CONVALIDÓ UN ACUERDO DE COOPERACIÓN CON LA CIUDAD DE BUENOS AIRES “SALVE REGINA”: UNA MUESTRA DE DIBUJOS QUE RECUPERA HISTORIAS Y VÍNCULOS DE LA INFANCIA EL HCD FELICITÓ A LAS LEONAS POR SU TERCER TÍTULO MUNDIAL Y APROBÓ CAPACITACIONES EN RCP PARA DELEGADOS DEL BABY FÚTBOL CARLOS VICO LACOSTA PRESENTARÁ SU NUEVA NOVELA UNA INVITACIÓN A DESCUBRIR CÓMO LAS LENGUAS MOLDEAN NUESTRA FORMA DE VER EL MUNDO",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-10-27T23:41:59.589693+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0002.json"
+    },
+    "05a3542287a23875d42a": {
+      "clave": "territorio:822882",
+      "localidad": "Bustinza",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bustinza",
+      "consulta": "\"Bustinza\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-05a3542287a23875d42a",
+      "url": "https://boletines.sanisidro.gob.ar/",
+      "titulo": "San Isidro",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bustinza%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0001.json"
+    },
+    "a04a0167393b20f79ba8": {
+      "clave": "territorio:822882",
+      "localidad": "Bustinza",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bustinza",
+      "consulta": "\"Bustinza\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-a04a0167393b20f79ba8",
+      "url": "https://qa3.sanisidro.gob.ar/",
+      "titulo": "San Isidro | Gobierno Abierto",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bustinza%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00"
+    },
+    "52c791e5a2deaf03ceae": {
+      "clave": "territorio:822882",
+      "localidad": "Bustinza",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bustinza",
+      "consulta": "\"Bustinza\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-52c791e5a2deaf03ceae",
+      "url": "https://www.sanisidro.gob.ar/municipio/infraestructura",
+      "titulo": "Obras Públicas - San Isidro",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bustinza%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
+      "ultima_revision": "2026-10-27T23:41:52.726355+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T234156-926f48ab/0013.json"
     }
   }
 }
