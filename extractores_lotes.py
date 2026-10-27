@@ -100,6 +100,28 @@ def boletin_texto(texto,url,config):
     html=''.join('<p>'+escape(linea.strip())+'</p>' for linea in texto.splitlines() if linea.strip())
     return boletin_santafe(DOM(html).root,url,{**config,'boletin_documento':True})
 
+def acordeones_zarate(raiz,url):
+    """La convocatoria hereda año del acordeón padre, nunca de otra licitación."""
+    from extractores import Nodo,norm,ADJUNTOS,EVENTO
+    resultado=[]
+    def resumen(n):return next((c.text for c in n.children if isinstance(c,Nodo) and c.tag=='summary'),'')
+    for n in raiz.iter():
+        if n.tag!='details':continue
+        titulo=resumen(n);m=re.match(r'n[º°o.]*\s*(\d+)\s+["“]?(.*)',norm(titulo))
+        if not m:continue
+        anio=next((a[1] for p in list(n.padres())[1:] if (a:=re.search(r'licitaciones publicas\s*\|?\s*ano\s*(20\d{2})',norm(resumen(p))))),None)
+        if not anio:continue
+        numero=str(int(m[1]))+'/'+anio
+        # Objeto literal publicado en summary, con número aislado del texto.
+        objeto=re.sub(r'^N[º°o.]*\s*\d+\s*','',titulo,flags=re.I).strip(' "“”')
+        if len(objeto)<8:continue
+        docs=[{'url':l['url'],'titulo':l['texto']} for l in n.enlaces(url) if urlsplit(l['url']).path.lower().endswith(ADJUNTOS)]
+        evento='|'.join(sorted(set(EVENTO.findall(norm(titulo))))) or None
+        resultado.append({'titulo':'Licitación Pública '+numero+' '+objeto,'objeto':objeto,'procedimiento':'licitacion publica '+numero,
+            'numero_procedimiento':numero,'tipo_procedimiento':'licitacion publica','url':url,'evidencia_url':url,
+            'documentos':docs,'detalle_completo':True,'registro_estructurado':True,'evento_publicado':evento,'llamado_especial':bool(evento)})
+    return resultado
+
 
 def endpoints_vgg(dom,html,url):
     from extractores import url_publica

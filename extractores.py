@@ -138,6 +138,9 @@ def extraer(html,url,config=None):
     # Los anexos de San Nicolás están en aside; son contenido de contratación real.
     if config.get('incluir_aside'):regiones=[]
     if regiones and not config.get('usar_documento_entero'):raiz=regiones[0]
+    if config.get('adaptador')=='junin':
+        paneles=[n for n in raiz.iter() if n.clase('panel-info') and procesos(n.text)]
+        if len(paneles)==1:raiz=paneles[0]
     allow_aside=config.get('incluir_aside',False)
     candidatos=[]
     año=None
@@ -185,6 +188,7 @@ def extraer(html,url,config=None):
             if len({p['procedimiento'] for p in ps})!=1:continue
             elegido=n
             for parent in list(n.padres())[1:]:
+                if parent is raiz.parent:break
                 if parent.tag in ('html','body','root','main') or excluido(parent,allow_aside):break
                 pp=procesos(parent.text)
                 if len({p['procedimiento'] for p in pp})!=1 or len(parent.text)>16000:break
@@ -326,6 +330,10 @@ def extraer(html,url,config=None):
     if config.get('adaptador') in ('encabezados','colon-pba'):
         from extractores_lotes import encabezados
         secciones=encabezados(raiz,url,config)
+        if secciones:agrupados={(r['procedimiento'],r['evento_publicado']):r for r in secciones}
+    if config.get('adaptador')=='zarate':
+        from extractores_lotes import acordeones_zarate
+        secciones=acordeones_zarate(raiz,url)
         if secciones:agrupados={(r['procedimiento'],r['evento_publicado']):r for r in secciones}
     enlaces=(dom.root if config.get('descubrir_menu') else raiz).enlaces(url)
     if config.get('adaptador')=='rosario':

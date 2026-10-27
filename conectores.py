@@ -355,7 +355,9 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             def orden_pendiente(entrada):
                 u,c,ref=entrada
                 item=items.get(ref,{}) if isinstance(ref,str) else {}
-                return (0 if c=='DETALLE' and item.get('vigencia')=='ABIERTA' else (1 if c=='DETALLE' else 2),item.get('fecha_apertura') or '9999',u)
+                anios=re.findall(r'20\d{2}',item.get('numero_procedimiento') or '')
+                # Presupuesto de lectura: documentos recientes primero; no se descarta el archivo.
+                return (0 if c=='DETALLE' and item.get('vigencia')=='ABIERTA' else (1 if c=='DETALLE' else 2),-int(anios[-1]) if anios else 0,item.get('fecha_apertura') or '9999',u)
             pending=deque(sorted(pending,key=orden_pendiente))
             snapshot('PAGINA_FINALIZADA',url)
         except Exception as e:

@@ -847,7 +847,11 @@
     "ocr": true,
     "enriquecer_fichas": true,
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "seguir_patrones": [
+      "/adquisicion-de-equipo-servidor/?$",
+      "/alquiler-de-inmueble-2025/?$"
+    ]
   },
   "https://villaelisa.gov.ar/transparencia/": {
     "organismo": "Municipalidad de Villa Elisa",
@@ -876,10 +880,7 @@
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "seguir_patrones": [
-      "licitaciones-y-concursos/",
-      "/licitaciones-publicas/",
-      "/licitaciones-privadas/",
-      "/concursos-de-precios/"
+      "/licitaciones-(publicas|privadas)/?$"
     ],
     "descubrir_menu": true,
     "descubrir_contrataciones": true
@@ -941,7 +942,8 @@
     "ocr": true,
     "enriquecer_fichas": true,
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "adaptador": "junin"
   },
   "https://zarate.gob.ar/licitaciones-publicas/": {
     "organismo": "Municipalidad de Zárate",
@@ -954,7 +956,8 @@
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "adaptador": "zarate"
   },
   "https://www.sanandresdegiles.gob.ar/?q=licitaciones-publicas": {
     "organismo": "Municipalidad de San Andrés de Giles",

@@ -14,6 +14,15 @@ class DescubrimientoTests(unittest.TestCase):
         datos=b'<rss><channel><item><title>Compras</title><link>https://colon.gob.ar/compras</link></item><item><link>https://colon.gob.ar.ejemplo.com/</link></item><item><link>https://ejemplo.com/colon</link></item></channel></rss>'
         self.assertEqual([x['url'] for x in d.rss(datos)],['https://colon.gob.ar/compras'])
         self.assertFalse(d.oficial('https://gob.ar.ejemplo.com/'))
+    def test_buscador_alternativo_solo_enlaces_de_resultados_publicados(self):
+        html='<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fcolon.gob.ar%2Fcompras">Compras</a><a href="https://otro.gob.ar/">Publicidad</a>'
+        self.assertEqual(d.resultados_html(html,'https://html.duckduckgo.com/'),[{'url':'https://colon.gob.ar/compras','titulo':'Compras'}])
+    def test_worker_lento_o_bloqueado_no_promociona(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            entrada=Path(tmp)/'entrada.json';salida=Path(tmp)/'resultado.json'
+            entrada.write_text(json.dumps({**self.candidato(),'url':'https://colon.gob.ar/'}))
+            with patch('conectores.descargar',side_effect=TimeoutError('lectura agotada')):d.worker(entrada,salida)
+            r=json.loads(salida.read_text());self.assertEqual(r['validacion']['estado'],'PENDIENTE');self.assertTrue(r['errores'][0]['timeout'])
     def test_homonimos_y_provincia_desconocida_no_se_incorporan(self):
         html='<h1>Municipalidad de Colón</h1><p>Buenos Aires</p>'
         self.assertFalse(d.verificar_identidad(html,'https://colon.gob.ar/',self.candidato())['verificada'])
@@ -65,5 +74,27 @@ class DescubrimientoTests(unittest.TestCase):
         self.assertEqual(a['fecha_publicacion'],'2026-10-23');self.assertEqual(b['fecha_publicacion'],'2026-10-22')
         self.assertEqual(b['fecha_apertura'],'2026-11-05');self.assertTrue(b['segundo_llamado']);self.assertFalse(a['segundo_llamado'])
         self.assertEqual(b['documentos'][0]['url'],'https://www.iafas.gov.ar/descargas/17685')
+    def test_zarate_acordeones_no_mezclan_anios_ni_pliegos(self):
+        import extractores
+        html='<main><details><summary>LICITACIONES PÚBLICAS | AÑO 2025</summary><details><summary>N° 14 "Alquiler de maquinaria vial"</summary><p><a href="a.pdf">Descargá el pliego acá</a></p></details></details><details><summary>LICITACIONES PÚBLICAS | AÑO 2024</summary><details><summary>N° 14 "Pavimentación de calle"</summary><p><a href="b.pdf">Pliego</a></p></details></details></main>'
+        rs,_,_=extractores.extraer(html,'https://zarate.gob.ar/licitaciones-publicas/',{'adaptador':'zarate'})
+        self.assertEqual([r['numero_procedimiento'] for r in rs],['14/2025','14/2024'])
+        self.assertEqual(rs[0]['documentos'],[{'url':'https://zarate.gob.ar/licitaciones-publicas/a.pdf','titulo':'Descargá el pliego acá'}])
+        self.assertNotIn('Pavimentación',rs[0]['objeto'])
+    def test_junin_no_asocia_documentos_salariales_al_procedimiento(self):
+        import extractores
+        html='<main><div><a href="sueldos.pdf">PLANTA PERSONAL</a><div class="panel panel-info"><h2>LICITACIÓN PÚBLICA N° 25/2023</h2><p>OBJETO: REPARACIÓN FACHADA MUNICIPAL</p><a href="aviso.pdf">AVISO PUBLICADO</a></div></div></main>'
+        rs,_,_=extractores.extraer(html,'https://www.junin.gob.ar/licitacione-publica/licitacion-publica-109',{'adaptador':'junin'})
+        self.assertEqual(len(rs),1);self.assertEqual(len(rs[0]['documentos']),1);self.assertTrue(rs[0]['documentos'][0]['url'].endswith('aviso.pdf'))
+    def test_documentos_recientes_primero_sin_eliminar_historicos(self):
+        import conectores
+        visitas=[]
+        html='<h2>Licitación Pública 1/2020</h2><img src="a.jpg"><h2>Licitación Pública 1/2026</h2><img src="z.jpg">'
+        def fetch(url):
+            visitas.append(url)
+            return (html.encode(),'text/html',url) if url.endswith('/') else (b'imagen','image/jpeg',url)
+        with patch('cache_documentos.leer_texto',return_value=('Objeto: compra de hormigón',{})):
+            r=conectores.explorar('https://colon.gob.ar/',{'adaptador':'colon-pba','documentos_imagen':True,'lectura_adjuntos':'necesarios'},fetch=fetch)
+        self.assertEqual(visitas[1],'https://colon.gob.ar/z.jpg');self.assertEqual(len(r['oportunidades']),2)
 
 if __name__=='__main__':unittest.main()

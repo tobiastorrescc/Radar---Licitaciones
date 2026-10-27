@@ -1583,7 +1583,11 @@
     },
     "enriquecer_fichas": true,
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "seguir_patrones": [
+      "/adquisicion-de-equipo-servidor/?$",
+      "/alquiler-de-inmueble-2025/?$"
+    ]
   },
   {
     "id": "fuente-068",
@@ -1632,10 +1636,7 @@
       "url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/"
     },
     "seguir_patrones": [
-      "licitaciones-y-concursos/",
-      "/licitaciones-publicas/",
-      "/licitaciones-privadas/",
-      "/concursos-de-precios/"
+      "/licitaciones-(publicas|privadas)/?$"
     ],
     "descubrir_menu": true,
     "descubrir_contrataciones": true
@@ -1737,7 +1738,8 @@
     },
     "enriquecer_fichas": true,
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "adaptador": "junin"
   },
   {
     "id": "fuente-074",
@@ -1760,7 +1762,8 @@
       "url": "https://zarate.gob.ar/licitaciones-publicas/"
     },
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "adaptador": "zarate"
   },
   {
     "id": "fuente-075",

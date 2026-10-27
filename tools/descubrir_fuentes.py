@@ -12,7 +12,7 @@ from pathlib import Path
 import re
 import sys
 import time
-from urllib.parse import urlparse, urlencode
+from urllib.parse import urlparse, urlencode,parse_qs
 import xml.etree.ElementTree as ET
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import conectores
@@ -35,12 +35,23 @@ def rss(datos):
     return [{'url':u,'titulo':i.findtext('title') or ''} for i in root.findall('.//item')
             if (u:=extractores.url_publica(i.findtext('link') or '')) and oficial(u)]
 
+def resultados_html(html,base):
+    encontrados=[]
+    for l in extractores.DOM(html).root.enlaces(base):
+        if 'result__a' not in l['node'].attrs.get('class','').split():continue
+        url=parse_qs(urlparse(l['url']).query).get('uddg',[l['url']])[0]
+        url=extractores.url_publica(url)
+        if url and oficial(url):encontrados.append({'url':url,'titulo':l['texto']})
+    return encontrados
+
 def objetivos(padron,fuentes):
     cubiertos={(o.norm(f['localidad']),f['provincia']) for f in fuentes if f.get('incorporada') and o.norm(f['organismo']).startswith(('municipalidad','comuna','gobierno de timbues'))}
     territoriales=[{'clave':'territorio:'+m['codigo'],'localidad':m['localidad'],'provincia':m['provincia'],
         'organismo':('Comuna' if 'comuna' in o.norm(m.get('tipo_gobierno')) else 'Municipalidad')+' de '+m['localidad'],
         'consulta':'"'+m['localidad']+'" "'+m['provincia']+'" compras licitaciones sitio oficial','tipo':'TERRITORIAL'}
         for m in padron['municipios'] if (o.norm(m['localidad']),m['provincia']) not in cubiertos]
+    por_provincia={p:[q for q in territoriales if q['provincia']==p] for p in PROVINCIAS}
+    territoriales=[grupo[i] for i in range(max((len(g) for g in por_provincia.values()),default=0)) for grupo in por_provincia.values() if i<len(grupo)]
     sectoriales=[{'clave':'sector:'+p+':'+s,'provincia':p,'consulta':'"'+p+'" '+s+' compras licitaciones sitio oficial','tipo':'SECTORIAL'} for p in PROVINCIAS for s in SECTORES]
     # Intercalar sectores evita postergarlos detrás de cientos de comunas.
     pendientes_path=Path('inventario/pendientes83.json')
@@ -56,7 +67,19 @@ def objetivos(padron,fuentes):
     for i in range(max(len(resto),len(reparacion))):
         if i<len(reparacion):resultado.append(reparacion[i])
         if i<len(resto):resultado.append(resto[i])
-    return resultado
+    # Orígenes conocidos y enlaces publicados: alternativa independiente al buscador.
+    directorios=[]
+    for f in fuentes:
+        if f['id'] not in pendientes:continue
+        origen=urlparse(f['url']);url=origen.scheme+'://'+origen.netloc+'/'
+        directorios.append({'clave':'directorio:'+f['id'],'tipo':'TERRITORIAL' if o.norm(f['organismo']).startswith(('municipalidad','comuna')) else 'SECTORIAL',
+            'organismo':f['organismo'],'localidad':f['localidad'],'provincia':f['provincia'],'metodo':'ENLACES_OFICIALES','url_directorio':url})
+    # Rotación común: un tercio de los objetivos recorre menús oficiales.
+    mezclados=[]
+    for i in range(max(len(resultado),len(directorios)*2)):
+        if i%2==0 and i//2<len(directorios):mezclados.append(directorios[i//2])
+        if i<len(resultado):mezclados.append(resultado[i])
+    return mezclados
 
 def verificar_identidad(html,url,candidato):
     dom=extractores.DOM(html);texto=o.norm(dom.root.text)
@@ -121,8 +144,22 @@ def worker_busqueda(entrada,salida):
     q=json.loads(Path(entrada).read_text());url=q['url']
     try:
         datos,_,_=conectores.descargar(url,conexion_timeout=3,lectura_timeout=4)
-        resultados=rss(datos)
-        guardar(salida,{'estado':'OPERATIVA','finalizado':True,'oportunidades':[], 'resultados':resultados,'paginas_correctas':1})
+        archivo=Path(salida).with_suffix('.respuesta');archivo.write_bytes(datos)
+        if q.get('metodo')=='ENLACES_OFICIALES':
+            dom=extractores.DOM(conectores.decodificar_html(datos,'text/html'))
+            resultados=[{'url':l['url'],'titulo':l['texto'],'evidencia_enlace':url} for l in dom.root.enlaces(url)
+                if l['tag']=='a' and host(l['url'])==host(url) and re.search(r'licitaciones|compras|contrataciones|concursos|boletin',o.norm(l['texto'])+' '+l['url']) and l['url']!=url]
+        else:
+            resultados=rss(datos)
+            if not resultados:
+                alternativa='https://html.duckduckgo.com/html/?'+urlencode({'q':q['consulta']})
+                datos2,_,_=conectores.descargar(alternativa,conexion_timeout=3,lectura_timeout=4)
+                Path(salida).with_suffix('.alternativa.html').write_bytes(datos2)
+                texto=conectores.decodificar_html(datos2,'text/html')
+                if re.search(r'anomaly-modal|challenge-form',texto):raise ValueError('Buscador alternativo requiere verificación humana; no se elude')
+                resultados=[{**r,'evidencia_busqueda':alternativa} for r in resultados_html(texto,alternativa)]
+        guardar(salida,{'estado':'OPERATIVA','finalizado':True,'oportunidades':[], 'resultados':resultados,'paginas_correctas':1,
+            'respuesta_archivo':str(archivo),'respuesta_sha256':sha256(datos).hexdigest()})
     except Exception as e:
         guardar(salida,{'estado':'PENDIENTE','finalizado':True,'oportunidades':[], 'errores':[conectores.clasificar_error(e,'DESCARGA')]})
 
@@ -143,7 +180,7 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24):
     entradas_busqueda=raiz/'consultas';entradas_busqueda.mkdir(exist_ok=True)
     trabajos=[]
     for q in consultas:
-        q={**q,'id':sha256(q['clave'].encode()).hexdigest()[:20], 'url':'https://www.bing.com/search?'+urlencode({'q':q['consulta'],'format':'rss'})}
+        q={**q,'id':sha256(q['clave'].encode()).hexdigest()[:20], 'url':q.get('url_directorio') or 'https://www.bing.com/search?'+urlencode({'q':q['consulta'],'format':'rss','setlang':'es','cc':'ar'})}
         guardar(entradas_busqueda/(q['id']+'.json'),q);trabajos.append(q)
     consultas_por_id={q['id']:q for q in trabajos}
     busqueda_informe=ejecutar(trabajos,raiz/'busquedas.json',concurrencia=3,por_fuente=12,total=min(60,total*.3),
