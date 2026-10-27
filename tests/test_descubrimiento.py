@@ -113,5 +113,11 @@ class DescubrimientoTests(unittest.TestCase):
         from extractores_lotes import extraer_funes
         with self.assertRaises(ValueError):extraer_funes('{}','https://funes.gob.ar/')
         with self.assertRaises(ValueError):extraer_funes('{"data":[],"recordsTotal":20,"recordsFiltered":10}','https://funes.gob.ar/')
+    def test_funes_regresion_campos_separados_numero_y_objeto(self):
+        from extractores_lotes import extraer_funes
+        datos={'recordsTotal':1,'recordsFiltered':1,'data':[{'numero_licitacion':'CONCURSO DE PRECIOS N° 014/2026','titulo_licitacion':'ADQUISICIÓN DE 1.850 MENSULAS O BRAZOS PARA ALUMBRADO PÚBLICO DE LA CIUDAD DE FUNES','date_created_licitacion':'2026-10-22','documentos':[]}]}
+        r=extraer_funes(json.dumps(datos),'https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php')[0][0]
+        self.assertEqual(r['numero_procedimiento'],'14/2026');self.assertEqual(r['tipo_procedimiento'],'concurso de precios')
+        self.assertEqual(r['objeto'],datos['data'][0]['titulo_licitacion']);self.assertTrue(r['detalle_completo'])
 
 if __name__=='__main__':unittest.main()

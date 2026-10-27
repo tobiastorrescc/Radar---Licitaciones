@@ -141,14 +141,15 @@ def extraer_funes(datos,url):
     resultado=[]
     for f in data['data']:
         if not isinstance(f,dict) or not isinstance(f.get('titulo_licitacion'),str):raise ValueError('Fila de Funes sin título verificable')
-        titulo=f['titulo_licitacion'];ps=procesos(titulo);p=ps[0] if len(ps)==1 else {}
+        titulo=f['titulo_licitacion'];rotulo=str(f.get('numero_licitacion') or '')
+        ps=procesos(rotulo) or procesos(titulo);p=ps[0] if len(ps)==1 else {}
         docs=[]
         for d in f.get('documentos') or []:
             if not isinstance(d,dict):raise ValueError('Documento de Funes no reconocido')
             enlace=url_publica(d.get('url') or '',url)
             if enlace:docs.append({'url':enlace,'titulo':d.get('titulo') or 'Documento'})
-        resultado.append({'titulo':titulo,'objeto':titulo,'numero_procedimiento':p.get('numero'),'tipo_procedimiento':p.get('tipo'),'procedimiento':p.get('procedimiento'),
-            'registro_estructurado':True,'detalle_completo':len(titulo)>40,'url':url,'evidencia_url':url,'documentos':docs,
+        resultado.append({'titulo':rotulo+' '+titulo,'objeto':titulo,'numero_procedimiento':p.get('numero'),'tipo_procedimiento':p.get('tipo'),'procedimiento':p.get('procedimiento'),
+            'registro_estructurado':True,'detalle_completo':bool(titulo.strip()),'url':url,'evidencia_url':url,'documentos':docs,
             'fecha_publicacion_texto':f.get('date_created_licitacion'),'id_origen':f.get('id_licitacion'),'numero_oficial_sin_interpretar':f.get('numero_licitacion')})
     return resultado,total,data['data']
 

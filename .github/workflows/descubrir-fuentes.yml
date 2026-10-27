@@ -14,7 +14,7 @@ jobs:
   descubrir:
     if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
-    timeout-minutes: 9
+    timeout-minutes: 11
     permissions:
       contents: write
     steps:
@@ -25,6 +25,10 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m unittest discover -s tests -p test_descubrimiento.py -v
+      - name: Preparar lectura documental con tiempo acotado
+        timeout-minutes: 4
+        continue-on-error: true # Una capacidad ausente conserva fuentes pendientes, nunca las valida.
+        run: bash tools/preparar_documentos.sh
       - name: Recuperar textos documentales sin repetir descargas
         uses: actions/cache@v4
         with:
