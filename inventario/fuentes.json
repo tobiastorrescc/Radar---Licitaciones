@@ -146,7 +146,8 @@
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "enriquecer_fichas": true
+    "enriquecer_fichas": true,
+    "adaptador": "aeropuerto"
   },
   {
     "id": "fuente-008",

@@ -1,0 +1,49 @@
+[
+  {
+    "archivo": "aeropuerto-liquidos-57.html",
+    "url": "https://aeropuertorosario.com/licitaciones/cprv-2026-00000001-appsf-od-comcon-air-ros/",
+    "run_id": 40508910007,
+    "run_number": 57,
+    "sha256_html_original": "bd3aa6b4c6c57fcc76a2d14d62de0fddceb1efd8b0f3d9ece6a4324760b27ac4",
+    "metodo": "Extracto DOM de tabla, presupuesto y enlaces PDF oficiales; sin agregar datos"
+  },
+  {
+    "archivo": "aeropuerto-jardineria-57.html",
+    "url": "https://aeropuertorosario.com/licitaciones/lpr-2026-00000002-appsf-od-com-con-air-ros/",
+    "run_id": 40508910007,
+    "run_number": 57,
+    "sha256_html_original": "338d1debfd7de2604ec1cd4da1fdb8e63550107ac1ae39732364d72107b8dede",
+    "metodo": "Extracto DOM de tabla, presupuesto y enlaces PDF oficiales; sin agregar datos"
+  },
+  {
+    "archivo": "aeropuerto-volquetes-57.html",
+    "url": "https://aeropuertorosario.com/licitaciones/lpu-n00000001-appsf-od-of-legales-air/",
+    "run_id": 40508910007,
+    "run_number": 57,
+    "sha256_html_original": "ce277919696391bba857ff386455982cf3a9fe1133ebf0cc7cefe038558f5128",
+    "metodo": "Extracto DOM de tabla, presupuesto y enlaces PDF oficiales; sin agregar datos"
+  },
+  {
+    "archivo": "aeropuerto-tandems-57.html",
+    "url": "https://aeropuertorosario.com/licitaciones/lpu-n00000002-appsf-od-of-legales-air/",
+    "run_id": 40508910007,
+    "run_number": 57,
+    "sha256_html_original": "bd57b0503812d247656a3b6b54ad9c4ce134b87e19585265dd32e07654d63ef7",
+    "metodo": "Extracto DOM de tabla, presupuesto y enlaces PDF oficiales; sin agregar datos"
+  },
+  {
+    "archivo": "aeropuerto-control-57.html",
+    "url": "https://aeropuertorosario.com/licitaciones/lpr-n00000001/",
+    "run_id": 40508910007,
+    "run_number": 57,
+    "sha256_html_original": "0f3f1f1de4c30ed50a643d2db626fbc5dfd4ffeab2ae86bae55243331a17b8f0",
+    "metodo": "Extracto DOM de tabla, presupuesto y enlaces PDF oficiales; sin agregar datos"
+  },
+  {
+    "archivo": "abiertas54.json",
+    "run_id": 40425270465,
+    "artefacto_id": 12700065309,
+    "recuperado_en_run": 40508910007,
+    "metodo": "Los 11 registros ABIERTA originales, leídos del artefacto #54 en Actions #57"
+  }
+]

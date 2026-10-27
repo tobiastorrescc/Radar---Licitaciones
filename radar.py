@@ -11,6 +11,7 @@ import os
 import logging
 import conectores
 import oportunidades as comercial
+from tools import comprobar_pliegos
 from collections import deque
 from zoneinfo import ZoneInfo
 
@@ -529,11 +530,10 @@ def ejecutar():
             oportunidad.update({k: oportunidad.get(k) or metadatos.get(fuente, {}).get(k) for k in ("organismo", "localidad", "provincia")})
             encontradas[clave] = oportunidad
 
-        nuevas.extend(comercial.incorporar(historial,oportunidades,fecha))
+
 
         estado_fuente = resultado["estado"]
-        if estado_fuente == "OPERATIVA" and not any(o["fuente"] == fuente for o in nuevas):
-            estado_fuente = "SIN_PUBLICACIONES_NUEVAS"
+
         auditoria.append({
             "fuente": fuente,
             "estado": estado_fuente,
@@ -549,6 +549,14 @@ def ejecutar():
             "errores": resultado["errores"],
         })
 
+    registros=comercial.deduplicar(list(encontradas.values()),fecha)
+    comprobar_pliegos.comprobar(registros,fecha,[{**c,'url':u} for u,c in metadatos.items()])
+    registros=[comercial.normalizar(r,fecha) for r in registros]
+    nuevas=comercial.incorporar(historial,registros,fecha)
+    nuevas_fuentes={u for r in nuevas for u in r.get('fuentes_observadas',[])+[r.get('fuente')]}
+    for a in auditoria:
+        if a['estado']=='OPERATIVA' and a['fuente'] not in nuevas_fuentes:a['estado']='SIN_PUBLICACIONES_NUEVAS'
+    comercial.guardar_vistas(registros,fecha,Path(ARCHIVO_RESULTADOS).parent)
     nuevas.sort(key=comercial.prioridad)
     Path(ARCHIVO_RESULTADOS).with_suffix(".md").write_text(comercial.reporte(nuevas,fecha),encoding="utf-8")
 

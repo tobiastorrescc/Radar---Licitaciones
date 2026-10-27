@@ -35,8 +35,7 @@ def clasificar(texto):
     return {'procedimiento': m.group(0) if m else None,
             'llamado_especial': bool(ESPECIAL.search(t)),
             'evento_publicado': '|'.join(sorted(set(ESPECIAL.findall(t)))) or None,
-            'situacion_publicada': next((v for k, v in [('desiert', 'DESIERTA'), ('adjudic', 'ADJUDICADA'),
-                ('en evaluacion', 'EN_EVALUACION'), ('finalizada', 'FINALIZADA') ] if k in t), None)}
+            'situacion_publicada': extractores.situacion(texto)}
 
 
 class Listado(HTMLParser):
@@ -224,23 +223,16 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
         if progreso:progreso(r)
         return r
     def agregar(r):
-        key=sha256('|'.join((fuente,r['url'],normalizar(r['titulo']))).encode()).hexdigest()
-        # Agrupar los anexos de la misma publicación, preservando nuevos llamados/situaciones.
-        if r.get('procedimiento'):
-            entidad=r['url'] if config.get('organismos_multiples') else ''
-            key=sha256('|'.join((fuente,r['procedimiento'],r.get('evento_publicado') or '',r.get('situacion_publicada') or '',entidad)).encode()).hexdigest()
-        anterior=items.get(key,{})
-        docs={d['url']:d for d in anterior.get('documentos',[])+r.get('documentos',[])}
-        if anterior and len(anterior['titulo'])>len(r['titulo']):
-            r={**r,**anterior}
-        c=clasificar(r['titulo'])
-        registro={'id':key,'fuente':fuente,'estado':'PUBLICACION_DETECTADA',
+        provisional=sha256('|'.join((fuente,r['url'],normalizar(r['titulo']))).encode()).hexdigest()
+        registro={'id':provisional,'fuente':fuente,'estado':'PUBLICACION_DETECTADA',
              'organismo':config.get('organismo'),'localidad':config.get('localidad'),'provincia':config.get('provincia'),
-             'presupuesto':None,'fecha_apertura':None,'condiciones_pago':None,'estimacion_comercial':None,
-             'motivo_sin_estimacion':'Faltan costos y precios comprobables',**c,**r,
-             'documentos':list(docs.values()),'pago_prioritario':any(x in normalizar(r['titulo']) for x in ('pago contado','pago al contado','contra entrega','pago inmediato'))}
-        registro['enlace_pliego']=next((d['url'] for d in registro['documentos'] if 'pliego' in normalizar(d.get('titulo') or '')),registro['documentos'][0]['url'] if registro['documentos'] else None)
-        items[key]=oportunidades.normalizar(registro)
+             **clasificar(r['titulo']),**r}
+        if config.get('organismos_multiples') and not r.get('organismo'):registro['identidad_ambito']=r['url']
+        registro=oportunidades.normalizar(registro)
+        key=oportunidades.identidad(registro)
+        registro=oportunidades.fusionar(items.get(key),registro)
+        registro['id']=key
+        items[key]=registro
         return key
     def texto_documento(texto,url,referencia=None):
         lineas=texto.splitlines()
@@ -256,7 +248,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             p=ps[0]
             evento='|'.join(sorted(set(extractores.EVENTO.findall(normalizar(t))))) or None
             r={'titulo':t,'objeto':t,'url':url,'evidencia_url':url,'documentos':[{'url':url,'titulo':'Documento'}],
-               'procedimiento':p['procedimiento'],'evento_publicado':evento,'detalle_completo':True}
+               'procedimiento':p['procedimiento'],'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'evento_publicado':evento,'detalle_completo':True,'rango_evidencia':3}
             agregar(r)
             if referencia in items and items[referencia].get('procedimiento')==p['procedimiento']:
                 # Un aviso con varios llamados no puede asignar a todos el primer presupuesto/fecha.
@@ -305,15 +297,13 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             if not registros and re.search(r'inicia sesi[oó]n para|solo esta disponible dentro de la red|debe iniciar sesi[oó]n',texto):
                 errors.append({'url':url,'tipo':'AccesoRestringido','categoria':'ACCESO','timeout':False,'error':'El portal requiere autenticación o red privada; no se elude'})
             for r in registros:
+                r['rango_evidencia']=3 if clase=='DETALLE' else 1
+                if clase=='DETALLE':r['texto_documento']=r['titulo']
                 if config.get('requerir_ficha') and clase=='LISTADO':r['detalle_completo']=False
                 key=agregar(r)
-                if clase=='DETALLE' and referencia in items and r.get('detalle_completo'):
-                    items[referencia]['objeto']=r['objeto'];items[referencia]['texto_documento']=r['titulo'];items[referencia]['detalle_completo']=True
-                    items[referencia]['evidencia_url']=r.get('evidencia_url',final)
-                    items[referencia]['documentos']=list({d['url']:d for d in items[referencia].get('documentos',[])+r.get('documentos',[])}.values())
-                    for campo in ('fecha_apertura_texto','fecha_publicacion_texto','presupuesto_texto'):
-                        if r.get(campo):items[referencia][campo]=r[campo]
-                    items[referencia]=oportunidades.normalizar(items[referencia])
+                if clase=='DETALLE' and referencia in items and oportunidades.procedimiento_canonico(r)==oportunidades.procedimiento_canonico(items[referencia]):
+                    detalle={**r,'texto_documento':r['titulo'],'rango_evidencia':3}
+                    items[referencia]=oportunidades.fusionar(items[referencia],detalle)
                 for doc in r.get('documentos',[]):
                     destino=doc['url']
                     necesario=modo=='todos' or not r.get('detalle_completo')
@@ -336,6 +326,11 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 # Un documento del índice de boletines puede contener llamados sin título HTML.
                 if not registros and config.get('indice_documentos') and path.lower().endswith(extractores.ADJUNTOS):
                     pending.append((destino,'DOCUMENTO',None))
+            def orden_pendiente(entrada):
+                u,c,ref=entrada
+                item=items.get(ref,{}) if isinstance(ref,str) else {}
+                return (0 if c=='DETALLE' and item.get('vigencia')=='ABIERTA' else (1 if c=='DETALLE' else 2),item.get('fecha_apertura') or '9999',u)
+            pending=deque(sorted(pending,key=orden_pendiente))
             snapshot('PAGINA_FINALIZADA',url)
         except Exception as e:
             errors.append({'url':url,**clasificar_error(e,fase)})

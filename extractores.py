@@ -49,12 +49,15 @@ def procesos(texto):
         if tipo in ('publica','privada'):tipo='licitacion '+tipo
         out.append({'tipo':tipo,'numero':numero,'procedimiento':tipo+' '+numero,
                     'start':m.start(),'end':m.end()})
-    for m in re.finditer(r'\b(LPU|LPR|CPRV|CD)(?:\s+n[º°o.]*\s*|[-\s]+)(\d{4}-[\w -]+|\d{8})',texto,re.I):
-        codigo=m.group(0).strip()
-        # La etiqueta termina antes de los campos del card.
-        codigo=re.split(r'\s+(?:Vigente|En tr[aá]mite|Fecha)\b',codigo,flags=re.I)[0].strip()
+    # El código no contiene espacios: no absorber Estado, Asunto ni navegación.
+    for m in re.finditer(r'\b(LPU|LPR|CPRV|CD)(?:[-\s]+)(20\d{2})-(\d{1,8})(?:\s*-\s*[A-Za-z][A-Za-z0-9]*)*\b',texto,re.I):
+        codigo=re.sub(r'\s*-\s*','-',m.group(0)).upper()
         out.append({'tipo':{'LPU':'licitacion publica','LPR':'licitacion privada','CPRV':'concurso privado de precios','CD':'contratacion directa'}[m[1].upper()],
-                    'numero':codigo,'procedimiento':codigo.lower(),'start':m.start(),'end':m.start()+len(codigo)})
+                    'numero':codigo,'procedimiento':codigo.lower(),'start':m.start(),'end':m.end()})
+    for m in re.finditer(r'\b(LPU|LPR|CPRV|CD)\s+n[º°o.]*\s*(\d{8})\b',texto,re.I):
+        codigo=re.sub(r'\s*-\s*','-',m.group(0)).upper()
+        out.append({'tipo':{'LPU':'licitacion publica','LPR':'licitacion privada','CPRV':'concurso privado de precios','CD':'contratacion directa'}[m[1].upper()],
+                    'numero':codigo,'procedimiento':codigo.lower(),'start':m.start(),'end':m.end()})
     return out
 
 
@@ -117,6 +120,14 @@ def excluido(n,permitir_aside=False):
         cl=p.attrs.get('class','')
         if re.search(r'(?:^|\s)(?:menu-item|header-mobile-menu|related-posts|site-footer|main-navigation)',cl):return True
     return False
+
+
+def situacion(texto):
+    t=norm(texto)
+    t=re.sub(r'proveedor adjudicado(?: y monto)?\s*:?','',t)
+    t=re.sub(r'(?:sera|seran|podra ser|una vez)\s+adjudicad[oa]','',t)
+    t=re.sub(r'(?:se declarara|sera declarada|podra ser declarada)\s+desierta','',t)
+    return next((valor for patron,valor in [(r'\badjudicad[oa]\b','ADJUDICADA'),(r'\bdesiert\w*','DESIERTA'),(r'\bfinalizad[oa]\b','FINALIZADA'),(r'\ben evaluacion\b','EN_EVALUACION')] if re.search(patron,t)),None)
 
 
 def extraer(html,url,config=None):
@@ -212,7 +223,7 @@ def extraer(html,url,config=None):
             'documentos':documents,'evento_publicado':evento,'llamado_especial':bool(evento),
             'fecha_apertura_texto':next((x.text for x in n.children if isinstance(x,Nodo) and x.tag=='td' and re.search(r'\d{1,2}/\d{1,2}/20\d{2}',x.text)),None) if config.get('tipo_tabla') else None,
             'evidencia_url':url,'detalle_completo':bool(set(re.findall(r'\b[a-z]{4,}\b',norm(objeto)[p['end']:] if objeto==texto else norm(objeto)))-{'pliego','descargar','anexo','numero','apertura','fecha','vigente','tramite','documento','descarga'}),
-            'situacion_publicada':next((v for k,v in [('adjudic','ADJUDICADA'),('desiert','DESIERTA'),('finalizada','FINALIZADA'),('en evaluacion','EN_EVALUACION')] if k in norm(texto)),None)})
+            'situacion_publicada':situacion(texto)})
     # Mismo procedimiento repetido en menús, encabezados, pliegos y anexos: uno con todos sus enlaces.
     agrupados={}
     for r in registros:
@@ -234,7 +245,7 @@ def extraer(html,url,config=None):
             if tipo and objeto:
                 key=(norm(tipo),norm(objeto),entidad)
                 agrupados[key]={'titulo':tipo+' '+objeto,'objeto':objeto,'organismo':entidad or config.get('organismo'),
-                    'procedimiento':None,'numero_procedimiento':None,'url':url,'evidencia_url':url,
+                    'procedimiento':None,'numero_procedimiento':None,'registro_estructurado':True,'url':url,'evidencia_url':url,
                     'documentos':[{'url':l['url'],'titulo':l['texto']} for l in n.enlaces(url) if urlsplit(l['url']).path.lower().endswith(ADJUNTOS)],
                     'detalle_completo':True,'evento_publicado':None,'llamado_especial':False,'situacion_publicada':None}
     if config.get('adaptador')=='baradero':
@@ -279,6 +290,34 @@ def extraer(html,url,config=None):
                    'url':url,'documentos':documentos,'evento_publicado':str(f.get('llamado',1)),
                    'llamado_especial':f.get('llamado',1)>1,'evidencia_url':url,'detalle_completo':True,
                    'situacion_publicada':None,'id_origen':f.get('id'),'fecha_apertura_texto':f.get('aperturaTexto')}
+    if config.get('adaptador')=='aeropuerto':
+        # La ficha separa tabla de identificación, presupuesto y descargas.
+        # Los nombres de anexos no son convocatorias adicionales.
+        for tabla in raiz.iter():
+            if tabla.tag!='table':continue
+            campos={}
+            for fila in tabla.iter():
+                if fila.tag!='tr':continue
+                th=next((n for n in fila.children if isinstance(n,Nodo) and n.tag=='th'),None)
+                td=next((n for n in fila.children if isinstance(n,Nodo) and n.tag=='td'),None)
+                if th and td:campos[norm(th.text)]=td.text
+            if not campos.get('numero') or not campos.get('asunto'):continue
+            numero=re.sub(r'\s*-\s*','-',campos['numero'])
+            docs=[{'url':l['url'],'titulo':l['texto']} for l in raiz.enlaces(url) if urlsplit(l['url']).path.lower().endswith(ADJUNTOS) and not excluido(l['node'],allow_aside)]
+            ps=procesos(numero)
+            if not ps:continue
+            p=ps[0]
+            corto=re.fullmatch(r'(LPU|LPR|CPRV|CD)\s+n[º°o.]*\s*(\d+)',numero,re.I)
+            if corto:
+                completos=[p for d in docs for p in procesos(d['titulo']) if re.match(r'^'+corto[1]+r'-20\d{2}-0*'+str(int(corto[2]))+r'(?:-|$)',p['numero'],re.I)]
+                if completos:p=completos[0];numero=p['numero']
+            presupuestos=[n.text for n in raiz.iter() if n.tag=='p' and re.match(r'^presupuesto oficial\b',norm(n.text)) and not excluido(n,allow_aside)]
+            r={'titulo':numero+' '+campos['asunto'],'objeto':campos['asunto'],'numero_procedimiento':numero,'tipo_procedimiento':p['tipo'],
+               'procedimiento':p['procedimiento'],'url':url,'evidencia_url':url,'documentos':docs,'detalle_completo':True,'registro_estructurado':True,
+               'fecha_apertura_texto':campos.get('fecha de apertura'),'presupuesto_texto':presupuestos[0] if len(presupuestos)==1 else None,
+               'evento_publicado':None,'llamado_especial':False,'situacion_publicada':None,'campos_oficiales':campos}
+            agrupados={(p['procedimiento'],None,None):r}
+            break
     enlaces=(dom.root if config.get('descubrir_menu') else raiz).enlaces(url)
     if config.get('adaptador')=='rosario':
         for l in enlaces:

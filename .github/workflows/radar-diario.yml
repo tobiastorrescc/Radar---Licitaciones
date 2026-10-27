@@ -8,7 +8,6 @@ on:
     paths: ['radar.py', 'conectores.py', 'extractores.py', 'documentos.py', 'oportunidades.py', 'inventario/**', 'tools/**', 'tests/**', '.github/workflows/**', 'fuentes*']
 permissions:
   contents: read
-  actions: read
 concurrency:
   group: radar-${{ github.ref }}
   cancel-in-progress: false
@@ -57,6 +56,8 @@ jobs:
             auditoria_fuentes.json
             radar.log
             licitaciones_nuevas.md
+            oportunidades_abiertas.*
+            oportunidades_proximas_a_vencer.*
           retention-days: 90
       - name: Persistir historial incluso ante fallos parciales
         if: always() && steps.radar.outcome != 'skipped'
@@ -64,6 +65,9 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add radar_estado.json licitaciones_nuevas.json licitaciones_nuevas.md auditoria_fuentes.json
+          for reporte in oportunidades_abiertas.json oportunidades_abiertas.md oportunidades_proximas_a_vencer.json oportunidades_proximas_a_vencer.md; do
+            if [ -f "$reporte" ]; then git add "$reporte"; fi
+          done
           if ! git diff --cached --quiet; then
             git commit -m 'Actualizar historial de licitaciones [skip ci]'
             git pull --rebase origin main
@@ -89,15 +93,6 @@ jobs:
           path: work/cache-documentos
           key: textos-v1-${{ github.run_id }}
           restore-keys: textos-v1-
-      - name: Recuperar auditoría de partida #54
-        uses: actions/download-artifact@v4
-        with:
-          name: verificacion-fuentes-40425270465
-          run-id: 40425270465
-          github-token: ${{ github.token }}
-          path: work/base54
-      - name: Revisar las 11 abiertas de la auditoría #54
-        run: python -u tools/revisar_abiertas.py
       - name: Verificar sin modificar historial de producción
         id: verificar
         continue-on-error: true # Diagnóstico de fuentes; no confundir disponibilidad con pruebas unitarias.
@@ -107,6 +102,7 @@ jobs:
         run: python -u tools/verificar_fuentes.py --salida work/verificacion/verificacion.json --concurrencia 4 --conexion 5 --lectura 10 --por-fuente 60 --total 600
       - name: Normalizar y reportar oportunidades sin escribir producción
         if: always()
+        timeout-minutes: 4
         run: python tools/reportar_oportunidades.py
       - name: Resumen de fuentes en Actions
         if: always()

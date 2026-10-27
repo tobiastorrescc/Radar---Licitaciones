@@ -6,6 +6,7 @@ from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import oportunidades
+from tools import comprobar_pliegos
 
 
 def ejecutar(informe,salida,historial):
@@ -24,19 +25,31 @@ def ejecutar(informe,salida,historial):
             item=oportunidades.normalizar(raw,fecha)
             item['fuente_estado']=fuente['estado'];item['verificacion_github_run_id']=r.get('github_run_id')
             registros.append(item)
-    dedup={}
-    for item in registros:
-        k=oportunidades.identidad(item)
-        if k not in dedup or len(item.get('campos_desconocidos',[]))<len(dedup[k].get('campos_desconocidos',[])):dedup[k]=item
-    registros=list(dedup.values())
+    crudos=registros
+    registros=oportunidades.deduplicar(registros,fecha)
+    configuraciones=json.loads(Path('inventario/fuentes.json').read_text())
+    enlaces=comprobar_pliegos.comprobar(registros,fecha,configuraciones)
+    registros=[oportunidades.normalizar(i,fecha) for i in registros]
+    vistas=oportunidades.guardar_vistas(registros,fecha,raiz)
+    base=Path('tests/fixtures/reales/abiertas54.json')
+    if base.exists():
+        originales=json.loads(base.read_text())
+        vistos={};revision=[];actuales={oportunidades.identidad(i):i for i in registros}
+        for indice,anterior in enumerate(originales,1):
+            normal=oportunidades.normalizar(anterior,fecha);clave=oportunidades.identidad(normal)
+            dato={'fila_original':indice,'numero_original':anterior.get('numero_procedimiento'),'url_original':anterior.get('url'),'identidad_corregida':clave,'procedimiento_canonico':normal.get('procedimiento_canonico'),'duplicada_de':vistos.get(clave),'estado_actual':actuales.get(clave,{}).get('vigencia','NO_RECUPERADA_EN_ESTA_CORRIDA'),'presupuesto_actual':actuales.get(clave,{}).get('presupuesto')}
+            vistos.setdefault(clave,indice);revision.append(dato)
+            print('REVISION_ABIERTAS54 '+json.dumps(dato,ensure_ascii=False),flush=True)
+        (raiz/'revision_11_abiertas54.json').write_text(json.dumps(revision,ensure_ascii=False,indent=2),encoding='utf-8')
     nuevas=oportunidades.incorporar(h,registros,fecha)
-    resumen={'registros_unicos':len(registros),'nuevas_detecciones':len(nuevas),'vigencia':dict(Counter(i['vigencia'] for i in registros)),
+    resumen={'registros_antes_deduplicar':len(crudos),'duplicados_unificados':len(crudos)-len(registros),'registros_unicos':len(registros),'proximas_a_vencer':len(vistas['proximas_a_vencer']),'candidatos_no_verificados':sum(i['clasificacion_registro']!='PROCEDIMIENTO' for i in registros),'pliegos_comprobados_abiertas':sum(i.get('comprobacion_pliego',{}).get('estado')=='DOCUMENTO_ACCESIBLE' for i in vistas['abiertas']),'nuevas_detecciones':len(nuevas),'vigencia':dict(Counter(i['vigencia'] for i in registros)),
              'con_numero':sum(bool(i['numero_procedimiento']) for i in registros),'con_presupuesto':sum(bool(i['presupuesto']) for i in registros),
              'con_fecha_apertura':sum(bool(i['fecha_apertura']) for i in registros),'con_fecha_publicacion':sum(bool(i['fecha_publicacion']) for i in registros),
              'con_pliego_identificado':sum(bool(i['enlace_pliego']) for i in registros)}
-    for nombre,datos in [('oportunidades_normalizadas.json',{'fecha':fecha,'resumen':resumen,'oportunidades':registros}),('nuevas_simulacion.json',{'total_nuevas':len(nuevas),'oportunidades':nuevas})]:
+    for nombre,datos in [('auditoria_enlaces.json',enlaces),('oportunidades_normalizadas.json',{'fecha':fecha,'resumen':resumen,'oportunidades':registros}),('nuevas_simulacion.json',{'total_nuevas':len(nuevas),'oportunidades':nuevas})]:
         (raiz/nombre).write_text(json.dumps(datos,ensure_ascii=False,indent=2),encoding='utf-8')
     (raiz/'reporte_diario_simulacion.md').write_text(oportunidades.reporte(nuevas,fecha),encoding='utf-8')
+    for item in vistas['abiertas']:print('OPORTUNIDAD_ABIERTA '+json.dumps(item,ensure_ascii=False),flush=True)
     print('CALIDAD_OPORTUNIDADES '+json.dumps(resumen,ensure_ascii=False))
     for f in r['observaciones']:
         filas=[i for i in registros if i.get('fuente')==f['url']]
