@@ -114,3 +114,15 @@ class ComercialTests(unittest.TestCase):
         h={};self.assertEqual(len(o.incorporar(h,[r],FECHA)),1)
         cambiado={**r,'titulo':r['titulo']+' - Anexo publicado','url':r['url']+'/anexo'}
         self.assertEqual(o.incorporar(h,[cambiado],FECHA),[])
+
+    def test_fecha_llamese_san_nicolas_evidencia_run50(self):
+        texto='Llámese a Licitación Pública para el día 26 DE DICIEMBRE DE 2018, a las 09:00 horas en la Municipalidad de San Nicolás'
+        r=o.normalizar(self.base(objeto=texto),FECHA)
+        self.assertEqual(r['fecha_apertura'],'2018-12-26')
+        self.assertEqual(r['vigencia'],'VENCIDA')
+
+    def test_asunto_aeropuerto_separa_navegacion_y_expediente(self):
+        texto='Aeropuerto Vuelos Pasajeros Asunto Contratación de servicio de líquidos azules. Expediente N° EE-2026-004 Presupuesto Oficial: $10.000.000.- Descargas documento.pdf'
+        r=o.normalizar(self.base(objeto=texto),FECHA)
+        self.assertEqual(r['objeto'],'Contratación de servicio de líquidos azules.')
+        self.assertEqual(r['presupuesto']['importe'],'10000000')

@@ -58,7 +58,7 @@ def normalizar(r,ahora=None):
     dato('numero_procedimiento',r.get('numero_procedimiento') or (ps[0]['numero'] if ps else None),r.get('procedimiento'))
     if r.get('numero_procedimiento'):r['numero_procedimiento']=re.sub(r'^(\d+)[–-](20\d{2})$',r'\1/\2',r['numero_procedimiento'])
     dato('tipo_procedimiento',r.get('tipo_procedimiento') or (ps[0]['tipo'] if ps else None),r.get('procedimiento'))
-    for campo,patron in [('fecha_apertura',r'(?:fecha\s+(?:de\s+)?)?apertura(?:\s+(?:de\s+)?(?:ofertas|sobres))?\s*[:\-]?\s*(.{0,90})'),('fecha_publicacion',r'(?:fecha\s+(?:de\s+)publicacion|publicad[oa](?:\s+el)?)\s*[:\-]?\s*(.{0,70})')]:
+    for campo,patron in [('fecha_apertura',r'(?:(?:fecha\s+(?:de\s+)?)?apertura(?:\s+(?:de\s+)?(?:ofertas|sobres))?|llamese a licitacion (?:publica|privada) para el dia)\s*[:\-]?\s*(.{0,90})'),('fecha_publicacion',r'(?:fecha\s+(?:de\s+)publicacion|publicad[oa](?:\s+el)?)\s*[:\-]?\s*(.{0,70})')]:
         dedicado=r.get(campo+'_texto')
         m=re.search(patron,t)
         raw=dedicado or (m[1] if m else '')
@@ -89,6 +89,9 @@ def normalizar(r,ahora=None):
     # Solo llamar pliego al enlace identificado como tal: otros adjuntos quedan en documentos.
     r['enlace_pliego']=next((d['url'] for d in r.get('documentos',[]) if 'pliego' in norm(d.get('titulo'))),None)
     for k in ('organismo','localidad','provincia','objeto','fecha_publicacion','fecha_apertura','presupuesto'):r.setdefault(k,None)
+    objeto=r.get('objeto') or ''
+    especifico=re.search(r'\b(?:asunto\s*:?|objeto\s*:)\s*(.+?)(?=\s+(?:expediente|presupuesto oficial|fecha (?:y hora )?de apertura|consultas|descargas)\b|$)',objeto,re.I)
+    if especifico:r['objeto']=especifico[1].strip()
     if r.get('detalle_completo') is False:r['objeto']=None
     r['campos_desconocidos']=[k for k in ('numero_procedimiento','organismo','localidad','provincia','objeto','presupuesto','fecha_apertura','fecha_publicacion','enlace_pliego') if not r.get(k)]
     return r
