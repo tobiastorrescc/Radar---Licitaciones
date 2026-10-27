@@ -43,8 +43,18 @@ def worker(url):
     return r
 
 
-def pertenece_a(procs,proc):
+def pertenece_a(procs,proc,url_documento=None):
     if procs==[proc]:return True
+    # Un salto de línea puede cortar el código PDF en APPSF-OD. Se completa
+    # únicamente con el código observado en la URL oficial del mismo adjunto.
+    if len(procs)==1 and proc and url_documento:
+        limpio=lambda t:re.sub(r'[^a-z0-9]','',o.norm(t))
+        parcial=limpio(procs[0]);destino=limpio(proc)
+        if destino.startswith(parcial):
+            for p in extractores.procesos(url_documento):
+                codigo=o.procedimiento_canonico({'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo']})
+                completo=limpio(codigo)
+                if len(completo)>len(parcial) and completo.startswith(parcial) and destino.startswith(completo):return True
     def nucleo(p):
         p=(p or '').replace('compra directa ','contratacion directa ')
         codigo=re.search(r'\b(LPU|LPR|CPRV|CD)-(20\d{2})-(\d+)(.*)$',p or '',re.I)
@@ -61,7 +71,7 @@ def prioridad_pliego(valor,etiqueta,proc):
     if re.search(r'^(?:resconj|resolucion|decreto|adjudicacion)',nombre) or re.match(r'^(?:resolucion|decreto)\b',o.norm(etiqueta)):
         return 0
     if re.search(r'\bplieg(?:o|os)?(?:\b|[-_.])',o.norm(etiqueta)+' '+nombre):return 2
-    if valor.get('encabezado_pliego') and pertenece_a(valor.get('procedimientos',[]),proc):return 1
+    if valor.get('encabezado_pliego') and pertenece_a(valor.get('procedimientos',[]),proc,valor['url']):return 1
     return 0
 
 
@@ -69,6 +79,24 @@ def terminar(proceso):
     try:os.killpg(proceso.pid,signal.SIGKILL)
     except ProcessLookupError:pass
     proceso.wait(timeout=2)
+
+
+def ordenar_documentos(candidatos,vinculos,fecha):
+    # Reparto entre fuentes: un archivo grande no monopoliza todo el plazo.
+    anio=fecha[:4];grupos={}
+    for url,valor in candidatos.items():
+        if valor['estado']!='PENDIENTE':continue
+        registros=vinculos.get(url,[])
+        prioridad=min((0 if r.get('vigencia')=='ABIERTA' else (1 if anio in str(r.get('numero_procedimiento')) else 2) for r in registros),default=2)
+        fuente=next((r.get('fuente') for r in registros if r.get('fuente')),url)
+        grupos.setdefault(prioridad,{}).setdefault(fuente,deque()).append(url)
+    orden=[]
+    for prioridad in sorted(grupos):
+        fuentes=grupos[prioridad]
+        while any(fuentes.values()):
+            for fuente in sorted(fuentes):
+                if fuentes[fuente]:orden.append(fuentes[fuente].popleft())
+    return deque(orden)
 
 
 def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrencia=4,salida_parcial=None):
@@ -90,7 +118,7 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
         if salida_parcial:
             ruta=Path(salida_parcial);ruta.parent.mkdir(parents=True,exist_ok=True)
             with ruta.open('a',encoding='utf-8') as archivo:archivo.write(json.dumps(valor,ensure_ascii=False)+'\n')
-    inicio=time.monotonic();pendientes=deque(u for u,v in candidatos.items() if v['estado']=='PENDIENTE');activos={}
+    inicio=time.monotonic();pendientes=ordenar_documentos(candidatos,vinculos,fecha);activos={}
     while pendientes or activos:
         if time.monotonic()-inicio>=total:break
         while pendientes and len(activos)<concurrencia:
@@ -115,7 +143,7 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
             r.setdefault('auditoria_documentos',[]).append(valor)
             proc=o.procedimiento_canonico(r)
             procs=valor.get('procedimientos',[])
-            pertenece=pertenece_a(procs,proc)
+            pertenece=pertenece_a(procs,proc,valor['url'])
             etiqueta=next((d.get('titulo','') for d in r.get('documentos',[]) if d['url']==valor['url']),'')
             # La vinculación oficial no basta si el texto nombra otro procedimiento.
             compatible=pertenece or not procs

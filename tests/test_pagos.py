@@ -114,3 +114,73 @@ class PrecisionTests(unittest.TestCase):
     def test_costo_del_pliego_no_es_contado_comercial(self):
         for t in ['Valor del pliego: pago al contado.','Pago al contado del pliego.']:
             self.assertEqual(pagos.consolidar(pagos.extraer(t,URL,SHA))['estado'],'PENDIENTE')
+
+    def test_fecha_presentacion_y_recepcion_factura_no_se_confunden(self):
+        casos=[('Forma de pago: 30 días de la fecha de factura.','FECHA_O_EMISION_FACTURA','desde fecha/emisión de factura'),('Forma de pago: 30 días desde presentación de factura.','PRESENTACION_FACTURA','desde presentación de factura'),('Forma de pago: 30 días de recibida la factura.','RECEPCION_FACTURA','desde recepción de factura')]
+        for t,hito,etiqueta in casos:
+            r=pagos.consolidar(pagos.extraer(t,URL,SHA));self.assertIn(hito,r['hitos_inicio']);self.assertIn(etiqueta,r['etiqueta'])
+    def test_contra_factura_conformada_no_se_reemplaza_por_presentacion(self):
+        r=pagos.consolidar(pagos.extraer('El pago se hará contra factura conformada.',URL,SHA))
+        self.assertEqual(r['clasificacion'],'CONTRA_FACTURA_CONFORMADA');self.assertNotIn('PRESENTACION_FACTURA',r['hitos_inicio'])
+
+    def test_articulos_y_garantias_no_crean_pago_contado(self):
+        for t in ['Forma de pago de la garantía: al contado.','Pago de las tasas: al contado.','Pago del arancel: al contado.']:
+            self.assertEqual(pagos.consolidar(pagos.extraer(t,URL,SHA))['estado'],'PENDIENTE',t)
+
+    def test_reparto_documental_entre_fuentes_sin_tope_de_cantidad(self):
+        from tools import comprobar_pliegos as c
+        candidatos={};vinculos={}
+        for fuente in ['https://a.gob.ar','https://b.gob.ar','https://c.gob.ar']:
+            for i in range(700):
+                url=fuente+f'/{i}.pdf';candidatos[url]={'estado':'PENDIENTE'};vinculos[url]=[{'fuente':fuente,'vigencia':'DESCONOCIDA','numero_procedimiento':f'{i}/2026'}]
+        orden=list(c.ordenar_documentos(candidatos,vinculos,'2026-10-27'))
+        self.assertEqual(len(orden),2100);self.assertEqual(len(set(orden)),2100)
+        self.assertEqual([u.split('/')[2] for u in orden[:3]],['a.gob.ar','b.gob.ar','c.gob.ar'])
+
+class EvidenciaRealTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):cls.reales=json.loads(Path('tests/fixtures/reales/pagos-65.json').read_text())
+    def test_cantidad_y_unidad_aeropuerto_treinta_dias(self):
+        e=next(r for r in self.reales if r['numero_procedimiento']=='52/2026')['pago']['evidencias'][0]
+        r=pagos.consolidar(pagos.extraer(e['cita'],e['url_documento'],e['sha256']))
+        self.assertEqual(r['clasificacion'],'PLAZO_30_DIAS');self.assertIn('CONFORMIDAD_RECEPCION',r['hitos_inicio'])
+    def test_reconquista_definicion_general_no_selecciona_contado(self):
+        es=next(r for r in self.reales if r['organismo']=='Municipalidad de Reconquista' and r['numero_procedimiento']=='9/2026')['pago']['evidencias']
+        r=pagos.consolidar(pagos.extraer(es[0]['cita'],es[0]['url_documento'],es[0]['sha256']))
+        self.assertEqual(r['estado'],'PENDIENTE');self.assertFalse(r['prioritario'])
+    def test_si_se_selecciona_contado_se_aplica_definicion_explicita_no_cero_dias(self):
+        e=next(r for r in self.reales if r['organismo']=='Municipalidad de Reconquista' and r['numero_procedimiento']=='9/2026')['pago']['evidencias'][0]
+        texto=e['cita']+'\fFORMA DE PAGO: Contado.'
+        r=pagos.consolidar(pagos.extraer(texto,e['url_documento'],e['sha256'],pdf=True))
+        self.assertEqual(r['plazos_dias'],[10]);self.assertFalse(r['prioritario']);self.assertTrue(r['evidencias'][0]['definicion_contado'])
+    def test_crespo_veinte_dias_y_facturas_en_plural(self):
+        e=next(r for r in self.reales if r['organismo']=='Municipalidad de Crespo')['pago']['evidencias'][0]
+        r=pagos.consolidar(pagos.extraer(e['cita'],e['url_documento'],e['sha256']))
+        self.assertEqual(r['plazos_dias'],[20]);self.assertIn('PRESENTACION_FACTURA',r['hitos_inicio']);self.assertNotIn('VARIACIONES DE COSTOS',r['evidencias'][0]['cita'])
+    def test_canon_tesoreria_no_es_cobro_al_proveedor(self):
+        e=next(r for r in self.reales if r['organismo']=='Municipalidad de Federación')['pago']['evidencias'][0]
+        r=pagos.consolidar(pagos.extraer(e['cita'],e['url_documento'],e['sha256']))
+        self.assertEqual(r['direccion'],'OFERTANTE_AL_ORGANISMO');self.assertIn('mensual a mes vencido',r['etiqueta'])
+    def test_codigo_pdf_cortado_solo_se_completa_con_la_url_del_adjunto(self):
+        from tools import comprobar_pliegos as c
+        parcial='licitacion privada LPR-2026-2-APPSF-OD'
+        destino='licitacion privada LPR-2026-2-APPSF-OD-COM-CON-AIR-ROS'
+        url='https://aeropuertorosario.com/LPR-2026-00000002-APPSF-OD-COM-CON-AIR-ROS.pdf'
+        self.assertTrue(c.pertenece_a([parcial],destino,url))
+        self.assertFalse(c.pertenece_a([parcial],destino))
+        self.assertFalse(c.pertenece_a([parcial],destino,url.replace('COM-CON','OF-LEGALES')))
+
+    def test_ater_conformidad_no_es_recepcion_inventada(self):
+        e=next(r for r in self.reales if r['organismo']=='ATER')['pago']['evidencias'][0]
+        p=pagos.consolidar(pagos.extraer(e['cita'],e['url_documento'],e['sha256']))
+        self.assertIn('FECHA_O_EMISION_FACTURA',p['hitos_inicio']);self.assertIn('CONFORMIDAD_NO_ESPECIFICADA',p['hitos_inicio']);self.assertNotIn('CONFORMIDAD_RECEPCION',p['hitos_inicio'])
+
+    def test_dato_omitido_no_contradice_condicion_completa(self):
+        a=pagos.extraer('Forma de pago: a 30 días.',URL,SHA)
+        b=pagos.extraer('Forma de pago: a 30 días corridos desde presentación de factura.','https://oficial.gob.ar/particular.pdf','b'*64)
+        p=pagos.consolidar(a+b)
+        self.assertEqual(p['estado'],'VERIFICADO');self.assertIn('PRESENTACION_FACTURA',p['hitos_inicio']);self.assertEqual(len(p['evidencias']),2)
+    def test_dias_habiles_y_corridos_no_se_unifican(self):
+        a=pagos.extraer('Forma de pago: a 30 días hábiles.',URL,SHA)
+        b=pagos.extraer('Forma de pago: a 30 días corridos.','https://oficial.gob.ar/particular.pdf','b'*64)
+        self.assertEqual(pagos.consolidar(a+b)['estado'],'PENDIENTE')

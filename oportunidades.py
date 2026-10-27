@@ -149,7 +149,8 @@ def reporte(registros,fecha_reporte):
         '|---|---|---|---|---|---|---|']
     ordenadas=sorted(registros,key=prioridad)
     for r in ordenadas:
-        url=r.get('enlace_condiciones_pago');respaldo=f'[Documento]({url})' if url else 'No comprobado'
+        url=r.get('enlace_condiciones_pago');enlaces=r.get('pago',{}).get('documentos_respaldo') or ([url] if url else [])
+        respaldo=' '.join(f'[Documento {i}]({u})' for i,u in enumerate(enlaces,1)) if enlaces else 'No comprobado'
         flags=', '.join(nombre for clave,nombre in [('desierta','Desierta'),('segundo_llamado','Segundo llamado'),('reapertura','Reapertura')] if r.get(clave)) or '—'
         fuente=r.get('evidencia_url') or r.get('url')
         lineas.append('| '+ ' | '.join([celda((r.get('organismo') or 'desconocido')+' / '+(r.get('numero_procedimiento') or 'sin número')),celda(r.get('objeto') or r.get('titulo')),celda((r.get('vigencia') or 'DESCONOCIDA')+' / '+(r.get('fecha_apertura') or 'desconocida')),celda(r.get('condiciones_pago') or pagos.NO_INFORMADO),respaldo,flags,f'[Oficial]({fuente})'])+' |')
@@ -161,6 +162,8 @@ def reporte(registros,fecha_reporte):
         for e in p['evidencias']:
             pagina=' · página '+str(e['pagina']) if e.get('pagina') else ''
             lineas+=[f"- [Documento]({e['url_documento']}){pagina}: {celda(e['cita'])}",'']
+            if e.get('definicion_contado'):
+                d=e['definicion_contado'];lineas += [f"- Definición expresa del mismo documento, página {d.get('pagina') or 'no indicada'}: {celda(d['cita'])}",'']
     return '\n'.join(lineas)
 
 

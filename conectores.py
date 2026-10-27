@@ -160,6 +160,8 @@ def descargar(url, conexion_timeout=5, lectura_timeout=10, headers_extra=None, d
     url = extractores.url_publica(url)
     with opener.open(Request(url, headers={'User-Agent': 'RadarLicitaciones/2.0',**(headers_extra or {})}),
                      timeout=conexion_timeout) as r:
+        longitud=r.headers.get('Content-Length')
+        if longitud and longitud.isdigit() and int(longitud)>12_000_000:raise ValueError('Respuesta supera 12 MB; recorrido parcial')
         datos = r.read(12_000_001)
         if len(datos) > 12_000_000:
             raise ValueError('Respuesta supera 12 MB; recorrido parcial')
