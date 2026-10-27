@@ -22,7 +22,7 @@ jobs:
           python-version: '3.11'
       - name: Preparar lectura de PDF e imágenes con plazo acotado
         timeout-minutes: 4
-        run: sudo apt-get -o Acquire::Retries=1 -o Acquire::http::Timeout=15 -o Acquire::https::Timeout=15 update && sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-spa
+        run: bash tools/preparar_documentos.sh
       - run: python -m unittest discover -s tests -v
   ejecutar-radar:
     if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
@@ -40,7 +40,7 @@ jobs:
           python-version: '3.11'
       - name: Preparar lectura de PDF e imágenes con plazo acotado
         timeout-minutes: 4
-        run: sudo apt-get -o Acquire::Retries=1 -o Acquire::http::Timeout=15 -o Acquire::https::Timeout=15 update && sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-spa
+        run: bash tools/preparar_documentos.sh
       - uses: actions/cache@v4
         with:
           path: work/cache-documentos
@@ -93,13 +93,26 @@ jobs:
         with:
           python-version: '3.11'
       - name: Preparar lectura de PDF e imágenes con plazo acotado
+        continue-on-error: true # HTML sigue; documentos sin herramientas quedan pendientes auditados.
         timeout-minutes: 4
-        run: sudo apt-get -o Acquire::Retries=1 -o Acquire::http::Timeout=15 -o Acquire::https::Timeout=15 update && sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-spa
+        run: bash tools/preparar_documentos.sh
       - uses: actions/cache@v4
         with:
           path: work/cache-documentos
           key: textos-v1-${{ github.run_id }}
           restore-keys: textos-v1-
+      - name: Registrar capacidades documentales del runner
+        if: always()
+        run: |
+          python - <<'PYCODE'
+          import json,shutil,subprocess
+          from pathlib import Path
+          capacidades={n:bool(shutil.which(n)) for n in ('pdftotext','pdfinfo','pdftoppm','tesseract')}
+          try: capacidades['ocr_espanol']='spa' in subprocess.check_output(['tesseract','--list-langs'],text=True,stderr=subprocess.DEVNULL,timeout=5).splitlines()
+          except Exception: capacidades['ocr_espanol']=False
+          p=Path('work/verificacion/capacidades_documentales.json');p.parent.mkdir(parents=True,exist_ok=True)
+          p.write_text(json.dumps(capacidades,indent=2));print('CAPACIDADES_DOCUMENTALES '+json.dumps(capacidades))
+          PYCODE
       - name: Relevar padrón territorial oficial sin escribir producción
         timeout-minutes: 2
         run: python tools/padron_territorial.py
