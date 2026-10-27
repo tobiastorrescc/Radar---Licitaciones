@@ -146,7 +146,7 @@
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "organismos_multiples": true
+    "enriquecer_fichas": true
   },
   {
     "id": "fuente-008",

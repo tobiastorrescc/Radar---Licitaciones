@@ -36,6 +36,11 @@ jobs:
         with:
           python-version: '3.11'
       - run: sudo apt-get update && sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-spa
+      - uses: actions/cache@v4
+        with:
+          path: work/cache-documentos
+          key: textos-v1-${{ github.run_id }}
+          restore-keys: textos-v1-
       - name: Ejecutar radar
         id: radar
         continue-on-error: true

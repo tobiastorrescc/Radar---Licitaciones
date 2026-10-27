@@ -20,10 +20,10 @@ La identidad comercial usa organismo, provincia, localidad, tipo, número anual 
 
 ## Conectores prioritarios
 
-- Aeropuerto y Roldán: se leen fichas antes de continuar la paginación de archivos. Se extraen fechas del texto individual; no se usan fechas ajenas del resto del listado.
+- Aeropuerto y Roldán: se leen fichas antes de continuar la paginación de archivos. El Aeropuerto enriquece también fichas cuyo listado ya tiene objeto para recuperar pliegos; se unifican sus anexos al mismo procedimiento. Se extraen fechas del texto individual; no se usan fechas ajenas del resto del listado.
 - DPV ER: fichas antes del archivo. La presencia de un control cargar más sólo se considera resuelta si existe un siguiente enlace observado; no se construyen páginas por suposición.
 - Crespo: objeto, fecha y presupuesto de columnas identificadas; links acta/pliego separados. El PDF histórico 404 sigue siendo una incidencia, no se inventa una ruta alternativa.
-- Federación, Rosario del Tala y San Nicolás: OCR acotado con `OMP_THREAD_LIMIT=1`, evitando sobrecarga entre workers. Todo texto extraído correctamente se guarda por hash de los bytes del documento. Cada ejecución vuelve a descargar el documento y verifica su contenido; no reutiliza respuestas HTTP antiguas. Un documento modificado se lee otra vez. Cache Actions compartida entre ejecuciones; un OCR cortado nunca se almacena como lectura completa.
+- Federación, Rosario del Tala y San Nicolás: OCR acotado con `OMP_THREAD_LIMIT=1`, evitando sobrecarga entre workers. Todo texto extraído correctamente se guarda por hash de los bytes del documento. Cada ejecución vuelve a descargar el documento y verifica su contenido; no reutiliza respuestas HTTP antiguas. Un documento modificado se lee otra vez. Cache Actions compartida entre ejecuciones de verificación y el radar diario; un OCR cortado nunca se almacena como lectura completa.
 - Villaguay: se conserva el recorrido de todos los años, sin excluir archivos antiguos. La paginación deja paso a fichas/documentos; si el plazo no alcanza la fuente permanece parcial. El cache permite avanzar en ejecuciones posteriores sin repetir el OCR de bytes idénticos.
 - Compras Santa Fe, Judicial SF, Santa Fe capital y ENERSA: se consultan nuevamente con los mismos plazos y TLS validado. No se cambian certificados, identidad ni permisos para evitar timeout/403/TLS. Un fallo sigue registrado como fallo.
 

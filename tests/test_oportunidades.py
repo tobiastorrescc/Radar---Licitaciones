@@ -80,3 +80,25 @@ class ComercialTests(unittest.TestCase):
     def test_objeto_incompleto_desconocido(self):
         r=self.base();r['detalle_completo']=False
         self.assertIsNone(o.normalizar(r,FECHA)['objeto'])
+
+    def test_enriquecer_ficha_y_pliego_sin_duplicar(self):
+        pages={'https://x.gob.ar/':'<article><a href="/ficha">Licitación Pública 3/2026 herramientas</a></article>',
+               'https://x.gob.ar/ficha':'<article><h1>Licitación Pública 3/2026 herramientas</h1><p>Apertura 28/10/2026. Presupuesto oficial ARS 500.000,00</p><a href="/pliego.pdf">Pliego</a></article>'}
+        def fetch(u):return pages[u].encode(),'text/html',u
+        r=conectores.explorar('https://x.gob.ar/',{'lectura_adjuntos':'necesarios','enriquecer_fichas':True},fetch=fetch)
+        self.assertEqual(r['estado'],'OPERATIVA')
+        self.assertEqual(len(r['oportunidades']),1)
+        item=r['oportunidades'][0]
+        self.assertEqual(item['enlace_pliego'],'https://x.gob.ar/pliego.pdf')
+        self.assertEqual(item['fecha_apertura'],'2026-10-28')
+        self.assertEqual(item['presupuesto']['importe'],'500000.00')
+
+    def test_pdf_multillamado_no_mezcla_presupuestos(self):
+        texto='Licitación Pública 1/2026 Herramientas\nPresupuesto oficial ARS 100,00. Apertura 28/10/2026\nLicitación Pública 2/2026 Cemento\nPresupuesto oficial ARS 200,00. Apertura 29/10/2026'
+        with tempfile.TemporaryDirectory() as d,patch.dict('os.environ',{'RADAR_CACHE_DOCUMENTOS':d}),patch('documentos.leer',return_value=texto):
+            def fetch(u):return b'%PDF-multiple','application/pdf',u
+            r=conectores.explorar('https://x.gob.ar/aviso.pdf',{},fetch=fetch)
+        registros={i['numero_procedimiento']:i for i in r['oportunidades']}
+        self.assertEqual(registros['1/2026']['presupuesto']['importe'],'100.00')
+        self.assertEqual(registros['2/2026']['presupuesto']['importe'],'200.00')
+        self.assertEqual(registros['2/2026']['fecha_apertura'],'2026-10-29')

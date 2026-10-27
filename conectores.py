@@ -246,7 +246,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
         lineas=texto.splitlines()
         posiciones=[i for i,l in enumerate(lineas) if extractores.procesos(l)]
         if not posiciones and referencia and texto.strip():
-            p=dict(items[referencia]);p['objeto']=texto;p['texto_documento']=texto;p['detalle_completo']=True
+            p=dict(items[referencia]);p['objeto']=texto;p['texto_documento']=texto;p['detalle_completo']=True;p['evidencia_url']=url
             items[referencia]=oportunidades.normalizar(p)
             return
         for n,i in enumerate(posiciones):
@@ -258,9 +258,13 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             r={'titulo':t,'objeto':t,'url':url,'evidencia_url':url,'documentos':[{'url':url,'titulo':'Documento'}],
                'procedimiento':p['procedimiento'],'evento_publicado':evento,'detalle_completo':True}
             agregar(r)
-            if referencia in items:
-                items[referencia]['objeto']=texto
-                items[referencia]['texto_documento']=texto
+            if referencia in items and items[referencia].get('procedimiento')==p['procedimiento']:
+                # Un aviso con varios llamados no puede asignar a todos el primer presupuesto/fecha.
+                unicos={p['procedimiento'] for linea in lineas for p in extractores.procesos(linea)}
+                detalle=texto if len(unicos)==1 else t
+                items[referencia]['objeto']=detalle
+                items[referencia]['texto_documento']=detalle
+                items[referencia]['evidencia_url']=url
                 items[referencia]['detalle_completo']=True
                 items[referencia]=oportunidades.normalizar(items[referencia])
     while pending:
@@ -305,6 +309,10 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 key=agregar(r)
                 if clase=='DETALLE' and referencia in items and r.get('detalle_completo'):
                     items[referencia]['objeto']=r['objeto'];items[referencia]['texto_documento']=r['titulo'];items[referencia]['detalle_completo']=True
+                    items[referencia]['evidencia_url']=r.get('evidencia_url',final)
+                    items[referencia]['documentos']=list({d['url']:d for d in items[referencia].get('documentos',[])+r.get('documentos',[])}.values())
+                    for campo in ('fecha_apertura_texto','fecha_publicacion_texto','presupuesto_texto'):
+                        if r.get(campo):items[referencia][campo]=r[campo]
                     items[referencia]=oportunidades.normalizar(items[referencia])
                 for doc in r.get('documentos',[]):
                     destino=doc['url']
@@ -312,7 +320,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     if necesario and _host(destino) in hosts and destino not in seen:
                         documento_pendiente[destino]={'url':destino,'publicacion_id':key}
                         pending.append((destino,'DOCUMENTO',key))
-                if not r.get('detalle_completo') and r['url']!=url and not urlparse(r['url']).path.lower().endswith(extractores.ADJUNTOS):
+                if (not r.get('detalle_completo') or config.get('enriquecer_fichas')) and r['url']!=url and not urlparse(r['url']).path.lower().endswith(extractores.ADJUNTOS):
                     pending.appendleft((r['url'],'DETALLE',key))
             for l in links:
                 destino=l['url'];et=normalizar(l['texto']);path=urlparse(destino).path

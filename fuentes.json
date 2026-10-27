@@ -48,14 +48,25 @@
     "lectura_timeout": 12
   },
   "https://aeropuertorosario.com/institucional/licitaciones/": {
+    "id": "fuente-007",
     "organismo": "Aeropuerto Internacional Rosario",
     "localidad": "Rosario",
     "provincia": "Santa Fe",
-    "conector": "publicaciones",
+    "url": "https://aeropuertorosario.com/institucional/licitaciones/",
     "tipo_portal": "html_paginado_pdf",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "evidencia_descubrimiento": {
+      "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+      "url": "https://aeropuertorosario.com/institucional/licitaciones/",
+      "fecha": "2026-10-25",
+      "observacion": "Listado leído por web; fichas y páginas 2 a 5 localizadas"
+    },
+    "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "organismos_multiples": true
+    "enriquecer_fichas": true
   },
   "https://www.casilda.gob.ar/web/licitaciones-casilda/": {
     "organismo": "Municipalidad de Casilda",
