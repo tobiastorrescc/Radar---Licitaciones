@@ -80,11 +80,12 @@ def normalizar(r,ahora=None):
     r['enlace_condiciones_pago']=r['pago']['documento_respaldo']
     r['pago_prioritario']=r['pago']['prioritario']
     r['desierta']='desiert' in t
+    r['fracasada']=r.get('situacion_publicada')=='FRACASADA' or extractores.situacion(texto_titulo)=='FRACASADA'
     r['segundo_llamado']=bool(re.search(r'segund[oa] (?:llamado|convocatoria)|2(?:do|º|°) llamado|llamado 2\b',t))
     r['reapertura']='reapertura' in t
-    r['llamado_especial']=bool(r.get('llamado_especial') or r['desierta'] or r['segundo_llamado'] or r['reapertura'])
-    cerrada=r.get('situacion_publicada') in ('ADJUDICADA','FINALIZADA','EN_EVALUACION','DESIERTA')
-    if r.get('situacion_publicada')=='DESIERTA' and (r['segundo_llamado'] or r['reapertura']):
+    r['llamado_especial']=bool(r.get('llamado_especial') or r['desierta'] or r['fracasada'] or r['segundo_llamado'] or r['reapertura'])
+    cerrada=r.get('situacion_publicada') in ('ADJUDICADA','FINALIZADA','EN_EVALUACION','DESIERTA','FRACASADA')
+    if r.get('situacion_publicada') in ('DESIERTA','FRACASADA') and (r['segundo_llamado'] or r['reapertura']):
         # Mencionar el llamado anterior desierto no prueba cierre de la reapertura.
         cerrada=False
     r['procedimiento_canonico']=procedimiento_canonico(r)
@@ -154,7 +155,7 @@ def reporte(registros,fecha_reporte):
     for r in ordenadas:
         url=r.get('enlace_condiciones_pago');enlaces=r.get('pago',{}).get('documentos_respaldo') or ([url] if url else [])
         respaldo=' '.join(f'[Documento {i}]({u})' for i,u in enumerate(enlaces,1)) if enlaces else 'No comprobado'
-        flags=', '.join(nombre for clave,nombre in [('desierta','Desierta'),('segundo_llamado','Segundo llamado'),('reapertura','Reapertura')] if r.get(clave)) or '—'
+        flags=', '.join(nombre for clave,nombre in [('desierta','Desierta'),('fracasada','Fracasada'),('segundo_llamado','Segundo llamado'),('reapertura','Reapertura')] if r.get(clave)) or '—'
         fuente=r.get('evidencia_url') or r.get('url')
         lineas.append('| '+ ' | '.join([celda((r.get('organismo') or 'desconocido')+' / '+(r.get('numero_procedimiento') or 'sin número')),celda((r.get('localidad') or 'desconocida')+' / '+(r.get('provincia') or 'desconocida')),celda(r.get('objeto') or r.get('titulo')),celda(presupuesto(r.get('presupuesto'))),celda((r.get('vigencia') or 'DESCONOCIDA')+' / '+(r.get('fecha_hora_apertura') or r.get('fecha_apertura') or 'desconocida')),celda(r.get('fecha_publicacion') or 'desconocida'),f"[Pliego]({r['enlace_pliego']})" if r.get('enlace_pliego') else 'No identificado',celda(r.get('condiciones_pago') or pagos.NO_INFORMADO),respaldo,flags,f'[Oficial]({fuente})'])+' |')
     lineas+=['','## Evidencia de las condiciones de pago','']
@@ -227,7 +228,7 @@ def identidad(r):
     proc=procedimiento_canonico(r)
     org=norm(r.get('organismo'))
     if proc:
-        partes=[org or r.get('fuente',''),proc,convocatoria(r),r.get('identidad_ambito','')]
+        partes=[norm(r.get('provincia')),org or r.get('fuente',''),proc,convocatoria(r),r.get('identidad_ambito','')]
     else:
         partes=[r.get('fuente',''),r.get('id') or r.get('url',''),norm(r.get('titulo'))]
     return sha256('|'.join(partes).encode()).hexdigest()

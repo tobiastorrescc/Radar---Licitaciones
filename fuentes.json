@@ -46,7 +46,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://compras.unr.edu.ar/": {
     "organismo": "UNR",
@@ -58,7 +60,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/": {
     "organismo": "Poder Judicial de Santa Fe",
@@ -101,7 +105,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/": {
     "organismo": "Municipalidad de Cañada de Gómez",
@@ -129,7 +135,9 @@
     "seguir_patrones": [
       "catid=42",
       "task=download.send"
-    ]
+    ],
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://lasparejas.gov.ar/": {
     "organismo": "Municipalidad de Las Parejas",
@@ -141,7 +149,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://funes.gob.ar/": {
     "organismo": "Municipalidad de Funes",
@@ -153,7 +163,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/": {
     "organismo": "Municipalidad de Roldán",
@@ -178,7 +190,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://vggmunicipalidad.gov.ar/licitaciones/": {
     "organismo": "Municipalidad de Villa Gobernador Gálvez",
@@ -190,7 +204,10 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true,
+    "adaptador": "vgg"
   },
   "https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia": {
     "organismo": "Municipalidad de Santo Tomé",
@@ -236,7 +253,8 @@
       "ProcesosLicitaciones",
       "LicitacionesPublicas",
       "LicitacionesPrivadas"
-    ]
+    ],
+    "descubrir_contrataciones": true
   },
   "https://venadotuerto.gob.ar/licitaciones/": {
     "organismo": "Municipalidad de Venado Tuerto",
@@ -266,7 +284,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://www.entrerios.gov.ar/minplan/licitaciones": {
     "organismo": "Ministerio de Planeamiento e Infraestructura",
@@ -355,7 +375,9 @@
       "/web-compras/Invitaciones-Compras/",
       "/web-compras/.*licitaci",
       "/web-compras/.*concurso"
-    ]
+    ],
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://sanjose.gob.ar/concursos-licitaciones/": {
     "organismo": "Municipalidad de San José",
@@ -376,7 +398,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones": {
     "organismo": "Municipalidad de Concepción del Uruguay",
@@ -398,7 +422,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://municipalidad.gualeguay.gob.ar/modulos/transparencia/licitaciones_publicas.php": {
     "organismo": "Municipalidad de Gualeguay",
@@ -444,11 +470,13 @@
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "urls_inicio": [
-      "https://licitaciones.chajari.gob.ar/"
+      "https://licitaciones.chajari.gob.ar/web"
     ],
     "dominios_documentos": [
       "licitaciones.chajari.gob.ar"
-    ]
+    ],
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://www.federacion.gob.ar/licitaciones": {
     "organismo": "Municipalidad de Federación",
@@ -531,7 +559,9 @@
     "urls_inicio": [
       "https://www.sanpedro.net.ar/legislacion/boletin.php"
     ],
-    "indice_documentos": true
+    "indice_documentos": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://compras.pergamino.gob.ar/": {
     "organismo": "Municipalidad de Pergamino",
@@ -605,7 +635,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "enriquecer_fichas": true
+    "enriquecer_fichas": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones": {
     "organismo": "Municipalidad de Alvear",
@@ -623,7 +655,9 @@
       "pagina=licitacion",
       "pagina=detalle"
     ],
-    "enriquecer_fichas": true
+    "enriquecer_fichas": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://sanlorenzo.gob.ar/licitaciones/": {
     "organismo": "Municipalidad de San Lorenzo",
@@ -635,7 +669,9 @@
     "capturar_respuestas": true,
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://www.iafas.gov.ar/proveedores/licitaciones/": {
     "organismo": "IAFAS",
@@ -648,7 +684,12 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "adaptador": "encabezados"
+    "adaptador": "encabezados",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true,
+    "patrones_documentos": [
+      "/descargas/\\d+$"
+    ]
   },
   "https://compras.uner.edu.ar/": {
     "organismo": "Universidad Nacional de Entre Ríos (UNER)",
@@ -660,7 +701,9 @@
     "capturar_respuestas": true,
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://www.municipalidadcolonpba.gob.ar/licitaciones.php": {
     "organismo": "Municipalidad de Colón",
@@ -674,7 +717,9 @@
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "adaptador": "colon-pba",
-    "documentos_imagen": true
+    "documentos_imagen": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://www.santafe.gov.ar/boletinoficial/": {
     "organismo": "Boletín Oficial de Santa Fe",
@@ -692,7 +737,9 @@
       "ver.php.*licitaciones",
       "fecha="
     ],
-    "adaptador": "boletin-sf"
+    "adaptador": "boletin-sf",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   "https://www.entrerios.gov.ar/boletin/": {
     "organismo": "Boletín Oficial de Entre Ríos",
@@ -706,6 +753,220 @@
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "organismos_multiples": true,
-    "indice_documentos": true
+    "indice_documentos": true,
+    "adaptador": "boletin-er",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true,
+    "dominios_documentos": [
+      "portal.entrerios.gov.ar"
+    ]
+  },
+  "https://cglagos.gob.ar/comuna/compras-y-licitaciones": {
+    "organismo": "Comuna de General Lagos",
+    "localidad": "General Lagos",
+    "provincia": "Santa Fe",
+    "tipo_portal": "html_pdf",
+    "conector": "publicaciones",
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  "https://comunaarequito.gob.ar/licitaciones/": {
+    "organismo": "Comuna de Arequito",
+    "localidad": "Arequito",
+    "provincia": "Santa Fe",
+    "tipo_portal": "html_pdf",
+    "conector": "publicaciones",
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5002-licitacion-publica-01-2026": {
+    "organismo": "Comuna de Chabás",
+    "localidad": "Chabás",
+    "provincia": "Santa Fe",
+    "tipo_portal": "html_paginado",
+    "conector": "publicaciones",
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "seguir_patrones": [
+      "/descargas/92-licitaciones/"
+    ],
+    "enriquecer_fichas": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  "https://www.timbues.gob.ar/index.php?pagina=lista&sec=210": {
+    "organismo": "Gobierno de Timbúes",
+    "localidad": "Timbúes",
+    "provincia": "Santa Fe",
+    "tipo_portal": "html_paginado",
+    "conector": "publicaciones",
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "enriquecer_fichas": true,
+    "seguir_patrones": [
+      "pagina=lista.*sec=210",
+      "page=\\d+.*pagina=lista"
+    ],
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  "https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/": {
+    "organismo": "Municipalidad de Sunchales",
+    "localidad": "Sunchales",
+    "provincia": "Santa Fe",
+    "tipo_portal": "html_pdf",
+    "conector": "publicaciones",
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  "https://www.concejosantafe.gov.ar/concursos-y-licitaciones": {
+    "organismo": "Concejo Municipal de Santa Fe",
+    "localidad": "Santa Fe",
+    "provincia": "Santa Fe",
+    "tipo_portal": "html_pdf",
+    "conector": "publicaciones",
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "enriquecer_fichas": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  "https://villaelisa.gov.ar/transparencia/": {
+    "organismo": "Municipalidad de Villa Elisa",
+    "localidad": "Villa Elisa",
+    "provincia": "Entre Ríos",
+    "tipo_portal": "html_pdf",
+    "conector": "publicaciones",
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "seguir_patrones": [
+      "/transparencia/licitaciones/"
+    ],
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  "https://www.generalramirez.gob.ar/licitaciones-y-concursos/": {
+    "organismo": "Municipalidad de General Ramírez",
+    "localidad": "General Ramírez",
+    "provincia": "Entre Ríos",
+    "tipo_portal": "html_pdf",
+    "conector": "publicaciones",
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "seguir_patrones": [
+      "licitaciones-y-concursos/",
+      "/licitaciones-publicas/",
+      "/licitaciones-privadas/",
+      "/concursos-de-precios/"
+    ],
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  "https://lucasgonzalez.gob.ar/licitaciones-y-concursos/": {
+    "organismo": "Municipalidad de Lucas González",
+    "localidad": "Lucas González",
+    "provincia": "Entre Ríos",
+    "tipo_portal": "html_paginado",
+    "conector": "publicaciones",
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "enriquecer_fichas": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  "https://sansalvadorer.gob.ar/": {
+    "organismo": "Municipalidad de San Salvador",
+    "localidad": "San Salvador",
+    "provincia": "Entre Ríos",
+    "tipo_portal": "html_paginado",
+    "conector": "publicaciones",
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "enriquecer_fichas": true,
+    "seguir_patrones": [
+      "/category/.*licitaci",
+      "/licitaciones/"
+    ],
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  "https://salto.gob.ar/licitaciones/": {
+    "organismo": "Municipalidad de Salto",
+    "localidad": "Salto",
+    "provincia": "Buenos Aires",
+    "tipo_portal": "html_pdf",
+    "conector": "publicaciones",
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  "https://www.junin.gob.ar/servicio/licitaciones-y-concursos": {
+    "organismo": "Municipalidad de Junín",
+    "localidad": "Junín",
+    "provincia": "Buenos Aires",
+    "tipo_portal": "html_paginado",
+    "conector": "publicaciones",
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "enriquecer_fichas": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  "https://zarate.gob.ar/licitaciones-publicas/": {
+    "organismo": "Municipalidad de Zárate",
+    "localidad": "Zárate",
+    "provincia": "Buenos Aires",
+    "tipo_portal": "html_pdf",
+    "conector": "publicaciones",
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  "https://www.sanandresdegiles.gob.ar/?q=licitaciones-publicas": {
+    "organismo": "Municipalidad de San Andrés de Giles",
+    "localidad": "San Andrés de Giles",
+    "provincia": "Buenos Aires",
+    "tipo_portal": "html_pdf",
+    "conector": "publicaciones",
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   }
 }

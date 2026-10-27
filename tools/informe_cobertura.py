@@ -1,52 +1,57 @@
-"""Regenera el informe desde inventario y observaciones; no infiere éxito de HTTP 200."""
+"""Cobertura desde publicaciones auditadas; un inventario no prueba funcionamiento."""
+import argparse
 from collections import Counter
 from pathlib import Path
 import json
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+import oportunidades as o
 
+def estado_cobertura(observacion,registros):
+    validos=[r for r in registros if r.get('clasificacion_registro')=='PROCEDIMIENTO']
+    completos=[r for r in validos if r.get('objeto') and r.get('detalle_completo')]
+    estado=observacion.get('estado')
+    if estado=='BLOQUEADA':return 'BLOQUEADA'
+    if completos and estado=='OPERATIVA':return 'OPERATIVA'
+    if validos:return 'PARCIAL'
+    if estado=='SIN_PUBLICACIONES':return 'SIN_PUBLICACIONES_CONFIRMADO'
+    return 'PENDIENTE'
 
-def generar():
-    fuentes=json.loads(Path('inventario/fuentes.json').read_text())
-    ver=json.loads(Path('inventario/verificacion.json').read_text())
-    observadas={r['id']:r for r in ver['observaciones']}
-    territorio=json.loads(Path('inventario/territorio.json').read_text())
-    estados=Counter(observadas.get(f['id'],{}).get('estado', f['estado_verificacion']) for f in fuentes)
-    operativas=sum(r['estado'] in ('OPERATIVA','SIN_PUBLICACIONES_NUEVAS') and r['publicaciones_detectadas']>0 for r in observadas.values())
-    lineas=['# Cobertura del radar — etapa 1','',f"Observación: {ver['fecha']}. Rama `mejora/radar-auditable`, PR #1. Sin fusión.",'',
-      f"- Organismos con portal localizado: **{len(set((f['provincia'],f['organismo']) for f in fuentes))}**.",
-      f"- Portales inventariados: **{len(fuentes)}**. Un organismo puede tener varios listados.",
-      f"- Fuentes incorporadas a configuración: **{sum(f['incorporada'] for f in fuentes)}**, de las cuales 35 se agregan a Rosario.",
-      f"- Verificadas funcionando mediante conector: **{operativas}**.",
-      '- Bloqueadas al ejecutar: **36**; todas fallaron antes de obtener contenido. No se detectaron publicaciones en esta ejecución.',
-      '- Otras fuentes: **17** sin incorporar: 16 pendientes de adaptar o completar y 1 restringida en origen (Concordia).',
-      '- Sin publicaciones nuevas: **0 comprobadas**. Un error, un listado vacío o una página JavaScript no demuestra ausencia de novedades.',
-      '', '| Provincia | Portales | Configuradas | Funcionando comprobadas |','|---|---:|---:|---:|']
-    for p in ('Santa Fe','Entre Ríos','Buenos Aires'):
-        lineas.append(f"| {p} | {sum(f['provincia']==p for f in fuentes)} | {sum(f['provincia']==p and f['incorporada'] for f in fuentes)} | 0 |")
-    lineas += ['', '## Evidencia y límites reales','',
-      'La búsqueda y lectura web separada permitió localizar direcciones oficiales y observar publicaciones, por ejemplo en CAFESG y Aeropuerto Rosario. Esto verifica la existencia de contenido, pero no prueba que el conector pueda descargarlo y extraerlo desde el executor. No se importaron estos hallazgos manuales como novedades del radar.',
-      '', 'El executor informa red restringida con Rosario como único destino público adicional. `curl` hacia Rosario y CAFESG falló al conectar con el proxy en el puerto 8080; las 36 consultas Python devolvieron URLError con Operation not permitted. No se deshabilitó el proxy ni TLS. El fallo local no demuestra que los portales estén caídos. `inventario/verificacion.json` conserva cada URL y error observado.',
-      '', 'ASSA y contrataciones provinciales de Entre Ríos requieren JavaScript; Colón usa iframes; Concordia declara red municipal o VPN; Armstrong devolvió 403 en lectura web. Estos casos requieren otra ruta pública comprobada o un adaptador específico. Federación y Rosario del Tala muestran publicaciones históricas: no se considera que carezcan de nuevas.',
-      '', '## Trabajo implementado','',
-      'Conectores HTML de enlaces numerados, filas y bloques con descargas; paginación por rel=next, números en query y rutas /page/; PDF con extracción real mediante pdftotext. Los PDF escaneados sin texto quedan pendientes de OCR. Los límites de recorrido y los errores se informan, nunca se ocultan como éxito.',
-      '', 'Historial atómico preservado, identidad por fuente, URL y procedimiento/llamado/estado; detección de cambios de llamado en la misma URL, auditorías persistentes y última detección. No hay deduplicación semántica garantizada entre portales o documentos con URLs distintas. Debe resolverse conservando evidencia para evitar descartar procesos diferentes con igual número.',
-      '', 'Todas las novedades detectadas se informan sin límite y sin filtrar por rubro, monto ni financiación. Orden comercial orientativo por evidencia de pago y llamados especiales; no se estima rentabilidad sin costos. Una publicación detectada puede estar adjudicada, desierta o cerrada: se conserva su situación publicada y no se presenta como oferta abierta confirmada.',
-      '', '26 pruebas automáticas aprobadas en Python 3.12: incluye las 8 anteriores, PDF real generado de prueba, tablas con Descargar, paginación y ciclos, JavaScript vacío, bloqueo, extracción parcial, 500 novedades sin límite y dos ejecuciones con historial. Las muestras son sintéticas: no sustituyen fixtures reales de cada portal. Workflow diario y horario 08:00 Argentina se conservan; se instala poppler-utils para leer PDF. Los cambios del PR no se activan en main hasta la fusión.',
-      '', '## Fuentes','', '| Organismo / localidad | Provincia | Tipo | Configurada | Estado observado | URL |', '|---|---|---|---|---|---|']
-    for f in fuentes:
-        estado=observadas.get(f['id'],{}).get('estado',f['estado_verificacion'])
-        lineas.append(f"| {f['organismo']} / {f['localidad']} | {f['provincia']} | {f['tipo_portal']} | {'Sí' if f['incorporada'] else 'No'} | {estado} | [Portal]({f['url']}) |")
-    lineas += ['', '## Territorio todavía sin cobertura operativa','',
-      '**Las tres provincias carecen de cobertura operativa demostrada en esta revisión. El inventario aún no es exhaustivo.** El total de organismos/portales faltantes sigue siendo desconocido. La lista siguiente contiene 83 localidades de trabajo; no representa todos los municipios y comunas.', '']
-    for p in ('Santa Fe','Entre Ríos','Buenos Aires'):
-        lineas.append('**'+p+':** '+', '.join(r['localidad'] for r in territorio['municipios'] if r['provincia']==p)+'.\n')
-    lineas += ['Falta cerrar el padrón completo de comunas pequeñas de Santa Fe, hospitales, SAMCo y entes descentralizados, y completar municipios entrerrianos fuera de la prioridad inicial. Para Buenos Aires se mantiene una lista amplia de candidatos; las distancias por ruta desde Rosario todavía no están medidas y no se afirma que todos cumplan 280 km.',
-      '', '## Próximas etapas','',
-      '1. Restaurar el proxy y habilitar mediante la configuración del entorno los dominios oficiales del inventario. Ejecutar `python tools/verificar_fuentes.py`; no requiere modificar el historial de producción. Como alternativa verificable, el workflow manual sobre esta rama ejecuta el verificador en GitHub Actions con permisos de lectura y conserva su evidencia como artefacto; no se ha disparado desde esta sesión.',
-      '2. Priorizar CAFESG, Aeropuerto Rosario, Santa Fe capital, Casilda y EPE: guardar respuestas HTML/PDF reales, ajustar extracción de fichas, recorrer todas las páginas y comparar publicaciones detectadas con el listado oficial. Promover cada fuente solo con conteos y evidencia.',
-      '3. Resolver API pública de ASSA y Entre Ríos, iframes de Colón, SIU-Diaguita UNR y alternativa pública de Concordia. No inventar endpoints ni usar portales de prueba como producción.',
-      '4. Importar y actualizar el padrón oficial completo santafesino (códigos publicados desde 2018), cruzarlo con fuentes y registrar explícitamente cada comuna sin portal. El archivo oficial se localizó, pero su descarga posterior agotó tiempo; no se declara importado. Repetir para municipios, comunas y entes entrerrianos.',
-      '5. Medir distancias por ruta de los partidos bonaerenses; completar partidos cercanos y boletines complementarios, hospitales/SAMCo/entes. Añadir OCR donde exista PDF escaneado y resolver duplicados documentales con identidad del organismo y expediente.',
-      '6. Volver a ejecutar con historial real preservado y actualizar este informe con `python tools/informe_cobertura.py`. Mantener PR #1 abierto para revisión; no fusionar automáticamente.','']
-    Path('INFORME_COBERTURA.md').write_text('\n'.join(lineas))
+def generar(informe='work/verificacion/verificacion.json',salida='work/verificacion/cobertura',padron='work/verificacion/territorio.json'):
+    fuente=Path(informe);datos=json.loads(fuente.read_text())
+    observadas={r['id']:r for r in datos['observaciones']}
+    fs=json.loads(Path('inventario/fuentes.json').read_text())
+    base=set(json.loads(Path('inventario/base_36.json').read_text())['ids'])
+    territorio=json.loads(Path(padron).read_text()) if Path(padron).is_file() else json.loads(Path('inventario/territorio.json').read_text())
+    estados=[];ejemplos=[]
+    for f in fs:
+        obs=observadas.get(f['id'],{});ruta=Path(obs.get('resultado_archivo',''))
+        if not ruta.is_file() and 'verificacion_ejecuciones' in ruta.parts:
+            ruta=fuente.parent/Path(*ruta.parts[ruta.parts.index('verificacion_ejecuciones'):])
+        registros=[o.normalizar(r,datos['actualizado']) for r in json.loads(ruta.read_text()).get('oportunidades',[])] if ruta.is_file() else []
+        estado=estado_cobertura(obs,registros)
+        val=[r for r in registros if r['clasificacion_registro']=='PROCEDIMIENTO']
+        estados.append({'id':f['id'],'organismo':f['organismo'],'localidad':f['localidad'],'provincia':f['provincia'],'url':f['url'],'tipo_portal':f['tipo_portal'],'incorporada':f['incorporada'],'nueva':f['id'] not in base,'estado':estado,'estado_conector':obs.get('estado','NO_CONSULTADA'),'publicaciones_detectadas':len(registros),'procedimientos_verificados':len(val),'con_objeto':sum(bool(r.get('objeto')) for r in val),'errores':obs.get('errores',[]),'resultado_archivo':str(ruta) if ruta.is_file() else None})
+        if f['id'] not in base:
+            for r in sorted(val,key=lambda r:(not bool(r.get('objeto')),r['vigencia']!='ABIERTA',r.get('fecha_apertura') is None)):
+                ejemplos.append({'fuente_id':f['id'],**{k:r.get(k) for k in ('organismo','localidad','provincia','numero_procedimiento','tipo_procedimiento','objeto','fecha_apertura','fecha_publicacion','vigencia','url','evidencia_url','documentos','condiciones_pago')}})
+    por_id={f['id']:f for f in estados};municipios=[]
+    for m in territorio.get('municipios',[]):
+        directas=[f for f in estados if f['provincia']==m['provincia'] and o.norm(f.get('localidad'))==o.norm(m['localidad']) and (o.norm(f['organismo']).startswith(('municipalidad','comuna','gobierno de timbues')))]
+        municipios.append({**m,'fuentes_directas':[f['id'] for f in directas],'estados_fuentes':dict(Counter(f['estado'] for f in directas)),'estado_cobertura':'CON_PUBLICACIONES_COMPROBADAS' if any(f['estado']=='OPERATIVA' for f in directas) else ('PARCIAL' if any(f['estado']=='PARCIAL' for f in directas) else 'PENDIENTE')})
+    nuevas=[f for f in estados if f['nueva']];resumen={'fecha':datos['actualizado'],'github_run_id':datos.get('github_run_id'),'revision':datos.get('revision'),'organismos_inventariados':len({(f['provincia'],f['organismo']) for f in fs}),'portales_inventariados':len(fs),'fuentes_incorporadas':sum(f['incorporada'] for f in fs),'base_conservada':all(por_id[i]['incorporada'] for i in base),'fuentes_nuevas':len(nuevas),'nuevas_incorporadas':sum(f['incorporada'] for f in nuevas),'estados_nuevas':dict(Counter(f['estado'] for f in nuevas)),'estados_total':dict(Counter(f['estado'] for f in estados)),'territorio_padron':dict(Counter(m['provincia'] for m in municipios)),'territorio_con_portal_operativo':dict(Counter(m['provincia'] for m in municipios if m['estado_cobertura']=='CON_PUBLICACIONES_COMPROBADAS')),'cobertura_completa':False}
+    destino=Path(salida);destino.mkdir(parents=True,exist_ok=True)
+    (destino/'auditoria_cobertura.json').write_text(json.dumps({'resumen':resumen,'fuentes':estados,'municipios':municipios,'ejemplos_fuentes_nuevas':ejemplos},ensure_ascii=False,indent=2)+'\n')
+    lineas=['# Cobertura territorial auditada','',f"Ejecución {resumen['github_run_id']}; observación {resumen['fecha']}.",'','No se declara cobertura completa. Los gobiernos locales sin portal o sin extracción comprobada permanecen pendientes. Las 36 fuentes anteriores se conservan.','',f"Organismos: {resumen['organismos_inventariados']}; portales: {len(fs)}; incorporadas: {resumen['fuentes_incorporadas']}.",f"Fuentes adicionales a la base: {len(nuevas)}; estados: {resumen['estados_nuevas']}.",'','Operativa requiere procedimientos identificados con objeto recuperado y conector finalizado sin incidencias. Parcial conserva procedimientos y sus incidencias. Vacío confirmado no se cuenta como operativa con publicaciones.','', '| Organismo | Provincia | Nueva | Estado | Procedimientos | URL |','|---|---|---|---|---:|---|']
+    lineas.extend(f"| {f['organismo']} | {f['provincia']} | {'Sí' if f['nueva'] else 'No'} | {f['estado']} | {f['procedimientos_verificados']} | [Portal]({f['url']}) |" for f in estados)
+    lineas+=['','## Padrón territorial','',territorio.get('advertencia','Padrón pendiente de comprobar.'),'',f"Registros por provincia: {resumen['territorio_padron']}",f"Con portal directo operativo observado: {resumen['territorio_con_portal_operativo']}",'','Cada municipio/comuna pendiente está enumerado en el JSON. Los organismos sectoriales y boletines complementarios no se contabilizan como un portal municipal propio. El radio bonaerense es geodésico y no certifica trayectos viales de 280 km.','', '## Preservación y próximos lotes','','Se conservan historial, todas las novedades, pago comprobado/desconocido y llamados especiales. No hay filtros de monto, rubro, modalidad o viabilidad, ni cálculos de rentabilidad o búsqueda de proveedores.','', 'Continuar con endpoints públicos dinámicos, PDF/OCR, paginación restante, municipios sin portal y padrón sectorial de hospitales/SAMCo, universidades y entes. Cada incorporación exige evidencia de publicaciones.']
+    (destino/'INFORME_COBERTURA.md').write_text('\n'.join(lineas)+'\n')
+    print('COBERTURA_RESUMEN '+json.dumps(resumen,ensure_ascii=False),flush=True)
+    vistos=set()
+    for e in ejemplos:
+        if e['fuente_id'] in vistos:continue
+        vistos.add(e['fuente_id']);print('EJEMPLO_FUENTE_NUEVA '+json.dumps(e,ensure_ascii=False),flush=True)
+    return resumen
 
-if __name__=='__main__': generar()
+if __name__=='__main__':
+    p=argparse.ArgumentParser();p.add_argument('--informe',default='work/verificacion/verificacion.json');p.add_argument('--salida',default='work/verificacion/cobertura');p.add_argument('--padron',default='work/verificacion/territorio.json');a=p.parse_args();generar(a.informe,a.salida,a.padron)

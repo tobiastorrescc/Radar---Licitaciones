@@ -9,7 +9,8 @@ Python 3.11+ y `pdftotext` (paquete `poppler-utils`). Desde la raíz:
 ```sh
 python -m unittest discover -s tests -v
 python radar.py
-python tools/verificar_fuentes.py
+python tools/verificar_fuentes.py --salida work/verificacion/verificacion.json
+python tools/padron_territorial.py
 python tools/informe_cobertura.py
 ```
 
@@ -56,3 +57,7 @@ Las fuentes usan `lectura_adjuntos: necesarios`: si el HTML/JSON publica el proc
 SIN_PUBLICACIONES exige evidencia explícita de un listado vacío, y no equivale a PENDIENTE por estructura desconocida. Los 403, TLS inválido o autenticación no se eluden ni se presentan como extracción correcta. El resultado de la verificación se refiere al alcance declarado del listado; no garantiza cobertura exhaustiva del organismo o lectura de todos los pliegos.
 
 La ruta histórica action18 de Rojas era ejecución de órdenes de compra. Se reemplazó por la sección de licitaciones privadas enlazada oficialmente (action24); no se suman órdenes de compra sin objeto a la cantidad de licitaciones extraídas. El historial anterior permanece intacto.
+
+## Ampliación territorial por lotes
+
+`inventario/base_36.json` permite comprobar que se mantienen las fuentes anteriores. `tools/padron_territorial.py` importa el padrón oficial con su procedencia; el radio bonaerense es geodésico y no mide rutas. `tools/informe_cobertura.py` cruza el padrón, las fuentes y los checkpoints de una corrida para generar `work/verificacion/cobertura/`. Sus estados requieren extracción real; los archivos históricos de la etapa inicial no son el estado actual. Ver [informe de cobertura](INFORME_COBERTURA.md).

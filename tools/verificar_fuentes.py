@@ -5,6 +5,7 @@ from datetime import datetime
 from functools import partial
 import json
 import math
+import re
 import os
 from pathlib import Path
 import signal
@@ -44,7 +45,8 @@ def worker(config, checkpoint, conexion, lectura, max_paginas):
         guardar(checkpoint, {**r, 'actualizado': ahora(), 'duracion_segundos': round(time.monotonic()-inicio, 3)})
     transporte=partial(conectores.descargar, conexion_timeout=fuente.get('conexion_timeout',conexion), lectura_timeout=fuente.get('lectura_timeout',lectura))
     def fetch(url):
-        if fuente.get('capturar_respuestas') and not urlparse(url).path.lower().endswith(('.pdf','.docx','.zip','.jpg','.jpeg','.png')):
+        es_documento=urlparse(url).path.lower().endswith(('.pdf','.docx','.zip','.jpg','.jpeg','.png')) or any(re.search(p,url) for p in fuente.get('patrones_documentos',[]))
+        if fuente.get('capturar_respuestas') and not es_documento:
             from hashlib import sha256
             datos,tipo,final=transporte(url)
             if 'html' in tipo.lower() or 'json' in tipo.lower():
@@ -53,7 +55,7 @@ def worker(config, checkpoint, conexion, lectura, max_paginas):
                 (base/(nombre+'.txt')).write_bytes(datos)
                 guardar(base/(nombre+'.json'),{'url':url,'final':final,'tipo':tipo,'sha256':sha256(datos).hexdigest()})
             return datos,tipo,final
-        if urlparse(url).path.lower().endswith(('.pdf','.docx','.zip','.jpg','.jpeg','.png')):return cache_documentos.obtener(url,transport=transporte)[:3]
+        if es_documento:return cache_documentos.obtener(url,transport=transporte)[:3]
         return transporte(url)
     try:
         r = conectores.explorar(fuente['url'], fuente, max_paginas=max_paginas, progreso=progreso,

@@ -14,12 +14,15 @@ concurrency:
 jobs:
   pruebas:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: sudo apt-get update && sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-spa
+      - name: Preparar lectura de PDF e imágenes con plazo acotado
+        timeout-minutes: 4
+        run: sudo apt-get -o Acquire::Retries=1 -o Acquire::http::Timeout=15 -o Acquire::https::Timeout=15 update && sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-spa
       - run: python -m unittest discover -s tests -v
   ejecutar-radar:
     if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
@@ -35,7 +38,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: sudo apt-get update && sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-spa
+      - name: Preparar lectura de PDF e imágenes con plazo acotado
+        timeout-minutes: 4
+        run: sudo apt-get -o Acquire::Retries=1 -o Acquire::http::Timeout=15 -o Acquire::https::Timeout=15 update && sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-spa
       - uses: actions/cache@v4
         with:
           path: work/cache-documentos
@@ -87,7 +92,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: sudo apt-get update && sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-spa
+      - name: Preparar lectura de PDF e imágenes con plazo acotado
+        timeout-minutes: 4
+        run: sudo apt-get -o Acquire::Retries=1 -o Acquire::http::Timeout=15 -o Acquire::https::Timeout=15 update && sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-spa
       - uses: actions/cache@v4
         with:
           path: work/cache-documentos
@@ -103,10 +110,18 @@ jobs:
         env:
           PYTHONUNBUFFERED: '1'
         run: python -u tools/verificar_fuentes.py --salida work/verificacion/verificacion.json --concurrencia 4 --conexion 5 --lectura 10 --por-fuente 60 --total 600
+      - name: Inspeccionar assets públicos de portales nuevos
+        if: always()
+        timeout-minutes: 2
+        run: python tools/inspeccionar_portales.py
       - name: Normalizar y reportar oportunidades sin escribir producción
         if: always()
         timeout-minutes: 4
         run: python tools/reportar_oportunidades.py
+      - name: Generar cobertura territorial desde evidencia real
+        if: always()
+        timeout-minutes: 1
+        run: python tools/informe_cobertura.py
       - name: Resumen de fuentes en Actions
         if: always()
         run: |

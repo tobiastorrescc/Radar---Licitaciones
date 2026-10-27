@@ -27,7 +27,7 @@ def normalizar(texto):
 
 TIPOS = r'(?:licitacion(?: publica| privada)?|concurso(?: privado| publico)?(?: de precios| de ofertas)?|compras? (?:directas?|menor(?:es)?)|contratacion directa|compulsa|cotejo de precios)'
 PUBLICACION = re.compile(TIPOS + r'\b.{0,65}?\d+(?:\s*[/–-]\s*\d{2,4})?', re.I)
-ESPECIAL = re.compile(r'desiert\w*|segundo llamado|2do llamado|2[º°o] llamado|segunda convocatoria|reapertura|nuevo llamado')
+ESPECIAL = re.compile(r'desiert\w*|fracasad\w*|segundo llamado|2do llamado|2[º°o] llamado|segunda convocatoria|reapertura|nuevo llamado')
 
 
 def clasificar(texto):
@@ -217,7 +217,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
         fetch=partial(descargar)
         transporte=fetch
         def fetch(url):
-            if urlparse(url).path.lower().endswith((*extractores.ADJUNTOS,'.jpg','.jpeg','.png')):
+            if urlparse(url).path.lower().endswith((*extractores.ADJUNTOS,'.jpg','.jpeg','.png')) or any(re.search(p,url) for p in config.get('patrones_documentos',[])):
                 import cache_documentos
                 return cache_documentos.obtener(url,transport=transporte)[:3]
             return transporte(url)
@@ -247,6 +247,14 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
         items[key]=registro
         return key
     def texto_documento(texto,url,referencia=None,hash_documento=None):
+        referencia=referencia if isinstance(referencia,str) else None
+        if config.get('adaptador') in ('boletin-sf','boletin-er'):
+            from extractores_lotes import boletin_texto
+            for registro in boletin_texto(texto,url,config):
+                registro['documentos']=[{'url':url,'titulo':'Boletín complementario'}]
+                registro['pago_evidencias']=pagos.extraer(registro['objeto'],url,hash_documento=hash_documento,metodo='SECCION_DOCUMENTO')
+                agregar(registro)
+            return
         lineas=texto.splitlines()
         posiciones=[i for i,l in enumerate(lineas) if extractores.procesos(l)]
         if not posiciones and referencia and texto.strip():
@@ -282,6 +290,12 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             datos,tipo,final=fetch(url)
             fase='EXTRACCION';snapshot(fase,url)
             if _host(final) not in hosts:raise ValueError('Redirección fuera de dominios oficiales declarados')
+            if config.get('adaptador')=='vgg' and 'json' in tipo.lower():
+                from extractores_lotes import extraer_vgg
+                registros=extraer_vgg(datos,final)
+                for r in registros:agregar(r)
+                if not registros:vacios.append({'url':url,'texto':'Listado JSON oficial vacío'})
+                correctas+=1;snapshot('PAGINA_FINALIZADA',url);continue
             es_html='html' in tipo.lower() and not datos.startswith(b'%PDF-')
             if not es_html:
                 import cache_documentos
@@ -293,6 +307,9 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             html=decodificar_html(datos,tipo)
             pagina_config={**config,**(referencia if isinstance(referencia,dict) else {})}
             registros,links,dom=extractores.extraer(html,final,pagina_config)
+            if config.get('adaptador')=='vgg':
+                from extractores_lotes import endpoints_vgg
+                for endpoint in endpoints_vgg(dom,html,final):pending.append((endpoint,'LISTADO',None))
             correctas+=1
             texto=normalizar(dom.root.text)
             # El vacío debe estar publicado explícitamente; no se infiere de falta de matches.
@@ -327,6 +344,8 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 pagina=clase=='LISTADO' and (('next' in l['rel'].split() or et in ('siguiente','siguiente »','next','»','›') or
                           bool(re.search(r'/page/\d+|[?&](?:page|pagina|start)=\d+',destino))) and any(path.startswith(raiz) for raiz in raices))
                 navegar=any(re.search(patron,destino) for patron in config.get('seguir_patrones',[]))
+                if config.get('descubrir_contrataciones') and clase=='LISTADO' and len(et)<120 and not extractores.procesos(et):
+                    navegar=navegar or bool(re.search(r'licitaciones|concursos? de precios|compras|contrataciones|boletin oficial',et))
                 if pagina or navegar:
                     contexto={'tipo_contexto':l.get('tipo_contexto',pagina_config.get('tipo_contexto'))}
                     pending.append((destino,'LISTADO',contexto))
@@ -342,6 +361,8 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
         except Exception as e:
             errors.append({'url':url,**clasificar_error(e,fase)})
             snapshot('PAGINA_FINALIZADA',url)
+            if isinstance(e,HTTPError) and e.code==429:
+                limits.append('HTTP_429_REINTENTO_POSPUESTO');break
     incompletas=[r['id'] for r in items.values() if not r.get('detalle_completo')]
     if incompletas:
         errors.append({'url':fuente,'tipo':'DetalleIncompleto','categoria':'EXTRACCION','timeout':False,

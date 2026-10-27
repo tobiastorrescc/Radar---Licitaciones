@@ -90,7 +90,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-005",
@@ -113,7 +115,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-006",
@@ -200,7 +204,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-010",
@@ -250,7 +256,9 @@
     "seguir_patrones": [
       "catid=42",
       "task=download.send"
-    ]
+    ],
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-012",
@@ -273,7 +281,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-013",
@@ -296,7 +306,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-014",
@@ -343,7 +355,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-016",
@@ -366,7 +380,10 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true,
+    "adaptador": "vgg"
   },
   {
     "id": "fuente-017",
@@ -455,7 +472,8 @@
       "ProcesosLicitaciones",
       "LicitacionesPublicas",
       "LicitacionesPrivadas"
-    ]
+    ],
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-021",
@@ -518,7 +536,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-024",
@@ -695,7 +715,9 @@
       "/web-compras/Invitaciones-Compras/",
       "/web-compras/.*licitaci",
       "/web-compras/.*concurso"
-    ]
+    ],
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-032",
@@ -738,7 +760,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-034",
@@ -800,7 +824,9 @@
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "cobertura-2026-10-27"
+    "lote": "cobertura-2026-10-27",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-037",
@@ -890,11 +916,13 @@
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "urls_inicio": [
-      "https://licitaciones.chajari.gob.ar/"
+      "https://licitaciones.chajari.gob.ar/web"
     ],
     "dominios_documentos": [
       "licitaciones.chajari.gob.ar"
-    ]
+    ],
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-041",
@@ -1054,7 +1082,9 @@
     "urls_inicio": [
       "https://www.sanpedro.net.ar/legislacion/boletin.php"
     ],
-    "indice_documentos": true
+    "indice_documentos": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-048",
@@ -1211,7 +1241,9 @@
       "metodo": "Busqueda y apertura web oficial; pendiente conector real",
       "url": "https://enapro.com.ar/category/licitaciones/"
     },
-    "enriquecer_fichas": true
+    "enriquecer_fichas": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-055",
@@ -1239,7 +1271,9 @@
       "pagina=licitacion",
       "pagina=detalle"
     ],
-    "enriquecer_fichas": true
+    "enriquecer_fichas": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-056",
@@ -1261,7 +1295,9 @@
       "fecha": "2026-10-27",
       "metodo": "Busqueda y apertura web oficial; pendiente conector real",
       "url": "https://sanlorenzo.gob.ar/licitaciones/"
-    }
+    },
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-057",
@@ -1284,7 +1320,12 @@
       "metodo": "Busqueda y apertura web oficial; pendiente conector real",
       "url": "https://www.iafas.gov.ar/proveedores/licitaciones/"
     },
-    "adaptador": "encabezados"
+    "adaptador": "encabezados",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true,
+    "patrones_documentos": [
+      "/descargas/\\d+$"
+    ]
   },
   {
     "id": "fuente-058",
@@ -1306,7 +1347,9 @@
       "fecha": "2026-10-27",
       "metodo": "Busqueda y apertura web oficial; pendiente conector real",
       "url": "https://compras.uner.edu.ar/"
-    }
+    },
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-059",
@@ -1330,7 +1373,9 @@
       "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
     },
     "adaptador": "colon-pba",
-    "documentos_imagen": true
+    "documentos_imagen": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-060",
@@ -1358,7 +1403,9 @@
       "ver.php.*licitaciones",
       "fecha="
     ],
-    "adaptador": "boletin-sf"
+    "adaptador": "boletin-sf",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   },
   {
     "id": "fuente-061",
@@ -1382,6 +1429,360 @@
       "url": "https://www.entrerios.gov.ar/boletin/"
     },
     "organismos_multiples": true,
-    "indice_documentos": true
+    "indice_documentos": true,
+    "adaptador": "boletin-er",
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true,
+    "dominios_documentos": [
+      "portal.entrerios.gov.ar"
+    ]
+  },
+  {
+    "id": "fuente-062",
+    "organismo": "Comuna de General Lagos",
+    "localidad": "General Lagos",
+    "provincia": "Santa Fe",
+    "url": "https://cglagos.gob.ar/comuna/compras-y-licitaciones",
+    "tipo_portal": "html_pdf",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda oficial y apertura web; pendiente conector real",
+      "url": "https://cglagos.gob.ar/comuna/compras-y-licitaciones"
+    },
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  {
+    "id": "fuente-063",
+    "organismo": "Comuna de Arequito",
+    "localidad": "Arequito",
+    "provincia": "Santa Fe",
+    "url": "https://comunaarequito.gob.ar/licitaciones/",
+    "tipo_portal": "html_pdf",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda oficial y apertura web; pendiente conector real",
+      "url": "https://comunaarequito.gob.ar/licitaciones/"
+    },
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  {
+    "id": "fuente-064",
+    "organismo": "Comuna de Chabás",
+    "localidad": "Chabás",
+    "provincia": "Santa Fe",
+    "url": "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5002-licitacion-publica-01-2026",
+    "tipo_portal": "html_paginado",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda oficial y apertura web; pendiente conector real",
+      "url": "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5002-licitacion-publica-01-2026"
+    },
+    "seguir_patrones": [
+      "/descargas/92-licitaciones/"
+    ],
+    "enriquecer_fichas": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  {
+    "id": "fuente-065",
+    "organismo": "Gobierno de Timbúes",
+    "localidad": "Timbúes",
+    "provincia": "Santa Fe",
+    "url": "https://www.timbues.gob.ar/index.php?pagina=lista&sec=210",
+    "tipo_portal": "html_paginado",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda oficial y apertura web; pendiente conector real",
+      "url": "https://www.timbues.gob.ar/index.php?pagina=lista&sec=210"
+    },
+    "enriquecer_fichas": true,
+    "seguir_patrones": [
+      "pagina=lista.*sec=210",
+      "page=\\d+.*pagina=lista"
+    ],
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  {
+    "id": "fuente-066",
+    "organismo": "Municipalidad de Sunchales",
+    "localidad": "Sunchales",
+    "provincia": "Santa Fe",
+    "url": "https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/",
+    "tipo_portal": "html_pdf",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda oficial y apertura web; pendiente conector real",
+      "url": "https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/"
+    },
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  {
+    "id": "fuente-067",
+    "organismo": "Concejo Municipal de Santa Fe",
+    "localidad": "Santa Fe",
+    "provincia": "Santa Fe",
+    "url": "https://www.concejosantafe.gov.ar/concursos-y-licitaciones",
+    "tipo_portal": "html_pdf",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda oficial y apertura web; pendiente conector real",
+      "url": "https://www.concejosantafe.gov.ar/concursos-y-licitaciones"
+    },
+    "enriquecer_fichas": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  {
+    "id": "fuente-068",
+    "organismo": "Municipalidad de Villa Elisa",
+    "localidad": "Villa Elisa",
+    "provincia": "Entre Ríos",
+    "url": "https://villaelisa.gov.ar/transparencia/",
+    "tipo_portal": "html_pdf",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda oficial y apertura web; pendiente conector real",
+      "url": "https://villaelisa.gov.ar/transparencia/"
+    },
+    "seguir_patrones": [
+      "/transparencia/licitaciones/"
+    ],
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  {
+    "id": "fuente-069",
+    "organismo": "Municipalidad de General Ramírez",
+    "localidad": "General Ramírez",
+    "provincia": "Entre Ríos",
+    "url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/",
+    "tipo_portal": "html_pdf",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda oficial y apertura web; pendiente conector real",
+      "url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/"
+    },
+    "seguir_patrones": [
+      "licitaciones-y-concursos/",
+      "/licitaciones-publicas/",
+      "/licitaciones-privadas/",
+      "/concursos-de-precios/"
+    ],
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  {
+    "id": "fuente-070",
+    "organismo": "Municipalidad de Lucas González",
+    "localidad": "Lucas González",
+    "provincia": "Entre Ríos",
+    "url": "https://lucasgonzalez.gob.ar/licitaciones-y-concursos/",
+    "tipo_portal": "html_paginado",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda oficial y apertura web; pendiente conector real",
+      "url": "https://lucasgonzalez.gob.ar/licitaciones-y-concursos/"
+    },
+    "enriquecer_fichas": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  {
+    "id": "fuente-071",
+    "organismo": "Municipalidad de San Salvador",
+    "localidad": "San Salvador",
+    "provincia": "Entre Ríos",
+    "url": "https://sansalvadorer.gob.ar/",
+    "tipo_portal": "html_paginado",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda oficial y apertura web; pendiente conector real",
+      "url": "https://sansalvadorer.gob.ar/"
+    },
+    "enriquecer_fichas": true,
+    "seguir_patrones": [
+      "/category/.*licitaci",
+      "/licitaciones/"
+    ],
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  {
+    "id": "fuente-072",
+    "organismo": "Municipalidad de Salto",
+    "localidad": "Salto",
+    "provincia": "Buenos Aires",
+    "url": "https://salto.gob.ar/licitaciones/",
+    "tipo_portal": "html_pdf",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda oficial y apertura web; pendiente conector real",
+      "url": "https://salto.gob.ar/licitaciones/"
+    },
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  {
+    "id": "fuente-073",
+    "organismo": "Municipalidad de Junín",
+    "localidad": "Junín",
+    "provincia": "Buenos Aires",
+    "url": "https://www.junin.gob.ar/servicio/licitaciones-y-concursos",
+    "tipo_portal": "html_paginado",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda oficial y apertura web; pendiente conector real",
+      "url": "https://www.junin.gob.ar/servicio/licitaciones-y-concursos"
+    },
+    "enriquecer_fichas": true,
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  {
+    "id": "fuente-074",
+    "organismo": "Municipalidad de Zárate",
+    "localidad": "Zárate",
+    "provincia": "Buenos Aires",
+    "url": "https://zarate.gob.ar/licitaciones-publicas/",
+    "tipo_portal": "html_pdf",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda oficial; pendiente conector real",
+      "url": "https://zarate.gob.ar/licitaciones-publicas/"
+    },
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
+  },
+  {
+    "id": "fuente-075",
+    "organismo": "Municipalidad de San Andrés de Giles",
+    "localidad": "San Andrés de Giles",
+    "provincia": "Buenos Aires",
+    "url": "https://www.sanandresdegiles.gob.ar/?q=licitaciones-publicas",
+    "tipo_portal": "html_pdf",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
+    "lote": "cobertura-2026-10-27",
+    "capturar_respuestas": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda oficial; pendiente conector real",
+      "url": "https://www.sanandresdegiles.gob.ar/?q=licitaciones-publicas"
+    },
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true
   }
 ]
