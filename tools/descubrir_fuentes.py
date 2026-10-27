@@ -21,7 +21,7 @@ import oportunidades as o
 from registro_fuentes import cargar_auto
 from tools.verificar_fuentes import ejecutar,guardar
 
-SECTORES=('hospital SAMCo','universidad nacional','empresa pública ente puerto vialidad')
+SECTORES=('(hospital OR SAMCo)','(universidad nacional OR universidad provincial)','(empresa pública OR ente descentralizado OR puerto OR vialidad)')
 PROVINCIAS=('Santa Fe','Entre Ríos','Buenos Aires')
 
 def host(url):return (urlparse(url).hostname or '').lower().removeprefix('www.')
