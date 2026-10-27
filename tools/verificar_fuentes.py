@@ -169,7 +169,7 @@ def ejecutar(fuentes, salida, *, concurrencia=4, conexion=5, lectura=10,
         evento('FIN', id=r['id'], url=r['url'], estado=r['estado'], segundos=r['duracion_segundos'],
                publicaciones=r['publicaciones_detectadas'], errores=dict(Counter(e['categoria'] for e in r['errores'])),
                muestras_errores=list({(e['tipo'],e['error']):{'tipo':e['tipo'],'error':e['error'],'url':e.get('url')} for e in r['errores']}.values())[:5],
-               muestra_publicaciones=[{'titulo':p.get('titulo','')[:300],'objeto':p.get('objeto','')[:300],'url':p.get('url')} for p in avance.get('oportunidades',[])[:2]])
+               muestra_publicaciones=[{'titulo':str(p.get('titulo') or '')[:300],'objeto':str(p.get('objeto') or '')[:300],'url':p.get('url')} for p in avance.get('oportunidades',[])[:2]])
     def cancelar(signum, frame):
         cancelada.append(signum)
     anteriores = {}

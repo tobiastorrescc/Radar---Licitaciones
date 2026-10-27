@@ -76,6 +76,9 @@ def normalizar(r,ahora=None):
     r['reapertura']='reapertura' in t
     r['llamado_especial']=bool(r.get('llamado_especial') or r['desierta'] or r['segundo_llamado'] or r['reapertura'])
     cerrada=r.get('situacion_publicada') in ('ADJUDICADA','FINALIZADA','EN_EVALUACION','DESIERTA')
+    if r.get('situacion_publicada')=='DESIERTA' and (r['segundo_llamado'] or r['reapertura']):
+        # Mencionar el llamado anterior desierto no prueba cierre de la reapertura.
+        cerrada=False
     apertura=r.get('fecha_apertura')
     r['vigencia']='VENCIDA' if cerrada or (apertura and apertura<hoy.isoformat()) else ('ABIERTA' if apertura and apertura>hoy.isoformat() else 'DESCONOCIDA')
     # Con día de apertura igual a hoy sin hora verificada no se asegura que siga abierta.

@@ -108,6 +108,8 @@ jobs:
           r = json.loads(p.read_text())
           if r.get('schema_version') != 2:
               raise SystemExit('No hay un informe actual del verificador')
+          if r['estado_ejecucion'] != 'COMPLETADA' or r['resumen']['finalizadas'] != r['resumen']['configuradas'] or r['resumen']['fuentes_error_interno']:
+              raise SystemExit('Verificación incompleta o fallo interno; revisar auditoría y parciales')
           print('### Verificación de fuentes: ' + r['estado_ejecucion'])
           print('La disponibilidad de portales es un diagnóstico separado de las pruebas automáticas.')
           for k, v in r['resumen'].items():

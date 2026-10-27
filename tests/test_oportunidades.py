@@ -102,3 +102,8 @@ class ComercialTests(unittest.TestCase):
         self.assertEqual(registros['1/2026']['presupuesto']['importe'],'100.00')
         self.assertEqual(registros['2/2026']['presupuesto']['importe'],'200.00')
         self.assertEqual(registros['2/2026']['fecha_apertura'],'2026-10-29')
+
+    def test_reapertura_futura_de_anterior_desierta_no_vencida(self):
+        r=o.normalizar(self.base(objeto='Segundo llamado. Anterior desierta. Apertura 28/10/2026',situacion_publicada='DESIERTA'),FECHA)
+        self.assertEqual(r['vigencia'],'ABIERTA')
+        self.assertTrue(r['desierta'])

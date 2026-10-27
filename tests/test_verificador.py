@@ -31,6 +31,8 @@ class VerificadorTests(unittest.TestCase):
             data.update(fase='EXTRACCION',paginas_correctas=1)
         if tipo in ('ok','parcial'):
             data['oportunidades']=[{'id':str(n),'titulo':f'Compra menor {n}/2026','url':fuente['url']} for n in range(cantidad)]
+        if fuente.get('objeto_nulo'):
+            for item in data['oportunidades']:item['objeto']=None
         if tipo=='red':
             data.update(estado='BLOQUEADA',finalizado=True,
                 errores=[{'categoria':'RED','tipo':'URLError','error':'bloqueo','timeout':False}])
@@ -54,6 +56,14 @@ class VerificadorTests(unittest.TestCase):
         return v.ejecutar(fuentes,self.salida,concurrencia=opciones.pop('concurrencia',2),
             por_fuente=opciones.pop('por_fuente',0.6),total=opciones.pop('total',4),
             intervalo=0.1,comando=self.comando,emitir=self.logs.append,**opciones)
+
+    def test_objeto_desconocido_no_interrumpe_supervisor(self):
+        r=self.ejecutar([self.fuente(1,objeto_nulo=True),self.fuente(2)])
+        self.assertEqual(r['estado_ejecucion'],'COMPLETADA')
+        self.assertEqual(r['resumen']['finalizadas'],2)
+        self.assertTrue(any('RESUMEN' in linea for linea in self.logs))
+        guardado=json.loads(self.salida.read_text())
+        self.assertEqual(guardado['resumen']['consultadas'],2)
 
     def test_portal_bloqueado_no_frena_otros_y_clasifica(self):
         r=self.ejecutar([self.fuente(1,fixture='red'),self.fuente(2),self.fuente(3,fixture='extraccion')])
