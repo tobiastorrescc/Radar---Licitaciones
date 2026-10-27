@@ -8,6 +8,7 @@ on:
     paths: ['radar.py', 'conectores.py', 'extractores.py', 'documentos.py', 'oportunidades.py', 'inventario/**', 'tools/**', 'tests/**', '.github/workflows/**', 'fuentes*']
 permissions:
   contents: read
+  actions: read
 concurrency:
   group: radar-${{ github.ref }}
   cancel-in-progress: false
@@ -88,6 +89,15 @@ jobs:
           path: work/cache-documentos
           key: textos-v1-${{ github.run_id }}
           restore-keys: textos-v1-
+      - name: Recuperar auditoría de partida #54
+        uses: actions/download-artifact@v4
+        with:
+          name: verificacion-fuentes-40425270465
+          run-id: 40425270465
+          github-token: ${{ github.token }}
+          path: work/base54
+      - name: Revisar las 11 abiertas de la auditoría #54
+        run: python -u tools/revisar_abiertas.py
       - name: Verificar sin modificar historial de producción
         id: verificar
         continue-on-error: true # Diagnóstico de fuentes; no confundir disponibilidad con pruebas unitarias.
