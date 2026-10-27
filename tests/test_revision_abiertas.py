@@ -159,3 +159,18 @@ class RevisionAbiertasTests(unittest.TestCase):
         h=Path('tests/fixtures/reales/aeropuerto-jardineria-57.html').read_text().replace('Vigente','Adjudicada')
         rs,_,_=extractores.extraer(h,'https://aeropuertorosario.com/licitaciones/ficha/',{'adaptador':'aeropuerto'})
         self.assertEqual(o.normalizar({**self.base(),**rs[0]},AHORA)['vigencia'],'VENCIDA')
+
+    def test_compra_directa_rotulada_y_numero_solo_regresion_auditoria61(self):
+        rs=json.loads(Path('tests/fixtures/reales/aeropuerto-cd52-61.json').read_text())
+        self.assertEqual(len(rs),2)
+        normalizados=o.deduplicar(rs,AHORA)
+        self.assertEqual(len(normalizados),1)
+        r=normalizados[0]
+        self.assertEqual(r['numero_procedimiento'],'52/2026')
+        self.assertEqual(r['procedimiento_canonico'],'contratacion directa 52/2026')
+        self.assertEqual(r['presupuesto']['importe'],'1492000')
+    def test_diferentes_rotulos_no_duplican_procedimiento_ni_convocatoria(self):
+        for tipo in ['Licitación Pública','Licitación Privada','Concurso de Precios','Contratación Directa','Compra Menor']:
+            a=self.base('00052/26',tipo_procedimiento=tipo.lower(),procedimiento=tipo+' Nº 00052/26')
+            b=self.base(tipo+' Nº 52/2026',tipo_procedimiento=tipo.lower(),procedimiento=tipo+' Nº 52/2026',url='https://aeropuertorosario.com/otra-url')
+            self.assertEqual(len(o.deduplicar([a,b],AHORA)),1,tipo)

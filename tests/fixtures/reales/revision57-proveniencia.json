@@ -45,5 +45,11 @@
     "artefacto_id": 12700065309,
     "recuperado_en_run": 40508910007,
     "metodo": "Los 11 registros ABIERTA originales, leídos del artefacto #54 en Actions #57"
+  },
+  {
+    "archivo": "aeropuerto-cd52-61.json",
+    "run_id": 40512975938,
+    "artefacto_id": 12738667471,
+    "metodo": "Dos registros ABIERTA originales de compra directa 52/2026 leídos del log real #61; sin modificar sus campos"
   }
 ]

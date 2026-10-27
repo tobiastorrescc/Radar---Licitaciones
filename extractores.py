@@ -310,7 +310,8 @@ def extraer(html,url,config=None):
             corto=re.fullmatch(r'(LPU|LPR|CPRV|CD)\s+n[º°o.]*\s*(\d+)',numero,re.I)
             if corto:
                 completos=[p for d in docs for p in procesos(d['titulo']) if re.match(r'^'+corto[1]+r'-20\d{2}-0*'+str(int(corto[2]))+r'(?:-|$)',p['numero'],re.I)]
-                if completos:p=completos[0];numero=p['numero']
+                if completos:p=completos[0]
+            numero=p['numero']
             presupuestos=[n.text for n in raiz.iter() if n.tag=='p' and re.match(r'^presupuesto oficial\b',norm(n.text)) and not excluido(n,allow_aside)]
             r={'titulo':numero+' '+campos['asunto'],'objeto':campos['asunto'],'numero_procedimiento':numero,'tipo_procedimiento':p['tipo'],
                'procedimiento':p['procedimiento'],'url':url,'evidencia_url':url,'documentos':docs,'detalle_completo':True,'registro_estructurado':True,

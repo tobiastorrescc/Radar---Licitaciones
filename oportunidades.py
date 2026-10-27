@@ -56,6 +56,8 @@ def normalizar(r,ahora=None):
         else:r.setdefault(campo,None)
     import extractores
     ps=extractores.procesos(r.get('procedimiento') or r.get('titulo') or '')
+    numero_rotulado=extractores.procesos(r.get('numero_procedimiento') or '')
+    if len(numero_rotulado)==1:r['numero_procedimiento']=numero_rotulado[0]['numero']
     dato('numero_procedimiento',r.get('numero_procedimiento') or (ps[0]['numero'] if ps else None),r.get('procedimiento'))
     if r.get('numero_procedimiento'):r['numero_procedimiento']=re.sub(r'^(\d+)[–-](20\d{2})$',r'\1/\2',r['numero_procedimiento'])
     dato('tipo_procedimiento',r.get('tipo_procedimiento') or (ps[0]['tipo'] if ps else None),r.get('procedimiento'))
