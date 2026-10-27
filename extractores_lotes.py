@@ -104,14 +104,23 @@ def endpoints_vgg(dom,html,url):
 
 def extraer_vgg(datos,url):
     from extractores import url_publica,procesos
-    from urllib.parse import parse_qs,urlsplit
+    from urllib.parse import parse_qs,urlsplit,urljoin
+    from decimal import Decimal,InvalidOperation
     import json
     filas=json.loads(datos)
     if not isinstance(filas,list):raise ValueError('Esquema VGG no reconocido: se esperaba listado JSON')
     registros=[];publicada=parse_qs(urlsplit(url).query).get('tipo',[''])[0]
     for f in filas:
         if not isinstance(f,dict) or not f.get('objeto'):raise ValueError('Fila VGG sin objeto reconocido')
-        objeto=str(f['objeto']);ps=procesos(objeto);p=ps[0] if len(ps)==1 else {}
-        documento=url_publica(f.get('archivo_url') or '',url) if f.get('archivo_url') else None
-        registros.append({'titulo':objeto,'objeto':objeto,'numero_procedimiento':p.get('numero'),'tipo_procedimiento':p.get('tipo'),'procedimiento':p.get('procedimiento'),'registro_estructurado':True,'detalle_completo':True,'url':documento or url,'evidencia_url':url,'documentos':[{'url':documento,'titulo':'Pliego' if publicada=='apertura' else 'Adjudicación'}] if documento else [],'fecha_apertura_texto':f.get('apertura_raw') or f.get('apertura'),'presupuesto_texto':str(f['presupuesto']) if f.get('presupuesto') is not None else None,'id_origen':f.get('id')})
+        objeto=str(f['objeto'])
+        identificacion=re.sub(r'(?i)(licitaci[oó]n\s+(?:p[uú]blica|privada))\s+(?:nacional(?:\s+e\s+internacional)?|internacional)',r'\1',objeto)
+        ps=procesos(identificacion);p=ps[0] if len(ps)==1 else {}
+        presupuesto=None
+        if f.get('presupuesto_raw') is not None:
+            try:
+                importe=Decimal(str(f['presupuesto_raw']))
+                if importe.is_finite():presupuesto={'importe':str(importe),'moneda':None}
+            except InvalidOperation:pass
+        documento=url_publica(f.get('archivo_url') or '',urljoin(url,'/')) if f.get('archivo_url') else None
+        registros.append({'titulo':objeto,'objeto':objeto,'numero_procedimiento':p.get('numero'),'tipo_procedimiento':p.get('tipo'),'procedimiento':p.get('procedimiento'),'registro_estructurado':True,'detalle_completo':True,'url':documento or url,'evidencia_url':url,'documentos':[{'url':documento,'titulo':'Pliego' if publicada=='apertura' else 'Adjudicación'}] if documento else [],'fecha_apertura_texto':f.get('apertura_raw') or f.get('apertura'),'presupuesto':presupuesto,'presupuesto_texto':str(f['presupuesto']) if f.get('presupuesto') is not None else None,'evidencias_campos':{'presupuesto':{'url':url,'texto':str(f.get('presupuesto_raw'))}} if presupuesto is not None else {},'id_origen':f.get('id')})
     return registros

@@ -106,3 +106,12 @@ class CoberturaTests(unittest.TestCase):
         titulo='Licitación Pública 7/2026 Apertura: 02/11/2026. Si resultare fracasada se hará otro llamado.'
         r=o.normalizar({'titulo':titulo,'url':'https://oficial.gob.ar/','situacion_publicada':extractores.situacion(titulo)},'2026-10-27T10:00:00-03:00')
         self.assertFalse(r['fracasada']);self.assertEqual(r['vigencia'],'ABIERTA')
+
+    def test_vgg_real_numero_presupuesto_y_raiz_de_enlace(self):
+        from extractores_lotes import extraer_vgg
+        import oportunidades as o
+        api='https://vggmunicipalidad.gov.ar/scripts/licitaciones/licitaciones-registros.php?anio=2026&tipo=apertura'
+        r=extraer_vgg(Path('tests/fixtures/reales/cobertura77/vgg-apertura81.json').read_text(),api)[0]
+        self.assertEqual(r['numero_procedimiento'],'26/2026');self.assertEqual(r['presupuesto']['importe'],'84389000');self.assertIsNone(r['presupuesto']['moneda'])
+        self.assertEqual(r['documentos'][0]['url'],'https://vggmunicipalidad.gov.ar/galeria/licitaciones/17924075412049.pdf')
+        self.assertEqual(o.normalizar(r)['fecha_apertura'],'2026-10-30')
