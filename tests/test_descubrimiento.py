@@ -44,6 +44,9 @@ class DescubrimientoTests(unittest.TestCase):
     def test_rotacion_prioriza_objetivos_no_buscados(self):
         obj=[{'clave':'a'},{'clave':'b'},{'clave':'c'}]
         self.assertEqual(d.plan_busquedas(obj,{'busquedas':{'a':'2026-10-27'}},2),obj[1:])
+    def test_un_portal_en_dos_busquedas_no_infla_fuentes(self):
+        cs=[{'url':'https://colon.gob.ar/a','validacion':{'estado':'PENDIENTE'}},{'url':'https://colon.gob.ar/a','validacion':{'estado':'VALIDADA'}},{'url':'https://otro.gob.ar/a'}]
+        self.assertEqual(d.contar_portales(cs),{'VALIDADA':1,'PENDIENTE':1})
     def test_padron_y_sectores_se_consultan_sin_inventar_urls(self):
         padron={'municipios':[{'codigo':'01','localidad':'Comuna Pequeña','provincia':'Santa Fe','tipo_gobierno':'Comuna'}]}
         r=d.objetivos(padron,[])

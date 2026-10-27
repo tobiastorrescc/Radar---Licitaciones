@@ -168,10 +168,19 @@ def plan_busquedas(obj,estado,limite):
     hechos=estado.setdefault('busquedas',{})
     return sorted(obj,key=lambda q:hechos.get(q['clave'],''))[:limite]
 
+def contar_portales(candidatos):
+    """Un URL puede aparecer en varias búsquedas: conservar evidencia, contar una vez."""
+    grupos={}
+    for c in candidatos:
+        u=extractores.url_publica(c['url'])
+        grupos[u]='VALIDADA' if c.get('validacion',{}).get('estado')=='VALIDADA' or grupos.get(u)=='VALIDADA' else 'PENDIENTE'
+    return dict(Counter(grupos.values()))
+
 def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24):
     inicio=time.monotonic();raiz=Path(salida);raiz.mkdir(parents=True,exist_ok=True)
     estado_path=Path('inventario/descubrimiento_estado.json');auto_path=Path('inventario/fuentes_auto.json')
     estado=json.loads(estado_path.read_text()) if estado_path.exists() else {'schema_version':1,'busquedas':{},'candidatos':{}}
+    urls_previas={c['url'] for c in estado['candidatos'].values()}
     fs=json.loads(Path('inventario/fuentes.json').read_text());auto=cargar_auto()
     existentes={f['url'] for f in fs if f.get('incorporada')}|set(auto)
     fecha=datetime.now(timezone.utc).isoformat();errores=[];descubiertos=set();nuevos=[]
@@ -219,7 +228,7 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24):
     informe=ejecutar(lote,raiz/'verificacion.json',concurrencia=3,por_fuente=35,total=limite,
         comando=lambda f,path:[sys.executable,__file__,'--worker',str(entradas/(f['id']+'.json')),'--salida',str(path)],emitir=lambda s:print('DESCUBRIMIENTO '+s,flush=True))
     registro=json.loads(auto_path.read_text()) if auto_path.exists() else {'schema_version':1,'fuentes':[]}
-    validadas=0
+    validadas=set()
     por_id={c['id']:c for c in estado['candidatos'].values()}
     for obs in informe['observaciones']:
         if not obs['iniciada']:continue
@@ -230,7 +239,7 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24):
         if obs['estado']!='OPERATIVA':v={**v,'estado':'PENDIENTE','motivo':v.get('motivo') or 'Consulta no finalizada sin incidencias'}
         c.update(ultima_revision=fecha,version_verificador=4,validacion=v,errores=obs.get('errores',[]),resultado_archivo=str(p))
         if v['estado']=='VALIDADA':
-            validadas+=1
+            validadas.add(c['url'])
             for anterior in registro['fuentes']:
                 if anterior['url']==c['url']:anterior.update(validacion=v,config=r['config'])
             if c['url'] not in existentes:
@@ -238,9 +247,12 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24):
                 registro['fuentes'].append(entrada);existentes.add(c['url']);nuevos.append(entrada)
         persistir()
     guardar(auto_path,registro)
-    resumen={'fecha':fecha,'github_run_id':__import__('os').environ.get('GITHUB_RUN_ID'),'descubiertas_automaticamente':len(descubiertos),
-        'candidatos_acumulados':len(estado['candidatos']),'consultadas':informe['resumen']['consultadas'],'validadas':validadas,'incorporadas':len(nuevos),
-        'pendientes':sum(c.get('validacion',{}).get('estado')!='VALIDADA' for c in estado['candidatos'].values()),
+    portales=contar_portales(estado['candidatos'].values())
+    urls_nuevas={estado['candidatos'][k]['url'] for k in descubiertos}-urls_previas
+    resumen={'fecha':fecha,'github_run_id':__import__('os').environ.get('GITHUB_RUN_ID'),'descubiertas_automaticamente':len(urls_nuevas),
+        'hallazgos_nuevos':len(descubiertos),'candidatos_acumulados':sum(portales.values()),'hallazgos_acumulados':len(estado['candidatos']),
+        'consultadas':len({r['url'] for r in informe['observaciones'] if r['iniciada']}),'validadas':len(validadas),'validadas_acumuladas':portales.get('VALIDADA',0),'incorporadas':len(nuevos),
+        'incorporadas_acumuladas':len(registro['fuentes']),'pendientes':portales.get('PENDIENTE',0),
         'errores_busqueda':errores,'duracion_segundos':round(time.monotonic()-inicio,2),'cobertura_completa':False}
     guardar(raiz/'resumen.json',{'resumen':resumen,'incorporadas':nuevos});persistir()
     print('DESCUBRIMIENTO_RESUMEN '+json.dumps(resumen,ensure_ascii=False),flush=True)
