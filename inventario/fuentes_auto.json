@@ -1,4 +1,411 @@
 {
   "schema_version": 1,
-  "fuentes": []
+  "fuentes": [
+    {
+      "id": "auto-e3bcb048ef52c8c543bb",
+      "url": "https://funes.gob.ar/boletin_oficial",
+      "config": {
+        "organismo": "Municipalidad de Funes",
+        "localidad": "Funes",
+        "provincia": "Santa Fe",
+        "conector": "publicaciones",
+        "descubrir_menu": true,
+        "descubrir_contrataciones": true,
+        "lectura_adjuntos": "necesarios",
+        "ocr": true
+      },
+      "validacion": {
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Funes",
+          "localidad": "Funes",
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://funes.gob.ar/boletin_oficial",
+          "sha256": "707a27a00810129a914411574aa6c2f5ad45892a23214e4dc419d3f0b14d2326",
+          "cabecera": "Boletín Oficial | Municipalidad de Funes – Decretos, Ordenanzas y Licitaciones Boletín Oficial",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 37,
+        "fecha": "2026-10-27T23:30:09.295976+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "14/2026",
+            "objeto": "ADQUISICIÓN DE 1.850 MENSULAS O BRAZOS PARA ALUMBRADO PÚBLICO DE LA CIUDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-10-15",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "13/2026",
+            "objeto": "ADQUISICIÓN DE 2.000 LUMINARIAS PARA ALUMBRADO PÚBLICO DE LA CIUDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-10-15",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "12/2026",
+            "objeto": "ADQUISICIÓN DE INSUMOS PARA SER UTILIZADOS EN EL ALUMBRADO PÚBLICO DE LA CIUDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-09-14",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "11/2026",
+            "objeto": "ADQUISICIÓN DE CABLES PARA SER UTILIZADOS EN EL ALUMBRADO PÚBLICO DE CALLE M. GARRONE, MENCHACA, LUCIANO MOLINAS, LAVALLE, LAS HERAS Y ALMAFUERTE",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-09-09",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "7/2026",
+            "objeto": "“LA CONTRATACIÓN DE LA OBRA CONSTRUCCIÓN CAMPO DE FUTBOL MUNICIPALIDAD DE FUNES”",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-09-09",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "10/2026",
+            "objeto": "ADQUISICION DE CAMION 0KM DESTINADO AL MONTAJE, TRANSPORTE Y OPERACIÓN DE PLANTA MOVIL DE HORMIGON",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-09-01",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "11/2026",
+            "objeto": "CONTRATACIÓN DE ASEGURADORA DE RIESGOS DEL TRABAJO (ART) Y SEGURO COLECTIVO DE ACCIDENTES PERSONALES (AP) PARA LA MUNICIPALIDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-08-28",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "10/2026",
+            "objeto": "CONTRATACION PARA LA DISPOSICION FINAL DE RESIDUOS SOLIDOS URBANOS DE LA CIUDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-08-28",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "9/2026",
+            "objeto": "CONTRATACION PARA LA DISPOSICION FINAL DE RESTOS VERDES DE LA CIUDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-08-28",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "9/2026",
+            "objeto": "ADQUISICION DE LUMINARIAS TIPO LED PARA RED DE ALUMBRADO PUBLICO",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-08-28",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "6/2026",
+            "objeto": "ADQUISICION DE UNA PLANTA MOVIL DE PRODUCCION CONTINUA DE HORMIGON SOBRE CHASIS",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-08-25",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "8/2026",
+            "objeto": "ADQUISICION DE VEHICULO AUTOPROPULSOR",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-08-14",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "7/2026",
+            "objeto": "MATERIALES PARA OBRA DE CLOACAS",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-07-21",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "6/2026",
+            "objeto": "LIMPIEZA DE CANALES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-07-15",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "5/2026",
+            "objeto": "MATERIALES ELECTRICOS",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-07-08",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "8/2026",
+            "objeto": "CONTRATACION DE PROYECTO Y EJECUCION DE PAVIMENTACION",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-07-03",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "7/2026",
+            "objeto": "ADQUISICION DE HORMIGON",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-07-03",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "6/2026",
+            "objeto": "COMPRA DE CONCRETO ASFALTICO",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-07-03",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "5/2026",
+            "objeto": "ADQUISICION DE EMULSION ASFALTICA",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-07-01",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "5/2026",
+            "objeto": "ADQUISICION DE PIEDRA GRANITICA",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-06-18",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "4/2026",
+            "objeto": "ADQUISICION DE HORMIGON",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-06-03",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "3/2026",
+            "objeto": "ADQUISICION DE CONCRETO ASFALTICO",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-06-03",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "4/2026",
+            "objeto": "ADQUISICION DE CABLES PARA REPOSICION Y STOCK",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-06-01",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "2/2026",
+            "objeto": "ADQUISICION DE LUMINARIAS LED",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-05-27",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "3/2026",
+            "objeto": "ADQUISICION DE LAMPARAS",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-05-05",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "4/2026",
+            "objeto": "LICITACION PUBLICA N° 004-2026 EJECUCION DE OBRAS DEL CENTRO DE DISTRIBUCION OESTE DE LA CIUDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-03-20",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "3/2026",
+            "objeto": "CONTRATACION DE PROYECTO Y EJECUCION DE PAVIMENTACION",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-02-20",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "2/2026",
+            "objeto": "CONMPRA DE CONCRETO ASFALTICO",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-02-20",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "1/2026",
+            "objeto": "ADQUISICION DE UNA RETROEXCAVADORA DE USO VIAL Y URBANO PARA LA CIUDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-02-10",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "2/2026",
+            "objeto": "PROYECTO DEPORTIVO INFANTO JUVENIL CIUDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-01-26",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "1/2026",
+            "objeto": "CONCESION INTEGRAL DEL BLOQUE CENTRO DE CONVENCIONES Y EVENTOS ORDENANZA N°1917/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-01-26",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "1/2025",
+            "objeto": "ADQUISICION DE PANTALLAS LED PARA EXTERIOR PARA MUNICIPALIDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-11-06",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "13/2025",
+            "objeto": "F",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-10-16",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "12/2025",
+            "objeto": "ADQUISICION DE ESCORIA",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-10-15",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "11/2025",
+            "objeto": "ADQUISICION DE CAL VIAL",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-10-15",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "15/2025",
+            "objeto": "ADQUISICION ORUGA",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-10-14",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "14/2025",
+            "objeto": "ADQUISICION DE CARRETONES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-10-07",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          }
+        ]
+      },
+      "origen_busqueda": "https://funes.gob.ar/"
+    }
+  ]
 }

@@ -72,7 +72,31 @@
     "directorio:fuente-067": "2026-10-27T23:24:48.026383+00:00",
     "reparar:fuente-067": "2026-10-27T23:24:48.026383+00:00",
     "territorio:302383": "2026-10-27T23:24:48.026383+00:00",
-    "directorio:fuente-068": "2026-10-27T23:24:48.026383+00:00"
+    "directorio:fuente-068": "2026-10-27T23:24:48.026383+00:00",
+    "reparar:fuente-068": "2026-10-27T23:29:52.451036+00:00",
+    "directorio:fuente-069": "2026-10-27T23:29:52.451036+00:00",
+    "reparar:fuente-069": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:823981": "2026-10-27T23:29:52.451036+00:00",
+    "directorio:fuente-073": "2026-10-27T23:29:52.451036+00:00",
+    "reparar:fuente-073": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:300074": "2026-10-27T23:29:52.451036+00:00",
+    "directorio:fuente-074": "2026-10-27T23:29:52.451036+00:00",
+    "reparar:fuente-074": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:823687": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:309575": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:060224": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:823484": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:309080": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:060252": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:822581": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:300291": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:060266": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:823862": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:302112": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:060277": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:822112": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:309090": "2026-10-27T23:29:52.451036+00:00",
+    "territorio:060294": "2026-10-27T23:29:52.451036+00:00"
   },
   "candidatos": {
     "inventario-fuente-034": {
@@ -96,7 +120,7 @@
       "clave": "inventario-fuente-034",
       "origen": "INVENTARIO_PREVIO",
       "fecha_descubrimiento": "2026-10-27T23:13:42.954528+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -113,13 +137,13 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:10.660178+00:00",
+        "fecha": "2026-10-27T23:30:01.473421+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0008.json",
-      "version_verificador": 2
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0003.json",
+      "version_verificador": 3
     },
     "inventario-fuente-048": {
       "id": "auto-inventario-fuente-048",
@@ -142,7 +166,7 @@
       "clave": "inventario-fuente-048",
       "origen": "INVENTARIO_PREVIO",
       "fecha_descubrimiento": "2026-10-27T23:13:42.954528+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "motivo": "HTTP Error 404: Not Found",
@@ -158,8 +182,8 @@
           "http_status": 404
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0009.json",
-      "version_verificador": 2
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0004.json",
+      "version_verificador": 3
     },
     "f48892e3569eecd927d0": {
       "clave": "directorio:fuente-009",
@@ -175,7 +199,7 @@
       "evidencia_enlace": "https://xn--carcaraa-j3a.gob.ar/",
       "busqueda_url": "https://xn--carcaraa-j3a.gob.ar/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -192,13 +216,13 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:18.581759+00:00",
+        "fecha": "2026-10-27T23:30:10.660824+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0020.json",
-      "version_verificador": 2
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0015.json",
+      "version_verificador": 3
     },
     "cf6af719beec09106ac6": {
       "clave": "directorio:fuente-012",
@@ -214,7 +238,7 @@
       "evidencia_enlace": "https://lasparejas.gov.ar/",
       "busqueda_url": "https://lasparejas.gov.ar/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -231,13 +255,13 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:14.588638+00:00",
+        "fecha": "2026-10-27T23:30:06.301157+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0015.json",
-      "version_verificador": 2
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0010.json",
+      "version_verificador": 3
     },
     "e3bcb048ef52c8c543bb": {
       "clave": "directorio:fuente-013",
@@ -253,162 +277,401 @@
       "evidencia_enlace": "https://funes.gob.ar/",
       "busqueda_url": "https://funes.gob.ar/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
       "validacion": {
-        "estado": "PENDIENTE",
-        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Funes",
+          "localidad": "Funes",
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://funes.gob.ar/boletin_oficial",
+          "sha256": "707a27a00810129a914411574aa6c2f5ad45892a23214e4dc419d3f0b14d2326",
+          "cabecera": "Boletín Oficial | Municipalidad de Funes – Decretos, Ordenanzas y Licitaciones Boletín Oficial",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 37,
+        "fecha": "2026-10-27T23:30:09.295976+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "14/2026",
+            "objeto": "ADQUISICIÓN DE 1.850 MENSULAS O BRAZOS PARA ALUMBRADO PÚBLICO DE LA CIUDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-10-15",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "13/2026",
+            "objeto": "ADQUISICIÓN DE 2.000 LUMINARIAS PARA ALUMBRADO PÚBLICO DE LA CIUDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-10-15",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "12/2026",
+            "objeto": "ADQUISICIÓN DE INSUMOS PARA SER UTILIZADOS EN EL ALUMBRADO PÚBLICO DE LA CIUDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-09-14",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "11/2026",
+            "objeto": "ADQUISICIÓN DE CABLES PARA SER UTILIZADOS EN EL ALUMBRADO PÚBLICO DE CALLE M. GARRONE, MENCHACA, LUCIANO MOLINAS, LAVALLE, LAS HERAS Y ALMAFUERTE",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-09-09",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "7/2026",
+            "objeto": "“LA CONTRATACIÓN DE LA OBRA CONSTRUCCIÓN CAMPO DE FUTBOL MUNICIPALIDAD DE FUNES”",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-09-09",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "10/2026",
+            "objeto": "ADQUISICION DE CAMION 0KM DESTINADO AL MONTAJE, TRANSPORTE Y OPERACIÓN DE PLANTA MOVIL DE HORMIGON",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-09-01",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "11/2026",
+            "objeto": "CONTRATACIÓN DE ASEGURADORA DE RIESGOS DEL TRABAJO (ART) Y SEGURO COLECTIVO DE ACCIDENTES PERSONALES (AP) PARA LA MUNICIPALIDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-08-28",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "10/2026",
+            "objeto": "CONTRATACION PARA LA DISPOSICION FINAL DE RESIDUOS SOLIDOS URBANOS DE LA CIUDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-08-28",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "9/2026",
+            "objeto": "CONTRATACION PARA LA DISPOSICION FINAL DE RESTOS VERDES DE LA CIUDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-08-28",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "9/2026",
+            "objeto": "ADQUISICION DE LUMINARIAS TIPO LED PARA RED DE ALUMBRADO PUBLICO",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-08-28",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "6/2026",
+            "objeto": "ADQUISICION DE UNA PLANTA MOVIL DE PRODUCCION CONTINUA DE HORMIGON SOBRE CHASIS",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-08-25",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "8/2026",
+            "objeto": "ADQUISICION DE VEHICULO AUTOPROPULSOR",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-08-14",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "7/2026",
+            "objeto": "MATERIALES PARA OBRA DE CLOACAS",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-07-21",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "6/2026",
+            "objeto": "LIMPIEZA DE CANALES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-07-15",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "5/2026",
+            "objeto": "MATERIALES ELECTRICOS",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-07-08",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "8/2026",
+            "objeto": "CONTRATACION DE PROYECTO Y EJECUCION DE PAVIMENTACION",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-07-03",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "7/2026",
+            "objeto": "ADQUISICION DE HORMIGON",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-07-03",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "6/2026",
+            "objeto": "COMPRA DE CONCRETO ASFALTICO",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-07-03",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "5/2026",
+            "objeto": "ADQUISICION DE EMULSION ASFALTICA",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-07-01",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "5/2026",
+            "objeto": "ADQUISICION DE PIEDRA GRANITICA",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-06-18",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "4/2026",
+            "objeto": "ADQUISICION DE HORMIGON",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-06-03",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "3/2026",
+            "objeto": "ADQUISICION DE CONCRETO ASFALTICO",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-06-03",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "4/2026",
+            "objeto": "ADQUISICION DE CABLES PARA REPOSICION Y STOCK",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-06-01",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "2/2026",
+            "objeto": "ADQUISICION DE LUMINARIAS LED",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-05-27",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "3/2026",
+            "objeto": "ADQUISICION DE LAMPARAS",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-05-05",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "4/2026",
+            "objeto": "LICITACION PUBLICA N° 004-2026 EJECUCION DE OBRAS DEL CENTRO DE DISTRIBUCION OESTE DE LA CIUDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-03-20",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "3/2026",
+            "objeto": "CONTRATACION DE PROYECTO Y EJECUCION DE PAVIMENTACION",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-02-20",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "2/2026",
+            "objeto": "CONMPRA DE CONCRETO ASFALTICO",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-02-20",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "1/2026",
+            "objeto": "ADQUISICION DE UNA RETROEXCAVADORA DE USO VIAL Y URBANO PARA LA CIUDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-02-10",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "2/2026",
+            "objeto": "PROYECTO DEPORTIVO INFANTO JUVENIL CIUDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-01-26",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "1/2026",
+            "objeto": "CONCESION INTEGRAL DEL BLOQUE CENTRO DE CONVENCIONES Y EVENTOS ORDENANZA N°1917/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-01-26",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "1/2025",
+            "objeto": "ADQUISICION DE PANTALLAS LED PARA EXTERIOR PARA MUNICIPALIDAD DE FUNES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-11-06",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "13/2025",
+            "objeto": "F",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-10-16",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "12/2025",
+            "objeto": "ADQUISICION DE ESCORIA",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-10-15",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "11/2025",
+            "objeto": "ADQUISICION DE CAL VIAL",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-10-15",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "15/2025",
+            "objeto": "ADQUISICION ORUGA",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-10-14",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          },
+          {
+            "organismo": "Municipalidad de Funes",
+            "numero_procedimiento": "14/2025",
+            "objeto": "ADQUISICION DE CARRETONES",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-10-07",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
+            "evidencia_url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php"
+          }
+        ]
       },
-      "errores": [
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/37/acta_apertura_CP_008-2026_6a7f186bbd82c5.72838542.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/37/DECRETO_PRE_ADJ_CP_008-2026_VEHICULO_AUTOPR_6a8710786af569.14794705.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/37/DECRETO_ADJ_CP_008-2026_VEHICULO_AUT_6a96b1f1ad1044.78488399.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/36/Acta_Apertura_CP_007-2026_6a5f79aedff5c0.91170419.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/36/concurso_de_precios_007-2026_cloacas_6a639173528432.04625207.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/35/Acta_apertura_Concurso_de_precios_N___006-2026_6a57a5d6aef8b2.15567666.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/35/pre_adjudicacion_concurso_006-2026_6a639197b14541.51290433.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/35/decreto_de_adjudicacion_concurso_de_precios_006-2026_6a6b5040bee2e7.68947066.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/34/ACTA_APERTURA_CONCURSO_N___005-2026_6a4e23dcd54be1.54714045.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/34/preadj_concurso_de_precios_005-2026_6a5e2a521bd8b8.14796346.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/34/adjudicacion_concurso_de_precios_005-2026_6a6391bb76d9b2.55438509.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/32/LICITACION_PUBLICA_N___007-2026_Hormigon_6a47d3b2c75d97.05780845.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/32/lic_pub_007-2026_6a47d3b2c772e5.18341895.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/32/acta_apert_lic_pub_007-2026_6a638dd378acd9.53975599.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/32/Decreto_Pre_Adjudicacion_Lic_Pca_N___007-2026_6a79e417895848.31191119.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/32/Ajudicacion_LP_007-2026_6a7f0d4e851724.91186088.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/31/lic_publica_006-2026_6a47d319b846a7.54995202.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/31/LICITACION_PUBLICA_N___006-2026_Concreto_Asfaltico-1_6a47d319b85c54.96178866.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/31/acta_apert_lic_pub_006-2026_6a638dfce15296.26100799.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/31/Decreto_Pre_Adjudicacion_L_Publica_N___006-2026_6a79e3ffe4ce08.16564284.pdf",
-          "tipo": "FileNotFoundError",
-          "categoria": "EXTRACCION",
-          "timeout": false,
-          "error": "[Errno 2] No such file or directory: 'pdftotext'"
-        },
-        {
-          "categoria": "RED",
-          "tipo": "TIEMPO_FUENTE",
-          "timeout": true,
-          "error": "Plazo agotado; se conserva lo extraído",
-          "fase": "DESCARGA"
-        }
-      ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0017.json",
-      "version_verificador": 2
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0012.json",
+      "version_verificador": 3
     },
     "0aecfce5a412094efc30": {
       "clave": "directorio:fuente-015",
@@ -424,7 +687,7 @@
       "evidencia_enlace": "https://perez.opendata.junar.com/",
       "busqueda_url": "https://perez.opendata.junar.com/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -436,18 +699,18 @@
           "nombre_publicado": true,
           "jurisdiccion_publicada": true,
           "url": "https://perez.opendata.junar.com/dataviews/261424/listados-de-licitaciones-publicas-2022/",
-          "sha256": "d517e40802921a03215379f9d0011b40e4b5a59d4b5c347298d1db5a7d774643",
+          "sha256": "fbdcec99e5678b40a35583199f777f806199c203ee48e348a2334a56f133d437",
           "cabecera": "Listados de licitaciones Públicas 2022 · Municipalidad de Pérez  Information Permalink: Last published: Type What region apply this data? Contact e-mail for this Dataset Data collected from: Tags Visitors in the last 30 days: API / Developers Get your API key here . GUID: API request examples: Need help? Filter data Active filters Sort Ordered by: Add new clause Custom views Listados de licitaciones Públicas 2022 Boletín Oficial de licitaciones Públicas de la Municipalidad de Pérez.",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:14.113241+00:00",
+        "fecha": "2026-10-27T23:30:02.363141+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0010.json",
-      "version_verificador": 2
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0005.json",
+      "version_verificador": 3
     },
     "284b14e7d77b67159420": {
       "clave": "directorio:fuente-015",
@@ -463,7 +726,7 @@
       "evidencia_enlace": "https://perez.opendata.junar.com/",
       "busqueda_url": "https://perez.opendata.junar.com/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -475,18 +738,18 @@
           "nombre_publicado": true,
           "jurisdiccion_publicada": true,
           "url": "https://perez.opendata.junar.com/dataviews/259577/listados-de-licitaciones-publicas-2021/",
-          "sha256": "b3990376ff474c885c310dd193f3d0532665f54043fb2f6ea3f12162431a432d",
+          "sha256": "5ca005c4dad226d48dedbe50059fdebd5aad7b4571e0eeb3ab4f2e4896f0bada",
           "cabecera": "Listados de licitaciones Públicas 2021 · Municipalidad de Pérez  Information Permalink: Last published: Update frequency Type What region apply this data? Contact e-mail for this Dataset Data collected from: Tags Visitors in the last 30 days: API / Developers Get your API key here . GUID: API request examples: Need help? Filter data Active filters Sort Ordered by: Add new clause Custom views Listados de licitaciones Públicas 2021 Boletín Oficial de licitaciones Públicas de la Municipalidad de Pérez.",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:14.175898+00:00",
+        "fecha": "2026-10-27T23:30:04.201031+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0012.json",
-      "version_verificador": 2
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0007.json",
+      "version_verificador": 3
     },
     "c3853663a465207069a1": {
       "clave": "directorio:fuente-015",
@@ -502,7 +765,7 @@
       "evidencia_enlace": "https://perez.opendata.junar.com/",
       "busqueda_url": "https://perez.opendata.junar.com/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -514,18 +777,18 @@
           "nombre_publicado": true,
           "jurisdiccion_publicada": true,
           "url": "https://perez.opendata.junar.com/dataviews/262271/listados-de-licitaciones-publicas-2022/",
-          "sha256": "1bf5e761623140f892c52764102c21308a5b86535092a9e16694110943cd1004",
+          "sha256": "6ef92a063575194afdf11ac63c3a6620f02cc4efa4a67a60a587f6dd08cf35e5",
           "cabecera": "Listados de licitaciones Públicas 2022 · Municipalidad de Pérez  Information Permalink: Last published: Type What region apply this data? Contact e-mail for this Dataset Data collected from: Tags Visitors in the last 30 days: API / Developers Get your API key here . GUID: API request examples: Need help? Filter data Active filters Sort Ordered by: Add new clause Custom views Listados de licitaciones Públicas 2022 Boletín Oficial de licitaciones Públicas de la Municipalidad de Pérez.",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:14.242813+00:00",
+        "fecha": "2026-10-27T23:30:05.758547+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0013.json",
-      "version_verificador": 2
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0008.json",
+      "version_verificador": 3
     },
     "f244c1984a7b85330102": {
       "clave": "directorio:fuente-040",
@@ -541,7 +804,7 @@
       "evidencia_enlace": "https://chajari.gob.ar/",
       "busqueda_url": "https://chajari.gob.ar/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": true,
@@ -553,12 +816,12 @@
           "nombre_publicado": true,
           "jurisdiccion_publicada": true,
           "url": "https://chajari.gob.ar/licitaciones",
-          "sha256": "2521b7988dde4b40ad8cc1664d5b0a402c078589fd6a151c47ec4e1b890bbf6f",
+          "sha256": "f47820091db7d050a8d4f8fa51e48b5a5ccc4476e700c2be6bf0dce5b110d731",
           "cabecera": " licitaciones | Gobierno Chajari 2.0",
           "motivo": null
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:17.692450+00:00",
+        "fecha": "2026-10-27T23:30:09.347243+00:00",
         "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
         "ejemplos": []
       },
@@ -571,8 +834,8 @@
           "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0018.json",
-      "version_verificador": 2
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0013.json",
+      "version_verificador": 3
     },
     "db2eb0ffab87f7037c91": {
       "clave": "directorio:fuente-047",
@@ -588,7 +851,7 @@
       "evidencia_enlace": "https://sanpedro.net.ar/",
       "busqueda_url": "https://sanpedro.net.ar/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -605,13 +868,13 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:15.506487+00:00",
+        "fecha": "2026-10-27T23:30:06.964472+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0016.json",
-      "version_verificador": 2
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0011.json",
+      "version_verificador": 3
     },
     "ca6aa4264e6d9adee0d1": {
       "clave": "sector:Buenos Aires:hospital SAMCo",
@@ -623,7 +886,7 @@
       "titulo": "Buenos Aires Ciudad",
       "busqueda_url": "https://www.bing.com/search?q=%22Buenos+Aires%22+hospital+SAMCo+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -640,13 +903,13 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:16.072900+00:00",
+        "fecha": "2026-10-27T23:30:07.250105+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0014.json",
-      "version_verificador": 2
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0009.json",
+      "version_verificador": 3
     },
     "23d7e504feb4d3edb80e": {
       "clave": "sector:Buenos Aires:hospital SAMCo",
@@ -658,7 +921,7 @@
       "titulo": "Sitio oficial de turismo de la Ciudad de Buenos Aires",
       "busqueda_url": "https://www.bing.com/search?q=%22Buenos+Aires%22+hospital+SAMCo+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -670,18 +933,18 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": true,
           "url": "https://turismo.buenosaires.gob.ar/es",
-          "sha256": "1fcc451b4dcf466c704a70969ce5a72430811030456178022f802f3b0b1bfa46",
+          "sha256": "4e2e0e14eb693d78e984456e50259ccca5b8dba48b7f93092381019c0bd73831",
           "cabecera": " Sitio oficial de turismo de la Ciudad de Buenos Aires Buenos Aires La ciudad de todas las pasiones Buenos Aires La ciudad de todas las pasiones Destacados QUÉ HACER Próximos eventos Reservá tu experiencia Descubrila La info que necesitás Contacto Newsletter",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:11.783723+00:00",
+        "fecha": "2026-10-27T23:30:03.968628+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0011.json",
-      "version_verificador": 2
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0006.json",
+      "version_verificador": 3
     },
     "f9388078051814a96114": {
       "clave": "directorio:fuente-048",
@@ -697,7 +960,7 @@
       "evidencia_enlace": "https://www.ramallo.gob.ar/",
       "busqueda_url": "https://www.ramallo.gob.ar/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": true,
@@ -714,7 +977,7 @@
           "motivo": null
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:18.757511+00:00",
+        "fecha": "2026-10-27T23:30:10.318973+00:00",
         "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
         "ejemplos": []
       },
@@ -727,8 +990,8 @@
           "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0021.json",
-      "version_verificador": 2
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0016.json",
+      "version_verificador": 3
     },
     "f2b2744f58f87cd5e3cd": {
       "clave": "directorio:fuente-055",
@@ -744,7 +1007,7 @@
       "evidencia_enlace": "https://alvear.gob.ar/",
       "busqueda_url": "https://alvear.gob.ar/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -761,13 +1024,13 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:17.213644+00:00",
+        "fecha": "2026-10-27T23:30:08.912179+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0019.json",
-      "version_verificador": 2
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0014.json",
+      "version_verificador": 3
     },
     "ed91272172611c45b58b": {
       "clave": "sector:Buenos Aires:universidad nacional",
@@ -779,8 +1042,8 @@
       "titulo": "Buenos Aires Ciudad",
       "busqueda_url": "https://www.bing.com/search?q=%22Buenos+Aires%22+universidad+nacional+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:24:48.026383+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
-      "version_verificador": 2,
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
+      "version_verificador": 3,
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -797,12 +1060,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:10.559871+00:00",
+        "fecha": "2026-10-27T23:30:17.264310+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0006.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0023.json"
     },
     "da508d1af4d1cf2421d6": {
       "clave": "sector:Buenos Aires:universidad nacional",
@@ -814,8 +1077,8 @@
       "titulo": "Sitio oficial de turismo de la Ciudad de Buenos Aires",
       "busqueda_url": "https://www.bing.com/search?q=%22Buenos+Aires%22+universidad+nacional+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:24:48.026383+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
-      "version_verificador": 2,
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
+      "version_verificador": 3,
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -827,17 +1090,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": true,
           "url": "https://turismo.buenosaires.gob.ar/es",
-          "sha256": "789e8c4980bdf9ac3091d7dfe0fa22a7565ea9b7406d7d572d11eaf5a711ffac",
+          "sha256": "9d61d23b0c2ac6a28d04437c9d7a460dd918a91c2e29492b77135423ec52ba57",
           "cabecera": " Sitio oficial de turismo de la Ciudad de Buenos Aires Buenos Aires La ciudad de todas las pasiones Buenos Aires La ciudad de todas las pasiones Destacados QUÉ HACER Próximos eventos Reservá tu experiencia Descubrila La info que necesitás Contacto Newsletter",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:09.088062+00:00",
+        "fecha": "2026-10-27T23:30:15.314053+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0004.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0021.json"
     },
     "3c8b8b4be22f3cf9855b": {
       "clave": "sector:Buenos Aires:empresa pública ente puerto vialidad",
@@ -849,8 +1112,8 @@
       "titulo": "Buenos Aires Ciudad",
       "busqueda_url": "https://www.bing.com/search?q=%22Buenos+Aires%22+empresa+p%C3%BAblica+ente+puerto+vialidad+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:24:48.026383+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
-      "version_verificador": 2,
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
+      "version_verificador": 3,
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -867,12 +1130,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:07.586724+00:00",
+        "fecha": "2026-10-27T23:30:13.364911+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0001.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0018.json"
     },
     "3505eea7646ecac4d0f6": {
       "clave": "sector:Buenos Aires:empresa pública ente puerto vialidad",
@@ -884,8 +1147,8 @@
       "titulo": "Sitio oficial de turismo de la Ciudad de Buenos Aires",
       "busqueda_url": "https://www.bing.com/search?q=%22Buenos+Aires%22+empresa+p%C3%BAblica+ente+puerto+vialidad+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:24:48.026383+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
-      "version_verificador": 2,
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
+      "version_verificador": 3,
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -897,17 +1160,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": true,
           "url": "https://turismo.buenosaires.gob.ar/es",
-          "sha256": "1fcc451b4dcf466c704a70969ce5a72430811030456178022f802f3b0b1bfa46",
+          "sha256": "9d61d23b0c2ac6a28d04437c9d7a460dd918a91c2e29492b77135423ec52ba57",
           "cabecera": " Sitio oficial de turismo de la Ciudad de Buenos Aires Buenos Aires La ciudad de todas las pasiones Buenos Aires La ciudad de todas las pasiones Destacados QUÉ HACER Próximos eventos Reservá tu experiencia Descubrila La info que necesitás Contacto Newsletter",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:07.749589+00:00",
+        "fecha": "2026-10-27T23:30:13.437033+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0000.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0017.json"
     },
     "ec418adcca664bb082e9": {
       "clave": "directorio:fuente-059",
@@ -923,8 +1186,8 @@
       "evidencia_enlace": "https://www.municipalidadcolonpba.gob.ar/",
       "busqueda_url": "https://www.municipalidadcolonpba.gob.ar/",
       "fecha_descubrimiento": "2026-10-27T23:24:48.026383+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
-      "version_verificador": 2,
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
+      "version_verificador": 3,
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": true,
@@ -941,7 +1204,7 @@
           "motivo": null
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:09.292438+00:00",
+        "fecha": "2026-10-27T23:30:14.656613+00:00",
         "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
         "ejemplos": []
       },
@@ -954,7 +1217,7 @@
           "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0005.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0022.json"
     },
     "3cedf2c049d68ff7b728": {
       "clave": "reparar:fuente-060",
@@ -968,8 +1231,8 @@
       "titulo": "Antártida | Argentina.gob.ar",
       "busqueda_url": "https://www.bing.com/search?q=%22Bolet%C3%ADn+Oficial+de+Santa+Fe%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:24:48.026383+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
-      "version_verificador": 2,
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
+      "version_verificador": 3,
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -981,17 +1244,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": false,
           "url": "https://www.argentina.gob.ar/armada/antartida",
-          "sha256": "c531477495468124a8074c8125f64df5013579375f185b9c0aa54355d15f0ace",
+          "sha256": "b1e5a18e8ae5a47dc70b8190c5b82b284a5bd41939f8b9cf880022198744a519",
           "cabecera": " Antártida | Argentina.gob.ar Presidencia de la Nación En esta sección Trámites Acerca de la República Argentina Acerca de Argentina.gob.ar",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:08.474276+00:00",
+        "fecha": "2026-10-27T23:30:13.540390+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0002.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0019.json"
     },
     "f271ff8a7529f4ad7a31": {
       "clave": "directorio:fuente-065",
@@ -1046,8 +1309,8 @@
       "evidencia_enlace": "https://www.concejosantafe.gov.ar/",
       "busqueda_url": "https://www.concejosantafe.gov.ar/",
       "fecha_descubrimiento": "2026-10-27T23:24:48.026383+00:00",
-      "ultima_revision": "2026-10-27T23:24:48.026383+00:00",
-      "version_verificador": 2,
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
+      "version_verificador": 3,
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -1059,17 +1322,304 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": true,
           "url": "https://www.concejosantafe.gov.ar/boletin",
-          "sha256": "072e44f7271a7ec1d3da30f674aab47512561dd638e82cfdc7355db2a8806897",
+          "sha256": "325d93e0a0e39c19008bc02a46605ab0352893d33076295107d1761c36ea2a01",
           "cabecera": "Boletín digital — Concejo Municipal de Santa Fe  Boletín digital",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-27T23:25:08.422936+00:00",
+        "fecha": "2026-10-27T23:30:15.117313+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232505-ef9e62ea/0003.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0020.json"
+    },
+    "f83eb92cc424cbc01b7f": {
+      "clave": "directorio:fuente-069",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de General Ramírez",
+      "localidad": "General Ramírez",
+      "provincia": "Entre Ríos",
+      "metodo": "ENLACES_OFICIALES",
+      "url_directorio": "https://www.generalramirez.gob.ar/",
+      "id": "auto-f83eb92cc424cbc01b7f",
+      "url": "https://www.generalramirez.gob.ar/boletin-informativo/",
+      "titulo": "Boletín informativo",
+      "evidencia_enlace": "https://www.generalramirez.gob.ar/",
+      "busqueda_url": "https://www.generalramirez.gob.ar/",
+      "fecha_descubrimiento": "2026-10-27T23:29:52.451036+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
+      "version_verificador": 3,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de General Ramírez",
+          "localidad": "General Ramírez",
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://www.generalramirez.gob.ar/boletin-informativo/",
+          "sha256": "cca87761062b92ff1eea9fe597e88cde377847bf87008402418b3f95a33cc396",
+          "cabecera": "Boletín informativo municipal – Municipalidad de General Ramírez Boletines Boletín Informativo Municipal - Agosto 2026 Histórico: Boletines Anteriores TELÉFONOS DE EMERGENCIAS PORTAL INTERNO",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-10-27T23:30:01.047155+00:00",
+        "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+        "ejemplos": []
+      },
+      "errores": [
+        {
+          "url": "https://www.generalramirez.gob.ar/boletin-informativo/",
+          "tipo": "SinPublicacionesDetectadas",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Listado no reconocido; no se declara vacío"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0002.json"
+    },
+    "0fdcc011d215265d90c1": {
+      "clave": "directorio:fuente-073",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Junín",
+      "localidad": "Junín",
+      "provincia": "Buenos Aires",
+      "metodo": "ENLACES_OFICIALES",
+      "url_directorio": "https://www.junin.gob.ar/",
+      "id": "auto-0fdcc011d215265d90c1",
+      "url": "https://www.junin.gob.ar/inscripcion/becas-y-concursos-culturales",
+      "titulo": "",
+      "evidencia_enlace": "https://www.junin.gob.ar/",
+      "busqueda_url": "https://www.junin.gob.ar/",
+      "fecha_descubrimiento": "2026-10-27T23:29:52.451036+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
+      "version_verificador": 3,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Junín",
+          "localidad": "Junín",
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://www.junin.gob.ar/inscripcion/becas-y-concursos-culturales",
+          "sha256": "d185225cab67eb5d8114d777404cbee447033ed311da9e7932817f9a0aa18431",
+          "cabecera": "BECAS Y CONCURSOS CULTURALES | Gobierno de Junín BECAS Y CONCURSOS CULTURALES Array PROGRAMAS CULTURALES BECAS Y CONCURSOS 100 911 103 107 144 147",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-10-27T23:29:59.974029+00:00",
+        "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+        "ejemplos": []
+      },
+      "errores": [
+        {
+          "url": "https://www.junin.gob.ar/inscripcion/becas-y-concursos-culturales",
+          "tipo": "SinPublicacionesDetectadas",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Listado no reconocido; no se declara vacío"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0000.json"
+    },
+    "f78d87c587d5765be771": {
+      "clave": "directorio:fuente-074",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Zárate",
+      "localidad": "Zárate",
+      "provincia": "Buenos Aires",
+      "metodo": "ENLACES_OFICIALES",
+      "url_directorio": "https://zarate.gob.ar/",
+      "id": "auto-f78d87c587d5765be771",
+      "url": "https://zarate.gob.ar/boletin-oficial/",
+      "titulo": "Boletín Oficial",
+      "evidencia_enlace": "https://zarate.gob.ar/",
+      "busqueda_url": "https://zarate.gob.ar/",
+      "fecha_descubrimiento": "2026-10-27T23:29:52.451036+00:00",
+      "ultima_revision": "2026-10-27T23:29:52.451036+00:00",
+      "version_verificador": 3,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Zárate",
+          "localidad": "Zárate",
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://zarate.gob.ar/boletin-oficial/",
+          "sha256": "c4b73cf3a75e6d714ee0208968ad5773d362136449147f0842aa6f7e836c8f4d",
+          "cabecera": "Boletín Oficial – Municipalidad de Zárate BOLETÍN OFICIAL 442288 COZ 422222 POLICÍA 480111 POLICÍA LIMA 0221-6783100 COMISARÍA MUJER 15 677399 BOMBEROS",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 14,
+        "fecha": "2026-10-27T23:30:05.634948+00:00",
+        "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+        "ejemplos": [
+          {
+            "organismo": "Municipalidad de Zárate",
+            "numero_procedimiento": "2/2024",
+            "objeto": "Marzo 7, 2024 Decreto 192 Adjudicación Licitación Pública N° 2-2024 Desca r gar",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://zarate.gob.ar/wp-content/uploads/2024/03/dto-192-24-Adjudicacion-de-Licitacion.pdf",
+            "evidencia_url": "https://zarate.gob.ar/boletin-oficial/"
+          },
+          {
+            "organismo": "Municipalidad de Zárate",
+            "numero_procedimiento": "37/2023",
+            "objeto": "Marzo 6, 2024 Decreto 191 Autorízase a la Contaduría Municipal a abonar gastos para realización de evento “Cultura en la plaza” Desca r gar Decreto 190 Autorízase a la Contaduría Municipal a abonar a la firma Aguas de Zárate S.A.P.E.M Desca r gar Decreto 189 Adjudicación Licitación Pública N° 37-2023 Desca r gar",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://zarate.gob.ar/wp-content/uploads/2024/03/dto-191-24-Autorizacion-para-abonar.pdf",
+            "evidencia_url": "https://zarate.gob.ar/boletin-oficial/"
+          },
+          {
+            "organismo": "Municipalidad de Zárate",
+            "numero_procedimiento": "1/2024",
+            "objeto": "Marzo 1, 2024 Decreto 184 Cese por jubilación Desca r gar Decreto 183 Adjudicación Licitación Pública N° 1-2024 Desca r gar Decreto 182 Cese de funciones Desca r gar",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://zarate.gob.ar/wp-content/uploads/2024/03/dto-184-24-Cese-x-jubilacion.pdf",
+            "evidencia_url": "https://zarate.gob.ar/boletin-oficial/"
+          },
+          {
+            "organismo": "Municipalidad de Zárate",
+            "numero_procedimiento": "3/2024",
+            "objeto": "Febrero 27, 2024 Decreto 167 Aprobación Pliego Licitación Pública N°3/2024 Desca r gar Decreto 166 Creación del programa “Cuartos de Final de la Liga Argentina de Vóley LVA RUS” organizado por el Municipio de Zárate Desca rg ar",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://zarate.gob.ar/wp-content/uploads/2024/03/dto-167-24-aprueba-pliego-llamado-licitacion-Pub-04-24.pdf",
+            "evidencia_url": "https://zarate.gob.ar/boletin-oficial/"
+          },
+          {
+            "organismo": "Municipalidad de Zárate",
+            "numero_procedimiento": "1/2024",
+            "objeto": "Decreto 151 Licitación Privada N°1/2024 Desca r gar",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://zarate.gob.ar/wp-content/uploads/2024/03/dto-151-24-aprobacion-pliego.pdf",
+            "evidencia_url": "https://zarate.gob.ar/boletin-oficial/"
+          },
+          {
+            "organismo": "Municipalidad de Zárate",
+            "numero_procedimiento": "4/2026",
+            "objeto": "LICITACIÓN PÚBLICA N°4/2026 \"Alquiler de maquinaria vial para trabajos en barrios de campo etapa 3\"",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://zarate.gob.ar/licitaciones-publicas/",
+            "evidencia_url": "https://zarate.gob.ar/licitaciones-publicas/"
+          },
+          {
+            "organismo": "Municipalidad de Zárate",
+            "numero_procedimiento": "3/2026",
+            "objeto": "LICITACIÓN PÚBLICA N°3/2026 Segundo llamado \"Adquisición de material pétreo para mejoramiento de calzadas en barrios - etapa 4\"",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://zarate.gob.ar/licitaciones-publicas/",
+            "evidencia_url": "https://zarate.gob.ar/licitaciones-publicas/"
+          },
+          {
+            "organismo": "Municipalidad de Zárate",
+            "numero_procedimiento": "3/2026",
+            "objeto": "LICITACIÓN PÚBLICA N°3/2026 \"Adquisición de material pétreo para mejoramiento de calzadas en barrios - etapa 4\"",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://zarate.gob.ar/licitaciones-publicas/",
+            "evidencia_url": "https://zarate.gob.ar/licitaciones-publicas/"
+          },
+          {
+            "organismo": "Municipalidad de Zárate",
+            "numero_procedimiento": "2/2026",
+            "objeto": "LICITACIÓN PÚBLICA N°2/2026 \"Concesión de espacios públicos para paseo gastronómico de Lima\"",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://zarate.gob.ar/licitaciones-publicas/",
+            "evidencia_url": "https://zarate.gob.ar/licitaciones-publicas/"
+          },
+          {
+            "organismo": "Municipalidad de Zárate",
+            "numero_procedimiento": "1/2026",
+            "objeto": "LICITACIÓN PÚBLICA N°1/2026 \"Reforma del \"Hospital Intermedio Municipal de Lima\"",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://zarate.gob.ar/licitaciones-publicas/",
+            "evidencia_url": "https://zarate.gob.ar/licitaciones-publicas/"
+          },
+          {
+            "organismo": "Municipalidad de Zárate",
+            "numero_procedimiento": "11/2025",
+            "objeto": "Circular Aclaratoria N°3-25 Licitación Publica N°11/2025 Lee la Circular acá",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://zarate.gob.ar/wp-content/uploads/2025/07/Circular-N%C2%B03-Gobierno.pdf",
+            "evidencia_url": "https://zarate.gob.ar/licitaciones-publicas/"
+          },
+          {
+            "organismo": "Municipalidad de Zárate",
+            "numero_procedimiento": "10/2025",
+            "objeto": "Circular Aclaratoria N°1-25 Licitación Pública N°10/2025 Lee la circular acá",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://zarate.gob.ar/wp-content/uploads/2025/05/Circular-N%C2%B01-25-Lima.pdf",
+            "evidencia_url": "https://zarate.gob.ar/licitaciones-publicas/"
+          },
+          {
+            "organismo": "Municipalidad de Zárate",
+            "numero_procedimiento": "8/2025",
+            "objeto": "Circular Aclaratoria Nº 2 Licitación Pública N°8/2025 Lee la Circular acá",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://zarate.gob.ar/wp-content/uploads/2025/06/Circular-Aclaratoria-N%C2%B002-2025.pdf",
+            "evidencia_url": "https://zarate.gob.ar/licitaciones-publicas/"
+          },
+          {
+            "organismo": "Municipalidad de Zárate",
+            "numero_procedimiento": "12/2024",
+            "objeto": "Circular con consulta N°1 Licitación Pública N°12/2024 Descargá la circular acá",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://zarate.gob.ar/wp-content/uploads/2024/09/Circular-con-Consulta-N%C2%B01-24.pdf",
+            "evidencia_url": "https://zarate.gob.ar/licitaciones-publicas/"
+          }
+        ]
+      },
+      "errores": [
+        {
+          "url": "https://zarate.gob.ar/boletin-oficial/",
+          "tipo": "DetalleIncompleto",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Publicaciones identificadas sin objeto completo",
+          "publicaciones": [
+            "f534ed07e0d9e91b72f44e0e2b042c6f74c9c2c4bb6ef9fd660a0e53b3063e39",
+            "cab32af4e5286b4306cfbeddf6339db2f37961d1901f96523934079b54ca1075",
+            "6c60b3f79db35b075f86ed910ca10ae49a97c494f9bba3e4371cb46422ee9651"
+          ]
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261027T232958-37d37a30/0001.json"
     }
   }
 }
