@@ -145,15 +145,15 @@ def reporte(registros,fecha_reporte):
     def celda(texto):return str(texto or '').replace('|','/').replace('\n',' ')
     lineas=['# Oportunidades detectadas — '+fecha_reporte,'',
         'Primera detección no significa publicación reciente. Se incluyen todas las novedades válidas, también vencidas y de vigencia desconocida. Orden: pago contado/contra entrega comprobado, llamados especiales y plazo publicado. Sin filtros comerciales ni límite de cantidad. Pago no informado significa pendiente de comprobación.','',
-        '| Organismo / procedimiento | Objeto | Vigencia / apertura | Condiciones de pago | Documento de respaldo | Señales | Publicación |',
-        '|---|---|---|---|---|---|---|']
+        '| Organismo / procedimiento | Localidad / provincia | Objeto | Presupuesto oficial | Vigencia / apertura | Fecha de publicación | Pliego | Condiciones de pago | Documento de respaldo | Señales | Publicación oficial |',
+        '|---|---|---|---|---|---|---|---|---|---|---|']
     ordenadas=sorted(registros,key=prioridad)
     for r in ordenadas:
         url=r.get('enlace_condiciones_pago');enlaces=r.get('pago',{}).get('documentos_respaldo') or ([url] if url else [])
         respaldo=' '.join(f'[Documento {i}]({u})' for i,u in enumerate(enlaces,1)) if enlaces else 'No comprobado'
         flags=', '.join(nombre for clave,nombre in [('desierta','Desierta'),('segundo_llamado','Segundo llamado'),('reapertura','Reapertura')] if r.get(clave)) or '—'
         fuente=r.get('evidencia_url') or r.get('url')
-        lineas.append('| '+ ' | '.join([celda((r.get('organismo') or 'desconocido')+' / '+(r.get('numero_procedimiento') or 'sin número')),celda(r.get('objeto') or r.get('titulo')),celda((r.get('vigencia') or 'DESCONOCIDA')+' / '+(r.get('fecha_apertura') or 'desconocida')),celda(r.get('condiciones_pago') or pagos.NO_INFORMADO),respaldo,flags,f'[Oficial]({fuente})'])+' |')
+        lineas.append('| '+ ' | '.join([celda((r.get('organismo') or 'desconocido')+' / '+(r.get('numero_procedimiento') or 'sin número')),celda((r.get('localidad') or 'desconocida')+' / '+(r.get('provincia') or 'desconocida')),celda(r.get('objeto') or r.get('titulo')),celda(r.get('presupuesto') or 'desconocido'),celda((r.get('vigencia') or 'DESCONOCIDA')+' / '+(r.get('fecha_hora_apertura') or r.get('fecha_apertura') or 'desconocida')),celda(r.get('fecha_publicacion') or 'desconocida'),f"[Pliego]({r['enlace_pliego']})" if r.get('enlace_pliego') else 'No identificado',celda(r.get('condiciones_pago') or pagos.NO_INFORMADO),respaldo,flags,f'[Oficial]({fuente})'])+' |')
     lineas+=['','## Evidencia de las condiciones de pago','']
     for r in ordenadas:
         p=r.get('pago',{})
