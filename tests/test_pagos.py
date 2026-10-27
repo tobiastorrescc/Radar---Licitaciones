@@ -191,3 +191,18 @@ class EvidenciaRealTests(unittest.TestCase):
     def test_contra_entrega_no_oculta_conformidad(self):
         r=pagos.consolidar(pagos.extraer('Forma de pago: contra entrega, previa conformidad de recepción.',URL,SHA))
         self.assertEqual(r['clasificacion'],'CONTRA_ENTREGA');self.assertIn('exige conformidad de recepción',r['etiqueta'])
+
+class LimitesRealesTests(unittest.TestCase):
+    def evidencia(self,inicio):
+        datos=json.loads(Path('tests/fixtures/reales/pagos-67.json').read_text())
+        return next(e for e in datos['evidencias'] if e['cita'].startswith(inicio))
+    def test_constancia_seguro_y_pagos_suss_no_son_cobro_del_proveedor(self):
+        e=self.evidencia('los pagos de')
+        p=pagos.consolidar(pagos.extraer(e['cita'],e['url_documento'],e['sha256']))
+        self.assertEqual(p['estado'],'PENDIENTE')
+    def test_formulario_plazo_recepcion_no_es_plazo_pago(self):
+        e=self.evidencia('Plazo de Pago')
+        es=pagos.extraer(e['cita'],e['url_documento'],e['sha256'])
+        self.assertEqual(es[0]['plazos_dias'],[30])
+        self.assertEqual(es[0]['unidades_dias'],['corridos'])
+        self.assertNotIn('7 Días',es[0]['cita'])

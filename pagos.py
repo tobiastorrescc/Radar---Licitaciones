@@ -3,7 +3,7 @@ from hashlib import sha256
 import re
 import unicodedata
 
-VERSION=4
+VERSION=5
 NO_INFORMADO='Pago no informado'
 NUMEROS={'siete':7,'quince':15,'treinta':30,'cuarenta y cinco':45,'sesenta':60,'noventa':90,
          'cinco':5,'diez':10,'veinte':20,'veinticinco':25,'cuarenta':40,'cincuenta':50,
@@ -11,7 +11,7 @@ NUMEROS={'siete':7,'quince':15,'treinta':30,'cuarenta y cinco':45,'sesenta':60,'
 PALABRAS='|'.join(sorted(NUMEROS,key=len,reverse=True))
 DIAS=re.compile(r'\b(?:(?P<palabra>'+PALABRAS+r')(?:\s*\((?P<duplicado>\d{1,3})\))?|(?P<numero>\d{1,3}))\s*(?:\([^)]{1,30}\)\s*)?dias\b(?:\s+(?P<unidad>habiles|corridos|calendario))?')
 INICIO=re.compile(r'\b(?:(?:forma|condiciones|plazo|modalidad|terminos)(?:s)?\s+(?:y condiciones\s+)?(?:de\s+)?pago|pagos?\s*[:\-]|el pago\b|los pagos\b|se (?:abonara|pagara|cancelara)|seran? (?:abonad[oa]s?|pagad[oa]s?)|pago\s+(?:al\s+)?contado|pago\s+contra\s+)')
-LIMITE=re.compile(r'\b(?:(?:plazo|lugar|forma|condiciones)\s+(?:de\s+)?(?:entrega|apertura|garantia|mantenimiento de oferta)|la entrega\s+(?:se|sera|debera)|garantia de (?:oferta|contrato)|valor del pliego|costo del pliego)\b')
+LIMITE=re.compile(r'\b(?:(?:plazo|lugar|forma|condiciones)\s+(?:de\s+|para\s+(?:la\s+)?)?(?:entrega|apertura|garantia|mantenimiento de oferta|recepcion definitiva)|la entrega\s+(?:se|sera|debera)|garantia de (?:oferta|contrato)|valor del pliego|costo del pliego)\b')
 EXCLUIDO=re.compile(r'^(?:(?:forma|condiciones|plazo|modalidad)(?:s)?\s+(?:de\s+)?pago|el pago|pago)\s+(?:de[l]?\s+)?(?:(?:la|el|los|las)\s+)?(?:pliegos?|sellado|sellos|tasas?|garantias?|bases|arancel(?:es)?)\b')
 
 
@@ -26,6 +26,8 @@ def clasificar(cita,permitir_definicion=False):
     # Las negaciones y remisiones no se transforman en una condición positiva.
     if re.search(r'no se (?:admite|admitira|acepta|aceptara|efectuara|realizara)\b',t):return None
     if re.search(r'(?:segun|conforme a) (?:lo )?(?:establecido|indicado|dispuesto) en (?:el )?pliego',t) and not DIAS.search(t) and not re.search(r'contra entrega|contado',t):return None
+    # Comprobantes fiscales/laborales exigidos al oferente no son su cobro.
+    if re.search(r'^(?:el pago|los pagos) (?:de |del )?(?:las? |los? )?(?:declaraciones juradas|suss|aportes|contribuciones|seguros?|impuestos?)\b',t):return None
     plazos=[];unidades=[]
     cantidad=re.compile(r'cantidad\s*:\s*(?:(?P<palabra>'+PALABRAS+r')(?:\s*\((?P<duplicado>\d{1,3})\))?|(?P<numero>\d{1,3}))\s*unidad de tiempo\s*:\s*dias(?:\s+(?P<unidad>habiles|corridos|calendario))?')
     for m in list(DIAS.finditer(t))+list(cantidad.finditer(t)):
