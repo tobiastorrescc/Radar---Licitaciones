@@ -10,7 +10,7 @@ Distingue contado, contra entrega de bienes, contra presentación de factura, re
 
 Los formatos de formulario «Cantidad: TREINTA (30); Unidad de tiempo: DÍAS» se leen como 30 días. Los números escritos y entre paréntesis deben coincidir. «Contado a 30 días» no obtiene prioridad inmediata. Las opciones y pagos mixtos conservan sus términos y requieren revisar la cláusula; no prometen que todo se cobre al contado.
 
-Se excluyen del análisis del cobro el costo del pliego, sellados, tasas y garantías. Una remisión a otro pliego no basta para elegir una condición. Las negaciones y opciones hipotéticas tampoco. El pago de un canon por el adjudicatario se indica a su cargo y no recibe prioridad como cobro inmediato.
+Se excluyen del análisis del cobro el costo del pliego, sellados, tasas y garantías. Una remisión a otro pliego no basta para elegir una condición. Las negaciones y opciones hipotéticas tampoco. La palabra canon por sí sola no identifica quién paga. Si el documento dice expresamente que paga el adjudicatario, se indica a su cargo y no recibe prioridad como cobro inmediato.
 
 Si distintos documentos dan condiciones incompatibles, la etiqueta es **Pago no informado** y se guardan ambas citas para revisión. No se presume qué documento prevalece. La ausencia de una cláusula reconocida no demuestra que el pliego no contenga condiciones: significa pendiente de comprobación.
 

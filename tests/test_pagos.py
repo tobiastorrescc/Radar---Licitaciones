@@ -157,10 +157,10 @@ class EvidenciaRealTests(unittest.TestCase):
         e=next(r for r in self.reales if r['organismo']=='Municipalidad de Crespo')['pago']['evidencias'][0]
         r=pagos.consolidar(pagos.extraer(e['cita'],e['url_documento'],e['sha256']))
         self.assertEqual(r['plazos_dias'],[20]);self.assertIn('PRESENTACION_FACTURA',r['hitos_inicio']);self.assertNotIn('VARIACIONES DE COSTOS',r['evidencias'][0]['cita'])
-    def test_canon_tesoreria_no_es_cobro_al_proveedor(self):
+    def test_canon_sin_sujeto_no_identifica_quien_paga(self):
         e=next(r for r in self.reales if r['organismo']=='Municipalidad de Federación')['pago']['evidencias'][0]
         r=pagos.consolidar(pagos.extraer(e['cita'],e['url_documento'],e['sha256']))
-        self.assertEqual(r['direccion'],'OFERTANTE_AL_ORGANISMO');self.assertIn('mensual a mes vencido',r['etiqueta'])
+        self.assertEqual(r['direccion'],'NO_ESPECIFICADA');self.assertIn('mensual a mes vencido',r['etiqueta'])
     def test_codigo_pdf_cortado_solo_se_completa_con_la_url_del_adjunto(self):
         from tools import comprobar_pliegos as c
         parcial='licitacion privada LPR-2026-2-APPSF-OD'
@@ -184,3 +184,10 @@ class EvidenciaRealTests(unittest.TestCase):
         a=pagos.extraer('Forma de pago: a 30 días hábiles.',URL,SHA)
         b=pagos.extraer('Forma de pago: a 30 días corridos.','https://oficial.gob.ar/particular.pdf','b'*64)
         self.assertEqual(pagos.consolidar(a+b)['estado'],'PENDIENTE')
+
+    def test_contado_no_oculta_requisito_de_factura(self):
+        r=pagos.consolidar(pagos.extraer('Forma de pago: contado contra presentación de factura.',URL,SHA))
+        self.assertEqual(r['clasificacion'],'CONTADO');self.assertIn('contra presentación de factura',r['etiqueta'])
+    def test_contra_entrega_no_oculta_conformidad(self):
+        r=pagos.consolidar(pagos.extraer('Forma de pago: contra entrega, previa conformidad de recepción.',URL,SHA))
+        self.assertEqual(r['clasificacion'],'CONTRA_ENTREGA');self.assertIn('exige conformidad de recepción',r['etiqueta'])

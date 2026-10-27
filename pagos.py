@@ -68,7 +68,7 @@ def clasificar(cita,permitir_definicion=False):
     elif recepcion_factura:categoria='DESPUES_RECEPCION_FACTURA'
     elif contra_factura:categoria='CONTRA_FACTURA'
     else:return None
-    direccion='OFERTANTE_AL_ORGANISMO' if re.search(r'(?:adjudicatario|concesionario|oferente) (?:debera |debe |se obliga a )?(?:abonar|pagar)|pago (?:del |de un )?(?:precio del )?canon',t) else ('ORGANISMO_AL_PROVEEDOR' if re.search(r'(?:municipalidad|municipio|organismo|contratante) (?:debera |debe )?(?:abonar|pagar)|pago al (?:proveedor|adjudicatario)',t) else 'NO_ESPECIFICADA')
+    direccion='OFERTANTE_AL_ORGANISMO' if re.search(r'(?:adjudicatario|concesionario|oferente) (?:debera |debe |se obliga a )?(?:abonar|pagar)|canon (?:a cargo|que abonara) (?:del )?(?:adjudicatario|concesionario)',t) else ('ORGANISMO_AL_PROVEEDOR' if re.search(r'(?:municipalidad|municipio|organismo|contratante) (?:debera |debe )?(?:abonar|pagar)|pago al (?:proveedor|adjudicatario)',t) else 'NO_ESPECIFICADA')
     if categoria=='CONTADO':etiqueta='Pago contado'
     elif categoria=='CONTRA_ENTREGA':etiqueta='Pago contra entrega'
     elif categoria=='CONTRA_PRESENTACION_FACTURA':etiqueta='Contra presentación de factura; plazo no indicado'
@@ -78,6 +78,11 @@ def clasificar(cita,permitir_definicion=False):
     elif categoria=='DESPUES_CONFORMIDAD_RECEPCION':etiqueta='Después de conformidad de recepción; plazo no indicado'
     elif categoria in ('MIXTO','OPCIONES_PUBLICADAS'):etiqueta='Pago mixto' if categoria=='MIXTO' else 'Opciones de pago publicadas'
     else:etiqueta='/'.join(str(n) for n in plazos)+' días'+(' '+unidades[0] if len(unidades)==1 and unidades[0]!='no indicada' else '')
+    if not plazos and categoria in ('CONTADO','CONTRA_ENTREGA'):
+        if conformidad:etiqueta+='; exige conformidad de recepción'
+        elif factura_conformada:etiqueta+=' contra factura conformada'
+        elif presentacion_factura:etiqueta+=' contra presentación de factura'
+        elif recepcion_factura:etiqueta+=' después de recepción de factura'
     if plazos:
         if conformidad:etiqueta+=' después de conformidad de recepción'
         elif factura_conformada:etiqueta+=' desde factura conformada'
