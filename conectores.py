@@ -6,12 +6,15 @@ from urllib.parse import urljoin, urlparse, urldefrag
 from urllib.request import Request, build_opener, HTTPHandler, HTTPSHandler
 from http.client import HTTPConnection, HTTPSConnection
 import socket
+import os
+from pathlib import Path
 from urllib.error import HTTPError, URLError
 import re
 import subprocess
 import unicodedata
 import extractores
 import documentos
+import oportunidades
 import gzip
 import json
 
@@ -237,14 +240,14 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
              'motivo_sin_estimacion':'Faltan costos y precios comprobables',**c,**r,
              'documentos':list(docs.values()),'pago_prioritario':any(x in normalizar(r['titulo']) for x in ('pago contado','pago al contado','contra entrega','pago inmediato'))}
         registro['enlace_pliego']=next((d['url'] for d in registro['documentos'] if 'pliego' in normalizar(d.get('titulo') or '')),registro['documentos'][0]['url'] if registro['documentos'] else None)
-        items[key]=registro
+        items[key]=oportunidades.normalizar(registro)
         return key
     def texto_documento(texto,url,referencia=None):
         lineas=texto.splitlines()
         posiciones=[i for i,l in enumerate(lineas) if extractores.procesos(l)]
         if not posiciones and referencia and texto.strip():
             p=dict(items[referencia]);p['objeto']=texto;p['texto_documento']=texto;p['detalle_completo']=True
-            items[referencia]=p
+            items[referencia]=oportunidades.normalizar(p)
             return
         for n,i in enumerate(posiciones):
             t=' '.join(lineas[i:posiciones[n+1] if n+1<len(posiciones) else len(lineas)])
@@ -259,6 +262,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 items[referencia]['objeto']=texto
                 items[referencia]['texto_documento']=texto
                 items[referencia]['detalle_completo']=True
+                items[referencia]=oportunidades.normalizar(items[referencia])
     while pending:
         if len(seen)>=max_paginas:limits.append('max_paginas');break
         url,clase,referencia=pending.popleft();url=extractores.url_publica(url)
@@ -270,8 +274,16 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             if _host(final) not in hosts:raise ValueError('Redirección fuera de dominios oficiales declarados')
             es_html='html' in tipo.lower() and not datos.startswith(b'%PDF-')
             if not es_html:
-                texto=documentos.leer(datos,tipo,url,ocr=config.get('ocr',False),
-                    progreso=lambda t:(texto_documento(t,url,referencia),snapshot('EXTRACCION',url)))
+                cache=Path(os.environ.get('RADAR_CACHE_DOCUMENTOS','work/cache-documentos'))
+                cache.mkdir(parents=True,exist_ok=True)
+                archivo=cache/(sha256(datos+b'ocr-v1').hexdigest()+'.txt')
+                if archivo.exists():texto=archivo.read_text(encoding='utf-8')
+                else:
+                    texto=documentos.leer(datos,tipo,url,ocr=config.get('ocr',False),
+                        progreso=lambda t:(texto_documento(t,url,referencia),snapshot('EXTRACCION',url)))
+                    if texto.strip():
+                        temporal=archivo.with_suffix('.'+str(os.getpid())+'.tmp')
+                        temporal.write_text(texto,encoding='utf-8');os.replace(temporal,archivo)
                 texto_documento(texto,url,referencia);documentos_leidos+=1;correctas+=1
                 documento_pendiente.pop(url,None)
                 snapshot('PAGINA_FINALIZADA',url);continue
@@ -283,7 +295,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             # El vacío debe estar publicado explícitamente; no se infiere de falta de matches.
             m=re.search(r'no (?:hay|existen|se encontraron) (?:licitaciones|publicaciones|procesos de compra)|sin licitaciones vigentes',texto)
             if not m and config.get('marcador_vacio'):m=re.search(config['marcador_vacio'],texto)
-            if clase=='LISTADO' and config.get('detectar_carga_dinamica') and re.search(r'cargas? mas|load more',texto):
+            if clase=='LISTADO' and config.get('detectar_carga_dinamica') and re.search(r'cargas? mas|load more',texto) and not any('next' in l.get('rel','').split() for l in links):
                 errors.append({'url':url,'tipo':'PaginacionDinamicaPendiente','categoria':'EXTRACCION','timeout':False,'error':'Control cargar más sin enlace de siguiente página verificable'})
             if m:vacios.append({'url':url,'texto':m.group(0)})
             if not registros and re.search(r'inicia sesi[oó]n para|solo esta disponible dentro de la red|debe iniciar sesi[oó]n',texto):
@@ -292,7 +304,8 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 if config.get('requerir_ficha') and clase=='LISTADO':r['detalle_completo']=False
                 key=agregar(r)
                 if clase=='DETALLE' and referencia in items and r.get('detalle_completo'):
-                    items[referencia]['objeto']=r['objeto'];items[referencia]['detalle_completo']=True
+                    items[referencia]['objeto']=r['objeto'];items[referencia]['texto_documento']=r['titulo'];items[referencia]['detalle_completo']=True
+                    items[referencia]=oportunidades.normalizar(items[referencia])
                 for doc in r.get('documentos',[]):
                     destino=doc['url']
                     necesario=modo=='todos' or not r.get('detalle_completo')
@@ -300,7 +313,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                         documento_pendiente[destino]={'url':destino,'publicacion_id':key}
                         pending.append((destino,'DOCUMENTO',key))
                 if not r.get('detalle_completo') and r['url']!=url and not urlparse(r['url']).path.lower().endswith(extractores.ADJUNTOS):
-                    pending.append((r['url'],'DETALLE',key))
+                    pending.appendleft((r['url'],'DETALLE',key))
             for l in links:
                 destino=l['url'];et=normalizar(l['texto']);path=urlparse(destino).path
                 if _host(destino) not in hosts or destino in seen or destino==url:continue
@@ -311,7 +324,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 navegar=any(re.search(patron,destino) for patron in config.get('seguir_patrones',[]))
                 if pagina or navegar:
                     contexto={'tipo_contexto':l.get('tipo_contexto',pagina_config.get('tipo_contexto'))}
-                    pending.appendleft((destino,'LISTADO',contexto))
+                    pending.append((destino,'LISTADO',contexto))
                 # Un documento del índice de boletines puede contener llamados sin título HTML.
                 if not registros and config.get('indice_documentos') and path.lower().endswith(extractores.ADJUNTOS):
                     pending.append((destino,'DOCUMENTO',None))

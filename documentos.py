@@ -1,6 +1,7 @@
 """Lectura de documentos públicos sin ejecutar adjuntos ni extraer rutas de ZIP."""
 from io import BytesIO
 from pathlib import Path
+import os
 import re
 import subprocess
 import tempfile
@@ -32,7 +33,7 @@ def pdf(datos,ocr=False,progreso=None):
         for pagina in range(1,int(m[1])+1):
             prefix=Path(d)/'pagina'
             subprocess.run(['pdftoppm','-f',str(pagina),'-l',str(pagina),'-scale-to','1600','-singlefile','-png',str(source),str(prefix)],capture_output=True,check=True,timeout=15)
-            result=subprocess.run(['tesseract',str(prefix)+'.png','stdout','-l','spa+eng'],capture_output=True,text=True,check=True,timeout=20)
+            result=subprocess.run(['tesseract',str(prefix)+'.png','stdout','-l','spa+eng'],capture_output=True,text=True,check=True,timeout=20,env={**os.environ,'OMP_THREAD_LIMIT':'1'})
             paginas.append(result.stdout)
             if progreso:progreso('\n'.join(paginas))
         texto='\n'.join(paginas)
@@ -46,7 +47,7 @@ def leer(datos,tipo,url,ocr=False,progreso=None):
         if not ocr:raise ValueError('Imagen de publicación requiere OCR')
         with tempfile.TemporaryDirectory() as d:
             image=Path(d)/'publicacion';image.write_bytes(datos)
-            r=subprocess.run(['tesseract',str(image),'stdout','-l','spa+eng'],capture_output=True,text=True,check=True,timeout=20)
+            r=subprocess.run(['tesseract',str(image),'stdout','-l','spa+eng'],capture_output=True,text=True,check=True,timeout=20,env={**os.environ,'OMP_THREAD_LIMIT':'1'})
             if not r.stdout.strip():raise ValueError('Imagen sin texto reconocido')
             return r.stdout
     if datos.startswith(b'PK'):

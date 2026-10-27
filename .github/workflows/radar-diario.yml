@@ -5,7 +5,7 @@ on:
     - cron: '0 11 * * *' # 08:00 Argentina; GitHub puede retrasar la ejecucion
   pull_request:
   push:
-    paths: ['radar.py', 'conectores.py', 'extractores.py', 'documentos.py', 'inventario/**', 'tools/**', 'tests/**', '.github/workflows/**', 'fuentes*']
+    paths: ['radar.py', 'conectores.py', 'extractores.py', 'documentos.py', 'oportunidades.py', 'inventario/**', 'tools/**', 'tests/**', '.github/workflows/**', 'fuentes*']
 permissions:
   contents: read
 concurrency:
@@ -50,13 +50,14 @@ jobs:
             licitaciones_nuevas.json
             auditoria_fuentes.json
             radar.log
+            licitaciones_nuevas.md
           retention-days: 90
       - name: Persistir historial incluso ante fallos parciales
         if: always() && steps.radar.outcome != 'skipped'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add radar_estado.json licitaciones_nuevas.json auditoria_fuentes.json
+          git add radar_estado.json licitaciones_nuevas.json licitaciones_nuevas.md auditoria_fuentes.json
           if ! git diff --cached --quiet; then
             git commit -m 'Actualizar historial de licitaciones [skip ci]'
             git pull --rebase origin main
@@ -77,6 +78,11 @@ jobs:
         with:
           python-version: '3.11'
       - run: sudo apt-get update && sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-spa
+      - uses: actions/cache@v4
+        with:
+          path: work/cache-documentos
+          key: textos-v1-${{ github.run_id }}
+          restore-keys: textos-v1-
       - name: Verificar sin modificar historial de producción
         id: verificar
         continue-on-error: true # Diagnóstico de fuentes; no confundir disponibilidad con pruebas unitarias.
@@ -84,6 +90,9 @@ jobs:
         env:
           PYTHONUNBUFFERED: '1'
         run: python -u tools/verificar_fuentes.py --salida work/verificacion/verificacion.json --concurrencia 4 --conexion 5 --lectura 10 --por-fuente 60 --total 600
+      - name: Normalizar y reportar oportunidades sin escribir producción
+        if: always()
+        run: python tools/reportar_oportunidades.py
       - name: Resumen de fuentes en Actions
         if: always()
         run: |

@@ -10,6 +10,7 @@ import time
 import os
 import logging
 import conectores
+import oportunidades as comercial
 from collections import deque
 from zoneinfo import ZoneInfo
 
@@ -525,33 +526,10 @@ def ejecutar():
             url = oportunidad["url"]
             clave = oportunidad.get("id", url)
 
-            oportunidad.update({k: metadatos.get(fuente, {}).get(k) for k in ("organismo", "localidad", "provincia")})
-            encontradas[url] = oportunidad
+            oportunidad.update({k: oportunidad.get(k) or metadatos.get(fuente, {}).get(k) for k in ("organismo", "localidad", "provincia")})
+            encontradas[clave] = oportunidad
 
-            anterior = historial.get(clave)
-            if anterior is None and clave != url and url in historial:
-                if normalizar(historial[url].get("titulo", "")) == normalizar(oportunidad["titulo"]):
-                    anterior = historial[url]
-            if anterior is None:
-                oportunidad[
-                    "primera_deteccion"
-                ] = fecha
-
-                nuevas.append(
-                    oportunidad
-                )
-
-                historial[clave] = dict(oportunidad)
-
-                print(
-                    "NUEVA:",
-                    oportunidad["titulo"],
-                )
-
-            else:
-                historial[clave] = {**anterior, **oportunidad,
-                                    "primera_deteccion": anterior.get("primera_deteccion", fecha)}
-            historial[clave]["ultima_deteccion"] = fecha
+        nuevas.extend(comercial.incorporar(historial,oportunidades,fecha))
 
         estado_fuente = resultado["estado"]
         if estado_fuente == "OPERATIVA" and not any(o["fuente"] == fuente for o in nuevas):
@@ -571,7 +549,8 @@ def ejecutar():
             "errores": resultado["errores"],
         })
 
-    nuevas.sort(key=prioridad_comercial)
+    nuevas.sort(key=comercial.prioridad)
+    Path(ARCHIVO_RESULTADOS).with_suffix(".md").write_text(comercial.reporte(nuevas,fecha),encoding="utf-8")
 
     guardar_json(
         ARCHIVO_RESULTADOS,

@@ -198,11 +198,19 @@ def extraer(html,url,config=None):
         objeto=next((x.text for x in n.iter() if x.clase('objeto')),None)
         if not objeto and config.get('adaptador')=='epe':
             objeto=next((x.text for x in n.iter() if x.tag=='button' and x.text),None)
+        celdas=[x for x in n.children if isinstance(x,Nodo) and x.tag=='td']
+        tabla=next((x for x in n.padres() if x.tag=='table'),None)
+        cabeceras=[x.text for x in tabla.iter() if x.tag=='th'] if tabla else []
+        campos_tabla={norm(k):v.text for k,v in zip(cabeceras,celdas)}
+        if config.get('tipo_tabla') and campos_tabla.get('objeto'):objeto=campos_tabla['objeto']
         if not objeto:objeto=texto
         evento='|'.join(sorted(set(EVENTO.findall(norm(texto))))) or None
         registros.append({'titulo':texto,'objeto':objeto,'procedimiento':p['procedimiento'],
             'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'url':destino,
+            'presupuesto_texto':next((v for k,v in campos_tabla.items() if k.startswith('presupuesto')),None),
+            'fecha_publicacion_texto':next((x.attrs.get('datetime') or x.text for x in n.iter() if x.tag=='time' and ('published' in x.attrs.get('class','') or x.attrs.get('itemprop')=='datePublished')),None),
             'documentos':documents,'evento_publicado':evento,'llamado_especial':bool(evento),
+            'fecha_apertura_texto':next((x.text for x in n.children if isinstance(x,Nodo) and x.tag=='td' and re.search(r'\d{1,2}/\d{1,2}/20\d{2}',x.text)),None) if config.get('tipo_tabla') else None,
             'evidencia_url':url,'detalle_completo':bool(set(re.findall(r'\b[a-z]{4,}\b',norm(objeto)[p['end']:] if objeto==texto else norm(objeto)))-{'pliego','descargar','anexo','numero','apertura','fecha','vigente','tramite','documento','descarga'}),
             'situacion_publicada':next((v for k,v in [('adjudic','ADJUDICADA'),('desiert','DESIERTA'),('finalizada','FINALIZADA'),('en evaluacion','EN_EVALUACION')] if k in norm(texto)),None)})
     # Mismo procedimiento repetido en menús, encabezados, pliegos y anexos: uno con todos sus enlaces.
