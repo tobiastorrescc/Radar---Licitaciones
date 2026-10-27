@@ -95,7 +95,7 @@ def normalizar(r,ahora=None):
 
 def identidad(r):
     # Una URL de listado o un anexo no identifica un procedimiento. El organismo sí.
-    if r.get('numero_procedimiento') and re.search(r'/20\d{2}$',r['numero_procedimiento']):
+    if r.get('numero_procedimiento') and re.search(r'/20\d{2}$|^(?:LPU|LPR|CPRV|CD)-20\d{2}-',r['numero_procedimiento'],re.I):
         partes=[norm(r.get(k)) for k in ('organismo','provincia','localidad','tipo_procedimiento','numero_procedimiento')]
         partes.append('' if norm(r.get('evento_publicado')) in ('','1') else norm(r.get('evento_publicado')))
     else:partes=[r.get('fuente',''),r.get('id') or r.get('url',''),norm(r.get('titulo'))]

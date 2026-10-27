@@ -107,3 +107,10 @@ class ComercialTests(unittest.TestCase):
         r=o.normalizar(self.base(objeto='Segundo llamado. Anterior desierta. Apertura 28/10/2026',situacion_publicada='DESIERTA'),FECHA)
         self.assertEqual(r['vigencia'],'ABIERTA')
         self.assertTrue(r['desierta'])
+
+    def test_codigo_aeropuerto_misma_identidad_cambio_titulo_url(self):
+        r=self.base()
+        r['numero_procedimiento']='LPU-2026-00000003-APPSF-OD-COM-CON-AIR-ROS'
+        h={};self.assertEqual(len(o.incorporar(h,[r],FECHA)),1)
+        cambiado={**r,'titulo':r['titulo']+' - Anexo publicado','url':r['url']+'/anexo'}
+        self.assertEqual(o.incorporar(h,[cambiado],FECHA),[])
