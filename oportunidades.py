@@ -5,6 +5,7 @@ from hashlib import sha256
 from zoneinfo import ZoneInfo
 import re
 import unicodedata
+import pagos
 
 ZONA=ZoneInfo('America/Argentina/Buenos_Aires')
 MESES={'enero':1,'febrero':2,'marzo':3,'abril':4,'mayo':5,'junio':6,'julio':7,'agosto':8,'septiembre':9,'setiembre':9,'octubre':10,'noviembre':11,'diciembre':12}
@@ -73,9 +74,11 @@ def normalizar(r,ahora=None):
         if valor is None:valor,frag=monto(norm(texto_titulo))
         dato('presupuesto',valor,frag)
     else:r.setdefault('presupuesto',None)
-    pago=re.search(r'pago (?:al )?contado|contra entrega|pago inmediato',t)
-    dato('condiciones_pago',pago.group(0) if pago else None,pago.group(0) if pago else None)
-    r['pago_prioritario']=bool(pago)
+    r['pago']=pagos.consolidar(r.get('pago_evidencias',[]))
+    if r['pago']['estado']!='VERIFICADO' and r.get('pago_motivo_pendiente'):r['pago']['motivo']=r['pago_motivo_pendiente']
+    r['condiciones_pago']=r['pago']['etiqueta']
+    r['enlace_condiciones_pago']=r['pago']['documento_respaldo']
+    r['pago_prioritario']=r['pago']['prioritario']
     r['desierta']='desiert' in t
     r['segundo_llamado']=bool(re.search(r'segund[oa] (?:llamado|convocatoria)|2(?:do|º|°) llamado|llamado 2\b',t))
     r['reapertura']='reapertura' in t
@@ -116,7 +119,11 @@ def normalizar(r,ahora=None):
     return r
 
 def prioridad(r):
-    return (not r.get('pago_prioritario',False),not r.get('llamado_especial',False),{'ABIERTA':0,'DESCONOCIDA':1,'VENCIDA':2}.get(r.get('vigencia'),1),r.get('titulo',''))
+    p=r.get('pago',{})
+    inmediato=p.get('estado')=='VERIFICADO' and p.get('prioritario',False)
+    dias=max(p.get('plazos_dias') or [999]) if p.get('estado')=='VERIFICADO' else 999
+    return (not inmediato,not r.get('llamado_especial',False),dias,{'ABIERTA':0,'DESCONOCIDA':1,'VENCIDA':2}.get(r.get('vigencia'),1),r.get('titulo',''))
+
 
 def incorporar(historial,registros,ahora):
     """Índice derivado: no elimina ni reescribe entradas antiguas."""
@@ -135,9 +142,25 @@ def incorporar(historial,registros,ahora):
     return sorted(nuevas,key=prioridad)
 
 def reporte(registros,fecha_reporte):
-    lineas=['# Oportunidades detectadas — '+fecha_reporte,'','Novedad significa primera detección en el historial; puede ser una publicación histórica. Datos ausentes: desconocido. Orden orientativo por pago explícito, llamados especiales y vigencia; no predice rentabilidad.','']
-    for r in sorted(registros,key=prioridad):
-        lineas += ['## '+str(r.get('titulo') or 'Procedimiento sin título'),'',f"- Organismo: {r.get('organismo') or 'desconocido'} · {r.get('localidad') or 'desconocido'} · {r.get('provincia') or 'desconocido'}",f"- Número: {r.get('numero_procedimiento') or 'desconocido'}; vigencia: {r.get('vigencia')}; publicación: {r.get('fecha_publicacion') or 'desconocido'}; apertura: {r.get('fecha_apertura') or 'desconocido'}",f"- Objeto: {r.get('objeto') or 'desconocido'}",f"- Presupuesto: {r.get('presupuesto') or 'desconocido'}; pago: {r.get('condiciones_pago') or 'desconocido'}",f"- Desierta: {r.get('desierta')}; segundo llamado: {r.get('segundo_llamado')}; reapertura: {r.get('reapertura')}",f"- [Publicación oficial]({r.get('evidencia_url') or r.get('url')}) · Pliego: {r.get('enlace_pliego') or 'desconocido'} · Comprobación: {r.get('comprobacion_pliego',{}).get('estado','NO_COMPROBADO')}",'- Rentabilidad potencial: desconocida; '+r.get('motivo_sin_estimacion',''), '']
+    def celda(texto):return str(texto or '').replace('|','/').replace('\n',' ')
+    lineas=['# Oportunidades detectadas — '+fecha_reporte,'',
+        'Primera detección no significa publicación reciente. Se incluyen todas las novedades válidas, también vencidas y de vigencia desconocida. Orden: pago contado/contra entrega comprobado, llamados especiales y plazo publicado. Sin filtros comerciales ni límite de cantidad. Pago no informado significa pendiente de comprobación.','',
+        '| Organismo / procedimiento | Objeto | Vigencia / apertura | Condiciones de pago | Documento de respaldo | Señales | Publicación |',
+        '|---|---|---|---|---|---|---|']
+    ordenadas=sorted(registros,key=prioridad)
+    for r in ordenadas:
+        url=r.get('enlace_condiciones_pago');respaldo=f'[Documento]({url})' if url else 'No comprobado'
+        flags=', '.join(nombre for clave,nombre in [('desierta','Desierta'),('segundo_llamado','Segundo llamado'),('reapertura','Reapertura')] if r.get(clave)) or '—'
+        fuente=r.get('evidencia_url') or r.get('url')
+        lineas.append('| '+ ' | '.join([celda((r.get('organismo') or 'desconocido')+' / '+(r.get('numero_procedimiento') or 'sin número')),celda(r.get('objeto') or r.get('titulo')),celda((r.get('vigencia') or 'DESCONOCIDA')+' / '+(r.get('fecha_apertura') or 'desconocida')),celda(r.get('condiciones_pago') or pagos.NO_INFORMADO),respaldo,flags,f'[Oficial]({fuente})'])+' |')
+    lineas+=['','## Evidencia de las condiciones de pago','']
+    for r in ordenadas:
+        p=r.get('pago',{})
+        if not p.get('evidencias'):continue
+        lineas+=['### '+celda(r.get('titulo') or r.get('numero_procedimiento')),'',p.get('etiqueta',pagos.NO_INFORMADO),'']
+        for e in p['evidencias']:
+            pagina=' · página '+str(e['pagina']) if e.get('pagina') else ''
+            lineas+=[f"- [Documento]({e['url_documento']}){pagina}: {celda(e['cita'])}",'']
     return '\n'.join(lineas)
 
 
@@ -213,6 +236,7 @@ def fusionar(a,b,ahora=None):
     salida=dict(principal)
     for k,v in otro.items():
         if salida.get(k) is None or salida.get(k)=='' or salida.get(k)==[]:salida[k]=v
+    salida['pago_evidencias']=pagos.unir_evidencias(a.get('pago_evidencias'),b.get('pago_evidencias'))
     salida['documentos']=list({d['url']:d for d in a.get('documentos',[])+b.get('documentos',[])}.values())
     salida['fuentes_observadas']=sorted({u for r in (a,b) for u in r.get('fuentes_observadas',[])+[r.get('fuente')] if u})
     salida['urls_publicacion']=sorted({u for r in (a,b) for u in r.get('urls_publicacion',[])+[r.get('url'),r.get('evidencia_url')] if u})

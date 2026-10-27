@@ -5,7 +5,7 @@ on:
     - cron: '0 11 * * *' # 08:00 Argentina; GitHub puede retrasar la ejecucion
   pull_request:
   push:
-    paths: ['radar.py', 'conectores.py', 'extractores.py', 'documentos.py', 'oportunidades.py', 'inventario/**', 'tools/**', 'tests/**', '.github/workflows/**', 'fuentes*']
+    paths: ['radar.py', 'conectores.py', 'extractores.py', 'documentos.py', 'oportunidades.py', 'pagos.py', 'cache_documentos.py', 'inventario/**', 'tools/**', 'tests/**', '.github/workflows/**', 'fuentes*']
 permissions:
   contents: read
 concurrency:

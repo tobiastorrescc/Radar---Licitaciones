@@ -7,6 +7,10 @@ import radar
 
 
 class RadarTests(unittest.TestCase):
+    def setUp(self):
+        self.documentos_mock=patch.object(radar.comprobar_pliegos,'comprobar',return_value=[])
+        self.documentos_mock.start();self.addCleanup(self.documentos_mock.stop)
+
     def test_all_candidates_no_output_limit(self):
         html = ''.join(f'<a href="/licitacion/{n}">Compra menor {n}</a>' for n in range(80))
         with patch.object(radar, 'descargar', return_value=html), patch.object(radar.time, 'sleep'):

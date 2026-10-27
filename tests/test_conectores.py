@@ -119,7 +119,7 @@ class ConectoresTests(unittest.TestCase):
             cwd=os.getcwd()
             try:
                 os.chdir(root)
-                with patch.multiple(radar,**names), patch.object(c,'descargar',return_value=(b'<li>Compra menor 8/2026 papel</li>','text/html','https://example.org/')),redirect_stdout(io.StringIO()):
+                with patch.multiple(radar,**names), patch.object(c,'descargar',return_value=(b'<li>Compra menor 8/2026 papel</li>','text/html','https://example.org/')),redirect_stdout(io.StringIO()),patch.object(radar.comprobar_pliegos,'comprobar',return_value=[]):
                     radar.ejecutar();radar.ejecutar()
                     self.assertEqual(json.loads((root/'nuevas.json').read_text())['total_nuevas'],0)
                     self.assertEqual(json.loads((root/'audit.json').read_text())['fuentes'][0]['estado'],'SIN_PUBLICACIONES_NUEVAS')

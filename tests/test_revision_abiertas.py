@@ -10,6 +10,12 @@ import oportunidades as o
 
 AHORA='2026-10-27T09:00:00-03:00'
 class RevisionAbiertasTests(unittest.TestCase):
+    def setUp(self):
+        from unittest.mock import patch
+        self.cache_temporal=tempfile.TemporaryDirectory();self.addCleanup(self.cache_temporal.cleanup)
+        self.cache_env=patch.dict('os.environ',{'RADAR_CACHE_DOCUMENTOS':self.cache_temporal.name})
+        self.cache_env.start();self.addCleanup(self.cache_env.stop)
+
     def base(self,numero='LPR-2026-00000002',**kw):
         r={'organismo':'Aeropuerto Internacional Rosario','localidad':'Rosario','provincia':'Santa Fe','fuente':'https://aeropuertorosario.com/institucional/licitaciones/','url':'https://aeropuertorosario.com/licitaciones/lpr-2026-00000002/','numero_procedimiento':numero,'tipo_procedimiento':'licitacion privada','procedimiento':numero.lower(),'titulo':numero+' Jardinería. Apertura 28/10/2026','objeto':'Jardinería. Apertura 28/10/2026','detalle_completo':True}
         return {**r,**kw}

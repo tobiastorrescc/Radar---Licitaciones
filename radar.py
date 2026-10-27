@@ -11,6 +11,7 @@ import os
 import logging
 import conectores
 import oportunidades as comercial
+import pagos
 from tools import comprobar_pliegos
 from collections import deque
 from zoneinfo import ZoneInfo
@@ -566,6 +567,7 @@ def ejecutar():
         {
             "fecha": fecha,
             "total_nuevas": len(nuevas),
+            "resumen_pagos": pagos.resumen(nuevas),
             "oportunidades": nuevas,
         },
     )

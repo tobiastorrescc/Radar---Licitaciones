@@ -7,6 +7,8 @@ from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import oportunidades
+import pagos
+import cache_documentos
 from tools import comprobar_pliegos
 
 
@@ -29,7 +31,7 @@ def ejecutar(informe,salida,historial):
     crudos=registros
     registros=oportunidades.deduplicar(registros,fecha)
     configuraciones=json.loads(Path('inventario/fuentes.json').read_text())
-    enlaces=comprobar_pliegos.comprobar(registros,fecha,configuraciones)
+    enlaces=comprobar_pliegos.comprobar(registros,fecha,configuraciones,salida_parcial=raiz/'auditoria_documentos_parcial.jsonl')
     fecha=datetime.now(oportunidades.ZONA).isoformat()
     registros=[oportunidades.normalizar(i,fecha) for i in registros]
     vistas=oportunidades.guardar_vistas(registros,fecha,raiz)
@@ -43,6 +45,16 @@ def ejecutar(informe,salida,historial):
             vistos.setdefault(clave,indice);revision.append(dato)
             print('REVISION_ABIERTAS54 '+json.dumps(dato,ensure_ascii=False),flush=True)
         (raiz/'revision_11_abiertas54.json').write_text(json.dumps(revision,ensure_ascii=False,indent=2),encoding='utf-8')
+    pagos_resumen=pagos.resumen(registros)
+    (raiz/'auditoria_pagos.json').write_text(json.dumps({'fecha':fecha,'resumen':pagos_resumen,'oportunidades':registros},ensure_ascii=False,indent=2),encoding='utf-8')
+    print('RESUMEN_PAGOS '+json.dumps(pagos_resumen,ensure_ascii=False),flush=True)
+    ejemplos_pagos=Counter()
+    for i in sorted(registros,key=lambda r:r.get('vigencia')!='ABIERTA'):
+        cat=i.get('pago',{}).get('clasificacion')
+        if i.get('pago',{}).get('estado')=='VERIFICADO' and ejemplos_pagos[cat]<3:
+            ejemplos_pagos[cat]+=1
+            print('PAGO_VERIFICADO '+json.dumps({k:i.get(k) for k in ('organismo','numero_procedimiento','fuente','vigencia','pago','condiciones_pago')},ensure_ascii=False),flush=True)
+    print('CACHE_DOCUMENTOS '+json.dumps(cache_documentos.limpiar()),flush=True)
     nuevas=oportunidades.incorporar(h,registros,fecha)
     resumen={'registros_antes_deduplicar':len(crudos),'duplicados_unificados':len(crudos)-len(registros),'registros_unicos':len(registros),'proximas_a_vencer':len(vistas['proximas_a_vencer']),'candidatos_no_verificados':sum(i['clasificacion_registro']!='PROCEDIMIENTO' for i in registros),'pliegos_comprobados_abiertas':sum(i.get('comprobacion_pliego',{}).get('estado')=='DOCUMENTO_ACCESIBLE' for i in vistas['abiertas']),'nuevas_detecciones':len(nuevas),'vigencia':dict(Counter(i['vigencia'] for i in registros)),
              'con_numero':sum(bool(i['numero_procedimiento']) for i in registros),'con_presupuesto':sum(bool(i['presupuesto']) for i in registros),

@@ -15,6 +15,8 @@ import uuid
 from zoneinfo import ZoneInfo
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import conectores
+import cache_documentos
+from urllib.parse import urlparse
 
 
 def ahora():
@@ -40,9 +42,13 @@ def worker(config, checkpoint, conexion, lectura, max_paginas):
     inicio = time.monotonic()
     def progreso(r):
         guardar(checkpoint, {**r, 'actualizado': ahora(), 'duracion_segundos': round(time.monotonic()-inicio, 3)})
+    transporte=partial(conectores.descargar, conexion_timeout=fuente.get('conexion_timeout',conexion), lectura_timeout=fuente.get('lectura_timeout',lectura))
+    def fetch(url):
+        if urlparse(url).path.lower().endswith(('.pdf','.docx','.zip','.jpg','.jpeg','.png')):return cache_documentos.obtener(url,transport=transporte)[:3]
+        return transporte(url)
     try:
         r = conectores.explorar(fuente['url'], fuente, max_paginas=max_paginas, progreso=progreso,
-            fetch=partial(conectores.descargar, conexion_timeout=fuente.get('conexion_timeout',conexion), lectura_timeout=fuente.get('lectura_timeout',lectura)))
+            fetch=fetch)
     except Exception as e:
         r = {**leer_checkpoint(checkpoint), 'estado': 'ERROR', 'finalizado': True,
              'errores': [{'categoria': 'INTERNO', 'tipo': type(e).__name__, 'timeout': False, 'error': str(e)}]}

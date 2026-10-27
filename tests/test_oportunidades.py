@@ -68,8 +68,10 @@ class ComercialTests(unittest.TestCase):
     def test_reporte_todo_con_riesgos_desconocidos(self):
         filas=[o.normalizar(self.base(objeto='Pago contado'),FECHA),o.normalizar(self.base(objeto='Apertura 1/1/2020'),FECHA)]
         texto=o.reporte(filas,FECHA)
-        self.assertEqual(texto.count('## Licitación'),2)
-        self.assertIn('Rentabilidad potencial: desconocida',texto)
+        self.assertEqual(texto.count('| Municipio /'),2)
+        self.assertIn('Condiciones de pago',texto)
+        self.assertIn('Documento de respaldo',texto)
+        self.assertNotIn('Rentabilidad potencial',texto)
     def test_cache_solo_texto_lectura_contenido_revalidado(self):
         with tempfile.TemporaryDirectory() as d,patch.dict('os.environ',{'RADAR_CACHE_DOCUMENTOS':d}),patch('documentos.leer',return_value='Licitación Pública 1/2026 Objeto herramientas') as leer:
             def fetch(u):return b'%PDF-documento','application/pdf',u

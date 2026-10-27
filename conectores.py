@@ -14,6 +14,7 @@ import subprocess
 import unicodedata
 import extractores
 import documentos
+import pagos
 import oportunidades
 import gzip
 import json
@@ -153,11 +154,11 @@ class _HTTPSHandler(HTTPSHandler):
                             req, context=self._context)
 
 
-def descargar(url, conexion_timeout=5, lectura_timeout=10):
+def descargar(url, conexion_timeout=5, lectura_timeout=10, headers_extra=None, devolver_headers=False):
     # build_opener conserva proxies del entorno y validación TLS predeterminada.
     opener = build_opener(_HTTPHandler(lectura_timeout), _HTTPSHandler(lectura_timeout))
     url = extractores.url_publica(url)
-    with opener.open(Request(url, headers={'User-Agent': 'RadarLicitaciones/2.0'}),
+    with opener.open(Request(url, headers={'User-Agent': 'RadarLicitaciones/2.0',**(headers_extra or {})}),
                      timeout=conexion_timeout) as r:
         datos = r.read(12_000_001)
         if len(datos) > 12_000_000:
@@ -165,7 +166,8 @@ def descargar(url, conexion_timeout=5, lectura_timeout=10):
         if r.headers.get('Content-Encoding', '').lower()=='gzip' or datos.startswith(b'\x1f\x8b'):
             datos=gzip.decompress(datos)
             if len(datos)>12_000_000:raise ValueError('Contenido descomprimido supera 12 MB')
-        return datos, r.headers.get('Content-Type', ''), r.geturl()
+        resultado=(datos, r.headers.get('Content-Type', ''), r.geturl())
+        return (*resultado,dict(r.headers.items())) if devolver_headers else resultado
 
 
 def clasificar_error(error, fase):
@@ -208,7 +210,15 @@ def _host(url):
 
 
 def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
-    fetch=fetch or descargar
+    if fetch is None:
+        from functools import partial
+        fetch=partial(descargar)
+        transporte=fetch
+        def fetch(url):
+            if urlparse(url).path.lower().endswith((*extractores.ADJUNTOS,'.jpg','.jpeg','.png')):
+                import cache_documentos
+                return cache_documentos.obtener(url,transport=transporte)[:3]
+            return transporte(url)
     pending=deque([(u,'LISTADO',None) for u in config.get('urls_inicio',[fuente])])
     seen=set();items={};errors=[];limits=[];correctas=0;documentos_leidos=0
     hosts={_host(fuente),*(_host('https://'+h) for h in config.get('dominios_documentos',[]))}
@@ -234,11 +244,12 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
         registro['id']=key
         items[key]=registro
         return key
-    def texto_documento(texto,url,referencia=None):
+    def texto_documento(texto,url,referencia=None,hash_documento=None):
         lineas=texto.splitlines()
         posiciones=[i for i,l in enumerate(lineas) if extractores.procesos(l)]
         if not posiciones and referencia and texto.strip():
             p=dict(items[referencia]);p['objeto']=texto;p['texto_documento']=texto;p['detalle_completo']=True;p['evidencia_url']=url
+            p['pago_evidencias']=pagos.unir_evidencias(p.get('pago_evidencias'),pagos.extraer(texto,url,hash_documento=hash_documento,metodo='TEXTO_DOCUMENTO'))
             items[referencia]=oportunidades.normalizar(p)
             return
         for n,i in enumerate(posiciones):
@@ -248,7 +259,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             p=ps[0]
             evento='|'.join(sorted(set(extractores.EVENTO.findall(normalizar(t))))) or None
             r={'titulo':t,'objeto':t,'url':url,'evidencia_url':url,'documentos':[{'url':url,'titulo':'Documento'}],
-               'procedimiento':p['procedimiento'],'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'evento_publicado':evento,'detalle_completo':True,'rango_evidencia':3}
+               'procedimiento':p['procedimiento'],'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'evento_publicado':evento,'detalle_completo':True,'rango_evidencia':3,'pago_evidencias':pagos.extraer(t,url,hash_documento=hash_documento,metodo='SECCION_DOCUMENTO')}
             agregar(r)
             if referencia in items and items[referencia].get('procedimiento')==p['procedimiento']:
                 # Un aviso con varios llamados no puede asignar a todos el primer presupuesto/fecha.
@@ -256,6 +267,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 detalle=texto if len(unicos)==1 else t
                 items[referencia]['objeto']=detalle
                 items[referencia]['texto_documento']=detalle
+                items[referencia]['pago_evidencias']=pagos.unir_evidencias(items[referencia].get('pago_evidencias'),pagos.extraer(detalle,url,hash_documento=hash_documento,metodo='SECCION_DOCUMENTO'))
                 items[referencia]['evidencia_url']=url
                 items[referencia]['detalle_completo']=True
                 items[referencia]=oportunidades.normalizar(items[referencia])
@@ -270,17 +282,10 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             if _host(final) not in hosts:raise ValueError('Redirección fuera de dominios oficiales declarados')
             es_html='html' in tipo.lower() and not datos.startswith(b'%PDF-')
             if not es_html:
-                cache=Path(os.environ.get('RADAR_CACHE_DOCUMENTOS','work/cache-documentos'))
-                cache.mkdir(parents=True,exist_ok=True)
-                archivo=cache/(sha256(datos+b'ocr-v1').hexdigest()+'.txt')
-                if archivo.exists():texto=archivo.read_text(encoding='utf-8')
-                else:
-                    texto=documentos.leer(datos,tipo,url,ocr=config.get('ocr',False),
-                        progreso=lambda t:(texto_documento(t,url,referencia),snapshot('EXTRACCION',url)))
-                    if texto.strip():
-                        temporal=archivo.with_suffix('.'+str(os.getpid())+'.tmp')
-                        temporal.write_text(texto,encoding='utf-8');os.replace(temporal,archivo)
-                texto_documento(texto,url,referencia);documentos_leidos+=1;correctas+=1
+                import cache_documentos
+                texto,_=cache_documentos.leer_texto(datos,tipo,url,ocr=config.get('ocr',False),
+                    progreso=lambda t:(texto_documento(t,url,referencia,sha256(datos).hexdigest()),snapshot('EXTRACCION',url)))
+                texto_documento(texto,url,referencia,sha256(datos).hexdigest());documentos_leidos+=1;correctas+=1
                 documento_pendiente.pop(url,None)
                 snapshot('PAGINA_FINALIZADA',url);continue
             html=decodificar_html(datos,tipo)
