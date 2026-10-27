@@ -6,6 +6,7 @@ import json
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import oportunidades as o
+import registro_fuentes
 
 def estado_cobertura(observacion,registros):
     validos=[r for r in registros if r.get('clasificacion_registro')=='PROCEDIMIENTO']
@@ -21,6 +22,8 @@ def generar(informe='work/verificacion/verificacion.json',salida='work/verificac
     fuente=Path(informe);datos=json.loads(fuente.read_text())
     observadas={r['id']:r for r in datos['observaciones']}
     fs=json.loads(Path('inventario/fuentes.json').read_text())
+    urls={f['url'] for f in fs}
+    fs.extend({**f,'tipo_portal':'autodescubierto','localidad':f.get('localidad')} for u,f in registro_fuentes.cargar_auto().items() if u not in urls)
     base=set(json.loads(Path('inventario/base_36.json').read_text())['ids'])
     territorio=json.loads(Path(padron).read_text()) if Path(padron).is_file() else json.loads(Path('inventario/territorio.json').read_text())
     estados=[];ejemplos=[]

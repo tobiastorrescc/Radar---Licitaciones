@@ -1,0 +1,61 @@
+name: Descubrimiento periódico de fuentes
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '25 6 * * 2,5' # 03:25 Argentina, separado del radar diario.
+  pull_request:
+    paths: ['tools/descubrir_fuentes.py', 'registro_fuentes.py', 'inventario/**', '.github/workflows/descubrir-fuentes.yml', 'tests/test_descubrimiento.py']
+permissions:
+  contents: read
+concurrency:
+  group: descubrimiento-${{ github.head_ref || github.ref }}
+  cancel-in-progress: false
+jobs:
+  descubrir:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest discover -s tests -p test_descubrimiento.py -v
+      - name: Recuperar textos documentales sin repetir descargas
+        uses: actions/cache@v4
+        with:
+          path: work/cache-documentos
+          key: descubrimiento-textos-v1-${{ github.run_id }}
+          restore-keys: descubrimiento-textos-v1-
+      - name: Descubrir y validar en procesos aislados
+        timeout-minutes: 6
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: python -u tools/descubrir_fuentes.py --total 240 --busquedas 24 --candidatos 24
+      - name: Conservar auditoría y resultados parciales
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: descubrimiento-${{ github.run_id }}
+          path: |
+            work/descubrimiento/
+            inventario/fuentes_auto.json
+            inventario/descubrimiento_estado.json
+          retention-days: 90
+      - name: Persistir exclusivamente candidatos y fuentes verificadas en la misma rama
+        if: success()
+        env:
+          RAMA_DESCUBRIMIENTO: ${{ github.head_ref || github.ref_name }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add inventario/fuentes_auto.json inventario/descubrimiento_estado.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Persistir descubrimiento auditable de fuentes [skip ci]'
+            git pull --rebase origin "$RAMA_DESCUBRIMIENTO"
+            git push origin "HEAD:$RAMA_DESCUBRIMIENTO"
+          fi

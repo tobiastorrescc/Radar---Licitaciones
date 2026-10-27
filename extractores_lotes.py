@@ -45,7 +45,17 @@ def encabezados(raiz,url,config):
         fecha_apertura=apertura[1] if apertura else None
         if fecha_apertura:fecha_apertura=re.sub(r'^(?:(?:fecha de )?apertura\s*:\s*)+','',fecha_apertura,flags=re.I)
         p=ps[0];evento='|'.join(sorted(set(EVENTO.findall(norm(texto))))) or None
-        resultados.append({'titulo':texto,'objeto':objeto[1].strip() if objeto else texto,'url':detalle or url,'evidencia_url':url,'documentos':docs,'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'procedimiento':p['procedimiento'],'evento_publicado':evento,'llamado_especial':bool(evento),'situacion_publicada':situacion(texto),'fecha_publicacion_texto':publicacion[1] if publicacion else None,'fecha_apertura_texto':fecha_apertura,'detalle_completo':bool(objeto) or (not docs and len(texto)>len(titulo)+80),'registro_estructurado':bool(objeto)})
+        # Señales del anexo sólo si identifica este mismo procedimiento.
+        especiales=[]
+        for d in docs:
+            etiqueta=d['titulo'].replace('_','/');procedimientos=procesos(etiqueta)
+            if any(q['tipo']==p['tipo'] and q['numero'].replace('-','/')==p['numero'].replace('-','/') for q in procedimientos):
+                especiales.extend(EVENTO.findall(norm(etiqueta)))
+        if especiales:evento='|'.join(sorted(set((evento or '').split('|')+especiales)-{''}))
+        # datePublished pertenece al artículo concreto, no a la fecha de apertura.
+        tiempos=[n.attrs.get('datetime') for b in bloques if isinstance(b,Nodo) for n in b.iter() if n.tag=='time' and n.attrs.get('itemprop')=='datePublished' and n.attrs.get('datetime')]
+        fecha_publicacion=publicacion[1] if publicacion else (tiempos[0] if len(set(tiempos))==1 else None)
+        resultados.append({'titulo':texto,'objeto':objeto[1].strip() if objeto else texto,'url':detalle or url,'evidencia_url':url,'documentos':docs,'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'procedimiento':p['procedimiento'],'evento_publicado':evento,'llamado_especial':bool(evento),'situacion_publicada':situacion(texto),'fecha_publicacion_texto':fecha_publicacion,'fecha_apertura_texto':fecha_apertura,'detalle_completo':bool(objeto) or (not docs and len(texto)>len(titulo)+80),'registro_estructurado':bool(objeto)})
     return resultados
 
 def boletin_santafe(raiz,url,config):

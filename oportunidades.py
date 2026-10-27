@@ -15,7 +15,7 @@ def norm(t):
 
 def fecha(texto):
     t=norm(texto)
-    m=re.search(r'\b(20\d{2})-(\d{2})-(\d{2})\b',t)
+    m=re.search(r'\b(20\d{2})-(\d{2})-(\d{2})(?=t|\b)',t)
     if m:y,mo,d=map(int,m.groups())
     else:
         m=re.search(r'\b(\d{1,2})[/.\-](\d{1,2})[/.\-](20\d{2})\b',t)
@@ -81,8 +81,9 @@ def normalizar(r,ahora=None):
     r['pago_prioritario']=r['pago']['prioritario']
     r['desierta']='desiert' in t
     r['fracasada']=r.get('situacion_publicada')=='FRACASADA' or extractores.situacion(texto_titulo)=='FRACASADA'
-    r['segundo_llamado']=bool(re.search(r'segund[oa] (?:llamado|convocatoria)|2(?:do|º|°) llamado|llamado 2\b',t))
-    r['reapertura']='reapertura' in t
+    senales=t+' '+norm(r.get('evento_publicado'))
+    r['segundo_llamado']=bool(re.search(r'segund[oa] (?:llamado|convocatoria)|2(?:do|º|°) llamado|llamado 2\b',senales))
+    r['reapertura']='reapertura' in senales
     r['llamado_especial']=bool(r.get('llamado_especial') or r['desierta'] or r['fracasada'] or r['segundo_llamado'] or r['reapertura'])
     cerrada=r.get('situacion_publicada') in ('ADJUDICADA','FINALIZADA','EN_EVALUACION','DESIERTA','FRACASADA')
     if r.get('situacion_publicada') in ('DESIERTA','FRACASADA') and (r['segundo_llamado'] or r['reapertura']):
@@ -126,7 +127,7 @@ def prioridad(r):
     return (not inmediato,not r.get('llamado_especial',False),dias,{'ABIERTA':0,'DESCONOCIDA':1,'VENCIDA':2}.get(r.get('vigencia'),1),r.get('titulo',''))
 
 
-def incorporar(historial,registros,ahora):
+def incorporar(historial,registros,ahora,desde=None):
     """Índice derivado: no elimina ni reescribe entradas antiguas."""
     nuevas=[];indice={identidad(normalizar(v,ahora)):k for k,v in historial.items() if isinstance(v,dict)}
     for raw in deduplicar(registros,ahora):
@@ -138,6 +139,8 @@ def incorporar(historial,registros,ahora):
             viejo=next((k for k in (r.get('id'),r.get('url')) if k in historial and norm(historial[k].get('titulo'))==norm(r.get('titulo'))),None)
         if viejo is None:
             r.update(primera_deteccion=ahora,ultima_deteccion=ahora,novedad='NUEVA_DETECCION')
+            publicada=r.get('fecha_publicacion');hoy=fecha(str(ahora));inicio=fecha(str(desde)) if desde else None
+            r['clasificacion_novedad']=('PUBLICACION_NUEVA_COMPROBADA' if publicada and inicio and inicio<publicada<=hoy else 'PUBLICACION_EN_DIA_DE_CORRIDA_ANTERIOR' if publicada and inicio and publicada==inicio else 'PUBLICACION_HISTORICA_RECUPERADA' if publicada and publicada<hoy else 'FECHA_PUBLICACION_DESCONOCIDA' if not publicada else 'PUBLICACION_CONOCIDA_SIN_VENTANA_PREVIA')
             historial[key]=r;indice[key]=key;nuevas.append(r)
         # Datos enriquecidos se reportan aparte: el registro legado permanece idéntico.
     return sorted(nuevas,key=prioridad)
@@ -149,15 +152,15 @@ def reporte(registros,fecha_reporte):
         return valor or 'desconocido'
     lineas=['# Oportunidades detectadas — '+fecha_reporte,'',
         'Primera detección no significa publicación reciente. Se incluyen todas las novedades válidas, también vencidas y de vigencia desconocida. Orden: pago contado/contra entrega comprobado, llamados especiales y plazo publicado. Sin filtros comerciales ni límite de cantidad. Pago no informado significa pendiente de comprobación.','',
-        '| Organismo / procedimiento | Localidad / provincia | Objeto | Presupuesto oficial | Vigencia / apertura | Fecha de publicación | Pliego | Condiciones de pago | Documento de respaldo | Señales | Publicación oficial |',
-        '|---|---|---|---|---|---|---|---|---|---|---|']
+        '| Organismo / procedimiento | Localidad / provincia | Objeto | Presupuesto oficial | Vigencia / apertura | Fecha de publicación | Pliego | Condiciones de pago | Documento de respaldo | Señales | Publicación oficial | Novedad |',
+        '|---|---|---|---|---|---|---|---|---|---|---|---|']
     ordenadas=sorted(registros,key=prioridad)
     for r in ordenadas:
         url=r.get('enlace_condiciones_pago');enlaces=r.get('pago',{}).get('documentos_respaldo') or ([url] if url else [])
         respaldo=' '.join(f'[Documento {i}]({u})' for i,u in enumerate(enlaces,1)) if enlaces else 'No comprobado'
         flags=', '.join(nombre for clave,nombre in [('desierta','Desierta'),('fracasada','Fracasada'),('segundo_llamado','Segundo llamado'),('reapertura','Reapertura')] if r.get(clave)) or '—'
         fuente=r.get('evidencia_url') or r.get('url')
-        lineas.append('| '+ ' | '.join([celda((r.get('organismo') or 'desconocido')+' / '+(r.get('numero_procedimiento') or 'sin número')),celda((r.get('localidad') or 'desconocida')+' / '+(r.get('provincia') or 'desconocida')),celda(r.get('objeto') or r.get('titulo')),celda(presupuesto(r.get('presupuesto'))),celda((r.get('vigencia') or 'DESCONOCIDA')+' / '+(r.get('fecha_hora_apertura') or r.get('fecha_apertura') or 'desconocida')),celda(r.get('fecha_publicacion') or 'desconocida'),f"[Pliego]({r['enlace_pliego']})" if r.get('enlace_pliego') else 'No identificado',celda(r.get('condiciones_pago') or pagos.NO_INFORMADO),respaldo,flags,f'[Oficial]({fuente})'])+' |')
+        lineas.append('| '+ ' | '.join([celda((r.get('organismo') or 'desconocido')+' / '+(r.get('numero_procedimiento') or 'sin número')),celda((r.get('localidad') or 'desconocida')+' / '+(r.get('provincia') or 'desconocida')),celda(r.get('objeto') or r.get('titulo')),celda(presupuesto(r.get('presupuesto'))),celda((r.get('vigencia') or 'DESCONOCIDA')+' / '+(r.get('fecha_hora_apertura') or r.get('fecha_apertura') or 'desconocida')),celda(r.get('fecha_publicacion') or 'desconocida'),f"[Pliego]({r['enlace_pliego']})" if r.get('enlace_pliego') else 'No identificado',celda(r.get('condiciones_pago') or pagos.NO_INFORMADO),respaldo,flags,f'[Oficial]({fuente})',celda(r.get('clasificacion_novedad') or 'Sin comparación con corrida anterior')])+' |')
     lineas+=['','## Evidencia de las condiciones de pago','']
     for r in ordenadas:
         p=r.get('pago',{})

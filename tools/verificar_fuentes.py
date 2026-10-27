@@ -17,6 +17,7 @@ from zoneinfo import ZoneInfo
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import conectores
 import cache_documentos
+import registro_fuentes
 from urllib.parse import urlparse
 
 
@@ -285,6 +286,8 @@ def main():
         worker(args.worker,args.checkpoint,args.conexion,args.lectura,args.max_paginas)
         return 0
     fuentes=json.loads(Path(args.inventario).read_text(encoding='utf-8'))
+    urls={f['url'] for f in fuentes}
+    fuentes.extend(f for u,f in registro_fuentes.cargar_auto().items() if u not in urls)
     r=ejecutar([f for f in fuentes if f['incorporada']],args.salida,
         concurrencia=args.concurrencia,conexion=args.conexion,lectura=args.lectura,
         por_fuente=args.por_fuente,total=args.total,max_paginas=args.max_paginas,intervalo=args.intervalo)

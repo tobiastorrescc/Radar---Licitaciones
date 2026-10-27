@@ -12,6 +12,7 @@ import logging
 import conectores
 import oportunidades as comercial
 import pagos
+import registro_fuentes
 from tools import comprobar_pliegos
 from collections import deque
 from zoneinfo import ZoneInfo
@@ -451,6 +452,11 @@ def ejecutar():
     fuentes = leer_lineas(
         ARCHIVO_FUENTES
     )
+    try:automaticas=registro_fuentes.cargar_auto()
+    except (ValueError,KeyError,TypeError) as e:
+        logging.error('Registro de descubrimiento inválido; se conservan fuentes configuradas: %s',e)
+        automaticas={}
+    fuentes=list(dict.fromkeys(fuentes+list(automaticas)))
 
     if not fuentes:
         raise ValueError("No hay fuentes configuradas")
@@ -489,7 +495,7 @@ def ejecutar():
     if not isinstance(historial, dict):
         raise RuntimeError("Historial inválido: oportunidades debe ser un objeto")
 
-    metadatos = cargar_json("fuentes.json", {})
+    metadatos = registro_fuentes.combinar(cargar_json("fuentes.json", {}),automaticas)
     nuevas = []
     auditoria = []
     encontradas = {}
@@ -554,7 +560,7 @@ def ejecutar():
     comprobar_pliegos.comprobar(registros,fecha,[{**c,'url':u} for u,c in metadatos.items()])
     fecha=datetime.now(ZoneInfo('America/Argentina/Buenos_Aires')).isoformat()
     registros=[comercial.normalizar(r,fecha) for r in registros]
-    nuevas=comercial.incorporar(historial,registros,fecha)
+    nuevas=comercial.incorporar(historial,registros,fecha,desde=estado_anterior.get('fecha'))
     nuevas_fuentes={u for r in nuevas for u in r.get('fuentes_observadas',[])+[r.get('fuente')]}
     for a in auditoria:
         if a['estado']=='OPERATIVA' and a['fuente'] not in nuevas_fuentes:a['estado']='SIN_PUBLICACIONES_NUEVAS'
