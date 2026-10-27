@@ -210,7 +210,7 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24):
         if f.get('incorporada'):continue
         key='inventario-'+f['id']
         estado['candidatos'].setdefault(key,{**f,'tipo':'TERRITORIAL','id':'auto-'+key,'clave':key,'origen':'INVENTARIO_PREVIO','fecha_descubrimiento':fecha})
-    elegibles=[c for c in estado['candidatos'].values() if c['url'] not in existentes and (c.get('version_verificador')!=3 or not c.get('ultima_revision') or datetime.fromisoformat(c['ultima_revision'])<datetime.now(timezone.utc)-timedelta(days=7))]
+    elegibles=[c for c in estado['candidatos'].values() if (c['url'] not in existentes or c['url'] in auto) and (c.get('version_verificador')!=4 or not c.get('ultima_revision') or datetime.fromisoformat(c['ultima_revision'])<datetime.now(timezone.utc)-timedelta(days=7))]
     # Rotación persistente: pendientes se reintentan en ciclos posteriores, sin monopolizar.
     elegibles.sort(key=lambda c:(c.get('ultima_revision',''),c.get('fecha_descubrimiento',''),c['id']))
     lote=elegibles[:candidatos];limite=max(1,total-(time.monotonic()-inicio)-3)
@@ -228,9 +228,11 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24):
         v=r.get('validacion') or {'estado':'PENDIENTE','motivo':'Plazo agotado o worker incompleto; resultados parciales conservados'}
         # El supervisor decide completitud; un checkpoint anterior no autoriza promoción.
         if obs['estado']!='OPERATIVA':v={**v,'estado':'PENDIENTE','motivo':v.get('motivo') or 'Consulta no finalizada sin incidencias'}
-        c.update(ultima_revision=fecha,version_verificador=3,validacion=v,errores=obs.get('errores',[]),resultado_archivo=str(p))
+        c.update(ultima_revision=fecha,version_verificador=4,validacion=v,errores=obs.get('errores',[]),resultado_archivo=str(p))
         if v['estado']=='VALIDADA':
             validadas+=1
+            for anterior in registro['fuentes']:
+                if anterior['url']==c['url']:anterior.update(validacion=v,config=r['config'])
             if c['url'] not in existentes:
                 entrada={'id':c['id'],'url':c['url'],'config':r['config'],'validacion':v,'origen_busqueda':c.get('busqueda_url') or c.get('evidencia_descubrimiento')}
                 registro['fuentes'].append(entrada);existentes.add(c['url']);nuevos.append(entrada)

@@ -148,8 +148,9 @@ def extraer_funes(datos,url):
             if not isinstance(d,dict):raise ValueError('Documento de Funes no reconocido')
             enlace=url_publica(d.get('url') or '',url)
             if enlace:docs.append({'url':enlace,'titulo':d.get('titulo') or 'Documento'})
-        resultado.append({'titulo':rotulo+' '+titulo,'objeto':titulo,'numero_procedimiento':p.get('numero'),'tipo_procedimiento':p.get('tipo'),'procedimiento':p.get('procedimiento'),
-            'registro_estructurado':True,'detalle_completo':bool(titulo.strip()),'url':url,'evidencia_url':url,'documentos':docs,
+        objeto_valido=bool(re.search(r'[A-Za-zÀ-ÿ]{3,}',titulo))
+        resultado.append({'titulo':rotulo+' '+titulo,'objeto':titulo if objeto_valido else None,'numero_procedimiento':p.get('numero'),'tipo_procedimiento':p.get('tipo'),'procedimiento':p.get('procedimiento'),
+            'registro_estructurado':True,'detalle_completo':objeto_valido,'url':url,'evidencia_url':url,'documentos':docs,
             'fecha_publicacion_texto':f.get('date_created_licitacion'),'id_origen':f.get('id_licitacion'),'numero_oficial_sin_interpretar':f.get('numero_licitacion')})
     return resultado,total,data['data']
 

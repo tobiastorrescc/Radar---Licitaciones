@@ -119,5 +119,8 @@ class DescubrimientoTests(unittest.TestCase):
         r=extraer_funes(json.dumps(datos),'https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php')[0][0]
         self.assertEqual(r['numero_procedimiento'],'14/2026');self.assertEqual(r['tipo_procedimiento'],'concurso de precios')
         self.assertEqual(r['objeto'],datos['data'][0]['titulo_licitacion']);self.assertTrue(r['detalle_completo'])
+        datos['data'][0]['titulo_licitacion']='F'
+        r=extraer_funes(json.dumps(datos),'https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php')[0][0]
+        self.assertIsNone(r['objeto']);self.assertFalse(r['detalle_completo'])
 
 if __name__=='__main__':unittest.main()
