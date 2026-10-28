@@ -1,12 +1,93 @@
 {
-  "fecha": "2026-10-27T11:32:24.839845+00:00",
+  "fecha": "2026-10-28T11:37:24.278035+00:00",
   "fuentes": [
     {
       "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
-      "fecha": "2026-10-27T11:32:24.839845+00:00",
+      "fecha": "2026-10-28T11:37:24.278035+00:00",
       "paginas_visitadas": 40,
-      "candidatos": 222,
-      "errores": []
+      "candidatos": 68,
+      "errores": [
+        {
+          "url": "https://www.rosario.gob.ar/inicio/oferentes-yo-adjudicatarios-de-compras-y-licitaciones",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/sitio/licitaciones/resBusLicitacionesAperVisual.do",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=evaluacion",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=1",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38598",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38620",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38581",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38551",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38552",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38593",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38606",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38440",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/37368",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38598?sid=2674cc11-818c-448a-aba7-255737714af3",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38604?sid=2674cc11-818c-448a-aba7-255737714af3",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38575?sid=2674cc11-818c-448a-aba7-255737714af3",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38617?sid=2674cc11-818c-448a-aba7-255737714af3",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38574?sid=2674cc11-818c-448a-aba7-255737714af3",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38602?sid=2674cc11-818c-448a-aba7-255737714af3",
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38589?sid=2674cc11-818c-448a-aba7-255737714af3",
+          "error": "<urlopen error timed out>"
+        }
+      ]
     }
   ]
 }
