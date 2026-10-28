@@ -34,7 +34,8 @@
     "conector": "publicaciones",
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "adaptador": "epe"
+    "adaptador": "epe",
+    "capturar_respuestas": true
   },
   "https://www.aguassantafesinas.com.ar/portal/licitaciones": {
     "organismo": "ASSA",

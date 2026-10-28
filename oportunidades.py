@@ -205,7 +205,16 @@ def procedimiento_canonico(r):
                 if m[1].upper()==prefijo and int(m[3])==serial and (not anio or m[2]==anio) and len(m.group().split('-'))>3:candidatos[clave(m)]=m
         if len(candidatos)==1:return next(iter(candidatos))
     if originales:return clave(originales[0])
-    if not anual:return None
+    if not anual:
+        from urllib.parse import urlsplit
+        # Numeración propia de EPE, acreditada por ficha con objeto dedicado.
+        # No relajar la detección de teléfonos/números sueltos en otros portales.
+        host=urlsplit(r.get('evidencia_url') or '').hostname
+        if (host in ('www.epe.santafe.gov.ar','epe.santafe.gov.ar')
+                and r.get('registro_estructurado') and re.fullmatch(r'\d{10}',numero)
+                and tipo in ('licitacion publica','licitacion privada','concurso privado','compra menor','compra directa','contratacion directa')):
+            return tipo+' '+numero
+        return None
     if not tipo:
         import extractores
         ps=extractores.procesos(r.get('procedimiento') or r.get('titulo') or '')

@@ -221,12 +221,17 @@ def extraer(html,url,config=None):
         if config.get('tipo_tabla') and campos_tabla.get('objeto'):objeto=campos_tabla['objeto']
         if not objeto:objeto=texto
         evento='|'.join(sorted(set(EVENTO.findall(norm(texto))))) or None
+        epe=(config.get('adaptador')=='epe' and urlsplit(url).hostname in ('www.epe.santafe.gov.ar','epe.santafe.gov.ar')
+             and re.fullmatch(r'\d{10}',p['numero']) is not None
+             and any(x.tag=='button' and x.text==objeto for x in n.iter()))
+        apertura_epe=re.search(r'\b\d{1,2}-\d{1,2}-20\d{2}\b',texto) if epe else None
         registros.append({'titulo':texto,'objeto':objeto,'procedimiento':p['procedimiento'],
             'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'url':destino,
             'presupuesto_texto':next((v for k,v in campos_tabla.items() if k.startswith('presupuesto')),None),
             'fecha_publicacion_texto':next((x.attrs.get('datetime') or x.text for x in n.iter() if x.tag=='time' and ('published' in x.attrs.get('class','') or x.attrs.get('itemprop')=='datePublished')),None),
             'documentos':documents,'evento_publicado':evento,'llamado_especial':bool(evento),
-            'fecha_apertura_texto':next((x.text for x in n.children if isinstance(x,Nodo) and x.tag=='td' and re.search(r'\d{1,2}/\d{1,2}/20\d{2}',x.text)),None) if config.get('tipo_tabla') else None,
+            'fecha_apertura_texto':apertura_epe[0] if apertura_epe else (next((x.text for x in n.children if isinstance(x,Nodo) and x.tag=='td' and re.search(r'\d{1,2}/\d{1,2}/20\d{2}',x.text)),None) if config.get('tipo_tabla') else None),
+            'registro_estructurado':bool(epe),
             'evidencia_url':url,'detalle_completo':bool(set(re.findall(r'\b[a-z]{4,}\b',norm(objeto)[p['end']:] if objeto==texto else norm(objeto)))-{'pliego','descargar','anexo','numero','apertura','fecha','vigente','tramite','documento','descarga'}),
             'situacion_publicada':situacion(texto)})
     # Mismo procedimiento repetido en menús, encabezados, pliegos y anexos: uno con todos sus enlaces.
