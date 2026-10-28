@@ -23,9 +23,9 @@ No hay filtros por monto, rubro, modalidad o financiación, ni cálculos de cost
 
 ## Prueba real doble
 
-En el PR, el workflow existente `Radar diario de licitaciones` ejecuta las pruebas automáticas y dos consultas reales consecutivas con un estado nuevo bajo `work/controlado/`. No restaura producción ni un piloto anterior. Comprueba que la primera no genere alertas masivas y que ninguna identidad vista en la primera reaparezca como nueva en la segunda. Puede haber datos completados, modificaciones o primeras detecciones adicionales por variación de portales parciales; se registran con su categoría y evidencia.
+En el PR, el workflow existente ejecuta las pruebas automáticas y solicita dos `workflow_dispatch` independientes. La primera importa una semilla auditada cuando el canal de validación está vacío y publica su respaldo incremental en Git. La segunda usa otro runner, restaura esa cadena y consulta nuevamente. Comprueba que no desaparezcan procedimientos ni versiones y que ninguna identidad anterior reaparezca como nueva. El canal de validación permanece separado del diario y de producción. Ver [resultados de persistencia](RESULTADOS_PERSISTENCIA.md).
 
-Después reproduce el segundo conjunto de datos, sin otra consulta de red, para comprobar estabilidad semántica: cero nuevas detecciones y cero cambios ante los mismos datos. Verifica hashes de los cuatro archivos de producción antes y después. El informe `prueba_doble.json` conserva por separado las dos consultas de red y esa reproducción adicional. No se exige que la web permanezca inmóvil entre consultas.
+El modo local `--doble` se conserva como diagnóstico adicional: usa un directorio nuevo, realiza dos consultas reales sobre el mismo SQLite y reproduce el segundo conjunto sin otra consulta de red para comprobar estabilidad semántica. Verifica que la inicialización no alerte registros históricos y que el mismo conjunto produzca cero nuevas detecciones/cambios. La auditoría #116 usó ese modo; la validación actual entre runners está documentada por separado. Ambos mecanismos verifican hashes de los archivos de producción antes/después y conservan sus evidencias.
 
 ```bash
 python tools/radar_controlado.py --salida work/prueba-doble --doble
