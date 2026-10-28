@@ -15,7 +15,7 @@ La primera corrida guarda todas las publicaciones como **LINEA_BASE**, con cero 
 - Datos completados cuando antes faltaba una comprobación; se distingue de un cambio editorial.
 - Sin cambios: no genera otra alerta.
 
-SQLite conserva el registro actual, versiones inmutables y eventos con la versión exacta correspondiente. Una caída o un campo vacío no borra datos anteriores. La vigencia calculada por el paso del tiempo no es una modificación publicada. Si cambia una versión comprobada de un documento, las condiciones de pago antiguas no se mantienen como actuales sin respaldo. Se conserva su versión histórica.
+SQLite conserva el registro actual, versiones inmutables y eventos con la versión exacta correspondiente. Una caída o un campo vacío no borra datos anteriores. La vigencia calculada por el paso del tiempo no es una modificación publicada. Tampoco lo son los contadores de visitas de Timbúes o de descargas de Armstrong comprobados en la auditoría #107; la evidencia original permanece guardada. Pasar de un resumen a una ficha más completa se informa como datos completados, sin afirmar una edición del organismo. Si cambia una versión comprobada de un documento, las condiciones de pago antiguas no se mantienen como actuales sin respaldo. Se conserva su versión histórica.
 
 Una corrida incompleta se identifica como tal. Cero novedades con errores no se presenta como una consulta exitosa sin novedades. Los registros no recuperados hoy permanecen en el catálogo, con fecha de última detección y marca de que no se confirmaron en esta corrida. Abiertas y próximas a vencer se calculan sobre los últimos datos conocidos; hay que verificar las fuentes con incidencias antes de ofertar.
 

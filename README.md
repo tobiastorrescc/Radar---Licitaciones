@@ -6,6 +6,8 @@ Radar de publicaciones públicas sin filtros por rubro, monto ni financiación y
 
 Ver [puesta en marcha controlada](PUESTA_EN_MARCHA_CONTROLADA.md). En esta rama, Actions prueba dos ejecuciones reales consecutivas con estado SQLite aislado: primera línea de base sin alertas masivas, segunda incremental y reproducción estable. Descargar el artefacto **radar-controlado** y abrir **index.html** para consultar todo el catálogo. Producción está cerrada por defecto; no se fusiona ni activa en esta etapa.
 
+Resultado y auditoría individual de las 74 fuentes: [validación controlada](VALIDACION_CONTROLADA.md).
+
 ## Ejecutar
 
 Python 3.11+ y `pdftotext` (paquete `poppler-utils`). Desde la raíz:
@@ -28,7 +30,7 @@ OPERATIVA requiere publicaciones numeradas detectadas; SIN_PUBLICACIONES_NUEVAS 
 
 HTML de enlaces, filas y bloques, paginación explícita y PDF con texto. El conector heredado se conserva para compatibilidad, con candidatos no verificados. Nuevas fuentes usan `publicaciones`. PDF escaneado requiere OCR pendiente; JavaScript, formularios ASP.NET y APIs necesitan adaptadores específicos comprobados. Cada portal necesita todavía fixtures y contraste en vivo antes de declararse operativo.
 
-Deduplicación persistente por fuente/URL/procedimiento/llamado/situación, conservando primeras y últimas detecciones. Cambios de llamado o declaración de desierta pueden generar una novedad. No hay garantía de deduplicación semántica entre portales o URLs documentales diferentes. Los campos comerciales sin evidencia permanecen nulos. El orden orientativo prioriza pago contado/contra entrega y llamados especiales; no es una estimación de rentabilidad ni confirma que el llamado siga abierto.
+Deduplicación persistente por provincia, organismo, procedimiento y convocatoria, aunque existan diferentes URLs. La primera consulta controlada establece una línea de base; las siguientes distinguen nuevos procedimientos, recuperación histórica, modificaciones y datos completados, conservando versiones y primeras/últimas detecciones. Cuando falta numeración comprobable se conserva una identidad más restrictiva y no se promete deduplicación semántica entre portales. Los contadores de visitas/descargas observados en Timbúes y Armstrong no generan cambios de contenido. Los campos comerciales sin evidencia permanecen nulos. El orden orientativo prioriza pago contado/contra entrega y llamados especiales; no es una estimación de rentabilidad ni confirma que el llamado siga abierto.
 
 ## Automatización
 
