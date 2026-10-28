@@ -148,5 +148,12 @@ class IncrementalTests(unittest.TestCase):
             with patch.object(piloto,'fuentes_configuradas',return_value=[]),patch.object(piloto,'ejecutar',side_effect=[a,b]),patch.object(piloto.comprobar_pliegos,'comprobar',return_value=[]):
                 r=piloto.prueba_doble(raiz)
             self.assertTrue(r['correcta']);self.assertEqual(r['segunda']['novedades'],0);piloto.comprobar_estado(raiz)
+    def test_resumen_html_no_rebaja_la_calidad_del_pliego_en_corridas_posteriores(self):
+        inc.registrar(self.db,[self.fila(objeto='Objeto detallado del pliego oficial',rango_evidencia=3)],self.informe())
+        resumen=self.fila(objeto='Resumen de la ficha',rango_evidencia=1)
+        a=inc.registrar(self.db,[resumen],self.informe('dos'));b=inc.registrar(self.db,[resumen],self.informe('tres'))
+        self.assertEqual(a['novedades'],0);self.assertEqual(b['novedades'],0)
+        actual=json.loads(self.db.execute('SELECT dato FROM procedimientos').fetchone()[0])
+        self.assertEqual(actual['rango_evidencia'],3);self.assertEqual(actual['objeto'],'Objeto detallado del pliego oficial')
 
 if __name__=='__main__':unittest.main()

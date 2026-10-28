@@ -67,6 +67,8 @@ def consolidar(anterior,nuevo):
     mejor=calidad(nuevo)>=calidad(anterior)
     for k,v in entrada.items():
         if v is None or v=='' or v==[]:continue
+        if k=='rango_evidencia':salida[k]=max(anterior.get(k,0),v);continue
+        if k=='detalle_completo':salida[k]=bool(anterior.get(k) or v);continue
         if k in ('objeto','presupuesto','fecha_apertura','fecha_publicacion','hora_apertura') and salida.get(k) and not mejor:continue
         if k in ('fecha_apertura_texto','fecha_publicacion_texto') and salida.get(k) and not mejor:continue
         if k=='comprobacion_pliego' and v.get('estado')!='DOCUMENTO_ACCESIBLE':continue
