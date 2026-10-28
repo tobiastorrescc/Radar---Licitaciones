@@ -331,6 +331,10 @@ def extraer(html,url,config=None):
         from extractores_lotes import encabezados
         secciones=encabezados(raiz,url,config)
         if secciones:agrupados={(r['procedimiento'],r['evento_publicado']):r for r in secciones}
+    if config.get('adaptador')=='ramirez':
+        from extractores_lotes import fichas_ramirez
+        # No conservar candidatos genéricos procedentes de cifras del menú.
+        agrupados={(r['procedimiento'],r['evento_publicado']):r for r in fichas_ramirez(raiz,url)}
     if config.get('adaptador')=='zarate':
         from extractores_lotes import acordeones_zarate
         secciones=acordeones_zarate(raiz,url)

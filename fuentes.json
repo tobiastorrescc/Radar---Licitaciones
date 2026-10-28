@@ -875,12 +875,13 @@
     "provincia": "Entre Ríos",
     "tipo_portal": "html_pdf",
     "conector": "publicaciones",
+    "adaptador": "ramirez",
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "seguir_patrones": [
-      "/licitaciones-(publicas|privadas)/?$"
+      "/(?:licitaciones-(?:publicas|privadas)|concursos)(?:/[0-9]{4})?/?$"
     ],
     "descubrir_menu": true,
     "descubrir_contrataciones": true

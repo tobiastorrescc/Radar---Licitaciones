@@ -20,7 +20,7 @@ permissions:
   contents: read
 concurrency:
   group: radar-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }} # Sólo auditorías descartables del PR; nunca el piloto manual ni producción.
 jobs:
   pruebas:
     runs-on: ubuntu-latest

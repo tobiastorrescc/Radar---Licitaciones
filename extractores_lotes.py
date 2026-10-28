@@ -2,6 +2,44 @@
 from urllib.parse import urlsplit, unquote
 import re
 
+def fichas_ramirez(raiz,url):
+    """Número en h2; modalidad en la sección, nunca en teléfonos o importes."""
+    from extractores import norm,procesos,ADJUNTOS,EVENTO,excluido
+    cabeceras=[re.sub(r'^historico:\s*','',norm(n.text)) for n in raiz.iter()
+               if n.tag=='h1' or (n.tag=='h2' and norm(n.text).startswith('historico:'))]
+    tipos={'licitaciones publicas':'licitacion publica',
+           'licitaciones privadas':'licitacion privada',
+           'concursos de precios':'concurso de precios'}
+    tipo=next((tipos[t] for t in cabeceras if t in tipos),None)
+    if not tipo:return []
+    registros=[]
+    for ficha in raiz.iter():
+        if not ficha.clase('ficha-listado') or excluido(ficha):continue
+        numeros=[n.text for n in ficha.iter() if n.tag=='h2' and re.fullmatch(r'\d{1,6}\s*/\s*20\d{2}',n.text)]
+        objetos=[n.text for n in ficha.iter() if n.tag=='h3' and n.text]
+        if len(numeros)!=1 or len(objetos)!=1:continue
+        p=procesos(tipo+' '+numeros[0])[0]
+        campos={}
+        for dl in ficha.iter():
+            if dl.tag!='dl':continue
+            etiquetas=[norm(n.text).rstrip(':') for n in dl.iter() if n.tag=='dt']
+            valores=[n.text for n in dl.iter() if n.tag=='dd']
+            if len(etiquetas)==1 and len(valores)==1:campos[etiquetas[0]]=valores[0]
+        docs=[{'url':l['url'],'titulo':l['texto']} for l in ficha.enlaces(url)
+              if urlsplit(l['url']).path.lower().endswith(ADJUNTOS)]
+        evento='|'.join(sorted(set(EVENTO.findall(norm(ficha.text))))) or None
+        registros.append({'titulo':p['procedimiento']+' '+objetos[0],
+            'objeto':objetos[0],'procedimiento':p['procedimiento'],
+            'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],
+            'url':url,'evidencia_url':url,'documentos':docs,
+            'fecha_apertura_texto':campos.get('apertura'),
+            'presupuesto_texto':campos.get('presupuesto'),
+            'fecha_publicacion_texto':None,
+            'situacion_publicada':'ADJUDICADA' if campos.get('adjudicado') else None,
+            'evento_publicado':evento,'llamado_especial':bool(evento),
+            'campos_oficiales':campos,'detalle_completo':True,'registro_estructurado':True})
+    return registros
+
 def encabezados(raiz,url,config):
     from extractores import Nodo,procesos,norm,excluido,situacion,ADJUNTOS,EVENTO,url_publica
     resultados=[]
