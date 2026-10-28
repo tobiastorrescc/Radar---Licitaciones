@@ -1615,7 +1615,7 @@
     },
     "seguir_patrones": [
       "/transparencia/licitaciones/",
-      "/(?:[^/?]*licitacion[^/?]*|[^/?]*concurso-de-precios[^/?]*)/?$"
+      "(?i)/(?:[^/?]*licitacion[^/?]*|[^/?]*concurso-de-precios[^/?]*)/?$"
     ],
     "descubrir_menu": true,
     "descubrir_contrataciones": true,

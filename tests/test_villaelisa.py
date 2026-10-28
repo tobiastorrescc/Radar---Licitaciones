@@ -2,6 +2,9 @@ import unittest
 import extractores
 import oportunidades as o
 from pathlib import Path
+import json
+from unittest.mock import patch
+import conectores
 URL='https://villaelisa.gov.ar/transparencia/licitaciones/concursos-de-precios/'
 # Estructura mínima sintética basada en las columnas de la sección oficial.
 def fila(n,objeto):
@@ -55,3 +58,18 @@ class VillaElisaTests(unittest.TestCase):
   html=unescape(html).replace(objeto,'')
   r,=self.extraer(html)
   self.assertIsNone(r['objeto']);self.assertFalse(r['detalle_completo'])
+ def test_portada_sigue_pdf_real_publicado_sin_usarla_como_objeto(self):
+  raiz='https://villaelisa.gov.ar/'
+  # Dirección publicada en la portada capturada en #123; contenido PDF sintético.
+  pdf=raiz+'wp-content/uploads/2026/10/2026_004-_Licitacion-UTILITARIO-5-PERSONAS-2do-llamado-con-marcadeagua.pdf'
+  config=json.loads(Path('fuentes.json').read_text())['https://villaelisa.gov.ar/transparencia/']
+  config={**config,'urls_inicio':[raiz]};pedidos=[]
+  def fetch(url):
+   pedidos.append(url)
+   if url==raiz:return ('<h1>Portada general</h1><a href="'+pdf+'">LICITACIÓN</a>').encode(),'text/html',url
+   self.assertEqual(url,pdf);return b'%PDF-fixture-villaelisa','application/pdf',url
+  with patch('cache_documentos.leer_texto',return_value=('Licitacion Publica N 4/2026 Segundo llamado. Objeto: Adquisicion de vehiculo','PDF_TEXTO')):
+   r=conectores.explorar('https://villaelisa.gov.ar/transparencia/',config,fetch=fetch)
+  self.assertEqual(r['estado'],'OPERATIVA');self.assertEqual(pedidos,[raiz,pdf])
+  p,=r['oportunidades'];self.assertEqual(p['convocatoria'],'2');self.assertEqual(p['url'],pdf)
+  self.assertNotIn('Portada general',p['objeto'])
