@@ -134,10 +134,16 @@ def situacion(texto):
 def extraer(html,url,config=None):
     config=config or {}
     dom=DOM(html);raiz=dom.root
+    if config.get('adaptador')=='villa-elisa' and not urlsplit(url).path.strip('/'):
+        # La portada enlaza avisos; no convertir toda su navegación en un objeto.
+        return [],dom.root.enlaces(url),dom
     regiones=[n for n in raiz.iter() if n.tag=='main']
     # Los anexos de San Nicolás están en aside; son contenido de contratación real.
     if config.get('incluir_aside'):regiones=[]
     if regiones and not config.get('usar_documento_entero'):raiz=regiones[0]
+    if config.get('adaptador')=='villa-elisa':
+        articulos=[n for n in raiz.iter() if n.tag=='article' and n.clase('type-post')]
+        if len(articulos)==1:raiz=articulos[0]
     if config.get('adaptador')=='junin':
         paneles=[n for n in raiz.iter() if n.clase('panel-info') and procesos(n.text)]
         if len(paneles)==1:raiz=paneles[0]

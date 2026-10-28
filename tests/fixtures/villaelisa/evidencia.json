@@ -1,0 +1,24 @@
+[
+  {
+    "url": "https://villaelisa.gov.ar/transparencia/licitaciones/concursos-de-precios/",
+    "final": "https://villaelisa.gov.ar/transparencia/licitaciones/concursos-de-precios/",
+    "tipo": "text/html; charset=UTF-8",
+    "sha256": "3b6fbdb25890bfc58203f731c67d8498bc1c5fff8a1d6880af6c5136c8b19705",
+    "metodo": "GET",
+    "parametros": null,
+    "fixture": "concursos.html",
+    "alcance": "Fragmento de h1 y primeras filas, no documento completo",
+    "run_id": 40740833821
+  },
+  {
+    "url": "https://villaelisa.gov.ar/transparencia/licitaciones/licitaciones-privadas/",
+    "final": "https://villaelisa.gov.ar/transparencia/licitaciones/licitaciones-privadas/",
+    "tipo": "text/html; charset=UTF-8",
+    "sha256": "89c7972f7dbea9f76e4fa748a7fca62cd08206d904d4f5a844edacb0aa16c381",
+    "metodo": "GET",
+    "parametros": null,
+    "fixture": "privadas.html",
+    "alcance": "Fragmento de h1 y primeras filas, no documento completo",
+    "run_id": 40740833821
+  }
+]

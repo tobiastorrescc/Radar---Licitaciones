@@ -1,6 +1,7 @@
 import unittest
 import extractores
 import oportunidades as o
+from pathlib import Path
 URL='https://villaelisa.gov.ar/transparencia/licitaciones/concursos-de-precios/'
 # Estructura mínima sintética basada en las columnas de la sección oficial.
 def fila(n,objeto):
@@ -27,3 +28,30 @@ class VillaElisaTests(unittest.TestCase):
   html='<h1>Concursos de precios</h1>'+fila('1/26','Hormigón')
   html=html.replace('pliego1-26.pdf','decreto1-26.pdf');r,=self.extraer(html)
   self.assertEqual(len(r['documentos']),1);self.assertIsNone(r['enlace_pliego'])
+ def test_grilla_real123_separa_datos_y_pliegos_por_fila(self):
+  html=(Path(__file__).parent/'fixtures/villaelisa/concursos.html').read_text()
+  rs=self.extraer(html)
+  self.assertEqual(len(rs),2)
+  self.assertEqual(rs[0]['objeto'],'ADQUISICIÓN DE HORMIGÓN ELABORADO H21')
+  self.assertEqual(rs[1]['objeto'],'ADQUISICIÓN DE 2000 M3 DE BROZA GRILLADA')
+  self.assertIn('001-26',rs[0]['enlace_pliego']);self.assertIn('002-26',rs[1]['enlace_pliego'])
+  self.assertTrue(all('CONCEPTO' not in r['objeto'] for r in rs))
+ def test_privada_real123_numero_sin_rotulo_modalidad(self):
+  html=(Path(__file__).parent/'fixtures/villaelisa/privadas.html').read_text()
+  r,=self.extraer(html)
+  self.assertEqual(r['tipo_procedimiento'],'licitacion privada')
+  self.assertEqual(r['numero_procedimiento'],'1/2026')
+  self.assertNotIn('DECRETO',r['objeto'])
+ def test_portada_real_no_se_clasifica_como_procedimiento(self):
+  html='<h1>Somos elisenses</h1><div>Licitación Pública N° 004/26 (Segundo llamado) <a href="/segundo-llamado-a-licitacion-publica/">LICITACIÓN</a></div><footer>Teléfonos</footer>'
+  rs,links,_=extractores.extraer(html,'https://villaelisa.gov.ar/',{'adaptador':'villa-elisa'})
+  self.assertEqual(rs,[]);self.assertEqual(len(links),1)
+ def test_grilla_sin_concepto_no_se_declara_completa(self):
+  html=(Path(__file__).parent/'fixtures/villaelisa/privadas.html').read_text()
+  # Quitar sólo el dato de concepto de la fila real, conservando sus etiquetas.
+  dom=extractores.DOM(html)
+  objeto=next(n.text for n in dom.root.iter() if n.clase('dvmd_tm_tdata') and n.clase('dvmd_tm_col_4'))
+  from html import unescape
+  html=unescape(html).replace(objeto,'')
+  r,=self.extraer(html)
+  self.assertIsNone(r['objeto']);self.assertFalse(r['detalle_completo'])

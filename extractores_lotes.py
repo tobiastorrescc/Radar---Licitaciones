@@ -234,6 +234,36 @@ def fichas_villaelisa(raiz,url):
     tipos={'licitaciones publicas':'licitacion publica','licitaciones privadas':'licitacion privada','concursos de precios':'concurso de precios'}
     modo=next((tipos.get(norm(n.text)) for n in raiz.iter() if n.tag=='h1' and norm(n.text) in tipos),None)
     if not modo:return []
+    grillas=[n for n in raiz.iter() if n.clase('dvmd_tm_rblock') and not excluido(n)]
+    if grillas:
+        registros=[]
+        for bloque in grillas:
+            celdas={}
+            for celda in bloque.iter():
+                col=re.search(r'\bdvmd_tm_col_(\d+)\b',celda.attrs.get('class',''))
+                if col and celda.clase('dvmd_tm_tdata'):celdas[int(col[1])]=celda
+            if 0 not in celdas:continue
+            numero=celdas[0].text
+            if re.fullmatch(r'\d{1,6}\s*/\s*(?:20)?\d{2}',numero):numero=modo+' '+numero
+            ps=procesos(numero)
+            if len(ps)!=1:continue
+            p=ps[0];objeto=celdas[4].text if 4 in celdas else None
+            docs={}
+            for col,celda in celdas.items():
+                if col not in (1,2,3):continue
+                for l in celda.enlaces(url):
+                    if not urlsplit(l['url']).path.lower().endswith(ADJUNTOS):continue
+                    es_decreto=col in (1,2) or 'decreto' in norm(l['texto']) or 'decreto' in norm(urlsplit(l['url']).path.rsplit('/',1)[-1])
+                    titulo=('Decreto ' if es_decreto else 'Pliego ')+l['texto']
+                    if l['url'] in docs and docs[l['url']]['titulo'].startswith('Decreto '):continue
+                    docs[l['url']]={'url':l['url'],'titulo':titulo}
+            evento='|'.join(sorted(set(EVENTO.findall(norm(bloque.text))))) or None
+            registros.append({'titulo':p['procedimiento']+' '+(objeto or ''),'objeto':objeto,
+                'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'procedimiento':p['procedimiento'],
+                'url':url,'evidencia_url':url,'documentos':list(docs.values()),'detalle_completo':bool(objeto),
+                'registro_estructurado':bool(objeto),'evento_publicado':evento,'llamado_especial':bool(evento),
+                'fecha_apertura_texto':None,'fecha_publicacion_texto':None})
+        return registros
     def numero(n):
         if excluido(n) or n.tag not in ('p','span','td'):return None
         t=n.text
