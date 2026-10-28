@@ -67,7 +67,8 @@
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "adaptador": "epe"
+    "adaptador": "epe",
+    "capturar_respuestas": true
   },
   {
     "id": "fuente-004",
@@ -1636,10 +1637,11 @@
       "url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/"
     },
     "seguir_patrones": [
-      "/licitaciones-(publicas|privadas)/?$"
+      "/(?:licitaciones-(?:publicas|privadas)|concursos)(?:/[0-9]{4})?/?$"
     ],
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "adaptador": "ramirez"
   },
   {
     "id": "fuente-070",

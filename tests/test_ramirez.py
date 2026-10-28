@@ -9,6 +9,13 @@ BASE='https://www.generalramirez.gob.ar/licitaciones-y-concursos/'
 FIXTURES=Path(__file__).parent/'fixtures'/'ramirez'
 
 class RamirezTests(unittest.TestCase):
+    def test_inventario_usado_por_supervisor_conserva_configuracion_del_conector(self):
+        config=json.loads(Path('fuentes.json').read_text())
+        inventario={f['url']:f for f in json.loads(Path('inventario/fuentes.json').read_text())}
+        for url in (BASE,'https://www.epe.santafe.gov.ar/app2/aperturas'):
+            for campo in ('adaptador','seguir_patrones','capturar_respuestas'):
+                self.assertEqual(inventario[url].get(campo),config[url].get(campo))
+
     def extraer(self,texto,url=BASE+'licitaciones-publicas/'):
         rs,_,_=extractores.extraer(texto,url,{'adaptador':'ramirez'})
         return [oportunidades.normalizar(r) for r in rs]
