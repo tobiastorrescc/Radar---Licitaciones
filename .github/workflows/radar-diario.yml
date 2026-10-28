@@ -1,4 +1,5 @@
 name: Radar diario de licitaciones
+run-name: Radar ${{ inputs.modo || github.event_name }} ${{ inputs.clave_validacion }} ${{ inputs.paso_validacion }}
 on:
   workflow_dispatch:
     inputs:
@@ -11,6 +12,17 @@ on:
         description: 'Crear primera línea de base controlada sólo si no hay estado previo'
         type: boolean
         default: false
+      canal:
+        description: 'piloto: estado diario; validacion: prueba aislada entre ejecuciones independientes'
+        type: choice
+        options: [piloto, validacion]
+        default: piloto
+      clave_validacion:
+        description: 'SHA de la revisión para una validación aislada'
+        type: string
+      paso_validacion:
+        description: 'Identificador de la consulta de validación'
+        type: string
   schedule:
     - cron: '0 11 * * *' # 08:00 Argentina; GitHub puede retrasar la ejecucion
   pull_request:
@@ -95,13 +107,13 @@ jobs:
         run: exit 1
 
   verificar-fuentes-rama:
-    if: (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) || (github.event_name == 'workflow_dispatch' && inputs.modo != 'produccion') || (github.event_name == 'schedule' && vars.RADAR_CONTROLADO_HABILITADO == 'true')
+    if: github.ref == 'refs/heads/mejora/radar-auditable' && github.event_name == 'workflow_dispatch' && inputs.modo != 'produccion'
     needs: pruebas
     runs-on: ubuntu-latest
     timeout-minutes: 35
     permissions:
       actions: read
-      contents: read
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -116,8 +128,26 @@ jobs:
           path: work/cache-documentos
           key: textos-v1-${{ github.run_id }}
           restore-keys: textos-v1-
+      - name: Seleccionar estado del piloto sin producción
+        env:
+          CANAL: ${{ inputs.canal || 'piloto' }}
+          CLAVE: ${{ inputs.clave_validacion }}
+        run: |
+          python - <<'PYCODE' >> "$GITHUB_ENV"
+          import os,re
+          canal=os.environ['CANAL'];clave=os.environ['CLAVE']
+          if canal not in ('piloto','validacion'):raise SystemExit('Canal inválido')
+          if canal=='validacion' and not re.fullmatch('[a-f0-9]{40}',clave):raise SystemExit('Clave de validación inválida')
+          print('RESPALDO=piloto_respaldo/'+('diario' if canal=='piloto' else 'validaciones/'+clave))
+          print('RAMA_PILOTO=mejora/radar-auditable')
+          PYCODE
+      - name: Restaurar respaldo duradero de Git y comprobar toda la cadena
+        id: duradero
+        run: |
+          python tools/respaldo_piloto.py restaurar --salida work/controlado --respaldo "$RESPALDO"
+          if [ -f work/controlado/estado.sqlite3 ]; then echo 'restaurado=true' >> "$GITHUB_OUTPUT"; fi
       - name: Localizar último estado del piloto diario de esta rama
-        if: inputs.modo == 'controlado' || github.event_name == 'schedule'
+        if: steps.duradero.outputs.restaurado != 'true' && inputs.canal != 'validacion' && inputs.modo == 'controlado'
         id: anterior
         uses: actions/github-script@v7
         with:
@@ -145,8 +175,10 @@ jobs:
       - name: Verificar integridad del estado restaurado
         if: steps.anterior.outputs.run_id != ''
         run: python tools/radar_controlado.py --salida work/controlado --comprobar-estado
+      - name: Registrar evidencia antes de la consulta independiente
+        run: python tools/respaldo_piloto.py antes --salida work/controlado --respaldo "$RESPALDO"
       - name: Dos ejecuciones reales consecutivas en estado nuevo y aislado
-        if: github.event_name == 'pull_request' || inputs.modo == 'doble'
+        if: inputs.modo == 'doble'
         timeout-minutes: 28
         env:
           PYTHONUNBUFFERED: '1'
@@ -161,6 +193,10 @@ jobs:
           argumentos=()
           if [ "$INICIALIZAR_PILOTO" = 'true' ]; then argumentos+=(--inicializar); fi
           python -u tools/radar_controlado.py --salida work/controlado --total 600 --documentos 120 "${argumentos[@]}"
+      - name: Comprobar continuidad y ausencia de duplicados del historial restaurado
+        if: always()
+        id: continuidad
+        run: python tools/respaldo_piloto.py despues --salida work/controlado --respaldo "$RESPALDO"
       - name: Resumen para consulta en Actions
         if: always()
         run: |
@@ -181,6 +217,28 @@ jobs:
       - name: Sellar estado recuperable incluso ante incidencias
         if: always()
         run: python tools/radar_controlado.py --salida work/controlado --sellar-estado
+      - name: Preparar respaldo incremental y verificar restauración completa
+        id: respaldo
+        if: always() && inputs.modo == 'controlado'
+        run: |
+          if [ -f work/controlado/estado.sqlite3 ]; then
+            python tools/respaldo_piloto.py exportar --salida work/controlado --respaldo "$RESPALDO"
+          else
+            echo 'No hay estado recuperable; no se declara persistencia exitosa.'
+            exit 1
+          fi
+      - name: Persistir sólo el respaldo del piloto en su rama
+        if: always() && steps.respaldo.outcome == 'success' && steps.continuidad.outcome == 'success' && inputs.modo == 'controlado'
+        run: |
+          test "$RAMA_PILOTO" = 'mejora/radar-auditable'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- "$RESPALDO"
+          if ! git diff --cached --quiet; then
+            git commit -m 'Guardar respaldo incremental del piloto [skip ci]'
+            git pull --rebase origin "$RAMA_PILOTO"
+            git push origin "HEAD:$RAMA_PILOTO"
+          fi
       - name: Conservar auditoría, catálogo y resultados parciales
         if: always()
         uses: actions/upload-artifact@v4
@@ -193,9 +251,45 @@ jobs:
         if: always() && (inputs.modo == 'controlado' || github.event_name == 'schedule')
         uses: actions/upload-artifact@v4
         with:
-          name: estado-controlado
+          name: estado-controlado-${{ inputs.canal || 'piloto' }}
           path: |
             work/controlado/estado.sqlite3
             work/controlado/estado_manifest.json
           if-no-files-found: error
           retention-days: 90
+
+  validar-disparador-y-persistencia:
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'mejora/radar-auditable'
+    needs: pruebas
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - name: Dos ejecuciones workflow_dispatch independientes del piloto aislado
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const rama='mejora/radar-auditable';
+            const clave=context.payload.pull_request.head.sha;
+            const resultados=[];
+            for(const paso of ['1','2']) {
+              const inicio=new Date(Date.now()-60000).toISOString();
+              await github.rest.actions.createWorkflowDispatch({...context.repo,workflow_id:'radar-diario.yml',ref:rama,
+                inputs:{modo:'controlado',inicializar:paso==='1'?'true':'false',canal:'validacion',clave_validacion:clave,paso_validacion:paso}});
+              let terminado=false,ultimo='';
+              for(let intento=0;intento<88;intento++) {
+                await new Promise(resolve=>setTimeout(resolve,15000));
+                const {data}=await github.rest.actions.listWorkflowRuns({...context.repo,workflow_id:'radar-diario.yml',event:'workflow_dispatch',branch:rama,created:`>=${inicio}`,per_page:50});
+                const run=data.workflow_runs.find(r=>r.display_title===`Radar controlado ${clave} ${paso}`);
+                if(!run) continue;
+                if(run.status!==ultimo) {core.info(`Paso ${paso}: ${run.html_url} ${run.status}`);ultimo=run.status;}
+                if(run.status==='completed') {
+                  if(run.conclusion!=='success') throw new Error(`Falló paso ${paso}: ${run.html_url} (${run.conclusion})`);
+                  resultados.push(run.html_url);terminado=true;break;
+                }
+              }
+              if(!terminado) throw new Error(`Plazo agotado esperando paso ${paso}; revisar la ejecución, no se presume éxito.`);
+            }
+            await core.summary.addHeading('Continuidad real entre ejecuciones independientes').addList(resultados).addRaw('Ambas usan el disparador del piloto; la segunda restaura el respaldo versionado en Git. Producción no fue activada.').write();

@@ -444,7 +444,8 @@
     "conector": "publicaciones",
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "tipo_tabla": "Licitación Privada"
+    "tipo_tabla": "Licitación Privada",
+    "capturar_respuestas": true
   },
   "https://www.crespo.gob.ar/category/licitacion-publica/": {
     "organismo": "Municipalidad de Crespo",
@@ -457,7 +458,8 @@
     "tipo_tabla": "Licitación Pública",
     "seguir_patrones": [
       "/licitaciones-publicas-\\d{4}/"
-    ]
+    ],
+    "capturar_respuestas": true
   },
   "https://chajari.gob.ar/": {
     "organismo": "Municipalidad de Chajarí",
@@ -525,7 +527,8 @@
     "seguir_patrones": [
       "/licitaciones-\\d{4}/?$"
     ],
-    "indice_documentos": true
+    "indice_documentos": true,
+    "capturar_respuestas": true
   },
   "https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas": {
     "organismo": "Municipalidad de Rosario del Tala",
