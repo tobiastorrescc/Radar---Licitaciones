@@ -176,7 +176,19 @@ def contar_portales(candidatos):
         grupos[u]='VALIDADA' if c.get('validacion',{}).get('estado')=='VALIDADA' or grupos.get(u)=='VALIDADA' else 'PENDIENTE'
     return dict(Counter(grupos.values()))
 
-def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24):
+def seleccionar_validaciones(candidatos,existentes,auto,limite,revisar_pendientes=False):
+    por_url={}
+    for c in candidatos:
+        if c['url'] in existentes and c['url'] not in auto:continue
+        vencida=c.get('version_verificador')!=4 or not c.get('ultima_revision') or datetime.fromisoformat(c['ultima_revision'])<datetime.now(timezone.utc)-timedelta(days=7)
+        forzada=revisar_pendientes and c['url'] not in auto and c.get('validacion',{}).get('estado')!='VALIDADA'
+        if not vencida and not forzada:continue
+        anterior=por_url.get(c['url'])
+        if anterior is None or (c.get('validacion',{}).get('identidad_verificada',False) and not anterior.get('validacion',{}).get('identidad_verificada',False)):
+            por_url[c['url']]=c
+    return sorted(por_url.values(),key=lambda c:(c.get('ultima_revision',''),c.get('fecha_descubrimiento',''),c['id']))[:limite]
+
+def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_pendientes=False):
     inicio=time.monotonic();raiz=Path(salida);raiz.mkdir(parents=True,exist_ok=True)
     estado_path=Path('inventario/descubrimiento_estado.json');auto_path=Path('inventario/fuentes_auto.json')
     estado=json.loads(estado_path.read_text()) if estado_path.exists() else {'schema_version':1,'busquedas':{},'candidatos':{}}
@@ -219,10 +231,8 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24):
         if f.get('incorporada'):continue
         key='inventario-'+f['id']
         estado['candidatos'].setdefault(key,{**f,'tipo':'TERRITORIAL','id':'auto-'+key,'clave':key,'origen':'INVENTARIO_PREVIO','fecha_descubrimiento':fecha})
-    elegibles=[c for c in estado['candidatos'].values() if (c['url'] not in existentes or c['url'] in auto) and (c.get('version_verificador')!=4 or not c.get('ultima_revision') or datetime.fromisoformat(c['ultima_revision'])<datetime.now(timezone.utc)-timedelta(days=7))]
-    # Rotación persistente: pendientes se reintentan en ciclos posteriores, sin monopolizar.
-    elegibles.sort(key=lambda c:(c.get('ultima_revision',''),c.get('fecha_descubrimiento',''),c['id']))
-    lote=elegibles[:candidatos];limite=max(1,total-(time.monotonic()-inicio)-3)
+    lote=seleccionar_validaciones(estado['candidatos'].values(),existentes,auto,candidatos,revisar_pendientes)
+    limite=max(1,total-(time.monotonic()-inicio)-3)
     entradas=raiz/'entradas';entradas.mkdir(exist_ok=True)
     for c in lote:guardar(entradas/(c['id']+'.json'),c)
     informe=ejecutar(lote,raiz/'verificacion.json',concurrencia=3,por_fuente=35,total=limite,
@@ -261,11 +271,11 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24):
     return resumen
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--worker');p.add_argument('--buscar-worker');p.add_argument('--salida',default='work/descubrimiento');p.add_argument('--total',type=float,default=240);p.add_argument('--busquedas',type=int,default=12);p.add_argument('--candidatos',type=int,default=24);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--worker');p.add_argument('--buscar-worker');p.add_argument('--salida',default='work/descubrimiento');p.add_argument('--total',type=float,default=240);p.add_argument('--busquedas',type=int,default=12);p.add_argument('--candidatos',type=int,default=24);p.add_argument('--revisar-pendientes',action='store_true');a=p.parse_args()
     if a.buscar_worker:worker_busqueda(a.buscar_worker,a.salida)
     elif a.worker:worker(a.worker,a.salida)
     else:
         if not 15<=a.total<=600 or not 1<=a.busquedas<=100 or not 1<=a.candidatos<=100:p.error('Límites fuera de rango')
-        ejecutar_descubrimiento(a.salida,a.total,a.busquedas,a.candidatos)
+        ejecutar_descubrimiento(a.salida,a.total,a.busquedas,a.candidatos,a.revisar_pendientes)
 
 if __name__=='__main__':main()

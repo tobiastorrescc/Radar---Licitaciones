@@ -2,19 +2,23 @@
 
 Radar de publicaciones públicas sin filtros por rubro, monto ni financiación y sin límite de resultados. El inventario territorial sigue en construcción: ver [informe de cobertura](INFORME_COBERTURA.md). Incorporar una URL a configuración no equivale a verificar que funciona.
 
+## Piloto controlado, sin producción
+
+Ver [puesta en marcha controlada](PUESTA_EN_MARCHA_CONTROLADA.md). En esta rama, Actions prueba dos ejecuciones reales consecutivas con estado SQLite aislado: primera línea de base sin alertas masivas, segunda incremental y reproducción estable. Descargar el artefacto **radar-controlado** y abrir **index.html** para consultar todo el catálogo. Producción está cerrada por defecto; no se fusiona ni activa en esta etapa.
+
 ## Ejecutar
 
 Python 3.11+ y `pdftotext` (paquete `poppler-utils`). Desde la raíz:
 
 ```sh
 python -m unittest discover -s tests -v
-python radar.py
+python tools/radar_controlado.py --salida work/prueba-doble --doble
 python tools/verificar_fuentes.py --salida work/verificacion/verificacion.json
 python tools/padron_territorial.py
 python tools/informe_cobertura.py
 ```
 
-`radar.py` conserva `radar_estado.json`, resultados completos en `licitaciones_nuevas.json` y auditoría en `auditoria_fuentes.json`. El verificador separado no toca esos archivos. Lectura corrupta falla sin borrar historial. No ejecutar dos procesos contra los mismos archivos. Mantener copias de seguridad del historial.
+`radar.py` exige autorización explícita de producción. El piloto escribe exclusivamente bajo `work/`, sin modificar esos archivos. El ejecutor heredado conserva `radar_estado.json`, resultados completos en `licitaciones_nuevas.json` y auditoría en `auditoria_fuentes.json`. El verificador separado no toca esos archivos. Lectura corrupta falla sin borrar historial. No ejecutar dos procesos contra los mismos archivos. Mantener copias de seguridad del historial.
 
 `fuentes.txt` contiene las consultas activadas; `fuentes.json`, sus metadatos y conector. `inventario/fuentes.json` incluye también las fuentes que necesitan un adaptador; `inventario/territorio.json`, las localidades y categorías pendientes. `inventario/verificacion.json` guarda la observación real del executor, separada de la evidencia web del inventario.
 
@@ -28,7 +32,7 @@ Deduplicación persistente por fuente/URL/procedimiento/llamado/situación, cons
 
 ## Automatización
 
-Se conserva el workflow diario a las 11 UTC (08 Argentina), con pruebas en PR, logs/artefactos por 90 días y persistencia del historial ante fallas de consulta. Usa main: los cambios de esta rama no están activos hasta fusionar el PR, acción todavía no autorizada. GitHub puede retrasar el cron. Se requiere que github-actions pueda escribir historial en main.
+Se conserva el horario diario de las 11 UTC (08 Argentina), con pruebas en PR y artefactos por 90 días. El piloto diario restaura SQLite con manifiesto de integridad desde su artefacto anterior; una falta de estado no reinicia silenciosamente la línea de base. Cron controlado y producción tienen habilitaciones independientes, cerradas por defecto. GitHub sólo ejecuta cron desde la rama predeterminada; esta rama del PR no tiene programación activa. No se modifica main ni se fusiona para habilitarla. Ver los pasos y límites de persistencia en la guía del piloto.
 
 RADAR_MAX_PAGINAS y RADAR_MAX_PROFUNDIDAD mantienen límites de seguridad (el segundo aplica al conector heredado). No limitan resultados. Un recorrido truncado se informa en auditoría. Salida 2 ante fuentes bloqueadas, pendientes o parciales; las demás fuentes continúan. Los archivos versionados de resultados previos son históricos, no prueba de esta etapa.
 
@@ -46,7 +50,7 @@ Cada consulta muestra INICIO, CONSULTANDO, PROGRESO y FIN con URL, fase, duraci�
 
 `resumen.consultadas` cuenta fuentes que iniciaron una consulta, no fuentes validadas. `funcionaron` exige extracción de publicaciones y recorrido sin errores/límites; `con_publicaciones` también cuenta parciales. RED identifica errores HTTP/DNS/TLS/conexión/lectura; EXTRACCION incluye PDF/formato/no reconocimiento de publicaciones; INTERNO identifica un worker que falla; PRESUPUESTO distingue el plazo global o cancelación. Un timeout por fuente conserva su fase. Los conteos de categorías pueden solaparse si una fuente tuvo varios errores. NO_INICIADA nunca cuenta como fallo de red ni como fuente consultada. El total final no permite inferir que un portal esté caído fuera de este entorno.
 
-Actions ejecuta esta verificación de diagnóstico al actualizar un PR del mismo repositorio y en disparos manuales sobre ramas distintas de main. Corre con permisos de lectura y límite de 15 minutos de job / 12 de paso, mientras el supervisor impone sus 10 minutos. Los fallos de portales se informan en el resumen y artefactos, separados del resultado de las pruebas unitarias; no bloquean su evaluación. Guarda `work/verificacion/` durante 90 días, incluso ante fallos/cancelación: esta ruta nueva evita subir la auditoría histórica versionada por equivocación. El job diario de producción y su historial se conservan. Ver [informe del verificador](INFORME_VERIFICADOR.md).
+El verificador sigue disponible como diagnóstico independiente. En el PR, Actions reutiliza su supervisor para la prueba doble controlada, con hasta 600 segundos por consulta completa y 120 para documentos por corrida, un paso de 28 minutos y job de 35. Los fallos de portales se informan separados de las pruebas unitarias. Se guardan todos los checkpoints bajo `work/controlado/` durante 90 días. El historial de producción se conserva y su ejecución requiere autorización independiente. Ver [informe del verificador](INFORME_VERIFICADOR.md) para el método original y [guía actual del piloto](PUESTA_EN_MARCHA_CONTROLADA.md).
 
 ## Conectores reparados con evidencia real
 

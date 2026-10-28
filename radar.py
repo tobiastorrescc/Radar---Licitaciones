@@ -604,5 +604,7 @@ def ejecutar():
 
 
 if __name__ == "__main__":
+    if os.environ.get('RADAR_PRODUCCION_AUTORIZADA')!='true':
+        raise SystemExit('Producción deshabilitada: usar tools/radar_controlado.py. No se escribe el historial de producción.')
     raise SystemExit(ejecutar())
 

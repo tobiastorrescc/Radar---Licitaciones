@@ -1,6 +1,16 @@
 name: Radar diario de licitaciones
 on:
   workflow_dispatch:
+    inputs:
+      modo:
+        description: 'doble: prueba aislada; controlado: diario con estado separado; produccion: requiere autorización adicional'
+        type: choice
+        options: [doble, controlado, produccion]
+        default: doble
+      inicializar:
+        description: 'Crear primera línea de base controlada sólo si no hay estado previo'
+        type: boolean
+        default: false
   schedule:
     - cron: '0 11 * * *' # 08:00 Argentina; GitHub puede retrasar la ejecucion
   pull_request:
@@ -25,7 +35,7 @@ jobs:
         run: bash tools/preparar_documentos.sh
       - run: python -m unittest discover -s tests -v
   ejecutar-radar:
-    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
+    if: vars.RADAR_PRODUCCION_HABILITADA == 'true' && github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.modo == 'produccion'))
     needs: pruebas
     runs-on: ubuntu-latest
     timeout-minutes: 90
@@ -49,6 +59,8 @@ jobs:
       - name: Ejecutar radar
         id: radar
         continue-on-error: true
+        env:
+          RADAR_PRODUCCION_AUTORIZADA: 'true'
         run: python radar.py
       - name: Guardar resultados y errores
         if: always()
@@ -83,80 +95,107 @@ jobs:
         run: exit 1
 
   verificar-fuentes-rama:
-    if: (github.event_name == 'workflow_dispatch' && github.ref != 'refs/heads/main') || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository)
+    if: (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) || (github.event_name == 'workflow_dispatch' && inputs.modo != 'produccion') || (github.event_name == 'schedule' && vars.RADAR_CONTROLADO_HABILITADO == 'true')
     needs: pruebas
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 35
+    permissions:
+      actions: read
+      contents: read
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Preparar lectura de PDF e imágenes con plazo acotado
-        continue-on-error: true # HTML sigue; documentos sin herramientas quedan pendientes auditados.
+      - name: Preparar lectura documental con límites
         timeout-minutes: 4
+        continue-on-error: true
         run: bash tools/preparar_documentos.sh
       - uses: actions/cache@v4
         with:
           path: work/cache-documentos
           key: textos-v1-${{ github.run_id }}
           restore-keys: textos-v1-
-      - name: Registrar capacidades documentales del runner
-        if: always()
-        run: |
-          python - <<'PYCODE'
-          import json,shutil,subprocess
-          from pathlib import Path
-          capacidades={n:bool(shutil.which(n)) for n in ('pdftotext','pdfinfo','pdftoppm','tesseract')}
-          try: capacidades['ocr_espanol']='spa' in subprocess.check_output(['tesseract','--list-langs'],text=True,stderr=subprocess.DEVNULL,timeout=5).splitlines()
-          except Exception: capacidades['ocr_espanol']=False
-          p=Path('work/verificacion/capacidades_documentales.json');p.parent.mkdir(parents=True,exist_ok=True)
-          p.write_text(json.dumps(capacidades,indent=2));print('CAPACIDADES_DOCUMENTALES '+json.dumps(capacidades))
-          PYCODE
-      - name: Relevar padrón territorial oficial sin escribir producción
-        timeout-minutes: 2
-        run: python tools/padron_territorial.py
-      - name: Verificar sin modificar historial de producción
-        id: verificar
-        continue-on-error: true # Diagnóstico de fuentes; no confundir disponibilidad con pruebas unitarias.
-        timeout-minutes: 12
+      - name: Localizar último estado del piloto diario de esta rama
+        if: inputs.modo == 'controlado' || github.event_name == 'schedule'
+        id: anterior
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const actual = await github.rest.actions.getWorkflowRun({...context.repo,run_id:context.runId});
+            let anterior;
+            for(let page=1;page<=5 && !anterior;page++) {
+              const {data}=await github.rest.actions.listArtifactsForRepo({...context.repo,per_page:100,page});
+              for(const a of data.artifacts) {
+                if(a.name!=='estado-controlado' || a.expired || a.workflow_run.id===context.runId || a.workflow_run.head_branch!==context.ref.replace('refs/heads/','')) continue;
+                const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:a.workflow_run.id});
+                if(r.workflow_id===actual.data.workflow_id && ['workflow_dispatch','schedule'].includes(r.event)) {anterior=r.id;break;}
+              }
+              if(data.artifacts.length<100) break;
+            }
+            core.setOutput('run_id',anterior ? String(anterior) : '');
+            core.notice(anterior ? `Restaurar piloto desde ejecución ${anterior}` : 'No hay estado diario previo; se requiere inicializar explícitamente.');
+      - uses: actions/download-artifact@v4
+        if: steps.anterior.outputs.run_id != ''
+        with:
+          name: estado-controlado
+          path: work/controlado
+          run-id: ${{ steps.anterior.outputs.run_id }}
+          github-token: ${{ github.token }}
+      - name: Verificar integridad del estado restaurado
+        if: steps.anterior.outputs.run_id != ''
+        run: python tools/radar_controlado.py --salida work/controlado --comprobar-estado
+      - name: Dos ejecuciones reales consecutivas en estado nuevo y aislado
+        if: github.event_name == 'pull_request' || inputs.modo == 'doble'
+        timeout-minutes: 28
         env:
           PYTHONUNBUFFERED: '1'
-        run: python -u tools/verificar_fuentes.py --salida work/verificacion/verificacion.json --concurrencia 4 --conexion 5 --lectura 10 --por-fuente 60 --total 600
-      - name: Inspeccionar assets públicos de portales nuevos
-        if: always()
-        timeout-minutes: 2
-        run: python tools/inspeccionar_portales.py
-      - name: Normalizar y reportar oportunidades sin escribir producción
-        if: always()
-        timeout-minutes: 4
-        run: python tools/reportar_oportunidades.py
-      - name: Generar cobertura territorial desde evidencia real
-        if: always()
-        timeout-minutes: 1
-        run: python tools/informe_cobertura.py
-      - name: Resumen de fuentes en Actions
+        run: python -u tools/radar_controlado.py --salida work/controlado --doble --total 600 --documentos 120
+      - name: Ejecución diaria controlada sin producción
+        if: inputs.modo == 'controlado' || github.event_name == 'schedule'
+        timeout-minutes: 14
+        env:
+          PYTHONUNBUFFERED: '1'
+          INICIALIZAR_PILOTO: ${{ inputs.inicializar }}
+        run: |
+          argumentos=()
+          if [ "$INICIALIZAR_PILOTO" = 'true' ]; then argumentos+=(--inicializar); fi
+          python -u tools/radar_controlado.py --salida work/controlado --total 600 --documentos 120 "${argumentos[@]}"
+      - name: Resumen para consulta en Actions
         if: always()
         run: |
           python - <<'PYCODE' >> "$GITHUB_STEP_SUMMARY"
           import json
           from pathlib import Path
-          p = Path('work/verificacion/verificacion.json')
-          r = json.loads(p.read_text())
-          if r.get('schema_version') != 2:
-              raise SystemExit('No hay un informe actual del verificador')
-          if r['estado_ejecucion'] != 'COMPLETADA' or r['resumen']['finalizadas'] != r['resumen']['configuradas'] or r['resumen']['fuentes_error_interno']:
-              raise SystemExit('Verificación incompleta o fallo interno; revisar auditoría y parciales')
-          print('### Verificación de fuentes: ' + r['estado_ejecucion'])
-          print('La disponibilidad de portales es un diagnóstico separado de las pruebas automáticas.')
-          for k, v in r['resumen'].items():
-              print(f'- {k}: {v}')
+          print('# Radar controlado — sin producción')
+          p=Path('work/controlado/prueba_doble.json')
+          if p.exists():
+              d=json.loads(p.read_text());print('Prueba doble correcta:',d['correcta']);print('Repetidas como nuevas:',d['repetidas_como_nuevas'])
+              for k in ('primera','segunda'):
+                  r=d[k];print(k+': '+json.dumps({x:r[x] for x in ('estado','clasificacion','novedades','total_historial','cobertura_estricta')},ensure_ascii=False))
+          else:
+              p=Path('work/controlado/ultima_ejecucion.json')
+              print(p.read_text() if p.exists() else 'EJECUCIÓN INCOMPLETA: revisar errores y checkpoints. No se presume ausencia de novedades.')
+          print('Descargar el artefacto **radar-controlado** y abrir index.html. Contiene catálogo completo, informe diario, abiertas, próximas a vencer, auditoría y versiones. No es un reporte de producción.')
           PYCODE
-      - name: Guardar evidencia de verificación
+      - name: Sellar estado recuperable incluso ante incidencias
+        if: always()
+        run: python tools/radar_controlado.py --salida work/controlado --sellar-estado
+      - name: Conservar auditoría, catálogo y resultados parciales
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: verificacion-fuentes-${{ github.run_id }}
-          path: work/verificacion/
+          name: radar-controlado
+          path: work/controlado/
+          if-no-files-found: error
+          retention-days: 90
+      - name: Persistir estado diario separado para la siguiente consulta
+        if: always() && (inputs.modo == 'controlado' || github.event_name == 'schedule')
+        uses: actions/upload-artifact@v4
+        with:
+          name: estado-controlado
+          path: |
+            work/controlado/estado.sqlite3
+            work/controlado/estado_manifest.json
           if-no-files-found: error
           retention-days: 90

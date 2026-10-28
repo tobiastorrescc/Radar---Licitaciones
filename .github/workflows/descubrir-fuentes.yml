@@ -39,7 +39,10 @@ jobs:
         timeout-minutes: 6
         env:
           PYTHONUNBUFFERED: '1'
-        run: python -u tools/descubrir_fuentes.py --total 240 --busquedas 24 --candidatos 24
+        run: |
+          argumentos=()
+          if [ "${{ github.event_name }}" = 'pull_request' ]; then argumentos+=(--revisar-pendientes --candidatos 100); fi
+          python -u tools/descubrir_fuentes.py --total 240 --busquedas 24 "${argumentos[@]}"
       - name: Conservar auditoría y resultados parciales
         if: always()
         uses: actions/upload-artifact@v4
