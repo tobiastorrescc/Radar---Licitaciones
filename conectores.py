@@ -175,7 +175,9 @@ def descargar(url, conexion_timeout=5, lectura_timeout=10, headers_extra=None, d
 def clasificar_error(error, fase):
     timeout = isinstance(error, (TimeoutError, socket.timeout)) or (
         isinstance(error, URLError) and isinstance(error.reason, (TimeoutError, socket.timeout)))
-    if fase == 'DESCARGA' and isinstance(error, (URLError, OSError, HTTPError)):
+    if isinstance(error,AccesoRestringido):
+        categoria = 'ACCESO'
+    elif fase == 'DESCARGA' and isinstance(error, (URLError, OSError, HTTPError)):
         categoria = 'RED'
     else:
         categoria = 'EXTRACCION'
@@ -184,6 +186,18 @@ def clasificar_error(error, fase):
     if isinstance(error, HTTPError):
         result['http_status'] = error.code
     return result
+
+
+class AccesoRestringido(RuntimeError):
+    pass
+
+
+def comprobar_acceso(html):
+    # Firmas específicas de una pantalla de desafío, no menciones en un pliego.
+    texto=normalizar(html)
+    if (re.search(r'<title[^>]*>\s*(?:one moment,? please|just a moment|attention required)[^<]*</title>',html,re.I)
+        and re.search(r'request is being verified|checking your browser|verify you are human|challenge-platform|enable javascript and cookies',texto)):
+        raise AccesoRestringido('Desafío de acceso HTTP 200; requiere revisión del acceso oficial, sin eludirlo')
 
 
 def identidad(fuente, titulo, url):
@@ -204,7 +218,12 @@ def decodificar_html(datos,tipo):
         try:return datos.decode(encoding)
         except (UnicodeDecodeError,LookupError):pass
     try:return datos.decode('utf-8-sig')
-    except UnicodeDecodeError:return datos.decode('cp1252',errors='replace')
+    except UnicodeDecodeError:
+        # HTML mixto: una tilde Latin-1 no debe corromper los href UTF-8 válidos.
+        # surrogateescape conserva cada byte inválido para decodificar sólo ese byte.
+        texto=datos.decode('utf-8',errors='surrogateescape')
+        return ''.join(bytes([ord(c)-0xdc00]).decode('cp1252',errors='replace')
+                       if 0xdc80<=ord(c)<=0xdcff else c for c in texto)
 
 
 def _host(url):
@@ -327,6 +346,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 documento_pendiente.pop(url,None)
                 snapshot('PAGINA_FINALIZADA',url);continue
             html=decodificar_html(datos,tipo)
+            comprobar_acceso(html)
             from extractores_lotes import endpoint_funes
             endpoint=endpoint_funes(html,final)
             if endpoint:
@@ -403,7 +423,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                        'error':'Publicaciones identificadas sin objeto completo','publicaciones':incompletas})
     estado='OPERATIVA' if items else 'PENDIENTE'
     if not items and vacios and not errors and not limits:estado='SIN_PUBLICACIONES'
-    if not correctas and errors:estado='BLOQUEADA' if all(e['categoria']=='RED' for e in errors) else 'PENDIENTE'
+    if not correctas and errors:estado='BLOQUEADA' if all(e['categoria'] in ('RED','ACCESO') for e in errors) else 'PENDIENTE'
     if items and (errors or limits):estado='PARCIAL'
     if not items and not vacios and not errors:
         errors.append({'url':fuente,'tipo':'SinPublicacionesDetectadas','categoria':'EXTRACCION','timeout':False,

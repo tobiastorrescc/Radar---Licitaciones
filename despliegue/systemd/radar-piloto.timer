@@ -1,0 +1,12 @@
+[Unit]
+Description=Piloto aislado de licitaciones a las 08:00 de Argentina (requiere autorización)
+
+[Timer]
+OnCalendar=*-*-* 08:00:00 America/Argentina/Buenos_Aires
+AccuracySec=1s
+RandomizedDelaySec=0
+Persistent=false
+Unit=radar-piloto.service
+
+[Install]
+WantedBy=timers.target

@@ -94,6 +94,7 @@ def resumen(observaciones):
         'fallaron': len(fallidas), 'no_iniciadas': len(observaciones)-len(intentadas),
         'fuentes_error_red': sum(any(e['categoria']=='RED' for e in r.get('errores', [])) for r in fallidas),
         'fuentes_error_extraccion': sum(any(e['categoria']=='EXTRACCION' for e in r.get('errores', [])) for r in fallidas),
+        'fuentes_acceso_restringido': sum(any(e['categoria']=='ACCESO' for e in r.get('errores', [])) for r in fallidas),
         'fuentes_error_interno': sum(any(e['categoria']=='INTERNO' for e in r.get('errores', [])) for r in fallidas),
         'fuentes_timeout': sum(any(e.get('timeout') for e in r.get('errores', [])) for r in fallidas),
         'fuentes_presupuesto_o_cancelacion': sum(any(e['categoria']=='PRESUPUESTO' for e in r.get('errores', [])) for r in fallidas),

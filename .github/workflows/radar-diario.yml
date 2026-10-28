@@ -49,6 +49,10 @@ jobs:
         timeout-minutes: 4
         run: bash tools/preparar_documentos.sh
       - run: python -m unittest discover -s tests -v
+      - name: Validar programador externo sin red ni activación
+        run: |
+          python tools/programar_piloto.py
+          systemd-analyze calendar '*-*-* 08:00:00 America/Argentina/Buenos_Aires'
   ejecutar-radar:
     if: vars.RADAR_PRODUCCION_HABILITADA == 'true' && github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.modo == 'produccion'))
     needs: pruebas

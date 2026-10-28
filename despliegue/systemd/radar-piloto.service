@@ -1,0 +1,22 @@
+[Unit]
+Description=Disparar y supervisar GitHub Actions del piloto sin producción
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=radar-piloto
+Group=radar-piloto
+WorkingDirectory=/opt/radar-piloto
+ExecStart=/usr/bin/python3 /opt/radar-piloto/tools/programar_piloto.py --ejecutar --config /etc/radar-piloto/piloto.json --estado /var/lib/radar-piloto
+LoadCredential=github-token:/etc/radar-piloto/github-token
+StateDirectory=radar-piloto
+StateDirectoryMode=0700
+UMask=0077
+TimeoutStartSec=55min
+Restart=no
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
