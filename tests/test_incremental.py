@@ -155,5 +155,9 @@ class IncrementalTests(unittest.TestCase):
         self.assertEqual(a['novedades'],0);self.assertEqual(b['novedades'],0)
         actual=json.loads(self.db.execute('SELECT dato FROM procedimientos').fetchone()[0])
         self.assertEqual(actual['rango_evidencia'],3);self.assertEqual(actual['objeto'],'Objeto detallado del pliego oficial')
+    def test_fecha_nueva_comprobada_se_informa_aun_si_la_fuente_anterior_fallo(self):
+        inc.registrar(self.db,[],self.informe(estado='BLOQUEADA'))
+        r=inc.registrar(self.db,[self.fila('2/2026',fecha_publicacion_texto='27/10/2026')],self.informe('dos',estado='PARCIAL',fecha='2026-10-27T12:00:00-03:00'))
+        self.assertEqual(r['clasificacion']['NUEVO_CONFIRMADO'],1)
 
 if __name__=='__main__':unittest.main()

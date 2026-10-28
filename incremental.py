@@ -105,14 +105,17 @@ def fuentes_de(r):return sorted({u for u in [r.get('fuente'),*r.get('fuentes_obs
 
 def tipo_nuevo(r,previas,fecha):
     disponibles=[previas[u] for u in fuentes_de(r) if u in previas and previas[u]['base_completa']]
-    if not disponibles:return 'RECUPERACION_LINEA_BASE'
     publicada=r.get('fecha_publicacion')
+    hoy=datetime.fromisoformat(fecha).astimezone(o.ZONA).date().isoformat()
+    if not disponibles:
+        inicios=[o.fecha(previas[u]['inicio']) for u in fuentes_de(r) if u in previas]
+        if publicada and inicios and min(inicios)<publicada<=hoy:return 'NUEVO_CONFIRMADO'
+        return 'RECUPERACION_LINEA_BASE'
     corte=min(o.fecha(f['ultima_completa']) for f in disponibles if f['ultima_completa'])
     if not publicada:
         import re
         anios=re.findall(r'20\d{2}',r.get('numero_procedimiento') or '')
         return 'HISTORICA_ANIO_PROCEDIMIENTO' if anios and max(anios)<corte[:4] else 'NUEVA_DETECCION_FECHA_DESCONOCIDA'
-    hoy=datetime.fromisoformat(fecha).astimezone(o.ZONA).date().isoformat()
     if corte<publicada<=hoy:return 'NUEVO_CONFIRMADO'
     if publicada==corte:return 'NUEVA_DETECCION_MISMO_DIA'
     if publicada<corte:return 'HISTORICA_RECUPERADA'
