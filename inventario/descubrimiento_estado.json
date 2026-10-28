@@ -264,7 +264,31 @@
     "territorio:823701": "2026-10-28T01:00:51.524560+00:00",
     "territorio:303091": "2026-10-28T01:00:51.524560+00:00",
     "territorio:822182": "2026-10-28T01:00:51.524560+00:00",
-    "territorio:302287": "2026-10-28T01:00:51.524560+00:00"
+    "territorio:302287": "2026-10-28T01:00:51.524560+00:00",
+    "territorio:822189": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:309205": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:822546": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:302927": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:822196": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:300305": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:823519": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:309450": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:823704": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:309045": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:823526": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:302638": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:820245": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:300184": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:823988": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:309685": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:823393": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:309110": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:823470": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:309355": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:822203": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:302512": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:822903": "2026-10-28T01:07:56.855033+00:00",
+    "territorio:309920": "2026-10-28T01:07:56.855033+00:00"
   },
   "candidatos": {
     "inventario-fuente-034": {
@@ -288,7 +312,7 @@
       "clave": "inventario-fuente-034",
       "origen": "INVENTARIO_PREVIO",
       "fecha_descubrimiento": "2026-10-27T23:13:42.954528+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -305,12 +329,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:00:56.169381+00:00",
+        "fecha": "2026-10-28T01:08:03.982254+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0000.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0001.json",
       "version_verificador": 4
     },
     "inventario-fuente-048": {
@@ -334,7 +358,7 @@
       "clave": "inventario-fuente-048",
       "origen": "INVENTARIO_PREVIO",
       "fecha_descubrimiento": "2026-10-27T23:13:42.954528+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "motivo": "HTTP Error 404: Not Found",
@@ -350,7 +374,7 @@
           "http_status": 404
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0001.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0002.json",
       "version_verificador": 4
     },
     "f48892e3569eecd927d0": {
@@ -367,7 +391,7 @@
       "evidencia_enlace": "https://xn--carcaraa-j3a.gob.ar/",
       "busqueda_url": "https://xn--carcaraa-j3a.gob.ar/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -384,12 +408,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:01.261074+00:00",
+        "fecha": "2026-10-28T01:08:10.040812+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0011.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0012.json",
       "version_verificador": 4
     },
     "cf6af719beec09106ac6": {
@@ -406,7 +430,7 @@
       "evidencia_enlace": "https://lasparejas.gov.ar/",
       "busqueda_url": "https://lasparejas.gov.ar/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -423,12 +447,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:00:57.912353+00:00",
+        "fecha": "2026-10-28T01:08:07.420298+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0007.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0008.json",
       "version_verificador": 4
     },
     "e3bcb048ef52c8c543bb": {
@@ -855,7 +879,7 @@
       "evidencia_enlace": "https://perez.opendata.junar.com/",
       "busqueda_url": "https://perez.opendata.junar.com/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -867,17 +891,17 @@
           "nombre_publicado": true,
           "jurisdiccion_publicada": true,
           "url": "https://perez.opendata.junar.com/dataviews/261424/listados-de-licitaciones-publicas-2022/",
-          "sha256": "512c31c41d31082086609fa8d98ce9f0c713f6ab36aa2fea2796459ee76f4eed",
+          "sha256": "d83981da4a2d7fa3a21a765435d9522b0bf329c9911deee92689381c446c1409",
           "cabecera": "Listados de licitaciones Públicas 2022 · Municipalidad de Pérez  Information Permalink: Last published: Type What region apply this data? Contact e-mail for this Dataset Data collected from: Tags Visitors in the last 30 days: API / Developers Get your API key here . GUID: API request examples: Need help? Filter data Active filters Sort Ordered by: Add new clause Custom views Listados de licitaciones Públicas 2022 Boletín Oficial de licitaciones Públicas de la Municipalidad de Pérez.",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:00:57.375375+00:00",
+        "fecha": "2026-10-28T01:08:04.451969+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0002.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0003.json",
       "version_verificador": 4
     },
     "284b14e7d77b67159420": {
@@ -894,7 +918,7 @@
       "evidencia_enlace": "https://perez.opendata.junar.com/",
       "busqueda_url": "https://perez.opendata.junar.com/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -906,17 +930,17 @@
           "nombre_publicado": true,
           "jurisdiccion_publicada": true,
           "url": "https://perez.opendata.junar.com/dataviews/259577/listados-de-licitaciones-publicas-2021/",
-          "sha256": "2e98efc443802a3273fbbec5a4aa1119c68112124aa586fb171cdebd803d2ad9",
+          "sha256": "52e1788ab941ef9c2e1fe561ad3df6a34bb6ccdd2bdaeb1b389902e61be7d251",
           "cabecera": "Listados de licitaciones Públicas 2021 · Municipalidad de Pérez  Information Permalink: Last published: Update frequency Type What region apply this data? Contact e-mail for this Dataset Data collected from: Tags Visitors in the last 30 days: API / Developers Get your API key here . GUID: API request examples: Need help? Filter data Active filters Sort Ordered by: Add new clause Custom views Listados de licitaciones Públicas 2021 Boletín Oficial de licitaciones Públicas de la Municipalidad de Pérez.",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:00:57.520598+00:00",
+        "fecha": "2026-10-28T01:08:06.407299+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0004.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0005.json",
       "version_verificador": 4
     },
     "c3853663a465207069a1": {
@@ -933,7 +957,7 @@
       "evidencia_enlace": "https://perez.opendata.junar.com/",
       "busqueda_url": "https://perez.opendata.junar.com/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -945,17 +969,17 @@
           "nombre_publicado": true,
           "jurisdiccion_publicada": true,
           "url": "https://perez.opendata.junar.com/dataviews/262271/listados-de-licitaciones-publicas-2022/",
-          "sha256": "3307866e43724dd69f2dbdf2ace9763081458c238f1cf12dedab1d9157a39773",
+          "sha256": "5fd61cc28ff8092f2d6f31d763aafd7dc5b7db8e2dc832df06af5a4b90abd57e",
           "cabecera": "Listados de licitaciones Públicas 2022 · Municipalidad de Pérez  Information Permalink: Last published: Type What region apply this data? Contact e-mail for this Dataset Data collected from: Tags Visitors in the last 30 days: API / Developers Get your API key here . GUID: API request examples: Need help? Filter data Active filters Sort Ordered by: Add new clause Custom views Listados de licitaciones Públicas 2022 Boletín Oficial de licitaciones Públicas de la Municipalidad de Pérez.",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:00:59.638138+00:00",
+        "fecha": "2026-10-28T01:08:06.489187+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0005.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0006.json",
       "version_verificador": 4
     },
     "f244c1984a7b85330102": {
@@ -972,7 +996,7 @@
       "evidencia_enlace": "https://chajari.gob.ar/",
       "busqueda_url": "https://chajari.gob.ar/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": true,
@@ -984,12 +1008,12 @@
           "nombre_publicado": true,
           "jurisdiccion_publicada": true,
           "url": "https://chajari.gob.ar/licitaciones",
-          "sha256": "2419bf7bc9e91df329042cef89dcf7341c41df51c68829cf47d5e4c54224c869",
+          "sha256": "3cdeeb7315b10f300ea632deb97aee0f1ab1434f49dec682f004d3f2e97151cf",
           "cabecera": " licitaciones | Gobierno Chajari 2.0",
           "motivo": null
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:01.094098+00:00",
+        "fecha": "2026-10-28T01:08:09.813028+00:00",
         "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
         "ejemplos": []
       },
@@ -1002,7 +1026,7 @@
           "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0009.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0010.json",
       "version_verificador": 4
     },
     "db2eb0ffab87f7037c91": {
@@ -1019,7 +1043,7 @@
       "evidencia_enlace": "https://sanpedro.net.ar/",
       "busqueda_url": "https://sanpedro.net.ar/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -1036,12 +1060,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:00:59.029597+00:00",
+        "fecha": "2026-10-28T01:08:08.369118+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0008.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0009.json",
       "version_verificador": 4
     },
     "ca6aa4264e6d9adee0d1": {
@@ -1054,7 +1078,7 @@
       "titulo": "Buenos Aires Ciudad",
       "busqueda_url": "https://www.bing.com/search?q=%22Buenos+Aires%22+hospital+SAMCo+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -1071,12 +1095,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:00:59.599272+00:00",
+        "fecha": "2026-10-28T01:08:07.680630+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0006.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0007.json",
       "version_verificador": 4
     },
     "23d7e504feb4d3edb80e": {
@@ -1089,7 +1113,7 @@
       "titulo": "Sitio oficial de turismo de la Ciudad de Buenos Aires",
       "busqueda_url": "https://www.bing.com/search?q=%22Buenos+Aires%22+hospital+SAMCo+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -1106,12 +1130,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:00:56.951716+00:00",
+        "fecha": "2026-10-28T01:08:05.672541+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0003.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0004.json",
       "version_verificador": 4
     },
     "f9388078051814a96114": {
@@ -1128,7 +1152,7 @@
       "evidencia_enlace": "https://www.ramallo.gob.ar/",
       "busqueda_url": "https://www.ramallo.gob.ar/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": true,
@@ -1145,7 +1169,7 @@
           "motivo": null
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:01.932572+00:00",
+        "fecha": "2026-10-28T01:08:10.299796+00:00",
         "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
         "ejemplos": []
       },
@@ -1158,7 +1182,7 @@
           "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0012.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0013.json",
       "version_verificador": 4
     },
     "f2b2744f58f87cd5e3cd": {
@@ -1175,7 +1199,7 @@
       "evidencia_enlace": "https://alvear.gob.ar/",
       "busqueda_url": "https://alvear.gob.ar/",
       "fecha_descubrimiento": "2026-10-27T23:19:30.751151+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -1192,12 +1216,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:00.871213+00:00",
+        "fecha": "2026-10-28T01:08:09.120429+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0010.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0011.json",
       "version_verificador": 4
     },
     "ed91272172611c45b58b": {
@@ -1354,7 +1378,7 @@
       "evidencia_enlace": "https://www.municipalidadcolonpba.gob.ar/",
       "busqueda_url": "https://www.municipalidadcolonpba.gob.ar/",
       "fecha_descubrimiento": "2026-10-27T23:24:48.026383+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -1372,7 +1396,7 @@
           "motivo": null
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:02.472950+00:00",
+        "fecha": "2026-10-28T01:08:11.409385+00:00",
         "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
         "ejemplos": []
       },
@@ -1385,7 +1409,7 @@
           "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0015.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0016.json"
     },
     "3cedf2c049d68ff7b728": {
       "clave": "reparar:fuente-060",
@@ -1399,7 +1423,7 @@
       "titulo": "Antártida | Argentina.gob.ar",
       "busqueda_url": "https://www.bing.com/search?q=%22Bolet%C3%ADn+Oficial+de+Santa+Fe%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:24:48.026383+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -1412,17 +1436,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": false,
           "url": "https://www.argentina.gob.ar/armada/antartida",
-          "sha256": "c531477495468124a8074c8125f64df5013579375f185b9c0aa54355d15f0ace",
+          "sha256": "b9e1923973531c9a2c6b61e0a38c873e73dc511d9511475b756200dfbc3dbf81",
           "cabecera": " Antártida | Argentina.gob.ar Presidencia de la Nación En esta sección Trámites Acerca de la República Argentina Acerca de Argentina.gob.ar",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:01.528166+00:00",
+        "fecha": "2026-10-28T01:08:11.583840+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0013.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0014.json"
     },
     "f271ff8a7529f4ad7a31": {
       "clave": "directorio:fuente-065",
@@ -1438,7 +1462,7 @@
       "evidencia_enlace": "https://www.timbues.gob.ar/",
       "busqueda_url": "https://www.timbues.gob.ar/",
       "fecha_descubrimiento": "2026-10-27T23:24:48.026383+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -1456,12 +1480,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:03.351287+00:00",
+        "fecha": "2026-10-28T01:08:12.892464+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0016.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0017.json"
     },
     "d5a49183ef48932b9286": {
       "clave": "directorio:fuente-067",
@@ -1477,7 +1501,7 @@
       "evidencia_enlace": "https://www.concejosantafe.gov.ar/",
       "busqueda_url": "https://www.concejosantafe.gov.ar/",
       "fecha_descubrimiento": "2026-10-27T23:24:48.026383+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -1490,17 +1514,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": true,
           "url": "https://www.concejosantafe.gov.ar/boletin",
-          "sha256": "131cca4542dd97717371103869fb1e0a88e8861bc0e3fc5c7362c970ae4efc50",
+          "sha256": "fc91556b07678f53fba2525f01f3a65fb890e103320178cd393e1640cbc7d5c1",
           "cabecera": "Boletín digital — Concejo Municipal de Santa Fe  Boletín digital",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:02.793609+00:00",
+        "fecha": "2026-10-28T01:08:11.716888+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0014.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0015.json"
     },
     "f83eb92cc424cbc01b7f": {
       "clave": "directorio:fuente-069",
@@ -1516,7 +1540,7 @@
       "evidencia_enlace": "https://www.generalramirez.gob.ar/",
       "busqueda_url": "https://www.generalramirez.gob.ar/",
       "fecha_descubrimiento": "2026-10-27T23:29:52.451036+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -1534,7 +1558,7 @@
           "motivo": null
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:05.776179+00:00",
+        "fecha": "2026-10-28T01:08:15.239875+00:00",
         "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
         "ejemplos": []
       },
@@ -1547,7 +1571,7 @@
           "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0019.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0020.json"
     },
     "0fdcc011d215265d90c1": {
       "clave": "directorio:fuente-073",
@@ -1563,7 +1587,7 @@
       "evidencia_enlace": "https://www.junin.gob.ar/",
       "busqueda_url": "https://www.junin.gob.ar/",
       "fecha_descubrimiento": "2026-10-27T23:29:52.451036+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -1581,7 +1605,7 @@
           "motivo": null
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:03.741373+00:00",
+        "fecha": "2026-10-28T01:08:14.350292+00:00",
         "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
         "ejemplos": []
       },
@@ -1594,7 +1618,7 @@
           "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0017.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0018.json"
     },
     "f78d87c587d5765be771": {
       "clave": "directorio:fuente-074",
@@ -1610,7 +1634,7 @@
       "evidencia_enlace": "https://zarate.gob.ar/",
       "busqueda_url": "https://zarate.gob.ar/",
       "fecha_descubrimiento": "2026-10-27T23:29:52.451036+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -1628,7 +1652,7 @@
           "motivo": null
         },
         "procedimientos_con_objeto": 14,
-        "fecha": "2026-10-28T01:01:10.685400+00:00",
+        "fecha": "2026-10-28T01:08:17.884458+00:00",
         "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
         "ejemplos": [
           {
@@ -1787,7 +1811,7 @@
           ]
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0018.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0019.json"
     },
     "f058a4dfd6982e446c88": {
       "clave": "territorio:822763",
@@ -1801,7 +1825,7 @@
       "titulo": "Municipalidad de Adolfo Alsina - Sitio web oficial",
       "busqueda_url": "https://www.bing.com/search?q=%22Arroyo+Ceibal%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:34:38.381656+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -1819,12 +1843,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:07.726023+00:00",
+        "fecha": "2026-10-28T01:08:18.661512+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0027.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0028.json"
     },
     "9e436afcd17ea49c5af8": {
       "clave": "territorio:822763",
@@ -1838,7 +1862,7 @@
       "titulo": "DR. ADOLFO ALSINA. SU BIOGRAFIA | Museo Dr. Adolfo Alsina",
       "busqueda_url": "https://www.bing.com/search?q=%22Arroyo+Ceibal%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:34:38.381656+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -1851,17 +1875,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": true,
           "url": "https://museocarhue.gob.ar/archivo-historico/investigaciones/dr-adolfo-alsina-su-biografia",
-          "sha256": "3458cd27056154053adf6e05887649ec8b466f48553e2f0c4b54ae71d35b7902",
+          "sha256": "30e6c903928ed1cb5c16fbd54cb052617771bf2c2e004e888621e14479a6923c",
           "cabecera": "DR. ADOLFO ALSINA. SU BIOGRAFIA | Museo Dr. Adolfo Alsina Main menu DR. ADOLFO ALSINA. SU BIOGRAFIA Mas Investigaciones",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:07.202720+00:00",
+        "fecha": "2026-10-28T01:08:17.659622+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0025.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0026.json"
     },
     "c4cd3301282ae7292828": {
       "clave": "territorio:822763",
@@ -1875,7 +1899,7 @@
       "titulo": "Inicio | Museo Dr. Adolfo Alsina",
       "busqueda_url": "https://www.bing.com/search?q=%22Arroyo+Ceibal%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:34:38.381656+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -1888,17 +1912,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": false,
           "url": "https://museocarhue.gob.ar/",
-          "sha256": "d94d694b18cc068b125e0edfee09e9414588b422138ae86147412ce621691ada",
+          "sha256": "fd98559ff15979dda745b705b9423fe54c130079f309a3f95808af724e9fcf48",
           "cabecera": "Inicio | Museo Dr. Adolfo Alsina Main menu Inicio ¿Buscás información sobre algún tema? Museo Dr. Adolfo Alsina",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:07.527803+00:00",
+        "fecha": "2026-10-28T01:08:18.325186+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0026.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0027.json"
     },
     "5cab4ae04a012195a6c2": {
       "clave": "territorio:822763",
@@ -1912,7 +1936,7 @@
       "titulo": "Distrito - Municipalidad de Adolfo Alsina",
       "busqueda_url": "https://www.bing.com/search?q=%22Arroyo+Ceibal%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:34:38.381656+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -1930,12 +1954,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:06.324808+00:00",
+        "fecha": "2026-10-28T01:08:16.964360+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0022.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0023.json"
     },
     "0a5fc05a46576bcaf6b9": {
       "clave": "territorio:060408",
@@ -1949,7 +1973,7 @@
       "titulo": "Home - Sitio Oficial del Gobierno de La Pampa",
       "busqueda_url": "https://www.bing.com/search?q=%22Hurlingham%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:34:38.381656+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -1962,17 +1986,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": false,
           "url": "https://www.lapampa.gob.ar/",
-          "sha256": "b7f50d961ddb2f07b9c132571f32e1bb9ef5aa7c2d23589932f6980bd04ed976",
+          "sha256": "4c05f6797c5509cb9b1ec564ff5e691f4386b51ea9d98e18b24997b327d25a0d",
           "cabecera": "Home - Sitio Oficial del Gobierno de La Pampa Sergio Ziliotto Guía de Servicios  Sitios de Interés Sociedades y Organizaciones con participación del Estado",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:05.073263+00:00",
+        "fecha": "2026-10-28T01:08:16.114259+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0020.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0021.json"
     },
     "87ea4449ab1dd44efb7e": {
       "clave": "territorio:060408",
@@ -1986,7 +2010,7 @@
       "titulo": "Provincia de La Pampa - Argentina.gob.ar",
       "busqueda_url": "https://www.bing.com/search?q=%22Hurlingham%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:34:38.381656+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -1999,17 +2023,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": true,
           "url": "https://www.argentina.gob.ar/lapampa",
-          "sha256": "0e694929443f12bf557ed39ce356ab64870ae98b59b4ce1189e0108a6be950e1",
+          "sha256": "205c295bea1eb8d7174a85843b05c0259f33de157a921e82b3f286d6dae2921e",
           "cabecera": " Provincia de La Pampa | Argentina.gob.ar Presidencia de la Nación Provincia de La Pampa Destacados Actividades productivas La Pampa también te ofrece Sergio Ziliotto Gobernador Institucional Contacto Trámites Acerca de la República Argentina Acerca de Argentina.gob.ar",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:06.634555+00:00",
+        "fecha": "2026-10-28T01:08:18.410180+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0024.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0025.json"
     },
     "647a088433a89db0fe6e": {
       "clave": "territorio:309790",
@@ -2023,7 +2047,7 @@
       "titulo": "San Isidro",
       "busqueda_url": "https://www.bing.com/search?q=%22Altamirano+Sur%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:34:38.381656+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2039,7 +2063,7 @@
           "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0023.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0024.json"
     },
     "3d56128b1653b56fc891": {
       "clave": "territorio:309790",
@@ -2053,7 +2077,7 @@
       "titulo": "San Isidro",
       "busqueda_url": "https://www.bing.com/search?q=%22Altamirano+Sur%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:34:38.381656+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2069,7 +2093,7 @@
           "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0021.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0022.json"
     },
     "cdea0598fc9e9455d543": {
       "clave": "territorio:060469",
@@ -2113,7 +2137,7 @@
       "titulo": "ABL Y TASAS | San Isidro",
       "busqueda_url": "https://www.bing.com/search?q=%22Lincoln%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:37:27.076662+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2129,7 +2153,7 @@
           "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0030.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0031.json"
     },
     "4a9214bc58afcc94ed36": {
       "clave": "territorio:060469",
@@ -2143,7 +2167,7 @@
       "titulo": "TESI San Isidro | TESI · Ingresar",
       "busqueda_url": "https://www.bing.com/search?q=%22Lincoln%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:37:27.076662+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2156,17 +2180,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": false,
           "url": "https://tesi.sanisidro.gob.ar/",
-          "sha256": "61016ae6df2df754e32979cb19dc1ec4ab279277070e8d4ef9695032d1f5973a",
+          "sha256": "121f874b2253132dc5a9f33753f8f582c6cee4c01e233a03a4a3539a72694c50",
           "cabecera": "TESI San Isidro | TESI · Ingresar TESI Te damos la bienvenida a TESI",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:09.432319+00:00",
+        "fecha": "2026-10-28T01:08:19.789739+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0029.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0030.json"
     },
     "e677a8d33917dfa0b70a": {
       "clave": "territorio:060469",
@@ -2180,7 +2204,7 @@
       "titulo": "Dirección General de Despacho y Legislación - San Isidro",
       "busqueda_url": "https://www.bing.com/search?q=%22Lincoln%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:37:27.076662+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2196,7 +2220,7 @@
           "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0036.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0037.json"
     },
     "9eaa082f45495e2be345": {
       "clave": "territorio:060469",
@@ -2210,7 +2234,7 @@
       "titulo": "Portal de Proveedores",
       "busqueda_url": "https://www.bing.com/search?q=%22Lincoln%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:37:27.076662+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2228,12 +2252,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:15.523164+00:00",
+        "fecha": "2026-10-28T01:08:25.901653+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0032.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0033.json"
     },
     "b1f02520ad3a33d0853a": {
       "clave": "territorio:060469",
@@ -2247,7 +2271,7 @@
       "titulo": "Ingresar · Intranet San Isidro",
       "busqueda_url": "https://www.bing.com/search?q=%22Lincoln%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:37:27.076662+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2260,17 +2284,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": false,
           "url": "https://mi.sanisidro.gob.ar/",
-          "sha256": "65473fa1f4de60431962755f261f30a60db09209170d1c047744481346654aee",
+          "sha256": "a906acc5b74dfdcb3ae171166b67b1bfb1344f0367504c539fe0565912102400",
           "cabecera": "Ingresar · Intranet San Isidro El espacio del personal municipal Ingresá a tu cuenta",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:11.123186+00:00",
+        "fecha": "2026-10-28T01:08:20.801150+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0033.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0034.json"
     },
     "fbd7902191001d16f3e0": {
       "clave": "territorio:060469",
@@ -2284,7 +2308,7 @@
       "titulo": "Inicio - Honorable Concejo Deliberante de San Isidro",
       "busqueda_url": "https://www.bing.com/search?q=%22Lincoln%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:37:27.076662+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2302,12 +2326,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:15.777174+00:00",
+        "fecha": "2026-10-28T01:08:25.041064+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0037.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0038.json"
     },
     "d217fef7d5074361ab53": {
       "clave": "territorio:060469",
@@ -2321,7 +2345,7 @@
       "titulo": "San Isidro",
       "busqueda_url": "https://www.bing.com/search?q=%22Lincoln%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:37:27.076662+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2337,7 +2361,7 @@
           "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0035.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0036.json"
     },
     "cda84536a3820ba0f18d": {
       "clave": "territorio:060469",
@@ -2351,7 +2375,7 @@
       "titulo": "San Isidro | Gobierno Abierto",
       "busqueda_url": "https://www.bing.com/search?q=%22Lincoln%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:37:27.076662+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2367,7 +2391,7 @@
           "error": "<urlopen error timed out>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0034.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0035.json"
     },
     "6a396de34614dbb8f0e9": {
       "clave": "territorio:060469",
@@ -2381,7 +2405,7 @@
       "titulo": "Obras Públicas - San Isidro",
       "busqueda_url": "https://www.bing.com/search?q=%22Lincoln%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:37:27.076662+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2397,7 +2421,7 @@
           "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0031.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0032.json"
     },
     "43207d38ff2db066d7f4": {
       "clave": "territorio:823729",
@@ -2411,7 +2435,7 @@
       "titulo": "Cosí mi piace | Sitio oficial de turismo de la Ciudad de Buenos Aires",
       "busqueda_url": "https://www.bing.com/search?q=%22Barrancas%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:37:27.076662+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2429,12 +2453,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:08.913985+00:00",
+        "fecha": "2026-10-28T01:08:19.832771+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0028.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0029.json"
     },
     "99e988c76d5d22c48f60": {
       "clave": "territorio:309832",
@@ -2478,7 +2502,7 @@
       "titulo": "Turismo - San Isidro",
       "busqueda_url": "https://www.bing.com/search?q=%22Arroyo+Gen%C3%A1%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2494,7 +2518,7 @@
           "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0054.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0055.json"
     },
     "5141d883564029231f6f": {
       "clave": "territorio:309625",
@@ -2508,7 +2532,7 @@
       "titulo": "Facultad de Ingeniería - Universidad Nacional de Cuyo",
       "busqueda_url": "https://www.bing.com/search?q=%22Arroyo+Palo+Seco%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2524,7 +2548,7 @@
           "error": "La identidad requiere una página HTML oficial; PDF aislado queda pendiente"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0045.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0046.json"
     },
     "11067128dbb3bebc9eca": {
       "clave": "territorio:060560",
@@ -2538,7 +2562,7 @@
       "titulo": "Un regimiento aislado en la Isla Gran Malvina y las operaciones para ...",
       "busqueda_url": "https://www.bing.com/search?q=%22Moreno%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2551,17 +2575,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": false,
           "url": "https://www.argentina.gob.ar/noticias/un-regimiento-aislado-en-la-isla-gran-malvina-y-las-operaciones-para-abastecerlo",
-          "sha256": "98dc56fd119e3170cc41e7d601ed44faa9b7b45c2020046e5a993bcd0e14481d",
+          "sha256": "6a7a639b6e178f3afbcd051fbcd28557be94740363f755cb927ccef37bfedc44",
           "cabecera": " Un regimiento aislado en la Isla Gran Malvina y las operaciones para abastecerlo | Argentina.gob.ar Presidencia de la Nación Un regimiento aislado en la Isla Gran Malvina y las operaciones para abastecerlo Noticias relacionadas Trámites Acerca de la República Argentina Acerca de Argentina.gob.ar",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:20.287646+00:00",
+        "fecha": "2026-10-28T01:08:30.447260+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0041.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0042.json"
     },
     "60537a70ef522fb5c4ad": {
       "clave": "territorio:060560",
@@ -2575,7 +2599,7 @@
       "titulo": "Relieve, flora y fauna de las Islas Malvinas",
       "busqueda_url": "https://www.bing.com/search?q=%22Moreno%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2588,17 +2612,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": false,
           "url": "https://observatoriomalvinas.legisrn.gov.ar/relieve-flora-y-fauna-de-las-islas-malvinas/",
-          "sha256": "65fa247579f8cacf45ab445d50c1217c7781cf831c6a955aa884da17fe4d76b7",
+          "sha256": "372cb0128616ff3efc77accff184e03c88f954442776dc328f0b1fe5c945f514",
           "cabecera": "Relieve, flora y fauna de las Islas Malvinas – Observatorio Malvinas – Río Negro Observatorio Malvinas – Río Negro Relieve, flora y fauna de las Islas Malvinas Su ciudad más importante Su relieve y geografía Su fauna Su flora Sus recursos naturales Navegación de entradas",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:24.506451+00:00",
+        "fecha": "2026-10-28T01:08:33.490163+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0047.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0048.json"
     },
     "969e6775e57dec57df31": {
       "clave": "territorio:822420",
@@ -2612,7 +2636,7 @@
       "titulo": "Gobierno de Entre Ríos",
       "busqueda_url": "https://www.bing.com/search?q=%22Bombal%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2628,7 +2652,7 @@
           "error": "Redirección a otro dominio: requiere contraste independiente"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0050.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0051.json"
     },
     "971de468cb21dcc524db": {
       "clave": "territorio:822420",
@@ -2642,7 +2666,7 @@
       "titulo": "Gobierno de Entre Ríos",
       "busqueda_url": "https://www.bing.com/search?q=%22Bombal%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2658,7 +2682,7 @@
           "error": "Redirección a otro dominio: requiere contraste independiente"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0051.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0052.json"
     },
     "d18ec97b01c57933ef0f": {
       "clave": "territorio:822420",
@@ -2672,7 +2696,7 @@
       "titulo": "Solicitud Partidas | Casa de la Provincia de Entre Ríos",
       "busqueda_url": "https://www.bing.com/search?q=%22Bombal%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2690,12 +2714,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:30.636649+00:00",
+        "fecha": "2026-10-28T01:08:39.951437+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0056.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0057.json"
     },
     "6e36655a10388af81174": {
       "clave": "territorio:822420",
@@ -2709,7 +2733,7 @@
       "titulo": "Area Registro Civil | Casa de la Provincia de Entre Ríos",
       "busqueda_url": "https://www.bing.com/search?q=%22Bombal%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2727,12 +2751,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:25.392325+00:00",
+        "fecha": "2026-10-28T01:08:34.489558+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0048.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0049.json"
     },
     "a13080634032dc6af8fd": {
       "clave": "territorio:822420",
@@ -2746,7 +2770,7 @@
       "titulo": "Municipalidad de la Ciudad de Crespo | Municipalidad de Crespo",
       "busqueda_url": "https://www.bing.com/search?q=%22Bombal%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2759,17 +2783,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": false,
           "url": "https://www.crespo.gob.ar/",
-          "sha256": "eb11cfc71a1ff031a33e8944fc9fcc5e8d2327867157a7c0cac1981a083fbcc7",
+          "sha256": "1369445bc6cbf84546459430fe7047dcf38c986c474dd7d44edd62de1f53d3b3",
           "cabecera": "Municipalidad de la Ciudad de Crespo | Municipalidad de Crespo CHARLA EDUCATIVA SOBRE EL CUIDADO Y USO RESPONSABLE DEL SERVICIO DE AGUA POTABLE EN CRESPO FIN DE SEMANA A PURO VOLEIBOL LOS TEMAS TRATADOS EN UNA NUEVA SESIÓN DEL CONCEJO DELIBERANTE ¡VIVÍ CRESPO! FIN DE SEMANA CON CULTURA Y DEPORTE CRESPO REALIZA UN SALTO TECNOLÓGICO EN SU SISTEMA DE VIDEOVIGILANCIA CONOCÉ LOS RECORRIDOS DE LOS CIRCUITOS DE LA MARATÓN DE LA FNA 2026",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:28.930490+00:00",
+        "fecha": "2026-10-28T01:08:38.669714+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0053.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0054.json"
     },
     "f9ef5b76b8d2495a0abf": {
       "clave": "territorio:060574",
@@ -2783,7 +2807,7 @@
       "titulo": "Municipalidad de Navarro",
       "busqueda_url": "https://www.bing.com/search?q=%22Navarro%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2801,12 +2825,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:31.726987+00:00",
+        "fecha": "2026-10-28T01:08:40.885429+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0057.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0058.json"
     },
     "2570282b3909432c5395": {
       "clave": "territorio:300413",
@@ -2820,7 +2844,7 @@
       "titulo": "Direccion General de Rentas - La Pampa Province",
       "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2836,7 +2860,7 @@
           "error": "<urlopen error timed out>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0042.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0043.json"
     },
     "40efe7c5132b53d98c81": {
       "clave": "territorio:300413",
@@ -2850,7 +2874,7 @@
       "titulo": "Algarrobo del Águila - Sitio Oficial del Gobierno de La Pampa",
       "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2868,12 +2892,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:21.356486+00:00",
+        "fecha": "2026-10-28T01:08:31.298279+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0043.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0044.json"
     },
     "558e731694a0c49ec8b4": {
       "clave": "territorio:300413",
@@ -2887,7 +2911,7 @@
       "titulo": "Temporada de Caza - Dirección de Recursos Naturales - La Pampa Province",
       "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2903,7 +2927,7 @@
           "error": "<urlopen error timed out>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0046.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0047.json"
     },
     "4b76ebbce7581f7ff0d4": {
       "clave": "territorio:300413",
@@ -2917,7 +2941,7 @@
       "titulo": "Gobernador Duval - Sitio Oficial del Gobierno de La Pampa",
       "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2935,12 +2959,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:21.392277+00:00",
+        "fecha": "2026-10-28T01:08:31.608592+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0044.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0045.json"
     },
     "0db6740540d1ec91d640": {
       "clave": "territorio:300413",
@@ -2954,7 +2978,7 @@
       "titulo": "Cotos Habilitados - Dirección de Recursos Naturales - La Pampa Province",
       "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -2970,7 +2994,7 @@
           "error": "<urlopen error timed out>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0040.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0041.json"
     },
     "b62be39f8b4a0bb3a39d": {
       "clave": "territorio:300413",
@@ -2984,7 +3008,7 @@
       "titulo": "Rural - Secretaría de Turismo - La Pampa Original",
       "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -3000,7 +3024,7 @@
           "error": "<urlopen error timed out>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0055.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0056.json"
     },
     "07d727fc3f6cd37258b0": {
       "clave": "territorio:300413",
@@ -3014,7 +3038,7 @@
       "titulo": "Circunscripciones Judiciales - Justicia La Pampa",
       "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -3030,7 +3054,7 @@
           "error": "<urlopen error timed out>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0039.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0040.json"
     },
     "99ae75779d3a399cb3c3": {
       "clave": "territorio:300413",
@@ -3044,7 +3068,7 @@
       "titulo": "Personal - Justicia La Pampa",
       "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -3060,7 +3084,7 @@
           "error": "<urlopen error timed out>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0052.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0053.json"
     },
     "0060809e2c357c41bf33": {
       "clave": "territorio:300413",
@@ -3074,7 +3098,7 @@
       "titulo": "Salinas Pampeanas - Secretaría de Turismo - La Pampa Original",
       "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -3090,7 +3114,7 @@
           "error": "<urlopen error timed out>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0038.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0039.json"
     },
     "787ee1d5824a9522423b": {
       "clave": "territorio:300413",
@@ -3104,7 +3128,7 @@
       "titulo": "La Pampa Province - CIPADI - CIUDADANÍA Pampeana Digital",
       "busqueda_url": "https://www.bing.com/search?q=%22Basavilbaso%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:41:52.726355+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -3120,7 +3144,7 @@
           "error": "<urlopen error timed out>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0049.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0050.json"
     },
     "b8f29f9ba65fa1c47817": {
       "clave": "territorio:060638",
@@ -3806,7 +3830,7 @@
       "titulo": "San Isidro",
       "busqueda_url": "https://www.bing.com/search?q=%22Ceibas%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:46:32.575174+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -3822,7 +3846,7 @@
           "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0062.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0063.json"
     },
     "08d9b1c8bee1fabc9959": {
       "clave": "territorio:060756",
@@ -3836,7 +3860,7 @@
       "titulo": "Dónde comer | Sitio oficial de turismo de la Ciudad de Buenos Aires",
       "busqueda_url": "https://www.bing.com/search?q=%22San+Isidro%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:46:32.575174+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -3849,17 +3873,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": true,
           "url": "https://turismo.buenosaires.gob.ar/es/donde-comer",
-          "sha256": "c77de541f8c6c1a6a769f40917f2dea61c1e90b3b0694122f10e3a32e6868362",
+          "sha256": "e3443296b5eadc6c596964b186b6e292f43dd96f6844ebcda2cde35708ed310e",
           "cabecera": " Dónde comer | Sitio oficial de turismo de la Ciudad de Buenos Aires Dónde comer",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:33.355449+00:00",
+        "fecha": "2026-10-28T01:08:43.182377+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0058.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0059.json"
     },
     "fb8ffa3aba75437a9c36": {
       "clave": "territorio:820329",
@@ -3947,7 +3971,7 @@
       "titulo": "Parque Chacabuco - Buenos Aires Ciudad",
       "busqueda_url": "https://www.bing.com/search?q=%22San+Miguel%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:46:32.575174+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -3960,17 +3984,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": true,
           "url": "https://buenosaires.gob.ar/gcaba_historico/parque-chacabuco",
-          "sha256": "2e1c14498ebea795a6154ff4f7b0055d9f1d14ba73e32fc1df15362e6db9239c",
+          "sha256": "543cc82cbb060de18be78ae727f02e8c51ebcedb9c78a202579962a89b52229c",
           "cabecera": "Parque Chacabuco | Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma de Buenos Aires Parque Chacabuco Ayudanos a mejorar",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:37.136491+00:00",
+        "fecha": "2026-10-28T01:08:47.455851+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0061.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0062.json"
     },
     "e15a00c0c3e771dbc4c2": {
       "clave": "territorio:060760",
@@ -3984,7 +4008,7 @@
       "titulo": "Parque Chacabuco - Sitio oficial de turismo de la Ciudad de Buenos Aires",
       "busqueda_url": "https://www.bing.com/search?q=%22San+Miguel%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:46:32.575174+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -4002,12 +4026,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:36.622117+00:00",
+        "fecha": "2026-10-28T01:08:46.226981+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0063.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0064.json"
     },
     "47bba45a410f339b37ca": {
       "clave": "territorio:060760",
@@ -4021,7 +4045,7 @@
       "titulo": "Parque Chacabuco - Sitio oficial de turismo de la Ciudad de Buenos Aires",
       "busqueda_url": "https://www.bing.com/search?q=%22San+Miguel%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:46:32.575174+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -4039,12 +4063,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:34.548954+00:00",
+        "fecha": "2026-10-28T01:08:44.397842+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0060.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0061.json"
     },
     "4553ad911c454587942c": {
       "clave": "territorio:060760",
@@ -4058,30 +4082,23 @@
       "titulo": "Recreación y esparcimiento | Buenos Aires Ciudad - Gobierno de la ...",
       "busqueda_url": "https://www.bing.com/search?q=%22San+Miguel%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:46:32.575174+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
+        "motivo": "The read operation timed out",
         "identidad_verificada": false,
-        "identidad": {
-          "verificada": false,
-          "organismo": "Municipalidad de San Miguel",
-          "localidad": "San Miguel",
-          "dominio_oficial": true,
-          "nombre_publicado": false,
-          "jurisdiccion_publicada": true,
-          "url": "https://buenosaires.gob.ar/gcaba_historico/parque-chacabuco/recreacion-y-esparcimiento",
-          "sha256": "9164cb8779e097ba917cc1f6b58e119a4d97ea1eb39a673dfe6444f18ce9efbf",
-          "cabecera": "Recreación y esparcimiento | Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma de Buenos Aires Recreación y esparcimiento Ayudanos a mejorar",
-          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
-        },
-        "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:36.105113+00:00",
-        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
-        "ejemplos": []
+        "procedimientos_con_objeto": 0
       },
-      "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0059.json"
+      "errores": [
+        {
+          "tipo": "TimeoutError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "The read operation timed out"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0060.json"
     },
     "f795931b1a1b19847af4": {
       "clave": "territorio:822980",
@@ -4095,7 +4112,7 @@
       "titulo": "INGRAM PARTICIPÓ DE LA PUESTA EN POSESIÓN DEL NUEVO JEFE DE REGIMIENTO ...",
       "busqueda_url": "https://www.bing.com/search?q=%22Candioti%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:46:32.575174+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -4108,17 +4125,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": false,
           "url": "https://trevelin.gob.ar/content/ingram-participo-la-puesta-en-posesion-del-nuevo-jefe-regimiento-caballeria-exploracion-3",
-          "sha256": "a7c2e2cda5fece3fe3f20474c7d42ec2115caf7ce6b240bb1906933ce5eea52a",
+          "sha256": "28b23fc81f4f82b4b972687e5a54839bbb3941fbbea5991d5dda7070d39e46fd",
           "cabecera": " INGRAM PARTICIPÓ DE LA PUESTA EN POSESIÓN DEL NUEVO JEFE DE REGIMIENTO DE CABALLERÍA DE EXPLORACIÓN 3 | Municipalidad de Trevelin, Chubut Formulario de búsqueda INGRAM PARTICIPÓ DE LA PUESTA EN POSESIÓN DEL NUEVO JEFE DE REGIMIENTO DE CABALLERÍA DE EXPLORACIÓN 3",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:38.091872+00:00",
+        "fecha": "2026-10-28T01:08:48.320982+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0064.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0065.json"
     },
     "3c690349f09a8b9b35d2": {
       "clave": "territorio:824051",
@@ -4244,7 +4261,7 @@
       "titulo": "Mapa Interactivo de Buenos Aires v4.1.2",
       "busqueda_url": "https://www.bing.com/search?q=%22Carmen%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:59:25.625128+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -4257,17 +4274,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": false,
           "url": "https://mapa.buenosaires.gob.ar/sig/index.phtml",
-          "sha256": "1ad9a07379e9f639e31992898e31fe9b7a7a4df224891d32cbefdfe2273a6ebb",
-          "cabecera": "Mapa Interactivo de Buenos Aires v4.1  Cómo Llego Novedades   ",
+          "sha256": "5a7e255faeb520d8f1cee4efee88141c4461085a1c971f257a85cd37a59bfb1d",
+          "cabecera": "Mapa Interactivo de Buenos Aires v4.1.2  Cómo Llego Novedades   ",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:38.223356+00:00",
+        "fecha": "2026-10-28T01:08:49.298843+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0066.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0067.json"
     },
     "da0e239cfc98e1187572": {
       "clave": "territorio:300035",
@@ -4281,7 +4298,7 @@
       "titulo": "Boedo | Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma de Buenos ...",
       "busqueda_url": "https://www.bing.com/search?q=%22Colonia+Ayu%C3%AD%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:59:25.625128+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -4294,17 +4311,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": false,
           "url": "https://buenosaires.gob.ar/gcaba_historico/laciudad/barrios/boedo",
-          "sha256": "6456f7d35a427245bee05788175bf49747c01bf7bd1d5c0f9ac3f8a75a4918d3",
+          "sha256": "0ac88873e0000c5f3fca38d7ec32d34d54fa3ff36cf10afbaf84590bacfa917e",
           "cabecera": "Boedo | Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma de Buenos Aires Boedo Ayudanos a mejorar",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:42.356191+00:00",
+        "fecha": "2026-10-28T01:08:51.125087+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0073.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0074.json"
     },
     "ca281ce03e49cfd6a8bc": {
       "clave": "territorio:300035",
@@ -4318,7 +4335,7 @@
       "titulo": "Boedo | Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma de Buenos ...",
       "busqueda_url": "https://www.bing.com/search?q=%22Colonia+Ayu%C3%AD%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:59:25.625128+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -4336,12 +4353,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:42.359354+00:00",
+        "fecha": "2026-10-28T01:08:50.482245+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0071.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0072.json"
     },
     "f5cef7dca28d4a339d76": {
       "clave": "territorio:300035",
@@ -4355,7 +4372,7 @@
       "titulo": "Boedo - Sitio oficial de turismo de la Ciudad de Buenos Aires",
       "busqueda_url": "https://www.bing.com/search?q=%22Colonia+Ayu%C3%AD%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:59:25.625128+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -4373,12 +4390,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:41.141590+00:00",
+        "fecha": "2026-10-28T01:08:52.496171+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0076.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0077.json"
     },
     "20c19966e142fdd15819": {
       "clave": "territorio:822889",
@@ -4854,7 +4871,7 @@
       "titulo": "Pesca - Municipalidad de Adolfo Alsina",
       "busqueda_url": "https://www.bing.com/search?q=%22Casas%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:59:25.625128+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -4872,12 +4889,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:37.136663+00:00",
+        "fecha": "2026-10-28T01:08:48.122425+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0065.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0066.json"
     },
     "d8e604530b789d942d0e": {
       "clave": "territorio:824058",
@@ -4891,7 +4908,7 @@
       "titulo": "Proveedores - Municipalidad de Adolfo Alsina",
       "busqueda_url": "https://www.bing.com/search?q=%22Casas%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:59:25.625128+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -4909,12 +4926,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:39.090760+00:00",
+        "fecha": "2026-10-28T01:08:50.626273+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0072.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0073.json"
     },
     "e33ea3c4bb0bbbe9b0b6": {
       "clave": "territorio:824058",
@@ -4928,7 +4945,7 @@
       "titulo": "Rivera - Municipalidad de Adolfo Alsina",
       "busqueda_url": "https://www.bing.com/search?q=%22Casas%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:59:25.625128+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -4946,12 +4963,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:39.609555+00:00",
+        "fecha": "2026-10-28T01:08:51.384215+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0074.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0075.json"
     },
     "e3c16506e7c85770c199": {
       "clave": "territorio:824058",
@@ -4965,7 +4982,7 @@
       "titulo": "Adolfo Alsina RRHH",
       "busqueda_url": "https://www.bing.com/search?q=%22Casas%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:59:25.625128+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -4978,17 +4995,17 @@
           "nombre_publicado": false,
           "jurisdiccion_publicada": false,
           "url": "https://www.adolfoalsina.gov.ar/rrhh/",
-          "sha256": "6eddd8aa3ce5e3ece42dc926cde11f55ae4882293a87492f63db85b7399f7bcf",
+          "sha256": "0472d7c28b50d1dfec7dda06191b64487dd8473a4dc9b7c1a563e8326dd026d9",
           "cabecera": "Adolfo Alsina RRHH Acceso para personal autorizado",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:40.070203+00:00",
+        "fecha": "2026-10-28T01:08:51.194199+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0075.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0076.json"
     },
     "b425196a843eab23053b": {
       "clave": "territorio:824058",
@@ -5002,7 +5019,7 @@
       "titulo": "Tasas municipales - Municipalidad de Adolfo Alsina",
       "busqueda_url": "https://www.bing.com/search?q=%22Casas%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:59:25.625128+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -5020,12 +5037,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:38.037138+00:00",
+        "fecha": "2026-10-28T01:08:49.070522+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0068.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0069.json"
     },
     "8dda08dd03ad893d96cf": {
       "clave": "territorio:824058",
@@ -5039,7 +5056,7 @@
       "titulo": "Gabinete - Municipalidad de Adolfo Alsina",
       "busqueda_url": "https://www.bing.com/search?q=%22Casas%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:59:25.625128+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -5057,12 +5074,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:37.519800+00:00",
+        "fecha": "2026-10-28T01:08:49.154776+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0067.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0068.json"
     },
     "c711094101f81109d12c": {
       "clave": "territorio:824058",
@@ -5076,7 +5093,7 @@
       "titulo": "Rentas - Municipalidad de Adolfo Alsina",
       "busqueda_url": "https://www.bing.com/search?q=%22Casas%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:59:25.625128+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -5094,12 +5111,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:38.545010+00:00",
+        "fecha": "2026-10-28T01:08:49.834329+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0070.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0071.json"
     },
     "11bf75ffb44368c8a3d7": {
       "clave": "territorio:824058",
@@ -5150,7 +5167,7 @@
       "titulo": "Carhué - Municipalidad de Adolfo Alsina",
       "busqueda_url": "https://www.bing.com/search?q=%22Casas%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-27T23:59:25.625128+00:00",
-      "ultima_revision": "2026-10-28T01:00:51.524560+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -5168,12 +5185,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-28T01:01:38.565351+00:00",
+        "fecha": "2026-10-28T01:08:49.889424+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010054-ec0243f5/0069.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0070.json"
     },
     "0e8e4ec745607dcef55e": {
       "clave": "territorio:822063",
@@ -5187,6 +5204,82 @@
       "titulo": "Dónde comer | Sitio oficial de turismo de la Ciudad de Buenos Aires",
       "busqueda_url": "https://www.bing.com/search?q=%22Cha%C3%B1ar+Ladeado%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-28T00:52:38.989616+00:00"
+    },
+    "25d0329296ff0ff359a4": {
+      "clave": "territorio:823519",
+      "localidad": "Colonia Rosa",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Colonia Rosa",
+      "consulta": "\"Colonia Rosa\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-25d0329296ff0ff359a4",
+      "url": "https://www.argentina.gob.ar/armada/antartida",
+      "titulo": "Antártida | Argentina.gob.ar",
+      "busqueda_url": "https://www.bing.com/search?q=%22Colonia+Rosa%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-28T01:07:56.855033+00:00"
+    },
+    "d6a3368c7faa71e94a66": {
+      "clave": "territorio:309045",
+      "localidad": "El Redomón",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de El Redomón",
+      "consulta": "\"El Redomón\" \"Entre Ríos\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-d6a3368c7faa71e94a66",
+      "url": "https://www.argentina.gob.ar/noticias/un-regimiento-aislado-en-la-isla-gran-malvina-y-las-operaciones-para-abastecerlo",
+      "titulo": "Un regimiento aislado en la Isla Gran Malvina y las operaciones para ...",
+      "busqueda_url": "https://www.bing.com/search?q=%22El+Redom%C3%B3n%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-28T01:07:56.855033+00:00"
+    },
+    "61666f0df35ca09ac62d": {
+      "clave": "territorio:309045",
+      "localidad": "El Redomón",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de El Redomón",
+      "consulta": "\"El Redomón\" \"Entre Ríos\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-61666f0df35ca09ac62d",
+      "url": "https://observatoriomalvinas.legisrn.gov.ar/relieve-flora-y-fauna-de-las-islas-malvinas/",
+      "titulo": "Relieve, flora y fauna de las Islas Malvinas",
+      "busqueda_url": "https://www.bing.com/search?q=%22El+Redom%C3%B3n%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-28T01:07:56.855033+00:00"
+    },
+    "4d74964f80036d94c30d": {
+      "clave": "territorio:309045",
+      "localidad": "El Redomón",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de El Redomón",
+      "consulta": "\"El Redomón\" \"Entre Ríos\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "id": "auto-4d74964f80036d94c30d",
+      "url": "https://observatoriomalvinas.legisrn.gov.ar/malvinas-historia-y-ubicacion/",
+      "titulo": "Malvinas: Historia y ubicación – Observatorio Malvinas – Río Negro",
+      "busqueda_url": "https://www.bing.com/search?q=%22El+Redom%C3%B3n%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-10-28T01:07:56.855033+00:00",
+      "ultima_revision": "2026-10-28T01:07:56.855033+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de El Redomón",
+          "localidad": "El Redomón",
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": false,
+          "url": "https://observatoriomalvinas.legisrn.gov.ar/malvinas-historia-y-ubicacion/",
+          "sha256": "46f93c45eb5a6b9209cb31297b128d6c19296e1a65ed59ea91209d0229d8f6dd",
+          "cabecera": "Malvinas: Historia y ubicación – Observatorio Malvinas – Río Negro Observatorio Malvinas – Río Negro Malvinas: Historia y ubicación Navegación de entradas",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-10-28T01:08:03.418290+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261028T010802-2d8e4015/0000.json"
     }
   }
 }
