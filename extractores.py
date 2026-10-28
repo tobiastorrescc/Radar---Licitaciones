@@ -336,6 +336,10 @@ def extraer(html,url,config=None):
         from extractores_lotes import encabezados
         secciones=encabezados(raiz,url,config)
         if secciones:agrupados={(r['procedimiento'],r['evento_publicado']):r for r in secciones}
+    if config.get('adaptador')=='villa-elisa':
+        from extractores_lotes import fichas_villaelisa
+        secciones=fichas_villaelisa(raiz,url)
+        if secciones:agrupados={(r['procedimiento'],r['evento_publicado']):r for r in secciones}
     if config.get('adaptador')=='ramirez':
         from extractores_lotes import fichas_ramirez
         # No conservar candidatos genéricos procedentes de cifras del menú.

@@ -1614,10 +1614,17 @@
       "url": "https://villaelisa.gov.ar/transparencia/"
     },
     "seguir_patrones": [
-      "/transparencia/licitaciones/"
+      "/transparencia/licitaciones/",
+      "/(?:[^/?]*licitacion[^/?]*|[^/?]*concurso-de-precios[^/?]*)/?$"
     ],
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "adaptador": "villa-elisa",
+    "urls_inicio": [
+      "https://villaelisa.gov.ar/transparencia/licitaciones/",
+      "https://villaelisa.gov.ar/"
+    ],
+    "enriquecer_fichas": true
   },
   {
     "id": "fuente-069",

@@ -384,6 +384,10 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 u,c,ref=entrada
                 item=items.get(ref,{}) if isinstance(ref,str) else {}
                 anios=re.findall(r'20\d{2}',item.get('numero_procedimiento') or '')
+                if clase=='LISTADO' and not anios:
+                    # Archivos anuales publicados: recorrer primero los recientes,
+                    # manteniendo todos los anteriores en la cola y en la auditoría.
+                    anios=re.findall(r'(?<!\d)20\d{2}(?!\d)',urlparse(u).path+'?'+urlparse(u).query)
                 # Presupuesto de lectura: documentos recientes primero; no se descarta el archivo.
                 return (0 if c=='DETALLE' and item.get('vigencia')=='ABIERTA' else (1 if c=='DETALLE' else 2),-int(anios[-1]) if anios else 0,item.get('fecha_apertura') or '9999',u)
             pending=deque(sorted(pending,key=orden_pendiente))

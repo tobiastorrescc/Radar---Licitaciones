@@ -226,3 +226,47 @@ def extraer_vgg(datos,url):
         documento=url_publica(f.get('archivo_url') or '',urljoin(url,'/')) if f.get('archivo_url') else None
         registros.append({'titulo':objeto,'objeto':objeto,'numero_procedimiento':p.get('numero'),'tipo_procedimiento':p.get('tipo'),'procedimiento':p.get('procedimiento'),'registro_estructurado':True,'detalle_completo':True,'url':documento or url,'evidencia_url':url,'documentos':[{'url':documento,'titulo':'Pliego' if publicada=='apertura' else 'Adjudicación'}] if documento else [],'fecha_apertura_texto':f.get('apertura_raw') or f.get('apertura'),'presupuesto':presupuesto,'presupuesto_texto':str(f['presupuesto']) if f.get('presupuesto') is not None else None,'evidencias_campos':{'presupuesto':{'url':url,'texto':str(f.get('presupuesto_raw'))}} if presupuesto is not None else {},'id_origen':f.get('id')})
     return registros
+
+
+def fichas_villaelisa(raiz,url):
+    """Columnas N°, decretos, pliego y concepto, separadas por fila publicada."""
+    from extractores import norm,procesos,excluido,ADJUNTOS,EVENTO
+    tipos={'licitaciones publicas':'licitacion publica','licitaciones privadas':'licitacion privada','concursos de precios':'concurso de precios'}
+    modo=next((tipos.get(norm(n.text)) for n in raiz.iter() if n.tag=='h1' and norm(n.text) in tipos),None)
+    if not modo:return []
+    def numero(n):
+        if excluido(n) or n.tag not in ('p','span','td'):return None
+        t=n.text
+        if re.fullmatch(r'\d{1,6}\s*/\s*(?:20)?\d{2}',t):
+            if n.tag not in ('p','td'):return None
+            t=modo+' '+t
+        ps=procesos(t)
+        return ps[0] if len(ps)==1 and ps[0]['start']==0 and ps[0]['end']==len(norm(t)) else None
+    candidatos=[(n,numero(n)) for n in raiz.iter() if numero(n)]
+    registros={}
+    for n,p in candidatos:
+        for cont in n.padres():
+            if cont.tag in ('root','html','body'):break
+            conceptos=[x for x in cont.iter() if x.tag in ('h4','h5','h6') and norm(x.text).rstrip(':')=='concepto']
+            claves={x['procedimiento'] for el,x in candidatos if any(padre is cont for padre in el.padres())}
+            if len(claves)>1:break
+            if len(conceptos)!=1:continue
+            campo=conceptos[0]
+            for padre in campo.padres():
+                if padre is cont:break
+                if len(padre.text)>len(campo.text):campo=padre;break
+            objeto=re.sub(r'^concepto\s*:?\s*','',campo.text,flags=re.I).strip()
+            if norm(objeto)=='concepto':objeto=None
+            docs={}
+            for l in cont.enlaces(url):
+                if not urlsplit(l['url']).path.lower().endswith(ADJUNTOS):continue
+                titulo=l['texto'];anterior=docs.get(l['url'])
+                if anterior and 'decreto' in norm(anterior['titulo']):continue
+                docs[l['url']]={'url':l['url'],'titulo':titulo}
+            evento='|'.join(sorted(set(EVENTO.findall(norm(cont.text))))) or None
+            r={'titulo':p['procedimiento']+' '+(objeto or ''),'objeto':objeto,'numero_procedimiento':p['numero'],
+               'tipo_procedimiento':p['tipo'],'procedimiento':p['procedimiento'],'url':url,'evidencia_url':url,
+               'documentos':list(docs.values()),'detalle_completo':bool(objeto),'registro_estructurado':bool(objeto),
+               'evento_publicado':evento,'llamado_especial':bool(evento),'fecha_apertura_texto':None,'fecha_publicacion_texto':None}
+            registros[p['procedimiento']]=r;break
+    return list(registros.values())
