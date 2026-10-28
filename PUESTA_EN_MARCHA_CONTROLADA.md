@@ -39,19 +39,19 @@ En GitHub Actions, abrir el workflow **Radar diario de licitaciones** y su últi
 
 El catálogo incluye búsqueda local y todas las filas, enlaces a publicaciones y pliegos identificados, condiciones de pago y documento de respaldo, apertura, publicación, vigencia y última observación. También están `reporte_diario.md`, `catalogo_completo.json/.md`, `eventos.json`, abiertas, próximas a vencer, auditorías por fuente, SQLite y manifiesto de integridad. No se publica una web ni se envían mensajes automáticamente.
 
-Para ejecutar un día en modo controlado sobre esta rama, el workflow acepta `modo=controlado`. La primera vez debe elegirse `inicializar=true` si no existe estado diario previo. Por ejemplo, con una CLI de GitHub autenticada:
+Para ejecutar un día en modo controlado sobre esta rama, el workflow acepta `modo=controlado`. El estado diario preparado se restaura automáticamente. `inicializar=true` se reserva para un canal sin historial; la semilla opcional permite importar un estado auditado. Por ejemplo, con una CLI de GitHub autenticada:
 
 ```bash
-gh workflow run radar-diario.yml --ref mejora/radar-auditable -f modo=controlado -f inicializar=true
+gh workflow run radar-diario.yml --ref mejora/radar-auditable -f modo=controlado -f canal=piloto
 ```
 
-En los días siguientes omitir `inicializar` o dejarlo en `false`. El workflow busca el último artefacto **estado-controlado** del mismo workflow y rama, generado por una ejecución manual o programada del piloto, valida SHA-256 y SQLite y continúa desde allí. Las pruebas dobles de PR no se usan como estado diario. No sobrescribe un estado existente por marcar inicializar. Si falta el estado o falla su integridad, detiene la corrida en vez de reiniciar silenciosamente.
+En los días siguientes omitir `inicializar` o dejarlo en `false`. El workflow restaura primero la cadena incremental de **piloto_respaldo/diario/** versionada en Git, comprueba SHA-256 y el contenido lógico completo de SQLite y continúa desde allí. Los artefactos de Actions quedan como copia adicional y para migración de estados anteriores. Las pruebas dobles de PR no se usan como estado diario. No sobrescribe un estado existente por marcar inicializar. Si falta el estado o falla su integridad, detiene la corrida en vez de reiniciar silenciosamente.
 
-Los artefactos se conservan noventa días. Cada nuevo estado contiene todo el historial acumulado, no sólo noventa días de registros. Si el piloto se detiene durante más tiempo, se necesita una copia de respaldo para restaurar; antes de producción hay que definir almacenamiento y respaldos duraderos. No confiar en la caché de Actions para el historial. La caché compartida sólo reutiliza descargas y textos documentales.
+Los artefactos se conservan noventa días. Cada nuevo estado contiene todo el historial acumulado, no sólo noventa días de registros. Los segmentos versionados en Git conservan el historial incluso si el piloto se detiene más de noventa días. Hay que conservar índice y segmentos juntos; una copia externa del repositorio añade protección frente a la pérdida del propio repositorio. No confiar en la caché de Actions para el historial. La caché compartida sólo reutiliza descargas y textos documentales.
 
 ## Programación y descubrimiento
 
-Se conserva el horario de las 08:00 Argentina. El job controlado programado exige `RADAR_CONTROLADO_HABILITADO=true`; el de producción tiene una autorización independiente y cerrada por defecto. Esta etapa no establece ninguna variable del repositorio ni activa producción.
+El horario objetivo del piloto es las 08:00 Argentina. En esta rama el piloto se invoca con `workflow_dispatch`; el job de producción conserva su autorización independiente, cerrada por defecto. Esta etapa no establece ninguna variable de producción ni activa producción.
 
 **GitHub sólo ejecuta cron desde la rama predeterminada. Mientras no se autorice un mecanismo de programación y este workflow permanezca sólo en la rama del PR, no hay un cron diario activo en esa rama.** Se puede probar manualmente el piloto sin fusionar ni activar producción. La automatización diaria requiere resolver ese punto con autorización, por ejemplo un disparador autorizado que invoque el workflow de la rama; no se modifica `main` de forma indirecta para lograrlo.
 
@@ -60,3 +60,5 @@ El descubrimiento conserva su workflow separado y el padrón territorial. En est
 ## Antes de activar
 
 Revisar los resultados de la prueba doble y las fuentes que siguen parciales, bloqueadas o pendientes; verificar continuidad del estado y respaldos; elegir quién consulta el informe y recibe aviso de ejecuciones incompletas; autorizar la programación del piloto. La producción requiere una aprobación separada y explícita. Un resultado de Actions correcto significa que el proceso terminó y guardó auditoría, no que todas las fuentes funcionen.
+
+La validación de continuidad entre ejecuciones independientes y el respaldo duradero se documentan en [PERSISTENCIA_DURADERA.md](PERSISTENCIA_DURADERA.md) y su [informe de resultados](RESULTADOS_PERSISTENCIA.md).

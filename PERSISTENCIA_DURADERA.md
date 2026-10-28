@@ -28,3 +28,15 @@ gh workflow run radar-diario.yml --ref mejora/radar-auditable \
 ```
 
 No usar inicialización para resolver una falla de integridad. Conservar segmentos e índice juntos. Todos los procedimientos y oportunidades se mantienen, sin filtros comerciales; las condiciones de pago requieren respaldo y no se calcula rentabilidad.
+
+## Estado diario preparado en esta etapa
+
+El canal `piloto_respaldo/diario/` contiene la cadena validada por #130 y #131, con la semilla histórica de #116 y 3.691 procedimientos. Se copian los mismos blobs de Git, sin cambiar bytes ni hashes y sin sustituir un canal diario existente. `PROCEDENCIA.json` identifica la revisión, las ejecuciones y el hash lógico comprobado. Esto prepara el historial; no ejecuta un cron ni activa producción.
+
+Para la siguiente consulta del canal ya preparado no hace falta inicializar ni descargar la semilla:
+
+```sh
+gh workflow run radar-diario.yml --ref mejora/radar-auditable -f modo=controlado -f canal=piloto
+```
+
+Resultados y límites actuales: [RESULTADOS_PERSISTENCIA.md](RESULTADOS_PERSISTENCIA.md).

@@ -4,7 +4,7 @@ Radar de publicaciones públicas sin filtros por rubro, monto ni financiación y
 
 ## Piloto controlado, sin producción
 
-Ver [puesta en marcha controlada](PUESTA_EN_MARCHA_CONTROLADA.md). En esta rama, Actions prueba dos ejecuciones reales consecutivas con estado SQLite aislado: primera línea de base sin alertas masivas, segunda incremental y reproducción estable. Descargar el artefacto **radar-controlado** y abrir **index.html** para consultar todo el catálogo. Producción está cerrada por defecto; no se fusiona ni activa en esta etapa.
+Ver [puesta en marcha controlada](PUESTA_EN_MARCHA_CONTROLADA.md). En esta rama, Actions valida dos invocaciones reales independientes del piloto, restaurando el estado desde Git entre runners y comprobando que no se pierda historia ni se repitan identidades como nuevas. La inicialización conserva la línea de base sin alertas históricas. Descargar el artefacto **radar-controlado** y abrir **index.html** para consultar todo el catálogo. Producción está cerrada por defecto; no se fusiona ni activa en esta etapa.
 
 Resultado y auditoría individual de las 74 fuentes: [validación controlada](VALIDACION_CONTROLADA.md).
 
@@ -34,11 +34,11 @@ Deduplicación persistente por provincia, organismo, procedimiento y convocatori
 
 ## Automatización
 
-Se conserva el horario diario de las 11 UTC (08 Argentina), con pruebas en PR y artefactos por 90 días. El piloto diario restaura SQLite con manifiesto de integridad desde su artefacto anterior; una falta de estado no reinicia silenciosamente la línea de base. Cron controlado y producción tienen habilitaciones independientes, cerradas por defecto. GitHub sólo ejecuta cron desde la rama predeterminada; esta rama del PR no tiene programación activa. No se modifica main ni se fusiona para habilitarla. Ver los pasos y límites de persistencia en la guía del piloto.
+El horario objetivo es las 11 UTC (08 Argentina), con pruebas en PR y artefactos por 90 días. El piloto diario restaura SQLite desde respaldos incrementales versionados en Git, sin caducidad automática, y comprueba toda la cadena antes de consultar. Una falta de estado no reinicia silenciosamente la línea de base. Ver [persistencia duradera](PERSISTENCIA_DURADERA.md) y [resultados](RESULTADOS_PERSISTENCIA.md). El piloto de esta rama se invoca por `workflow_dispatch`; producción tiene una habilitación separada y cerrada por defecto. GitHub sólo ejecuta cron desde la rama predeterminada; esta rama del PR no tiene programación activa. No se modifica main ni se fusiona para habilitarla. Ver los pasos y límites de persistencia en la guía del piloto.
 
 RADAR_MAX_PAGINAS y RADAR_MAX_PROFUNDIDAD mantienen límites de seguridad (el segundo aplica al conector heredado). No limitan resultados. Un recorrido truncado se informa en auditoría. Salida 2 ante fuentes bloqueadas, pendientes o parciales; las demás fuentes continúan. Los archivos versionados de resultados previos son históricos, no prueba de esta etapa.
 
-Alternativa de red: ejecutar manualmente el workflow sobre esta rama activa un trabajo de verificación con permisos de lectura y artefactos. No escribe el historial de main. La verificación de red es explícita y separada de las pruebas reproducibles del PR.
+Alternativa de red: ejecutar manualmente el workflow sobre esta rama consulta las fuentes, guarda artefactos y persiste exclusivamente el respaldo del piloto en esta misma rama. No escribe el historial de main. La verificación de red es explícita y separada de las pruebas reproducibles del PR.
 
 ## Verificador acotado y auditable
 
