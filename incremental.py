@@ -5,6 +5,8 @@ from hashlib import sha256
 import json
 from pathlib import Path
 import sqlite3
+import re
+from urllib.parse import urlsplit
 import oportunidades as o
 
 VERSION=1
@@ -94,7 +96,14 @@ def contenido(r):
     pago=n['pago']
     docs=sorted({d['url'] for d in r.get('documentos',[])})
     campos={k:r.get(k) for k in SEMANTICOS}
-    if campos.get('objeto'):campos['objeto']=' '.join(campos['objeto'].split())
+    if campos.get('objeto'):
+        texto=campos['objeto']
+        host=(urlsplit(r.get('evidencia_url') or r.get('url') or '').hostname or '').removeprefix('www.')
+        # Contadores observados en #107. La evidencia original se conserva;
+        # sólo se excluyen de la comparación estas etiquetas del sitio.
+        if host=='timbues.gob.ar':texto=re.sub(r'\b[\d.]+\s+vistas\b','',texto,flags=re.I)
+        if host=='armstrong.gov.ar':texto=re.sub(r'\bDescargas\s+\d+\s+(?=Licencia\b)','',texto,flags=re.I)
+        campos['objeto']=' '.join(texto.split())
     return {**campos,'documentos':docs,'documentos_versiones':r.get('documentos_versiones',{}),
         'pago':{'estado':pago.get('estado'),'clasificacion':pago.get('clasificacion'),'plazos_dias':sorted(pago.get('plazos_dias') or []),
             'hitos_inicio':sorted(pago.get('hitos_inicio') or []),'documentos':sorted(pago.get('documentos_respaldo') or [])}}
@@ -140,6 +149,7 @@ def registrar(db,registros,informe):
                 a=contenido(anterior);b=contenido(dato)
                 cambios=[k for k in b if a.get(k)!=b[k]]
                 def completado(k):
+                    if k=='objeto' and calidad(dato)>calidad(anterior):return True
                     if k=='documentos_versiones':return all(b[k].get(u)==v for u,v in a.get(k,{}).items())
                     if k=='pago':return a[k].get('estado')!='VERIFICADO' and b[k].get('estado')=='VERIFICADO'
                     return a.get(k) in (None,'',[],{})

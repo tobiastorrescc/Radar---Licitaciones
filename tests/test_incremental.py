@@ -160,4 +160,36 @@ class IncrementalTests(unittest.TestCase):
         r=inc.registrar(self.db,[self.fila('2/2026',fecha_publicacion_texto='27/10/2026')],self.informe('dos',estado='PARCIAL',fecha='2026-10-27T12:00:00-03:00'))
         self.assertEqual(r['clasificacion']['NUEVO_CONFIRMADO'],1)
 
+    def test_contadores_reales107_no_generan_modificacion_pero_cantidades_si(self):
+        for host,a,b in [
+            ('timbues.gob.ar','Adquisición 20 luminarias Publicado -- 1246 vistas alumbrado',
+             'Adquisición 20 luminarias Publicado -- 1247 vistas alumbrado'),
+            ('armstrong.gov.ar','Adquisición 20 luminarias Creado por Carga Noticias Descargas 490 Licencia Precio',
+             'Adquisición 20 luminarias Creado por Carga Noticias Descargas 491 Licencia Precio')]:
+            numero='1/2026' if host.startswith('timbues') else '2/2026'
+            base=self.fila(numero,objeto=a,url='https://'+host+'/detalle',evidencia_url='https://'+host+'/detalle')
+            nueva={**base,'objeto':b}
+            inc.registrar(self.db,[base],self.informe(host+'-base'))
+            r=inc.registrar(self.db,[nueva],self.informe(host+'-visita'))
+            self.assertEqual(r['clasificacion'],{'SIN_CAMBIOS':1})
+            self.assertEqual(r['novedades'],0)
+            cambio={**nueva,'objeto':b.replace('20 luminarias','30 luminarias')}
+            r=inc.registrar(self.db,[cambio],self.informe(host+'-cantidad'))
+            self.assertEqual(r['clasificacion']['MODIFICADO'],1)
+
+    def test_contadores_no_se_eliminan_de_la_evidencia_ni_de_otro_portal(self):
+        fila=self.fila(objeto='Adquisición 20 vistas',evidencia_url='https://otro.gob.ar/detalle')
+        self.assertEqual(inc.contenido(fila)['objeto'],'Adquisición 20 vistas')
+        fila['evidencia_url']='https://timbues.gob.ar/detalle'
+        self.assertEqual(inc.compacto(fila)['objeto'],'Adquisición 20 vistas')
+
+    def test_resumen_completado_con_ficha_se_informa_como_datos_completados(self):
+        base=self.fila(objeto='Adquisición...',rango_evidencia=1)
+        inc.registrar(self.db,[base],self.informe())
+        detalle=self.fila(objeto='Adquisición de ropa de trabajo',rango_evidencia=3,fecha_apertura_texto='30/10/2026')
+        r=inc.registrar(self.db,[detalle],self.informe('detalle'))
+        self.assertEqual(r['clasificacion'],{'DATOS_COMPLETADOS':1})
+        r=inc.registrar(self.db,[detalle],self.informe('repeticion'))
+        self.assertEqual(r['novedades'],0)
+
 if __name__=='__main__':unittest.main()
