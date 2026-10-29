@@ -20,16 +20,36 @@ import extractores
 import oportunidades as o
 
 
-def worker(url):
-    raw,tipo,final,cache=cache_documentos.obtener(url)
+def worker(url,consulta_post=None):
+    transporte=None
+    if consulta_post:
+        # Endpoint público de lectura observado en el cliente oficial. No hay
+        # soporte genérico para POST de registros, ofertas ni autenticación.
+        endpoint=consulta_post.get('url');params=consulta_post.get('json',{})
+        if (urlparse(url).hostname!='licitaciones.chajari.gob.ar' or endpoint!='https://licitaciones.chajari.gob.ar/return_file'
+            or set(params)!={'atta_id','file_name','licitacion_id'} or params['file_name']!='pliego_y_decreto'
+            or not str(params['atta_id']).isdigit() or not str(params['licitacion_id']).isdigit()):raise ValueError('Petición documental pública no admitida')
+        def transporte(u,**kwargs):
+            import base64
+            datos,_,destino=conectores.descargar(endpoint,datos_post=json.dumps(params).encode(),headers_extra={'Content-Type':'application/json'},conexion_timeout=5,lectura_timeout=8)
+            if destino!=endpoint:raise ValueError('Redirección del endpoint documental')
+            respuesta=json.loads(datos).get('result')
+            if not isinstance(respuesta,dict) or not respuesta.get('file64'):raise ValueError('El portal no entregó un documento público')
+            contenido=base64.b64decode(respuesta['file64'],validate=True)
+            if len(contenido)>12_000_000 or not contenido.startswith(b'%PDF-'):raise ValueError('Respuesta documental no es PDF admisible')
+            return contenido,respuesta.get('mime') or 'application/pdf',url,{}
+    raw,tipo,final,cache=cache_documentos.obtener(url,transport=transporte)
     if (urlparse(final).hostname or '').removeprefix('www.')!=(urlparse(url).hostname or '').removeprefix('www.'):
         return {'url':url,'url_final':final,'estado':'REDIRECCION_OTRO_DOMINIO'}
     clase='PDF' if raw.startswith(b'%PDF-') else ('ZIP_O_DOCX' if raw.startswith(b'PK') else ('XLS' if raw.startswith(b'\xd0\xcf\x11\xe0') else None))
     if not clase:return {'url':url,'url_final':final,'estado':'NO_ES_DOCUMENTO','tipo':tipo,'error':'Respuesta HTML/u otro contenido; HTTP 200 no valida pliego'}
-    r={'url':url,'url_final':final,'estado':'DOCUMENTO_ACCESIBLE','tipo':clase,'bytes':len(raw),'sha256':sha256(raw).hexdigest(),'cache_estado':cache['cache_estado'],'fecha_descarga':cache.get('descargado'),'revalidado':cache.get('revalidado')}
+    r={'url':url,'url_final':final,'consulta_post':consulta_post,'estado':'DOCUMENTO_ACCESIBLE','tipo':clase,'bytes':len(raw),'sha256':sha256(raw).hexdigest(),'cache_estado':cache['cache_estado'],'fecha_descarga':cache.get('descargado'),'revalidado':cache.get('revalidado')}
     try:
         texto,texto_meta=cache_documentos.leer_texto(raw,tipo,final,ocr=False)
         r['cache_texto']=texto_meta['cache_texto']
+        paginas=texto.split('\f')
+        if paginas and not paginas[-1].strip():paginas=paginas[:-1]
+        if any(len(re.sub(r'[^A-Za-zÁÉÍÓÚáéíóúÑñ]','',p))<20 for p in paginas):r['lectura_pendiente']='Documento con páginas sin texto suficiente: requiere OCR; no se presume ausencia de cláusulas'
         r['pagos']=pagos.extraer(texto,final,r['sha256'],pdf=clase=='PDF',metodo=texto_meta['metodo'])
         r['pago_mencionado']=bool(pagos.INICIO.search(pagos.norm(texto)))
         r['version_pago']=pagos.VERSION
@@ -100,7 +120,7 @@ def ordenar_documentos(candidatos,vinculos,fecha):
 
 
 def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrencia=4,salida_parcial=None):
-    candidatos={};vinculos={}
+    candidatos={};vinculos={};peticiones={}
     configs={f['url']:f for f in configuraciones if f.get('url')}
     ordenados=sorted(registros,key=lambda r:({'ABIERTA':0,'DESCONOCIDA':1,'VENCIDA':2}.get(r.get('vigencia'),1),r.get('fecha_apertura') or '9999',r.get('fuente') or ''))
     for r in ordenados:
@@ -113,6 +133,7 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
             if host(u) not in permitidos:
                 candidatos.setdefault(u,{'url':u,'estado':'DOMINIO_NO_DECLARADO'});continue
             candidatos.setdefault(u,{'url':u,'estado':'PENDIENTE'})
+            if d.get('consulta_post'):peticiones[u]=d['consulta_post']
             vinculos.setdefault(u,[]).append(r)
     def guardar_parcial(valor):
         if salida_parcial:
@@ -123,7 +144,7 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
         if time.monotonic()-inicio>=total:break
         while pendientes and len(activos)<concurrencia:
             url=pendientes.popleft()
-            p=subprocess.Popen([sys.executable,__file__,'--worker',url],stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,start_new_session=True)
+            p=subprocess.Popen([sys.executable,__file__,'--worker',url]+([json.dumps(peticiones[url])] if url in peticiones else []),stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,start_new_session=True)
             activos[p.pid]=(p,url,time.monotonic())
         for pid,(p,url,comienzo) in list(activos.items()):
             if p.poll() is not None:
@@ -150,7 +171,7 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
             if compatible and valor.get('pagos'):
                 r['pago_evidencias']=pagos.unir_evidencias(r.get('pago_evidencias'),valor['pagos'])
             prioridad=prioridad_pliego(valor,etiqueta,proc)
-            if prioridad and valor['estado']=='DOCUMENTO_ACCESIBLE' and prioridad>r.get('comprobacion_pliego',{}).get('prioridad_identificacion',0):
+            if compatible and prioridad and valor['estado']=='DOCUMENTO_ACCESIBLE' and prioridad>r.get('comprobacion_pliego',{}).get('prioridad_identificacion',0):
                 r['enlace_pliego']=valor['url'];r['comprobacion_pliego']={**valor,'prioridad_identificacion':prioridad,'identificacion':'ENLACE_OFICIAL_ETIQUETADO' if prioridad==2 else 'ENCABEZADO_Y_PROCEDIMIENTO'}
             if pertenece and valor.get('presupuesto') and not r.get('presupuesto'):
                 r['presupuesto']=valor['presupuesto'];r.setdefault('evidencias_campos',{})['presupuesto']=valor['evidencia_presupuesto']
@@ -173,5 +194,5 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
     return list(candidatos.values())
 
 if __name__=='__main__':
-    try:print(json.dumps(worker(sys.argv[2]),ensure_ascii=False))
+    try:print(json.dumps(worker(sys.argv[2],json.loads(sys.argv[3]) if len(sys.argv)>3 else None),ensure_ascii=False))
     except Exception as e:print(json.dumps({'url':sys.argv[2],'estado':'ERROR','error':str(e)}))

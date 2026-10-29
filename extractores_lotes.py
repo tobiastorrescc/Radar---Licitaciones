@@ -363,13 +363,18 @@ def extraer_chajari(datos,url):
             if not valor:return None
             # El cliente oficial observado utiliza Date.UTC al mostrar estos campos.
             return datetime.fromisoformat(valor).replace(tzinfo=timezone.utc).astimezone(o.ZONA).strftime('%Y-%m-%d %H:%M')
+        documentos=[]
+        adjunto=f.get('pliego_y_decreto_id')
+        if adjunto:
+            documentos=[{'url':ficha,'titulo':'Pliego y decreto — descarga pública desde el procedimiento',
+                'consulta_post':{'url':url_publica('/return_file',url),'json':{'atta_id':str(adjunto),'file_name':'pliego_y_decreto','licitacion_id':f['id']}}}]
         monto=f.get('presupuesto_oficial');presupuesto={'importe':str(monto),'moneda':None} if isinstance(monto,(int,float)) and monto>=0 else None
         registros.append({'titulo':tipo+' Nº '+f['name']+' — '+f['title'],'objeto':f['title'],
             'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'procedimiento':p['procedimiento'],
             'registro_estructurado':True,'id_origen':str(f['id']),'url':ficha,'evidencia_url':ficha,
             'evidencias_campos':{'presupuesto':{'url':ficha,'consulta_url':url,'metodo':'POST','texto':'presupuesto_oficial: '+str(monto)}},
             'fecha_apertura_texto':fecha_local(f.get('fecha_hora_apertura')),'fecha_limite_presentacion_texto':fecha_local(f.get('fecha_hora_cierre')),
-            'presupuesto':presupuesto,'documentos':[],
+            'presupuesto':presupuesto,'documentos':documentos,
             'situacion_publicada':{'adjudicada':'ADJUDICADA','en_evaluacion':'EN_EVALUACION'}.get(f.get('state')),
             'campos_oficiales':{k:f.get(k) for k in ('id','name','title','type','state','fecha_hora_apertura','fecha_hora_cierre','presupuesto_oficial','pliego_y_decreto_id')},
             'detalle_completo':True,'rango_evidencia':3})

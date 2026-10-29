@@ -1,0 +1,42 @@
+{
+  "fecha": "2026-10-29",
+  "github_run_id": "40950466660",
+  "candidatos": [
+    {
+      "organismo": "Universidad Tecnológica Nacional — Facultad Regional Paraná",
+      "localidad": "Paraná",
+      "provincia": "Entre Ríos",
+      "tipo": "SECTORIAL",
+      "url": "https://www.frp.utn.edu.ar/info2/?page_id=32743",
+      "evidencia_descubrimiento": "https://www.frp.utn.edu.ar/info2/?page_id=32743",
+      "motivo_previo": "Procedimiento 17/2026 indexado con objeto; captura directa agotó tiempo. No incorporada."
+    },
+    {
+      "organismo": "Universidad Autónoma de Entre Ríos",
+      "localidad": "Paraná",
+      "provincia": "Entre Ríos",
+      "tipo": "SECTORIAL",
+      "url": "https://uader.edu.ar/novedades/licitaciones-publicas",
+      "evidencia_descubrimiento": "https://uader.edu.ar/secretarias/economico-financiera",
+      "motivo_previo": "Sección oficial capturada pero sin texto de procedimientos reconocido. No incorporada."
+    },
+    {
+      "organismo": "Municipalidad de Ramallo",
+      "localidad": "Ramallo",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://www.ramallo.gob.ar/boletines",
+      "evidencia_descubrimiento": "https://www.ramallo.gob.ar/",
+      "motivo_previo": "Nuevo índice oficial enlaza SIBOM; aún no acredita convocatorias extraídas. No incorporada."
+    },
+    {
+      "organismo": "Municipalidad de Ramallo",
+      "localidad": "Ramallo",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://sibom.slyt.gba.gob.ar/cities/102",
+      "evidencia_descubrimiento": "https://www.ramallo.gob.ar/boletines",
+      "motivo_previo": "Identidad municipal corroborada. Índice de boletines capturado; falta extracción y clasificación de convocatorias. No incorporada."
+    }
+  ]
+}

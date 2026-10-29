@@ -206,3 +206,18 @@ class DocumentosMultiplesTests(unittest.TestCase):
                 resultado=conectores.explorar(url,{'numeracion_compuesta':True,'lectura_adjuntos':'necesarios'},fetch=fetch)
             self.assertEqual(resultado['estado'],estado)
             if estado=='OPERATIVA':self.assertEqual(sum(bool(r.get('documento_desglosado')) for r in resultado['oportunidades']),1)
+
+class DescargaDocumentalPublicaTests(unittest.TestCase):
+    def test_post_lectura_cacheado_y_rechaza_endpoints_de_registro(self):
+        import base64,json,os
+        from unittest.mock import patch
+        from tools.comprobar_pliegos import worker
+        url='https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710'
+        consulta={'url':'https://licitaciones.chajari.gob.ar/return_file','json':{'atta_id':'6397','file_name':'pliego_y_decreto','licitacion_id':710}}
+        respuesta=json.dumps({'result':{'file64':base64.b64encode(b'%PDF-datos').decode(),'mime':'application/pdf'}}).encode()
+        with tempfile.TemporaryDirectory() as d,patch.dict(os.environ,{'RADAR_CACHE_DOCUMENTOS':d}),patch('conectores.descargar',return_value=(respuesta,'application/json',consulta['url'])) as descargar,patch('documentos.leer',return_value='Forma de pago: 30 días desde la recepción de factura.'):
+            for _ in range(2):
+                r=worker(url,consulta);self.assertEqual(r['estado'],'DOCUMENTO_ACCESIBLE');self.assertEqual(r['pagos'][0]['plazos_dias'],[30])
+            self.assertEqual(descargar.call_count,1)
+            self.assertIn('datos_post',descargar.call_args.kwargs)
+        with self.assertRaises(ValueError):worker(url,{**consulta,'url':'https://licitaciones.chajari.gob.ar/licitaciones/newoferetente'})

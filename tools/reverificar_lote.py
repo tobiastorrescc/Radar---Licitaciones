@@ -17,6 +17,11 @@ def main():
     root=Path('work/reverificacion');root.mkdir(parents=True,exist_ok=True)
     informe=ejecutar(fs,root/'verificacion.json',concurrencia=2,por_fuente=75,total=150)
     rs=registros_checkpoint(informe);observaciones=[]
+    if json.load(open('tools/plan_cobertura.json')).get('verificar_documentos'):
+        from tools.comprobar_pliegos import comprobar
+        import oportunidades as o
+        comprobar(rs,informe['actualizado'],fs,total=90,salida_parcial=root/'documentos.jsonl')
+        rs=[o.normalizar(r,informe['actualizado']) for r in rs]
     for f in informe['observaciones']:
         filas=[r for r in rs if r.get('fuente')==f['url']]
         observaciones.append({**f,'estado_cobertura':estado_cobertura(f,filas)})
