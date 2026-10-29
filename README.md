@@ -69,3 +69,5 @@ La ruta histórica action18 de Rojas era ejecución de órdenes de compra. Se re
 `inventario/base_36.json` permite comprobar que se mantienen las fuentes anteriores. `tools/padron_territorial.py` importa el padrón oficial con su procedencia; el radio bonaerense es geodésico y no mide rutas. `tools/informe_cobertura.py` cruza el padrón, las fuentes y los checkpoints de una corrida para generar `work/verificacion/cobertura/`. Sus estados requieren extracción real; los archivos históricos de la etapa inicial no son el estado actual. Ver [informe de cobertura](INFORME_COBERTURA.md).
 
 El programador externo de las 08:00 de Argentina está preparado y **desactivado**: [configuración, permisos, costos y activación posterior](PROGRAMADOR_EXTERNO.md). No se instaló un servicio ni se autorizó producción.
+
+[Resultados de esta etapa del programador externo y auditorías](RESULTADOS_PROGRAMADOR.md).
