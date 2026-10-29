@@ -221,3 +221,11 @@ class DescargaDocumentalPublicaTests(unittest.TestCase):
             self.assertEqual(descargar.call_count,1)
             self.assertIn('datos_post',descargar.call_args.kwargs)
         with self.assertRaises(ValueError):worker(url,{**consulta,'url':'https://licitaciones.chajari.gob.ar/licitaciones/newoferetente'})
+
+class PagoGenericoTests(unittest.TestCase):
+    def test_opciones_que_debe_proponer_oferente_no_prueban_pago_parcial(self):
+        texto='Forma de pago determinada por la Municipalidad en el Pliego de Condiciones Particulares. En el caso de propuestas con entregas parciales, el oferente deberá consignar en forma expresa el modo del pago: - Pago total al finalizar las entregas o entrega única. - Pagos parciales con facturaciones parciales para cada una de las entregas'
+        self.assertEqual(pagos.consolidar(pagos.extraer(texto,'https://oficial.gob.ar/p.pdf','a'*64))['estado'],'PENDIENTE')
+        # Citas antiguas del mismo documento no mantienen la clasificación errónea.
+        e={'categoria':'PAGOS_PARCIALES','cita':texto,'url_documento':'https://oficial.gob.ar/p.pdf','sha256':'a'*64,'version_analizador':6}
+        self.assertEqual(pagos.consolidar([e])['estado'],'PENDIENTE')

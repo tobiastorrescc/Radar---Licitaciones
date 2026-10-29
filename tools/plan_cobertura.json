@@ -1,10 +1,7 @@
 {
-  "etapa": "regresion-documental-chajari-2026-10-29-9",
+  "etapa": "reproceso-y-respaldo-auditoria-2026-10-29-10",
   "sondear": false,
   "auditar": false,
   "descubrir": false,
-  "reverificar_ids": [
-    "fuente-040"
-  ],
-  "verificar_documentos": true
+  "reprocesar_run": "40952155721"
 }

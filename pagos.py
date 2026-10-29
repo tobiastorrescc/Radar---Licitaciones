@@ -3,7 +3,7 @@ from hashlib import sha256
 import re
 import unicodedata
 
-VERSION=6
+VERSION=7
 NO_INFORMADO='Pago no informado'
 NUMEROS={'siete':7,'quince':15,'treinta':30,'cuarenta y cinco':45,'sesenta':60,'noventa':90,
          'cinco':5,'diez':10,'veinte':20,'veinticinco':25,'cuarenta':40,'cincuenta':50,
@@ -22,6 +22,7 @@ def norm(t):
 def clasificar(cita,permitir_definicion=False):
     t=norm(cita)
     if EXCLUIDO.search(t) or re.search(r'pago (?:al |de )?contado (?:de[l]?|por (?:la )?(?:compra|adquisicion) de[l]?) (?:los )?pliegos?',t):return None
+    if re.search(r'forma de pago determinada por .*pliego de condiciones particulares',t):return None
     if not permitir_definicion and (re.search(r'^pago (?:al )?contado se entendera',t) or re.search(r'forma de pago (?:determinada|establecida|fijada|indicada) en (?:el )?pliego',t)):return None
     # Las negaciones y remisiones no se transforman en una condición positiva.
     if re.search(r'no se (?:admite|admitira|acepta|aceptara|efectuara|realizara)\b',t):return None
@@ -60,7 +61,7 @@ def clasificar(cita,permitir_definicion=False):
     aprobacion=bool(re.search(r'(?:aprobacion|autorizacion) (?:administrativa|del pago|de la factura)|acto administrativo',t))
     if aprobacion:hitos.append('APROBACION_ADMINISTRATIVA')
     if not(plazos or contado or contra_entrega or factura or conformidad or anticipo or parcial or aprobacion):return None
-    if not permitir_definicion and re.search(r'(?:podra|podran|si (?:el|la)|en caso de|cuando la municipalidad requiera)\b',t) and not re.search(r'se (?:acepta|admite)n?.*(?:o |alternativ)',t):return None
+    if not permitir_definicion and re.search(r'(?:podra|podran|si (?:el|la)|en (?:el )?caso de|cuando la municipalidad requiera)\b',t) and not re.search(r'se (?:acepta|admite)n?.*(?:o |alternativ)',t):return None
     opciones=bool(re.search(r'\b(?:o (?:a |al |contra )|alternativas? de pago|opciones de pago)',t))
     mixto=bool(re.search(r'anticipo|saldo|\d+\s*%|por ciento|cuotas|parciales|certificados mensuales',t)) and (len(plazos)>1 or contado or contra_entrega or 'saldo' in t or 'anticipo' in t)
     if opciones:categoria='OPCIONES_PUBLICADAS'
@@ -122,7 +123,8 @@ def extraer(texto,url,hash_documento=None,pdf=False,metodo='TEXTO'):
             fuertes=[m for m in matches if re.match(r'formas?|condiciones|plazo|modalidad|terminos',m.group()) and re.match(r'\s*(?::|[.\-]|$)',t[m.end():])]
             for m in matches:
                 if fuertes and m not in fuertes:continue
-                previo=t[max(0,m.start()-90):m.start()]
+                previo=t[max(0,m.start()-180):m.start()]
+                if re.search(r'oferente[^.!?]{0,100}(?:consignar|indicar|proponer)[^.!?]{0,80}$',previo):continue
                 if re.search(r'no se (?:admite|admitira|acepta|aceptara|efectuara|realizara)[^.!?]{0,50}$',previo):continue
                 if re.search(r'(?:precio|valor|costo|compra|adquisicion) de[l]? pliego[^.!?]{0,40}$',previo):continue
                 siguiente=next((f.start() for f in fuertes if f.start()>m.start()),len(original))
@@ -169,6 +171,19 @@ def desconocido(motivo='SIN_CLAUSULA_COMPROBADA'):
 
 
 def consolidar(evidencias):
+    # Revisar las citas guardadas sin descargar otra vez el pliego. No modificar
+    # evidencias/versiones persistidas; la clasificación vigente es una vista derivada.
+    genericos={(e.get('url_documento'),e.get('sha256')) for e in evidencias if re.search(r'oferente.*consignar.*pagos parciales',norm(e.get('cita')))}
+    revisadas=[]
+    for original in evidencias:
+        e=dict(original)
+        if (e.get('url_documento'),e.get('sha256')) in genericos and e.get('categoria')=='PAGOS_PARCIALES' and (re.search(r'oferente.*consignar',norm(e.get('cita'))) or norm(e.get('cita')).startswith('pago: - pago total')):continue
+        if e.get('version_analizador') in (5,6) and not e.get('definicion_contado'):
+            actual=clasificar(e.get('cita'))
+            if actual is None:continue
+            e.update(actual);e['reclasificada_desde_version']=e['version_analizador'];e['version_analizador']=VERSION
+        revisadas.append(e)
+    evidencias=revisadas
     if any(e.get('categoria')=='CONDICION_AMBIGUA' for e in evidencias):
         r=desconocido('DEFINICION_CONTADO_AMBIGUA');r['evidencias']=evidencias;return r
     unicas={}

@@ -4,7 +4,8 @@ on:
     branches: [mejora/radar-auditable]
     paths: [tools/plan_cobertura.json]
 permissions:
-  contents: read
+  contents: write
+  actions: read
 concurrency:
   group: auditoria-cobertura-aislada
   cancel-in-progress: false
@@ -25,6 +26,9 @@ jobs:
           import json
           d=json.load(open('tools/plan_cobertura.json'))
           for k in ('sondear','auditar','descubrir'):print(k+'='+str(d.get(k,False)).lower())
+          run=str(d.get('reprocesar_run',''))
+          if run and not run.isdigit():raise ValueError('Run inválido')
+          print('reprocesar_run='+run)
           PY
       - name: Preparar lectura documental
         timeout-minutes: 4
@@ -55,6 +59,40 @@ jobs:
           python tools/respaldo_piloto.py exportar --salida work/cobertura --respaldo work/cobertura-respaldo
       - name: Reverificar sólo el lote explícito de conectores corregidos
         run: python -u tools/reverificar_lote.py
+      - name: Validar origen de la auditoría que se reinterpreta
+        if: steps.plan.outputs.reprocesar_run != ''
+        uses: actions/github-script@v7
+        env:
+          AUDITORIA_RUN: ${{ steps.plan.outputs.reprocesar_run }}
+        with:
+          script: |
+            const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:Number(process.env.AUDITORIA_RUN)});
+            if(r.conclusion!=='success'||r.head_branch!=='mejora/radar-auditable'||r.head_repository.full_name!==`${context.repo.owner}/${context.repo.repo}`||r.path!=='.github/workflows/mejorar-cobertura.yml')throw Error('Auditoría de origen inválida');
+      - uses: actions/download-artifact@v4
+        if: steps.plan.outputs.reprocesar_run != ''
+        with:
+          name: cobertura-${{ steps.plan.outputs.reprocesar_run }}
+          path: work/reprocesar
+          run-id: ${{ steps.plan.outputs.reprocesar_run }}
+          github-token: ${{ github.token }}
+      - name: Reprocesar citas de pliegos reales sin repetir descargas ni modificar el estado
+        if: steps.plan.outputs.reprocesar_run != ''
+        run: python tools/reprocesar_auditoria.py
+      - name: Archivar respaldo auditado separado del diario y comprobar restauración
+        if: steps.plan.outputs.reprocesar_run != ''
+        run: |
+          test "${{ github.ref }}" = 'refs/heads/mejora/radar-auditable'
+          mkdir -p piloto_respaldo/auditorias/2026-10-29
+          cp work/reprocesar/work/cobertura-respaldo/*.json.gz work/reprocesar/work/cobertura-respaldo/indice.json piloto_respaldo/auditorias/2026-10-29/
+          python tools/respaldo_piloto.py restaurar --salida work/comprobar-archivo --respaldo piloto_respaldo/auditorias/2026-10-29
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- piloto_respaldo/auditorias/2026-10-29
+          if ! git diff --cached --quiet; then
+            git commit -m 'Archivar auditoría ampliada sin modificar el historial diario [skip ci]'
+            git pull --rebase origin mejora/radar-auditable
+            git push origin HEAD:mejora/radar-auditable
+          fi
       - name: Guardar evidencia incluso si el lote queda incompleto
         if: always()
         uses: actions/upload-artifact@v4
@@ -62,6 +100,7 @@ jobs:
           name: cobertura-${{ github.run_id }}
           path: |
             work/sondeo/
+            work/reprocesado/
             work/reverificacion/
             work/descubrimiento/
             work/cobertura/
