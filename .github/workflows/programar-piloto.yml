@@ -16,7 +16,7 @@ on:
     - cron: '30 9 * * *' # 09:30 Argentina: supervisar sin redisparar.
       timezone: 'America/Argentina/Buenos_Aires'
   workflow_run:
-    workflows: ['Programador del piloto aislado', 'Radar piloto aislado']
+    workflows: ['Radar piloto aislado']
     types: [completed]
     branches: ['mejora/radar-auditable']
 permissions:
