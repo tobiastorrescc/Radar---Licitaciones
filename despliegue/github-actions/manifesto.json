@@ -1,13 +1,21 @@
 {
-  "autorizado": false,
-  "instalado_en_main": false,
-  "programacion_activada": false,
-  "origen": "despliegue/github-actions/programar-piloto.yml.propuesto",
+  "autorizado": true,
+  "instalado_en_main": true,
+  "programacion_activada": true,
+  "origen": "despliegue/github-actions/programar-piloto.yml.instalado",
   "destino": "main:.github/workflows/programar-piloto.yml",
-  "sha256_archivo": "114dd474ef96fe58cfee208f22ac27c5547b8974b8fe54845cba808c5dceedd8",
-  "variable_necesaria": "RADAR_PILOTO_PROGRAMADOR_HABILITADO",
-  "main_observado": "dd96ba91ab6809caaac5d7554b912417f97651ae",
-  "nota": "Revalidar main y permisos antes de copiar únicamente este archivo después de autorización. No fusionar el PR #1.",
-  "valor_requerido_antes_de_instalar": "false o ausente; comprobar antes de copiar el archivo",
-  "variable_remota": "No modificada ni consultada por esta implementación"
+  "main_commit": "dfca1a52c5371929ce6c07741a88fd209a7da852",
+  "sha256_archivo": "54940b9bf19f2163da39e9560159cad4a0179c6e0dfdf6f1a56e31b539f96e69",
+  "horario": "08:00 America/Argentina/Buenos_Aires",
+  "supervision": "09:30 America/Argentina/Buenos_Aires",
+  "workflow_antiguo": "radar-diario.yml: disabled_manually",
+  "main_archivos_modificados": [
+    ".github/workflows/programar-piloto.yml"
+  ],
+  "historial_produccion_modificado": false,
+  "ensayo_controlador": 40859148864,
+  "ensayo_piloto": 40856721766,
+  "aviso_automatico": 40859338554,
+  "alerta_real": "https://github.com/tobiastorrescc/Radar---Licitaciones/issues/2",
+  "pr_merge": false
 }

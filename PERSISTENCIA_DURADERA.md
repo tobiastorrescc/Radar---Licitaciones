@@ -1,5 +1,7 @@
 # Persistencia y disparador del piloto
 
+**Estado actualizado:** el piloto ya está instalado y habilitado; ver [instalación y validación real](INSTALACION_PILOTO.md). Las fases de preparación descritas aquí son antecedentes.
+
 El piloto permanece en `mejora/radar-auditable`, PR #1. No se fusiona ni se activa producción.
 
 ## Respaldos duraderos
@@ -42,3 +44,5 @@ gh workflow run radar-diario.yml --ref mejora/radar-auditable -f modo=controlado
 Resultados y límites actuales: [RESULTADOS_PERSISTENCIA.md](RESULTADOS_PERSISTENCIA.md).
 
 La opción de programación actual, todavía sin instalar ni activar, es el [programador 100% GitHub Actions](PROGRAMADOR_GITHUB.md). Tras autorización agregaría sólo un workflow a main; el radar y los respaldos continuarían en la rama del piloto sin fusionar el PR.
+
+Tras la primera consulta diaria real del 29/10/2026, el canal diario contiene tres segmentos, 3.697 procedimientos y 3.758 versiones. Se conserva toda la cadena inicial y el nuevo incremento; hash lógico actual `af90259db6892b9d7821b4d3a03acfc5ecefb6cc9e1ea5599eaa825684ef5815`.

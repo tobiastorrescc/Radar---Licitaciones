@@ -1,6 +1,8 @@
 {
-  "ejecutar_validacion": true,
+  "ejecutar_validacion": false,
   "main_sha_esperado": "24da6de94b4d3c00caedf1104ce3ec55b235e333",
   "sha256_programador": "538cf68f07b7065c863e79aa23b180712036dc274827a023a569215e6096b30d",
-  "autorizacion": "Usuario autorizó instalación, prueba real y puesta en marcha controlada sin merge ni cambios de historial de producción."
+  "autorizacion": "Usuario autorizó instalación, prueba real y puesta en marcha controlada sin merge ni cambios de historial de producción.",
+  "validacion_completada_run": 40859148864,
+  "main_activado": "dfca1a52c5371929ce6c07741a88fd209a7da852"
 }

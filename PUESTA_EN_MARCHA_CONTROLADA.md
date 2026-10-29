@@ -1,5 +1,7 @@
 # Puesta en marcha controlada, sin producción
 
+**Estado actualizado:** el piloto ya está instalado y habilitado; ver [instalación y validación real](INSTALACION_PILOTO.md). Las fases de preparación descritas aquí son antecedentes.
+
 El código y las auditorías quedan en el PR #1, rama `mejora/radar-auditable`. No se fusiona ni se modifica el historial de producción. La ejecución de `radar.py` exige `RADAR_PRODUCCION_AUTORIZADA=true`; el job de producción exige además `RADAR_PRODUCCION_HABILITADA=true` en el repositorio y ejecutarse desde `main`. Esta etapa no establece esas autorizaciones.
 
 ## Línea de base e incremental
@@ -42,7 +44,7 @@ El catálogo incluye búsqueda local y todas las filas, enlaces a publicaciones 
 Para ejecutar un día en modo controlado sobre esta rama, el workflow acepta `modo=controlado`. El estado diario preparado se restaura automáticamente. `inicializar=true` se reserva para un canal sin historial; la semilla opcional permite importar un estado auditado. Por ejemplo, con una CLI de GitHub autenticada:
 
 ```bash
-gh workflow run radar-diario.yml --ref mejora/radar-auditable -f modo=controlado -f canal=piloto
+gh workflow run programar-piloto.yml --ref mejora/radar-auditable -f modo=controlado -f canal=piloto
 ```
 
 En los días siguientes omitir `inicializar` o dejarlo en `false`. El workflow restaura primero la cadena incremental de **piloto_respaldo/diario/** versionada en Git, comprueba SHA-256 y el contenido lógico completo de SQLite y continúa desde allí. Los artefactos de Actions quedan como copia adicional y para migración de estados anteriores. Las pruebas dobles de PR no se usan como estado diario. No sobrescribe un estado existente por marcar inicializar. Si falta el estado o falla su integridad, detiene la corrida en vez de reiniciar silenciosamente.
@@ -64,3 +66,5 @@ Revisar los resultados de la prueba doble y las fuentes que siguen parciales, bl
 La validación de continuidad entre ejecuciones independientes y el respaldo duradero se documentan en [PERSISTENCIA_DURADERA.md](PERSISTENCIA_DURADERA.md) y su [informe de resultados](RESULTADOS_PERSISTENCIA.md).
 
 Propuesta actual para resolver la periodicidad sin servidor: [programador 100% GitHub Actions](PROGRAMADOR_GITHUB.md), preparado pero fuera de main y sin habilitación. Requiere autorizar la copia de un único workflow; no requiere fusionar el PR ni cambiar el historial de producción.
+
+Para la operación diaria manual usar `gh workflow run programar-piloto.yml --ref main -f accion=ejecutar`. El workflow antiguo radar-diario.yml está deshabilitado.

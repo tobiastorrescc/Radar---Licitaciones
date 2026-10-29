@@ -1,5 +1,7 @@
 # Programador 100% GitHub — preparación sin activar
 
+**Estado actualizado:** el piloto ya está instalado y habilitado; ver [instalación y validación real](INSTALACION_PILOTO.md). Las fases de preparación descritas aquí son antecedentes.
+
 Código publicado y probado: `43f349f79704b11a10b9eb2a143105c3253bc6d9`. PR #1 abierto en `mejora/radar-auditable`. No se modificó main, no se habilitó una variable ni se instaló el workflow programador.
 
 La solución es viable sin servidor, computadora encendida, PAT ni suscripción de cron. [Diseño y puesta en marcha posterior](PROGRAMADOR_GITHUB.md), [archivo único propuesto](despliegue/github-actions/programar-piloto.yml.propuesto), [manifiesto con hash y destino pendiente](despliegue/github-actions/manifesto.json).

@@ -1,0 +1,67 @@
+{
+  "iniciado": "2026-10-29T10:39:01.802Z",
+  "main_esperado": "24da6de94b4d3c00caedf1104ce3ec55b235e333",
+  "variable_programador": "",
+  "produccion_antes": {
+    "radar_estado.json": "1e64b40985b2e8f2609e1cd87bdf24c558fa18d3",
+    "licitaciones_nuevas.json": "98582ed6713a82cc23ab4fc07f936059917fd8c4",
+    "licitaciones_nuevas.md": null,
+    "auditoria_fuentes.json": "fcf697e20dd4951ee34a1b91d84148684ff8dce1"
+  },
+  "legado": "disabled_manually",
+  "workflow_nuevo_id": 400073063,
+  "ejecutar_6": {
+    "id": 40859238000,
+    "url": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/40859238000",
+    "conclusion": "success"
+  },
+  "piloto": {
+    "id": 40856721766,
+    "url": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/40856721766",
+    "conclusion": "success",
+    "fecha": "2026-10-29"
+  },
+  "supervision": {
+    "estado": "COMPLETADO_CON_RESPALDO",
+    "url": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/40856721766"
+  },
+  "notificacion_sin_consulta": {
+    "id": 40859266638,
+    "url": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/40859266638"
+  },
+  "supervisor_automatico": {
+    "id": 40859338554,
+    "url": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/40859338554",
+    "conclusion": "success"
+  },
+  "supervisar_11": {
+    "id": 40859382969,
+    "url": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/40859382969",
+    "conclusion": "success"
+  },
+  "probar_alerta_12": {
+    "id": 40859434053,
+    "url": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/40859434053",
+    "conclusion": "failure"
+  },
+  "alerta": {
+    "numero": 2,
+    "url": "https://github.com/tobiastorrescc/Radar---Licitaciones/issues/2",
+    "fallo_deliberado": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/40859434053",
+    "cerrada_tras_comprobar": true
+  },
+  "ejecutar_14": {
+    "id": 40859484632,
+    "url": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/40859484632",
+    "conclusion": "success"
+  },
+  "despachos_piloto": 1,
+  "produccion_despues": {
+    "radar_estado.json": "1e64b40985b2e8f2609e1cd87bdf24c558fa18d3",
+    "licitaciones_nuevas.json": "98582ed6713a82cc23ab4fc07f936059917fd8c4",
+    "licitaciones_nuevas.md": null,
+    "auditoria_fuentes.json": "fcf697e20dd4951ee34a1b91d84148684ff8dce1"
+  },
+  "correcta": true,
+  "finalizado": "2026-10-29T10:41:13.843Z"
+}
