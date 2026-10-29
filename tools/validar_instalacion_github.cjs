@@ -41,6 +41,12 @@ async function instalar({github,context,core}) {
   }return h;
  }
  try {
+  // Reemplazar sólo ensayos CI anteriores; nunca cancelar un piloto diario o un run de main.
+  const {data:ci}=await github.rest.actions.listWorkflowRuns({...repo,workflow_id:WORKFLOW,branch:RAMA,event:'push',per_page:100});
+  for(const r of ci.workflow_runs.filter(r=>r.id!==context.runId&&r.id<context.runId&&r.status!=='completed')) {
+   await github.rest.actions.cancelWorkflowRun({...repo,run_id:r.id});
+   core.info('CI_OBSOLETO_CANCELADO '+r.id);
+  }
   const main=(await github.rest.repos.getBranch({...repo,branch:'main'})).data;
   if(main.commit.sha!==plan.main_sha_esperado)throw Error('Main cambió antes del ensayo; revisar sin desactivar ni despachar');
   const contenido=(await github.rest.repos.getContent({...repo,path:'.github/workflows/programar-piloto.yml',ref:'main'})).data;

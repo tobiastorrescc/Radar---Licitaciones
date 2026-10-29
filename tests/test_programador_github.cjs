@@ -67,3 +67,5 @@ test('plantilla registra error y crea alerta sin consultar ni ejecutar producci�
 test('cron antiguo activo impide preparar y despachar, sin consultar producción',async()=>{const e=entorno();e.datos.legacyDisabled=false;await assert.rejects(r.preparar(args(e)),/antiguo/);await assert.rejects(r.despachar({...args(e),plan:r.planDia(NOW)}),/antiguo/);assert.equal(e.datos.post.length,0);});
 
 test('el programador no puede suscribirse a su propio nombre',()=>{const f=fs.readFileSync('despliegue/github-actions/programar-piloto.yml.propuesto','utf8');assert.ok(f.includes("workflows: ['Radar piloto aislado']"));assert.ok(!f.includes("workflows: ['Programador del piloto aislado'"));});
+
+test('validación CI no ocupa la misma cola que el piloto que despacha',()=>{const f=fs.readFileSync('.github/workflows/programar-piloto.yml','utf8');assert.ok(f.includes("github.event_name == 'workflow_dispatch' && format('radar-{0}', github.ref) || format('radar-ci-{0}', github.ref)"));});
