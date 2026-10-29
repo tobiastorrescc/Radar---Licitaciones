@@ -264,6 +264,7 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_
         'consultadas':len({r['url'] for r in informe['observaciones'] if r['iniciada']}),'validadas':len(validadas),'validadas_acumuladas':portales.get('VALIDADA',0),'incorporadas':len(nuevos),
         'incorporadas_acumuladas':len(registro['fuentes']),'pendientes':portales.get('PENDIENTE',0),
         'errores_busqueda':errores,'duracion_segundos':round(time.monotonic()-inicio,2),'cobertura_completa':False}
+    estado['ultima_ejecucion']=fecha
     guardar(raiz/'resumen.json',{'resumen':resumen,'incorporadas':nuevos});persistir()
     print('DESCUBRIMIENTO_RESUMEN '+json.dumps(resumen,ensure_ascii=False),flush=True)
     for f in nuevos:

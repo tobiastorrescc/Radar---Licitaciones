@@ -296,9 +296,48 @@ jobs:
           if-no-files-found: error
           retention-days: 90
 
+  descubrir-despues-del-respaldo:
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/mejora/radar-auditable' && inputs.modo == 'controlado' && inputs.canal == 'piloto' && inputs.solo_notificar != true
+    needs: verificar-fuentes-rama
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: mejora/radar-auditable
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Preparar lectura documental
+        timeout-minutes: 4
+        run: bash tools/preparar_documentos.sh
+      - name: Descubrimiento rotativo con presupuesto independiente del escaneo diario
+        timeout-minutes: 4
+        run: python -u tools/descubrimiento_piloto.py
+      - name: Guardar evidencia de descubrimiento incluso ante incidencias
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: descubrimiento-piloto
+          path: work/descubrimiento-piloto/
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Persistir candidatos y altas verificadas sin tocar el historial del piloto
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- inventario/fuentes_auto.json inventario/descubrimiento_estado.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Actualizar descubrimiento posterior al respaldo diario [skip ci]'
+            git pull --rebase origin mejora/radar-auditable
+            git push origin HEAD:mejora/radar-auditable
+          fi
+
   notificar-finalizacion:
     if: always() && github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/mejora/radar-auditable' && ((inputs.modo == 'controlado' && inputs.canal == 'piloto') || inputs.solo_notificar == true)
-    needs: verificar-fuentes-rama
+    needs: [verificar-fuentes-rama, descubrir-despues-del-respaldo]
     runs-on: ubuntu-latest
     timeout-minutes: 3
     permissions:

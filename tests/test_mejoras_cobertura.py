@@ -126,3 +126,12 @@ class ASSAPublicaTests(unittest.TestCase):
             with self.assertRaises(ValueError):extraer_assa(datos,'https://oficial.gob.ar/')
 
 if __name__=='__main__':unittest.main()
+
+class DescubrimientoPeriodicoTests(unittest.TestCase):
+    def test_revision_rotativa_cada_tres_dias(self):
+        from datetime import datetime,timezone
+        from tools.descubrimiento_piloto import corresponde
+        ahora=datetime(2026,10,29,12,tzinfo=timezone.utc)
+        self.assertTrue(corresponde({},ahora))
+        self.assertFalse(corresponde({'ultima_ejecucion':'2026-10-28T12:00:00+00:00'},ahora))
+        self.assertTrue(corresponde({'ultima_ejecucion':'2026-10-26T12:00:00+00:00'},ahora))

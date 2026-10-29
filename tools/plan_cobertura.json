@@ -1,28 +1,17 @@
 {
-  "etapa": "auditoria-2026-10-29-5",
+  "etapa": "sondeo-2026-10-29-6",
   "sondear": true,
-  "auditar": true,
-  "descubrir": true,
+  "auditar": false,
+  "descubrir": false,
   "urls_sondeo": [
-    "https://drive.google.com/drive/folders/1mEPwrEk6oAn_FQZTq_sndOHP8fuzeWmL",
-    "https://drive.google.com/drive/folders/1vBcz57geib81Zq1nd1d2qyVGPzSo-quO",
-    "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/e5f2051e251a46adbc356bc8a342145b",
-    "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/ead0840cc275408aa652ccf1e6eb9a2b",
-    "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/5e038b0268194c08997676c0300ef5b0",
-    "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/fb3628a9aab443ed90eae3ec7751d7bb"
-  ],
-  "peticiones": [
-    {
-      "url": "https://licitaciones.chajari.gob.ar/licitaciones/para_apertura/0",
-      "datos_post": "{\"\":\"\"}"
-    },
-    {
-      "url": "https://licitaciones.chajari.gob.ar/licitaciones/en_evaluacion/0",
-      "datos_post": "{\"\":\"\"}"
-    },
-    {
-      "url": "https://licitaciones.chajari.gob.ar/licitaciones/adjudicada/0",
-      "datos_post": "{\"\":\"\"}"
-    }
+    "https://epe.santafe.gov.ar/app2/aperturas",
+    "https://compras.santafe.gov.ar/",
+    "https://www.santafe.gov.ar/gestionesdecompras/site/",
+    "https://www.humboldt.gob.ar/",
+    "https://www.frp.utn.edu.ar/info2/?page_id=32743",
+    "https://www.frp.utn.edu.ar/info2/",
+    "https://uader.edu.ar/novedades/licitaciones-publicas",
+    "https://www.ramallo.gob.ar/boletines",
+    "https://sibom.slyt.gba.gob.ar/cities/102"
   ]
 }
