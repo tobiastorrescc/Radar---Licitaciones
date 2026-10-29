@@ -7,6 +7,15 @@ import json
 import re
 import unicodedata
 import time
+import os
+import logging
+import conectores
+import oportunidades as comercial
+import pagos
+import registro_fuentes
+from tools import comprobar_pliegos
+from collections import deque
+from zoneinfo import ZoneInfo
 
 
 # ==========================================
@@ -23,8 +32,8 @@ ARCHIVO_ESTADO = "radar_estado.json"
 ARCHIVO_RESULTADOS = "licitaciones_nuevas.json"
 ARCHIVO_AUDITORIA = "auditoria_fuentes.json"
 
-MAX_PAGINAS = 40
-MAX_PROFUNDIDAD = 3
+MAX_PAGINAS = int(os.environ.get("RADAR_MAX_PAGINAS", "1000"))
+MAX_PROFUNDIDAD = int(os.environ.get("RADAR_MAX_PROFUNDIDAD", "10"))
 TIMEOUT = 15
 
 EXTENSIONES = (
@@ -37,6 +46,11 @@ EXTENSIONES = (
 )
 
 PALABRAS_OPORTUNIDAD = (
+    "compra menor",
+    "compras menores",
+    "reapertura",
+    "desierta",
+    "segunda convocatoria",
     "licitacion",
     "concurso de precios",
     "compra directa",
@@ -74,7 +88,7 @@ PALABRAS_PAGO_PRIORITARIO = (
     "pago al contado",
     "contra entrega",
     "pago inmediato",
-    "pago anticipado",
+
 )
 
 
@@ -124,7 +138,9 @@ def leer_lineas(archivo):
 
 
 def guardar_json(archivo, datos):
-    Path(archivo).write_text(
+    ruta = Path(archivo)
+    temporal = ruta.with_suffix(ruta.suffix + ".tmp")
+    temporal.write_text(
         json.dumps(
             datos,
             ensure_ascii=False,
@@ -132,6 +148,9 @@ def guardar_json(archivo, datos):
         ),
         encoding="utf-8",
     )
+
+
+    os.replace(temporal, ruta)
 
 
 def cargar_json(archivo, defecto):
@@ -144,8 +163,8 @@ def cargar_json(archivo, defecto):
         return json.loads(
             ruta.read_text(encoding="utf-8")
         )
-    except (OSError, ValueError):
-        return defecto
+    except (OSError, ValueError) as error:
+        raise RuntimeError(f"No se puede leer {archivo}; se preserva el historial") from error
 
 
 # ==========================================
@@ -208,12 +227,12 @@ def descargar(url):
             "Content-Type", ""
         ).lower()
 
-        contenido = respuesta.read(
-            2_000_000
-        )
+        contenido = respuesta.read(2_000_001)
+        if len(contenido) > 2_000_000:
+            raise ValueError("Respuesta truncada: excede 2 MB")
 
         if "html" not in tipo:
-            return ""
+            raise ValueError(f"Contenido no HTML pendiente de adaptador: {tipo}")
 
         return contenido.decode(
             "utf-8",
@@ -257,10 +276,9 @@ def prioridad_pago(texto):
 
 
 def prioridad_comercial(item):
-    if item.get("pago_prioritario"):
-        return 0
-
-    return 1
+    # Orden orientativo, nunca un filtro ni una prediccion de rentabilidad.
+    return (not item.get("pago_prioritario", False),
+            not item.get("llamado_especial", False), item.get("titulo", ""))
 
 
 def dominio(url):
@@ -281,7 +299,9 @@ def enlace_valido(url):
 # ==========================================
 
 def explorar_fuente(fuente):
-    pendientes = [(fuente, 0)]
+    pendientes = deque([(fuente, 0)])
+    limites = []
+    correctas = 0
     visitadas = set()
     oportunidades = {}
     errores = []
@@ -290,9 +310,10 @@ def explorar_fuente(fuente):
 
     while pendientes:
         if len(visitadas) >= MAX_PAGINAS:
+            limites.append("max_paginas")
             break
 
-        url, profundidad = pendientes.pop(0)
+        url, profundidad = pendientes.popleft()
 
         url = url_limpia(url)
 
@@ -309,8 +330,10 @@ def explorar_fuente(fuente):
 
         try:
             html = descargar(url)
+            correctas += 1
 
         except Exception as error:
+            logging.exception("Error consultando %s", url)
             errores.append({
                 "url": url,
                 "error": str(error),
@@ -325,6 +348,7 @@ def explorar_fuente(fuente):
         try:
             parser.feed(html)
         except Exception as error:
+            logging.exception("Error consultando %s", url)
             errores.append({
                 "url": url,
                 "error": str(error),
@@ -359,12 +383,24 @@ def explorar_fuente(fuente):
                     "pago_prioritario": (
                         prioridad_pago(titulo)
                     ),
+                    "organismo": None,
+                    "localidad": None,
+                    "objeto": titulo,
+                    "presupuesto": None,
+                    "fecha_apertura": None,
+                    "condiciones_pago": None,
+                    "enlace_pliego": destino if urlparse(destino).path.lower().endswith(EXTENSIONES) else None,
+                    "estimacion_comercial": None,
+                    "motivo_sin_estimacion": "Faltan cantidades, costos y precios comprobables",
+                    "llamado_especial": any(p in normalizar(titulo) for p in ("desiert", "segundo llamado", "segunda convocatoria", "reapertura")),
                     "estado": (
                         "CANDIDATO_NO_VERIFICADO"
                     ),
                 }
 
             if profundidad >= MAX_PROFUNDIDAD:
+                if es_navegacion(titulo, destino) and destino not in visitadas:
+                    limites.append("max_profundidad")
                 continue
 
             if dominio(destino) != dominio_base:
@@ -386,6 +422,10 @@ def explorar_fuente(fuente):
         time.sleep(0.1)
 
     return {
+        "estado": "ERROR" if not correctas else ("PARCIAL" if errores or limites else "EXPLORADA"),
+        "limites": sorted(set(limites)),
+        "paginas_correctas": correctas,
+        "cobertura_completa": False,
         "oportunidades": list(
             oportunidades.values()
         ),
@@ -399,7 +439,9 @@ def explorar_fuente(fuente):
 # ==========================================
 
 def ejecutar():
-    ahora = datetime.now().astimezone()
+    logging.basicConfig(filename="radar.log", level=logging.INFO,
+                        format="%(asctime)s %(levelname)s %(message)s")
+    ahora = datetime.now(ZoneInfo("America/Argentina/Buenos_Aires"))
     fecha = ahora.isoformat()
 
     print("=" * 60)
@@ -410,8 +452,17 @@ def ejecutar():
     fuentes = leer_lineas(
         ARCHIVO_FUENTES
     )
+    try:automaticas=registro_fuentes.cargar_auto()
+    except (ValueError,KeyError,TypeError) as e:
+        logging.error('Registro de descubrimiento inválido; se conservan fuentes configuradas: %s',e)
+        automaticas={}
+    fuentes=list(dict.fromkeys(fuentes+list(automaticas)))
 
-    fuentes.append(ROSARIO)
+    if not fuentes:
+        raise ValueError("No hay fuentes configuradas")
+    invalidas = [f for f in fuentes if not enlace_valido(f)]
+    if invalidas:
+        raise ValueError(f"Fuentes invalidas: {invalidas}")
 
     fuentes = list(
         dict.fromkeys(
@@ -431,10 +482,8 @@ def ejecutar():
         {},
     )
 
-    if not isinstance(
-        estado_anterior, dict
-    ):
-        estado_anterior = {}
+    if not isinstance(estado_anterior, dict):
+        raise RuntimeError("Historial inválido: se preserva el archivo")
 
     if "oportunidades" in estado_anterior:
         historial = estado_anterior[
@@ -444,8 +493,9 @@ def ejecutar():
         historial = estado_anterior
 
     if not isinstance(historial, dict):
-        historial = {}
+        raise RuntimeError("Historial inválido: oportunidades debe ser un objeto")
 
+    metadatos = registro_fuentes.combinar(cargar_json("fuentes.json", {}),automaticas)
     nuevas = []
     auditoria = []
     encontradas = {}
@@ -460,9 +510,11 @@ def ejecutar():
             fuente,
         )
 
-        resultado = explorar_fuente(
-            fuente
-        )
+        config = metadatos.get(fuente, {})
+        if config.get("conector") == "publicaciones":
+            resultado = conectores.explorar(fuente, config, max_paginas=MAX_PAGINAS)
+        else:
+            resultado = explorar_fuente(fuente)
 
         oportunidades = resultado[
             "oportunidades"
@@ -480,27 +532,22 @@ def ejecutar():
 
         for oportunidad in oportunidades:
             url = oportunidad["url"]
+            clave = oportunidad.get("id", url)
 
-            encontradas[url] = oportunidad
+            oportunidad.update({k: oportunidad.get(k) or metadatos.get(fuente, {}).get(k) for k in ("organismo", "localidad", "provincia")})
+            encontradas[clave] = oportunidad
 
-            if url not in historial:
-                oportunidad[
-                    "primera_deteccion"
-                ] = fecha
 
-                nuevas.append(
-                    oportunidad
-                )
 
-                historial[url] = oportunidad
-
-                print(
-                    "NUEVA:",
-                    oportunidad["titulo"],
-                )
+        estado_fuente = resultado["estado"]
 
         auditoria.append({
             "fuente": fuente,
+            "estado": estado_fuente,
+            "publicaciones_detectadas": sum(o.get("estado") == "PUBLICACION_DETECTADA" for o in oportunidades),
+            "limites": resultado["limites"],
+            "paginas_correctas": resultado["paginas_correctas"],
+            "cobertura_completa": False,
             "fecha": fecha,
             "paginas_visitadas": resultado[
                 "paginas_visitadas"
@@ -509,13 +556,24 @@ def ejecutar():
             "errores": resultado["errores"],
         })
 
-    nuevas.sort(key=prioridad_comercial)
+    registros=comercial.deduplicar(list(encontradas.values()),fecha)
+    comprobar_pliegos.comprobar(registros,fecha,[{**c,'url':u} for u,c in metadatos.items()])
+    fecha=datetime.now(ZoneInfo('America/Argentina/Buenos_Aires')).isoformat()
+    registros=[comercial.normalizar(r,fecha) for r in registros]
+    nuevas=comercial.incorporar(historial,registros,fecha,desde=estado_anterior.get('fecha'))
+    nuevas_fuentes={u for r in nuevas for u in r.get('fuentes_observadas',[])+[r.get('fuente')]}
+    for a in auditoria:
+        if a['estado']=='OPERATIVA' and a['fuente'] not in nuevas_fuentes:a['estado']='SIN_PUBLICACIONES_NUEVAS'
+    comercial.guardar_vistas(registros,fecha,Path(ARCHIVO_RESULTADOS).parent)
+    nuevas.sort(key=comercial.prioridad)
+    Path(ARCHIVO_RESULTADOS).with_suffix(".md").write_text(comercial.reporte(nuevas,fecha),encoding="utf-8")
 
     guardar_json(
         ARCHIVO_RESULTADOS,
         {
             "fecha": fecha,
             "total_nuevas": len(nuevas),
+            "resumen_pagos": pagos.resumen(nuevas),
             "oportunidades": nuevas,
         },
     )
@@ -525,6 +583,7 @@ def ejecutar():
         {
             "ultima_ejecucion": fecha,
             "oportunidades": historial,
+            "auditorias": estado_anterior.get("auditorias", []) + [{"fecha": fecha, "fuentes": auditoria}],
         },
     )
 
@@ -539,8 +598,13 @@ def ejecutar():
     print("Fuentes revisadas:", len(fuentes))
     print("Candidatos detectados:", len(encontradas))
     print("Oportunidades nuevas:", len(nuevas))
-    print("Radar finalizado correctamente.")
+    fallas = sum(f["estado"] in ("ERROR", "BLOQUEADA", "PENDIENTE", "PARCIAL") for f in auditoria)
+    print(f"Fuentes con error: {fallas}. Cobertura territorial incompleta.")
+    return 2 if fallas else 0
 
 
 if __name__ == "__main__":
-    ejecutar()
+    if os.environ.get('RADAR_PRODUCCION_AUTORIZADA')!='true':
+        raise SystemExit('Producción deshabilitada: usar tools/radar_controlado.py. No se escribe el historial de producción.')
+    raise SystemExit(ejecutar())
+

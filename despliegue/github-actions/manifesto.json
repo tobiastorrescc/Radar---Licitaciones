@@ -1,0 +1,13 @@
+{
+  "autorizado": false,
+  "instalado_en_main": false,
+  "programacion_activada": false,
+  "origen": "despliegue/github-actions/programar-piloto.yml.propuesto",
+  "destino": "main:.github/workflows/programar-piloto.yml",
+  "sha256_archivo": "114dd474ef96fe58cfee208f22ac27c5547b8974b8fe54845cba808c5dceedd8",
+  "variable_necesaria": "RADAR_PILOTO_PROGRAMADOR_HABILITADO",
+  "main_observado": "dd96ba91ab6809caaac5d7554b912417f97651ae",
+  "nota": "Revalidar main y permisos antes de copiar únicamente este archivo después de autorización. No fusionar el PR #1.",
+  "valor_requerido_antes_de_instalar": "false o ausente; comprobar antes de copiar el archivo",
+  "variable_remota": "No modificada ni consultada por esta implementación"
+}

@@ -1,0 +1,52 @@
+{
+  "run": 40553094060,
+  "procedimiento": "LPU-2026-00000003-APPSF-OD-COM-CON-AIR-ROS",
+  "evidencias": [
+    {
+      "categoria": "PLAZO_30_DIAS",
+      "etiqueta": "30 días",
+      "plazos_dias": [
+        30
+      ],
+      "unidades_dias": [
+        "no indicada"
+      ],
+      "hitos_inicio": [],
+      "direccion": "NO_ESPECIFICADA",
+      "contado_mencionado": false,
+      "contra_entrega_mencionado": false,
+      "prioritario": false,
+      "cita": "los pagos de las Declaraciones Juradas de SUSS correspondientes. Constancia vigente de Seguro Colectivo de Vida, emitida con una antelación no mayor a 30 días de la fecha de 10 apertura o copia simple de póliza vigente. Deberá corresponder a la nómina de los empleados incluidos en la Si Electrónica cobertura. A los fines de garantizar el estricto cumplimiento del régimen de inhabilitaciones e impedimentos para contratar establecido por la Ley Provincial N.º 14.451 (modificatoria del",
+      "url_documento": "https://aeropuertorosario.com/wp-content/uploads/2026/10/LPU-2026-00000003-APPSF-OD-COM-CON-AIR-ROS.pdf",
+      "sha256": "21b2ec785da60a24bb63a7b80e962247adfe7356d4aa2d5d4027dcdfb58c3546",
+      "pagina": 5,
+      "metodo_extraccion": "TEXTO",
+      "version_analizador": 4
+    },
+    {
+      "categoria": "OTRO_PLAZO",
+      "etiqueta": "30/7 días después de conformidad de recepción",
+      "plazos_dias": [
+        30,
+        7
+      ],
+      "unidades_dias": [
+        "corridos",
+        "habiles"
+      ],
+      "hitos_inicio": [
+        "CONFORMIDAD_RECEPCION"
+      ],
+      "direccion": "NO_ESPECIFICADA",
+      "contado_mencionado": false,
+      "contra_entrega_mencionado": false,
+      "prioritario": false,
+      "cita": "Plazo de Pago Cantidad * Unidad de Tiempo * 30 Días Corridos Plazo para la Recepción Definitiva Cantidad Unidad de Tiempo 7 Días Hábiles Administrativos Plazo Máximo para la Recepción Definitiva Cantidad Unidad de Tiempo 30 Días Hábiles Administrativos El plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva, la cual será otorgada en el plazo previsto en el punto 6.10.1 del Anexo Unico del Decreto 287/26 del Pliego Único de Bases y Condiciones Generales.",
+      "url_documento": "https://aeropuertorosario.com/wp-content/uploads/2026/10/LPU-2026-00000003-APPSF-OD-COM-CON-AIR-ROS.pdf",
+      "sha256": "21b2ec785da60a24bb63a7b80e962247adfe7356d4aa2d5d4027dcdfb58c3546",
+      "pagina": 8,
+      "metodo_extraccion": "TEXTO",
+      "version_analizador": 4
+    }
+  ]
+}

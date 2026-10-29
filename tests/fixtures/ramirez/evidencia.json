@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/licitaciones-privadas/",
+    "final": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/licitaciones-privadas/",
+    "tipo": "text/html; charset=UTF-8",
+    "sha256": "1acfcb2e8b54b98f6209238c7b8d8d735bf84313da5e5f1c941ff79eb41334e4",
+    "metodo": "GET",
+    "parametros": null,
+    "fixture": "privadas.html",
+    "alcance": "Sólo main de la captura real; sin navegación ni contacto"
+  },
+  {
+    "url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/licitaciones-publicas/",
+    "final": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/licitaciones-publicas/",
+    "tipo": "text/html; charset=UTF-8",
+    "sha256": "ebe0724da41470a58404b2f980d33c94d5197ad04005d936d780b549637a9226",
+    "metodo": "GET",
+    "parametros": null,
+    "fixture": "publicas.html",
+    "alcance": "Sólo main de la captura real; sin navegación ni contacto"
+  }
+]

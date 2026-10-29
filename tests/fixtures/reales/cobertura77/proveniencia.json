@@ -1,0 +1,32 @@
+[
+  {
+    "fixture": "fuente-057.html",
+    "run": 40569030146,
+    "url": "https://www.iafas.gov.ar/proveedores/licitaciones/",
+    "final": "https://www.iafas.gov.ar/proveedores/licitaciones/",
+    "tipo": "text/html; charset=UTF-8",
+    "sha256": "7b182e6f23d21c3c7b63a67df1a08b2506e9c939d948dca034ab3cb6e999095d",
+    "fixture_sha256": "b81617181f4796454626ad6ae6ef8dff9a07b3b820e0cc9f88f44a2187d0c787",
+    "derivacion": "Dos primeros artículos originales"
+  },
+  {
+    "fixture": "fuente-059.html",
+    "run": 40569030146,
+    "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+    "final": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+    "tipo": "text/html; charset=UTF-8",
+    "sha256": "2f8df84d1d95603963022d8091c3704af737865e0e461f05ce3f442a43695cb6",
+    "fixture_sha256": "2f8df84d1d95603963022d8091c3704af737865e0e461f05ce3f442a43695cb6",
+    "derivacion": "Respuesta HTML completa"
+  },
+  {
+    "fixture": "fuente-016.html",
+    "run": 40569030146,
+    "url": "https://vggmunicipalidad.gov.ar/licitaciones/",
+    "final": "https://vggmunicipalidad.gov.ar/licitaciones/",
+    "tipo": "text/html; charset=UTF-8",
+    "sha256": "362c62bc30fd971c9a30dd4e907f54af322e325b58f89de11b1ff73148a766bf",
+    "fixture_sha256": "362c62bc30fd971c9a30dd4e907f54af322e325b58f89de11b1ff73148a766bf",
+    "derivacion": "Respuesta HTML completa"
+  }
+]

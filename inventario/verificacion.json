@@ -1,0 +1,937 @@
+{
+  "schema_version": 2,
+  "ejecucion_id": "20261026T011156-5f1e3bb1",
+  "fecha": "2026-10-25T22:11:56.161796-03:00",
+  "actualizado": "2026-10-25T22:11:57.675867-03:00",
+  "estado_ejecucion": "COMPLETADA",
+  "metodo": "conector HTTP en procesos aislados; sin historial de producción",
+  "duracion_segundos": 1.514,
+  "limites": {
+    "conexion_segundos": 5,
+    "lectura_segundos": 10,
+    "fuente_segundos": 60,
+    "total_segundos": 600,
+    "concurrencia": 4,
+    "max_paginas": 1000
+  },
+  "resumen": {
+    "configuradas": 36,
+    "consultadas": 36,
+    "finalizadas": 36,
+    "funcionaron": 0,
+    "con_publicaciones": 0,
+    "con_respuesta_procesada": 0,
+    "fallaron": 36,
+    "no_iniciadas": 0,
+    "fuentes_error_red": 36,
+    "fuentes_error_extraccion": 0,
+    "fuentes_error_interno": 0,
+    "fuentes_timeout": 0,
+    "fuentes_presupuesto_o_cancelacion": 0,
+    "errores_por_categoria": {
+      "RED": 36
+    }
+  },
+  "observaciones": [
+    {
+      "id": "fuente-001",
+      "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.115,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.163089-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0000.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-002",
+      "url": "https://compras.santafe.gob.ar/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://compras.santafe.gob.ar/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.115,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.164434-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0001.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-003",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.115,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.165810-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0002.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-006",
+      "url": "https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.11,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.169642-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0003.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-007",
+      "url": "https://aeropuertorosario.com/institucional/licitaciones/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://aeropuertorosario.com/institucional/licitaciones/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.127,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.284822-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0004.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-008",
+      "url": "https://www.casilda.gob.ar/web/licitaciones-casilda/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.casilda.gob.ar/web/licitaciones-casilda/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.13,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.287194-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0005.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-010",
+      "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.184,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.289264-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0006.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-014",
+      "url": "https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.178,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.293851-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0007.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-017",
+      "url": "https://municipiosantotome.gob.ar/boletin-oficial/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://municipiosantotome.gob.ar/boletin-oficial/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.147,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.469639-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0008.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-018",
+      "url": "https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.085,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.471519-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0009.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-019",
+      "url": "https://transparencia.santafeciudad.gov.ar/contrataciones-obra/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://transparencia.santafeciudad.gov.ar/contrataciones-obra/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.149,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.527854-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0010.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-021",
+      "url": "https://venadotuerto.gob.ar/licitaciones/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://venadotuerto.gob.ar/licitaciones/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.144,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.534093-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0011.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-022",
+      "url": "https://reconquista.gob.ar/licitaciones/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://reconquista.gob.ar/licitaciones/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.124,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.613029-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0012.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-024",
+      "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.122,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.672056-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0013.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-025",
+      "url": "https://cafesg.gob.ar/cafesg2/licitaciones/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://cafesg.gob.ar/cafesg2/licitaciones/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.122,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.730753-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0014.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-026",
+      "url": "https://www.jusentrerios.gov.ar/contrataciones/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.jusentrerios.gov.ar/contrataciones/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.122,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.732817-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0015.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-027",
+      "url": "https://www.ater.gob.ar/ater2/licitaciones.asp",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.ater.gob.ar/ater2/licitaciones.asp",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.125,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.789830-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0016.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-028",
+      "url": "https://aplicaciones.vialidadentrerios.gob.ar/obralic/web/licitacion/listado",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://aplicaciones.vialidadentrerios.gob.ar/obralic/web/licitacion/listado",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.126,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.850961-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0017.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-029",
+      "url": "https://www.enersa.com.ar/area-proveedores/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.enersa.com.ar/area-proveedores/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.069,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.908129-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0018.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-030",
+      "url": "https://institutobecario.gov.ar/licitaciones.php",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://institutobecario.gov.ar/licitaciones.php",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.13,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.911106-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0019.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-032",
+      "url": "https://sanjose.gob.ar/concursos-licitaciones/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://sanjose.gob.ar/concursos-licitaciones/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.074,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:56.970015-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0020.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-035",
+      "url": "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.075,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:57.032641-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0021.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-037",
+      "url": "https://municipalidad.gualeguay.gob.ar/modulos/transparencia/licitaciones_publicas.php",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://municipalidad.gualeguay.gob.ar/modulos/transparencia/licitaciones_publicas.php",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.075,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:57.035230-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0022.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-038",
+      "url": "https://www.crespo.gob.ar/licitaciones-privadas-2026/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.crespo.gob.ar/licitaciones-privadas-2026/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.08,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:57.096719-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0023.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-039",
+      "url": "https://www.crespo.gob.ar/category/licitacion-publica/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.crespo.gob.ar/category/licitacion-publica/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.073,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:57.105684-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0024.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-041",
+      "url": "https://www.federacion.gob.ar/licitaciones",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.federacion.gob.ar/licitaciones",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.137,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:57.164026-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0025.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-042",
+      "url": "https://nuevo.nogoya.gob.ar/compras-licitaciones-y-concursos-nuevo/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://nuevo.nogoya.gob.ar/compras-licitaciones-y-concursos-nuevo/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.071,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:57.169926-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0026.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-043",
+      "url": "https://haciendalapaz.gob.ar/compras/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://haciendalapaz.gob.ar/compras/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.072,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:57.231053-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0027.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-044",
+      "url": "https://villaguay.gob.ar/boletindigital/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://villaguay.gob.ar/boletindigital/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.124,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:57.237616-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0028.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-045",
+      "url": "https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.069,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:57.296060-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0029.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-046",
+      "url": "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.072,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:57.355947-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0030.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-049",
+      "url": "https://compras.pergamino.gob.ar/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://compras.pergamino.gob.ar/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.129,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:57.358209-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0031.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-050",
+      "url": "https://arrecifes.gob.ar/informacion-publica/licitaciones/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://arrecifes.gob.ar/informacion-publica/licitaciones/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.093,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:57.420156-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0032.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-051",
+      "url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.089,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:57.426017-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0033.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-052",
+      "url": "https://transparencia.rojas.gov.ar/index.php?action=17",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://transparencia.rojas.gov.ar/index.php?action=17",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.086,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:57.484784-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0034.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    },
+    {
+      "id": "fuente-053",
+      "url": "https://transparencia.rojas.gov.ar/index.php?action=18",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://transparencia.rojas.gov.ar/index.php?action=18",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [Errno 1] Operation not permitted>"
+        }
+      ],
+      "duracion_segundos": 0.105,
+      "limites": [],
+      "inicio": "2026-10-25T22:11:57.567976-03:00",
+      "resultado_archivo": "/workspace/work/radar-etapa/inventario/verificacion_ejecuciones/20261026T011156-5f1e3bb1/0035.json",
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0
+    }
+  ]
+}

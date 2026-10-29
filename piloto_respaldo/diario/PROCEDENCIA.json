@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "codigo_validado": "0ea4ce8b935d85eb7f599e2b86924c1b587f0054",
+  "semilla_run": 40688224634,
+  "validaciones": [
+    40743984529,
+    40745969935
+  ],
+  "preparado_sin_activar_cron": true,
+  "produccion_activada": false,
+  "procedimientos": 3691,
+  "contenido_sha256": "e91854f7e33c86c6390c21fea9d8e6e1214f85248eb8e34966173142024c3c42",
+  "origen": "piloto_respaldo/validaciones/0ea4ce8b935d85eb7f599e2b86924c1b587f0054/",
+  "metodo": "Mismos blobs de Git; copia de la cadena verificada sin alterar contenido"
+}

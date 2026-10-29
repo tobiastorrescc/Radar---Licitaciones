@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+radar.log
+work/
+
+inventario/verificacion_ejecuciones/

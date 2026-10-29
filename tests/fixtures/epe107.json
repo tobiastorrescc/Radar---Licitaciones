@@ -1,0 +1,165 @@
+{
+  "github_run_id": "40613105946",
+  "fecha": "2026-10-27",
+  "alcance": "Registros extraídos reales de #107; no captura HTML",
+  "registros": [
+    {
+      "id": "f824dec44f8c31f2cb004e6fd036200a7d512bc050c0bb1d7bc74228b99a0e29",
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "estado": "PUBLICACION_DETECTADA",
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "procedimiento": "concurso privado 7040004980",
+      "llamado_especial": false,
+      "evento_publicado": null,
+      "situacion_publicada": null,
+      "titulo": "Servicios 27-10-2026 Hoy Concurso Privado Nº 7040004980 Reparación equipo de Resistencia de Bobinados marca Vanguard Presupuesto Oficial $3.861.049,5 Expediente Nº EE-2026-00059770-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "Reparación equipo de Resistencia de Bobinados marca Vanguard",
+      "numero_procedimiento": "7040004980",
+      "tipo_procedimiento": "concurso privado",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "fecha_apertura_texto": null,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "rango_evidencia": 1,
+      "fecha_apertura": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "3861049.5",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pago no informado",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pago no informado",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": null,
+      "convocatoria": "1",
+      "clasificacion_registro": "CANDIDATO_NO_VERIFICADO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "motivo_vigencia": "SIN_PROCEDIMIENTO_VERIFICADO",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004980"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004980"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $3.861.049,5"
+        }
+      },
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_apertura",
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "id": "5d4fe1e7df4a175d0f779d21ce7dc4b1f6468f7c4f9c14156419e43da21fd936",
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "estado": "PUBLICACION_DETECTADA",
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "procedimiento": "compra menor 7010004616",
+      "llamado_especial": false,
+      "evento_publicado": null,
+      "situacion_publicada": null,
+      "titulo": "Materiales 27-10-2026 Hoy Compra Menor Nº 7010004616 COMPRA HILO Al RECOCIDO D=3.15 (MAT: 200974) PARA SECTOR DISTRIBUCIÓN - SUCURSAL T. NOROESTE Presupuesto Oficial $5.227.926 Expediente Nº EE-2026-00059082-APPSF-OD Compra Web Rafaela Descargar Enviar",
+      "objeto": "COMPRA HILO Al RECOCIDO D=3.15 (MAT: 200974) PARA SECTOR DISTRIBUCIÓN - SUCURSAL T. NOROESTE",
+      "numero_procedimiento": "7010004616",
+      "tipo_procedimiento": "compra menor",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "fecha_apertura_texto": null,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "rango_evidencia": 1,
+      "fecha_apertura": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "5227926",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pago no informado",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pago no informado",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": null,
+      "convocatoria": "1",
+      "clasificacion_registro": "CANDIDATO_NO_VERIFICADO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "motivo_vigencia": "SIN_PROCEDIMIENTO_VERIFICADO",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "compra menor 7010004616"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "compra menor 7010004616"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $5.227.926"
+        }
+      },
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_apertura",
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    }
+  ]
+}
