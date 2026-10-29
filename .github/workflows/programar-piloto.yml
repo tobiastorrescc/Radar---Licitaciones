@@ -26,7 +26,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   programar-o-supervisar:
-    if: github.repository == 'tobiastorrescc/Radar---Licitaciones' && github.ref == 'refs/heads/main' && (github.event_name != 'schedule' || (false && vars.RADAR_PILOTO_PROGRAMADOR_HABILITADO != 'false')) && (github.event_name != 'repository_dispatch' || github.event.action == 'radar_piloto_finalizado')
+    if: github.repository == 'tobiastorrescc/Radar---Licitaciones' && github.ref == 'refs/heads/main' && (github.event_name != 'schedule' || (true && vars.RADAR_PILOTO_PROGRAMADOR_HABILITADO != 'false')) && (github.event_name != 'repository_dispatch' || github.event.action == 'radar_piloto_finalizado')
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
