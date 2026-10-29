@@ -1,7 +1,12 @@
 {
-  "etapa": "reproceso-y-respaldo-auditoria-2026-10-29-10",
+  "etapa": "pliego-chajari-19-2026-11",
   "sondear": false,
   "auditar": false,
   "descubrir": false,
-  "reprocesar_run": "40952155721"
+  "reverificar_ids": [
+    "fuente-040"
+  ],
+  "verificar_documentos": true,
+  "documento_muestra": "19/2026",
+  "tipo_muestra": "licitacion publica"
 }

@@ -57,6 +57,11 @@ def worker(url,consulta_post=None):
         r['procedimientos']=sorted({o.procedimiento_canonico({'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'url':final}) for p in ps}-{None})
         r['encabezado_pliego']=bool(re.search(r'(?im)^\s*pliego\s+(?:de\s+)?(?:bases|condiciones|especificaciones)',texto[:4000]))
         r['encabezado']=o.norm(texto[:500])
+        extraido=o.normalizar({'titulo':'Documento oficial','objeto':texto,'texto_documento':texto,'url':final,'evidencia_url':final})
+        campos=('fecha_apertura','hora_apertura','fecha_publicacion','fecha_limite_presentacion','hora_limite_presentacion','modalidad_presentacion')
+        r['campos_documento']={k:extraido[k] for k in campos if extraido.get(k)}
+        r['publicacion_rotulada']=bool(re.search(r'fecha\s+de\s+publicaci[oó]n\s*:',texto,re.I))
+        r['evidencias_documento']={k:v for k,v in extraido.get('evidencias_campos',{}).items() if k in campos}
         r['presupuesto'],fragmento=o.monto(o.norm(texto))
         if fragmento:r['evidencia_presupuesto']={'url':final,'texto':fragmento}
     except Exception as e:r['lectura_pendiente']=str(e)
@@ -143,7 +148,15 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
     while pendientes or activos:
         if time.monotonic()-inicio>=total:break
         while pendientes and len(activos)<concurrencia:
-            url=pendientes.popleft()
+            # Descargas POST grandes del mismo portal se serializan para no
+            # saturarlo. El resto de las fuentes mantiene su concurrencia.
+            url=None
+            for _ in range(len(pendientes)):
+                candidato=pendientes.popleft()
+                if candidato in peticiones and any(u in peticiones and urlparse(u).hostname==urlparse(candidato).hostname for _,u,_ in activos.values()):
+                    pendientes.append(candidato);continue
+                url=candidato;break
+            if url is None:break
             p=subprocess.Popen([sys.executable,__file__,'--worker',url]+([json.dumps(peticiones[url])] if url in peticiones else []),stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,start_new_session=True)
             activos[p.pid]=(p,url,time.monotonic())
         for pid,(p,url,comienzo) in list(activos.items()):
@@ -152,7 +165,7 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
                 try:valor=json.loads(out) if p.returncode==0 else {'url':url,'estado':'ERROR','error':err[-1000:]}
                 except ValueError:valor={'url':url,'estado':'ERROR','error':'Worker sin JSON válido'}
                 candidatos[url]=valor;guardar_parcial(valor);del activos[pid]
-            elif time.monotonic()-comienzo>=por_enlace:
+            elif time.monotonic()-comienzo>=(max(por_enlace,45) if url in peticiones else por_enlace):
                 terminar(p);p.communicate();candidatos[url]={'url':url,'estado':'TIEMPO_ENLACE'};del activos[pid]
         if activos:time.sleep(0.05)
     for p,url,_ in activos.values():
@@ -173,6 +186,12 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
             prioridad=prioridad_pliego(valor,etiqueta,proc)
             if compatible and prioridad and valor['estado']=='DOCUMENTO_ACCESIBLE' and prioridad>r.get('comprobacion_pliego',{}).get('prioridad_identificacion',0):
                 r['enlace_pliego']=valor['url'];r['comprobacion_pliego']={**valor,'prioridad_identificacion':prioridad,'identificacion':'ENLACE_OFICIAL_ETIQUETADO' if prioridad==2 else 'ENCABEZADO_Y_PROCEDIMIENTO'}
+            if pertenece:
+                for campo,contenido in valor.get('campos_documento',{}).items():
+                    if campo=='fecha_publicacion' and not valor.get('publicacion_rotulada'):continue
+                    if not r.get(campo):
+                        r[campo]=contenido
+                        if campo in valor.get('evidencias_documento',{}):r.setdefault('evidencias_campos',{})[campo]=valor['evidencias_documento'][campo]
             if pertenece and valor.get('presupuesto') and not r.get('presupuesto'):
                 r['presupuesto']=valor['presupuesto'];r.setdefault('evidencias_campos',{})['presupuesto']=valor['evidencia_presupuesto']
         print('AUDITORIA_ADJUNTO '+json.dumps({**{k:v for k,v in valor.items() if k!='pagos'},'clausulas_pago':len(valor.get('pagos',[]))},ensure_ascii=False),flush=True)
