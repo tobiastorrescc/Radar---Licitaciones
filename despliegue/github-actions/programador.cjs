@@ -3,8 +3,8 @@
 const crypto = require('node:crypto');
 const REPO = 'tobiastorrescc/Radar---Licitaciones';
 const RAMA = 'mejora/radar-auditable';
-const WORKFLOW = 'radar-diario.yml';
-const PATH = '.github/workflows/radar-diario.yml';
+const WORKFLOW = 'programar-piloto.yml';
+const PATH = '.github/workflows/programar-piloto.yml';
 function fechaAR(instante) {
   const partes = new Intl.DateTimeFormat('en-CA', {timeZone:'America/Argentina/Buenos_Aires',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(instante));
   return ['year','month','day'].map(k=>partes.find(x=>x.type===k).value).join('-');
@@ -39,8 +39,14 @@ async function candidato(github,context,ahora) {
   if(matches.length>1)throw new Error('Más de un piloto para esta fecha; revisar duplicados');
   return {plan,run:matches[0]};
 }
+async function comprobarLegado(github,context) {
+  const {data}=await github.rest.actions.getWorkflow({...repo(context),workflow_id:'radar-diario.yml'});
+  if(!String(data.state).startsWith('disabled_'))throw new Error('El workflow antiguo debe estar deshabilitado antes de ejecutar el piloto');
+  return data.state;
+}
 async function preparar({github,context,ahora=new Date()}) {
   repo(context);
+  await comprobarLegado(github,context);
   const actual=(await github.rest.actions.getWorkflowRun({...context.repo,run_id:context.runId})).data;
   if(actual.head_branch!=='main' || !['schedule','workflow_dispatch'].includes(actual.event))throw new Error('El programador sólo puede operar desde main');
   if(fechaAR(actual.created_at)!==fechaAR(ahora))throw new Error('No redisparar una fecha pasada mediante rerun');
@@ -50,7 +56,7 @@ async function preparar({github,context,ahora=new Date()}) {
     return {iniciar:false,plan,run};
   }
   const padres=await listarRuns(github,context,actual.workflow_id,ahora);
-  if(Number(actual.run_attempt)>1 || padres.some(r=>r.id!==context.runId&&fechaAR(r.created_at)===plan.fecha&&['schedule','workflow_dispatch'].includes(r.event)&&r.head_branch==='main'&&r.head_repository?.full_name===REPO&&r.name===actual.name)) {
+  if(Number(actual.run_attempt)>1 || padres.some(r=>r.id!==context.runId&&fechaAR(r.created_at)===plan.fecha&&['schedule','workflow_dispatch'].includes(r.event)&&r.head_branch==='main'&&r.head_repository?.full_name===REPO&&r.display_title===actual.display_title)) {
     throw new Error('Intento previo sin hijo confirmado; no se repite un POST incierto');
   }
   const flujo=(await github.rest.actions.getWorkflow({...context.repo,workflow_id:WORKFLOW})).data;
@@ -64,6 +70,7 @@ async function preparar({github,context,ahora=new Date()}) {
 }
 async function despachar({github,context,plan}) {
   repo(context);
+  await comprobarLegado(github,context);
   const esperado=planDia(`${plan.fecha}T12:00:00Z`);
   if(JSON.stringify(plan)!==JSON.stringify(esperado))throw new Error('Plan alterado');
   // Sin retry: el llamador sube el journal ANTES. Un timeout es resultado incierto.
@@ -80,6 +87,7 @@ async function comprobarExito(github,context,run) {
   return {estado:'COMPLETADO_CON_RESPALDO',url:run.html_url};
 }
 async function vigilar({github,context,ahora=new Date()}) {
+  await comprobarLegado(github,context);
   const {plan,run}=await candidato(github,context,ahora);
   if(!run)throw new Error(`No hay piloto confirmado para ${plan.fecha}; no significa ausencia de novedades`);
   if(run.status!=='completed')throw new Error(`Piloto incompleto (${run.status}): ${run.html_url}`);
@@ -118,10 +126,4 @@ async function alertar({github,context,motivo,ahora=new Date()}) {
   const {data}=await github.rest.issues.create({...r,title:`[Radar piloto] Revisar ejecución del ${fecha}`,body:detalle});
   return {url:data.html_url,creada:true};
 }
-// Entrada exclusiva de la prueba del PR, sin opción equivalente en el workflow de main.
-async function despacharValidacion({github,context,clave,paso}) {
-  repo(context);
-  if(context.eventName!=='pull_request'||context.payload.pull_request?.head?.repo?.full_name!==REPO||context.payload.pull_request?.head?.ref!==RAMA||!/^[a-f0-9]{40}$/.test(clave)||!['1','2'].includes(paso))throw new Error('Validación fuera del PR autorizado');
-  return github.rest.actions.createWorkflowDispatch({...context.repo,workflow_id:WORKFLOW,ref:RAMA,inputs:{modo:'controlado',inicializar:paso==='1'?'true':'false',canal:'validacion',clave_validacion:clave,paso_validacion:paso,semilla_run:paso==='1'?'40688224634':''}});
-}
-module.exports={REPO,RAMA,WORKFLOW,fechaAR,planDia,preparar,despachar,vigilar,revisarEvento,alertar,despacharValidacion};
+module.exports={REPO,RAMA,WORKFLOW,fechaAR,planDia,preparar,despachar,vigilar,revisarEvento,alertar,comprobarLegado};

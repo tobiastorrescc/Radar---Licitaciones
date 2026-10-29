@@ -1,0 +1,6 @@
+{
+  "ejecutar_validacion": true,
+  "main_sha_esperado": "8f1944bcde636ccc5ffe6e5a5023c43120849f81",
+  "sha256_programador": "4d16bf50e33006323a81d4fe9cb83e4106a93c755564a6458fcf9ea158bf9d5f",
+  "autorizacion": "Usuario autorizó instalación, prueba real y puesta en marcha controlada sin merge ni cambios de historial de producción."
+}

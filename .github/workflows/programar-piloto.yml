@@ -1,0 +1,279 @@
+name: Radar piloto aislado
+run-name: Radar ${{ inputs.modo || github.event_name }} ${{ inputs.clave_validacion }} ${{ inputs.paso_validacion }}
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: 'doble: prueba aislada; controlado: diario con estado separado, sin producción'
+        type: choice
+        options: [doble, controlado]
+        default: controlado
+      inicializar:
+        description: 'Crear primera línea de base controlada sólo si no hay estado previo'
+        type: boolean
+        default: false
+      canal:
+        description: 'piloto: estado diario; validacion: prueba aislada entre ejecuciones independientes'
+        type: choice
+        options: [piloto, validacion]
+        default: piloto
+      clave_validacion:
+        description: 'SHA de la revisión para una validación aislada'
+        type: string
+      semilla_run:
+        description: 'Opcional: importar un estado auditado de esta rama antes de iniciar; nunca sobrescribe respaldo existente'
+        type: string
+      paso_validacion:
+        description: 'Identificador de la consulta de validación'
+        type: string
+  pull_request:
+  push:
+    paths: ['radar.py', 'conectores.py', 'extractores.py', 'extractores_lotes.py', 'documentos.py', 'oportunidades.py', 'pagos.py', 'cache_documentos.py', 'inventario/**', 'tools/**', 'tests/**', '.github/workflows/**', 'fuentes*']
+permissions:
+  contents: read
+concurrency:
+  group: radar-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }} # Sólo auditorías descartables del PR; nunca el piloto manual ni producción.
+jobs:
+  pruebas:
+    outputs:
+      instalacion: ${{ steps.instalacion.outputs.habilitada }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Preparar lectura de PDF e imágenes con plazo acotado
+        timeout-minutes: 4
+        run: bash tools/preparar_documentos.sh
+      - run: python -m unittest discover -s tests -v
+      - name: Probar programador GitHub propuesto sin activar main
+        run: |
+          node tests/test_programador_github.cjs
+          python tools/generar_programador_github.py --comprobar
+      - name: Validar programador externo sin red ni activación
+        run: |
+          python tools/programar_piloto.py
+          systemd-analyze calendar '*-*-* 08:00:00 America/Argentina/Buenos_Aires'
+      - name: Leer plan autorizado de instalación
+        id: instalacion
+        run: |
+          python - <<'PYCODE' >> "$GITHUB_OUTPUT"
+          import json
+          from pathlib import Path
+          p=Path('despliegue/github-actions/instalacion.json')
+          d=json.loads(p.read_text()) if p.exists() else {}
+          print('habilitada='+str(d.get('ejecutar_validacion',False)).lower())
+          PYCODE
+
+  verificar-fuentes-rama:
+    if: github.ref == 'refs/heads/mejora/radar-auditable' && github.event_name == 'workflow_dispatch' && inputs.modo != 'produccion'
+    needs: pruebas
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    permissions:
+      actions: read
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Preparar lectura documental con límites
+        timeout-minutes: 4
+        continue-on-error: true
+        run: bash tools/preparar_documentos.sh
+      - uses: actions/cache@v4
+        with:
+          path: work/cache-documentos
+          key: textos-v1-${{ github.run_id }}
+          restore-keys: textos-v1-
+      - name: Seleccionar estado del piloto sin producción
+        env:
+          CANAL: ${{ inputs.canal || 'piloto' }}
+          CLAVE: ${{ inputs.clave_validacion }}
+        run: |
+          python - <<'PYCODE' >> "$GITHUB_ENV"
+          import os,re
+          canal=os.environ['CANAL'];clave=os.environ['CLAVE']
+          if canal not in ('piloto','validacion'):raise SystemExit('Canal inválido')
+          if canal=='validacion' and not re.fullmatch('[a-f0-9]{40}',clave):raise SystemExit('Clave de validación inválida')
+          print('RESPALDO=piloto_respaldo/'+('diario' if canal=='piloto' else 'validaciones/'+clave))
+          print('RAMA_PILOTO=mejora/radar-auditable')
+          PYCODE
+      - name: Restaurar respaldo duradero de Git y comprobar toda la cadena
+        id: duradero
+        run: |
+          python tools/respaldo_piloto.py restaurar --salida work/controlado --respaldo "$RESPALDO"
+          if [ -f work/controlado/estado.sqlite3 ]; then echo 'restaurado=true' >> "$GITHUB_OUTPUT"; fi
+      - name: Localizar último estado del piloto diario de esta rama
+        if: steps.duradero.outputs.restaurado != 'true' && inputs.canal != 'validacion' && inputs.modo == 'controlado'
+        id: anterior
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const actual = await github.rest.actions.getWorkflowRun({...context.repo,run_id:context.runId});
+            let anterior;
+            for(let page=1;page<=5 && !anterior;page++) {
+              const {data}=await github.rest.actions.listArtifactsForRepo({...context.repo,per_page:100,page});
+              for(const a of data.artifacts) {
+                if(a.name!=='estado-controlado' || a.expired || a.workflow_run.id===context.runId || a.workflow_run.head_branch!==context.ref.replace('refs/heads/','')) continue;
+                const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:a.workflow_run.id});
+                if(r.workflow_id===actual.data.workflow_id && ['workflow_dispatch','schedule'].includes(r.event)) {anterior=r.id;break;}
+              }
+              if(data.artifacts.length<100) break;
+            }
+            core.setOutput('run_id',anterior ? String(anterior) : '');
+            core.notice(anterior ? `Restaurar piloto desde ejecución ${anterior}` : 'No hay estado diario previo; se requiere inicializar explícitamente.');
+      - uses: actions/download-artifact@v4
+        if: steps.anterior.outputs.run_id != ''
+        with:
+          name: estado-controlado
+          path: work/controlado
+          run-id: ${{ steps.anterior.outputs.run_id }}
+          github-token: ${{ github.token }}
+      - name: Verificar integridad del estado restaurado
+        if: steps.anterior.outputs.run_id != ''
+        run: python tools/radar_controlado.py --salida work/controlado --comprobar-estado
+      - name: Validar procedencia de la semilla histórica solicitada
+        if: steps.duradero.outputs.restaurado != 'true' && steps.anterior.outputs.run_id == '' && inputs.semilla_run != '' && inputs.inicializar
+        id: semilla
+        uses: actions/github-script@v7
+        env:
+          SEMILLA_RUN: ${{ inputs.semilla_run }}
+        with:
+          script: |
+            const id=process.env.SEMILLA_RUN;
+            if(!/^[0-9]{1,12}$/.test(id)) throw new Error('Semilla inválida');
+            const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:Number(id)});
+            const {data:actual}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:context.runId});
+            if(r.workflow_id!==actual.workflow_id || r.head_branch!=='mejora/radar-auditable' || r.conclusion!=='success') throw new Error('La semilla no es una auditoría completada de esta rama y workflow');
+            core.setOutput('run_id',String(r.id));core.notice(`Importar estado histórico auditado desde ${r.html_url}`);
+      - name: Descargar semilla histórica separada de producción
+        if: steps.semilla.outputs.run_id != ''
+        uses: actions/download-artifact@v4
+        with:
+          name: radar-controlado
+          path: work/controlado
+          run-id: ${{ steps.semilla.outputs.run_id }}
+          github-token: ${{ github.token }}
+      - name: Comprobar integridad de la semilla y conservar su evidencia
+        if: steps.semilla.outputs.run_id != ''
+        run: |
+          python tools/radar_controlado.py --salida work/controlado --comprobar-estado
+          if [ -f work/controlado/prueba_doble.json ]; then mv work/controlado/prueba_doble.json work/controlado/importacion_prueba_doble.json; fi
+      - name: Registrar evidencia antes de la consulta independiente
+        run: python tools/respaldo_piloto.py antes --salida work/controlado --respaldo "$RESPALDO"
+      - name: Dos ejecuciones reales consecutivas en estado nuevo y aislado
+        if: inputs.modo == 'doble'
+        timeout-minutes: 28
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: python -u tools/radar_controlado.py --salida work/controlado --doble --total 600 --documentos 120
+      - name: Ejecución diaria controlada sin producción
+        if: inputs.modo == 'controlado' || github.event_name == 'schedule'
+        timeout-minutes: 14
+        env:
+          PYTHONUNBUFFERED: '1'
+          INICIALIZAR_PILOTO: ${{ inputs.inicializar }}
+        run: |
+          argumentos=()
+          if [ "$INICIALIZAR_PILOTO" = 'true' ]; then argumentos+=(--inicializar); fi
+          python -u tools/radar_controlado.py --salida work/controlado --total 600 --documentos 120 "${argumentos[@]}"
+      - name: Comprobar continuidad y ausencia de duplicados del historial restaurado
+        if: always()
+        id: continuidad
+        run: python tools/respaldo_piloto.py despues --salida work/controlado --respaldo "$RESPALDO"
+      - name: Resumen para consulta en Actions
+        if: always()
+        run: |
+          python - <<'PYCODE' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          print('# Radar controlado — sin producción')
+          p=Path('work/controlado/prueba_doble.json')
+          if p.exists():
+              d=json.loads(p.read_text());print('Prueba doble correcta:',d['correcta']);print('Repetidas como nuevas:',d['repetidas_como_nuevas'])
+              for k in ('primera','segunda'):
+                  r=d[k];print(k+': '+json.dumps({x:r[x] for x in ('estado','clasificacion','novedades','total_historial','cobertura_estricta')},ensure_ascii=False))
+          else:
+              p=Path('work/controlado/ultima_ejecucion.json')
+              print(p.read_text() if p.exists() else 'EJECUCIÓN INCOMPLETA: revisar errores y checkpoints. No se presume ausencia de novedades.')
+          print('Descargar el artefacto **radar-controlado** y abrir index.html. Contiene catálogo completo, informe diario, abiertas, próximas a vencer, auditoría y versiones. No es un reporte de producción.')
+          PYCODE
+      - name: Sellar estado recuperable incluso ante incidencias
+        if: always()
+        run: python tools/radar_controlado.py --salida work/controlado --sellar-estado
+      - name: Preparar respaldo incremental y verificar restauración completa
+        id: respaldo
+        if: always() && inputs.modo == 'controlado'
+        run: |
+          if [ -f work/controlado/estado.sqlite3 ]; then
+            python tools/respaldo_piloto.py exportar --salida work/controlado --respaldo "$RESPALDO"
+          else
+            echo 'No hay estado recuperable; no se declara persistencia exitosa.'
+            exit 1
+          fi
+      - name: Persistir sólo el respaldo del piloto en su rama
+        if: always() && steps.respaldo.outcome == 'success' && steps.continuidad.outcome == 'success' && inputs.modo == 'controlado'
+        run: |
+          test "$RAMA_PILOTO" = 'mejora/radar-auditable'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- "$RESPALDO"
+          if ! git diff --cached --quiet; then
+            git commit -m 'Guardar respaldo incremental del piloto [skip ci]'
+            git pull --rebase origin "$RAMA_PILOTO"
+            git push origin "HEAD:$RAMA_PILOTO"
+          fi
+      - name: Conservar auditoría, catálogo y resultados parciales
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: radar-controlado
+          path: work/controlado/
+          if-no-files-found: error
+          retention-days: 90
+      - name: Persistir estado diario separado para la siguiente consulta
+        if: always() && (inputs.modo == 'controlado' || github.event_name == 'schedule')
+        uses: actions/upload-artifact@v4
+        with:
+          name: estado-controlado-${{ inputs.canal || 'piloto' }}
+          path: |
+            work/controlado/estado.sqlite3
+            work/controlado/estado_manifest.json
+          if-no-files-found: error
+          retention-days: 90
+
+  validar-instalacion:
+    if: github.event_name == 'pull_request' && github.event.pull_request.number == 1 && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'mejora/radar-auditable' && needs.pruebas.outputs.instalacion == 'true'
+    needs: pruebas
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      actions: write
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Validar instalación autorizada, aislar legado y probar despacho, respaldo, alertas y deduplicación
+        uses: actions/github-script@v7
+        env:
+          RADAR_GUARD: ${{ vars.RADAR_PILOTO_PROGRAMADOR_HABILITADO }}
+        with:
+          retries: 0
+          script: |
+            const {instalar}=require(process.env.GITHUB_WORKSPACE+'/tools/validar_instalacion_github.cjs');
+            await instalar({github,context,core});
+      - name: Conservar evidencia incluso ante fallo
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: instalacion-piloto
+          path: work/resultado_instalacion.json
+          if-no-files-found: error
+          retention-days: 90

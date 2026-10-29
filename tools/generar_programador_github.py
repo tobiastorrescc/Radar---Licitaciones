@@ -7,7 +7,7 @@ SALIDA=ROOT/'despliegue/github-actions/programar-piloto.yml.propuesto'
 SCRIPT='f28e40c7f34bde8b3046d885e986cb6290c5673b'
 UPLOAD='ea165f8d65b6e75b540449e92b4886f43607fa02'
 
-def generar():
+def generar(habilitado=False):
     codigo=(ROOT/'despliegue/github-actions/programador.cjs').read_text()
     paso='''const fs=require('node:fs');
 const path=require('node:path');
@@ -20,10 +20,12 @@ const archivo=path.join(process.env.RUNNER_TEMP,'radar-programador.cjs');
 fs.writeFileSync(archivo,'module.exports=('+cargarRadar.toString()+')();');
 const radar=cargarRadar();
 try {
-  if(context.eventName==='workflow_run') {
+  if(context.eventName==='workflow_dispatch' && context.payload.inputs?.accion==='probar_alerta') {
+    throw new Error('PRUEBA CONTROLADA AUTORIZADA: fallo deliberado del programador sin despachar el piloto ni cambiar su historial');
+  } else if(context.eventName==='workflow_run') {
     const r=await radar.revisarEvento({github,context});
     core.info(JSON.stringify(r));
-  } else if(context.eventName==='schedule' && context.payload.schedule==='30 9 * * *') {
+  } else if((context.eventName==='schedule' && context.payload.schedule==='30 9 * * *') || context.payload.inputs?.accion==='supervisar') {
     const r=await radar.vigilar({github,context});
     await core.summary.addHeading('Supervisión del piloto').addRaw(JSON.stringify(r)).write();
   } else {
@@ -56,18 +58,25 @@ const motivo=fs.existsSync(f)?fs.readFileSync(f,'utf8'):'Falló un paso del prog
 const r=await radar.alertar({github,context,motivo});
 await core.summary.addHeading('ALERTA: revisar piloto').addRaw(r.url).write();'''
     def ind(s):return '\n'.join('            '+l for l in s.splitlines())+'\n'
-    return '''# PROPUESTA INACTIVA: copiar sólo este archivo a .github/workflows/programar-piloto.yml
-# en main después de autorización. Sin checkout, PAT, secretos externos ni escritura de contenidos.
+    resultado='''# Programador autorizado: sólo este archivo se instala en main.
+# Sin checkout, PAT, secretos externos ni escritura de contenidos.
 name: Programador del piloto aislado
+run-name: Programador piloto ${{ inputs.accion == 'probar_alerta' && 'prueba-alerta' || 'diario' }}
 on:
   workflow_dispatch:
+    inputs:
+      accion:
+        description: 'Ejecutar una vez, supervisar sin consulta o probar una alerta con fallo deliberado'
+        type: choice
+        options: [ejecutar, supervisar, probar_alerta]
+        default: ejecutar
   schedule:
     - cron: '0 8 * * *' # GitHub no garantiza puntualidad.
       timezone: 'America/Argentina/Buenos_Aires'
     - cron: '30 9 * * *' # 09:30 Argentina: supervisar sin redisparar.
       timezone: 'America/Argentina/Buenos_Aires'
   workflow_run:
-    workflows: ['Radar diario de licitaciones']
+    workflows: ['Programador del piloto aislado', 'Radar piloto aislado']
     types: [completed]
     branches: ['mejora/radar-auditable']
 permissions:
@@ -79,7 +88,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   programar-o-supervisar:
-    if: github.repository == 'tobiastorrescc/Radar---Licitaciones' && github.ref == 'refs/heads/main' && vars.RADAR_PILOTO_PROGRAMADOR_HABILITADO == 'true' && (github.event_name != 'workflow_run' || (github.event.workflow_run.event == 'workflow_dispatch' && contains(github.event.workflow_run.display_title, ' programado')))
+    if: github.repository == 'tobiastorrescc/Radar---Licitaciones' && github.ref == 'refs/heads/main' && (github.event_name != 'schedule' || (PROGRAMACION_HABILITADA && vars.RADAR_PILOTO_PROGRAMADOR_HABILITADO != 'false')) && (github.event_name != 'workflow_run' || (github.event.workflow_run.event == 'workflow_dispatch' && contains(github.event.workflow_run.display_title, ' programado')))
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -110,6 +119,8 @@ jobs:
           retries: 0
           script: |
 '''+ind(alert)
+
+    return resultado.replace('PROGRAMACION_HABILITADA','true' if habilitado else 'false')
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--comprobar',action='store_true');a=p.parse_args()
