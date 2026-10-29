@@ -1,0 +1,43 @@
+{
+  "origen_run_id": "40952155721",
+  "fecha_observacion": "2026-10-29T17:51:42.353518-03:00",
+  "version_analizador_pago": 7,
+  "sin_consultas_nuevas": true,
+  "sin_escritura_sqlite": true,
+  "cuentas_preservadas": {
+    "procedimientos": 4426,
+    "versiones": 4594,
+    "ejecuciones": 7
+  },
+  "procedimientos_unicos": 4408,
+  "duplicados_unificados": 18,
+  "abiertas": 51,
+  "proximas_a_vencer": 20,
+  "pagos": {
+    "procedimientos": 4408,
+    "verificadas": 100,
+    "pendientes": 4308,
+    "clasificaciones": {
+      "CONTRA_ENTREGA": 4,
+      "PLAZO_5_DIAS": 38,
+      "NO_INFORMADO": 4308,
+      "PLAZO_30_DIAS": 18,
+      "PLAZO_10_DIAS": 3,
+      "PLAZO_15_DIAS": 2,
+      "MIXTO": 9,
+      "OPCIONES_PUBLICADAS": 9,
+      "OTRO_PLAZO": 9,
+      "CONTRA_PRESENTACION_FACTURA": 5,
+      "PAGOS_PARCIALES": 2,
+      "CONTRA_FACTURA_CONFORMADA": 1
+    }
+  },
+  "clasificacion_incremental_original": {
+    "SIN_CAMBIOS": 2491,
+    "NUEVA_DETECCION_FECHA_DESCONOCIDA": 8,
+    "RECUPERACION_LINEA_BASE": 720,
+    "DATOS_COMPLETADOS": 95,
+    "MODIFICADO": 12,
+    "HISTORICA_ANIO_PROCEDIMIENTO": 1
+  }
+}

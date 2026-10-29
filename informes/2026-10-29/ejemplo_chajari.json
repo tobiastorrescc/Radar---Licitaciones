@@ -1,0 +1,161 @@
+{
+  "id": "17374ae1b49afbb215171b828d0807af9090f3b0c67a923d2e1e65a685600408",
+  "fuente": "https://chajari.gob.ar/",
+  "estado": "PUBLICACION_DETECTADA",
+  "organismo": "Municipalidad de Chajarí",
+  "localidad": "Chajarí",
+  "provincia": "Entre Ríos",
+  "procedimiento": "licitacion publica 19/2026",
+  "llamado_especial": false,
+  "evento_publicado": null,
+  "situacion_publicada": null,
+  "titulo": "Licitación pública Nº 019/2026 — Provisión de repuestos para el tren de rodaje de Retroexcavadora N° 11 New Holland E215c Evo, Dominio DFP55 año 2019 y repuestos para el tren de rodaje de la Retroexcavadora Con Oruga N° 6 Komatsu PC200 dominio DFP32 año 2015",
+  "objeto": "Provisión de repuestos para el tren de rodaje de Retroexcavadora N° 11 New Holland E215c Evo, Dominio DFP55 año 2019 y repuestos para el tren de rodaje de la Retroexcavadora Con Oruga N° 6 Komatsu PC200 dominio DFP32 año 2015",
+  "numero_procedimiento": "19/2026",
+  "tipo_procedimiento": "licitacion publica",
+  "registro_estructurado": true,
+  "id_origen": "710",
+  "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+  "evidencia_url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+  "evidencias_campos": {
+    "presupuesto": {
+      "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+      "consulta_url": "https://licitaciones.chajari.gob.ar/licitaciones/para_apertura/0",
+      "metodo": "POST",
+      "texto": "presupuesto_oficial: 59500000.0"
+    },
+    "numero_procedimiento": {
+      "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+      "texto": "licitacion publica 19/2026"
+    },
+    "tipo_procedimiento": {
+      "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+      "texto": "licitacion publica 19/2026"
+    },
+    "fecha_apertura": {
+      "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+      "texto": "2026-11-19 10:00"
+    }
+  },
+  "fecha_apertura_texto": "2026-11-19 10:00",
+  "fecha_limite_presentacion_texto": null,
+  "presupuesto": {
+    "importe": "59500000.0",
+    "moneda": null
+  },
+  "documentos": [
+    {
+      "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+      "titulo": "Pliego y decreto — descarga pública desde el procedimiento",
+      "consulta_post": {
+        "url": "https://licitaciones.chajari.gob.ar/return_file",
+        "json": {
+          "atta_id": "6397",
+          "file_name": "pliego_y_decreto",
+          "licitacion_id": 710
+        }
+      }
+    }
+  ],
+  "campos_oficiales": {
+    "id": 710,
+    "name": "019/2026",
+    "title": "Provisión de repuestos para el tren de rodaje de Retroexcavadora N° 11 New Holland E215c Evo, Dominio DFP55 año 2019 y repuestos para el tren de rodaje de la Retroexcavadora Con Oruga N° 6 Komatsu PC200 dominio DFP32 año 2015",
+    "type": "publica",
+    "state": "para_apertura",
+    "fecha_hora_apertura": "2026-11-19 13:00:00",
+    "fecha_hora_cierre": "",
+    "presupuesto_oficial": 59500000.0,
+    "pliego_y_decreto_id": "6397"
+  },
+  "detalle_completo": true,
+  "rango_evidencia": 3,
+  "fecha_apertura": "2026-11-19",
+  "fecha_limite_presentacion": null,
+  "fecha_publicacion": null,
+  "pago": {
+    "estado": "PENDIENTE",
+    "clasificacion": "NO_INFORMADO",
+    "etiqueta": "Pago no informado",
+    "plazos_dias": [],
+    "hitos_inicio": [],
+    "documento_respaldo": null,
+    "documentos_respaldo": [],
+    "evidencias": [],
+    "prioritario": false,
+    "motivo": "REQUIERE_OCR_O_LECTURA"
+  },
+  "condiciones_pago": "Pago no informado",
+  "enlace_condiciones_pago": null,
+  "pago_prioritario": false,
+  "desierta": false,
+  "fracasada": false,
+  "segundo_llamado": false,
+  "reapertura": false,
+  "procedimiento_canonico": "licitacion publica 19/2026",
+  "convocatoria": "1",
+  "clasificacion_registro": "PROCEDIMIENTO",
+  "hora_apertura": "10:00",
+  "fecha_hora_apertura": "2026-11-19T10:00:00-03:00",
+  "vigencia": "ABIERTA",
+  "hora_limite_presentacion": null,
+  "fecha_hora_limite_presentacion": null,
+  "fecha_referencia_vencimiento": "2026-11-19",
+  "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+  "modalidad_presentacion": [],
+  "motivo_vigencia": "APERTURA_FUTURA",
+  "antiguedad_publicacion": "DESCONOCIDA",
+  "estimacion_comercial": null,
+  "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+  "enlace_pliego": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+  "campos_desconocidos": [
+    "fecha_publicacion"
+  ],
+  "auditoria_documentos": [
+    {
+      "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+      "url_final": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+      "consulta_post": {
+        "url": "https://licitaciones.chajari.gob.ar/return_file",
+        "json": {
+          "atta_id": "6397",
+          "file_name": "pliego_y_decreto",
+          "licitacion_id": 710
+        }
+      },
+      "estado": "DOCUMENTO_ACCESIBLE",
+      "tipo": "PDF",
+      "bytes": 5845179,
+      "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+      "cache_estado": "HTTP_200",
+      "fecha_descarga": "2026-10-29T21:11:01.789580+00:00",
+      "revalidado": null,
+      "lectura_pendiente": "PDF sin texto: requiere OCR; no se declara vacío",
+      "fecha_comprobacion": "2026-10-29T18:11:09.397789-03:00"
+    }
+  ],
+  "comprobacion_pliego": {
+    "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+    "url_final": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+    "consulta_post": {
+      "url": "https://licitaciones.chajari.gob.ar/return_file",
+      "json": {
+        "atta_id": "6397",
+        "file_name": "pliego_y_decreto",
+        "licitacion_id": 710
+      }
+    },
+    "estado": "DOCUMENTO_ACCESIBLE",
+    "tipo": "PDF",
+    "bytes": 5845179,
+    "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+    "cache_estado": "HTTP_200",
+    "fecha_descarga": "2026-10-29T21:11:01.789580+00:00",
+    "revalidado": null,
+    "lectura_pendiente": "PDF sin texto: requiere OCR; no se declara vacío",
+    "fecha_comprobacion": "2026-10-29T18:11:09.397789-03:00",
+    "prioridad_identificacion": 2,
+    "identificacion": "ENLACE_OFICIAL_ETIQUETADO"
+  },
+  "pago_motivo_pendiente": "REQUIERE_OCR_O_LECTURA"
+}

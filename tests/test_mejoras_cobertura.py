@@ -142,9 +142,9 @@ class ASSAPublicaTests(unittest.TestCase):
         registros,meta,detalle=extraer_assa(raw,'https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/all?page=0&pageSize=100')
         self.assertEqual(len(registros),4);self.assertEqual(meta['totalElements'],4)
         for r in registros:
-            r=o.normalizar({**r,'organismo':'ASSA','provincia':'Santa Fe'},FECHA)
+            r=o.normalizar({**r,'organismo':'ASSA','provincia':'Santa Fe','localidad':'Rosario'},FECHA)
             self.assertEqual(r['clasificacion_registro'],'PROCEDIMIENTO')
-            self.assertIsNone(r['fecha_publicacion']);self.assertIsNotNone(r['fecha_limite_presentacion'])
+            self.assertIsNone(r['fecha_publicacion']);self.assertIsNone(r['localidad']);self.assertIsNotNone(r['fecha_limite_presentacion'])
             self.assertIsNotNone(r['fecha_apertura']);self.assertEqual(r['hora_apertura'],'10:00')
             self.assertIn('2026-',r['campos_oficiales']['fechaSugeridaPublicacion'])
             self.assertEqual(o.identidad(r),o.identidad({**r,'url':r['url']+'?otra=1'}))

@@ -3,6 +3,7 @@ from datetime import datetime, date
 from decimal import Decimal, InvalidOperation
 from hashlib import sha256
 from zoneinfo import ZoneInfo
+from urllib.parse import urlsplit
 import re
 import unicodedata
 import pagos
@@ -51,6 +52,12 @@ def normalizar(r,ahora=None):
     texto_titulo=str(r.get('titulo') or '')
     t=norm(texto);ev=dict(r.get('evidencias_campos') or {})
     origen=r.get('evidencia_url') or r.get('url')
+    if (urlsplit(origen or '').hostname in ('www.aguassantafesinas.com.ar','aguassantafesinas.com.ar')
+        and r.get('registro_estructurado') and r.get('campos_oficiales',{}).get('localidades')==[]):
+        # La sede del organismo y la oficina de apertura no acreditan el lugar
+        # de la prestación. El API no publica localidades para estas fichas.
+        r['localidad']=None
+        ev['localidad']={'url':origen,'texto':'API: localidades=[]; localidad del procedimiento desconocida'}
     def dato(campo,valor,fragmento):
         if valor is not None:
             r[campo]=valor;ev[campo]={'url':origen,'texto':fragmento}

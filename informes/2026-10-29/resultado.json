@@ -1,0 +1,94 @@
+{
+  "fecha_corte": "2026-10-29T17:51:42.353518-03:00",
+  "auditoria_completa_run": 40952155721,
+  "reverificaciones": {
+    "San Nicolás": 40952782930,
+    "Chajarí y pliego": 40955443854
+  },
+  "reclasificacion_citas_run": 40954765037,
+  "fuentes_antes": {
+    "OPERATIVA": 34,
+    "PARCIAL": 14,
+    "BLOQUEADA": 14,
+    "PENDIENTE": 11,
+    "SIN_PUBLICACIONES_CONFIRMADO": 1
+  },
+  "fuentes_despues": {
+    "PARCIAL": 9,
+    "BLOQUEADA": 23,
+    "OPERATIVA": 35,
+    "PENDIENTE": 9,
+    "SIN_PUBLICACIONES_CONFIRMADO": 1
+  },
+  "fuentes_consultadas": 77,
+  "fuentes_nuevas": {
+    "configuradas": 3,
+    "OPERATIVA": 2,
+    "BLOQUEADA": 1,
+    "PARCIAL": 0,
+    "PENDIENTE": 0
+  },
+  "historial_auditoria": 4426,
+  "catalogo_unico": 4408,
+  "duplicados_historicos_unificados_sin_borrado": 18,
+  "ids_anteriores_conservados": 3697,
+  "versiones_anteriores_conservadas": 3758,
+  "versiones_auditoria": 4594,
+  "publicaciones_nuevas_con_fecha_comprobada": 0,
+  "detecciones_sin_fecha_publicacion": 8,
+  "recuperaciones_linea_base": 720,
+  "historicas_por_anio": 1,
+  "modificaciones": 12,
+  "datos_completados": 95,
+  "repetidos_como_nuevos": 0,
+  "abiertas": 51,
+  "abiertas_observadas_en_corrida": 23,
+  "proximas_a_vencer": 20,
+  "proximas_observadas_en_corrida": 9,
+  "pago_verificado_catalogo": 100,
+  "pago_pendiente_catalogo": 4308,
+  "categorias_pago": {
+    "CONTRA_ENTREGA": 4,
+    "PLAZO_5_DIAS": 38,
+    "NO_INFORMADO": 4308,
+    "PLAZO_30_DIAS": 18,
+    "PLAZO_10_DIAS": 3,
+    "PLAZO_15_DIAS": 2,
+    "MIXTO": 9,
+    "OPCIONES_PUBLICADAS": 9,
+    "OTRO_PLAZO": 9,
+    "CONTRA_PRESENTACION_FACTURA": 5,
+    "PAGOS_PARCIALES": 2,
+    "CONTRA_FACTURA_CONFORMADA": 1
+  },
+  "urls_candidatas_revisadas_unicas": 111,
+  "urls_descubiertas_por_proceso_periodico": 3,
+  "altas_automaticas_nuevas": 0,
+  "validadas_automaticas_nuevas": 0,
+  "pendientes_proceso": 111,
+  "candidatas_contraste_adicionales_unicas": 3,
+  "main_conservado": "dfca1a52c5371929ce6c07741a88fd209a7da852",
+  "historial_diario_sin_modificar": {
+    "procedimientos": 3697,
+    "versiones": 3758,
+    "corridas": 6,
+    "contenido_sha256": "af90259db6892b9d7821b4d3a03acfc5ecefb6cc9e1ea5599eaa825684ef5815"
+  },
+  "respaldo_auditoria_git": "piloto_respaldo/auditorias/2026-10-29",
+  "produccion_modificada": false,
+  "merge": false,
+  "correo_activado": false,
+  "cobertura_completa": false,
+  "municipios_padron": {
+    "Buenos Aires": 51,
+    "Entre Ríos": 239,
+    "Santa Fe": 365
+  },
+  "municipios_con_portal_operativo": {
+    "Buenos Aires": 5,
+    "Entre Ríos": 10,
+    "Santa Fe": 9
+  },
+  "organismos_inventario_fijo": 73,
+  "portales_inventario_fijo": 79
+}

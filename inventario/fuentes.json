@@ -6,7 +6,7 @@
     "provincia": "Santa Fe",
     "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
     "tipo_portal": "html",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PARCIAL",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -24,7 +24,13 @@
     ],
     "seguir_patrones": [
       "/inicio/result-busq-compras-licitaciones[?]recomendada=apertura&tipoRecomendada="
-    ]
+    ],
+    "ultima_verificacion": "2026-10-29T17:48:09.897401-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 16,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-002",
@@ -33,7 +39,7 @@
     "provincia": "Santa Fe",
     "url": "https://compras.santafe.gob.ar/",
     "tipo_portal": "tabla",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -46,7 +52,13 @@
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "conexion_timeout": 12,
-    "lectura_timeout": 12
+    "lectura_timeout": 12,
+    "ultima_verificacion": "2026-10-29T17:48:09.899334-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-003",
@@ -55,7 +67,7 @@
     "provincia": "Santa Fe",
     "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
     "tipo_portal": "tabla",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -68,7 +80,13 @@
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "adaptador": "epe",
-    "capturar_respuestas": true
+    "capturar_respuestas": true,
+    "ultima_verificacion": "2026-10-29T17:48:09.901651-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-004",
@@ -77,7 +95,7 @@
     "provincia": "Santa Fe",
     "url": "https://www.aguassantafesinas.com.ar/portal/licitaciones",
     "tipo_portal": "javascript",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -86,7 +104,7 @@
       "fecha": "2026-10-25",
       "observacion": "Página oficial muestra Cargando licitaciones; requiere API comprobada"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "capturar_respuestas": true,
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
@@ -97,7 +115,13 @@
     "adaptador": "assa-api",
     "urls_inicio": [
       "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/all?page=0&pageSize=100"
-    ]
+    ],
+    "ultima_verificacion": "2026-10-29T17:48:09.905330-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 4,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-005",
@@ -106,7 +130,7 @@
     "provincia": "Santa Fe",
     "url": "https://compras.unr.edu.ar/",
     "tipo_portal": "siu_diaguita",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -122,7 +146,13 @@
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:48:10.871323-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-006",
@@ -131,7 +161,7 @@
     "provincia": "Santa Fe",
     "url": "https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -144,7 +174,13 @@
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "conexion_timeout": 12,
-    "lectura_timeout": 12
+    "lectura_timeout": 12,
+    "ultima_verificacion": "2026-10-29T17:48:12.285418-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-007",
@@ -153,7 +189,7 @@
     "provincia": "Santa Fe",
     "url": "https://aeropuertorosario.com/institucional/licitaciones/",
     "tipo_portal": "html_paginado_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PARCIAL",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -166,7 +202,13 @@
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "enriquecer_fichas": true,
-    "adaptador": "aeropuerto"
+    "adaptador": "aeropuerto",
+    "ultima_verificacion": "2026-10-29T17:48:14.559326-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 38,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-008",
@@ -175,7 +217,7 @@
     "provincia": "Santa Fe",
     "url": "https://www.casilda.gob.ar/web/licitaciones-casilda/",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -184,9 +226,15 @@
       "fecha": "2026-10-25",
       "observacion": "Listado indexado incluye decretos de llamados"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "ultima_verificacion": "2026-10-29T17:48:22.260636-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 69,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-009",
@@ -195,7 +243,7 @@
     "provincia": "Santa Fe",
     "url": "https://xn--carcaraa-j3a.gob.ar/",
     "tipo_portal": "institucional",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -211,7 +259,13 @@
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:48:24.895374-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-010",
@@ -220,7 +274,7 @@
     "provincia": "Santa Fe",
     "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -231,7 +285,13 @@
     },
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "ultima_verificacion": "2026-10-29T17:48:25.918383-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-011",
@@ -240,7 +300,7 @@
     "provincia": "Santa Fe",
     "url": "https://armstrong.gov.ar/index.php/transparencia",
     "tipo_portal": "html",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -249,7 +309,7 @@
       "fecha": "2026-10-25",
       "observacion": "Ruta indexada; lectura web directa devuelve 403; localizar sección específica"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "capturar_respuestas": true,
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
@@ -263,7 +323,13 @@
       "task=download.send"
     ],
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:48:26.328120-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 7,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-012",
@@ -272,7 +338,7 @@
     "provincia": "Santa Fe",
     "url": "https://lasparejas.gov.ar/",
     "tipo_portal": "institucional",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PENDIENTE",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -288,7 +354,13 @@
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:48:26.644468-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-013",
@@ -297,7 +369,7 @@
     "provincia": "Santa Fe",
     "url": "https://funes.gob.ar/",
     "tipo_portal": "institucional",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -306,14 +378,20 @@
       "fecha": "2026-10-25",
       "observacion": "URL publicada en Boletín Oficial provincial; falta ruta específica"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "capturar_respuestas": true,
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:48:27.761223-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 39,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-014",
@@ -322,7 +400,7 @@
     "provincia": "Santa Fe",
     "url": "https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PARCIAL",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -337,7 +415,13 @@
     "seguir_patrones": [
       "/wp/documents/(?:licitacion-|concurso-de-precios-|segundo-llamado-)"
     ],
-    "descubrir_menu": true
+    "descubrir_menu": true,
+    "ultima_verificacion": "2026-10-29T17:48:32.489156-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 85,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-015",
@@ -346,7 +430,7 @@
     "provincia": "Santa Fe",
     "url": "https://perez.opendata.junar.com/home/",
     "tipo_portal": "datos_abiertos",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PENDIENTE",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -362,7 +446,13 @@
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:48:37.678302-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-016",
@@ -371,7 +461,7 @@
     "provincia": "Santa Fe",
     "url": "https://vggmunicipalidad.gov.ar/licitaciones/",
     "tipo_portal": "javascript",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -380,7 +470,7 @@
       "fecha": "2026-10-25",
       "observacion": "Resultados web inconsistentes: vacío actual y tabla histórica; no asumir sin novedades"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "capturar_respuestas": true,
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
@@ -388,7 +478,13 @@
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
-    "adaptador": "vgg"
+    "adaptador": "vgg",
+    "ultima_verificacion": "2026-10-29T17:48:39.664570-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 106,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-017",
@@ -397,7 +493,7 @@
     "provincia": "Santa Fe",
     "url": "https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia",
     "tipo_portal": "boletin_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PENDIENTE",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -408,7 +504,13 @@
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "url_anterior_incorrecta": "https://municipiosantotome.gob.ar/boletin-oficial/"
+    "url_anterior_incorrecta": "https://municipiosantotome.gob.ar/boletin-oficial/",
+    "ultima_verificacion": "2026-10-29T17:48:48.756159-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-018",
@@ -417,7 +519,7 @@
     "provincia": "Santa Fe",
     "url": "https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/",
     "tipo_portal": "html_paginado_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -428,7 +530,13 @@
     },
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "ultima_verificacion": "2026-10-29T17:48:50.084309-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-019",
@@ -437,7 +545,7 @@
     "provincia": "Santa Fe",
     "url": "https://transparencia.santafeciudad.gov.ar/contrataciones-obra/",
     "tipo_portal": "html_paginado_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -448,7 +556,13 @@
     },
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "ultima_verificacion": "2026-10-29T17:48:50.497083-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-020",
@@ -457,7 +571,7 @@
     "provincia": "Santa Fe",
     "url": "https://www.rafaela.gob.ar/gobiernoabierto/Licitaciones.aspx",
     "tipo_portal": "aspx",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -466,7 +580,7 @@
       "fecha": "2026-10-25",
       "observacion": "Índice con rutas a públicas, privadas y concursos; falta inspeccionar destinos"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "capturar_respuestas": true,
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
@@ -478,7 +592,13 @@
       "LicitacionesPublicas",
       "LicitacionesPrivadas"
     ],
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:48:50.713574-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 11,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-021",
@@ -487,7 +607,7 @@
     "provincia": "Santa Fe",
     "url": "https://venadotuerto.gob.ar/licitaciones/",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -496,9 +616,15 @@
       "fecha": "2026-10-25",
       "observacion": "Listado 2026 indexado"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "ultima_verificacion": "2026-10-29T17:48:55.052490-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 26,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-022",
@@ -507,7 +633,7 @@
     "provincia": "Santa Fe",
     "url": "https://reconquista.gob.ar/licitaciones/",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -516,9 +642,15 @@
       "fecha": "2026-10-25",
       "observacion": "Publicaciones numeradas indexadas"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "ultima_verificacion": "2026-10-29T17:48:58.132485-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 13,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-023",
@@ -527,7 +659,7 @@
     "provincia": "Entre Ríos",
     "url": "https://portal.entrerios.gov.ar/haciendayfinanzas/contrataciones/",
     "tipo_portal": "javascript",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PENDIENTE",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -543,7 +675,13 @@
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:49:00.954664-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-024",
@@ -552,7 +690,7 @@
     "provincia": "Entre Ríos",
     "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -561,11 +699,17 @@
       "fecha": "2026-10-25",
       "observacion": "Listado oficial indexado con llamados 2026 e históricos"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "organismos_multiples": true,
-    "adaptador": "minplan"
+    "adaptador": "minplan",
+    "ultima_verificacion": "2026-10-29T17:49:02.188858-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 516,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-025",
@@ -574,7 +718,7 @@
     "provincia": "Entre Ríos",
     "url": "https://cafesg.gob.ar/cafesg2/licitaciones/",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -583,9 +727,15 @@
       "fecha": "2026-10-25",
       "observacion": "Listado leído vía web; públicas, privadas, directa, desiertas y segundos llamados"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "ultima_verificacion": "2026-10-29T17:49:04.557487-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 68,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-026",
@@ -594,7 +744,7 @@
     "provincia": "Entre Ríos",
     "url": "https://www.jusentrerios.gov.ar/contrataciones/",
     "tipo_portal": "html_paginado_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -603,9 +753,15 @@
       "fecha": "2026-10-25",
       "observacion": "Concursos y licitaciones indexados"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "ultima_verificacion": "2026-10-29T17:49:07.501757-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 51,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-027",
@@ -614,7 +770,7 @@
     "provincia": "Entre Ríos",
     "url": "https://www.ater.gob.ar/ater2/licitaciones.asp",
     "tipo_portal": "tabla_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -623,10 +779,16 @@
       "fecha": "2026-10-25",
       "observacion": "Listado oficial indexado"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "encoding": "cp1252"
+    "encoding": "cp1252",
+    "ultima_verificacion": "2026-10-29T17:49:14.639841-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 219,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-028",
@@ -635,7 +797,7 @@
     "provincia": "Entre Ríos",
     "url": "https://www.dpver.gov.ar/category/licitaciones-2026/",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -644,7 +806,7 @@
       "fecha": "2026-10-25",
       "observacion": "Listado oficial indexado con objeto y fecha"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "url_anterior_404": "https://aplicaciones.vialidadentrerios.gob.ar/obralic/web/licitacion/listado",
@@ -652,7 +814,13 @@
       "/category/licitaciones-2026/page/"
     ],
     "requerir_ficha": true,
-    "detectar_carga_dinamica": true
+    "detectar_carga_dinamica": true,
+    "ultima_verificacion": "2026-10-29T17:49:19.564078-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 21,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-029",
@@ -661,7 +829,7 @@
     "provincia": "Entre Ríos",
     "url": "https://www.enersa.com.ar/area-proveedores/",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -672,7 +840,13 @@
     },
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "ultima_verificacion": "2026-10-29T17:49:23.655480-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-030",
@@ -681,7 +855,7 @@
     "provincia": "Entre Ríos",
     "url": "https://institutobecario.gov.ar/licitaciones.php",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -692,7 +866,13 @@
     },
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "ultima_verificacion": "2026-10-29T17:49:24.343586-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-031",
@@ -701,7 +881,7 @@
     "provincia": "Entre Ríos",
     "url": "https://victoria.gob.ar/web-compras/Invitaciones-Compras/concurso-de-precios/",
     "tipo_portal": "institucional",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -722,7 +902,13 @@
       "/web-compras/.*concurso"
     ],
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:49:25.185999-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-032",
@@ -731,7 +917,7 @@
     "provincia": "Entre Ríos",
     "url": "https://sanjose.gob.ar/concursos-licitaciones/",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -740,9 +926,15 @@
       "fecha": "2026-10-25",
       "observacion": "Listado oficial indexado: públicas, privadas, segundo llamado, desierta"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "ultima_verificacion": "2026-10-29T17:49:26.129525-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 152,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-033",
@@ -751,7 +943,7 @@
     "provincia": "Entre Ríos",
     "url": "https://colon.gov.ar/compras-contratos-suministros/licitaciones/",
     "tipo_portal": "iframe",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PENDIENTE",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -767,7 +959,13 @@
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:49:29.225747-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-034",
@@ -794,7 +992,7 @@
     "provincia": "Entre Ríos",
     "url": "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -803,10 +1001,16 @@
       "fecha": "2026-10-25",
       "observacion": "Listado oficial indexado; antigüedad requiere comprobación"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "adaptador": "cdelu"
+    "adaptador": "cdelu",
+    "ultima_verificacion": "2026-10-29T17:49:32.573904-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 266,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-036",
@@ -815,7 +1019,7 @@
     "provincia": "Entre Ríos",
     "url": "https://w3.gualeguaychu.gov.ar/tramites/compras-y-licitaciones/acceso-a-licitaciones-p%C3%BAblicas",
     "tipo_portal": "tramite",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -831,7 +1035,13 @@
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:49:33.046113-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-037",
@@ -840,7 +1050,7 @@
     "provincia": "Entre Ríos",
     "url": "https://municipalidad.gualeguay.gob.ar/modulos/transparencia/licitaciones_publicas.php",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -849,10 +1059,16 @@
       "fecha": "2026-10-25",
       "observacion": "Listado indexado con decretos de llamados"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "max_bytes_respuesta": 32000000
+    "max_bytes_respuesta": 32000000,
+    "ultima_verificacion": "2026-10-29T17:49:34.040007-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 6,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-038",
@@ -861,7 +1077,7 @@
     "provincia": "Entre Ríos",
     "url": "https://www.crespo.gob.ar/licitaciones-privadas-2026/",
     "tipo_portal": "tabla_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -870,11 +1086,17 @@
       "fecha": "2026-10-25",
       "observacion": "Tabla oficial anual indexada"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "tipo_tabla": "Licitación Privada",
-    "capturar_respuestas": true
+    "capturar_respuestas": true,
+    "ultima_verificacion": "2026-10-29T17:49:37.745067-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 7,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-039",
@@ -883,7 +1105,7 @@
     "provincia": "Entre Ríos",
     "url": "https://www.crespo.gob.ar/category/licitacion-publica/",
     "tipo_portal": "html_paginado_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PARCIAL",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -899,7 +1121,13 @@
     "seguir_patrones": [
       "/licitaciones-publicas-\\d{4}/"
     ],
-    "capturar_respuestas": true
+    "capturar_respuestas": true,
+    "ultima_verificacion": "2026-10-29T17:49:38.316297-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 175,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-040",
@@ -908,7 +1136,7 @@
     "provincia": "Entre Ríos",
     "url": "https://chajari.gob.ar/",
     "tipo_portal": "institucional",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -917,7 +1145,7 @@
       "fecha": "2026-10-25",
       "observacion": "Nuevo sitio oficial enlaza plataforma digital; destino pendiente"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "capturar_respuestas": false,
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
@@ -933,7 +1161,13 @@
     ],
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
-    "adaptador": "chajari-api"
+    "adaptador": "chajari-api",
+    "ultima_verificacion": "2026-10-29T18:10:42.020531-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40955443854,
+      "publicaciones_detectadas": 699,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-041",
@@ -942,7 +1176,7 @@
     "provincia": "Entre Ríos",
     "url": "https://www.federacion.gob.ar/licitaciones",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PARCIAL",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -953,7 +1187,13 @@
     },
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "ultima_verificacion": "2026-10-29T17:49:38.532440-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 106,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-042",
@@ -962,7 +1202,7 @@
     "provincia": "Entre Ríos",
     "url": "https://nuevo.nogoya.gob.ar/compras-licitaciones-y-concursos-nuevo/",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -971,12 +1211,18 @@
       "fecha": "2026-10-25",
       "observacion": "Sección oficial indexada; extracción pendiente"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "urls_inicio": [
       "https://nuevo.nogoya.gob.ar/transparencia/compras-licitaciones-y-concursos/"
-    ]
+    ],
+    "ultima_verificacion": "2026-10-29T17:49:46.473399-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 20,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-043",
@@ -985,7 +1231,7 @@
     "provincia": "Entre Ríos",
     "url": "https://haciendalapaz.gob.ar/compras/",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -994,14 +1240,20 @@
       "fecha": "2026-10-25",
       "observacion": "Sección oficial de compras indexada"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "adaptador": "lapaz",
     "urls_inicio": [
       "https://haciendalapaz.gob.ar/licitaciones",
       "https://haciendalapaz.gob.ar/concursos-de-precios"
-    ]
+    ],
+    "ultima_verificacion": "2026-10-29T17:49:47.302465-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 48,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-044",
@@ -1010,7 +1262,7 @@
     "provincia": "Entre Ríos",
     "url": "https://villaguay.gob.ar/boletindigital/",
     "tipo_portal": "boletin_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -1026,7 +1278,13 @@
       "/licitaciones-\\d{4}/?$"
     ],
     "indice_documentos": true,
-    "capturar_respuestas": true
+    "capturar_respuestas": true,
+    "ultima_verificacion": "2026-10-29T17:49:47.368830-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-045",
@@ -1035,7 +1293,7 @@
     "provincia": "Entre Ríos",
     "url": "https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -1044,9 +1302,15 @@
       "fecha": "2026-10-25",
       "observacion": "Listado oficial indexado con 2024 e históricos"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "ultima_verificacion": "2026-10-29T17:49:48.642337-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 4,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-046",
@@ -1055,7 +1319,7 @@
     "provincia": "Buenos Aires",
     "url": "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -1064,11 +1328,17 @@
       "fecha": "2026-10-25",
       "observacion": "Sección oficial de públicas, concursos y directas indexada"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "incluir_aside": true,
-    "numeracion_compuesta": true
+    "numeracion_compuesta": true,
+    "ultima_verificacion": "2026-10-29T17:55:42.266659-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952782930,
+      "publicaciones_detectadas": 26,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-047",
@@ -1077,7 +1347,7 @@
     "provincia": "Buenos Aires",
     "url": "https://sanpedro.net.ar/portal.php",
     "tipo_portal": "institucional",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PENDIENTE",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -1097,7 +1367,13 @@
     ],
     "indice_documentos": true,
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:49:55.376051-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-048",
@@ -1124,7 +1400,7 @@
     "provincia": "Buenos Aires",
     "url": "https://compras.pergamino.gob.ar/",
     "tipo_portal": "html",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PENDIENTE",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -1138,7 +1414,13 @@
     "ocr": true,
     "dominios_documentos": [
       "aplicativos.pergamino.gob.ar"
-    ]
+    ],
+    "ultima_verificacion": "2026-10-29T17:49:57.035278-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-050",
@@ -1147,7 +1429,7 @@
     "provincia": "Buenos Aires",
     "url": "https://arrecifes.gob.ar/informacion-publica/licitaciones/",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -1158,7 +1440,13 @@
     },
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "ultima_verificacion": "2026-10-29T17:49:58.887887-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-051",
@@ -1167,7 +1455,7 @@
     "provincia": "Buenos Aires",
     "url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones",
     "tipo_portal": "html",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -1176,14 +1464,20 @@
       "fecha": "2026-10-25",
       "observacion": "Portal oficial indexado; verificar destinos de listados"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "adaptador": "baradero",
     "urls_inicio": [
       "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica",
       "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Privada"
-    ]
+    ],
+    "ultima_verificacion": "2026-10-29T17:49:59.669198-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 128,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-052",
@@ -1192,7 +1486,7 @@
     "provincia": "Buenos Aires",
     "url": "https://transparencia.rojas.gov.ar/index.php?action=17",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -1201,13 +1495,19 @@
       "fecha": "2026-10-25",
       "observacion": "Listado oficial de públicas con objetos indexado"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "urls_inicio": [
       "https://transparencia.rojas.gov.ar/index.php?action=17",
       "https://transparencia.rojas.gov.ar/index.php?action=23"
-    ]
+    ],
+    "ultima_verificacion": "2026-10-29T17:49:59.736224-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 10,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-053",
@@ -1216,7 +1516,7 @@
     "provincia": "Buenos Aires",
     "url": "https://transparencia.rojas.gov.ar/index.php?action=24",
     "tipo_portal": "tabla",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "SIN_PUBLICACIONES_CONFIRMADO",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -1231,7 +1531,13 @@
     "adaptador": "generico",
     "url_anterior_ordenes_compra": "https://transparencia.rojas.gov.ar/index.php?action=18",
     "correccion_alcance": "La ruta action18 publica ejecución de órdenes de compra, no es el listado de licitaciones privadas enlazado por el municipio.",
-    "marcador_vacio": "no se encontraron documentos[.]"
+    "marcador_vacio": "no se encontraron documentos[.]",
+    "ultima_verificacion": "2026-10-29T17:50:00.790374-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-054",
@@ -1242,8 +1548,8 @@
     "tipo_portal": "html_paginado",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
-    "verificada_funcionando": false,
+    "estado_verificacion": "OPERATIVA",
+    "verificada_funcionando": true,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
     "investigar_scripts": true,
@@ -1256,7 +1562,13 @@
     },
     "enriquecer_fichas": true,
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:50:00.864146-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 18,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-055",
@@ -1267,7 +1579,7 @@
     "tipo_portal": "html_fichas",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "verificada_funcionando": false,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
@@ -1286,7 +1598,13 @@
     ],
     "enriquecer_fichas": true,
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:50:01.343905-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-056",
@@ -1297,7 +1615,7 @@
     "tipo_portal": "javascript",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PENDIENTE",
     "verificada_funcionando": false,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
@@ -1310,7 +1628,13 @@
       "url": "https://sanlorenzo.gob.ar/licitaciones/"
     },
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:50:02.130677-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-057",
@@ -1321,7 +1645,7 @@
     "tipo_portal": "encabezados_pdf",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PARCIAL",
     "verificada_funcionando": false,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
@@ -1338,7 +1662,13 @@
     "descubrir_contrataciones": true,
     "patrones_documentos": [
       "/descargas/\\d+$"
-    ]
+    ],
+    "ultima_verificacion": "2026-10-29T17:50:03.959897-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 98,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-058",
@@ -1349,7 +1679,7 @@
     "tipo_portal": "siu_diaguita",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "verificada_funcionando": false,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
@@ -1362,7 +1692,13 @@
       "url": "https://compras.uner.edu.ar/"
     },
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:50:05.202932-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-059",
@@ -1373,7 +1709,7 @@
     "tipo_portal": "imagenes",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PARCIAL",
     "verificada_funcionando": false,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
@@ -1388,7 +1724,13 @@
     "adaptador": "colon-pba",
     "documentos_imagen": true,
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:50:06.149429-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 62,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-060",
@@ -1399,7 +1741,7 @@
     "tipo_portal": "boletin_html",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "verificada_funcionando": false,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
@@ -1418,7 +1760,13 @@
     ],
     "adaptador": "boletin-sf",
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:50:06.370117-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-061",
@@ -1429,7 +1777,7 @@
     "tipo_portal": "boletin_pdf",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PENDIENTE",
     "verificada_funcionando": false,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
@@ -1448,7 +1796,13 @@
     "descubrir_contrataciones": true,
     "dominios_documentos": [
       "portal.entrerios.gov.ar"
-    ]
+    ],
+    "ultima_verificacion": "2026-10-29T17:50:11.862449-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-062",
@@ -1459,8 +1813,8 @@
     "tipo_portal": "html_pdf",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
-    "verificada_funcionando": false,
+    "estado_verificacion": "OPERATIVA",
+    "verificada_funcionando": true,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
     "lectura_adjuntos": "necesarios",
@@ -1471,7 +1825,13 @@
       "url": "https://cglagos.gob.ar/comuna/compras-y-licitaciones"
     },
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:50:14.130288-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 10,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-063",
@@ -1482,7 +1842,7 @@
     "tipo_portal": "html_pdf",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "verificada_funcionando": false,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
@@ -1494,7 +1854,13 @@
       "url": "https://comunaarequito.gob.ar/licitaciones/"
     },
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:50:17.663339-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-064",
@@ -1505,7 +1871,7 @@
     "tipo_portal": "html_paginado",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "verificada_funcionando": false,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
@@ -1521,7 +1887,13 @@
     ],
     "enriquecer_fichas": true,
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:50:18.701787-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-065",
@@ -1532,7 +1904,7 @@
     "tipo_portal": "html_paginado",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "verificada_funcionando": false,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
@@ -1549,7 +1921,13 @@
       "page=\\d+.*pagina=lista"
     ],
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:50:19.921740-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-066",
@@ -1560,8 +1938,8 @@
     "tipo_portal": "html_pdf",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
-    "verificada_funcionando": false,
+    "estado_verificacion": "OPERATIVA",
+    "verificada_funcionando": true,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
     "lectura_adjuntos": "necesarios",
@@ -1572,7 +1950,13 @@
       "url": "https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/"
     },
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:50:20.957963-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 81,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-067",
@@ -1583,8 +1967,8 @@
     "tipo_portal": "html_pdf",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
-    "verificada_funcionando": false,
+    "estado_verificacion": "OPERATIVA",
+    "verificada_funcionando": true,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
     "lectura_adjuntos": "necesarios",
@@ -1600,7 +1984,13 @@
     "seguir_patrones": [
       "/adquisicion-de-equipo-servidor/?$",
       "/alquiler-de-inmueble-2025/?$"
-    ]
+    ],
+    "ultima_verificacion": "2026-10-29T17:50:34.192949-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 2,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-068",
@@ -1611,7 +2001,7 @@
     "tipo_portal": "html_pdf",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "verificada_funcionando": false,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
@@ -1633,7 +2023,13 @@
       "https://villaelisa.gov.ar/transparencia/licitaciones/",
       "https://villaelisa.gov.ar/"
     ],
-    "enriquecer_fichas": true
+    "enriquecer_fichas": true,
+    "ultima_verificacion": "2026-10-29T17:50:36.525287-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-069",
@@ -1644,8 +2040,8 @@
     "tipo_portal": "html_pdf",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
-    "verificada_funcionando": false,
+    "estado_verificacion": "OPERATIVA",
+    "verificada_funcionando": true,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
     "lectura_adjuntos": "necesarios",
@@ -1660,7 +2056,13 @@
     ],
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
-    "adaptador": "ramirez"
+    "adaptador": "ramirez",
+    "ultima_verificacion": "2026-10-29T17:50:38.088694-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 88,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-070",
@@ -1671,8 +2073,8 @@
     "tipo_portal": "html_paginado",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
-    "verificada_funcionando": false,
+    "estado_verificacion": "OPERATIVA",
+    "verificada_funcionando": true,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
     "lectura_adjuntos": "necesarios",
@@ -1684,7 +2086,13 @@
     },
     "enriquecer_fichas": true,
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:50:38.624063-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 2,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-071",
@@ -1695,7 +2103,7 @@
     "tipo_portal": "html_paginado",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "BLOQUEADA",
     "verificada_funcionando": false,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
@@ -1712,7 +2120,13 @@
       "/licitaciones/"
     ],
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:50:39.313658-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-072",
@@ -1723,7 +2137,7 @@
     "tipo_portal": "html_pdf",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PARCIAL",
     "verificada_funcionando": false,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
@@ -1735,7 +2149,13 @@
       "url": "https://salto.gob.ar/licitaciones/"
     },
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:50:41.561981-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 21,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-073",
@@ -1746,7 +2166,7 @@
     "tipo_portal": "html_paginado",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "PARCIAL",
     "verificada_funcionando": false,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
@@ -1760,7 +2180,13 @@
     "enriquecer_fichas": true,
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
-    "adaptador": "junin"
+    "adaptador": "junin",
+    "ultima_verificacion": "2026-10-29T17:50:42.307807-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 21,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-074",
@@ -1771,8 +2197,8 @@
     "tipo_portal": "html_pdf",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
-    "verificada_funcionando": false,
+    "estado_verificacion": "OPERATIVA",
+    "verificada_funcionando": true,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
     "lectura_adjuntos": "necesarios",
@@ -1784,7 +2210,13 @@
     },
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
-    "adaptador": "zarate"
+    "adaptador": "zarate",
+    "ultima_verificacion": "2026-10-29T17:50:42.574630-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 31,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-075",
@@ -1795,8 +2227,8 @@
     "tipo_portal": "html_pdf",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
-    "verificada_funcionando": false,
+    "estado_verificacion": "OPERATIVA",
+    "verificada_funcionando": true,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
     "lectura_adjuntos": "necesarios",
@@ -1807,7 +2239,13 @@
       "url": "https://www.sanandresdegiles.gob.ar/?q=licitaciones-publicas"
     },
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "ultima_verificacion": "2026-10-29T17:50:43.554972-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 3,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-076",
@@ -1816,7 +2254,7 @@
     "provincia": "Santa Fe",
     "url": "https://reconquista.gob.ar/concurso-de-ofertas/",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -1825,10 +2263,16 @@
       "metodo": "Enlace publicado en portal oficial; captura Actions 40947630107, extracción 40948224515",
       "observacion": "Concursos de ofertas con 3 procedimientos observados"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "recuperacion-2026-10-29"
+    "lote": "recuperacion-2026-10-29",
+    "ultima_verificacion": "2026-10-29T17:50:46.769219-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 3,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-077",
@@ -1837,7 +2281,7 @@
     "provincia": "Santa Fe",
     "url": "https://reconquista.gob.ar/concurso-de-precios/",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -1846,10 +2290,16 @@
       "metodo": "Enlace publicado en portal oficial; captura Actions 40947630107, extracción 40948224515",
       "observacion": "Concursos de precios con 14 procedimientos observados"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "lote": "recuperacion-2026-10-29"
+    "lote": "recuperacion-2026-10-29",
+    "ultima_verificacion": "2026-10-29T17:50:48.429225-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 14,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
   },
   {
     "id": "fuente-078",
@@ -1861,12 +2311,19 @@
     "incorporada": true,
     "conector": "publicaciones",
     "lectura_adjuntos": "necesarios",
-    "estado_verificacion": "PENDIENTE_AUDITORIA_COMPLETA",
+    "estado_verificacion": "BLOQUEADA",
     "evidencia_descubrimiento": {
       "url": "https://www.humboldt.gob.ar/",
       "fecha": "2026-10-29",
       "metodo": "Búsqueda y contraste oficial; captura Actions 40950466660",
       "observacion": "Dos convocatorias históricas reales, con objeto y límite de presentación. No se declaran novedades del día."
+    },
+    "verificada_funcionando": false,
+    "ultima_verificacion": "2026-10-29T17:50:49.201272-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
     }
   }
 ]
