@@ -1,4 +1,6 @@
-# Piloto diario preparado, sin activar
+# Alternativa externa preparada, sin activar
+
+La opción preferida actual es [100% GitHub Actions](PROGRAMADOR_GITHUB.md). Esta alternativa se conserva como antecedente y debe permanecer desactivada.
 
 El PR #1 continúa en `mejora/radar-auditable`. No se modifica `main` ni producción. La configuración entregada tiene `habilitado: false`: no se instaló ningún servicio, credencial ni temporizador. Los ensayos del PR ejecutan una simulación sin red del programador y auditorías aisladas de Actions; no habilitan la periodicidad.
 

@@ -49,6 +49,10 @@ jobs:
         timeout-minutes: 4
         run: bash tools/preparar_documentos.sh
       - run: python -m unittest discover -s tests -v
+      - name: Probar programador GitHub propuesto sin activar main
+        run: |
+          node tests/test_programador_github.cjs
+          python tools/generar_programador_github.py --comprobar
       - name: Validar programador externo sin red ni activación
         run: |
           python tools/programar_piloto.py
@@ -301,17 +305,20 @@ jobs:
       actions: write
       contents: read
     steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
       - name: Dos ejecuciones workflow_dispatch independientes del piloto aislado
         uses: actions/github-script@v7
         with:
           script: |
+            const radar=require(process.env.GITHUB_WORKSPACE+'/despliegue/github-actions/programador.cjs');
             const rama='mejora/radar-auditable';
             const clave=context.payload.pull_request.head.sha;
             const resultados=[];
             for(const paso of ['1','2']) {
               const inicio=new Date(Date.now()-60000).toISOString();
-              await github.rest.actions.createWorkflowDispatch({...context.repo,workflow_id:'radar-diario.yml',ref:rama,
-                inputs:{modo:'controlado',inicializar:paso==='1'?'true':'false',canal:'validacion',clave_validacion:clave,paso_validacion:paso,semilla_run:paso==='1'?'40688224634':''}});
+              await radar.despacharValidacion({github,context,clave,paso});
               let terminado=false,ultimo='';
               for(let intento=0;intento<88;intento++) {
                 await new Promise(resolve=>setTimeout(resolve,15000));

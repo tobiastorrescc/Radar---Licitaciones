@@ -1,0 +1,225 @@
+# PROPUESTA INACTIVA: copiar sólo este archivo a .github/workflows/programar-piloto.yml
+# en main después de autorización. Sin checkout, PAT, secretos externos ni escritura de contenidos.
+name: Programador del piloto aislado
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * *' # GitHub no garantiza puntualidad.
+      timezone: 'America/Argentina/Buenos_Aires'
+    - cron: '30 9 * * *' # 09:30 Argentina: supervisar sin redisparar.
+      timezone: 'America/Argentina/Buenos_Aires'
+  workflow_run:
+    workflows: ['Radar diario de licitaciones']
+    types: [completed]
+    branches: ['mejora/radar-auditable']
+permissions:
+  contents: read
+  actions: write
+  issues: write
+concurrency:
+  group: programador-piloto-${{ github.event_name == 'workflow_run' && github.event.workflow_run.id || 'diario' }}
+  cancel-in-progress: false
+jobs:
+  programar-o-supervisar:
+    if: github.repository == 'tobiastorrescc/Radar---Licitaciones' && github.ref == 'refs/heads/main' && vars.RADAR_PILOTO_PROGRAMADOR_HABILITADO == 'true' && (github.event_name != 'workflow_run' || (github.event.workflow_run.event == 'workflow_dispatch' && contains(github.event.workflow_run.display_title, ' programado')))
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Preparar o supervisar sin ejecutar código de la rama del piloto
+        id: preparar
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b
+        with:
+          retries: 0
+          script: |
+            const fs=require('node:fs');
+            const path=require('node:path');
+            function cargarRadar() {
+              const module={exports:{}};
+              'use strict';
+              // Lógica embebida en la plantilla de main: nunca descarga ni ejecuta código del PR.
+              const crypto = require('node:crypto');
+              const REPO = 'tobiastorrescc/Radar---Licitaciones';
+              const RAMA = 'mejora/radar-auditable';
+              const WORKFLOW = 'radar-diario.yml';
+              const PATH = '.github/workflows/radar-diario.yml';
+              function fechaAR(instante) {
+                const partes = new Intl.DateTimeFormat('en-CA', {timeZone:'America/Argentina/Buenos_Aires',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(instante));
+                return ['year','month','day'].map(k=>partes.find(x=>x.type===k).value).join('-');
+              }
+              function planDia(ahora) {
+                const fecha=fechaAR(ahora);
+                const clave=crypto.createHash('sha256').update('piloto-diario:'+fecha).digest('hex').slice(0,40);
+                return {fecha, titulo:`Radar controlado ${clave} programado`,
+                  inputs:{modo:'controlado',canal:'piloto',inicializar:'false',clave_validacion:clave,paso_validacion:'programado'}};
+              }
+              function repo(context) {
+                if(`${context.repo.owner}/${context.repo.repo}`!==REPO) throw new Error('Repositorio no autorizado');
+                return context.repo;
+              }
+              function esPiloto(r, context) {
+                return r.head_branch===RAMA && r.event==='workflow_dispatch' && r.path===PATH && r.head_repository?.full_name===REPO;
+              }
+              async function listarRuns(github, context, workflow, ahora) {
+                const desde=new Date(new Date(ahora).getTime()-2*86400000).toISOString().slice(0,10);
+                const result=[];
+                for(let page=1;page<=5;page++) {
+                  const {data}=await github.rest.actions.listWorkflowRuns({...repo(context),workflow_id:workflow,branch:workflow===WORKFLOW?RAMA:'main',created:`>=${desde}`,per_page:100,page});
+                  result.push(...data.workflow_runs);
+                  if(data.workflow_runs.length<100)return result;
+                }
+                throw new Error('Listado truncado; no se despacha sin poder descartar duplicados');
+              }
+              async function candidato(github,context,ahora) {
+                const plan=planDia(ahora);
+                const runs=await listarRuns(github,context,WORKFLOW,ahora);
+                const matches=runs.filter(r=>esPiloto(r,context)&&r.display_title===plan.titulo);
+                if(matches.length>1)throw new Error('Más de un piloto para esta fecha; revisar duplicados');
+                return {plan,run:matches[0]};
+              }
+              async function preparar({github,context,ahora=new Date()}) {
+                repo(context);
+                const actual=(await github.rest.actions.getWorkflowRun({...context.repo,run_id:context.runId})).data;
+                if(actual.head_branch!=='main' || !['schedule','workflow_dispatch'].includes(actual.event))throw new Error('El programador sólo puede operar desde main');
+                if(fechaAR(actual.created_at)!==fechaAR(ahora))throw new Error('No redisparar una fecha pasada mediante rerun');
+                const {plan,run}=await candidato(github,context,ahora);
+                if(run) {
+                  if(run.status==='completed'&&run.conclusion!=='success')throw new Error(`El piloto ya terminó con ${run.conclusion}: ${run.html_url}; no se reintenta`);
+                  return {iniciar:false,plan,run};
+                }
+                const padres=await listarRuns(github,context,actual.workflow_id,ahora);
+                if(Number(actual.run_attempt)>1 || padres.some(r=>r.id!==context.runId&&fechaAR(r.created_at)===plan.fecha&&['schedule','workflow_dispatch'].includes(r.event)&&r.head_branch==='main'&&r.head_repository?.full_name===REPO&&r.name===actual.name)) {
+                  throw new Error('Intento previo sin hijo confirmado; no se repite un POST incierto');
+                }
+                const flujo=(await github.rest.actions.getWorkflow({...context.repo,workflow_id:WORKFLOW})).data;
+                if(flujo.state!=='active')throw new Error('El workflow del radar está deshabilitado');
+                const {data}=await github.rest.repos.getContent({...context.repo,path:'piloto_respaldo/diario/indice.json',ref:RAMA});
+                if(data.type!=='file'||data.encoding!=='base64')throw new Error('Falta índice duradero del piloto');
+                const indice=JSON.parse(Buffer.from(data.content,'base64').toString('utf8'));
+                const ultimo=indice.segmentos?.at(-1);
+                if(indice.schema_version!==1 || !ultimo || !/^[a-f0-9]{64}$/.test(ultimo.sha256)||!(ultimo.cuentas?.procedimientos>0))throw new Error('Índice de respaldo ausente, vacío o incompatible');
+                return {iniciar:true,plan};
+              }
+              async function despachar({github,context,plan}) {
+                repo(context);
+                const esperado=planDia(`${plan.fecha}T12:00:00Z`);
+                if(JSON.stringify(plan)!==JSON.stringify(esperado))throw new Error('Plan alterado');
+                // Sin retry: el llamador sube el journal ANTES. Un timeout es resultado incierto.
+                await github.rest.actions.createWorkflowDispatch({...context.repo,workflow_id:WORKFLOW,ref:RAMA,inputs:plan.inputs});
+                return {estado:'SOLICITADO_NO_FINALIZADO',fecha:plan.fecha};
+              }
+              async function comprobarExito(github,context,run) {
+                const {data}=await github.rest.actions.listJobsForWorkflowRun({...repo(context),run_id:run.id,per_page:100});
+                const job=data.jobs.find(j=>j.name==='verificar-fuentes-rama');
+                if(!job||job.conclusion!=='success')throw new Error('El job del piloto no confirmó éxito');
+                for(const nombre of ['Restaurar respaldo duradero de Git y comprobar toda la cadena','Comprobar continuidad y ausencia de duplicados del historial restaurado','Preparar respaldo incremental y verificar restauración completa','Persistir sólo el respaldo del piloto en su rama']) {
+                  if(!job.steps?.some(s=>s.name===nombre&&s.conclusion==='success'))throw new Error('Falta confirmación de persistencia: '+nombre);
+                }
+                return {estado:'COMPLETADO_CON_RESPALDO',url:run.html_url};
+              }
+              async function vigilar({github,context,ahora=new Date()}) {
+                const {plan,run}=await candidato(github,context,ahora);
+                if(!run)throw new Error(`No hay piloto confirmado para ${plan.fecha}; no significa ausencia de novedades`);
+                if(run.status!=='completed')throw new Error(`Piloto incompleto (${run.status}): ${run.html_url}`);
+                if(run.conclusion!=='success')throw new Error(`Piloto ${run.conclusion}: ${run.html_url}`);
+                return comprobarExito(github,context,run);
+              }
+              async function revisarEvento({github,context}) {
+                repo(context);
+                const id=context.payload.workflow_run?.id;
+                if(!id)throw new Error('Falta identificador del evento');
+                const run=(await github.rest.actions.getWorkflowRun({...context.repo,run_id:id})).data;
+                if(!esPiloto(run,context))return {ignorado:true};
+                // Sólo el título diario: los ensayos independientes del PR no generan alertas operativas.
+                if(run.display_title!==planDia(run.created_at).titulo)return {ignorado:true};
+                if(run.status!=='completed')return {ignorado:true};
+                if(run.conclusion!=='success')throw new Error(`Piloto ${run.conclusion}: ${run.html_url}`);
+                return comprobarExito(github,context,run);
+              }
+              async function alertar({github,context,motivo,ahora=new Date()}) {
+                const r=repo(context);const fecha=fechaAR(ahora);const marca=`<!-- radar-piloto-alerta:${fecha} -->`;
+                const url=`https://github.com/${REPO}/actions/runs/${context.runId}`;
+                const detalle=`${marca}\n\nRevisar el piloto aislado de ${RAMA}. Incidencia detectada: ${String(motivo).slice(0,1000)}\n\n${url}\n\nNo se reenvía automáticamente un despacho incierto. Consultar auditoría, continuidad, respaldos y resultados parciales. Ausencia de ejecución no equivale a ausencia de novedades.`;
+                let encontrada;
+                for(let page=1;page<=5;page++) {
+                  const {data}=await github.rest.issues.listForRepo({...r,state:'all',sort:'created',direction:'desc',per_page:100,page});
+                  encontrada=data.find(i=>!i.pull_request&&i.body?.startsWith(marca)&&i.user?.login==='github-actions[bot]');
+                  if(encontrada||data.length<100)break;
+                  if(page===5)throw new Error('Listado de alertas truncado; revisar Actions sin crear avisos duplicados');
+                }
+                if(encontrada) {
+                  if(encontrada.body.includes(url)&&encontrada.state==='open')return {url:encontrada.html_url,repetida:true};
+                  const body=encontrada.body.slice(0,50000)+'\n\n'+detalle;
+                  const {data}=await github.rest.issues.update({...r,issue_number:encontrada.number,state:'open',body});
+                  return {url:data.html_url,actualizada:true};
+                }
+                const {data}=await github.rest.issues.create({...r,title:`[Radar piloto] Revisar ejecución del ${fecha}`,body:detalle});
+                return {url:data.html_url,creada:true};
+              }
+              // Entrada exclusiva de la prueba del PR, sin opción equivalente en el workflow de main.
+              async function despacharValidacion({github,context,clave,paso}) {
+                repo(context);
+                if(context.eventName!=='pull_request'||context.payload.pull_request?.head?.repo?.full_name!==REPO||context.payload.pull_request?.head?.ref!==RAMA||!/^[a-f0-9]{40}$/.test(clave)||!['1','2'].includes(paso))throw new Error('Validación fuera del PR autorizado');
+                return github.rest.actions.createWorkflowDispatch({...context.repo,workflow_id:WORKFLOW,ref:RAMA,inputs:{modo:'controlado',inicializar:paso==='1'?'true':'false',canal:'validacion',clave_validacion:clave,paso_validacion:paso,semilla_run:paso==='1'?'40688224634':''}});
+              }
+              module.exports={REPO,RAMA,WORKFLOW,fechaAR,planDia,preparar,despachar,vigilar,revisarEvento,alertar,despacharValidacion};
+              return module.exports;
+            }
+            const archivo=path.join(process.env.RUNNER_TEMP,'radar-programador.cjs');
+            fs.writeFileSync(archivo,'module.exports=('+cargarRadar.toString()+')();');
+            const radar=cargarRadar();
+            try {
+              if(context.eventName==='workflow_run') {
+                const r=await radar.revisarEvento({github,context});
+                core.info(JSON.stringify(r));
+              } else if(context.eventName==='schedule' && context.payload.schedule==='30 9 * * *') {
+                const r=await radar.vigilar({github,context});
+                await core.summary.addHeading('Supervisión del piloto').addRaw(JSON.stringify(r)).write();
+              } else {
+                const p=await radar.preparar({github,context});
+                core.setOutput('iniciar',String(p.iniciar));
+                fs.writeFileSync(path.join(process.env.RUNNER_TEMP,'piloto-plan.json'),JSON.stringify(p.plan));
+                fs.writeFileSync(path.join(process.env.RUNNER_TEMP,'piloto-journal.json'),JSON.stringify({fecha:p.plan.fecha,padre:context.runId,estado:'ANTES_DEL_POST',plan:p.plan}));
+                await core.summary.addHeading('Programador del piloto').addRaw(p.iniciar?'Preparado: subir journal antes de solicitar.':`Sin nuevo despacho: ${p.run.html_url}`).write();
+              }
+            } catch(e) {
+              fs.writeFileSync(path.join(process.env.RUNNER_TEMP,'piloto-error.txt'),String(e.message).slice(0,2000));
+              throw e;
+            }
+      - name: Guardar journal antes de cualquier POST
+        if: steps.preparar.outputs.iniciar == 'true'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: piloto-journal-${{ github.run_id }}
+          path: ${{ runner.temp }}/piloto-journal.json
+          retention-days: 90
+          if-no-files-found: error
+      - name: Solicitar una sola ejecución del piloto
+        if: success() && steps.preparar.outputs.iniciar == 'true'
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b
+        with:
+          retries: 0
+          script: |
+            const fs=require('node:fs');
+            const path=require('node:path');
+            const radar=require(path.join(process.env.RUNNER_TEMP,'radar-programador.cjs'));
+            try {
+              const plan=JSON.parse(fs.readFileSync(path.join(process.env.RUNNER_TEMP,'piloto-plan.json'),'utf8'));
+              const r=await radar.despachar({github,context,plan});
+              await core.summary.addHeading('Solicitud enviada; no confirma finalización').addRaw(JSON.stringify(r)).write();
+            } catch(e) {
+              fs.writeFileSync(path.join(process.env.RUNNER_TEMP,'piloto-error.txt'),String(e.message).slice(0,2000));
+              throw e;
+            }
+      - name: Alertar fallos de despacho, ejecución, supervisión o respaldo
+        if: failure()
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b
+        with:
+          retries: 0
+          script: |
+            const fs=require('node:fs');
+            const path=require('node:path');
+            const radar=require(path.join(process.env.RUNNER_TEMP,'radar-programador.cjs'));
+            const f=path.join(process.env.RUNNER_TEMP,'piloto-error.txt');
+            const motivo=fs.existsSync(f)?fs.readFileSync(f,'utf8'):'Falló un paso del programador, incluido el journal. Revisar logs.';
+            const r=await radar.alertar({github,context,motivo});
+            await core.summary.addHeading('ALERTA: revisar piloto').addRaw(r.url).write();

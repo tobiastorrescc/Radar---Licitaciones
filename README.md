@@ -71,3 +71,5 @@ La ruta histórica action18 de Rojas era ejecución de órdenes de compra. Se re
 El programador externo de las 08:00 de Argentina está preparado y **desactivado**: [configuración, permisos, costos y activación posterior](PROGRAMADOR_EXTERNO.md). No se instaló un servicio ni se autorizó producción.
 
 [Resultados de esta etapa del programador externo y auditorías](RESULTADOS_PROGRAMADOR.md).
+
+**Opción preferida sin servidor:** [programador 100% GitHub Actions, preparado y sin activar](PROGRAMADOR_GITHUB.md). Requiere autorizar posteriormente la adición de un único workflow a main; no requiere fusionar este PR ni instalar la alternativa externa.
