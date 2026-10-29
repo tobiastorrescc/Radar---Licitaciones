@@ -1,17 +1,15 @@
 {
-  "etapa": "sondeo-2026-10-29-6",
+  "etapa": "auditoria-final-2026-10-29-7",
   "sondear": true,
-  "auditar": false,
+  "auditar": true,
   "descubrir": false,
   "urls_sondeo": [
-    "https://epe.santafe.gov.ar/app2/aperturas",
-    "https://compras.santafe.gov.ar/",
-    "https://www.santafe.gov.ar/gestionesdecompras/site/",
-    "https://www.humboldt.gob.ar/",
-    "https://www.frp.utn.edu.ar/info2/?page_id=32743",
-    "https://www.frp.utn.edu.ar/info2/",
-    "https://uader.edu.ar/novedades/licitaciones-publicas",
-    "https://www.ramallo.gob.ar/boletines",
-    "https://sibom.slyt.gba.gob.ar/cities/102"
+    "https://www.humboldt.gob.ar/"
+  ],
+  "peticiones": [
+    {
+      "url": "https://licitaciones.chajari.gob.ar/return_file",
+      "datos_post": "{\"atta_id\": \"6397\", \"file_name\": \"pliego_y_decreto\", \"licitacion_id\": 710}"
+    }
   ]
 }

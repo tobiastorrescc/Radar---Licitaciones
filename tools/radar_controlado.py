@@ -50,13 +50,13 @@ def enlace(url,texto):
 def generar_informe(db,resumen,registros,fuentes,destino):
     fecha=resumen['fecha'];corrida=resumen['corrida'];destino=Path(destino)
     actuales=inc.actuales(db,fecha,corrida);eventos=inc.eventos(db,corrida,fecha)
-    actuales_por_id={r['id']:r for r in actuales}
+    actuales_por_id={k:r for r in actuales for k in r.get('ids_historial',[r['id']])}
     for e in eventos:actuales_por_id[e['id']]['clasificacion_novedad']=e['clasificacion_novedad']
     vistas=o.guardar_vistas(actuales,fecha,destino)
     for nombre,datos in [('catalogo_completo',actuales),('eventos',eventos),('observadas',registros)]:
         guardar(destino/(nombre+'.json'),{'fecha':fecha,'total':len(datos),'oportunidades':datos})
         (destino/(nombre+'.md')).write_text(o.reporte(datos,fecha),encoding='utf-8')
-    resumen={**resumen,'abiertas':len(vistas['abiertas']),'proximas_a_vencer':len(vistas['proximas_a_vencer']),
+    resumen={**resumen,'procedimientos_unicos_catalogo':len(actuales),'duplicados_historicos_unificados':resumen['total_historial']-len(actuales),'abiertas':len(vistas['abiertas']),'proximas_a_vencer':len(vistas['proximas_a_vencer']),
         'no_observadas_en_corrida':sum(not r['observada_esta_corrida'] for r in actuales),'cobertura_estricta':dict(Counter(f['estado_cobertura'] for f in fuentes)),
         'condiciones_pago':__import__('pagos').resumen(actuales)}
     guardar(destino/'resumen.json',resumen)
@@ -80,7 +80,7 @@ def generar_informe(db,resumen,registros,fuentes,destino):
             escape(r.get('clasificacion_novedad') or 'Ya registrada'),escape(r['vigencia']),escape(r.get('fecha_publicacion') or 'Desconocida'),
             escape(r.get('fecha_hora_apertura') or r.get('fecha_apertura') or 'Desconocida'),
             escape(r.get('fecha_hora_limite_presentacion') or r.get('fecha_limite_presentacion') or 'Desconocido'),
-            escape(str(r.get('presupuesto') or 'Desconocido')),escape(', '.join(r.get('modalidad_presentacion') or []) or 'No informada'),escape(r['condiciones_pago']),
+            escape((str(r['presupuesto'].get('importe') or 'Desconocido')+' '+str(r['presupuesto'].get('moneda') or '(moneda no informada)')) if isinstance(r.get('presupuesto'),dict) else str(r.get('presupuesto') or 'Desconocido')),escape(', '.join(r.get('modalidad_presentacion') or []) or 'No informada'),escape(r['condiciones_pago']),
             enlace(r.get('enlace_condiciones_pago'),'Respaldo') if r.get('enlace_condiciones_pago') else 'No comprobado',
             enlace(r.get('enlace_pliego'),'Pliego') if r.get('enlace_pliego') else 'No identificado',escape(flags),
             'Observada' if r['observada_esta_corrida'] else 'No confirmada en esta corrida']

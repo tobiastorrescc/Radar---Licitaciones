@@ -15,6 +15,36 @@ class MejorasCoberturaTests(unittest.TestCase):
             'organismo':'Municipalidad de Prueba','provincia':'Santa Fe','fuente':'https://oficial.gob.ar/licitaciones',
             'url':'https://oficial.gob.ar/1'},FECHA)
 
+    def test_identidad_corregida_reutiliza_id_persistente_sin_reescribir_versiones(self):
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as d:
+            db=inc.abrir(Path(d)/'estado.sqlite3');r=self.registro('Materiales para el segundo semestre.')
+            informe={'ejecucion_id':'primera','actualizado':FECHA,'estado_ejecucion':'COMPLETADA','resumen':{'finalizadas':1,'configuradas':1},'observaciones':[{'url':r['fuente'],'estado':'OPERATIVA'}]}
+            with patch('oportunidades.identidad',return_value='identidad-legada'):inc.registrar(db,[r],informe)
+            versiones=db.execute('SELECT * FROM versiones').fetchall()
+            resumen=inc.registrar(db,[r],{**informe,'ejecucion_id':'segunda'})
+            self.assertEqual(resumen['novedades'],0);self.assertEqual(resumen['total_historial'],1)
+            self.assertEqual(db.execute('SELECT * FROM versiones').fetchall(),versiones)
+            self.assertEqual(db.execute('SELECT id FROM procedimientos').fetchone()[0],'identidad-legada');db.close()
+
+    def test_catalogo_unifica_duplicados_legados_y_conserva_filas_y_versiones(self):
+        with tempfile.TemporaryDirectory() as d:
+            db=inc.abrir(Path(d)/'estado.sqlite3');r=self.registro('Materiales. Apertura 30/10/2026.')
+            informe={'ejecucion_id':'primera','actualizado':FECHA,'estado_ejecucion':'COMPLETADA','resumen':{'finalizadas':1,'configuradas':1},'observaciones':[{'url':r['fuente'],'estado':'OPERATIVA'}]}
+            inc.registrar(db,[r],informe)
+            db.execute("INSERT INTO procedimientos SELECT 'alias-historico',primera,ultima,corrida,huella,dato FROM procedimientos LIMIT 1");db.commit()
+            versiones=db.execute('SELECT * FROM versiones').fetchall()
+            actual,=inc.actuales(db,FECHA,'primera')
+            self.assertEqual(len(actual['ids_historial']),2)
+            self.assertEqual(db.execute('SELECT COUNT(*) FROM procedimientos').fetchone()[0],2)
+            self.assertEqual(db.execute('SELECT * FROM versiones').fetchall(),versiones);db.close()
+
+    def test_segundo_semestre_y_anexos_no_son_segundo_llamado(self):
+        a=self.registro('Insumos para el segundo semestre. Apertura 30/10/2026.')
+        b={**a,'objeto':'Circular aclaratoria: segunda etapa de entrega. Apertura 30/10/2026.','url':'https://oficial.gob.ar/circular'}
+        self.assertEqual(o.convocatoria(a),'1');self.assertEqual(o.convocatoria(b),'1')
+        self.assertEqual(len(o.deduplicar([a,b],FECHA)),1)
+
     def test_limite_presentacion_anterior_a_apertura_cierra_oportunidad(self):
         r=self.registro('Apertura 30/10/2026 10:00. Presentación de ofertas hasta 29/10/2026 11:00. Publicado el 25/10/2026.')
         self.assertEqual(r['fecha_limite_presentacion'],'2026-10-29')
@@ -135,3 +165,30 @@ class DescubrimientoPeriodicoTests(unittest.TestCase):
         self.assertTrue(corresponde({},ahora))
         self.assertFalse(corresponde({'ultima_ejecucion':'2026-10-28T12:00:00+00:00'},ahora))
         self.assertTrue(corresponde({'ultima_ejecucion':'2026-10-26T12:00:00+00:00'},ahora))
+
+class ChajariPublicaTests(unittest.TestCase):
+    def test_objeto_presupuesto_y_hora_sin_inventar_publicacion_o_moneda(self):
+        from extractores_lotes import extraer_chajari
+        raw=(Path(__file__).parent/'fixtures/chajari-publica-20261029.json').read_bytes()
+        rs,cantidad=extraer_chajari(raw,'https://licitaciones.chajari.gob.ar/licitaciones/para_apertura/0')
+        self.assertEqual(cantidad,1)
+        r=o.normalizar({**rs[0],'organismo':'Municipalidad de Chajarí','provincia':'Entre Ríos'},FECHA)
+        self.assertEqual(r['numero_procedimiento'],'19/2026');self.assertEqual(r['hora_apertura'],'10:00')
+        self.assertEqual(r['fecha_apertura'],'2026-11-19');self.assertEqual(r['presupuesto']['importe'],'59500000.0')
+        self.assertIsNone(r['presupuesto']['moneda']);self.assertIsNone(r['fecha_publicacion']);self.assertEqual(r['vigencia'],'ABIERTA')
+        self.assertNotIn('inscripcion_ids',r['campos_oficiales'])
+        self.assertNotIn('adjudicado_ids',r['campos_oficiales'])
+
+    def test_recorrido_post_paginado_sin_repetir_ni_filtrar(self):
+        import json,conectores
+        raw=(Path(__file__).parent/'fixtures/chajari-publica-20261029.json').read_bytes();muestra=json.loads(raw)['result'][0]
+        filas=[{**muestra,'id':1000+i,'name':str(i+1)+'/2026'} for i in range(50)]
+        llamadas=[];inicio='https://licitaciones.chajari.gob.ar/licitaciones/para_apertura/0'
+        def fetch(u,datos_post=None):
+            llamadas.append((u,datos_post));r=filas if u.endswith('/0') else [muestra]
+            return json.dumps({'result':r}).encode(),'application/json',u
+        r=conectores.explorar(inicio,{'adaptador':'chajari-api','organismo':'Municipalidad de Chajarí','provincia':'Entre Ríos'},fetch=fetch)
+        # Un número presente en ambas páginas se unifica; todos los demás quedan.
+        self.assertEqual(r['estado'],'OPERATIVA');self.assertEqual(len(r['oportunidades']),50)
+        self.assertEqual(len(llamadas),2);self.assertTrue(llamadas[-1][0].endswith('/50'))
+        self.assertTrue(all(body==b'{"":""}' for _,body in llamadas))

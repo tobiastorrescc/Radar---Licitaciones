@@ -342,3 +342,35 @@ def extraer_assa(datos,url):
             'fecha_publicacion':None,'campos_oficiales':f,'documentos':documentos,
             'situacion_publicada':estados.get(f.get('estado')),'detalle_completo':bool(objeto),'rango_evidencia':3})
     return registros,meta,detalle
+
+
+def extraer_chajari(datos,url):
+    """Consultas públicas POST del cliente municipal; no registra oferentes ni ofertas."""
+    import json
+    from datetime import datetime,timezone
+    import oportunidades as o
+    from extractores import procesos,url_publica
+    data=json.loads(datos)
+    if data.get('error') or not isinstance(data.get('result'),list):raise ValueError('Chajarí: consulta pública no reconocida')
+    filas=data['result'];registros=[]
+    for f in filas:
+        tipo={'publica':'Licitación pública','privada':'Licitación privada'}.get(f.get('type'))
+        if not tipo or not f.get('name') or not f.get('id') or not f.get('title'):raise ValueError('Chajarí: procedimiento sin identidad/objeto comprobable')
+        ps=procesos(tipo+' Nº '+f['name'])
+        if len(ps)!=1:raise ValueError('Chajarí: número de procedimiento no reconocido')
+        p=ps[0];ficha=url_publica('/licitaciones?state='+f['state']+'?id='+str(f['id']),url)
+        def fecha_local(valor):
+            if not valor:return None
+            # El cliente oficial observado utiliza Date.UTC al mostrar estos campos.
+            return datetime.fromisoformat(valor).replace(tzinfo=timezone.utc).astimezone(o.ZONA).strftime('%Y-%m-%d %H:%M')
+        monto=f.get('presupuesto_oficial');presupuesto={'importe':str(monto),'moneda':None} if isinstance(monto,(int,float)) and monto>=0 else None
+        registros.append({'titulo':tipo+' Nº '+f['name']+' — '+f['title'],'objeto':f['title'],
+            'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'procedimiento':p['procedimiento'],
+            'registro_estructurado':True,'id_origen':str(f['id']),'url':ficha,'evidencia_url':ficha,
+            'evidencias_campos':{'presupuesto':{'url':ficha,'consulta_url':url,'metodo':'POST','texto':'presupuesto_oficial: '+str(monto)}},
+            'fecha_apertura_texto':fecha_local(f.get('fecha_hora_apertura')),'fecha_limite_presentacion_texto':fecha_local(f.get('fecha_hora_cierre')),
+            'presupuesto':presupuesto,'documentos':[],
+            'situacion_publicada':{'adjudicada':'ADJUDICADA','en_evaluacion':'EN_EVALUACION'}.get(f.get('state')),
+            'campos_oficiales':{k:f.get(k) for k in ('id','name','title','type','state','fecha_hora_apertura','fecha_hora_cierre','presupuesto_oficial','pliego_y_decreto_id')},
+            'detalle_completo':True,'rango_evidencia':3})
+    return registros,len(filas)

@@ -1,0 +1,20 @@
+{
+  "jsonrpc": "2.0",
+  "id": null,
+  "result": [
+    {
+      "show_oferentes": false,
+      "fecha_hora_apertura": "2026-11-19 13:00:00",
+      "name": "019/2026",
+      "decreto_adjudicacion_id": "",
+      "title": "Provisión de repuestos para el tren de rodaje de Retroexcavadora N° 11 New Holland E215c Evo, Dominio DFP55 año 2019 y repuestos para el tren de rodaje de la Retroexcavadora Con Oruga N° 6 Komatsu PC200 dominio DFP32 año 2015",
+      "type": "publica",
+      "valor_pliego": 59500.0,
+      "fecha_hora_cierre": "",
+      "presupuesto_oficial": 59500000.0,
+      "id": 710,
+      "state": "para_apertura",
+      "pliego_y_decreto_id": "6397"
+    }
+  ]
+}

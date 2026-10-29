@@ -44,12 +44,12 @@ def worker(config, checkpoint, conexion, lectura, max_paginas):
     inicio = time.monotonic()
     def progreso(r):
         guardar(checkpoint, {**r, 'actualizado': ahora(), 'duracion_segundos': round(time.monotonic()-inicio, 3)})
-    transporte=partial(conectores.descargar, conexion_timeout=fuente.get('conexion_timeout',conexion), lectura_timeout=fuente.get('lectura_timeout',lectura))
+    transporte=partial(conectores.descargar, conexion_timeout=fuente.get('conexion_timeout',conexion), lectura_timeout=fuente.get('lectura_timeout',lectura),max_bytes=fuente.get('max_bytes_respuesta',12_000_000))
     def fetch(url,datos_post=None):
         es_documento=urlparse(url).path.lower().endswith(('.pdf','.docx','.zip','.jpg','.jpeg','.png','.xls','.xlsx')) or any(re.search(p,url) for p in fuente.get('patrones_documentos',[]))
         if fuente.get('capturar_respuestas') and not es_documento:
             from hashlib import sha256
-            datos,tipo,final=transporte(url,datos_post=datos_post) if datos_post is not None else transporte(url)
+            datos,tipo,final=transporte(url,datos_post=datos_post,headers_extra={'Content-Type':'application/json'} if fuente.get('adaptador')=='chajari-api' else {}) if datos_post is not None else transporte(url)
             if 'html' in tipo.lower() or 'json' in tipo.lower():
                 base=Path(checkpoint).parent/'capturas'/fuente['id'];base.mkdir(parents=True,exist_ok=True)
                 nombre=sha256(url.encode()+(datos_post or b'')).hexdigest()
@@ -57,7 +57,7 @@ def worker(config, checkpoint, conexion, lectura, max_paginas):
                 guardar(base/(nombre+'.json'),{'url':url,'final':final,'tipo':tipo,'sha256':sha256(datos).hexdigest(),'metodo':'POST' if datos_post is not None else 'GET','parametros':datos_post.decode() if datos_post else None})
             return datos,tipo,final
         if es_documento:return cache_documentos.obtener(url,transport=transporte)[:3]
-        return transporte(url,datos_post=datos_post) if datos_post is not None else transporte(url)
+        return transporte(url,datos_post=datos_post,headers_extra={'Content-Type':'application/json'} if fuente.get('adaptador')=='chajari-api' else {}) if datos_post is not None else transporte(url)
     try:
         r = conectores.explorar(fuente['url'], fuente, max_paginas=max_paginas, progreso=progreso,
             fetch=fetch)

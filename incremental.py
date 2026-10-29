@@ -14,7 +14,7 @@ CAMPOS=('titulo','objeto','numero_procedimiento','tipo_procedimiento','procedimi
     'fecha_apertura','fecha_apertura_texto','hora_apertura','fecha_publicacion','fecha_publicacion_texto','presupuesto',
     'situacion_publicada','evento_publicado','documentos','enlace_pliego','comprobacion_pliego','evidencias_campos',
     'pago_evidencias','pago_motivo_pendiente','fuente','fuentes_observadas','url','urls_publicacion','evidencia_url',
-    'detalle_completo','rango_evidencia','registro_estructurado','numero_oficial_sin_interpretar','id_origen','identidad_ambito','documentos_versiones','campos_oficiales','fecha_limite_presentacion','fecha_limite_presentacion_texto','hora_limite_presentacion','modalidad_presentacion')
+    'detalle_completo','rango_evidencia','registro_estructurado','numero_oficial_sin_interpretar','id_origen','identidad_ambito','documentos_versiones','campos_oficiales','numero_convocatoria','fecha_limite_presentacion','fecha_limite_presentacion_texto','hora_limite_presentacion','modalidad_presentacion')
 SEMANTICOS=('objeto','numero_procedimiento','tipo_procedimiento','organismo','localidad','provincia','fecha_apertura',
     'hora_apertura','fecha_publicacion','presupuesto','situacion_publicada','evento_publicado')
 NOVEDADES={'NUEVO_CONFIRMADO','NUEVA_DETECCION_FECHA_DESCONOCIDA','NUEVA_DETECCION_MISMO_DIA','MODIFICADO','DATOS_COMPLETADOS'}
@@ -138,12 +138,19 @@ def registrar(db,registros,informe):
     if repetida:return {**json.loads(repetida[0]),'reprocesamiento':True,'eventos_emitidos':0,'novedades':0}
     previas={r[0]:{'inicio':r[1],'base_completa':bool(r[2]),'ultima_completa':r[3]} for r in db.execute('SELECT * FROM fuentes')}
     primera=db.execute('SELECT COUNT(*) FROM ejecuciones').fetchone()[0]==0
+    # Índice derivado bajo el analizador actual: corregir identidad no crea una
+    # novedad ni reescribe IDs/versiones ya persistidas.
+    identidades_anteriores={}
+    for antigua,dato in db.execute('SELECT id,dato FROM procedimientos ORDER BY primera,id'):
+        identidades_anteriores.setdefault(o.identidad(json.loads(dato)),antigua)
     dedup=o.deduplicar(registros,fecha);tipos=Counter();candidatos=0
     with db:
         for r in dedup:
             if r.get('clasificacion_registro')!='PROCEDIMIENTO':candidatos+=1;continue
-            clave=o.identidad(r)
+            identidad_actual=o.identidad(r)
+            clave=identidades_anteriores.get(identidad_actual,identidad_actual)
             viejo=db.execute('SELECT dato,huella FROM procedimientos WHERE id=?',(clave,)).fetchone()
+            identidades_anteriores[identidad_actual]=clave
             anterior=json.loads(viejo[0]) if viejo else None
             dato=consolidar(anterior,r);firma=huella(dato);cambios=[]
             if not viejo:tipo='LINEA_BASE' if primera else tipo_nuevo(r,previas,fecha)
@@ -156,6 +163,7 @@ def registrar(db,registros,informe):
                     if k=='pago':return a[k].get('estado')!='VERIFICADO' and b[k].get('estado')=='VERIFICADO'
                     return a.get(k) in (None,'',[],{})
                 tipo=('DATOS_COMPLETADOS' if all(completado(k) for k in cambios) else 'MODIFICADO') if cambios else 'SIN_CAMBIOS'
+                if not cambios:firma=viejo[1]
             else:tipo='SIN_CAMBIOS'
             tipos[tipo]+=1
             db.execute('INSERT INTO procedimientos VALUES (?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET ultima=excluded.ultima,corrida=excluded.corrida,huella=excluded.huella,dato=excluded.dato',
@@ -181,12 +189,22 @@ def registrar(db,registros,informe):
     return resumen
 
 def actuales(db,fecha,corrida):
-    salida=[]
-    for clave,primera,ultima,vista,dato in db.execute('SELECT id,primera,ultima,corrida,dato FROM procedimientos'):
+    # Vista derivada: conserva cada fila/versión histórica en SQLite, pero informa
+    # una sola oportunidad por organismo, procedimiento y convocatoria actuales.
+    grupos={}
+    for clave,primera,ultima,vista,dato in db.execute('SELECT id,primera,ultima,corrida,dato FROM procedimientos ORDER BY primera,id'):
         r=o.normalizar(json.loads(dato),fecha)
-        r.update(id=clave,primera_deteccion=primera,ultima_deteccion=ultima,observada_esta_corrida=vista==corrida)
-        salida.append(r)
-    return sorted(salida,key=o.prioridad)
+        r.update(id=clave,primera_deteccion=primera,ultima_deteccion=ultima,observada_esta_corrida=vista==corrida,ids_historial=[clave])
+        identidad=o.identidad(r);anterior=grupos.get(identidad)
+        if anterior:
+            unido=o.fusionar(anterior,r,fecha)
+            unido.update(id=anterior['id'],ids_historial=sorted(set(anterior['ids_historial']+[clave])),
+                primera_deteccion=min(anterior['primera_deteccion'],primera),ultima_deteccion=max(anterior['ultima_deteccion'],ultima),
+                observada_esta_corrida=anterior['observada_esta_corrida'] or r['observada_esta_corrida'])
+            r=unido
+        grupos[identidad]=r
+    return sorted(grupos.values(),key=o.prioridad)
+
 
 def eventos(db,corrida,fecha):
     salida=[]

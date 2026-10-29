@@ -154,20 +154,21 @@ class _HTTPSHandler(HTTPSHandler):
                             req, context=self._context)
 
 
-def descargar(url, conexion_timeout=5, lectura_timeout=10, headers_extra=None, devolver_headers=False,datos_post=None):
+def descargar(url, conexion_timeout=5, lectura_timeout=10, headers_extra=None, devolver_headers=False,datos_post=None,max_bytes=12_000_000):
+    if not 1<=max_bytes<=32_000_000:raise ValueError('Tamaño máximo de respuesta fuera de rango')
     # build_opener conserva proxies del entorno y validación TLS predeterminada.
     opener = build_opener(_HTTPHandler(lectura_timeout), _HTTPSHandler(lectura_timeout))
     url = extractores.url_publica(url)
     with opener.open(Request(url,data=datos_post, headers={'User-Agent': 'RadarLicitaciones/2.0',**(headers_extra or {})}),
                      timeout=conexion_timeout) as r:
         longitud=r.headers.get('Content-Length')
-        if longitud and longitud.isdigit() and int(longitud)>12_000_000:raise ValueError('Respuesta supera 12 MB; recorrido parcial')
-        datos = r.read(12_000_001)
-        if len(datos) > 12_000_000:
-            raise ValueError('Respuesta supera 12 MB; recorrido parcial')
+        if longitud and longitud.isdigit() and int(longitud)>max_bytes:raise ValueError(f'Respuesta supera {max_bytes} bytes; recorrido parcial')
+        datos = r.read(max_bytes+1)
+        if len(datos) > max_bytes:
+            raise ValueError(f'Respuesta supera {max_bytes} bytes; recorrido parcial')
         if r.headers.get('Content-Encoding', '').lower()=='gzip' or datos.startswith(b'\x1f\x8b'):
             datos=gzip.decompress(datos)
-            if len(datos)>12_000_000:raise ValueError('Contenido descomprimido supera 12 MB')
+            if len(datos)>max_bytes:raise ValueError('Contenido descomprimido supera 12 MB')
         resultado=(datos, r.headers.get('Content-Type', ''), r.geturl())
         return (*resultado,dict(r.headers.items())) if devolver_headers else resultado
 
@@ -304,7 +305,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
     while pending:
         if len(seen)>=max_paginas:limits.append('max_paginas');break
         url,clase,referencia=pending.popleft();url=extractores.url_publica(url)
-        post=urlencode(referencia['post']).encode() if clase=='DATATABLES' else None
+        post=urlencode(referencia['post']).encode() if clase=='DATATABLES' else (b'{"":""}' if config.get('adaptador')=='chajari-api' and re.search(r'/licitaciones/(?:para_apertura|en_evaluacion|adjudicada)/\d+$',url or '') else None)
         peticion=url+('#POST:'+sha256(post).hexdigest() if post is not None else '') if url else None
         if not url or peticion in seen or _host(url) not in hosts:continue
         seen.add(peticion);fase='DESCARGA';snapshot(fase,url)
@@ -312,6 +313,18 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             datos,tipo,final=fetch(url,datos_post=post) if post is not None else fetch(url)
             fase='EXTRACCION';snapshot(fase,url)
             if _host(final) not in hosts:raise ValueError('Redirección fuera de dominios oficiales declarados')
+            if config.get('adaptador')=='chajari-api' and 'json' in tipo.lower():
+                from extractores_lotes import extraer_chajari
+                registros,cantidad=extraer_chajari(datos,final)
+                huella=sha256(json.dumps(registros,sort_keys=True).encode()).hexdigest()
+                if registros and huella in paginas_api:raise ValueError('Chajarí repite página; recorrido incompleto')
+                if registros:paginas_api.add(huella)
+                for r in registros:agregar(r)
+                if cantidad==50:
+                    m=re.search(r'/([0-9]+)$',url)
+                    pending.append((url[:m.start()]+ '/'+str(int(m[1])+50),'LISTADO',None))
+                if not registros:vacios.append({'url':url,'texto':'Consulta pública devuelve result=[]'})
+                correctas+=1;snapshot('PAGINA_FINALIZADA',url);continue
             if config.get('adaptador')=='assa-api' and 'json' in tipo.lower():
                 from extractores_lotes import extraer_assa
                 registros,meta,detalle=extraer_assa(datos,final)

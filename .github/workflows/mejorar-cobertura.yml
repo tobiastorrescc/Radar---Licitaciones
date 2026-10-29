@@ -42,10 +42,17 @@ jobs:
         run: python -u tools/descubrir_fuentes.py --salida work/descubrimiento --total 360 --busquedas 30 --candidatos 100 --revisar-pendientes
       - name: Restaurar copia independiente del último respaldo diario
         if: steps.plan.outputs.auditar == 'true'
-        run: python tools/respaldo_piloto.py restaurar --salida work/cobertura --respaldo piloto_respaldo/diario
+        run: |
+          python tools/respaldo_piloto.py restaurar --salida work/cobertura --respaldo piloto_respaldo/diario
+          python tools/respaldo_piloto.py antes --salida work/cobertura --respaldo piloto_respaldo/diario
       - name: Auditoría real aislada sin modificar el respaldo diario
         if: steps.plan.outputs.auditar == 'true'
         run: python -u tools/radar_controlado.py --salida work/cobertura --total 600 --documentos 180
+      - name: Verificar continuidad y restauración del nuevo estado aislado
+        if: steps.plan.outputs.auditar == 'true'
+        run: |
+          python tools/respaldo_piloto.py despues --salida work/cobertura --respaldo piloto_respaldo/diario
+          python tools/respaldo_piloto.py exportar --salida work/cobertura --respaldo work/cobertura-respaldo
       - name: Guardar evidencia incluso si el lote queda incompleto
         if: always()
         uses: actions/upload-artifact@v4
@@ -55,6 +62,7 @@ jobs:
             work/sondeo/
             work/descubrimiento/
             work/cobertura/
+            work/cobertura-respaldo/
             inventario/fuentes_auto.json
             inventario/descubrimiento_estado.json
           retention-days: 90

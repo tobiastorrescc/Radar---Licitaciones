@@ -62,7 +62,7 @@ def normalizar(r,ahora=None):
     dato('numero_procedimiento',r.get('numero_procedimiento') or (ps[0]['numero'] if ps else None),r.get('procedimiento'))
     if r.get('numero_procedimiento'):r['numero_procedimiento']=re.sub(r'^(\d+)[–-](20\d{2})$',r'\1/\2',r['numero_procedimiento'])
     dato('tipo_procedimiento',r.get('tipo_procedimiento') or (ps[0]['tipo'] if ps else None),r.get('procedimiento'))
-    for campo,patron in [('fecha_apertura',r'(?:(?:fecha\s+(?:de\s+)?)?apertura(?:\s+(?:de\s+)?(?:ofertas|sobres))?|llamese a licitacion (?:publica|privada) para el dia)\s*[:\-]?\s*(.{0,90})'),('fecha_limite_presentacion',r'(?:fecha\s+limite(?:\s+de\s+presentacion)?|limite\s+(?:de|para)\s+(?:la\s+)?(?:presentacion|recepcion)(?:\s+de\s+(?:ofertas|sobres))?|(?:presentacion|recepcion)\s+de\s+(?:ofertas|sobres)\s+hasta)\s*[:\-]?\s*(.{0,90})'),('fecha_publicacion',r'(?:fecha\s+(?:de\s+)publicacion|publicad[oa](?:\s+el)?)\s*[:\-]?\s*(.{0,70})')]:
+    for campo,patron in [('fecha_apertura',r'(?:(?:fecha\s+(?:de\s+)?)?apertura(?:\s+(?:de\s+)?(?:ofertas|sobres))?|llamese a licitacion (?:publica|privada) para el dia)\s*[:\-]?\s*(.{0,90})'),('fecha_limite_presentacion',r'(?:fecha\s+limite(?:\s+de\s+presentacion)?|limite\s+(?:de|para)\s+(?:la\s+)?(?:presentacion|recepcion)(?:\s+de\s+(?:ofertas|sobres))?|(?:presentacion|recepcion)\s+de\s+(?:ofertas|sobres)\s+hasta|presentacion\s*:\s*hasta)\s*[:\-]?\s*(.{0,90})'),('fecha_publicacion',r'(?:fecha\s+(?:de\s+)publicacion|publicad[oa](?:\s+el)?)\s*[:\-]?\s*(.{0,70})')]:
         dedicado=r.get(campo+'_texto')
         m=re.search(patron,t) or re.search(patron,norm(texto_titulo))
         raw=dedicado or (m[1] if m else '')
@@ -81,7 +81,7 @@ def normalizar(r,ahora=None):
     r['pago_prioritario']=r['pago']['prioritario']
     r['desierta']='desiert' in t
     r['fracasada']=r.get('situacion_publicada')=='FRACASADA' or extractores.situacion(texto_titulo)=='FRACASADA'
-    senales=t+' '+norm(r.get('evento_publicado'))
+    senales=t+' '+norm(texto_titulo)+' '+norm(r.get('evento_publicado'))
     r['segundo_llamado']=bool(re.search(r'segund[oa] (?:llamado|convocatoria)|2(?:do|º|°) llamado|llamado 2\b',senales))
     r['reapertura']='reapertura' in senales
     r['llamado_especial']=bool(r.get('llamado_especial') or r['desierta'] or r['fracasada'] or r['segundo_llamado'] or r['reapertura'])
@@ -262,8 +262,8 @@ def convocatoria(r):
     t=norm(r.get('evento_publicado'))+' '+norm(r.get('titulo'))
     m=re.search(r'(?:llamado|convocatoria)\s*(\d+)\b',t)
     if m:return str(int(m[1]))
-    if re.search(r'segund[oa]|2(?:do|º|°|o) llamado',t):return '2'
-    if re.search(r'tercer|3(?:er|º|°|o) llamado',t):return '3'
+    if re.search(r'\bsegund[oa] (?:llamado|convocatoria)\b|2(?:do|º|°|o) llamado',t):return '2'
+    if re.search(r'\btercer(?:o|a)? (?:llamado|convocatoria)\b|3(?:er|º|°|o) llamado',t):return '3'
     if 'reapertura' in t:return 'reapertura'
     if norm(r.get('evento_publicado')).isdigit():return str(int(norm(r['evento_publicado'])))
     return '1'
