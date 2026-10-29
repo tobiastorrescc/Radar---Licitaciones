@@ -66,8 +66,11 @@ test('plantilla registra error y crea alerta sin consultar ni ejecutar producci�
 
 test('cron antiguo activo impide preparar y despachar, sin consultar producción',async()=>{const e=entorno();e.datos.legacyDisabled=false;await assert.rejects(r.preparar(args(e)),/antiguo/);await assert.rejects(r.despachar({...args(e),plan:r.planDia(NOW)}),/antiguo/);assert.equal(e.datos.post.length,0);});
 
-test('el programador no puede suscribirse a su propio nombre',()=>{const f=fs.readFileSync('despliegue/github-actions/programar-piloto.yml.propuesto','utf8');assert.ok(f.includes("workflows: ['Radar piloto aislado']"));assert.ok(!f.includes("workflows: ['Programador del piloto aislado'"));});
+test('el programador no puede suscribirse a su propio nombre',()=>{const f=fs.readFileSync('despliegue/github-actions/programar-piloto.yml.propuesto','utf8');assert.ok(f.includes('repository_dispatch:'));assert.ok(!f.includes('  workflow_run:'));});
 
 test('validación CI no ocupa la misma cola que el piloto que despacha',()=>{const f=fs.readFileSync('.github/workflows/programar-piloto.yml','utf8');assert.ok(f.includes("github.event_name == 'workflow_dispatch' && format('radar-{0}', github.ref) || format('radar-ci-{0}', github.ref)"));});
 
 test('la instalación no vuelve a deshabilitar un cron ya retirado',async()=>{const {retirarLegado}=require('../tools/validar_instalacion_github.cjs');for(const state of ['active','disabled_manually']){let bajas=0;const github={rest:{actions:{disableWorkflow:async()=>{bajas++;},getWorkflow:async()=>({data:{state:'disabled_manually'}})}}};assert.equal(await retirarLegado(github,{}, {id:1,state}),'disabled_manually');assert.equal(bajas,state==='active'?1:0);}});
+
+test('aviso explícito espera cierre y verifica el run por API',async()=>{const e=entorno();e.datos.hijos=[e.hijo({status:'in_progress'})];const c={...context,payload:{client_payload:{run_id:701}}};const resultado=await r.revisarEvento({github:e.github,context:c,esperar:async()=>{e.datos.hijos[0].status='completed';}});assert.equal(resultado.estado,'COMPLETADO_CON_RESPALDO');});
+test('prueba de notificación no vuelve a consultar fuentes',()=>{const f=fs.readFileSync('.github/workflows/programar-piloto.yml','utf8');assert.ok(f.includes('inputs.solo_notificar != true'));assert.ok(f.includes('needs: verificar-fuentes-rama'));assert.ok(f.includes("event_type:'radar_piloto_finalizado'"));});

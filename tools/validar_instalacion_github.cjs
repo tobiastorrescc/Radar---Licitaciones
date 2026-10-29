@@ -85,15 +85,27 @@ async function instalar({github,context,core}) {
    await manual('supervisar','failure');throw Error('El piloto falló: revisar alerta y artefactos');
   }
   out.supervision=await radar.vigilar({github,context});guardar();
-  // Comprobar además el evento real workflow_run del programador en main.
+  // Emitir un aviso real sobre el piloto ya terminado, sin volver a consultar fuentes.
+  const antesAviso=new Set((await runList(RAMA,'workflow_dispatch')).map(r=>r.id));
+  await github.rest.actions.createWorkflowDispatch({...repo,workflow_id:WORKFLOW,ref:RAMA,inputs:{modo:'controlado',canal:'validacion',clave_validacion:context.sha,paso_validacion:'solo-notificacion',solo_notificar:'true',run_notificar:String(hijo.id)}});
+  let notificacion;
+  for(let i=0;i<40;i++) {
+   await pause(10000);
+   notificacion=(await runList(RAMA,'workflow_dispatch')).find(r=>!antesAviso.has(r.id)&&r.display_title===`Radar controlado ${context.sha} solo-notificacion`);
+   if(notificacion?.status==='completed')break;
+  }
+  if(!notificacion||notificacion.conclusion!=='success')throw Error('No se confirmó aviso del worker sin consulta');
+  out.notificacion_sin_consulta={id:notificacion.id,url:notificacion.html_url};guardar();
   let supervisor;
   for(let i=0;i<30;i++) {
-   const runs=await runList('main','workflow_run');
-   supervisor=runs.find(r=>r.created_at>=inicio&&r.head_sha===plan.main_sha_esperado);
+   const runs=await runList('main','repository_dispatch');
+   supervisor=runs.find(r=>r.created_at>=notificacion.created_at&&r.head_sha===plan.main_sha_esperado);
    if(supervisor?.status==='completed')break;
    await pause(10000);
   }
-  if(!supervisor||supervisor.conclusion!=='success')throw Error('No se confirmó supervisor automático workflow_run');
+  if(!supervisor||supervisor.conclusion!=='success')throw Error('No se confirmó supervisor automático repository_dispatch');
+  const sj=(await github.rest.actions.listJobsForWorkflowRun({...repo,run_id:supervisor.id,per_page:100})).data.jobs;
+  if(!sj.some(j=>j.name==='programar-o-supervisar'&&j.conclusion==='success'))throw Error('El supervisor automático no ejecutó su job');
   out.supervisor_automatico={id:supervisor.id,url:supervisor.html_url,conclusion:supervisor.conclusion};guardar();
   await manual('supervisar');
   const prueba=await manual('probar_alerta','failure');

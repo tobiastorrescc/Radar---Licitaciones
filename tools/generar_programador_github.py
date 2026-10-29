@@ -22,7 +22,7 @@ const radar=cargarRadar();
 try {
   if(context.eventName==='workflow_dispatch' && context.payload.inputs?.accion==='probar_alerta') {
     throw new Error('PRUEBA CONTROLADA AUTORIZADA: fallo deliberado del programador sin despachar el piloto ni cambiar su historial');
-  } else if(context.eventName==='workflow_run') {
+  } else if(context.eventName==='repository_dispatch') {
     const r=await radar.revisarEvento({github,context});
     core.info(JSON.stringify(r));
   } else if((context.eventName==='schedule' && context.payload.schedule==='30 9 * * *') || context.payload.inputs?.accion==='supervisar') {
@@ -75,20 +75,18 @@ on:
       timezone: 'America/Argentina/Buenos_Aires'
     - cron: '30 9 * * *' # 09:30 Argentina: supervisar sin redisparar.
       timezone: 'America/Argentina/Buenos_Aires'
-  workflow_run:
-    workflows: ['Radar piloto aislado']
-    types: [completed]
-    branches: ['mejora/radar-auditable']
+  repository_dispatch:
+    types: [radar_piloto_finalizado]
 permissions:
   contents: read
   actions: write
   issues: write
 concurrency:
-  group: programador-piloto-${{ github.event_name == 'workflow_run' && github.event.workflow_run.id || 'diario' }}
+  group: programador-piloto-diario
   cancel-in-progress: false
 jobs:
   programar-o-supervisar:
-    if: github.repository == 'tobiastorrescc/Radar---Licitaciones' && github.ref == 'refs/heads/main' && (github.event_name != 'schedule' || (PROGRAMACION_HABILITADA && vars.RADAR_PILOTO_PROGRAMADOR_HABILITADO != 'false')) && (github.event_name != 'workflow_run' || (github.event.workflow_run.event == 'workflow_dispatch' && contains(github.event.workflow_run.display_title, ' programado')))
+    if: github.repository == 'tobiastorrescc/Radar---Licitaciones' && github.ref == 'refs/heads/main' && (github.event_name != 'schedule' || (PROGRAMACION_HABILITADA && vars.RADAR_PILOTO_PROGRAMADOR_HABILITADO != 'false')) && (github.event_name != 'repository_dispatch' || github.event.action == 'radar_piloto_finalizado')
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:

@@ -26,6 +26,13 @@ on:
       paso_validacion:
         description: 'Identificador de la consulta de validación'
         type: string
+      solo_notificar:
+        description: 'Prueba autorizada de aviso sobre un run previo; no consulta fuentes'
+        type: boolean
+        default: false
+      run_notificar:
+        description: 'ID de ejecución previa sólo para prueba de aviso'
+        type: string
   pull_request:
   push:
     paths: ['radar.py', 'conectores.py', 'extractores.py', 'extractores_lotes.py', 'documentos.py', 'oportunidades.py', 'pagos.py', 'cache_documentos.py', 'inventario/**', 'tools/**', 'tests/**', '.github/workflows/**', 'fuentes*']
@@ -69,7 +76,7 @@ jobs:
           PYCODE
 
   verificar-fuentes-rama:
-    if: github.ref == 'refs/heads/mejora/radar-auditable' && github.event_name == 'workflow_dispatch' && inputs.modo != 'produccion'
+    if: github.ref == 'refs/heads/mejora/radar-auditable' && github.event_name == 'workflow_dispatch' && inputs.modo != 'produccion' && inputs.solo_notificar != true
     needs: pruebas
     runs-on: ubuntu-latest
     timeout-minutes: 35
@@ -277,3 +284,30 @@ jobs:
           path: work/resultado_instalacion.json
           if-no-files-found: error
           retention-days: 90
+
+  notificar-finalizacion:
+    if: always() && github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/mejora/radar-auditable' && ((inputs.modo == 'controlado' && inputs.canal == 'piloto') || inputs.solo_notificar == true)
+    needs: verificar-fuentes-rama
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - name: Notificar cierre al programador sin ejecutar código del repositorio
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b
+        env:
+          SOLO_NOTIFICAR: ${{ inputs.solo_notificar }}
+          ID_ORIGINAL: ${{ inputs.run_notificar }}
+        with:
+          retries: 0
+          script: |
+            let id=context.runId;
+            if(process.env.SOLO_NOTIFICAR==='true') {
+              if(!/^[0-9]{1,15}$/.test(process.env.ID_ORIGINAL))throw Error('ID original inválido');
+              id=Number(process.env.ID_ORIGINAL);
+              const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:id});
+              if(r.head_branch!=='mejora/radar-auditable'||r.event!=='workflow_dispatch'||r.head_repository.full_name!==`${context.repo.owner}/${context.repo.repo}`||r.path!=='.github/workflows/programar-piloto.yml'||!/^Radar controlado [a-f0-9]{40} programado$/.test(r.display_title))throw Error('La prueba no corresponde al piloto diario');
+            }
+            await github.rest.repos.createDispatchEvent({...context.repo,event_type:'radar_piloto_finalizado',client_payload:{run_id:id}});
+            core.info('FINALIZACION_NOTIFICADA '+id);

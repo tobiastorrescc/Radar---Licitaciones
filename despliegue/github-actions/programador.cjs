@@ -94,15 +94,16 @@ async function vigilar({github,context,ahora=new Date()}) {
   if(run.conclusion!=='success')throw new Error(`Piloto ${run.conclusion}: ${run.html_url}`);
   return comprobarExito(github,context,run);
 }
-async function revisarEvento({github,context}) {
+async function revisarEvento({github,context,esperar=ms=>new Promise(r=>setTimeout(r,ms))}) {
   repo(context);
-  const id=context.payload.workflow_run?.id;
-  if(!id)throw new Error('Falta identificador del evento');
-  const run=(await github.rest.actions.getWorkflowRun({...context.repo,run_id:id})).data;
+  const id=context.payload.client_payload?.run_id||context.payload.workflow_run?.id;
+  if(!Number.isSafeInteger(Number(id))||Number(id)<=0)throw new Error('Identificador del evento inválido');
+  let run=(await github.rest.actions.getWorkflowRun({...context.repo,run_id:id})).data;
   if(!esPiloto(run,context))return {ignorado:true};
   // Sólo el título diario: los ensayos independientes del PR no generan alertas operativas.
   if(run.display_title!==planDia(run.created_at).titulo)return {ignorado:true};
-  if(run.status!=='completed')return {ignorado:true};
+  for(let i=0;i<12&&run.status!=='completed';i++) {await esperar(5000);run=(await github.rest.actions.getWorkflowRun({...context.repo,run_id:Number(id)})).data;}
+  if(run.status!=='completed')throw new Error('La notificación llegó antes de completar el piloto; revisar su cierre');
   if(run.conclusion!=='success')throw new Error(`Piloto ${run.conclusion}: ${run.html_url}`);
   return comprobarExito(github,context,run);
 }
