@@ -76,7 +76,7 @@ on:
     - cron: '30 9 * * *' # 09:30 Argentina: supervisar sin redisparar.
       timezone: 'America/Argentina/Buenos_Aires'
   workflow_run:
-    workflows: ['Programador del piloto aislado', 'Radar piloto aislado']
+    workflows: ['Radar piloto aislado']
     types: [completed]
     branches: ['mejora/radar-auditable']
 permissions:
@@ -127,6 +127,6 @@ def main():
     esperado=generar()
     if a.comprobar:
         if not SALIDA.exists() or SALIDA.read_text()!=esperado:raise SystemExit('Propuesta desactualizada respecto de la lógica probada')
-        print('Propuesta coincide con la lógica probada; no instalada ni activada')
+        print('Archivo generado coincide con la lógica probada; consultar instalación por separado')
     else:SALIDA.write_text(esperado);print(SALIDA.relative_to(ROOT))
 if __name__=='__main__':main()

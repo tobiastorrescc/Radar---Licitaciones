@@ -6,7 +6,10 @@ const radar=require('../despliegue/github-actions/programador.cjs');
 const RAMA=radar.RAMA, WORKFLOW=radar.WORKFLOW;
 const pause=ms=>new Promise(r=>setTimeout(r,ms));
 async function instalar({github,context,core}) {
- if(context.eventName!=='pull_request'||context.payload.pull_request?.number!==1||context.payload.pull_request?.head?.repo?.full_name!==radar.REPO||context.payload.pull_request?.head?.ref!==RAMA)throw Error('Instalación fuera del PR #1 autorizado');
+ const propio=`${context.repo.owner}/${context.repo.repo}`===radar.REPO;
+ const enPR=context.eventName==='pull_request'&&context.payload.pull_request?.number===1&&context.payload.pull_request?.head?.repo?.full_name===radar.REPO&&context.payload.pull_request?.head?.ref===RAMA;
+ const enRama=context.eventName==='push'&&context.ref==='refs/heads/'+RAMA;
+ if(!propio||(!enPR&&!enRama))throw Error('Instalación fuera de la rama del PR #1 autorizado');
  const plan=JSON.parse(fs.readFileSync('despliegue/github-actions/instalacion.json','utf8'));
  if(!plan.ejecutar_validacion)throw Error('Ensayo desactivado');
  const repo=context.repo;const out={iniciado:new Date().toISOString(),main_esperado:plan.main_sha_esperado,variable_programador:process.env.RADAR_GUARD||''};

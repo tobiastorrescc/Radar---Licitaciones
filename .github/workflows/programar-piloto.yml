@@ -248,7 +248,7 @@ jobs:
           retention-days: 90
 
   validar-instalacion:
-    if: github.event_name == 'pull_request' && github.event.pull_request.number == 1 && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'mejora/radar-auditable' && needs.pruebas.outputs.instalacion == 'true'
+    if: github.repository == 'tobiastorrescc/Radar---Licitaciones' && needs.pruebas.outputs.instalacion == 'true' && ((github.event_name == 'push' && github.ref == 'refs/heads/mejora/radar-auditable') || (github.event_name == 'pull_request' && github.event.pull_request.number == 1 && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'mejora/radar-auditable'))
     needs: pruebas
     runs-on: ubuntu-latest
     timeout-minutes: 40
@@ -259,7 +259,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - name: Validar instalación autorizada, aislar legado y probar despacho, respaldo, alertas y deduplicación
         uses: actions/github-script@v7
         env:
