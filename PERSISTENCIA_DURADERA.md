@@ -40,3 +40,5 @@ gh workflow run radar-diario.yml --ref mejora/radar-auditable -f modo=controlado
 ```
 
 Resultados y límites actuales: [RESULTADOS_PERSISTENCIA.md](RESULTADOS_PERSISTENCIA.md).
+
+La opción de programación actual, todavía sin instalar ni activar, es el [programador 100% GitHub Actions](PROGRAMADOR_GITHUB.md). Tras autorización agregaría sólo un workflow a main; el radar y los respaldos continuarían en la rama del piloto sin fusionar el PR.

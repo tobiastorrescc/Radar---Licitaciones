@@ -62,3 +62,5 @@ El descubrimiento conserva su workflow separado y el padrón territorial. En est
 Revisar los resultados de la prueba doble y las fuentes que siguen parciales, bloqueadas o pendientes; verificar continuidad del estado y respaldos; elegir quién consulta el informe y recibe aviso de ejecuciones incompletas; autorizar la programación del piloto. La producción requiere una aprobación separada y explícita. Un resultado de Actions correcto significa que el proceso terminó y guardó auditoría, no que todas las fuentes funcionen.
 
 La validación de continuidad entre ejecuciones independientes y el respaldo duradero se documentan en [PERSISTENCIA_DURADERA.md](PERSISTENCIA_DURADERA.md) y su [informe de resultados](RESULTADOS_PERSISTENCIA.md).
+
+Propuesta actual para resolver la periodicidad sin servidor: [programador 100% GitHub Actions](PROGRAMADOR_GITHUB.md), preparado pero fuera de main y sin habilitación. Requiere autorizar la copia de un único workflow; no requiere fusionar el PR ni cambiar el historial de producción.

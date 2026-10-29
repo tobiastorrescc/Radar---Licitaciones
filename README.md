@@ -34,7 +34,7 @@ Deduplicación persistente por provincia, organismo, procedimiento y convocatori
 
 ## Automatización
 
-El horario objetivo es las 11 UTC (08 Argentina), con pruebas en PR y artefactos por 90 días. El piloto diario restaura SQLite desde respaldos incrementales versionados en Git, sin caducidad automática, y comprueba toda la cadena antes de consultar. Una falta de estado no reinicia silenciosamente la línea de base. Ver [persistencia duradera](PERSISTENCIA_DURADERA.md) y [resultados](RESULTADOS_PERSISTENCIA.md). El piloto de esta rama se invoca por `workflow_dispatch`; producción tiene una habilitación separada y cerrada por defecto. GitHub sólo ejecuta cron desde la rama predeterminada; esta rama del PR no tiene programación activa. No se modifica main ni se fusiona para habilitarla. Ver los pasos y límites de persistencia en la guía del piloto.
+El horario objetivo es las 11 UTC (08 Argentina), con pruebas en PR y artefactos por 90 días. El piloto diario restaura SQLite desde respaldos incrementales versionados en Git, sin caducidad automática, y comprueba toda la cadena antes de consultar. Una falta de estado no reinicia silenciosamente la línea de base. Ver [persistencia duradera](PERSISTENCIA_DURADERA.md) y [resultados](RESULTADOS_PERSISTENCIA.md). El piloto de esta rama se invoca por `workflow_dispatch`. El workflow propuesto del PR protege producción con una habilitación separada; main conserva su workflow anterior, que ya estaba programado. GitHub sólo ejecuta cron desde la rama predeterminada; esta rama del PR no tiene programación activa. La [propuesta 100% GitHub](PROGRAMADOR_GITHUB.md) permitiría añadir un único programador a main después de autorización, sin fusionar el PR. En esta etapa main no se modifica. Ver los pasos y límites de persistencia en la guía del piloto.
 
 RADAR_MAX_PAGINAS y RADAR_MAX_PROFUNDIDAD mantienen límites de seguridad (el segundo aplica al conector heredado). No limitan resultados. Un recorrido truncado se informa en auditoría. Salida 2 ante fuentes bloqueadas, pendientes o parciales; las demás fuentes continúan. Los archivos versionados de resultados previos son históricos, no prueba de esta etapa.
 
@@ -73,3 +73,5 @@ El programador externo de las 08:00 de Argentina está preparado y **desactivado
 [Resultados de esta etapa del programador externo y auditorías](RESULTADOS_PROGRAMADOR.md).
 
 **Opción preferida sin servidor:** [programador 100% GitHub Actions, preparado y sin activar](PROGRAMADOR_GITHUB.md). Requiere autorizar posteriormente la adición de un único workflow a main; no requiere fusionar este PR ni instalar la alternativa externa.
+
+[Resultados y pruebas del programador sólo GitHub](RESULTADOS_PROGRAMADOR_GITHUB.md).
