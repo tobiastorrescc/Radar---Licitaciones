@@ -42,14 +42,27 @@
     "localidad": "Rosario",
     "provincia": "Santa Fe",
     "tipo_portal": "javascript",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
     "conector": "publicaciones",
+    "evidencia_descubrimiento": {
+      "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+      "url": "https://www.aguassantafesinas.com.ar/portal/licitaciones",
+      "fecha": "2026-10-25",
+      "observacion": "Página oficial muestra Cargando licitaciones; requiere API comprobada"
+    },
+    "verificada_funcionando": false,
     "capturar_respuestas": true,
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "adaptador": "assa-api",
+    "urls_inicio": [
+      "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/all?page=0&pageSize=100"
+    ]
   },
   "https://compras.unr.edu.ar/": {
     "organismo": "UNR",
@@ -466,14 +479,23 @@
     "localidad": "Chajarí",
     "provincia": "Entre Ríos",
     "tipo_portal": "institucional",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
     "conector": "publicaciones",
+    "evidencia_descubrimiento": {
+      "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+      "url": "https://chajari.gob.ar/",
+      "fecha": "2026-10-25",
+      "observacion": "Nuevo sitio oficial enlaza plataforma digital; destino pendiente"
+    },
+    "verificada_funcionando": false,
     "capturar_respuestas": true,
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "urls_inicio": [
-      "https://licitaciones.chajari.gob.ar/web"
+      "https://chajari.gob.ar/licitaciones/"
     ],
     "dominios_documentos": [
       "licitaciones.chajari.gob.ar"
@@ -976,12 +998,58 @@
     "localidad": "San Andrés de Giles",
     "provincia": "Buenos Aires",
     "tipo_portal": "html_pdf",
+    "incorporada": true,
     "conector": "publicaciones",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "verificada_funcionando": false,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
+    "evidencia_descubrimiento": {
+      "fecha": "2026-10-27",
+      "metodo": "Busqueda oficial; pendiente conector real",
+      "url": "https://www.sanandresdegiles.gob.ar/?q=licitaciones-publicas"
+    },
     "descubrir_menu": true,
     "descubrir_contrataciones": true
+  },
+  "https://reconquista.gob.ar/concurso-de-ofertas/": {
+    "organismo": "Municipalidad de Reconquista",
+    "localidad": "Reconquista",
+    "provincia": "Santa Fe",
+    "tipo_portal": "html_pdf",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "evidencia_descubrimiento": {
+      "url": "https://reconquista.gob.ar/",
+      "fecha": "2026-10-29",
+      "metodo": "Enlace publicado en portal oficial; captura Actions 40947630107, extracción 40948224515",
+      "observacion": "Concursos de ofertas con 3 procedimientos observados"
+    },
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "recuperacion-2026-10-29"
+  },
+  "https://reconquista.gob.ar/concurso-de-precios/": {
+    "organismo": "Municipalidad de Reconquista",
+    "localidad": "Reconquista",
+    "provincia": "Santa Fe",
+    "tipo_portal": "html_pdf",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "evidencia_descubrimiento": {
+      "url": "https://reconquista.gob.ar/",
+      "fecha": "2026-10-29",
+      "metodo": "Enlace publicado en portal oficial; captura Actions 40947630107, extracción 40948224515",
+      "observacion": "Concursos de precios con 14 procedimientos observados"
+    },
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "recuperacion-2026-10-29"
   }
 }

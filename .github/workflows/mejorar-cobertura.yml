@@ -12,7 +12,7 @@ jobs:
   investigar:
     if: github.ref == 'refs/heads/mejora/radar-auditable'
     runs-on: ubuntu-latest
-    timeout-minutes: 14
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

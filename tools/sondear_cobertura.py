@@ -14,7 +14,7 @@ from tools.verificar_fuentes import ejecutar,guardar
 
 def worker(entrada,salida):
     f=json.loads(Path(entrada).read_text());u=f['url']
-    datos,tipo,final=conectores.descargar(u,conexion_timeout=5,lectura_timeout=8)
+    datos,tipo,final=conectores.descargar(u,conexion_timeout=5,lectura_timeout=8,datos_post=f.get('datos_post','').encode() if 'datos_post' in f else None,headers_extra={'Content-Type':'application/json'} if 'datos_post' in f else None)
     if conectores._host(final)!=conectores._host(u):raise ValueError('Redirección a otro dominio: requiere contraste')
     root=Path(salida).parent/'capturas';root.mkdir(exist_ok=True)
     nombre=sha256(u.encode()).hexdigest();(root/(nombre+'.bin')).write_bytes(datos)
@@ -38,6 +38,7 @@ def main():
     plan=json.loads(Path('tools/plan_cobertura.json').read_text())
     if plan.get('urls_sondeo'):
         urls={u:{'url':u} for u in plan['urls_sondeo']}
+    for peticion in plan.get('peticiones',[]):urls[peticion['url']]=peticion
     entradas=root/'entradas';entradas.mkdir(exist_ok=True)
     fuentes=[]
     for n,f in enumerate(urls.values()):

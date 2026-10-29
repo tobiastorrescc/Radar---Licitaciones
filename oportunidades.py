@@ -62,12 +62,12 @@ def normalizar(r,ahora=None):
     dato('numero_procedimiento',r.get('numero_procedimiento') or (ps[0]['numero'] if ps else None),r.get('procedimiento'))
     if r.get('numero_procedimiento'):r['numero_procedimiento']=re.sub(r'^(\d+)[–-](20\d{2})$',r'\1/\2',r['numero_procedimiento'])
     dato('tipo_procedimiento',r.get('tipo_procedimiento') or (ps[0]['tipo'] if ps else None),r.get('procedimiento'))
-    for campo,patron in [('fecha_apertura',r'(?:(?:fecha\s+(?:de\s+)?)?apertura(?:\s+(?:de\s+)?(?:ofertas|sobres))?|llamese a licitacion (?:publica|privada) para el dia)\s*[:\-]?\s*(.{0,90})'),('fecha_publicacion',r'(?:fecha\s+(?:de\s+)publicacion|publicad[oa](?:\s+el)?)\s*[:\-]?\s*(.{0,70})')]:
+    for campo,patron in [('fecha_apertura',r'(?:(?:fecha\s+(?:de\s+)?)?apertura(?:\s+(?:de\s+)?(?:ofertas|sobres))?|llamese a licitacion (?:publica|privada) para el dia)\s*[:\-]?\s*(.{0,90})'),('fecha_limite_presentacion',r'(?:fecha\s+limite(?:\s+de\s+presentacion)?|limite\s+(?:de|para)\s+(?:la\s+)?(?:presentacion|recepcion)(?:\s+de\s+(?:ofertas|sobres))?|(?:presentacion|recepcion)\s+de\s+(?:ofertas|sobres)\s+hasta)\s*[:\-]?\s*(.{0,90})'),('fecha_publicacion',r'(?:fecha\s+(?:de\s+)publicacion|publicad[oa](?:\s+el)?)\s*[:\-]?\s*(.{0,70})')]:
         dedicado=r.get(campo+'_texto')
         m=re.search(patron,t) or re.search(patron,norm(texto_titulo))
         raw=dedicado or (m[1] if m else '')
         # No tomar una fecha de otro campo cuando la etiqueta está vacía.
-        raw=re.split(r'presupuesto|publicacion|apertura|adjudicacion',norm(raw))[0]
+        raw=re.split(r'presupuesto|publicacion|apertura|adjudicacion|presentacion|recepcion',norm(raw))[0]
         dato(campo,fecha(raw),raw)
     if r.get('presupuesto') is None:
         valor,frag=monto('presupuesto oficial '+r['presupuesto_texto'] if r.get('presupuesto_texto') else t)
@@ -103,8 +103,30 @@ def normalizar(r,ahora=None):
         limite=datetime.fromisoformat(r['fecha_hora_apertura'])
         consulta=ahora.replace(tzinfo=ZONA) if not ahora.tzinfo else ahora
         r['vigencia']='VENCIDA' if cerrada or limite<=consulta else 'ABIERTA'
+    limite_presentacion=r.get('fecha_limite_presentacion')
+    raw_limite=r.get('fecha_limite_presentacion_texto') or ev.get('fecha_limite_presentacion',{}).get('texto') or ''
+    h_limite=re.search(r'(?<!\d)([01]?\d|2[0-3])[:.]([0-5]\d)(?:\s*(?:hs|h|horas))?',raw_limite)
+    r['hora_limite_presentacion']=f'{int(h_limite[1]):02d}:{h_limite[2]}' if h_limite else r.get('hora_limite_presentacion')
+    r['fecha_hora_limite_presentacion']=datetime.fromisoformat(limite_presentacion+'T'+r['hora_limite_presentacion']).replace(tzinfo=ZONA).isoformat() if limite_presentacion and r.get('hora_limite_presentacion') else None
+    if limite_presentacion:
+        # Un cierre anterior a la apertura impide presentar ofertas aunque aún no se abran.
+        consulta=ahora.replace(tzinfo=ZONA) if not ahora.tzinfo else ahora
+        if cerrada or limite_presentacion<hoy.isoformat() or (r['fecha_hora_limite_presentacion'] and datetime.fromisoformat(r['fecha_hora_limite_presentacion'])<=consulta):r['vigencia']='VENCIDA'
+        elif limite_presentacion==hoy.isoformat() and not r['hora_limite_presentacion']:r['vigencia']='DESCONOCIDA'
+        elif r['vigencia']!='VENCIDA':r['vigencia']='ABIERTA'
+    r['fecha_referencia_vencimiento']=limite_presentacion or apertura
+    r['tipo_fecha_vencimiento']='LIMITE_PRESENTACION' if limite_presentacion else ('APERTURA_REFERENCIAL' if apertura else 'DESCONOCIDA')
+    modos=[]
+    if re.search(r'(?:presentacion|presentar|recepcion|remitir|enviar)\b.{0,100}\b(?:online|en linea|plataforma|portal web)',t):modos.append('ONLINE')
+    if re.search(r'(?:presentacion|presentar|recepcion|remitir|enviar)\b.{0,100}\b(?:correo electronic[oa]|e-mail|email)',t):modos.append('CORREO_ELECTRONICO')
+    if re.search(r'(?:presentacion|presentar|recepcion|entregar)\b.{0,100}\b(?:presencial|mesa de entradas|sobre cerrado)',t):modos.append('PRESENCIAL')
+    if modos:
+        r['modalidad_presentacion']=modos
+        ev['modalidad_presentacion']={'url':origen,'texto':texto}
+    else:r.setdefault('modalidad_presentacion',[])
     if not es_real:r['vigencia']='DESCONOCIDA'
     r['motivo_vigencia']='SIN_PROCEDIMIENTO_VERIFICADO' if not es_real else ('SITUACION_CERRADA' if cerrada else ('APERTURA_FUTURA' if r['vigencia']=='ABIERTA' else ('APERTURA_VENCIDA' if r['vigencia']=='VENCIDA' else 'FECHA_U_HORA_INSUFICIENTE')))
+    if limite_presentacion and es_real and not cerrada:r['motivo_vigencia']='LIMITE_PRESENTACION_'+r['vigencia']
     # Con día de apertura igual a hoy sin hora verificada no se asegura que siga abierta.
     r['antiguedad_publicacion']='HISTORICA' if (r.get('fecha_publicacion') and r['fecha_publicacion']<hoy.isoformat()) or r['vigencia']=='VENCIDA' else 'DESCONOCIDA'
     r['estimacion_comercial']=None
@@ -124,7 +146,14 @@ def prioridad(r):
     p=r.get('pago',{})
     inmediato=p.get('estado')=='VERIFICADO' and p.get('prioritario',False)
     dias=max(p.get('plazos_dias') or [999]) if p.get('estado')=='VERIFICADO' else 999
-    return (not inmediato,not r.get('llamado_especial',False),dias,{'ABIERTA':0,'DESCONOCIDA':1,'VENCIDA':2}.get(r.get('vigencia'),1),r.get('titulo',''))
+    corto=dias<=15 and p.get('direccion')!='OFERTANTE_AL_ORGANISMO' and p.get('clasificacion') not in ('MIXTO','OPCIONES_PUBLICADAS')
+    presupuesto=r.get('presupuesto') if isinstance(r.get('presupuesto'),dict) else {}
+    try:importe=Decimal(presupuesto.get('importe') or '0')
+    except (InvalidOperation,AttributeError):importe=Decimal(0)
+    # Monedas diferentes se agrupan; no se convierten ni se estima rentabilidad.
+    return (not r.get('llamado_especial',False),0 if inmediato else 1 if corto else 2,
+            dias if corto else 999,not bool(presupuesto),presupuesto.get('moneda') or '',-importe,
+            r.get('fecha_hora_limite_presentacion') or r.get('fecha_limite_presentacion') or r.get('fecha_hora_apertura') or r.get('fecha_apertura') or '9999',r.get('titulo',''))
 
 
 def incorporar(historial,registros,ahora,desde=None):
@@ -151,16 +180,16 @@ def reporte(registros,fecha_reporte):
         if isinstance(valor,dict):return str(valor.get('importe') or 'desconocido')+' '+(valor.get('moneda') or '(moneda no informada)')
         return valor or 'desconocido'
     lineas=['# Oportunidades detectadas — '+fecha_reporte,'',
-        'Primera detección no significa publicación reciente. Se incluyen todas las novedades válidas, también vencidas y de vigencia desconocida. Orden: pago contado/contra entrega comprobado, llamados especiales y plazo publicado. Sin filtros comerciales ni límite de cantidad. Pago no informado significa pendiente de comprobación.','',
-        '| Organismo / procedimiento | Localidad / provincia | Objeto | Presupuesto oficial | Vigencia / apertura | Fecha de publicación | Pliego | Condiciones de pago | Documento de respaldo | Señales | Publicación oficial | Novedad |',
-        '|---|---|---|---|---|---|---|---|---|---|---|---|']
+        'Primera detección no significa publicación reciente. Se incluyen todas las novedades válidas, también vencidas y de vigencia desconocida. Orden: desiertas, segundos llamados y reaperturas; pago contado/contra entrega o plazo corto comprobado; presupuesto por moneda; límite de presentación o apertura referencial. Sin filtros comerciales ni límite de cantidad. Pago no informado significa pendiente de comprobación.','',
+        '| Organismo / procedimiento | Localidad / provincia | Objeto | Presupuesto oficial | Vigencia / apertura | Fecha de publicación | Límite de presentación | Presentación | Pliego | Condiciones de pago | Documento de respaldo | Señales | Publicación oficial | Novedad |',
+        '|---|---|---|---|---|---|---|---|---|---|---|---|---|---|']
     ordenadas=sorted(registros,key=prioridad)
     for r in ordenadas:
         url=r.get('enlace_condiciones_pago');enlaces=r.get('pago',{}).get('documentos_respaldo') or ([url] if url else [])
         respaldo=' '.join(f'[Documento {i}]({u})' for i,u in enumerate(enlaces,1)) if enlaces else 'No comprobado'
         flags=', '.join(nombre for clave,nombre in [('desierta','Desierta'),('fracasada','Fracasada'),('segundo_llamado','Segundo llamado'),('reapertura','Reapertura')] if r.get(clave)) or '—'
         fuente=r.get('evidencia_url') or r.get('url')
-        lineas.append('| '+ ' | '.join([celda((r.get('organismo') or 'desconocido')+' / '+(r.get('numero_procedimiento') or 'sin número')),celda((r.get('localidad') or 'desconocida')+' / '+(r.get('provincia') or 'desconocida')),celda(r.get('objeto') or r.get('titulo')),celda(presupuesto(r.get('presupuesto'))),celda((r.get('vigencia') or 'DESCONOCIDA')+' / '+(r.get('fecha_hora_apertura') or r.get('fecha_apertura') or 'desconocida')),celda(r.get('fecha_publicacion') or 'desconocida'),f"[Pliego]({r['enlace_pliego']})" if r.get('enlace_pliego') else 'No identificado',celda(r.get('condiciones_pago') or pagos.NO_INFORMADO),respaldo,flags,f'[Oficial]({fuente})',celda(r.get('clasificacion_novedad') or 'Sin comparación con corrida anterior')])+' |')
+        lineas.append('| '+ ' | '.join([celda((r.get('organismo') or 'desconocido')+' / '+(r.get('numero_procedimiento') or 'sin número')),celda((r.get('localidad') or 'desconocida')+' / '+(r.get('provincia') or 'desconocida')),celda(r.get('objeto') or r.get('titulo')),celda(presupuesto(r.get('presupuesto'))),celda((r.get('vigencia') or 'DESCONOCIDA')+' / '+(r.get('fecha_hora_apertura') or r.get('fecha_apertura') or 'desconocida')),celda(r.get('fecha_publicacion') or 'desconocida'),celda(r.get('fecha_hora_limite_presentacion') or r.get('fecha_limite_presentacion') or 'desconocido'),celda(', '.join(r.get('modalidad_presentacion') or []) or 'No informada'),f"[Pliego]({r['enlace_pliego']})" if r.get('enlace_pliego') else 'No identificado',celda(r.get('condiciones_pago') or pagos.NO_INFORMADO),respaldo,flags,f'[Oficial]({fuente})',celda(r.get('clasificacion_novedad') or 'Sin comparación con corrida anterior')])+' |')
     lineas+=['','## Evidencia de las condiciones de pago','']
     for r in ordenadas:
         p=r.get('pago',{})
@@ -207,6 +236,10 @@ def procedimiento_canonico(r):
     if originales:return clave(originales[0])
     if not anual:
         from urllib.parse import urlsplit
+        # Numeración pública correlativa de ASSA; la convocatoria se vincula al UUID publicado.
+        host_api=urlsplit(r.get('evidencia_url') or '').hostname
+        if host_api in ('www.aguassantafesinas.com.ar','aguassantafesinas.com.ar') and r.get('registro_estructurado') and re.fullmatch(r'[a-f0-9]{32}',str(r.get('id_origen') or '')) and re.fullmatch(r'\d+',numero):
+            return tipo+' ASSA-'+numero
         # Numeración propia de EPE, acreditada por ficha con objeto dedicado.
         # No relajar la detección de teléfonos/números sueltos en otros portales.
         host=urlsplit(r.get('evidencia_url') or '').hostname
@@ -279,9 +312,9 @@ def deduplicar(registros,ahora):
 def separar_vigencia(registros,ahora,dias=7):
     if isinstance(ahora,str):ahora=datetime.fromisoformat(ahora)
     hoy=ahora.astimezone(ZONA).date() if ahora.tzinfo else ahora.date()
-    abiertas=sorted([r for r in registros if r.get('vigencia')=='ABIERTA' and r.get('clasificacion_registro')=='PROCEDIMIENTO'],key=lambda r:(r['fecha_apertura'],r.get('hora_apertura') or '',r.get('titulo') or ''))
-    proximas=[r for r in abiertas if 0<=(date.fromisoformat(r['fecha_apertura'])-hoy).days<=dias]
-    return {'abiertas':abiertas,'proximas_a_vencer':proximas,'dias_proximas':dias,'criterio':'Apertura futura comprobada; próximas: hasta 7 días calendario inclusive. Sin hora, el día de apertura queda desconocido.'}
+    abiertas=sorted([r for r in registros if r.get('vigencia')=='ABIERTA' and r.get('clasificacion_registro')=='PROCEDIMIENTO'],key=lambda r:(r.get('fecha_referencia_vencimiento') or r.get('fecha_apertura') or '9999',r.get('titulo') or ''))
+    proximas=[r for r in abiertas if 0<=(date.fromisoformat(r.get('fecha_referencia_vencimiento') or r['fecha_apertura'])-hoy).days<=dias]
+    return {'abiertas':abiertas,'proximas_a_vencer':proximas,'dias_proximas':dias,'criterio':'Límite de presentación explícito; en su ausencia apertura referencial. Próximas: hasta 7 días calendario inclusive. Sin hora, el día de apertura queda desconocido.'}
 
 
 def guardar_vistas(registros,ahora,directorio,prefijo='oportunidades'):

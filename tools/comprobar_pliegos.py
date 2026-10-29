@@ -24,7 +24,7 @@ def worker(url):
     raw,tipo,final,cache=cache_documentos.obtener(url)
     if (urlparse(final).hostname or '').removeprefix('www.')!=(urlparse(url).hostname or '').removeprefix('www.'):
         return {'url':url,'url_final':final,'estado':'REDIRECCION_OTRO_DOMINIO'}
-    clase='PDF' if raw.startswith(b'%PDF-') else ('ZIP_O_DOCX' if raw.startswith(b'PK') else None)
+    clase='PDF' if raw.startswith(b'%PDF-') else ('ZIP_O_DOCX' if raw.startswith(b'PK') else ('XLS' if raw.startswith(b'\xd0\xcf\x11\xe0') else None))
     if not clase:return {'url':url,'url_final':final,'estado':'NO_ES_DOCUMENTO','tipo':tipo,'error':'Respuesta HTML/u otro contenido; HTTP 200 no valida pliego'}
     r={'url':url,'url_final':final,'estado':'DOCUMENTO_ACCESIBLE','tipo':clase,'bytes':len(raw),'sha256':sha256(raw).hexdigest(),'cache_estado':cache['cache_estado'],'fecha_descarga':cache.get('descargado'),'revalidado':cache.get('revalidado')}
     try:

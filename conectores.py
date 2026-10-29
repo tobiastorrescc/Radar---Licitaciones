@@ -312,6 +312,23 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             datos,tipo,final=fetch(url,datos_post=post) if post is not None else fetch(url)
             fase='EXTRACCION';snapshot(fase,url)
             if _host(final) not in hosts:raise ValueError('Redirección fuera de dominios oficiales declarados')
+            if config.get('adaptador')=='assa-api' and 'json' in tipo.lower():
+                from extractores_lotes import extraer_assa
+                registros,meta,detalle=extraer_assa(datos,final)
+                huella=sha256(json.dumps(registros,sort_keys=True).encode()).hexdigest()
+                if registros and not detalle and huella in paginas_api:raise ValueError('ASSA repite página; recorrido incompleto')
+                if not detalle:paginas_api.add(huella)
+                for r in registros:
+                    agregar(r)
+                    if not detalle:pending.append((r['url'],'DETALLE',None))
+                if not detalle:
+                    if not registros and meta['totalElements']:raise ValueError('ASSA vacío antes de alcanzar total')
+                    if meta['number']+1<meta['totalPages']:
+                        from urllib.parse import parse_qs,urlsplit,urlunsplit
+                        p=urlsplit(final);q=parse_qs(p.query);q['page']=[str(meta['number']+1)]
+                        pending.append((urlunsplit((p.scheme,p.netloc,p.path,urlencode(q,doseq=True),'')),'LISTADO',None))
+                    if meta['totalElements']==0:vacios.append({'url':url,'texto':'API pública informa totalElements=0'})
+                correctas+=1;snapshot('PAGINA_FINALIZADA',url);continue
             if clase=='DATATABLES':
                 from extractores_lotes import extraer_funes
                 registros,total,filas=extraer_funes(datos,final)

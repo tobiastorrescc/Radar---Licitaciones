@@ -93,7 +93,11 @@
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "adaptador": "assa-api",
+    "urls_inicio": [
+      "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/all?page=0&pageSize=100"
+    ]
   },
   {
     "id": "fuente-005",
@@ -919,7 +923,7 @@
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "urls_inicio": [
-      "https://licitaciones.chajari.gob.ar/web"
+      "https://chajari.gob.ar/licitaciones/"
     ],
     "dominios_documentos": [
       "licitaciones.chajari.gob.ar"
@@ -1799,5 +1803,47 @@
     },
     "descubrir_menu": true,
     "descubrir_contrataciones": true
+  },
+  {
+    "id": "fuente-076",
+    "organismo": "Municipalidad de Reconquista",
+    "localidad": "Reconquista",
+    "provincia": "Santa Fe",
+    "url": "https://reconquista.gob.ar/concurso-de-ofertas/",
+    "tipo_portal": "html_pdf",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "evidencia_descubrimiento": {
+      "url": "https://reconquista.gob.ar/",
+      "fecha": "2026-10-29",
+      "metodo": "Enlace publicado en portal oficial; captura Actions 40947630107, extracción 40948224515",
+      "observacion": "Concursos de ofertas con 3 procedimientos observados"
+    },
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "recuperacion-2026-10-29"
+  },
+  {
+    "id": "fuente-077",
+    "organismo": "Municipalidad de Reconquista",
+    "localidad": "Reconquista",
+    "provincia": "Santa Fe",
+    "url": "https://reconquista.gob.ar/concurso-de-precios/",
+    "tipo_portal": "html_pdf",
+    "estado_verificacion": "PENDIENTE_EJECUCION",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "evidencia_descubrimiento": {
+      "url": "https://reconquista.gob.ar/",
+      "fecha": "2026-10-29",
+      "metodo": "Enlace publicado en portal oficial; captura Actions 40947630107, extracción 40948224515",
+      "observacion": "Concursos de precios con 14 procedimientos observados"
+    },
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "lote": "recuperacion-2026-10-29"
   }
 ]

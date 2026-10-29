@@ -46,7 +46,7 @@ def worker(config, checkpoint, conexion, lectura, max_paginas):
         guardar(checkpoint, {**r, 'actualizado': ahora(), 'duracion_segundos': round(time.monotonic()-inicio, 3)})
     transporte=partial(conectores.descargar, conexion_timeout=fuente.get('conexion_timeout',conexion), lectura_timeout=fuente.get('lectura_timeout',lectura))
     def fetch(url,datos_post=None):
-        es_documento=urlparse(url).path.lower().endswith(('.pdf','.docx','.zip','.jpg','.jpeg','.png')) or any(re.search(p,url) for p in fuente.get('patrones_documentos',[]))
+        es_documento=urlparse(url).path.lower().endswith(('.pdf','.docx','.zip','.jpg','.jpeg','.png','.xls','.xlsx')) or any(re.search(p,url) for p in fuente.get('patrones_documentos',[]))
         if fuente.get('capturar_respuestas') and not es_documento:
             from hashlib import sha256
             datos,tipo,final=transporte(url,datos_post=datos_post) if datos_post is not None else transporte(url)

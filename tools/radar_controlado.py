@@ -57,8 +57,11 @@ def generar_informe(db,resumen,registros,fuentes,destino):
         guardar(destino/(nombre+'.json'),{'fecha':fecha,'total':len(datos),'oportunidades':datos})
         (destino/(nombre+'.md')).write_text(o.reporte(datos,fecha),encoding='utf-8')
     resumen={**resumen,'abiertas':len(vistas['abiertas']),'proximas_a_vencer':len(vistas['proximas_a_vencer']),
-        'no_observadas_en_corrida':sum(not r['observada_esta_corrida'] for r in actuales),'cobertura_estricta':dict(Counter(f['estado_cobertura'] for f in fuentes))}
+        'no_observadas_en_corrida':sum(not r['observada_esta_corrida'] for r in actuales),'cobertura_estricta':dict(Counter(f['estado_cobertura'] for f in fuentes)),
+        'condiciones_pago':__import__('pagos').resumen(actuales)}
     guardar(destino/'resumen.json',resumen)
+    from tools.preparar_entrega import preparar
+    preparar(destino)
     lineas=['# Radar diario controlado', '',f"Fecha: {fecha}. Estado: **{resumen['estado']}**. {resumen['mensaje']}.",'',
         f"Historial: {resumen['total_historial']}; novedades y cambios: {resumen['novedades']}; abiertas: {resumen['abiertas']}; próximas a vencer: {resumen['proximas_a_vencer']}.",'',
         'La primera corrida es línea de base sin alertas de novedades. Fecha de detección no equivale a fecha de publicación. Una fuente con incidencias no permite afirmar ausencia de novedades. Se conserva todo el historial, incluso registros no recuperados en esta consulta.','',
@@ -75,15 +78,17 @@ def generar_informe(db,resumen,registros,fuentes,destino):
         flags=', '.join(k for k in ('desierta','segundo_llamado','reapertura') if r.get(k))
         valores=[enlace(r.get('evidencia_url') or r.get('url'),nombre),escape(r.get('objeto') or 'Objeto desconocido'),
             escape(r.get('clasificacion_novedad') or 'Ya registrada'),escape(r['vigencia']),escape(r.get('fecha_publicacion') or 'Desconocida'),
-            escape(r.get('fecha_hora_apertura') or r.get('fecha_apertura') or 'Desconocida'),escape(r['condiciones_pago']),
+            escape(r.get('fecha_hora_apertura') or r.get('fecha_apertura') or 'Desconocida'),
+            escape(r.get('fecha_hora_limite_presentacion') or r.get('fecha_limite_presentacion') or 'Desconocido'),
+            escape(str(r.get('presupuesto') or 'Desconocido')),escape(', '.join(r.get('modalidad_presentacion') or []) or 'No informada'),escape(r['condiciones_pago']),
             enlace(r.get('enlace_condiciones_pago'),'Respaldo') if r.get('enlace_condiciones_pago') else 'No comprobado',
             enlace(r.get('enlace_pliego'),'Pliego') if r.get('enlace_pliego') else 'No identificado',escape(flags),
             'Observada' if r['observada_esta_corrida'] else 'No confirmada en esta corrida']
         filas.append('<tr>'+''.join('<td>'+v+'</td>' for v in valores)+'</tr>')
-    titulos=['Organismo / procedimiento','Objeto','Detección','Vigencia','Publicación','Apertura','Pago','Documento de pago','Pliego','Señales','Última consulta']
+    titulos=['Organismo / procedimiento','Objeto','Detección','Vigencia','Publicación','Apertura','Límite de presentación','Presupuesto','Presentación','Pago','Documento de pago','Pliego','Señales','Última consulta']
     html='<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Radar controlado</title><style>body{font:16px system-ui;margin:2rem;color:#172b4d}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccd;padding:.5rem;text-align:left;vertical-align:top}th{background:#edf3fa;position:sticky;top:0}input{font:inherit;padding:.6rem;width:min(90%,50rem)}td:nth-child(2){min-width:20rem;white-space:pre-wrap}a{color:#1254ad}</style>'
     html+=f'<h1>Radar controlado</h1><p>{escape(fecha)} · {escape(resumen["estado"])} · {escape(resumen["mensaje"])}</p><p>{resumen["total_historial"]} registros, {resumen["novedades"]} novedades/cambios, {resumen["abiertas"]} abiertas y {resumen["proximas_a_vencer"]} próximas a vencer. Sin filtros comerciales ni límite de cantidad.</p><p>Los registros no observados hoy se conservan; su vigencia calculada requiere confirmar nuevamente la fuente.</p><input id="buscar" aria-label="Buscar" placeholder="Buscar organismo, objeto, pago o estado"><p><a href="reporte_diario.md">Informe diario</a> · <a href="eventos.json">Eventos JSON</a> · <a href="catalogo_completo.json">Catálogo JSON</a></p><div style="overflow:auto"><table><thead><tr>'+''.join('<th>'+t+'</th>' for t in titulos)+'</tr></thead><tbody>'+''.join(filas)+'</tbody></table></div>'
-    html+='<script>document.getElementById("buscar").addEventListener("input",function(){const q=this.value.toLocaleLowerCase();document.querySelectorAll("tbody tr").forEach(r=>r.hidden=!r.textContent.toLocaleLowerCase().includes(q));});</script></html>'
+    html+='<p><a href="entrega/informe.md">Novedades y cambios separados</a> · <a href="entrega/oportunidades.csv">CSV íntegro</a> · <a href="entrega/informe.eml">Correo preparado sin enviar</a></p><script>document.getElementById("buscar").addEventListener("input",function(){const q=this.value.toLocaleLowerCase();document.querySelectorAll("tbody tr").forEach(r=>r.hidden=!r.textContent.toLocaleLowerCase().includes(q));});</script></html>'
     (destino/'index.html').write_text(html,encoding='utf-8')
     return resumen
 

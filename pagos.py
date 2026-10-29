@@ -3,7 +3,7 @@ from hashlib import sha256
 import re
 import unicodedata
 
-VERSION=5
+VERSION=6
 NO_INFORMADO='Pago no informado'
 NUMEROS={'siete':7,'quince':15,'treinta':30,'cuarenta y cinco':45,'sesenta':60,'noventa':90,
          'cinco':5,'diez':10,'veinte':20,'veinticinco':25,'cuarenta':40,'cincuenta':50,
@@ -55,13 +55,19 @@ def clasificar(cita,permitir_definicion=False):
     if conformidad:hitos.append('CONFORMIDAD_RECEPCION')
     elif conformidad_generica and not factura_conformada:hitos.append('CONFORMIDAD_NO_ESPECIFICADA')
     if contra_entrega or re.search(r'desde (?:la )?entrega|de entregad',t):hitos.append('ENTREGA')
-    if not(plazos or contado or contra_entrega or factura or conformidad):return None
+    anticipo=bool(re.search(r'\banticipo(?:s)?\b',t))
+    parcial=bool(re.search(r'pagos? parciales|certificados mensuales|por certificacion|en cuotas',t))
+    aprobacion=bool(re.search(r'(?:aprobacion|autorizacion) (?:administrativa|del pago|de la factura)|acto administrativo',t))
+    if aprobacion:hitos.append('APROBACION_ADMINISTRATIVA')
+    if not(plazos or contado or contra_entrega or factura or conformidad or anticipo or parcial or aprobacion):return None
     if not permitir_definicion and re.search(r'(?:podra|podran|si (?:el|la)|en caso de|cuando la municipalidad requiera)\b',t) and not re.search(r'se (?:acepta|admite)n?.*(?:o |alternativ)',t):return None
     opciones=bool(re.search(r'\b(?:o (?:a |al |contra )|alternativas? de pago|opciones de pago)',t))
     mixto=bool(re.search(r'anticipo|saldo|\d+\s*%|por ciento|cuotas|parciales|certificados mensuales',t)) and (len(plazos)>1 or contado or contra_entrega or 'saldo' in t or 'anticipo' in t)
     if opciones:categoria='OPCIONES_PUBLICADAS'
     elif mixto:categoria='MIXTO'
-    elif plazos:categoria='PLAZO_'+str(plazos[0])+'_DIAS' if len(plazos)==1 and plazos[0] in (7,15,30,45,60,90) else 'OTRO_PLAZO'
+    elif plazos:categoria='PLAZO_'+str(plazos[0])+'_DIAS' if len(plazos)==1 and plazos[0] in (5,7,10,15,30,45,60,90) else 'OTRO_PLAZO'
+    elif anticipo:categoria='ANTICIPO'
+    elif parcial:categoria='PAGOS_PARCIALES'
     elif contado:categoria='CONTADO'
     elif contra_entrega:categoria='CONTRA_ENTREGA'
     elif conformidad:categoria='DESPUES_CONFORMIDAD_RECEPCION'
@@ -69,6 +75,7 @@ def clasificar(cita,permitir_definicion=False):
     elif presentacion_factura:categoria='CONTRA_PRESENTACION_FACTURA'
     elif recepcion_factura:categoria='DESPUES_RECEPCION_FACTURA'
     elif contra_factura:categoria='CONTRA_FACTURA'
+    elif aprobacion:categoria='DESPUES_APROBACION_ADMINISTRATIVA'
     else:return None
     direccion='OFERTANTE_AL_ORGANISMO' if re.search(r'(?:adjudicatario|concesionario|oferente) (?:debera |debe |se obliga a )?(?:abonar|pagar)|canon (?:a cargo|que abonara) (?:del )?(?:adjudicatario|concesionario)',t) else ('ORGANISMO_AL_PROVEEDOR' if re.search(r'(?:municipalidad|municipio|organismo|contratante) (?:debera |debe )?(?:abonar|pagar)|pago al (?:proveedor|adjudicatario)',t) else 'NO_ESPECIFICADA')
     if categoria=='CONTADO':etiqueta='Pago contado'
@@ -78,6 +85,9 @@ def clasificar(cita,permitir_definicion=False):
     elif categoria=='DESPUES_RECEPCION_FACTURA':etiqueta='Después de recepción de factura; plazo no indicado'
     elif categoria=='CONTRA_FACTURA':etiqueta='Contra factura; plazo no indicado'
     elif categoria=='DESPUES_CONFORMIDAD_RECEPCION':etiqueta='Después de conformidad de recepción; plazo no indicado'
+    elif categoria=='ANTICIPO':etiqueta='Anticipo publicado; ver cláusula'
+    elif categoria=='PAGOS_PARCIALES':etiqueta='Pagos parciales; plazo no indicado'
+    elif categoria=='DESPUES_APROBACION_ADMINISTRATIVA':etiqueta='Después de aprobación administrativa; plazo no indicado'
     elif categoria in ('MIXTO','OPCIONES_PUBLICADAS'):etiqueta='Pago mixto' if categoria=='MIXTO' else 'Opciones de pago publicadas'
     else:etiqueta='/'.join(str(n) for n in plazos)+' días'+(' '+unidades[0] if len(unidades)==1 and unidades[0]!='no indicada' else '')
     if not plazos and categoria in ('CONTADO','CONTRA_ENTREGA'):
@@ -92,6 +102,7 @@ def clasificar(cita,permitir_definicion=False):
         elif recepcion_factura:etiqueta+=' desde recepción de factura'
         elif fecha_factura:etiqueta+=' desde fecha/emisión de factura'
         elif 'ENTREGA' in hitos:etiqueta+=' desde entrega'
+        if aprobacion:etiqueta+='; requiere aprobación administrativa'
     if 'CONFORMIDAD_NO_ESPECIFICADA' in hitos:etiqueta+='; exige conformidad no especificada'
     if re.search(r'mensualmente.*(?:vencido|mes vencido)|a mes vencido',t):etiqueta+='; mensual a mes vencido'
     if direccion=='OFERTANTE_AL_ORGANISMO':etiqueta+=' (a cargo del adjudicatario)'

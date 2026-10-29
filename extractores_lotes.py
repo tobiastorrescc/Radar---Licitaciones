@@ -300,3 +300,45 @@ def fichas_villaelisa(raiz,url):
                'evento_publicado':evento,'llamado_especial':bool(evento),'fecha_apertura_texto':None,'fecha_publicacion_texto':None}
             registros[p['procedimiento']]=r;break
     return list(registros.values())
+
+
+def extraer_assa(datos,url):
+    """API pública observada en assets oficiales. Sin filtros por tipo, rubro o estado."""
+    import json
+    from datetime import datetime
+    import oportunidades as o
+    from extractores import DOM,norm,url_publica
+    data=json.loads(datos)
+    if data.get('success') is not True or not isinstance(data.get('content'),dict):raise ValueError('ASSA: respuesta pública no reconocida')
+    content=data['content'];detalle='elements' not in content
+    filas=[content] if detalle else content['elements']
+    if not isinstance(filas,list):raise ValueError('ASSA: elements no es listado')
+    meta=content.get('page',{}) if not detalle else {}
+    if not detalle and not all(k in meta for k in ('totalElements','totalPages','number')):raise ValueError('ASSA: paginación sin total comprobable')
+    registros=[]
+    def fecha_local(valor):
+        if not valor:return None
+        d=datetime.fromisoformat(valor.replace('Z','+00:00'))
+        if d.tzinfo is None:raise ValueError('ASSA: fecha API sin zona horaria')
+        return d.astimezone(o.ZONA).strftime('%Y-%m-%d %H:%M')
+    for f in filas:
+        uuid=f.get('uuid');numero=f.get('numeroPliego');tipo=(f.get('tipoPliego') or {}).get('nombreTipo');titulo=f.get('titulo')
+        if not uuid or not numero or not tipo or not titulo:raise ValueError('ASSA: ficha sin identidad/objeto comprobable')
+        objeto=DOM(f.get('objetoLicitacion') or titulo).root.text
+        ficha=url_publica('/api/v1/publico/pliego/'+uuid,url)
+        apertura=sorted(a['fechaApertura'] for a in f.get('aperturasSobre',[]) if a.get('fechaApertura'))
+        documentos=[]
+        for adjunto in f.get('documentosAdjuntos',[])+f.get('documentosGenericos',[])+f.get('circulares',[]):
+            for campo in ('url','urlDocumento','enlace'):
+                u=url_publica(adjunto.get(campo) or '',url)
+                if adjunto.get(campo) and u:documentos.append({'url':u,'titulo':adjunto.get('nombre') or adjunto.get('titulo') or 'Adjunto oficial'});break
+        estados={'ESTADO_ADJUDICADO':'ADJUDICADA','ESTADO_DESIERTO':'DESIERTA','ESTADO_EN_EVALUACION':'EN_EVALUACION','ESTADO_DADO_DE_BAJA':'FINALIZADA'}
+        registros.append({'titulo':tipo+' Nº '+str(numero)+' — '+titulo,'objeto':objeto,'url':ficha,'evidencia_url':ficha,
+            'numero_procedimiento':str(numero),'tipo_procedimiento':norm(tipo),'registro_estructurado':True,
+            'id_origen':uuid,'identidad_ambito':uuid,'numero_oficial_sin_interpretar':str(numero),
+            'fecha_apertura_texto':fecha_local(apertura[0]) if apertura else None,
+            'fecha_limite_presentacion_texto':fecha_local(f.get('fechaLimiteOferta')),
+            # Fecha sugerida no prueba publicación. Se conserva íntegra en la evidencia.
+            'fecha_publicacion':None,'campos_oficiales':f,'documentos':documentos,
+            'situacion_publicada':estados.get(f.get('estado')),'detalle_completo':bool(objeto),'rango_evidencia':3})
+    return registros,meta,detalle

@@ -2,6 +2,10 @@
 # Runner efímero: reutilizar binarios, instalar con índices existentes y actualizar
 # sólo repositorios oficiales Ubuntu si la instalación lo requiere.
 set -euo pipefail
+# Lectura de planillas sin ejecutar Office. Versiones reproducibles.
+if ! python -c 'import openpyxl,xlrd' 2>/dev/null; then
+  python -m pip install --disable-pip-version-check --timeout 15 --retries 1 openpyxl==3.1.5 xlrd==2.0.2
+fi
 if python - <<'PY'
 import shutil,subprocess,sys
 ok=all(shutil.which(n) for n in ('pdftotext','pdfinfo','pdftoppm','tesseract'))

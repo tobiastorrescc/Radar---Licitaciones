@@ -14,7 +14,7 @@ CAMPOS=('titulo','objeto','numero_procedimiento','tipo_procedimiento','procedimi
     'fecha_apertura','fecha_apertura_texto','hora_apertura','fecha_publicacion','fecha_publicacion_texto','presupuesto',
     'situacion_publicada','evento_publicado','documentos','enlace_pliego','comprobacion_pliego','evidencias_campos',
     'pago_evidencias','pago_motivo_pendiente','fuente','fuentes_observadas','url','urls_publicacion','evidencia_url',
-    'detalle_completo','rango_evidencia','registro_estructurado','numero_oficial_sin_interpretar','id_origen','identidad_ambito','documentos_versiones')
+    'detalle_completo','rango_evidencia','registro_estructurado','numero_oficial_sin_interpretar','id_origen','identidad_ambito','documentos_versiones','campos_oficiales','fecha_limite_presentacion','fecha_limite_presentacion_texto','hora_limite_presentacion','modalidad_presentacion')
 SEMANTICOS=('objeto','numero_procedimiento','tipo_procedimiento','organismo','localidad','provincia','fecha_apertura',
     'hora_apertura','fecha_publicacion','presupuesto','situacion_publicada','evento_publicado')
 NOVEDADES={'NUEVO_CONFIRMADO','NUEVA_DETECCION_FECHA_DESCONOCIDA','NUEVA_DETECCION_MISMO_DIA','MODIFICADO','DATOS_COMPLETADOS'}
@@ -104,6 +104,8 @@ def contenido(r):
         if host=='timbues.gob.ar':texto=re.sub(r'\b[\d.]+\s+vistas\b','',texto,flags=re.I)
         if host=='armstrong.gov.ar':texto=re.sub(r'\bDescargas\s+\d+\s+(?=Licencia\b)','',texto,flags=re.I)
         campos['objeto']=' '.join(texto.split())
+    for k in ('fecha_limite_presentacion','hora_limite_presentacion','modalidad_presentacion'):
+        if r.get(k):campos[k]=r[k]
     return {**campos,'documentos':docs,'documentos_versiones':r.get('documentos_versiones',{}),
         'pago':{'estado':pago.get('estado'),'clasificacion':pago.get('clasificacion'),'plazos_dias':sorted(pago.get('plazos_dias') or []),
             'hitos_inicio':sorted(pago.get('hitos_inicio') or []),'documentos':sorted(pago.get('documentos_respaldo') or [])}}
@@ -153,7 +155,7 @@ def registrar(db,registros,informe):
                     if k=='documentos_versiones':return all(b[k].get(u)==v for u,v in a.get(k,{}).items())
                     if k=='pago':return a[k].get('estado')!='VERIFICADO' and b[k].get('estado')=='VERIFICADO'
                     return a.get(k) in (None,'',[],{})
-                tipo='DATOS_COMPLETADOS' if all(completado(k) for k in cambios) else 'MODIFICADO'
+                tipo=('DATOS_COMPLETADOS' if all(completado(k) for k in cambios) else 'MODIFICADO') if cambios else 'SIN_CAMBIOS'
             else:tipo='SIN_CAMBIOS'
             tipos[tipo]+=1
             db.execute('INSERT INTO procedimientos VALUES (?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET ultima=excluded.ultima,corrida=excluded.corrida,huella=excluded.huella,dato=excluded.dato',

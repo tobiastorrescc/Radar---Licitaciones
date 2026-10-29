@@ -50,7 +50,7 @@ def obtener(url,transport=None,fresco=300,sin_validadores=21600,reloj=time.time)
     if len(resultado)==4:datos,tipo,final,h=resultado
     else:datos,tipo,final=resultado;h={}
     h={k.lower():v for k,v in h.items()}
-    documento=datos.startswith((b'%PDF-',b'PK',b'\xff\xd8',b'\x89PNG'))
+    documento=datos.startswith((b'%PDF-',b'PK',b'\xff\xd8',b'\x89PNG',b'\xd0\xcf\x11\xe0'))
     meta={'url':url,'final':final,'tipo':tipo,'sha256':sha256(datos).hexdigest(),'bytes':len(datos),
           'etag':h.get('etag'),'last_modified':h.get('last-modified'),'descargado':datetime.fromtimestamp(ahora,timezone.utc).isoformat(),'comprobado_epoch':ahora}
     if documento:
