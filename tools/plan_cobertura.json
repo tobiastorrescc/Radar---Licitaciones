@@ -1,15 +1,9 @@
 {
-  "etapa": "auditoria-final-2026-10-29-7",
-  "sondear": true,
-  "auditar": true,
+  "etapa": "regresion-san-nicolas-2026-10-29-8",
+  "sondear": false,
+  "auditar": false,
   "descubrir": false,
-  "urls_sondeo": [
-    "https://www.humboldt.gob.ar/"
-  ],
-  "peticiones": [
-    {
-      "url": "https://licitaciones.chajari.gob.ar/return_file",
-      "datos_post": "{\"atta_id\": \"6397\", \"file_name\": \"pliego_y_decreto\", \"licitacion_id\": 710}"
-    }
+  "reverificar_ids": [
+    "fuente-046"
   ]
 }

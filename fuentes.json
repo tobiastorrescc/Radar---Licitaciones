@@ -573,7 +573,8 @@
     "conector": "publicaciones",
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "incluir_aside": true
+    "incluir_aside": true,
+    "numeracion_compuesta": true
   },
   "https://sanpedro.net.ar/portal.php": {
     "organismo": "Municipalidad de San Pedro",

@@ -302,6 +302,14 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 items[referencia]['evidencia_url']=url
                 items[referencia]['detalle_completo']=True
                 items[referencia]=oportunidades.normalizar(items[referencia])
+        if referencia in items and config.get('numeracion_compuesta'):
+            m=re.search(r'\bn[º°o.]*\s*(\d+(?:\s*-\s*\d+)+)\s*/\s*(20\d{2})',normalizar(items[referencia]['titulo']))
+            if m:
+                esperados={oportunidades.procedimiento_canonico({'numero_procedimiento':n+'/'+m[2],'tipo_procedimiento':items[referencia].get('tipo_procedimiento')}) for n in re.findall(r'\d+',m[1])}
+                recuperados={oportunidades.procedimiento_canonico({'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo']}) for linea in lineas for p in extractores.procesos(linea)}
+                if esperados and None not in esperados and esperados<=recuperados:
+                    # El enlace colectivo es un índice, no una oportunidad adicional.
+                    items[referencia]['documento_desglosado']={'procedimientos':sorted(esperados),'url':url,'sha256':hash_documento}
     while pending:
         if len(seen)>=max_paginas:limits.append('max_paginas');break
         url,clase,referencia=pending.popleft();url=extractores.url_publica(url)
@@ -447,7 +455,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             snapshot('PAGINA_FINALIZADA',url)
             if isinstance(e,HTTPError) and e.code==429:
                 limits.append('HTTP_429_REINTENTO_POSPUESTO');break
-    incompletas=[r['id'] for r in items.values() if not r.get('detalle_completo')]
+    incompletas=[r['id'] for r in items.values() if not r.get('detalle_completo') and not r.get('documento_desglosado')]
     if incompletas:
         errors.append({'url':fuente,'tipo':'DetalleIncompleto','categoria':'EXTRACCION','timeout':False,
                        'error':'Publicaciones identificadas sin objeto completo','publicaciones':incompletas})

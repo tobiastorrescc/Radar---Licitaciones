@@ -192,3 +192,17 @@ class ChajariPublicaTests(unittest.TestCase):
         self.assertEqual(r['estado'],'OPERATIVA');self.assertEqual(len(r['oportunidades']),50)
         self.assertEqual(len(llamadas),2);self.assertTrue(llamadas[-1][0].endswith('/50'))
         self.assertTrue(all(body==b'{"":""}' for _,body in llamadas))
+
+class DocumentosMultiplesTests(unittest.TestCase):
+    def test_indice_multiple_solo_se_resuelve_si_el_pdf_contiene_todos_los_llamados(self):
+        from unittest.mock import patch
+        import conectores
+        url='https://oficial.gob.ar/listado';pdf='https://oficial.gob.ar/20-21.pdf'
+        html='<main><a href="20-21.pdf">Licitación Pública Nº 20-21/2018</a></main>'
+        def fetch(u):return ((b'%PDF-falso','application/pdf',u) if u==pdf else (html.encode(),'text/html',u))
+        completo='LICITACIÓN PUBLICA Nº 20/2018\nObjeto: compra de materiales.\nLICITACIÓN PUBLICA Nº 21/2018\nObjeto: compra de insumos.'
+        for texto,estado in [(completo,'OPERATIVA'),(completo.split('LICITACIÓN PUBLICA Nº 21')[0],'PARCIAL')]:
+            with patch('cache_documentos.leer_texto',return_value=(texto,{})):
+                resultado=conectores.explorar(url,{'numeracion_compuesta':True,'lectura_adjuntos':'necesarios'},fetch=fetch)
+            self.assertEqual(resultado['estado'],estado)
+            if estado=='OPERATIVA':self.assertEqual(sum(bool(r.get('documento_desglosado')) for r in resultado['oportunidades']),1)

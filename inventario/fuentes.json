@@ -1067,7 +1067,8 @@
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "incluir_aside": true
+    "incluir_aside": true,
+    "numeracion_compuesta": true
   },
   {
     "id": "fuente-047",
