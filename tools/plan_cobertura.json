@@ -1,1 +1,21 @@
-{"etapa":"sondeo-2026-10-29-1","sondear":true,"auditar":false,"descubrir":true}
+{
+  "etapa": "sondeo-2026-10-29-2",
+  "sondear": true,
+  "auditar": false,
+  "descubrir": false,
+  "urls_sondeo": [
+    "https://www.epe.santafe.gov.ar/app2/aperturas",
+    "https://compras.santafe.gob.ar/",
+    "https://www.aguassantafesinas.com.ar/portal/licitaciones",
+    "https://sanlorenzo.gob.ar/licitaciones/",
+    "https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia",
+    "https://chajari.gob.ar/licitaciones/",
+    "https://lasparejas.gov.ar/index_boletin",
+    "https://xn--carcaraa-j3a.gob.ar/boletines/",
+    "https://reconquista.gob.ar/licitaciones/",
+    "https://reconquista.gob.ar/concurso-de-precios/",
+    "https://reconquista.gob.ar/concurso-de-ofertas/",
+    "https://colon.gov.ar/gobierno/gobierno-abierto/cuentasclaras/concursos/",
+    "https://colon.gov.ar/licitaciones/"
+  ]
+}

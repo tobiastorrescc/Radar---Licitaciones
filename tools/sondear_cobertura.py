@@ -35,6 +35,9 @@ def main():
     for f in fs:
         u=f['url'];s=urlsplit(u);base=s.scheme+'://'+s.netloc+'/'
         if f.get('incorporada'):urls.setdefault(base,{'url':base,'organismo':f['organismo']})
+    plan=json.loads(Path('tools/plan_cobertura.json').read_text())
+    if plan.get('urls_sondeo'):
+        urls={u:{'url':u} for u in plan['urls_sondeo']}
     entradas=root/'entradas';entradas.mkdir(exist_ok=True)
     fuentes=[]
     for n,f in enumerate(urls.values()):
