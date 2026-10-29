@@ -69,3 +69,5 @@ test('cron antiguo activo impide preparar y despachar, sin consultar producción
 test('el programador no puede suscribirse a su propio nombre',()=>{const f=fs.readFileSync('despliegue/github-actions/programar-piloto.yml.propuesto','utf8');assert.ok(f.includes("workflows: ['Radar piloto aislado']"));assert.ok(!f.includes("workflows: ['Programador del piloto aislado'"));});
 
 test('validación CI no ocupa la misma cola que el piloto que despacha',()=>{const f=fs.readFileSync('.github/workflows/programar-piloto.yml','utf8');assert.ok(f.includes("github.event_name == 'workflow_dispatch' && format('radar-{0}', github.ref) || format('radar-ci-{0}', github.ref)"));});
+
+test('la instalación no vuelve a deshabilitar un cron ya retirado',async()=>{const {retirarLegado}=require('../tools/validar_instalacion_github.cjs');for(const state of ['active','disabled_manually']){let bajas=0;const github={rest:{actions:{disableWorkflow:async()=>{bajas++;},getWorkflow:async()=>({data:{state:'disabled_manually'}})}}};assert.equal(await retirarLegado(github,{}, {id:1,state}),'disabled_manually');assert.equal(bajas,state==='active'?1:0);}});

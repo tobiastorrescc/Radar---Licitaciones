@@ -5,6 +5,12 @@ const crypto=require('node:crypto');
 const radar=require('../despliegue/github-actions/programador.cjs');
 const RAMA=radar.RAMA, WORKFLOW=radar.WORKFLOW;
 const pause=ms=>new Promise(r=>setTimeout(r,ms));
+async function retirarLegado(github,repo,legacy) {
+ if(legacy.state==='active')await github.rest.actions.disableWorkflow({...repo,workflow_id:legacy.id});
+ const estado=(await github.rest.actions.getWorkflow({...repo,workflow_id:legacy.id})).data.state;
+ if(estado!=='disabled_manually')throw Error('No quedó deshabilitado el cron antiguo');
+ return estado;
+}
 async function instalar({github,context,core}) {
  const propio=`${context.repo.owner}/${context.repo.repo}`===radar.REPO;
  const enPR=context.eventName==='pull_request'&&context.payload.pull_request?.number===1&&context.payload.pull_request?.head?.repo?.full_name===radar.REPO&&context.payload.pull_request?.head?.ref===RAMA;
@@ -44,7 +50,10 @@ async function instalar({github,context,core}) {
   // Reemplazar sólo ensayos CI anteriores; nunca cancelar un piloto diario o un run de main.
   const {data:ci}=await github.rest.actions.listWorkflowRuns({...repo,workflow_id:WORKFLOW,branch:RAMA,event:'push',per_page:100});
   for(const r of ci.workflow_runs.filter(r=>r.id!==context.runId&&r.id<context.runId&&r.status!=='completed')) {
-   await github.rest.actions.cancelWorkflowRun({...repo,run_id:r.id});
+   try {await github.rest.actions.cancelWorkflowRun({...repo,run_id:r.id});} catch(e) {if(![403,409].includes(e.status))throw e;}
+   await pause(2000);
+   const estado=(await github.rest.actions.getWorkflowRun({...repo,run_id:r.id})).data.status;
+   if(estado!=='completed')await github.request('POST /repos/{owner}/{repo}/actions/runs/{run_id}/force-cancel',{...repo,run_id:r.id});
    core.info('CI_OBSOLETO_CANCELADO '+r.id);
   }
   const main=(await github.rest.repos.getBranch({...repo,branch:'main'})).data;
@@ -58,8 +67,7 @@ async function instalar({github,context,core}) {
   if(legacy.id===nuevo.id||nuevo.state!=='active')throw Error('No hay IDs separados y activos para el piloto nuevo');
   const {data:viejos}=await github.rest.actions.listWorkflowRuns({...repo,workflow_id:legacy.id,branch:'main',per_page:100});
   if(viejos.workflow_runs.some(r=>r.status!=='completed'))throw Error('Hay una ejecución antigua en main activa: revisar antes de continuar');
-  await github.rest.actions.disableWorkflow({...repo,workflow_id:legacy.id});
-  out.legado=(await github.rest.actions.getWorkflow({...repo,workflow_id:legacy.id})).data.state;out.workflow_nuevo_id=nuevo.id;guardar();
+  out.legado=await retirarLegado(github,repo,legacy);out.workflow_nuevo_id=nuevo.id;guardar();
   if(out.legado!=='disabled_manually')throw Error('No quedó deshabilitado el cron antiguo');
   core.info('CRON_ANTIGUO_DESHABILITADO '+legacy.id+'; NUEVO '+nuevo.id);
   const inicio=(await manual('ejecutar')).created_at;
@@ -107,4 +115,4 @@ async function instalar({github,context,core}) {
   core.info('INSTALACION_VALIDADA '+JSON.stringify(out));
  } catch(e){out.correcta=false;out.error=String(e.message);guardar();throw e;}
 }
-module.exports={instalar};
+module.exports={instalar,retirarLegado};
