@@ -1,0 +1,60 @@
+name: Auditoría de cobertura aislada
+on:
+  push:
+    branches: [mejora/radar-auditable]
+    paths: [tools/plan_cobertura.json]
+permissions:
+  contents: read
+concurrency:
+  group: auditoria-cobertura-aislada
+  cancel-in-progress: false
+jobs:
+  investigar:
+    if: github.ref == 'refs/heads/mejora/radar-auditable'
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Leer lote de investigación explícito
+        id: plan
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          d=json.load(open('tools/plan_cobertura.json'))
+          for k in ('sondear','auditar','descubrir'):print(k+'='+str(d.get(k,False)).lower())
+          PY
+      - name: Preparar lectura documental
+        timeout-minutes: 4
+        run: bash tools/preparar_documentos.sh
+      - uses: actions/cache@v4
+        with:
+          path: work/cache-documentos
+          key: textos-v1-cobertura-${{ github.run_id }}
+          restore-keys: textos-v1-
+      - name: Sondear enlaces oficiales con evidencia y tiempo acotado
+        if: steps.plan.outputs.sondear == 'true'
+        run: python -u tools/sondear_cobertura.py
+      - name: Revisar candidatas sin publicar automáticamente cambios de inventario
+        if: steps.plan.outputs.descubrir == 'true'
+        run: python -u tools/descubrir_fuentes.py --salida work/descubrimiento --total 360 --busquedas 30 --candidatos 100 --revisar-pendientes
+      - name: Restaurar copia independiente del último respaldo diario
+        if: steps.plan.outputs.auditar == 'true'
+        run: python tools/respaldo_piloto.py restaurar --salida work/cobertura --respaldo piloto_respaldo/diario
+      - name: Auditoría real aislada sin modificar el respaldo diario
+        if: steps.plan.outputs.auditar == 'true'
+        run: python -u tools/radar_controlado.py --salida work/cobertura --total 600 --documentos 180
+      - name: Guardar evidencia incluso si el lote queda incompleto
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cobertura-${{ github.run_id }}
+          path: |
+            work/sondeo/
+            work/descubrimiento/
+            work/cobertura/
+            inventario/fuentes_auto.json
+            inventario/descubrimiento_estado.json
+          retention-days: 90
