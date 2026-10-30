@@ -152,5 +152,24 @@ def ocr_selectivo(datos,max_paginas=4):
             leidas[n]=r.stdout;procesadas.append(n)
             cache.atomico(base/(str(n)+'.json'),{'sha256':digest,'pagina':n,'texto':r.stdout})
         meta={'sha256':digest,'total_paginas':total,'paginas_leidas':sorted(leidas),'paginas_nativas':nativas,'paginas_ocr_nuevas':procesadas,'paginas_pendientes':[n for n in range(1,total+1) if n not in leidas],'completa':len(leidas)==total}
+        for n,t in leidas.items():cache.atomico(base/(str(n)+'.json'),{'sha256':digest,'pagina':n,'texto':t})
         cache.atomico(base/'indice.json',meta)
         return '\f'.join(leidas.get(n,'') for n in range(1,total+1)),meta
+
+
+def ocr_en_cache(datos):
+    """Reutiliza un OCR completo por hash sin consumir CPU ni cupo de nuevas páginas."""
+    from hashlib import sha256
+    import json
+    import cache_documentos as cache
+    digest=sha256(datos).hexdigest();base=cache.raiz()/'ocr-paginas-v1'/digest
+    try:
+        meta=json.loads((base/'indice.json').read_text())
+        if not meta.get('completa') or meta.get('sha256')!=digest:return None
+        paginas=[]
+        for n in range(1,meta['total_paginas']+1):
+            r=json.loads((base/(str(n)+'.json')).read_text())
+            if r.get('sha256')!=digest or r.get('pagina')!=n:return None
+            paginas.append(r['texto'])
+        return '\f'.join(paginas),{**meta,'paginas_ocr_nuevas':[],'cache_completa':True}
+    except (OSError,ValueError,KeyError,TypeError):return None

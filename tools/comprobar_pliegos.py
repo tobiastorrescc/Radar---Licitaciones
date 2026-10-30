@@ -47,10 +47,13 @@ def worker(url,consulta_post=None,opciones=None):
     try:
         try: texto,texto_meta=cache_documentos.leer_texto(raw,tipo,final,ocr=False)
         except ValueError:
-            if clase!='PDF' or not (opciones or {}).get('ocr_selectivo'):raise
+            if clase!='PDF' or not ((opciones or {}).get('ocr_selectivo') or documentos.ocr_en_cache(raw)):raise
             texto='';texto_meta={'cache_texto':'SIN_TEXTO','metodo':'PDF'}
         necesita_ocr=not texto.strip() or any(len(re.sub(r'[^A-Za-zÁÉÍÓÚáéíóúÑñ]','',p))<20 for p in texto.rstrip('\f').split('\f'))
-        if clase=='PDF' and necesita_ocr and (opciones or {}).get('ocr_selectivo'):
+        cache_ocr=documentos.ocr_en_cache(raw) if clase=='PDF' and necesita_ocr else None
+        if cache_ocr:
+            texto,meta_ocr=cache_ocr;r['ocr_selectivo']=meta_ocr;texto_meta['metodo']='OCR_SELECTIVO_CACHE'
+        elif clase=='PDF' and necesita_ocr and (opciones or {}).get('ocr_selectivo'):
             r['ocr_intentado']=True
             texto,meta_ocr=documentos.ocr_selectivo(raw,max_paginas=(opciones or {}).get('max_paginas',4))
             r['ocr_selectivo']=meta_ocr;texto_meta['metodo']='OCR_SELECTIVO'

@@ -86,3 +86,9 @@ class DocumentoOCRTests(unittest.TestCase):
         url='https://oficial.gob.ar/pliego.pdf'
         with patch.object(c.cache_documentos,'obtener',return_value=(b'%PDF-test','application/pdf',url,{'cache_estado':'CACHE_RECIENTE'})),patch.object(c.cache_documentos,'leer_texto',side_effect=ValueError('PDF sin texto')),patch.object(c.documentos,'ocr_selectivo') as lector:
             r=c.worker(url);lector.assert_not_called();self.assertIn('lectura_pendiente',r)
+
+    def test_ocr_completo_cacheado_se_reutiliza_sin_nuevo_cupo(self):
+        from tools import comprobar_pliegos as c
+        url='https://oficial.gob.ar/pliego.pdf'
+        with patch.object(c.cache_documentos,'obtener',return_value=(b'%PDF-test','application/pdf',url,{'cache_estado':'CACHE_RECIENTE'})),patch.object(c.cache_documentos,'leer_texto',side_effect=ValueError('PDF sin texto')),patch.object(c.documentos,'ocr_en_cache',return_value=('Forma de pago: contado contra entrega.',{'completa':True,'paginas_ocr_nuevas':[]})),patch.object(c.documentos,'ocr_selectivo') as lector:
+            r=c.worker(url);lector.assert_not_called();self.assertTrue(r['pagos']);self.assertFalse(r.get('lectura_pendiente'));self.assertEqual(r['ocr_selectivo']['paginas_ocr_nuevas'],[])

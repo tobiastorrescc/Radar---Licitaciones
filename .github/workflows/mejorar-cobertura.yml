@@ -29,6 +29,9 @@ jobs:
           run=str(d.get('reprocesar_run',''))
           if run and not run.isdigit():raise ValueError('Run inválido')
           print('reprocesar_run='+run)
+          pagos=str(d.get('pagos_run',''))
+          if pagos and not pagos.isdigit():raise ValueError('Run de pagos inválido')
+          print('pagos_run='+pagos)
           PY
       - name: Preparar lectura documental
         timeout-minutes: 4
@@ -95,12 +98,33 @@ jobs:
             git pull --rebase origin mejora/radar-auditable
             git push origin HEAD:mejora/radar-auditable
           fi
+      - name: Validar origen de la copia para revisión de pagos de abiertas
+        if: steps.plan.outputs.pagos_run != ''
+        uses: actions/github-script@v7
+        env:
+          PAGOS_RUN: ${{ steps.plan.outputs.pagos_run }}
+        with:
+          script: |
+            const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:Number(process.env.PAGOS_RUN)});
+            if(r.conclusion!=='success'||r.head_branch!=='mejora/radar-auditable'||r.head_repository.full_name!==`${context.repo.owner}/${context.repo.repo}`||r.path!=='.github/workflows/mejorar-cobertura.yml')throw Error('Auditoría documental de origen inválida');
+      - uses: actions/download-artifact@v4
+        if: steps.plan.outputs.pagos_run != ''
+        with:
+          name: cobertura-${{ steps.plan.outputs.pagos_run }}
+          path: work/revision-pagos
+          run-id: ${{ steps.plan.outputs.pagos_run }}
+          github-token: ${{ github.token }}
+      - name: Revisar sólo pliegos de abiertas con caché y OCR selectivo
+        if: steps.plan.outputs.pagos_run != ''
+        timeout-minutes: 4
+        run: python -u tools/auditar_pagos_abiertas.py
       - name: Guardar evidencia incluso si el lote queda incompleto
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: cobertura-${{ github.run_id }}
           path: |
+            work/pagos-abiertas/
             work/sondeo/
             work/reprocesado/
             work/reverificacion/
