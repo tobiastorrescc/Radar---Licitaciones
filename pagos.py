@@ -3,7 +3,7 @@ from hashlib import sha256
 import re
 import unicodedata
 
-VERSION=12
+VERSION=13
 NO_INFORMADO='Pendiente de verificar'
 NUMEROS={'siete':7,'quince':15,'treinta':30,'cuarenta y cinco':45,'sesenta':60,'noventa':90,
          'cinco':5,'diez':10,'veinte':20,'veinticinco':25,'cuarenta':40,'cincuenta':50,
@@ -65,14 +65,16 @@ def clasificar(cita,permitir_definicion=False):
     if factura_conformada:hitos.append('CONFORMIDAD_FACTURA')
     if conformidad:hitos.append('CONFORMIDAD_RECEPCION')
     elif conformidad_generica and not factura_conformada:hitos.append('CONFORMIDAD_NO_ESPECIFICADA')
-    if contra_entrega or re.search(r'desde (?:la )?entrega|de entregad',t):hitos.append('ENTREGA')
+    if contra_entrega or re.search(r'desde (?:la )?entrega|de entregad|posteriores a (?:la )?fecha de entrega',t):hitos.append('ENTREGA')
     anticipo=bool(re.search(r'\b(?:anticipo(?:s)?|pago anticipado)\b',t))
     parcial=bool(re.search(r'pagos? parciales|certificados mensuales|por certificacion|en cuotas|mensual a mes vencido|liquidaciones parciales',t))
     aprobacion=bool(re.search(r'(?:aprobacion|autorizacion) (?:administrativa|del pago|de la factura)|acto administrativo',t))
     if aprobacion:hitos.append('APROBACION_ADMINISTRATIVA')
     if not(plazos or contado or contra_entrega or factura or conformidad or anticipo or parcial or aprobacion):return None
-    if not permitir_definicion and re.search(r'(?:podra|podran|si (?:el|la)|en (?:el )?caso (?:de|del)|cuando la municipalidad requiera)\b',t) and not re.search(r'se (?:acepta|admite)n?.*(?:o |alternativ)',t):return None
-    opciones=bool(re.search(r'\b(?:o (?:a |al |contra )|alternativas? de pago|opciones de pago)',t))
+    condicion=re.search(r'(?:podra|podran|si (?:el|la)|en (?:el )?caso (?:de|del)|cuando la municipalidad requiera)\b',t)
+    compromiso_previo=bool(condicion and DIAS.search(t[:condicion.start()]) and re.search(r'\b(?:abonara|pagara|sera abonado|se efectuara)\b',t[:condicion.start()]))
+    if not permitir_definicion and condicion and not compromiso_previo and not re.search(r'se (?:acepta|admite)n?.*(?:o |alternativ)',t):return None
+    opciones=bool(re.search(r'\b(?:o (?:a |al |contra )|alternativas? de pago|opciones de pago)',t) or re.search(r'(?:pago podra hacerse|pagos? podran? (?:hacerse|realizarse)).{0,60}(?:semanal|quincenal|mensual)',t))
     mixto=bool(re.search(r'anticipo|saldo|\d+\s*%|por ciento|cuotas|parciales|certificados mensuales',t)) and (len(plazos)>1 or contado or contra_entrega or 'saldo' in t or bool(re.search(r'anticipo.{0,30}\b(?:[1-9]|[1-9]\d)\s*(?:%|por ciento)',t)))
     if opciones:categoria='OPCIONES_PUBLICADAS'
     elif mixto:categoria='MIXTO'
@@ -114,7 +116,7 @@ def clasificar(cita,permitir_definicion=False):
         if 'RECEPCION_DOCUMENTACION_CORRESPONDIENTE' in hitos:etiqueta+=' desde recepción de la documentación correspondiente'
         if conformidad:etiqueta+=' después de conformidad de recepción'
         elif factura_conformada:etiqueta+=' desde factura conformada'
-        elif presentacion_factura:etiqueta+=' desde presentación de factura'
+        elif presentacion_factura:etiqueta+=(' desde entrega y presentación de factura' if 'ENTREGA' in hitos else ' desde presentación de factura')
         elif recepcion_factura:etiqueta+=' desde recepción de factura'
         elif fecha_factura:etiqueta+=' desde fecha/emisión de factura'
         elif 'ENTREGA' in hitos:etiqueta+=' desde entrega'

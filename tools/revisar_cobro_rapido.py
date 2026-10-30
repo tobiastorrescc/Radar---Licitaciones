@@ -25,6 +25,9 @@ def detalle(url,config):
         from hashlib import sha256
         archivo=Path('work/cobro-rapido/html')/(sha256(url.encode()).hexdigest()+'.html');archivo.parent.mkdir(parents=True,exist_ok=True);archivo.write_text(html)
         rs,links,dom=extractores.extraer(html,final,config)
+        if config.get('adaptador')=='rosario':
+            from tools.ficha_rosario import extraer as rosario
+            rs=rosario(html,final) or rs
         for r in rs:r.update(texto_documento=r.get('titulo'),rango_evidencia=3)
         return {'url':url,'estado':'CONSULTADA','registros':rs,'segundos':round(time.monotonic()-inicio,2),'fecha':datetime.now(o.ZONA).isoformat()}
     except Exception as e:return {'url':url,'estado':'ERROR','error':str(e),'segundos':round(time.monotonic()-inicio,2)}
@@ -63,13 +66,20 @@ def main():
                 print('REVISION_PUBLICACION '+json.dumps({k:v for k,v in valor.items() if k!='registros'},ensure_ascii=False),flush=True)
                 for r in rs:
                     if r['url']!=valor['url']:continue
-                    matches=[x for x in valor.get('registros',[]) if o.procedimiento_canonico(x)==o.procedimiento_canonico(r)]
+                    matches=[x for x in valor.get('registros',[]) if o.procedimiento_canonico(x)==o.procedimiento_canonico(r) or x.get('id_origen') and x.get('id_origen')==r.get('id_origen') and x.get('identidad_ambito')==r.get('identidad_ambito')]
                     for x in matches:
                         observado=o.normalizar({**r,**x},fecha)
-                        if o.identidad(observado)!=o.identidad(r):continue
-                        combinado=o.fusionar(r,observado,fecha);r.update(combinado);r['ultima_observacion_publicacion']=valor['fecha'];observadas.add(r['id'])
+                        if o.identidad(observado)!=o.identidad(r) and not (observado.get('id_origen') and observado.get('id_origen')==r.get('id_origen') and observado.get('identidad_ambito')==r.get('identidad_ambito')):continue
+                        identificador=r['id'];anterior=r.get('numero_procedimiento');combinado=o.fusionar(r,observado,fecha);r.update(combinado);r['id']=identificador
+                        for campo in ('numero_procedimiento','procedimiento','tipo_procedimiento','expediente','objeto','fecha_publicacion','fecha_apertura_texto','presupuesto_texto','campos_oficiales'):
+                            if x.get(campo) is not None:r[campo]=x[campo]
+                        if anterior!=r.get('numero_procedimiento'):r['numero_anterior_detectado']=anterior
+                        r['ultima_observacion_publicacion']=valor['fecha'];observadas.add(r['id'])
         # No OCR indiscriminado: cero páginas nuevas; reutilización automática de caché OCR existente.
-        comprobar(rs,fecha,fuentes_configuradas(),total=300,salida_parcial=out/'documentos.jsonl',ocr_documentos=0)
+        fs=fuentes_configuradas()
+        for f in fs:
+            if f.get('adaptador')=='rosario':f['dominios_documentos']=list(set(f.get('dominios_documentos',[])+['apimgw.rosario.gob.ar']))
+        comprobar(rs,fecha,fs,total=300,salida_parcial=out/'documentos.jsonl',ocr_documentos=0)
     rs=[o.normalizar(r,fecha) for r in rs]
     for r in rs:
         r['revision_vigencia']='VENCIDA_O_NO_CONFIRMADA' if r['vigencia']!='ABIERTA' else ('OBSERVADA_RECIENTEMENTE_ABIERTA_CALCULADA' if r['id'] in observadas else 'SOLO_EVIDENCIA_PREVIA')

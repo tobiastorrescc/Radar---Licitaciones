@@ -1,5 +1,5 @@
 {
-  "etapa": "diagnostico-publicaciones-rosario-sin-ocr",
+  "etapa": "recuperar-pliegos-rosario-y-pagos-la-paz",
   "sondear": false,
   "auditar": false,
   "descubrir": false,
@@ -7,5 +7,5 @@
   "revisar_identidades": false,
   "revisar_cobro": true,
   "archivar_auditoria": false,
-  "diagnostico_cobro": true
+  "diagnostico_cobro": false
 }
