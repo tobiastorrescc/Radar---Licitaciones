@@ -1,10 +1,11 @@
 {
-  "etapa": "revision-documental-116-cobro-rapido",
+  "etapa": "diagnostico-publicaciones-rosario-sin-ocr",
   "sondear": false,
   "auditar": false,
   "descubrir": false,
   "reverificar_ids": [],
   "revisar_identidades": false,
   "revisar_cobro": true,
-  "archivar_auditoria": false
+  "archivar_auditoria": false,
+  "diagnostico_cobro": true
 }

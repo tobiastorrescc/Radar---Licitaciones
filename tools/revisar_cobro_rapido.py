@@ -12,7 +12,7 @@ from tools.radar_controlado import fuentes_configuradas
 
 def rapido(r):
     p=r.get('pago',{})
-    return p.get('estado')=='VERIFICADO' and (p.get('clasificacion') in ('ANTICIPO','CONTADO','CONTRA_ENTREGA') or bool(p.get('plazos_dias')) and max(p['plazos_dias'])<=15)
+    return p.get('estado')=='VERIFICADO' and p.get('direccion')!='OFERTANTE_AL_ORGANISMO' and p.get('clasificacion') not in ('MIXTO','OPCIONES_PUBLICADAS') and (p.get('clasificacion') in ('ANTICIPO','CONTADO','CONTRA_ENTREGA') or bool(p.get('plazos_dias')) and max(p['plazos_dias'])<=15)
 
 
 def detalle(url,config):
@@ -22,6 +22,8 @@ def detalle(url,config):
         if urlparse(final).hostname!=urlparse(url).hostname:raise ValueError('Redirección de dominio; requiere revisión')
         if 'html' not in tipo:raise ValueError('Publicación no HTML; conserva revisión documental separada')
         html=conectores.decodificar_html(raw,tipo);conectores.comprobar_acceso(html)
+        from hashlib import sha256
+        archivo=Path('work/cobro-rapido/html')/(sha256(url.encode()).hexdigest()+'.html');archivo.parent.mkdir(parents=True,exist_ok=True);archivo.write_text(html)
         rs,links,dom=extractores.extraer(html,final,config)
         for r in rs:r.update(texto_documento=r.get('titulo'),rango_evidencia=3)
         return {'url':url,'estado':'CONSULTADA','registros':rs,'segundos':round(time.monotonic()-inicio,2),'fecha':datetime.now(o.ZONA).isoformat()}
@@ -44,6 +46,12 @@ def main():
     # Últimas observaciones primero, después vencimiento. Sin limitar la cantidad de fichas.
     rs.sort(key=lambda r:(not bool(r.get('observada_esta_corrida') or 'revision_rosario_41110430956' in r.get('origenes_evidencia',[])),r.get('fecha_limite_presentacion') or r.get('fecha_apertura') or '9999'))
     consultas={};observadas=set()
+    if json.load(open('tools/plan_cobertura.json')).get('diagnostico_cobro'):
+        for id in ('38684','38648','38681'):
+            r=next(r for r in rs if r['url'].endswith('/'+id))
+            valor=detalle(r['url'],configs.get(r.get('fuente'),{}))
+            (out/('diagnostico-'+id+'.json')).write_text(json.dumps(valor,ensure_ascii=False,indent=2))
+        return
     if not a.sin_red:
         urls={r['url']:configs.get(r.get('fuente'),{}) for r in rs};inicio=time.monotonic()
         with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
@@ -51,6 +59,7 @@ def main():
             for futuro in concurrent.futures.as_completed(futuros):
                 valor=futuro.result();consultas[valor['url']]=valor
                 with (out/'publicaciones.jsonl').open('a') as f:f.write(json.dumps(valor,ensure_ascii=False)+'\n')
+                (out/'avance.json').write_text(json.dumps({'cohorte':len(rs),'consultas_completadas':len(consultas),'pendientes':len(urls)-len(consultas),'completa':False},ensure_ascii=False)+'\n')
                 print('REVISION_PUBLICACION '+json.dumps({k:v for k,v in valor.items() if k!='registros'},ensure_ascii=False),flush=True)
                 for r in rs:
                     if r['url']!=valor['url']:continue
@@ -66,8 +75,9 @@ def main():
         r['revision_vigencia']='VENCIDA_O_NO_CONFIRMADA' if r['vigencia']!='ABIERTA' else ('OBSERVADA_RECIENTEMENTE_ABIERTA_CALCULADA' if r['id'] in observadas else 'SOLO_EVIDENCIA_PREVIA')
     nuevos=[r['id'] for r in rs if antes[r['id']]!='VERIFICADO' and r['pago']['estado']=='VERIFICADO']
     md,fast=informe(rs,fecha)
-    resumen={'fecha':fecha,'cohorte':len(rs),'consultas_publicaciones':len(consultas),'publicaciones_observadas':len(observadas),'pagos_verificados_antes':sum(v=='VERIFICADO' for v in antes.values()),'pagos_verificados_despues':sum(r['pago']['estado']=='VERIFICADO' for r in rs),'de_desconocido_a_verificado':len(nuevos),'ids_mejorados':nuevos,'cobro_rapido':len(fast),'vigencia':dict(Counter(r['revision_vigencia'] for r in rs)),'sin_escritura_historial':True,'ocr_nuevo':0}
+    resumen={'fecha':fecha,'cohorte':len(rs),'revision_completa':True,'consultas_publicaciones':len(consultas),'publicaciones_observadas':len(observadas),'pagos_verificados_antes':sum(v=='VERIFICADO' for v in antes.values()),'pagos_verificados_despues':sum(r['pago']['estado']=='VERIFICADO' for r in rs),'de_desconocido_a_verificado':len(nuevos),'ids_mejorados':nuevos,'cobro_rapido':len(fast),'vigencia':dict(Counter(r['revision_vigencia'] for r in rs)),'sin_escritura_historial':True,'ocr_nuevo':0}
     for nombre,obj in [('resultado',resumen),('todas',rs),('rapidas',fast)]: (out/(nombre+'.json')).write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n')
+    (out/'avance.json').write_text(json.dumps({'cohorte':len(rs),'consultas_completadas':len(consultas),'completa':True},ensure_ascii=False)+'\n')
     (out/'COBRO_RAPIDO.md').write_text(md);(out/'TODAS.md').write_text(fichas.reporte(rs,fecha))
     print('RESULTADO_COBRO '+json.dumps(resumen,ensure_ascii=False),flush=True)
 
