@@ -1,11 +1,10 @@
 {
-  "etapa": "completar-las-14-candidatas-restantes-sin-repetir-consultas",
+  "etapa": "verificar-clausulas-complementarias-usando-solo-cache-ocr-completa",
   "sondear": false,
   "auditar": false,
-  "descubrir": true,
+  "descubrir": false,
   "reverificar_ids": [],
   "revisar_identidades": false,
-  "desc_candidatos": 14,
-  "desc_busquedas": 1,
-  "desc_total": 120
+  "pagos_run": 41048293524,
+  "ocr_documentos": 0
 }

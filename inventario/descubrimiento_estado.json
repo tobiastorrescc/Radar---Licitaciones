@@ -630,7 +630,8 @@
     "territorio:822567": "2026-10-30T18:36:28.048231+00:00",
     "territorio:822518": "2026-10-30T18:36:28.048231+00:00",
     "territorio:823260": "2026-10-30T18:36:28.048231+00:00",
-    "territorio:823652": "2026-10-30T18:36:28.048231+00:00"
+    "territorio:823652": "2026-10-30T18:36:28.048231+00:00",
+    "territorio:822525": "2026-10-30T19:08:07.563117+00:00"
   },
   "candidatos": {
     "inventario-fuente-034": {
@@ -6907,7 +6908,7 @@
       "titulo": "CODIGO PENAL DE LA NACION ARGENTINA",
       "busqueda_url": "https://www.bing.com/search?q=%22Paso+Duarte%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-28T17:58:43.018599+00:00",
-      "ultima_revision": "2026-10-29T20:31:44.395959+00:00",
+      "ultima_revision": "2026-10-30T19:08:07.563117+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -6925,12 +6926,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-29T20:31:51.597552+00:00",
+        "fecha": "2026-10-30T19:08:10.297667+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261029T203149-4de27f7d/0002.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261030T190808-7b1b165e/0000.json"
     },
     "613efa35cc007fcafadd": {
       "clave": "territorio:302999",
@@ -7142,7 +7143,7 @@
       "titulo": "Decreto 2299/2011 - Buenos Aires Province",
       "busqueda_url": "https://www.bing.com/search?q=%22Ra%C3%ADces+Oeste%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-28T18:15:09.761442+00:00",
-      "ultima_revision": "2026-10-29T20:31:44.395959+00:00",
+      "ultima_revision": "2026-10-30T19:08:07.563117+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -7160,12 +7161,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-29T20:31:53.350696+00:00",
+        "fecha": "2026-10-30T19:08:10.417360+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261029T203149-4de27f7d/0005.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261030T190808-7b1b165e/0003.json"
     },
     "4cd01f2e72818708fffa": {
       "clave": "territorio:309965",
@@ -7216,7 +7217,7 @@
       "titulo": "Reglamento General de las Instituciones Educativas",
       "busqueda_url": "https://www.bing.com/search?q=%22Ra%C3%ADces+Oeste%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-28T18:15:09.761442+00:00",
-      "ultima_revision": "2026-10-29T20:31:44.395959+00:00",
+      "ultima_revision": "2026-10-30T19:08:07.563117+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -7234,12 +7235,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-29T20:31:50.800684+00:00",
+        "fecha": "2026-10-30T19:08:08.692362+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261029T203149-4de27f7d/0003.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261030T190808-7b1b165e/0001.json"
     },
     "de81f45032735ea7b774": {
       "clave": "territorio:309965",
@@ -7286,7 +7287,7 @@
       "titulo": "reglamento_nuevo - Portal ABC",
       "busqueda_url": "https://www.bing.com/search?q=%22Ra%C3%ADces+Oeste%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-28T18:15:09.761442+00:00",
-      "ultima_revision": "2026-10-29T20:31:44.395959+00:00",
+      "ultima_revision": "2026-10-30T19:08:07.563117+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -7299,10 +7300,13 @@
           "tipo": "URLError",
           "categoria": "RED",
           "timeout": false,
-          "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1016)>"
+          "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1016)>",
+          "causa": "ERROR_CONEXION_TLS",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261029T203149-4de27f7d/0004.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261030T190808-7b1b165e/0002.json"
     },
     "a141e58923070a7dc0f7": {
       "clave": "territorio:309965",
@@ -7382,30 +7386,26 @@
       "titulo": "Texto completo | Argentina.gob.ar",
       "busqueda_url": "https://www.bing.com/search?q=%22Ra%C3%ADces+Oeste%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-28T18:15:09.761442+00:00",
-      "ultima_revision": "2026-10-29T20:31:44.395959+00:00",
+      "ultima_revision": "2026-10-30T19:08:07.563117+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
+        "motivo": "The read operation timed out",
         "identidad_verificada": false,
-        "identidad": {
-          "verificada": false,
-          "organismo": "Municipalidad de Raíces Oeste",
-          "localidad": "Raíces Oeste",
-          "dominio_oficial": true,
-          "nombre_publicado": false,
-          "jurisdiccion_publicada": false,
-          "url": "https://www.argentina.gob.ar/normativa/nacional/ley-22399-217687/texto",
-          "sha256": "dd41b7bf45ac8d963007de03b40a8e4405e62470eb628c38c8f05effe0d75bf2",
-          "cabecera": " TEXTO ORIGINAL - Ley 22399 - LIBROS | Argentina.gob.ar Presidencia de la Nación Ley 22399 LIBROS Trámites Acerca de la República Argentina Acerca de Argentina.gob.ar",
-          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
-        },
-        "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-29T20:31:53.460564+00:00",
-        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
-        "ejemplos": []
+        "procedimientos_con_objeto": 0
       },
-      "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261029T203149-4de27f7d/0006.json"
+      "errores": [
+        {
+          "tipo": "TimeoutError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "The read operation timed out",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261030T190808-7b1b165e/0004.json"
     },
     "b3cf001bb38502608c70": {
       "clave": "territorio:309965",
@@ -7637,7 +7637,7 @@
       "titulo": "SICAP - Gobierno de Santa Fe",
       "busqueda_url": "https://www.bing.com/search?q=%22Malabrigo%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-29T00:34:23.767989+00:00",
-      "ultima_revision": "2026-10-29T20:31:44.395959+00:00",
+      "ultima_revision": "2026-10-30T19:08:07.563117+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -7650,10 +7650,13 @@
           "tipo": "URLError",
           "categoria": "RED",
           "timeout": true,
-          "error": "<urlopen error timed out>"
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261029T203149-4de27f7d/0007.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261030T190808-7b1b165e/0005.json"
     },
     "ce647ee99acf0e15d703": {
       "clave": "territorio:820105",
@@ -7667,7 +7670,7 @@
       "titulo": "Acceso a sistemas - CAS - Acceso a sistemas - CAS - Gobierno de Santa Fe",
       "busqueda_url": "https://www.bing.com/search?q=%22Malabrigo%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-29T00:34:23.767989+00:00",
-      "ultima_revision": "2026-10-29T20:31:44.395959+00:00",
+      "ultima_revision": "2026-10-30T19:08:07.563117+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -7680,10 +7683,13 @@
           "tipo": "URLError",
           "categoria": "RED",
           "timeout": true,
-          "error": "<urlopen error timed out>"
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261029T203149-4de27f7d/0009.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261030T190808-7b1b165e/0007.json"
     },
     "eaa7a9374e8a2c635805": {
       "clave": "territorio:820105",
@@ -7697,7 +7703,7 @@
       "titulo": "Inicio - Government of the Province of Santa Fe",
       "busqueda_url": "https://www.bing.com/search?q=%22Malabrigo%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-29T00:34:23.767989+00:00",
-      "ultima_revision": "2026-10-29T20:31:44.395959+00:00",
+      "ultima_revision": "2026-10-30T19:08:07.563117+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -7710,10 +7716,13 @@
           "tipo": "URLError",
           "categoria": "RED",
           "timeout": true,
-          "error": "<urlopen error timed out>"
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261029T203149-4de27f7d/0010.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261030T190808-7b1b165e/0008.json"
     },
     "b50be4d9f7699257589f": {
       "clave": "territorio:820105",
@@ -7727,7 +7736,7 @@
       "titulo": "Accesos a Sistemas de la Red - Gobierno de Santa Fe",
       "busqueda_url": "https://www.bing.com/search?q=%22Malabrigo%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-29T00:34:23.767989+00:00",
-      "ultima_revision": "2026-10-29T20:31:44.395959+00:00",
+      "ultima_revision": "2026-10-30T19:08:07.563117+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -7740,10 +7749,13 @@
           "tipo": "URLError",
           "categoria": "RED",
           "timeout": true,
-          "error": "<urlopen error timed out>"
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261029T203149-4de27f7d/0008.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261030T190808-7b1b165e/0006.json"
     },
     "766a289393155934c327": {
       "clave": "territorio:823141",
@@ -8116,7 +8128,7 @@
       "titulo": "Municipalidad de Rivadavia – Gestión Sergio Miodowsky",
       "busqueda_url": "https://www.bing.com/search?q=%22Rivadavia%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-29T20:31:44.395959+00:00",
-      "ultima_revision": "2026-10-29T20:31:44.395959+00:00",
+      "ultima_revision": "2026-10-30T19:08:07.563117+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
@@ -8129,17 +8141,17 @@
           "nombre_publicado": true,
           "jurisdiccion_publicada": false,
           "url": "https://rivadavia.gob.ar/",
-          "sha256": "11f100781b13f676156fedcfe56b22d25ec957a167327c1b0f7e177cfeacbfe8",
+          "sha256": "72d540c5ce0ba6f5f86de9e04be870ec338266d993a110556c34a7a576f79607",
           "cabecera": "Municipalidad de Rivadavia – Gestión Sergio Miodowsky  Mónica Mugiani es la nueva Reina Provincial del Adulto Mayor Gestión Online",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-29T20:31:50.022237+00:00",
+        "fecha": "2026-10-30T19:08:15.588507+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261029T203149-4de27f7d/0000.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261030T190808-7b1b165e/0009.json"
     },
     "c008826264625ba6697a": {
       "clave": "territorio:823183",
@@ -8153,30 +8165,26 @@
       "titulo": "Rivadavia | Municipalidad de Rivadavia - Mendoza",
       "busqueda_url": "https://www.bing.com/search?q=%22Rivadavia%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-29T20:31:44.395959+00:00",
-      "ultima_revision": "2026-10-29T20:31:44.395959+00:00",
+      "ultima_revision": "2026-10-30T19:08:07.563117+00:00",
       "version_verificador": 4,
       "validacion": {
         "estado": "PENDIENTE",
+        "motivo": "<urlopen error timed out>",
         "identidad_verificada": false,
-        "identidad": {
-          "verificada": false,
-          "organismo": "Comuna de Rivadavia",
-          "localidad": "Rivadavia",
-          "dominio_oficial": true,
-          "nombre_publicado": true,
-          "jurisdiccion_publicada": false,
-          "url": "https://rivadaviamendoza.gob.ar/new/",
-          "sha256": "814b5900bdcecf1ea8e6ff2bd86a5eb87ab67213c421c323c0309d3b96f30237",
-          "cabecera": "Rivadavia | Municipalidad de Rivadavia - Mendoza 144 137 911 263-4442070 263-4444548 263-4442200",
-          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
-        },
-        "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-29T20:31:51.564674+00:00",
-        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
-        "ejemplos": []
+        "procedimientos_con_objeto": 0
       },
-      "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261029T203149-4de27f7d/0001.json"
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261030T190808-7b1b165e/0010.json"
     },
     "b7599fe5c0340902eeb0": {
       "clave": "territorio:823197",
@@ -8345,7 +8353,7 @@
         "identidad_verificada": false,
         "procedimientos_con_objeto": 0
       },
-      "ultima_revision": "2026-10-30T11:36:49.676562+00:00",
+      "ultima_revision": "2026-10-30T19:08:07.563117+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -8358,7 +8366,7 @@
           "permanencia": "NO_DETERMINADA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261030T113652-c8ab5aaf/0035.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261030T190808-7b1b165e/0013.json"
     },
     "contraste-969fccc8f9fb59fc1c94": {
       "organismo": "Universidad Autónoma de Entre Ríos",
@@ -8387,14 +8395,14 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-30T11:37:17.923867+00:00",
+        "fecha": "2026-10-30T19:08:20.436668+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
-      "ultima_revision": "2026-10-30T11:36:49.676562+00:00",
+      "ultima_revision": "2026-10-30T19:08:07.563117+00:00",
       "version_verificador": 4,
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261030T113652-c8ab5aaf/0033.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261030T190808-7b1b165e/0011.json"
     },
     "contraste-855db25b6e8947af0ef5": {
       "organismo": "Municipalidad de Ramallo",
@@ -8462,19 +8470,19 @@
           "nombre_publicado": true,
           "jurisdiccion_publicada": false,
           "url": "https://sibom.slyt.gba.gob.ar/cities/102",
-          "sha256": "768ba947e3872708765075e991a4b8d1f5a818a32fb777e703487293afd9d3e0",
+          "sha256": "d7f90ccd6e0d8719dcea624a44761bd1bf35b48c69551c23182b628175a27601",
           "cabecera": "Sistema de Boletín Oficial Municipal | Buenos Aires Provincia Sistema de Boletines Oficiales Municipales (SIBOM) Sistema de Boletines Oficiales Municipales (SIBOM) Sistema de Boletines Oficiales Municipales (SIBOM) Sistema de Boletines Oficiales Municipales (SIBOM) Sistema de Boletines Oficiales Municipales (SIBOM) Municipio de Ramallo",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-30T11:37:20.393130+00:00",
+        "fecha": "2026-10-30T19:08:21.996454+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
-      "ultima_revision": "2026-10-30T11:36:49.676562+00:00",
+      "ultima_revision": "2026-10-30T19:08:07.563117+00:00",
       "version_verificador": 4,
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261030T113652-c8ab5aaf/0034.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261030T190808-7b1b165e/0012.json"
     },
     "dd7718f3e7dbfa41693c": {
       "clave": "territorio:822742",
@@ -8529,5 +8537,5 @@
       "fecha_descubrimiento": "2026-10-30T18:36:28.048231+00:00"
     }
   },
-  "ultima_ejecucion": "2026-10-30T18:36:28.048231+00:00"
+  "ultima_ejecucion": "2026-10-30T19:08:07.563117+00:00"
 }

@@ -32,7 +32,7 @@ jobs:
           pagos=str(d.get('pagos_run',''))
           if pagos and not pagos.isdigit():raise ValueError('Run de pagos inválido')
           print('pagos_run='+pagos)
-          for clave,defecto,minimo,maximo in [('desc_candidatos',100,1,100),('desc_busquedas',30,1,100),('desc_total',360,15,600)]:
+          for clave,defecto,minimo,maximo in [('desc_candidatos',100,1,100),('desc_busquedas',30,1,100),('desc_total',360,15,600),('ocr_documentos',3,0,3)]:
               valor=int(d.get(clave,defecto))
               if not minimo<=valor<=maximo:raise ValueError('Límite de descubrimiento inválido')
               print(clave+'='+str(valor))
@@ -121,7 +121,7 @@ jobs:
       - name: Revisar sólo pliegos de abiertas con caché y OCR selectivo
         if: steps.plan.outputs.pagos_run != ''
         timeout-minutes: 6
-        run: python -u tools/auditar_pagos_abiertas.py --entrada "${{ steps.pagos_origen.outputs.entrada }}" --ocr-paginas 10
+        run: python -u tools/auditar_pagos_abiertas.py --entrada "${{ steps.pagos_origen.outputs.entrada }}" --ocr-paginas 10 --ocr-documentos ${{ steps.plan.outputs.ocr_documentos }}
       - name: Revisar candidatas sin publicar automáticamente cambios de inventario
         if: steps.plan.outputs.descubrir == 'true'
         run: python -u tools/descubrir_fuentes.py --salida work/descubrimiento --total ${{ steps.plan.outputs.desc_total }} --busquedas ${{ steps.plan.outputs.desc_busquedas }} --candidatos ${{ steps.plan.outputs.desc_candidatos }} --revisar-pendientes

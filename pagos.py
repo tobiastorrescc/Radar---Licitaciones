@@ -3,7 +3,7 @@ from hashlib import sha256
 import re
 import unicodedata
 
-VERSION=11
+VERSION=12
 NO_INFORMADO='Pendiente de verificar'
 NUMEROS={'siete':7,'quince':15,'treinta':30,'cuarenta y cinco':45,'sesenta':60,'noventa':90,
          'cinco':5,'diez':10,'veinte':20,'veinticinco':25,'cuarenta':40,'cincuenta':50,
@@ -67,7 +67,7 @@ def clasificar(cita,permitir_definicion=False):
     elif conformidad_generica and not factura_conformada:hitos.append('CONFORMIDAD_NO_ESPECIFICADA')
     if contra_entrega or re.search(r'desde (?:la )?entrega|de entregad',t):hitos.append('ENTREGA')
     anticipo=bool(re.search(r'\b(?:anticipo(?:s)?|pago anticipado)\b',t))
-    parcial=bool(re.search(r'pagos? parciales|certificados mensuales|por certificacion|en cuotas',t))
+    parcial=bool(re.search(r'pagos? parciales|certificados mensuales|por certificacion|en cuotas|mensual a mes vencido|liquidaciones parciales',t))
     aprobacion=bool(re.search(r'(?:aprobacion|autorizacion) (?:administrativa|del pago|de la factura)|acto administrativo',t))
     if aprobacion:hitos.append('APROBACION_ADMINISTRATIVA')
     if not(plazos or contado or contra_entrega or factura or conformidad or anticipo or parcial or aprobacion):return None
@@ -129,7 +129,7 @@ def clasificar(cita,permitir_definicion=False):
 
 
 def extraer(texto,url,hash_documento=None,pdf=False,metodo='TEXTO'):
-    resultados=[];vistos=set()
+    resultados=[];vistos=set();articulo_vigente=None
     for pagina,contenido in enumerate(texto.split('\f'),1):
         # Conserva párrafos para no mezclar entrega, garantías y pago de suministros.
         bloques=re.split(r'\n\s*\n',contenido)
@@ -164,8 +164,13 @@ def extraer(texto,url,hash_documento=None,pdf=False,metodo='TEXTO'):
                 clave=(norm(fragmento),pagina)
                 if clave in vistos:continue
                 vistos.add(clave)
-                resultados.append({**clasificacion,'cita':fragmento,'url_documento':url,'sha256':hash_documento,
+                prefijo=norm(contenido[:max(0,contenido.find(bloque))]+' '+original[:m.start()])
+                arts=re.findall(r'\b(?:articulo|art\.)\s*(\d+)',prefijo)
+                clausula='Articulo '+(arts[-1] if arts else articulo_vigente) if arts or articulo_vigente else None
+                resultados.append({**clasificacion,'clausula':clausula,'cita':fragmento,'url_documento':url,'sha256':hash_documento,
                     'pagina':pagina if pdf else None,'metodo_extraccion':metodo,'version_analizador':VERSION})
+        arts=re.findall(r'\b(?:articulo|art\.)\s*(\d+)',norm(contenido))
+        if arts:articulo_vigente=arts[-1]
     # Una definición de contado sólo se aplica si el mismo documento selecciona contado.
     definiciones=[]
     for pagina,contenido in enumerate(texto.split('\f'),1):
@@ -195,12 +200,31 @@ def consolidar(evidencias):
     for original in evidencias:
         e=dict(original)
         if (e.get('url_documento'),e.get('sha256')) in genericos and e.get('categoria')=='PAGOS_PARCIALES' and (re.search(r'oferente.*consignar',norm(e.get('cita'))) or norm(e.get('cita')).startswith('pago: - pago total')):continue
-        if e.get('version_analizador') in (5,6,7,8,9,10) and not e.get('definicion_contado'):
+        if e.get('version_analizador') in (5,6,7,8,9,10,11) and not e.get('definicion_contado'):
             actual=clasificar(e.get('cita'))
             if actual is None:continue
             e.update(actual);e['reclasificada_desde_version']=e['version_analizador'];e['version_analizador']=VERSION
         revisadas.append(e)
     evidencias=revisadas
+    articulos={}
+    for e in evidencias:
+        if e.get('clausula'):articulos.setdefault((e.get('url_documento'),e.get('sha256'),e['clausula']),[]).append(e)
+    for grupo in articulos.values():
+        paginas={e.get('pagina') for e in grupo if e.get('pagina') is not None}
+        plazos=[e for e in grupo if e.get('plazos_dias') and e.get('hitos_inicio')==['RECEPCION_DOCUMENTACION_CORRESPONDIENTE']]
+        condiciones=[e for e in grupo if not e.get('plazos_dias') and e.get('categoria') in ('DESPUES_CONFORMIDAD_RECEPCION','PAGOS_PARCIALES')]
+        if not paginas or max(paginas)-min(paginas)>1 or not plazos or not condiciones:continue
+        if len({(tuple(e['plazos_dias']),tuple(e.get('unidades_dias',[]))) for e in plazos})!=1:continue
+        if len(plazos)+len(condiciones)!=len(grupo):continue
+        direcciones={e.get('direccion') for e in grupo}-{None,'NO_ESPECIFICADA'}
+        if len(direcciones)>1:continue
+        e=dict(plazos[0]);e['condiciones_previas']=sorted({h for c in condiciones for h in c.get('hitos_inicio',[])})
+        e['evidencias_condiciones_previas']=[{k:c.get(k) for k in ('pagina','clausula','cita','url_documento','sha256')} for c in condiciones]
+        e['pagos_parciales']=any(c.get('pagos_parciales') for c in condiciones)
+        if direcciones:e['direccion']=next(iter(direcciones))
+        e['etiqueta']+='; exige entrega aceptada, factura y trámites administrativos'
+        if any('mensual a mes vencido' in norm(c.get('cita')) for c in condiciones):e['etiqueta']+='; mensual a mes vencido'
+        evidencias=[v for v in evidencias if v not in grupo]+[e]
     grupos={}
     for e in evidencias:grupos.setdefault((e.get('url_documento'),e.get('sha256'),e.get('pagina')),[]).append(e)
     for grupo in grupos.values():

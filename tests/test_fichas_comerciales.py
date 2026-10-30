@@ -109,3 +109,12 @@ class CondicionesSinPlazoTests(unittest.TestCase):
     def test_oferta_por_pago_contado_no_prueba_condicion_de_cobro(self):
         p=pagos.consolidar(pagos.extraer('Las propuestas deberán consignar: d) Oferta por pago contado.','https://o.gob.ar/a.pdf','a'))
         self.assertEqual(p['estado'],'PENDIENTE')
+
+class ClausulaContinuaTests(unittest.TestCase):
+    def test_mismo_articulo_en_paginas_contiguas_completa_plazo_y_condiciones(self):
+        texto='ARTÍCULO 15: FORMAS de PAGO. El pago al proveedor se realizará previa entrega y aceptación; en cumplimiento de los trámites administrativos corrientes y presentación por parte del adjudicatario de la pertinente factura.\fEl pago será efectuado dentro de los treinta (30) días corridos de la fecha de recepción de la correspondiente documentación.'
+        es=pagos.extraer(texto,'https://www.iafas.gov.ar/descargas/17685','a',pdf=True)
+        p=pagos.consolidar(es);self.assertEqual(p['estado'],'VERIFICADO');self.assertEqual(p['plazos_dias'],[30]);self.assertEqual(p['hitos_inicio'],['RECEPCION_DOCUMENTACION_CORRESPONDIENTE'])
+        self.assertTrue(p['evidencias'][0]['evidencias_condiciones_previas'])
+        es[-1]['clausula']='Articulo 18'
+        self.assertEqual(pagos.consolidar(es)['estado'],'PENDIENTE')

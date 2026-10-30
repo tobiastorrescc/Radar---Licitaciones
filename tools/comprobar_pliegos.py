@@ -151,8 +151,8 @@ def ordenar_documentos(candidatos,vinculos,fecha):
     return deque(orden)
 
 
-def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrencia=4,salida_parcial=None,ocr_paginas=4):
-    if not 1<=ocr_paginas<=10:raise ValueError('Cupo OCR inválido')
+def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrencia=4,salida_parcial=None,ocr_paginas=4,ocr_documentos=3):
+    if not 1<=ocr_paginas<=10 or not 0<=ocr_documentos<=3:raise ValueError('Cupo OCR inválido')
     candidatos={};vinculos={};peticiones={};cupos_bytes={}
     configs={f['url']:f for f in configuraciones if f.get('url')}
     ordenados=sorted(registros,key=lambda r:({'ABIERTA':0,'DESCONOCIDA':1,'VENCIDA':2}.get(r.get('vigencia'),1),r.get('fecha_apertura') or '9999',r.get('fuente') or ''))
@@ -193,7 +193,7 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
             if url is None:break
             # Cupo de tres documentos, sólo convocatorias abiertas sin pago comprobado.
             es_edicto=bool(re.search(r'edicto|aviso|declaracion.jurada|planilla',url,re.I))
-            ocr=bool(not es_edicto and len(seleccion_ocr)<3 and any(r.get('vigencia')=='ABIERTA' and r.get('pago',{}).get('estado')!='VERIFICADO' for r in vinculos.get(url,[])))
+            ocr=bool(not es_edicto and len(seleccion_ocr)<ocr_documentos and any(r.get('vigencia')=='ABIERTA' and r.get('pago',{}).get('estado')!='VERIFICADO' for r in vinculos.get(url,[])))
             if ocr:seleccion_ocr.add(url)
             stdout=tempfile.TemporaryFile(mode='w+',encoding='utf-8');stderr=tempfile.TemporaryFile(mode='w+',encoding='utf-8')
             p=subprocess.Popen([sys.executable,__file__,'--worker',url,json.dumps(peticiones.get(url)),json.dumps({'ocr_selectivo':ocr,'max_paginas':ocr_paginas,'max_bytes_documental':cupos_bytes.get(url,12_000_000)})],stdout=stdout,stderr=stderr,text=True,start_new_session=True)

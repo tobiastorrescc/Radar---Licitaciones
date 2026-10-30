@@ -16,7 +16,7 @@ from tools.radar_controlado import fuentes_configuradas
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--entrada',default='work/revision-pagos/work/cobertura');p.add_argument('--ocr-paginas',type=int,default=4);a=p.parse_args();root=Path(a.entrada)
+    p=argparse.ArgumentParser();p.add_argument('--entrada',default='work/revision-pagos/work/cobertura');p.add_argument('--ocr-paginas',type=int,default=4);p.add_argument('--ocr-documentos',type=int,default=3);a=p.parse_args();root=Path(a.entrada)
     dbpath=root/'estado.sqlite3';antes=sha256(dbpath.read_bytes()).hexdigest();meta=json.loads((root/'ultima_ejecucion.json').read_text())
     fecha_revision=datetime.now(o.ZONA).isoformat()
     with sqlite3.connect('file:'+str(dbpath.resolve())+'?mode=ro',uri=True) as db:rs=inc.actuales(db,fecha_revision,meta['corrida'])
@@ -28,7 +28,7 @@ def main():
     ids={r['id'] for r in abiertas}
     base_original=[r for r in base_original if r.get('id') in ids]
     pagos_originales=sum(r.get('pago',{}).get('estado')=='VERIFICADO' for r in base_original)
-    comprobar(pendientes,fecha_revision,fuentes_configuradas(),total=240,salida_parcial=salida/'documentos.jsonl',ocr_paginas=a.ocr_paginas)
+    comprobar(pendientes,fecha_revision,fuentes_configuradas(),total=240,salida_parcial=salida/'documentos.jsonl',ocr_paginas=a.ocr_paginas,ocr_documentos=a.ocr_documentos)
     abiertas=[o.normalizar(r,fecha_revision) for r in abiertas]
     resultado={'corrida_origen':meta['corrida'],'fecha_evidencia_catalogo':meta['fecha'],'fecha_revision':fecha_revision,'solo_lectura_historial':True,'hash_sqlite_antes':antes,'hash_sqlite_despues':sha256(dbpath.read_bytes()).hexdigest(),'abiertas':len(abiertas),'pago_base_analizador_anterior':{'abiertas_misma_ventana':len(base_original),'verificadas':pagos_originales},'pago_antes':antes_pago,'pago_despues':pagos.resumen(abiertas)}
     (salida/'resultado.json').write_text(json.dumps(resultado,ensure_ascii=False,indent=2)+'\n')
