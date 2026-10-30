@@ -1,6 +1,6 @@
 # Fichas completas de oportunidades abiertas
 
-Vigencia calculada a 2026-10-30T08:33:56.099440-03:00. Los datos pendientes no se completan por suposición.
+Vigencia calculada a 2026-10-30T16:15:07.668379-03:00. Los datos pendientes no se completan por suposición.
 
 ## Municipalidad de Chajarí — 19/2026
 
@@ -8,6 +8,7 @@ Vigencia calculada a 2026-10-30T08:33:56.099440-03:00. Los datos pendientes no s
 
 - **Objeto**: Provisión de repuestos para el tren de rodaje de las retroexcavadoras New Holland E215C EVO y Komatsu PC200. (VERIFICADO).
   Respaldo: https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710; página 1.
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "59500000.0", "moneda": null} (VERIFICADO).
   Respaldo: https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710; página no identificada.
 - **Fecha publicacion**: Pendiente de verificar (PENDIENTE).

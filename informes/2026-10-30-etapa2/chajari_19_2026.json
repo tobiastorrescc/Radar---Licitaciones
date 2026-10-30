@@ -145,6 +145,11 @@
         "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
       }
     },
+    "productos_alternativos": {
+      "valor": null,
+      "estado": "PENDIENTE",
+      "evidencia": null
+    },
     "presupuesto": {
       "valor": {
         "importe": "59500000.0",
@@ -210,7 +215,7 @@
           "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
           "unidades_dias": [],
           "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
-          "version_analizador": 10,
+          "version_analizador": 12,
           "pagos_parciales": false,
           "anticipo_publicado": false,
           "facturacion_parcial": false,
@@ -234,7 +239,7 @@
           "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
           "unidades_dias": [],
           "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
-          "version_analizador": 10,
+          "version_analizador": 12,
           "pagos_parciales": false,
           "anticipo_publicado": false,
           "facturacion_parcial": false,
@@ -258,7 +263,7 @@
           "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
           "unidades_dias": [],
           "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
-          "version_analizador": 10,
+          "version_analizador": 12,
           "pagos_parciales": false,
           "anticipo_publicado": false,
           "facturacion_parcial": false,
@@ -397,7 +402,7 @@
         "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
         "unidades_dias": [],
         "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
-        "version_analizador": 10,
+        "version_analizador": 12,
         "pagos_parciales": false,
         "anticipo_publicado": false,
         "facturacion_parcial": false,
@@ -421,7 +426,7 @@
         "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
         "unidades_dias": [],
         "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
-        "version_analizador": 10,
+        "version_analizador": 12,
         "pagos_parciales": false,
         "anticipo_publicado": false,
         "facturacion_parcial": false,
@@ -445,7 +450,7 @@
         "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
         "unidades_dias": [],
         "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
-        "version_analizador": 10,
+        "version_analizador": 12,
         "pagos_parciales": false,
         "anticipo_publicado": false,
         "facturacion_parcial": false,

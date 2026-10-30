@@ -1,0 +1,163 @@
+{
+  "run_diario": 41048293524,
+  "fecha_diario": "2026-10-30T08:33:56.099440-03:00",
+  "cobertura_diaria": {
+    "PARCIAL": 13,
+    "BLOQUEADA": 14,
+    "OPERATIVA": 39,
+    "PENDIENTE": 10,
+    "SIN_PUBLICACIONES_CONFIRMADO": 1
+  },
+  "clasificacion_diaria": {
+    "DATOS_COMPLETADOS": 180,
+    "NUEVA_DETECCION_FECHA_DESCONOCIDA": 27,
+    "RECUPERACION_LINEA_BASE": 726,
+    "SIN_CAMBIOS": 3166,
+    "MODIFICADO": 38
+  },
+  "continuidad": {
+    "clasificaciones": {
+      "DATOS_COMPLETADOS": 180,
+      "MODIFICADO": 38,
+      "NUEVA_DETECCION_FECHA_DESCONOCIDA": 27,
+      "RECUPERACION_LINEA_BASE": 726
+    },
+    "correcta": true,
+    "corridas_nuevas": [
+      "20261030T112919-6ea0624c"
+    ],
+    "procedimientos_actuales": 4450,
+    "procedimientos_anteriores": 3697,
+    "repetidas_como_nuevas": 0,
+    "versiones_actuales": 4728,
+    "versiones_anteriores": 3758
+  },
+  "vigencia": {
+    "abiertas_en_diario": 86,
+    "proximas_en_diario": 50,
+    "abiertas_en_revision": 73,
+    "fecha_revision": "2026-10-30T16:15:07.668379-03:00",
+    "observadas_en_diario": 49,
+    "conservadas_sin_reobservacion": 24
+  },
+  "pagos_revision": {
+    "procedimientos": 73,
+    "verificadas": 7,
+    "pendientes": 66,
+    "clasificaciones": {
+      "CONTADO": 1,
+      "PLAZO_30_DIAS": 4,
+      "OTRO_PLAZO": 1,
+      "NO_INFORMADO": 66,
+      "DESPUES_CONFORMIDAD_RECEPCION": 1
+    },
+    "fuentes": {
+      "https://chajari.gob.ar/": {
+        "verificadas": 1,
+        "pendientes": 0,
+        "motivos": {}
+      },
+      "https://aeropuertorosario.com/institucional/licitaciones/": {
+        "verificadas": 3,
+        "pendientes": 1,
+        "motivos": {
+          "CONDICIONES_DIFERENTES_REQUIEREN_REVISION": 1
+        }
+      },
+      "https://www.crespo.gob.ar/category/licitacion-publica/": {
+        "verificadas": 1,
+        "pendientes": 0,
+        "motivos": {}
+      },
+      "https://www.iafas.gov.ar/proveedores/licitaciones/": {
+        "verificadas": 2,
+        "pendientes": 0,
+        "motivos": {}
+      },
+      "https://www.epe.santafe.gov.ar/app2/aperturas": {
+        "verificadas": 0,
+        "pendientes": 24,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 24
+        }
+      },
+      "https://www.municipalidadcolonpba.gob.ar/licitaciones.php": {
+        "verificadas": 0,
+        "pendientes": 1,
+        "motivos": {
+          "DOCUMENTO_NO_COMPROBADO": 1
+        }
+      },
+      "https://haciendalapaz.gob.ar/compras/": {
+        "verificadas": 0,
+        "pendientes": 2,
+        "motivos": {
+          "SIN_CLAUSULA_PAGO_COMPROBADA": 2
+        }
+      },
+      "https://www.rosario.gob.ar/inicio/compras-y-licitaciones": {
+        "verificadas": 0,
+        "pendientes": 27,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 27
+        }
+      },
+      "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones": {
+        "verificadas": 0,
+        "pendientes": 3,
+        "motivos": {
+          "SIN_CLAUSULA_PAGO_COMPROBADA": 1,
+          "REQUIERE_OCR_O_LECTURA": 2
+        }
+      },
+      "https://www.aguassantafesinas.com.ar/portal/licitaciones": {
+        "verificadas": 0,
+        "pendientes": 3,
+        "motivos": {
+          "DOCUMENTO_NO_COMPROBADO": 3
+        }
+      },
+      "https://www.dpver.gov.ar/category/licitaciones-2026/": {
+        "verificadas": 0,
+        "pendientes": 1,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 1
+        }
+      },
+      "https://cafesg.gob.ar/cafesg2/licitaciones/": {
+        "verificadas": 0,
+        "pendientes": 1,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 1
+        }
+      },
+      "https://www.entrerios.gov.ar/minplan/licitaciones": {
+        "verificadas": 0,
+        "pendientes": 1,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 1
+        }
+      },
+      "https://enapro.com.ar/category/licitaciones/": {
+        "verificadas": 0,
+        "pendientes": 2,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 2
+        }
+      }
+    }
+  },
+  "fichas_revision": {
+    "objeto": 73,
+    "cantidades": 3,
+    "presupuesto": 34,
+    "con_documentos": 17,
+    "objeto_cantidades_presupuesto_documentos": 1
+  },
+  "prioridad_cobro": {
+    "anticipos": 0,
+    "contado_contra_entrega": 1,
+    "plazo_numerico_hasta15": 0
+  },
+  "fuentes_nuevas_incorporadas": 0
+}

@@ -1,0 +1,494 @@
+{
+  "run": 41108048884,
+  "urls_unicas": 115,
+  "consultadas": 114,
+  "no_reconsultadas": [
+    {
+      "url": "https://funes.gob.ar/boletin_oficial",
+      "es_fuente_configurada": false,
+      "estado": "VALIDADA"
+    }
+  ],
+  "resumen": {
+    "fecha": "2026-10-30T18:36:28.048231+00:00",
+    "github_run_id": "41108048884",
+    "descubiertas_automaticamente": 0,
+    "hallazgos_nuevos": 4,
+    "candidatos_acumulados": 115,
+    "hallazgos_acumulados": 235,
+    "consultadas": 100,
+    "validadas": 0,
+    "validadas_acumuladas": 1,
+    "incorporadas": 0,
+    "incorporadas_acumuladas": 1,
+    "pendientes": 114,
+    "errores_busqueda": [
+      {
+        "objetivo": "territorio:823841",
+        "url": "https://www.bing.com/search?q=%22San+Fabi%C3%A1n%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:822721",
+        "url": "https://www.bing.com/search?q=%22San+Francisco+de+Santa+Fe%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:820256",
+        "url": "https://www.bing.com/search?q=%22San+Genaro%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:822728",
+        "url": "https://www.bing.com/search?q=%22San+Gregorio%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:820233",
+        "url": "https://www.bing.com/search?q=%22San+Guillermo%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:820238",
+        "url": "https://www.bing.com/search?q=%22San+Javier%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:820171",
+        "url": "https://www.bing.com/search?q=%22San+Jer%C3%B3nimo+Norte%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:824023",
+        "url": "https://www.bing.com/search?q=%22San+Jer%C3%B3nimo+Sud%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:823218",
+        "url": "https://www.bing.com/search?q=%22San+Jer%C3%B3nimo+del+Sauce%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:820315",
+        "url": "https://www.bing.com/search?q=%22San+Jorge%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:823043",
+        "url": "https://www.bing.com/search?q=%22San+Jos%C3%A9%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:822091",
+        "url": "https://www.bing.com/search?q=%22San+Jos%C3%A9+de+la+Esquina%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:820143",
+        "url": "https://www.bing.com/search?q=%22San+Jos%C3%A9+del+Rinc%C3%B3n%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:820259",
+        "url": "https://www.bing.com/search?q=%22San+Justo%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:823232",
+        "url": "https://www.bing.com/search?q=%22San+Mariano%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:823953",
+        "url": "https://www.bing.com/search?q=%22San+Mart%C3%ADn+Norte%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:824128",
+        "url": "https://www.bing.com/search?q=%22San+Mart%C3%ADn+de+las+Escobas%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:820045",
+        "url": "https://www.bing.com/search?q=%22San+Vicente%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:822735",
+        "url": "https://www.bing.com/search?q=%22Sancti+Spiritu%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:822098",
+        "url": "https://www.bing.com/search?q=%22Sanford%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:823239",
+        "url": "https://www.bing.com/search?q=%22Santa+Clara+de+Buena+Vista%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:822357",
+        "url": "https://www.bing.com/search?q=%22Santa+Clara+de+Saguier%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:823337",
+        "url": "https://www.bing.com/search?q=%22Santa+Margarita%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:823246",
+        "url": "https://www.bing.com/search?q=%22Santa+Mar%C3%ADa+Centro%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:823253",
+        "url": "https://www.bing.com/search?q=%22Santa+Mar%C3%ADa+Norte%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:822567",
+        "url": "https://www.bing.com/search?q=%22Santa+Rosa+de+Calchines%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:823260",
+        "url": "https://www.bing.com/search?q=%22Santo+Domingo%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "territorio:823652",
+        "url": "https://www.bing.com/search?q=%22Santurce%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      }
+    ],
+    "duracion_segundos": 71.93,
+    "cobertura_completa": false
+  },
+  "runs": [
+    41108048884,
+    41112640791
+  ],
+  "solapamiento_entre_lotes": 0,
+  "validadas_nuevas": 0,
+  "incorporadas_nuevas": 0,
+  "pendientes": 114,
+  "resumen_lote_final": {
+    "resumen": {
+      "fecha": "2026-10-30T19:08:07.563117+00:00",
+      "github_run_id": "41112640791",
+      "descubiertas_automaticamente": 0,
+      "hallazgos_nuevos": 0,
+      "candidatos_acumulados": 115,
+      "hallazgos_acumulados": 235,
+      "consultadas": 14,
+      "validadas": 0,
+      "validadas_acumuladas": 1,
+      "incorporadas": 0,
+      "incorporadas_acumuladas": 1,
+      "pendientes": 114,
+      "errores_busqueda": [
+        {
+          "objetivo": "territorio:822525",
+          "url": "https://www.bing.com/search?q=%22Sargento+Cabral%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        }
+      ],
+      "duracion_segundos": 14.74,
+      "cobertura_completa": false
+    },
+    "incorporadas": []
+  }
+}

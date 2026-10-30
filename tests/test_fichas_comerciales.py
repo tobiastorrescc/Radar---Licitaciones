@@ -126,3 +126,30 @@ class MotivoActualTests(unittest.TestCase):
         e=pagos.extraer('Forma de pago: a 30 días.','https://o.gob.ar/a.pdf','a')+pagos.extraer('Forma de pago: a 60 días.','https://o.gob.ar/b.pdf','b')
         r=o.normalizar({'titulo':'Licitación Pública 1/2026','pago_evidencias':e,'pago_motivo_pendiente':'REQUIERE_OCR_O_LECTURA'})
         self.assertEqual(r['pago']['motivo'],'CONDICIONES_DIFERENTES_REQUIEREN_REVISION')
+
+class SituacionNoCondicionalTests(unittest.TestCase):
+    def test_suspension_hipotetica_no_cierra_convocatoria(self):
+        import extractores
+        self.assertIsNone(extractores.situacion('El contrato podrá ser suspendido si se incumplen condiciones.'))
+        self.assertEqual(extractores.situacion('Estado: Suspendida'),'SUSPENDIDA')
+
+class AlternativasTests(unittest.TestCase):
+    def test_alternativa_no_sustituye_cantidad_principal_solicitada(self):
+        d=fichas.extraer('Adquisición de 14 IPs públicas en lugar de las 6 solicitadas (Presentar como alternativa).','https://o.gob.ar/a.pdf','a')
+        self.assertEqual(d['productos']['valor'][0]['cantidad'],6)
+        self.assertEqual(d['productos_alternativos']['valor'][0]['cantidad'],14)
+
+class DocumentoActualizadoTests(unittest.TestCase):
+    def test_cantidad_anterior_no_se_presenta_verificada_si_cambio_el_pliego(self):
+        import incremental as inc
+        url='https://o.gob.ar/a.pdf'
+        anterior={'documentos_versiones':{url:'a'},'detalle_documental':{'productos':{'valor':[{'cantidad':2}],'estado':'VERIFICADO','evidencia':{'url':url,'sha256':'a'}}}}
+        nuevo={'auditoria_documentos':[{'url':url,'sha256':'b','estado':'DOCUMENTO_ACCESIBLE'}]}
+        r=inc.consolidar(anterior,nuevo);p=r['detalle_documental']['productos']
+        self.assertEqual(p['estado'],'PENDIENTE');self.assertIsNone(p['valor']);self.assertEqual(p['valor_anterior'][0]['cantidad'],2)
+        self.assertEqual(anterior['detalle_documental']['productos']['estado'],'VERIFICADO')
+
+class FechasEnConflictoTests(unittest.TestCase):
+    def test_renormalizar_no_restaurara_una_fecha_que_se_declaro_contradictoria(self):
+        r=o.normalizar({'titulo':'Licitación Pública 8/2026 Apertura: 05/11/2026','fechas_apertura_contradictorias':[{'fecha':'2026-11-05'},{'fecha':'2026-11-26'}]},'2026-10-30T16:00:00-03:00')
+        self.assertIsNone(r['fecha_apertura']);self.assertEqual(r['vigencia'],'DESCONOCIDA')

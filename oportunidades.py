@@ -147,6 +147,12 @@ def normalizar(r,ahora=None):
     r['motivo_vigencia']='SIN_PROCEDIMIENTO_VERIFICADO' if not es_real else ('SITUACION_CERRADA' if cerrada else ('APERTURA_FUTURA' if r['vigencia']=='ABIERTA' else ('APERTURA_VENCIDA' if r['vigencia']=='VENCIDA' else 'FECHA_U_HORA_INSUFICIENTE')))
     if limite_presentacion and es_real and not cerrada:r['motivo_vigencia']='LIMITE_PRESENTACION_'+r['vigencia']
     # Con día de apertura igual a hoy sin hora verificada no se asegura que siga abierta.
+    if r.get('fechas_apertura_contradictorias'):
+        r['fecha_apertura']=None;r['hora_apertura']=None;r['fecha_hora_apertura']=None
+        r['fecha_referencia_vencimiento']=r.get('fecha_limite_presentacion')
+        r['tipo_fecha_vencimiento']='LIMITE_PRESENTACION' if r.get('fecha_limite_presentacion') else 'DESCONOCIDA'
+        r['vigencia']='VENCIDA' if cerrada or (r.get('fecha_limite_presentacion') and r['fecha_limite_presentacion']<hoy.isoformat()) else 'DESCONOCIDA'
+        r['motivo_vigencia']='FECHAS_DE_APERTURA_CONTRADICTORIAS_EN_DOCUMENTO_OFICIAL'
     r['antiguedad_publicacion']='HISTORICA' if (r.get('fecha_publicacion') and r['fecha_publicacion']<hoy.isoformat()) or r['vigencia']=='VENCIDA' else 'DESCONOCIDA'
     r['estimacion_comercial']=None
     r['motivo_sin_estimacion']='No hay costos propios, cantidades y precio de venta comprobables para estimar margen'

@@ -4,8 +4,20 @@ from pathlib import Path
 import re
 import pagos
 
-CAMPOS=('objeto','productos','presupuesto','fecha_publicacion','fecha_limite_presentacion','hora_limite_presentacion','fecha_apertura','hora_apertura','condiciones_pago','plazo_entrega','lugar_entrega','modalidad_presentacion','garantias','requisitos','limite_nota_contrasena','moneda_literal')
+CAMPOS=('objeto','productos','productos_alternativos','presupuesto','fecha_publicacion','fecha_limite_presentacion','hora_limite_presentacion','fecha_apertura','hora_apertura','condiciones_pago','plazo_entrega','lugar_entrega','modalidad_presentacion','garantias','requisitos','limite_nota_contrasena','moneda_literal')
 
+
+
+def separar_alternativas(productos):
+    principales=[];alternativas=[]
+    for p in productos:
+        texto=p.get('producto') or ''
+        if not re.search(r'alternativa|en lugar de',texto,re.I):principales.append(p);continue
+        alternativas.append({**p,'tipo_requerimiento':'ALTERNATIVA_PERMITIDA'})
+        original=re.search(r'en lugar de (?:las |los )?(\d+) solicitad',texto,re.I)
+        if original:
+            principales.append({**p,'producto':re.split(r'en lugar de',texto,flags=re.I)[0].strip(),'cantidad':int(original[1]),'tipo_requerimiento':'PRINCIPAL_EXPLICITO_EN_CLAUSULA_ALTERNATIVA'})
+    return principales,alternativas
 
 def extraer(texto,url,digest,metodo='TEXTO'):
     salida={}
@@ -28,7 +40,9 @@ def extraer(texto,url,digest,metodo='TEXTO'):
             palabra=(m['palabra'] or '').lower()
             if palabra and {'un':1,'una':1,'dos':2,'tres':3}[palabra]!=n:continue
             productos.append({'producto':m['producto'].strip(' “”.'), 'cantidad':n,'unidad':None,'pagina':pagina,'cita':m[0]})
-    if productos:guardar('productos',productos,productos[0]['pagina'],'; '.join(p['cita'] for p in productos))
+    principales,alternativas=separar_alternativas(productos)
+    if principales:guardar('productos',principales,principales[0]['pagina'],'; '.join(p['cita'] for p in principales))
+    if alternativas:guardar('productos_alternativos',alternativas,alternativas[0]['pagina'],'; '.join(p['cita'] for p in alternativas))
     archivo=Path(__file__).parent/'inventario/evidencias_documentales.json'
     for e in json.loads(archivo.read_text()) if archivo.exists() else []:
         if e['sha256']!=digest:continue
@@ -47,6 +61,11 @@ def construir(r):
             if v['evidencia']['metodo']=='ENCABEZADO_DOCUMENTAL_GUARDADO_NORMALIZADO':v['evidencia']['pagina']=None
         detalle={**anotado,**detalle}
     campos={}
+    if detalle.get('productos'):
+        principal,alternativo=separar_alternativas(detalle['productos']['valor'])
+        if alternativo:
+            detalle['productos_alternativos']={**detalle['productos'],'valor':alternativo}
+            detalle['productos']={**detalle['productos'],'valor':principal,'estado':'VERIFICADO' if principal else 'PENDIENTE'}
     for campo in CAMPOS:
         if campo in detalle:campos[campo]=detalle[campo];continue
         valor=r.get(campo)

@@ -1,0 +1,440 @@
+{
+  "run_revision": 41110430956,
+  "procedimientos_recuperados_rosario": 67,
+  "ausentes_del_estado_diario": 43,
+  "ya_en_auditoria_anterior": 34,
+  "sin_observacion_en_ninguna_de_las_dos_bases": 9,
+  "publicacion_nueva_confirmada": 0,
+  "casos": [
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "50911/2026",
+      "objeto": "Compra Agil 50911/2026 Publicada para Apertura CAG 05-091-3196-2026 MEDICAMENTOS SIN VISADO -HRSP- Apertura: 12/11/2026 09:15",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-12",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38672",
+      "id_origen": "38672"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "50901/2026",
+      "objeto": "Compra Agil 50901/2026 Publicada para Apertura CAG 05-090-3195-2026 MEDICAMENTOS CON VISADO -HRSP- Apertura: 12/11/2026 09:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-12",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38671",
+      "id_origen": "38671"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "50891/2026",
+      "objeto": "Compra Agil 50891/2026 Publicada para Apertura CAG 05-089-3194-2026 DROGAS PURAS Y ALERGENOS -HRSP- Apertura: 02/11/2026 09:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-02",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38615",
+      "id_origen": "38615"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "40641/2026",
+      "objeto": "Compra Agil 40641/2026 Publicada para Apertura Adquisición de Bolsas para el HOSPITAL I CARRASCO. Apertura: 10/11/2026 11:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-10",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38684",
+      "id_origen": "38684"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "40631/2026",
+      "objeto": "Compra Agil 40631/2026 Publicada para Apertura ADQUISICIÓN DE EXTINTORES PARA EL HOSPITAL I CARRASCO. Apertura: 09/11/2026 11:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-09",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38659",
+      "id_origen": "38659"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "40621/2026",
+      "objeto": "Compra Agil 40621/2026 Publicada para Apertura Compra Ágil - Servicio de Mantenimiento de ESPACIOS VERDES - HOSPITAL I. CARRASCO Apertura: 06/11/2026 12:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-06",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38660",
+      "id_origen": "38660"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "40611/2026",
+      "objeto": "Compra Agil 40611/2026 Publicada para Apertura ADQUISICION DE SABANAS Y FUNDAS PARA EL HOSPITAL I CARRASCO. Apertura: 06/11/2026 11:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-06",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38642",
+      "id_origen": "38642"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "40601/2026",
+      "objeto": "Compra Agil 40601/2026 Publicada para Apertura ADQUISICIÓN DE MADERAS PARA EL HOSPITAL I CARRASCO. Apertura: 04/11/2026 11:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-04",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38637",
+      "id_origen": "38637"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "40591/2026",
+      "objeto": "Compra Agil 40591/2026 Publicada para Apertura ADQUISICIÓN DE CARTUCHOS Y TÓNERS . HOSPITAL I CARRASCO Apertura: 03/11/2026 11:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-03",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38638",
+      "id_origen": "38638"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "36484/2026",
+      "objeto": "Compra Agil 36484/2026 Publicada para Apertura Servicio de provisión, instalación, operación y desmontaje de instalación eléctrica transitoria para el Stand Argentino del 42º Encuentro y Fiesta Nacional de Colectividades 2026 organizado por la Dirección General de Producción Estratégica Apertura: 02/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-02",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38669",
+      "id_origen": "38669"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "31436/2026",
+      "objeto": "Compra Agil 31436/2026 Publicada para Apertura Provisión de bidones de agua potable y dispensers de agua frío-calor para la Secretaría de Cultura y Educación y el Anexo Calle Maipú Apertura: 03/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-03",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38680",
+      "id_origen": "38680"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "24715/2026",
+      "objeto": "Compra Agil 24715/2026 Publicada para Apertura ARTROSCOPIA DE RODILLA Apertura: 04/11/2026 11:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-04",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38685",
+      "id_origen": "38685"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "24705/2026",
+      "objeto": "Compra Agil 24705/2026 Publicada para Apertura SISTEMA PARA RECONSTRUCCION MULTIPLE DE PARED TORAXICA Hospital de Emergencias Dr. C.Alvarez Apertura: 05/11/2026 11:30",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-05",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38682",
+      "id_origen": "38682"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "24695/2026",
+      "objeto": "Compra Agil 24695/2026 Publicada para Apertura BIOMEDICOS CATETERES , SONDAS Y EQUIPOS DE USO GENERAL Hospital de Emergencias Dr. C.Alvarez Apertura: 03/11/2026 11:30",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-03",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38677",
+      "id_origen": "38677"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "24685/2026",
+      "objeto": "Compra Agil 24685/2026 Publicada para Apertura MATERIALES DE FERRETERIA PARA TAREAS DE MANTENIMIENTO VARIAS Apertura: 04/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-04",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38679",
+      "id_origen": "38679"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "24675/2026",
+      "objeto": "Compra Agil 24675/2026 Publicada para Apertura BIOMEDICOS DE USO GENERAL Hospital de Emergencias Dr. C.Alvarez Apertura: 05/11/2026 11:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-05",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38668",
+      "id_origen": "38668"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "24665/2026",
+      "objeto": "Compra Agil 24665/2026 Publicada para Apertura DROGAS CARDIOLOGICAS Y CARDIOVASCULARES NORMATIZADAS H.E.C.A Apertura: 04/11/2026 10:30",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-04",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38666",
+      "id_origen": "38666"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "24655/2026",
+      "objeto": "Compra Agil 24655/2026 Publicada para Apertura INSUMOS PARA IMPRESORAS Apertura: 03/11/2026 10:30",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-03",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38665",
+      "id_origen": "38665"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "24645/2026",
+      "objeto": "Compra Agil 24645/2026 Publicada para Apertura INSUMOS PARA ODONTOLOGÍA Y CIRUGÍA MAXILOFACIAL H.E.C.A Apertura: 02/11/2026 12:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-02",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38664",
+      "id_origen": "38664"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "24635/2026",
+      "objeto": "Compra Agil 24635/2026 Publicada para Apertura ARTROPLASTIAS DE CADERA NO CEMENTADA Y CANULAS Apertura: 02/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-02",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38656",
+      "id_origen": "38656"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "24625/2026",
+      "objeto": "Compra Agil 24625/2026 Publicada para Apertura BIOMEDICOS DE USO NORMATIZADO Hospital de Emergencias Dr. C.Alvarez Apertura: 03/11/2026 11:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-03",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38655",
+      "id_origen": "38655"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "24615/2026",
+      "objeto": "Compra Agil 24615/2026 Publicada para Apertura BIOMEDICOS CATETERES, SONDAS Y EQUIPOS DE USO NORMATIZADO Hospital de Emergencias Dr. C.Alvarez Apertura: 02/11/2026 11:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-02",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38653",
+      "id_origen": "38653"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "24605/2026",
+      "objeto": "Compra Agil 24605/2026 Publicada para Apertura BIOMEDICOS BLOCK QUIRURGICO Hospital de Emergencias Dr. C.Alvarez Apertura: 04/11/2026 11:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-04",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38662",
+      "id_origen": "38662"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "24595/2026",
+      "objeto": "Compra Agil 24595/2026 Publicada para Apertura BIOMEDICOS ASOCIADOS A SERVICIOS TERCERIZADOS Apertura: 02/11/2026 10:30",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-02",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38636",
+      "id_origen": "38636"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "11104/2026",
+      "objeto": "Compra Agil 11104/2026 Publicada para Apertura Compra de carpinterias de aluminio- Secretaría de Salud Publica Apertura: 04/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-04",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38683",
+      "id_origen": "38683"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "11091/2026",
+      "objeto": "Compra Agil 11091/2026 Publicada para Apertura Contratación de modulos de biopsia renal- Secretaría de Salud Pública Apertura: 02/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-02",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38626",
+      "id_origen": "38626"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "3210/2026",
+      "objeto": "Compra Agil 3210/2026 Publicada para Apertura BIOMÉDICOS PARA CIRUGÍA CARDIOVASCULAR Y OTRAS ESPECIALIDADES.- \"Hospital Vilela\".- Apertura: 03/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-03",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38686",
+      "id_origen": "38686"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "48/2026",
+      "objeto": "Compra Agil 48/2026 Publicada para Apertura Adquisición de Repuestos para vehículos de la D. G. de Transito - Sec. de Control y Convivencia Apertura: 03/11/2026 11:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-03",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38640",
+      "id_origen": "38640"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "47/2026",
+      "objeto": "Compra Agil 47/2026 Publicada para Apertura Adquisición de cubiertas para autos y motos de la Dirección General de Transito - Secretaría de Control y Convivencia Apertura: 03/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-03",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38632",
+      "id_origen": "38632"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "46/2026",
+      "objeto": "Compra Agil 46/2026 Publicada para Apertura Adquisición de uniformes de Verano para la Dir. Gral de Control Urbano Apertura: 06/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-06",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38618",
+      "id_origen": "38618"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "44/2026",
+      "objeto": "Compra Agil 44/2026 Publicada para Apertura Adquisición de fardos de Heno de Alfalfa para la D. G. de Control Urbano - Sec. de Control y Convivencia Apertura: 05/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-05",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38658",
+      "id_origen": "38658"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "29/2026",
+      "objeto": "Compra Agil 29/2026 Publicada para Apertura Compra de Equipos e Insumos de Informática - Ente Turístico Rosario Apertura: 06/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-06",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38631",
+      "id_origen": "38631"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "28/2026",
+      "objeto": "Compra Agil 28/2026 Publicada para Apertura Adquisición de resmas de papel - Servicio Público de la Vivienda y el Hábitat Apertura: 05/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-05",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38681",
+      "id_origen": "38681"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "27/2026",
+      "objeto": "Compra Agil 27/2026 Publicada para Apertura Tirantes de pino - Programas Locales de Hábitat y Vivienda - Mejoramiento barrial - Servicio Público de la Vivienda y el Hábitat Apertura: 02/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-02",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38568",
+      "id_origen": "38568"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "24/2026",
+      "objeto": "Compra Agil 24/2026 Publicada para Apertura Compra Agil Nº24-2026 Calzado de Seguridad Apertura: 03/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-03",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38645",
+      "id_origen": "38645"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "19/2026",
+      "objeto": "Compra Agil 19/2026 Publicada para Apertura Adquisición de fibra óptica y materiales - D. G. de Informática y TIC - Agencia de Modernización Rosario Digital - Jefatura de Gabinete Apertura: 06/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-06",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38643",
+      "id_origen": "38643"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "13/2026",
+      "objeto": "Compra Agil 13/2026 Publicada para Apertura Provisión de viandas para evento \"Encuentro y Fiesta Nacional de Colectividades 2026\" para la D. G. de Gestión de Riesgos y Protección Civil Apertura: 03/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-03",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38654",
+      "id_origen": "38654"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "12/2026",
+      "objeto": "Compra Agil 12/2026 Publicada para Apertura Adquisición de neumáticos para la Dirección General de Mantenimiento Urbano y Respuesta Cercana - Secretaría de Ambiente y Espacio Público Apertura: 03/11/2026 11:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-03",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38649",
+      "id_origen": "38649"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "11/2026",
+      "objeto": "Compra Agil 11/2026 Publicada para Apertura Provisión de elementos de ferretería para la Secretaría de Ambiente y Espacio Público - Dirección Gral de Señalización Apertura: 02/11/2026 09:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-02",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38648",
+      "id_origen": "38648"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "11/2026",
+      "objeto": "Compra Agil 11/2026 Publicada para Apertura Adquisición de 2 mangueras termoplásticas de alta presión para equipo desobstructor para la Dirección Gral de Mantenimiento Urbano y Respuesta Cercana - Secretaría de Ambiente y Espacio Público Apertura: 03/11/2026 10:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-03",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38641",
+      "id_origen": "38641"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "10/2026",
+      "objeto": "Compra Agil 10/2026 Publicada para Apertura Compras de sillas tandem y sillas de escritorio ara la D. de Discapacidad Apertura: 04/11/2026 09:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-04",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38661",
+      "id_origen": "38661"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "2/2026",
+      "objeto": "Compra Agil 2/2026 Publicada para Apertura Reparación Frigorías en Equipos del Sistema de Climatización del CMD Distrito Noroeste - Cercanía y Gestión Ciudadana Apertura: 05/11/2026 12:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-05",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38633",
+      "id_origen": "38633"
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "tipo_procedimiento": "compra agil",
+      "numero_procedimiento": "2/2026",
+      "objeto": "Compra Agil 2/2026 Publicada para Apertura Provisión de levas de caucho para el Centro Ambiental de Tratamiento - Secretaría de Ambiente y Espacio Público - Dir Gral de Gestión Integral de Residuos Apertura: 03/11/2026 09:00",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-03",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38629",
+      "id_origen": "38629"
+    }
+  ]
+}

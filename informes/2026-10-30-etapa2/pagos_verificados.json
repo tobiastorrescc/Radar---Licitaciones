@@ -1,0 +1,1998 @@
+[
+  {
+    "organismo": "Municipalidad de Chajarí",
+    "localidad": "Chajarí",
+    "provincia": "Entre Ríos",
+    "numero_procedimiento": "19/2026",
+    "tipo_procedimiento": "licitacion publica",
+    "campos": {
+      "objeto": {
+        "valor": "Provisión de repuestos para el tren de rodaje de las retroexcavadoras New Holland E215C EVO y Komatsu PC200.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 1,
+          "cita": "Objeto del decreto y especificaciones del mismo PDF",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "productos": {
+        "valor": [
+          {
+            "equipo": "NEW HOLLAND EVO215C",
+            "renglon": 1,
+            "producto": "Cadena",
+            "cantidad": 2,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "NEW HOLLAND EVO215C",
+            "renglon": 2,
+            "producto": "Rueda guía completa",
+            "cantidad": 2,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "NEW HOLLAND EVO215C",
+            "renglon": 3,
+            "producto": "Rueda dentada / rueda 21Z",
+            "cantidad": 2,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "NEW HOLLAND EVO215C",
+            "renglon": 4,
+            "producto": "Rodillo o rolo inferior",
+            "cantidad": 16,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "NEW HOLLAND EVO215C",
+            "renglon": 5,
+            "producto": "Rodillo o rolo superior",
+            "cantidad": 4,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "NEW HOLLAND EVO215C",
+            "renglon": 6,
+            "producto": "Tornillos para zapatas",
+            "cantidad": 400,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "NEW HOLLAND EVO215C",
+            "renglon": 7,
+            "producto": "Tuercas para zapatas",
+            "cantidad": 400,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "KOMATSU PC 200",
+            "renglon": 1,
+            "producto": "Rueda guía",
+            "cantidad": 2,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "KOMATSU PC 200",
+            "renglon": 2,
+            "producto": "Rodillo inferior",
+            "cantidad": 18,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "KOMATSU PC 200",
+            "renglon": 3,
+            "producto": "Rodillo superior",
+            "cantidad": 4,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "KOMATSU PC 200",
+            "renglon": 4,
+            "producto": "Rueda dentada",
+            "cantidad": 2,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "KOMATSU PC 200",
+            "renglon": 5,
+            "producto": "Bulones con tuercas",
+            "cantidad": 400,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "KOMATSU PC 200",
+            "renglon": 6,
+            "producto": "Cadena 51 eslabones",
+            "cantidad": 2,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          }
+        ],
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 5,
+          "cita": "ANEXO I — PLANILLA DE COTIZACION DE PRECIOS; tabla DETALLES / CANT.",
+          "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+        }
+      },
+      "productos_alternativos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "presupuesto": {
+        "valor": {
+          "importe": "59500000.0",
+          "moneda": null
+        },
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "consulta_url": "https://licitaciones.chajari.gob.ar/licitaciones/para_apertura/0",
+          "metodo": "POST",
+          "texto": "presupuesto_oficial: 59500000.0",
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710"
+        }
+      },
+      "fecha_publicacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_limite_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "hora_limite_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_apertura": {
+        "valor": "2026-11-19",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "texto": "2026-11-19 10:00"
+        }
+      },
+      "hora_apertura": {
+        "valor": "10:00",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "texto": "2026-11-19 10:00"
+        }
+      },
+      "condiciones_pago": {
+        "valor": "Pago contado contra entrega",
+        "estado": "VERIFICADO",
+        "evidencia": [
+          {
+            "categoria": "CONTADO",
+            "cita": "PAGO: El oferente deberá cotizar de acuerdo a la siguiente altemativa: a.- CONTADO contra entrega del material El pago se efectuara contra entrega del producto.-",
+            "contado_mencionado": true,
+            "contra_entrega_mencionado": true,
+            "direccion": "NO_ESPECIFICADA",
+            "etiqueta": "Pago contado contra entrega",
+            "hitos_inicio": [
+              "ENTREGA"
+            ],
+            "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+            "pagina": 4,
+            "plazos_dias": [],
+            "prioritario": true,
+            "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+            "unidades_dias": [],
+            "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+            "version_analizador": 12,
+            "pagos_parciales": false,
+            "anticipo_publicado": false,
+            "facturacion_parcial": false,
+            "acreditacion_inmediata_comprobada": false,
+            "reclasificada_desde_version": 8
+          },
+          {
+            "categoria": "CONTADO",
+            "cita": "FORMA DE PAGO Contado contra entrega. EVALUACIÓN Y ADJUDICACIÓN Las ofertas serán evaluadas por item. Dr, Antoflo Marceio Borghesan Lic. María Elisa Moix PRÍSIDENTE MUNICIPAL ( Secretaria de Gob. y Hacienda Joan 0 GUA",
+            "contado_mencionado": true,
+            "contra_entrega_mencionado": true,
+            "direccion": "NO_ESPECIFICADA",
+            "etiqueta": "Pago contado contra entrega",
+            "hitos_inicio": [
+              "ENTREGA"
+            ],
+            "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+            "pagina": 6,
+            "plazos_dias": [],
+            "prioritario": true,
+            "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+            "unidades_dias": [],
+            "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+            "version_analizador": 12,
+            "pagos_parciales": false,
+            "anticipo_publicado": false,
+            "facturacion_parcial": false,
+            "acreditacion_inmediata_comprobada": false,
+            "reclasificada_desde_version": 8
+          },
+          {
+            "categoria": "CONTRA_ENTREGA",
+            "cita": "El pago se efectuara contra entrega del producto.- IMPUESTOS Y TASAS: corren por cuenta del proveedor.-",
+            "contado_mencionado": false,
+            "contra_entrega_mencionado": true,
+            "direccion": "NO_ESPECIFICADA",
+            "etiqueta": "Pago contra entrega",
+            "hitos_inicio": [
+              "ENTREGA"
+            ],
+            "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+            "pagina": 4,
+            "plazos_dias": [],
+            "prioritario": true,
+            "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+            "unidades_dias": [],
+            "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+            "version_analizador": 12,
+            "pagos_parciales": false,
+            "anticipo_publicado": false,
+            "facturacion_parcial": false,
+            "acreditacion_inmediata_comprobada": false,
+            "reclasificada_desde_version": 8
+          }
+        ]
+      },
+      "plazo_entrega": {
+        "valor": "El oferente debe indicar el plazo de entrega; esa cláusula no lo cuantifica.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 5,
+          "cita": "Los oferentes deberán presentar sus propuestas indicando, para cada ítem cotizado: c) Plazo de entrega.",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "lugar_entrega": {
+        "valor": "Corralón municipal de la Municipalidad de Chajarí.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 6,
+          "cita": "CONDICIONES DE ENTREGA. LUGAR DE ENTREGA: En el corralón municipal de la Municipalidad de Chajarí.",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "modalidad_presentacion": {
+        "valor": [
+          "ONLINE",
+          "PRESENCIAL_NOTA_CONTRASENA_EN_SOBRE"
+        ],
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 2,
+          "cita": "Las propuestas se presentarán mediante la plataforma digital. La nota en sobre cerrado con la contraseña se recibirá hasta 30 minutos antes del horario de apertura.",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "garantias": {
+        "valor": "Garantía de oferta: 1% del presupuesto oficial, $595.000,00; modalidades de constitución en artículo 9.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 4,
+          "cita": "Artículo 15: DEPÓSITO DE GARANTÍA ... 1% (UNO POR CIENTO) del Presupuesto Oficial ... ($595.000,00).",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "requisitos": {
+        "valor": "Repuestos nuevos, sin uso y originales para ambas máquinas. Recibo de compra del pliego, garantía de oferta, presupuesto firmado y sellado; personería si corresponde y constancia de CUIT.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 2,
+          "cita": "Como requisito mínimo e imprescindible se exige: 1- Recibo de compra del pliego. 2- Constancia de constitución de la garantía de oferta. 3- Presupuesto firmado y sellado. Documentación complementaria: personería y CUIT. Repuestos nuevos, sin uso y originales: página 6.",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "limite_nota_contrasena": {
+        "valor": "30 minutos antes de la apertura; para 19/11/2026 10:00 corresponde 09:30. No se infiere otro límite de carga digital.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 2,
+          "cita": "Esta nota, en sobre cerrado, se recibirá hasta 30 minutos antes del horario de apertura.",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "moneda_literal": {
+        "valor": "PESOS; el documento no expresa código ISO en la cláusula presupuestaria",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 1,
+          "cita": "PESOS CINCUENTA Y NUEVE MILLONES QUINIENTOS MIL CON CERO CENTAVOS",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      }
+    },
+    "publicacion_oficial": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+    "documentos": [
+      {
+        "consulta_post": {
+          "json": {
+            "atta_id": "6397",
+            "file_name": "pliego_y_decreto",
+            "licitacion_id": 710
+          },
+          "url": "https://licitaciones.chajari.gob.ar/return_file"
+        },
+        "titulo": "Pliego y decreto — descarga pública desde el procedimiento",
+        "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710"
+      }
+    ],
+    "primera_deteccion": "2026-10-30T08:33:56.099440-03:00",
+    "ultima_observacion": "2026-10-30T08:33:56.099440-03:00",
+    "pago": {
+      "estado": "VERIFICADO",
+      "clasificacion": "CONTADO",
+      "etiqueta": "Pago contado contra entrega",
+      "plazos_dias": [],
+      "hitos_inicio": [
+        "ENTREGA"
+      ],
+      "unidades_dias": [],
+      "direccion": "NO_ESPECIFICADA",
+      "documento_respaldo": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+      "documentos_respaldo": [
+        "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710"
+      ],
+      "evidencias": [
+        {
+          "categoria": "CONTADO",
+          "cita": "PAGO: El oferente deberá cotizar de acuerdo a la siguiente altemativa: a.- CONTADO contra entrega del material El pago se efectuara contra entrega del producto.-",
+          "contado_mencionado": true,
+          "contra_entrega_mencionado": true,
+          "direccion": "NO_ESPECIFICADA",
+          "etiqueta": "Pago contado contra entrega",
+          "hitos_inicio": [
+            "ENTREGA"
+          ],
+          "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+          "pagina": 4,
+          "plazos_dias": [],
+          "prioritario": true,
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "unidades_dias": [],
+          "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "version_analizador": 12,
+          "pagos_parciales": false,
+          "anticipo_publicado": false,
+          "facturacion_parcial": false,
+          "acreditacion_inmediata_comprobada": false,
+          "reclasificada_desde_version": 8
+        },
+        {
+          "categoria": "CONTADO",
+          "cita": "FORMA DE PAGO Contado contra entrega. EVALUACIÓN Y ADJUDICACIÓN Las ofertas serán evaluadas por item. Dr, Antoflo Marceio Borghesan Lic. María Elisa Moix PRÍSIDENTE MUNICIPAL ( Secretaria de Gob. y Hacienda Joan 0 GUA",
+          "contado_mencionado": true,
+          "contra_entrega_mencionado": true,
+          "direccion": "NO_ESPECIFICADA",
+          "etiqueta": "Pago contado contra entrega",
+          "hitos_inicio": [
+            "ENTREGA"
+          ],
+          "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+          "pagina": 6,
+          "plazos_dias": [],
+          "prioritario": true,
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "unidades_dias": [],
+          "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "version_analizador": 12,
+          "pagos_parciales": false,
+          "anticipo_publicado": false,
+          "facturacion_parcial": false,
+          "acreditacion_inmediata_comprobada": false,
+          "reclasificada_desde_version": 8
+        },
+        {
+          "categoria": "CONTRA_ENTREGA",
+          "cita": "El pago se efectuara contra entrega del producto.- IMPUESTOS Y TASAS: corren por cuenta del proveedor.-",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": true,
+          "direccion": "NO_ESPECIFICADA",
+          "etiqueta": "Pago contra entrega",
+          "hitos_inicio": [
+            "ENTREGA"
+          ],
+          "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+          "pagina": 4,
+          "plazos_dias": [],
+          "prioritario": true,
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "unidades_dias": [],
+          "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "version_analizador": 12,
+          "pagos_parciales": false,
+          "anticipo_publicado": false,
+          "facturacion_parcial": false,
+          "acreditacion_inmediata_comprobada": false,
+          "reclasificada_desde_version": 8
+        }
+      ],
+      "prioritario": true,
+      "motivo": null
+    },
+    "plazo_nominal_pago": {
+      "dias": [],
+      "unidades": [],
+      "hitos_inicio": [
+        "ENTREGA"
+      ]
+    },
+    "anticipos_y_parciales": {
+      "anticipo_publicado": null,
+      "pagos_parciales": null,
+      "facturacion_parcial": null
+    },
+    "recuperacion_efectiva_capital": {
+      "estado": "PENDIENTE",
+      "dias": null,
+      "motivo": "El plazo contractual no prueba acreditación bancaria ni fecha efectiva de recuperación del capital."
+    }
+  },
+  {
+    "organismo": "Aeropuerto Internacional Rosario",
+    "localidad": "Rosario",
+    "provincia": "Santa Fe",
+    "numero_procedimiento": "LPU-2026-00000002-APPSF-OD-COM-CON-AIR-ROS",
+    "tipo_procedimiento": "licitacion publica",
+    "campos": {
+      "objeto": {
+        "valor": "Servicio de Mantenimiento preventivo y correctivo de pasarelas de embarque del Aeropuerto Internacional Rosario",
+        "estado": "VERIFICADO",
+        "evidencia": null
+      },
+      "productos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "productos_alternativos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "presupuesto": {
+        "valor": {
+          "importe": "127973906.64",
+          "moneda": null
+        },
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "texto": "Presupuesto Oficial: $ 127.973.906,64.",
+          "url": "https://aeropuertorosario.com/licitaciones/lpu-2026-00000002-appsf-od-com-con-air-ros/"
+        }
+      },
+      "fecha_publicacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_limite_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "hora_limite_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_apertura": {
+        "valor": "2026-11-10",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://aeropuertorosario.com/licitaciones/lpu-2026-00000002-appsf-od-com-con-air-ros/",
+          "texto": "10-11-2026 11:00"
+        }
+      },
+      "hora_apertura": {
+        "valor": "11:00",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://aeropuertorosario.com/licitaciones/lpu-2026-00000002-appsf-od-com-con-air-ros/",
+          "texto": "10-11-2026 11:00"
+        }
+      },
+      "condiciones_pago": {
+        "valor": "30 días corridos después de conformidad de recepción",
+        "estado": "VERIFICADO",
+        "evidencia": [
+          {
+            "categoria": "PLAZO_30_DIAS",
+            "cita": "Forma de pago * Moneda Aclaraciones u Observaciones Parcial Pesos Argentinos El pago se efectuará mediante liquidaciones parciales mensuales, por mes vencido, previa conformidad de la recepción del servicio y presentación de la facturación debidamente conformada. El pago se efectuará mediante liquidaciones parciales mensuales, por mes vencido, previa conformidad de la recepción del servicio y presentación de la facturación debidamente conformada. Plazo de Pago Cantidad * Unidad de Tiempo * 30 Días Corridos plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva, la cual será otorgada en el plazo previsto en el punto 6.10.1 del Anexo Unico del Decreto 287/26 del Pliego Único de Bases y Condiciones Generales.",
+            "contado_mencionado": false,
+            "contra_entrega_mencionado": false,
+            "direccion": "NO_ESPECIFICADA",
+            "etiqueta": "30 días corridos después de conformidad de recepción",
+            "hitos_inicio": [
+              "PRESENTACION_FACTURACION",
+              "PRESENTACION_FACTURA",
+              "CONFORMIDAD_RECEPCION"
+            ],
+            "metodo_extraccion": "TEXTO",
+            "pagina": 8,
+            "plazos_dias": [
+              30
+            ],
+            "prioritario": false,
+            "sha256": "da035bb8cbaf1bff03754532cdf5a3fc89a13088e5a73fe4e24b7e813b1a1d24",
+            "unidades_dias": [
+              "corridos"
+            ],
+            "url_documento": "https://aeropuertorosario.com/wp-content/uploads/2026/10/PBCP-LPU-2026-00000002-APPSF-OD-COM-CON-AIR-ROS.pdf",
+            "version_analizador": 12,
+            "pagos_parciales": true,
+            "anticipo_publicado": false,
+            "facturacion_parcial": true,
+            "acreditacion_inmediata_comprobada": false,
+            "reclasificada_desde_version": 8,
+            "citas_complementarias": [
+              "Forma de pago * Moneda Aclaraciones u Observaciones Parcial Pesos Argentinos El pago se efectuará mediante liquidaciones parciales mensuales, por mes vencido, previa conformidad de la recepción del servicio y presentación de la facturación debidamente conformada.",
+              "El pago se efectuará mediante liquidaciones parciales mensuales, por mes vencido, previa conformidad de la recepción del servicio y presentación de la facturación debidamente conformada.",
+              "Plazo de Pago Cantidad * Unidad de Tiempo * 30 Días Corridos",
+              "plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva, la cual será otorgada en el plazo previsto en el punto 6.10.1 del Anexo Unico del Decreto 287/26 del Pliego Único de Bases y Condiciones Generales."
+            ]
+          }
+        ]
+      },
+      "plazo_entrega": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "lugar_entrega": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "modalidad_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "garantias": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "requisitos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "limite_nota_contrasena": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "moneda_literal": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      }
+    },
+    "publicacion_oficial": "https://aeropuertorosario.com/licitaciones/lpu-2026-00000002-appsf-od-com-con-air-ros/",
+    "documentos": [
+      {
+        "titulo": "Anexo-10-00-CGR-HYS-MA-01-Rev-007-Manual-SHyMA.pdf",
+        "url": "https://aeropuertorosario.com/wp-content/uploads/2026/10/Anexo-10-00-CGR-HYS-MA-01-Rev-007-Manual-SHyMA.pdf"
+      },
+      {
+        "titulo": "PBCP-LPU-2026-00000002-APPSF-OD-COM-CON-AIR-ROS.pdf",
+        "url": "https://aeropuertorosario.com/wp-content/uploads/2026/10/PBCP-LPU-2026-00000002-APPSF-OD-COM-CON-AIR-ROS.pdf"
+      },
+      {
+        "titulo": "PET-DOC-2026-00011218-APPSF-ODAeroRos.pdf",
+        "url": "https://aeropuertorosario.com/wp-content/uploads/2026/10/PET-DOC-2026-00011218-APPSF-ODAeroRos.pdf"
+      },
+      {
+        "titulo": "RESCONJ-2026-00000326-APPSF-ODAeroRosMEyD-AIR-ROS.pdf",
+        "url": "https://aeropuertorosario.com/wp-content/uploads/2026/10/RESCONJ-2026-00000326-APPSF-ODAeroRosMEyD-AIR-ROS.pdf"
+      }
+    ],
+    "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
+    "ultima_observacion": "2026-10-30T08:33:56.099440-03:00",
+    "pago": {
+      "estado": "VERIFICADO",
+      "clasificacion": "PLAZO_30_DIAS",
+      "etiqueta": "30 días corridos después de conformidad de recepción",
+      "plazos_dias": [
+        30
+      ],
+      "hitos_inicio": [
+        "PRESENTACION_FACTURACION",
+        "PRESENTACION_FACTURA",
+        "CONFORMIDAD_RECEPCION"
+      ],
+      "unidades_dias": [
+        "corridos"
+      ],
+      "direccion": "NO_ESPECIFICADA",
+      "documento_respaldo": "https://aeropuertorosario.com/wp-content/uploads/2026/10/PBCP-LPU-2026-00000002-APPSF-OD-COM-CON-AIR-ROS.pdf",
+      "documentos_respaldo": [
+        "https://aeropuertorosario.com/wp-content/uploads/2026/10/PBCP-LPU-2026-00000002-APPSF-OD-COM-CON-AIR-ROS.pdf"
+      ],
+      "evidencias": [
+        {
+          "categoria": "PLAZO_30_DIAS",
+          "cita": "Forma de pago * Moneda Aclaraciones u Observaciones Parcial Pesos Argentinos El pago se efectuará mediante liquidaciones parciales mensuales, por mes vencido, previa conformidad de la recepción del servicio y presentación de la facturación debidamente conformada. El pago se efectuará mediante liquidaciones parciales mensuales, por mes vencido, previa conformidad de la recepción del servicio y presentación de la facturación debidamente conformada. Plazo de Pago Cantidad * Unidad de Tiempo * 30 Días Corridos plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva, la cual será otorgada en el plazo previsto en el punto 6.10.1 del Anexo Unico del Decreto 287/26 del Pliego Único de Bases y Condiciones Generales.",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": false,
+          "direccion": "NO_ESPECIFICADA",
+          "etiqueta": "30 días corridos después de conformidad de recepción",
+          "hitos_inicio": [
+            "PRESENTACION_FACTURACION",
+            "PRESENTACION_FACTURA",
+            "CONFORMIDAD_RECEPCION"
+          ],
+          "metodo_extraccion": "TEXTO",
+          "pagina": 8,
+          "plazos_dias": [
+            30
+          ],
+          "prioritario": false,
+          "sha256": "da035bb8cbaf1bff03754532cdf5a3fc89a13088e5a73fe4e24b7e813b1a1d24",
+          "unidades_dias": [
+            "corridos"
+          ],
+          "url_documento": "https://aeropuertorosario.com/wp-content/uploads/2026/10/PBCP-LPU-2026-00000002-APPSF-OD-COM-CON-AIR-ROS.pdf",
+          "version_analizador": 12,
+          "pagos_parciales": true,
+          "anticipo_publicado": false,
+          "facturacion_parcial": true,
+          "acreditacion_inmediata_comprobada": false,
+          "reclasificada_desde_version": 8,
+          "citas_complementarias": [
+            "Forma de pago * Moneda Aclaraciones u Observaciones Parcial Pesos Argentinos El pago se efectuará mediante liquidaciones parciales mensuales, por mes vencido, previa conformidad de la recepción del servicio y presentación de la facturación debidamente conformada.",
+            "El pago se efectuará mediante liquidaciones parciales mensuales, por mes vencido, previa conformidad de la recepción del servicio y presentación de la facturación debidamente conformada.",
+            "Plazo de Pago Cantidad * Unidad de Tiempo * 30 Días Corridos",
+            "plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva, la cual será otorgada en el plazo previsto en el punto 6.10.1 del Anexo Unico del Decreto 287/26 del Pliego Único de Bases y Condiciones Generales."
+          ]
+        }
+      ],
+      "prioritario": false,
+      "motivo": null
+    },
+    "plazo_nominal_pago": {
+      "dias": [
+        30
+      ],
+      "unidades": [
+        "corridos"
+      ],
+      "hitos_inicio": [
+        "PRESENTACION_FACTURACION",
+        "PRESENTACION_FACTURA",
+        "CONFORMIDAD_RECEPCION"
+      ]
+    },
+    "anticipos_y_parciales": {
+      "anticipo_publicado": null,
+      "pagos_parciales": true,
+      "facturacion_parcial": true
+    },
+    "recuperacion_efectiva_capital": {
+      "estado": "PENDIENTE",
+      "dias": null,
+      "motivo": "El plazo contractual no prueba acreditación bancaria ni fecha efectiva de recuperación del capital."
+    }
+  },
+  {
+    "organismo": "Municipalidad de Crespo",
+    "localidad": "Crespo",
+    "provincia": "Entre Ríos",
+    "numero_procedimiento": "6/2026",
+    "tipo_procedimiento": "licitacion publica",
+    "campos": {
+      "objeto": {
+        "valor": "Adquisición de caños de PVC cloacal 500.",
+        "estado": "VERIFICADO",
+        "evidencia": null
+      },
+      "productos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "productos_alternativos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "presupuesto": {
+        "valor": {
+          "importe": "121139752.00",
+          "moneda": null
+        },
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "texto": "presupuesto oficial $121.139.752,00",
+          "url": "https://www.crespo.gob.ar/licitaciones-publicas-2026/"
+        }
+      },
+      "fecha_publicacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_limite_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "hora_limite_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_apertura": {
+        "valor": "2026-11-17",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://www.crespo.gob.ar/licitaciones-publicas-2026/",
+          "texto": "17/11/2026 – 10:00 horas"
+        }
+      },
+      "hora_apertura": {
+        "valor": "10:00",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://www.crespo.gob.ar/licitaciones-publicas-2026/",
+          "texto": "17/11/2026 – 10:00 horas"
+        }
+      },
+      "condiciones_pago": {
+        "valor": "20 días habiles desde presentación de factura",
+        "estado": "VERIFICADO",
+        "evidencia": [
+          {
+            "categoria": "OTRO_PLAZO",
+            "cita": "FORMA DE PAGO. - La Municipalidad de Crespo abonará en forma total o mediante entregas parciales el importe correspondiente a la presente, dentro de los veinte (20) días hábiles posteriores a la fecha de presentación de las facturas respectivas, en la que deberá constar el cumplimiento total o parcial de los materiales entregados. -",
+            "contado_mencionado": false,
+            "contra_entrega_mencionado": false,
+            "direccion": "NO_ESPECIFICADA",
+            "etiqueta": "20 días habiles desde presentación de factura",
+            "hitos_inicio": [
+              "PRESENTACION_FACTURA"
+            ],
+            "metodo_extraccion": "TEXTO",
+            "pagina": 2,
+            "plazos_dias": [
+              20
+            ],
+            "prioritario": false,
+            "sha256": "1dbca08ae958d924b08c0b6560538214721cf75c704ac8ac263a6edfdd1e67f0",
+            "unidades_dias": [
+              "habiles"
+            ],
+            "url_documento": "https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf",
+            "version_analizador": 12,
+            "pagos_parciales": false,
+            "anticipo_publicado": false,
+            "facturacion_parcial": false,
+            "acreditacion_inmediata_comprobada": false,
+            "reclasificada_desde_version": 8
+          }
+        ]
+      },
+      "plazo_entrega": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "lugar_entrega": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "modalidad_presentacion": {
+        "valor": [
+          "PRESENCIAL"
+        ],
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "texto": "MUNICIPALIDAD DE CRESPO\nCrespo – Entre Ríos – Argentina                                       Sección Suministros. -\n\n              LICITACIÓN PÚBLICA Nº 06/2026.-\n                   Pliego De Condiciones Particulares\n                        y Especificaciones Técnicas\n ARTÍCULO 1º.- OBJETO. -\n La presente licitación tiene por objeto la Adquisición de materiales para el tendido de\n cañería de red colectora cloacal en zona de Ruta Nº 12 y Camino del Medio, con las\n características que se detallan a continuación;\n\n  Ítem       Cant.      U                          Descripción\n\n                              Caños PVC CLOACAL 500, diámetro 500mm, long.\n   1          804       Ml    6mts, espesor 9,8mm, junta segura, liso bajo norma\n                              IRAM.\n *Se anexan especificaciones técnicas. -\n PRESENTAR PROPUESTA ECONOMICA ESCRITA EN SOBRE CERRADO Y\n PROPUESTA ECONOMICA COPIA DIGITAL EN CD o PEN DRIVE (FORMATO\n WORD o EXCEL PLANO - “NO PDF”).-\n ARTICULO 2° PRESUPUESTO OFICIAL. -\n El Presupuesto Oficial se fija en la suma de pesos CIENTO VEINTIUN MILLONES\n CIENTO TREINTA Y NUEVE MIL SETECIENTOS CINCUENTA Y DOS ($\n 121.139.752,00) y el costo del Pliego se fija en la suma de VEINTICINCO MIL PESOS\n ($ 25.000,00).-\n ARTÍCULO 3º.- LUGAR Y FECHA DE APERTURA. -\n El lugar y fecha de apertura de la presente Licitación Pública, queda determinado en\n la Municipalidad de Crespo, Sección Suministros – 25 de Mayo 943 – el día 17 de\n NOVIEMBRE de 2026 a las 10,00 hs.-\n ARTÍCULO 4º.- FORMA DE COTIZACIÓN. -\n Los proponentes deberán cotizar en pesos, consignando el precio unitario y el total\n de la oferta, la que deberá incluir el Impuesto al Valor Agregado.\n ARTÍCULO 5º.- MANTENIMIENTO DE LA OFERTA. -\n Los proponentes se comprometen a mantener las ofertas por el término de veinte (20)\n días hábiles – como mínimo – posteriores al acto de apertura de la Licitación, todo\n plazo menor fijado por los oferentes se entenderá por no escrito.\n ARTÍCULO 6º.- GARANTÍA. -\n Los proponentes deberán presentar una garantía según lo establecido en el Pliego de\n Condiciones Generales.\n ARTICULO 7º.- ADJUDICACIÓN. -\n\fMUNICIPALIDAD DE CRESPO\nCrespo – Entre Ríos – Argentina                                     Sección Suministros. -\n\n La Municipalidad de Crespo adjudicará la presente licitación en forma global a la\n oferta que considere más conveniente a sus intereses y de acuerdo a lo estipulado\n en el Pliego de Condiciones Particulares, Generales y la Ordenanza 53/96 que\n establece el régimen de compras y contrataciones en el ámbito municipal.\n ARTÍCULO 8º.- PLAZO DE ENTREGA. -\n Los materiales objeto de la presente licitación deberán ser entregados dentro de los\n DIEZ (10) días hábiles contados a partir de la fecha de notificación de la adjudicación,\n en el obrador municipal San José sito en calle Buenos Aires y San Luis, libre de gastos\n de flete, descarga o cualquier otro gasto adicional.\n ARTÍCULO 9º.- FORMA DE PAGO. -\n La Municipalidad de Crespo abonará en forma total o mediante entregas parciales el\n importe correspondiente a la presente, dentro de los veinte (20) días hábiles\n posteriores a la fecha de presentación de las facturas respectivas, en la que deberá\n constar el cumplimiento total o parcial de los materiales entregados. -\n ARTÍCULO 11º.- RECONOCIMIENTO DE VARIACIONES DE COSTOS. -\n Para la provisión a que se refiere la presente licitación, no se reconocerán variaciones\n de costos de ninguna naturaleza y por ningún concepto.\n ARTÍCULO 12º.- DOCUMENTACION OBLIGATORIA A PRESENTAR\n Se deberá presentar al momento de la oferta;\n        Certificado fiscal de libre deuda para proveedores del Estado de la\n         Administradora Tributaria de Entre Ríos (ATER),\n        Certificado libre deuda municipal,\n        Detalle de deuda consolidada de ARCA,\n        Nota constituyendo domicilio electrónico,\n\n\n\n                            ____________VI____________\n\f",
+          "url": "https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf"
+        }
+      },
+      "garantias": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "requisitos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "limite_nota_contrasena": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "moneda_literal": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      }
+    },
+    "publicacion_oficial": "https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf",
+    "documentos": [
+      {
+        "titulo": "Ver pliego",
+        "url": "https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf"
+      },
+      {
+        "titulo": "Ver especificaciones técnicas",
+        "url": "https://www.crespo.gob.ar/wp-content/uploads/2026/10/ESPECIFICACIONES-TECNICAS-PARTICULARES-LP-No-06-26-Modif..pdf"
+      }
+    ],
+    "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
+    "ultima_observacion": "2026-10-30T08:33:56.099440-03:00",
+    "pago": {
+      "estado": "VERIFICADO",
+      "clasificacion": "OTRO_PLAZO",
+      "etiqueta": "20 días habiles desde presentación de factura",
+      "plazos_dias": [
+        20
+      ],
+      "hitos_inicio": [
+        "PRESENTACION_FACTURA"
+      ],
+      "unidades_dias": [
+        "habiles"
+      ],
+      "direccion": "NO_ESPECIFICADA",
+      "documento_respaldo": "https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf",
+      "documentos_respaldo": [
+        "https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf"
+      ],
+      "evidencias": [
+        {
+          "categoria": "OTRO_PLAZO",
+          "cita": "FORMA DE PAGO. - La Municipalidad de Crespo abonará en forma total o mediante entregas parciales el importe correspondiente a la presente, dentro de los veinte (20) días hábiles posteriores a la fecha de presentación de las facturas respectivas, en la que deberá constar el cumplimiento total o parcial de los materiales entregados. -",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": false,
+          "direccion": "NO_ESPECIFICADA",
+          "etiqueta": "20 días habiles desde presentación de factura",
+          "hitos_inicio": [
+            "PRESENTACION_FACTURA"
+          ],
+          "metodo_extraccion": "TEXTO",
+          "pagina": 2,
+          "plazos_dias": [
+            20
+          ],
+          "prioritario": false,
+          "sha256": "1dbca08ae958d924b08c0b6560538214721cf75c704ac8ac263a6edfdd1e67f0",
+          "unidades_dias": [
+            "habiles"
+          ],
+          "url_documento": "https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf",
+          "version_analizador": 12,
+          "pagos_parciales": false,
+          "anticipo_publicado": false,
+          "facturacion_parcial": false,
+          "acreditacion_inmediata_comprobada": false,
+          "reclasificada_desde_version": 8
+        }
+      ],
+      "prioritario": false,
+      "motivo": null
+    },
+    "plazo_nominal_pago": {
+      "dias": [
+        20
+      ],
+      "unidades": [
+        "habiles"
+      ],
+      "hitos_inicio": [
+        "PRESENTACION_FACTURA"
+      ]
+    },
+    "anticipos_y_parciales": {
+      "anticipo_publicado": null,
+      "pagos_parciales": null,
+      "facturacion_parcial": null
+    },
+    "recuperacion_efectiva_capital": {
+      "estado": "PENDIENTE",
+      "dias": null,
+      "motivo": "El plazo contractual no prueba acreditación bancaria ni fecha efectiva de recuperación del capital."
+    }
+  },
+  {
+    "organismo": "Aeropuerto Internacional Rosario",
+    "localidad": "Rosario",
+    "provincia": "Santa Fe",
+    "numero_procedimiento": "LPU-2026-00000002-APPSF-OD-OF-LEGALES-AIR-ROS",
+    "tipo_procedimiento": "licitacion publica",
+    "campos": {
+      "objeto": {
+        "valor": "ADQUISICIÓN DE TANDEMS METALICOS PARA EQUIPAMIENTO DE DISTINTOS HALLS DEL AIR",
+        "estado": "VERIFICADO",
+        "evidencia": null
+      },
+      "productos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "productos_alternativos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "presupuesto": {
+        "valor": {
+          "importe": "61806395.30",
+          "moneda": null
+        },
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "texto": "Presupuesto Oficial: $61.806.395,30.",
+          "url": "https://aeropuertorosario.com/licitaciones/lpu-n00000002-appsf-od-of-legales-air/"
+        }
+      },
+      "fecha_publicacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_limite_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "hora_limite_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_apertura": {
+        "valor": "2026-11-02",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://aeropuertorosario.com/licitaciones/lpu-n00000002-appsf-od-of-legales-air/",
+          "texto": "02-11-2026 11:00"
+        }
+      },
+      "hora_apertura": {
+        "valor": "11:00",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://aeropuertorosario.com/licitaciones/lpu-n00000002-appsf-od-of-legales-air/",
+          "texto": "02-11-2026 11:00"
+        }
+      },
+      "condiciones_pago": {
+        "valor": "30 días habiles después de conformidad de recepción",
+        "estado": "VERIFICADO",
+        "evidencia": [
+          {
+            "categoria": "PLAZO_30_DIAS",
+            "cita": "Plazo de pago: Cantidad: TREINTA (30) Unidad de tiempo: DÍAS El plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva de los elementos licitados instalados, la cual será otorgada en el plazo previsto en el del Pliego Único de Bases y Condiciones Generales. La factura deberá ser emitida dentro de los cinco (5) días de obtenida la recepción definitiva. En todos los casos el Aeropuerto Internacional de Rosario, en su carácter de organismo receptor, adoptará las medidas pertinentes a los fines de la correspondiente certificación, en un todo de acuerdo a la Ley Nº 12.510 y su decreto reglamentario, para la recepción de los insumos instalados con destino al Estado Provincial. El adjudicatario al momento de presentar la factura para el cobro correspon-diente deberá dar cumplimiento a lo dispuesto en el Decreto Nº 3.035/14 y sus modificatorios (presentación de la Constancia de Cumplimiento Fiscal – Reso-lución Nº 19/11 de API). Plazo de Pago Cantidad * Unidad de Tiempo * 30 Días Hábiles Administrativos plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva, la cual será otorgada en el plazo previsto en el punto 6.10.1 del Anexo Unico del Decreto 287/26 del Pliego Único de Bases y Condiciones Generales.",
+            "contado_mencionado": false,
+            "contra_entrega_mencionado": false,
+            "direccion": "NO_ESPECIFICADA",
+            "etiqueta": "30 días habiles después de conformidad de recepción",
+            "hitos_inicio": [
+              "CONFORMIDAD_RECEPCION"
+            ],
+            "metodo_extraccion": "TEXTO",
+            "pagina": 9,
+            "plazos_dias": [
+              30
+            ],
+            "prioritario": false,
+            "sha256": "b4b59a0e48458cd13f772b96666d8546f4abc163db209728388b8150cfad61a5",
+            "unidades_dias": [
+              "habiles"
+            ],
+            "url_documento": "https://aeropuertorosario.com/wp-content/uploads/2026/10/LPU-2026-00000002-APPSF-OD-OF-LEGALES-AIR-1.pdf",
+            "version_analizador": 12,
+            "pagos_parciales": false,
+            "anticipo_publicado": false,
+            "facturacion_parcial": false,
+            "acreditacion_inmediata_comprobada": false,
+            "reclasificada_desde_version": 8,
+            "citas_complementarias": [
+              "Plazo de pago: Cantidad: TREINTA (30) Unidad de tiempo: DÍAS El plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva de los elementos licitados instalados, la cual será otorgada en el plazo previsto en el del Pliego Único de Bases y Condiciones Generales. La factura deberá ser emitida dentro de los cinco (5) días de obtenida la recepción definitiva. En todos los casos el Aeropuerto Internacional de Rosario, en su carácter de organismo receptor, adoptará las medidas pertinentes a los fines de la correspondiente certificación, en un todo de acuerdo a la Ley Nº 12.510 y su decreto reglamentario, para la recepción de los insumos instalados con destino al Estado Provincial. El adjudicatario al momento de presentar la factura para el cobro correspon-diente deberá dar cumplimiento a lo dispuesto en el Decreto Nº 3.035/14 y sus modificatorios (presentación de la Constancia de Cumplimiento Fiscal – Reso-lución Nº 19/11 de API).",
+              "Plazo de Pago Cantidad * Unidad de Tiempo * 30 Días Hábiles Administrativos",
+              "plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva, la cual será otorgada en el plazo previsto en el punto 6.10.1 del Anexo Unico del Decreto 287/26 del Pliego Único de Bases y Condiciones Generales."
+            ]
+          }
+        ]
+      },
+      "plazo_entrega": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "lugar_entrega": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "modalidad_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "garantias": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "requisitos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "limite_nota_contrasena": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "moneda_literal": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      }
+    },
+    "publicacion_oficial": "https://aeropuertorosario.com/licitaciones/lpu-n00000002-appsf-od-of-legales-air/",
+    "documentos": [
+      {
+        "titulo": "LPU-2026-00000002-APPSF-OD-OF-LEGALES-AIR-1.pdf",
+        "url": "https://aeropuertorosario.com/wp-content/uploads/2026/10/LPU-2026-00000002-APPSF-OD-OF-LEGALES-AIR-1.pdf"
+      },
+      {
+        "titulo": "RESCONJ-2026-00000314-APPSF-ODAeroRosMEyD-AIR-ROS.pdf",
+        "url": "https://aeropuertorosario.com/wp-content/uploads/2026/10/RESCONJ-2026-00000314-APPSF-ODAeroRosMEyD-AIR-ROS.pdf"
+      },
+      {
+        "titulo": "ESPECIFICACIONES-TECNICAS.pdf",
+        "url": "https://aeropuertorosario.com/wp-content/uploads/2026/10/ESPECIFICACIONES-TECNICAS.pdf"
+      },
+      {
+        "titulo": "CGR-HYS-Manual-1-1.pdf",
+        "url": "https://aeropuertorosario.com/wp-content/uploads/2026/10/CGR-HYS-Manual-1-1.pdf"
+      }
+    ],
+    "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
+    "ultima_observacion": "2026-10-30T08:33:56.099440-03:00",
+    "pago": {
+      "estado": "VERIFICADO",
+      "clasificacion": "PLAZO_30_DIAS",
+      "etiqueta": "30 días habiles después de conformidad de recepción",
+      "plazos_dias": [
+        30
+      ],
+      "hitos_inicio": [
+        "CONFORMIDAD_RECEPCION"
+      ],
+      "unidades_dias": [
+        "habiles"
+      ],
+      "direccion": "NO_ESPECIFICADA",
+      "documento_respaldo": "https://aeropuertorosario.com/wp-content/uploads/2026/10/LPU-2026-00000002-APPSF-OD-OF-LEGALES-AIR-1.pdf",
+      "documentos_respaldo": [
+        "https://aeropuertorosario.com/wp-content/uploads/2026/10/LPU-2026-00000002-APPSF-OD-OF-LEGALES-AIR-1.pdf"
+      ],
+      "evidencias": [
+        {
+          "categoria": "PLAZO_30_DIAS",
+          "cita": "Plazo de pago: Cantidad: TREINTA (30) Unidad de tiempo: DÍAS El plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva de los elementos licitados instalados, la cual será otorgada en el plazo previsto en el del Pliego Único de Bases y Condiciones Generales. La factura deberá ser emitida dentro de los cinco (5) días de obtenida la recepción definitiva. En todos los casos el Aeropuerto Internacional de Rosario, en su carácter de organismo receptor, adoptará las medidas pertinentes a los fines de la correspondiente certificación, en un todo de acuerdo a la Ley Nº 12.510 y su decreto reglamentario, para la recepción de los insumos instalados con destino al Estado Provincial. El adjudicatario al momento de presentar la factura para el cobro correspon-diente deberá dar cumplimiento a lo dispuesto en el Decreto Nº 3.035/14 y sus modificatorios (presentación de la Constancia de Cumplimiento Fiscal – Reso-lución Nº 19/11 de API). Plazo de Pago Cantidad * Unidad de Tiempo * 30 Días Hábiles Administrativos plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva, la cual será otorgada en el plazo previsto en el punto 6.10.1 del Anexo Unico del Decreto 287/26 del Pliego Único de Bases y Condiciones Generales.",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": false,
+          "direccion": "NO_ESPECIFICADA",
+          "etiqueta": "30 días habiles después de conformidad de recepción",
+          "hitos_inicio": [
+            "CONFORMIDAD_RECEPCION"
+          ],
+          "metodo_extraccion": "TEXTO",
+          "pagina": 9,
+          "plazos_dias": [
+            30
+          ],
+          "prioritario": false,
+          "sha256": "b4b59a0e48458cd13f772b96666d8546f4abc163db209728388b8150cfad61a5",
+          "unidades_dias": [
+            "habiles"
+          ],
+          "url_documento": "https://aeropuertorosario.com/wp-content/uploads/2026/10/LPU-2026-00000002-APPSF-OD-OF-LEGALES-AIR-1.pdf",
+          "version_analizador": 12,
+          "pagos_parciales": false,
+          "anticipo_publicado": false,
+          "facturacion_parcial": false,
+          "acreditacion_inmediata_comprobada": false,
+          "reclasificada_desde_version": 8,
+          "citas_complementarias": [
+            "Plazo de pago: Cantidad: TREINTA (30) Unidad de tiempo: DÍAS El plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva de los elementos licitados instalados, la cual será otorgada en el plazo previsto en el del Pliego Único de Bases y Condiciones Generales. La factura deberá ser emitida dentro de los cinco (5) días de obtenida la recepción definitiva. En todos los casos el Aeropuerto Internacional de Rosario, en su carácter de organismo receptor, adoptará las medidas pertinentes a los fines de la correspondiente certificación, en un todo de acuerdo a la Ley Nº 12.510 y su decreto reglamentario, para la recepción de los insumos instalados con destino al Estado Provincial. El adjudicatario al momento de presentar la factura para el cobro correspon-diente deberá dar cumplimiento a lo dispuesto en el Decreto Nº 3.035/14 y sus modificatorios (presentación de la Constancia de Cumplimiento Fiscal – Reso-lución Nº 19/11 de API).",
+            "Plazo de Pago Cantidad * Unidad de Tiempo * 30 Días Hábiles Administrativos",
+            "plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva, la cual será otorgada en el plazo previsto en el punto 6.10.1 del Anexo Unico del Decreto 287/26 del Pliego Único de Bases y Condiciones Generales."
+          ]
+        }
+      ],
+      "prioritario": false,
+      "motivo": null
+    },
+    "plazo_nominal_pago": {
+      "dias": [
+        30
+      ],
+      "unidades": [
+        "habiles"
+      ],
+      "hitos_inicio": [
+        "CONFORMIDAD_RECEPCION"
+      ]
+    },
+    "anticipos_y_parciales": {
+      "anticipo_publicado": null,
+      "pagos_parciales": null,
+      "facturacion_parcial": null
+    },
+    "recuperacion_efectiva_capital": {
+      "estado": "PENDIENTE",
+      "dias": null,
+      "motivo": "El plazo contractual no prueba acreditación bancaria ni fecha efectiva de recuperación del capital."
+    }
+  },
+  {
+    "organismo": "Aeropuerto Internacional Rosario",
+    "localidad": "Rosario",
+    "provincia": "Santa Fe",
+    "numero_procedimiento": "52/2026",
+    "tipo_procedimiento": "contratacion directa",
+    "campos": {
+      "objeto": {
+        "valor": "Herramientas para Reparaciones Menores en Pavimento del AIR",
+        "estado": "VERIFICADO",
+        "evidencia": null
+      },
+      "productos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "productos_alternativos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "presupuesto": {
+        "valor": {
+          "importe": "1492000",
+          "moneda": null
+        },
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "texto": "Presupuesto Oficial: $1.492.000.",
+          "url": "https://aeropuertorosario.com/licitaciones/contratacion-directa-no-52-2026/"
+        }
+      },
+      "fecha_publicacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_limite_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "hora_limite_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_apertura": {
+        "valor": "2026-11-03",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://aeropuertorosario.com/licitaciones/contratacion-directa-no-52-2026/",
+          "texto": "03-11-2026 11:00"
+        }
+      },
+      "hora_apertura": {
+        "valor": "11:00",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://aeropuertorosario.com/licitaciones/contratacion-directa-no-52-2026/",
+          "texto": "03-11-2026 11:00"
+        }
+      },
+      "condiciones_pago": {
+        "valor": "30 días después de conformidad de recepción",
+        "estado": "VERIFICADO",
+        "evidencia": [
+          {
+            "categoria": "PLAZO_30_DIAS",
+            "cita": "Plazo de pago: Cantidad: TREINTA (30) Unidad de tiempo: DÍAS ▪ El plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva de los artículos licitados. ▪ Presupuesto Oficial: $1.492.000.- (pesos un millón cuatrocientos noventa y dos mil) ▪ Recepción de las cotizaciones únicamente vía correo electrónico a compras@airosario.com.ar hasta las 11hs de la fecha límite publicada. ▪ Si esta administración recibe 3 presupuestos continuara con la compra. Caso contrario, la compra quedara pendiente hasta el tercer día hábil posterior a la fecha de solicitud de presupuesto.",
+            "contado_mencionado": false,
+            "contra_entrega_mencionado": false,
+            "direccion": "NO_ESPECIFICADA",
+            "etiqueta": "30 días después de conformidad de recepción",
+            "hitos_inicio": [
+              "CONFORMIDAD_RECEPCION"
+            ],
+            "metodo_extraccion": "TEXTO",
+            "pagina": 2,
+            "plazos_dias": [
+              30
+            ],
+            "prioritario": false,
+            "sha256": "b43e20e463acc2c43d9ab69dddeb12c4ded86e548be2c94a530212bf349d4451",
+            "unidades_dias": [
+              "no indicada"
+            ],
+            "url_documento": "https://aeropuertorosario.com/wp-content/uploads/2026/10/DOC-2026-00012875-APPSF-ODAeroRos.pdf",
+            "version_analizador": 12,
+            "pagos_parciales": false,
+            "anticipo_publicado": false,
+            "facturacion_parcial": false,
+            "acreditacion_inmediata_comprobada": false,
+            "reclasificada_desde_version": 8
+          }
+        ]
+      },
+      "plazo_entrega": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "lugar_entrega": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "modalidad_presentacion": {
+        "valor": [
+          "CORREO_ELECTRONICO"
+        ],
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "texto": "                       SOLICITUD DE                                                  CD-02\n                       PRESUPUESTO\n\n\n                                                             Rosario, 26 de octubre de 2026\n\nExpediente: EE-2026-00066277-APPSF-OD\nRef: Compra Directa Nº52/2026 de Herramientas para Reparaciones Menores en Pavimento del AIR\nRubro: maquinarias, herramientas, elementos y accesorios\nSubrubro: herramientas y accesorios para la construcción\n\nSres.:\n          Tenemos el agrado de dirigirnos a Ud./s a los fines de solicitarles cotización para los siguientes\nítems:\nCompra de bienes\nRenglón        Cantidad               Detalle                                    Especificación\n                                                             Martillo Demoledor 11kg primera marca línea profesional\n                                                                     Martillo Demoledor Electro-neumático clase 11\n                                                             kg de primera calidad industrial para uso pesado continuo\n                                                             •       Alimentación eléctrica: 220 V / 50 Hz\n                                                             (monofásica, doble aislación eléctrica certificada).\n                                                             •       Potencia nominal mínima: 1500 W.\n                                                             •       Energía de impacto: Igual o mayor a 16,8 Joules\n                                                             (medición bajo estándar EPTA).\n                                                             •       Frecuencia de impacto: Rango operativo dentro\n                           Martillo Demoledor 11kg           de 900 a 1890 bpm (golpes por minuto).\n    I.             1                                         •       Ajuste de herramienta: Bloqueo de cincel con\n                           primera marca línea profesional\n                                                             regulación multiposición.\n                                                             •       Peso sin herramientas: Entre 10,0 kg y 11,5 kg.\n                                                             •       Mantenimiento y seguridad: Sistema de\n                                                             advertencia / desconexión automática por desgaste de\n                                                             carbones.\n                                                             •       Accesorios incluidos: Empuñadura lateral\n                                                             orientable 360°, maletín rígido para transporte y\n                                                             almacenaje, 1 puntero, 1 cincel plano y lubricante de\n                                                             vástagos.\n\n                                                             Pistola aplicadora manual de empuje continuo con tubo\n                                                             cilíndrico cerrado.\n\n                                                             •       Longitud del tubo / cuerpo: 280 mm (11\").\n\n                                                             •      Material del cuerpo: Tubo de aleación de\n                                                             aluminio de alta resistencia y tapas roscadas\n                           Pistola aplicadora manual de      desmontables.\n    II.            2       adhesivos y selladores para uso\n                           profesional                       •        Empuñadura y gatillo: Diseño ergonómico de\n                                                             fundición metálica/aluminio de accionamiento suave y\n                                                             alta relación de empuje.\n\n                                                             •        Compatibilidad de carga (sistema dual): Apta para\n                                                             cartuchos estándar de hasta 300 ml y recarga de sellador a\n                                                             granel / salchicha unipack en el interior del cilindro.\n\n                                                             •       Accesorios incluidos: Pistón de empuje hermético\n                                                                      DOC-2026-00012875-APPSF-OD#AeroRos\n\f                                                              para carga a granel y pico dosificador/boquilla aplicadora\n                                                              plástica.\n\nOBSERVACIONES:\n ▪ Las cotizaciones deben estar hechas siguiendo el orden numérico y correlativo de los elementos solicitados.\n ▪ Los precios cotizados deberán incluir I.V.A. y estar expresados en Pesos.\n ▪ En caso de Servicios especificar plazo de contratación.\n ▪ En caso de Bienes indicar garantía del producto y características del servicio de post venta.\n ▪ Detallar plazo de entrega.\n ▪ Validez de la Oferta: 30 días.\n ▪ El lugar de entrega será: Aeropuerto Internacional Rosario.\n ▪ El presupuesto deberá incluir el flete.\n ▪ Los proveedores que facturen importes mayores a $1.170.000.- (pesos un millón ciento setenta mil) deberán tener\n   vigente la Constancia de Complimiento Fiscal de API (CEFI)\n ▪ Constancia de inscripción en Arca, constancia Ingresos Brutos.\n ▪ Plazo de pago: Cantidad: TREINTA (30) Unidad de tiempo: DÍAS\n ▪ El plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva de los artículos licitados.\n ▪ Presupuesto Oficial: $1.492.000.- (pesos un millón cuatrocientos noventa y dos mil)\n ▪ Recepción de las cotizaciones únicamente vía correo electrónico a compras@airosario.com.ar hasta las 11hs\n   de la fecha límite publicada.\n ▪ Si esta administración recibe 3 presupuestos continuara con la compra. Caso contrario, la compra quedara\n   pendiente hasta el tercer día hábil posterior a la fecha de solicitud de presupuesto.\n\n\n\n\n                                                                    ………………………………\n                                                                            Firma y sello\n                                                          Servicio Administrativo - Financiero (Dirección General de\n                                                          Administración)\n\n\n\n\n                                                                         DOC-2026-00012875-APPSF-OD#AeroRos\n\f                              Provincia de Santa Fe - Poder Ejecutivo\n              2026 - Año del 240° Aniversario del Natalicio del Brigadier Gral. Don Estanislao López\n\n\n\n\nNúmero: DOC-2026-00012875-APPSF-OD#AeroRos\n                                                                                                       SANTA FE\n                                                                              Lunes 26 de Octubre de 2026\n\nReferencia:\n              CD 02 Adquisicion de Herramientas\n\n\nEl documento fue importado por el sistema de Timbó.\n\fFirmado digitalmente por Firmador de la Provincia de Santa Fe\nFecha: 2026.10.26 14:05:11 ART\n27288244133 - Lorena Fabbro\nDirectora General\nDirección General de Administración\nAeropuerto Internacional de Rosario “Islas Malvinas”\n\n\n\n\n                                                                Firmado digitalmente por Firmador de la Provincia de Santa Fe\n                                                                Fecha: 2026.10.26 14:05:12 ART\n                                                                Razón: Gestion de tramites - Timbó\n\f",
+          "url": "https://aeropuertorosario.com/wp-content/uploads/2026/10/DOC-2026-00012875-APPSF-ODAeroRos.pdf"
+        }
+      },
+      "garantias": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "requisitos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "limite_nota_contrasena": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "moneda_literal": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      }
+    },
+    "publicacion_oficial": "https://aeropuertorosario.com/licitaciones/contratacion-directa-no-52-2026/",
+    "documentos": [
+      {
+        "titulo": "DOC-2026-00012875-APPSF-ODAeroRos.pdf",
+        "url": "https://aeropuertorosario.com/wp-content/uploads/2026/10/DOC-2026-00012875-APPSF-ODAeroRos.pdf"
+      }
+    ],
+    "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
+    "ultima_observacion": "2026-10-30T08:33:56.099440-03:00",
+    "pago": {
+      "estado": "VERIFICADO",
+      "clasificacion": "PLAZO_30_DIAS",
+      "etiqueta": "30 días después de conformidad de recepción",
+      "plazos_dias": [
+        30
+      ],
+      "hitos_inicio": [
+        "CONFORMIDAD_RECEPCION"
+      ],
+      "unidades_dias": [
+        "no indicada"
+      ],
+      "direccion": "NO_ESPECIFICADA",
+      "documento_respaldo": "https://aeropuertorosario.com/wp-content/uploads/2026/10/DOC-2026-00012875-APPSF-ODAeroRos.pdf",
+      "documentos_respaldo": [
+        "https://aeropuertorosario.com/wp-content/uploads/2026/10/DOC-2026-00012875-APPSF-ODAeroRos.pdf"
+      ],
+      "evidencias": [
+        {
+          "categoria": "PLAZO_30_DIAS",
+          "cita": "Plazo de pago: Cantidad: TREINTA (30) Unidad de tiempo: DÍAS ▪ El plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva de los artículos licitados. ▪ Presupuesto Oficial: $1.492.000.- (pesos un millón cuatrocientos noventa y dos mil) ▪ Recepción de las cotizaciones únicamente vía correo electrónico a compras@airosario.com.ar hasta las 11hs de la fecha límite publicada. ▪ Si esta administración recibe 3 presupuestos continuara con la compra. Caso contrario, la compra quedara pendiente hasta el tercer día hábil posterior a la fecha de solicitud de presupuesto.",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": false,
+          "direccion": "NO_ESPECIFICADA",
+          "etiqueta": "30 días después de conformidad de recepción",
+          "hitos_inicio": [
+            "CONFORMIDAD_RECEPCION"
+          ],
+          "metodo_extraccion": "TEXTO",
+          "pagina": 2,
+          "plazos_dias": [
+            30
+          ],
+          "prioritario": false,
+          "sha256": "b43e20e463acc2c43d9ab69dddeb12c4ded86e548be2c94a530212bf349d4451",
+          "unidades_dias": [
+            "no indicada"
+          ],
+          "url_documento": "https://aeropuertorosario.com/wp-content/uploads/2026/10/DOC-2026-00012875-APPSF-ODAeroRos.pdf",
+          "version_analizador": 12,
+          "pagos_parciales": false,
+          "anticipo_publicado": false,
+          "facturacion_parcial": false,
+          "acreditacion_inmediata_comprobada": false,
+          "reclasificada_desde_version": 8
+        }
+      ],
+      "prioritario": false,
+      "motivo": null
+    },
+    "plazo_nominal_pago": {
+      "dias": [
+        30
+      ],
+      "unidades": [
+        "no indicada"
+      ],
+      "hitos_inicio": [
+        "CONFORMIDAD_RECEPCION"
+      ]
+    },
+    "anticipos_y_parciales": {
+      "anticipo_publicado": null,
+      "pagos_parciales": null,
+      "facturacion_parcial": null
+    },
+    "recuperacion_efectiva_capital": {
+      "estado": "PENDIENTE",
+      "dias": null,
+      "motivo": "El plazo contractual no prueba acreditación bancaria ni fecha efectiva de recuperación del capital."
+    }
+  },
+  {
+    "organismo": "IAFAS",
+    "localidad": "Paraná",
+    "provincia": "Entre Ríos",
+    "numero_procedimiento": "5/2026",
+    "tipo_procedimiento": "licitacion publica",
+    "campos": {
+      "objeto": {
+        "valor": "La contratación del servicio de conexión corporativa a internet de las Salas y Casinos, el servicio de conexión corporativa a internet de IAFAS Central con una solución de seguridad perimetral y el servicio de revisión de vulnerabilidades (test de vulnerabilidades) , por el término de treinta y seis (36) meses.-",
+        "estado": "VERIFICADO",
+        "evidencia": null
+      },
+      "productos": {
+        "valor": [
+          {
+            "producto": "IPs públicas",
+            "cantidad": 6,
+            "unidad": null,
+            "pagina": 19,
+            "cita": "provisión de 14 IPs públicas en lugar de las 6 solicitadas (Presentar como alternativa)",
+            "tipo_requerimiento": "PRINCIPAL_EXPLICITO_EN_CLAUSULA_ALTERNATIVA"
+          }
+        ],
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://www.iafas.gov.ar/descargas/17685",
+          "sha256": "8f443f6b13d9204a5970f41f4f47164a0a198481eb6dce8e347947ef293e9c24",
+          "pagina": 19,
+          "cita": "provisión de 14 IPs públicas en lugar de las 6 solicitadas (Presentar como alternativa)",
+          "metodo": "OCR_SELECTIVO_CACHE"
+        }
+      },
+      "productos_alternativos": {
+        "valor": [
+          {
+            "producto": "IPs públicas en lugar de las 6 solicitadas (Presentar como alternativa)",
+            "cantidad": 14,
+            "unidad": null,
+            "pagina": 19,
+            "cita": "provisión de 14 IPs públicas en lugar de las 6 solicitadas (Presentar como alternativa)",
+            "tipo_requerimiento": "ALTERNATIVA_PERMITIDA"
+          }
+        ],
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://www.iafas.gov.ar/descargas/17685",
+          "sha256": "8f443f6b13d9204a5970f41f4f47164a0a198481eb6dce8e347947ef293e9c24",
+          "pagina": 19,
+          "cita": "provisión de 14 IPs públicas en lugar de las 6 solicitadas (Presentar como alternativa)",
+          "metodo": "OCR_SELECTIVO_CACHE"
+        }
+      },
+      "presupuesto": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_publicacion": {
+        "valor": "2026-10-22",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://www.iafas.gov.ar/proveedores/licitaciones/",
+          "texto": "2026-10-22t10:15:26-03:00"
+        }
+      },
+      "fecha_limite_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "hora_limite_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_apertura": {
+        "valor": "2026-11-05",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://www.iafas.gov.ar/proveedores/licitaciones/",
+          "texto": "el 05 de noviembre de 2026 a las 09:00 horas o el dia habil siguiente a la misma hora, si resultara feriado o se decretara asueto.- venta de pliegos de condiciones: • i. a. f. a. s. – belgrano n° 70- parana – entre rios. informes y consultas: -dpto. contrataciones y gestion de bienes - 25 de mayo 255- parana-e.rios- tel. 0343-4201134.- -www.iafas.gov.ar horario de atencion: de 9 a 12 horas. pliegos licitacion publica 5-26 2026 - e - 108988- aviso segundo llamado licitacion publica n° 5_26 valor del pliego: pesos doscientos catorce mil cuatrocientos veintiocho con 45/100 ($214.428,45).- parana, 22 de octubre de 2026"
+        }
+      },
+      "hora_apertura": {
+        "valor": "09:00",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://www.iafas.gov.ar/proveedores/licitaciones/",
+          "texto": "el 05 de noviembre de 2026 a las 09:00 horas o el dia habil siguiente a la misma hora, si resultara feriado o se decretara asueto.- venta de pliegos de condiciones: • i. a. f. a. s. – belgrano n° 70- parana – entre rios. informes y consultas: -dpto. contrataciones y gestion de bienes - 25 de mayo 255- parana-e.rios- tel. 0343-4201134.- -www.iafas.gov.ar horario de atencion: de 9 a 12 horas. pliegos licitacion publica 5-26 2026 - e - 108988- aviso segundo llamado licitacion publica n° 5_26 valor del pliego: pesos doscientos catorce mil cuatrocientos veintiocho con 45/100 ($214.428,45).- parana, 22 de octubre de 2026"
+        }
+      },
+      "condiciones_pago": {
+        "valor": "30 días corridos desde recepción de la documentación correspondiente; exige entrega aceptada, factura y trámites administrativos; mensual a mes vencido",
+        "estado": "VERIFICADO",
+        "evidencia": [
+          {
+            "categoria": "PLAZO_30_DIAS",
+            "etiqueta": "30 días corridos desde recepción de la documentación correspondiente; exige entrega aceptada, factura y trámites administrativos; mensual a mes vencido",
+            "plazos_dias": [
+              30
+            ],
+            "unidades_dias": [
+              "corridos"
+            ],
+            "hitos_inicio": [
+              "RECEPCION_DOCUMENTACION_CORRESPONDIENTE"
+            ],
+            "direccion": "ORGANISMO_AL_PROVEEDOR",
+            "contado_mencionado": false,
+            "contra_entrega_mencionado": false,
+            "prioritario": false,
+            "pagos_parciales": true,
+            "anticipo_publicado": false,
+            "facturacion_parcial": false,
+            "acreditacion_inmediata_comprobada": false,
+            "clausula": "Articulo 15",
+            "cita": "El pago será efectuado dentro de los treinta (30) días corridos de la fecha de recepción de la correspondiente documentación.",
+            "url_documento": "https://www.iafas.gov.ar/descargas/17685",
+            "sha256": "8f443f6b13d9204a5970f41f4f47164a0a198481eb6dce8e347947ef293e9c24",
+            "pagina": 6,
+            "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+            "version_analizador": 12,
+            "condiciones_previas": [
+              "CONFORMIDAD_RECEPCION",
+              "PRESENTACION_FACTURA",
+              "TRAMITES_ADMINISTRATIVOS"
+            ],
+            "evidencias_condiciones_previas": [
+              {
+                "pagina": 5,
+                "clausula": "Articulo 15",
+                "cita": "FORMAS de PAGO. El pago al proveedor se realizará en el Dpto. Tesorería del Instituto previa entrega y aceptación de lo que le fuera adjudicado; en cumplimiento de los trámites administrativos corrientes y presentación por parte del adjudicatario de la pertinente factura con arreglo a las normas impositivas vigentes.",
+                "url_documento": "https://www.iafas.gov.ar/descargas/17685",
+                "sha256": "8f443f6b13d9204a5970f41f4f47164a0a198481eb6dce8e347947ef293e9c24"
+              },
+              {
+                "pagina": 5,
+                "clausula": "Articulo 15",
+                "cita": "El pago al proveedor se realizará en el Dpto. Tesorería del Instituto previa entrega y aceptación de lo que le fuera adjudicado; en cumplimiento de los trámites administrativos corrientes y presentación por parte del adjudicatario de la pertinente factura con arreglo a las normas impositivas vigentes.",
+                "url_documento": "https://www.iafas.gov.ar/descargas/17685",
+                "sha256": "8f443f6b13d9204a5970f41f4f47164a0a198481eb6dce8e347947ef293e9c24"
+              },
+              {
+                "pagina": 5,
+                "clausula": "Articulo 15",
+                "cita": "El pago se realizará mensual a mes vencido ,en Pesos Moneda Nacional, mediante transferencia bancaria a la cuenta de la empresa adjudicataria.",
+                "url_documento": "https://www.iafas.gov.ar/descargas/17685",
+                "sha256": "8f443f6b13d9204a5970f41f4f47164a0a198481eb6dce8e347947ef293e9c24"
+              }
+            ]
+          }
+        ]
+      },
+      "plazo_entrega": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "lugar_entrega": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "modalidad_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "garantias": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "requisitos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "limite_nota_contrasena": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "moneda_literal": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      }
+    },
+    "publicacion_oficial": "https://www.iafas.gov.ar/proveedores/licitaciones/",
+    "documentos": [
+      {
+        "titulo": "Pliegos licitacion publica 5-26",
+        "url": "https://www.iafas.gov.ar/descargas/17685"
+      },
+      {
+        "titulo": "2026 - E - 108988- AVISO segundo LLAMADO licitacion publica N° 5_26",
+        "url": "https://www.iafas.gov.ar/descargas/17684"
+      }
+    ],
+    "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
+    "ultima_observacion": "2026-10-30T08:33:56.099440-03:00",
+    "pago": {
+      "estado": "VERIFICADO",
+      "clasificacion": "PLAZO_30_DIAS",
+      "etiqueta": "30 días corridos desde recepción de la documentación correspondiente; exige entrega aceptada, factura y trámites administrativos; mensual a mes vencido",
+      "plazos_dias": [
+        30
+      ],
+      "hitos_inicio": [
+        "RECEPCION_DOCUMENTACION_CORRESPONDIENTE"
+      ],
+      "unidades_dias": [
+        "corridos"
+      ],
+      "direccion": "ORGANISMO_AL_PROVEEDOR",
+      "documento_respaldo": "https://www.iafas.gov.ar/descargas/17685",
+      "documentos_respaldo": [
+        "https://www.iafas.gov.ar/descargas/17685"
+      ],
+      "evidencias": [
+        {
+          "categoria": "PLAZO_30_DIAS",
+          "etiqueta": "30 días corridos desde recepción de la documentación correspondiente; exige entrega aceptada, factura y trámites administrativos; mensual a mes vencido",
+          "plazos_dias": [
+            30
+          ],
+          "unidades_dias": [
+            "corridos"
+          ],
+          "hitos_inicio": [
+            "RECEPCION_DOCUMENTACION_CORRESPONDIENTE"
+          ],
+          "direccion": "ORGANISMO_AL_PROVEEDOR",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": false,
+          "prioritario": false,
+          "pagos_parciales": true,
+          "anticipo_publicado": false,
+          "facturacion_parcial": false,
+          "acreditacion_inmediata_comprobada": false,
+          "clausula": "Articulo 15",
+          "cita": "El pago será efectuado dentro de los treinta (30) días corridos de la fecha de recepción de la correspondiente documentación.",
+          "url_documento": "https://www.iafas.gov.ar/descargas/17685",
+          "sha256": "8f443f6b13d9204a5970f41f4f47164a0a198481eb6dce8e347947ef293e9c24",
+          "pagina": 6,
+          "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+          "version_analizador": 12,
+          "condiciones_previas": [
+            "CONFORMIDAD_RECEPCION",
+            "PRESENTACION_FACTURA",
+            "TRAMITES_ADMINISTRATIVOS"
+          ],
+          "evidencias_condiciones_previas": [
+            {
+              "pagina": 5,
+              "clausula": "Articulo 15",
+              "cita": "FORMAS de PAGO. El pago al proveedor se realizará en el Dpto. Tesorería del Instituto previa entrega y aceptación de lo que le fuera adjudicado; en cumplimiento de los trámites administrativos corrientes y presentación por parte del adjudicatario de la pertinente factura con arreglo a las normas impositivas vigentes.",
+              "url_documento": "https://www.iafas.gov.ar/descargas/17685",
+              "sha256": "8f443f6b13d9204a5970f41f4f47164a0a198481eb6dce8e347947ef293e9c24"
+            },
+            {
+              "pagina": 5,
+              "clausula": "Articulo 15",
+              "cita": "El pago al proveedor se realizará en el Dpto. Tesorería del Instituto previa entrega y aceptación de lo que le fuera adjudicado; en cumplimiento de los trámites administrativos corrientes y presentación por parte del adjudicatario de la pertinente factura con arreglo a las normas impositivas vigentes.",
+              "url_documento": "https://www.iafas.gov.ar/descargas/17685",
+              "sha256": "8f443f6b13d9204a5970f41f4f47164a0a198481eb6dce8e347947ef293e9c24"
+            },
+            {
+              "pagina": 5,
+              "clausula": "Articulo 15",
+              "cita": "El pago se realizará mensual a mes vencido ,en Pesos Moneda Nacional, mediante transferencia bancaria a la cuenta de la empresa adjudicataria.",
+              "url_documento": "https://www.iafas.gov.ar/descargas/17685",
+              "sha256": "8f443f6b13d9204a5970f41f4f47164a0a198481eb6dce8e347947ef293e9c24"
+            }
+          ]
+        }
+      ],
+      "prioritario": false,
+      "motivo": null
+    },
+    "plazo_nominal_pago": {
+      "dias": [
+        30
+      ],
+      "unidades": [
+        "corridos"
+      ],
+      "hitos_inicio": [
+        "RECEPCION_DOCUMENTACION_CORRESPONDIENTE"
+      ]
+    },
+    "anticipos_y_parciales": {
+      "anticipo_publicado": null,
+      "pagos_parciales": true,
+      "facturacion_parcial": null
+    },
+    "recuperacion_efectiva_capital": {
+      "estado": "PENDIENTE",
+      "dias": null,
+      "motivo": "El plazo contractual no prueba acreditación bancaria ni fecha efectiva de recuperación del capital."
+    }
+  },
+  {
+    "organismo": "IAFAS",
+    "localidad": "Paraná",
+    "provincia": "Entre Ríos",
+    "numero_procedimiento": "8/2026",
+    "tipo_procedimiento": "licitacion privada",
+    "campos": {
+      "objeto": {
+        "valor": "Adquisición de UNA (1) contadora clasificadora de billetes, robusta (heavy duty) para uso contínuo e intensivo, necesaria para el conteo, separación y ordenamiento de billetes y tickets a ser utilizada en Casinos y Salas de la Provincia y la contratación de UN (1) servicio técnico de mantenimiento preventivo y correctivo por el término de DOCE (12) meses, renovable por otro periodo de igual duración.-",
+        "estado": "VERIFICADO",
+        "evidencia": null
+      },
+      "productos": {
+        "valor": [
+          {
+            "producto": "contadora clasificadora de billetes, robusta",
+            "cantidad": 1,
+            "unidad": null,
+            "pagina": 1,
+            "cita": "Adquisición de UNA (1) contadora clasificadora de billetes, robusta"
+          }
+        ],
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://www.iafas.gov.ar/descargas/17687",
+          "sha256": "37c081b4c2674bc148c32bdde9db858930e0853da9193dd834c22e9d2e37a5f9",
+          "pagina": 1,
+          "cita": "Adquisición de UNA (1) contadora clasificadora de billetes, robusta",
+          "metodo": "TEXTO"
+        }
+      },
+      "productos_alternativos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "presupuesto": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_publicacion": {
+        "valor": "2026-10-23",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://www.iafas.gov.ar/proveedores/licitaciones/",
+          "texto": "2026-10-23t12:31:24-03:00"
+        }
+      },
+      "fecha_limite_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "hora_limite_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_apertura": {
+        "valor": "2026-11-17",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://www.iafas.gov.ar/proveedores/licitaciones/",
+          "texto": "17 de noviembre de 2026 a las 09:00 horas o el dia habil siguiente a la misma hora, si resultara feriado o se decretara asueto.- informes y consultas: -dpto. contrataciones y gestion de bienes - 25 de mayo 255- parana-e. rios- tel. 0343-4201134.- -www.iafas.gov.ar horario de atencion: de 9 a 12 horas.- 2026 - c - 107255- aprobar licitacion privada n° 8_2026 - contadora de billetes- aviso_firmado pliegos llamado a licitacion privada 8-26 parana, 23 de octubre de 2026"
+        }
+      },
+      "hora_apertura": {
+        "valor": "09:00",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://www.iafas.gov.ar/proveedores/licitaciones/",
+          "texto": "17 de noviembre de 2026 a las 09:00 horas o el dia habil siguiente a la misma hora, si resultara feriado o se decretara asueto.- informes y consultas: -dpto. contrataciones y gestion de bienes - 25 de mayo 255- parana-e. rios- tel. 0343-4201134.- -www.iafas.gov.ar horario de atencion: de 9 a 12 horas.- 2026 - c - 107255- aprobar licitacion privada n° 8_2026 - contadora de billetes- aviso_firmado pliegos llamado a licitacion privada 8-26 parana, 23 de octubre de 2026"
+        }
+      },
+      "condiciones_pago": {
+        "valor": "Después de entrega y aceptación y presentación de factura; exige trámites administrativos; plazo no indicado",
+        "estado": "VERIFICADO",
+        "evidencia": [
+          {
+            "categoria": "DESPUES_CONFORMIDAD_RECEPCION",
+            "etiqueta": "Después de entrega y aceptación y presentación de factura; exige trámites administrativos; plazo no indicado",
+            "plazos_dias": [],
+            "unidades_dias": [],
+            "hitos_inicio": [
+              "TRAMITES_ADMINISTRATIVOS",
+              "PRESENTACION_FACTURA",
+              "CONFORMIDAD_RECEPCION"
+            ],
+            "direccion": "ORGANISMO_AL_PROVEEDOR",
+            "contado_mencionado": false,
+            "contra_entrega_mencionado": false,
+            "prioritario": false,
+            "pagos_parciales": false,
+            "anticipo_publicado": false,
+            "facturacion_parcial": false,
+            "acreditacion_inmediata_comprobada": false,
+            "clausula": "Articulo 14",
+            "cita": "FORMAS de PAGO, El pago al proveedor se realizará en el Dpto. Tesorería del Instituto previa entrega y aceptación de lo que le fuera adjudicado; en cumplimiento de los trámites administrativos corrientes y presentación por parte del adjudicatario de la pertinente factura con arreglo a las normas impositivas vigentes. En el caso de que se hubiera efectuado la adjudicación en moneda extranjera autorizada, de acuerdo con el precio que fuera cotizado, a los efectos de la presentación de la factura correspondiente se deberá efectuar la conversión del precio adjudicado en moneda extranjera a moneda nacional, utilizando para ello el tipo de cambio vendedor publicado por el Banco de la Nación Argentina el día anterior al de la emisión de la misma. Para su realización será indispensable la presentación ante el Instituto, del Certificado de Libre Deuda Fiscal para Proveedores del Estado o Certificado de Regularización de Deuda para Proveedores del estado, emitido por la Administradora Tributaria de Entre Ríos, conforme a las Resoluciones vigentes de la ATER",
+            "url_documento": "https://www.iafas.gov.ar/descargas/17688",
+            "sha256": "b68787c175785f84778984ca58e2e5e5f7306bf6701d88864421deea167e7cde",
+            "pagina": 5,
+            "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+            "version_analizador": 12
+          },
+          {
+            "categoria": "DESPUES_CONFORMIDAD_RECEPCION",
+            "etiqueta": "Después de entrega y aceptación y presentación de factura; exige trámites administrativos; plazo no indicado",
+            "plazos_dias": [],
+            "unidades_dias": [],
+            "hitos_inicio": [
+              "TRAMITES_ADMINISTRATIVOS",
+              "PRESENTACION_FACTURA",
+              "CONFORMIDAD_RECEPCION"
+            ],
+            "direccion": "ORGANISMO_AL_PROVEEDOR",
+            "contado_mencionado": false,
+            "contra_entrega_mencionado": false,
+            "prioritario": false,
+            "pagos_parciales": false,
+            "anticipo_publicado": false,
+            "facturacion_parcial": false,
+            "acreditacion_inmediata_comprobada": false,
+            "clausula": "Articulo 14",
+            "cita": "El pago al proveedor se realizará en el Dpto. Tesorería del Instituto previa entrega y aceptación de lo que le fuera adjudicado; en cumplimiento de los trámites administrativos corrientes y presentación por parte del adjudicatario de la pertinente factura con arreglo a las normas impositivas vigentes. En el caso de que se hubiera efectuado la adjudicación en moneda extranjera autorizada, de acuerdo con el precio que fuera cotizado, a los efectos de la presentación de la factura correspondiente se deberá efectuar la conversión del precio adjudicado en moneda extranjera a moneda nacional, utilizando para ello el tipo de cambio vendedor publicado por el Banco de la Nación Argentina el día anterior al de la emisión de la misma. Para su realización será indispensable la presentación ante el Instituto, del Certificado de Libre Deuda Fiscal para Proveedores del Estado o Certificado de Regularización de Deuda para Proveedores del estado, emitido por la Administradora Tributaria de Entre Ríos, conforme a las Resoluciones vigentes de la ATER",
+            "url_documento": "https://www.iafas.gov.ar/descargas/17688",
+            "sha256": "b68787c175785f84778984ca58e2e5e5f7306bf6701d88864421deea167e7cde",
+            "pagina": 5,
+            "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+            "version_analizador": 12
+          }
+        ]
+      },
+      "plazo_entrega": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "lugar_entrega": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "modalidad_presentacion": {
+        "valor": [
+          "PRESENCIAL"
+        ],
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://www.iafas.gov.ar/descargas/17688",
+          "texto": "228\n\nGOBIERNODE —, AF, INSTITUTO\nDE AYUDA FINANCIERA\nENTRE RIOS | AS ALA ACCIÓN SOCIAL\n\nINSTITUTO DE AYUDA FINANCIERA A LA ACCIÓN SOCIAL\n\nLICITACIÓN PRIVADA N° 8/2026\n\nAdquisición de clasificadora contadora de Billetes para Casinos y\nSalas de la Provincia\n\nPLIEGO de CONDICIONES PARTICULARES\n\nARTÍCULO 1°: OBJETO.\n\nEl presente llamado a Licitación Privada Orden de Compra Cerrada (Art. 6 BIS TER.\nDecreto N° 1328 GOB) tiene por objeto la provisión de una (1)Contadora de Billetes\npara Casinos y Salas de la Provincia.\n\nARTICULO 2°: DESCRIPCION Y CANTIDADES\n\nEn el PLIEGO TÉCNICO de la presente licitación, se determinan las especificaciones\n\ntécnicas del bien a proveer. Allí se describen las características técnicas mínimas y\ncantidad; pudiendo el OFERENTE presentar ofertas cuyas características superen o\nmejoren las aquí solicitadas.\n\nARTÍCULO 3°: DOCUMENTACIÓN TÉCNICA.\n\nEl OFERENTE junto con su propuesta podrá presentar folletos, catálogos, CDs y/o\n\nDVDs informativos, métodos y manuales de instalación, así como cualquier otra\ndocumentación técnica que permita evaluar si lo ofertado se ajusta a lo solicitado\nen el ARTÍCULO 2°.\n\nInstituto de Ayuda Financiera a la Acción Social - 25 de Mayo 255, Paraná - Entre Ríos. // Teléfono: 0343 - 4201100\n\f228\n\nGOBIERNO DE INSTITUTO\n: DE AYUDA FINANCIERA\nER ENTRE RIOS IAFAS ALA ACCIÓN SOCIAL\n\nARTÍCULO 4°: PRESENTACIÓN.\n\nLa propuesta deberá presentarse en sobre u otro contenedor cerrado y lacrado,\nseñalándose en la cubierta el número y objeto de la Licitación, día y hora de\napertura de la misma.\n\nDicho sobre contendrá el Presupuesto detallado, con cantidades en letras y\nnúmeros coincidentes con el total de la oferta; además de los correspondientes\ncomprobantes de Garantía de Oferta y constancia actualizada de encontrarse\ninscripto en el Registro de Proveedores del Estado Provincial (acorde al Art. 2° del\nP.C.G.) en caso de poseerla de años anteriores, deberá presentar su vigencia para\nel año en curso .\n\nSerá recibida en la División Mesa de Entradas Y Salidas del Instituto, calle Belgrano\n70 de la ciudad de Paraná, provincia de Entre Ríos, hasta el día y hora establecidos\nen la Licitación.\n\nLas ofertas deberán elaborarse, respetando el ordenamiento establecido, punto por\npunto, especificado en el presente Pliego. El OFERENTE podrá presentar una\ncotización adicional del equipamiento, que será considerada como alternativa, la\nque a juicio del 1.A.F.A.S. podrá ser tenida en cuenta o rechazada, siempre y\n\ncuando presente la Oferta Base.\n\nEl no cumplimiento de este requisito será motivo suficiente para la no consideración\nde la oferta.\n\nARTÍCULO 5°: ACEPTACIÓN\n\nLa sola presentación de oferta implica la aceptación lisa y llana de todos y cada\nuno de los artículos que conforman el presente Pliego de Condiciones Particulares\n(P.C.P.) y el Pliego de Condiciones Generales (P.C.G.).-\n\nEn la propuesta económica deberá especificarse claramente el precio unitario y\ntotal de lo cotizado de acuerdo al siguiente desglose:\n\nSe deberán incluir además las especificaciones y detalles (marca, modelo, calidad,\ngarantía, etc.) que permitan una correcta evaluación de lo ofrecido.\n\nLa cotización por precio unitario y total deberá estar expresada en moneda\n\nArgentina y/o Extranjera autorizada, en cuyo caso a efectos de la comparación\n\nInstituto de Ayuda Financiera a la Acción Social - 25 de Mayo 255, Paraná - Entre Ríos. // Teléfono: 0343 - 4201100\n\f228\n\nGOBIERNODE —, AF, INSTITUTO\nDE AYUDA FINANCIERA\nENTRE RIOS | AS ALA ACCIÓN SOCIAL\n\ndeberá indicarse con precisión, el tipo de cambio vendedor vigente al cierre del\ndía anterior a la presentación. Deberá estar incluido el Impuesto al Valor Agregado\n(LV.A.) y otros Gravámenes si los hubiere; el Instituto es sujeto EXENTO frente al\nImpuesto al Valor Agregado (1.V.A.).-\n\nA los fines de la facturación deberá ser expresada en moneda Argentina, el\nInstituto es sujeto EXENTO frente al Impuesto al Valor Agregado (I.V.A.).-\n\nPara afianzar el cumplimiento de todas las obligaciones, los proponentes deberán\npresentar una garantía de oferta, que será del uno (1%) por ciento del valor total\ncotizado.\n\nEn caso de cotizaciones alternativas, las garantías se calcularán sobre el mayor\nvalor propuesto. La garantía o su comprobante respectivo según el caso, será\nadjuntada a la propuesta.\n\nA los fines de la aplicación de lo establecido en el presente deberán remitirse a lo\nestablecido en el Pliego de Condiciones Generales Artículos 22°, 24°; 25% 26° y 27°.-\n\nARTÍCULO 8°: VALIDEZ de la OFERTA.\nLa oferta presentada tendrá validez plena por treinta (30) días hábiles contados\ndesde la apertura de la Licitación.Vencido dicho término sin que se hubiese resuelto\n\nla adjudicación, los OFERENTES que se acojan a lo estipulado en este artículo y\nopten por el desistimiento de sus propuestas lo comunicarán por escrito al Instituto,\ncaso contrario se tendrá por válida la misma.-\n\nARTÍCULO 9°: LUGAR y PLAZO de ENTREGA.\nEn las respectivas propuestas los señores OFERENTES deberán indicar el plazo de\n\nentrega de los elementos ofertados, el que no podrá exceder los noventa (90) días\nhábiles contados a partir de la notificación de la adjudicación mediante la orden\nde compra pertinente.\n\nLa entrega de esta adquisición será controlada y verificada por personal de la\nGerencia de Casinos Central .\n\nLa contratación incluye todos los gastos que se originen por fletes, acarreos,\ndescargas, entregas e instalaciones.-\n\n3\n\nInstituto de Ayuda Financiera a la Acción Social - 25 de Mayo 255, Paraná - Entre Ri\n\n/ Teléfono: 0343 - 4201100\n\f228\nEn hsrmuro\nif DE AYUDA FINANCIERA\nER ENTRE RÍOS IAFAS ness\n\nARTÍCULO 10°: FORMA DE ADJUDICACIÓN.\n\nLa adjudicación será por item otorgada por la totalidad de la compra a un Unico\nOFERENTE.\n\nLa adjudicación se hará como consecuencia de la comparación de las ofertas\npresentadas al acto respectivo y de conformidad a lo previsto en el Pliego de\nCondiciones Generales y Pliego de Condiciones Particulares.\n\nLa presentación de una sola oferta no invalidará el acto licitatorio y podrá ser\n\nadjudicado.\n\nARTÍCULO 11°: GARANTÍA de ADJUDICACIÓN.\nEl adjudicatario deberá dentro del plazo de diez (10) días hábiles contados a partir\nde la fecha de notificación de la adjudicación, constituir una garantía de\n\nadjudicación conforme lo previsto en el Artículo 22” inciso b) del Pliego de\nCondiciones Generales y por un valor equivalente al cinco por ciento (5%) del valor\ntotal fuer judi , en cualquiera de las modalidades previstas por el\n\nArtículo 26° del Pliego de Condiciones Generales.\n\nARTÍCULO 12°: PENALIDADES y/o MULTAS,\n\nSi el adjudicatario no cumpliera con el plazo de entrega estipulado, se le aplicarán\nlas siguientes multas:\n\n. el equivalente al tres por mil (3 %c) diario del valor total de la facturación\ndurante los diez (10) primeros días\n\n. el equivalente al cinco por mil (5 %o) diario del valor total de la facturación\ndurante los diez (10) días siguientes\n\n. el equivalente al diez por mil (10 %o) diario del valor total de la facturación\ndurante los diez (10) días siguientes\n\nAdemás de las sanciones estipuladas en el Capítulo XIIl y Capítulo XIV de la\nReglamentación de Contratación del Estado (Decreto N° 795/96 M.E.O.S.P.).-\nARTÍCULO 13°: SELLADOS e IMPUESTOS.\n\nEn oportunidad de hacerse efectivo el pago de las facturas, el Instituto retenará los\n\nimpuestos que corresponden de acuerdo a las Leyes Impositivas vigentes, debiendo\nel adjudicatario acreditar el pago de los Impuestos Provinciales y Nacionales de los\n\ncuales fuera responsable.-\n\nInstituto de Ayuda Financiera a la Acción Social - 25 de Mayo 255, Paraná - Entre Ríos. // Teléfono: 0343 - 4201100\n\f228\n\nGOBIERNODE —, AF, INSTITUTO\nDE AYUDA FINANCIERA\nENTRE RIOS | AS ALA ACCIÓN SOCIAL\n\nARTÍCULO 14°: FORMAS de PAGO,\nEl pago al proveedor se realizará en el Dpto. Tesorería del Instituto previa entrega y\naceptación de lo que le fuera adjudicado; en cumplimiento de los trámites\nadministrativos corrientes y presentación por parte del adjudicatario de la\npertinente factura con arreglo a las normas impositivas vigentes.\nEn el caso de que se hubiera efectuado la adjudicación en moneda extranjera\nautorizada, de acuerdo con el precio que fuera cotizado, a los efectos de la\npresentación de la factura correspondiente se deberá efectuar la conversión del\nprecio adjudicado en moneda extranjera a moneda nacional, utilizando para ello\nel tipo de cambio vendedor publicado por el Banco de la Nación Argentina el día\nanterior al de la emisión de la misma.\nPara su realización será indispensable la presentación ante el Instituto, del\nCertificado de Libre Deuda Fiscal para Proveedores del Estado o Certificado de\nRegularización de Deuda para Proveedores del estado, emitido por la\nAdministradora Tributaria de Entre Ríos, conforme a las Resoluciones vigentes de la\nATER\n\n- El pago , en caso de la adjudicación del bien,será efectuado dentro de los treinta\n(30) días corridos de la fecha de recepción de la correspondiente documentación.\n\n- El pago , en caso del servicio mensual de mantenimiento ,se realizará de manera\nMENSUAL a mes vencido en pesos Moneda Nacional, mediante transferencia\n\nbancaria a la cuenta de la empresa adjudicataria.\n\nLos señores OFERENTES en su propuesta podrán ofrecer descuentos por pronto pago\nsolo para los siguientes plazos:\n\n. Por pago a los diez (10) días corridos de la fecha de recepción de la\ncorrespondiente documentación.-\n\n. Por pago a los quince (15) días corridos de la fecha de recepción de la\ncorrespondiente documentación.-\n\n. Por pago a los veinte (20) días corridos de la fecha de recepción de la\ncorrespondiente documentación.-\n\nEl Instituto no reconocerá ningún aumento en el precio de lo cotizado durante el\ntiempo de mantenimiento de la oferta y/o del plazo de provisión, según\ncorresponda cualquiera sea la denominación que se utilice para aumentar el valor\nde los bienes cotizados. La presentación de la propuesta implica que el OFERENTE\n\nInstituto de Ayuda Financiera a la Acción Social - 25 de Mayo 255, Paraná - Entre Ríos. // Teléfono: 0343 - 4201100\n\f228\nGOBIERNO DE, INSTITUTO\n7 DE AYUDA FINANCIERA\nER ENTRE RIOS IAFAS ALAACCION SOCIAL\n\nrenuncia en forma expresa a cualquier reclamo de aumento en el precio cotizado\ncualquiera sea su origen, incluidos los «acontecimientos imprevisibles o\n\nextraordinarios.\n\nARTICULO 15°: HIGIENE y SEGURIDAD en el TRABAJO.\n\nEl adjudicatario de la presente Licitación deberá cumplimentar con los requisitos\nestipulados en el “ANEXO - HIGIENE y SEGURIDAD en el TRABAJO\", que se adjunta a\neste pliego. A efectos de consultas podrán efectuarse en días hábiles\nadministrativos, durante el horario de 09,00 horas a 12,00 horas en las oficinas del\nDpto. Seguridad e Higiene en el Trabajo. te.343-4201166 o al correo del Jefe Dpto.\n\ncbritosGiafas.gov.ar Ing. Claudio Britos .\n\nARTÍCULO 16°: CONSULTAS y ACLARACIONES.\nLas consultas y aclaraciones en forma personal, podrán efectuarse en días hábiles\nadministrativos en la ciudad de Paraná - Belgrano N° 70 — Tel: (0343)4201124,\n\ndurante el horario de 09:00 a 12:00 horas, previamente haber sido informado a la\n\nGerencia de Casinos Central del |.A.F.A.S.\nLas consultas y aclaraciones en forma electrónica podrán efectuarse\n\nvia mail a: llenardon@iafas.gov.ar ; mpentacolo@iafas.gov.ar\n\nDOC H8 GAC CPR 002\n\nCx\n\neme Genera.\nY hs\ntaras. ON\n\nIP\n\nInstituto de Ayuda Financiera a la Acción Social - 25 de Mayo 255, Paraná - Entre Ríos. // Teléfono: 0343 - 4201100\n"
+        }
+      },
+      "garantias": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "requisitos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "limite_nota_contrasena": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "moneda_literal": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      }
+    },
+    "publicacion_oficial": "https://www.iafas.gov.ar/proveedores/licitaciones/",
+    "documentos": [
+      {
+        "titulo": "2026 - C - 107255- Aprobar Licitacion Privada N° 8_2026 - Contadora de billetes- AVISO_firmado",
+        "url": "https://www.iafas.gov.ar/descargas/17687"
+      },
+      {
+        "titulo": "Pliegos llamado a licitacion privada 8-26",
+        "url": "https://www.iafas.gov.ar/descargas/17688"
+      }
+    ],
+    "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
+    "ultima_observacion": "2026-10-30T08:33:56.099440-03:00",
+    "pago": {
+      "estado": "VERIFICADO",
+      "clasificacion": "DESPUES_CONFORMIDAD_RECEPCION",
+      "etiqueta": "Después de entrega y aceptación y presentación de factura; exige trámites administrativos; plazo no indicado",
+      "plazos_dias": [],
+      "hitos_inicio": [
+        "TRAMITES_ADMINISTRATIVOS",
+        "PRESENTACION_FACTURA",
+        "CONFORMIDAD_RECEPCION"
+      ],
+      "unidades_dias": [],
+      "direccion": "ORGANISMO_AL_PROVEEDOR",
+      "documento_respaldo": "https://www.iafas.gov.ar/descargas/17688",
+      "documentos_respaldo": [
+        "https://www.iafas.gov.ar/descargas/17688"
+      ],
+      "evidencias": [
+        {
+          "categoria": "DESPUES_CONFORMIDAD_RECEPCION",
+          "etiqueta": "Después de entrega y aceptación y presentación de factura; exige trámites administrativos; plazo no indicado",
+          "plazos_dias": [],
+          "unidades_dias": [],
+          "hitos_inicio": [
+            "TRAMITES_ADMINISTRATIVOS",
+            "PRESENTACION_FACTURA",
+            "CONFORMIDAD_RECEPCION"
+          ],
+          "direccion": "ORGANISMO_AL_PROVEEDOR",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": false,
+          "prioritario": false,
+          "pagos_parciales": false,
+          "anticipo_publicado": false,
+          "facturacion_parcial": false,
+          "acreditacion_inmediata_comprobada": false,
+          "clausula": "Articulo 14",
+          "cita": "FORMAS de PAGO, El pago al proveedor se realizará en el Dpto. Tesorería del Instituto previa entrega y aceptación de lo que le fuera adjudicado; en cumplimiento de los trámites administrativos corrientes y presentación por parte del adjudicatario de la pertinente factura con arreglo a las normas impositivas vigentes. En el caso de que se hubiera efectuado la adjudicación en moneda extranjera autorizada, de acuerdo con el precio que fuera cotizado, a los efectos de la presentación de la factura correspondiente se deberá efectuar la conversión del precio adjudicado en moneda extranjera a moneda nacional, utilizando para ello el tipo de cambio vendedor publicado por el Banco de la Nación Argentina el día anterior al de la emisión de la misma. Para su realización será indispensable la presentación ante el Instituto, del Certificado de Libre Deuda Fiscal para Proveedores del Estado o Certificado de Regularización de Deuda para Proveedores del estado, emitido por la Administradora Tributaria de Entre Ríos, conforme a las Resoluciones vigentes de la ATER",
+          "url_documento": "https://www.iafas.gov.ar/descargas/17688",
+          "sha256": "b68787c175785f84778984ca58e2e5e5f7306bf6701d88864421deea167e7cde",
+          "pagina": 5,
+          "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+          "version_analizador": 12
+        },
+        {
+          "categoria": "DESPUES_CONFORMIDAD_RECEPCION",
+          "etiqueta": "Después de entrega y aceptación y presentación de factura; exige trámites administrativos; plazo no indicado",
+          "plazos_dias": [],
+          "unidades_dias": [],
+          "hitos_inicio": [
+            "TRAMITES_ADMINISTRATIVOS",
+            "PRESENTACION_FACTURA",
+            "CONFORMIDAD_RECEPCION"
+          ],
+          "direccion": "ORGANISMO_AL_PROVEEDOR",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": false,
+          "prioritario": false,
+          "pagos_parciales": false,
+          "anticipo_publicado": false,
+          "facturacion_parcial": false,
+          "acreditacion_inmediata_comprobada": false,
+          "clausula": "Articulo 14",
+          "cita": "El pago al proveedor se realizará en el Dpto. Tesorería del Instituto previa entrega y aceptación de lo que le fuera adjudicado; en cumplimiento de los trámites administrativos corrientes y presentación por parte del adjudicatario de la pertinente factura con arreglo a las normas impositivas vigentes. En el caso de que se hubiera efectuado la adjudicación en moneda extranjera autorizada, de acuerdo con el precio que fuera cotizado, a los efectos de la presentación de la factura correspondiente se deberá efectuar la conversión del precio adjudicado en moneda extranjera a moneda nacional, utilizando para ello el tipo de cambio vendedor publicado por el Banco de la Nación Argentina el día anterior al de la emisión de la misma. Para su realización será indispensable la presentación ante el Instituto, del Certificado de Libre Deuda Fiscal para Proveedores del Estado o Certificado de Regularización de Deuda para Proveedores del estado, emitido por la Administradora Tributaria de Entre Ríos, conforme a las Resoluciones vigentes de la ATER",
+          "url_documento": "https://www.iafas.gov.ar/descargas/17688",
+          "sha256": "b68787c175785f84778984ca58e2e5e5f7306bf6701d88864421deea167e7cde",
+          "pagina": 5,
+          "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+          "version_analizador": 12
+        }
+      ],
+      "prioritario": false,
+      "motivo": null
+    },
+    "plazo_nominal_pago": {
+      "dias": [],
+      "unidades": [],
+      "hitos_inicio": [
+        "TRAMITES_ADMINISTRATIVOS",
+        "PRESENTACION_FACTURA",
+        "CONFORMIDAD_RECEPCION"
+      ]
+    },
+    "anticipos_y_parciales": {
+      "anticipo_publicado": null,
+      "pagos_parciales": null,
+      "facturacion_parcial": null
+    },
+    "recuperacion_efectiva_capital": {
+      "estado": "PENDIENTE",
+      "dias": null,
+      "motivo": "El plazo contractual no prueba acreditación bancaria ni fecha efectiva de recuperación del capital."
+    }
+  }
+]

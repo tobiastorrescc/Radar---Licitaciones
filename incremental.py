@@ -84,6 +84,11 @@ def consolidar(anterior,nuevo):
             salida[k]=sorted(set(anterior.get(k,[])+v));continue
         salida[k]=v
     if cambiados:
+        if salida.get('detalle_documental'):salida['detalle_documental']=dict(salida['detalle_documental'])
+        for campo,v in list(salida.get('detalle_documental',{}).items()):
+            ev=v.get('evidencia',{});url=ev.get('url')
+            if url in cambiados and ev.get('sha256')!=versiones_nuevas[url]:
+                salida['detalle_documental'][campo]={**v,'valor':None,'valor_anterior':v.get('valor'),'estado':'PENDIENTE','motivo':'DOCUMENTO_CAMBIADO_REQUIERE_REVALIDACION'}
         import pagos
         anteriores=[e for e in anterior.get('pago_evidencias',[]) if e.get('url_documento') not in cambiados]
         salida['pago_evidencias']=pagos.unir_evidencias(anteriores,entrada.get('pago_evidencias',[]))
