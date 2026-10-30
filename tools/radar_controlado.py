@@ -13,6 +13,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import incremental as inc
 import oportunidades as o
 import fichas
+import pagos
 import registro_fuentes
 from tools.verificar_fuentes import ejecutar,guardar
 from tools import comprobar_pliegos
@@ -56,7 +57,7 @@ def generar_informe(db,resumen,registros,fuentes,destino):
     vistas=o.guardar_vistas(actuales,fecha,destino)
     guardar(destino/'fichas.json',{'fecha':fecha,'fichas':[fichas.construir(r) for r in actuales if r['clasificacion_registro']=='PROCEDIMIENTO']})
     (destino/'fichas_abiertas.md').write_text(fichas.reporte([r for r in actuales if r['vigencia']=='ABIERTA'],fecha))
-    cola=[{'id':r['id'],'organismo':r.get('organismo'),'numero_procedimiento':r.get('numero_procedimiento'),'objeto':r.get('objeto'),'url':r.get('url'),'motivo':r['pago'].get('motivo'),'documentos':r.get('documentos',[])} for r in actuales if r['clasificacion_registro']=='PROCEDIMIENTO' and r['vigencia']=='ABIERTA' and r['pago']['estado']!='VERIFICADO']
+    cola=[{'id':r['id'],'organismo':r.get('organismo'),'numero_procedimiento':r.get('numero_procedimiento'),'objeto':r.get('objeto'),'url':r.get('url'),'motivo':r['pago'].get('motivo') or 'PLAZO_O_HITO_PENDIENTE_DE_PRECISION','documentos':r.get('documentos',[])} for r in actuales if r['clasificacion_registro']=='PROCEDIMIENTO' and r['vigencia']=='ABIERTA' and pagos.requiere_investigacion(r['pago'])]
     guardar(destino/'cola_documental.json',{'fecha':fecha,'pendientes':cola,'es_evaluacion_rentabilidad':False})
     anteriores=Path('inventario/observaciones_previas.json')
     if anteriores.exists():

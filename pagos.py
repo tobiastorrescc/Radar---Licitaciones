@@ -3,7 +3,7 @@ from hashlib import sha256
 import re
 import unicodedata
 
-VERSION=10
+VERSION=11
 NO_INFORMADO='Pendiente de verificar'
 NUMEROS={'siete':7,'quince':15,'treinta':30,'cuarenta y cinco':45,'sesenta':60,'noventa':90,
          'cinco':5,'diez':10,'veinte':20,'veinticinco':25,'cuarenta':40,'cincuenta':50,
@@ -21,6 +21,7 @@ def norm(t):
 
 def clasificar(cita,permitir_definicion=False):
     t=norm(cita)
+    t=re.split(r'en el caso de que se hubiera efectuado la adjudicacion en moneda extranjera',t)[0]
     if EXCLUIDO.search(t) or re.search(r'pago (?:al |de )?contado (?:de[l]?|por (?:la )?(?:compra|adquisicion) de[l]?) (?:los )?pliegos?',t):return None
     if re.search(r'forma de pago determinada por .*pliego de condiciones particulares',t):return None
     if not permitir_definicion and (re.search(r'^pago (?:al )?contado se entendera',t) or re.search(r'forma de pago (?:determinada|establecida|fijada|indicada) en (?:el )?pliego',t)):return None
@@ -48,10 +49,12 @@ def clasificar(cita,permitir_definicion=False):
     conformidad_generica=bool(re.search(r'previa conformidad|despues de (?:la )?conformidad',t))
     factura_conformada=bool(re.search(r'factura\s+(?:debidamente\s+)?conformada|conformidad de (?:(?:la|las|su|sus) )?facturas?',t))
     factura=presentacion_factura or recepcion_factura or fecha_factura or contra_factura or factura_conformada
-    conformidad=bool(re.search(r'conformidad (?:de (?:la )?)?(?:recepcion|prestacion|servicio)|recepcion (?:definitiva|conforme)(?! de (?:(?:la|las|su|sus) )?facturas?)|conformada (?:la )?(?:recepcion|prestacion)',t))
+    conformidad=bool(re.search(r'previa entrega y aceptacion|conformidad (?:de (?:la )?)?(?:recepcion|prestacion|servicio)|recepcion (?:definitiva|conforme)(?! de (?:(?:la|las|su|sus) )?facturas?)|conformada (?:la )?(?:recepcion|prestacion)',t))
     contra_entrega=bool(re.search(r'contra\s+entrega\b(?!\s+(?:de\s+)?(?:la\s+)?(?:factura|comprobante))',t))
     contado=bool(re.search(r'\b(?:al |de )?contado\b|pago inmediato',t))
     hitos=[]
+    if re.search(r'tramites administrativos',t):hitos.append('TRAMITES_ADMINISTRATIVOS')
+    if re.search(r'presentacion por parte del adjudicatario de la pertinente factura',t):presentacion_factura=True;factura=True
     if re.search(r'recepcion de (?:la )?(?:correspondiente )?documentacion',t):hitos.append('RECEPCION_DOCUMENTACION_CORRESPONDIENTE')
     if re.search(r'certificacion definitiva',t):hitos.append('CERTIFICACION_DEFINITIVA')
     if re.search(r'presentacion de (?:la )?facturacion',t):hitos.append('PRESENTACION_FACTURACION')
@@ -92,12 +95,16 @@ def clasificar(cita,permitir_definicion=False):
     elif categoria=='CONTRA_FACTURA_CONFORMADA':etiqueta='Contra factura conformada; plazo no indicado'
     elif categoria=='DESPUES_RECEPCION_FACTURA':etiqueta='Después de recepción de factura; plazo no indicado'
     elif categoria=='CONTRA_FACTURA':etiqueta='Contra factura; plazo no indicado'
-    elif categoria=='DESPUES_CONFORMIDAD_RECEPCION':etiqueta='Después de conformidad de recepción; plazo no indicado'
+    elif categoria=='DESPUES_CONFORMIDAD_RECEPCION':etiqueta='Después de entrega y aceptación' if 'previa entrega y aceptacion' in t else 'Después de conformidad de recepción'
     elif categoria=='ANTICIPO':etiqueta='Anticipo publicado; ver cláusula'
     elif categoria=='PAGOS_PARCIALES':etiqueta='Pagos parciales; plazo no indicado'
     elif categoria=='DESPUES_APROBACION_ADMINISTRATIVA':etiqueta='Después de aprobación administrativa; plazo no indicado'
     elif categoria in ('MIXTO','OPCIONES_PUBLICADAS'):etiqueta='Pago mixto' if categoria=='MIXTO' else 'Opciones de pago publicadas'
     else:etiqueta='/'.join(str(n) for n in plazos)+' días'+(' '+unidades[0] if len(unidades)==1 and unidades[0]!='no indicada' else '')
+    if categoria=='DESPUES_CONFORMIDAD_RECEPCION':
+        if presentacion_factura:etiqueta+=' y presentación de factura'
+        if 'TRAMITES_ADMINISTRATIVOS' in hitos:etiqueta+='; exige trámites administrativos'
+        etiqueta+='; plazo no indicado'
     if not plazos and categoria in ('CONTADO','CONTRA_ENTREGA'):
         if conformidad:etiqueta+='; exige conformidad de recepción'
         elif factura_conformada:etiqueta+=' contra factura conformada'
@@ -134,6 +141,7 @@ def extraer(texto,url,hash_documento=None,pdf=False,metodo='TEXTO'):
                 if fuertes and m not in fuertes:continue
                 previo=t[max(0,m.start()-180):m.start()]
                 if re.search(r'oferente[^.!?]{0,100}(?:consignar|indicar|proponer)[^.!?]{0,80}$',previo):continue
+                if re.search(r'(?:oferta|cotizacion|precios)\s+(?:por|para|de)\s*$',previo):continue
                 if re.search(r'no se (?:admite|admitira|acepta|aceptara|efectuara|realizara)[^.!?]{0,50}$',previo):continue
                 if re.search(r'(?:precio|valor|costo|compra|adquisicion) de[l]? pliego[^.!?]{0,40}$',previo):continue
                 siguiente=next((f.start() for f in fuertes if f.start()>m.start()),len(original))
@@ -187,7 +195,7 @@ def consolidar(evidencias):
     for original in evidencias:
         e=dict(original)
         if (e.get('url_documento'),e.get('sha256')) in genericos and e.get('categoria')=='PAGOS_PARCIALES' and (re.search(r'oferente.*consignar',norm(e.get('cita'))) or norm(e.get('cita')).startswith('pago: - pago total')):continue
-        if e.get('version_analizador') in (5,6,7,8,9) and not e.get('definicion_contado'):
+        if e.get('version_analizador') in (5,6,7,8,9,10) and not e.get('definicion_contado'):
             actual=clasificar(e.get('cita'))
             if actual is None:continue
             e.update(actual);e['reclasificada_desde_version']=e['version_analizador'];e['version_analizador']=VERSION
@@ -278,3 +286,10 @@ def grupo_comercial(pago):
     if categoria in ('MIXTO','OPCIONES_PUBLICADAS'):return 8
     dias=max(pago.get('plazos_dias') or [999])
     return 2 if dias<=5 else 3 if dias<=10 else 4 if dias<=15 else 5 if dias<=30 else 6 if dias<=60 else 7 if dias<999 else 8
+
+
+def requiere_investigacion(pago):
+    if pago.get('estado')!='VERIFICADO':return True
+    if pago.get('clasificacion') in ('MIXTO','OPCIONES_PUBLICADAS'):return True
+    if pago.get('plazos_dias'):return not bool(pago.get('hitos_inicio'))
+    return pago.get('clasificacion') not in ('CONTADO','CONTRA_ENTREGA','ANTICIPO')

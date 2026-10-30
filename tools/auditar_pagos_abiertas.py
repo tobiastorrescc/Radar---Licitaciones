@@ -22,7 +22,7 @@ def main():
     with sqlite3.connect('file:'+str(dbpath.resolve())+'?mode=ro',uri=True) as db:rs=inc.actuales(db,fecha_revision,meta['corrida'])
     abiertas=[r for r in rs if r.get('clasificacion_registro')=='PROCEDIMIENTO' and r.get('vigencia')=='ABIERTA']
     salida=Path('work/pagos-abiertas');salida.mkdir(parents=True,exist_ok=True)
-    pendientes=[r for r in abiertas if r['pago']['estado']!='VERIFICADO'];antes_pago=pagos.resumen(abiertas)
+    pendientes=[r for r in abiertas if pagos.requiere_investigacion(r['pago'])];antes_pago=pagos.resumen(abiertas)
     catalogo=root/meta['directorio']/'catalogo_completo.json'
     base_original=json.loads(catalogo.read_text()).get('oportunidades',[]) if catalogo.exists() else []
     ids={r['id'] for r in abiertas}
@@ -35,7 +35,7 @@ def main():
     (salida/'abiertas.json').write_text(json.dumps(abiertas,ensure_ascii=False,indent=2)+'\n')
     (salida/'fichas_abiertas.md').write_text(fichas.reporte(abiertas,fecha_revision))
     (salida/'fichas.json').write_text(json.dumps({'fichas':[fichas.construir(r) for r in abiertas]},ensure_ascii=False,indent=2)+'\n')
-    (salida/'cola_documental.json').write_text(json.dumps({'pendientes':[fichas.construir(r) for r in abiertas if r['pago']['estado']!='VERIFICADO']},ensure_ascii=False,indent=2)+'\n')
+    (salida/'cola_documental.json').write_text(json.dumps({'pendientes':[fichas.construir(r) for r in abiertas if pagos.requiere_investigacion(r['pago'])]},ensure_ascii=False,indent=2)+'\n')
     (salida/'abiertas.md').write_text(o.reporte(abiertas,meta['fecha'])+'\n')
     print('PAGOS_ABIERTAS '+json.dumps({k:v for k,v in resultado.items() if not k.startswith('pago_') or k=='pago_despues'},ensure_ascii=False))
     if resultado['hash_sqlite_antes']!=resultado['hash_sqlite_despues']:raise ValueError('Cambió el historial aislado durante la revisión')

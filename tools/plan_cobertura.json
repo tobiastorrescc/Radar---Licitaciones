@@ -1,11 +1,9 @@
 {
-  "etapa": "cierre-pagos-fichas-y-paginacion-sin-repetir-descubrimiento",
+  "etapa": "validacion-final-condiciones-fichas-sin-nuevo-barrido",
   "sondear": false,
   "auditar": false,
   "descubrir": false,
-  "reverificar_ids": [
-    "fuente-001"
-  ],
+  "reverificar_ids": [],
   "pagos_run": 41048293524,
   "revisar_identidades": false
 }

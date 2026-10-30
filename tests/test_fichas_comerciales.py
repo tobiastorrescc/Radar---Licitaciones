@@ -80,3 +80,32 @@ class SalidasGrandesTests(unittest.TestCase):
         registro={'clasificacion_registro':'PROCEDIMIENTO','vigencia':'ABIERTA','url':'https://oficial.gob.ar/ficha','fuente':'https://oficial.gob.ar/','documentos':[{'url':'https://oficial.gob.ar/a.pdf','titulo':'Pliego'}]}
         with patch.object(c.subprocess,'Popen',side_effect=factory),patch('builtins.print'):r=c.comprobar([registro],'2026-10-30',[],total=3)
         self.assertEqual(r[0]['estado'],'DOCUMENTO_ACCESIBLE');self.assertEqual(len(r[0]['datos']),150000)
+
+class HuellaFichaTests(unittest.TestCase):
+    def test_reusar_ocr_no_crea_cambio_pero_otra_cantidad_si(self):
+        import copy,incremental as inc
+        r={'titulo':'Licitación Pública 1/2026','detalle_documental':{'productos':{'valor':[{'producto':'Cadena','cantidad':2}],'estado':'VERIFICADO','evidencia':{'sha256':'a','url':'https://o.gob.ar/a.pdf','pagina':5,'metodo':'OCR_SELECTIVO'}}}}
+        b=copy.deepcopy(r);b['detalle_documental']['productos']['evidencia']['metodo']='OCR_SELECTIVO_CACHE'
+        self.assertEqual(inc.huella(r),inc.huella(b))
+        b['detalle_documental']['productos']['valor'][0]['cantidad']=4
+        self.assertNotEqual(inc.huella(r),inc.huella(b))
+
+class CantidadesTests(unittest.TestCase):
+    def test_cantidad_narrativa_con_vinculo_explicito_y_sin_telefonos(self):
+        d=fichas.extraer('Adquisición de 600 luminarias leds para alumbrado público. Teléfono 03442 555555.','https://oficial.gob.ar/a.pdf','a')
+        self.assertEqual(d['productos']['valor'][0]['cantidad'],600)
+        self.assertNotIn('productos',fichas.extraer('Presupuesto 6000000. Teléfono 03442 555555.','https://oficial.gob.ar/a.pdf','a'))
+    def test_numero_en_letras_contradictorio_no_se_afirma(self):
+        d=fichas.extraer('Provisión de una (2) contadora de billetes.','https://oficial.gob.ar/a.pdf','a')
+        self.assertNotIn('productos',d)
+
+class CondicionesSinPlazoTests(unittest.TestCase):
+    def test_iafas_condicion_verificada_no_equivale_a_contado_ni_a_dias_inventados(self):
+        texto='FORMAS de PAGO. El pago al proveedor se realizará en el Dpto. Tesorería del Instituto previa entrega y aceptación de lo que le fuera adjudicado; en cumplimiento de los trámites administrativos corrientes y presentación por parte del adjudicatario de la pertinente factura. En el caso de que se hubiera efectuado la adjudicación en moneda extranjera autorizada, la factura se convertirá a moneda nacional.'
+        p=pagos.consolidar(pagos.extraer(texto,'https://www.iafas.gov.ar/descargas/17688','b',pdf=True))
+        self.assertEqual(p['estado'],'VERIFICADO');self.assertEqual(p['clasificacion'],'DESPUES_CONFORMIDAD_RECEPCION')
+        self.assertEqual(p['plazos_dias'],[]);self.assertIn('PRESENTACION_FACTURA',p['hitos_inicio']);self.assertIn('TRAMITES_ADMINISTRATIVOS',p['hitos_inicio'])
+        self.assertIn('plazo no indicado',p['etiqueta'])
+    def test_oferta_por_pago_contado_no_prueba_condicion_de_cobro(self):
+        p=pagos.consolidar(pagos.extraer('Las propuestas deberán consignar: d) Oferta por pago contado.','https://o.gob.ar/a.pdf','a'))
+        self.assertEqual(p['estado'],'PENDIENTE')

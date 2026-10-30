@@ -19,6 +19,16 @@ def extraer(texto,url,digest,metodo='TEXTO'):
         if re.search(r'repuestos.*nuevos.*sin uso.*originales',pagos.norm(t)):
             m=re.search(r'Los repuestos deber[aá]n[^\n]+(?:\n[^\n]+)?',t,re.I)
             if m:guardar('requisitos',re.sub(r'\s+',' ',m[0]),pagina,m[0])
+    # Cantidades sólo cuando el texto liga explícitamente compra y producto.
+    patron=re.compile(r'(?:adquisici[oó]n|provisi[oó]n|suministro|compra)\s+de\s+(?:(?P<palabra>una?|dos|tres)\s*\(\s*)?(?P<cantidad>\d{1,3}(?:\.\d{3})*|\d{1,6})\s*\)?\s+(?P<producto>[A-Za-zÁÉÍÓÚáéíóúÑñ][^.;\n]{2,110})',re.I)
+    productos=[]
+    for pagina,t in enumerate(texto.split('\f'),1):
+        for m in patron.finditer(t):
+            n=int(m['cantidad'].replace('.',''))
+            palabra=(m['palabra'] or '').lower()
+            if palabra and {'un':1,'una':1,'dos':2,'tres':3}[palabra]!=n:continue
+            productos.append({'producto':m['producto'].strip(' “”.'), 'cantidad':n,'unidad':None,'pagina':pagina,'cita':m[0]})
+    if productos:guardar('productos',productos,productos[0]['pagina'],'; '.join(p['cita'] for p in productos))
     archivo=Path(__file__).parent/'inventario/evidencias_documentales.json'
     for e in json.loads(archivo.read_text()) if archivo.exists() else []:
         if e['sha256']!=digest:continue
@@ -32,7 +42,9 @@ def construir(r):
     detalle=dict(r.get('detalle_documental') or {})
     comprobacion=r.get('comprobacion_pliego') or {}
     if comprobacion.get('sha256'):
-        anotado=extraer('',comprobacion.get('url') or r.get('url'),comprobacion['sha256'])
+        anotado=extraer(comprobacion.get('encabezado') or '',comprobacion.get('url') or r.get('url'),comprobacion['sha256'],'ENCABEZADO_DOCUMENTAL_GUARDADO_NORMALIZADO')
+        for v in anotado.values():
+            if v['evidencia']['metodo']=='ENCABEZADO_DOCUMENTAL_GUARDADO_NORMALIZADO':v['evidencia']['pagina']=None
         detalle={**anotado,**detalle}
     campos={}
     for campo in CAMPOS:
