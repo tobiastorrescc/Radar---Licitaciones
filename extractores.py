@@ -16,7 +16,7 @@ def norm(t):
 
 
 TIPO=r'(?:licitacion(?:\s+(?:publica|privada))?|(?:publica|privada)(?=\s+n[º°o.]*\s*\d)|lic\.?\s*(?:pub(?:lica)?|priv(?:ada)?)\.?|concurso\s+(?:(?:publico|privado)(?=\s+n)|de\s+anteproyectos?|(?:(?:publico|privado)\s+)?(?:de\s+)?(?:precios|ofertas))|compras?\s+(?:directas?|menor(?:es)?|agil(?:es)?)|contratacion\s+directa(?:\s+con\s+cotejo(?:\s+de\s+precios)?)?|cotejo\s+de\s+precios|solicitud\s+de\s+cotizacion|compulsa)'
-PROCESO=re.compile(r'(?P<tipo>'+TIPO+r')\s*(?:\b(?:gas|bid\w*|programa)\s+)?(?P<marca>n(?:ro|umero)?[.º°o]*\s*)?(?P<numero>\d{1,10}(?:-\d+)?(?:\s*[/–-]\s*\d{2,4})?)(?!\d)',re.I)
+PROCESO=re.compile(r'(?P<tipo>'+TIPO+r')\s*(?:(?:nacional|internacional)\s+)?(?:\b(?:gas|bid\w*|programa)\s+)?(?P<marca>n(?:ro|umero)?[.º°o]*\s*)?(?P<numero>\d{1,10}(?:-\d+)?(?:\s*[/–-]\s*\d{2,4})?)(?!\d)',re.I)
 EVENTO=re.compile(r'desiert\w*|fracasad\w*|segundo llamado|2do llamado|2[º°o] llamado|segunda convocatoria|reapertura|nuevo llamado')
 ADJUNTOS=('.pdf','.docx','.doc','.zip','.xls','.xlsx')
 
@@ -60,6 +60,8 @@ def procesos(texto):
         codigo=re.sub(r'\s*-\s*','-',m.group(0)).upper()
         out.append({'tipo':{'LPU':'licitacion publica','LPR':'licitacion privada','CPRV':'concurso privado de precios','CD':'contratacion directa'}[m[1].upper()],
                     'numero':codigo,'procedimiento':codigo.lower(),'start':m.start(),'end':m.end()})
+    especificos={p['numero'] for p in out if p['tipo']!='licitacion'}
+    out=[p for p in out if not(p['tipo']=='licitacion' and p['numero'] in especificos)]
     return out
 
 
@@ -130,7 +132,7 @@ def situacion(texto):
     t=re.sub(r'(?:sera|seran|podra ser|una vez)\s+adjudicad[oa]','',t)
     t=re.sub(r'(?:se declarara|sera declarada|podra ser declarada)\s+desierta','',t)
     t=re.sub(r'(?:sera|podra ser|se declarara|resultare|resultara)\s+(?:declarad[ao]\s+)?(?:desiert[ao]\s+o\s+)?fracasad[ao]','',t)
-    return next((valor for patron,valor in [(r'\badjudicad[oa]\b','ADJUDICADA'),(r'\bdesiert\w*','DESIERTA'),(r'\bfracasad\w*','FRACASADA'),(r'\bfinalizad[oa]\b','FINALIZADA'),(r'\ben evaluacion\b','EN_EVALUACION')] if re.search(patron,t)),None)
+    return next((valor for patron,valor in [(r'\b(?:suspendid[oa]|suspension)\b','SUSPENDIDA'),(r'\bcancelad[oa]\b','CANCELADA'),(r'\badjudicad[oa]\b','ADJUDICADA'),(r'\bdesiert\w*','DESIERTA'),(r'\bfracasad\w*','FRACASADA'),(r'\bfinalizad[oa]\b','FINALIZADA'),(r'\ben evaluacion\b','EN_EVALUACION')] if re.search(patron,t)),None)
 
 
 def extraer(html,url,config=None):

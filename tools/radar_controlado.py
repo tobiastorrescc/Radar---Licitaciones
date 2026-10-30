@@ -57,6 +57,12 @@ def generar_informe(db,resumen,registros,fuentes,destino):
     guardar(destino/'fichas.json',{'fecha':fecha,'fichas':[fichas.construir(r) for r in actuales if r['clasificacion_registro']=='PROCEDIMIENTO']})
     cola=[{'id':r['id'],'organismo':r.get('organismo'),'numero_procedimiento':r.get('numero_procedimiento'),'objeto':r.get('objeto'),'url':r.get('url'),'motivo':r['pago'].get('motivo'),'documentos':r.get('documentos',[])} for r in actuales if r['clasificacion_registro']=='PROCEDIMIENTO' and r['vigencia']=='ABIERTA' and r['pago']['estado']!='VERIFICADO']
     guardar(destino/'cola_documental.json',{'fecha':fecha,'pendientes':cola,'es_evaluacion_rentabilidad':False})
+    anteriores=Path('inventario/observaciones_previas.json')
+    if anteriores.exists():
+        prev=json.loads(anteriores.read_text());ids_observadas={i for r in actuales if r['observada_esta_corrida'] for i in r.get('ids_historial',[r['id']])}
+        prev['pendientes_revalidacion']=[r for r in prev['casos'] if r['id'] not in ids_observadas]
+        guardar(destino/'observaciones_previas_sin_revalidar.json',prev)
+
     for nombre,datos in [('catalogo_completo',actuales),('eventos',eventos),('observadas',registros)]:
         guardar(destino/(nombre+'.json'),{'fecha':fecha,'total':len(datos),'oportunidades':datos})
         (destino/(nombre+'.md')).write_text(o.reporte(datos,fecha),encoding='utf-8')

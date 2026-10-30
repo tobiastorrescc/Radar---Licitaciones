@@ -44,9 +44,6 @@ jobs:
       - name: Sondear enlaces oficiales con evidencia y tiempo acotado
         if: steps.plan.outputs.sondear == 'true'
         run: python -u tools/sondear_cobertura.py
-      - name: Revisar candidatas sin publicar automáticamente cambios de inventario
-        if: steps.plan.outputs.descubrir == 'true'
-        run: python -u tools/descubrir_fuentes.py --salida work/descubrimiento --total 360 --busquedas 30 --candidatos 100 --revisar-pendientes
       - name: Restaurar copia independiente del último respaldo diario
         if: steps.plan.outputs.auditar == 'true'
         run: |
@@ -121,6 +118,9 @@ jobs:
         if: steps.plan.outputs.pagos_run != ''
         timeout-minutes: 6
         run: python -u tools/auditar_pagos_abiertas.py --entrada "${{ steps.pagos_origen.outputs.entrada }}" --ocr-paginas 10
+      - name: Revisar candidatas sin publicar automáticamente cambios de inventario
+        if: steps.plan.outputs.descubrir == 'true'
+        run: python -u tools/descubrir_fuentes.py --salida work/descubrimiento --total 360 --busquedas 30 --candidatos 100 --revisar-pendientes
       - name: Revisar documentos de identidades dudosas sin escribir historial
         timeout-minutes: 3
         run: python -u tools/revisar_identidades.py

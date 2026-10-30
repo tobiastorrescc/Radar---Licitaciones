@@ -10,7 +10,7 @@ from urllib.parse import urlsplit
 import oportunidades as o
 
 VERSION=1
-CAMPOS=('detalle_documental','titulo','objeto','numero_procedimiento','tipo_procedimiento','procedimiento','organismo','localidad','provincia',
+CAMPOS=('tipo_documento','detalle_documental','titulo','objeto','numero_procedimiento','tipo_procedimiento','procedimiento','organismo','localidad','provincia',
     'fecha_apertura','fecha_apertura_texto','hora_apertura','fecha_publicacion','fecha_publicacion_texto','presupuesto',
     'situacion_publicada','evento_publicado','documentos','enlace_pliego','comprobacion_pliego','evidencias_campos',
     'pago_evidencias','pago_motivo_pendiente','fuente','fuentes_observadas','url','urls_publicacion','evidencia_url',
@@ -121,10 +121,13 @@ def tipo_nuevo(r,previas,fecha):
     if not disponibles:
         inicios=[o.fecha(previas[u]['inicio']) for u in fuentes_de(r) if u in previas]
         if publicada and inicios and min(inicios)<publicada<=hoy:return 'NUEVO_CONFIRMADO'
+        if not publicada:
+            anios=re.findall(r'20\d{2}',r.get('numero_procedimiento') or '')
+            historica=(anios and max(anios)<hoy[:4]) or (r.get('fecha_apertura') and r['fecha_apertura']<hoy) or r.get('situacion_publicada') in ('ADJUDICADA','FINALIZADA','DESIERTA','FRACASADA')
+            if not historica:return 'NUEVA_DETECCION_FECHA_DESCONOCIDA'
         return 'RECUPERACION_LINEA_BASE'
     corte=min(o.fecha(f['ultima_completa']) for f in disponibles if f['ultima_completa'])
     if not publicada:
-        import re
         anios=re.findall(r'20\d{2}',r.get('numero_procedimiento') or '')
         return 'HISTORICA_ANIO_PROCEDIMIENTO' if anios and max(anios)<corte[:4] else 'NUEVA_DETECCION_FECHA_DESCONOCIDA'
     if corte<publicada<=hoy:return 'NUEVO_CONFIRMADO'
@@ -215,6 +218,26 @@ def actuales(db,fecha,corrida):
             unido['unificacion_estado']='REQUIERE_REVISION' if len(fechas)>1 or ('nuevo llamado' in eventos and len(eventos)>1) else 'MISMO_PROCEDIMIENTO_VARIANTES_CONSERVADAS'
             r=unido
         grupos[identidad]=r
+    revisiones=Path(__file__).parent/'inventario/revisiones_identidad.json'
+    revisiones=json.loads(revisiones.read_text()) if revisiones.exists() else []
+    for r in grupos.values():
+        for revision in revisiones:
+            if set(r['ids_historial'])!=set(revision['ids_historial']):continue
+            if r.get('organismo')!=revision['organismo'] or r.get('numero_procedimiento')!=revision['numero_procedimiento']:continue
+            esperados={d['url']:d['sha256'] for d in revision['evidencias']}
+            if any(u in esperados and esperados[u]!=h for u,h in r.get('documentos_versiones',{}).items()):continue
+            r['revision_unificacion']=revision;r['unificacion_estado']=revision['estado']
+            if revision.get('fecha_apertura'):
+                cambio={k:revision[k] for k in ('fecha_apertura','hora_apertura','fecha_limite_presentacion','hora_limite_presentacion') if revision.get(k)}
+                cambio['fecha_apertura_texto']=revision['fecha_apertura']+' '+revision['hora_apertura']
+                cambio['fecha_limite_presentacion_texto']=revision['fecha_limite_presentacion']+' '+revision['hora_limite_presentacion']
+                r.update(cambio);r.update(o.normalizar(r,fecha))
+            if revision.get('fechas_apertura_contradictorias'):
+                r['fecha_apertura']=None;r['hora_apertura']=None;r['fecha_hora_apertura']=None
+                r['fechas_apertura_contradictorias']=revision['fechas_apertura_contradictorias']
+                if r['vigencia']=='ABIERTA':r['vigencia']='DESCONOCIDA'
+                r['motivo_vigencia']='FECHAS_DE_APERTURA_CONTRADICTORIAS_EN_DOCUMENTO_OFICIAL'
+        r['estado_vigencia']=('ABIERTA_OBSERVADA_EN_CORRIDA' if r['observada_esta_corrida'] else 'ABIERTA_CALCULADA_SIN_REVALIDACION') if r['vigencia']=='ABIERTA' else r['vigencia']
     return sorted(grupos.values(),key=o.prioridad)
 
 

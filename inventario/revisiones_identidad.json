@@ -1,0 +1,91 @@
+[
+  {
+    "ids_historial": [
+      "4045d6cd171b44cc2f0f7c2dd61c3c60fcb1fe8a3dbe1a3337e1aae64dbc89ba",
+      "8d90ba1840bfd9abe80777b0f4d03aa70e755a797af8bc34c1e280e34324e9c9"
+    ],
+    "organismo": "Municipalidad de Federación",
+    "numero_procedimiento": "18/2023",
+    "evidencias": [
+      {
+        "url": "https://www.federacion.gob.ar/sites/default/files/condiciones_particulares_lp_18-23.pdf",
+        "sha256": "56b92c2be628039204ce496be349ce3390c51c91af8dbd9afe53a24cb54710d4",
+        "consulta_run": 41106730693
+      }
+    ],
+    "estado": "VERIFICADA_MISMA_CONVOCATORIA",
+    "motivo": "Mismo pliego, decreto 1117/2023, concesión del parador del Anfiteatro y apertura 27/12/2023 09:00. La omisión de nuevo llamado en un fragmento no crea otra convocatoria."
+  },
+  {
+    "ids_historial": [
+      "10b7b25b39a6f9678a6e509ad62d5440c96f81342630ff119f4504d169519972",
+      "33150278927d3996f6781c6f59f6c4ae511af13f77c5588da597e3e3e0668c6c"
+    ],
+    "organismo": "Municipalidad de Federación",
+    "numero_procedimiento": "8/2026",
+    "evidencias": [
+      {
+        "url": "https://www.federacion.gob.ar/sites/default/files/pliego_lic_publica_no_08-2026.pdf",
+        "sha256": "262acecaa1ca8ee837b0e577939bdb59d5550785b144dbd19e76a5e6084f63bd",
+        "consulta_run": 41106730693
+      }
+    ],
+    "estado": "MISMO_PROCEDIMIENTO_FECHA_CONTRADICTORIA",
+    "motivo": "Único PDF y decreto 847/2026: portada apertura 05/10/2026; cuerpo y referencia del decreto indican 26/10/2026. No se elige fecha por inferencia.",
+    "fechas_apertura_contradictorias": [
+      {
+        "fecha": "2026-10-05",
+        "pagina": 1
+      },
+      {
+        "fecha": "2026-10-26",
+        "pagina": 2
+      }
+    ]
+  },
+  {
+    "ids_historial": [
+      "3e45d3754423fb84ae5b9810f868a7a6d61eee4d7c79c945e726c49133558ee3",
+      "af9d6afc3d900284690e04e503f84a36e5be47c17ebfbd7051a440ff801d3108",
+      "cbea9ed77d44a2c8d8aea584396c88f6398c21d43e48062ae9c41fa80e5d7e09"
+    ],
+    "organismo": "Municipalidad de Federación",
+    "numero_procedimiento": "1/2024",
+    "evidencias": [
+      {
+        "url": "https://www.federacion.gob.ar/sites/default/files/4-invitacion_2_1.docx",
+        "sha256": "575fe7630d49027c7adbcddc60eadd56d2c9daae7e1ebc5f600bb1d4eb024330",
+        "consulta_run": 41106730693
+      },
+      {
+        "url": "https://www.federacion.gob.ar/sites/default/files/pliego_general_y_particular_lic_publica_no_01-23.pdf",
+        "sha256": "4e46766823078e8974bf8b4216e0945bcb6e505470846b9c96361156c83d27ab",
+        "consulta_run": 41106730693
+      }
+    ],
+    "estado": "VERIFICADA_MISMA_CONVOCATORIA",
+    "motivo": "Invitación DOCX y PDF: mismo decreto 006/24, objeto Parador Playa Grande y apertura 23/01/2024 08:00; presentación hasta 07:30.",
+    "fecha_apertura": "2024-01-23",
+    "hora_apertura": "08:00",
+    "fecha_limite_presentacion": "2024-01-23",
+    "hora_limite_presentacion": "07:30"
+  },
+  {
+    "ids_historial": [
+      "75684139921a2f6f492d8d41d285077960c908570faae7dc263b8a78db27e02d",
+      "7741e3762f0734117e149b165790e9535695b219b750349cf885648c5ac31850",
+      "7871ad2d7cff46f2538a0ecc84c46d18bc7bb23218b86acfbf5244850782b097"
+    ],
+    "organismo": "Municipalidad de Federación",
+    "numero_procedimiento": "10/2024",
+    "evidencias": [
+      {
+        "url": "https://www.federacion.gob.ar/sites/default/files/6-pliego_lic._restaurante_costanera.pdf",
+        "sha256": "e9573409bbe2ea10b7c5df9c1a8c927c5188eea2827f0580926cdc90abc6ac1b",
+        "consulta_run": 41106730693
+      }
+    ],
+    "estado": "VERIFICADA_MISMA_CONVOCATORIA",
+    "motivo": "Fragmentos del mismo PDF: decreto 872/24, 09/10/2024, Concesión Restaurante Costanera. No se observa otro número de convocatoria en los fragmentos."
+  }
+]

@@ -20,7 +20,14 @@
     "ocr": true,
     "adaptador": "rosario",
     "urls_inicio": [
-      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura"
+      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=1",
+      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=2",
+      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5",
+      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=1",
+      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=2",
+      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=3",
+      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=4"
     ],
     "seguir_patrones": [
       "/inicio/result-busq-compras-licitaciones[?]recomendada=apertura&tipoRecomendada="
@@ -33,7 +40,14 @@
     },
     "enriquecer_fichas": true,
     "priorizar_listados": true,
-    "capturar_respuestas": true
+    "capturar_respuestas": true,
+    "conexion_timeout": 3,
+    "lectura_timeout": 5,
+    "contextos_listado": {
+      "1": "Licitación Privada",
+      "2": "Licitación Pública",
+      "5": "Compra Agil"
+    }
   },
   {
     "id": "fuente-002",

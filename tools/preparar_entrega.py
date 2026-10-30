@@ -33,7 +33,7 @@ def preparar(directorio,salida=None):
           'aviso':'No hay novedades confirmadas no significa ausencia de licitaciones si hay incidencias. Detecciones sin fecha no son publicaciones nuevas comprobadas.'}
     (destino/'resumen.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2)+'\n')
     (destino/'oportunidades.json').write_text(json.dumps({'resumen':meta,'grupos':grupos},ensure_ascii=False,indent=2)+'\n')
-    for nombre in ('fichas.json','cola_documental.json'):
+    for nombre in ('fichas.json','cola_documental.json','observaciones_previas_sin_revalidar.json'):
         if (root/nombre).exists():shutil.copy2(root/nombre,destino/nombre)
     campos=['primera_deteccion','ultima_deteccion','detalle_documental','organismo','numero_procedimiento','objeto','presupuesto','condiciones_pago','enlace_condiciones_pago','fecha_publicacion','fecha_apertura','fecha_limite_presentacion','vigencia','modalidad_presentacion','url','enlace_pliego','clasificacion_novedad']
     with (destino/'oportunidades.csv').open('w',encoding='utf-8-sig',newline='') as archivo:

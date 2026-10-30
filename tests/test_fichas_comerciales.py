@@ -34,3 +34,22 @@ class ComercialTests(unittest.TestCase):
     def test_suspension_no_figura_como_abierta(self):
         r=o.normalizar({'titulo':'Licitación Pública 1/2026','situacion_publicada':'SUSPENDIDA','fecha_apertura':'2026-11-20'},'2026-10-30T12:00:00-03:00')
         self.assertNotEqual(r['vigencia'],'ABIERTA')
+
+class IntegridadClasificacionTests(unittest.TestCase):
+    def test_circular_con_tipo_explicito_se_vincula_al_mismo_procedimiento(self):
+        import extractores
+        texto='CIRCULAR ACLARATORIA N°1 LICITACION 26/26. LLAMADO A LICITACION PUBLICA NACIONAL N°26/26 INDUMENTARIA'
+        ps=extractores.procesos(texto)
+        self.assertTrue(ps);self.assertTrue(all(p['tipo']=='licitacion publica' for p in ps))
+        a=o.normalizar({'titulo':'Licitación Pública 26/2026','organismo':'Municipalidad VGG','provincia':'Santa Fe','objeto':'Indumentaria'})
+        b=o.normalizar({'titulo':texto,'numero_procedimiento':'26/2026','tipo_procedimiento':'licitacion','organismo':'Municipalidad VGG','provincia':'Santa Fe'})
+        self.assertEqual(o.identidad(a),o.identidad(b));self.assertEqual(b['tipo_documento'],'CIRCULAR_ACLARATORIA')
+    def test_primera_deteccion_sin_fecha_no_es_historica_solo_por_fuente_parcial(self):
+        import incremental as inc
+        p={'https://oficial.gob.ar/':{'inicio':'2026-10-29T10:00:00-03:00','base_completa':False,'ultima_completa':None}}
+        r={'fuente':'https://oficial.gob.ar/','numero_procedimiento':'19/2026','fecha_apertura':'2026-11-19'}
+        self.assertEqual(inc.tipo_nuevo(r,p,'2026-10-30T12:00:00-03:00'),'NUEVA_DETECCION_FECHA_DESCONOCIDA')
+        r['fecha_apertura']='2026-09-01';self.assertEqual(inc.tipo_nuevo(r,p,'2026-10-30T12:00:00-03:00'),'RECUPERACION_LINEA_BASE')
+    def test_ficha_reutiliza_revision_visual_por_hash_sin_ocr(self):
+        f=fichas.construir({'comprobacion_pliego':{'sha256':'2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f','url':'https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710'}})
+        self.assertEqual(len(f['campos']['productos']['valor']),13)

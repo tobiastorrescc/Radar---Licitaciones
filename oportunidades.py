@@ -69,6 +69,12 @@ def normalizar(r,ahora=None):
     dato('numero_procedimiento',r.get('numero_procedimiento') or (ps[0]['numero'] if ps else None),r.get('procedimiento'))
     if r.get('numero_procedimiento'):r['numero_procedimiento']=re.sub(r'^(\d+)[–-](20\d{2})$',r'\1/\2',r['numero_procedimiento'])
     dato('tipo_procedimiento',r.get('tipo_procedimiento') or (ps[0]['tipo'] if ps else None),r.get('procedimiento'))
+    if r.get('tipo_procedimiento')=='licitacion':
+        tipos={p['tipo'] for p in extractores.procesos(texto_titulo+' '+texto) if p['numero']==r.get('numero_procedimiento') and p['tipo']!='licitacion'}
+        if len(tipos)==1:
+            r['tipo_procedimiento']=next(iter(tipos));ev['tipo_procedimiento']={'url':origen,'texto':'Tipo explícito del mismo número en el documento: '+r['tipo_procedimiento']}
+    if re.match(r'^\s*circular\s+(?:aclaratoria|modificatoria)',norm(texto_titulo)):r['tipo_documento']='CIRCULAR_ACLARATORIA'
+
     for campo,patron in [('fecha_apertura',r'(?:(?:fecha\s+(?:de\s+)?)?apertura(?:\s+(?:de\s+)?(?:ofertas|sobres))?|llamese a licitacion (?:publica|privada) para el dia)\s*[:\-]?\s*(.{0,90})'),('fecha_limite_presentacion',r'(?:fecha\s+limite(?:\s+de\s+presentacion)?|limite\s+(?:de|para)\s+(?:la\s+)?(?:presentacion|recepcion)(?:\s+de\s+(?:ofertas|sobres))?|(?:presentacion|recepcion)\s+de\s+(?:ofertas|sobres)\s+hasta|presentacion\s*:\s*hasta)\s*[:\-]?\s*(.{0,90})'),('fecha_publicacion',r'(?:fecha\s+(?:de\s+)?publicacion|publicad[oa](?:\s+el)?)\s*[:\-]?\s*(.{0,70})')]:
         dedicado=r.get(campo+'_texto')
         candidatos=[dedicado] if dedicado else [m[1] for contenido in (t,norm(texto_titulo)) for m in re.finditer(r"(?="+patron+r")",contenido)]
@@ -199,7 +205,7 @@ def reporte(registros,fecha_reporte):
         respaldo=' '.join(f'[Documento {i}]({u})' for i,u in enumerate(enlaces,1)) if enlaces else 'No comprobado'
         flags=', '.join(nombre for clave,nombre in [('desierta','Desierta'),('fracasada','Fracasada'),('segundo_llamado','Segundo llamado'),('reapertura','Reapertura')] if r.get(clave)) or '—'
         fuente=r.get('evidencia_url') or r.get('url')
-        lineas.append('| '+ ' | '.join([celda((r.get('organismo') or 'desconocido')+' / '+(r.get('numero_procedimiento') or 'sin número')),celda((r.get('localidad') or 'desconocida')+' / '+(r.get('provincia') or 'desconocida')),celda(r.get('objeto') or r.get('titulo')),celda(presupuesto(r.get('presupuesto'))),celda((r.get('vigencia') or 'DESCONOCIDA')+' / '+(r.get('fecha_hora_apertura') or r.get('fecha_apertura') or 'desconocida')),celda(r.get('fecha_publicacion') or 'desconocida'),celda(r.get('fecha_hora_limite_presentacion') or r.get('fecha_limite_presentacion') or 'desconocido'),celda(', '.join(r.get('modalidad_presentacion') or []) or 'No informada'),f"[Pliego]({r['enlace_pliego']})" if r.get('enlace_pliego') else 'No identificado',celda(r.get('condiciones_pago') or pagos.NO_INFORMADO),respaldo,flags,f'[Oficial]({fuente})',celda(r.get('clasificacion_novedad') or 'Sin comparación con corrida anterior')])+' |')
+        lineas.append('| '+ ' | '.join([celda((r.get('organismo') or 'desconocido')+' / '+(r.get('numero_procedimiento') or 'sin número')),celda((r.get('localidad') or 'desconocida')+' / '+(r.get('provincia') or 'desconocida')),celda(r.get('objeto') or r.get('titulo')),celda(presupuesto(r.get('presupuesto'))),celda((r.get('estado_vigencia') or r.get('vigencia') or 'DESCONOCIDA')+' / '+(r.get('fecha_hora_apertura') or r.get('fecha_apertura') or 'desconocida')),celda(r.get('fecha_publicacion') or 'desconocida'),celda(r.get('fecha_hora_limite_presentacion') or r.get('fecha_limite_presentacion') or 'desconocido'),celda(', '.join(r.get('modalidad_presentacion') or []) or 'No informada'),f"[Pliego]({r['enlace_pliego']})" if r.get('enlace_pliego') else 'No identificado',celda(r.get('condiciones_pago') or pagos.NO_INFORMADO),respaldo,flags,f'[Oficial]({fuente})',celda(r.get('clasificacion_novedad') or 'Sin comparación con corrida anterior')])+' |')
     lineas+=['','## Evidencia de las condiciones de pago','']
     for r in ordenadas:
         p=r.get('pago',{})
@@ -299,6 +305,8 @@ def fusionar(a,b,ahora=None):
     calidad=lambda r:(r.get('rango_evidencia',0),-len(r.get('campos_desconocidos',[])),bool(r.get('texto_documento')),bool(r.get('detalle_completo')))
     principal,otro=(b,a) if calidad(b)>calidad(a) else (a,b)
     salida=dict(principal)
+    if principal.get('tipo_documento')=='CIRCULAR_ACLARATORIA' and otro.get('tipo_documento')!='CIRCULAR_ACLARATORIA' and otro.get('objeto'):
+        salida['objeto']=otro['objeto'];salida['titulo']=otro.get('titulo') or salida.get('titulo');salida['tipo_documento']='CONVOCATORIA_CON_CIRCULARES'
     for k,v in otro.items():
         if salida.get(k) is None or salida.get(k)=='' or salida.get(k)==[]:salida[k]=v
     salida['pago_evidencias']=pagos.unir_evidencias(a.get('pago_evidencias'),b.get('pago_evidencias'))

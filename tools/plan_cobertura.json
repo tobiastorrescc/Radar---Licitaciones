@@ -1,9 +1,13 @@
 {
-  "etapa": "pagos-priorizar-pliegos-y-ocr-pendientes-30oct",
+  "etapa": "corregir-fechas-identidades-y-recuperar-fuentes-30oct",
   "sondear": false,
   "auditar": false,
-  "descubrir": false,
-  "reverificar_ids": [],
+  "descubrir": true,
+  "reverificar_ids": [
+    "fuente-001",
+    "fuente-002",
+    "fuente-003"
+  ],
   "pagos_run": 41048293524,
-  "revisar_identidades": true
+  "revisar_identidades": false
 }

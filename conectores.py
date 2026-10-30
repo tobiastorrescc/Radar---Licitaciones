@@ -2,7 +2,7 @@
 from collections import deque
 from hashlib import sha256
 from html.parser import HTMLParser
-from urllib.parse import urljoin, urlparse, urldefrag,urlencode
+from urllib.parse import urljoin, urlparse, urldefrag,urlencode,parse_qs,urlsplit,urlunsplit
 from urllib.request import Request, build_opener, HTTPHandler, HTTPSHandler
 from http.client import HTTPConnection, HTTPSConnection
 import socket
@@ -258,7 +258,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 import cache_documentos
                 return cache_documentos.obtener(url,transport=transporte)[:3]
             return transporte(url)
-    pending=deque([(u,'LISTADO',None) for u in config.get('urls_inicio',[fuente])])
+    pending=deque([(u,'LISTADO',{'tipo_contexto':config.get('contextos_listado',{}).get(parse_qs(urlparse(u).query).get('tipoRecomendada',[''])[0])}) for u in config.get('urls_inicio',[fuente])])
     seen=set();items={};errors=[];limits=[];correctas=0;documentos_leidos=0
     hosts={_host(fuente),*(_host('https://'+h) for h in config.get('dominios_documentos',[]))}
     documento_pendiente={};vacios=[];paginas_api=set()
@@ -361,7 +361,6 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 if not detalle:
                     if not registros and meta['totalElements']:raise ValueError('ASSA vacío antes de alcanzar total')
                     if meta['number']+1<meta['totalPages']:
-                        from urllib.parse import parse_qs,urlsplit,urlunsplit
                         p=urlsplit(final);q=parse_qs(p.query);q['page']=[str(meta['number']+1)]
                         pending.append((urlunsplit((p.scheme,p.netloc,p.path,urlencode(q,doseq=True),'')),'LISTADO',None))
                     if meta['totalElements']==0:vacios.append({'url':url,'texto':'API pública informa totalElements=0'})
