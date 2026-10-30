@@ -23,9 +23,14 @@ def main():
     abiertas=[r for r in rs if r.get('clasificacion_registro')=='PROCEDIMIENTO' and r.get('vigencia')=='ABIERTA']
     salida=Path('work/pagos-abiertas');salida.mkdir(parents=True,exist_ok=True)
     pendientes=[r for r in abiertas if r['pago']['estado']!='VERIFICADO'];antes_pago=pagos.resumen(abiertas)
+    catalogo=root/meta['directorio']/'catalogo_completo.json'
+    base_original=json.loads(catalogo.read_text()).get('oportunidades',[]) if catalogo.exists() else []
+    ids={r['id'] for r in abiertas}
+    base_original=[r for r in base_original if r.get('id') in ids]
+    pagos_originales=sum(r.get('pago',{}).get('estado')=='VERIFICADO' for r in base_original)
     comprobar(pendientes,fecha_revision,fuentes_configuradas(),total=240,salida_parcial=salida/'documentos.jsonl',ocr_paginas=a.ocr_paginas)
     abiertas=[o.normalizar(r,fecha_revision) for r in abiertas]
-    resultado={'corrida_origen':meta['corrida'],'fecha_evidencia_catalogo':meta['fecha'],'fecha_revision':fecha_revision,'solo_lectura_historial':True,'hash_sqlite_antes':antes,'hash_sqlite_despues':sha256(dbpath.read_bytes()).hexdigest(),'abiertas':len(abiertas),'pago_antes':antes_pago,'pago_despues':pagos.resumen(abiertas)}
+    resultado={'corrida_origen':meta['corrida'],'fecha_evidencia_catalogo':meta['fecha'],'fecha_revision':fecha_revision,'solo_lectura_historial':True,'hash_sqlite_antes':antes,'hash_sqlite_despues':sha256(dbpath.read_bytes()).hexdigest(),'abiertas':len(abiertas),'pago_base_analizador_anterior':{'abiertas_misma_ventana':len(base_original),'verificadas':pagos_originales},'pago_antes':antes_pago,'pago_despues':pagos.resumen(abiertas)}
     (salida/'resultado.json').write_text(json.dumps(resultado,ensure_ascii=False,indent=2)+'\n')
     (salida/'abiertas.json').write_text(json.dumps(abiertas,ensure_ascii=False,indent=2)+'\n')
     (salida/'fichas.json').write_text(json.dumps({'fichas':[fichas.construir(r) for r in abiertas]},ensure_ascii=False,indent=2)+'\n')

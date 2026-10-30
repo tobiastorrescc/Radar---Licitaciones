@@ -29,7 +29,12 @@ def extraer(texto,url,digest,metodo='TEXTO'):
 
 
 def construir(r):
-    detalle=r.get('detalle_documental') or {};campos={}
+    detalle=dict(r.get('detalle_documental') or {})
+    comprobacion=r.get('comprobacion_pliego') or {}
+    if comprobacion.get('sha256'):
+        anotado=extraer('',comprobacion.get('url') or r.get('url'),comprobacion['sha256'])
+        detalle={**anotado,**detalle}
+    campos={}
     for campo in CAMPOS:
         if campo in detalle:campos[campo]=detalle[campo];continue
         valor=r.get(campo)

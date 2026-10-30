@@ -121,12 +121,16 @@ jobs:
         if: steps.plan.outputs.pagos_run != ''
         timeout-minutes: 6
         run: python -u tools/auditar_pagos_abiertas.py --entrada "${{ steps.pagos_origen.outputs.entrada }}" --ocr-paginas 10
+      - name: Revisar documentos de identidades dudosas sin escribir historial
+        timeout-minutes: 3
+        run: python -u tools/revisar_identidades.py
       - name: Guardar evidencia incluso si el lote queda incompleto
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: cobertura-${{ github.run_id }}
           path: |
+            work/identidades/
             work/pagos-abiertas/
             work/sondeo/
             work/reprocesado/

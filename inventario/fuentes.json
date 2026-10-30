@@ -1013,7 +1013,8 @@
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 266,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+    },
+    "max_bytes_documental": 32000000
   },
   {
     "id": "fuente-036",

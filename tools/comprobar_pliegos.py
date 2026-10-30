@@ -39,6 +39,9 @@ def worker(url,consulta_post=None,opciones=None):
             contenido=base64.b64decode(respuesta['file64'],validate=True)
             if len(contenido)>12_000_000 or not contenido.startswith(b'%PDF-'):raise ValueError('Respuesta documental no es PDF admisible')
             return contenido,respuesta.get('mime') or 'application/pdf',url,{}
+    if transporte is None and (opciones or {}).get('max_bytes_documental',12_000_000)>12_000_000:
+        from functools import partial
+        transporte=partial(conectores.descargar,max_bytes=(opciones or {})['max_bytes_documental'])
     raw,tipo,final,cache=cache_documentos.obtener(url,transport=transporte)
     if (urlparse(final).hostname or '').removeprefix('www.')!=(urlparse(url).hostname or '').removeprefix('www.'):
         return {'url':url,'url_final':final,'estado':'REDIRECCION_OTRO_DOMINIO'}
@@ -142,7 +145,7 @@ def ordenar_documentos(candidatos,vinculos,fecha):
 
 def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrencia=4,salida_parcial=None,ocr_paginas=4):
     if not 1<=ocr_paginas<=10:raise ValueError('Cupo OCR inválido')
-    candidatos={};vinculos={};peticiones={}
+    candidatos={};vinculos={};peticiones={};cupos_bytes={}
     configs={f['url']:f for f in configuraciones if f.get('url')}
     ordenados=sorted(registros,key=lambda r:({'ABIERTA':0,'DESCONOCIDA':1,'VENCIDA':2}.get(r.get('vigencia'),1),r.get('fecha_apertura') or '9999',r.get('fuente') or ''))
     for r in ordenados:
@@ -156,6 +159,7 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
                 candidatos.setdefault(u,{'url':u,'estado':'DOMINIO_NO_DECLARADO'});continue
             candidatos.setdefault(u,{'url':u,'estado':'PENDIENTE'})
             if d.get('consulta_post'):peticiones[u]=d['consulta_post']
+            cupos_bytes[u]=max(cupos_bytes.get(u,12_000_000),conf.get('max_bytes_documental',12_000_000))
             vinculos.setdefault(u,[]).append(r)
     def guardar_parcial(valor):
         if salida_parcial:
@@ -175,9 +179,10 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
                 url=candidato;break
             if url is None:break
             # Cupo de tres documentos, sólo convocatorias abiertas sin pago comprobado.
-            ocr=bool(len(seleccion_ocr)<3 and any(r.get('vigencia')=='ABIERTA' and r.get('pago',{}).get('estado')!='VERIFICADO' for r in vinculos.get(url,[])))
+            es_edicto=bool(re.search(r'edicto|aviso|declaracion.jurada|planilla',url,re.I))
+            ocr=bool(not es_edicto and len(seleccion_ocr)<3 and any(r.get('vigencia')=='ABIERTA' and r.get('pago',{}).get('estado')!='VERIFICADO' for r in vinculos.get(url,[])))
             if ocr:seleccion_ocr.add(url)
-            p=subprocess.Popen([sys.executable,__file__,'--worker',url,json.dumps(peticiones.get(url)),json.dumps({'ocr_selectivo':ocr,'max_paginas':ocr_paginas})],stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,start_new_session=True)
+            p=subprocess.Popen([sys.executable,__file__,'--worker',url,json.dumps(peticiones.get(url)),json.dumps({'ocr_selectivo':ocr,'max_paginas':ocr_paginas,'max_bytes_documental':cupos_bytes.get(url,12_000_000)})],stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,start_new_session=True)
             activos[p.pid]=(p,url,time.monotonic())
         for pid,(p,url,comienzo) in list(activos.items()):
             if p.poll() is not None:

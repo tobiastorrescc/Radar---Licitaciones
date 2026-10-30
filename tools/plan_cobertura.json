@@ -1,8 +1,9 @@
 {
-  "etapa": "pagos-fichas-diario30-oct",
+  "etapa": "pagos-priorizar-pliegos-y-ocr-pendientes-30oct",
   "sondear": false,
   "auditar": false,
   "descubrir": false,
   "reverificar_ids": [],
-  "pagos_run": 41048293524
+  "pagos_run": 41048293524,
+  "revisar_identidades": true
 }

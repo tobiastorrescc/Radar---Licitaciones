@@ -427,7 +427,8 @@
     "conector": "publicaciones",
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "adaptador": "cdelu"
+    "adaptador": "cdelu",
+    "max_bytes_documental": 32000000
   },
   "https://w3.gualeguaychu.gov.ar/tramites/compras-y-licitaciones/acceso-a-licitaciones-p%C3%BAblicas": {
     "organismo": "Municipalidad de Gualeguaychú",
