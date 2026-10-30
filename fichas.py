@@ -20,7 +20,7 @@ def extraer(texto,url,digest,metodo='TEXTO'):
             m=re.search(r'Los repuestos deber[aá]n[^\n]+(?:\n[^\n]+)?',t,re.I)
             if m:guardar('requisitos',re.sub(r'\s+',' ',m[0]),pagina,m[0])
     # Cantidades sólo cuando el texto liga explícitamente compra y producto.
-    patron=re.compile(r'(?:adquisici[oó]n|provisi[oó]n|suministro|compra)\s+de\s+(?:(?P<palabra>una?|dos|tres)\s*\(\s*)?(?P<cantidad>\d{1,3}(?:\.\d{3})*|\d{1,6})\s*\)?\s+(?P<producto>[A-Za-zÁÉÍÓÚáéíóúÑñ][^.;\n]{2,110})',re.I)
+    patron=re.compile(r'(?:adquisici[oó]n|provisi[oó]n|suministro|compra)\s+de\s+(?:(?P<palabra>una?|dos|tres)\s*\(\s*)?(?P<cantidad>\d{1,3}(?:\.\d{3})*|\d{1,6})(?(palabra)\s*\)\s*|\s+)(?P<producto>[A-Za-zÁÉÍÓÚáéíóúÑñ][^.;\n]{2,110})',re.I)
     productos=[]
     for pagina,t in enumerate(texto.split('\f'),1):
         for m in patron.finditer(t):

@@ -29,6 +29,7 @@ jobs:
           run=str(d.get('reprocesar_run',''))
           if run and not run.isdigit():raise ValueError('Run inválido')
           print('reprocesar_run='+run)
+          print('archivar_auditoria='+str(d.get('archivar_auditoria',False)).lower())
           pagos=str(d.get('pagos_run',''))
           if pagos and not pagos.isdigit():raise ValueError('Run de pagos inválido')
           print('pagos_run='+pagos)
@@ -85,7 +86,7 @@ jobs:
         if: steps.plan.outputs.reprocesar_run != ''
         run: python tools/reprocesar_auditoria.py
       - name: Archivar respaldo auditado separado del diario y comprobar restauración
-        if: steps.plan.outputs.reprocesar_run != ''
+        if: steps.plan.outputs.reprocesar_run != '' && steps.plan.outputs.archivar_auditoria == 'true'
         run: |
           test "${{ github.ref }}" = 'refs/heads/mejora/radar-auditable'
           mkdir -p piloto_respaldo/auditorias/2026-10-29

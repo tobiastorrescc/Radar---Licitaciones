@@ -71,7 +71,7 @@ def clasificar(cita,permitir_definicion=False):
     aprobacion=bool(re.search(r'(?:aprobacion|autorizacion) (?:administrativa|del pago|de la factura)|acto administrativo',t))
     if aprobacion:hitos.append('APROBACION_ADMINISTRATIVA')
     if not(plazos or contado or contra_entrega or factura or conformidad or anticipo or parcial or aprobacion):return None
-    if not permitir_definicion and re.search(r'(?:podra|podran|si (?:el|la)|en (?:el )?caso de|cuando la municipalidad requiera)\b',t) and not re.search(r'se (?:acepta|admite)n?.*(?:o |alternativ)',t):return None
+    if not permitir_definicion and re.search(r'(?:podra|podran|si (?:el|la)|en (?:el )?caso (?:de|del)|cuando la municipalidad requiera)\b',t) and not re.search(r'se (?:acepta|admite)n?.*(?:o |alternativ)',t):return None
     opciones=bool(re.search(r'\b(?:o (?:a |al |contra )|alternativas? de pago|opciones de pago)',t))
     mixto=bool(re.search(r'anticipo|saldo|\d+\s*%|por ciento|cuotas|parciales|certificados mensuales',t)) and (len(plazos)>1 or contado or contra_entrega or 'saldo' in t or bool(re.search(r'anticipo.{0,30}\b(?:[1-9]|[1-9]\d)\s*(?:%|por ciento)',t)))
     if opciones:categoria='OPCIONES_PUBLICADAS'
@@ -199,6 +199,7 @@ def consolidar(evidencias):
     revisadas=[]
     for original in evidencias:
         e=dict(original)
+        if e.get('categoria')=='PAGOS_PARCIALES' and re.search(r'en (?:el )?caso (?:de|del)\b',norm(e.get('cita'))) and clasificar(e.get('cita')) is None:continue
         if (e.get('url_documento'),e.get('sha256')) in genericos and e.get('categoria')=='PAGOS_PARCIALES' and (re.search(r'oferente.*consignar',norm(e.get('cita'))) or norm(e.get('cita')).startswith('pago: - pago total')):continue
         if e.get('version_analizador') in (5,6,7,8,9,10,11) and not e.get('definicion_contado'):
             actual=clasificar(e.get('cita'))

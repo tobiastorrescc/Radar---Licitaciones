@@ -91,7 +91,7 @@ def normalizar(r,ahora=None):
         dato('presupuesto',valor,frag)
     else:r.setdefault('presupuesto',None)
     r['pago']=pagos.consolidar(r.get('pago_evidencias',[]))
-    if r['pago']['estado']!='VERIFICADO' and r.get('pago_motivo_pendiente'):r['pago']['motivo']=r['pago_motivo_pendiente']
+    if r['pago']['estado']!='VERIFICADO' and r['pago'].get('motivo') in (None,'SIN_CLAUSULA_COMPROBADA') and r.get('pago_motivo_pendiente'):r['pago']['motivo']=r['pago_motivo_pendiente']
     r['condiciones_pago']=r['pago']['etiqueta']
     r['enlace_condiciones_pago']=r['pago']['documento_respaldo']
     r['pago_prioritario']=r['pago']['prioritario']

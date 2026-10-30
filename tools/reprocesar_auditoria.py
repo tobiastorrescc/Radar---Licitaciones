@@ -8,10 +8,26 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import incremental as inc
 import oportunidades as o
 import pagos
+import fichas
+from hashlib import sha256
 
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--entrada',default='work/reprocesar/work/cobertura');a=p.parse_args();root=Path(a.entrada)
+    capturada=Path('work/reprocesar/work/pagos-abiertas/abiertas.json')
+    if capturada.exists():
+        salida=Path('work/reprocesado');salida.mkdir(parents=True,exist_ok=True)
+        origen=json.loads(capturada.read_text());meta=json.loads(capturada.with_name('resultado.json').read_text());fecha=meta.get('fecha_revision') or meta['fecha_evidencia_catalogo']
+        antes=sum(r.get('pago',{}).get('estado')=='VERIFICADO' for r in origen)
+        registros=[o.normalizar(r,fecha) for r in origen]
+        resultado={'sin_red':True,'sin_nuevo_ocr':True,'sin_escritura_historial':True,'version_analizador':pagos.VERSION,'fecha_ventana':fecha,'sha256_entrada':sha256(capturada.read_bytes()).hexdigest(),'abiertas':len(registros),'verificadas_antes':antes,'pago_despues':pagos.resumen(registros),'base_anterior':meta.get('pago_base_analizador_anterior')}
+        (salida/'resultado.json').write_text(json.dumps(resultado,ensure_ascii=False,indent=2)+'\n')
+        (salida/'abiertas.json').write_text(json.dumps(registros,ensure_ascii=False,indent=2)+'\n')
+        (salida/'fichas_abiertas.md').write_text(fichas.reporte(registros,fecha))
+        (salida/'fichas.json').write_text(json.dumps({'fichas':[fichas.construir(r) for r in registros]},ensure_ascii=False,indent=2)+'\n')
+        print('REPROCESO_EVIDENCIA '+json.dumps({k:v for k,v in resultado.items() if k!='pago_despues'},ensure_ascii=False)+' verificadas='+str(resultado['pago_despues']['verificadas']))
+        return
+
     meta=json.loads((root/'ultima_ejecucion.json').read_text());db=sqlite3.connect('file:'+str((root/'estado.sqlite3').resolve())+'?mode=ro',uri=True)
     try:
         if db.execute('PRAGMA quick_check').fetchone()[0]!='ok':raise ValueError('Estado de auditoría dañado')

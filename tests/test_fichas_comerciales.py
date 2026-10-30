@@ -94,6 +94,8 @@ class CantidadesTests(unittest.TestCase):
     def test_cantidad_narrativa_con_vinculo_explicito_y_sin_telefonos(self):
         d=fichas.extraer('Adquisición de 600 luminarias leds para alumbrado público. Teléfono 03442 555555.','https://oficial.gob.ar/a.pdf','a')
         self.assertEqual(d['productos']['valor'][0]['cantidad'],600)
+        uno=fichas.extraer('Provisión de una (1)contadora de billetes.','https://www.iafas.gov.ar/descargas/17688','a')
+        self.assertEqual(uno['productos']['valor'][0]['cantidad'],1)
         self.assertNotIn('productos',fichas.extraer('Presupuesto 6000000. Teléfono 03442 555555.','https://oficial.gob.ar/a.pdf','a'))
     def test_numero_en_letras_contradictorio_no_se_afirma(self):
         d=fichas.extraer('Provisión de una (2) contadora de billetes.','https://oficial.gob.ar/a.pdf','a')
@@ -101,7 +103,7 @@ class CantidadesTests(unittest.TestCase):
 
 class CondicionesSinPlazoTests(unittest.TestCase):
     def test_iafas_condicion_verificada_no_equivale_a_contado_ni_a_dias_inventados(self):
-        texto='FORMAS de PAGO. El pago al proveedor se realizará en el Dpto. Tesorería del Instituto previa entrega y aceptación de lo que le fuera adjudicado; en cumplimiento de los trámites administrativos corrientes y presentación por parte del adjudicatario de la pertinente factura. En el caso de que se hubiera efectuado la adjudicación en moneda extranjera autorizada, la factura se convertirá a moneda nacional.'
+        texto='FORMAS de PAGO. El pago al proveedor se realizará en el Dpto. Tesorería del Instituto previa entrega y aceptación de lo que le fuera adjudicado; en cumplimiento de los trámites administrativos corrientes y presentación por parte del adjudicatario de la pertinente factura. En el caso de que se hubiera efectuado la adjudicación en moneda extranjera autorizada, la factura se convertirá a moneda nacional.\n\nEl pago, en caso del servicio mensual de mantenimiento, se realizará mensual a mes vencido.'
         p=pagos.consolidar(pagos.extraer(texto,'https://www.iafas.gov.ar/descargas/17688','b',pdf=True))
         self.assertEqual(p['estado'],'VERIFICADO');self.assertEqual(p['clasificacion'],'DESPUES_CONFORMIDAD_RECEPCION')
         self.assertEqual(p['plazos_dias'],[]);self.assertIn('PRESENTACION_FACTURA',p['hitos_inicio']);self.assertIn('TRAMITES_ADMINISTRATIVOS',p['hitos_inicio'])
@@ -118,3 +120,9 @@ class ClausulaContinuaTests(unittest.TestCase):
         self.assertTrue(p['evidencias'][0]['evidencias_condiciones_previas'])
         es[-1]['clausula']='Articulo 18'
         self.assertEqual(pagos.consolidar(es)['estado'],'PENDIENTE')
+
+class MotivoActualTests(unittest.TestCase):
+    def test_conflicto_documental_no_se_oculta_con_error_ocr_anterior(self):
+        e=pagos.extraer('Forma de pago: a 30 días.','https://o.gob.ar/a.pdf','a')+pagos.extraer('Forma de pago: a 60 días.','https://o.gob.ar/b.pdf','b')
+        r=o.normalizar({'titulo':'Licitación Pública 1/2026','pago_evidencias':e,'pago_motivo_pendiente':'REQUIERE_OCR_O_LECTURA'})
+        self.assertEqual(r['pago']['motivo'],'CONDICIONES_DIFERENTES_REQUIEREN_REVISION')
