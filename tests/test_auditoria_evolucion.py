@@ -66,3 +66,23 @@ class PagosCompatiblesTests(unittest.TestCase):
         a=pagos.extraer('Forma de pago: Contado contra entrega.','https://oficial.gob.ar/a.pdf','a')
         b=pagos.extraer('Forma de pago: contra entrega.','https://oficial.gob.ar/b.pdf','b')
         self.assertEqual(pagos.consolidar(a+b)['estado'],'PENDIENTE')
+
+class AccesoTests(unittest.TestCase):
+    def test_no_confunde_timeout_tls_y_500_con_restriccion(self):
+        import conectores as c
+        for e,causa in [({'http_status':500},'ERROR_SERVIDOR_TEMPORAL'),({'timeout':True},'TIEMPO_ESPERA'),({'error':'certificate verify failed'},'ERROR_CERTIFICADO_TLS')]:
+            r=c.diagnostico_error(e);self.assertEqual(r['causa'],causa);self.assertFalse(r['restriccion_acceso_comprobada'])
+        self.assertTrue(c.diagnostico_error({'http_status':403})['restriccion_acceso_comprobada'])
+
+class DocumentoOCRTests(unittest.TestCase):
+    def test_cita_en_ocr_parcial_no_se_declara_verificada(self):
+        from tools import comprobar_pliegos as c
+        url='https://oficial.gob.ar/pliego.pdf'
+        with patch.object(c.cache_documentos,'obtener',return_value=(b'%PDF-test','application/pdf',url,{'cache_estado':'CACHE_RECIENTE'})),patch.object(c.cache_documentos,'leer_texto',side_effect=ValueError('PDF sin texto')),patch.object(c.documentos,'ocr_selectivo',return_value=('Forma de pago: contado contra entrega.',{'completa':False,'paginas_pendientes':[2]})):
+            r=c.worker(url,opciones={'ocr_selectivo':True})
+            self.assertEqual(r['pagos'],[]);self.assertTrue(r['pagos_pendientes_revision']);self.assertTrue(r['lectura_pendiente'])
+    def test_worker_sin_cupo_no_dispara_ocr(self):
+        from tools import comprobar_pliegos as c
+        url='https://oficial.gob.ar/pliego.pdf'
+        with patch.object(c.cache_documentos,'obtener',return_value=(b'%PDF-test','application/pdf',url,{'cache_estado':'CACHE_RECIENTE'})),patch.object(c.cache_documentos,'leer_texto',side_effect=ValueError('PDF sin texto')),patch.object(c.documentos,'ocr_selectivo') as lector:
+            r=c.worker(url);lector.assert_not_called();self.assertIn('lectura_pendiente',r)

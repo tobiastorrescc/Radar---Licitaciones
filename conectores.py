@@ -186,7 +186,23 @@ def clasificar_error(error, fase):
               'timeout': timeout or isinstance(error, subprocess.TimeoutExpired), 'error': str(error)}
     if isinstance(error, HTTPError):
         result['http_status'] = error.code
+    result.update(diagnostico_error(result))
     return result
+
+
+def diagnostico_error(error):
+    """No equiparar un timeout o HTTP 500 a una restricción de acceso."""
+    texto=str(error.get('error','')).lower();status=error.get('http_status')
+    if status in (401,403):causa='RESTRICCION_HTTP';acceso=True
+    elif error.get('categoria')=='ACCESO':causa='DESAFIO_ACCESO';acceso=True
+    elif status==429:causa='LIMITE_SOLICITUDES_TEMPORAL';acceso=False
+    elif status and status>=500:causa='ERROR_SERVIDOR_TEMPORAL';acceso=False
+    elif error.get('timeout') or 'timed out' in texto:causa='TIEMPO_ESPERA';acceso=False
+    elif 'certificate verify failed' in texto or 'self-signed certificate' in texto:causa='ERROR_CERTIFICADO_TLS';acceso=False
+    elif 'ssl' in texto or 'eof' in texto:causa='ERROR_CONEXION_TLS';acceso=False
+    elif error.get('categoria')=='RED':causa='ERROR_RED_POR_CONFIRMAR';acceso=False
+    else:causa='ERROR_EXTRACCION';acceso=False
+    return {'causa':causa,'restriccion_acceso_comprobada':acceso,'permanencia':'NO_DETERMINADA'}
 
 
 class AccesoRestringido(RuntimeError):

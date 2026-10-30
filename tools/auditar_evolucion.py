@@ -8,6 +8,7 @@ import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import incremental as inc
 import oportunidades as o
+import conectores
 
 
 def instantanea(raiz):
@@ -44,7 +45,7 @@ def comparar(antes,despues,registros,eventos):
     for url,obs in despues['fuentes'].items():
         f=organismos.setdefault(url,{'organismo':obs.get('organismo'),'procedimientos':0,'abiertas':0,'pagos_verificados':0})
         anterior=antes['fuentes'].get(url,{})
-        f.update(url=url,estado_anterior=anterior.get('estado'),estado_actual=obs.get('estado'),errores=obs.get('errores',[]),consultada_esta_corrida=realizada)
+        f.update(url=url,estado_anterior=anterior.get('estado'),estado_actual=obs.get('estado'),errores=[{**e,**conectores.diagnostico_error(e)} for e in obs.get('errores',[])],consultada_esta_corrida=realizada)
     resultado={'corrida_anterior':antes['corrida'],'corrida_actual':despues['corrida'],'fecha':despues['fecha'],'consulta_nueva_realizada':realizada,
         'estado':'SIN_NUEVA_EJECUCION' if not realizada else 'HISTORIAL_PERDIDO' if faltan or perdidas else 'AUDITADA',
         'ids_anteriores':len(antes['ids']),'ids_actuales':len(despues['ids']),'ids_perdidos':sorted(faltan),'versiones_perdidas':sorted(perdidas),
@@ -65,9 +66,15 @@ def ejecutar(raiz,fase):
         consultadas={x[0] for x in db.execute('SELECT fuente FROM auditorias WHERE corrida=?',(despues['corrida'],))} if r['consulta_nueva_realizada'] else set()
         resumen=json.loads(db.execute('SELECT resumen FROM ejecuciones WHERE id=?',(despues['corrida'],)).fetchone()[0])
     for f in r['cobertura_por_organismo']:f['consultada_esta_corrida']=f['url'] in consultadas
+    meta=raiz/'ultima_ejecucion.json'
+    if meta.exists():
+        ampliado=json.loads(meta.read_text())
+        if ampliado.get('corrida')==despues['corrida']:resumen.update(ampliado)
     r['estado_ejecucion']=resumen['estado'];r['cobertura_estricta']=resumen.get('cobertura_estricta',{})
     r['abiertas']=len(o.separar_vigencia(registros,despues['fecha'])['abiertas']);r['proximas_a_vencer']=len(o.separar_vigencia(registros,despues['fecha'])['proximas_a_vencer'])
-    if resumen['estado']=='INCOMPLETA':r['estado']='EJECUCION_INCOMPLETA'
+    progreso=raiz/'progreso_actual.json'
+    fallo=json.loads(progreso.read_text()).get('estado')=='INCOMPLETA' if progreso.exists() else False
+    if resumen['estado']=='INCOMPLETA' or fallo:r['estado']='EJECUCION_INCOMPLETA';r['estado_ejecucion']='INCOMPLETA'
     (raiz/'auditoria_diaria.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
     lineas=['# Comparación diaria del piloto',f"Estado: {r['estado']}; consulta: {r['estado_ejecucion']}.",f"Base: {r['corrida_anterior']}; actual: {r['corrida_actual']}.",f"Historial: {r['ids_anteriores']} → {r['ids_actuales']}; perdidos: {len(r['ids_perdidos'])}; versiones perdidas: {len(r['versiones_perdidas'])}."]
     lineas.extend(f'- {k}: {v}' for k,v in r['conteos'].items())

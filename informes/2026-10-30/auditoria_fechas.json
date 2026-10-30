@@ -1,0 +1,150 @@
+{
+  "run_original": 40952155721,
+  "regresion_rosario": 40983397861,
+  "casos": [
+    {
+      "id": "1ee0d3d51a75577375c7ad3f8cf90a676bbe113e48591645827a33bfbfe14526",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "24/2026",
+      "tipo_procedimiento": "compra agil",
+      "objeto": "11091/2026 Publicada para Apertura Contratación de modulos de biopsia renal- Secretaría de Salud Pública Apertura: 02/11/2026 10:00 11081/2026 Publicada para Apertura Contratación del servicio de estudios urodinamicos par adultos- Sceretaría de Salud Publica Apertura: 30/10/2026 10:00 3209/2026 Publicada para Apertura MEDICION DE PUESTA A TIERRA * HOSPITAL DE NIÑOS VICTOR J. VILELA* Apertura: 30/10/2026 10:00 48/2026 Publicada para Apertura Adquisición de Repuestos para vehículos de la D. G. de Transito - Sec. de Control y Convivencia Apertura: 03/11/2026 11:00 48/2026 Publicada para Apertura Mantenimiento ordinario de los ascensores del Edificio de la Ex Aduana - Secretaría de Obras Públicas - Dirección Gral de Servicios Administrativos Apertura: 30/10/2026 13:00 47/2026 Publicada para Apertura Adquisición de cubiertas para autos y motos de la Dirección General de Transito - Secretaría de Control y Convivencia Apertura: 03/11/2026 10:00 46/2026 Publicada para Apertura Adquisición de uniformes de Verano para la Dir. Gral de Control Urbano Apertura: 06/11/2026 10:00 44/2026 Publicada para Apertura Adquisición de fardos de Heno de Alfalfa para la D. G. de Control Urbano - Sec. de Control y Convivencia Apertura: 05/11/2026 10:00 41/2026 Publicada para Apertura Reparación del ascensor N° 1 del Edificio de la Ex Aduana de la Dirección General de Servicios Administrativos - Secretaría de Obras Públicas - Segundo llamado Apertura: 30/10/2026 12:00 29/2026 Publicada para Apertura Compra de Equipos e Insumos de Informática - Ente Turístico Rosario Apertura: 06/11/2026 10:00 27/2026 Publicada para Apertura Tirantes de pino - Programas Locales de Hábitat y Vivienda - Mejoramiento barrial - Servicio Público de la Vivienda y el Hábitat Apertura: 02/11/2026 10:00 24/2026 Publicada para Apertura Compra Agil Nº24-2026 Calzado de Seguridad Apertura: 03/11/2026 10:00 19/2026 Publicada para Apertura Adquisición de fibra óptica y materiales - D. G. de Informática y TIC - Agencia de Modernización Rosario Digital - Jefatura de Gabinete Apertura: 06/11/2026 10:00 14/2026 Publicada para Apertura Suministro de artículos de almacén para la Dirección de Atención Integral de las Violencias de Género - Secretaría de Igualdad, Género y DDHH Apertura: 30/10/2026 10:00 13/2026 Publicada para Apertura Provisión de viandas para evento \"Encuentro y Fiesta Nacional de Colectividades 2026\" para la D. G. de Gestión de Riesgos y Protección Civil Apertura: 03/11/2026 10:00 12/2026 Publicada para Apertura Adquisición de neumáticos para la Dirección General de Mantenimiento Urbano y Respuesta Cercana - Secretaría de Ambiente y Espacio Público Apertura: 03/11/2026 11:00 11/2026 Publicada para Apertura Provisión de elementos de ferretería para la Secretaría de Ambiente y Espacio Público - Dirección Gral de Señalización Apertura: 02/11/2026 09:00 11/2026 Publicada para Apertura Adquisición de 2 mangueras termoplásticas de alta presión para equipo desobstructor para la Dirección Gral de Mantenimiento Urbano y Respuesta Cercana - Secretaría de Ambiente y Espacio Público Apertura: 03/11/2026 10:00 10/2026 Publicada para Apertura Compras de sillas tandem y sillas de escritorio ara la D. de Discapacidad Apertura: 04/11/2026 09:00 2/2026 Publicada para Apertura Reparación Frigorías en Equipos del Sistema de Climatización del CMD Distrito Noroeste - Cercanía y Gestión Ciudadana Apertura: 05/11/2026 12:00",
+      "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=3",
+      "fecha_publicacion": null,
+      "fecha_apertura": null,
+      "hora_apertura": null,
+      "resultado": "CONTENEDOR_ERRONEO_CON_VARIOS_PROCEDIMIENTOS; SE_CONSERVA_COMO_CANDIDATO_Y_SE_REEXTRAE_CADA_TARJETA",
+      "ficha_actual": {
+        "id_origen": "38645",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38645?sid=1810743e-00f1-4253-88c8-e234e4feb07c",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-03",
+        "hora_apertura": "10:00",
+        "objeto": "Compra Agil 24/2026 Publicada para Apertura Compra Agil Nº24-2026 Calzado de Seguridad Apertura: 03/11/2026 10:00"
+      }
+    },
+    {
+      "id": "dbef00597118238cadfcdc323ecb7bc439f478864f5625245f7855b80608fc34",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "110861/2026",
+      "tipo_procedimiento": "compra agil",
+      "objeto": "Compra Agil 110861/2026 Publicada para Apertura INMUNOSEROLOGIA PROTEÍNAS INMUNOFLUORESCENCIA (desestimados C.A 11-070/26) DIRECCIÓN DE BIOQUÍMICA Apertura: 03/11/2026 10:00",
+      "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+      "fecha_publicacion": null,
+      "fecha_apertura": null,
+      "hora_apertura": null,
+      "resultado": "PUBLICACION_NO_ROTULADA_EN_LISTADO; APERTURA_RECUPERADA; FICHAS_AGOTAN_TIEMPO",
+      "ficha_actual": {
+        "id_origen": "38670",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38670",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-03",
+        "hora_apertura": "10:00",
+        "objeto": "Compra Agil 110861/2026 Publicada para Apertura INMUNOSEROLOGIA PROTEÍNAS INMUNOFLUORESCENCIA (desestimados C.A 11-070/26) DIRECCIÓN DE BIOQUÍMICA Apertura: 03/11/2026 10:00"
+      }
+    },
+    {
+      "id": "7e7630499d163c4bc93d47ab7f643d4728139737233b5391ff0485e8aaa2553d",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "120811/2026",
+      "tipo_procedimiento": "compra agil",
+      "objeto": "Compra Agil 120811/2026 Publicada para Apertura Adquisición de Productos de Uso Veterinario para Salud Animal Rosario Apertura: 04/11/2026 10:00",
+      "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+      "fecha_publicacion": null,
+      "fecha_apertura": null,
+      "hora_apertura": null,
+      "resultado": "PUBLICACION_NO_ROTULADA_EN_LISTADO; APERTURA_RECUPERADA; FICHAS_AGOTAN_TIEMPO",
+      "ficha_actual": {
+        "id_origen": "38652",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38652",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-04",
+        "hora_apertura": "10:00",
+        "objeto": "Compra Agil 120811/2026 Publicada para Apertura Adquisición de Productos de Uso Veterinario para Salud Animal Rosario Apertura: 04/11/2026 10:00"
+      }
+    },
+    {
+      "id": "640d8920e6b529f7839f7de4b70e2cba268d45e0332e75fe25195f5c009aee6a",
+      "organismo": "Municipalidad de Casilda",
+      "numero_procedimiento": "21/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": "DECRETO Nº 130-2026 – LLAMA LIC PUB Nº 021-26 FABRICACIÓN MAT PINTURA Y MONTAJE ESTRUCTURA METÁLICA TECHO PLAZA ROTONDA Descarga",
+      "url": "https://www.casilda.gob.ar/web/wp-content/uploads/2026/10/DECRETO-No-130-2026-LLAMA-LIC-PUB-No-021-26-FABRICACION-MAT-PINTURA-Y-MONTAJE-ESTRUCTURA-METALICA-TECHO-PLAZA-ROTONDA.pdf",
+      "fecha_publicacion": null,
+      "fecha_apertura": null,
+      "hora_apertura": null,
+      "resultado": "PUBLICACION_DESCONOCIDA_NO_INFERIR_DEL_DECRETO_NI_FECHA_DE_DETECCION"
+    },
+    {
+      "id": "d73487ffc9c1e72d6c307dc038855d967e3a78e50464f73245c904caf3d7afb8",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "110480/2026",
+      "tipo_procedimiento": "licitacion privada",
+      "objeto": "Licitación Privada 110480/2026 Publicada para Apertura QUÍMICA CLÍNICA AUTOANALIZADORES HECA DIRECCIÓN DE BIOQUÍMICA Apertura: 09/11/2026 10:00",
+      "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+      "fecha_publicacion": null,
+      "fecha_apertura": null,
+      "hora_apertura": "10:00",
+      "resultado": "PUBLICACION_NO_ROTULADA_EN_LISTADO; APERTURA_RECUPERADA; FICHAS_AGOTAN_TIEMPO",
+      "ficha_actual": {
+        "id_origen": "38657",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38657",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-09",
+        "hora_apertura": "10:00",
+        "objeto": "Licitación Privada 110480/2026 Publicada para Apertura QUÍMICA CLÍNICA AUTOANALIZADORES HECA DIRECCIÓN DE BIOQUÍMICA Apertura: 09/11/2026 10:00"
+      }
+    },
+    {
+      "id": "6d055c5ded671b324bb9f109bab41c2f9fb877ca0ebcfbd4cefbebb81e2121b6",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "30120/2026",
+      "tipo_procedimiento": "licitacion privada",
+      "objeto": "Licitación Privada 30120/2026 Publicada para Apertura UNIFORMES \"HOSPITAL DE NIÑOS VICTOR J. VILELA\" Apertura: 10/11/2026 10:00",
+      "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+      "fecha_publicacion": null,
+      "fecha_apertura": null,
+      "hora_apertura": "10:00",
+      "resultado": "PUBLICACION_NO_ROTULADA_EN_LISTADO; APERTURA_RECUPERADA; FICHAS_AGOTAN_TIEMPO",
+      "ficha_actual": {
+        "id_origen": "38675",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38675",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-10",
+        "hora_apertura": "10:00",
+        "objeto": "Licitación Privada 30120/2026 Publicada para Apertura UNIFORMES \"HOSPITAL DE NIÑOS VICTOR J. VILELA\" Apertura: 10/11/2026 10:00"
+      }
+    },
+    {
+      "id": "2f0db0eeb0bd4b518a7342ed7ee892694cf01ceb3601335d962ea36e7a8a36b3",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "125/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": "Licitación Pública 125/2026 Publicada para Apertura Contratación del servicio de provisión de combustibles a través de dispositivos de identificación y sistema de administración informatizado y provisión de urea automotriz para los vehículos que forman parte del ente - Ente Autárquico SUMAR Apertura: 12/11/2026 11:00",
+      "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+      "fecha_publicacion": null,
+      "fecha_apertura": null,
+      "hora_apertura": null,
+      "resultado": "PUBLICACION_NO_ROTULADA_EN_LISTADO; APERTURA_RECUPERADA; FICHAS_AGOTAN_TIEMPO",
+      "ficha_actual": {
+        "id_origen": "38663",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38663",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-12",
+        "hora_apertura": "11:00",
+        "objeto": "Licitación Pública 125/2026 Publicada para Apertura Contratación del servicio de provisión de combustibles a través de dispositivos de identificación y sistema de administración informatizado y provisión de urea automotriz para los vehículos que forman parte del ente - Ente Autárquico SUMAR Apertura: 12/11/2026 11:00"
+      }
+    },
+    {
+      "id": "db0614da98180a3046963a7d94aa32e629b63c53dbaf534e34ecc8f379f3cf25",
+      "organismo": "Ministerio de Planeamiento e Infraestructura",
+      "numero_procedimiento": "12/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": "Próximas Aperturas de Licitación Pública Dirección General de Arquitectura y Construcciones Licitación Pública 12/2026 DGAyC Cambio de tanques, cubierta, accesibilidad y refacción en baños Escuela de Educación Integral N° 9 \"Dr. Luis Agote\", San Salvador Apertura: miércoles, 25 de noviembre de 2026 - 10:00hs",
+      "url": "https://www.entrerios.gov.ar/minplan/licitaciones/lpn_dgayc_2026-12",
+      "fecha_publicacion": null,
+      "fecha_apertura": null,
+      "hora_apertura": null,
+      "resultado": "SIN_FECHA_PUBLICACION_EN_HTML_OFICIAL_CAPTURADO; APERTURA_2026-11-25; NO_INFERIR_FECHA"
+    }
+  ]
+}

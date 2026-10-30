@@ -69,7 +69,7 @@ def normalizar(r,ahora=None):
     dato('numero_procedimiento',r.get('numero_procedimiento') or (ps[0]['numero'] if ps else None),r.get('procedimiento'))
     if r.get('numero_procedimiento'):r['numero_procedimiento']=re.sub(r'^(\d+)[–-](20\d{2})$',r'\1/\2',r['numero_procedimiento'])
     dato('tipo_procedimiento',r.get('tipo_procedimiento') or (ps[0]['tipo'] if ps else None),r.get('procedimiento'))
-    for campo,patron in [('fecha_apertura',r'(?:(?:fecha\s+(?:de\s+)?)?apertura(?:\s+(?:de\s+)?(?:ofertas|sobres))?|llamese a licitacion (?:publica|privada) para el dia)\s*[:\-]?\s*(.{0,90})'),('fecha_limite_presentacion',r'(?:fecha\s+limite(?:\s+de\s+presentacion)?|limite\s+(?:de|para)\s+(?:la\s+)?(?:presentacion|recepcion)(?:\s+de\s+(?:ofertas|sobres))?|(?:presentacion|recepcion)\s+de\s+(?:ofertas|sobres)\s+hasta|presentacion\s*:\s*hasta)\s*[:\-]?\s*(.{0,90})'),('fecha_publicacion',r'(?:fecha\s+(?:de\s+)publicacion|publicad[oa](?:\s+el)?)\s*[:\-]?\s*(.{0,70})')]:
+    for campo,patron in [('fecha_apertura',r'(?:(?:fecha\s+(?:de\s+)?)?apertura(?:\s+(?:de\s+)?(?:ofertas|sobres))?|llamese a licitacion (?:publica|privada) para el dia)\s*[:\-]?\s*(.{0,90})'),('fecha_limite_presentacion',r'(?:fecha\s+limite(?:\s+de\s+presentacion)?|limite\s+(?:de|para)\s+(?:la\s+)?(?:presentacion|recepcion)(?:\s+de\s+(?:ofertas|sobres))?|(?:presentacion|recepcion)\s+de\s+(?:ofertas|sobres)\s+hasta|presentacion\s*:\s*hasta)\s*[:\-]?\s*(.{0,90})'),('fecha_publicacion',r'(?:fecha\s+(?:de\s+)?publicacion|publicad[oa](?:\s+el)?)\s*[:\-]?\s*(.{0,70})')]:
         dedicado=r.get(campo+'_texto')
         candidatos=[dedicado] if dedicado else [m[1] for contenido in (t,norm(texto_titulo)) for m in re.finditer(r"(?="+patron+r")",contenido)]
         raw='';valor=None

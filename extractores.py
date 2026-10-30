@@ -245,7 +245,7 @@ def extraer(html,url,config=None):
         registros.append({'titulo':texto,'objeto':objeto,'procedimiento':p['procedimiento'],
             'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'url':destino,
             'presupuesto_texto':next((v for k,v in campos_tabla.items() if k.startswith('presupuesto')),None),
-            'fecha_publicacion_texto':next((x.attrs.get('datetime') or x.text for x in n.iter() if x.tag=='time' and ('published' in x.attrs.get('class','') or x.attrs.get('itemprop')=='datePublished')),None),
+            'fecha_publicacion_texto':next((v for k,v in campos_tabla.items() if re.fullmatch(r'(?:fecha (?:de )?)?publicacion',k)),None) or next((x.attrs.get('datetime') or x.text for x in n.iter() if x.tag=='time' and ('published' in x.attrs.get('class','') or x.attrs.get('itemprop')=='datePublished')),None),
             'documentos':documents,'evento_publicado':evento,'llamado_especial':bool(evento),
             'fecha_apertura_texto':apertura_epe[0] if apertura_epe else (next((x.text for x in n.children if isinstance(x,Nodo) and x.tag=='td' and re.search(r'\d{1,2}/\d{1,2}/20\d{2}',x.text)),None) if config.get('tipo_tabla') else None),
             'registro_estructurado':bool(epe),

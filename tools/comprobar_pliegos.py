@@ -51,6 +51,7 @@ def worker(url,consulta_post=None,opciones=None):
             texto='';texto_meta={'cache_texto':'SIN_TEXTO','metodo':'PDF'}
         necesita_ocr=not texto.strip() or any(len(re.sub(r'[^A-Za-zÁÉÍÓÚáéíóúÑñ]','',p))<20 for p in texto.rstrip('\f').split('\f'))
         if clase=='PDF' and necesita_ocr and (opciones or {}).get('ocr_selectivo'):
+            r['ocr_intentado']=True
             texto,meta_ocr=documentos.ocr_selectivo(raw,max_paginas=(opciones or {}).get('max_paginas',4))
             r['ocr_selectivo']=meta_ocr;texto_meta['metodo']='OCR_SELECTIVO'
             if not meta_ocr['completa']:r['lectura_pendiente']='OCR selectivo parcial: quedan páginas sin leer'
@@ -178,6 +179,8 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
                 out,err=p.communicate()
                 try:valor=json.loads(out) if p.returncode==0 else {'url':url,'estado':'ERROR','error':err[-1000:]}
                 except ValueError:valor={'url':url,'estado':'ERROR','error':'Worker sin JSON válido'}
+                # Los PDF nativos no consumen el cupo de OCR reservado.
+                if url in seleccion_ocr and not valor.get('ocr_intentado') and p.returncode==0:seleccion_ocr.remove(url)
                 candidatos[url]=valor;guardar_parcial(valor);del activos[pid]
             elif time.monotonic()-comienzo>=(max(por_enlace,75) if url in seleccion_ocr else max(por_enlace,45) if url in peticiones else por_enlace):
                 terminar(p);p.communicate();candidatos[url]={'url':url,'estado':'TIEMPO_ENLACE'};del activos[pid]
