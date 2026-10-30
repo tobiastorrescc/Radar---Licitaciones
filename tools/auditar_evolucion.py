@@ -42,10 +42,14 @@ def comparar(antes,despues,registros,eventos):
             tipo=r['clasificacion_novedad'];grupo=por_tipo.get(tipo)
             if tipo.startswith(('RECUPERACION','HISTORICA','LINEA_BASE')):grupo='recuperaciones_historicas'
             if grupo:grupos[grupo].append({k:r.get(k) for k in ('id','organismo','numero_procedimiento','objeto','fecha_publicacion','fecha_apertura','url','clasificacion_novedad','campos_modificados')})
+    config=Path(__file__).resolve().parents[1]/'inventario/fuentes.json'
+    configuradas={f['url']:f for f in json.loads(config.read_text())} if config.exists() else {}
     for url,obs in despues['fuentes'].items():
         f=organismos.setdefault(url,{'organismo':obs.get('organismo'),'procedimientos':0,'abiertas':0,'pagos_verificados':0})
         anterior=antes['fuentes'].get(url,{})
-        f.update(url=url,estado_anterior=anterior.get('estado'),estado_actual=obs.get('estado'),errores=[{**e,**conectores.diagnostico_error(e)} for e in obs.get('errores',[])],consultada_esta_corrida=realizada)
+        for k in ('organismo','localidad','provincia'):
+            if not f.get(k):f[k]=configuradas.get(url,{}).get(k) or obs.get(k)
+        f.update(url=url,estado_anterior=anterior.get('estado_cobertura',anterior.get('estado')),estado_actual=obs.get('estado_cobertura',obs.get('estado')),errores=[{**e,**conectores.diagnostico_error(e)} for e in obs.get('errores',[])],consultada_esta_corrida=realizada)
     resultado={'corrida_anterior':antes['corrida'],'corrida_actual':despues['corrida'],'fecha':despues['fecha'],'consulta_nueva_realizada':realizada,
         'estado':'SIN_NUEVA_EJECUCION' if not realizada else 'HISTORIAL_PERDIDO' if faltan or perdidas else 'AUDITADA',
         'ids_anteriores':len(antes['ids']),'ids_actuales':len(despues['ids']),'ids_perdidos':sorted(faltan),'versiones_perdidas':sorted(perdidas),
