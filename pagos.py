@@ -3,7 +3,7 @@ from hashlib import sha256
 import re
 import unicodedata
 
-VERSION=13
+VERSION=14
 NO_INFORMADO='Pendiente de verificar'
 NUMEROS={'siete':7,'quince':15,'treinta':30,'cuarenta y cinco':45,'sesenta':60,'noventa':90,
          'cinco':5,'diez':10,'veinte':20,'veinticinco':25,'cuarenta':40,'cincuenta':50,
@@ -155,6 +155,12 @@ def extraer(texto,url,hash_documento=None,pdf=False,metodo='TEXTO'):
                         if LIMITE.match(norm(otro)) or (INICIO.match(norm(otro)) and clasificar(fragmento+' '+' '.join(siguientes)) is not None):break
                         siguientes.append(re.sub(r'\s+',' ',otro).strip())
                     fragmento+=' '+' '.join(siguientes)
+                # El encabezado puede continuar en el párrafo siguiente: no
+                # clasificar sólo el plazo de bienes si sigue un régimen de servicios.
+                if re.search(r'en el caso de la ejecucion de servicios',norm(fragmento)):
+                    for otro in bloques[indice+1:indice+4]:
+                        if LIMITE.match(norm(otro)) or re.match(r'^(?:articulo|art\.)\s*\d+',norm(otro)):break
+                        fragmento+=' '+re.sub(r'\s+',' ',otro).strip()
                 limite=LIMITE.search(norm(fragmento),10)
                 articulo=re.search(r'\b(?:articulo|art\.)\s*\d+',norm(fragmento))
                 if articulo and (not limite or articulo.start()<limite.start()):limite=articulo
@@ -201,6 +207,7 @@ def consolidar(evidencias):
     revisadas=[]
     for original in evidencias:
         e=dict(original)
+        if e.get('version_analizador')==13 and re.search(r'en el caso de la ejecucion de servicios',norm(e.get('cita'))):continue
         if e.get('categoria')=='PAGOS_PARCIALES' and re.search(r'en (?:el )?caso (?:de|del)\b',norm(e.get('cita'))) and clasificar(e.get('cita')) is None:continue
         if (e.get('url_documento'),e.get('sha256')) in genericos and e.get('categoria')=='PAGOS_PARCIALES' and (re.search(r'oferente.*consignar',norm(e.get('cita'))) or norm(e.get('cita')).startswith('pago: - pago total')):continue
         if e.get('version_analizador') in (5,6,7,8,9,10,11) and not e.get('definicion_contado'):

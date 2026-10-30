@@ -40,3 +40,9 @@ class CobroRapido(unittest.TestCase):
         self.assertEqual(r['fecha_apertura'],'2026-11-10')
         self.assertEqual(r['documentos'][0]['url'],'https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38684/documentos/102885')
         self.assertEqual(extraer('<h1>Información general</h1>',url),[])
+
+    def test_pago_servicios_en_parrafo_siguiente_no_es_plazo_firme(self):
+        import pagos
+        texto='ARTÍCULO 9: FORMA DE PAGO La Municipalidad abonará dentro de los Diez (10) días hábiles desde entrega y presentación de factura. En el caso de la ejecución de servicios contratados, los mismos se prestarán según las necesidades del\n\nservicio. El pago podrá hacerse en forma semanal, quincenal o mensual, contra presentación de factura.\n\nARTÍCULO 10: RECONOCIMIENTO DE COSTOS'
+        es=pagos.extraer(texto,'https://haciendalapaz.gob.ar/pliego.pdf')
+        self.assertEqual(es[0]['categoria'],'OPCIONES_PUBLICADAS')

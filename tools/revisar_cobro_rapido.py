@@ -18,6 +18,12 @@ def rapido(r):
 def detalle(url,config):
     inicio=time.monotonic()
     try:
+        if config.get('adaptador')=='chajari-api':
+            endpoint='https://licitaciones.chajari.gob.ar/licitaciones/para_apertura/0'
+            raw,tipo,final=conectores.descargar(endpoint,datos_post=b'{"":""}',conexion_timeout=3,lectura_timeout=5)
+            from extractores_lotes import extraer_chajari
+            rs,_=extraer_chajari(raw,final)
+            return {'url':url,'url_api':final,'estado':'CONSULTADA','registros':rs,'segundos':round(time.monotonic()-inicio,2),'fecha':datetime.now(o.ZONA).isoformat()}
         raw,tipo,final=conectores.descargar(url,conexion_timeout=3,lectura_timeout=5)
         if urlparse(final).hostname!=urlparse(url).hostname:raise ValueError('Redirección de dominio; requiere revisión')
         if 'html' not in tipo:raise ValueError('Publicación no HTML; conserva revisión documental separada')
@@ -45,10 +51,15 @@ def informe(rs,fecha):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--sin-red',action='store_true');a=p.parse_args()
     origen=Path('inventario/cohorte116.json.gz.b64');datos=gzip.decompress(base64.b64decode(origen.read_text()));cohorte=json.loads(datos)['oportunidades'];fecha=datetime.now(o.ZONA).isoformat()
-    rs=[o.normalizar(r,fecha) for r in cohorte];antes={r['id']:r['pago'].get('estado') for r in rs};configs={f['url']:f for f in fuentes_configuradas()};out=Path('work/cobro-rapido');out.mkdir(parents=True,exist_ok=True)
+    rs=[o.normalizar(r,fecha) for r in cohorte];antes={r['id']:r.get('pago_base_085c28a',r['pago'].get('estado')) for r in rs};configs={f['url']:f for f in fuentes_configuradas()};out=Path('work/cobro-rapido');out.mkdir(parents=True,exist_ok=True)
     # Últimas observaciones primero, después vencimiento. Sin limitar la cantidad de fichas.
     rs.sort(key=lambda r:(not bool(r.get('observada_esta_corrida') or 'revision_rosario_41110430956' in r.get('origenes_evidencia',[])),r.get('fecha_limite_presentacion') or r.get('fecha_apertura') or '9999'))
-    consultas={};observadas=set()
+    consultas={};observadas={r['id'] for r in rs if str(r.get('ultima_observacion_publicacion',''))[:10]==fecha[:10]}
+    if json.load(open('tools/plan_cobertura.json')).get('diagnostico_chajari'):
+        r=next(r for r in rs if r['organismo']=='Municipalidad de Chajarí')
+        valor=detalle(r['url'],configs.get(r.get('fuente'),{}))
+        (out/'chajari_vigencia.json').write_text(json.dumps(valor,ensure_ascii=False,indent=2)+'\n')
+        return
     if json.load(open('tools/plan_cobertura.json')).get('diagnostico_cobro'):
         for id in ('38684','38648','38681'):
             r=next(r for r in rs if r['url'].endswith('/'+id))
@@ -56,7 +67,7 @@ def main():
             (out/('diagnostico-'+id+'.json')).write_text(json.dumps(valor,ensure_ascii=False,indent=2))
         return
     if not a.sin_red:
-        urls={r['url']:configs.get(r.get('fuente'),{}) for r in rs};inicio=time.monotonic()
+        urls={r['url']:configs.get(r.get('fuente'),{}) for r in rs if not json.load(open('tools/plan_cobertura.json')).get('solo_documentos') or r['organismo']=='Municipalidad de Chajarí'};inicio=time.monotonic()
         with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
             futuros={pool.submit(detalle,u,c):u for u,c in urls.items()}
             for futuro in concurrent.futures.as_completed(futuros):
@@ -79,13 +90,35 @@ def main():
         fs=fuentes_configuradas()
         for f in fs:
             if f.get('adaptador')=='rosario':f['dominios_documentos']=list(set(f.get('dominios_documentos',[])+['apimgw.rosario.gob.ar']))
-        comprobar(rs,fecha,fs,total=300,salida_parcial=out/'documentos.jsonl',ocr_documentos=0)
+        cupo=int(json.load(open('tools/plan_cobertura.json')).get('ocr_cobro',0))
+        originales={}
+        if json.load(open('tools/plan_cobertura.json')).get('solo_documentos'):
+            for r in rs:
+                ultimos={d['url']:d for d in r.get('auditoria_documentos',[])}
+                originales[r['id']]=r.get('documentos',[])
+                r['documentos']=[d for d in r.get('documentos',[]) if not ('handshake operation timed out' in str(ultimos.get(d['url'],{}).get('error','')))]
+        try:comprobar(rs,fecha,fs,total=300,salida_parcial=out/'documentos.jsonl',ocr_paginas=10,ocr_documentos=cupo)
+        finally:
+            for r in rs:
+                if r['id'] in originales:r['documentos']=originales[r['id']]
     rs=[o.normalizar(r,fecha) for r in rs]
     for r in rs:
         r['revision_vigencia']='VENCIDA_O_NO_CONFIRMADA' if r['vigencia']!='ABIERTA' else ('OBSERVADA_RECIENTEMENTE_ABIERTA_CALCULADA' if r['id'] in observadas else 'SOLO_EVIDENCIA_PREVIA')
     nuevos=[r['id'] for r in rs if antes[r['id']]!='VERIFICADO' and r['pago']['estado']=='VERIFICADO']
     md,fast=informe(rs,fecha)
-    resumen={'fecha':fecha,'cohorte':len(rs),'revision_completa':True,'consultas_publicaciones':len(consultas),'publicaciones_observadas':len(observadas),'pagos_verificados_antes':sum(v=='VERIFICADO' for v in antes.values()),'pagos_verificados_despues':sum(r['pago']['estado']=='VERIFICADO' for r in rs),'de_desconocido_a_verificado':len(nuevos),'ids_mejorados':nuevos,'cobro_rapido':len(fast),'vigencia':dict(Counter(r['revision_vigencia'] for r in rs)),'sin_escritura_historial':True,'ocr_nuevo':0}
+    import cache_documentos
+    for r in fast:
+        for d in r.get('auditoria_documentos',[]):
+            digest=d.get('sha256')
+            if not digest:continue
+            texto=cache_documentos.raiz()/'textos'/(digest+'.json')
+            if texto.exists():
+                destino=out/'textos-cobro-rapido'/texto.name;destino.parent.mkdir(parents=True,exist_ok=True);destino.write_bytes(texto.read_bytes())
+            ocr=cache_documentos.raiz()/'ocr-paginas-v1'/digest
+            if ocr.exists():
+                import shutil
+                shutil.copytree(ocr,out/'textos-cobro-rapido'/digest,dirs_exist_ok=True)
+    resumen={'fecha':fecha,'cohorte':len(rs),'revision_completa':True,'consultas_publicaciones':len(consultas),'publicaciones_observadas':len(observadas),'pagos_verificados_antes':sum(v=='VERIFICADO' for v in antes.values()),'pagos_verificados_despues':sum(r['pago']['estado']=='VERIFICADO' for r in rs),'de_desconocido_a_verificado':len(nuevos),'ids_mejorados':nuevos,'cobro_rapido':len(fast),'vigencia':dict(Counter(r['revision_vigencia'] for r in rs)),'sin_escritura_historial':True,'ocr_cupo_documentos':int(json.load(open('tools/plan_cobertura.json')).get('ocr_cobro',0))}
     for nombre,obj in [('resultado',resumen),('todas',rs),('rapidas',fast)]: (out/(nombre+'.json')).write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n')
     (out/'avance.json').write_text(json.dumps({'cohorte':len(rs),'consultas_completadas':len(consultas),'completa':True},ensure_ascii=False)+'\n')
     (out/'COBRO_RAPIDO.md').write_text(md);(out/'TODAS.md').write_text(fichas.reporte(rs,fecha))

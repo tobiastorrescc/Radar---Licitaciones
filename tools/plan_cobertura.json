@@ -1,5 +1,5 @@
 {
-  "etapa": "recuperar-pliegos-rosario-y-pagos-la-paz",
+  "etapa": "cobro-rapido-cache-ocr-selectivo-3-sin-repetir-fallos-tls",
   "sondear": false,
   "auditar": false,
   "descubrir": false,
@@ -7,5 +7,7 @@
   "revisar_identidades": false,
   "revisar_cobro": true,
   "archivar_auditoria": false,
-  "diagnostico_cobro": false
+  "diagnostico_cobro": false,
+  "solo_documentos": true,
+  "ocr_cobro": 3
 }
