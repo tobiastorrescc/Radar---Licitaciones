@@ -131,11 +131,12 @@ def excluido(n,permitir_aside=False):
 
 def situacion(texto):
     t=norm(texto)
+    t=t.replace('si se suspende','').replace('si se cancela','')
     t=re.sub(r'proveedor adjudicado(?: y monto)?\s*:?','',t)
     t=re.sub(r'(?:sera|seran|podra ser|una vez)\s+adjudicad[oa]','',t)
     t=re.sub(r'(?:se declarara|sera declarada|podra ser declarada)\s+desierta','',t)
     t=re.sub(r'(?:sera|podra ser|se declarara|resultare|resultara)\s+(?:declarad[ao]\s+)?(?:desiert[ao]\s+o\s+)?fracasad[ao]','',t)
-    return next((valor for patron,valor in [(r'\b(?:suspendid[oa]|suspension)\b','SUSPENDIDA'),(r'\bcancelad[oa]\b','CANCELADA'),(r'\badjudicad[oa]\b','ADJUDICADA'),(r'\bdesiert\w*','DESIERTA'),(r'\bfracasad\w*','FRACASADA'),(r'\bfinalizad[oa]\b','FINALIZADA'),(r'\ben evaluacion\b','EN_EVALUACION')] if re.search(patron,t)),None)
+    return next((valor for patron,valor in [(r'(?:^suspendid[oa]$|\bestado\s*:?\s*suspendid[oa]\b|\bse suspende\b|\baviso de suspension\b)','SUSPENDIDA'),(r'(?:^cancelad[oa]$|\bestado\s*:?\s*cancelad[oa]\b|\bse cancela\b|\baviso de cancelacion\b)','CANCELADA'),(r'\badjudicad[oa]\b','ADJUDICADA'),(r'\bdesiert\w*','DESIERTA'),(r'\bfracasad\w*','FRACASADA'),(r'\bfinalizad[oa]\b','FINALIZADA'),(r'\ben evaluacion\b','EN_EVALUACION')] if re.search(patron,t)),None)
 
 
 def extraer(html,url,config=None):
