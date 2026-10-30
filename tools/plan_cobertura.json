@@ -1,9 +1,11 @@
 {
-  "etapa": "validacion-final-condiciones-fichas-sin-nuevo-barrido",
+  "etapa": "completar-las-14-candidatas-restantes-sin-repetir-consultas",
   "sondear": false,
   "auditar": false,
-  "descubrir": false,
+  "descubrir": true,
   "reverificar_ids": [],
-  "pagos_run": 41048293524,
-  "revisar_identidades": false
+  "revisar_identidades": false,
+  "desc_candidatos": 14,
+  "desc_busquedas": 1,
+  "desc_total": 120
 }

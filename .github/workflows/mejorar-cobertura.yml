@@ -32,6 +32,10 @@ jobs:
           pagos=str(d.get('pagos_run',''))
           if pagos and not pagos.isdigit():raise ValueError('Run de pagos inválido')
           print('pagos_run='+pagos)
+          for clave,defecto,minimo,maximo in [('desc_candidatos',100,1,100),('desc_busquedas',30,1,100),('desc_total',360,15,600)]:
+              valor=int(d.get(clave,defecto))
+              if not minimo<=valor<=maximo:raise ValueError('Límite de descubrimiento inválido')
+              print(clave+'='+str(valor))
           PY
       - name: Preparar lectura documental
         timeout-minutes: 4
@@ -120,7 +124,7 @@ jobs:
         run: python -u tools/auditar_pagos_abiertas.py --entrada "${{ steps.pagos_origen.outputs.entrada }}" --ocr-paginas 10
       - name: Revisar candidatas sin publicar automáticamente cambios de inventario
         if: steps.plan.outputs.descubrir == 'true'
-        run: python -u tools/descubrir_fuentes.py --salida work/descubrimiento --total 360 --busquedas 30 --candidatos 100 --revisar-pendientes
+        run: python -u tools/descubrir_fuentes.py --salida work/descubrimiento --total ${{ steps.plan.outputs.desc_total }} --busquedas ${{ steps.plan.outputs.desc_busquedas }} --candidatos ${{ steps.plan.outputs.desc_candidatos }} --revisar-pendientes
       - name: Revisar documentos de identidades dudosas sin escribir historial
         timeout-minutes: 3
         run: python -u tools/revisar_identidades.py
