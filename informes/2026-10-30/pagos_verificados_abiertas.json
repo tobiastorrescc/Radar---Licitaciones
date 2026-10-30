@@ -1,0 +1,342 @@
+[
+  {
+    "organismo": "Municipalidad de Crespo",
+    "numero_procedimiento": "6/2026",
+    "objeto": "Adquisición de caños de PVC cloacal 500.",
+    "fecha_publicacion": null,
+    "fecha_apertura": "2026-11-17",
+    "presupuesto": {
+      "importe": "121139752.00",
+      "moneda": null
+    },
+    "url": "https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf",
+    "enlace_pliego": "https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf",
+    "pago": {
+      "estado": "VERIFICADO",
+      "clasificacion": "OTRO_PLAZO",
+      "etiqueta": "20 días habiles desde presentación de factura",
+      "plazos_dias": [
+        20
+      ],
+      "hitos_inicio": [
+        "PRESENTACION_FACTURA"
+      ],
+      "unidades_dias": [
+        "habiles"
+      ],
+      "direccion": "NO_ESPECIFICADA",
+      "documento_respaldo": "https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf",
+      "documentos_respaldo": [
+        "https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf"
+      ],
+      "evidencias": [
+        {
+          "categoria": "OTRO_PLAZO",
+          "cita": "FORMA DE PAGO. - La Municipalidad de Crespo abonará en forma total o mediante entregas parciales el importe correspondiente a la presente, dentro de los veinte (20) días hábiles posteriores a la fecha de presentación de las facturas respectivas, en la que deberá constar el cumplimiento total o parcial de los materiales entregados. -",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": false,
+          "direccion": "NO_ESPECIFICADA",
+          "etiqueta": "20 días habiles desde presentación de factura",
+          "hitos_inicio": [
+            "PRESENTACION_FACTURA"
+          ],
+          "metodo_extraccion": "TEXTO",
+          "pagina": 2,
+          "plazos_dias": [
+            20
+          ],
+          "prioritario": false,
+          "sha256": "1dbca08ae958d924b08c0b6560538214721cf75c704ac8ac263a6edfdd1e67f0",
+          "unidades_dias": [
+            "habiles"
+          ],
+          "url_documento": "https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf",
+          "version_analizador": 8
+        }
+      ],
+      "prioritario": false,
+      "motivo": null
+    },
+    "comprobacion_pliego": {
+      "bytes": 568757,
+      "cache_estado": "HTTP_304",
+      "cache_texto": true,
+      "campos_documento": {
+        "modalidad_presentacion": [
+          "PRESENCIAL"
+        ]
+      },
+      "consulta_post": null,
+      "encabezado": "municipalidad de crespo crespo – entre rios – argentina seccion suministros. - licitacion publica no 06/2026.- pliego de condiciones particulares y especificaciones tecnicas articulo 1o.- objeto. - la presente licitacion tiene por objeto la adquisicion de materiales para el tendido de caneria de red colectora cloacal en zona de ruta no 12 y camino del medio, con las caracteristicas que se detallan",
+      "encabezado_pliego": true,
+      "estado": "DOCUMENTO_ACCESIBLE",
+      "evidencias_documento": {
+        "modalidad_presentacion": {
+          "texto": "MUNICIPALIDAD DE CRESPO\nCrespo – Entre Ríos – Argentina                                       Sección Suministros. -\n\n              LICITACIÓN PÚBLICA Nº 06/2026.-\n                   Pliego De Condiciones Particulares\n                        y Especificaciones Técnicas\n ARTÍCULO 1º.- OBJETO. -\n La presente licitación tiene por objeto la Adquisición de materiales para el tendido de\n cañería de red colectora cloacal en zona de Ruta Nº 12 y Camino del Medio, con las\n características que se detallan a continuación;\n\n  Ítem       Cant.      U                          Descripción\n\n                              Caños PVC CLOACAL 500, diámetro 500mm, long.\n   1          804       Ml    6mts, espesor 9,8mm, junta segura, liso bajo norma\n                              IRAM.\n *Se anexan especificaciones técnicas. -\n PRESENTAR PROPUESTA ECONOMICA ESCRITA EN SOBRE CERRADO Y\n PROPUESTA ECONOMICA COPIA DIGITAL EN CD o PEN DRIVE (FORMATO\n WORD o EXCEL PLANO - “NO PDF”).-\n ARTICULO 2° PRESUPUESTO OFICIAL. -\n El Presupuesto Oficial se fija en la suma de pesos CIENTO VEINTIUN MILLONES\n CIENTO TREINTA Y NUEVE MIL SETECIENTOS CINCUENTA Y DOS ($\n 121.139.752,00) y el costo del Pliego se fija en la suma de VEINTICINCO MIL PESOS\n ($ 25.000,00).-\n ARTÍCULO 3º.- LUGAR Y FECHA DE APERTURA. -\n El lugar y fecha de apertura de la presente Licitación Pública, queda determinado en\n la Municipalidad de Crespo, Sección Suministros – 25 de Mayo 943 – el día 17 de\n NOVIEMBRE de 2026 a las 10,00 hs.-\n ARTÍCULO 4º.- FORMA DE COTIZACIÓN. -\n Los proponentes deberán cotizar en pesos, consignando el precio unitario y el total\n de la oferta, la que deberá incluir el Impuesto al Valor Agregado.\n ARTÍCULO 5º.- MANTENIMIENTO DE LA OFERTA. -\n Los proponentes se comprometen a mantener las ofertas por el término de veinte (20)\n días hábiles – como mínimo – posteriores al acto de apertura de la Licitación, todo\n plazo menor fijado por los oferentes se entenderá por no escrito.\n ARTÍCULO 6º.- GARANTÍA. -\n Los proponentes deberán presentar una garantía según lo establecido en el Pliego de\n Condiciones Generales.\n ARTICULO 7º.- ADJUDICACIÓN. -\n\fMUNICIPALIDAD DE CRESPO\nCrespo – Entre Ríos – Argentina                                     Sección Suministros. -\n\n La Municipalidad de Crespo adjudicará la presente licitación en forma global a la\n oferta que considere más conveniente a sus intereses y de acuerdo a lo estipulado\n en el Pliego de Condiciones Particulares, Generales y la Ordenanza 53/96 que\n establece el régimen de compras y contrataciones en el ámbito municipal.\n ARTÍCULO 8º.- PLAZO DE ENTREGA. -\n Los materiales objeto de la presente licitación deberán ser entregados dentro de los\n DIEZ (10) días hábiles contados a partir de la fecha de notificación de la adjudicación,\n en el obrador municipal San José sito en calle Buenos Aires y San Luis, libre de gastos\n de flete, descarga o cualquier otro gasto adicional.\n ARTÍCULO 9º.- FORMA DE PAGO. -\n La Municipalidad de Crespo abonará en forma total o mediante entregas parciales el\n importe correspondiente a la presente, dentro de los veinte (20) días hábiles\n posteriores a la fecha de presentación de las facturas respectivas, en la que deberá\n constar el cumplimiento total o parcial de los materiales entregados. -\n ARTÍCULO 11º.- RECONOCIMIENTO DE VARIACIONES DE COSTOS. -\n Para la provisión a que se refiere la presente licitación, no se reconocerán variaciones\n de costos de ninguna naturaleza y por ningún concepto.\n ARTÍCULO 12º.- DOCUMENTACION OBLIGATORIA A PRESENTAR\n Se deberá presentar al momento de la oferta;\n        Certificado fiscal de libre deuda para proveedores del Estado de la\n         Administradora Tributaria de Entre Ríos (ATER),\n        Certificado libre deuda municipal,\n        Detalle de deuda consolidada de ARCA,\n        Nota constituyendo domicilio electrónico,\n\n\n\n                            ____________VI____________\n\f",
+          "url": "https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf"
+        }
+      },
+      "fecha_comprobacion": "2026-10-29T22:18:25.119499-03:00",
+      "fecha_descarga": "2026-10-28T17:43:56.962398+00:00",
+      "identificacion": "ENLACE_OFICIAL_ETIQUETADO",
+      "pago_mencionado": true,
+      "pagos": [
+        {
+          "categoria": "OTRO_PLAZO",
+          "cita": "FORMA DE PAGO. - La Municipalidad de Crespo abonará en forma total o mediante entregas parciales el importe correspondiente a la presente, dentro de los veinte (20) días hábiles posteriores a la fecha de presentación de las facturas respectivas, en la que deberá constar el cumplimiento total o parcial de los materiales entregados. -",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": false,
+          "direccion": "NO_ESPECIFICADA",
+          "etiqueta": "20 días habiles desde presentación de factura",
+          "hitos_inicio": [
+            "PRESENTACION_FACTURA"
+          ],
+          "metodo_extraccion": "TEXTO",
+          "pagina": 2,
+          "plazos_dias": [
+            20
+          ],
+          "prioritario": false,
+          "sha256": "1dbca08ae958d924b08c0b6560538214721cf75c704ac8ac263a6edfdd1e67f0",
+          "unidades_dias": [
+            "habiles"
+          ],
+          "url_documento": "https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf",
+          "version_analizador": 8
+        }
+      ],
+      "presupuesto": null,
+      "prioridad_identificacion": 2,
+      "procedimientos": [
+        "licitacion publica 6/2026"
+      ],
+      "publicacion_rotulada": false,
+      "revalidado": "2026-10-30T01:15:25.947247+00:00",
+      "sha256": "1dbca08ae958d924b08c0b6560538214721cf75c704ac8ac263a6edfdd1e67f0",
+      "tipo": "PDF",
+      "url": "https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf",
+      "url_final": "https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf",
+      "version_pago": 8
+    }
+  },
+  {
+    "organismo": "Municipalidad de Chajarí",
+    "numero_procedimiento": "19/2026",
+    "objeto": "Provisión de repuestos para el tren de rodaje de Retroexcavadora N° 11 New Holland E215c Evo, Dominio DFP55 año 2019 y repuestos para el tren de rodaje de la Retroexcavadora Con Oruga N° 6 Komatsu PC200 dominio DFP32 año 2015",
+    "fecha_publicacion": null,
+    "fecha_apertura": "2026-11-19",
+    "presupuesto": {
+      "importe": "59500000.0",
+      "moneda": null
+    },
+    "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+    "enlace_pliego": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+    "pago": {
+      "estado": "VERIFICADO",
+      "clasificacion": "CONTADO",
+      "etiqueta": "Pago contado contra entrega",
+      "plazos_dias": [],
+      "hitos_inicio": [
+        "ENTREGA"
+      ],
+      "unidades_dias": [],
+      "direccion": "NO_ESPECIFICADA",
+      "documento_respaldo": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+      "documentos_respaldo": [
+        "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710"
+      ],
+      "evidencias": [
+        {
+          "categoria": "CONTADO",
+          "etiqueta": "Pago contado contra entrega",
+          "plazos_dias": [],
+          "unidades_dias": [],
+          "hitos_inicio": [
+            "ENTREGA"
+          ],
+          "direccion": "NO_ESPECIFICADA",
+          "contado_mencionado": true,
+          "contra_entrega_mencionado": true,
+          "prioritario": true,
+          "cita": "PAGO: El oferente deberá cotizar de acuerdo a la siguiente altemativa: a.- CONTADO contra entrega del material El pago se efectuara contra entrega del producto.-",
+          "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 4,
+          "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+          "version_analizador": 8
+        },
+        {
+          "categoria": "CONTADO",
+          "etiqueta": "Pago contado contra entrega",
+          "plazos_dias": [],
+          "unidades_dias": [],
+          "hitos_inicio": [
+            "ENTREGA"
+          ],
+          "direccion": "NO_ESPECIFICADA",
+          "contado_mencionado": true,
+          "contra_entrega_mencionado": true,
+          "prioritario": true,
+          "cita": "FORMA DE PAGO Contado contra entrega. EVALUACIÓN Y ADJUDICACIÓN Las ofertas serán evaluadas por item. Dr, Antoflo Marceio Borghesan Lic. María Elisa Moix PRÍSIDENTE MUNICIPAL ( Secretaria de Gob. y Hacienda Joan 0 GUA",
+          "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 6,
+          "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+          "version_analizador": 8
+        },
+        {
+          "categoria": "CONTRA_ENTREGA",
+          "etiqueta": "Pago contra entrega",
+          "plazos_dias": [],
+          "unidades_dias": [],
+          "hitos_inicio": [
+            "ENTREGA"
+          ],
+          "direccion": "NO_ESPECIFICADA",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": true,
+          "prioritario": true,
+          "cita": "El pago se efectuara contra entrega del producto.- IMPUESTOS Y TASAS: corren por cuenta del proveedor.-",
+          "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 4,
+          "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+          "version_analizador": 8
+        }
+      ],
+      "prioritario": true,
+      "motivo": null
+    },
+    "comprobacion_pliego": {
+      "bytes": 5845179,
+      "cache_estado": "CACHE_RECIENTE",
+      "cache_texto": "SIN_TEXTO",
+      "campos_documento": {
+        "fecha_apertura": "2026-11-19",
+        "hora_apertura": "10:00"
+      },
+      "consulta_post": {
+        "json": {
+          "atta_id": "6397",
+          "file_name": "pliego_y_decreto",
+          "licitacion_id": 710
+        },
+        "url": "https://licitaciones.chajari.gob.ar/return_file"
+      },
+      "encabezado": ", ea gobierno de la ciudad de chajari decreto n° 1.120/2026 d.e. chajari, (e. r.), 26 de octubre de 2026.- visto: la presentacion de la secretaria de obras y servicios publicos solicitando la provision de repuestos para el tren de rodaje de retroexcavadora n° 11 new holland e215c evo, dominio dfp55 ano 2019 y repuestos para el tren de rodaje de la retroexcavadora con oruga n° 6 komatsu pc200 dominio dfp32 ano 2015, de acuerdo a memoria descriptiva, pliego de especificaciones tecnicas y, plani",
+      "encabezado_pliego": true,
+      "estado": "DOCUMENTO_ACCESIBLE",
+      "evidencias_documento": {
+        "fecha_apertura": {
+          "texto": "para el dia 19 de noviembre de 2026 - hora: 10:00.- (diez) en la secretaria de gobierno y",
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710"
+        }
+      },
+      "fecha_comprobacion": "2026-10-29T22:18:25.119905-03:00",
+      "fecha_descarga": "2026-10-29T21:11:01.789580+00:00",
+      "identificacion": "ENLACE_OFICIAL_ETIQUETADO",
+      "lectura_pendiente": "Documento con páginas sin texto suficiente: requiere OCR; no se presume ausencia de cláusulas",
+      "ocr_selectivo": {
+        "completa": false,
+        "paginas_leidas": [
+          1,
+          7,
+          8,
+          9
+        ],
+        "paginas_nativas": [],
+        "paginas_ocr_nuevas": [
+          1,
+          9,
+          8,
+          7
+        ],
+        "paginas_pendientes": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+        "total_paginas": 9
+      },
+      "pago_mencionado": false,
+      "pagos": [],
+      "pagos_pendientes_revision": [],
+      "presupuesto": null,
+      "prioridad_identificacion": 2,
+      "procedimientos": [],
+      "publicacion_rotulada": false,
+      "revalidado": null,
+      "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+      "tipo": "PDF",
+      "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+      "url_final": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+      "version_pago": 8
+    }
+  },
+  {
+    "organismo": "Aeropuerto Internacional Rosario",
+    "numero_procedimiento": "52/2026",
+    "objeto": "Herramientas para Reparaciones Menores en Pavimento del AIR",
+    "fecha_publicacion": null,
+    "fecha_apertura": "2026-11-03",
+    "presupuesto": {
+      "importe": "1492000",
+      "moneda": null
+    },
+    "url": "https://aeropuertorosario.com/licitaciones/contratacion-directa-no-52-2026/",
+    "enlace_pliego": null,
+    "pago": {
+      "estado": "VERIFICADO",
+      "clasificacion": "PLAZO_30_DIAS",
+      "etiqueta": "30 días después de conformidad de recepción",
+      "plazos_dias": [
+        30
+      ],
+      "hitos_inicio": [
+        "CONFORMIDAD_RECEPCION"
+      ],
+      "unidades_dias": [
+        "no indicada"
+      ],
+      "direccion": "NO_ESPECIFICADA",
+      "documento_respaldo": "https://aeropuertorosario.com/wp-content/uploads/2026/10/DOC-2026-00012875-APPSF-ODAeroRos.pdf",
+      "documentos_respaldo": [
+        "https://aeropuertorosario.com/wp-content/uploads/2026/10/DOC-2026-00012875-APPSF-ODAeroRos.pdf"
+      ],
+      "evidencias": [
+        {
+          "categoria": "PLAZO_30_DIAS",
+          "cita": "Plazo de pago: Cantidad: TREINTA (30) Unidad de tiempo: DÍAS ▪ El plazo de pago se contará a partir del día siguiente a la fecha de recepción definitiva de los artículos licitados. ▪ Presupuesto Oficial: $1.492.000.- (pesos un millón cuatrocientos noventa y dos mil) ▪ Recepción de las cotizaciones únicamente vía correo electrónico a compras@airosario.com.ar hasta las 11hs de la fecha límite publicada. ▪ Si esta administración recibe 3 presupuestos continuara con la compra. Caso contrario, la compra quedara pendiente hasta el tercer día hábil posterior a la fecha de solicitud de presupuesto.",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": false,
+          "direccion": "NO_ESPECIFICADA",
+          "etiqueta": "30 días después de conformidad de recepción",
+          "hitos_inicio": [
+            "CONFORMIDAD_RECEPCION"
+          ],
+          "metodo_extraccion": "TEXTO",
+          "pagina": 2,
+          "plazos_dias": [
+            30
+          ],
+          "prioritario": false,
+          "sha256": "b43e20e463acc2c43d9ab69dddeb12c4ded86e548be2c94a530212bf349d4451",
+          "unidades_dias": [
+            "no indicada"
+          ],
+          "url_documento": "https://aeropuertorosario.com/wp-content/uploads/2026/10/DOC-2026-00012875-APPSF-ODAeroRos.pdf",
+          "version_analizador": 8
+        }
+      ],
+      "prioritario": false,
+      "motivo": null
+    },
+    "comprobacion_pliego": {
+      "estado": "NO_IDENTIFICADO",
+      "fecha_comprobacion": "2026-10-28T09:35:53.101913-03:00"
+    }
+  }
+]

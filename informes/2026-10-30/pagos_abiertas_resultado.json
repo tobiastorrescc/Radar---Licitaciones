@@ -1,0 +1,239 @@
+{
+  "corrida_origen": "20261030T011040-d46469b6",
+  "fecha_evidencia_catalogo": "2026-10-29T22:15:18.919539-03:00",
+  "solo_lectura_historial": true,
+  "hash_sqlite_antes": "4dcecf8f7e5da8b4f6760a6a2dccb15819676d3de5f936e4c6393f08799c887b",
+  "hash_sqlite_despues": "4dcecf8f7e5da8b4f6760a6a2dccb15819676d3de5f936e4c6393f08799c887b",
+  "abiertas": 129,
+  "pago_antes": {
+    "procedimientos": 129,
+    "verificadas": 2,
+    "pendientes": 127,
+    "clasificaciones": {
+      "NO_INFORMADO": 127,
+      "OTRO_PLAZO": 1,
+      "PLAZO_30_DIAS": 1
+    },
+    "fuentes": {
+      "https://www.rosario.gob.ar/inicio/compras-y-licitaciones": {
+        "verificadas": 0,
+        "pendientes": 76,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 76
+        }
+      },
+      "https://www.iafas.gov.ar/proveedores/licitaciones/": {
+        "verificadas": 0,
+        "pendientes": 2,
+        "motivos": {
+          "REQUIERE_OCR_O_LECTURA": 2
+        }
+      },
+      "https://www.epe.santafe.gov.ar/app2/aperturas": {
+        "verificadas": 0,
+        "pendientes": 27,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 27
+        }
+      },
+      "https://aeropuertorosario.com/institucional/licitaciones/": {
+        "verificadas": 1,
+        "pendientes": 5,
+        "motivos": {
+          "CONDICIONES_DIFERENTES_REQUIEREN_REVISION": 5
+        }
+      },
+      "https://www.municipalidadcolonpba.gob.ar/licitaciones.php": {
+        "verificadas": 0,
+        "pendientes": 1,
+        "motivos": {
+          "DOCUMENTO_NO_COMPROBADO": 1
+        }
+      },
+      "https://www.crespo.gob.ar/category/licitacion-publica/": {
+        "verificadas": 1,
+        "pendientes": 0,
+        "motivos": {}
+      },
+      "https://vggmunicipalidad.gov.ar/licitaciones/": {
+        "verificadas": 0,
+        "pendientes": 2,
+        "motivos": {
+          "SIN_CLAUSULA_PAGO_COMPROBADA": 2
+        }
+      },
+      "https://chajari.gob.ar/": {
+        "verificadas": 0,
+        "pendientes": 1,
+        "motivos": {
+          "REQUIERE_OCR_O_LECTURA": 1
+        }
+      },
+      "https://sansalvadorer.gob.ar/": {
+        "verificadas": 0,
+        "pendientes": 1,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 1
+        }
+      },
+      "https://www.aguassantafesinas.com.ar/portal/licitaciones": {
+        "verificadas": 0,
+        "pendientes": 4,
+        "motivos": {
+          "DOCUMENTO_NO_COMPROBADO": 4
+        }
+      },
+      "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones": {
+        "verificadas": 0,
+        "pendientes": 3,
+        "motivos": {
+          "REQUIERE_OCR_O_LECTURA": 3
+        }
+      },
+      "https://www.dpver.gov.ar/category/licitaciones-2026/": {
+        "verificadas": 0,
+        "pendientes": 1,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 1
+        }
+      },
+      "https://cafesg.gob.ar/cafesg2/licitaciones/": {
+        "verificadas": 0,
+        "pendientes": 1,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 1
+        }
+      },
+      "https://www.entrerios.gov.ar/minplan/licitaciones": {
+        "verificadas": 0,
+        "pendientes": 1,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 1
+        }
+      },
+      "https://enapro.com.ar/category/licitaciones/": {
+        "verificadas": 0,
+        "pendientes": 2,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 2
+        }
+      }
+    }
+  },
+  "pago_despues": {
+    "procedimientos": 129,
+    "verificadas": 3,
+    "pendientes": 126,
+    "clasificaciones": {
+      "NO_INFORMADO": 126,
+      "OTRO_PLAZO": 1,
+      "CONTADO": 1,
+      "PLAZO_30_DIAS": 1
+    },
+    "fuentes": {
+      "https://www.rosario.gob.ar/inicio/compras-y-licitaciones": {
+        "verificadas": 0,
+        "pendientes": 76,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 76
+        }
+      },
+      "https://www.iafas.gov.ar/proveedores/licitaciones/": {
+        "verificadas": 0,
+        "pendientes": 2,
+        "motivos": {
+          "REQUIERE_OCR_O_LECTURA": 2
+        }
+      },
+      "https://www.epe.santafe.gov.ar/app2/aperturas": {
+        "verificadas": 0,
+        "pendientes": 27,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 27
+        }
+      },
+      "https://aeropuertorosario.com/institucional/licitaciones/": {
+        "verificadas": 1,
+        "pendientes": 5,
+        "motivos": {
+          "CONDICIONES_DIFERENTES_REQUIEREN_REVISION": 5
+        }
+      },
+      "https://www.municipalidadcolonpba.gob.ar/licitaciones.php": {
+        "verificadas": 0,
+        "pendientes": 1,
+        "motivos": {
+          "DOCUMENTO_NO_COMPROBADO": 1
+        }
+      },
+      "https://www.crespo.gob.ar/category/licitacion-publica/": {
+        "verificadas": 1,
+        "pendientes": 0,
+        "motivos": {}
+      },
+      "https://vggmunicipalidad.gov.ar/licitaciones/": {
+        "verificadas": 0,
+        "pendientes": 2,
+        "motivos": {
+          "SIN_CLAUSULA_PAGO_COMPROBADA": 2
+        }
+      },
+      "https://chajari.gob.ar/": {
+        "verificadas": 1,
+        "pendientes": 0,
+        "motivos": {}
+      },
+      "https://sansalvadorer.gob.ar/": {
+        "verificadas": 0,
+        "pendientes": 1,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 1
+        }
+      },
+      "https://www.aguassantafesinas.com.ar/portal/licitaciones": {
+        "verificadas": 0,
+        "pendientes": 4,
+        "motivos": {
+          "DOCUMENTO_NO_COMPROBADO": 4
+        }
+      },
+      "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones": {
+        "verificadas": 0,
+        "pendientes": 3,
+        "motivos": {
+          "REQUIERE_OCR_O_LECTURA": 2,
+          "DOCUMENTO_NO_COMPROBADO": 1
+        }
+      },
+      "https://www.dpver.gov.ar/category/licitaciones-2026/": {
+        "verificadas": 0,
+        "pendientes": 1,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 1
+        }
+      },
+      "https://cafesg.gob.ar/cafesg2/licitaciones/": {
+        "verificadas": 0,
+        "pendientes": 1,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 1
+        }
+      },
+      "https://www.entrerios.gov.ar/minplan/licitaciones": {
+        "verificadas": 0,
+        "pendientes": 1,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 1
+        }
+      },
+      "https://enapro.com.ar/category/licitaciones/": {
+        "verificadas": 0,
+        "pendientes": 2,
+        "motivos": {
+          "SIN_DOCUMENTO_IDENTIFICADO": 2
+        }
+      }
+    }
+  },
+  "run": 40985751189
+}
