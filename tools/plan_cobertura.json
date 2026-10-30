@@ -1,10 +1,10 @@
 {
-  "etapa": "reproceso-final-de-evidencia-real-sin-red-ni-ocr",
+  "etapa": "revision-documental-116-cobro-rapido",
   "sondear": false,
   "auditar": false,
   "descubrir": false,
   "reverificar_ids": [],
   "revisar_identidades": false,
-  "reprocesar_run": 41113619206,
+  "revisar_cobro": true,
   "archivar_auditoria": false
 }

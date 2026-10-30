@@ -25,7 +25,7 @@ jobs:
           python - <<'PY' >> "$GITHUB_OUTPUT"
           import json
           d=json.load(open('tools/plan_cobertura.json'))
-          for k in ('sondear','auditar','descubrir'):print(k+'='+str(d.get(k,False)).lower())
+          for k in ('sondear','auditar','descubrir','revisar_cobro'):print(k+'='+str(d.get(k,False)).lower())
           run=str(d.get('reprocesar_run',''))
           if run and not run.isdigit():raise ValueError('Run inválido')
           print('reprocesar_run='+run)
@@ -123,6 +123,10 @@ jobs:
         if: steps.plan.outputs.pagos_run != ''
         timeout-minutes: 6
         run: python -u tools/auditar_pagos_abiertas.py --entrada "${{ steps.pagos_origen.outputs.entrada }}" --ocr-paginas 10 --ocr-documentos ${{ steps.plan.outputs.ocr_documentos }}
+      - name: Revisar cohorte comercial sin escribir historial ni repetir OCR
+        if: steps.plan.outputs.revisar_cobro == 'true'
+        timeout-minutes: 12
+        run: python -u tools/revisar_cobro_rapido.py
       - name: Revisar candidatas sin publicar automáticamente cambios de inventario
         if: steps.plan.outputs.descubrir == 'true'
         run: python -u tools/descubrir_fuentes.py --salida work/descubrimiento --total ${{ steps.plan.outputs.desc_total }} --busquedas ${{ steps.plan.outputs.desc_busquedas }} --candidatos ${{ steps.plan.outputs.desc_candidatos }} --revisar-pendientes
@@ -135,6 +139,7 @@ jobs:
         with:
           name: cobertura-${{ github.run_id }}
           path: |
+            work/cobro-rapido/
             work/identidades/
             work/pagos-abiertas/
             work/sondeo/
