@@ -13,7 +13,10 @@
     ],
     "seguir_patrones": [
       "/inicio/result-busq-compras-licitaciones[?]recomendada=apertura&tipoRecomendada="
-    ]
+    ],
+    "enriquecer_fichas": true,
+    "priorizar_listados": true,
+    "capturar_respuestas": true
   },
   "https://compras.santafe.gob.ar/": {
     "organismo": "Gobierno de Santa Fe",

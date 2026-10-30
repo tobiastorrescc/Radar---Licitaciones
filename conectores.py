@@ -447,6 +447,8 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     # manteniendo todos los anteriores en la cola y en la auditoría.
                     anios=re.findall(r'(?<!\d)20\d{2}(?!\d)',urlparse(u).path+'?'+urlparse(u).query)
                 # Presupuesto de lectura: documentos recientes primero; no se descarta el archivo.
+                if config.get('priorizar_listados'):
+                    return (0 if c in ('LISTADO','DATATABLES') else 1,-int(anios[-1]) if anios else 0,item.get('fecha_apertura') or '9999',u)
                 return (0 if c=='DETALLE' and item.get('vigencia')=='ABIERTA' else (1 if c=='DETALLE' else 2),-int(anios[-1]) if anios else 0,item.get('fecha_apertura') or '9999',u)
             pending=deque(sorted(pending,key=orden_pendiente))
             snapshot('PAGINA_FINALIZADA',url)

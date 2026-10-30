@@ -14,7 +14,7 @@ CAMPOS=('titulo','objeto','numero_procedimiento','tipo_procedimiento','procedimi
     'fecha_apertura','fecha_apertura_texto','hora_apertura','fecha_publicacion','fecha_publicacion_texto','presupuesto',
     'situacion_publicada','evento_publicado','documentos','enlace_pliego','comprobacion_pliego','evidencias_campos',
     'pago_evidencias','pago_motivo_pendiente','fuente','fuentes_observadas','url','urls_publicacion','evidencia_url',
-    'detalle_completo','rango_evidencia','registro_estructurado','numero_oficial_sin_interpretar','id_origen','identidad_ambito','documentos_versiones','campos_oficiales','numero_convocatoria','fecha_limite_presentacion','fecha_limite_presentacion_texto','hora_limite_presentacion','modalidad_presentacion')
+    'texto_listado','detalle_completo','rango_evidencia','registro_estructurado','numero_oficial_sin_interpretar','id_origen','identidad_ambito','documentos_versiones','campos_oficiales','numero_convocatoria','fecha_limite_presentacion','fecha_limite_presentacion_texto','hora_limite_presentacion','modalidad_presentacion')
 SEMANTICOS=('objeto','numero_procedimiento','tipo_procedimiento','organismo','localidad','provincia','fecha_apertura',
     'hora_apertura','fecha_publicacion','presupuesto','situacion_publicada','evento_publicado')
 NOVEDADES={'NUEVO_CONFIRMADO','NUEVA_DETECCION_FECHA_DESCONOCIDA','NUEVA_DETECCION_MISMO_DIA','MODIFICADO','DATOS_COMPLETADOS'}
@@ -149,6 +149,12 @@ def registrar(db,registros,informe):
             if r.get('clasificacion_registro')!='PROCEDIMIENTO':candidatos+=1;continue
             identidad_actual=o.identidad(r)
             clave=identidades_anteriores.get(identidad_actual,identidad_actual)
+            if clave==identidad_actual and r.get('identidad_ambito','').startswith('ficha-rosario-'):
+                legado=identidades_anteriores.get(o.identidad({**r,'identidad_ambito':''}))
+                if legado:
+                    viejo_dato=db.execute('SELECT dato FROM procedimientos WHERE id=?',(legado,)).fetchone()
+                    previo=json.loads(viejo_dato[0]) if viejo_dato else {}
+                    if r.get('texto_listado') and o.norm(r['texto_listado']) in {o.norm(previo.get('objeto')),o.norm(previo.get('titulo'))}:clave=legado
             viejo=db.execute('SELECT dato,huella FROM procedimientos WHERE id=?',(clave,)).fetchone()
             identidades_anteriores[identidad_actual]=clave
             anterior=json.loads(viejo[0]) if viejo else None

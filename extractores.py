@@ -150,9 +150,17 @@ def extraer(html,url,config=None):
     allow_aside=config.get('incluir_aside',False)
     candidatos=[]
     año=None
+    rosario_tarjetas=config.get('adaptador')=='rosario' and any(n.clase('contrataciones-resumen__tarjeta') for n in raiz.iter())
     for n in raiz.iter():
         if excluido(n,allow_aside):continue
         texto=n.text
+        if rosario_tarjetas:
+            if not n.clase('contrataciones-resumen__tarjeta'):continue
+            sec=next((p for p in n.padres() if p.clase('contrataciones-resumen__seccion')),None)
+            cabecera=next((x.text for x in sec.iter() if x.clase('contrataciones-resumen__seccion-header')),'') if sec else ''
+            tipo=re.sub(r'\s+\d+$','',cabecera) or config.get('tipo_contexto') or next((x.text for x in raiz.iter() if x.clase('contrataciones-resumen__total-titulo')),None)
+            if tipo:candidatos.append((tipo+' '+texto,n))
+            continue
         if n.tag in ('h1','h2','h3','h4','h5','h6') and re.fullmatch(r'20\d{2}',texto):año=texto
         if config.get('adaptador')=='rosario' and n.clase('contrataciones-resumen__tarjeta'):
             sec=next((p for p in n.padres() if p.clase('contrataciones-resumen__seccion')),None)
@@ -215,6 +223,7 @@ def extraer(html,url,config=None):
         documents=[{'url':l['url'],'titulo':l['texto']} for l in links if urlsplit(l['url']).path.lower().endswith(ADJUNTOS)]
         detail=next((l['url'] for l in links if not urlsplit(l['url']).path.lower().endswith(ADJUNTOS)
                      and procesos(l['texto'])),None)
+        if rosario_tarjetas:detail=next((l['url'] for l in links if '/inicio/compras-licitaciones/detalle/' in l['url']),None)
         destino=detail or (documents[0]['url'] if documents else url)
         # Campos dedicados, donde existen, evitan confundir número con objeto.
         objeto=next((x.text for x in n.iter() if x.clase('objeto')),None)
@@ -238,6 +247,7 @@ def extraer(html,url,config=None):
             'documentos':documents,'evento_publicado':evento,'llamado_especial':bool(evento),
             'fecha_apertura_texto':apertura_epe[0] if apertura_epe else (next((x.text for x in n.children if isinstance(x,Nodo) and x.tag=='td' and re.search(r'\d{1,2}/\d{1,2}/20\d{2}',x.text)),None) if config.get('tipo_tabla') else None),
             'registro_estructurado':bool(epe),
+            **({'id_origen':re.search(r'/detalle/(\d+)',destino)[1],'identidad_ambito':'ficha-rosario-'+re.search(r'/detalle/(\d+)',destino)[1],'texto_listado':texto} if rosario_tarjetas and re.search(r'/detalle/(\d+)',destino) else {}),
             'evidencia_url':url,'detalle_completo':bool(set(re.findall(r'\b[a-z]{4,}\b',norm(objeto)[p['end']:] if objeto==texto else norm(objeto)))-{'pliego','descargar','anexo','numero','apertura','fecha','vigente','tramite','documento','descarga'}),
             'situacion_publicada':situacion(texto)})
     # Mismo procedimiento repetido en menús, encabezados, pliegos y anexos: uno con todos sus enlaces.
@@ -246,6 +256,7 @@ def extraer(html,url,config=None):
         # El enlace de ficha separa procesos distintos que comparten número en un portal provincial.
         clave=(r['procedimiento'],r['evento_publicado'],r['situacion_publicada'])
         if config.get('organismos_multiples'):clave+=(r['url'],)
+        if rosario_tarjetas:clave+=(r.get('id_origen') or r['url'],)
         anterior=agrupados.get(clave)
         if anterior:
             docs={d['url']:d for d in anterior['documentos']+r['documentos']}

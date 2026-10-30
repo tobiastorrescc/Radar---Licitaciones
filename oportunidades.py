@@ -71,11 +71,14 @@ def normalizar(r,ahora=None):
     dato('tipo_procedimiento',r.get('tipo_procedimiento') or (ps[0]['tipo'] if ps else None),r.get('procedimiento'))
     for campo,patron in [('fecha_apertura',r'(?:(?:fecha\s+(?:de\s+)?)?apertura(?:\s+(?:de\s+)?(?:ofertas|sobres))?|llamese a licitacion (?:publica|privada) para el dia)\s*[:\-]?\s*(.{0,90})'),('fecha_limite_presentacion',r'(?:fecha\s+limite(?:\s+de\s+presentacion)?|limite\s+(?:de|para)\s+(?:la\s+)?(?:presentacion|recepcion)(?:\s+de\s+(?:ofertas|sobres))?|(?:presentacion|recepcion)\s+de\s+(?:ofertas|sobres)\s+hasta|presentacion\s*:\s*hasta)\s*[:\-]?\s*(.{0,90})'),('fecha_publicacion',r'(?:fecha\s+(?:de\s+)publicacion|publicad[oa](?:\s+el)?)\s*[:\-]?\s*(.{0,70})')]:
         dedicado=r.get(campo+'_texto')
-        m=re.search(patron,t) or re.search(patron,norm(texto_titulo))
-        raw=dedicado or (m[1] if m else '')
-        # No tomar una fecha de otro campo cuando la etiqueta está vacía.
-        raw=re.split(r'presupuesto|publicacion|apertura|adjudicacion|presentacion|recepcion',norm(raw))[0]
-        dato(campo,fecha(raw),raw)
+        candidatos=[dedicado] if dedicado else [m[1] for contenido in (t,norm(texto_titulo)) for m in re.finditer(r"(?="+patron+r")",contenido)]
+        raw='';valor=None
+        for candidato in candidatos:
+            fragmento=re.split(r'presupuesto|publicacion|apertura|adjudicacion|presentacion|recepcion',norm(candidato))[0]
+            f=fecha(fragmento)
+            if f:
+                raw=fragmento;valor=f;break
+        dato(campo,valor,raw)
     if r.get('presupuesto') is None:
         valor,frag=monto('presupuesto oficial '+r['presupuesto_texto'] if r.get('presupuesto_texto') else t)
         if valor is None:valor,frag=monto(norm(texto_titulo))
@@ -99,9 +102,12 @@ def normalizar(r,ahora=None):
     r['procedimiento_canonico']=procedimiento_canonico(r)
     r['convocatoria']=convocatoria(r)
     es_real=bool(r['procedimiento_canonico'] or r.get('registro_estructurado') or (ps and len(ps)==1 and re.fullmatch(r'\d{1,6}',ps[0]['numero']) and r.get('url','').lower().endswith(('.pdf','.docx'))))
+    if (urlsplit(r.get('fuente') or r.get('evidencia_url') or '').hostname in ('www.rosario.gob.ar','rosario.gob.ar')
+        and norm(r.get('objeto') or r.get('titulo')).count('publicada para apertura')>1):
+        es_real=False;r['motivo_no_verificado']='CONTENEDOR_DE_MULTIPLES_PROCEDIMIENTOS'
     r['clasificacion_registro']='PROCEDIMIENTO' if es_real else 'CANDIDATO_NO_VERIFICADO'
     apertura=r.get('fecha_apertura')
-    raw_apertura=r.get('fecha_apertura_texto') or next((re.search(patron,norm(texto))[1] for campo,patron in [('a',r'apertura(?:\s+de\s+ofertas)?\s*[:\-]?\s*(.{0,90})')] if re.search(patron,norm(texto))), '')
+    raw_apertura=r.get('fecha_apertura_texto') or ev.get('fecha_apertura',{}).get('texto') or ''
     hora=re.search(r'(?<!\d)([01]?\d|2[0-3])[:.]([0-5]\d)(?:\s*(?:hs|h|horas))?',raw_apertura)
     r['hora_apertura']=f'{int(hora[1]):02d}:{hora[2]}' if hora else r.get('hora_apertura')
     r['fecha_hora_apertura']=datetime.fromisoformat(apertura+'T'+r['hora_apertura']).replace(tzinfo=ZONA).isoformat() if apertura and r.get('hora_apertura') else None
