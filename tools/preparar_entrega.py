@@ -33,9 +33,9 @@ def preparar(directorio,salida=None):
           'aviso':'No hay novedades confirmadas no significa ausencia de licitaciones si hay incidencias. Detecciones sin fecha no son publicaciones nuevas comprobadas.'}
     (destino/'resumen.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2)+'\n')
     (destino/'oportunidades.json').write_text(json.dumps({'resumen':meta,'grupos':grupos},ensure_ascii=False,indent=2)+'\n')
-    for nombre in ('fichas.json','cola_documental.json','observaciones_previas_sin_revalidar.json'):
+    for nombre in ('fichas.json','cola_documental.json','observaciones_previas_sin_revalidar.json','fichas_abiertas.md','oportunidades_abiertas.md','oportunidades_proximas_a_vencer.md'):
         if (root/nombre).exists():shutil.copy2(root/nombre,destino/nombre)
-    campos=['primera_deteccion','ultima_deteccion','detalle_documental','organismo','numero_procedimiento','objeto','presupuesto','condiciones_pago','enlace_condiciones_pago','fecha_publicacion','fecha_apertura','fecha_limite_presentacion','vigencia','modalidad_presentacion','url','enlace_pliego','clasificacion_novedad']
+    campos=['etiqueta_novedad','primera_deteccion','ultima_deteccion','detalle_documental','organismo','numero_procedimiento','objeto','presupuesto','condiciones_pago','enlace_condiciones_pago','fecha_publicacion','fecha_apertura','fecha_limite_presentacion','vigencia','modalidad_presentacion','url','enlace_pliego','clasificacion_novedad']
     with (destino/'oportunidades.csv').open('w',encoding='utf-8-sig',newline='') as archivo:
         w=csv.DictWriter(archivo,fieldnames=campos);w.writeheader()
         for r in reportadas:
@@ -47,7 +47,19 @@ def preparar(directorio,salida=None):
             '[CSV completo](oportunidades.csv) · [JSON completo](oportunidades.json). Sin límite de cantidad.']
     if enlace:lineas+=['',f'[Auditoría, abiertas, próximas a vencer y catálogo íntegro]({enlace}) (artefacto radar-controlado).']
     for nombre,datos in grupos.items():
-        lineas+=['','## '+nombre.replace('_',' ').capitalize(),'',o.reporte(datos,fecha)]
+        titulo='Primera detección, fecha pendiente o sin ventana horaria suficiente' if nombre=='detecciones_sin_fecha_o_mismo_dia' else 'Modificaciones, circulares y datos completados' if nombre=='cambios' else nombre.replace('_',' ').capitalize()
+        lineas+=['','## '+titulo,'',o.reporte(datos,fecha)]
+    previo=root/'observaciones_previas_sin_revalidar.json'
+    if previo.exists():
+        prev=json.loads(previo.read_text());pendientes=prev.get('pendientes_revalidacion',[])
+        if pendientes:
+            lineas+=['','## Observaciones previas pendientes de revalidación','',f"{len(pendientes)} registros detectados en la auditoría {prev.get('origen_run')}, a {prev.get('fecha_observacion')}. No se anuncian como nuevas publicaciones del día ni se presume que sigan abiertas.",'','| Organismo | Procedimiento | Objeto | Enlace oficial |','|---|---|---|---|']
+            for r in pendientes:
+                limpio=lambda v:str(v or '').replace('|','/').replace('\n',' ')
+                lineas.append('| '+limpio(r.get('organismo'))+' | '+limpio(r.get('procedimiento'))+' | '+limpio(r.get('objeto'))+' | [Oficial]('+str(r.get('url') or '')+') |')
+    lineas+=['','## Fichas y seguimiento documental','','[Fichas completas de abiertas](fichas_abiertas.md) · [Cola documental](cola_documental.json) · [Observaciones previas sin revalidar](observaciones_previas_sin_revalidar.json)']
+    proximas=root/'oportunidades_proximas_a_vencer.md'
+    if proximas.exists():lineas+=['','## Oportunidades próximas a vencer','',proximas.read_text()]
     contenido='\n'.join(lineas)+'\n';(destino/'informe.md').write_text(contenido)
     mensaje=EmailMessage(policy=SMTP)
     mensaje['Subject']=f'Radar {fecha[:10]}: {len(grupos["nuevas_confirmadas"])} nuevas confirmadas; {len(reportadas)} registros informados'

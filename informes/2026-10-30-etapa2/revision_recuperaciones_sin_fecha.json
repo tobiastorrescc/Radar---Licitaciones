@@ -1,0 +1,115 @@
+{
+  "sin_reescritura_historial": true,
+  "casos": [
+    {
+      "id": "17374ae1b49afbb215171b828d0807af9090f3b0c67a923d2e1e65a685600408",
+      "organismo": "Municipalidad de Chajarí",
+      "procedimiento": "19/2026",
+      "anterior": "RECUPERACION_LINEA_BASE",
+      "clasificacion_con_regla_corregida": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-19",
+      "situacion": null,
+      "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710"
+    },
+    {
+      "id": "b9016ecab2ef15de0115b632f92b5c82af70aa7532962dfb8cf7f27f5736f763",
+      "organismo": "Comuna de Humboldt",
+      "procedimiento": "2/2026",
+      "anterior": "RECUPERACION_LINEA_BASE",
+      "clasificacion_con_regla_corregida": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "fecha_publicacion": null,
+      "fecha_apertura": null,
+      "situacion": null,
+      "url": "https://www.humboldt.gob.ar/"
+    },
+    {
+      "id": "081e4bdb102a90878f08ce77e13c36e5e9cbe0df8bfb5ea1e0bb0586d6d337e5",
+      "organismo": "Comuna de Humboldt",
+      "procedimiento": "3/2026",
+      "anterior": "RECUPERACION_LINEA_BASE",
+      "clasificacion_con_regla_corregida": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "fecha_publicacion": null,
+      "fecha_apertura": null,
+      "situacion": null,
+      "url": "https://www.humboldt.gob.ar/"
+    },
+    {
+      "id": "833c72906b3a6a9d33c368a06afe81d3e878748e7eb08493c4d42009263626a2",
+      "organismo": "ASSA",
+      "procedimiento": "1276",
+      "anterior": "RECUPERACION_LINEA_BASE",
+      "clasificacion_con_regla_corregida": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-10-30",
+      "situacion": null,
+      "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/fb3628a9aab443ed90eae3ec7751d7bb"
+    },
+    {
+      "id": "3d8a5b2d0b09fb7c8dd2ec3c67796892d074a749ba8ad230f2b4b3fde4ea3f4b",
+      "organismo": "ASSA",
+      "procedimiento": "1277",
+      "anterior": "RECUPERACION_LINEA_BASE",
+      "clasificacion_con_regla_corregida": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-10",
+      "situacion": null,
+      "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/5e038b0268194c08997676c0300ef5b0"
+    },
+    {
+      "id": "17d09da7fe9747097ca66f708d4a01463160144d472a92912775962a2e4c47c7",
+      "organismo": "ASSA",
+      "procedimiento": "1728",
+      "anterior": "RECUPERACION_LINEA_BASE",
+      "clasificacion_con_regla_corregida": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-12",
+      "situacion": null,
+      "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/ead0840cc275408aa652ccf1e6eb9a2b"
+    },
+    {
+      "id": "4b6f68e57c711f667e4430a7df9957d3145707878b242696961c0d1405d285cb",
+      "organismo": "ASSA",
+      "procedimiento": "1729",
+      "anterior": "RECUPERACION_LINEA_BASE",
+      "clasificacion_con_regla_corregida": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "fecha_publicacion": null,
+      "fecha_apertura": "2026-11-16",
+      "situacion": null,
+      "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/e5f2051e251a46adbc356bc8a342145b"
+    },
+    {
+      "id": "2d5c884b2218906956f71062cfb4136afd9e0fc7d3cfd68e2262a9155c7cf473",
+      "organismo": "Municipalidad de Reconquista",
+      "procedimiento": "1/2026",
+      "anterior": "RECUPERACION_LINEA_BASE",
+      "clasificacion_con_regla_corregida": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "fecha_publicacion": null,
+      "fecha_apertura": null,
+      "situacion": null,
+      "url": "https://reconquista.gob.ar/wp-content/uploads/2026/01/Pliego-de-Bases-y-Condiciones-Concurso-de-Precios-N%C2%B0-01.2026.pdf"
+    },
+    {
+      "id": "cb51624e590d2896ef124f2a638af40b7fa332f368b742a93292656a8f728291",
+      "organismo": "Municipalidad de Federación",
+      "procedimiento": "2",
+      "anterior": "RECUPERACION_LINEA_BASE",
+      "clasificacion_con_regla_corregida": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "fecha_publicacion": null,
+      "fecha_apertura": null,
+      "situacion": null,
+      "url": "https://www.federacion.gob.ar/sites/default/files/pliego_legal_y_tecnico_lic_pub_17-22.pdf"
+    },
+    {
+      "id": "6e0e4774e421235092c4c6ad1d625c6605171f967c72151dbc87099903bf5702",
+      "organismo": "Municipalidad de Federación",
+      "procedimiento": "2",
+      "anterior": "RECUPERACION_LINEA_BASE",
+      "clasificacion_con_regla_corregida": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "fecha_publicacion": null,
+      "fecha_apertura": null,
+      "situacion": null,
+      "url": "https://www.federacion.gob.ar/sites/default/files/pliego_legal_y_tecnico_lic_pub_17-22.pdf"
+    }
+  ]
+}

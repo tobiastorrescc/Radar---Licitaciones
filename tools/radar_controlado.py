@@ -55,6 +55,7 @@ def generar_informe(db,resumen,registros,fuentes,destino):
     for e in eventos:actuales_por_id[e['id']]['clasificacion_novedad']=e['clasificacion_novedad']
     vistas=o.guardar_vistas(actuales,fecha,destino)
     guardar(destino/'fichas.json',{'fecha':fecha,'fichas':[fichas.construir(r) for r in actuales if r['clasificacion_registro']=='PROCEDIMIENTO']})
+    (destino/'fichas_abiertas.md').write_text(fichas.reporte([r for r in actuales if r['vigencia']=='ABIERTA'],fecha))
     cola=[{'id':r['id'],'organismo':r.get('organismo'),'numero_procedimiento':r.get('numero_procedimiento'),'objeto':r.get('objeto'),'url':r.get('url'),'motivo':r['pago'].get('motivo'),'documentos':r.get('documentos',[])} for r in actuales if r['clasificacion_registro']=='PROCEDIMIENTO' and r['vigencia']=='ABIERTA' and r['pago']['estado']!='VERIFICADO']
     guardar(destino/'cola_documental.json',{'fecha':fecha,'pendientes':cola,'es_evaluacion_rentabilidad':False})
     anteriores=Path('inventario/observaciones_previas.json')

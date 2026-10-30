@@ -258,7 +258,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 import cache_documentos
                 return cache_documentos.obtener(url,transport=transporte)[:3]
             return transporte(url)
-    pending=deque([(u,'LISTADO',{'tipo_contexto':config.get('contextos_listado',{}).get(parse_qs(urlparse(u).query).get('tipoRecomendada',[''])[0])}) for u in config.get('urls_inicio',[fuente])])
+    pending=deque([(extractores.url_publica(u) or u,'LISTADO',{'tipo_contexto':config.get('contextos_listado',{}).get(parse_qs(urlparse(u).query).get('tipoRecomendada',[''])[0])}) for u in config.get('urls_inicio',[fuente])])
     seen=set();items={};errors=[];limits=[];correctas=0;documentos_leidos=0
     hosts={_host(fuente),*(_host('https://'+h) for h in config.get('dominios_documentos',[]))}
     documento_pendiente={};vacios=[];paginas_api=set()

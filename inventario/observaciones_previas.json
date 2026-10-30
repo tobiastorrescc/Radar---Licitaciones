@@ -12,7 +12,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-10-30",
+      "hora_apertura_observada": "12:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "f61f0004c7c151186306b3775d7be465d0830749a84ec02bbea804e1ebcc5c89",
@@ -24,7 +27,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-10-30",
+      "hora_apertura_observada": "09:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "5f84e60e969e08ab369e2157c37b015544c0b23f54b7f2ada97ec782fb2f0341",
@@ -36,7 +42,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-10-30",
+      "hora_apertura_observada": "09:30",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "60b1bcd755cd295db28368fb409092c2ea9dffea21aeb66f872c8e980343b6a5",
@@ -48,7 +57,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-10-30",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "2218f2e8ebea05f78eb3356bc6fbda96181c9989fe9316b0579259402e46f80e",
@@ -60,7 +72,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-10-30",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "1b9dc2e64981a873e8313f3eb8e294f0607c352ef89c9b7296db5f4edd972f7f",
@@ -72,7 +87,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-10-30",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "5d94be38fc98c671d9f91a9cacd8492fcde7ab3eb46158b83ea1580e61a73153",
@@ -84,7 +102,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-10-30",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "7aac9fc64a1284d091e66da2a90a22a246a376e17512159d8e79ccc29304d3c7",
@@ -96,7 +117,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-10-30",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "9f810c6458394741596ce34c89310aefbd13a168fb0d7d989b2c27e00aa2e076",
@@ -108,7 +132,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-10-30",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "8b873f22647e13a8dce64ba2fd8998ea759c768f4de100efd27d0592b9b109da",
@@ -120,7 +147,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-10-30",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "710c71e405cc264e6e641386077cc7521c1877e52645b63fb308aace5041c818",
@@ -132,7 +162,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-10-30",
+      "hora_apertura_observada": "10:30",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "161f528e14930f4648b55bf83837bafde623434d97384beb4700fc217a9ac2c2",
@@ -144,7 +177,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-10-30",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "29eefd9b74c85ff68135e2d4ed753e5fddb3a7e483906c447e7f0d96a4b2458e",
@@ -156,7 +192,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-10-30",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "5627d3994d16816c57029598266da9d09d84e10083c6cdbb649874e2b668eea3",
@@ -168,7 +207,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-10-30",
+      "hora_apertura_observada": "13:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "2149035a7e912e83cc9d5f0d67383512c8ff05797f7a5e9458a1f0ff7616e6db",
@@ -180,7 +222,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-02",
+      "hora_apertura_observada": "09:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "307b6f867abcde1411e23f4c1412f280092c7eea94b4a7bac4e69db219edcc5e",
@@ -192,7 +237,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-02",
+      "hora_apertura_observada": "09:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "fbefbc1a643736a4f7b9d8522510d7383139fe254b7e9946b02c63c1b8ca9be6",
@@ -204,7 +252,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-02",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "d91fe90d837ff87eb885a6fe053104d2d9a911b43413bda47f3d8a85a434c624",
@@ -216,7 +267,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-02",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "f776917bc051710d4b2e9f235acc6e28b2196e8640c2f05168c1068681a46fc2",
@@ -228,7 +282,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-02",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "7fd98d7c0f86ac455ecf5a84ca8eb0fd2bcbd4189e14133688beaacb6fa2c6f6",
@@ -240,7 +297,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-02",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "3275e8d71f9bd1152f0c29973a2dd0aa9c84d0b35a88efc93d3df2bc435404a3",
@@ -252,7 +312,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-02",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "1927dd5bb68001a50cfcd06a5ae42288790de251b4735857554ff297c8d1de20",
@@ -264,7 +327,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-02",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "65ac92b17318ae7a42069e98a784e44604449b5668d11b88e2bc7e3bb9ae386f",
@@ -276,7 +342,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-02",
+      "hora_apertura_observada": "10:30",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "29902d38885517c9bcacedd80f2dec4e7f3470e473d037440e08965bdbec860d",
@@ -288,7 +357,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-02",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "1ff985c9ee2bb4564daac20795e4f5a201e39ecf6830da6a9a5d1cf98c65e22c",
@@ -300,7 +372,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-02",
+      "hora_apertura_observada": "12:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "52f7ff6d9f3005d0a9b055087e78af10b9b4881b2a5488e9eff901492b15b267",
@@ -312,7 +387,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-03",
+      "hora_apertura_observada": "09:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "decce4e5f9deec87458208a7d06bf6844811a125362a361afd37ec440e3e5892",
@@ -324,7 +402,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-03",
+      "hora_apertura_observada": "09:30",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "39baf5e9d561f6f76bd4186f6764b4952c0726e18376a92b1e41aa770471e264",
@@ -336,7 +417,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-03",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "b4516cc66718c8cc02182f80b1838de78664134a538a24294200c6ebf355f7d4",
@@ -348,7 +432,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-03",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "158d2b88f14e0a06661ce834bb99cb45da3b73bfeabe5c4f5ebef0e771816092",
@@ -360,7 +447,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-03",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "4bf6a6fdea761f671217835c3630e21759b46cc76246be9efc9537bfaad240b1",
@@ -372,7 +462,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-03",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "aafc1d60fa1e9b545045b16b1e2a347ae35e9f6436f179a2cf8c296ba969b25c",
@@ -384,7 +477,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-03",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "40814133dceb7d7ba100052ecda39ac04cfc105907522f75b3f21e5360bccfc6",
@@ -396,7 +492,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-03",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "dc1065f9d0d723a92c2aecd11d491de1aab1260bc60bbc2d4a6556039c05e08d",
@@ -408,7 +507,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-03",
+      "hora_apertura_observada": "10:30",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "1855c03e5401103772881527cc7fdf299be0a11d8a84a6690fb16b933cbb04eb",
@@ -420,7 +522,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-03",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "c82ebde8d6a00df212c0f1a1f5f8d35908a68556f3230af85ca782fa47131ed3",
@@ -432,7 +537,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-03",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "c874b87bb45e636ee340b233a3667ab0bd240f2da7daaad4bff3e82f454c1376",
@@ -444,7 +552,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-03",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "fe125de9e3d15371ea67ffb93e48aa7f0e1a46944b99219d1771913ed241902b",
@@ -456,7 +567,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-03",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "6e9a95e1e5131d9badae5ee67af2249db7d155d73efbf28200ae919fc5989f61",
@@ -468,7 +582,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-03",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "01a1227d0a1d5e4f98aec6871e269f8bbe69d118837297efc4454cba9d6085ac",
@@ -480,7 +597,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-04",
+      "hora_apertura_observada": "09:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "b6aa2957fc88647d7a664439a4dad30b0a6b6e321a6942ac9f7c3e79d6b03b94",
@@ -492,7 +612,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-04",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "80330b1594107d3569368b49a4a57e835cedc297ade03536e93349ae7b733516",
@@ -504,7 +627,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-04",
+      "hora_apertura_observada": "10:30",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "ba3e5853194e58b06e66d9ae36efc2287ea2bcffc72d58365a6a8afb09c6f758",
@@ -516,7 +642,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-04",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "b7e5818f610de373db363476b15284db48e66aad79549ec8beb985490d2e34a4",
@@ -528,7 +657,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-04",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "d24513a2291a29581e9235f1d8138dceec4885bc81a694bae0fd060969e23b70",
@@ -540,7 +672,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-05",
+      "hora_apertura_observada": "09:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "1153d3c3fd45ab05e6dcb3cc3320ac3738c0bc2ddde139832dc71c9106fb3ac6",
@@ -552,7 +687,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-05",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "a1c8443edd896922b48e7f4ed0e2721cf8bee6be8948781d1842e71f23f8a03a",
@@ -564,7 +702,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-05",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "d1109b9a66784520cd57912f2e7f8a99a1f63bdcac0aa3e19cf701c30af18f55",
@@ -576,7 +717,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-05",
+      "hora_apertura_observada": "12:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "0a4e1421a87659ffb95e636c2a4c7ca1ba11d93177cbd9b1c691ab64124ffc6d",
@@ -588,7 +732,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-06",
+      "hora_apertura_observada": "09:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "2d824702a45b54f6dcf1eee302d76b4de1ce23eb069757d4764786c838dbd6c2",
@@ -600,7 +747,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-06",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "4765f889b6817426e3b8d39cad33f4c65f0ca2d023c81e0a066f96557e26a19b",
@@ -612,7 +762,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-06",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "d5c6f207a7370c3e8df5fe5f907143f690b5d46619bf406d172b1551b3782c4a",
@@ -624,7 +777,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-06",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "fefca0b07c5100eba53770b52c914b82c08797a791945bcf5eaed1572a4f5df2",
@@ -636,7 +792,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-06",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "3a36b5ef93b7f88d23296831ba4a5c1b03db682adae47860f2d533c51f95882c",
@@ -648,7 +807,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-06",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "4104522517d03df13b45f5a0b942a352a0b277d5b2b3860e035ecaf6b6fd3285",
@@ -660,7 +822,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-06",
+      "hora_apertura_observada": "12:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "17286849e0f3ab63b9d5ae2086b06d0f5f55a70c421f912493a52da7f96978e4",
@@ -672,7 +837,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-09",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "5a830109b95726c8d5a5ea8d94d5f63ca710e368913839c7a98c8b90ec5625a5",
@@ -684,7 +852,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-09",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "97ffc5a5411c7faebc48dfc27b0f597caddf906279851d82d825324b4bed962d",
@@ -696,7 +867,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-10",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "6218384fa6e3c64bbecdb831e5af2c6adc4f7d5cf9e03aa3cb519bbedd838557",
@@ -708,7 +882,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-12",
+      "hora_apertura_observada": "09:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "bf6d7002e53faec68e3529b026b3638387696d04ec21dd19d7ececa2c5dacc4b",
@@ -720,7 +897,10 @@
       "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-12",
+      "hora_apertura_observada": "09:15",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "3010b62557da2fe221c3d3d57c770c60fa82948d0679a01df3ba22354987e1fa",
@@ -732,7 +912,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-12",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "cb8b91cfb70755465e4a44b5dc5a332c8e1cfb668a66a1d14da6ec77bc039554",
@@ -744,7 +927,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-13",
+      "hora_apertura_observada": "09:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "fa8777cb334c1a3e4f75ed078e4d64a94917ac48a10ed75c49d92a6872858d67",
@@ -756,7 +942,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-13",
+      "hora_apertura_observada": "09:15",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "db0614da98180a3046963a7d94aa32e629b63c53dbaf534e34ecc8f379f3cf25",
@@ -768,7 +957,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-25",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
       "id": "640d8920e6b529f7839f7de4b70e2cba268d45e0332e75fe25195f5c009aee6a",
@@ -780,7 +972,10 @@
       "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00"
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": null,
+      "hora_apertura_observada": null,
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     }
   ]
 }

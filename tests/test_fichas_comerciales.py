@@ -53,3 +53,30 @@ class IntegridadClasificacionTests(unittest.TestCase):
     def test_ficha_reutiliza_revision_visual_por_hash_sin_ocr(self):
         f=fichas.construir({'comprobacion_pliego':{'sha256':'2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f','url':'https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710'}})
         self.assertEqual(len(f['campos']['productos']['valor']),13)
+
+class CamposDocumentalesTests(unittest.TestCase):
+    def test_mencion_suelta_de_plazo_no_absorbe_parrafo_siguiente(self):
+        d=fichas.extraer('Se evaluará el plazo de entrega.\n\nLa adjudicación quedará sujeta a la normativa.','https://oficial.gob.ar/a.pdf','a')
+        self.assertNotIn('plazo_entrega',d)
+    def test_campo_futuro_que_cambia_hash_no_reutiliza_cantidades_anteriores(self):
+        f=fichas.construir({'comprobacion_pliego':{'sha256':'nuevo','url':'https://licitaciones.chajari.gob.ar/a.pdf'}})
+        self.assertEqual(f['campos']['productos']['estado'],'PENDIENTE')
+
+class URLsRosarioTests(unittest.TestCase):
+    def test_paginacion_con_mismos_parametros_no_se_repite_por_orden(self):
+        import extractores
+        a='https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=2'
+        b='https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5'
+        self.assertEqual(extractores.url_publica(a),extractores.url_publica(b))
+
+class SalidasGrandesTests(unittest.TestCase):
+    def test_documento_con_json_grande_no_se_bloquea_por_pipe(self):
+        from unittest.mock import patch
+        import subprocess,sys
+        from tools import comprobar_pliegos as c
+        popen=subprocess.Popen
+        payload="import json; print(json.dumps({'url':'https://oficial.gob.ar/a.pdf','estado':'DOCUMENTO_ACCESIBLE','datos':'x'*150000}))"
+        def factory(args,**kw):return popen([sys.executable,'-c',payload],**kw)
+        registro={'clasificacion_registro':'PROCEDIMIENTO','vigencia':'ABIERTA','url':'https://oficial.gob.ar/ficha','fuente':'https://oficial.gob.ar/','documentos':[{'url':'https://oficial.gob.ar/a.pdf','titulo':'Pliego'}]}
+        with patch.object(c.subprocess,'Popen',side_effect=factory),patch('builtins.print'):r=c.comprobar([registro],'2026-10-30',[],total=3)
+        self.assertEqual(r[0]['estado'],'DOCUMENTO_ACCESIBLE');self.assertEqual(len(r[0]['datos']),150000)

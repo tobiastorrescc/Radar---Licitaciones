@@ -10,6 +10,7 @@ import signal
 import subprocess
 import sys
 import time
+import tempfile
 from urllib.parse import urlparse
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import conectores
@@ -74,6 +75,13 @@ def worker(url,consulta_post=None,opciones=None):
         r['detalles_documento']=fichas.extraer(texto,final,r['sha256'],texto_meta['metodo'])
         ps=extractores.procesos(texto)
         r['procedimientos']=sorted({o.procedimiento_canonico({'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'url':final}) for p in ps}-{None})
+        r['procedimientos_por_pagina']={str(i):sorted({o.procedimiento_canonico({'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo']}) for p in extractores.procesos(t)}-{None}) for i,t in enumerate(texto.split('\f'),1)}
+        contextos=[]
+        for i,t in enumerate(texto.split('\f'),1):
+            limpio=re.sub(r'\s+',' ',t)
+            for m in pagos.INICIO.finditer(pagos.norm(limpio)):
+                if len(contextos)<8:contextos.append({'pagina':i,'texto':limpio[max(0,m.start()-180):m.start()+650]})
+        r['contextos_pago_revision']=contextos
         r['encabezado_pliego']=bool(re.search(r'(?im)^\s*pliego\s+(?:de\s+)?(?:bases|condiciones|especificaciones)',texto[:4000]))
         r['encabezado']=o.norm(texto[:500])
         extraido=o.normalizar({'titulo':'Documento oficial','objeto':texto,'texto_documento':texto,'url':final,'evidencia_url':final})
@@ -165,7 +173,12 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
         if salida_parcial:
             ruta=Path(salida_parcial);ruta.parent.mkdir(parents=True,exist_ok=True)
             with ruta.open('a',encoding='utf-8') as archivo:archivo.write(json.dumps(valor,ensure_ascii=False)+'\n')
-    inicio=time.monotonic();pendientes=ordenar_documentos(candidatos,vinculos,fecha);activos={};seleccion_ocr=set()
+    inicio=time.monotonic();pendientes=ordenar_documentos(candidatos,vinculos,fecha);activos={};seleccion_ocr=set();salidas={}
+    def leer_salida(pid):
+        stdout,stderr=salidas.pop(pid);stdout.seek(0);stderr.seek(0)
+        out=stdout.read(8_000_001);err=stderr.read(4000);stdout.close();stderr.close()
+        if len(out)>8_000_000:return '', 'Respuesta documental supera 8 MB de JSON; requiere revisión'
+        return out,err
     while pendientes or activos:
         if time.monotonic()-inicio>=total:break
         while pendientes and len(activos)<concurrencia:
@@ -182,21 +195,23 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
             es_edicto=bool(re.search(r'edicto|aviso|declaracion.jurada|planilla',url,re.I))
             ocr=bool(not es_edicto and len(seleccion_ocr)<3 and any(r.get('vigencia')=='ABIERTA' and r.get('pago',{}).get('estado')!='VERIFICADO' for r in vinculos.get(url,[])))
             if ocr:seleccion_ocr.add(url)
-            p=subprocess.Popen([sys.executable,__file__,'--worker',url,json.dumps(peticiones.get(url)),json.dumps({'ocr_selectivo':ocr,'max_paginas':ocr_paginas,'max_bytes_documental':cupos_bytes.get(url,12_000_000)})],stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,start_new_session=True)
+            stdout=tempfile.TemporaryFile(mode='w+',encoding='utf-8');stderr=tempfile.TemporaryFile(mode='w+',encoding='utf-8')
+            p=subprocess.Popen([sys.executable,__file__,'--worker',url,json.dumps(peticiones.get(url)),json.dumps({'ocr_selectivo':ocr,'max_paginas':ocr_paginas,'max_bytes_documental':cupos_bytes.get(url,12_000_000)})],stdout=stdout,stderr=stderr,text=True,start_new_session=True)
+            salidas[p.pid]=(stdout,stderr)
             activos[p.pid]=(p,url,time.monotonic())
         for pid,(p,url,comienzo) in list(activos.items()):
             if p.poll() is not None:
-                out,err=p.communicate()
+                p.wait();out,err=leer_salida(pid)
                 try:valor=json.loads(out) if p.returncode==0 else {'url':url,'estado':'ERROR','error':err[-1000:]}
                 except ValueError:valor={'url':url,'estado':'ERROR','error':'Worker sin JSON válido'}
                 # Los PDF nativos no consumen el cupo de OCR reservado.
                 if url in seleccion_ocr and not valor.get('ocr_intentado') and p.returncode==0:seleccion_ocr.remove(url)
                 candidatos[url]=valor;guardar_parcial(valor);del activos[pid]
             elif time.monotonic()-comienzo>=(max(por_enlace,75) if url in seleccion_ocr else max(por_enlace,45) if url in peticiones else por_enlace):
-                terminar(p);p.communicate();candidatos[url]={'url':url,'estado':'TIEMPO_ENLACE'};del activos[pid]
+                terminar(p);leer_salida(p.pid);candidatos[url]={'url':url,'estado':'TIEMPO_ENLACE'};del activos[pid]
         if activos:time.sleep(0.05)
     for p,url,_ in activos.values():
-        terminar(p);p.communicate();candidatos[url]={'url':url,'estado':'TIEMPO_TOTAL'}
+        terminar(p);leer_salida(p.pid);candidatos[url]={'url':url,'estado':'TIEMPO_TOTAL'}
     for u in pendientes:candidatos[u]={'url':u,'estado':'NO_INICIADO_PLAZO_TOTAL'}
     for valor in candidatos.values():
         valor['fecha_comprobacion']=datetime.now(o.ZONA).isoformat()
@@ -212,8 +227,9 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
                 r.setdefault('detalle_documental',{}).update(valor['detalles_documento'])
                 for campo in ('objeto','modalidad_presentacion'):
                     if campo in valor['detalles_documento']:r[campo]=valor['detalles_documento'][campo]['valor']
-            if compatible and valor.get('pagos'):
-                r['pago_evidencias']=pagos.unir_evidencias(r.get('pago_evidencias'),valor['pagos'])
+            evidencias_pago=valor.get('pagos',[]) if compatible else [e for e in valor.get('pagos',[]) if pertenece_a(valor.get('procedimientos_por_pagina',{}).get(str(e.get('pagina')),[]),proc,valor['url'])]
+            if evidencias_pago:
+                r['pago_evidencias']=pagos.unir_evidencias(r.get('pago_evidencias'),evidencias_pago)
             prioridad=prioridad_pliego(valor,etiqueta,proc)
             if compatible and prioridad and valor['estado']=='DOCUMENTO_ACCESIBLE' and prioridad>r.get('comprobacion_pliego',{}).get('prioridad_identificacion',0):
                 r['enlace_pliego']=valor['url'];r['comprobacion_pliego']={**valor,'prioridad_identificacion':prioridad,'identificacion':'ENLACE_OFICIAL_ETIQUETADO' if prioridad==2 else 'ENCABEZADO_Y_PROCEDIMIENTO'}

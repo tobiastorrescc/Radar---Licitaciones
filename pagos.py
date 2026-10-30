@@ -3,7 +3,7 @@ from hashlib import sha256
 import re
 import unicodedata
 
-VERSION=9
+VERSION=10
 NO_INFORMADO='Pendiente de verificar'
 NUMEROS={'siete':7,'quince':15,'treinta':30,'cuarenta y cinco':45,'sesenta':60,'noventa':90,
          'cinco':5,'diez':10,'veinte':20,'veinticinco':25,'cuarenta':40,'cincuenta':50,
@@ -52,6 +52,7 @@ def clasificar(cita,permitir_definicion=False):
     contra_entrega=bool(re.search(r'contra\s+entrega\b(?!\s+(?:de\s+)?(?:la\s+)?(?:factura|comprobante))',t))
     contado=bool(re.search(r'\b(?:al |de )?contado\b|pago inmediato',t))
     hitos=[]
+    if re.search(r'recepcion de (?:la )?(?:correspondiente )?documentacion',t):hitos.append('RECEPCION_DOCUMENTACION_CORRESPONDIENTE')
     if re.search(r'certificacion definitiva',t):hitos.append('CERTIFICACION_DEFINITIVA')
     if re.search(r'presentacion de (?:la )?facturacion',t):hitos.append('PRESENTACION_FACTURACION')
     if presentacion_factura:hitos.append('PRESENTACION_FACTURA')
@@ -103,6 +104,7 @@ def clasificar(cita,permitir_definicion=False):
         elif presentacion_factura:etiqueta+=' contra presentación de factura'
         elif recepcion_factura:etiqueta+=' después de recepción de factura'
     if plazos:
+        if 'RECEPCION_DOCUMENTACION_CORRESPONDIENTE' in hitos:etiqueta+=' desde recepción de la documentación correspondiente'
         if conformidad:etiqueta+=' después de conformidad de recepción'
         elif factura_conformada:etiqueta+=' desde factura conformada'
         elif presentacion_factura:etiqueta+=' desde presentación de factura'
@@ -185,7 +187,7 @@ def consolidar(evidencias):
     for original in evidencias:
         e=dict(original)
         if (e.get('url_documento'),e.get('sha256')) in genericos and e.get('categoria')=='PAGOS_PARCIALES' and (re.search(r'oferente.*consignar',norm(e.get('cita'))) or norm(e.get('cita')).startswith('pago: - pago total')):continue
-        if e.get('version_analizador') in (5,6,7,8) and not e.get('definicion_contado'):
+        if e.get('version_analizador') in (5,6,7,8,9) and not e.get('definicion_contado'):
             actual=clasificar(e.get('cita'))
             if actual is None:continue
             e.update(actual);e['reclasificada_desde_version']=e['version_analizador'];e['version_analizador']=VERSION

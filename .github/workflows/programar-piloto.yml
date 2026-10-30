@@ -35,7 +35,7 @@ on:
         type: string
   pull_request:
   push:
-    paths: ['radar.py', 'conectores.py', 'extractores.py', 'extractores_lotes.py', 'documentos.py', 'oportunidades.py', 'pagos.py', 'cache_documentos.py', 'inventario/**', 'tools/**', 'tests/**', '.github/workflows/**', 'fuentes*']
+    paths: ['radar.py', 'conectores.py', 'extractores.py', 'extractores_lotes.py', 'documentos.py', 'oportunidades.py', 'pagos.py', 'fichas.py', 'cache_documentos.py', 'inventario/**', 'tools/**', 'tests/**', '.github/workflows/**', 'fuentes*']
 permissions:
   contents: read
 concurrency:

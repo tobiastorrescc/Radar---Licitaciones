@@ -33,6 +33,7 @@ def main():
     resultado={'corrida_origen':meta['corrida'],'fecha_evidencia_catalogo':meta['fecha'],'fecha_revision':fecha_revision,'solo_lectura_historial':True,'hash_sqlite_antes':antes,'hash_sqlite_despues':sha256(dbpath.read_bytes()).hexdigest(),'abiertas':len(abiertas),'pago_base_analizador_anterior':{'abiertas_misma_ventana':len(base_original),'verificadas':pagos_originales},'pago_antes':antes_pago,'pago_despues':pagos.resumen(abiertas)}
     (salida/'resultado.json').write_text(json.dumps(resultado,ensure_ascii=False,indent=2)+'\n')
     (salida/'abiertas.json').write_text(json.dumps(abiertas,ensure_ascii=False,indent=2)+'\n')
+    (salida/'fichas_abiertas.md').write_text(fichas.reporte(abiertas,fecha_revision))
     (salida/'fichas.json').write_text(json.dumps({'fichas':[fichas.construir(r) for r in abiertas]},ensure_ascii=False,indent=2)+'\n')
     (salida/'cola_documental.json').write_text(json.dumps({'pendientes':[fichas.construir(r) for r in abiertas if r['pago']['estado']!='VERIFICADO']},ensure_ascii=False,indent=2)+'\n')
     (salida/'abiertas.md').write_text(o.reporte(abiertas,meta['fecha'])+'\n')

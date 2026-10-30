@@ -26,6 +26,9 @@ def url_publica(url,base=''):
     p=urlsplit(u)
     if p.hostname in ('www.rosario.gob.ar','rosario.gob.ar') and '/compras-licitaciones/detalle/' in p.path:
         p=p._replace(query=urlencode([(k,v) for k,v in parse_qsl(p.query) if k!='sid']))
+    if p.hostname in ('www.rosario.gob.ar','rosario.gob.ar') and p.path.endswith('/result-busq-compras-licitaciones'):
+        pares=parse_qsl(p.query,keep_blank_values=True)
+        if all(k in ('recomendada','tipoRecomendada','page') for k,v in pares):p=p._replace(query=urlencode(sorted(pares)))
     if p.scheme not in ('http','https') or not p.hostname:return None
     # No doble codificación de escapes ya presentes ni pérdida de queries opacas.
     host=p.hostname.encode('idna').decode('ascii').lower()

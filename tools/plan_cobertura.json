@@ -1,12 +1,10 @@
 {
-  "etapa": "corregir-fechas-identidades-y-recuperar-fuentes-30oct",
+  "etapa": "cierre-pagos-fichas-y-paginacion-sin-repetir-descubrimiento",
   "sondear": false,
   "auditar": false,
-  "descubrir": true,
+  "descubrir": false,
   "reverificar_ids": [
-    "fuente-001",
-    "fuente-002",
-    "fuente-003"
+    "fuente-001"
   ],
   "pagos_run": 41048293524,
   "revisar_identidades": false

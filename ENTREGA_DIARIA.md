@@ -4,7 +4,7 @@ El piloto sigue en `mejora/radar-auditable`; no necesita un servidor ni una PC e
 
 Cada escaneo diario prepara todos los registros, sin tope, en Markdown, JSON, CSV y un correo `.eml` con adjuntos. Se separan publicaciones nuevas con fecha comprobada, detecciones sin fecha o del mismo día, modificaciones/datos completados y recuperaciones históricas. La primera línea de base no se envía como miles de novedades.
 
-El último informe queda en [piloto_reportes/ultimo/informe.md](https://github.com/tobiastorrescc/Radar---Licitaciones/blob/mejora/radar-auditable/piloto_reportes/ultimo/informe.md) después del próximo escaneo diario exitoso. Si aún no existe, consultar el artefacto `radar-controlado` del último escaneo. Los commits conservan los informes anteriores; las auditorías, catálogo completo, abiertas y próximas a vencer siguen en artefactos de Actions durante 90 días. Los respaldos incrementales del historial permanecen en Git y no dependen de la expiración de artefactos.
+El último informe queda en [piloto_reportes/ultimo/informe.md](https://github.com/tobiastorrescc/Radar---Licitaciones/blob/mejora/radar-auditable/piloto_reportes/ultimo/informe.md) y ya contiene la ejecución automática del 30/10/2026. El artefacto `radar-controlado` permite consultar también toda la auditoría. Los commits conservan los informes anteriores; las auditorías, catálogo completo, abiertas y próximas a vencer siguen en artefactos de Actions durante 90 días. Los respaldos incrementales del historial permanecen en Git y no dependen de la expiración de artefactos.
 
 El CSV protege contra ejecución de fórmulas provenientes del texto de terceros. No se incluye costo propio, búsqueda de proveedores ni cálculo de margen. Los presupuestos de monedas distintas se agrupan por moneda, sin convertirlos ni afirmar comparabilidad.
 
@@ -27,3 +27,9 @@ El workflow del piloto ejecuta un trabajo independiente de descubrimiento despu�
 El cron de un workflow situado solamente en una rama no se ejecuta por sí mismo: por eso el descubrimiento periódico se conecta al trabajador que despacha el programador instalado en `main`. No se añade otro programador ni se reactiva el cron legado.
 
 Referencias verificadas el 29/10/2026: [contraseñas de aplicación y sus restricciones](https://support.google.com/accounts/answer/185833), [recomendación de inicio de sesión seguro de Google](https://support.google.com/mail/answer/7126229). Nunca utilizar la contraseña normal de la cuenta.
+
+## Fichas, pendientes y activación futura de correo
+
+Las siguientes corridas del piloto publican además `fichas.json`, `fichas_abiertas.md`, `cola_documental.json` y `observaciones_previas_sin_revalidar.json`. El informe incluye todas las primeras detecciones sin fecha, los cambios y circulares, recuperaciones y próximas a vencer. El orden de pago usa anticipos, contado/contra entrega y bandas de hasta 5, 10, 15, 30, 60 y más días; los pagos desconocidos permanecen en una cola documental, sin clasificación de rentabilidad. No se presume acreditación inmediata ni tiempo efectivo de recuperación del capital.
+
+La alternativa preparada sigue siendo una cuenta de correo existente con SMTP permitido, ejecutada desde GitHub Actions mediante la biblioteca estándar de Python. Para una futura activación se propone un trabajo posterior al respaldo con `contents: read` y `actions: read`, secretos de cuenta/remitente/destinatario, TLS validado y registro de envío por corrida. No necesita servidor ni proveedor pago, pero depende de las políticas y cuotas de la cuenta elegida. El `.eml`, CSV y JSON íntegros ya se generan; no hay destinatarios ni credenciales configurados y no se abre una conexión SMTP. La configuración y la prueba de envío requieren autorización expresa posterior.

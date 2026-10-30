@@ -143,6 +143,26 @@
         "valor": "PESOS; el documento no expresa código ISO en la cláusula presupuestaria",
         "pagina": 1,
         "cita": "PESOS CINCUENTA Y NUEVE MILLONES QUINIENTOS MIL CON CERO CENTAVOS"
+      },
+      "lugar_entrega": {
+        "valor": "Corralón municipal de la Municipalidad de Chajarí.",
+        "pagina": 6,
+        "cita": "CONDICIONES DE ENTREGA. LUGAR DE ENTREGA: En el corralón municipal de la Municipalidad de Chajarí."
+      },
+      "plazo_entrega": {
+        "valor": "El oferente debe indicar el plazo de entrega; esa cláusula no lo cuantifica.",
+        "pagina": 5,
+        "cita": "Los oferentes deberán presentar sus propuestas indicando, para cada ítem cotizado: c) Plazo de entrega."
+      },
+      "garantias": {
+        "valor": "Garantía de oferta: 1% del presupuesto oficial, $595.000,00; modalidades de constitución en artículo 9.",
+        "pagina": 4,
+        "cita": "Artículo 15: DEPÓSITO DE GARANTÍA ... 1% (UNO POR CIENTO) del Presupuesto Oficial ... ($595.000,00)."
+      },
+      "requisitos": {
+        "valor": "Repuestos nuevos, sin uso y originales para ambas máquinas. Recibo de compra del pliego, garantía de oferta, presupuesto firmado y sellado; personería si corresponde y constancia de CUIT.",
+        "pagina": 2,
+        "cita": "Como requisito mínimo e imprescindible se exige: 1- Recibo de compra del pliego. 2- Constancia de constitución de la garantía de oferta. 3- Presupuesto firmado y sellado. Documentación complementaria: personería y CUIT. Repuestos nuevos, sin uso y originales: página 6."
       }
     }
   }
