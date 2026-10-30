@@ -1,5 +1,5 @@
 {
-  "etapa": "cobro-rapido-cache-ocr-selectivo-3-sin-repetir-fallos-tls",
+  "etapa": "cierre-documental-y-fechas-primeras-detecciones",
   "sondear": false,
   "auditar": false,
   "descubrir": false,
@@ -9,5 +9,5 @@
   "archivar_auditoria": false,
   "diagnostico_cobro": false,
   "solo_documentos": true,
-  "ocr_cobro": 3
+  "ocr_cobro": 0
 }

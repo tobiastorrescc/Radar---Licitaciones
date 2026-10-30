@@ -20,7 +20,7 @@ def detalle(url,config):
     try:
         if config.get('adaptador')=='chajari-api':
             endpoint='https://licitaciones.chajari.gob.ar/licitaciones/para_apertura/0'
-            raw,tipo,final=conectores.descargar(endpoint,datos_post=b'{"":""}',conexion_timeout=3,lectura_timeout=5)
+            raw,tipo,final=conectores.descargar(endpoint,datos_post=b'{"":""}',headers_extra={'Content-Type':'application/json'},conexion_timeout=3,lectura_timeout=5)
             from extractores_lotes import extraer_chajari
             rs,_=extraer_chajari(raw,final)
             return {'url':url,'url_api':final,'estado':'CONSULTADA','registros':rs,'segundos':round(time.monotonic()-inicio,2),'fecha':datetime.now(o.ZONA).isoformat()}
@@ -61,13 +61,13 @@ def main():
         (out/'chajari_vigencia.json').write_text(json.dumps(valor,ensure_ascii=False,indent=2)+'\n')
         return
     if json.load(open('tools/plan_cobertura.json')).get('diagnostico_cobro'):
-        for id in ('38684','38648','38681'):
+        for id in ('38680','38682','38677','38683'):
             r=next(r for r in rs if r['url'].endswith('/'+id))
             valor=detalle(r['url'],configs.get(r.get('fuente'),{}))
             (out/('diagnostico-'+id+'.json')).write_text(json.dumps(valor,ensure_ascii=False,indent=2))
         return
     if not a.sin_red:
-        urls={r['url']:configs.get(r.get('fuente'),{}) for r in rs if not json.load(open('tools/plan_cobertura.json')).get('solo_documentos') or r['organismo']=='Municipalidad de Chajarí'};inicio=time.monotonic()
+        urls={r['url']:configs.get(r.get('fuente'),{}) for r in rs if not json.load(open('tools/plan_cobertura.json')).get('solo_documentos') or r['organismo']=='Municipalidad de Chajarí' or r['url'].rsplit('/',1)[-1] in ('38680','38682','38677','38683')};inicio=time.monotonic()
         with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
             futuros={pool.submit(detalle,u,c):u for u,c in urls.items()}
             for futuro in concurrent.futures.as_completed(futuros):
@@ -112,6 +112,9 @@ def main():
             digest=d.get('sha256')
             if not digest:continue
             texto=cache_documentos.raiz()/'textos'/(digest+'.json')
+            binario=cache_documentos.raiz()/'http'/'bytes'/(digest+'.bin')
+            if binario.exists() and binario.stat().st_size<=12_000_000:
+                destino=out/'documentos-cobro-rapido'/(digest+'.bin');destino.parent.mkdir(parents=True,exist_ok=True);destino.write_bytes(binario.read_bytes())
             if texto.exists():
                 destino=out/'textos-cobro-rapido'/texto.name;destino.parent.mkdir(parents=True,exist_ok=True);destino.write_bytes(texto.read_bytes())
             ocr=cache_documentos.raiz()/'ocr-paginas-v1'/digest

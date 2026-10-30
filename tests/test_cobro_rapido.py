@@ -46,3 +46,11 @@ class CobroRapido(unittest.TestCase):
         texto='ARTÍCULO 9: FORMA DE PAGO La Municipalidad abonará dentro de los Diez (10) días hábiles desde entrega y presentación de factura. En el caso de la ejecución de servicios contratados, los mismos se prestarán según las necesidades del\n\nservicio. El pago podrá hacerse en forma semanal, quincenal o mensual, contra presentación de factura.\n\nARTÍCULO 10: RECONOCIMIENTO DE COSTOS'
         es=pagos.extraer(texto,'https://haciendalapaz.gob.ar/pliego.pdf')
         self.assertEqual(es[0]['categoria'],'OPCIONES_PUBLICADAS')
+
+    def test_pliego_real_lapaz40_no_es_cobro_rapido(self):
+        import pagos
+        from pathlib import Path
+        es=pagos.extraer(Path('tests/fixtures/reales/lapaz40-pago-ocr.txt').read_text(),'https://haciendalapaz.gob.ar/pliego.pdf',hash_documento='727e8101cc959651319cabd903290384c4f1bed0de23635befb0fa7034890c18',pdf=True)
+        p=pagos.consolidar(es)
+        self.assertEqual(p['clasificacion'],'OPCIONES_PUBLICADAS')
+        self.assertFalse(rapido({'pago':p}))
