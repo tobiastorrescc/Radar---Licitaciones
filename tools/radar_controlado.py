@@ -12,6 +12,7 @@ import uuid
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import incremental as inc
 import oportunidades as o
+import fichas
 import registro_fuentes
 from tools.verificar_fuentes import ejecutar,guardar
 from tools import comprobar_pliegos
@@ -53,6 +54,9 @@ def generar_informe(db,resumen,registros,fuentes,destino):
     actuales_por_id={k:r for r in actuales for k in r.get('ids_historial',[r['id']])}
     for e in eventos:actuales_por_id[e['id']]['clasificacion_novedad']=e['clasificacion_novedad']
     vistas=o.guardar_vistas(actuales,fecha,destino)
+    guardar(destino/'fichas.json',{'fecha':fecha,'fichas':[fichas.construir(r) for r in actuales if r['clasificacion_registro']=='PROCEDIMIENTO']})
+    cola=[{'id':r['id'],'organismo':r.get('organismo'),'numero_procedimiento':r.get('numero_procedimiento'),'objeto':r.get('objeto'),'url':r.get('url'),'motivo':r['pago'].get('motivo'),'documentos':r.get('documentos',[])} for r in actuales if r['clasificacion_registro']=='PROCEDIMIENTO' and r['vigencia']=='ABIERTA' and r['pago']['estado']!='VERIFICADO']
+    guardar(destino/'cola_documental.json',{'fecha':fecha,'pendientes':cola,'es_evaluacion_rentabilidad':False})
     for nombre,datos in [('catalogo_completo',actuales),('eventos',eventos),('observadas',registros)]:
         guardar(destino/(nombre+'.json'),{'fecha':fecha,'total':len(datos),'oportunidades':datos})
         (destino/(nombre+'.md')).write_text(o.reporte(datos,fecha),encoding='utf-8')
@@ -90,7 +94,7 @@ def generar_informe(db,resumen,registros,fuentes,destino):
         filas.append('<tr>'+''.join('<td>'+v+'</td>' for v in valores)+'</tr>')
     titulos=['Organismo / procedimiento','Objeto','Detección','Vigencia','Publicación','Apertura','Límite de presentación','Presupuesto','Presentación','Pago','Documento de pago','Pliego','Señales','Última consulta']
     html='<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Radar controlado</title><style>body{font:16px system-ui;margin:2rem;color:#172b4d}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccd;padding:.5rem;text-align:left;vertical-align:top}th{background:#edf3fa;position:sticky;top:0}input{font:inherit;padding:.6rem;width:min(90%,50rem)}td:nth-child(2){min-width:20rem;white-space:pre-wrap}a{color:#1254ad}</style>'
-    html+=f'<h1>Radar controlado</h1><p>{escape(fecha)} · {escape(resumen["estado"])} · {escape(resumen["mensaje"])}</p><p>{resumen["total_historial"]} registros, {resumen["novedades"]} novedades/cambios, {resumen["abiertas"]} abiertas y {resumen["proximas_a_vencer"]} próximas a vencer. Sin filtros comerciales ni límite de cantidad.</p><p>Los registros no observados hoy se conservan; su vigencia calculada requiere confirmar nuevamente la fuente.</p><input id="buscar" aria-label="Buscar" placeholder="Buscar organismo, objeto, pago o estado"><p><a href="reporte_diario.md">Informe diario</a> · <a href="eventos.json">Eventos JSON</a> · <a href="catalogo_completo.json">Catálogo JSON</a></p><div style="overflow:auto"><table><thead><tr>'+''.join('<th>'+t+'</th>' for t in titulos)+'</tr></thead><tbody>'+''.join(filas)+'</tbody></table></div>'
+    html+=f'<h1>Radar controlado</h1><p>{escape(fecha)} · {escape(resumen["estado"])} · {escape(resumen["mensaje"])}</p><p>{resumen["total_historial"]} registros, {resumen["novedades"]} novedades/cambios, {resumen["abiertas"]} abiertas y {resumen["proximas_a_vencer"]} próximas a vencer. Sin filtros comerciales ni límite de cantidad.</p><p>Los registros no observados hoy se conservan; su vigencia calculada requiere confirmar nuevamente la fuente.</p><input id="buscar" aria-label="Buscar" placeholder="Buscar organismo, objeto, pago o estado"><p><a href="reporte_diario.md">Informe diario</a> · <a href="eventos.json">Eventos JSON</a> · <a href="catalogo_completo.json">Catálogo JSON</a> · <a href="fichas.json">Fichas completas</a> · <a href="cola_documental.json">Cola documental</a></p><div style="overflow:auto"><table><thead><tr>'+''.join('<th>'+t+'</th>' for t in titulos)+'</tr></thead><tbody>'+''.join(filas)+'</tbody></table></div>'
     html+='<p><a href="entrega/informe.md">Novedades y cambios separados</a> · <a href="entrega/oportunidades.csv">CSV íntegro</a> · <a href="entrega/informe.eml">Correo preparado sin enviar</a></p><script>document.getElementById("buscar").addEventListener("input",function(){const q=this.value.toLocaleLowerCase();document.querySelectorAll("tbody tr").forEach(r=>r.hidden=!r.textContent.toLocaleLowerCase().includes(q));});</script></html>'
     (destino/'index.html').write_text(html,encoding='utf-8')
     return resumen

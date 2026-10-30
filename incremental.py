@@ -10,7 +10,7 @@ from urllib.parse import urlsplit
 import oportunidades as o
 
 VERSION=1
-CAMPOS=('titulo','objeto','numero_procedimiento','tipo_procedimiento','procedimiento','organismo','localidad','provincia',
+CAMPOS=('detalle_documental','titulo','objeto','numero_procedimiento','tipo_procedimiento','procedimiento','organismo','localidad','provincia',
     'fecha_apertura','fecha_apertura_texto','hora_apertura','fecha_publicacion','fecha_publicacion_texto','presupuesto',
     'situacion_publicada','evento_publicado','documentos','enlace_pliego','comprobacion_pliego','evidencias_campos',
     'pago_evidencias','pago_motivo_pendiente','fuente','fuentes_observadas','url','urls_publicacion','evidencia_url',
@@ -104,7 +104,7 @@ def contenido(r):
         if host=='timbues.gob.ar':texto=re.sub(r'\b[\d.]+\s+vistas\b','',texto,flags=re.I)
         if host=='armstrong.gov.ar':texto=re.sub(r'\bDescargas\s+\d+\s+(?=Licencia\b)','',texto,flags=re.I)
         campos['objeto']=' '.join(texto.split())
-    for k in ('fecha_limite_presentacion','hora_limite_presentacion','modalidad_presentacion'):
+    for k in ('fecha_limite_presentacion','hora_limite_presentacion','modalidad_presentacion','detalle_documental'):
         if r.get(k):campos[k]=r[k]
     return {**campos,'documentos':docs,'documentos_versiones':r.get('documentos_versiones',{}),
         'pago':{'estado':pago.get('estado'),'clasificacion':pago.get('clasificacion'),'plazos_dias':sorted(pago.get('plazos_dias') or []),
@@ -221,5 +221,9 @@ def actuales(db,fecha,corrida):
 def eventos(db,corrida,fecha):
     salida=[]
     for clave,tipo,cambios,dato in db.execute('SELECT e.procedimiento,e.tipo,e.cambios,v.dato FROM eventos e JOIN versiones v ON v.procedimiento=e.procedimiento AND v.huella=e.huella WHERE e.corrida=?',(corrida,)):
-        r=o.normalizar(json.loads(dato),fecha);r.update(id=clave,clasificacion_novedad=tipo,campos_modificados=json.loads(cambios));salida.append(r)
+        r=o.normalizar(json.loads(dato),fecha)
+        observacion=db.execute('SELECT primera,ultima FROM procedimientos WHERE id=?',(clave,)).fetchone()
+        r.update(id=clave,clasificacion_novedad=tipo,campos_modificados=json.loads(cambios),primera_deteccion=observacion[0] if observacion else None,ultima_deteccion=observacion[1] if observacion else None)
+        r['etiqueta_novedad']='Primera detección, fecha pendiente' if tipo=='NUEVA_DETECCION_FECHA_DESCONOCIDA' else tipo
+        salida.append(r)
     return sorted(salida,key=o.prioridad)

@@ -99,6 +99,7 @@ jobs:
             git push origin HEAD:mejora/radar-auditable
           fi
       - name: Validar origen de la copia para revisión de pagos de abiertas
+        id: pagos_origen
         if: steps.plan.outputs.pagos_run != ''
         uses: actions/github-script@v7
         env:
@@ -106,18 +107,20 @@ jobs:
         with:
           script: |
             const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:Number(process.env.PAGOS_RUN)});
-            if(r.conclusion!=='success'||r.head_branch!=='mejora/radar-auditable'||r.head_repository.full_name!==`${context.repo.owner}/${context.repo.repo}`||r.path!=='.github/workflows/mejorar-cobertura.yml')throw Error('Auditoría documental de origen inválida');
+            if(r.conclusion!=='success'||r.head_branch!=='mejora/radar-auditable'||r.head_repository.full_name!==`${context.repo.owner}/${context.repo.repo}`||!['.github/workflows/mejorar-cobertura.yml','.github/workflows/programar-piloto.yml'].includes(r.path))throw Error('Auditoría documental de origen inválida');
+            core.setOutput('artefacto',r.path==='.github/workflows/programar-piloto.yml'?'radar-controlado':`cobertura-${r.id}`);
+            core.setOutput('entrada',r.path==='.github/workflows/programar-piloto.yml'?'work/revision-pagos':'work/revision-pagos/work/cobertura');
       - uses: actions/download-artifact@v4
         if: steps.plan.outputs.pagos_run != ''
         with:
-          name: cobertura-${{ steps.plan.outputs.pagos_run }}
+          name: ${{ steps.pagos_origen.outputs.artefacto }}
           path: work/revision-pagos
           run-id: ${{ steps.plan.outputs.pagos_run }}
           github-token: ${{ github.token }}
       - name: Revisar sólo pliegos de abiertas con caché y OCR selectivo
         if: steps.plan.outputs.pagos_run != ''
-        timeout-minutes: 4
-        run: python -u tools/auditar_pagos_abiertas.py
+        timeout-minutes: 6
+        run: python -u tools/auditar_pagos_abiertas.py --entrada "${{ steps.pagos_origen.outputs.entrada }}" --ocr-paginas 10
       - name: Guardar evidencia incluso si el lote queda incompleto
         if: always()
         uses: actions/upload-artifact@v4

@@ -16,6 +16,7 @@ import conectores
 import documentos
 import cache_documentos
 import pagos
+import fichas
 import extractores
 import oportunidades as o
 
@@ -67,6 +68,7 @@ def worker(url,consulta_post=None,opciones=None):
             r['pagos_pendientes_revision']=r['pagos'];r['pagos']=[]
         r['pago_mencionado']=bool(pagos.INICIO.search(pagos.norm(texto)))
         r['version_pago']=pagos.VERSION
+        r['detalles_documento']=fichas.extraer(texto,final,r['sha256'],texto_meta['metodo'])
         ps=extractores.procesos(texto)
         r['procedimientos']=sorted({o.procedimiento_canonico({'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'url':final}) for p in ps}-{None})
         r['encabezado_pliego']=bool(re.search(r'(?im)^\s*pliego\s+(?:de\s+)?(?:bases|condiciones|especificaciones)',texto[:4000]))
@@ -201,6 +203,10 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
             etiqueta=next((d.get('titulo','') for d in r.get('documentos',[]) if d['url']==valor['url']),'')
             # La vinculación oficial no basta si el texto nombra otro procedimiento.
             compatible=pertenece or not procs
+            if compatible and valor.get('detalles_documento'):
+                r.setdefault('detalle_documental',{}).update(valor['detalles_documento'])
+                for campo in ('objeto','modalidad_presentacion'):
+                    if campo in valor['detalles_documento']:r[campo]=valor['detalles_documento'][campo]['valor']
             if compatible and valor.get('pagos'):
                 r['pago_evidencias']=pagos.unir_evidencias(r.get('pago_evidencias'),valor['pagos'])
             prioridad=prioridad_pliego(valor,etiqueta,proc)

@@ -3,8 +3,8 @@ from hashlib import sha256
 import re
 import unicodedata
 
-VERSION=8
-NO_INFORMADO='Pago no informado'
+VERSION=9
+NO_INFORMADO='Pendiente de verificar'
 NUMEROS={'siete':7,'quince':15,'treinta':30,'cuarenta y cinco':45,'sesenta':60,'noventa':90,
          'cinco':5,'diez':10,'veinte':20,'veinticinco':25,'cuarenta':40,'cincuenta':50,
          'setenta':70,'ochenta':80,'cien':100,'ciento veinte':120,'ciento cincuenta':150,'ciento ochenta':180}
@@ -33,10 +33,14 @@ def clasificar(cita,permitir_definicion=False):
     cantidad=re.compile(r'cantidad\s*:\s*(?:(?P<palabra>'+PALABRAS+r')(?:\s*\((?P<duplicado>\d{1,3})\))?|(?P<numero>\d{1,3}))\s*unidad de tiempo\s*:\s*dias(?:\s+(?P<unidad>habiles|corridos|calendario))?')
     for m in list(DIAS.finditer(t))+list(cantidad.finditer(t)):
         n=int(m['numero'] or m['duplicado'] or NUMEROS[m['palabra']])
+        # Emisión de factura, entrega y garantía no son plazos de pago.
+        previo=t[max(0,m.start()-120):m.start()]
+        if re.search(r'(?:factura.{0,45}(?:emitida|emitirse)|emision de factura|plazo de entrega|garantia).{0,45}$',previo):continue
         if m['palabra'] and m['duplicado'] and NUMEROS[m['palabra']]!=int(m['duplicado']):return None
         if n not in plazos:plazos.append(n)
         u=m['unidad'] or 'no indicada'
         if u not in unidades:unidades.append(u)
+    if len(unidades)>1 and 'no indicada' in unidades:unidades.remove('no indicada')
     presentacion_factura=bool(re.search(r'contra (?:presentacion|entrega)(?: de)? (?:(?:la|las|su|sus) )?facturas?|presentacion de (?:(?:la|las|su|sus) )?facturas?|presentada (?:(?:la|las|su|sus) )?facturas?',t))
     recepcion_factura=bool(re.search(r'recepcion de (?:(?:la|las|su|sus) )?facturas?|recibida (?:(?:la|las|su|sus) )?facturas?|ingreso de (?:(?:la|las|su|sus) )?facturas?',t))
     fecha_factura=bool(re.search(r'(?:fecha|emision) (?:de )?(?:(?:la|las|su|sus) )?facturas?',t))
@@ -48,6 +52,8 @@ def clasificar(cita,permitir_definicion=False):
     contra_entrega=bool(re.search(r'contra\s+entrega\b(?!\s+(?:de\s+)?(?:la\s+)?(?:factura|comprobante))',t))
     contado=bool(re.search(r'\b(?:al |de )?contado\b|pago inmediato',t))
     hitos=[]
+    if re.search(r'certificacion definitiva',t):hitos.append('CERTIFICACION_DEFINITIVA')
+    if re.search(r'presentacion de (?:la )?facturacion',t):hitos.append('PRESENTACION_FACTURACION')
     if presentacion_factura:hitos.append('PRESENTACION_FACTURA')
     if recepcion_factura:hitos.append('RECEPCION_FACTURA')
     if fecha_factura:hitos.append('FECHA_O_EMISION_FACTURA')
@@ -56,14 +62,14 @@ def clasificar(cita,permitir_definicion=False):
     if conformidad:hitos.append('CONFORMIDAD_RECEPCION')
     elif conformidad_generica and not factura_conformada:hitos.append('CONFORMIDAD_NO_ESPECIFICADA')
     if contra_entrega or re.search(r'desde (?:la )?entrega|de entregad',t):hitos.append('ENTREGA')
-    anticipo=bool(re.search(r'\banticipo(?:s)?\b',t))
+    anticipo=bool(re.search(r'\b(?:anticipo(?:s)?|pago anticipado)\b',t))
     parcial=bool(re.search(r'pagos? parciales|certificados mensuales|por certificacion|en cuotas',t))
     aprobacion=bool(re.search(r'(?:aprobacion|autorizacion) (?:administrativa|del pago|de la factura)|acto administrativo',t))
     if aprobacion:hitos.append('APROBACION_ADMINISTRATIVA')
     if not(plazos or contado or contra_entrega or factura or conformidad or anticipo or parcial or aprobacion):return None
     if not permitir_definicion and re.search(r'(?:podra|podran|si (?:el|la)|en (?:el )?caso de|cuando la municipalidad requiera)\b',t) and not re.search(r'se (?:acepta|admite)n?.*(?:o |alternativ)',t):return None
     opciones=bool(re.search(r'\b(?:o (?:a |al |contra )|alternativas? de pago|opciones de pago)',t))
-    mixto=bool(re.search(r'anticipo|saldo|\d+\s*%|por ciento|cuotas|parciales|certificados mensuales',t)) and (len(plazos)>1 or contado or contra_entrega or 'saldo' in t or 'anticipo' in t)
+    mixto=bool(re.search(r'anticipo|saldo|\d+\s*%|por ciento|cuotas|parciales|certificados mensuales',t)) and (len(plazos)>1 or contado or contra_entrega or 'saldo' in t or bool(re.search(r'anticipo.{0,30}\b(?:[1-9]|[1-9]\d)\s*(?:%|por ciento)',t)))
     if opciones:categoria='OPCIONES_PUBLICADAS'
     elif mixto:categoria='MIXTO'
     elif plazos:categoria='PLAZO_'+str(plazos[0])+'_DIAS' if len(plazos)==1 and plazos[0] in (5,7,10,15,30,45,60,90) else 'OTRO_PLAZO'
@@ -109,7 +115,8 @@ def clasificar(cita,permitir_definicion=False):
     if direccion=='OFERTANTE_AL_ORGANISMO':etiqueta+=' (a cargo del adjudicatario)'
     return {'categoria':categoria,'etiqueta':etiqueta,'plazos_dias':plazos,'unidades_dias':unidades,'hitos_inicio':hitos,
             'direccion':direccion,'contado_mencionado':contado,'contra_entrega_mencionado':contra_entrega,
-            'prioritario':categoria in ('CONTADO','CONTRA_ENTREGA') and direccion!='OFERTANTE_AL_ORGANISMO'}
+            'prioritario':categoria in ('ANTICIPO','CONTADO','CONTRA_ENTREGA') and direccion!='OFERTANTE_AL_ORGANISMO',
+            'pagos_parciales':parcial,'anticipo_publicado':anticipo,'facturacion_parcial':bool(re.search(r'facturaci[oó]n parcial|liquidaciones parciales|certificados parciales|por mes vencido|periodo vencido',t)),'acreditacion_inmediata_comprobada':False}
 
 
 def extraer(texto,url,hash_documento=None,pdf=False,metodo='TEXTO'):
@@ -133,7 +140,7 @@ def extraer(texto,url,hash_documento=None,pdf=False,metodo='TEXTO'):
                 if len(fragmento)<80:
                     siguientes=[]
                     for otro in bloques[indice+1:indice+4]:
-                        if LIMITE.match(norm(otro)):break
+                        if LIMITE.match(norm(otro)) or (INICIO.match(norm(otro)) and clasificar(fragmento+' '+' '.join(siguientes)) is not None):break
                         siguientes.append(re.sub(r'\s+',' ',otro).strip())
                     fragmento+=' '+' '.join(siguientes)
                 limite=LIMITE.search(norm(fragmento),10)
@@ -178,12 +185,29 @@ def consolidar(evidencias):
     for original in evidencias:
         e=dict(original)
         if (e.get('url_documento'),e.get('sha256')) in genericos and e.get('categoria')=='PAGOS_PARCIALES' and (re.search(r'oferente.*consignar',norm(e.get('cita'))) or norm(e.get('cita')).startswith('pago: - pago total')):continue
-        if e.get('version_analizador') in (5,6,7) and not e.get('definicion_contado'):
+        if e.get('version_analizador') in (5,6,7,8) and not e.get('definicion_contado'):
             actual=clasificar(e.get('cita'))
             if actual is None:continue
             e.update(actual);e['reclasificada_desde_version']=e['version_analizador'];e['version_analizador']=VERSION
         revisadas.append(e)
     evidencias=revisadas
+    grupos={}
+    for e in evidencias:grupos.setdefault((e.get('url_documento'),e.get('sha256'),e.get('pagina')),[]).append(e)
+    for grupo in grupos.values():
+        con_plazo=[e for e in grupo if len(e.get('plazos_dias',[]))==1 and e.get('categoria') not in ('MIXTO','OPCIONES_PUBLICADAS')]
+        sin_plazo=[e for e in grupo if not e.get('plazos_dias') and e.get('categoria')=='DESPUES_CONFORMIDAD_RECEPCION']
+        if not con_plazo or not sin_plazo or len({tuple(e['plazos_dias']) for e in con_plazo})!=1:continue
+        # No combinar factura a 30 días con recepción a 30 días: ambos hitos deben ser compatibles.
+        hitos=[set(e.get('hitos_inicio',[])) for e in con_plazo]
+        if any(h-{'CONFORMIDAD_RECEPCION','CONFORMIDAD_FACTURA'} for h in hitos):continue
+        unidades={u for e in con_plazo for u in e.get('unidades_dias',[]) if u!='no indicada'}
+        if len(unidades)>1:continue
+        principal=max(con_plazo,key=lambda e:(len(e.get('hitos_inicio',[])),e.get('unidades_dias')!=['no indicada']))
+        cita=' '.join(dict.fromkeys(e['cita'] for e in grupo))
+        fusion=clasificar(cita)
+        if fusion and len(fusion['plazos_dias'])==1:
+            nuevo={**principal,**fusion,'cita':cita,'citas_complementarias':[e['cita'] for e in grupo],'version_analizador':VERSION}
+            evidencias=[e for e in evidencias if e not in grupo]+[nuevo]
     if any(e.get('categoria')=='CONDICION_AMBIGUA' for e in evidencias):
         r=desconocido('DEFINICION_CONTADO_AMBIGUA');r['evidencias']=evidencias;return r
     unicas={}
@@ -242,3 +266,13 @@ def resumen(registros):
         else:f['pendientes']+=1;f['motivos'][r.get('pago',{}).get('motivo') or 'SIN_CLAUSULA_COMPROBADA']+=1
     return {'procedimientos':len(validos),'verificadas':estados['VERIFICADO'],'pendientes':len(validos)-estados['VERIFICADO'],
             'clasificaciones':dict(categorias),'fuentes':fuentes}
+
+
+def grupo_comercial(pago):
+    if pago.get('estado')!='VERIFICADO' or pago.get('direccion')=='OFERTANTE_AL_ORGANISMO':return 8
+    categoria=pago.get('clasificacion')
+    if categoria=='ANTICIPO':return 0
+    if categoria in ('CONTADO','CONTRA_ENTREGA'):return 1
+    if categoria in ('MIXTO','OPCIONES_PUBLICADAS'):return 8
+    dias=max(pago.get('plazos_dias') or [999])
+    return 2 if dias<=5 else 3 if dias<=10 else 4 if dias<=15 else 5 if dias<=30 else 6 if dias<=60 else 7 if dias<999 else 8

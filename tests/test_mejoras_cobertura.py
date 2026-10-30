@@ -84,7 +84,7 @@ class MejorasCoberturaTests(unittest.TestCase):
         contado=self.registro('Materiales')
         contado['pago']=pagos.consolidar(pagos.extraer('Forma de pago: contado.','https://oficial.gob.ar/pliego.pdf','a'*64))
         desierta={**self.registro('Segundo llamado, llamado anterior desierto'),'llamado_especial':True}
-        self.assertIs(sorted([contado,desierta],key=o.prioridad)[0],desierta)
+        self.assertIs(sorted([contado,desierta],key=o.prioridad)[0],contado)
         registros=[{**contado,'numero_procedimiento':f'{i}/2026','titulo':f'Procedimiento {i}'} for i in range(105)]
         reporte=o.reporte(registros,FECHA)
         self.assertIn('104/2026',reporte)

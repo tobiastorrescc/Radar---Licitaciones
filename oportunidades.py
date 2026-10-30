@@ -95,7 +95,7 @@ def normalizar(r,ahora=None):
     r['segundo_llamado']=bool(re.search(r'segund[oa] (?:llamado|convocatoria)|2(?:do|º|°) llamado|llamado 2\b',senales))
     r['reapertura']='reapertura' in senales
     r['llamado_especial']=bool(r.get('llamado_especial') or r['desierta'] or r['fracasada'] or r['segundo_llamado'] or r['reapertura'])
-    cerrada=r.get('situacion_publicada') in ('ADJUDICADA','FINALIZADA','EN_EVALUACION','DESIERTA','FRACASADA')
+    cerrada=r.get('situacion_publicada') in ('ADJUDICADA','FINALIZADA','EN_EVALUACION','DESIERTA','FRACASADA','SUSPENDIDA','CANCELADA')
     if r.get('situacion_publicada') in ('DESIERTA','FRACASADA') and (r['segundo_llamado'] or r['reapertura']):
         # Mencionar el llamado anterior desierto no prueba cierre de la reapertura.
         cerrada=False
@@ -157,15 +157,12 @@ def normalizar(r,ahora=None):
 
 def prioridad(r):
     p=r.get('pago',{})
-    inmediato=p.get('estado')=='VERIFICADO' and p.get('prioritario',False)
-    dias=max(p.get('plazos_dias') or [999]) if p.get('estado')=='VERIFICADO' else 999
-    corto=dias<=15 and p.get('direccion')!='OFERTANTE_AL_ORGANISMO' and p.get('clasificacion') not in ('MIXTO','OPCIONES_PUBLICADAS')
+    grupo=pagos.grupo_comercial(p)
     presupuesto=r.get('presupuesto') if isinstance(r.get('presupuesto'),dict) else {}
     try:importe=Decimal(presupuesto.get('importe') or '0')
     except (InvalidOperation,AttributeError):importe=Decimal(0)
     # Monedas diferentes se agrupan; no se convierten ni se estima rentabilidad.
-    return (not r.get('llamado_especial',False),0 if inmediato else 1 if corto else 2,
-            dias if corto else 999,not bool(presupuesto),presupuesto.get('moneda') or '',-importe,
+    return (grupo,not r.get('llamado_especial',False),not bool(presupuesto),presupuesto.get('moneda') or '',-importe,
             r.get('fecha_hora_limite_presentacion') or r.get('fecha_limite_presentacion') or r.get('fecha_hora_apertura') or r.get('fecha_apertura') or '9999',r.get('titulo',''))
 
 
@@ -193,7 +190,7 @@ def reporte(registros,fecha_reporte):
         if isinstance(valor,dict):return str(valor.get('importe') or 'desconocido')+' '+(valor.get('moneda') or '(moneda no informada)')
         return valor or 'desconocido'
     lineas=['# Oportunidades detectadas — '+fecha_reporte,'',
-        'Primera detección no significa publicación reciente. Se incluyen todas las novedades válidas, también vencidas y de vigencia desconocida. Orden: desiertas, segundos llamados y reaperturas; pago contado/contra entrega o plazo corto comprobado; presupuesto por moneda; límite de presentación o apertura referencial. Sin filtros comerciales ni límite de cantidad. Pago no informado significa pendiente de comprobación.','',
+        'Primera detección no significa publicación reciente. Se incluyen todas las novedades válidas, también vencidas y de vigencia desconocida. Orden: anticipos; contado/contra entrega; plazos comprobados de 5, 10, 15, 30, 60 y más días; señales de desiertas, segundos llamados y reaperturas; presupuesto por moneda; límite de presentación o apertura referencial. Sin filtros comerciales ni límite de cantidad. Pendiente de verificar indica investigación documental pendiente; no es una evaluación de rentabilidad.','',
         '| Organismo / procedimiento | Localidad / provincia | Objeto | Presupuesto oficial | Vigencia / apertura | Fecha de publicación | Límite de presentación | Presentación | Pliego | Condiciones de pago | Documento de respaldo | Señales | Publicación oficial | Novedad |',
         '|---|---|---|---|---|---|---|---|---|---|---|---|---|---|']
     ordenadas=sorted(registros,key=prioridad)

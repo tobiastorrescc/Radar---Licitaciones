@@ -36,7 +36,7 @@ class PagosTests(unittest.TestCase):
         self.assertEqual(r['clasificacion'],'PLAZO_30_DIAS');self.assertFalse(r['prioritario'])
     def test_sin_clausula_negacion_y_remision_no_se_suponen(self):
         for t in ['Plazo de entrega: 7 días. Garantía: 30 días.','No se admite pago al contado.','Forma de pago: según lo establecido en el pliego general.','Pago en efectivo.']:
-            with self.subTest(texto=t):self.assertEqual(self.analizar(t)['etiqueta'],'Pago no informado')
+            with self.subTest(texto=t):self.assertEqual(self.analizar(t)['etiqueta'],'Pendiente de verificar')
     def test_precio_del_pliego_y_garantia_no_son_pago_al_proveedor(self):
         for t in ['Forma de pago del pliego: al contado.','Pago del sellado: al contado.','Forma de pago: valor del pliego al contado.']:
             self.assertEqual(self.analizar(t)['estado'],'PENDIENTE')
@@ -58,7 +58,7 @@ class PagosTests(unittest.TestCase):
         self.assertEqual(r['estado'],'VERIFICADO');self.assertEqual(r['direccion'],'OFERTANTE_AL_ORGANISMO');self.assertFalse(r['prioritario'])
     def test_normalizacion_no_verifica_una_frase_del_titulo(self):
         r=o.normalizar({'titulo':'Compra menor 1/2026 Pago contado','url':URL,'fuente':URL})
-        self.assertEqual(r['condiciones_pago'],'Pago no informado');self.assertFalse(r['pago_prioritario'])
+        self.assertEqual(r['condiciones_pago'],'Pendiente de verificar');self.assertFalse(r['pago_prioritario'])
     def test_todas_las_novedades_sin_filtros_ni_limite_y_columnas(self):
         rs=[]
         for i in range(1200):
@@ -67,7 +67,7 @@ class PagosTests(unittest.TestCase):
             rs.append(r)
         h={};nuevas=o.incorporar(h,rs,'2026-10-27T09:00:00-03:00')
         self.assertEqual(len(nuevas),1200);self.assertEqual(sum(r['pago']['clasificacion']=='PLAZO_90_DIAS' for r in nuevas),600)
-        reporte=o.reporte(nuevas,'2026-10-27');self.assertIn('Condiciones de pago',reporte);self.assertIn('Documento de respaldo',reporte);self.assertIn('Pago no informado',reporte)
+        reporte=o.reporte(nuevas,'2026-10-27');self.assertIn('Condiciones de pago',reporte);self.assertIn('Documento de respaldo',reporte);self.assertIn('Pendiente de verificar',reporte)
         self.assertEqual(reporte.count('| Municipio /'),1200)
     def test_orden_contado_y_entrega_antes_que_otros_sin_excluirlos(self):
         rs=[]
@@ -211,7 +211,7 @@ class ReporteCamposPreviosTests(unittest.TestCase):
     def test_pago_no_oculta_presupuesto_ubicacion_hora_y_pliego(self):
         r={'organismo':'Municipio','numero_procedimiento':'1/2026','localidad':'Rosario','provincia':'Santa Fe','presupuesto':'$36.000.000','fecha_apertura':'2026-10-28','fecha_hora_apertura':'2026-10-28T10:00:00-03:00','fecha_publicacion':'2026-10-20','enlace_pliego':URL,'url':URL,'titulo':'Servicio','vigencia':'ABIERTA'}
         reporte=o.reporte([r],'2026-10-27')
-        for dato in ['Rosario / Santa Fe','$36.000.000','2026-10-28T10:00:00-03:00','2026-10-20','[Pliego]('+URL+')','Condiciones de pago','Documento de respaldo','Pago no informado']:self.assertIn(dato,reporte)
+        for dato in ['Rosario / Santa Fe','$36.000.000','2026-10-28T10:00:00-03:00','2026-10-20','[Pliego]('+URL+')','Condiciones de pago','Documento de respaldo','Pendiente de verificar']:self.assertIn(dato,reporte)
         r['presupuesto']={'importe':'36000000','moneda':None}
         reporte=o.reporte([r],'2026-10-27')
         self.assertIn('36000000 (moneda no informada)',reporte)

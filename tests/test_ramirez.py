@@ -30,7 +30,7 @@ class RamirezTests(unittest.TestCase):
         self.assertIn('1300 M3 BROZA',r['objeto'])
         self.assertTrue(r['detalle_completo'])
         self.assertIsNone(r['enlace_pliego']) # Decreto no se presenta como pliego.
-        self.assertEqual(r['condiciones_pago'],'Pago no informado')
+        self.assertEqual(r['condiciones_pago'],'Pendiente de verificar')
 
     def test_captura_real_privada_y_adjudicacion_explicita(self):
         r,=self.extraer((FIXTURES/'privadas.html').read_text(),BASE+'licitaciones-privadas/')

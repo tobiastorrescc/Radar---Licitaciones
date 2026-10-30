@@ -1,0 +1,149 @@
+[
+  {
+    "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+    "organismo": "Municipalidad de Chajarí",
+    "procedimiento": "19/2026",
+    "objeto": "Provisión de repuestos para el tren de rodaje de las retroexcavadoras New Holland E215C EVO y Komatsu PC200.",
+    "pagina_objeto": 1,
+    "productos": [
+      {
+        "equipo": "NEW HOLLAND EVO215C",
+        "renglon": 1,
+        "producto": "Cadena",
+        "cantidad": 2,
+        "unidad": null,
+        "pagina": 5,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "equipo": "NEW HOLLAND EVO215C",
+        "renglon": 2,
+        "producto": "Rueda guía completa",
+        "cantidad": 2,
+        "unidad": null,
+        "pagina": 5,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "equipo": "NEW HOLLAND EVO215C",
+        "renglon": 3,
+        "producto": "Rueda dentada / rueda 21Z",
+        "cantidad": 2,
+        "unidad": null,
+        "pagina": 5,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "equipo": "NEW HOLLAND EVO215C",
+        "renglon": 4,
+        "producto": "Rodillo o rolo inferior",
+        "cantidad": 16,
+        "unidad": null,
+        "pagina": 5,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "equipo": "NEW HOLLAND EVO215C",
+        "renglon": 5,
+        "producto": "Rodillo o rolo superior",
+        "cantidad": 4,
+        "unidad": null,
+        "pagina": 5,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "equipo": "NEW HOLLAND EVO215C",
+        "renglon": 6,
+        "producto": "Tornillos para zapatas",
+        "cantidad": 400,
+        "unidad": null,
+        "pagina": 5,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "equipo": "NEW HOLLAND EVO215C",
+        "renglon": 7,
+        "producto": "Tuercas para zapatas",
+        "cantidad": 400,
+        "unidad": null,
+        "pagina": 5,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "equipo": "KOMATSU PC 200",
+        "renglon": 1,
+        "producto": "Rueda guía",
+        "cantidad": 2,
+        "unidad": null,
+        "pagina": 5,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "equipo": "KOMATSU PC 200",
+        "renglon": 2,
+        "producto": "Rodillo inferior",
+        "cantidad": 18,
+        "unidad": null,
+        "pagina": 5,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "equipo": "KOMATSU PC 200",
+        "renglon": 3,
+        "producto": "Rodillo superior",
+        "cantidad": 4,
+        "unidad": null,
+        "pagina": 5,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "equipo": "KOMATSU PC 200",
+        "renglon": 4,
+        "producto": "Rueda dentada",
+        "cantidad": 2,
+        "unidad": null,
+        "pagina": 5,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "equipo": "KOMATSU PC 200",
+        "renglon": 5,
+        "producto": "Bulones con tuercas",
+        "cantidad": 400,
+        "unidad": null,
+        "pagina": 5,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "equipo": "KOMATSU PC 200",
+        "renglon": 6,
+        "producto": "Cadena 51 eslabones",
+        "cantidad": 2,
+        "unidad": null,
+        "pagina": 5,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      }
+    ],
+    "verificacion": "Revisión visual de página 5 del PDF oficial: rodillo superior Komatsu = 4; OCR previo decía 7. No se altera el texto OCR original. Sólo aplicable al mismo SHA256.",
+    "campos_adicionales": {
+      "modalidad_presentacion": {
+        "valor": [
+          "ONLINE",
+          "PRESENCIAL_NOTA_CONTRASENA_EN_SOBRE"
+        ],
+        "pagina": 2,
+        "cita": "Las propuestas se presentarán mediante la plataforma digital. La nota en sobre cerrado con la contraseña se recibirá hasta 30 minutos antes del horario de apertura."
+      },
+      "limite_nota_contrasena": {
+        "valor": "30 minutos antes de la apertura; para 19/11/2026 10:00 corresponde 09:30. No se infiere otro límite de carga digital.",
+        "pagina": 2,
+        "cita": "Esta nota, en sobre cerrado, se recibirá hasta 30 minutos antes del horario de apertura."
+      },
+      "moneda_literal": {
+        "valor": "PESOS; el documento no expresa código ISO en la cláusula presupuestaria",
+        "pagina": 1,
+        "cita": "PESOS CINCUENTA Y NUEVE MILLONES QUINIENTOS MIL CON CERO CENTAVOS"
+      }
+    }
+  }
+]
