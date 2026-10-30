@@ -28,7 +28,12 @@ def worker(entrada,salida):
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--worker');p.add_argument('--salida',default='work/sondeo');a=p.parse_args()
-    if a.worker:worker(a.worker,a.salida);return
+    if a.worker:
+        try:worker(a.worker,a.salida)
+        except Exception as e:
+            f=json.loads(Path(a.worker).read_text())
+            guardar(a.salida,{'estado':'BLOQUEADA','finalizado':True,'url':f['url'],'paginas_correctas':0,'oportunidades':[],'errores':[conectores.clasificar_error(e,'DESCARGA')]})
+        return
     root=Path(a.salida);root.mkdir(parents=True,exist_ok=True)
     fs=json.loads(Path('inventario/fuentes.json').read_text())
     urls={}

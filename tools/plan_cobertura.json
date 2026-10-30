@@ -1,12 +1,38 @@
 {
-  "etapa": "pliego-chajari-19-2026-11",
-  "sondear": false,
+  "etapa": "diagnostico-pre-30-oct",
+  "sondear": true,
   "auditar": false,
   "descubrir": false,
-  "reverificar_ids": [
-    "fuente-040"
-  ],
-  "verificar_documentos": true,
-  "documento_muestra": "19/2026",
-  "tipo_muestra": "licitacion publica"
+  "urls_sondeo": [
+    "https://compras.santafe.gob.ar/",
+    "https://www.epe.santafe.gov.ar/app2/aperturas",
+    "https://compras.unr.edu.ar/",
+    "https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/",
+    "https://xn--carcaraa-j3a.gob.ar/",
+    "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+    "https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/",
+    "https://transparencia.santafeciudad.gov.ar/contrataciones-obra/",
+    "https://www.enersa.com.ar/area-proveedores/",
+    "https://institutobecario.gov.ar/licitaciones.php",
+    "https://victoria.gob.ar/web-compras/Invitaciones-Compras/concurso-de-precios/",
+    "https://w3.gualeguaychu.gov.ar/tramites/compras-y-licitaciones/acceso-a-licitaciones-p%C3%BAblicas",
+    "https://villaguay.gob.ar/boletindigital/",
+    "https://arrecifes.gob.ar/informacion-publica/licitaciones/",
+    "https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones",
+    "https://compras.uner.edu.ar/",
+    "https://www.santafe.gov.ar/boletinoficial/",
+    "https://comunaarequito.gob.ar/licitaciones/",
+    "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5002-licitacion-publica-01-2026",
+    "https://www.timbues.gob.ar/index.php?pagina=lista&sec=210",
+    "https://villaelisa.gov.ar/transparencia/",
+    "https://sansalvadorer.gob.ar/",
+    "https://www.humboldt.gob.ar/",
+    "https://epe.santafe.gov.ar/app2/aperturas",
+    "https://epe.santafe.gov.ar/app2/apertura/19403",
+    "https://compras.santafe.gov.ar/",
+    "https://www.santafe.gov.ar/gestionesdecompras/site/",
+    "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+    "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=3",
+    "https://www.entrerios.gov.ar/minplan/licitaciones/lpn_dgayc_2026-12"
+  ]
 }
