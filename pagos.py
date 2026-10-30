@@ -3,7 +3,7 @@ from hashlib import sha256
 import re
 import unicodedata
 
-VERSION=7
+VERSION=8
 NO_INFORMADO='Pago no informado'
 NUMEROS={'siete':7,'quince':15,'treinta':30,'cuarenta y cinco':45,'sesenta':60,'noventa':90,
          'cinco':5,'diez':10,'veinte':20,'veinticinco':25,'cuarenta':40,'cincuenta':50,
@@ -79,7 +79,7 @@ def clasificar(cita,permitir_definicion=False):
     elif aprobacion:categoria='DESPUES_APROBACION_ADMINISTRATIVA'
     else:return None
     direccion='OFERTANTE_AL_ORGANISMO' if re.search(r'(?:adjudicatario|concesionario|oferente) (?:debera |debe |se obliga a )?(?:abonar|pagar)|canon (?:a cargo|que abonara) (?:del )?(?:adjudicatario|concesionario)',t) else ('ORGANISMO_AL_PROVEEDOR' if re.search(r'(?:municipalidad|municipio|organismo|contratante) (?:debera |debe )?(?:abonar|pagar)|pago al (?:proveedor|adjudicatario)',t) else 'NO_ESPECIFICADA')
-    if categoria=='CONTADO':etiqueta='Pago contado'
+    if categoria=='CONTADO':etiqueta='Pago contado contra entrega' if contra_entrega else 'Pago contado'
     elif categoria=='CONTRA_ENTREGA':etiqueta='Pago contra entrega'
     elif categoria=='CONTRA_PRESENTACION_FACTURA':etiqueta='Contra presentación de factura; plazo no indicado'
     elif categoria=='CONTRA_FACTURA_CONFORMADA':etiqueta='Contra factura conformada; plazo no indicado'
@@ -178,7 +178,7 @@ def consolidar(evidencias):
     for original in evidencias:
         e=dict(original)
         if (e.get('url_documento'),e.get('sha256')) in genericos and e.get('categoria')=='PAGOS_PARCIALES' and (re.search(r'oferente.*consignar',norm(e.get('cita'))) or norm(e.get('cita')).startswith('pago: - pago total')):continue
-        if e.get('version_analizador') in (5,6) and not e.get('definicion_contado'):
+        if e.get('version_analizador') in (5,6,7) and not e.get('definicion_contado'):
             actual=clasificar(e.get('cita'))
             if actual is None:continue
             e.update(actual);e['reclasificada_desde_version']=e['version_analizador'];e['version_analizador']=VERSION
@@ -196,13 +196,17 @@ def consolidar(evidencias):
     if len(unicas)>1:
         # Una omisión no contradice un dato explícito: admite sólo ampliaciones
         # compatibles de la misma categoría/plazo, sin mezclar hitos distintos.
-        bases={(e['categoria'],tuple(e['plazos_dias'])) for e in todos}
+        # Contado contra entrega y su repetición abreviada son compatibles sólo
+        # cuando el MISMO documento dice expresamente ambas condiciones.
+        documentos_explicitos={(e['url_documento'],e['sha256']) for e in todos if e['categoria']=='CONTADO' and e.get('contra_entrega_mencionado') and not e['plazos_dias']}
+        compatibles=bool(documentos_explicitos) and all(e['categoria'] in ('CONTADO','CONTRA_ENTREGA') and not e['plazos_dias'] and (e['url_documento'],e['sha256']) in documentos_explicitos for e in todos)
+        bases={(('CONTADO' if compatibles else e['categoria']),tuple(e['plazos_dias'])) for e in todos}
         unidades={u for e in todos for u in e.get('unidades_dias',[]) if u!='no indicada'}
         direcciones={e['direccion'] for e in todos if e['direccion']!='NO_ESPECIFICADA'}
         hitos=[set(e['hitos_inicio']) for e in todos]
         mayor=max(hitos,key=len)
         if len(bases)==1 and len(unidades)<=1 and len(direcciones)<=1 and all(h<=mayor for h in hitos):
-            principal=max(todos,key=lambda e:(len(e['hitos_inicio']),e.get('unidades_dias')!=['no indicada'],e['direccion']!='NO_ESPECIFICADA'))
+            principal=max(todos,key=lambda e:(e['categoria']=='CONTADO' if compatibles else False,len(e['hitos_inicio']),e.get('unidades_dias')!=['no indicada'],e['direccion']!='NO_ESPECIFICADA'))
             e=dict(principal)
             if unidades:e['unidades_dias']=sorted(unidades)
             if direcciones:e['direccion']=next(iter(direcciones))

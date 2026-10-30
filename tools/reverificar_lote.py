@@ -22,7 +22,7 @@ def main():
         import oportunidades as o
         muestra=json.load(open('tools/plan_cobertura.json')).get('documento_muestra')
         elegidos=[r for r in rs if r.get('numero_procedimiento')==muestra and (not json.load(open('tools/plan_cobertura.json')).get('tipo_muestra') or r.get('tipo_procedimiento')==json.load(open('tools/plan_cobertura.json'))['tipo_muestra'])] if muestra else rs
-        comprobar(elegidos,informe['actualizado'],fs,total=90,salida_parcial=root/'documentos.jsonl')
+        comprobar(elegidos,informe['actualizado'],fs,total=90,salida_parcial=root/'documentos.jsonl',ocr_paginas=json.load(open('tools/plan_cobertura.json')).get('ocr_paginas',4))
         rs=[o.normalizar(r,informe['actualizado']) for r in rs]
     for f in informe['observaciones']:
         filas=[r for r in rs if r.get('fuente')==f['url']]

@@ -20,7 +20,7 @@ import extractores
 import oportunidades as o
 
 
-def worker(url,consulta_post=None):
+def worker(url,consulta_post=None,opciones=None):
     transporte=None
     if consulta_post:
         # Endpoint público de lectura observado en el cliente oficial. No hay
@@ -45,12 +45,22 @@ def worker(url,consulta_post=None):
     if not clase:return {'url':url,'url_final':final,'estado':'NO_ES_DOCUMENTO','tipo':tipo,'error':'Respuesta HTML/u otro contenido; HTTP 200 no valida pliego'}
     r={'url':url,'url_final':final,'consulta_post':consulta_post,'estado':'DOCUMENTO_ACCESIBLE','tipo':clase,'bytes':len(raw),'sha256':sha256(raw).hexdigest(),'cache_estado':cache['cache_estado'],'fecha_descarga':cache.get('descargado'),'revalidado':cache.get('revalidado')}
     try:
-        texto,texto_meta=cache_documentos.leer_texto(raw,tipo,final,ocr=False)
+        try: texto,texto_meta=cache_documentos.leer_texto(raw,tipo,final,ocr=False)
+        except ValueError:
+            if clase!='PDF' or not (opciones or {}).get('ocr_selectivo'):raise
+            texto='';texto_meta={'cache_texto':'SIN_TEXTO','metodo':'PDF'}
+        necesita_ocr=not texto.strip() or any(len(re.sub(r'[^A-Za-zÁÉÍÓÚáéíóúÑñ]','',p))<20 for p in texto.rstrip('\f').split('\f'))
+        if clase=='PDF' and necesita_ocr and (opciones or {}).get('ocr_selectivo'):
+            texto,meta_ocr=documentos.ocr_selectivo(raw,max_paginas=(opciones or {}).get('max_paginas',4))
+            r['ocr_selectivo']=meta_ocr;texto_meta['metodo']='OCR_SELECTIVO'
+            if not meta_ocr['completa']:r['lectura_pendiente']='OCR selectivo parcial: quedan páginas sin leer'
         r['cache_texto']=texto_meta['cache_texto']
         paginas=texto.split('\f')
         if paginas and not paginas[-1].strip():paginas=paginas[:-1]
-        if any(len(re.sub(r'[^A-Za-zÁÉÍÓÚáéíóúÑñ]','',p))<20 for p in paginas):r['lectura_pendiente']='Documento con páginas sin texto suficiente: requiere OCR; no se presume ausencia de cláusulas'
+        if not r.get('ocr_selectivo',{}).get('completa') and any(len(re.sub(r'[^A-Za-zÁÉÍÓÚáéíóúÑñ]','',p))<20 for p in paginas):r['lectura_pendiente']='Documento con páginas sin texto suficiente: requiere OCR; no se presume ausencia de cláusulas'
         r['pagos']=pagos.extraer(texto,final,r['sha256'],pdf=clase=='PDF',metodo=texto_meta['metodo'])
+        if r.get('lectura_pendiente'):
+            r['pagos_pendientes_revision']=r['pagos'];r['pagos']=[]
         r['pago_mencionado']=bool(pagos.INICIO.search(pagos.norm(texto)))
         r['version_pago']=pagos.VERSION
         ps=extractores.procesos(texto)
@@ -124,7 +134,8 @@ def ordenar_documentos(candidatos,vinculos,fecha):
     return deque(orden)
 
 
-def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrencia=4,salida_parcial=None):
+def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrencia=4,salida_parcial=None,ocr_paginas=4):
+    if not 1<=ocr_paginas<=10:raise ValueError('Cupo OCR inválido')
     candidatos={};vinculos={};peticiones={}
     configs={f['url']:f for f in configuraciones if f.get('url')}
     ordenados=sorted(registros,key=lambda r:({'ABIERTA':0,'DESCONOCIDA':1,'VENCIDA':2}.get(r.get('vigencia'),1),r.get('fecha_apertura') or '9999',r.get('fuente') or ''))
@@ -144,7 +155,7 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
         if salida_parcial:
             ruta=Path(salida_parcial);ruta.parent.mkdir(parents=True,exist_ok=True)
             with ruta.open('a',encoding='utf-8') as archivo:archivo.write(json.dumps(valor,ensure_ascii=False)+'\n')
-    inicio=time.monotonic();pendientes=ordenar_documentos(candidatos,vinculos,fecha);activos={}
+    inicio=time.monotonic();pendientes=ordenar_documentos(candidatos,vinculos,fecha);activos={};seleccion_ocr=set()
     while pendientes or activos:
         if time.monotonic()-inicio>=total:break
         while pendientes and len(activos)<concurrencia:
@@ -157,7 +168,10 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
                     pendientes.append(candidato);continue
                 url=candidato;break
             if url is None:break
-            p=subprocess.Popen([sys.executable,__file__,'--worker',url]+([json.dumps(peticiones[url])] if url in peticiones else []),stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,start_new_session=True)
+            # Cupo de tres documentos, sólo convocatorias abiertas sin pago comprobado.
+            ocr=bool(len(seleccion_ocr)<3 and any(r.get('vigencia')=='ABIERTA' and r.get('pago',{}).get('estado')!='VERIFICADO' for r in vinculos.get(url,[])))
+            if ocr:seleccion_ocr.add(url)
+            p=subprocess.Popen([sys.executable,__file__,'--worker',url,json.dumps(peticiones.get(url)),json.dumps({'ocr_selectivo':ocr,'max_paginas':ocr_paginas})],stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,start_new_session=True)
             activos[p.pid]=(p,url,time.monotonic())
         for pid,(p,url,comienzo) in list(activos.items()):
             if p.poll() is not None:
@@ -165,7 +179,7 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
                 try:valor=json.loads(out) if p.returncode==0 else {'url':url,'estado':'ERROR','error':err[-1000:]}
                 except ValueError:valor={'url':url,'estado':'ERROR','error':'Worker sin JSON válido'}
                 candidatos[url]=valor;guardar_parcial(valor);del activos[pid]
-            elif time.monotonic()-comienzo>=(max(por_enlace,45) if url in peticiones else por_enlace):
+            elif time.monotonic()-comienzo>=(max(por_enlace,75) if url in seleccion_ocr else max(por_enlace,45) if url in peticiones else por_enlace):
                 terminar(p);p.communicate();candidatos[url]={'url':url,'estado':'TIEMPO_ENLACE'};del activos[pid]
         if activos:time.sleep(0.05)
     for p,url,_ in activos.values():
@@ -213,5 +227,5 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
     return list(candidatos.values())
 
 if __name__=='__main__':
-    try:print(json.dumps(worker(sys.argv[2],json.loads(sys.argv[3]) if len(sys.argv)>3 else None),ensure_ascii=False))
+    try:print(json.dumps(worker(sys.argv[2],json.loads(sys.argv[3]) if len(sys.argv)>3 else None,json.loads(sys.argv[4]) if len(sys.argv)>4 else None),ensure_ascii=False))
     except Exception as e:print(json.dumps({'url':sys.argv[2],'estado':'ERROR','error':str(e)}))

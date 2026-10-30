@@ -3,7 +3,7 @@ from dataclasses import dataclass, field
 from functools import cached_property, lru_cache
 from html.parser import HTMLParser
 from html import unescape
-from urllib.parse import urljoin, urlsplit, urlunsplit, quote, urldefrag
+from urllib.parse import urljoin, urlsplit, urlunsplit, quote, urldefrag, parse_qsl, urlencode
 import re
 import json
 import unicodedata
@@ -24,6 +24,8 @@ ADJUNTOS=('.pdf','.docx','.doc','.zip','.xls','.xlsx')
 def url_publica(url,base=''):
     u=urldefrag(urljoin(base,unescape(url).strip()))[0]
     p=urlsplit(u)
+    if p.hostname in ('www.rosario.gob.ar','rosario.gob.ar') and '/compras-licitaciones/detalle/' in p.path:
+        p=p._replace(query=urlencode([(k,v) for k,v in parse_qsl(p.query) if k!='sid']))
     if p.scheme not in ('http','https') or not p.hostname:return None
     # No doble codificación de escapes ya presentes ni pérdida de queries opacas.
     host=p.hostname.encode('idna').decode('ascii').lower()

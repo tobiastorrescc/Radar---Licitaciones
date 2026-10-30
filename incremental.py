@@ -201,12 +201,18 @@ def actuales(db,fecha,corrida):
     for clave,primera,ultima,vista,dato in db.execute('SELECT id,primera,ultima,corrida,dato FROM procedimientos ORDER BY primera,id'):
         r=o.normalizar(json.loads(dato),fecha)
         r.update(id=clave,primera_deteccion=primera,ultima_deteccion=ultima,observada_esta_corrida=vista==corrida,ids_historial=[clave])
+        variante={k:r.get(k) for k in ('id','numero_procedimiento','objeto','fecha_apertura','fecha_limite_presentacion','evento_publicado','numero_convocatoria','url','documentos')}
+        r['variantes_historial']=[variante]
         identidad=o.identidad(r);anterior=grupos.get(identidad)
         if anterior:
             unido=o.fusionar(anterior,r,fecha)
             unido.update(id=anterior['id'],ids_historial=sorted(set(anterior['ids_historial']+[clave])),
                 primera_deteccion=min(anterior['primera_deteccion'],primera),ultima_deteccion=max(anterior['ultima_deteccion'],ultima),
                 observada_esta_corrida=anterior['observada_esta_corrida'] or r['observada_esta_corrida'])
+            unido['variantes_historial']=anterior['variantes_historial']+[variante]
+            fechas={v['fecha_apertura'] for v in unido['variantes_historial'] if v.get('fecha_apertura')}
+            eventos={o.norm(v.get('evento_publicado')) for v in unido['variantes_historial']}
+            unido['unificacion_estado']='REQUIERE_REVISION' if len(fechas)>1 or ('nuevo llamado' in eventos and len(eventos)>1) else 'MISMO_PROCEDIMIENTO_VARIANTES_CONSERVADAS'
             r=unido
         grupos[identidad]=r
     return sorted(grupos.values(),key=o.prioridad)

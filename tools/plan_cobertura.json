@@ -1,9 +1,13 @@
 {
-  "etapa": "rosario-fechas-fichas-30oct",
+  "etapa": "comparacion-diaria-ocr-selectivo-cobertura-30oct",
   "sondear": false,
-  "auditar": false,
+  "auditar": true,
   "descubrir": false,
   "reverificar_ids": [
-    "fuente-001"
-  ]
+    "fuente-040"
+  ],
+  "verificar_documentos": true,
+  "documento_muestra": "19/2026",
+  "tipo_muestra": "licitacion publica",
+  "ocr_paginas": 9
 }

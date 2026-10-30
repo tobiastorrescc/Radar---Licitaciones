@@ -84,6 +84,9 @@ def generar_informe(db,resumen,registros,fuentes,destino):
             enlace(r.get('enlace_condiciones_pago'),'Respaldo') if r.get('enlace_condiciones_pago') else 'No comprobado',
             enlace(r.get('enlace_pliego'),'Pliego') if r.get('enlace_pliego') else 'No identificado',escape(flags),
             'Observada' if r['observada_esta_corrida'] else 'No confirmada en esta corrida']
+        if len(r.get('variantes_historial',[]))>1:
+            detalle='<details><summary>'+escape(r.get('unificacion_estado','Variantes históricas'))+'</summary><pre>'+escape(json.dumps(r['variantes_historial'],ensure_ascii=False,indent=2))+'</pre></details>'
+            valores[1]+=detalle
         filas.append('<tr>'+''.join('<td>'+v+'</td>' for v in valores)+'</tr>')
     titulos=['Organismo / procedimiento','Objeto','Detección','Vigencia','Publicación','Apertura','Límite de presentación','Presupuesto','Presentación','Pago','Documento de pago','Pliego','Señales','Última consulta']
     html='<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Radar controlado</title><style>body{font:16px system-ui;margin:2rem;color:#172b4d}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccd;padding:.5rem;text-align:left;vertical-align:top}th{background:#edf3fa;position:sticky;top:0}input{font:inherit;padding:.6rem;width:min(90%,50rem)}td:nth-child(2){min-width:20rem;white-space:pre-wrap}a{color:#1254ad}</style>'

@@ -119,3 +119,38 @@ def leer(datos,tipo,url,ocr=False,progreso=None):
             if not textos:raise ValueError('ZIP sin documentos de contratación legibles')
             return '\n'.join(textos)
     raise ValueError('Formato de documento no admitido: '+tipo)
+
+
+def ocr_selectivo(datos,max_paginas=4):
+    """OCR por páginas y hash, con cupo explícito. Nunca cachea un parcial como completo."""
+    from hashlib import sha256
+    import json
+    import cache_documentos as cache
+    if not datos.startswith(b'%PDF-') or not 1<=max_paginas<=10:raise ValueError('OCR selectivo fuera de rango')
+    digest=sha256(datos).hexdigest();base=cache.raiz()/'ocr-paginas-v1'/digest;base.mkdir(parents=True,exist_ok=True)
+    native=subprocess.run(['pdftotext','-layout','-','-'],input=datos,capture_output=True,check=True,timeout=20).stdout.decode('utf-8').split('\f')
+    with tempfile.TemporaryDirectory() as d:
+        source=Path(d)/'documento.pdf';source.write_bytes(datos)
+        info=subprocess.run(['pdfinfo',str(source)],capture_output=True,text=True,check=True,timeout=5)
+        m=re.search(r'^Pages:\s*(\d+)',info.stdout,re.M)
+        if not m:raise ValueError('OCR sin cantidad de páginas comprobable')
+        total=int(m[1]);leidas={};necesarias=[];nativas=[]
+        for n in range(1,total+1):
+            t=native[n-1] if n<=len(native) else ''
+            if len(re.sub(r'[^A-Za-zÁÉÍÓÚáéíóúÑñ]','',t))>=20:leidas[n]=t;nativas.append(n);continue
+            p=base/(str(n)+'.json')
+            if p.exists():
+                r=json.loads(p.read_text())
+                if r.get('sha256')==digest and r.get('pagina')==n:leidas[n]=r['texto'];continue
+            necesarias.append(n)
+        # Portada y últimas páginas primero, sin perder el número real de página.
+        orden=necesarias[:1]+list(reversed(necesarias[1:]));procesadas=[]
+        for n in orden[:max_paginas]:
+            prefix=Path(d)/'pagina'
+            subprocess.run(['pdftoppm','-f',str(n),'-l',str(n),'-scale-to','1600','-singlefile','-png',str(source),str(prefix)],capture_output=True,check=True,timeout=12)
+            r=subprocess.run(['tesseract',str(prefix)+'.png','stdout','-l','spa+eng'],capture_output=True,text=True,check=True,timeout=15,env={**os.environ,'OMP_THREAD_LIMIT':'1'})
+            leidas[n]=r.stdout;procesadas.append(n)
+            cache.atomico(base/(str(n)+'.json'),{'sha256':digest,'pagina':n,'texto':r.stdout})
+        meta={'sha256':digest,'total_paginas':total,'paginas_leidas':sorted(leidas),'paginas_nativas':nativas,'paginas_ocr_nuevas':procesadas,'paginas_pendientes':[n for n in range(1,total+1) if n not in leidas],'completa':len(leidas)==total}
+        cache.atomico(base/'indice.json',meta)
+        return '\f'.join(leidas.get(n,'') for n in range(1,total+1)),meta

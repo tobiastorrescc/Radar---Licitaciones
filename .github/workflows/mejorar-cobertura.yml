@@ -49,6 +49,7 @@ jobs:
         run: |
           python tools/respaldo_piloto.py restaurar --salida work/cobertura --respaldo piloto_respaldo/diario
           python tools/respaldo_piloto.py antes --salida work/cobertura --respaldo piloto_respaldo/diario
+          python tools/auditar_evolucion.py antes --salida work/cobertura
       - name: Auditoría real aislada sin modificar el respaldo diario
         if: steps.plan.outputs.auditar == 'true'
         run: python -u tools/radar_controlado.py --salida work/cobertura --total 600 --documentos 180
@@ -56,6 +57,7 @@ jobs:
         if: steps.plan.outputs.auditar == 'true'
         run: |
           python tools/respaldo_piloto.py despues --salida work/cobertura --respaldo piloto_respaldo/diario
+          python tools/auditar_evolucion.py despues --salida work/cobertura
           python tools/respaldo_piloto.py exportar --salida work/cobertura --respaldo work/cobertura-respaldo
       - name: Reverificar sólo el lote explícito de conectores corregidos
         run: python -u tools/reverificar_lote.py

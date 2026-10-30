@@ -172,7 +172,9 @@ jobs:
           python tools/radar_controlado.py --salida work/controlado --comprobar-estado
           if [ -f work/controlado/prueba_doble.json ]; then mv work/controlado/prueba_doble.json work/controlado/importacion_prueba_doble.json; fi
       - name: Registrar evidencia antes de la consulta independiente
-        run: python tools/respaldo_piloto.py antes --salida work/controlado --respaldo "$RESPALDO"
+        run: |
+          python tools/respaldo_piloto.py antes --salida work/controlado --respaldo "$RESPALDO"
+          python tools/auditar_evolucion.py antes --salida work/controlado
       - name: Dos ejecuciones reales consecutivas en estado nuevo y aislado
         if: inputs.modo == 'doble'
         timeout-minutes: 28
@@ -193,6 +195,9 @@ jobs:
         if: always()
         id: continuidad
         run: python tools/respaldo_piloto.py despues --salida work/controlado --respaldo "$RESPALDO"
+      - name: Comparar novedades, recuperaciones, cambios y cobertura contra la base restaurada
+        if: always()
+        run: python tools/auditar_evolucion.py despues --salida work/controlado
       - name: Resumen para consulta en Actions
         if: always()
         run: |
@@ -232,6 +237,9 @@ jobs:
           from tools.preparar_entrega import preparar
           raiz=Path('work/controlado');meta=json.loads((raiz/'ultima_ejecucion.json').read_text())
           preparar(raiz/meta['directorio'],'piloto_reportes/ultimo')
+          import shutil
+          for nombre in ('auditoria_diaria.json','auditoria_diaria.md'):
+              shutil.copy2(raiz/nombre,Path('piloto_reportes/ultimo')/nombre)
           PYCODE
       - name: Persistir sólo el respaldo del piloto en su rama
         if: always() && steps.respaldo.outcome == 'success' && steps.continuidad.outcome == 'success' && inputs.modo == 'controlado'
