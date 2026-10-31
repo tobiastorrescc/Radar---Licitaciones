@@ -35,6 +35,13 @@ class BarridoDescubrimiento(unittest.TestCase):
         self.assertEqual(r['fecha_publicacion'],'2026-10-02')
         self.assertEqual(r['vigencia'],'ABIERTA')
 
+    def test_listados_antes_de_fichas_y_luego_orden_del_indice(self):
+        calls=[];base='https://oficial.gob.ar/'
+        paginas={base:'<main><article><h2><a href="/z-reciente/">Solicitud de cotización 272/2026 provisión de heladera</a></h2></article><a href="/page/2/" rel="next">Siguiente</a></main>',base+'page/2/':'<main><article><h2><a href="/a-anterior/">Solicitud de cotización 200/2026 provisión de muebles</a></h2></article></main>',base+'z-reciente/':'<main>Solicitud de cotización 272/2026 provisión de heladera</main>',base+'a-anterior/':'<main>Solicitud de cotización 200/2026 provisión de muebles</main>'}
+        def fetch(u):calls.append(u);return paginas[u].encode(),'text/html',u
+        conectores.explorar(base,{'solo_descubrimiento':True,'enriquecer_fichas':True,'priorizar_listados':True,'priorizar_fichas_recientes':True},fetch=fetch)
+        self.assertEqual(calls[:4],[base,base+'page/2/',base+'z-reciente/',base+'a-anterior/'])
+
     def test_sigue_boletines_oficiales_plural(self):
         calls=[]
         def fetch(url):

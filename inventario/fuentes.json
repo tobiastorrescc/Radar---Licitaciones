@@ -706,7 +706,7 @@
     "capturar_respuestas": true,
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
-    "ocr": true,
+    "ocr": false,
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
@@ -715,7 +715,16 @@
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+    },
+    "adaptador": "entre-rios-api",
+    "urls_inicio": [
+      "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones"
+    ],
+    "organismos_alias": {
+      "PODER JUDICIAL": "Poder Judicial de Entre Ríos",
+      "DIR. PCIAL. DE VIALIDAD - MIN. DE PLANEAMIENTO E INFRAESTRUCTURA - PODER EJECUTIVO": "Vialidad Entre Ríos"
+    },
+    "alcance_publicaciones": "Listado público de próximas aperturas del portal ER. Archivo, UEP, otras modalidades y fichas documentales pendientes; no representa toda la provincia."
   },
   {
     "id": "fuente-024",
@@ -797,7 +806,8 @@
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
     },
     "enriquecer_fichas": true,
-    "priorizar_listados": true
+    "priorizar_listados": true,
+    "priorizar_fichas_recientes": true
   },
   {
     "id": "fuente-027",

@@ -9,7 +9,7 @@ from tools.radar_controlado import ejecutar_corrida,huellas_produccion
 from tools.respaldo_piloto import restaurar
 
 def comparar(antes,despues,catalogo):
-    previos={o.identidad(r) for r in catalogo};urls={(r.get('url'),o.procedimiento_canonico(r) or o.norm(r.get('titulo'))) for r in catalogo}
+    previos={o.identidad(r) for r in catalogo}|set(inc.cargar_indice_auditorias());urls={(r.get('url'),o.procedimiento_canonico(r) or o.norm(r.get('titulo'))) for r in catalogo}
     anteriores={o.identidad(r) for r in antes['registros']}
     salida=[];publicaciones={}
     for r in despues['registros']:

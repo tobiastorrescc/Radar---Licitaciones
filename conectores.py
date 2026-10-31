@@ -287,7 +287,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
         r={'oportunidades':list(items.values()),'errores':list(errors),'limites':list(limits),
            'paginas_visitadas':len(seen),'paginas_correctas':correctas,'documentos_leidos':documentos_leidos,
            'cobertura_completa':False,'fase':fase,'url_actual':actual,'finalizado':finalizado,
-           'alcance':'Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto',
+           'alcance':config.get('alcance_publicaciones','Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto'),
            'intentos_http':list(intentos_http),'documentos_pendientes':list(documento_pendiente.values()),'evidencias_listado_vacio':list(vacios)}
         if progreso:progreso(r)
         return r
@@ -357,6 +357,13 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             datos,tipo,final=fetch(url,datos_post=post) if post is not None else fetch(url)
             fase='EXTRACCION';snapshot(fase,url)
             if _host(final) not in hosts:raise ValueError('Redirección fuera de dominios oficiales declarados')
+            if config.get('adaptador')=='entre-rios-api':
+                if 'json' not in tipo.lower():raise ValueError('ER devolvió HTML en lugar del listado JSON público')
+                from extractores_lotes import extraer_entre_rios_api
+                registros=extraer_entre_rios_api(datos,final,config)
+                for r in registros:agregar(r)
+                if not registros:vacios.append({'url':url,'texto':'API pública ER devuelve success=true y data=[]; sólo alcance de este listado'})
+                correctas+=1;snapshot('PAGINA_FINALIZADA',url);continue
             if config.get('adaptador')=='chajari-api' and 'json' in tipo.lower():
                 from extractores_lotes import extraer_chajari
                 registros,cantidad=extraer_chajari(datos,final)
@@ -476,6 +483,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 # Un documento del índice de boletines puede contener llamados sin título HTML.
                 if not registros and config.get('indice_documentos') and path.lower().endswith(extractores.ADJUNTOS):
                     pending.append((destino,'DOCUMENTO',None))
+            posiciones={k:i for i,k in enumerate(items)}
             def orden_pendiente(entrada):
                 u,c,ref=entrada
                 item=items.get(ref,{}) if isinstance(ref,str) else {}
@@ -486,7 +494,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     anios=re.findall(r'(?<!\d)20\d{2}(?!\d)',urlparse(u).path+'?'+urlparse(u).query)
                 # Presupuesto de lectura: documentos recientes primero; no se descarta el archivo.
                 if config.get('priorizar_listados'):
-                    return (0 if c in ('LISTADO','DATATABLES') else 1,-int(anios[-1]) if anios else 0,item.get('fecha_apertura') or '9999',u)
+                    return (0 if c in ('LISTADO','DATATABLES') else 1,-int(anios[-1]) if anios else 0,posiciones.get(ref,10**9) if config.get('priorizar_fichas_recientes') and isinstance(ref,str) else 10**9,item.get('fecha_apertura') or '9999',u)
                 return (0 if c=='DETALLE' and item.get('vigencia')=='ABIERTA' else (1 if c=='DETALLE' else 2),-int(anios[-1]) if anios else 0,item.get('fecha_apertura') or '9999',u)
             pending=deque(sorted(pending,key=orden_pendiente))
             snapshot('PAGINA_FINALIZADA',url)

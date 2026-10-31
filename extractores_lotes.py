@@ -396,3 +396,31 @@ def carmen_areco(raiz,url):
         apertura=re.search(r'apertura\s+(\d{1,2}/\d{1,2}/20\d{2})',norm(n.attrs.get('data-cda-period','')))
         rs.append({'titulo':titulo,'objeto':titulo,'numero_procedimiento':numero,'tipo_procedimiento':p['tipo'],'procedimiento':p['tipo']+' '+numero,'url':doc,'evidencia_url':url,'documentos':[{'url':doc,'titulo':titulo}],'fecha_apertura_texto':apertura[1] if apertura else None,'detalle_completo':True,'registro_estructurado':True,'situacion_publicada':situacion(n.text),'evento_publicado':None})
     return rs
+
+
+def extraer_entre_rios_api(datos,url,config=None):
+    """Listado público usado por el portal ER; fecha de CMS no equivale a publicación."""
+    import json
+    from extractores import DOM,procesos,norm
+    config=config or {};payload=json.loads(datos)
+    if payload.get('success') is not True or payload.get('code')!=200 or not isinstance(payload.get('data'),list):
+        raise ValueError('Respuesta de contrataciones ER incompleta o no reconocida')
+    salida=[]
+    for item in payload['data']:
+        if not isinstance(item,dict) or not all(item.get(k) for k in ('id','titulo','organismo')):
+            raise ValueError('Registro ER sin identidad u organismo; no se declara listado vacío')
+        titulo=DOM(str(item['titulo'])).root.text;objeto=DOM(str(item.get('objeto') or '')).root.text
+        ps=procesos(titulo);p=ps[0] if len(ps)==1 else {}
+        detalle=procesos(objeto)
+        # La categoría genérica del portal no debe duplicar los cotejos que
+        # el propio objeto identifica expresamente con el mismo número.
+        if len(detalle)==1 and detalle[0]['numero']==p.get('numero') and norm(objeto).startswith(detalle[0]['tipo']):p=detalle[0]
+        organismo=config.get('organismos_alias',{}).get(item['organismo'],item['organismo'])
+        salida.append({'titulo':titulo+' '+objeto,'objeto':objeto or None,'url':url,'evidencia_url':url,
+            'id_origen':str(item['id']),'procedimiento':p.get('procedimiento'),'numero_procedimiento':p.get('numero'),
+            'tipo_procedimiento':p.get('tipo'),'organismo':organismo,'localidad':None,'provincia':'Entre Ríos',
+            'fecha_apertura_texto':item.get('fecha'),'fecha_publicacion_texto':None,
+            'fecha_registro_portal':item.get('created_at'),'fecha_modificacion_portal':item.get('updated_at'),
+            'situacion_portal':item.get('estado_licitacion'),'documentos':[],'detalle_completo':bool(objeto),
+            'registro_estructurado':True,'rango_evidencia':3,'campos_oficiales':item})
+    return salida

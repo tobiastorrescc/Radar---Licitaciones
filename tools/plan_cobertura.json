@@ -1,7 +1,7 @@
 {
-  "etapa": "endpoints-publicos-entre-rios-derivados-de-javascript-oficial",
-  "barrido": false,
-  "sondear": true,
+  "etapa": "verificar-recuperacion-api-er-y-discovery-first-pjer",
+  "barrido": true,
+  "sondear": false,
   "auditar": false,
   "descubrir": false,
   "reverificar_ids": [],
@@ -15,8 +15,8 @@
     "https://portal.entrerios.gov.ar/static/js/5326.824a7ea1.chunk.js"
   ],
   "barrido_ids": [
+    "fuente-023",
     "fuente-026",
-    "fuente-011",
     "unr-obras"
   ]
 }

@@ -390,10 +390,36 @@
     "capturar_respuestas": true,
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
-    "ocr": true,
+    "ocr": false,
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "id": "fuente-023",
+    "url": "https://portal.entrerios.gov.ar/haciendayfinanzas/contrataciones/",
+    "estado_verificacion": "PENDIENTE",
+    "incorporada": true,
+    "evidencia_descubrimiento": {
+      "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+      "url": "https://portal.entrerios.gov.ar/haciendayfinanzas/contrataciones/",
+      "fecha": "2026-10-25",
+      "observacion": "Página oficial exige JavaScript; no hay publicaciones en HTML"
+    },
+    "verificada_funcionando": false,
+    "ultima_verificacion": "2026-10-29T17:49:00.954664-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    },
+    "adaptador": "entre-rios-api",
+    "urls_inicio": [
+      "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones"
+    ],
+    "organismos_alias": {
+      "PODER JUDICIAL": "Poder Judicial de Entre Ríos",
+      "DIR. PCIAL. DE VIALIDAD - MIN. DE PLANEAMIENTO E INFRAESTRUCTURA - PODER EJECUTIVO": "Vialidad Entre Ríos"
+    },
+    "alcance_publicaciones": "Listado público de próximas aperturas del portal ER. Archivo, UEP, otras modalidades y fichas documentales pendientes; no representa toda la provincia."
   },
   "https://www.entrerios.gov.ar/minplan/licitaciones": {
     "organismo": "Ministerio de Planeamiento e Infraestructura",
@@ -441,7 +467,8 @@
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
     },
     "enriquecer_fichas": true,
-    "priorizar_listados": true
+    "priorizar_listados": true,
+    "priorizar_fichas_recientes": true
   },
   "https://www.ater.gob.ar/ater2/licitaciones.asp": {
     "organismo": "ATER",
