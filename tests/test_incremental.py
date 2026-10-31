@@ -193,3 +193,16 @@ class IncrementalTests(unittest.TestCase):
         self.assertEqual(r['novedades'],0)
 
 if __name__=='__main__':unittest.main()
+
+
+class AuditoriasPreviasTests(unittest.TestCase):
+    setUp=IncrementalTests.setUp
+    fila=IncrementalTests.fila
+    informe=IncrementalTests.informe
+    def test_conocida_en_otra_auditoria_no_se_alerta_como_inedita(self):
+        inc.registrar(self.db,[self.fila()],self.informe())
+        r=self.fila('88/2026',fecha_publicacion='2026-10-27')
+        with patch('incremental.cargar_indice_auditorias',return_value={o.identidad(r):{'github_run_id':40984204463,'fecha':'2026-10-26T10:00:00-03:00','url':r['url']}}):
+            res=inc.registrar(self.db,[r],self.informe('otra',fecha='2026-10-27T12:00:00-03:00'))
+        self.assertEqual(res['clasificacion'].get('RECUPERACION_LINEA_BASE'),1)
+        self.assertFalse(res['clasificacion'].get('NUEVO_CONFIRMADO',0))

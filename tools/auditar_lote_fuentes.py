@@ -34,6 +34,7 @@ def generar(root):
     db=inc.abrir(replay)
     try:res=inc.registrar(db,registros,{**informe,'ejecucion_id':informe['ejecucion_id']+'-replay-sin-red'})
     finally:db.close()
+    replay.unlink() # Copia de prueba desechable; el resultado queda auditado en JSON.
     correcta=res['novedades']==0 and not any(res['clasificacion'].get(k,0) for k in ('MODIFICADO','DATOS_COMPLETADOS','NUEVO_CONFIRMADO','NUEVA_DETECCION_FECHA_DESCONOCIDA','NUEVA_DETECCION_MISMO_DIA'))
     salida={'fecha':meta['fecha'],'fuentes':estados,'replay':res,'deduplicacion_correcta':correcta,'historial_intacto':antes==sha256(dbpath.read_bytes()).hexdigest(),'registros_historial':len(rs),'ventanas':{k:len(v) for k,v in ventanas.items()},'criterio_72h':'Con fecha sin hora se incluye el día inicial completo para no perder avisos; no se inventa hora de publicación.','recorte_resultados':False}
     (dir/'estados_revision.json').write_text(json.dumps(salida,ensure_ascii=False,indent=2)+'\n');(dir/'ventanas_revision.json').write_text(json.dumps(ventanas,ensure_ascii=False,indent=2)+'\n')

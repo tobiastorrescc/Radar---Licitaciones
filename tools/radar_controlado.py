@@ -124,6 +124,13 @@ def _ejecutar_corrida(raiz,*,total=600,documentos=120,informe_previo=None):
     db=inc.abrir(raiz/'estado.sqlite3')
     try:
         resumen=inc.registrar(db,registros,informe)
+        from tools.auditar_lote_fuentes import estado_revision
+        eventos=inc.eventos(db,resumen['corrida'],resumen['fecha'])
+        for obs in fuentes:
+            filas=[r for r in registros if obs['url'] in inc.fuentes_de(r)]
+            eventos_fuente=[r for r in eventos if obs['url'] in inc.fuentes_de(r)]
+            obs.update(estado_revision(obs,filas,eventos_fuente))
+        guardar(carpeta/'auditoria_fuentes.json',{'fuentes':fuentes})
         resumen.update(fuentes_configuradas=informe['resumen']['configuradas'],fuentes_consultadas=informe['resumen']['consultadas'],fuentes_finalizadas=informe['resumen']['finalizadas'])
         resumen=generar_informe(db,resumen,registros,fuentes,carpeta)
         guardar(raiz/'ultima_ejecucion.json',{'directorio':str(carpeta.relative_to(raiz)),**resumen})

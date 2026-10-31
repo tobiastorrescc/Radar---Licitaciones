@@ -30,6 +30,9 @@ jobs:
           if run and not run.isdigit():raise ValueError('Run inválido')
           print('reprocesar_run='+run)
           print('archivar_auditoria='+str(d.get('archivar_auditoria',False)).lower())
+          captura=str(d.get('captura_run',''))
+          if captura and not captura.isdigit():raise ValueError('Run de captura inválido')
+          print('captura_run='+captura)
           pagos=str(d.get('pagos_run',''))
           if pagos and not pagos.isdigit():raise ValueError('Run de pagos inválido')
           print('pagos_run='+pagos)
@@ -128,6 +131,25 @@ jobs:
         if: steps.plan.outputs.revisar_cobro == 'true'
         timeout-minutes: 12
         run: python -u tools/revisar_cobro_rapido.py
+      - name: Validar origen de la captura para contraste sin red
+        if: steps.plan.outputs.captura_run != ''
+        uses: actions/github-script@v7
+        env:
+          CAPTURA_RUN: ${{ steps.plan.outputs.captura_run }}
+        with:
+          script: |
+            const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:Number(process.env.CAPTURA_RUN)});
+            if(r.status!=='completed'||!['success','failure'].includes(r.conclusion)||r.head_branch!=='mejora/radar-auditable'||r.head_repository.full_name!==`${context.repo.owner}/${context.repo.repo}`||r.path!=='.github/workflows/mejorar-cobertura.yml')throw Error('Captura de origen inválida');
+      - uses: actions/download-artifact@v4
+        if: steps.plan.outputs.captura_run != ''
+        with:
+          name: cobertura-${{ steps.plan.outputs.captura_run }}
+          path: work/captura-origen
+          run-id: ${{ steps.plan.outputs.captura_run }}
+          github-token: ${{ github.token }}
+      - name: Contrastar todo el historial y revisar informe sin nuevas consultas
+        if: steps.plan.outputs.captura_run != ''
+        run: python tools/reprocesar_lote_capturado.py
       - name: Revisar candidatas sin publicar automáticamente cambios de inventario
         if: steps.plan.outputs.descubrir == 'true'
         run: python -u tools/descubrir_fuentes.py --salida work/descubrimiento --total ${{ steps.plan.outputs.desc_total }} --busquedas ${{ steps.plan.outputs.desc_busquedas }} --candidatos ${{ steps.plan.outputs.desc_candidatos }} --revisar-pendientes --priorizar-plan
@@ -140,6 +162,8 @@ jobs:
         with:
           name: cobertura-${{ github.run_id }}
           path: |
+            work/cierre-auditable/resultado.json
+            work/cierre-auditable/ejecuciones/
             work/cobro-rapido/
             work/identidades/
             work/pagos-abiertas/

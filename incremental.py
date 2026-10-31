@@ -143,6 +143,15 @@ def tipo_nuevo(r,previas,fecha):
     if publicada<corte:return 'HISTORICA_RECUPERADA'
     return 'FECHA_PUBLICACION_PENDIENTE'
 
+def cargar_indice_auditorias():
+    """Índice derivado de capturas reales; complementa, nunca sustituye SQLite."""
+    path=Path(__file__).parent/'inventario/historial_auditorias.json.gz.b64'
+    if not path.exists():return {}
+    import gzip,base64
+    datos=json.loads(gzip.decompress(base64.b64decode(path.read_text(),validate=False)))
+    if datos.get('schema_version')!=1 or not isinstance(datos.get('identidades'),dict):raise ValueError('Índice de auditorías no válido')
+    return datos['identidades']
+
 def registrar(db,registros,informe):
     corrida=informe['ejecucion_id'];fecha=informe['actualizado']
     repetida=db.execute('SELECT resumen FROM ejecuciones WHERE id=?',(corrida,)).fetchone()
@@ -154,6 +163,7 @@ def registrar(db,registros,informe):
     identidades_anteriores={}
     for antigua,dato in db.execute('SELECT id,dato FROM procedimientos ORDER BY primera,id'):
         identidades_anteriores.setdefault(o.identidad(json.loads(dato)),antigua)
+    referencias=cargar_indice_auditorias()
     dedup=o.deduplicar(registros,fecha);tipos=Counter();candidatos=0
     with db:
         for r in dedup:
@@ -170,7 +180,10 @@ def registrar(db,registros,informe):
             identidades_anteriores[identidad_actual]=clave
             anterior=json.loads(viejo[0]) if viejo else None
             dato=consolidar(anterior,r);firma=huella(dato);cambios=[]
-            if not viejo:tipo='LINEA_BASE' if primera else tipo_nuevo(r,previas,fecha)
+            if not viejo:
+                referencia=referencias.get(identidad_actual)
+                tipo='LINEA_BASE' if primera else 'RECUPERACION_LINEA_BASE' if referencia else tipo_nuevo(r,previas,fecha)
+                if referencia:dato['observacion_previa_documentada']=referencia
             elif firma!=viejo[1]:
                 a=contenido(anterior);b=contenido(dato)
                 cambios=[k for k in b if a.get(k)!=b[k]]
