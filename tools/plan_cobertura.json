@@ -1,13 +1,24 @@
 {
-  "etapa": "cierre-documental-y-fechas-primeras-detecciones",
-  "sondear": false,
+  "etapa": "diagnostico-epe-sanjose-victoria-2026-10-31",
+  "sondear": true,
+  "urls_sondeo": [
+    "https://www.epe.santafe.gov.ar/app2/aperturas",
+    "https://www.epe.santafe.gov.ar/",
+    "https://www.epe.santafe.gov.ar/app2/",
+    "https://epe.santafe.gov.ar/app2/aperturas",
+    "https://sanjose.gob.ar/concursos-licitaciones/",
+    "https://victoria.gob.ar/web-compras/Invitaciones-Compras/concurso-de-precios/",
+    "https://victoria.gob.ar/",
+    "https://victoria.gob.ar/es/"
+  ],
   "auditar": false,
   "descubrir": false,
-  "reverificar_ids": [],
+  "reverificar_ids": [
+    "fuente-003",
+    "fuente-031",
+    "fuente-032"
+  ],
   "revisar_identidades": false,
-  "revisar_cobro": true,
-  "archivar_auditoria": false,
-  "diagnostico_cobro": false,
-  "solo_documentos": true,
-  "ocr_cobro": 0
+  "revisar_cobro": false,
+  "archivar_auditoria": false
 }
