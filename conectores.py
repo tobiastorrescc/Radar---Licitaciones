@@ -307,7 +307,9 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
         referencia=referencia if isinstance(referencia,str) else None
         if config.get('adaptador') in ('boletin-sf','boletin-er'):
             from extractores_lotes import boletin_texto
-            for registro in boletin_texto(texto,url,config):
+            from barrido_institucional import boletin_entre_rios
+            registros=boletin_entre_rios(texto,url) if config.get('adaptador')=='boletin-er' else boletin_texto(texto,url,config)
+            for registro in registros:
                 registro['documentos']=[{'url':url,'titulo':'Boletín complementario'}]
                 registro['pago_evidencias']=pagos.extraer(registro['objeto'],url,hash_documento=hash_documento,metodo='SECCION_DOCUMENTO')
                 agregar(registro)
@@ -368,6 +370,10 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 registros,enlaces,cantidad=extraer_feed(datos,final,config)
                 for r in registros:agregar(r)
                 for u in enlaces:pending.append((u,'LISTADO',{}))
+                correctas+=1;snapshot('PAGINA_FINALIZADA',url);continue
+            if config.get('adaptador')=='boletin-er' and 'json' in tipo.lower():
+                from barrido_institucional import ediciones_entre_rios
+                for u,fecha_edicion in ediciones_entre_rios(datos):pending.append((u,'DOCUMENTO',{'fecha_edicion':fecha_edicion}))
                 correctas+=1;snapshot('PAGINA_FINALIZADA',url);continue
             if config.get('adaptador')=='entre-rios-api':
                 if 'json' not in tipo.lower():raise ValueError('ER devolvió HTML en lugar del listado JSON público')
@@ -491,6 +497,9 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             if config.get('barrido_institucional') and not config.get('ignorar_suscripciones_feed'):
                 from barrido_institucional import feeds_publicados
                 for u in feeds_publicados(dom,final):pending.append((u,'LISTADO',{}))
+            if config.get('buscador_institucional'):
+                from barrido_institucional import busquedas_publicadas
+                for u in busquedas_publicadas(dom,final):pending.append((u,'LISTADO',{}))
             for l in links:
                 destino=l['url'];et=normalizar(l['texto']);path=urlparse(destino).path
                 if config.get('ignorar_suscripciones_feed') and path.rstrip('/').endswith('/feed'):continue
@@ -498,7 +507,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 raices={urlparse(u).path.rstrip('/') for u in config.get('urls_inicio',[fuente])}
                 raices.update((urlparse(fuente).path.rstrip('/'),urlparse(url).path.rstrip('/')))
                 pagina=clase=='LISTADO' and (('next' in l['rel'].split() or et in ('siguiente','siguiente »','next','»','›') or
-                          bool(re.search(r'/page/\d+|[?&](?:page|pagina|start)=\d+',destino))) and any(path.startswith(raiz) for raiz in raices))
+                          bool(re.search(r'/page/\d+|[?&](?:page|pagina|paged|start)=\d+',destino))) and any(path.startswith(raiz) for raiz in raices))
                 navegar=any(re.search(patron,destino) for patron in config.get('seguir_patrones',[]))
                 if config.get('descubrir_contrataciones') and clase=='LISTADO' and len(et)<120 and not extractores.procesos(et):
                     navegar=navegar or bool(re.search(r'licitacion(?:es)?|concursos? de precios|compras|contrataciones|bolet(?:in|ines) oficial(?:es)?',et))

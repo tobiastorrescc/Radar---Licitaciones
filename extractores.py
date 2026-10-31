@@ -389,7 +389,7 @@ def extraer(html,url,config=None):
             if 'informacion para los proveedores' in norm(r.get('objeto')) or 'alta proveedores' in norm(r.get('objeto')):
                 r['objeto']=None;r['detalle_completo']=False;r['titulo']=r['procedimiento']
                 r['documentos']=[{'url':l['url'],'titulo':l['texto']} for l in raiz.enlaces(url) if re.match(r'decreto\s+20\d{2}',norm(l['texto'])) and urlsplit(l['url']).path.lower().endswith(ADJUNTOS)]
-    enlaces=(dom.root if config.get('descubrir_menu') else raiz).enlaces(url)
+    enlaces=(dom.root if config.get('descubrir_menu') or config.get('barrido_institucional') else raiz).enlaces(url)
     if config.get('adaptador')=='rosario':
         for l in enlaces:
             sec=next((p for p in l['node'].padres() if p.clase('contrataciones-resumen__seccion')),None)

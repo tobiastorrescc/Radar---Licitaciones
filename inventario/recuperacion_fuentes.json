@@ -60,7 +60,12 @@
       "lectura_adjuntos": "necesarios",
       "conector": "publicaciones",
       "admitir_avisos_sin_numero": true,
-      "ocr": false
+      "ocr": false,
+      "urls_inicio": [
+        "https://oroverde.gob.ar/portal/",
+        "https://oroverde.gob.ar/portal/secciones/licitaciones/"
+      ],
+      "buscador_institucional": true
     },
     {
       "id": "candidato-ramallo",
@@ -98,7 +103,12 @@
       "lectura_adjuntos": "necesarios",
       "conector": "publicaciones",
       "admitir_avisos_sin_numero": true,
-      "ocr": false
+      "ocr": false,
+      "urls_inicio": [
+        "https://www.segui.gob.ar/sitio/",
+        "https://www.segui.gob.ar/sitio/?cat=26"
+      ],
+      "buscador_institucional": true
     },
     {
       "id": "candidato-esperanza",
@@ -112,7 +122,24 @@
       "lectura_adjuntos": "necesarios",
       "conector": "publicaciones",
       "admitir_avisos_sin_numero": true,
-      "ocr": false
+      "ocr": false,
+      "buscador_institucional": true
+    },
+    {
+      "id": "fuente-061",
+      "adaptador": "boletin-er",
+      "urls_inicio": [
+        "https://testing54.entrerios.gov.ar/boletin/factura/inicio/get_buscador"
+      ],
+      "dominios_documentos": [
+        "testing54.entrerios.gov.ar",
+        "www.entrerios.gov.ar",
+        "portal.entrerios.gov.ar"
+      ],
+      "documentos_para_descubrimiento": true,
+      "organismos_multiples": true,
+      "conexion_timeout": 5,
+      "lectura_timeout": 10
     }
   ],
   "advertencia": "Candidatos de ensayo: no quedan incorporados ni validados por figurar en este manifiesto."

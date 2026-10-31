@@ -236,6 +236,8 @@ def procedimiento_canonico(r):
         original=m.group().upper();sufijo=original.split('-',3)[3] if len(original.split('-',3))>3 else ''
         return tipos[m[1].upper()]+' '+m[1].upper()+'-'+m[2]+'-'+str(int(m[3]))+('-'+sufijo if sufijo else '')
     numero=str(r.get('numero_procedimiento') or r.get('procedimiento') or '')
+    if 'enersa' in norm(r.get('organismo')) and r.get('registro_estructurado') and re.fullmatch(r'20\d{2}-\d{3,6}',numero):
+        return norm(r.get('tipo_procedimiento'))+' ENERSA-'+numero
     originales=codigos(numero)
     if originales and len(originales[0].group().split('-'))>3:return clave(originales[0])
     corto=re.fullmatch(r'(LPU|LPR|CPRV|CD)\s+n[º°o.]*\s*(\d+)',numero,re.I)

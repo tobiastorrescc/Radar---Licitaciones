@@ -35,8 +35,8 @@ def worker(entrada,salida):
         datos,tipo,final=conectores.descargar(u,conexion_timeout=conexion,lectura_timeout=lectura,datos_post=f.get('datos_post','').encode() if 'datos_post' in f else None,headers_extra={'Content-Type':f.get('content_type','application/json')} if 'datos_post' in f else None)
         archivo.write_bytes(datos)
     if conectores._host(final)!=conectores._host(u):raise ValueError('Redirección a otro dominio: requiere contraste')
-    dom=extractores.DOM(conectores.decodificar_html(datos,tipo))
-    enlaces=[{k:l[k] for k in ('url','texto')} for l in dom.root.enlaces(final)
+    dom=extractores.DOM(conectores.decodificar_html(datos,tipo)) if 'html' in tipo.lower() and not datos.startswith(b'%PDF-') else None
+    enlaces=[] if dom is None else [{k:l[k] for k in ('url','texto')} for l in dom.root.enlaces(final)
         if re.search(r'licit|compra|contrata|cotiza|concurso|boletin|proveedor',l['url']+' '+l['texto'],re.I)]
     guardar(salida,{'estado':'OPERATIVA','finalizado':True,'paginas_correctas':1,'oportunidades':[],
         'url':u,'final':final,'transporte':f.get('transporte','urllib'),'metodo':'POST' if 'datos_post' in f else 'GET','parametros':f.get('datos_post'),'tipo':tipo,'sha256':sha256(datos).hexdigest(),'archivo':str(root/(nombre+'.bin')),
