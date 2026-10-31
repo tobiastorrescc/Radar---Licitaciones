@@ -1,21 +1,11 @@
 {
-  "etapa": "extraccion-real-rutas-delegadas-feeds-formularios-y-municipios",
-  "barrido": true,
-  "barrido_manifest": "inventario/recuperacion_fuentes.json",
-  "barrido_por_fuente": 85,
+  "etapa": "localizar-boletin-er-y-sus-documentos-publicos",
   "sondear": true,
   "urls_sondeo": [
-    "https://lasparejas.gov.ar/index_news",
-    "https://www.segui.gob.ar/sitio/?cat=26",
-    "https://esperanza.gob.ar/"
+    "https://testing54.entrerios.gov.ar/boletin/factura/inicio/get_buscador",
+    "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Mayo/18-05-26.pdf"
   ],
-  "peticiones": [
-    {
-      "url": "https://epe.santafe.gov.ar/app2/aperturas",
-      "transporte": "curl",
-      "tls_max": "1.2"
-    }
-  ],
+  "barrido": false,
   "auditar": false,
   "descubrir": false,
   "reverificar_ids": [],
