@@ -42,6 +42,24 @@ class BarridoDescubrimiento(unittest.TestCase):
         conectores.explorar(base,{'solo_descubrimiento':True,'enriquecer_fichas':True,'priorizar_listados':True,'priorizar_fichas_recientes':True},fetch=fetch)
         self.assertEqual(calls[:4],[base,base+'page/2/',base+'z-reciente/',base+'a-anterior/'])
 
+    def test_entrega_no_confunde_recuperada_abierta_con_vencida(self):
+        import json,tempfile
+        from pathlib import Path
+        from tools.preparar_entrega import preparar
+        import oportunidades as o
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);datos=[]
+            for n,estado in enumerate(('ABIERTA','VENCIDA','DESCONOCIDA')):
+                r=o.normalizar({'titulo':f'Licitación Pública {n+1}/2026','numero_procedimiento':f'{n+1}/2026','tipo_procedimiento':'licitacion publica','objeto':'Provisión de insumos','url':'https://oficial.gob.ar/','registro_estructurado':True},'2026-10-31')
+                datos.append({**r,'vigencia':estado,'clasificacion_novedad':'RECUPERACION_LINEA_BASE'})
+            (root/'eventos.json').write_text(json.dumps({'fecha':'2026-10-31','oportunidades':datos}))
+            (root/'resumen.json').write_text(json.dumps({'estado':'COMPLETA'}))
+            r=preparar(root)
+            self.assertEqual(r['total_informadas'],3)
+            self.assertEqual(r['totales']['recuperadas_vigentes'],1)
+            self.assertEqual(r['totales']['recuperaciones_historicas'],1)
+            self.assertEqual(r['totales']['recuperaciones_vigencia_pendiente'],1)
+
     def test_sigue_boletines_oficiales_plural(self):
         calls=[]
         def fetch(url):

@@ -17,11 +17,14 @@ import shutil
 def preparar(directorio,salida=None):
     root=Path(directorio);destino=Path(salida) if salida else root/'entrega';destino.mkdir(parents=True,exist_ok=True)
     eventos=json.loads((root/'eventos.json').read_text());fecha=eventos['fecha'];todos=eventos['oportunidades']
+    recuperadas={'HISTORICA_RECUPERADA','HISTORICA_ANIO_PROCEDIMIENTO','RECUPERACION_LINEA_BASE'}
     grupos={
+        'recuperadas_vigentes':[r for r in todos if r.get('clasificacion_novedad') in recuperadas and r.get('vigencia')=='ABIERTA'],
         'nuevas_confirmadas':[r for r in todos if r.get('clasificacion_novedad')=='NUEVO_CONFIRMADO'],
         'detecciones_sin_fecha_o_mismo_dia':[r for r in todos if r.get('clasificacion_novedad') in ('NUEVA_DETECCION_FECHA_DESCONOCIDA','NUEVA_DETECCION_MISMO_DIA')],
         'cambios':[r for r in todos if r.get('clasificacion_novedad') in ('MODIFICADO','DATOS_COMPLETADOS')],
-        'recuperaciones_historicas':[r for r in todos if r.get('clasificacion_novedad') in ('HISTORICA_RECUPERADA','HISTORICA_ANIO_PROCEDIMIENTO','RECUPERACION_LINEA_BASE')],
+        'recuperaciones_historicas':[r for r in todos if r.get('clasificacion_novedad') in recuperadas and r.get('vigencia')=='VENCIDA'],
+        'recuperaciones_vigencia_pendiente':[r for r in todos if r.get('clasificacion_novedad') in recuperadas and r.get('vigencia') not in ('ABIERTA','VENCIDA')],
     }
     reportadas=sorted([r for datos in grupos.values() for r in datos],key=o.prioridad)
     resumen=json.loads((root/'resumen.json').read_text());run=__import__('os').environ.get('GITHUB_RUN_ID')
@@ -33,7 +36,7 @@ def preparar(directorio,salida=None):
           'aviso':'No hay novedades confirmadas no significa ausencia de licitaciones si hay incidencias. Detecciones sin fecha no son publicaciones nuevas comprobadas.'}
     (destino/'resumen.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2)+'\n')
     (destino/'oportunidades.json').write_text(json.dumps({'resumen':meta,'grupos':grupos},ensure_ascii=False,indent=2)+'\n')
-    for nombre in ('fichas.json','cola_documental.json','observaciones_previas_sin_revalidar.json','fichas_abiertas.md','oportunidades_abiertas.md','oportunidades_proximas_a_vencer.md'):
+    for nombre in ('cola_enriquecimiento.json','fichas.json','cola_documental.json','observaciones_previas_sin_revalidar.json','fichas_abiertas.md','oportunidades_abiertas.md','oportunidades_proximas_a_vencer.md'):
         if (root/nombre).exists():shutil.copy2(root/nombre,destino/nombre)
     campos=['etiqueta_novedad','primera_deteccion','ultima_deteccion','detalle_documental','organismo','numero_procedimiento','objeto','presupuesto','condiciones_pago','enlace_condiciones_pago','fecha_publicacion','fecha_apertura','fecha_limite_presentacion','vigencia','modalidad_presentacion','url','enlace_pliego','clasificacion_novedad']
     with (destino/'oportunidades.csv').open('w',encoding='utf-8-sig',newline='') as archivo:
@@ -43,11 +46,13 @@ def preparar(directorio,salida=None):
             # Apertura en planillas sin ejecutar fórmulas suministradas por terceros.
             fila={k:"'"+v if v.startswith(('=','+','-','@','\t','\r')) else v for k,v in fila.items()};w.writerow(fila)
     lineas=['# Informe diario del piloto', '',f'Fecha: {fecha}. Estado: **{resumen["estado"]}**.','',meta['aviso'],'',
-            f'Nuevas con publicación comprobada: {len(grupos["nuevas_confirmadas"])}. Detecciones de fecha incierta o mismo día: {len(grupos["detecciones_sin_fecha_o_mismo_dia"])}. Cambios: {len(grupos["cambios"])}. Recuperaciones: {len(grupos["recuperaciones_historicas"])}.','',
+            f'Nuevas con publicación comprobada: {len(grupos["nuevas_confirmadas"])}. Detecciones de fecha incierta o mismo día: {len(grupos["detecciones_sin_fecha_o_mismo_dia"])}. Cambios: {len(grupos["cambios"])}. Recuperaciones: {sum(len(grupos[k]) for k in ('recuperadas_vigentes','recuperaciones_historicas','recuperaciones_vigencia_pendiente'))}.','',
             '[CSV completo](oportunidades.csv) · [JSON completo](oportunidades.json). Sin límite de cantidad.']
     if enlace:lineas+=['',f'[Auditoría, abiertas, próximas a vencer y catálogo íntegro]({enlace}) (artefacto radar-controlado).']
     for nombre,datos in grupos.items():
         titulo='Primera detección, fecha pendiente o sin ventana horaria suficiente' if nombre=='detecciones_sin_fecha_o_mismo_dia' else 'Modificaciones, circulares y datos completados' if nombre=='cambios' else nombre.replace('_',' ').capitalize()
+        if nombre=='recuperadas_vigentes':titulo='Convocatorias recuperadas que siguen abiertas (no son publicaciones nuevas comprobadas del día)'
+        if nombre=='recuperaciones_vigencia_pendiente':titulo='Recuperaciones con vigencia pendiente de comprobar'
         lineas+=['','## '+titulo,'',o.reporte(datos,fecha)]
     previo=root/'observaciones_previas_sin_revalidar.json'
     if previo.exists():

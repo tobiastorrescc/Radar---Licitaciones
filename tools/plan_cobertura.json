@@ -1,5 +1,5 @@
 {
-  "etapa": "cierre-comparativo-de-cobertura-y-persistencia",
+  "etapa": "validar-entrega-vigentes-recuperadas-sin-nuevas-consultas",
   "barrido": false,
   "sondear": false,
   "auditar": false,

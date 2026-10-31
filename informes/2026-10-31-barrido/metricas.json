@@ -1,0 +1,57 @@
+{
+  "run_comparativo": 41212723753,
+  "fuentes_consultadas": 39,
+  "estados": {
+    "OPERATIVA": 15,
+    "PENDIENTE": 4,
+    "BLOQUEADA": 12,
+    "PARCIAL": 8
+  },
+  "localidades_revisadas": 20,
+  "localidades_con_publicaciones_extraidas": 16,
+  "auditoria_exhaustiva_20_finalizada": false,
+  "vigentes_observadas": 45,
+  "vigentes_ya_conocidas": 24,
+  "vigentes_nuevas_para_radar": 21,
+  "historicas_recuperadas_con_vencimiento": 26,
+  "detecciones_comparadas_vigencia_pendiente": 66,
+  "muestra_control": {
+    "publicaciones_abiertas": 33,
+    "origen": "32 filas de API pública ER y aviso UNR5/2026. Evidencia nativa41212482113; no representa todo el territorio.",
+    "antes_detectadas": 12,
+    "despues_detectadas": 33,
+    "porcentaje_antes": 36.36,
+    "porcentaje_despues": 100
+  },
+  "piloto": {
+    "produccion_intacta": true,
+    "respaldo_intacto": true,
+    "ocr_nuevo": 0,
+    "consultas_adicionales": 0
+  },
+  "primera": {
+    "observadas": 2001,
+    "candidatos_sin_confirmar": 16,
+    "clasificacion": {
+      "SIN_CAMBIOS": 1665,
+      "MODIFICADO": 10,
+      "DATOS_COMPLETADOS": 181,
+      "HISTORICA_RECUPERADA": 5,
+      "NUEVA_DETECCION_FECHA_DESCONOCIDA": 36,
+      "HISTORICA_ANIO_PROCEDIMIENTO": 61,
+      "RECUPERACION_LINEA_BASE": 27
+    },
+    "total_historial": 4640,
+    "abiertas": 154,
+    "proximas_a_vencer": 99,
+    "no_observadas_en_corrida": 2636
+  },
+  "segunda": {
+    "novedades": 0,
+    "eventos_emitidos": 0,
+    "total_historial": 4640,
+    "clasificacion": {
+      "SIN_CAMBIOS": 1985
+    }
+  }
+}

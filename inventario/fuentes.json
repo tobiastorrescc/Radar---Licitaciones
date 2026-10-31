@@ -693,7 +693,7 @@
     "provincia": "Entre Ríos",
     "url": "https://portal.entrerios.gov.ar/haciendayfinanzas/contrataciones/",
     "tipo_portal": "javascript",
-    "estado_verificacion": "PENDIENTE",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -702,7 +702,7 @@
       "fecha": "2026-10-25",
       "observacion": "Página oficial exige JavaScript; no hay publicaciones en HTML"
     },
-    "verificada_funcionando": false,
+    "verificada_funcionando": true,
     "capturar_respuestas": true,
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
@@ -710,11 +710,11 @@
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
-    "ultima_verificacion": "2026-10-29T17:49:00.954664-03:00",
+    "ultima_verificacion": "2026-10-31T11:58:34.284201-03:00",
     "evidencia_verificacion": {
-      "github_run_id": 40952155721,
-      "publicaciones_detectadas": 0,
-      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      "github_run_id": 41212482113,
+      "publicaciones_detectadas": 32,
+      "criterio": "Extracción nativa de número, objeto y enlace oficial; no implica cobertura exhaustiva"
     },
     "adaptador": "entre-rios-api",
     "urls_inicio": [
@@ -2396,8 +2396,8 @@
     "tipo_portal": "html_paginado",
     "conector": "publicaciones",
     "incorporada": true,
-    "estado_verificacion": "PARCIAL",
-    "verificada_funcionando": false,
+    "estado_verificacion": "OPERATIVA",
+    "verificada_funcionando": true,
     "enriquecer_fichas": true,
     "organismos_multiples": true,
     "capturar_respuestas": true,
@@ -2406,6 +2406,12 @@
       "github_run_id": 41210359641,
       "publicaciones_detectadas": 13,
       "observacion": "Índice oficial con procedimientos; falta validar fechas en fichas y contraste histórico"
+    },
+    "ultima_verificacion": "2026-10-31T11:58:34.284201-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 41212482113,
+      "publicaciones_detectadas": 14,
+      "criterio": "Extracción nativa de número, objeto y enlace oficial; no implica cobertura exhaustiva"
     }
   }
 ]

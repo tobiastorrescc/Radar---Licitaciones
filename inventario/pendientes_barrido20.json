@@ -1,0 +1,181 @@
+{
+  "fecha": "2026-10-31",
+  "no_repetir_ocr": true,
+  "pendientes": [
+    {
+      "id": "fuente-009",
+      "url": "https://xn--carcaraa-j3a.gob.ar/",
+      "estado": "PENDIENTE",
+      "motivo": "Se alcanzó boletines; el HTML publicado no contiene avisos ni enlaces documentales útiles. Pendiente contenido alternativo.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "fuente-010",
+      "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+      "estado": "BLOQUEADA",
+      "motivo": "HTTP403 en Actions; la lectura web permite ver índice. No se elude acceso.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "fuente-011",
+      "url": "https://armstrong.gov.ar/index.php/transparencia",
+      "estado": "TIEMPO_FUENTE",
+      "motivo": "Índice antiguo de descargas omitía blog y categorías anuales.84 registros; recorrido histórico aún alcanza límite.",
+      "ultima_evidencia_run": "41211936296"
+    },
+    {
+      "id": "fuente-012",
+      "url": "https://lasparejas.gov.ar/",
+      "estado": "PENDIENTE",
+      "motivo": "El único PDF enlazado como boletín Octubre-Diciembre contiene Lorem ipsum. No es evidencia de compras ni ausencia de convocatorias.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "fuente-055",
+      "url": "https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones",
+      "estado": "PARCIAL",
+      "motivo": "La extracción actual no demuestra cobertura exhaustiva de boletines, modalidades ni archivo; continuar contraste.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "fuente-031",
+      "url": "https://victoria.gob.ar/web-compras/Invitaciones-Compras/concurso-de-precios/",
+      "estado": "PARCIAL",
+      "motivo": "La extracción actual no demuestra cobertura exhaustiva de boletines, modalidades ni archivo; continuar contraste.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "fuente-062",
+      "url": "https://cglagos.gob.ar/comuna/compras-y-licitaciones",
+      "estado": "PARCIAL",
+      "motivo": "La extracción actual no demuestra cobertura exhaustiva de boletines, modalidades ni archivo; continuar contraste.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "fuente-065",
+      "url": "https://www.timbues.gob.ar/index.php?pagina=lista&sec=210",
+      "estado": "TIEMPO_FUENTE",
+      "motivo": "La extracción actual no demuestra cobertura exhaustiva de boletines, modalidades ni archivo; continuar contraste.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "fuente-068",
+      "url": "https://villaelisa.gov.ar/transparencia/",
+      "estado": "PARCIAL",
+      "motivo": "La extracción actual no demuestra cobertura exhaustiva de boletines, modalidades ni archivo; continuar contraste.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "fuente-002",
+      "url": "https://compras.santafe.gob.ar/",
+      "estado": "BLOQUEADA",
+      "motivo": "Timeout en portal oficial; no equivale a sin novedades.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "fuente-003",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "estado": "BLOQUEADA",
+      "motivo": "Índices: EOF TLS. Rutas compras/ficha19015/documento público: cierre remoto/HTTP500. No se comprobó restricción permanente.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "fuente-005",
+      "url": "https://compras.unr.edu.ar/",
+      "estado": "BLOQUEADA",
+      "motivo": "Compras UNR HTTP403; nueva sección Obras Públicas funciona por separado.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "fuente-006",
+      "url": "https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/",
+      "estado": "BLOQUEADA",
+      "motivo": "Timeout; tampoco se pudo acceder a boletín complementario.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "fuente-007",
+      "url": "https://aeropuertorosario.com/institucional/licitaciones/",
+      "estado": "TIEMPO_FUENTE",
+      "motivo": "49 publicaciones reconocidas/5 aperturas futuras; queda cola de navegación al agotarse tiempo.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "fuente-026",
+      "url": "https://www.jusentrerios.gov.ar/contrataciones/",
+      "estado": "TIEMPO_FUENTE",
+      "motivo": "51 procedimientos conservados; se priorizó completar paginación y luego fichas recientes. Fichas restantes exceden65s; la API complementa11 aperturas futuras.",
+      "ultima_evidencia_run": "41212482113"
+    },
+    {
+      "id": "fuente-058",
+      "url": "https://compras.uner.edu.ar/",
+      "estado": "BLOQUEADA",
+      "motivo": "La extracción actual no demuestra cobertura exhaustiva de boletines, modalidades ni archivo; continuar contraste.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "fuente-060",
+      "url": "https://www.santafe.gov.ar/boletinoficial/",
+      "estado": "BLOQUEADA",
+      "motivo": "La extracción actual no demuestra cobertura exhaustiva de boletines, modalidades ni archivo; continuar contraste.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "fuente-061",
+      "url": "https://www.entrerios.gov.ar/boletin/",
+      "estado": "PENDIENTE",
+      "motivo": "La extracción actual no demuestra cobertura exhaustiva de boletines, modalidades ni archivo; continuar contraste.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "ramayon-bo",
+      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-09-18licitaciones.html",
+      "estado": "BLOQUEADA",
+      "motivo": "La extracción actual no demuestra cobertura exhaustiva de boletines, modalidades ni archivo; continuar contraste.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "hospitales-bo15",
+      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-10-15licitaciones.html",
+      "estado": "BLOQUEADA",
+      "motivo": "La extracción actual no demuestra cobertura exhaustiva de boletines, modalidades ni archivo; continuar contraste.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "hospitales-bo19",
+      "url": "https://www.santafe.gov.ar/boletinoficial/index.php/ver.php?seccion=2026%2F2026-10-19licitaciones.html",
+      "estado": "BLOQUEADA",
+      "motivo": "La extracción actual no demuestra cobertura exhaustiva de boletines, modalidades ni archivo; continuar contraste.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "pjsf-bo7",
+      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-10-07licitaciones.html",
+      "estado": "BLOQUEADA",
+      "motivo": "La extracción actual no demuestra cobertura exhaustiva de boletines, modalidades ni archivo; continuar contraste.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "er-uep",
+      "url": "https://portal.entrerios.gov.ar/consultas/contratacionesuep",
+      "estado": "PENDIENTE",
+      "motivo": "La extracción actual no demuestra cobertura exhaustiva de boletines, modalidades ni archivo; continuar contraste.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "samco-gestion",
+      "url": "https://www.santafe.gov.ar/gestionesdecompras/site/gestion.php?contar=1&idGestion=139389",
+      "estado": "BLOQUEADA",
+      "motivo": "La extracción actual no demuestra cobertura exhaustiva de boletines, modalidades ni archivo; continuar contraste.",
+      "ultima_evidencia_run": "41211320771"
+    },
+    {
+      "id": "uep-api",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/uep/licitaciones",
+      "estado": "PENDIENTE_ADAPTADOR",
+      "motivo": "Respuesta pública verificada con64 registros, ninguno con apertura futura en esa captura; no incorporada por responder200.",
+      "ultima_evidencia_run": 41212153456
+    }
+  ]
+}

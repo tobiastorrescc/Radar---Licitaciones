@@ -125,6 +125,15 @@
       "fecha_descubrimiento": "2026-10-31",
       "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
       "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada"
+    },
+    {
+      "organismo": "Unidad Ejecutora Provincial de Entre Ríos",
+      "localidad": null,
+      "provincia": "Entre Ríos",
+      "tipo": "SECTORIAL",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/uep/licitaciones",
+      "evidencia_descubrimiento": "https://portal.entrerios.gov.ar/static/js/8931.31563bf3.chunk.js",
+      "motivo_previo": "API pública leída en41212153456:64 registros históricos. Pendiente adaptador y prueba de extracción; no se incorpora por responder200."
     }
   ]
 }
