@@ -63,7 +63,7 @@ jobs:
           BARRIDO_RUN: ${{ steps.plan.outputs.comparar_barrido_run }}
         with:
           script: |
-            for(const id of [41210359641,41200546592,Number(process.env.BARRIDO_RUN)]){
+            for(const id of [41210359641,41200546592,41211320771,41211936296,Number(process.env.BARRIDO_RUN)]){
               const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:id});
               if(r.conclusion!=='success'||r.head_branch!=='mejora/radar-auditable'||r.head_repository.full_name!==`${context.repo.owner}/${context.repo.repo}`||r.path!=='.github/workflows/mejorar-cobertura.yml')throw Error('Captura comparativa inválida');
             }
@@ -88,10 +88,24 @@ jobs:
           path: work/barrido-catalogo
           run-id: 41200546592
           github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        if: steps.plan.outputs.comparar_barrido_run != ''
+        with:
+          name: cobertura-41211320771
+          path: work/barrido-intermedio
+          run-id: 41211320771
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        if: steps.plan.outputs.comparar_barrido_run != ''
+        with:
+          name: cobertura-41211936296
+          path: work/barrido-regresion
+          run-id: 41211936296
+          github-token: ${{ github.token }}
       - name: Piloto comparativo con persistencia y repetición sin red ni OCR
         if: steps.plan.outputs.comparar_barrido_run != ''
         timeout-minutes: 6
-        run: python -u tools/comparar_barrido.py --antes work/barrido-anterior/work/barrido/resultado.json --despues work/barrido-captura/work/barrido/resultado.json --catalogo work/barrido-catalogo/work/cierre-auditable/ejecuciones/captura-revisada/catalogo_completo.json --salida work/barrido-comparativo
+        run: python -u tools/comparar_barrido.py --antes work/barrido-anterior/work/barrido/resultado.json --despues work/barrido-captura/work/barrido/resultado.json --catalogo work/barrido-catalogo/work/cierre-auditable/ejecuciones/captura-revisada/catalogo_completo.json --salida work/barrido-comparativo --complemento work/barrido-intermedio/work/barrido/resultado.json --complemento work/barrido-regresion/work/barrido/resultado.json
       - name: Sondear enlaces oficiales con evidencia y tiempo acotado
         if: steps.plan.outputs.sondear == 'true'
         run: python -u tools/sondear_cobertura.py

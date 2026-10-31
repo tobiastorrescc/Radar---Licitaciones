@@ -24,21 +24,30 @@ def comparar(antes,despues,catalogo):
     return {'categorias':dict(Counter(r['comparacion_categoria'] for r in salida)),'antes':len(antes['registros']),'despues':len(despues['registros']),'oportunidades':salida}
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--antes',required=True);p.add_argument('--despues',required=True);p.add_argument('--catalogo',required=True);p.add_argument('--salida',required=True);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--antes',required=True);p.add_argument('--despues',required=True);p.add_argument('--catalogo',required=True);p.add_argument('--salida',required=True);p.add_argument('--complemento',action='append',default=[]);a=p.parse_args()
     antes=json.load(open(a.antes));despues=json.load(open(a.despues));cat=json.load(open(a.catalogo))['oportunidades'];root=Path(a.salida);root.mkdir(parents=True,exist_ok=False)
+    # Los complementos son capturas anteriores de otras fuentes, sin reconsultarlas.
+    paquetes=[(Path(p).parent,json.load(open(p))) for p in a.complemento]+[(Path(a.despues).parent,despues)]
+    registros=[];observaciones={};fuentes={}
+    for origen,paquete in paquetes:
+        urls={f['url'] for f in paquete['fuentes']}
+        registros=[r for r in registros if r.get('fuente') not in urls]+paquete['registros']
+        for f in paquete['fuentes']:fuentes[f['id']]=f
+        verificacion=json.load(open(origen/'verificacion.json'))
+        for obs in verificacion['observaciones']:
+            obs=dict(obs);original=obs.get('resultado_archivo')
+            if original:obs['resultado_archivo']=str(origen/str(original).split('work/barrido/',1)[-1])
+            observaciones[obs['id']]=obs
+    despues={**despues,'registros':registros,'fuentes':list(fuentes.values())}
     resultado=comparar(antes,despues,cat)
     (root/'comparacion.json').write_text(json.dumps(resultado,ensure_ascii=False,indent=2)+'\n')
     # Sólo se reparan rutas de la captura copiada. Ninguna solicitud a sitios.
-    origen=Path(a.despues).parent;informe=json.load(open(origen/'verificacion.json'))
-    for obs in informe['observaciones']:
-        original=obs.get('resultado_archivo')
-        if original:
-            sufijo=str(original).split('work/barrido/',1)[-1];obs['resultado_archivo']=str(origen/sufijo)
+    informe={**verificacion,'observaciones':list(observaciones.values()),'resumen':{**verificacion['resumen'],'configuradas':len(observaciones),'consultadas':len(observaciones),'finalizadas':len(observaciones)}}
     protegidos=huellas_produccion();backup={p.name:sha256(p.read_bytes()).hexdigest() for p in Path('piloto_respaldo/diario').iterdir() if p.is_file()}
     piloto=root/'piloto';restaurar('piloto_respaldo/diario',piloto)
     primera,carpeta,_,_=ejecutar_corrida(piloto,informe_previo={**informe,'ejecucion_id':informe['ejecucion_id']+'-comparativo'})
     segunda,_,_,_=ejecutar_corrida(piloto,informe_previo={**informe,'ejecucion_id':informe['ejecucion_id']+'-repeticion'})
-    resultado={'categorias':resultado['categorias'],'primera':primera,'segunda':segunda,'informe':str(carpeta/'reporte_diario.md'),'produccion_intacta':protegidos==huellas_produccion(),'respaldo_intacto':backup=={p.name:sha256(p.read_bytes()).hexdigest() for p in Path('piloto_respaldo/diario').iterdir() if p.is_file()},'ocr_nuevo':0,'consultas_adicionales':0,'alcance':'Sólo fuentes del barrido; no es una ejecución completa de todos los organismos'}
+    resultado={'categorias':resultado['categorias'],'primera':primera,'segunda':segunda,'informe':str(carpeta/'reporte_diario.md'),'produccion_intacta':protegidos==huellas_produccion(),'respaldo_intacto':backup=={p.name:sha256(p.read_bytes()).hexdigest() for p in Path('piloto_respaldo/diario').iterdir() if p.is_file()},'ocr_nuevo':0,'consultas_adicionales':0,'capturas_complementarias':a.complemento,'fuentes_comparadas':len(observaciones),'alcance':'Sólo fuentes del barrido; no es una ejecución completa de todos los organismos'}
     (root/'resultado.json').write_text(json.dumps(resultado,ensure_ascii=False,indent=2)+'\n');print(json.dumps(resultado,ensure_ascii=False),flush=True)
     if segunda['novedades']!=0 or not resultado['produccion_intacta'] or not resultado['respaldo_intacto']:raise RuntimeError('Falló continuidad o integridad')
 if __name__=='__main__':main()

@@ -1,6 +1,6 @@
 {
-  "etapa": "verificar-recuperacion-api-er-y-discovery-first-pjer",
-  "barrido": true,
+  "etapa": "cierre-comparativo-de-cobertura-y-persistencia",
+  "barrido": false,
   "sondear": false,
   "auditar": false,
   "descubrir": false,
@@ -18,5 +18,6 @@
     "fuente-023",
     "fuente-026",
     "unr-obras"
-  ]
+  ],
+  "comparar_barrido_run": 41212482113
 }
