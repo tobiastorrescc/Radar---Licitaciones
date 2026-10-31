@@ -1,23 +1,97 @@
 {
-  "etapa": "validar-entrega-python311-sin-nuevas-consultas",
+  "etapa": "recuperacion-prioritaria-ramayon-y-seis-fuentes-diagnostico",
+  "sondear": true,
   "barrido": false,
-  "sondear": false,
   "auditar": false,
   "descubrir": false,
+  "urls_sondeo": [
+    "https://qx.com.ar/clientes/munic/boletines.php?cols=si",
+    "https://qx.com.ar/clientes/munic/boletines.php?ult=u",
+    "https://xn--carcaraa-j3a.gob.ar/js/obtener-contenido.js",
+    "https://cdg.gob.ar/wp-json/",
+    "https://www.lasparejas.gov.ar/index_boletin",
+    "https://www.santafe.gov.ar/boletinoficial/verPdf.php?seccion=2026%2F2026-09-18licitaciones.html",
+    "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/2026/2026-09-18licitaciones.html",
+    "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/pdf/2026/04/BO08042026.pdf",
+    "https://www.santafe.gov.ar/gestionesdecompras/site/",
+    "https://epe.santafe.gov.ar/app2/",
+    "https://epe.santafe.gov.ar/institucional/"
+  ],
+  "peticiones": [
+    {
+      "url": "https://qx.com.ar/clientes/munic/boletines.php?cols=si",
+      "conexion_timeout": 10,
+      "lectura_timeout": 18
+    },
+    {
+      "url": "https://qx.com.ar/clientes/munic/boletines.php?ult=u",
+      "conexion_timeout": 10,
+      "lectura_timeout": 18
+    },
+    {
+      "url": "https://xn--carcaraa-j3a.gob.ar/js/obtener-contenido.js",
+      "conexion_timeout": 10,
+      "lectura_timeout": 18
+    },
+    {
+      "url": "https://cdg.gob.ar/wp-json/",
+      "conexion_timeout": 10,
+      "lectura_timeout": 18
+    },
+    {
+      "url": "https://www.lasparejas.gov.ar/index_boletin",
+      "conexion_timeout": 10,
+      "lectura_timeout": 18
+    },
+    {
+      "url": "https://www.santafe.gov.ar/boletinoficial/verPdf.php?seccion=2026%2F2026-09-18licitaciones.html",
+      "conexion_timeout": 10,
+      "lectura_timeout": 18
+    },
+    {
+      "url": "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/2026/2026-09-18licitaciones.html",
+      "conexion_timeout": 10,
+      "lectura_timeout": 18
+    },
+    {
+      "url": "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/pdf/2026/04/BO08042026.pdf",
+      "conexion_timeout": 10,
+      "lectura_timeout": 18
+    },
+    {
+      "url": "https://www.santafe.gov.ar/gestionesdecompras/site/",
+      "conexion_timeout": 10,
+      "lectura_timeout": 18
+    },
+    {
+      "url": "https://epe.santafe.gov.ar/app2/",
+      "conexion_timeout": 10,
+      "lectura_timeout": 18
+    },
+    {
+      "url": "https://epe.santafe.gov.ar/institucional/",
+      "conexion_timeout": 10,
+      "lectura_timeout": 18
+    },
+    {
+      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-09-18licitaciones.html",
+      "transporte": "curl"
+    },
+    {
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "transporte": "curl"
+    },
+    {
+      "url": "https://epe.santafe.gov.ar/app2/aperturas",
+      "transporte": "curl"
+    },
+    {
+      "url": "https://compras.santafe.gob.ar/",
+      "transporte": "curl"
+    }
+  ],
   "reverificar_ids": [],
   "revisar_identidades": false,
   "revisar_cobro": false,
-  "archivar_auditoria": false,
-  "urls_sondeo": [
-    "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
-    "https://portal.entrerios.gov.ar/api/public/consulta/uep/licitaciones",
-    "https://portal.entrerios.gov.ar/static/js/9254.29d90381.chunk.js",
-    "https://portal.entrerios.gov.ar/static/js/5326.824a7ea1.chunk.js"
-  ],
-  "barrido_ids": [
-    "fuente-023",
-    "fuente-026",
-    "unr-obras"
-  ],
-  "comparar_barrido_run": 41212482113
+  "archivar_auditoria": false
 }
