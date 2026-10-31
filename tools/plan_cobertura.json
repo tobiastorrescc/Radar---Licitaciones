@@ -1,32 +1,21 @@
 {
-  "etapa": "rutas-de-publicaciones-y-control-municipal-representativo",
+  "etapa": "extraccion-real-rutas-delegadas-feeds-formularios-y-municipios",
+  "barrido": true,
+  "barrido_manifest": "inventario/recuperacion_fuentes.json",
+  "barrido_por_fuente": 85,
   "sondear": true,
   "urls_sondeo": [
-    "https://qx.com.ar/clientes/munic/noticias.php",
-    "https://cdg.gob.ar/wp-content/uploads/2026/10/D7839-CONCURSO-DE-PRECIOS-Senaletica.pdf",
-    "https://lasparejas.gov.ar/index_noticias",
-    "https://www.lasparejas.gov.ar/index_organismos/view/id/4",
-    "https://oroverde.gob.ar/portal/secciones/licitaciones/",
-    "https://oroverde.gob.ar/portal/",
-    "https://viale.gob.ar/pliegos/",
-    "https://ramallo.gob.ar/boletines",
-    "https://sibom.slyt.gba.gob.ar/cities/102",
-    "http://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-09-18licitaciones.html",
-    "http://www.epe.santafe.gov.ar/app2/aperturas",
-    "https://compras.santafe.gov.ar/"
+    "https://lasparejas.gov.ar/index_news",
+    "https://www.segui.gob.ar/sitio/?cat=26",
+    "https://esperanza.gob.ar/"
   ],
   "peticiones": [
     {
-      "url": "https://qx.com.ar/clientes/munic/boletines.php?cols=si",
-      "datos_post": "limiteInfConsulta=6",
-      "content_type": "application/x-www-form-urlencoded"
-    },
-    {
-      "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
-      "transporte": "curl"
+      "url": "https://epe.santafe.gov.ar/app2/aperturas",
+      "transporte": "curl",
+      "tls_max": "1.2"
     }
   ],
-  "barrido": false,
   "auditar": false,
   "descubrir": false,
   "reverificar_ids": [],

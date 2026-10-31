@@ -312,6 +312,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 registro['pago_evidencias']=pagos.extraer(registro['objeto'],url,hash_documento=hash_documento,metodo='SECCION_DOCUMENTO')
                 agregar(registro)
             return
+        if config.get('exigir_llamado_documental') and not re.search(r'(?:llamase|llamese|convocase|convoca\s+a|se\s+llama|se\s+solicitan?)\b.{0,250}(?:licitacion|concurso|compra|cotizacion)',normalizar(texto),re.S):return
         lineas=texto.splitlines()
         posiciones=[i for i,l in enumerate(lineas) if extractores.procesos(l)]
         if not posiciones and referencia and texto.strip():
@@ -327,6 +328,11 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             evento='|'.join(sorted(set(extractores.EVENTO.findall(normalizar(t))))) or None
             r={'titulo':t,'objeto':t,'url':url,'evidencia_url':url,'documentos':[{'url':url,'titulo':'Documento'}],
                'procedimiento':p['procedimiento'],'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'evento_publicado':evento,'detalle_completo':True,'rango_evidencia':3,'pago_evidencias':pagos.extraer(t,url,hash_documento=hash_documento,metodo='SECCION_DOCUMENTO')}
+            if config.get('correlativos_publicados') and re.fullmatch(r'\d{1,6}',p['numero']) and p['tipo']=='cotejo de precios':
+                r['registro_estructurado']=True
+                plazo=re.search(r'para el\s*:\s*(\d{1,2}/\d{1,2}/20\d{2}\s+a las\s+\d{1,2}[.:]\d{2})',normalizar(t))
+                if plazo:r['fecha_limite_presentacion_texto']=plazo[1]
+
             agregar(r)
             if referencia in items and items[referencia].get('procedimiento')==p['procedimiento']:
                 # Un aviso con varios llamados no puede asignar a todos el primer presupuesto/fecha.
@@ -349,7 +355,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
     while pending:
         if len(seen)>=max_paginas:limits.append('max_paginas');break
         url,clase,referencia=pending.popleft();url=extractores.url_publica(url)
-        post=urlencode(referencia['post']).encode() if clase=='DATATABLES' else (b'{"":""}' if config.get('adaptador')=='chajari-api' and re.search(r'/licitaciones/(?:para_apertura|en_evaluacion|adjudicada)/\d+$',url or '') else None)
+        post=urlencode(referencia['post']).encode() if clase in ('DATATABLES','AJAX_PUBLICADO') else (b'{"":""}' if config.get('adaptador')=='chajari-api' and re.search(r'/licitaciones/(?:para_apertura|en_evaluacion|adjudicada)/\d+$',url or '') else None)
         peticion=url+('#POST:'+sha256(post).hexdigest() if post is not None else '') if url else None
         if not url or peticion in seen or _host(url) not in hosts:continue
         seen.add(peticion);fase='DESCARGA';snapshot(fase,url)
@@ -357,6 +363,12 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             datos,tipo,final=fetch(url,datos_post=post) if post is not None else fetch(url)
             fase='EXTRACCION';snapshot(fase,url)
             if _host(final) not in hosts:raise ValueError('Redirección fuera de dominios oficiales declarados')
+            if config.get('barrido_institucional') and ('rss' in tipo.lower() or 'atom+xml' in tipo.lower() or ('xml' in tipo.lower() and re.search(br'<(?:rss|feed)\b',datos[:1000]))):
+                from barrido_institucional import extraer_feed
+                registros,enlaces,cantidad=extraer_feed(datos,final,config)
+                for r in registros:agregar(r)
+                for u in enlaces:pending.append((u,'LISTADO',{}))
+                correctas+=1;snapshot('PAGINA_FINALIZADA',url);continue
             if config.get('adaptador')=='entre-rios-api':
                 if 'json' not in tipo.lower():raise ValueError('ER devolvió HTML en lugar del listado JSON público')
                 from extractores_lotes import extraer_entre_rios_api
@@ -427,6 +439,16 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 snapshot('PAGINA_FINALIZADA',url);continue
             html=decodificar_html(datos,tipo)
             comprobar_acceso(html)
+            if clase=='AJAX_PUBLICADO':
+                huella='ajax:'+url+':'+sha256(datos).hexdigest()
+                if huella in paginas_api:raise ValueError('El servicio delegado repite página: navegación incompleta')
+                paginas_api.add(huella)
+                if html.strip() and not re.search(r'id=[\"\']finResultados',html,re.I):
+                    post_siguiente={**referencia['post'],referencia['campo']:int(referencia['post'][referencia['campo']])+referencia['paso']}
+                    pending.append((url,'AJAX_PUBLICADO',{**referencia,'post':post_siguiente}))
+            if config.get('endpoints_publicados'):
+                from barrido_institucional import endpoints_publicados
+                pending.extend(endpoints_publicados(html,config))
             from extractores_lotes import endpoint_funes
             endpoint=endpoint_funes(html,final)
             if endpoint:
@@ -460,12 +482,15 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     items[referencia]=oportunidades.fusionar(items[referencia],detalle)
                 for doc in r.get('documentos',[]):
                     destino=doc['url']
-                    necesario=modo=='todos' or not r.get('detalle_completo')
-                    if necesario and not config.get('solo_descubrimiento') and _host(destino) in hosts and destino not in seen:
+                    necesario=modo=='todos' or not r.get('detalle_completo') or (config.get('documentos_para_descubrimiento') and not r.get('fecha_apertura'))
+                    if necesario and (not config.get('solo_descubrimiento') or config.get('documentos_para_descubrimiento')) and _host(destino) in hosts and destino not in seen:
                         documento_pendiente[destino]={'url':destino,'publicacion_id':key}
                         pending.append((destino,'DOCUMENTO',key))
                 if (not r.get('detalle_completo') or config.get('enriquecer_fichas')) and r['url']!=url and not urlparse(r['url']).path.lower().endswith(extractores.ADJUNTOS):
                     pending.appendleft((r['url'],'DETALLE',key))
+            if config.get('barrido_institucional') and not config.get('ignorar_suscripciones_feed'):
+                from barrido_institucional import feeds_publicados
+                for u in feeds_publicados(dom,final):pending.append((u,'LISTADO',{}))
             for l in links:
                 destino=l['url'];et=normalizar(l['texto']);path=urlparse(destino).path
                 if config.get('ignorar_suscripciones_feed') and path.rstrip('/').endswith('/feed'):continue
@@ -476,7 +501,9 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                           bool(re.search(r'/page/\d+|[?&](?:page|pagina|start)=\d+',destino))) and any(path.startswith(raiz) for raiz in raices))
                 navegar=any(re.search(patron,destino) for patron in config.get('seguir_patrones',[]))
                 if config.get('descubrir_contrataciones') and clase=='LISTADO' and len(et)<120 and not extractores.procesos(et):
-                    navegar=navegar or bool(re.search(r'licitaciones|concursos? de precios|compras|contrataciones|bolet(?:in|ines) oficial(?:es)?',et))
+                    navegar=navegar or bool(re.search(r'licitacion(?:es)?|concursos? de precios|compras|contrataciones|bolet(?:in|ines) oficial(?:es)?',et))
+                if config.get('barrido_institucional') and clase=='LISTADO' and len(et)<120:
+                    navegar=navegar or bool(re.fullmatch(r'(?:todas? las? )?(?:noticias|novedades|boletines?(?: oficiales?)?|decretos|resoluciones|publicaciones administrativas)',et))
                 if pagina or navegar:
                     contexto={'tipo_contexto':l.get('tipo_contexto',pagina_config.get('tipo_contexto'))}
                     pending.append((destino,'LISTADO',contexto))
@@ -493,6 +520,9 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     # manteniendo todos los anteriores en la cola y en la auditoría.
                     anios=re.findall(r'(?<!\d)20\d{2}(?!\d)',urlparse(u).path+'?'+urlparse(u).query)
                 # Presupuesto de lectura: documentos recientes primero; no se descarta el archivo.
+                if config.get('adaptador')=='sibom':
+                    boletin=re.search(r'/bulletins/(\d+)',u)
+                    return (0 if c=='LISTADO' else 1,-int(boletin[1]) if boletin else 0,u)
                 if config.get('priorizar_listados'):
                     return (0 if c in ('LISTADO','DATATABLES') else 1,-int(anios[-1]) if anios else 0,posiciones.get(ref,10**9) if config.get('priorizar_fichas_recientes') and isinstance(ref,str) else 10**9,item.get('fecha_apertura') or '9999',u)
                 return (0 if c=='DETALLE' and item.get('vigencia')=='ABIERTA' else (1 if c=='DETALLE' else 2),-int(anios[-1]) if anios else 0,item.get('fecha_apertura') or '9999',u)

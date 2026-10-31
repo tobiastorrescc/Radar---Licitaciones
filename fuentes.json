@@ -174,7 +174,24 @@
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
     },
-    "indice_documentos": true
+    "indice_documentos": true,
+    "barrido_institucional": true,
+    "dominios_documentos": [
+      "qx.com.ar"
+    ],
+    "endpoints_publicados": [
+      {
+        "url": "https://qx.com.ar/clientes/munic/boletines.php?cols=si",
+        "campo": "limiteInfConsulta",
+        "paso": 6
+      },
+      {
+        "url": "https://qx.com.ar/clientes/munic/noticias.php",
+        "campo": "limiteInfConsulta",
+        "paso": 6
+      }
+    ],
+    "exigir_llamado_documental": true
   },
   "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/": {
     "organismo": "Municipalidad de Cañada de Gómez",
@@ -183,7 +200,25 @@
     "tipo_portal": "html_pdf",
     "conector": "publicaciones",
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "id": "fuente-010",
+    "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+    "estado_verificacion": "BLOQUEADA",
+    "incorporada": true,
+    "evidencia_descubrimiento": {
+      "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+      "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+      "fecha": "2026-10-25",
+      "observacion": "Listado indexado con convocatoria de vigilancia"
+    },
+    "verificada_funcionando": false,
+    "ultima_verificacion": "2026-10-29T17:48:25.918383-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    },
+    "barrido_institucional": true
   },
   "https://armstrong.gov.ar/index.php/transparencia": {
     "organismo": "Municipalidad de Armstrong",
@@ -258,7 +293,11 @@
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
     },
-    "indice_documentos": true
+    "indice_documentos": true,
+    "barrido_institucional": true,
+    "seguir_patrones": [
+      "/index_news(?:/|$|\\?)"
+    ]
   },
   "https://funes.gob.ar/": {
     "organismo": "Municipalidad de Funes",

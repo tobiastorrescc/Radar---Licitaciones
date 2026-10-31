@@ -20,7 +20,8 @@ def worker(entrada,salida):
     nombre=sha256(u.encode()).hexdigest();archivo=root/(nombre+'.bin')
     if f.get('transporte')=='curl':
         # Diagnóstico público: CA/TLS y proxy heredados, sin cookies ni evasión.
-        r=subprocess.run(['curl','--silent','--show-error','--location','--max-redirs','3',
+        opciones_tls=['--tls-max','1.2'] if f.get('tls_max')=='1.2' else []
+        r=subprocess.run(['curl',*opciones_tls,'--silent','--show-error','--location','--max-redirs','3',
             '--proto','=https','--proto-redir','=https','--connect-timeout','8','--max-time','24',
             '--max-filesize','12000000','--user-agent','RadarLicitaciones/2.0',
             '--output',str(archivo),'--write-out','%{http_code}\n%{content_type}\n%{url_effective}',u],

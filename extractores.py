@@ -16,7 +16,7 @@ def norm(t):
 
 
 TIPO=r'(?:licitacion(?:\s+(?:publica|privada|acelerada|abreviada|simplificada))?|(?:publica|privada)(?=\s+n[º°o.]*\s*\d)|lic\.?\s*(?:pub(?:lica)?|priv(?:ada)?)\.?|concurso\s+(?:(?:publico|privado)(?=\s+n)|de\s+anteproyectos?|(?:(?:publico|privado)\s+)?(?:de\s+)?(?:precios|ofertas))|compras?\s+(?:directas?|menor(?:es)?|agil(?:es)?)|contratacion\s+directa(?:\s+con\s+cotejo(?:\s+de\s+precios)?)?|cotejo\s+de\s+precios|gestion\s+directa|solicitud\s+de\s+cotizacion|pedido\s+de\s+presupuesto|compulsa)'
-PROCESO=re.compile(r'(?P<tipo>'+TIPO+r')\s*(?:(?:nacional|internacional)\s+)?(?:\b(?:gas|bid\w*|programa)\s+)?(?P<marca>n(?:ro|umero)?[.º°o]*\s*)?(?P<numero>\d{1,10}(?:-\d+)?(?:\s*[/–-]\s*\d{2,4})?)(?!\d)',re.I)
+PROCESO=re.compile(r'(?P<tipo>'+TIPO+r')\s*(?:(?:nacional|internacional)\s+)?(?:\b(?:gas|bid\w*|programa)\s+)?(?P<marca>n(?:ro|umero)?[.º°o]*\s*)?(?P<numero>\d{1,10}(?:-\d+)?(?:\s*(?:[/–-]|\s+de(?:l)?(?:\s+ano)?)\s*\d{2,4})?)(?!\d)',re.I)
 EVENTO=re.compile(r'desiert\w*|fracasad\w*|segundo llamado|2do llamado|2[º°o] llamado|segunda convocatoria|reapertura|nuevo llamado')
 ADJUNTOS=('.pdf','.docx','.doc','.zip','.xls','.xlsx')
 
@@ -45,7 +45,7 @@ def procesos(texto):
         if not re.search(r'\d+\s*[/–-]\s*\d{2,4}',t):return []
     out=[]
     for m in PROCESO.finditer(t):
-        num=m['numero']
+        num=re.sub(r'\s+de(?:l)?(?:\s+ano)?\s+','/',m['numero'])
         # Tras un número anual completo, el guion separado puede introducir
         # cantidades del objeto (070-23 – 12.000 litros), no otro segmento.
         anual_seguido_objeto=re.match(r'^(\d+[-/](?:20\d{2}|\d{2}))\s+[–-]\s+\d',num)
@@ -100,6 +100,7 @@ class Nodo:
             m=re.search(r"DownloadFile\(\s*'([^']+)'\s*,\s*'([^']+)'",onclick)
             if m:href=m[1]+m[2]
             if n.tag=='iframe':href=n.attrs.get('src')
+            if n.tag=='form' and n.attrs.get('method','get').lower()=='get' and urlsplit(base).hostname=='sibom.slyt.gba.gob.ar' and re.fullmatch(r'/bulletins/\d+',n.attrs.get('action','')):href=n.attrs['action']
             if not href:continue
             url=url_publica(href,base)
             if url:links.append({'url':url,'texto':n.text,'rel':n.attrs.get('rel','next' if n.attrs.get('data-next-page') else ''),
@@ -402,14 +403,23 @@ def extraer(html,url,config=None):
         for registro in agrupados.values():
             if obra:registro['objeto']=obra
             if publicada:registro['fecha_publicacion_texto']=publicada
+    if config.get('correlativos_publicados'):
+        for registro in agrupados.values():
+            if re.fullmatch(r'\d{1,6}',registro.get('numero_procedimiento') or '') and registro.get('tipo_procedimiento')=='cotejo de precios':
+                registro['registro_estructurado']=True
+                registro['numero_oficial_sin_interpretar']=registro['numero_procedimiento']
+    if config.get('metadatos_publicacion'):
+        fechas={n.attrs['datetime'][:10] for n in raiz.iter() if n.tag=='time' and n.attrs.get('datetime') and ('published' in n.attrs.get('class','') or n.attrs.get('itemprop')=='datePublished')}
+        if len(fechas)==1:
+            for registro in agrupados.values():registro.setdefault('fecha_publicacion_texto',next(iter(fechas)))
     if config.get('admitir_avisos_sin_numero'):
         # Un aviso explícito de compra no necesita número, monto ni adjunto.
         # No convertir menús, normativa ni concursos de empleo en convocatorias.
         for n in raiz.iter():
-            if n.tag not in ('article','h1','h2','h3') or excluido(n,allow_aside):continue
+            if n.tag not in ('article','h1','h2','h3','p') or excluido(n,allow_aside):continue
             texto=n.text.strip();t=norm(texto)
             if len(texto)>2500 or procesos(texto):continue
-            if not re.search(r'(?:se solicitan? (?:cotizaciones|presupuestos)|solicitud de cotizacion|pedido de presupuesto|compra (?:menor|directa))',t):continue
+            if not re.search(r'(?:se solicitan? (?:cotizaciones|presupuestos)|solicitud de cotizacion|pedido de presupuesto|compra (?:menor|directa)|convocatoria a (?:concurso de precios|licitacion (?:publica|privada))|llamado a licitacion)',t):continue
             if not re.search(r'adquisicion|provision|servicio de|obra de|alquiler de|reparacion de|compra de',t):continue
             if re.search(r'registro de proveedores|reglamento|normativa|empleo|concurso de cargos|inscripcion',t):continue
             link=next((l['url'] for l in n.enlaces(url) if norm(l['texto'])==t),url)

@@ -1,0 +1,119 @@
+{
+  "fecha": "2026-10-31",
+  "fuentes": [
+    {
+      "id": "ramayon-bo",
+      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-09-18licitaciones.html",
+      "organismo": "Boletín Oficial Santa Fe",
+      "provincia": "Santa Fe",
+      "localidad": null,
+      "conector": "publicaciones",
+      "adaptador": "boletin-sf",
+      "organismos_multiples": true,
+      "descubrir_menu": true,
+      "lectura_adjuntos": "necesarios",
+      "urls_inicio": [
+        "https://www.santafe.gov.ar/boletinoficial/",
+        "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-09-18licitaciones.html"
+      ]
+    },
+    {
+      "id": "fuente-009"
+    },
+    {
+      "id": "fuente-010"
+    },
+    {
+      "id": "fuente-012"
+    },
+    {
+      "id": "fuente-003"
+    },
+    {
+      "id": "fuente-002"
+    },
+    {
+      "id": "candidato-viale",
+      "organismo": "Municipalidad de Viale",
+      "localidad": "Viale",
+      "provincia": "Entre Ríos",
+      "url": "https://viale.gob.ar/pliegos/",
+      "barrido_institucional": true,
+      "correlativos_publicados": true,
+      "enriquecer_fichas": true,
+      "metadatos_publicacion": true,
+      "documentos_para_descubrimiento": true,
+      "lectura_adjuntos": "necesarios",
+      "conector": "publicaciones",
+      "admitir_avisos_sin_numero": true,
+      "ocr": false
+    },
+    {
+      "id": "candidato-oroverde",
+      "organismo": "Municipio de Oro Verde",
+      "localidad": "Oro Verde",
+      "provincia": "Entre Ríos",
+      "url": "https://oroverde.gob.ar/portal/secciones/licitaciones/",
+      "barrido_institucional": true,
+      "enriquecer_fichas": true,
+      "metadatos_publicacion": true,
+      "lectura_adjuntos": "necesarios",
+      "conector": "publicaciones",
+      "admitir_avisos_sin_numero": true,
+      "ocr": false
+    },
+    {
+      "id": "candidato-ramallo",
+      "organismo": "Municipalidad de Ramallo",
+      "localidad": "Ramallo",
+      "provincia": "Buenos Aires",
+      "url": "https://ramallo.gob.ar/boletines",
+      "urls_inicio": [
+        "https://ramallo.gob.ar/boletines",
+        "https://sibom.slyt.gba.gob.ar/cities/102"
+      ],
+      "dominios_documentos": [
+        "sibom.slyt.gba.gob.ar"
+      ],
+      "adaptador": "sibom",
+      "seguir_patrones": [
+        "/bulletins/[0-9]+(?:/contents/[0-9]+)?(?:\\?|$)"
+      ],
+      "barrido_institucional": true,
+      "lectura_adjuntos": "necesarios",
+      "conector": "publicaciones",
+      "admitir_avisos_sin_numero": true,
+      "ocr": false
+    },
+    {
+      "id": "candidato-segui",
+      "organismo": "Municipalidad de Seguí",
+      "localidad": "Seguí",
+      "provincia": "Entre Ríos",
+      "url": "https://www.segui.gob.ar/sitio/?cat=26",
+      "barrido_institucional": true,
+      "enriquecer_fichas": true,
+      "metadatos_publicacion": true,
+      "documentos_para_descubrimiento": true,
+      "lectura_adjuntos": "necesarios",
+      "conector": "publicaciones",
+      "admitir_avisos_sin_numero": true,
+      "ocr": false
+    },
+    {
+      "id": "candidato-esperanza",
+      "organismo": "Municipalidad de Esperanza",
+      "localidad": "Esperanza",
+      "provincia": "Santa Fe",
+      "url": "https://esperanza.gob.ar/",
+      "barrido_institucional": true,
+      "enriquecer_fichas": true,
+      "metadatos_publicacion": true,
+      "lectura_adjuntos": "necesarios",
+      "conector": "publicaciones",
+      "admitir_avisos_sin_numero": true,
+      "ocr": false
+    }
+  ],
+  "advertencia": "Candidatos de ensayo: no quedan incorporados ni validados por figurar en este manifiesto."
+}

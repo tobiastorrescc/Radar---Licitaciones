@@ -293,7 +293,24 @@
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
     },
-    "indice_documentos": true
+    "indice_documentos": true,
+    "barrido_institucional": true,
+    "dominios_documentos": [
+      "qx.com.ar"
+    ],
+    "endpoints_publicados": [
+      {
+        "url": "https://qx.com.ar/clientes/munic/boletines.php?cols=si",
+        "campo": "limiteInfConsulta",
+        "paso": 6
+      },
+      {
+        "url": "https://qx.com.ar/clientes/munic/noticias.php",
+        "campo": "limiteInfConsulta",
+        "paso": 6
+      }
+    ],
+    "exigir_llamado_documental": true
   },
   {
     "id": "fuente-010",
@@ -319,7 +336,8 @@
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+    },
+    "barrido_institucional": true
   },
   {
     "id": "fuente-011",
@@ -394,7 +412,11 @@
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
     },
-    "indice_documentos": true
+    "indice_documentos": true,
+    "barrido_institucional": true,
+    "seguir_patrones": [
+      "/index_news(?:/|$|\\?)"
+    ]
   },
   {
     "id": "fuente-013",

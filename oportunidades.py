@@ -262,6 +262,9 @@ def procedimiento_canonico(r):
         host_api=urlsplit(r.get('evidencia_url') or '').hostname
         if host_api in ('www.aguassantafesinas.com.ar','aguassantafesinas.com.ar') and r.get('registro_estructurado') and re.fullmatch(r'[a-f0-9]{32}',str(r.get('id_origen') or '')) and re.fullmatch(r'\d+',numero):
             return tipo+' ASSA-'+numero
+        # Correlativo municipal literal: no inventar /año a partir de la publicación.
+        if host_api in ('viale.gob.ar','www.viale.gob.ar') and r.get('registro_estructurado') and tipo=='cotejo de precios' and re.fullmatch(r'\d{1,6}',numero):
+            return tipo+' VIALE-'+numero
         # Numeración propia de EPE, acreditada por ficha con objeto dedicado.
         # No relajar la detección de teléfonos/números sueltos en otros portales.
         host=urlsplit(r.get('evidencia_url') or '').hostname
