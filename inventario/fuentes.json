@@ -292,7 +292,8 @@
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+    },
+    "indice_documentos": true
   },
   {
     "id": "fuente-010",
@@ -343,11 +344,14 @@
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "urls_inicio": [
-      "https://armstrong.gov.ar/index.php/descargas?catid=42&view=category"
+      "https://armstrong.gov.ar/index.php/descargas?catid=42&view=category",
+      "https://armstrong.gov.ar/index.php/licitaciones",
+      "https://www.armstrong.gov.ar/index.php/blog"
     ],
     "seguir_patrones": [
       "catid=42",
-      "task=download.send"
+      "task=download.send",
+      "/index.php/blog/llamado-a-licitacion"
     ],
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
@@ -356,7 +360,8 @@
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 7,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+    },
+    "enriquecer_fichas": true
   },
   {
     "id": "fuente-012",
@@ -387,7 +392,8 @@
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+    },
+    "indice_documentos": true
   },
   {
     "id": "fuente-013",
@@ -788,7 +794,8 @@
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 51,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+    },
+    "enriquecer_fichas": true
   },
   {
     "id": "fuente-027",
@@ -2366,6 +2373,27 @@
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    }
+  },
+  {
+    "id": "fuente-079",
+    "organismo": "Universidad Nacional de Rosario",
+    "localidad": "Rosario",
+    "provincia": "Santa Fe",
+    "url": "https://unr.edu.ar/obras-publicas/",
+    "tipo_portal": "html_paginado",
+    "conector": "publicaciones",
+    "incorporada": true,
+    "estado_verificacion": "PARCIAL",
+    "verificada_funcionando": false,
+    "enriquecer_fichas": true,
+    "organismos_multiples": true,
+    "capturar_respuestas": true,
+    "ocr": false,
+    "evidencia_descubrimiento": {
+      "github_run_id": 41210359641,
+      "publicaciones_detectadas": 13,
+      "observacion": "Índice oficial con procedimientos; falta validar fechas en fichas y contraste histórico"
     }
   }
 ]

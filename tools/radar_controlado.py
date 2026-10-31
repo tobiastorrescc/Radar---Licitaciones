@@ -109,10 +109,14 @@ def generar_informe(db,resumen,registros,fuentes,destino):
 
 def _ejecutar_corrida(raiz,*,total=600,documentos=120,informe_previo=None):
     raiz=validar_salida(raiz);antes=huellas_produccion();config=fuentes_configuradas()
+    prioridad=Path('inventario/prioridad_radar.json')
+    enriquecer=json.loads(prioridad.read_text()).get('enriquecimiento_sincrono',True) if prioridad.exists() else True
+    if not enriquecer:config=[{**f,'solo_descubrimiento':True,'ocr':False,'admitir_avisos_sin_numero':True} for f in config]
     carpeta=raiz/'ejecuciones'/(datetime.now(o.ZONA).strftime('%Y%m%dT%H%M%S')+'-'+uuid.uuid4().hex[:8]);carpeta.mkdir(parents=True)
     informe=informe_previo or ejecutar(config,carpeta/'verificacion.json',concurrencia=4,conexion=5,lectura=10,por_fuente=60,total=total)
     registros=registros_checkpoint(informe)
-    comprobar_pliegos.comprobar(registros,informe['actualizado'],config,total=documentos,salida_parcial=carpeta/'documentos_parciales.jsonl')
+    if enriquecer:comprobar_pliegos.comprobar(registros,informe['actualizado'],config,total=documentos,salida_parcial=carpeta/'documentos_parciales.jsonl')
+    guardar(carpeta/'cola_enriquecimiento.json',{'etapa':'ENRIQUECIMIENTO_POSTERIOR','bloquea_descubrimiento':False,'oportunidades':registros})
     registros=[o.normalizar(r,informe['actualizado']) for r in registros]
     guardar(carpeta/'registros_observados.json',registros)
     fuentes=[]

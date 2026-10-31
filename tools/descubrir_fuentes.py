@@ -107,7 +107,7 @@ def verificar_identidad(html,url,candidato):
         'motivo':None if valida else 'Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste'}
 
 def aceptacion(resultado,identidad):
-    validos=[r for raw in resultado.get('oportunidades',[]) if (r:=o.normalizar(raw)).get('clasificacion_registro')=='PROCEDIMIENTO' and r.get('procedimiento_canonico') and r.get('objeto') and r.get('detalle_completo')]
+    validos=[r for raw in resultado.get('oportunidades',[]) if (r:=o.normalizar(raw)).get('clasificacion_registro')=='PROCEDIMIENTO' and (r.get('procedimiento_canonico') or r.get('aviso_oficial_sin_numero')) and r.get('objeto') and r.get('detalle_completo')]
     ok=identidad.get('verificada') and bool(validos) and resultado.get('estado')=='OPERATIVA' and not resultado.get('errores') and not resultado.get('limites')
     return {'estado':'VALIDADA' if ok else 'PENDIENTE','identidad_verificada':identidad.get('verificada',False),
         'identidad':identidad,'procedimientos_con_objeto':len(validos),'fecha':datetime.now(timezone.utc).isoformat(),
@@ -125,7 +125,7 @@ def worker(entrada,salida):
         if not identidad['verificada']:
             guardar(salida,{'estado':'PENDIENTE','finalizado':True,'validacion':aceptacion({},identidad),'oportunidades':[]});return
         config={'organismo':identidad['organismo'],'localidad':identidad['localidad'],'provincia':c['provincia'],
-            'conector':'publicaciones','descubrir_menu':True,'descubrir_contrataciones':True,'lectura_adjuntos':'necesarios','ocr':False}
+            'conector':'publicaciones','descubrir_menu':True,'descubrir_contrataciones':True,'lectura_adjuntos':'necesarios','ocr':False,'admitir_avisos_sin_numero':True}
         inicial={url:(datos,tipo,final)}
         def fetch(u,datos_post=None):
             if u in inicial:return inicial.pop(u)

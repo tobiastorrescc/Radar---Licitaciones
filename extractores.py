@@ -15,7 +15,7 @@ def norm(t):
     return re.sub(r'\s+',' ',''.join(c for c in unicodedata.normalize('NFKD',str(t).lower()) if not unicodedata.combining(c))).strip()
 
 
-TIPO=r'(?:licitacion(?:\s+(?:publica|privada))?|(?:publica|privada)(?=\s+n[º°o.]*\s*\d)|lic\.?\s*(?:pub(?:lica)?|priv(?:ada)?)\.?|concurso\s+(?:(?:publico|privado)(?=\s+n)|de\s+anteproyectos?|(?:(?:publico|privado)\s+)?(?:de\s+)?(?:precios|ofertas))|compras?\s+(?:directas?|menor(?:es)?|agil(?:es)?)|contratacion\s+directa(?:\s+con\s+cotejo(?:\s+de\s+precios)?)?|cotejo\s+de\s+precios|solicitud\s+de\s+cotizacion|compulsa)'
+TIPO=r'(?:licitacion(?:\s+(?:publica|privada|acelerada|abreviada|simplificada))?|(?:publica|privada)(?=\s+n[º°o.]*\s*\d)|lic\.?\s*(?:pub(?:lica)?|priv(?:ada)?)\.?|concurso\s+(?:(?:publico|privado)(?=\s+n)|de\s+anteproyectos?|(?:(?:publico|privado)\s+)?(?:de\s+)?(?:precios|ofertas))|compras?\s+(?:directas?|menor(?:es)?|agil(?:es)?)|contratacion\s+directa(?:\s+con\s+cotejo(?:\s+de\s+precios)?)?|cotejo\s+de\s+precios|gestion\s+directa|solicitud\s+de\s+cotizacion|pedido\s+de\s+presupuesto|compulsa)'
 PROCESO=re.compile(r'(?P<tipo>'+TIPO+r')\s*(?:(?:nacional|internacional)\s+)?(?:\b(?:gas|bid\w*|programa)\s+)?(?P<marca>n(?:ro|umero)?[.º°o]*\s*)?(?P<numero>\d{1,10}(?:-\d+)?(?:\s*[/–-]\s*\d{2,4})?)(?!\d)',re.I)
 EVENTO=re.compile(r'desiert\w*|fracasad\w*|segundo llamado|2do llamado|2[º°o] llamado|segunda convocatoria|reapertura|nuevo llamado')
 ADJUNTOS=('.pdf','.docx','.doc','.zip','.xls','.xlsx')
@@ -395,4 +395,18 @@ def extraer(html,url,config=None):
             if sec:
                 cabecera=next((x.text for x in sec.iter() if x.clase('contrataciones-resumen__seccion-header')),'')
                 l['tipo_contexto']=re.sub(r'\s+\d+$','',cabecera)
+    if config.get('admitir_avisos_sin_numero'):
+        # Un aviso explícito de compra no necesita número, monto ni adjunto.
+        # No convertir menús, normativa ni concursos de empleo en convocatorias.
+        for n in raiz.iter():
+            if n.tag not in ('article','h1','h2','h3') or excluido(n,allow_aside):continue
+            texto=n.text.strip();t=norm(texto)
+            if len(texto)>2500 or procesos(texto):continue
+            if not re.search(r'(?:se solicitan? (?:cotizaciones|presupuestos)|solicitud de cotizacion|pedido de presupuesto|compra (?:menor|directa))',t):continue
+            if not re.search(r'adquisicion|provision|servicio de|obra de|alquiler de|reparacion de|compra de',t):continue
+            if re.search(r'registro de proveedores|reglamento|normativa|empleo|concurso de cargos|inscripcion',t):continue
+            link=next((l['url'] for l in n.enlaces(url) if norm(l['texto'])==t),url)
+            clave=('aviso_sin_numero',link,t)
+            agrupados.setdefault(clave,{'titulo':texto,'objeto':texto,'url':link,'evidencia_url':url,'documentos':[],
+                'registro_estructurado':True,'aviso_oficial_sin_numero':True,'detalle_completo':True,'tipo_procedimiento':'aviso de contratacion','numero_procedimiento':None,'procedimiento':None})
     return list(agrupados.values()),enlaces,dom

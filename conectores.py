@@ -469,7 +469,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                           bool(re.search(r'/page/\d+|[?&](?:page|pagina|start)=\d+',destino))) and any(path.startswith(raiz) for raiz in raices))
                 navegar=any(re.search(patron,destino) for patron in config.get('seguir_patrones',[]))
                 if config.get('descubrir_contrataciones') and clase=='LISTADO' and len(et)<120 and not extractores.procesos(et):
-                    navegar=navegar or bool(re.search(r'licitaciones|concursos? de precios|compras|contrataciones|boletin oficial',et))
+                    navegar=navegar or bool(re.search(r'licitaciones|concursos? de precios|compras|contrataciones|boletines? oficiales?',et))
                 if pagina or navegar:
                     contexto={'tipo_contexto':l.get('tipo_contexto',pagina_config.get('tipo_contexto'))}
                     pending.append((destino,'LISTADO',contexto))

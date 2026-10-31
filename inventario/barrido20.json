@@ -269,9 +269,10 @@
       "localidad": null,
       "conector": "publicaciones",
       "adaptador": "generico",
-      "organismos_multiples": false,
+      "organismos_multiples": true,
       "descubrir_menu": true,
-      "lectura_adjuntos": "necesarios"
+      "lectura_adjuntos": "necesarios",
+      "enriquecer_fichas": true
     },
     {
       "id": "unr-noticias",

@@ -1,0 +1,5 @@
+{
+  "etapa_obligatoria": "DESCUBRIMIENTO",
+  "enriquecimiento_sincrono": false,
+  "motivo": "Registrar avisos oficiales antes de buscar pliegos, pagos o cantidades. El enriquecimiento se ejecuta por separado."
+}

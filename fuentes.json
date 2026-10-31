@@ -156,7 +156,25 @@
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "id": "fuente-009",
+    "url": "https://xn--carcaraa-j3a.gob.ar/",
+    "estado_verificacion": "BLOQUEADA",
+    "incorporada": true,
+    "evidencia_descubrimiento": {
+      "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+      "url": "https://xn--carcaraa-j3a.gob.ar/",
+      "fecha": "2026-10-25",
+      "observacion": "Sitio oficial localizado; falta ruta de contrataciones"
+    },
+    "verificada_funcionando": false,
+    "ultima_verificacion": "2026-10-29T17:48:24.895374-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    },
+    "indice_documentos": true
   },
   "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/": {
     "organismo": "Municipalidad de Cañada de Gómez",
@@ -179,14 +197,35 @@
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "urls_inicio": [
-      "https://armstrong.gov.ar/index.php/descargas?catid=42&view=category"
+      "https://armstrong.gov.ar/index.php/descargas?catid=42&view=category",
+      "https://armstrong.gov.ar/index.php/licitaciones",
+      "https://www.armstrong.gov.ar/index.php/blog"
     ],
     "seguir_patrones": [
       "catid=42",
-      "task=download.send"
+      "task=download.send",
+      "/index.php/blog/llamado-a-licitacion"
     ],
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "id": "fuente-011",
+    "url": "https://armstrong.gov.ar/index.php/transparencia",
+    "estado_verificacion": "OPERATIVA",
+    "incorporada": true,
+    "evidencia_descubrimiento": {
+      "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+      "url": "https://armstrong.gov.ar/index.php/transparencia",
+      "fecha": "2026-10-25",
+      "observacion": "Ruta indexada; lectura web directa devuelve 403; localizar sección específica"
+    },
+    "verificada_funcionando": true,
+    "ultima_verificacion": "2026-10-29T17:48:26.328120-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 7,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    },
+    "enriquecer_fichas": true
   },
   "https://lasparejas.gov.ar/": {
     "organismo": "Municipalidad de Las Parejas",
@@ -200,7 +239,25 @@
     "ocr": true,
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "id": "fuente-012",
+    "url": "https://lasparejas.gov.ar/",
+    "estado_verificacion": "PENDIENTE",
+    "incorporada": true,
+    "evidencia_descubrimiento": {
+      "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+      "url": "https://lasparejas.gov.ar/",
+      "fecha": "2026-10-25",
+      "observacion": "Sitio oficial localizado; falta ruta específica"
+    },
+    "verificada_funcionando": false,
+    "ultima_verificacion": "2026-10-29T17:48:26.644468-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 0,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    },
+    "indice_documentos": true
   },
   "https://funes.gob.ar/": {
     "organismo": "Municipalidad de Funes",
@@ -364,7 +421,25 @@
     "tipo_portal": "html_paginado_pdf",
     "conector": "publicaciones",
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "id": "fuente-026",
+    "url": "https://www.jusentrerios.gov.ar/contrataciones/",
+    "estado_verificacion": "OPERATIVA",
+    "incorporada": true,
+    "evidencia_descubrimiento": {
+      "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+      "url": "https://www.jusentrerios.gov.ar/contrataciones/",
+      "fecha": "2026-10-25",
+      "observacion": "Concursos y licitaciones indexados"
+    },
+    "verificada_funcionando": true,
+    "ultima_verificacion": "2026-10-29T17:49:07.501757-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 40952155721,
+      "publicaciones_detectadas": 51,
+      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    },
+    "enriquecer_fichas": true
   },
   "https://www.ater.gob.ar/ater2/licitaciones.asp": {
     "organismo": "ATER",
@@ -1137,6 +1212,27 @@
       "fecha": "2026-10-29",
       "metodo": "Búsqueda y contraste oficial; captura Actions 40950466660",
       "observacion": "Dos convocatorias históricas reales, con objeto y límite de presentación. No se declaran novedades del día."
+    }
+  },
+  "https://unr.edu.ar/obras-publicas/": {
+    "id": "fuente-079",
+    "organismo": "Universidad Nacional de Rosario",
+    "localidad": "Rosario",
+    "provincia": "Santa Fe",
+    "url": "https://unr.edu.ar/obras-publicas/",
+    "tipo_portal": "html_paginado",
+    "conector": "publicaciones",
+    "incorporada": true,
+    "estado_verificacion": "PARCIAL",
+    "verificada_funcionando": false,
+    "enriquecer_fichas": true,
+    "organismos_multiples": true,
+    "capturar_respuestas": true,
+    "ocr": false,
+    "evidencia_descubrimiento": {
+      "github_run_id": 41210359641,
+      "publicaciones_detectadas": 13,
+      "observacion": "Índice oficial con procedimientos; falta validar fechas en fichas y contraste histórico"
     }
   }
 }
