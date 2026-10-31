@@ -34,6 +34,12 @@ class BarridoInstitucional(unittest.TestCase):
         self.assertEqual(n,1);self.assertEqual(len(rs),1);self.assertEqual(rs[0]['fecha_publicacion_texto'],'2026-10-30')
         self.assertEqual(links,['https://oficial.gob.ar/aviso/']);self.assertFalse(rs[0]['documentos'])
 
+    def test_feed_pagina_de_licitaciones_no_fecha_todos_los_adjuntos_con_fecha_antigua(self):
+        xml=b'<rss><channel><item><title>Licitaciones</title><link>https://oficial.gob.ar/licitaciones/</link><pubDate>Wed, 01 Aug 2018 10:00:00 -0300</pubDate><description>&lt;p&gt;Licitacion publica 9/2026 Adquisicion de retroexcavadora&lt;/p&gt;&lt;p&gt;Licitacion publica 7/2026 Venta de lotes&lt;/p&gt;</description></item></channel></rss>'
+        rs,_,_=extraer_feed(xml,'https://oficial.gob.ar/feed/',{})
+        self.assertEqual(len(rs),2)
+        self.assertTrue(all(not r.get('fecha_publicacion_texto') for r in rs))
+
     def test_formulario_get_sibom_es_enlace_de_boletin(self):
         html='<form method="get" action="/bulletins/13933"><input type="submit" value="Ver Boletin"></form><form method="post" action="/admin"></form>'
         links=extractores.DOM(html).root.enlaces('https://sibom.slyt.gba.gob.ar/cities/102')

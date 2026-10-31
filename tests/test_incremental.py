@@ -17,6 +17,18 @@ class IncrementalTests(unittest.TestCase):
         return o.normalizar({'titulo':'Licitación Pública '+numero,'objeto':'Adquisición de hormigón','numero_procedimiento':numero,'tipo_procedimiento':'licitacion publica','organismo':'Comuna de Prueba','provincia':'Santa Fe','fuente':'https://prueba.gob.ar/','url':'https://prueba.gob.ar/licitacion','evidencia_url':'https://prueba.gob.ar/licitacion','detalle_completo':True,**kw},'2026-10-27T10:00:00-03:00')
     def informe(self,id='uno',estado='OPERATIVA',fecha='2026-10-26T10:00:00-03:00',**kw):
         return {'ejecucion_id':id,'actualizado':fecha,'estado_ejecucion':'COMPLETADA','resumen':{'finalizadas':1,'configuradas':1,'fuentes_error_interno':0},'observaciones':[{'url':'https://prueba.gob.ar/','estado':estado,'errores':[],'limites':[]}],**kw}
+    def test_boletin_complementario_reutiliza_historial_y_replay_sin_duplicados(self):
+        base=self.fila('12/2026',objeto='Cambio de tanques cubierta accesibilidad y refacción baños Escuela Luis Agote',fecha_apertura_texto='25/11/2026',identidad_ambito='arquitectura',numero_convocatoria='2')
+        inc.registrar(self.db,[base],self.informe())
+        aviso=self.fila('12/2026',objeto='Provisión de materiales: cambio de tanques cubierta accesibilidad refacción baños Escuela Luis Agote',fecha_apertura_texto='25/11/2026',es_fuente_complementaria=True,url='https://prueba.gob.ar/boletin.pdf',evidencia_url='https://prueba.gob.ar/boletin.pdf')
+        inc.registrar(self.db,[aviso],self.informe('dos'))
+        self.assertEqual(self.db.execute('SELECT COUNT(*) FROM procedimientos').fetchone()[0],1)
+        repetida=inc.registrar(self.db,[aviso],self.informe('tres'))
+        self.assertEqual(repetida['novedades'],0)
+        distinto={**aviso,'objeto':'Adquisición de combustible para maquinaria vial y camiones'}
+        inc.registrar(self.db,[distinto],self.informe('cuatro'))
+        self.assertEqual(self.db.execute('SELECT COUNT(*) FROM procedimientos').fetchone()[0],2)
+
     def test_primera_linea_base_no_informa_antiguas_como_nuevas(self):
         filas=[self.fila(str(n)+'/2020',fecha_apertura_texto='01/01/2020') for n in range(1200)]
         r=inc.registrar(self.db,filas,self.informe())

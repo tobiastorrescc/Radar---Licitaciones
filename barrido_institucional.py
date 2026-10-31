@@ -38,8 +38,10 @@ def extraer_feed(datos,url,config):
         fecha=item.findtext('pubDate') or item.findtext(atom+'published')
         try:publicada=parsedate_to_datetime(fecha).date().isoformat() if fecha and not re.match(r'^\d{4}-',fecha) else fecha[:10] if fecha else None
         except (TypeError,ValueError):publicada=None
+        individual=len({r.get('procedimiento') or r.get('numero_procedimiento') or r.get('titulo') for r in rs})==1 and not re.fullmatch(r'(?:compras(?: y contrataciones)?|licitaciones(?: y concursos)?|concursos|transparencia)',extractores.norm(titulo))
         for r in rs:
-            if publicada:r['fecha_publicacion_texto']=publicada
+            if publicada and individual:r['fecha_publicacion_texto']=publicada
+            elif publicada:r['fecha_feed_contenedor']=publicada
             r['evidencia_feed']=url
             resultados.append(r)
         if rs or re.search(r'licitaci[oó]n|concurso de precios|cotizaci[oó]n|pedido de presupuesto',titulo,re.I):enlaces.append(link)
@@ -127,7 +129,9 @@ def boletin_entre_rios(texto,url):
         for numero,tipo,contenido in partes:
             evento='|'.join(sorted(set(EVENTO.findall(norm(contenido))))) or None
             apertura=re.search(r'apertura.{0,700}?(\d{1,2}\s*/\s*\d{1,2}\s*/\s*20\d{2}(?:\s+a las\s+\d{1,2}\s*:\s*\d{2})?)',norm(contenido),re.S)
-            registros.append({'organismo':org,'organismo_publicado':publicado,'localidad':localidad,'provincia':'Entre Ríos','numero_procedimiento':numero,'numero_oficial_sin_interpretar':numero,'tipo_procedimiento':tipo,'procedimiento':tipo+' '+numero,'titulo':tipo+' '+numero+' '+contenido,'objeto':contenido,'url':url,'evidencia_url':url,'registro_estructurado':True,'detalle_completo':True,'es_fuente_complementaria':True,'evento_publicado':evento,'situacion_publicada':situacion(contenido),'fecha_apertura_texto':re.sub(r'\s*/\s*','/',apertura[1]) if apertura else None,'documentos':[{'url':url,'titulo':'Boletín Oficial Entre Ríos'}]})
+            presupuesto=re.search(r'presupuesto(?:\s+oficial)?(?:\s+estimado)?[^\n]{0,180}?(?<![uU])\$\s*([\d.,]+)',contenido,re.I)
+            presupuesto_texto=(('ARS ' if re.search(r'\bpesos\b',presupuesto[0],re.I) else '$ ')+presupuesto[1]) if presupuesto else None
+            registros.append({'presupuesto_texto':presupuesto_texto,'organismo':org,'organismo_publicado':publicado,'localidad':localidad,'provincia':'Entre Ríos','numero_procedimiento':numero,'numero_oficial_sin_interpretar':numero,'tipo_procedimiento':tipo,'procedimiento':tipo+' '+numero,'titulo':tipo+' '+numero+' '+contenido,'objeto':contenido,'url':url,'evidencia_url':url,'registro_estructurado':True,'detalle_completo':True,'es_fuente_complementaria':True,'evento_publicado':evento,'situacion_publicada':situacion(contenido),'fecha_apertura_texto':re.sub(r'\s*/\s*','/',apertura[1]) if apertura else None,'documentos':[{'url':url,'titulo':'Boletín Oficial Entre Ríos'}]})
     for l in lineas:
         n=norm(l.strip())
         if n in ('licitaciones','concursos','compras directas','contrataciones directas','solicitudes de cotizacion'):

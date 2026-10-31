@@ -1706,8 +1706,8 @@
     "tipo_portal": "boletin_pdf",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PARCIAL",
-    "verificada_funcionando": false,
+    "estado_verificacion": "OPERATIVA",
+    "verificada_funcionando": true,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
     "investigar_scripts": true,
@@ -1728,11 +1728,11 @@
       "www.entrerios.gov.ar",
       "portal.entrerios.gov.ar"
     ],
-    "ultima_verificacion": "2026-10-31T19:50:27Z",
+    "ultima_verificacion": "2026-10-31T19:57:57Z",
     "evidencia_verificacion": {
-      "github_run_id": 41235922884,
-      "publicaciones_detectadas": 95,
-      "criterio": "Avisos reales extraídos en PDF; ventana de ediciones incompleta por tiempo. No equivale a cobertura exhaustiva."
+      "github_run_id": 41236564363,
+      "publicaciones_detectadas": 107,
+      "criterio": "Índice oficial y ediciones de los últimos 60 días procesados sin incidencias. Secciones de contratación reconocidas; no implica cobertura provincial total."
     },
     "urls_inicio": [
       "https://testing54.entrerios.gov.ar/boletin/factura/inicio/get_buscador"
