@@ -54,3 +54,13 @@ class CobroRapido(unittest.TestCase):
         p=pagos.consolidar(es)
         self.assertEqual(p['clasificacion'],'OPCIONES_PUBLICADAS')
         self.assertFalse(rapido({'pago':p}))
+
+    def test_lapaz39_tabla_revisada_solo_con_hash_correcto(self):
+        import fichas
+        sha='65b930bc1f48d394bcbe853a974288d223294cff6326a5d76a7e8917099e14f8'
+        r=fichas.extraer('','https://haciendalapaz.gob.ar/archivos/20261030074127-f_pliego.pdf',sha,'REVISION')
+        self.assertEqual(len(r['productos']['valor']),9)
+        self.assertEqual(r['productos']['evidencia']['pagina'],1)
+        self.assertEqual(r['productos']['valor'][1]['cantidad'],115)
+        self.assertIn('30 días hábiles',r['plazo_entrega']['valor'])
+        self.assertNotIn('productos',fichas.extraer('','https://haciendalapaz.gob.ar/otro.pdf','hash_distinto','REVISION'))

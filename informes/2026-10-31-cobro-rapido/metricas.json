@@ -1,0 +1,35 @@
+{
+  "fecha": "2026-10-30T19:16:42.207646-03:00",
+  "cohorte": 116,
+  "revision_completa": true,
+  "consultas_publicaciones": 5,
+  "publicaciones_observadas": 63,
+  "pagos_verificados_antes": 7,
+  "pagos_verificados_despues": 9,
+  "de_desconocido_a_verificado": 2,
+  "ids_mejorados": [
+    "a06fdfe9c3da3cf63a3a1d8b2f93cac3c583ff5966552173caa5a69917433a5b",
+    "66acf000fa345e56f558c8a4141621197af3b75797d5b6cbe1d0a9d226d30e81"
+  ],
+  "cobro_rapido": 2,
+  "vigencia": {
+    "OBSERVADA_RECIENTEMENTE_ABIERTA_CALCULADA": 63,
+    "SOLO_EVIDENCIA_PREVIA": 53
+  },
+  "sin_escritura_historial": true,
+  "ocr_cupo_documentos": 0,
+  "fecha_evidencia": "2026-10-30",
+  "fecha_informe": "2026-10-31",
+  "run_final": 41136973306,
+  "primera_revision_run": 41135210119,
+  "revision_pliegos_run": 41135906815,
+  "ocr_selectivo_run": 41136637237,
+  "nuevas_paginas_ocr_ultima_pasada": 0,
+  "nuevas_paginas_ocr_etapa": 2,
+  "documentos_ocr_nuevos_etapa": 2,
+  "observadas_hoy_informe": 0,
+  "rosario_nueve_con_fecha": 9,
+  "porcentaje_pago_antes": 6.03,
+  "porcentaje_pago_despues": 7.76,
+  "nota_completitud": "Se intentó revisar la cohorte completa. No se verificaron documentalmente las 116; persisten pagos pendientes, TLS y respuestas inaccesibles. Las 63 observaciones son de capturas del 30/10, no una reconsulta del 31/10."
+}

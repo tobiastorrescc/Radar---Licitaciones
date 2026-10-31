@@ -165,5 +165,127 @@
         "cita": "Como requisito mínimo e imprescindible se exige: 1- Recibo de compra del pliego. 2- Constancia de constitución de la garantía de oferta. 3- Presupuesto firmado y sellado. Documentación complementaria: personería y CUIT. Repuestos nuevos, sin uso y originales: página 6."
       }
     }
+  },
+  {
+    "sha256": "65b930bc1f48d394bcbe853a974288d223294cff6326a5d76a7e8917099e14f8",
+    "organismo": "Municipalidad de La Paz",
+    "procedimiento": "Concurso de precios 39/2026 — Decreto 563/26",
+    "objeto": "Adquisición de materiales para realizar obra de cordón cuneta en calle Torres Vilches entre Chañar y C. D. Vila.",
+    "pagina_objeto": 1,
+    "pagina_productos": 1,
+    "cita_productos": "Artículo 1º, tabla de nueve ítems, revisión visual de página 1 del PDF oficial conservado por hash.",
+    "productos": [
+      {
+        "renglon": 1,
+        "producto": "Broza de 1ª calidad — m³",
+        "cantidad": 40,
+        "unidad": "m³",
+        "pagina": 1,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "renglon": 2,
+        "producto": "Hormigón H21 con macrofibras de PVC, dosificación 1,5 kg/m³ — m³",
+        "cantidad": 115,
+        "unidad": "m³",
+        "pagina": 1,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "renglon": 3,
+        "producto": "Hierro liso Ø16 mm x 12 m — unidades",
+        "cantidad": 16,
+        "unidad": "unidades",
+        "pagina": 1,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "renglon": 4,
+        "producto": "Caño negro K4 para pasadores Ø3/4 pulgada — metros",
+        "cantidad": 15,
+        "unidad": "metros",
+        "pagina": 1,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "renglon": 5,
+        "producto": "Hierro nervado ADN 420 Ø6 mm x 12 m — unidades",
+        "cantidad": 70,
+        "unidad": "unidades",
+        "pagina": 1,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "renglon": 6,
+        "producto": "Plancha de telgopor 1 m x 1 m x 1 cm — unidades",
+        "cantidad": 25,
+        "unidad": "unidades",
+        "pagina": 1,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "renglon": 7,
+        "producto": "Madera para encofrado, tabla de 4 pulgadas x 1 pulgada x 4 m — unidades",
+        "cantidad": 20,
+        "unidad": "unidades",
+        "pagina": 1,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "renglon": 8,
+        "producto": "Estacas 1 pulgada x 1 pulgada x 0,50 m — unidades",
+        "cantidad": 100,
+        "unidad": "unidades",
+        "pagina": 1,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      },
+      {
+        "renglon": 9,
+        "producto": "Alambre de atar Nº 16 — kg",
+        "cantidad": 5,
+        "unidad": "kg",
+        "pagina": 1,
+        "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+      }
+    ],
+    "campos_adicionales": {
+      "plazo_entrega": {
+        "valor": "Dentro de 30 días hábiles desde la notificación de adjudicación.",
+        "pagina": 3,
+        "cita": "Artículo 8º: dentro de los 30 (treinta) días hábiles posteriores a la fecha de notificación de la adjudicación."
+      },
+      "lugar_entrega": {
+        "valor": "Ciudad de La Paz, lugar que determine la Municipalidad; flete, acarreo y entrega a cargo del adjudicatario.",
+        "pagina": 3,
+        "cita": "Artículo 8º y comienzo de página 4."
+      },
+      "fecha_limite_presentacion": {
+        "valor": "2026-11-04",
+        "pagina": 2,
+        "cita": "Artículo 5º: hasta la apertura del primer sobre en la hora del artículo 3º; apertura 04/11/2026 09:00."
+      },
+      "hora_limite_presentacion": {
+        "valor": "09:00",
+        "pagina": 2,
+        "cita": "Hasta la apertura del primer sobre; artículo 3º: 04/11/2026 a las 09:00."
+      },
+      "modalidad_presentacion": {
+        "valor": [
+          "PRESENCIAL_SOBRE_CERRADO_MESA_ENTRADAS"
+        ],
+        "pagina": 2,
+        "cita": "Artículo 5º: oferta en Mesa de Entradas del Municipio, sobre cerrado, con número de concurso y día/hora de apertura."
+      },
+      "requisitos": {
+        "valor": "Pliego y anexos firmados en todas sus hojas; propuesta por escrito, precios unitarios y total con IVA; documentación societaria y representación cuando corresponda; declaración de domicilio electrónico. Para ítem 1 (broza): inscripción minera provincial, número de productor minero vigente y habilitación de comercialización. Mantenimiento de oferta: 20 días hábiles, con renovación prevista por el pliego. El Municipio puede variar adquisiciones en ±30%.",
+        "pagina": 2,
+        "cita": "Artículos 2º, 5º, 6º y punto 5.5 (páginas 1 a 3)."
+      },
+      "moneda_literal": {
+        "valor": "PESOS; presupuesto $34.995.000,00.",
+        "pagina": 1,
+        "cita": "Artículo 2º, presupuesto oficial."
+      }
+    }
   }
 ]

@@ -1,0 +1,842 @@
+[
+  {
+    "organismo": "Municipalidad de Chajarí",
+    "localidad": "Chajarí",
+    "provincia": "Entre Ríos",
+    "numero_procedimiento": "19/2026",
+    "tipo_procedimiento": "licitacion publica",
+    "campos": {
+      "objeto": {
+        "valor": "Provisión de repuestos para el tren de rodaje de las retroexcavadoras New Holland E215C EVO y Komatsu PC200.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 1,
+          "cita": "Objeto del decreto y especificaciones del mismo PDF",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "productos": {
+        "valor": [
+          {
+            "equipo": "NEW HOLLAND EVO215C",
+            "renglon": 1,
+            "producto": "Cadena",
+            "cantidad": 2,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "NEW HOLLAND EVO215C",
+            "renglon": 2,
+            "producto": "Rueda guía completa",
+            "cantidad": 2,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "NEW HOLLAND EVO215C",
+            "renglon": 3,
+            "producto": "Rueda dentada / rueda 21Z",
+            "cantidad": 2,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "NEW HOLLAND EVO215C",
+            "renglon": 4,
+            "producto": "Rodillo o rolo inferior",
+            "cantidad": 16,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "NEW HOLLAND EVO215C",
+            "renglon": 5,
+            "producto": "Rodillo o rolo superior",
+            "cantidad": 4,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "NEW HOLLAND EVO215C",
+            "renglon": 6,
+            "producto": "Tornillos para zapatas",
+            "cantidad": 400,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "NEW HOLLAND EVO215C",
+            "renglon": 7,
+            "producto": "Tuercas para zapatas",
+            "cantidad": 400,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "KOMATSU PC 200",
+            "renglon": 1,
+            "producto": "Rueda guía",
+            "cantidad": 2,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "KOMATSU PC 200",
+            "renglon": 2,
+            "producto": "Rodillo inferior",
+            "cantidad": 18,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "KOMATSU PC 200",
+            "renglon": 3,
+            "producto": "Rodillo superior",
+            "cantidad": 4,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "KOMATSU PC 200",
+            "renglon": 4,
+            "producto": "Rueda dentada",
+            "cantidad": 2,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "KOMATSU PC 200",
+            "renglon": 5,
+            "producto": "Bulones con tuercas",
+            "cantidad": 400,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "equipo": "KOMATSU PC 200",
+            "renglon": 6,
+            "producto": "Cadena 51 eslabones",
+            "cantidad": 2,
+            "unidad": null,
+            "pagina": 5,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          }
+        ],
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 5,
+          "cita": "ANEXO I — PLANILLA DE COTIZACION DE PRECIOS; tabla DETALLES / CANT.",
+          "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+        }
+      },
+      "productos_alternativos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "presupuesto": {
+        "valor": {
+          "importe": "59500000.0",
+          "moneda": null
+        },
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "consulta_url": "https://licitaciones.chajari.gob.ar/licitaciones/para_apertura/0",
+          "metodo": "POST",
+          "texto": "presupuesto_oficial: 59500000.0",
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710"
+        }
+      },
+      "fecha_publicacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_limite_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "hora_limite_presentacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_apertura": {
+        "valor": "2026-11-19",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "texto": "2026-11-19 10:00"
+        }
+      },
+      "hora_apertura": {
+        "valor": "10:00",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "texto": "2026-11-19 10:00"
+        }
+      },
+      "condiciones_pago": {
+        "valor": "Pago contado contra entrega",
+        "estado": "VERIFICADO",
+        "evidencia": [
+          {
+            "categoria": "CONTADO",
+            "etiqueta": "Pago contado contra entrega",
+            "plazos_dias": [],
+            "unidades_dias": [],
+            "hitos_inicio": [
+              "ENTREGA"
+            ],
+            "direccion": "NO_ESPECIFICADA",
+            "contado_mencionado": true,
+            "contra_entrega_mencionado": true,
+            "prioritario": true,
+            "pagos_parciales": false,
+            "anticipo_publicado": false,
+            "facturacion_parcial": false,
+            "acreditacion_inmediata_comprobada": false,
+            "clausula": "Articulo 12",
+            "cita": "PAGO: El oferente deberá cotizar de acuerdo a la siguiente altemativa: a.- CONTADO contra entrega del material El pago se efectuara contra entrega del producto.-",
+            "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+            "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+            "pagina": 4,
+            "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+            "version_analizador": 15
+          },
+          {
+            "categoria": "CONTADO",
+            "etiqueta": "Pago contado contra entrega",
+            "plazos_dias": [],
+            "unidades_dias": [],
+            "hitos_inicio": [
+              "ENTREGA"
+            ],
+            "direccion": "NO_ESPECIFICADA",
+            "contado_mencionado": true,
+            "contra_entrega_mencionado": true,
+            "prioritario": true,
+            "pagos_parciales": false,
+            "anticipo_publicado": false,
+            "facturacion_parcial": false,
+            "acreditacion_inmediata_comprobada": false,
+            "clausula": "Articulo 18",
+            "cita": "FORMA DE PAGO Contado contra entrega. EVALUACIÓN Y ADJUDICACIÓN Las ofertas serán evaluadas por item. Dr, Antoflo Marceio Borghesan Lic. María Elisa Moix PRÍSIDENTE MUNICIPAL ( Secretaria de Gob. y Hacienda Joan 0 GUA",
+            "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+            "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+            "pagina": 6,
+            "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+            "version_analizador": 15
+          },
+          {
+            "categoria": "CONTRA_ENTREGA",
+            "etiqueta": "Pago contra entrega",
+            "plazos_dias": [],
+            "unidades_dias": [],
+            "hitos_inicio": [
+              "ENTREGA"
+            ],
+            "direccion": "NO_ESPECIFICADA",
+            "contado_mencionado": false,
+            "contra_entrega_mencionado": true,
+            "prioritario": true,
+            "pagos_parciales": false,
+            "anticipo_publicado": false,
+            "facturacion_parcial": false,
+            "acreditacion_inmediata_comprobada": false,
+            "clausula": "Articulo 12",
+            "cita": "El pago se efectuara contra entrega del producto.- IMPUESTOS Y TASAS: corren por cuenta del proveedor.-",
+            "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+            "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+            "pagina": 4,
+            "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+            "version_analizador": 15
+          }
+        ]
+      },
+      "plazo_entrega": {
+        "valor": "El oferente debe indicar el plazo de entrega; esa cláusula no lo cuantifica.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 5,
+          "cita": "Los oferentes deberán presentar sus propuestas indicando, para cada ítem cotizado: c) Plazo de entrega.",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "lugar_entrega": {
+        "valor": "Corralón municipal de la Municipalidad de Chajarí.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 6,
+          "cita": "CONDICIONES DE ENTREGA. LUGAR DE ENTREGA: En el corralón municipal de la Municipalidad de Chajarí.",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "modalidad_presentacion": {
+        "valor": [
+          "ONLINE",
+          "PRESENCIAL_NOTA_CONTRASENA_EN_SOBRE"
+        ],
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 2,
+          "cita": "Las propuestas se presentarán mediante la plataforma digital. La nota en sobre cerrado con la contraseña se recibirá hasta 30 minutos antes del horario de apertura.",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "garantias": {
+        "valor": "Garantía de oferta: 1% del presupuesto oficial, $595.000,00; modalidades de constitución en artículo 9.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 4,
+          "cita": "Artículo 15: DEPÓSITO DE GARANTÍA ... 1% (UNO POR CIENTO) del Presupuesto Oficial ... ($595.000,00).",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "requisitos": {
+        "valor": "Repuestos nuevos, sin uso y originales para ambas máquinas. Recibo de compra del pliego, garantía de oferta, presupuesto firmado y sellado; personería si corresponde y constancia de CUIT.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 2,
+          "cita": "Como requisito mínimo e imprescindible se exige: 1- Recibo de compra del pliego. 2- Constancia de constitución de la garantía de oferta. 3- Presupuesto firmado y sellado. Documentación complementaria: personería y CUIT. Repuestos nuevos, sin uso y originales: página 6.",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "limite_nota_contrasena": {
+        "valor": "30 minutos antes de la apertura; para 19/11/2026 10:00 corresponde 09:30. No se infiere otro límite de carga digital.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 2,
+          "cita": "Esta nota, en sobre cerrado, se recibirá hasta 30 minutos antes del horario de apertura.",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "moneda_literal": {
+        "valor": "PESOS; el documento no expresa código ISO en la cláusula presupuestaria",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 1,
+          "cita": "PESOS CINCUENTA Y NUEVE MILLONES QUINIENTOS MIL CON CERO CENTAVOS",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      }
+    },
+    "publicacion_oficial": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+    "documentos": [
+      {
+        "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+        "titulo": "Pliego y decreto — descarga pública desde el procedimiento",
+        "consulta_post": {
+          "url": "https://licitaciones.chajari.gob.ar/return_file",
+          "json": {
+            "atta_id": "6397",
+            "file_name": "pliego_y_decreto",
+            "licitacion_id": 710
+          }
+        }
+      }
+    ],
+    "primera_deteccion": "2026-10-29T22:15:18.919539-03:00",
+    "ultima_observacion": "2026-10-30T08:33:56.099440-03:00",
+    "pago": {
+      "estado": "VERIFICADO",
+      "clasificacion": "CONTADO",
+      "etiqueta": "Pago contado contra entrega",
+      "plazos_dias": [],
+      "hitos_inicio": [
+        "ENTREGA"
+      ],
+      "unidades_dias": [],
+      "direccion": "NO_ESPECIFICADA",
+      "documento_respaldo": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+      "documentos_respaldo": [
+        "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710"
+      ],
+      "evidencias": [
+        {
+          "categoria": "CONTADO",
+          "etiqueta": "Pago contado contra entrega",
+          "plazos_dias": [],
+          "unidades_dias": [],
+          "hitos_inicio": [
+            "ENTREGA"
+          ],
+          "direccion": "NO_ESPECIFICADA",
+          "contado_mencionado": true,
+          "contra_entrega_mencionado": true,
+          "prioritario": true,
+          "pagos_parciales": false,
+          "anticipo_publicado": false,
+          "facturacion_parcial": false,
+          "acreditacion_inmediata_comprobada": false,
+          "clausula": "Articulo 12",
+          "cita": "PAGO: El oferente deberá cotizar de acuerdo a la siguiente altemativa: a.- CONTADO contra entrega del material El pago se efectuara contra entrega del producto.-",
+          "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 4,
+          "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+          "version_analizador": 15
+        },
+        {
+          "categoria": "CONTADO",
+          "etiqueta": "Pago contado contra entrega",
+          "plazos_dias": [],
+          "unidades_dias": [],
+          "hitos_inicio": [
+            "ENTREGA"
+          ],
+          "direccion": "NO_ESPECIFICADA",
+          "contado_mencionado": true,
+          "contra_entrega_mencionado": true,
+          "prioritario": true,
+          "pagos_parciales": false,
+          "anticipo_publicado": false,
+          "facturacion_parcial": false,
+          "acreditacion_inmediata_comprobada": false,
+          "clausula": "Articulo 18",
+          "cita": "FORMA DE PAGO Contado contra entrega. EVALUACIÓN Y ADJUDICACIÓN Las ofertas serán evaluadas por item. Dr, Antoflo Marceio Borghesan Lic. María Elisa Moix PRÍSIDENTE MUNICIPAL ( Secretaria de Gob. y Hacienda Joan 0 GUA",
+          "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 6,
+          "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+          "version_analizador": 15
+        },
+        {
+          "categoria": "CONTRA_ENTREGA",
+          "etiqueta": "Pago contra entrega",
+          "plazos_dias": [],
+          "unidades_dias": [],
+          "hitos_inicio": [
+            "ENTREGA"
+          ],
+          "direccion": "NO_ESPECIFICADA",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": true,
+          "prioritario": true,
+          "pagos_parciales": false,
+          "anticipo_publicado": false,
+          "facturacion_parcial": false,
+          "acreditacion_inmediata_comprobada": false,
+          "clausula": "Articulo 12",
+          "cita": "El pago se efectuara contra entrega del producto.- IMPUESTOS Y TASAS: corren por cuenta del proveedor.-",
+          "url_documento": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=710",
+          "sha256": "2b0bd43c642b8ecc8691d43b781a8391d70582baebb5e2b06b309df1e5c5304f",
+          "pagina": 4,
+          "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+          "version_analizador": 15
+        }
+      ],
+      "prioritario": true,
+      "motivo": null
+    },
+    "plazo_nominal_pago": {
+      "dias": [],
+      "unidades": [],
+      "hitos_inicio": [
+        "ENTREGA"
+      ]
+    },
+    "anticipos_y_parciales": {
+      "anticipo_publicado": null,
+      "pagos_parciales": null,
+      "facturacion_parcial": null
+    },
+    "recuperacion_efectiva_capital": {
+      "estado": "PENDIENTE",
+      "dias": null,
+      "motivo": "El plazo contractual no prueba acreditación bancaria ni fecha efectiva de recuperación del capital."
+    },
+    "revision_vigencia": "OBSERVADA_RECIENTEMENTE_ABIERTA_CALCULADA"
+  },
+  {
+    "organismo": "Municipalidad de La Paz",
+    "localidad": "La Paz",
+    "provincia": "Entre Ríos",
+    "numero_procedimiento": "39/2026",
+    "tipo_procedimiento": "concurso de precios",
+    "campos": {
+      "objeto": {
+        "valor": "Adquisición de materiales para realizar obra de cordón cuneta en calle Torres Vilches entre Chañar y C. D. Vila.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://haciendalapaz.gob.ar/archivos/20261030074127-f_pliego.pdf",
+          "sha256": "65b930bc1f48d394bcbe853a974288d223294cff6326a5d76a7e8917099e14f8",
+          "pagina": 1,
+          "cita": "Objeto del decreto y especificaciones del mismo PDF",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "productos": {
+        "valor": [
+          {
+            "renglon": 1,
+            "producto": "Broza de 1ª calidad — m³",
+            "cantidad": 40,
+            "unidad": "m³",
+            "pagina": 1,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "renglon": 2,
+            "producto": "Hormigón H21 con macrofibras de PVC, dosificación 1,5 kg/m³ — m³",
+            "cantidad": 115,
+            "unidad": "m³",
+            "pagina": 1,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "renglon": 3,
+            "producto": "Hierro liso Ø16 mm x 12 m — unidades",
+            "cantidad": 16,
+            "unidad": "unidades",
+            "pagina": 1,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "renglon": 4,
+            "producto": "Caño negro K4 para pasadores Ø3/4 pulgada — metros",
+            "cantidad": 15,
+            "unidad": "metros",
+            "pagina": 1,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "renglon": 5,
+            "producto": "Hierro nervado ADN 420 Ø6 mm x 12 m — unidades",
+            "cantidad": 70,
+            "unidad": "unidades",
+            "pagina": 1,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "renglon": 6,
+            "producto": "Plancha de telgopor 1 m x 1 m x 1 cm — unidades",
+            "cantidad": 25,
+            "unidad": "unidades",
+            "pagina": 1,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "renglon": 7,
+            "producto": "Madera para encofrado, tabla de 4 pulgadas x 1 pulgada x 4 m — unidades",
+            "cantidad": 20,
+            "unidad": "unidades",
+            "pagina": 1,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "renglon": 8,
+            "producto": "Estacas 1 pulgada x 1 pulgada x 0,50 m — unidades",
+            "cantidad": 100,
+            "unidad": "unidades",
+            "pagina": 1,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          },
+          {
+            "renglon": 9,
+            "producto": "Alambre de atar Nº 16 — kg",
+            "cantidad": 5,
+            "unidad": "kg",
+            "pagina": 1,
+            "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+          }
+        ],
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://haciendalapaz.gob.ar/archivos/20261030074127-f_pliego.pdf",
+          "sha256": "65b930bc1f48d394bcbe853a974288d223294cff6326a5d76a7e8917099e14f8",
+          "pagina": 1,
+          "cita": "Artículo 1º, tabla de nueve ítems, revisión visual de página 1 del PDF oficial conservado por hash.",
+          "metodo": "REVISION_VISUAL_PDF_OFICIAL_CON_OCR_CACHE"
+        }
+      },
+      "productos_alternativos": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "presupuesto": {
+        "valor": {
+          "importe": "34995000.00",
+          "moneda": null
+        },
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "texto": "presupuesto oficial: $34.995.000,00.",
+          "url": "https://haciendalapaz.gob.ar/concursos-de-precios/2026/"
+        }
+      },
+      "fecha_publicacion": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "fecha_limite_presentacion": {
+        "valor": "2026-11-04",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://haciendalapaz.gob.ar/archivos/20261030074127-f_pliego.pdf",
+          "sha256": "65b930bc1f48d394bcbe853a974288d223294cff6326a5d76a7e8917099e14f8",
+          "pagina": 2,
+          "cita": "Artículo 5º: hasta la apertura del primer sobre en la hora del artículo 3º; apertura 04/11/2026 09:00.",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "hora_limite_presentacion": {
+        "valor": "09:00",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://haciendalapaz.gob.ar/archivos/20261030074127-f_pliego.pdf",
+          "sha256": "65b930bc1f48d394bcbe853a974288d223294cff6326a5d76a7e8917099e14f8",
+          "pagina": 2,
+          "cita": "Hasta la apertura del primer sobre; artículo 3º: 04/11/2026 a las 09:00.",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "fecha_apertura": {
+        "valor": "2026-11-04",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://haciendalapaz.gob.ar/concursos-de-precios/2026/",
+          "texto": "04/11/2026 09:00 horas "
+        }
+      },
+      "hora_apertura": {
+        "valor": "09:00",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://haciendalapaz.gob.ar/concursos-de-precios/2026/",
+          "texto": "04/11/2026 09:00 horas "
+        }
+      },
+      "condiciones_pago": {
+        "valor": "10 días habiles desde entrega y presentación de factura",
+        "estado": "VERIFICADO",
+        "evidencia": [
+          {
+            "categoria": "PLAZO_10_DIAS",
+            "etiqueta": "10 días habiles desde entrega y presentación de factura",
+            "plazos_dias": [
+              10
+            ],
+            "unidades_dias": [
+              "habiles"
+            ],
+            "hitos_inicio": [
+              "PRESENTACION_FACTURA",
+              "ENTREGA"
+            ],
+            "direccion": "NO_ESPECIFICADA",
+            "contado_mencionado": false,
+            "contra_entrega_mencionado": false,
+            "prioritario": false,
+            "pagos_parciales": true,
+            "anticipo_publicado": false,
+            "facturacion_parcial": false,
+            "acreditacion_inmediata_comprobada": false,
+            "clausula": "Articulo 92",
+            "cita": "FORMA DE PAGO La Municipalidad de La Paz abonará el importe correspondiente al presente Concurso, dentro de los 10 (diez) días hábiles posteriores a la fecha de entrega del bien adjudicado y presentación de la factura. En ésta, deberá consignarse por parte del área de Suministros, la recepción total de los materiales adjudicados, los que quedarán sujetos a revisión. También podrán realizarse pagos parciales en caso de existir certificaciones parciales de obra, con la entrega de la correspondiente factura y/o recibo oficial. No se abonará suma alguna sin haberse presentado previamente la Factura oficial en tiempo",
+            "url_documento": "https://haciendalapaz.gob.ar/archivos/20261030074127-f_pliego.pdf",
+            "sha256": "65b930bc1f48d394bcbe853a974288d223294cff6326a5d76a7e8917099e14f8",
+            "pagina": 4,
+            "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+            "version_analizador": 15
+          }
+        ]
+      },
+      "plazo_entrega": {
+        "valor": "Dentro de 30 días hábiles desde la notificación de adjudicación.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://haciendalapaz.gob.ar/archivos/20261030074127-f_pliego.pdf",
+          "sha256": "65b930bc1f48d394bcbe853a974288d223294cff6326a5d76a7e8917099e14f8",
+          "pagina": 3,
+          "cita": "Artículo 8º: dentro de los 30 (treinta) días hábiles posteriores a la fecha de notificación de la adjudicación.",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "lugar_entrega": {
+        "valor": "Ciudad de La Paz, lugar que determine la Municipalidad; flete, acarreo y entrega a cargo del adjudicatario.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://haciendalapaz.gob.ar/archivos/20261030074127-f_pliego.pdf",
+          "sha256": "65b930bc1f48d394bcbe853a974288d223294cff6326a5d76a7e8917099e14f8",
+          "pagina": 3,
+          "cita": "Artículo 8º y comienzo de página 4.",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "modalidad_presentacion": {
+        "valor": [
+          "PRESENCIAL_SOBRE_CERRADO_MESA_ENTRADAS"
+        ],
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://haciendalapaz.gob.ar/archivos/20261030074127-f_pliego.pdf",
+          "sha256": "65b930bc1f48d394bcbe853a974288d223294cff6326a5d76a7e8917099e14f8",
+          "pagina": 2,
+          "cita": "Artículo 5º: oferta en Mesa de Entradas del Municipio, sobre cerrado, con número de concurso y día/hora de apertura.",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "garantias": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "requisitos": {
+        "valor": "Pliego y anexos firmados en todas sus hojas; propuesta por escrito, precios unitarios y total con IVA; documentación societaria y representación cuando corresponda; declaración de domicilio electrónico. Para ítem 1 (broza): inscripción minera provincial, número de productor minero vigente y habilitación de comercialización. Mantenimiento de oferta: 20 días hábiles, con renovación prevista por el pliego. El Municipio puede variar adquisiciones en ±30%.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://haciendalapaz.gob.ar/archivos/20261030074127-f_pliego.pdf",
+          "sha256": "65b930bc1f48d394bcbe853a974288d223294cff6326a5d76a7e8917099e14f8",
+          "pagina": 2,
+          "cita": "Artículos 2º, 5º, 6º y punto 5.5 (páginas 1 a 3).",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      },
+      "limite_nota_contrasena": {
+        "valor": null,
+        "estado": "PENDIENTE",
+        "evidencia": null
+      },
+      "moneda_literal": {
+        "valor": "PESOS; presupuesto $34.995.000,00.",
+        "estado": "VERIFICADO",
+        "evidencia": {
+          "url": "https://haciendalapaz.gob.ar/archivos/20261030074127-f_pliego.pdf",
+          "sha256": "65b930bc1f48d394bcbe853a974288d223294cff6326a5d76a7e8917099e14f8",
+          "pagina": 1,
+          "cita": "Artículo 2º, presupuesto oficial.",
+          "metodo": "REVISION_DOCUMENTAL_PDF_OFICIAL"
+        }
+      }
+    },
+    "publicacion_oficial": "https://haciendalapaz.gob.ar/archivos/20261030074127-f_pliego.pdf",
+    "documentos": [
+      {
+        "titulo": "VER PLIEGO",
+        "url": "https://haciendalapaz.gob.ar/archivos/20261030074127-f_pliego.pdf"
+      },
+      {
+        "titulo": "PLANILLA COTIZACIÓN",
+        "url": "https://haciendalapaz.gob.ar/archivos/20261030074127-f_planilla.docx"
+      },
+      {
+        "titulo": "DJ CORREO ELECTRÓNICO",
+        "url": "https://haciendalapaz.gob.ar/archivos/20261030074127-f_dj.docx"
+      }
+    ],
+    "primera_deteccion": "2026-10-30T08:33:56.099440-03:00",
+    "ultima_observacion": "2026-10-30T08:33:56.099440-03:00",
+    "pago": {
+      "estado": "VERIFICADO",
+      "clasificacion": "PLAZO_10_DIAS",
+      "etiqueta": "10 días habiles desde entrega y presentación de factura",
+      "plazos_dias": [
+        10
+      ],
+      "hitos_inicio": [
+        "PRESENTACION_FACTURA",
+        "ENTREGA"
+      ],
+      "unidades_dias": [
+        "habiles"
+      ],
+      "direccion": "NO_ESPECIFICADA",
+      "documento_respaldo": "https://haciendalapaz.gob.ar/archivos/20261030074127-f_pliego.pdf",
+      "documentos_respaldo": [
+        "https://haciendalapaz.gob.ar/archivos/20261030074127-f_pliego.pdf"
+      ],
+      "evidencias": [
+        {
+          "categoria": "PLAZO_10_DIAS",
+          "etiqueta": "10 días habiles desde entrega y presentación de factura",
+          "plazos_dias": [
+            10
+          ],
+          "unidades_dias": [
+            "habiles"
+          ],
+          "hitos_inicio": [
+            "PRESENTACION_FACTURA",
+            "ENTREGA"
+          ],
+          "direccion": "NO_ESPECIFICADA",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": false,
+          "prioritario": false,
+          "pagos_parciales": true,
+          "anticipo_publicado": false,
+          "facturacion_parcial": false,
+          "acreditacion_inmediata_comprobada": false,
+          "clausula": "Articulo 92",
+          "cita": "FORMA DE PAGO La Municipalidad de La Paz abonará el importe correspondiente al presente Concurso, dentro de los 10 (diez) días hábiles posteriores a la fecha de entrega del bien adjudicado y presentación de la factura. En ésta, deberá consignarse por parte del área de Suministros, la recepción total de los materiales adjudicados, los que quedarán sujetos a revisión. También podrán realizarse pagos parciales en caso de existir certificaciones parciales de obra, con la entrega de la correspondiente factura y/o recibo oficial. No se abonará suma alguna sin haberse presentado previamente la Factura oficial en tiempo",
+          "url_documento": "https://haciendalapaz.gob.ar/archivos/20261030074127-f_pliego.pdf",
+          "sha256": "65b930bc1f48d394bcbe853a974288d223294cff6326a5d76a7e8917099e14f8",
+          "pagina": 4,
+          "metodo_extraccion": "OCR_SELECTIVO_CACHE",
+          "version_analizador": 15
+        }
+      ],
+      "prioritario": false,
+      "motivo": null
+    },
+    "plazo_nominal_pago": {
+      "dias": [
+        10
+      ],
+      "unidades": [
+        "habiles"
+      ],
+      "hitos_inicio": [
+        "PRESENTACION_FACTURA",
+        "ENTREGA"
+      ]
+    },
+    "anticipos_y_parciales": {
+      "anticipo_publicado": null,
+      "pagos_parciales": true,
+      "facturacion_parcial": null
+    },
+    "recuperacion_efectiva_capital": {
+      "estado": "PENDIENTE",
+      "dias": null,
+      "motivo": "El plazo contractual no prueba acreditación bancaria ni fecha efectiva de recuperación del capital."
+    },
+    "revision_vigencia": "SOLO_EVIDENCIA_PREVIA"
+  }
+]
