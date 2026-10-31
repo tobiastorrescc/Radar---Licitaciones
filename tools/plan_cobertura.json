@@ -1,5 +1,5 @@
 {
-  "etapa": "repeticion-optimizada-y-entrega-completa-del-lote",
+  "etapa": "repeticion-con-indice-completo-validado-por-hash",
   "barrido": false,
   "barrido_manifest": "inventario/recuperacion_fuentes.json",
   "barrido_ids": [
