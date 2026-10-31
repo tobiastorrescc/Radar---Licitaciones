@@ -1,0 +1,325 @@
+{
+  "etapa": "comparativo-inicial",
+  "localidades": [
+    {
+      "localidad": "Ramayón",
+      "provincia": "Santa Fe",
+      "sitio_propio": "NO_LOCALIZADO",
+      "fuente_alternativa": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-09-18licitaciones.html"
+    },
+    {
+      "localidad": "Casilda",
+      "provincia": "Santa Fe",
+      "sitio_oficial": "https://www.casilda.gob.ar/web/licitaciones-casilda/",
+      "fuente_id": "fuente-008"
+    },
+    {
+      "localidad": "Carcarañá",
+      "provincia": "Santa Fe",
+      "sitio_oficial": "https://xn--carcaraa-j3a.gob.ar/",
+      "fuente_id": "fuente-009"
+    },
+    {
+      "localidad": "Cañada de Gómez",
+      "provincia": "Santa Fe",
+      "sitio_oficial": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+      "fuente_id": "fuente-010"
+    },
+    {
+      "localidad": "Armstrong",
+      "provincia": "Santa Fe",
+      "sitio_oficial": "https://armstrong.gov.ar/index.php/transparencia",
+      "fuente_id": "fuente-011"
+    },
+    {
+      "localidad": "Las Parejas",
+      "provincia": "Santa Fe",
+      "sitio_oficial": "https://lasparejas.gov.ar/",
+      "fuente_id": "fuente-012"
+    },
+    {
+      "localidad": "Alvear",
+      "provincia": "Santa Fe",
+      "sitio_oficial": "https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones",
+      "fuente_id": "fuente-055"
+    },
+    {
+      "localidad": "Chajarí",
+      "provincia": "Entre Ríos",
+      "sitio_oficial": "https://chajari.gob.ar/",
+      "fuente_id": "fuente-040"
+    },
+    {
+      "localidad": "La Paz",
+      "provincia": "Entre Ríos",
+      "sitio_oficial": "https://haciendalapaz.gob.ar/compras/",
+      "fuente_id": "fuente-043"
+    },
+    {
+      "localidad": "Victoria",
+      "provincia": "Entre Ríos",
+      "sitio_oficial": "https://victoria.gob.ar/web-compras/Invitaciones-Compras/concurso-de-precios/",
+      "fuente_id": "fuente-031"
+    },
+    {
+      "localidad": "General Lagos",
+      "provincia": "Santa Fe",
+      "sitio_oficial": "https://cglagos.gob.ar/comuna/compras-y-licitaciones",
+      "fuente_id": "fuente-062"
+    },
+    {
+      "localidad": "Arequito",
+      "provincia": "Santa Fe",
+      "sitio_oficial": "https://comunaarequito.gob.ar/licitaciones/",
+      "fuente_id": "fuente-063"
+    },
+    {
+      "localidad": "Chabás",
+      "provincia": "Santa Fe",
+      "sitio_oficial": "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5002-licitacion-publica-01-2026",
+      "fuente_id": "fuente-064"
+    },
+    {
+      "localidad": "Timbúes",
+      "provincia": "Santa Fe",
+      "sitio_oficial": "https://www.timbues.gob.ar/index.php?pagina=lista&sec=210",
+      "fuente_id": "fuente-065"
+    },
+    {
+      "localidad": "Humboldt",
+      "provincia": "Santa Fe",
+      "sitio_oficial": "https://www.humboldt.gob.ar/",
+      "fuente_id": "fuente-078"
+    },
+    {
+      "localidad": "Villa Elisa",
+      "provincia": "Entre Ríos",
+      "sitio_oficial": "https://villaelisa.gov.ar/transparencia/",
+      "fuente_id": "fuente-068"
+    },
+    {
+      "localidad": "General Ramírez",
+      "provincia": "Entre Ríos",
+      "sitio_oficial": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/",
+      "fuente_id": "fuente-069"
+    },
+    {
+      "localidad": "Lucas González",
+      "provincia": "Entre Ríos",
+      "sitio_oficial": "https://lucasgonzalez.gob.ar/licitaciones-y-concursos/",
+      "fuente_id": "fuente-070"
+    },
+    {
+      "localidad": "San Salvador",
+      "provincia": "Entre Ríos",
+      "sitio_oficial": "https://sansalvadorer.gob.ar/",
+      "fuente_id": "fuente-071"
+    },
+    {
+      "localidad": "San José",
+      "provincia": "Entre Ríos",
+      "sitio_oficial": "https://sanjose.gob.ar/concursos-licitaciones/",
+      "fuente_id": "fuente-032"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "fuente-008"
+    },
+    {
+      "id": "fuente-009"
+    },
+    {
+      "id": "fuente-010"
+    },
+    {
+      "id": "fuente-011"
+    },
+    {
+      "id": "fuente-012"
+    },
+    {
+      "id": "fuente-055"
+    },
+    {
+      "id": "fuente-040"
+    },
+    {
+      "id": "fuente-043"
+    },
+    {
+      "id": "fuente-031"
+    },
+    {
+      "id": "fuente-062"
+    },
+    {
+      "id": "fuente-063"
+    },
+    {
+      "id": "fuente-064"
+    },
+    {
+      "id": "fuente-065"
+    },
+    {
+      "id": "fuente-078"
+    },
+    {
+      "id": "fuente-068"
+    },
+    {
+      "id": "fuente-069"
+    },
+    {
+      "id": "fuente-070"
+    },
+    {
+      "id": "fuente-071"
+    },
+    {
+      "id": "fuente-032"
+    },
+    {
+      "id": "fuente-002"
+    },
+    {
+      "id": "fuente-003"
+    },
+    {
+      "id": "fuente-004"
+    },
+    {
+      "id": "fuente-005"
+    },
+    {
+      "id": "fuente-006"
+    },
+    {
+      "id": "fuente-007"
+    },
+    {
+      "id": "fuente-023"
+    },
+    {
+      "id": "fuente-026"
+    },
+    {
+      "id": "fuente-058"
+    },
+    {
+      "id": "fuente-060"
+    },
+    {
+      "id": "fuente-061"
+    },
+    {
+      "id": "ramayon-bo",
+      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-09-18licitaciones.html",
+      "organismo": "Boletín Oficial Santa Fe",
+      "provincia": "Santa Fe",
+      "localidad": null,
+      "conector": "publicaciones",
+      "adaptador": "boletin-sf",
+      "organismos_multiples": true,
+      "descubrir_menu": true,
+      "lectura_adjuntos": "necesarios"
+    },
+    {
+      "id": "hospitales-bo15",
+      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-10-15licitaciones.html",
+      "organismo": "Boletín Oficial Santa Fe",
+      "provincia": "Santa Fe",
+      "localidad": null,
+      "conector": "publicaciones",
+      "adaptador": "boletin-sf",
+      "organismos_multiples": true,
+      "descubrir_menu": true,
+      "lectura_adjuntos": "necesarios"
+    },
+    {
+      "id": "hospitales-bo19",
+      "url": "https://www.santafe.gov.ar/boletinoficial/index.php/ver.php?seccion=2026%2F2026-10-19licitaciones.html",
+      "organismo": "Boletín Oficial Santa Fe",
+      "provincia": "Santa Fe",
+      "localidad": null,
+      "conector": "publicaciones",
+      "adaptador": "boletin-sf",
+      "organismos_multiples": true,
+      "descubrir_menu": true,
+      "lectura_adjuntos": "necesarios"
+    },
+    {
+      "id": "pjsf-bo7",
+      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-10-07licitaciones.html",
+      "organismo": "Boletín Oficial Santa Fe",
+      "provincia": "Santa Fe",
+      "localidad": null,
+      "conector": "publicaciones",
+      "adaptador": "boletin-sf",
+      "organismos_multiples": true,
+      "descubrir_menu": true,
+      "lectura_adjuntos": "necesarios"
+    },
+    {
+      "id": "unr-obras",
+      "url": "https://unr.edu.ar/obras-publicas/",
+      "organismo": "UNR",
+      "provincia": "Santa Fe",
+      "localidad": null,
+      "conector": "publicaciones",
+      "adaptador": "generico",
+      "organismos_multiples": false,
+      "descubrir_menu": true,
+      "lectura_adjuntos": "necesarios"
+    },
+    {
+      "id": "unr-noticias",
+      "url": "https://unr.edu.ar/category/noticias-compras-y-licitaciones/",
+      "organismo": "UNR",
+      "provincia": "Santa Fe",
+      "localidad": null,
+      "conector": "publicaciones",
+      "adaptador": "generico",
+      "organismos_multiples": false,
+      "descubrir_menu": true,
+      "lectura_adjuntos": "necesarios"
+    },
+    {
+      "id": "pjer-lic",
+      "url": "https://www.jusentrerios.gov.ar/contrato/licitaciones/",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "provincia": "Entre Ríos",
+      "localidad": null,
+      "conector": "publicaciones",
+      "adaptador": "generico",
+      "organismos_multiples": false,
+      "descubrir_menu": true,
+      "lectura_adjuntos": "necesarios"
+    },
+    {
+      "id": "er-uep",
+      "url": "https://portal.entrerios.gov.ar/consultas/contratacionesuep",
+      "organismo": "Gobierno provincial",
+      "provincia": "Entre Ríos",
+      "localidad": null,
+      "conector": "publicaciones",
+      "adaptador": "generico",
+      "organismos_multiples": false,
+      "descubrir_menu": true,
+      "lectura_adjuntos": "necesarios"
+    },
+    {
+      "id": "samco-gestion",
+      "url": "https://www.santafe.gov.ar/gestionesdecompras/site/gestion.php?contar=1&idGestion=139389",
+      "organismo": "Gobierno provincial",
+      "provincia": "Santa Fe",
+      "localidad": null,
+      "conector": "publicaciones",
+      "adaptador": "generico",
+      "organismos_multiples": false,
+      "descubrir_menu": true,
+      "lectura_adjuntos": "necesarios"
+    }
+  ]
+}

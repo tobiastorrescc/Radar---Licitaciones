@@ -454,7 +454,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 for doc in r.get('documentos',[]):
                     destino=doc['url']
                     necesario=modo=='todos' or not r.get('detalle_completo')
-                    if necesario and _host(destino) in hosts and destino not in seen:
+                    if necesario and not config.get('solo_descubrimiento') and _host(destino) in hosts and destino not in seen:
                         documento_pendiente[destino]={'url':destino,'publicacion_id':key}
                         pending.append((destino,'DOCUMENTO',key))
                 if (not r.get('detalle_completo') or config.get('enriquecer_fichas')) and r['url']!=url and not urlparse(r['url']).path.lower().endswith(extractores.ADJUNTOS):

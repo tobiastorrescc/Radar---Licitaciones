@@ -25,7 +25,7 @@ jobs:
           python - <<'PY' >> "$GITHUB_OUTPUT"
           import json
           d=json.load(open('tools/plan_cobertura.json'))
-          for k in ('sondear','auditar','descubrir','revisar_cobro'):print(k+'='+str(d.get(k,False)).lower())
+          for k in ('sondear','auditar','descubrir','revisar_cobro','barrido'):print(k+'='+str(d.get(k,False)).lower())
           run=str(d.get('reprocesar_run',''))
           if run and not run.isdigit():raise ValueError('Run inválido')
           print('reprocesar_run='+run)
@@ -49,6 +49,10 @@ jobs:
           path: work/cache-documentos
           key: textos-v1-cobertura-${{ github.run_id }}
           restore-keys: textos-v1-
+      - name: Barrido territorial y de organismos sin enriquecimiento bloqueante
+        if: steps.plan.outputs.barrido == 'true'
+        timeout-minutes: 10
+        run: python -u tools/auditar_barrido.py
       - name: Sondear enlaces oficiales con evidencia y tiempo acotado
         if: steps.plan.outputs.sondear == 'true'
         run: python -u tools/sondear_cobertura.py
@@ -162,6 +166,7 @@ jobs:
         with:
           name: cobertura-${{ github.run_id }}
           path: |
+            work/barrido/
             work/cierre-auditable/resultado.json
             work/cierre-auditable/ejecuciones/
             work/cobro-rapido/

@@ -1,11 +1,11 @@
 {
-  "etapa": "contraste-final-captura-real-con-todo-el-historial-sin-red",
+  "etapa": "barrido-comparativo-20-localidades-y-organismos",
+  "barrido": true,
   "sondear": false,
   "auditar": false,
   "descubrir": false,
   "reverificar_ids": [],
   "revisar_identidades": false,
   "revisar_cobro": false,
-  "archivar_auditoria": false,
-  "captura_run": 41199939113
+  "archivar_auditoria": false
 }
