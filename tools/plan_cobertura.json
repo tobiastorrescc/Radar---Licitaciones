@@ -1,11 +1,20 @@
 {
-  "etapa": "barrido-comparativo-correcciones-navegacion-y-avisos",
-  "barrido": true,
-  "sondear": false,
+  "etapa": "contraste-barrido-sin-repetir-consultas-y-sondeo-publico",
+  "barrido": false,
+  "sondear": true,
   "auditar": false,
   "descubrir": false,
   "reverificar_ids": [],
   "revisar_identidades": false,
   "revisar_cobro": false,
-  "archivar_auditoria": false
+  "archivar_auditoria": false,
+  "comparar_barrido_run": 41211320771,
+  "urls_sondeo": [
+    "https://portal.entrerios.gov.ar/static/js/main.dd0477b4.js",
+    "https://epe.santafe.gov.ar/app2/compras",
+    "https://epe.santafe.gov.ar/app2/apertura/19015",
+    "https://epe.santafe.gov.ar/app2/api/archivo?id=45038&modulo=apertura",
+    "https://www.santafe.gob.ar/boletinoficial/ver.php?seccion=2026%2F2026-09-18licitaciones.html",
+    "https://www.santafe.gob.ar/boletinoficial/ver.php?seccion=2026%2F2026-10-19licitaciones.html"
+  ]
 }

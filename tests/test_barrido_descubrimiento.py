@@ -15,6 +15,13 @@ class BarridoDescubrimiento(unittest.TestCase):
         rs,_,_=extractores.extraer(html,'https://oficial.gob.ar/',{'admitir_avisos_sin_numero':True})
         self.assertFalse(rs)
 
+    def test_mismo_indice_no_oculta_procedimiento_distinto(self):
+        from tools.comparar_barrido import comparar
+        uno={'organismo':'Comuna','provincia':'Santa Fe','url':'https://oficial.gob.ar/compras/','fuente':'https://oficial.gob.ar/compras/','numero_procedimiento':'1/2026','tipo_procedimiento':'licitacion publica','clasificacion_registro':'PROCEDIMIENTO','vigencia':'ABIERTA'}
+        dos={**uno,'numero_procedimiento':'2/2026'}
+        r=comparar({'registros':[uno]},{'registros':[dos]},[uno])
+        self.assertEqual(r['categorias'],{'VIGENTE_NUEVA_PARA_RADAR':1})
+
     def test_sigue_boletines_oficiales_plural(self):
         calls=[]
         def fetch(url):

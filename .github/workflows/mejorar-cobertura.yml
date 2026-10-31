@@ -33,6 +33,9 @@ jobs:
           captura=str(d.get('captura_run',''))
           if captura and not captura.isdigit():raise ValueError('Run de captura inválido')
           print('captura_run='+captura)
+          comparar=str(d.get('comparar_barrido_run',''))
+          if comparar and not comparar.isdigit():raise ValueError('Run comparativo inválido')
+          print('comparar_barrido_run='+comparar)
           pagos=str(d.get('pagos_run',''))
           if pagos and not pagos.isdigit():raise ValueError('Run de pagos inválido')
           print('pagos_run='+pagos)
@@ -53,6 +56,42 @@ jobs:
         if: steps.plan.outputs.barrido == 'true'
         timeout-minutes: 10
         run: python -u tools/auditar_barrido.py
+      - name: Validar capturas del piloto comparativo
+        if: steps.plan.outputs.comparar_barrido_run != ''
+        uses: actions/github-script@v7
+        env:
+          BARRIDO_RUN: ${{ steps.plan.outputs.comparar_barrido_run }}
+        with:
+          script: |
+            for(const id of [41210359641,41200546592,Number(process.env.BARRIDO_RUN)]){
+              const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:id});
+              if(r.conclusion!=='success'||r.head_branch!=='mejora/radar-auditable'||r.head_repository.full_name!==`${context.repo.owner}/${context.repo.repo}`||r.path!=='.github/workflows/mejorar-cobertura.yml')throw Error('Captura comparativa inválida');
+            }
+      - uses: actions/download-artifact@v4
+        if: steps.plan.outputs.comparar_barrido_run != ''
+        with:
+          name: cobertura-41210359641
+          path: work/barrido-anterior
+          run-id: 41210359641
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        if: steps.plan.outputs.comparar_barrido_run != ''
+        with:
+          name: cobertura-${{ steps.plan.outputs.comparar_barrido_run }}
+          path: work/barrido-captura
+          run-id: ${{ steps.plan.outputs.comparar_barrido_run }}
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        if: steps.plan.outputs.comparar_barrido_run != ''
+        with:
+          name: cobertura-41200546592
+          path: work/barrido-catalogo
+          run-id: 41200546592
+          github-token: ${{ github.token }}
+      - name: Piloto comparativo con persistencia y repetición sin red ni OCR
+        if: steps.plan.outputs.comparar_barrido_run != ''
+        timeout-minutes: 6
+        run: python -u tools/comparar_barrido.py --antes work/barrido-anterior/work/barrido/resultado.json --despues work/barrido-captura/work/barrido/resultado.json --catalogo work/barrido-catalogo/work/cierre-auditable/ejecuciones/captura-revisada/catalogo_completo.json --salida work/barrido-comparativo
       - name: Sondear enlaces oficiales con evidencia y tiempo acotado
         if: steps.plan.outputs.sondear == 'true'
         run: python -u tools/sondear_cobertura.py
@@ -167,6 +206,9 @@ jobs:
           name: cobertura-${{ github.run_id }}
           path: |
             work/barrido/
+            work/barrido-comparativo/resultado.json
+            work/barrido-comparativo/comparacion.json
+            work/barrido-comparativo/piloto/ejecuciones/
             work/cierre-auditable/resultado.json
             work/cierre-auditable/ejecuciones/
             work/cobro-rapido/
