@@ -22,8 +22,24 @@ import extractores
 import oportunidades as o
 
 
+def descargar_drive_publico(url,**kwargs):
+    """Sigue solo el enlace de descarga publicado por el visor, sin confirmaciones ni login."""
+    id=re.fullmatch(r'https://drive\.google\.com/file/d/([A-Za-z0-9_-]+)/view(?:\?.*)?',url)
+    if not id:raise ValueError('Visor Drive no admitido')
+    html,tipo,final=conectores.descargar(url,conexion_timeout=4,lectura_timeout=6,max_bytes=2_000_000)
+    if final!=url:raise ValueError('Drive redirige; se requiere revisión')
+    texto=html.decode('utf-8',errors='replace')
+    enlaces=re.findall(r'https://drive\.usercontent\.google\.com/(?:uc|download)[^"\s<>]+',texto)
+    for enlace in enlaces:
+        enlace=enlace.replace('\\u003d','=').replace('\\u0026','&').replace('&amp;','&')
+        from urllib.parse import parse_qs
+        params=parse_qs(urlparse(enlace).query)
+        if set(params)!={'id','export'} or params['id']!=[id[1]] or params['export']!=['download']:continue
+        return conectores.descargar(enlace,**kwargs)
+    raise ValueError('Visor sin descarga pública comprobable; no se autentica ni se elude restricción')
+
 def worker(url,consulta_post=None,opciones=None):
-    transporte=None
+    transporte=descargar_drive_publico if re.fullmatch(r'https://drive\.google\.com/file/d/[A-Za-z0-9_-]+/view(?:\?.*)?',url) else None
     if consulta_post:
         # Endpoint público de lectura observado en el cliente oficial. No hay
         # soporte genérico para POST de registros, ofertas ni autenticación.
@@ -44,7 +60,7 @@ def worker(url,consulta_post=None,opciones=None):
         from functools import partial
         transporte=partial(conectores.descargar,max_bytes=(opciones or {})['max_bytes_documental'])
     raw,tipo,final,cache=cache_documentos.obtener(url,transport=transporte)
-    if (urlparse(final).hostname or '').removeprefix('www.')!=(urlparse(url).hostname or '').removeprefix('www.'):
+    if (urlparse(final).hostname or '').removeprefix('www.')!=(urlparse(url).hostname or '').removeprefix('www.') and not (transporte is descargar_drive_publico and urlparse(final).hostname=='drive.usercontent.google.com'):
         return {'url':url,'url_final':final,'estado':'REDIRECCION_OTRO_DOMINIO'}
     clase='PDF' if raw.startswith(b'%PDF-') else ('ZIP_O_DOCX' if raw.startswith(b'PK') else ('XLS' if raw.startswith(b'\xd0\xcf\x11\xe0') else None))
     if not clase:return {'url':url,'url_final':final,'estado':'NO_ES_DOCUMENTO','tipo':tipo,'error':'Respuesta HTML/u otro contenido; HTTP 200 no valida pliego'}
@@ -165,9 +181,6 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
             u=d['url']
             if host(u) not in permitidos:
                 candidatos.setdefault(u,{'url':u,'estado':'DOMINIO_NO_DECLARADO'});continue
-            if re.fullmatch(r'https://drive\.google\.com/file/d/[A-Za-z0-9_-]+/view(?:\?.*)?',u):
-                candidatos.setdefault(u,{'url':u,'estado':'DESCARGA_PUBLICA_PENDIENTE','error':'Enlace público preservado; verificar endpoint de descarga sin autenticación antes de consultas repetidas'})
-                continue
             candidatos.setdefault(u,{'url':u,'estado':'PENDIENTE'})
             if d.get('consulta_post'):peticiones[u]=d['consulta_post']
             cupos_bytes[u]=max(cupos_bytes.get(u,12_000_000),conf.get('max_bytes_documental',12_000_000))

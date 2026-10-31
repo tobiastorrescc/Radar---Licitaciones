@@ -114,6 +114,7 @@ def _ejecutar_corrida(raiz,*,total=600,documentos=120,informe_previo=None):
     registros=registros_checkpoint(informe)
     comprobar_pliegos.comprobar(registros,informe['actualizado'],config,total=documentos,salida_parcial=carpeta/'documentos_parciales.jsonl')
     registros=[o.normalizar(r,informe['actualizado']) for r in registros]
+    guardar(carpeta/'registros_observados.json',registros)
     fuentes=[]
     for obs in informe['observaciones']:
         filas=[r for r in registros if obs['url'] in inc.fuentes_de(r)]

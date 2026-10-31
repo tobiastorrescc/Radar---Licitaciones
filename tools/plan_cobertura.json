@@ -1,6 +1,6 @@
 {
-  "etapa": "rutas-epe-y-lote-buenos-aires-validacion-real",
-  "sondear": true,
+  "etapa": "verificar-adaptadores-bonaerenses-y-descargas-publicas",
+  "sondear": false,
   "urls_sondeo": [
     "https://epe.santafe.gov.ar/app2/compras",
     "https://www.epe.santafe.gov.ar/app2/compras",
@@ -30,6 +30,18 @@
   "revisar_cobro": false,
   "archivar_auditoria": false,
   "desc_busquedas": 1,
-  "desc_candidatos": 10,
-  "desc_total": 240
+  "desc_candidatos": 8,
+  "desc_total": 240,
+  "desc_priorizar": [
+    "https://www.campana.gob.ar/compras/",
+    "https://chacabuco.gob.ar/licitaciones/",
+    "https://chacabuco.gob.ar/licitaciones-privadas/",
+    "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+    "https://carmendeareco.gob.ar/transparencia/",
+    "https://www.generalarenales.gob.ar/licitaciones",
+    "https://sibom.slyt.gba.gob.ar/cities/20",
+    "https://ramallo.gob.ar/"
+  ],
+  "verificar_documentos": true,
+  "documento_muestra": "4/2026"
 }

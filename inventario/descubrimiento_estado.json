@@ -631,7 +631,8 @@
     "territorio:822518": "2026-10-30T18:36:28.048231+00:00",
     "territorio:823260": "2026-10-30T18:36:28.048231+00:00",
     "territorio:823652": "2026-10-30T18:36:28.048231+00:00",
-    "territorio:822525": "2026-10-30T19:08:07.563117+00:00"
+    "territorio:822525": "2026-10-30T19:08:07.563117+00:00",
+    "territorio:823267": "2026-10-31T12:00:00.553010+00:00"
   },
   "candidatos": {
     "inventario-fuente-034": {
@@ -655,7 +656,7 @@
       "clave": "inventario-fuente-034",
       "origen": "INVENTARIO_PREVIO",
       "fecha_descubrimiento": "2026-10-27T23:13:42.954528+00:00",
-      "ultima_revision": "2026-10-30T18:36:28.048231+00:00",
+      "ultima_revision": "2026-10-31T12:00:00.553010+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -672,12 +673,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-30T18:36:41.389688+00:00",
+        "fecha": "2026-10-31T12:00:06.209962+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261030T183634-9af08328/0011.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120001-5e64dba1/0008.json",
       "version_verificador": 4
     },
     "inventario-fuente-048": {
@@ -701,7 +702,7 @@
       "clave": "inventario-fuente-048",
       "origen": "INVENTARIO_PREVIO",
       "fecha_descubrimiento": "2026-10-27T23:13:42.954528+00:00",
-      "ultima_revision": "2026-10-30T18:36:28.048231+00:00",
+      "ultima_revision": "2026-10-31T12:00:00.553010+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "motivo": "HTTP Error 404: Not Found",
@@ -720,7 +721,7 @@
           "permanencia": "NO_DETERMINADA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261030T183634-9af08328/0012.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120001-5e64dba1/0009.json",
       "version_verificador": 4
     },
     "f48892e3569eecd927d0": {
@@ -8535,7 +8536,307 @@
       "titulo": "Home - Sitio Oficial del Gobierno de La Pampa",
       "busqueda_url": "https://www.bing.com/search?q=%22Santa+Teresa%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
       "fecha_descubrimiento": "2026-10-30T18:36:28.048231+00:00"
+    },
+    "contraste-5d41e2194ba32b4d98b2": {
+      "organismo": "Municipalidad de Campana",
+      "localidad": "Campana",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://www.campana.gob.ar/compras/",
+      "evidencia_descubrimiento": "https://www.campana.gob.ar/compras/",
+      "fecha_descubrimiento": "2026-10-31T12:00:00.553010+00:00",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada",
+      "id": "auto-contraste-5d41e2194ba32b4d98b2",
+      "origen": "INVESTIGACION_AGENTE",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Campana",
+          "localidad": "Campana",
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": false,
+          "url": "https://www.campana.gob.ar/compras/",
+          "sha256": "59b3b30994d5e7c91f0fa76d557f01a8ddb50b0c3c442e35f196d64f36a2e168",
+          "cabecera": "Compras y contrataciones – Municipalidad de Campana Notas Compras y contrataciones Palacio Municipal Información para Descarga Galeria Fotos",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-10-31T12:00:03.138903+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-10-31T12:00:00.553010+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120001-5e64dba1/0000.json"
+    },
+    "contraste-6526d8e3e386f0eb1e75": {
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://chacabuco.gob.ar/licitaciones/",
+      "evidencia_descubrimiento": "https://chacabuco.gob.ar/licitaciones/",
+      "fecha_descubrimiento": "2026-10-31T12:00:00.553010+00:00",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada",
+      "id": "auto-contraste-6526d8e3e386f0eb1e75",
+      "origen": "INVESTIGACION_AGENTE",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Chacabuco",
+          "localidad": "Chacabuco",
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": false,
+          "url": "https://chacabuco.gob.ar/licitaciones/",
+          "sha256": "0d726f854c32dbfb60b00c2c3f646ae6dd558c55a3cc6b976196f85579f8da9e",
+          "cabecera": "Licitaciones | Ciudad de Chacabuco Licitaciones Públicas LIC N 8 Centro de desarrollo infantil Lic 10-23 Acceso Av Peron Chacabuco LIC N 8 Centro de desarrollo infantil Construcción Escuela Pimaria en el Polo Educativo del Bo. Alcira de la Peña- Etapa 1 – EXPTE : 4029-3558/23 EJECUCIÓN DE DOS POZOS DE AGUA SECTOR USINA LOCALIDAD DE CHACABUCO – EXPEDIENTE MUNICIPAL : 4029 – 1902 / 2023 Cordón cuneta y mejorado de 43 pasajes – EXPTE: 4029-0301/23 LICITACIÓN PÚBLICA N° 04/2023 EXPEDIENTE MUNICIPAL Nº 4029 – 0028/2023 Pintura de sendas peatonales y reductores de velocidad en Chacabuco – EXPTE : 4029-0236/23 Licitacion 01-23 Av garay segunda etapa PLIEGO DE LICITACION PÚBLICA No 03 / 2023 – Ejecución de Pozo de Agua Nº 23 en la ciudad de Chacabuco- LICITACION PUBLICA 16/2022 Cordón Cuneta en seis (6) calles de la localidad de Chacabuco",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-10-31T12:00:03.128950+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-10-31T12:00:00.553010+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120001-5e64dba1/0001.json"
+    },
+    "contraste-6633b08307ea72b43ab0": {
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://chacabuco.gob.ar/licitaciones-privadas/",
+      "evidencia_descubrimiento": "https://chacabuco.gob.ar/licitaciones-privadas/",
+      "fecha_descubrimiento": "2026-10-31T12:00:00.553010+00:00",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada",
+      "id": "auto-contraste-6633b08307ea72b43ab0",
+      "origen": "INVESTIGACION_AGENTE",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Chacabuco",
+          "localidad": "Chacabuco",
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": false,
+          "url": "https://chacabuco.gob.ar/licitaciones-privadas/",
+          "sha256": "959fee1d87bcce58fc876878d15d6a426e844952f6de807aee07395861937359",
+          "cabecera": "Licitaciones Privadas | Ciudad de Chacabuco Licitaciones Privadas Licitaciones Privada Telemedicina Licitaciones Privada Pliego Residuos Patologicos Licitacion Privada Oxigeno Licitaciones Privada Programa Abuelos",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-10-31T12:00:03.111899+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-10-31T12:00:00.553010+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120001-5e64dba1/0002.json"
+    },
+    "contraste-9ee3f23a152084b09571": {
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+      "evidencia_descubrimiento": "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+      "fecha_descubrimiento": "2026-10-31T12:00:00.553010+00:00",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada",
+      "id": "auto-contraste-9ee3f23a152084b09571",
+      "origen": "INVESTIGACION_AGENTE",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Chacabuco",
+          "localidad": "Chacabuco",
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": false,
+          "url": "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+          "sha256": "70a288b80ffe3b3a2206e3b5e627e7cd863df0e719392cb74409fe2f25bad869",
+          "cabecera": "Licitaciones Privadas | Ciudad de Chacabuco Licitaciones Privada Telemedicina Licitaciones Privada Pliego Residuos Patologicos Licitacion Privada Oxigeno Licitaciones Privada Programa Abuelos",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-10-31T12:00:05.410852+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-10-31T12:00:00.553010+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120001-5e64dba1/0006.json"
+    },
+    "contraste-6b5fc6834def2add0155": {
+      "organismo": "Municipalidad de Carmen de Areco",
+      "localidad": "Carmen de Areco",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://carmendeareco.gob.ar/transparencia/",
+      "evidencia_descubrimiento": "https://carmendeareco.gob.ar/transparencia/",
+      "fecha_descubrimiento": "2026-10-31T12:00:00.553010+00:00",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada",
+      "id": "auto-contraste-6b5fc6834def2add0155",
+      "origen": "INVESTIGACION_AGENTE",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Carmen de Areco",
+          "localidad": "Carmen de Areco",
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": true,
+          "url": "https://carmendeareco.gob.ar/transparencia/",
+          "sha256": "94d119b545a4a01706d62aea788ee49d797b25057acff88ff18b7047e219ccb8",
+          "cabecera": "TRANSPARENCIA | Carmen de Areco - Municipio  Portal de transparencia Información pública organizada Últimas publicaciones Recursos y gastos Informes económico-financieros Ordenanza fiscal, impositiva y presupuesto Licitaciones y concursos Información salarial Declaraciones juradas patrimoniales Exportaciones RAFAM",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-10-31T12:00:03.767466+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-10-31T12:00:00.553010+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120001-5e64dba1/0003.json"
+    },
+    "contraste-d556567b9298a97d599e": {
+      "organismo": "Municipalidad de General Arenales",
+      "localidad": "General Arenales",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://www.generalarenales.gob.ar/licitaciones",
+      "evidencia_descubrimiento": "https://www.generalarenales.gob.ar/licitaciones",
+      "fecha_descubrimiento": "2026-10-31T12:00:00.553010+00:00",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada",
+      "id": "auto-contraste-d556567b9298a97d599e",
+      "origen": "INVESTIGACION_AGENTE",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error timed out>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "ultima_revision": "2026-10-31T12:00:00.553010+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120001-5e64dba1/0007.json"
+    },
+    "contraste-86a7e2567880ca8cea19": {
+      "organismo": "Municipalidad de Capitán Sarmiento",
+      "localidad": "Capitán Sarmiento",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://sibom.slyt.gba.gob.ar/cities/20",
+      "evidencia_descubrimiento": "https://sibom.slyt.gba.gob.ar/cities/20",
+      "fecha_descubrimiento": "2026-10-31T12:00:00.553010+00:00",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada",
+      "id": "auto-contraste-86a7e2567880ca8cea19",
+      "origen": "INVESTIGACION_AGENTE",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Capitán Sarmiento",
+          "localidad": "Capitán Sarmiento",
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": false,
+          "url": "https://sibom.slyt.gba.gob.ar/cities/20",
+          "sha256": "7f0c3177cfe9547061d3020983e72fbef2b1fedd028e90f2edad6130b4dd0c56",
+          "cabecera": "Sistema de Boletín Oficial Municipal | Buenos Aires Provincia Sistema de Boletines Oficiales Municipales (SIBOM) Sistema de Boletines Oficiales Municipales (SIBOM) Sistema de Boletines Oficiales Municipales (SIBOM) Sistema de Boletines Oficiales Municipales (SIBOM) Sistema de Boletines Oficiales Municipales (SIBOM) Municipio de Capitán Sarmiento",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-10-31T12:00:04.825951+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-10-31T12:00:00.553010+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120001-5e64dba1/0005.json"
+    },
+    "contraste-7d3f2f8ce01468eba852": {
+      "organismo": "Municipalidad de Ramallo",
+      "localidad": "Ramallo",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://ramallo.gob.ar/",
+      "evidencia_descubrimiento": "https://ramallo.gob.ar/",
+      "fecha_descubrimiento": "2026-10-31T12:00:00.553010+00:00",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada",
+      "id": "auto-contraste-7d3f2f8ce01468eba852",
+      "origen": "INVESTIGACION_AGENTE",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Ramallo",
+          "localidad": "Ramallo",
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://ramallo.gob.ar/",
+          "sha256": "25f7e1efd6d3d0ebabef5d5dc0a052e7df513c37fb90f873a97ff990f8e5b2f3",
+          "cabecera": "Municipalidad de Ramallo Tu municipio, más cerca tuyo Los más buscados Consultá el Marco Legal y Tributario 2026 Próximos eventos Últimas noticias Contanos qué te parece la nueva web",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-10-31T12:00:04.348753+00:00",
+        "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-10-31T12:00:00.553010+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "url": "https://ramallo.gob.ar/",
+          "tipo": "SinPublicacionesDetectadas",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Listado no reconocido; no se declara vacío"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120001-5e64dba1/0004.json"
     }
   },
-  "ultima_ejecucion": "2026-10-30T19:08:07.563117+00:00"
+  "ultima_ejecucion": "2026-10-31T12:00:00.553010+00:00"
 }

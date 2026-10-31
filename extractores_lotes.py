@@ -379,3 +379,20 @@ def extraer_chajari(datos,url):
             'campos_oficiales':{k:f.get(k) for k in ('id','name','title','type','state','fecha_hora_apertura','fecha_hora_cierre','presupuesto_oficial','pliego_y_decreto_id')},
             'detalle_completo':True,'rango_evidencia':3})
     return registros,len(filas)
+
+
+def carmen_areco(raiz,url):
+    """Tarjetas oficiales: el año rotulado no se sustituye por el año de descarga."""
+    from extractores import procesos,url_publica,situacion,norm
+    import re
+    rs=[]
+    for n in raiz.iter():
+        if n.tag!='article' or n.attrs.get('data-cda-section')!='licitaciones':continue
+        titulo=n.attrs.get('data-cda-title','');anio=n.attrs.get('data-cda-year','');ps=procesos(titulo)
+        if not ps or not re.fullmatch(r'20\d{2}',anio):continue
+        p=ps[0];numero=p['numero'] if '/' in p['numero'] else p['numero']+'/'+anio
+        doc=url_publica(n.attrs.get('data-cda-url',''),url)
+        if not doc:continue
+        apertura=re.search(r'apertura\s+(\d{1,2}/\d{1,2}/20\d{2})',norm(n.attrs.get('data-cda-period','')))
+        rs.append({'titulo':titulo,'objeto':titulo,'numero_procedimiento':numero,'tipo_procedimiento':p['tipo'],'procedimiento':p['tipo']+' '+numero,'url':doc,'evidencia_url':url,'documentos':[{'url':doc,'titulo':titulo}],'fecha_apertura_texto':apertura[1] if apertura else None,'detalle_completo':True,'registro_estructurado':True,'situacion_publicada':situacion(n.text),'evento_publicado':None})
+    return rs

@@ -63,6 +63,7 @@ jobs:
         run: |
           python tools/respaldo_piloto.py despues --salida work/cobertura --respaldo piloto_respaldo/diario
           python tools/auditar_evolucion.py despues --salida work/cobertura
+          python tools/auditar_lote_fuentes.py --entrada work/cobertura
           python tools/respaldo_piloto.py exportar --salida work/cobertura --respaldo work/cobertura-respaldo
       - name: Reverificar sólo el lote explícito de conectores corregidos
         run: python -u tools/reverificar_lote.py
@@ -129,7 +130,7 @@ jobs:
         run: python -u tools/revisar_cobro_rapido.py
       - name: Revisar candidatas sin publicar automáticamente cambios de inventario
         if: steps.plan.outputs.descubrir == 'true'
-        run: python -u tools/descubrir_fuentes.py --salida work/descubrimiento --total ${{ steps.plan.outputs.desc_total }} --busquedas ${{ steps.plan.outputs.desc_busquedas }} --candidatos ${{ steps.plan.outputs.desc_candidatos }} --revisar-pendientes
+        run: python -u tools/descubrir_fuentes.py --salida work/descubrimiento --total ${{ steps.plan.outputs.desc_total }} --busquedas ${{ steps.plan.outputs.desc_busquedas }} --candidatos ${{ steps.plan.outputs.desc_candidatos }} --revisar-pendientes --priorizar-plan
       - name: Revisar documentos de identidades dudosas sin escribir historial
         timeout-minutes: 3
         run: python -u tools/revisar_identidades.py

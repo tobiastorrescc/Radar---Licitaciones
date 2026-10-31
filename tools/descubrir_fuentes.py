@@ -86,9 +86,11 @@ def verificar_identidad(html,url,candidato):
     prov=o.norm(candidato['provincia'])
     jurisdiccion=bool(re.search(r'\b'+re.escape(prov)+r'\b',texto))
     cabeceras=' '.join(n.text for n in dom.root.iter() if n.tag in ('title','h1','h2') or n.tag=='meta' and n.attrs.get('property')=='og:site_name')
+    jurisdiccion=jurisdiccion or bool(re.search(r'\b'+re.escape(prov)+r'\b',o.norm(cabeceras)))
+    if prov=='buenos aires':jurisdiccion=jurisdiccion or bool(re.search(r'\bbs\.?\s*as\.?\b',texto))
     if candidato.get('tipo')=='TERRITORIAL':
         loc=o.norm(candidato['localidad'])
-        nombre=bool(re.search(r'\b(?:municipalidad|municipio|comuna|gobierno)(?:\s+de)?\s+'+re.escape(loc)+r'\b',o.norm(cabeceras)))
+        nombre=bool(re.search(r'\b(?:municipalidad|municipio|comuna|gobierno|ciudad)(?:\s+de)?\s+'+re.escape(loc)+r'\b',o.norm(cabeceras)) or re.search(r'\b'+re.escape(loc)+r'\s*[-–|]\s*municipio\b',o.norm(cabeceras)))
         organismo=candidato['organismo'];localidad=candidato['localidad']
     else:
         # Nombre publicado en título, nunca derivado del dominio o búsqueda.
@@ -123,7 +125,7 @@ def worker(entrada,salida):
         if not identidad['verificada']:
             guardar(salida,{'estado':'PENDIENTE','finalizado':True,'validacion':aceptacion({},identidad),'oportunidades':[]});return
         config={'organismo':identidad['organismo'],'localidad':identidad['localidad'],'provincia':c['provincia'],
-            'conector':'publicaciones','descubrir_menu':True,'descubrir_contrataciones':True,'lectura_adjuntos':'necesarios','ocr':True}
+            'conector':'publicaciones','descubrir_menu':True,'descubrir_contrataciones':True,'lectura_adjuntos':'necesarios','ocr':False}
         inicial={url:(datos,tipo,final)}
         def fetch(u,datos_post=None):
             if u in inicial:return inicial.pop(u)
@@ -176,7 +178,7 @@ def contar_portales(candidatos):
         grupos[u]='VALIDADA' if c.get('validacion',{}).get('estado')=='VALIDADA' or grupos.get(u)=='VALIDADA' else 'PENDIENTE'
     return dict(Counter(grupos.values()))
 
-def seleccionar_validaciones(candidatos,existentes,auto,limite,revisar_pendientes=False):
+def seleccionar_validaciones(candidatos,existentes,auto,limite,revisar_pendientes=False,priorizar_urls=()):
     por_url={}
     for c in candidatos:
         if c['url'] in existentes and c['url'] not in auto:continue
@@ -186,9 +188,9 @@ def seleccionar_validaciones(candidatos,existentes,auto,limite,revisar_pendiente
         anterior=por_url.get(c['url'])
         if anterior is None or (c.get('validacion',{}).get('identidad_verificada',False) and not anterior.get('validacion',{}).get('identidad_verificada',False)):
             por_url[c['url']]=c
-    return sorted(por_url.values(),key=lambda c:(c.get('ultima_revision',''),c.get('fecha_descubrimiento',''),c['id']))[:limite]
+    return sorted(por_url.values(),key=lambda c:(c['url'] not in priorizar_urls,c.get('ultima_revision',''),c.get('fecha_descubrimiento',''),c['id']))[:limite]
 
-def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_pendientes=False):
+def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_pendientes=False,priorizar_urls=()):
     inicio=time.monotonic();raiz=Path(salida);raiz.mkdir(parents=True,exist_ok=True)
     estado_path=Path('inventario/descubrimiento_estado.json');auto_path=Path('inventario/fuentes_auto.json')
     estado=json.loads(estado_path.read_text()) if estado_path.exists() else {'schema_version':1,'busquedas':{},'candidatos':{}}
@@ -239,7 +241,7 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_
             key='contraste-'+sha256((c['url']+'|'+c['organismo']).encode()).hexdigest()[:20]
             estado['candidatos'].setdefault(key,{**c,'id':'auto-'+key,'origen':'INVESTIGACION_AGENTE',
                 'fecha_descubrimiento':fecha,'validacion':{'estado':'PENDIENTE','motivo':c.get('motivo_previo')}})
-    lote=seleccionar_validaciones(estado['candidatos'].values(),existentes,auto,candidatos,revisar_pendientes)
+    lote=seleccionar_validaciones(estado['candidatos'].values(),existentes,auto,candidatos,revisar_pendientes,priorizar_urls)
     limite=max(1,total-(time.monotonic()-inicio)-3)
     entradas=raiz/'entradas';entradas.mkdir(exist_ok=True)
     for c in lote:guardar(entradas/(c['id']+'.json'),c)
@@ -280,11 +282,11 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_
     return resumen
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--worker');p.add_argument('--buscar-worker');p.add_argument('--salida',default='work/descubrimiento');p.add_argument('--total',type=float,default=240);p.add_argument('--busquedas',type=int,default=12);p.add_argument('--candidatos',type=int,default=24);p.add_argument('--revisar-pendientes',action='store_true');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--worker');p.add_argument('--buscar-worker');p.add_argument('--salida',default='work/descubrimiento');p.add_argument('--total',type=float,default=240);p.add_argument('--busquedas',type=int,default=12);p.add_argument('--candidatos',type=int,default=24);p.add_argument('--revisar-pendientes',action='store_true');p.add_argument('--priorizar-plan',action='store_true');a=p.parse_args()
     if a.buscar_worker:worker_busqueda(a.buscar_worker,a.salida)
     elif a.worker:worker(a.worker,a.salida)
     else:
         if not 15<=a.total<=600 or not 1<=a.busquedas<=100 or not 1<=a.candidatos<=100:p.error('Límites fuera de rango')
-        ejecutar_descubrimiento(a.salida,a.total,a.busquedas,a.candidatos,a.revisar_pendientes)
+        ejecutar_descubrimiento(a.salida,a.total,a.busquedas,a.candidatos,a.revisar_pendientes,json.load(open('tools/plan_cobertura.json')).get('desc_priorizar',[]) if a.priorizar_plan else ())
 
 if __name__=='__main__':main()
