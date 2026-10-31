@@ -1,97 +1,34 @@
 {
-  "etapa": "recuperacion-prioritaria-ramayon-y-seis-fuentes-diagnostico",
+  "etapa": "rutas-de-publicaciones-y-control-municipal-representativo",
   "sondear": true,
-  "barrido": false,
-  "auditar": false,
-  "descubrir": false,
   "urls_sondeo": [
-    "https://qx.com.ar/clientes/munic/boletines.php?cols=si",
-    "https://qx.com.ar/clientes/munic/boletines.php?ult=u",
-    "https://xn--carcaraa-j3a.gob.ar/js/obtener-contenido.js",
-    "https://cdg.gob.ar/wp-json/",
-    "https://www.lasparejas.gov.ar/index_boletin",
-    "https://www.santafe.gov.ar/boletinoficial/verPdf.php?seccion=2026%2F2026-09-18licitaciones.html",
-    "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/2026/2026-09-18licitaciones.html",
-    "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/pdf/2026/04/BO08042026.pdf",
-    "https://www.santafe.gov.ar/gestionesdecompras/site/",
-    "https://epe.santafe.gov.ar/app2/",
-    "https://epe.santafe.gov.ar/institucional/"
+    "https://qx.com.ar/clientes/munic/noticias.php",
+    "https://cdg.gob.ar/wp-content/uploads/2026/10/D7839-CONCURSO-DE-PRECIOS-Senaletica.pdf",
+    "https://lasparejas.gov.ar/index_noticias",
+    "https://www.lasparejas.gov.ar/index_organismos/view/id/4",
+    "https://oroverde.gob.ar/portal/secciones/licitaciones/",
+    "https://oroverde.gob.ar/portal/",
+    "https://viale.gob.ar/pliegos/",
+    "https://ramallo.gob.ar/boletines",
+    "https://sibom.slyt.gba.gob.ar/cities/102",
+    "http://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-09-18licitaciones.html",
+    "http://www.epe.santafe.gov.ar/app2/aperturas",
+    "https://compras.santafe.gov.ar/"
   ],
   "peticiones": [
     {
       "url": "https://qx.com.ar/clientes/munic/boletines.php?cols=si",
-      "conexion_timeout": 10,
-      "lectura_timeout": 18
+      "datos_post": "limiteInfConsulta=6",
+      "content_type": "application/x-www-form-urlencoded"
     },
     {
-      "url": "https://qx.com.ar/clientes/munic/boletines.php?ult=u",
-      "conexion_timeout": 10,
-      "lectura_timeout": 18
-    },
-    {
-      "url": "https://xn--carcaraa-j3a.gob.ar/js/obtener-contenido.js",
-      "conexion_timeout": 10,
-      "lectura_timeout": 18
-    },
-    {
-      "url": "https://cdg.gob.ar/wp-json/",
-      "conexion_timeout": 10,
-      "lectura_timeout": 18
-    },
-    {
-      "url": "https://www.lasparejas.gov.ar/index_boletin",
-      "conexion_timeout": 10,
-      "lectura_timeout": 18
-    },
-    {
-      "url": "https://www.santafe.gov.ar/boletinoficial/verPdf.php?seccion=2026%2F2026-09-18licitaciones.html",
-      "conexion_timeout": 10,
-      "lectura_timeout": 18
-    },
-    {
-      "url": "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/2026/2026-09-18licitaciones.html",
-      "conexion_timeout": 10,
-      "lectura_timeout": 18
-    },
-    {
-      "url": "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/pdf/2026/04/BO08042026.pdf",
-      "conexion_timeout": 10,
-      "lectura_timeout": 18
-    },
-    {
-      "url": "https://www.santafe.gov.ar/gestionesdecompras/site/",
-      "conexion_timeout": 10,
-      "lectura_timeout": 18
-    },
-    {
-      "url": "https://epe.santafe.gov.ar/app2/",
-      "conexion_timeout": 10,
-      "lectura_timeout": 18
-    },
-    {
-      "url": "https://epe.santafe.gov.ar/institucional/",
-      "conexion_timeout": 10,
-      "lectura_timeout": 18
-    },
-    {
-      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-09-18licitaciones.html",
-      "transporte": "curl"
-    },
-    {
-      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
-      "transporte": "curl"
-    },
-    {
-      "url": "https://epe.santafe.gov.ar/app2/aperturas",
-      "transporte": "curl"
-    },
-    {
-      "url": "https://compras.santafe.gob.ar/",
+      "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
       "transporte": "curl"
     }
   ],
+  "barrido": false,
+  "auditar": false,
+  "descubrir": false,
   "reverificar_ids": [],
-  "revisar_identidades": false,
-  "revisar_cobro": false,
   "archivar_auditoria": false
 }

@@ -31,14 +31,14 @@ def worker(entrada,salida):
         datos=archivo.read_bytes()
     else:
         conexion=max(1,min(12,int(f.get('conexion_timeout',5))));lectura=max(1,min(20,int(f.get('lectura_timeout',8))))
-        datos,tipo,final=conectores.descargar(u,conexion_timeout=conexion,lectura_timeout=lectura,datos_post=f.get('datos_post','').encode() if 'datos_post' in f else None,headers_extra={'Content-Type':'application/json'} if 'datos_post' in f else None)
+        datos,tipo,final=conectores.descargar(u,conexion_timeout=conexion,lectura_timeout=lectura,datos_post=f.get('datos_post','').encode() if 'datos_post' in f else None,headers_extra={'Content-Type':f.get('content_type','application/json')} if 'datos_post' in f else None)
         archivo.write_bytes(datos)
     if conectores._host(final)!=conectores._host(u):raise ValueError('Redirección a otro dominio: requiere contraste')
     dom=extractores.DOM(conectores.decodificar_html(datos,tipo))
     enlaces=[{k:l[k] for k in ('url','texto')} for l in dom.root.enlaces(final)
         if re.search(r'licit|compra|contrata|cotiza|concurso|boletin|proveedor',l['url']+' '+l['texto'],re.I)]
     guardar(salida,{'estado':'OPERATIVA','finalizado':True,'paginas_correctas':1,'oportunidades':[],
-        'url':u,'final':final,'transporte':f.get('transporte','urllib'),'tipo':tipo,'sha256':sha256(datos).hexdigest(),'archivo':str(root/(nombre+'.bin')),
+        'url':u,'final':final,'transporte':f.get('transporte','urllib'),'metodo':'POST' if 'datos_post' in f else 'GET','parametros':f.get('datos_post'),'tipo':tipo,'sha256':sha256(datos).hexdigest(),'archivo':str(root/(nombre+'.bin')),
         'enlaces':enlaces,'aviso':'Captura de investigación; no prueba extracción de procedimientos'})
 
 
