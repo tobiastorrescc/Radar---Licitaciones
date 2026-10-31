@@ -1,0 +1,309 @@
+[
+  {
+    "organismo": "Municipalidad de Campana",
+    "localidad": "Campana",
+    "provincia": "Buenos Aires",
+    "url": "https://www.campana.gob.ar/compras/",
+    "ultima_revision": "2026-10-31T12:06:25.688428+00:00",
+    "validacion": {
+      "estado": "PENDIENTE",
+      "identidad_verificada": false,
+      "identidad": {
+        "verificada": false,
+        "organismo": "Municipalidad de Campana",
+        "localidad": "Campana",
+        "dominio_oficial": true,
+        "nombre_publicado": false,
+        "jurisdiccion_publicada": false,
+        "url": "https://www.campana.gob.ar/compras/",
+        "sha256": "5325fa50b32bbf2b5d053d2c0f2e8f81af2a0257406989447baa059bee8d90ed",
+        "cabecera": "",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+      },
+      "procedimientos_con_objeto": 0,
+      "fecha": "2026-10-31T12:06:28.325369+00:00",
+      "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+      "ejemplos": []
+    },
+    "errores": []
+  },
+  {
+    "organismo": "Municipalidad de Chacabuco",
+    "localidad": "Chacabuco",
+    "provincia": "Buenos Aires",
+    "url": "https://chacabuco.gob.ar/licitaciones/",
+    "ultima_revision": "2026-10-31T12:06:25.688428+00:00",
+    "validacion": {
+      "estado": "PENDIENTE",
+      "identidad_verificada": false,
+      "identidad": {
+        "verificada": false,
+        "organismo": "Municipalidad de Chacabuco",
+        "localidad": "Chacabuco",
+        "dominio_oficial": true,
+        "nombre_publicado": true,
+        "jurisdiccion_publicada": false,
+        "url": "https://chacabuco.gob.ar/licitaciones/",
+        "sha256": "0d726f854c32dbfb60b00c2c3f646ae6dd558c55a3cc6b976196f85579f8da9e",
+        "cabecera": "Licitaciones | Ciudad de Chacabuco Licitaciones Públicas LIC N 8 Centro de desarrollo infantil Lic 10-23 Acceso Av Peron Chacabuco LIC N 8 Centro de desarrollo infantil Construcción Escuela Pimaria en el Polo Educativo del Bo. Alcira de la Peña- Etapa 1 – EXPTE : 4029-3558/23 EJECUCIÓN DE DOS POZOS DE AGUA SECTOR USINA LOCALIDAD DE CHACABUCO – EXPEDIENTE MUNICIPAL : 4029 – 1902 / 2023 Cordón cuneta y mejorado de 43 pasajes – EXPTE: 4029-0301/23 LICITACIÓN PÚBLICA N° 04/2023 EXPEDIENTE MUNICIPAL Nº 4029 – 0028/2023 Pintura de sendas peatonales y reductores de velocidad en Chacabuco – EXPTE : 4029-0236/23 Licitacion 01-23 Av garay segunda etapa PLIEGO DE LICITACION PÚBLICA No 03 / 2023 – Ejecución de Pozo de Agua Nº 23 en la ciudad de Chacabuco- LICITACION PUBLICA 16/2022 Cordón Cuneta en seis (6) calles de la localidad de Chacabuco",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+      },
+      "procedimientos_con_objeto": 0,
+      "fecha": "2026-10-31T12:06:28.231035+00:00",
+      "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+      "ejemplos": []
+    },
+    "errores": []
+  },
+  {
+    "organismo": "Municipalidad de Chacabuco",
+    "localidad": "Chacabuco",
+    "provincia": "Buenos Aires",
+    "url": "https://chacabuco.gob.ar/licitaciones-privadas/",
+    "ultima_revision": "2026-10-31T12:06:25.688428+00:00",
+    "validacion": {
+      "estado": "PENDIENTE",
+      "identidad_verificada": false,
+      "identidad": {
+        "verificada": false,
+        "organismo": "Municipalidad de Chacabuco",
+        "localidad": "Chacabuco",
+        "dominio_oficial": true,
+        "nombre_publicado": true,
+        "jurisdiccion_publicada": false,
+        "url": "https://chacabuco.gob.ar/licitaciones-privadas/",
+        "sha256": "959fee1d87bcce58fc876878d15d6a426e844952f6de807aee07395861937359",
+        "cabecera": "Licitaciones Privadas | Ciudad de Chacabuco Licitaciones Privadas Licitaciones Privada Telemedicina Licitaciones Privada Pliego Residuos Patologicos Licitacion Privada Oxigeno Licitaciones Privada Programa Abuelos",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+      },
+      "procedimientos_con_objeto": 0,
+      "fecha": "2026-10-31T12:06:28.162787+00:00",
+      "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+      "ejemplos": []
+    },
+    "errores": []
+  },
+  {
+    "organismo": "Municipalidad de Chacabuco",
+    "localidad": "Chacabuco",
+    "provincia": "Buenos Aires",
+    "url": "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+    "ultima_revision": "2026-10-31T12:06:25.688428+00:00",
+    "validacion": {
+      "estado": "PENDIENTE",
+      "identidad_verificada": false,
+      "identidad": {
+        "verificada": false,
+        "organismo": "Municipalidad de Chacabuco",
+        "localidad": "Chacabuco",
+        "dominio_oficial": true,
+        "nombre_publicado": true,
+        "jurisdiccion_publicada": false,
+        "url": "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+        "sha256": "70a288b80ffe3b3a2206e3b5e627e7cd863df0e719392cb74409fe2f25bad869",
+        "cabecera": "Licitaciones Privadas | Ciudad de Chacabuco Licitaciones Privada Telemedicina Licitaciones Privada Pliego Residuos Patologicos Licitacion Privada Oxigeno Licitaciones Privada Programa Abuelos",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+      },
+      "procedimientos_con_objeto": 0,
+      "fecha": "2026-10-31T12:06:30.792916+00:00",
+      "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+      "ejemplos": []
+    },
+    "errores": []
+  },
+  {
+    "organismo": "Municipalidad de Carmen de Areco",
+    "localidad": "Carmen de Areco",
+    "provincia": "Buenos Aires",
+    "url": "https://carmendeareco.gob.ar/transparencia/",
+    "ultima_revision": "2026-10-31T12:06:25.688428+00:00",
+    "validacion": {
+      "estado": "VALIDADA",
+      "identidad_verificada": true,
+      "identidad": {
+        "verificada": true,
+        "organismo": "Municipalidad de Carmen de Areco",
+        "localidad": "Carmen de Areco",
+        "dominio_oficial": true,
+        "nombre_publicado": true,
+        "jurisdiccion_publicada": true,
+        "url": "https://carmendeareco.gob.ar/transparencia/",
+        "sha256": "94d119b545a4a01706d62aea788ee49d797b25057acff88ff18b7047e219ccb8",
+        "cabecera": "TRANSPARENCIA | Carmen de Areco - Municipio  Portal de transparencia Información pública organizada Últimas publicaciones Recursos y gastos Informes económico-financieros Ordenanza fiscal, impositiva y presupuesto Licitaciones y concursos Información salarial Declaraciones juradas patrimoniales Exportaciones RAFAM",
+        "motivo": null
+      },
+      "procedimientos_con_objeto": 7,
+      "fecha": "2026-10-31T12:06:31.520578+00:00",
+      "motivo": null,
+      "ejemplos": [
+        {
+          "organismo": "Municipalidad de Carmen de Areco",
+          "numero_procedimiento": "6/2026",
+          "objeto": "Licitación Privada N°6 «Adquisición de 250 mts3 de conchilla de granulometría fina»",
+          "fecha_apertura": "2026-09-22",
+          "fecha_publicacion": null,
+          "vigencia": "VENCIDA",
+          "url": "https://carmendeareco.gob.ar/wp-content/uploads/2026/08/pliego-licitacion-privada-6-adq-de-conchilla.pdf",
+          "evidencia_url": "https://carmendeareco.gob.ar/transparencia/"
+        },
+        {
+          "organismo": "Municipalidad de Carmen de Areco",
+          "numero_procedimiento": "7/2023",
+          "objeto": "Lic. Pública N°7 Refuerzo de Sistema de Producción y Almacenamiento en la Localidad de Gouin y Carmen de Areco (Barrio Norte y Barrio Marín)",
+          "fecha_apertura": "2023-11-27",
+          "fecha_publicacion": null,
+          "vigencia": "VENCIDA",
+          "url": "https://carmendeareco.gob.ar/wp-content/uploads/2023/11/LICITACION-PUBLICA-N%C2%B07.pdf",
+          "evidencia_url": "https://carmendeareco.gob.ar/transparencia/"
+        },
+        {
+          "organismo": "Municipalidad de Carmen de Areco",
+          "numero_procedimiento": "9/2023",
+          "objeto": "Lic. Publica N°9 Adquisición de Camioneta Utilitaria",
+          "fecha_apertura": "2023-11-17",
+          "fecha_publicacion": null,
+          "vigencia": "VENCIDA",
+          "url": "https://carmendeareco.gob.ar/wp-content/uploads/2023/10/LICITACION-PUBLICA-N%C2%B09.pdf",
+          "evidencia_url": "https://carmendeareco.gob.ar/transparencia/"
+        },
+        {
+          "organismo": "Municipalidad de Carmen de Areco",
+          "numero_procedimiento": "8/2023",
+          "objeto": "Lic. Publica N°8 Adquisición de Compactador",
+          "fecha_apertura": "2023-11-17",
+          "fecha_publicacion": null,
+          "vigencia": "VENCIDA",
+          "url": "https://carmendeareco.gob.ar/wp-content/uploads/2023/10/LICITACION-PUBLICA-N%C2%B08.pdf",
+          "evidencia_url": "https://carmendeareco.gob.ar/transparencia/"
+        },
+        {
+          "organismo": "Municipalidad de Carmen de Areco",
+          "numero_procedimiento": "11/2023",
+          "objeto": "Lic. Publica N°11 Adquisición de Equipo de Nefrología",
+          "fecha_apertura": "2023-11-13",
+          "fecha_publicacion": null,
+          "vigencia": "VENCIDA",
+          "url": "https://carmendeareco.gob.ar/wp-content/uploads/2023/10/LICITACION-PUBLICA-N%C2%B011.pdf",
+          "evidencia_url": "https://carmendeareco.gob.ar/transparencia/"
+        },
+        {
+          "organismo": "Municipalidad de Carmen de Areco",
+          "numero_procedimiento": "10/2023",
+          "objeto": "Lic. Publica N°10 Adquisición de Combi Mini Bus",
+          "fecha_apertura": "2023-11-13",
+          "fecha_publicacion": null,
+          "vigencia": "VENCIDA",
+          "url": "https://carmendeareco.gob.ar/wp-content/uploads/2023/10/LICITACION-PUBLICA-N%C2%B010.pdf",
+          "evidencia_url": "https://carmendeareco.gob.ar/transparencia/"
+        },
+        {
+          "organismo": "Municipalidad de Carmen de Areco",
+          "numero_procedimiento": "7/2026",
+          "objeto": "Licitación Privada N°7 – Construcción de Red de Agua en Chacra 84",
+          "fecha_apertura": "2026-10-16",
+          "fecha_publicacion": null,
+          "vigencia": "VENCIDA",
+          "url": "https://carmendeareco.gob.ar/wp-content/uploads/2026/09/Pliego-licitacion-privada-n-7-construccion-de-red-de-agua-en-chacra-84.pdf",
+          "evidencia_url": "https://carmendeareco.gob.ar/transparencia/"
+        }
+      ]
+    },
+    "errores": []
+  },
+  {
+    "organismo": "Municipalidad de General Arenales",
+    "localidad": "General Arenales",
+    "provincia": "Buenos Aires",
+    "url": "https://www.generalarenales.gob.ar/licitaciones",
+    "ultima_revision": "2026-10-31T12:06:25.688428+00:00",
+    "validacion": {
+      "estado": "PENDIENTE",
+      "motivo": "<urlopen error timed out>",
+      "identidad_verificada": false,
+      "procedimientos_con_objeto": 0
+    },
+    "errores": [
+      {
+        "tipo": "URLError",
+        "categoria": "RED",
+        "timeout": true,
+        "error": "<urlopen error timed out>",
+        "causa": "TIEMPO_ESPERA",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ]
+  },
+  {
+    "organismo": "Municipalidad de Capitán Sarmiento",
+    "localidad": "Capitán Sarmiento",
+    "provincia": "Buenos Aires",
+    "url": "https://sibom.slyt.gba.gob.ar/cities/20",
+    "ultima_revision": "2026-10-31T12:06:25.688428+00:00",
+    "validacion": {
+      "estado": "PENDIENTE",
+      "identidad_verificada": true,
+      "identidad": {
+        "verificada": true,
+        "organismo": "Municipalidad de Capitán Sarmiento",
+        "localidad": "Capitán Sarmiento",
+        "dominio_oficial": true,
+        "nombre_publicado": true,
+        "jurisdiccion_publicada": true,
+        "url": "https://sibom.slyt.gba.gob.ar/cities/20",
+        "sha256": "3b0b3e58c623dde3024e1c8b6cd22ab95cb99fd258d56881a7892da240436aa7",
+        "cabecera": "Sistema de Boletín Oficial Municipal | Buenos Aires Provincia Sistema de Boletines Oficiales Municipales (SIBOM) Sistema de Boletines Oficiales Municipales (SIBOM) Sistema de Boletines Oficiales Municipales (SIBOM) Sistema de Boletines Oficiales Municipales (SIBOM) Sistema de Boletines Oficiales Municipales (SIBOM) Municipio de Capitán Sarmiento",
+        "motivo": null
+      },
+      "procedimientos_con_objeto": 0,
+      "fecha": "2026-10-31T12:06:39.335323+00:00",
+      "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+      "ejemplos": []
+    },
+    "errores": [
+      {
+        "url": "https://sibom.slyt.gba.gob.ar/cities/20",
+        "tipo": "SinPublicacionesDetectadas",
+        "categoria": "EXTRACCION",
+        "timeout": false,
+        "error": "Listado no reconocido; no se declara vacío"
+      }
+    ]
+  },
+  {
+    "organismo": "Municipalidad de Ramallo",
+    "localidad": "Ramallo",
+    "provincia": "Buenos Aires",
+    "url": "https://ramallo.gob.ar/",
+    "ultima_revision": "2026-10-31T12:06:25.688428+00:00",
+    "validacion": {
+      "estado": "PENDIENTE",
+      "identidad_verificada": true,
+      "identidad": {
+        "verificada": true,
+        "organismo": "Municipalidad de Ramallo",
+        "localidad": "Ramallo",
+        "dominio_oficial": true,
+        "nombre_publicado": true,
+        "jurisdiccion_publicada": true,
+        "url": "https://ramallo.gob.ar/",
+        "sha256": "25f7e1efd6d3d0ebabef5d5dc0a052e7df513c37fb90f873a97ff990f8e5b2f3",
+        "cabecera": "Municipalidad de Ramallo Tu municipio, más cerca tuyo Los más buscados Consultá el Marco Legal y Tributario 2026 Próximos eventos Últimas noticias Contanos qué te parece la nueva web",
+        "motivo": null
+      },
+      "procedimientos_con_objeto": 0,
+      "fecha": "2026-10-31T12:06:29.560416+00:00",
+      "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+      "ejemplos": []
+    },
+    "errores": [
+      {
+        "url": "https://ramallo.gob.ar/",
+        "tipo": "SinPublicacionesDetectadas",
+        "categoria": "EXTRACCION",
+        "timeout": false,
+        "error": "Listado no reconocido; no se declara vacío"
+      }
+    ]
+  }
+]

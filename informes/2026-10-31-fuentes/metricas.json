@@ -1,0 +1,57 @@
+{
+  "origen_evidencia": 41199939113,
+  "reproceso_sin_red": 41200546592,
+  "base_diaria": 41196804031,
+  "fecha_evidencia": "2026-10-31T09:16:06.731213-03:00",
+  "fuentes_antes": {
+    "PARCIAL": 14,
+    "BLOQUEADA": 12,
+    "OPERATIVA": 40,
+    "PENDIENTE": 10,
+    "SIN_PUBLICACIONES_CONFIRMADO": 1
+  },
+  "fuentes_despues": {
+    "PARCIAL": 13,
+    "BLOQUEADA": 12,
+    "OPERATIVA": 42,
+    "PENDIENTE": 10,
+    "SIN_PUBLICACIONES_CONFIRMADO": 1
+  },
+  "configuradas": 78,
+  "nueva_validada_e_incorporada": 1,
+  "nuevas_candidatas_investigacion": 8,
+  "candidatas_unicas": 123,
+  "candidatas_validadas_acumuladas": 2,
+  "candidatas_pendientes": 121,
+  "eventos": {
+    "DATOS_COMPLETADOS": 200,
+    "MODIFICADO": 3,
+    "RECUPERACION_LINEA_BASE": 12,
+    "NUEVA_DETECCION_FECHA_DESCONOCIDA": 1
+  },
+  "nuevas_confirmadas": 0,
+  "total_informadas": 216,
+  "limite_cantidad": null,
+  "historial": 4524,
+  "historial_antes": 4511,
+  "identidades_auditorias": 4521,
+  "segunda_clasificacion": {
+    "SIN_CAMBIOS": 4249
+  },
+  "duplicados_realertados": 0,
+  "integridad": true,
+  "ventanas": {
+    "publicadas_72h_por_fecha": 1,
+    "convocatorias_proximos_60_dias": 119
+  },
+  "abiertas": 121,
+  "abiertas_pago_verificado": 11,
+  "abiertas_pago_pendiente": 110,
+  "cobro_rapido": 2,
+  "estados_revision": {
+    "REVISADA_CON_RESULTADOS": 18,
+    "ERROR_DE_ACCESO": 14,
+    "REVISADA_SIN_NOVEDADES": 38,
+    "PENDIENTE": 8
+  }
+}

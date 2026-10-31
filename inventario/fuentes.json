@@ -84,7 +84,7 @@
     "provincia": "Santa Fe",
     "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
     "tipo_portal": "tabla",
-    "estado_verificacion": "BLOQUEADA",
+    "estado_verificacion": "PENDIENTE",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -98,11 +98,13 @@
     "ocr": true,
     "adaptador": "epe",
     "capturar_respuestas": true,
-    "ultima_verificacion": "2026-10-29T17:48:09.901651-03:00",
+    "ultima_verificacion": "2026-10-31T09:16:06.731213-03:00",
     "evidencia_verificacion": {
-      "github_run_id": 40952155721,
+      "github_run_id": 41199939113,
       "publicaciones_detectadas": 0,
-      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      "procedimientos_con_objeto": 0,
+      "criterio": "Número, objeto y enlace oficial; errores y pendientes documentales se conservan",
+      "error_acceso": true
     },
     "reintentos_transitorios": 1,
     "conexion_timeout": 4,
@@ -110,7 +112,8 @@
     "urls_inicio": [
       "https://www.epe.santafe.gov.ar/app2/aperturas",
       "https://epe.santafe.gov.ar/app2/aperturas"
-    ]
+    ],
+    "estado_revision": "ERROR_DE_ACCESO"
   },
   {
     "id": "fuente-004",
@@ -905,7 +908,7 @@
     "provincia": "Entre Ríos",
     "url": "https://victoria.gob.ar/web-compras/Invitaciones-Compras/concurso-de-precios/",
     "tipo_portal": "institucional",
-    "estado_verificacion": "BLOQUEADA",
+    "estado_verificacion": "PARCIAL",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -927,15 +930,19 @@
     ],
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
-    "ultima_verificacion": "2026-10-29T17:49:25.185999-03:00",
+    "ultima_verificacion": "2026-10-31T09:16:06.731213-03:00",
     "evidencia_verificacion": {
-      "github_run_id": 40952155721,
-      "publicaciones_detectadas": 0,
-      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      "github_run_id": 41199939113,
+      "publicaciones_detectadas": 397,
+      "procedimientos_con_objeto": 111,
+      "criterio": "Número, objeto y enlace oficial; errores y pendientes documentales se conservan",
+      "error_acceso": false
     },
     "priorizar_listados": true,
     "conexion_timeout": 4,
-    "lectura_timeout": 6
+    "lectura_timeout": 6,
+    "estado_revision": "REVISADA_CON_RESULTADOS",
+    "ignorar_suscripciones_feed": true
   },
   {
     "id": "fuente-032",
@@ -956,16 +963,19 @@
     "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "ultima_verificacion": "2026-10-29T17:49:26.129525-03:00",
+    "ultima_verificacion": "2026-10-31T09:16:06.731213-03:00",
     "evidencia_verificacion": {
-      "github_run_id": 40952155721,
+      "github_run_id": 41199939113,
       "publicaciones_detectadas": 152,
-      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      "procedimientos_con_objeto": 152,
+      "criterio": "Número, objeto y enlace oficial; errores y pendientes documentales se conservan",
+      "error_acceso": false
     },
     "enlaces_drive_publicos": true,
     "dominios_documentos": [
       "drive.google.com"
-    ]
+    ],
+    "estado_revision": "REVISADA_SIN_NOVEDADES"
   },
   {
     "id": "fuente-033",

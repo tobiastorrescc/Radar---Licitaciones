@@ -83,3 +83,11 @@ class RecuperacionFuentes(unittest.TestCase):
         p=extractores.procesos('Concurso de Precios Nº 070-23 – 12.000 litros de gasoil')[0]
         self.assertEqual(o.procedimiento_canonico({'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo']}),'concurso de precios 70/2023')
         self.assertEqual(extractores.procesos('Licitación Pública 14-2/2026 equipos')[0]['numero'],'14-2/2026')
+
+    def test_victoria_no_trata_suscripcion_rss_como_ficha(self):
+        url='https://victoria.gob.ar/web-compras/Invitaciones-Compras/concurso-de-precios/'
+        html='<main><p>Concurso de Precios 9/2026 Adquisición de materiales</p><a href="/web-compras/concurso/feed/">Concurso feed</a></main>'
+        calls=[]
+        def fetch(u):calls.append(u);return html.encode(),'text/html',u
+        r=conectores.explorar(url,{'ignorar_suscripciones_feed':True,'seguir_patrones':['/web-compras/.*concurso']},fetch=fetch)
+        self.assertEqual(calls,[url]);self.assertTrue(r['oportunidades'])

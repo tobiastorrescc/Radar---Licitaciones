@@ -1,0 +1,65 @@
+{
+  "observacion": {
+    "id": "fuente-003",
+    "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+    "estado": "BLOQUEADA",
+    "iniciada": true,
+    "publicaciones_detectadas": 0,
+    "paginas_correctas": 0,
+    "errores": [
+      {
+        "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "tipo": "URLError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>",
+        "causa": "ERROR_CONEXION_TLS",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      },
+      {
+        "url": "https://epe.santafe.gov.ar/app2/aperturas",
+        "tipo": "URLError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>",
+        "causa": "ERROR_CONEXION_TLS",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "duracion_segundos": 2.342,
+    "limites": [],
+    "inicio": "2026-10-31T09:11:22.256847-03:00",
+    "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/cobertura/ejecuciones/20261031T091122-56397ff9/verificacion_ejecuciones/20261031T121122-87d352b3/0002.json",
+    "paginas_visitadas": 2,
+    "fase": "FINALIZADA",
+    "url_actual": null,
+    "documentos_leidos": 0,
+    "alcance": "Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto",
+    "documentos_pendientes": [],
+    "evidencias_listado_vacio": [],
+    "estado_cobertura": "BLOQUEADA",
+    "estado_revision": "ERROR_DE_ACCESO",
+    "consulta_completa": false,
+    "incidencia_acceso": true,
+    "pendiente": true,
+    "procedimientos_recuperados": 0,
+    "novedades_o_cambios": 0
+  },
+  "resumen": {
+    "id": "fuente-003",
+    "organismo": "EPE",
+    "localidad": "Santa Fe",
+    "provincia": "Santa Fe",
+    "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+    "estado_revision": "ERROR_DE_ACCESO",
+    "estado_cobertura": "BLOQUEADA",
+    "consulta_completa": false,
+    "procedimientos": 0,
+    "con_objeto": 0,
+    "registros_en_historial": 37,
+    "motivos": "ERROR_CONEXION_TLS",
+    "fecha_evidencia": "2026-10-31T09:16:06.731213-03:00"
+  }
+}

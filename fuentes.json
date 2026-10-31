@@ -59,7 +59,18 @@
     "urls_inicio": [
       "https://www.epe.santafe.gov.ar/app2/aperturas",
       "https://epe.santafe.gov.ar/app2/aperturas"
-    ]
+    ],
+    "estado_verificacion": "PENDIENTE",
+    "estado_revision": "ERROR_DE_ACCESO",
+    "verificada_funcionando": false,
+    "ultima_verificacion": "2026-10-31T09:16:06.731213-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 41199939113,
+      "publicaciones_detectadas": 0,
+      "procedimientos_con_objeto": 0,
+      "criterio": "Número, objeto y enlace oficial; errores y pendientes documentales se conservan",
+      "error_acceso": true
+    }
   },
   "https://www.aguassantafesinas.com.ar/portal/licitaciones": {
     "organismo": "ASSA",
@@ -418,7 +429,19 @@
     "descubrir_contrataciones": true,
     "priorizar_listados": true,
     "conexion_timeout": 4,
-    "lectura_timeout": 6
+    "lectura_timeout": 6,
+    "estado_verificacion": "PARCIAL",
+    "estado_revision": "REVISADA_CON_RESULTADOS",
+    "verificada_funcionando": false,
+    "ultima_verificacion": "2026-10-31T09:16:06.731213-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 41199939113,
+      "publicaciones_detectadas": 397,
+      "procedimientos_con_objeto": 111,
+      "criterio": "Número, objeto y enlace oficial; errores y pendientes documentales se conservan",
+      "error_acceso": false
+    },
+    "ignorar_suscripciones_feed": true
   },
   "https://sanjose.gob.ar/concursos-licitaciones/": {
     "organismo": "Municipalidad de San José",
@@ -431,7 +454,18 @@
     "enlaces_drive_publicos": true,
     "dominios_documentos": [
       "drive.google.com"
-    ]
+    ],
+    "estado_verificacion": "OPERATIVA",
+    "estado_revision": "REVISADA_SIN_NOVEDADES",
+    "verificada_funcionando": true,
+    "ultima_verificacion": "2026-10-31T09:16:06.731213-03:00",
+    "evidencia_verificacion": {
+      "github_run_id": 41199939113,
+      "publicaciones_detectadas": 152,
+      "procedimientos_con_objeto": 152,
+      "criterio": "Número, objeto y enlace oficial; errores y pendientes documentales se conservan",
+      "error_acceso": false
+    }
   },
   "https://colon.gov.ar/compras-contratos-suministros/licitaciones/": {
     "organismo": "Municipalidad de Colón",

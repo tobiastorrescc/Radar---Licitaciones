@@ -1,0 +1,79 @@
+id,organismo,localidad,provincia,url,estado_revision,estado_cobertura,consulta_completa,procedimientos,con_objeto,registros_en_historial,motivos,fecha_evidencia
+fuente-001,Municipalidad de Rosario,Rosario,Santa Fe,https://www.rosario.gob.ar/inicio/compras-y-licitaciones,REVISADA_CON_RESULTADOS,PARCIAL,False,67,67,82,TIEMPO_ESPERA; TIEMPO_FUENTE,2026-10-31T09:16:06.731213-03:00
+fuente-002,Gobierno de Santa Fe,Santa Fe,Santa Fe,https://compras.santafe.gob.ar/,ERROR_DE_ACCESO,BLOQUEADA,False,0,0,0,TIEMPO_ESPERA,2026-10-31T09:16:06.731213-03:00
+fuente-003,EPE,Santa Fe,Santa Fe,https://www.epe.santafe.gov.ar/app2/aperturas,ERROR_DE_ACCESO,BLOQUEADA,False,0,0,37,ERROR_CONEXION_TLS,2026-10-31T09:16:06.731213-03:00
+fuente-004,ASSA,Rosario,Santa Fe,https://www.aguassantafesinas.com.ar/portal/licitaciones,REVISADA_SIN_NOVEDADES,OPERATIVA,True,3,3,4,,2026-10-31T09:16:06.731213-03:00
+fuente-005,UNR,Rosario,Santa Fe,https://compras.unr.edu.ar/,ERROR_DE_ACCESO,BLOQUEADA,False,0,0,0,RESTRICCION_HTTP,2026-10-31T09:16:06.731213-03:00
+fuente-006,Poder Judicial de Santa Fe,Santa Fe,Santa Fe,https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/,ERROR_DE_ACCESO,BLOQUEADA,False,0,0,0,TIEMPO_ESPERA,2026-10-31T09:16:06.731213-03:00
+fuente-007,Aeropuerto Internacional Rosario,Rosario,Santa Fe,https://aeropuertorosario.com/institucional/licitaciones/,REVISADA_CON_RESULTADOS,PARCIAL,False,37,37,50,TIEMPO_FUENTE,2026-10-31T09:16:06.731213-03:00
+fuente-008,Municipalidad de Casilda,Casilda,Santa Fe,https://www.casilda.gob.ar/web/licitaciones-casilda/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,69,69,69,,2026-10-31T09:16:06.731213-03:00
+fuente-009,Municipalidad de Carcarañá,Carcarañá,Santa Fe,https://xn--carcaraa-j3a.gob.ar/,PENDIENTE,PENDIENTE,False,0,0,0,SinPublicacionesDetectadas,2026-10-31T09:16:06.731213-03:00
+fuente-010,Municipalidad de Cañada de Gómez,Cañada de Gómez,Santa Fe,https://cdg.gob.ar/transparencia/licitaciones-y-concursos/,ERROR_DE_ACCESO,BLOQUEADA,False,0,0,0,RESTRICCION_HTTP,2026-10-31T09:16:06.731213-03:00
+fuente-011,Municipalidad de Armstrong,Armstrong,Santa Fe,https://armstrong.gov.ar/index.php/transparencia,REVISADA_SIN_NOVEDADES,OPERATIVA,True,7,7,7,,2026-10-31T09:16:06.731213-03:00
+fuente-012,Municipalidad de Las Parejas,Las Parejas,Santa Fe,https://lasparejas.gov.ar/,PENDIENTE,PENDIENTE,False,0,0,0,SinPublicacionesDetectadas,2026-10-31T09:16:06.731213-03:00
+fuente-013,Municipalidad de Funes,Funes,Santa Fe,https://funes.gob.ar/,REVISADA_CON_RESULTADOS,OPERATIVA,True,40,40,40,,2026-10-31T09:16:06.731213-03:00
+fuente-014,Municipalidad de Roldán,Roldán,Santa Fe,https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/,REVISADA_CON_RESULTADOS,PARCIAL,False,97,97,154,TIEMPO_FUENTE,2026-10-31T09:16:06.731213-03:00
+fuente-015,Municipalidad de Pérez,Pérez,Santa Fe,https://perez.opendata.junar.com/home/,ERROR_DE_ACCESO,PENDIENTE,False,0,0,0,ERROR_EXTRACCION; TIEMPO_FUENTE,2026-10-31T09:16:06.731213-03:00
+fuente-016,Municipalidad de Villa Gobernador Gálvez,Villa Gobernador Gálvez,Santa Fe,https://vggmunicipalidad.gov.ar/licitaciones/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,105,105,105,,2026-10-31T09:16:06.731213-03:00
+fuente-017,Municipalidad de Santo Tomé,Santo Tomé,Santa Fe,https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia,PENDIENTE,PENDIENTE,False,0,0,0,SinPublicacionesDetectadas,2026-10-31T09:16:06.731213-03:00
+fuente-018,Municipalidad de Santa Fe,Santa Fe,Santa Fe,https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/,ERROR_DE_ACCESO,BLOQUEADA,False,0,0,0,RESTRICCION_HTTP,2026-10-31T09:16:06.731213-03:00
+fuente-019,Municipalidad de Santa Fe,Santa Fe,Santa Fe,https://transparencia.santafeciudad.gov.ar/contrataciones-obra/,ERROR_DE_ACCESO,BLOQUEADA,False,0,0,0,RESTRICCION_HTTP,2026-10-31T09:16:06.731213-03:00
+fuente-020,Municipalidad de Rafaela,Rafaela,Santa Fe,https://www.rafaela.gob.ar/gobiernoabierto/Licitaciones.aspx,REVISADA_SIN_NOVEDADES,OPERATIVA,True,11,11,11,,2026-10-31T09:16:06.731213-03:00
+fuente-021,Municipalidad de Venado Tuerto,Venado Tuerto,Santa Fe,https://venadotuerto.gob.ar/licitaciones/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,26,26,26,,2026-10-31T09:16:06.731213-03:00
+fuente-022,Municipalidad de Reconquista,Reconquista,Santa Fe,https://reconquista.gob.ar/licitaciones/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,13,13,13,,2026-10-31T09:16:06.731213-03:00
+fuente-023,Gobierno de Entre Ríos,Paraná,Entre Ríos,https://portal.entrerios.gov.ar/haciendayfinanzas/contrataciones/,PENDIENTE,PENDIENTE,False,0,0,0,SinPublicacionesDetectadas,2026-10-31T09:16:06.731213-03:00
+fuente-024,Ministerio de Planeamiento e Infraestructura,Paraná,Entre Ríos,https://www.entrerios.gov.ar/minplan/licitaciones,REVISADA_SIN_NOVEDADES,OPERATIVA,True,486,486,486,,2026-10-31T09:16:06.731213-03:00
+fuente-025,CAFESG,Concordia,Entre Ríos,https://cafesg.gob.ar/cafesg2/licitaciones/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,68,68,68,,2026-10-31T09:16:06.731213-03:00
+fuente-026,Poder Judicial de Entre Ríos,Paraná,Entre Ríos,https://www.jusentrerios.gov.ar/contrataciones/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,51,51,51,,2026-10-31T09:16:06.731213-03:00
+fuente-027,ATER,Paraná,Entre Ríos,https://www.ater.gob.ar/ater2/licitaciones.asp,REVISADA_SIN_NOVEDADES,OPERATIVA,True,219,219,219,,2026-10-31T09:16:06.731213-03:00
+fuente-028,Vialidad Entre Ríos,Paraná,Entre Ríos,https://www.dpver.gov.ar/category/licitaciones-2026/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,21,21,21,,2026-10-31T09:16:06.731213-03:00
+fuente-029,ENERSA,Paraná,Entre Ríos,https://www.enersa.com.ar/area-proveedores/,ERROR_DE_ACCESO,BLOQUEADA,False,0,0,0,ERROR_CERTIFICADO_TLS,2026-10-31T09:16:06.731213-03:00
+fuente-030,Instituto Becario,Paraná,Entre Ríos,https://institutobecario.gov.ar/licitaciones.php,ERROR_DE_ACCESO,BLOQUEADA,False,0,0,0,ERROR_CERTIFICADO_TLS,2026-10-31T09:16:06.731213-03:00
+fuente-031,Municipalidad de Victoria,Victoria,Entre Ríos,https://victoria.gob.ar/web-compras/Invitaciones-Compras/concurso-de-precios/,REVISADA_CON_RESULTADOS,PARCIAL,False,397,111,397,DetalleIncompleto; ERROR_EXTRACCION; LIMITE_SOLICITUDES_TEMPORAL,2026-10-31T09:16:06.731213-03:00
+fuente-032,Municipalidad de San José,San José,Entre Ríos,https://sanjose.gob.ar/concursos-licitaciones/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,152,152,152,,2026-10-31T09:16:06.731213-03:00
+fuente-033,Municipalidad de Colón,Colón,Entre Ríos,https://colon.gov.ar/compras-contratos-suministros/licitaciones/,PENDIENTE,PENDIENTE,False,0,0,0,SinPublicacionesDetectadas,2026-10-31T09:16:06.731213-03:00
+fuente-035,Municipalidad de Concepción del Uruguay,Concepción del Uruguay,Entre Ríos,https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones,REVISADA_SIN_NOVEDADES,OPERATIVA,True,266,266,266,,2026-10-31T09:16:06.731213-03:00
+fuente-036,Municipalidad de Gualeguaychú,Gualeguaychú,Entre Ríos,https://w3.gualeguaychu.gov.ar/tramites/compras-y-licitaciones/acceso-a-licitaciones-p%C3%BAblicas,ERROR_DE_ACCESO,BLOQUEADA,False,0,0,0,TIEMPO_ESPERA,2026-10-31T09:16:06.731213-03:00
+fuente-037,Municipalidad de Gualeguay,Gualeguay,Entre Ríos,https://municipalidad.gualeguay.gob.ar/modulos/transparencia/licitaciones_publicas.php,REVISADA_CON_RESULTADOS,OPERATIVA,True,6,6,7,,2026-10-31T09:16:06.731213-03:00
+fuente-038,Municipalidad de Crespo,Crespo,Entre Ríos,https://www.crespo.gob.ar/licitaciones-privadas-2026/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,7,7,7,,2026-10-31T09:16:06.731213-03:00
+fuente-039,Municipalidad de Crespo,Crespo,Entre Ríos,https://www.crespo.gob.ar/category/licitacion-publica/,REVISADA_CON_RESULTADOS,PARCIAL,False,175,174,175,DetalleIncompleto; ERROR_RED_POR_CONFIRMAR,2026-10-31T09:16:06.731213-03:00
+fuente-040,Municipalidad de Chajarí,Chajarí,Entre Ríos,https://chajari.gob.ar/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,699,699,699,,2026-10-31T09:16:06.731213-03:00
+fuente-041,Municipalidad de Federación,Federación,Entre Ríos,https://www.federacion.gob.ar/licitaciones,REVISADA_CON_RESULTADOS,PARCIAL,False,79,63,101,ERROR_EXTRACCION; TIEMPO_FUENTE,2026-10-31T09:16:06.731213-03:00
+fuente-042,Municipalidad de Nogoyá,Nogoyá,Entre Ríos,https://nuevo.nogoya.gob.ar/compras-licitaciones-y-concursos-nuevo/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,20,20,20,,2026-10-31T09:16:06.731213-03:00
+fuente-043,Municipalidad de La Paz,La Paz,Entre Ríos,https://haciendalapaz.gob.ar/compras/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,50,50,50,,2026-10-31T09:16:06.731213-03:00
+fuente-044,Municipalidad de Villaguay,Villaguay,Entre Ríos,https://villaguay.gob.ar/boletindigital/,REVISADA_CON_RESULTADOS,PARCIAL,False,168,168,238,ERROR_RED_POR_CONFIRMAR; TIEMPO_FUENTE,2026-10-31T09:16:06.731213-03:00
+fuente-045,Municipalidad de Rosario del Tala,Rosario del Tala,Entre Ríos,https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas,REVISADA_SIN_NOVEDADES,OPERATIVA,True,4,4,4,,2026-10-31T09:16:06.731213-03:00
+fuente-046,Municipalidad de San Nicolás,San Nicolás,Buenos Aires,https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos,REVISADA_SIN_NOVEDADES,OPERATIVA,True,20,20,20,,2026-10-31T09:16:06.731213-03:00
+fuente-047,Municipalidad de San Pedro,San Pedro,Buenos Aires,https://sanpedro.net.ar/portal.php,PENDIENTE,PENDIENTE,False,0,0,0,SinPublicacionesDetectadas,2026-10-31T09:16:06.731213-03:00
+fuente-049,Municipalidad de Pergamino,Pergamino,Buenos Aires,https://compras.pergamino.gob.ar/,ERROR_DE_ACCESO,PENDIENTE,False,0,0,0,AccesoRestringido,2026-10-31T09:16:06.731213-03:00
+fuente-050,Municipalidad de Arrecifes,Arrecifes,Buenos Aires,https://arrecifes.gob.ar/informacion-publica/licitaciones/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,5,5,5,,2026-10-31T09:16:06.731213-03:00
+fuente-051,Municipalidad de Baradero,Baradero,Buenos Aires,https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones,REVISADA_SIN_NOVEDADES,OPERATIVA,True,128,128,128,,2026-10-31T09:16:06.731213-03:00
+fuente-052,Municipalidad de Rojas,Rojas,Buenos Aires,https://transparencia.rojas.gov.ar/index.php?action=17,REVISADA_SIN_NOVEDADES,OPERATIVA,True,10,10,10,,2026-10-31T09:16:06.731213-03:00
+fuente-053,Municipalidad de Rojas,Rojas,Buenos Aires,https://transparencia.rojas.gov.ar/index.php?action=24,REVISADA_SIN_NOVEDADES,SIN_PUBLICACIONES_CONFIRMADO,True,0,0,0,,2026-10-31T09:16:06.731213-03:00
+fuente-054,Ente Administrador Puerto Rosario (ENAPRO),Rosario,Santa Fe,https://enapro.com.ar/category/licitaciones/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,12,12,12,,2026-10-31T09:16:06.731213-03:00
+fuente-055,Municipalidad de Alvear,Alvear,Santa Fe,https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones,REVISADA_CON_RESULTADOS,PARCIAL,False,63,58,65,ERROR_EXTRACCION; TIEMPO_FUENTE,2026-10-31T09:16:06.731213-03:00
+fuente-056,Municipalidad de San Lorenzo,San Lorenzo,Santa Fe,https://sanlorenzo.gob.ar/licitaciones/,PENDIENTE,PENDIENTE,False,0,0,0,SinPublicacionesDetectadas,2026-10-31T09:16:06.731213-03:00
+fuente-057,IAFAS,Paraná,Entre Ríos,https://www.iafas.gov.ar/proveedores/licitaciones/,REVISADA_CON_RESULTADOS,PARCIAL,False,98,96,98,DetalleIncompleto,2026-10-31T09:16:06.731213-03:00
+fuente-058,Universidad Nacional de Entre Ríos (UNER),Concepción del Uruguay,Entre Ríos,https://compras.uner.edu.ar/,ERROR_DE_ACCESO,BLOQUEADA,False,0,0,0,RESTRICCION_HTTP,2026-10-31T09:16:06.731213-03:00
+fuente-059,Municipalidad de Colón,Colón,Buenos Aires,https://www.municipalidadcolonpba.gob.ar/licitaciones.php,REVISADA_CON_RESULTADOS,PARCIAL,False,58,52,58,DetalleIncompleto; ERROR_RED_POR_CONFIRMAR,2026-10-31T09:16:06.731213-03:00
+fuente-060,Boletín Oficial de Santa Fe,,Santa Fe,https://www.santafe.gov.ar/boletinoficial/,ERROR_DE_ACCESO,BLOQUEADA,False,0,0,0,TIEMPO_ESPERA,2026-10-31T09:16:06.731213-03:00
+fuente-061,Boletín Oficial de Entre Ríos,,Entre Ríos,https://www.entrerios.gov.ar/boletin/,PENDIENTE,PENDIENTE,False,0,0,0,SinPublicacionesDetectadas,2026-10-31T09:16:06.731213-03:00
+fuente-062,Comuna de General Lagos,General Lagos,Santa Fe,https://cglagos.gob.ar/comuna/compras-y-licitaciones,REVISADA_SIN_NOVEDADES,OPERATIVA,True,10,10,10,,2026-10-31T09:16:06.731213-03:00
+fuente-063,Comuna de Arequito,Arequito,Santa Fe,https://comunaarequito.gob.ar/licitaciones/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,10,10,10,,2026-10-31T09:16:06.731213-03:00
+fuente-064,Comuna de Chabás,Chabás,Santa Fe,https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5002-licitacion-publica-01-2026,REVISADA_SIN_NOVEDADES,OPERATIVA,True,3,3,3,,2026-10-31T09:16:06.731213-03:00
+fuente-065,Gobierno de Timbúes,Timbúes,Santa Fe,https://www.timbues.gob.ar/index.php?pagina=lista&sec=210,REVISADA_CON_RESULTADOS,PARCIAL,False,108,108,139,TIEMPO_FUENTE,2026-10-31T09:16:06.731213-03:00
+fuente-066,Municipalidad de Sunchales,Sunchales,Santa Fe,https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,81,81,81,,2026-10-31T09:16:06.731213-03:00
+fuente-067,Concejo Municipal de Santa Fe,Santa Fe,Santa Fe,https://www.concejosantafe.gov.ar/concursos-y-licitaciones,REVISADA_SIN_NOVEDADES,OPERATIVA,True,2,2,2,,2026-10-31T09:16:06.731213-03:00
+fuente-068,Municipalidad de Villa Elisa,Villa Elisa,Entre Ríos,https://villaelisa.gov.ar/transparencia/,REVISADA_CON_RESULTADOS,PARCIAL,False,87,71,87,DetalleIncompleto,2026-10-31T09:16:06.731213-03:00
+fuente-069,Municipalidad de General Ramírez,General Ramírez,Entre Ríos,https://www.generalramirez.gob.ar/licitaciones-y-concursos/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,88,88,88,,2026-10-31T09:16:06.731213-03:00
+fuente-070,Municipalidad de Lucas González,Lucas González,Entre Ríos,https://lucasgonzalez.gob.ar/licitaciones-y-concursos/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,2,2,2,,2026-10-31T09:16:06.731213-03:00
+fuente-071,Municipalidad de San Salvador,San Salvador,Entre Ríos,https://sansalvadorer.gob.ar/,REVISADA_CON_RESULTADOS,OPERATIVA,True,10,10,12,,2026-10-31T09:16:06.731213-03:00
+fuente-072,Municipalidad de Salto,Salto,Buenos Aires,https://salto.gob.ar/licitaciones/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,21,21,21,,2026-10-31T09:16:06.731213-03:00
+fuente-073,Municipalidad de Junín,Junín,Buenos Aires,https://www.junin.gob.ar/servicio/licitaciones-y-concursos,REVISADA_CON_RESULTADOS,PARCIAL,False,29,29,34,TIEMPO_FUENTE,2026-10-31T09:16:06.731213-03:00
+fuente-074,Municipalidad de Zárate,Zárate,Buenos Aires,https://zarate.gob.ar/licitaciones-publicas/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,31,31,31,,2026-10-31T09:16:06.731213-03:00
+fuente-075,Municipalidad de San Andrés de Giles,San Andrés de Giles,Buenos Aires,https://www.sanandresdegiles.gob.ar/?q=licitaciones-publicas,REVISADA_SIN_NOVEDADES,OPERATIVA,True,3,3,3,,2026-10-31T09:16:06.731213-03:00
+fuente-076,Municipalidad de Reconquista,Reconquista,Santa Fe,https://reconquista.gob.ar/concurso-de-ofertas/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,4,4,4,,2026-10-31T09:16:06.731213-03:00
+fuente-077,Municipalidad de Reconquista,Reconquista,Santa Fe,https://reconquista.gob.ar/concurso-de-precios/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,14,14,14,,2026-10-31T09:16:06.731213-03:00
+fuente-078,Comuna de Humboldt,Humboldt,Santa Fe,https://www.humboldt.gob.ar/,REVISADA_SIN_NOVEDADES,OPERATIVA,True,2,2,2,,2026-10-31T09:16:06.731213-03:00
+auto-e3bcb048ef52c8c543bb,Municipalidad de Funes,Funes,Santa Fe,https://funes.gob.ar/boletin_oficial,REVISADA_CON_RESULTADOS,OPERATIVA,True,0,0,40,,2026-10-31T09:16:06.731213-03:00
+auto-contraste-6b5fc6834def2add0155,Municipalidad de Carmen de Areco,Carmen de Areco,Buenos Aires,https://carmendeareco.gob.ar/transparencia/,REVISADA_CON_RESULTADOS,OPERATIVA,True,7,7,7,,2026-10-31T09:16:06.731213-03:00

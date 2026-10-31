@@ -461,6 +461,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     pending.appendleft((r['url'],'DETALLE',key))
             for l in links:
                 destino=l['url'];et=normalizar(l['texto']);path=urlparse(destino).path
+                if config.get('ignorar_suscripciones_feed') and path.rstrip('/').endswith('/feed'):continue
                 if _host(destino) not in hosts or destino in seen or destino==url:continue
                 raices={urlparse(u).path.rstrip('/') for u in config.get('urls_inicio',[fuente])}
                 raices.update((urlparse(fuente).path.rstrip('/'),urlparse(url).path.rstrip('/')))
