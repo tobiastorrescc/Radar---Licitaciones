@@ -59,6 +59,21 @@ class BarridoInstitucional(unittest.TestCase):
         self.assertEqual(x['numero_procedimiento'],'2535');self.assertEqual(x['vigencia'],'VENCIDA')
         self.assertEqual(x['fecha_limite_presentacion'],'2026-10-30');self.assertIsNone(x['fecha_apertura'])
 
+class CapturaBinaria(unittest.TestCase):
+    def test_pdf_se_conserva_sin_interpretarlo_como_html(self):
+        from tools.sondear_cobertura import worker
+        from unittest.mock import patch
+        from tempfile import TemporaryDirectory
+        from pathlib import Path
+        import json
+        with TemporaryDirectory() as tmp:
+            entrada=Path(tmp)/'entrada.json';salida=Path(tmp)/'salida.json'
+            entrada.write_text(json.dumps({'url':'https://oficial.gob.ar/aviso.pdf'}))
+            with patch('conectores.descargar',return_value=(b'%PDF-1.4\nbinario','application/pdf','https://oficial.gob.ar/aviso.pdf')),patch('extractores.DOM',side_effect=AssertionError('PDF no es HTML')):
+                worker(entrada,salida)
+            r=json.loads(salida.read_text());self.assertEqual(r['paginas_correctas'],1);self.assertEqual(r['enlaces'],[])
+            self.assertEqual(Path(r['archivo']).read_bytes(),b'%PDF-1.4\nbinario')
+
 class BoletinER(unittest.TestCase):
     def test_rutas_segun_cliente_oficial_y_orden_reciente(self):
         from barrido_institucional import ediciones_entre_rios
@@ -82,5 +97,38 @@ class BoletinER(unittest.TestCase):
         self.assertEqual(len(rs),2)
         self.assertNotEqual(o.identidad(rs[0]),o.identidad(rs[1]))
         self.assertIn('ENERSA-2026-0841',o.procedimiento_canonico(rs[0]))
+
+class CorrespondenciaComplementaria(unittest.TestCase):
+    def test_mismo_numero_con_otro_objeto_no_es_antecedente(self):
+        base={'id':'base','organismo':'Ministerio de Planeamiento','provincia':'Entre Ríos','numero_procedimiento':'12/2026','tipo_procedimiento':'licitacion publica','fecha_apertura':'2026-11-25','objeto':'Cambio de tanques cubierta accesibilidad y refacción en baños Escuela Luis Agote','identidad_ambito':'departamento-arquitectura','numero_convocatoria':'2'}
+        aviso={**base,'id':None,'es_fuente_complementaria':True,'numero_convocatoria':None,'identidad_ambito':None,'objeto':'Provisión de materiales y mano de obra: cambio de tanques cubierta accesibilidad refacción baños Escuela Luis Agote'}
+        self.assertEqual(o.antecedente_complementario(aviso,[base])['id'],'base')
+        distinto={**aviso,'objeto':'Adquisición de combustible para maquinaria vial y camiones'}
+        self.assertIsNone(o.antecedente_complementario(distinto,[base]))
+        self.assertIsNone(o.antecedente_complementario(aviso,[base,{**base,'id':'otro','identidad_ambito':'otro-departamento'}]))
+
+class PliegoSegui(unittest.TestCase):
+    def test_clausula_condicional_desierto_no_cierra_convocatoria(self):
+        from pathlib import Path
+        from unittest.mock import patch
+        texto=Path('tests/fixtures/segui_09_2026.txt').read_text()
+        url='https://www.segui.gob.ar/sitio/wp-content/uploads/2025/01/MUNICIPALIDAD-DE-SEGUI-Pliegos-Lic-Publica-09-2026-1.pdf'
+        with patch('cache_documentos.leer_texto',return_value=(texto,{})):
+            r=conectores.explorar(url,{'organismo':'Municipalidad de Seguí','provincia':'Entre Ríos','solo_descubrimiento':True},fetch=lambda u:(b'%PDF-test','application/pdf',u))
+        rs=[o.normalizar(x,'2026-10-31T15:00:00-03:00') for x in r['oportunidades']]
+        self.assertEqual(len(rs),1)
+        self.assertEqual(rs[0]['numero_procedimiento'],'9/2026')
+        self.assertEqual(rs[0]['vigencia'],'ABIERTA')
+        self.assertFalse(rs[0]['desierta'])
+        self.assertEqual(rs[0]['fecha_apertura'],'2026-11-03')
+        self.assertIsNone(rs[0]['fecha_publicacion'])
+
+    def test_ley_contabilidad_y_calle_publica_no_son_procedimientos(self):
+        from unittest.mock import patch
+        texto='LICITACIÓN PÚBLICA 3/2026\nObjeto: Adquisición de materiales. Apertura: 03/11/2026.\nLa Ley de Contabilidad Pública Nº 5140 y sus decretos.\nSobre calle Pública Nº 26 por doce millones.'
+        url='https://oficial.gob.ar/3-2026.pdf'
+        with patch('cache_documentos.leer_texto',return_value=(texto,{})):
+            r=conectores.explorar(url,{'solo_descubrimiento':True},fetch=lambda u:(b'%PDF-test','application/pdf',u))
+        self.assertEqual([x['numero_procedimiento'] for x in r['oportunidades']],['3/2026'])
 
 if __name__=='__main__':unittest.main()

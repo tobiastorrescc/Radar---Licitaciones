@@ -49,7 +49,8 @@ def main():
         try:worker(a.worker,a.salida)
         except Exception as e:
             f=json.loads(Path(a.worker).read_text())
-            guardar(a.salida,{'estado':'BLOQUEADA','finalizado':True,'url':f['url'],'paginas_correctas':0,'oportunidades':[],'errores':[conectores.clasificar_error(e,'DESCARGA')]})
+            error=conectores.clasificar_error(e,'DESCARGA')
+            guardar(a.salida,{'estado':'ERROR_EXTRACCION' if error.get('categoria')=='EXTRACCION' else 'BLOQUEADA','finalizado':True,'url':f['url'],'paginas_correctas':0,'oportunidades':[],'errores':[error]})
         return
     root=Path(a.salida);root.mkdir(parents=True,exist_ok=True)
     fs=json.loads(Path('inventario/fuentes.json').read_text())

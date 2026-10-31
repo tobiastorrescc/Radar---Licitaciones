@@ -316,7 +316,9 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             return
         if config.get('exigir_llamado_documental') and not re.search(r'(?:llamase|llamese|convocase|convoca\s+a|se\s+llama|se\s+solicitan?)\b.{0,250}(?:licitacion|concurso|compra|cotizacion)',normalizar(texto),re.S):return
         lineas=texto.splitlines()
-        posiciones=[i for i,l in enumerate(lineas) if extractores.procesos(l)]
+        posiciones=[i for i,l in enumerate(lineas) if extractores.procesos(l) and (re.search(r'licitaci[oó]n|concurso|cotejo|compra|contrataci[oó]n|compulsa',l,re.I) or re.match(r'^\s*(?:p[uú]blica|privada)\b',l,re.I))]
+        unicos={p['procedimiento'] for i in posiciones for p in extractores.procesos(lineas[i])}
+        if len(unicos)==1:posiciones=posiciones[:1]
         if not posiciones and referencia and texto.strip():
             p=dict(items[referencia]);p['objeto']=texto;p['texto_documento']=texto;p['detalle_completo']=True;p['evidencia_url']=url
             p['pago_evidencias']=pagos.unir_evidencias(p.get('pago_evidencias'),pagos.extraer(texto,url,hash_documento=hash_documento,metodo='TEXTO_DOCUMENTO'))
@@ -327,9 +329,10 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             ps=extractores.procesos(t)
             if not ps:continue
             p=ps[0]
-            evento='|'.join(sorted(set(extractores.EVENTO.findall(normalizar(t))))) or None
-            r={'titulo':t,'objeto':t,'url':url,'evidencia_url':url,'documentos':[{'url':url,'titulo':'Documento'}],
-               'procedimiento':p['procedimiento'],'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'evento_publicado':evento,'detalle_completo':True,'rango_evidencia':3,'pago_evidencias':pagos.extraer(t,url,hash_documento=hash_documento,metodo='SECCION_DOCUMENTO')}
+            cabecera=re.split(r'pliego de bases',normalizar(t),maxsplit=1)[0] if re.search(r'pliego de bases',normalizar(t)) else normalizar(t)
+            evento='|'.join(sorted(set(extractores.EVENTO.findall(cabecera)))) or None
+            r={'titulo':cabecera[:1200],'objeto':t,'url':url,'evidencia_url':url,'documentos':[{'url':url,'titulo':'Documento'}],
+               'procedimiento':p['procedimiento'],'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'evento_publicado':evento,'situacion_publicada':extractores.situacion(cabecera),'llamado_especial':bool(evento),'detalle_completo':True,'rango_evidencia':3,'pago_evidencias':pagos.extraer(t,url,hash_documento=hash_documento,metodo='SECCION_DOCUMENTO')}
             if config.get('correlativos_publicados') and re.fullmatch(r'\d{1,6}',p['numero']) and p['tipo']=='cotejo de precios':
                 r['registro_estructurado']=True
                 plazo=re.search(r'para el\s*:\s*(\d{1,2}/\d{1,2}/20\d{2}\s+a las\s+\d{1,2}[.:]\d{2})',normalizar(t))

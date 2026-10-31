@@ -71,7 +71,10 @@ https://salto.gob.ar/licitaciones/
 https://www.junin.gob.ar/servicio/licitaciones-y-concursos
 https://zarate.gob.ar/licitaciones-publicas/
 https://www.sanandresdegiles.gob.ar/?q=licitaciones-publicas
-https://reconquista.gob.ar/concurso-de-precios/
 https://reconquista.gob.ar/concurso-de-ofertas/
+https://reconquista.gob.ar/concurso-de-precios/
 https://www.humboldt.gob.ar/
 https://unr.edu.ar/obras-publicas/
+https://viale.gob.ar/pliegos/
+https://oroverde.gob.ar/portal/secciones/licitaciones/
+https://www.segui.gob.ar/sitio/?cat=26

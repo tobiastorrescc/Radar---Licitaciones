@@ -1,12 +1,10 @@
 {
-  "etapa": "recuperar-boletin-er-y-navegacion-publicada",
+  "etapa": "validar-recuperacion-er-y-vigencia-de-pliegos",
   "barrido": true,
   "barrido_manifest": "inventario/recuperacion_fuentes.json",
   "barrido_ids": [
     "fuente-061",
-    "candidato-segui",
-    "candidato-esperanza",
-    "candidato-oroverde"
+    "candidato-segui"
   ],
   "barrido_por_fuente": 90,
   "sondear": false,

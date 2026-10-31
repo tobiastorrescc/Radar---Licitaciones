@@ -1463,18 +1463,39 @@
     "organismo": "Municipalidad de Ramallo",
     "localidad": "Ramallo",
     "provincia": "Buenos Aires",
-    "url": "https://www.ramallo.gob.ar/sites/default/files/descargas/decretos_abril_2024_pdf_-_boletin_oficial_virtual.pdf",
+    "url": "https://ramallo.gob.ar/boletines",
     "tipo_portal": "pdf_historico",
-    "estado_verificacion": "PENDIENTE_ADAPTADOR",
+    "estado_verificacion": "PARCIAL",
     "incorporada": false,
-    "conector": null,
+    "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://www.ramallo.gob.ar/sites/default/files/descargas/decretos_abril_2024_pdf_-_boletin_oficial_virtual.pdf",
       "fecha": "2026-10-25",
       "observacion": "PDF oficial histórico localizado; falta índice actualizado"
     },
-    "verificada_funcionando": false
+    "verificada_funcionando": false,
+    "urls_inicio": [
+      "https://ramallo.gob.ar/boletines",
+      "https://sibom.slyt.gba.gob.ar/cities/102"
+    ],
+    "dominios_documentos": [
+      "sibom.slyt.gba.gob.ar"
+    ],
+    "adaptador": "sibom",
+    "seguir_patrones": [
+      "/bulletins/[0-9]+(?:/contents/[0-9]+)?(?:\\?|$)"
+    ],
+    "barrido_institucional": true,
+    "lectura_adjuntos": "necesarios",
+    "admitir_avisos_sin_numero": true,
+    "ocr": false,
+    "ultima_verificacion": "2026-10-31T19:38:00Z",
+    "evidencia_verificacion": {
+      "github_run_id": 41234956423,
+      "publicaciones_detectadas": 21,
+      "criterio": "Avisos SIBOM reales históricos; recorrido incompleto por tiempo."
+    }
   },
   {
     "id": "fuente-049",
@@ -1860,13 +1881,13 @@
     "tipo_portal": "boletin_pdf",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PENDIENTE",
+    "estado_verificacion": "PARCIAL",
     "verificada_funcionando": false,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
     "investigar_scripts": true,
     "lectura_adjuntos": "necesarios",
-    "ocr": true,
+    "ocr": false,
     "evidencia_descubrimiento": {
       "fecha": "2026-10-27",
       "metodo": "Busqueda y apertura web oficial; pendiente conector real",
@@ -1878,14 +1899,22 @@
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
     "dominios_documentos": [
+      "testing54.entrerios.gov.ar",
+      "www.entrerios.gov.ar",
       "portal.entrerios.gov.ar"
     ],
-    "ultima_verificacion": "2026-10-29T17:50:11.862449-03:00",
+    "ultima_verificacion": "2026-10-31T19:50:27Z",
     "evidencia_verificacion": {
-      "github_run_id": 40952155721,
-      "publicaciones_detectadas": 0,
-      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+      "github_run_id": 41235922884,
+      "publicaciones_detectadas": 95,
+      "criterio": "Avisos reales extraídos en PDF; ventana de ediciones incompleta por tiempo. No equivale a cobertura exhaustiva."
+    },
+    "urls_inicio": [
+      "https://testing54.entrerios.gov.ar/boletin/factura/inicio/get_buscador"
+    ],
+    "documentos_para_descubrimiento": true,
+    "conexion_timeout": 5,
+    "lectura_timeout": 10
   },
   {
     "id": "fuente-062",
@@ -2434,6 +2463,91 @@
       "github_run_id": 41212482113,
       "publicaciones_detectadas": 14,
       "criterio": "Extracción nativa de número, objeto y enlace oficial; no implica cobertura exhaustiva"
+    }
+  },
+  {
+    "id": "fuente-080",
+    "organismo": "Municipalidad de Viale",
+    "localidad": "Viale",
+    "provincia": "Entre Ríos",
+    "url": "https://viale.gob.ar/pliegos/",
+    "barrido_institucional": true,
+    "correlativos_publicados": true,
+    "enriquecer_fichas": true,
+    "metadatos_publicacion": true,
+    "documentos_para_descubrimiento": true,
+    "lectura_adjuntos": "necesarios",
+    "conector": "publicaciones",
+    "admitir_avisos_sin_numero": true,
+    "ocr": false,
+    "incorporada": true,
+    "tipo_portal": "municipal_html_documentos",
+    "estado_verificacion": "PARCIAL",
+    "verificada_funcionando": false,
+    "ultima_verificacion": "2026-10-31T19:50:27Z",
+    "evidencia_verificacion": {
+      "github_run_id": 41234956423,
+      "publicaciones_detectadas": 36,
+      "criterio": "Procedimientos extraídos; recorrido/adjuntos incompletos, sin declarar cobertura total."
+    }
+  },
+  {
+    "id": "fuente-081",
+    "organismo": "Municipio de Oro Verde",
+    "localidad": "Oro Verde",
+    "provincia": "Entre Ríos",
+    "url": "https://oroverde.gob.ar/portal/secciones/licitaciones/",
+    "barrido_institucional": true,
+    "enriquecer_fichas": true,
+    "metadatos_publicacion": true,
+    "lectura_adjuntos": "necesarios",
+    "conector": "publicaciones",
+    "admitir_avisos_sin_numero": true,
+    "ocr": false,
+    "urls_inicio": [
+      "https://oroverde.gob.ar/portal/",
+      "https://oroverde.gob.ar/portal/secciones/licitaciones/"
+    ],
+    "buscador_institucional": true,
+    "incorporada": true,
+    "tipo_portal": "municipal_html_documentos",
+    "estado_verificacion": "PARCIAL",
+    "verificada_funcionando": false,
+    "ultima_verificacion": "2026-10-31T19:50:27Z",
+    "evidencia_verificacion": {
+      "github_run_id": 41235922884,
+      "publicaciones_detectadas": 2,
+      "criterio": "Procedimientos extraídos; recorrido/adjuntos incompletos, sin declarar cobertura total."
+    }
+  },
+  {
+    "id": "fuente-082",
+    "organismo": "Municipalidad de Seguí",
+    "localidad": "Seguí",
+    "provincia": "Entre Ríos",
+    "url": "https://www.segui.gob.ar/sitio/?cat=26",
+    "barrido_institucional": true,
+    "enriquecer_fichas": true,
+    "metadatos_publicacion": true,
+    "documentos_para_descubrimiento": true,
+    "lectura_adjuntos": "necesarios",
+    "conector": "publicaciones",
+    "admitir_avisos_sin_numero": true,
+    "ocr": false,
+    "urls_inicio": [
+      "https://www.segui.gob.ar/sitio/",
+      "https://www.segui.gob.ar/sitio/?cat=26"
+    ],
+    "buscador_institucional": true,
+    "incorporada": true,
+    "tipo_portal": "municipal_html_documentos",
+    "estado_verificacion": "PARCIAL",
+    "verificada_funcionando": false,
+    "ultima_verificacion": "2026-10-31T19:50:27Z",
+    "evidencia_verificacion": {
+      "github_run_id": 41235922884,
+      "publicaciones_detectadas": 31,
+      "criterio": "Procedimientos extraídos; recorrido/adjuntos incompletos, sin declarar cobertura total."
     }
   }
 ]

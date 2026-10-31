@@ -410,7 +410,7 @@ def extraer(html,url,config=None):
                 registro['numero_oficial_sin_interpretar']=registro['numero_procedimiento']
     if config.get('metadatos_publicacion'):
         fechas={n.attrs['datetime'][:10] for n in raiz.iter() if n.tag=='time' and n.attrs.get('datetime') and ('published' in n.attrs.get('class','') or n.attrs.get('itemprop')=='datePublished')}
-        if len(fechas)==1:
+        if len(fechas)==1 and len(agrupados)==1:
             for registro in agrupados.values():registro.setdefault('fecha_publicacion_texto',next(iter(fechas)))
     if config.get('admitir_avisos_sin_numero'):
         # Un aviso explícito de compra no necesita número, monto ni adjunto.

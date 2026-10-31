@@ -96,9 +96,23 @@ def boletin_entre_rios(texto,url):
         if not org:return
         if norm(org).startswith('sistema de previs'):
             org=' '.join(cab[cab.index(org):])
+        publicado=org
+        org=re.sub(r'\s*-\s*Entre R[ií]os\s*$','',org,flags=re.I).strip(' -')
+        org=re.sub(r'\s*\(E\.\s*R\.\s*\)\s*$','',org,flags=re.I).strip()
+        aliases={'ministerio de salud':'MIN. SALUD - PODER EJECUTIVO','direccion provincial de vialidad':'Vialidad Entre Ríos','instituto de ayuda financiera a la accion social':'IAFAS'}
+        org=aliases.get(norm(org),org)
         localidad=None
         m=re.match(r'(?:municipalidad|municipio|comuna)\s+(?:de\s+)?(.+)',org,re.I)
-        if m:localidad=m[1].strip()
+        if m:
+            localidad=m[1].strip()
+            # Texto nativo con letras separadas por la tipografía: resolver sólo
+            # si coincide inequívocamente con el padrón provincial, nunca por fuzzy.
+            from pathlib import Path
+            import json
+            padron=json.loads(Path(__file__).with_name('inventario').joinpath('territorio.json').read_text())
+            exactas=[x['localidad'] for x in padron['municipios'] if x['provincia']=='Entre Ríos' and re.sub(r'\s+','',norm(x['localidad']))==re.sub(r'\s+','',norm(localidad))]
+            if len(set(exactas))==1:localidad=exactas[0]
+            org=('Comuna de ' if norm(org).startswith('comuna') else 'Municipalidad de ')+localidad
         ps=procesos(cuerpo)
         if 'enersa' in norm(org):
             tipo='concurso de precios' if re.search(r'concursos? de precios',norm(cuerpo)) else 'licitacion publica'
@@ -113,7 +127,7 @@ def boletin_entre_rios(texto,url):
         for numero,tipo,contenido in partes:
             evento='|'.join(sorted(set(EVENTO.findall(norm(contenido))))) or None
             apertura=re.search(r'apertura.{0,700}?(\d{1,2}\s*/\s*\d{1,2}\s*/\s*20\d{2}(?:\s+a las\s+\d{1,2}\s*:\s*\d{2})?)',norm(contenido),re.S)
-            registros.append({'organismo':org,'localidad':localidad,'provincia':'Entre Ríos','numero_procedimiento':numero,'numero_oficial_sin_interpretar':numero,'tipo_procedimiento':tipo,'procedimiento':tipo+' '+numero,'titulo':tipo+' '+numero+' '+contenido,'objeto':contenido,'url':url,'evidencia_url':url,'registro_estructurado':True,'detalle_completo':True,'es_fuente_complementaria':True,'evento_publicado':evento,'situacion_publicada':situacion(contenido),'fecha_apertura_texto':re.sub(r'\s*/\s*','/',apertura[1]) if apertura else None,'documentos':[{'url':url,'titulo':'Boletín Oficial Entre Ríos'}]})
+            registros.append({'organismo':org,'organismo_publicado':publicado,'localidad':localidad,'provincia':'Entre Ríos','numero_procedimiento':numero,'numero_oficial_sin_interpretar':numero,'tipo_procedimiento':tipo,'procedimiento':tipo+' '+numero,'titulo':tipo+' '+numero+' '+contenido,'objeto':contenido,'url':url,'evidencia_url':url,'registro_estructurado':True,'detalle_completo':True,'es_fuente_complementaria':True,'evento_publicado':evento,'situacion_publicada':situacion(contenido),'fecha_apertura_texto':re.sub(r'\s*/\s*','/',apertura[1]) if apertura else None,'documentos':[{'url':url,'titulo':'Boletín Oficial Entre Ríos'}]})
     for l in lineas:
         n=norm(l.strip())
         if n in ('licitaciones','concursos','compras directas','contrataciones directas','solicitudes de cotizacion'):

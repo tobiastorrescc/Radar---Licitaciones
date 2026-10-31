@@ -95,7 +95,7 @@ def normalizar(r,ahora=None):
     r['condiciones_pago']=r['pago']['etiqueta']
     r['enlace_condiciones_pago']=r['pago']['documento_respaldo']
     r['pago_prioritario']=r['pago']['prioritario']
-    r['desierta']='desiert' in t
+    r['desierta']=r.get('situacion_publicada')=='DESIERTA' or extractores.situacion(texto_titulo)=='DESIERTA' or ('pliego de bases' not in t and extractores.situacion(texto)=='DESIERTA')
     r['fracasada']=r.get('situacion_publicada')=='FRACASADA' or extractores.situacion(texto_titulo)=='FRACASADA'
     senales=t+' '+norm(texto_titulo)+' '+norm(r.get('evento_publicado'))
     r['segundo_llamado']=bool(re.search(r'segund[oa] (?:llamado|convocatoria)|2(?:do|º|°) llamado|llamado 2\b',senales))
@@ -355,3 +355,25 @@ def guardar_vistas(registros,ahora,directorio,prefijo='oportunidades'):
         (d/f'{prefijo}_{nombre}.json').write_text(json.dumps({'fecha':ahora,'criterio':vistas['criterio'],'total':len(vistas[nombre]),'oportunidades':vistas[nombre]},ensure_ascii=False,indent=2),encoding='utf-8')
         (d/f'{prefijo}_{nombre}.md').write_text(reporte(vistas[nombre],ahora),encoding='utf-8')
     return vistas
+
+
+def antecedente_complementario(registro,catalogo):
+    """Relaciona un aviso de boletín con una única ficha existente y concordante.
+
+    Exige organismo, modalidad, número, apertura y objeto; nunca sólo número.
+    La fecha de una edición no se interpreta como fecha de publicación original.
+    """
+    if not registro.get('es_fuente_complementaria') or not registro.get('fecha_apertura'):return None
+    clave=(norm(registro.get('provincia')),norm(registro.get('organismo')),procedimiento_canonico(registro))
+    if not clave[2]:return None
+    tokens=set(re.findall(r'[a-z]{5,}',norm(registro.get('objeto'))))
+    encontrados={}
+    for previo in catalogo:
+        if (norm(previo.get('provincia')),norm(previo.get('organismo')),procedimiento_canonico(previo))!=clave:continue
+        if previo.get('fecha_apertura')!=registro['fecha_apertura']:continue
+        if registro.get('evento_publicado') and convocatoria(registro)!=convocatoria(previo):continue
+        anteriores=set(re.findall(r'[a-z]{5,}',norm(previo.get('objeto'))))
+        comunes=tokens&anteriores
+        if len(comunes)<4 or len(comunes)/max(1,min(len(tokens),len(anteriores)))<0.65:continue
+        encontrados[previo.get('id') or identidad(previo)]=previo
+    return next(iter(encontrados.values())) if len(encontrados)==1 else None

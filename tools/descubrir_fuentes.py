@@ -45,7 +45,7 @@ def resultados_html(html,base):
     return encontrados
 
 def objetivos(padron,fuentes):
-    cubiertos={(o.norm(f['localidad']),f['provincia']) for f in fuentes if f.get('incorporada') and o.norm(f['organismo']).startswith(('municipalidad','comuna','gobierno de timbues'))}
+    cubiertos={(o.norm(f['localidad']),f['provincia']) for f in fuentes if f.get('incorporada') and f.get('verificada_funcionando') and f.get('estado_verificacion')=='OPERATIVA' and o.norm(f['organismo']).startswith(('municipalidad','comuna','gobierno de timbues'))}
     territoriales=[{'clave':'territorio:'+m['codigo'],'localidad':m['localidad'],'provincia':m['provincia'],
         'organismo':('Comuna' if 'comuna' in o.norm(m.get('tipo_gobierno')) else 'Municipalidad')+' de '+m['localidad'],
         'consulta':'"'+m['localidad']+'" "'+m['provincia']+'" compras licitaciones sitio oficial','tipo':'TERRITORIAL'}
@@ -56,6 +56,7 @@ def objetivos(padron,fuentes):
     # Intercalar sectores evita postergarlos detrás de cientos de comunas.
     pendientes_path=Path('inventario/pendientes83.json')
     pendientes=set(json.loads(pendientes_path.read_text())['ids']) if pendientes_path.exists() else set()
+    pendientes.update(f['id'] for f in fuentes if f.get('incorporada') and (not f.get('verificada_funcionando') or f.get('estado_verificacion')!='OPERATIVA'))
     reparacion=[{'clave':'reparar:'+f['id'],'tipo':'TERRITORIAL' if o.norm(f['organismo']).startswith(('municipalidad','comuna')) else 'SECTORIAL',
         'organismo':f['organismo'],'localidad':f['localidad'],'provincia':f['provincia'],
         'consulta':'"'+f['organismo']+'" "'+f['provincia']+'" compras licitaciones sitio oficial'} for f in fuentes if f['id'] in pendientes]
@@ -125,7 +126,7 @@ def worker(entrada,salida):
         if not identidad['verificada']:
             guardar(salida,{'estado':'PENDIENTE','finalizado':True,'validacion':aceptacion({},identidad),'oportunidades':[]});return
         config={'organismo':identidad['organismo'],'localidad':identidad['localidad'],'provincia':c['provincia'],
-            'conector':'publicaciones','descubrir_menu':True,'descubrir_contrataciones':True,'lectura_adjuntos':'necesarios','ocr':False,'admitir_avisos_sin_numero':True}
+            'conector':'publicaciones','descubrir_menu':True,'descubrir_contrataciones':True,'barrido_institucional':True,'buscador_institucional':True,'solo_descubrimiento':True,'lectura_adjuntos':'necesarios','ocr':False,'admitir_avisos_sin_numero':True}
         inicial={url:(datos,tipo,final)}
         def fetch(u,datos_post=None):
             if u in inicial:return inicial.pop(u)
