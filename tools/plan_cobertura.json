@@ -1,6 +1,6 @@
 {
-  "etapa": "regresion-dirigida-paginacion-pjer-y-aviso-unr",
-  "barrido": true,
+  "etapa": "endpoints-publicos-entre-rios-derivados-de-javascript-oficial",
+  "barrido": false,
   "sondear": true,
   "auditar": false,
   "descubrir": false,
@@ -9,11 +9,10 @@
   "revisar_cobro": false,
   "archivar_auditoria": false,
   "urls_sondeo": [
-    "https://portal.entrerios.gov.ar/static/js/3658.7e627faf.chunk.js",
-    "https://portal.entrerios.gov.ar/static/js/5735.55523570.chunk.js",
-    "https://portal.entrerios.gov.ar/static/js/6341.d339fdc2.chunk.js",
-    "https://portal.entrerios.gov.ar/static/js/8931.31563bf3.chunk.js",
-    "https://portal.entrerios.gov.ar/static/js/7868.595c2d2e.chunk.js"
+    "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+    "https://portal.entrerios.gov.ar/api/public/consulta/uep/licitaciones",
+    "https://portal.entrerios.gov.ar/static/js/9254.29d90381.chunk.js",
+    "https://portal.entrerios.gov.ar/static/js/5326.824a7ea1.chunk.js"
   ],
   "barrido_ids": [
     "fuente-026",

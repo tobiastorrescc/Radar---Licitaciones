@@ -17,7 +17,7 @@ class BarridoDescubrimiento(unittest.TestCase):
 
     def test_mismo_indice_no_oculta_procedimiento_distinto(self):
         from tools.comparar_barrido import comparar
-        uno={'organismo':'Comuna','provincia':'Santa Fe','url':'https://oficial.gob.ar/compras/','fuente':'https://oficial.gob.ar/compras/','numero_procedimiento':'1/2026','tipo_procedimiento':'licitacion publica','clasificacion_registro':'PROCEDIMIENTO','vigencia':'ABIERTA'}
+        uno={'organismo':'Comuna','provincia':'Santa Fe','url':'https://oficial.gob.ar/compras/','fuente':'https://oficial.gob.ar/compras/','numero_procedimiento':'1/2026','tipo_procedimiento':'licitacion publica','clasificacion_registro':'PROCEDIMIENTO','vigencia':'ABIERTA','fecha_apertura':'2026-11-04'}
         dos={**uno,'numero_procedimiento':'2/2026'}
         r=comparar({'registros':[uno]},{'registros':[dos]},[uno])
         self.assertEqual(r['categorias'],{'VIGENTE_NUEVA_PARA_RADAR':1})
