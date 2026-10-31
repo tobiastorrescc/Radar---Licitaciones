@@ -1,5 +1,5 @@
 {
-  "etapa": "validar-entrega-vigentes-recuperadas-sin-nuevas-consultas",
+  "etapa": "validar-entrega-python311-sin-nuevas-consultas",
   "barrido": false,
   "sondear": false,
   "auditar": false,

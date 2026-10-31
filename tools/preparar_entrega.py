@@ -45,8 +45,9 @@ def preparar(directorio,salida=None):
             fila={k:json.dumps(r.get(k),ensure_ascii=False) if isinstance(r.get(k),(dict,list)) else str(r.get(k) or '') for k in campos}
             # Apertura en planillas sin ejecutar fórmulas suministradas por terceros.
             fila={k:"'"+v if v.startswith(('=','+','-','@','\t','\r')) else v for k,v in fila.items()};w.writerow(fila)
+    total_recuperaciones=sum(len(grupos[k]) for k in ('recuperadas_vigentes','recuperaciones_historicas','recuperaciones_vigencia_pendiente'))
     lineas=['# Informe diario del piloto', '',f'Fecha: {fecha}. Estado: **{resumen["estado"]}**.','',meta['aviso'],'',
-            f'Nuevas con publicación comprobada: {len(grupos["nuevas_confirmadas"])}. Detecciones de fecha incierta o mismo día: {len(grupos["detecciones_sin_fecha_o_mismo_dia"])}. Cambios: {len(grupos["cambios"])}. Recuperaciones: {sum(len(grupos[k]) for k in ('recuperadas_vigentes','recuperaciones_historicas','recuperaciones_vigencia_pendiente'))}.','',
+            f'Nuevas con publicación comprobada: {len(grupos["nuevas_confirmadas"])}. Detecciones de fecha incierta o mismo día: {len(grupos["detecciones_sin_fecha_o_mismo_dia"])}. Cambios: {len(grupos["cambios"])}. Recuperaciones: {total_recuperaciones}.','',
             '[CSV completo](oportunidades.csv) · [JSON completo](oportunidades.json). Sin límite de cantidad.']
     if enlace:lineas+=['',f'[Auditoría, abiertas, próximas a vencer y catálogo íntegro]({enlace}) (artefacto radar-controlado).']
     for nombre,datos in grupos.items():
