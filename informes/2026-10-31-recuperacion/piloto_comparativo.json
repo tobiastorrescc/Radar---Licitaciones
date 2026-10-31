@@ -1,0 +1,1130 @@
+{
+  "categorias": {
+    "YA_CONOCIDA_NO_ABIERTA": 1958,
+    "VIGENTE_YA_CONOCIDA": 26,
+    "FECHA_O_VIGENCIA_PENDIENTE": 60,
+    "HISTORICA_RECUPERADA": 103,
+    "VIGENTE_NUEVA_PARA_RADAR": 7
+  },
+  "primera": {
+    "corrida": "20261031T200147-c1280431-comparativo",
+    "fecha": "2026-10-31T17:02:06.705473-03:00",
+    "primera_ejecucion": false,
+    "estado": "COMPLETA_CON_INCIDENCIAS",
+    "observadas": 2239,
+    "candidatos_sin_confirmar": 80,
+    "clasificacion": {
+      "SIN_CAMBIOS": 1943,
+      "RECUPERACION_LINEA_BASE": 113,
+      "NUEVA_DETECCION_FECHA_DESCONOCIDA": 62,
+      "MODIFICADO": 27,
+      "DATOS_COMPLETADOS": 14
+    },
+    "novedades": 103,
+    "eventos_emitidos": 216,
+    "total_historial": 5136,
+    "fuentes": {
+      "OPERATIVA": 15,
+      "TIEMPO_FUENTE": 9,
+      "BLOQUEADA": 12,
+      "PENDIENTE": 3,
+      "PARCIAL": 5
+    },
+    "mensaje": "CON_NOVEDADES",
+    "fuentes_configuradas": 44,
+    "fuentes_consultadas": 44,
+    "fuentes_finalizadas": 44,
+    "procedimientos_unicos_catalogo": 5117,
+    "duplicados_historicos_unificados": 19,
+    "abiertas": 162,
+    "proximas_a_vencer": 103,
+    "no_observadas_en_corrida": 2959,
+    "cobertura_estricta": {
+      "OPERATIVA": 15,
+      "PARCIAL": 13,
+      "BLOQUEADA": 12,
+      "PENDIENTE": 4
+    },
+    "condiciones_pago": {
+      "procedimientos": 5116,
+      "verificadas": 166,
+      "pendientes": 4950,
+      "clasificaciones": {
+        "ANTICIPO": 4,
+        "CONTRA_ENTREGA": 4,
+        "CONTADO": 38,
+        "PLAZO_5_DIAS": 38,
+        "PLAZO_10_DIAS": 6,
+        "PLAZO_7_DIAS": 1,
+        "PLAZO_15_DIAS": 2,
+        "PLAZO_30_DIAS": 34,
+        "OTRO_PLAZO": 14,
+        "NO_INFORMADO": 4950,
+        "MIXTO": 5,
+        "OPCIONES_PUBLICADAS": 13,
+        "CONTRA_PRESENTACION_FACTURA": 4,
+        "PAGOS_PARCIALES": 1,
+        "DESPUES_CONFORMIDAD_RECEPCION": 1,
+        "CONTRA_FACTURA_CONFORMADA": 1
+      },
+      "fuentes": {
+        "https://funes.gob.ar/": {
+          "verificadas": 7,
+          "pendientes": 33,
+          "motivos": {
+            "CONDICIONES_DIFERENTES_REQUIEREN_REVISION": 6,
+            "REQUIERE_OCR_O_LECTURA": 8,
+            "PENDIENTE_PLAZO_AUDITORIA": 19
+          }
+        },
+        "https://www.federacion.gob.ar/licitaciones": {
+          "verificadas": 9,
+          "pendientes": 160,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 151,
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 1,
+            "SIN_DOCUMENTO_IDENTIFICADO": 8
+          }
+        },
+        "https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones": {
+          "verificadas": 8,
+          "pendientes": 68,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 56,
+            "REQUIERE_OCR_O_LECTURA": 2,
+            "SIN_DOCUMENTO_IDENTIFICADO": 7,
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 3
+          }
+        },
+        "https://chajari.gob.ar/": {
+          "verificadas": 1,
+          "pendientes": 707,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 700,
+            "SIN_DOCUMENTO_IDENTIFICADO": 1,
+            "REQUIERE_OCR_O_LECTURA": 6
+          }
+        },
+        "https://www.segui.gob.ar/sitio/?cat=26": {
+          "verificadas": 4,
+          "pendientes": 24,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 20,
+            "CONDICIONES_DIFERENTES_REQUIEREN_REVISION": 4
+          }
+        },
+        "https://viale.gob.ar/pliegos/": {
+          "verificadas": 36,
+          "pendientes": 0,
+          "motivos": {}
+        },
+        "https://victoria.gob.ar/web-compras/Invitaciones-Compras/concurso-de-precios/": {
+          "verificadas": 1,
+          "pendientes": 396,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 393,
+            "SIN_CLAUSULA_COMPROBADA": 3
+          }
+        },
+        "https://villaelisa.gov.ar/transparencia/": {
+          "verificadas": 39,
+          "pendientes": 47,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 16,
+            "PENDIENTE_PLAZO_AUDITORIA": 31
+          }
+        },
+        "https://reconquista.gob.ar/licitaciones/": {
+          "verificadas": 7,
+          "pendientes": 6,
+          "motivos": {
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 6
+          }
+        },
+        "https://haciendalapaz.gob.ar/compras/": {
+          "verificadas": 2,
+          "pendientes": 48,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 41,
+            "REQUIERE_OCR_O_LECTURA": 7
+          }
+        },
+        "https://armstrong.gov.ar/index.php/transparencia": {
+          "verificadas": 3,
+          "pendientes": 83,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 76,
+            "SIN_DOCUMENTO_IDENTIFICADO": 2,
+            "PENDIENTE_PLAZO_AUDITORIA": 5
+          }
+        },
+        "https://www.iafas.gov.ar/proveedores/licitaciones/": {
+          "verificadas": 4,
+          "pendientes": 94,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 83,
+            "CONDICIONES_DIFERENTES_REQUIEREN_REVISION": 1,
+            "REQUIERE_OCR_O_LECTURA": 8,
+            "SIN_DOCUMENTO_IDENTIFICADO": 2
+          }
+        },
+        "https://aeropuertorosario.com/institucional/licitaciones/": {
+          "verificadas": 25,
+          "pendientes": 25,
+          "motivos": {
+            "CONDICIONES_DIFERENTES_REQUIEREN_REVISION": 5,
+            "REQUIERE_OCR_O_LECTURA": 1,
+            "SIN_DOCUMENTO_IDENTIFICADO": 19
+          }
+        },
+        "https://www.entrerios.gov.ar/boletin/": {
+          "verificadas": 5,
+          "pendientes": 93,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 74,
+            "PENDIENTE_PLAZO_AUDITORIA": 2,
+            "SIN_DOCUMENTO_IDENTIFICADO": 4,
+            "REQUIERE_OCR_O_LECTURA": 10,
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 1,
+            "CONDICIONES_DIFERENTES_REQUIEREN_REVISION": 1,
+            "DOCUMENTO_NO_COMPROBADO": 1
+          }
+        },
+        "https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/": {
+          "verificadas": 1,
+          "pendientes": 80,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 76,
+            "REQUIERE_OCR_O_LECTURA": 2,
+            "SIN_DOCUMENTO_IDENTIFICADO": 2
+          }
+        },
+        "https://www.crespo.gob.ar/category/licitacion-publica/": {
+          "verificadas": 3,
+          "pendientes": 170,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 59,
+            "PENDIENTE_PLAZO_AUDITORIA": 110,
+            "DOCUMENTO_NO_COMPROBADO": 1
+          }
+        },
+        "https://www.crespo.gob.ar/licitaciones-privadas-2026/": {
+          "verificadas": 7,
+          "pendientes": 0,
+          "motivos": {}
+        },
+        "https://www.timbues.gob.ar/index.php?pagina=lista&sec=210": {
+          "verificadas": 1,
+          "pendientes": 212,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 59,
+            "PENDIENTE_PLAZO_AUDITORIA": 138,
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 11,
+            "SIN_CLAUSULA_COMPROBADA": 4
+          }
+        },
+        "https://cglagos.gob.ar/comuna/compras-y-licitaciones": {
+          "verificadas": 1,
+          "pendientes": 9,
+          "motivos": {
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 5,
+            "PENDIENTE_PLAZO_AUDITORIA": 4
+          }
+        },
+        "https://salto.gob.ar/licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 21,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 21
+          }
+        },
+        "https://vggmunicipalidad.gov.ar/licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 196,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 75,
+            "PENDIENTE_PLAZO_AUDITORIA": 118,
+            "REQUIERE_OCR_O_LECTURA": 3
+          }
+        },
+        "https://www.municipalidadcolonpba.gob.ar/licitaciones.php": {
+          "verificadas": 0,
+          "pendientes": 58,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 48,
+            "DOCUMENTO_NO_COMPROBADO": 10
+          }
+        },
+        "https://www.generalramirez.gob.ar/licitaciones-y-concursos/": {
+          "verificadas": 0,
+          "pendientes": 88,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 79,
+            "REQUIERE_OCR_O_LECTURA": 9
+          }
+        },
+        "https://www.ater.gob.ar/ater2/licitaciones.asp": {
+          "verificadas": 1,
+          "pendientes": 218,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 212,
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 4,
+            "REQUIERE_OCR_O_LECTURA": 2
+          }
+        },
+        "https://www.junin.gob.ar/servicio/licitaciones-y-concursos": {
+          "verificadas": 0,
+          "pendientes": 38,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 27,
+            "SIN_DOCUMENTO_IDENTIFICADO": 11
+          }
+        },
+        "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones": {
+          "verificadas": 0,
+          "pendientes": 254,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 250,
+            "REQUIERE_OCR_O_LECTURA": 4
+          }
+        },
+        "https://www.entrerios.gov.ar/minplan/licitaciones": {
+          "verificadas": 0,
+          "pendientes": 491,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 482,
+            "REQUIERE_OCR_O_LECTURA": 3,
+            "DOCUMENTO_NO_COMPROBADO": 2,
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 4
+          }
+        },
+        "https://cafesg.gob.ar/cafesg2/licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 68,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 68
+          }
+        },
+        "https://reconquista.gob.ar/concurso-de-ofertas/": {
+          "verificadas": 0,
+          "pendientes": 4,
+          "motivos": {
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 4
+          }
+        },
+        "https://www.jusentrerios.gov.ar/contrataciones/": {
+          "verificadas": 0,
+          "pendientes": 51,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 51
+          }
+        },
+        "https://villaguay.gob.ar/boletindigital/": {
+          "verificadas": 0,
+          "pendientes": 241,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 241
+          }
+        },
+        "https://www.casilda.gob.ar/web/licitaciones-casilda/": {
+          "verificadas": 0,
+          "pendientes": 74,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 56,
+            "REQUIERE_OCR_O_LECTURA": 18
+          }
+        },
+        "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones": {
+          "verificadas": 0,
+          "pendientes": 128,
+          "motivos": {
+            "DOCUMENTO_NO_COMPROBADO": 128
+          }
+        },
+        "https://nuevo.nogoya.gob.ar/compras-licitaciones-y-concursos-nuevo/": {
+          "verificadas": 0,
+          "pendientes": 20,
+          "motivos": {
+            "REQUIERE_OCR_O_LECTURA": 5,
+            "PENDIENTE_PLAZO_AUDITORIA": 15
+          }
+        },
+        "https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas": {
+          "verificadas": 0,
+          "pendientes": 4,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 4
+          }
+        },
+        "https://sanjose.gob.ar/concursos-licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 152,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 152
+          }
+        },
+        "https://www.epe.santafe.gov.ar/app2/aperturas": {
+          "verificadas": 0,
+          "pendientes": 37,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 37
+          }
+        },
+        "https://enapro.com.ar/category/licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 12,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 8,
+            "PENDIENTE_PLAZO_AUDITORIA": 4
+          }
+        },
+        "https://unr.edu.ar/obras-publicas/": {
+          "verificadas": 0,
+          "pendientes": 14,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 14
+          }
+        },
+        "https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/": {
+          "verificadas": 0,
+          "pendientes": 195,
+          "motivos": {
+            "REQUIERE_OCR_O_LECTURA": 2,
+            "PENDIENTE_PLAZO_AUDITORIA": 149,
+            "DOCUMENTO_NO_COMPROBADO": 1,
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 1,
+            "SIN_DOCUMENTO_IDENTIFICADO": 42
+          }
+        },
+        "https://www.concejosantafe.gov.ar/concursos-y-licitaciones": {
+          "verificadas": 0,
+          "pendientes": 4,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 4
+          }
+        },
+        "https://sansalvadorer.gob.ar/": {
+          "verificadas": 0,
+          "pendientes": 12,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 12
+          }
+        },
+        "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos": {
+          "verificadas": 0,
+          "pendientes": 20,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 20
+          }
+        },
+        "https://xn--carcaraa-j3a.gob.ar/": {
+          "verificadas": 0,
+          "pendientes": 10,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 10
+          }
+        },
+        "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5002-licitacion-publica-01-2026": {
+          "verificadas": 0,
+          "pendientes": 3,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 3
+          }
+        },
+        "https://reconquista.gob.ar/concurso-de-precios/": {
+          "verificadas": 1,
+          "pendientes": 13,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 13
+          }
+        },
+        "https://www.humboldt.gob.ar/": {
+          "verificadas": 0,
+          "pendientes": 2,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 2
+          }
+        },
+        "https://www.dpver.gov.ar/category/licitaciones-2026/": {
+          "verificadas": 0,
+          "pendientes": 19,
+          "motivos": {
+            "REQUIERE_OCR_O_LECTURA": 15,
+            "DOCUMENTO_NO_COMPROBADO": 3,
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 1
+          }
+        },
+        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones": {
+          "verificadas": 0,
+          "pendientes": 81,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 81
+          }
+        },
+        "https://www.aguassantafesinas.com.ar/portal/licitaciones": {
+          "verificadas": 0,
+          "pendientes": 4,
+          "motivos": {
+            "DOCUMENTO_NO_COMPROBADO": 4
+          }
+        },
+        "https://portal.entrerios.gov.ar/haciendayfinanzas/contrataciones/": {
+          "verificadas": 0,
+          "pendientes": 18,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 18
+          }
+        },
+        "https://comunaarequito.gob.ar/licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 10,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 10
+          }
+        },
+        "https://zarate.gob.ar/licitaciones-publicas/": {
+          "verificadas": 0,
+          "pendientes": 32,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 32
+          }
+        },
+        "https://ramallo.gob.ar/boletines": {
+          "verificadas": 0,
+          "pendientes": 21,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 21
+          }
+        },
+        "https://www.rafaela.gob.ar/gobiernoabierto/Licitaciones.aspx": {
+          "verificadas": 0,
+          "pendientes": 11,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 11
+          }
+        },
+        "https://oroverde.gob.ar/portal/secciones/licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 2,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 2
+          }
+        },
+        "https://unr.edu.ar/category/noticias-compras-y-licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 13,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 13
+          }
+        },
+        "https://municipalidad.gualeguay.gob.ar/modulos/transparencia/licitaciones_publicas.php": {
+          "verificadas": 0,
+          "pendientes": 5,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 5
+          }
+        },
+        "https://transparencia.rojas.gov.ar/index.php?action=17": {
+          "verificadas": 0,
+          "pendientes": 10,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 10
+          }
+        },
+        "https://arrecifes.gob.ar/informacion-publica/licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 10,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 10
+          }
+        },
+        "https://venadotuerto.gob.ar/licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 26,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 26
+          }
+        },
+        "https://lucasgonzalez.gob.ar/licitaciones-y-concursos/": {
+          "verificadas": 0,
+          "pendientes": 2,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 2
+          }
+        },
+        "https://www.sanandresdegiles.gob.ar/?q=licitaciones-publicas": {
+          "verificadas": 0,
+          "pendientes": 3,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 3
+          }
+        }
+      }
+    }
+  },
+  "segunda": {
+    "corrida": "20261031T200147-c1280431-repeticion",
+    "fecha": "2026-10-31T17:02:06.705473-03:00",
+    "primera_ejecucion": false,
+    "estado": "COMPLETA_CON_INCIDENCIAS",
+    "observadas": 2239,
+    "candidatos_sin_confirmar": 80,
+    "clasificacion": {
+      "SIN_CAMBIOS": 2159
+    },
+    "novedades": 0,
+    "eventos_emitidos": 0,
+    "total_historial": 5136,
+    "fuentes": {
+      "OPERATIVA": 15,
+      "TIEMPO_FUENTE": 9,
+      "BLOQUEADA": 12,
+      "PENDIENTE": 3,
+      "PARCIAL": 5
+    },
+    "mensaje": "SIN_NOVEDADES_CONFIRMADAS_CON_INCIDENCIAS",
+    "fuentes_configuradas": 44,
+    "fuentes_consultadas": 44,
+    "fuentes_finalizadas": 44,
+    "procedimientos_unicos_catalogo": 5117,
+    "duplicados_historicos_unificados": 19,
+    "abiertas": 162,
+    "proximas_a_vencer": 103,
+    "no_observadas_en_corrida": 2959,
+    "cobertura_estricta": {
+      "OPERATIVA": 15,
+      "PARCIAL": 13,
+      "BLOQUEADA": 12,
+      "PENDIENTE": 4
+    },
+    "condiciones_pago": {
+      "procedimientos": 5116,
+      "verificadas": 166,
+      "pendientes": 4950,
+      "clasificaciones": {
+        "ANTICIPO": 4,
+        "CONTRA_ENTREGA": 4,
+        "CONTADO": 38,
+        "PLAZO_5_DIAS": 38,
+        "PLAZO_10_DIAS": 6,
+        "PLAZO_7_DIAS": 1,
+        "PLAZO_15_DIAS": 2,
+        "PLAZO_30_DIAS": 34,
+        "OTRO_PLAZO": 14,
+        "NO_INFORMADO": 4950,
+        "MIXTO": 5,
+        "OPCIONES_PUBLICADAS": 13,
+        "CONTRA_PRESENTACION_FACTURA": 4,
+        "PAGOS_PARCIALES": 1,
+        "DESPUES_CONFORMIDAD_RECEPCION": 1,
+        "CONTRA_FACTURA_CONFORMADA": 1
+      },
+      "fuentes": {
+        "https://funes.gob.ar/": {
+          "verificadas": 7,
+          "pendientes": 33,
+          "motivos": {
+            "CONDICIONES_DIFERENTES_REQUIEREN_REVISION": 6,
+            "REQUIERE_OCR_O_LECTURA": 8,
+            "PENDIENTE_PLAZO_AUDITORIA": 19
+          }
+        },
+        "https://www.federacion.gob.ar/licitaciones": {
+          "verificadas": 9,
+          "pendientes": 160,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 151,
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 1,
+            "SIN_DOCUMENTO_IDENTIFICADO": 8
+          }
+        },
+        "https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones": {
+          "verificadas": 8,
+          "pendientes": 68,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 56,
+            "REQUIERE_OCR_O_LECTURA": 2,
+            "SIN_DOCUMENTO_IDENTIFICADO": 7,
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 3
+          }
+        },
+        "https://chajari.gob.ar/": {
+          "verificadas": 1,
+          "pendientes": 707,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 700,
+            "SIN_DOCUMENTO_IDENTIFICADO": 1,
+            "REQUIERE_OCR_O_LECTURA": 6
+          }
+        },
+        "https://www.segui.gob.ar/sitio/?cat=26": {
+          "verificadas": 4,
+          "pendientes": 24,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 20,
+            "CONDICIONES_DIFERENTES_REQUIEREN_REVISION": 4
+          }
+        },
+        "https://viale.gob.ar/pliegos/": {
+          "verificadas": 36,
+          "pendientes": 0,
+          "motivos": {}
+        },
+        "https://victoria.gob.ar/web-compras/Invitaciones-Compras/concurso-de-precios/": {
+          "verificadas": 1,
+          "pendientes": 396,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 393,
+            "SIN_CLAUSULA_COMPROBADA": 3
+          }
+        },
+        "https://villaelisa.gov.ar/transparencia/": {
+          "verificadas": 39,
+          "pendientes": 47,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 16,
+            "PENDIENTE_PLAZO_AUDITORIA": 31
+          }
+        },
+        "https://reconquista.gob.ar/licitaciones/": {
+          "verificadas": 7,
+          "pendientes": 6,
+          "motivos": {
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 6
+          }
+        },
+        "https://haciendalapaz.gob.ar/compras/": {
+          "verificadas": 2,
+          "pendientes": 48,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 41,
+            "REQUIERE_OCR_O_LECTURA": 7
+          }
+        },
+        "https://armstrong.gov.ar/index.php/transparencia": {
+          "verificadas": 3,
+          "pendientes": 83,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 76,
+            "SIN_DOCUMENTO_IDENTIFICADO": 2,
+            "PENDIENTE_PLAZO_AUDITORIA": 5
+          }
+        },
+        "https://www.iafas.gov.ar/proveedores/licitaciones/": {
+          "verificadas": 4,
+          "pendientes": 94,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 83,
+            "CONDICIONES_DIFERENTES_REQUIEREN_REVISION": 1,
+            "REQUIERE_OCR_O_LECTURA": 8,
+            "SIN_DOCUMENTO_IDENTIFICADO": 2
+          }
+        },
+        "https://aeropuertorosario.com/institucional/licitaciones/": {
+          "verificadas": 25,
+          "pendientes": 25,
+          "motivos": {
+            "CONDICIONES_DIFERENTES_REQUIEREN_REVISION": 5,
+            "REQUIERE_OCR_O_LECTURA": 1,
+            "SIN_DOCUMENTO_IDENTIFICADO": 19
+          }
+        },
+        "https://www.entrerios.gov.ar/boletin/": {
+          "verificadas": 5,
+          "pendientes": 93,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 74,
+            "PENDIENTE_PLAZO_AUDITORIA": 2,
+            "SIN_DOCUMENTO_IDENTIFICADO": 4,
+            "REQUIERE_OCR_O_LECTURA": 10,
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 1,
+            "CONDICIONES_DIFERENTES_REQUIEREN_REVISION": 1,
+            "DOCUMENTO_NO_COMPROBADO": 1
+          }
+        },
+        "https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/": {
+          "verificadas": 1,
+          "pendientes": 80,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 76,
+            "REQUIERE_OCR_O_LECTURA": 2,
+            "SIN_DOCUMENTO_IDENTIFICADO": 2
+          }
+        },
+        "https://www.crespo.gob.ar/category/licitacion-publica/": {
+          "verificadas": 3,
+          "pendientes": 170,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 59,
+            "PENDIENTE_PLAZO_AUDITORIA": 110,
+            "DOCUMENTO_NO_COMPROBADO": 1
+          }
+        },
+        "https://www.crespo.gob.ar/licitaciones-privadas-2026/": {
+          "verificadas": 7,
+          "pendientes": 0,
+          "motivos": {}
+        },
+        "https://www.timbues.gob.ar/index.php?pagina=lista&sec=210": {
+          "verificadas": 1,
+          "pendientes": 212,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 59,
+            "PENDIENTE_PLAZO_AUDITORIA": 138,
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 11,
+            "SIN_CLAUSULA_COMPROBADA": 4
+          }
+        },
+        "https://cglagos.gob.ar/comuna/compras-y-licitaciones": {
+          "verificadas": 1,
+          "pendientes": 9,
+          "motivos": {
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 5,
+            "PENDIENTE_PLAZO_AUDITORIA": 4
+          }
+        },
+        "https://salto.gob.ar/licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 21,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 21
+          }
+        },
+        "https://vggmunicipalidad.gov.ar/licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 196,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 75,
+            "PENDIENTE_PLAZO_AUDITORIA": 118,
+            "REQUIERE_OCR_O_LECTURA": 3
+          }
+        },
+        "https://www.municipalidadcolonpba.gob.ar/licitaciones.php": {
+          "verificadas": 0,
+          "pendientes": 58,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 48,
+            "DOCUMENTO_NO_COMPROBADO": 10
+          }
+        },
+        "https://www.generalramirez.gob.ar/licitaciones-y-concursos/": {
+          "verificadas": 0,
+          "pendientes": 88,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 79,
+            "REQUIERE_OCR_O_LECTURA": 9
+          }
+        },
+        "https://www.ater.gob.ar/ater2/licitaciones.asp": {
+          "verificadas": 1,
+          "pendientes": 218,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 212,
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 4,
+            "REQUIERE_OCR_O_LECTURA": 2
+          }
+        },
+        "https://www.junin.gob.ar/servicio/licitaciones-y-concursos": {
+          "verificadas": 0,
+          "pendientes": 38,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 27,
+            "SIN_DOCUMENTO_IDENTIFICADO": 11
+          }
+        },
+        "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones": {
+          "verificadas": 0,
+          "pendientes": 254,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 250,
+            "REQUIERE_OCR_O_LECTURA": 4
+          }
+        },
+        "https://www.entrerios.gov.ar/minplan/licitaciones": {
+          "verificadas": 0,
+          "pendientes": 491,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 482,
+            "REQUIERE_OCR_O_LECTURA": 3,
+            "DOCUMENTO_NO_COMPROBADO": 2,
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 4
+          }
+        },
+        "https://cafesg.gob.ar/cafesg2/licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 68,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 68
+          }
+        },
+        "https://reconquista.gob.ar/concurso-de-ofertas/": {
+          "verificadas": 0,
+          "pendientes": 4,
+          "motivos": {
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 4
+          }
+        },
+        "https://www.jusentrerios.gov.ar/contrataciones/": {
+          "verificadas": 0,
+          "pendientes": 51,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 51
+          }
+        },
+        "https://villaguay.gob.ar/boletindigital/": {
+          "verificadas": 0,
+          "pendientes": 241,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 241
+          }
+        },
+        "https://www.casilda.gob.ar/web/licitaciones-casilda/": {
+          "verificadas": 0,
+          "pendientes": 74,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 56,
+            "REQUIERE_OCR_O_LECTURA": 18
+          }
+        },
+        "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones": {
+          "verificadas": 0,
+          "pendientes": 128,
+          "motivos": {
+            "DOCUMENTO_NO_COMPROBADO": 128
+          }
+        },
+        "https://nuevo.nogoya.gob.ar/compras-licitaciones-y-concursos-nuevo/": {
+          "verificadas": 0,
+          "pendientes": 20,
+          "motivos": {
+            "REQUIERE_OCR_O_LECTURA": 5,
+            "PENDIENTE_PLAZO_AUDITORIA": 15
+          }
+        },
+        "https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas": {
+          "verificadas": 0,
+          "pendientes": 4,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 4
+          }
+        },
+        "https://sanjose.gob.ar/concursos-licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 152,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 152
+          }
+        },
+        "https://www.epe.santafe.gov.ar/app2/aperturas": {
+          "verificadas": 0,
+          "pendientes": 37,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 37
+          }
+        },
+        "https://enapro.com.ar/category/licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 12,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 8,
+            "PENDIENTE_PLAZO_AUDITORIA": 4
+          }
+        },
+        "https://unr.edu.ar/obras-publicas/": {
+          "verificadas": 0,
+          "pendientes": 14,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 14
+          }
+        },
+        "https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/": {
+          "verificadas": 0,
+          "pendientes": 195,
+          "motivos": {
+            "REQUIERE_OCR_O_LECTURA": 2,
+            "PENDIENTE_PLAZO_AUDITORIA": 149,
+            "DOCUMENTO_NO_COMPROBADO": 1,
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 1,
+            "SIN_DOCUMENTO_IDENTIFICADO": 42
+          }
+        },
+        "https://www.concejosantafe.gov.ar/concursos-y-licitaciones": {
+          "verificadas": 0,
+          "pendientes": 4,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 4
+          }
+        },
+        "https://sansalvadorer.gob.ar/": {
+          "verificadas": 0,
+          "pendientes": 12,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 12
+          }
+        },
+        "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos": {
+          "verificadas": 0,
+          "pendientes": 20,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 20
+          }
+        },
+        "https://xn--carcaraa-j3a.gob.ar/": {
+          "verificadas": 0,
+          "pendientes": 10,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 10
+          }
+        },
+        "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5002-licitacion-publica-01-2026": {
+          "verificadas": 0,
+          "pendientes": 3,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 3
+          }
+        },
+        "https://reconquista.gob.ar/concurso-de-precios/": {
+          "verificadas": 1,
+          "pendientes": 13,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 13
+          }
+        },
+        "https://www.humboldt.gob.ar/": {
+          "verificadas": 0,
+          "pendientes": 2,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 2
+          }
+        },
+        "https://www.dpver.gov.ar/category/licitaciones-2026/": {
+          "verificadas": 0,
+          "pendientes": 19,
+          "motivos": {
+            "REQUIERE_OCR_O_LECTURA": 15,
+            "DOCUMENTO_NO_COMPROBADO": 3,
+            "SIN_CLAUSULA_PAGO_COMPROBADA": 1
+          }
+        },
+        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones": {
+          "verificadas": 0,
+          "pendientes": 81,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 81
+          }
+        },
+        "https://www.aguassantafesinas.com.ar/portal/licitaciones": {
+          "verificadas": 0,
+          "pendientes": 4,
+          "motivos": {
+            "DOCUMENTO_NO_COMPROBADO": 4
+          }
+        },
+        "https://portal.entrerios.gov.ar/haciendayfinanzas/contrataciones/": {
+          "verificadas": 0,
+          "pendientes": 18,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 18
+          }
+        },
+        "https://comunaarequito.gob.ar/licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 10,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 10
+          }
+        },
+        "https://zarate.gob.ar/licitaciones-publicas/": {
+          "verificadas": 0,
+          "pendientes": 32,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 32
+          }
+        },
+        "https://ramallo.gob.ar/boletines": {
+          "verificadas": 0,
+          "pendientes": 21,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 21
+          }
+        },
+        "https://www.rafaela.gob.ar/gobiernoabierto/Licitaciones.aspx": {
+          "verificadas": 0,
+          "pendientes": 11,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 11
+          }
+        },
+        "https://oroverde.gob.ar/portal/secciones/licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 2,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 2
+          }
+        },
+        "https://unr.edu.ar/category/noticias-compras-y-licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 13,
+          "motivos": {
+            "SIN_CLAUSULA_COMPROBADA": 13
+          }
+        },
+        "https://municipalidad.gualeguay.gob.ar/modulos/transparencia/licitaciones_publicas.php": {
+          "verificadas": 0,
+          "pendientes": 5,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 5
+          }
+        },
+        "https://transparencia.rojas.gov.ar/index.php?action=17": {
+          "verificadas": 0,
+          "pendientes": 10,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 10
+          }
+        },
+        "https://arrecifes.gob.ar/informacion-publica/licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 10,
+          "motivos": {
+            "PENDIENTE_PLAZO_AUDITORIA": 10
+          }
+        },
+        "https://venadotuerto.gob.ar/licitaciones/": {
+          "verificadas": 0,
+          "pendientes": 26,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 26
+          }
+        },
+        "https://lucasgonzalez.gob.ar/licitaciones-y-concursos/": {
+          "verificadas": 0,
+          "pendientes": 2,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 2
+          }
+        },
+        "https://www.sanandresdegiles.gob.ar/?q=licitaciones-publicas": {
+          "verificadas": 0,
+          "pendientes": 3,
+          "motivos": {
+            "SIN_DOCUMENTO_IDENTIFICADO": 3
+          }
+        }
+      }
+    }
+  },
+  "informe": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/barrido-comparativo/piloto/ejecuciones/20261031T171205-906d4e83/reporte_diario.md",
+  "produccion_intacta": true,
+  "respaldo_intacto": true,
+  "ocr_nuevo": 0,
+  "consultas_adicionales": 0,
+  "capturas_complementarias": [
+    "work/barrido-intermedio/work/barrido/resultado.json",
+    "work/barrido-regresion/work/barrido/resultado.json",
+    "work/recuperacion-inicial/work/barrido/resultado.json",
+    "work/recuperacion-navegacion/work/barrido/resultado.json"
+  ],
+  "fuentes_comparadas": 44,
+  "alcance": "Sólo fuentes del barrido; no es una ejecución completa de todos los organismos"
+}

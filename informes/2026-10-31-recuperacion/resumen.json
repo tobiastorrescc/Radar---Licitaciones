@@ -1,0 +1,31 @@
+{
+  "fecha": "2026-10-31T17:02:06.705473-03:00",
+  "linea_base": "bd28813 / Actions 41213570935",
+  "fuentes_auditadas": 12,
+  "estados": {
+    "BLOQUEADA": 4,
+    "PARCIAL": 5,
+    "PENDIENTE": 2,
+    "OPERATIVA": 1
+  },
+  "procedimientos_extraidos": 203,
+  "abiertas_comprobadas_en_muestra": 19,
+  "avisos_pendientes_validacion": 64,
+  "categorias": {
+    "FECHA_O_VIGENCIA_PENDIENTE": 60,
+    "HISTORICA_RECUPERADA": 103,
+    "VIGENTE_NUEVA_PARA_RADAR": 7,
+    "VIGENTE_YA_CONOCIDA": 12,
+    "YA_CONOCIDA_NO_ABIERTA": 21
+  },
+  "abiertas": 19,
+  "abiertas_nuevas": 7,
+  "abiertas_conocidas": 12,
+  "vencidas": 123,
+  "vigencia_desconocida": 61,
+  "cobertura_muestra_abiertas_antes": 12,
+  "cobertura_muestra_abiertas_despues": 19,
+  "advertencia": "Muestra de avisos recuperados y comprobados; no es un censo independiente exhaustivo ni cobertura territorial global. Nueva para el radar no equivale a fecha de publicación nueva comprobada.",
+  "recortes": false,
+  "ocr_nuevo": 0
+}

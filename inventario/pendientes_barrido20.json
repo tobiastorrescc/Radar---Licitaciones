@@ -5,9 +5,9 @@
     {
       "id": "fuente-009",
       "url": "https://xn--carcaraa-j3a.gob.ar/",
-      "estado": "PENDIENTE",
-      "motivo": "Se alcanzó boletines; el HTML publicado no contiene avisos ni enlaces documentales útiles. Pendiente contenido alternativo.",
-      "ultima_evidencia_run": "41211320771"
+      "estado": "PARCIAL",
+      "motivo": "Servicio delegado qx y paginación POST comprobados.10 registros históricos; PDFs sin texto y recorrido incompleto.",
+      "ultima_evidencia_run": "41234956423"
     },
     {
       "id": "fuente-010",
@@ -27,8 +27,8 @@
       "id": "fuente-012",
       "url": "https://lasparejas.gov.ar/",
       "estado": "PENDIENTE",
-      "motivo": "El único PDF enlazado como boletín Octubre-Diciembre contiene Lorem ipsum. No es evidencia de compras ni ausencia de convocatorias.",
-      "ultima_evidencia_run": "41211320771"
+      "motivo": "Ruta real index_news consultada; index_boletin contiene PDF Lorem ipsum. Sin extracción de compras comprobada.",
+      "ultima_evidencia_run": "41234956423"
     },
     {
       "id": "fuente-055",
