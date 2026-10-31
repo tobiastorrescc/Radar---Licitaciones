@@ -103,7 +103,14 @@
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+    },
+    "reintentos_transitorios": 1,
+    "conexion_timeout": 4,
+    "lectura_timeout": 6,
+    "urls_inicio": [
+      "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "https://epe.santafe.gov.ar/app2/aperturas"
+    ]
   },
   {
     "id": "fuente-004",
@@ -925,7 +932,10 @@
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+    },
+    "priorizar_listados": true,
+    "conexion_timeout": 4,
+    "lectura_timeout": 6
   },
   {
     "id": "fuente-032",
@@ -951,7 +961,11 @@
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 152,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+    },
+    "enlaces_drive_publicos": true,
+    "dominios_documentos": [
+      "drive.google.com"
+    ]
   },
   {
     "id": "fuente-033",

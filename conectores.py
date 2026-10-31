@@ -6,6 +6,8 @@ from urllib.parse import urljoin, urlparse, urldefrag,urlencode,parse_qs,urlspli
 from urllib.request import Request, build_opener, HTTPHandler, HTTPSHandler
 from http.client import HTTPConnection, HTTPSConnection
 import socket
+import time
+from http.client import RemoteDisconnected
 import os
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -258,6 +260,24 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 import cache_documentos
                 return cache_documentos.obtener(url,transport=transporte)[:3]
             return transporte(url)
+    # Reintentos de lectura idempotente, acotados por el supervisor de fuente.
+    intentos_http=[]
+    reintentos=int(config.get('reintentos_transitorios',0))
+    if not 0<=reintentos<=2:raise ValueError('Reintentos fuera de rango')
+    if reintentos:
+        original_fetch=fetch
+        def fetch(url,datos_post=None):
+            for intento in range(reintentos+1):
+                inicio=time.monotonic()
+                try:
+                    respuesta=original_fetch(url,datos_post=datos_post) if datos_post is not None else original_fetch(url)
+                    intentos_http.append({'url':url,'intento':intento+1,'estado':'RESPUESTA_RECIBIDA','segundos':round(time.monotonic()-inicio,3)})
+                    return respuesta
+                except Exception as error:
+                    transitorio=(isinstance(error,HTTPError) and error.code in (500,502,503,504)) or isinstance(error,(RemoteDisconnected,TimeoutError,socket.timeout))
+                    intentos_http.append({'url':url,'intento':intento+1,'estado':'ERROR','http_status':getattr(error,'code',None),'error':str(error),'segundos':round(time.monotonic()-inicio,3),'reintentable':transitorio})
+                    if not transitorio or intento==reintentos:raise
+                    time.sleep(min(1,0.25*(2**intento)))
     pending=deque([(extractores.url_publica(u) or u,'LISTADO',{'tipo_contexto':config.get('contextos_listado',{}).get(parse_qs(urlparse(u).query).get('tipoRecomendada',[''])[0])}) for u in config.get('urls_inicio',[fuente])])
     seen=set();items={};errors=[];limits=[];correctas=0;documentos_leidos=0
     hosts={_host(fuente),*(_host('https://'+h) for h in config.get('dominios_documentos',[]))}
@@ -268,7 +288,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
            'paginas_visitadas':len(seen),'paginas_correctas':correctas,'documentos_leidos':documentos_leidos,
            'cobertura_completa':False,'fase':fase,'url_actual':actual,'finalizado':finalizado,
            'alcance':'Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto',
-           'documentos_pendientes':list(documento_pendiente.values()),'evidencias_listado_vacio':list(vacios)}
+           'intentos_http':list(intentos_http),'documentos_pendientes':list(documento_pendiente.values()),'evidencias_listado_vacio':list(vacios)}
         if progreso:progreso(r)
         return r
     def agregar(r):
@@ -418,7 +438,9 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             if not m and config.get('marcador_vacio'):m=re.search(config['marcador_vacio'],texto)
             if clase=='LISTADO' and config.get('detectar_carga_dinamica') and re.search(r'cargas? mas|load more',texto) and not any('next' in l.get('rel','').split() for l in links):
                 errors.append({'url':url,'tipo':'PaginacionDinamicaPendiente','categoria':'EXTRACCION','timeout':False,'error':'Control cargar más sin enlace de siguiente página verificable'})
-            if m:vacios.append({'url':url,'texto':m.group(0)})
+            if m and config.get('adaptador')!='epe':vacios.append({'url':url,'texto':m.group(0)})
+            if config.get('adaptador')=='epe' and clase=='LISTADO' and not registros:
+                errors.append({'url':url,'tipo':'EPEListadoNoReconocido','categoria':'EXTRACCION','timeout':False,'error':'HTTP responde pero no hay procedimientos EPE reconocidos; no se presume listado vacío'})
             if not registros and re.search(r'inicia sesi[oó]n para|solo esta disponible dentro de la red|debe iniciar sesi[oó]n',texto):
                 errors.append({'url':url,'tipo':'AccesoRestringido','categoria':'ACCESO','timeout':False,'error':'El portal requiere autenticación o red privada; no se elude'})
             for r in registros:

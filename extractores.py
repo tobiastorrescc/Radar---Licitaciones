@@ -228,7 +228,7 @@ def extraer(html,url,config=None):
         p=ps[0]
         if re.search(r'montos limites|regimen de contrataciones|hasta \d+ veces',norm(texto)):continue
         links=n.enlaces(url)
-        documents=[{'url':l['url'],'titulo':l['texto']} for l in links if urlsplit(l['url']).path.lower().endswith(ADJUNTOS)]
+        documents=[{'url':l['url'],'titulo':l['texto']} for l in links if urlsplit(l['url']).path.lower().endswith(ADJUNTOS) or (config.get('enlaces_drive_publicos') and re.fullmatch(r'https://drive\.google\.com/file/d/[A-Za-z0-9_-]+/view(?:\?.*)?',l['url']) and re.search(r'pliego|decreto|circular|anexo',norm(l['texto'])))]
         detail=next((l['url'] for l in links if not urlsplit(l['url']).path.lower().endswith(ADJUNTOS)
                      and procesos(l['texto'])),None)
         if rosario_tarjetas:detail=next((l['url'] for l in links if '/inicio/compras-licitaciones/detalle/' in l['url']),None)

@@ -1,18 +1,26 @@
 {
-  "etapa": "diagnostico-epe-sanjose-victoria-2026-10-31",
+  "etapa": "rutas-epe-y-lote-buenos-aires-validacion-real",
   "sondear": true,
   "urls_sondeo": [
-    "https://www.epe.santafe.gov.ar/app2/aperturas",
-    "https://www.epe.santafe.gov.ar/",
-    "https://www.epe.santafe.gov.ar/app2/",
-    "https://epe.santafe.gov.ar/app2/aperturas",
-    "https://sanjose.gob.ar/concursos-licitaciones/",
-    "https://victoria.gob.ar/web-compras/Invitaciones-Compras/concurso-de-precios/",
-    "https://victoria.gob.ar/",
-    "https://victoria.gob.ar/es/"
+    "https://epe.santafe.gov.ar/app2/compras",
+    "https://www.epe.santafe.gov.ar/app2/compras",
+    "https://epe.santafe.gov.ar/app2/apertura/19377",
+    "https://epe.santafe.gov.ar/app2/apertura/19409",
+    "https://epe.santafe.gov.ar/app2/aperturas/pliegos-generales",
+    "https://www.epe.santafe.gov.ar/index.php?id=442",
+    "https://epe.santafe.gov.ar/app2/api/archivo?id=41452&modulo=apertura",
+    "https://www.campana.gob.ar/compras/",
+    "https://chacabuco.gob.ar/licitaciones/",
+    "https://chacabuco.gob.ar/licitaciones-privadas/",
+    "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+    "https://carmendeareco.gob.ar/transparencia/",
+    "https://www.generalarenales.gob.ar/licitaciones",
+    "https://sibom.slyt.gba.gob.ar/cities/20",
+    "https://ramallo.gob.ar/",
+    "https://drive.google.com/file/d/1ZloFmq9xo9-KUZR7mpP0W1bTNQwOiUvH/view?usp=drive_link"
   ],
   "auditar": false,
-  "descubrir": false,
+  "descubrir": true,
   "reverificar_ids": [
     "fuente-003",
     "fuente-031",
@@ -20,5 +28,8 @@
   ],
   "revisar_identidades": false,
   "revisar_cobro": false,
-  "archivar_auditoria": false
+  "archivar_auditoria": false,
+  "desc_busquedas": 1,
+  "desc_candidatos": 10,
+  "desc_total": 240
 }

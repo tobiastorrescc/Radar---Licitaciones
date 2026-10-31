@@ -165,6 +165,9 @@ def comprobar(registros,fecha,configuraciones,por_enlace=15,total=180,concurrenc
             u=d['url']
             if host(u) not in permitidos:
                 candidatos.setdefault(u,{'url':u,'estado':'DOMINIO_NO_DECLARADO'});continue
+            if re.fullmatch(r'https://drive\.google\.com/file/d/[A-Za-z0-9_-]+/view(?:\?.*)?',u):
+                candidatos.setdefault(u,{'url':u,'estado':'DESCARGA_PUBLICA_PENDIENTE','error':'Enlace público preservado; verificar endpoint de descarga sin autenticación antes de consultas repetidas'})
+                continue
             candidatos.setdefault(u,{'url':u,'estado':'PENDIENTE'})
             if d.get('consulta_post'):peticiones[u]=d['consulta_post']
             cupos_bytes[u]=max(cupos_bytes.get(u,12_000_000),conf.get('max_bytes_documental',12_000_000))

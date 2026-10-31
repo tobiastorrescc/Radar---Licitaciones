@@ -37,6 +37,94 @@
       "url": "https://sibom.slyt.gba.gob.ar/cities/102",
       "evidencia_descubrimiento": "https://www.ramallo.gob.ar/boletines",
       "motivo_previo": "Identidad municipal corroborada. Índice de boletines capturado; falta extracción y clasificación de convocatorias. No incorporada."
+    },
+    {
+      "organismo": "Municipalidad de Campana",
+      "localidad": "Campana",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://www.campana.gob.ar/compras/",
+      "evidencia_descubrimiento": "https://www.campana.gob.ar/compras/",
+      "fecha_descubrimiento": "2026-10-31",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada"
+    },
+    {
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://chacabuco.gob.ar/licitaciones/",
+      "evidencia_descubrimiento": "https://chacabuco.gob.ar/licitaciones/",
+      "fecha_descubrimiento": "2026-10-31",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada"
+    },
+    {
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://chacabuco.gob.ar/licitaciones-privadas/",
+      "evidencia_descubrimiento": "https://chacabuco.gob.ar/licitaciones-privadas/",
+      "fecha_descubrimiento": "2026-10-31",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada"
+    },
+    {
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+      "evidencia_descubrimiento": "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+      "fecha_descubrimiento": "2026-10-31",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada"
+    },
+    {
+      "organismo": "Municipalidad de Carmen de Areco",
+      "localidad": "Carmen de Areco",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://carmendeareco.gob.ar/transparencia/",
+      "evidencia_descubrimiento": "https://carmendeareco.gob.ar/transparencia/",
+      "fecha_descubrimiento": "2026-10-31",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada"
+    },
+    {
+      "organismo": "Municipalidad de General Arenales",
+      "localidad": "General Arenales",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://www.generalarenales.gob.ar/licitaciones",
+      "evidencia_descubrimiento": "https://www.generalarenales.gob.ar/licitaciones",
+      "fecha_descubrimiento": "2026-10-31",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada"
+    },
+    {
+      "organismo": "Municipalidad de Capitán Sarmiento",
+      "localidad": "Capitán Sarmiento",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://sibom.slyt.gba.gob.ar/cities/20",
+      "evidencia_descubrimiento": "https://sibom.slyt.gba.gob.ar/cities/20",
+      "fecha_descubrimiento": "2026-10-31",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada"
+    },
+    {
+      "organismo": "Municipalidad de Ramallo",
+      "localidad": "Ramallo",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://ramallo.gob.ar/",
+      "evidencia_descubrimiento": "https://ramallo.gob.ar/",
+      "fecha_descubrimiento": "2026-10-31",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada"
     }
   ]
 }

@@ -52,7 +52,14 @@
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "adaptador": "epe",
-    "capturar_respuestas": true
+    "capturar_respuestas": true,
+    "reintentos_transitorios": 1,
+    "conexion_timeout": 4,
+    "lectura_timeout": 6,
+    "urls_inicio": [
+      "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "https://epe.santafe.gov.ar/app2/aperturas"
+    ]
   },
   "https://www.aguassantafesinas.com.ar/portal/licitaciones": {
     "organismo": "ASSA",
@@ -408,7 +415,10 @@
       "/web-compras/.*concurso"
     ],
     "descubrir_menu": true,
-    "descubrir_contrataciones": true
+    "descubrir_contrataciones": true,
+    "priorizar_listados": true,
+    "conexion_timeout": 4,
+    "lectura_timeout": 6
   },
   "https://sanjose.gob.ar/concursos-licitaciones/": {
     "organismo": "Municipalidad de San José",
@@ -417,7 +427,11 @@
     "tipo_portal": "html_pdf",
     "conector": "publicaciones",
     "lectura_adjuntos": "necesarios",
-    "ocr": true
+    "ocr": true,
+    "enlaces_drive_publicos": true,
+    "dominios_documentos": [
+      "drive.google.com"
+    ]
   },
   "https://colon.gov.ar/compras-contratos-suministros/licitaciones/": {
     "organismo": "Municipalidad de Colón",
