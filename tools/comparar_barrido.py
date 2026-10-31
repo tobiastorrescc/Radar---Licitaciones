@@ -11,14 +11,14 @@ from tools.respaldo_piloto import restaurar
 def comparar(antes,despues,catalogo):
     previos={o.identidad(r) for r in catalogo}|set(inc.cargar_indice_auditorias());urls={(r.get('url'),o.procedimiento_canonico(r) or o.norm(r.get('titulo'))) for r in catalogo}
     anteriores={o.identidad(r) for r in antes['registros']}
-    salida=[];publicaciones={}
+    salida=[];publicaciones={};indice=o.indice_complementarias(catalogo)
     for r in despues['registros']:
         if r.get('clasificacion_registro')!='PROCEDIMIENTO':continue
         clave=(r.get('url'),o.procedimiento_canonico(r) or o.norm(r.get('titulo')),o.norm(r.get('organismo')))
         publicaciones[clave]=o.fusionar(publicaciones.get(clave),r,despues.get('fecha'))
     for r in publicaciones.values():
         if r.get('clasificacion_registro')!='PROCEDIMIENTO':continue
-        antecedente=o.antecedente_complementario(r,catalogo)
+        antecedente=o.antecedente_complementario(r,o.candidatos_complementarios(r,indice))
         conocida=bool(antecedente) or o.identidad(r) in previos or (r.get('url'),o.procedimiento_canonico(r) or o.norm(r.get('titulo'))) in urls
         categoria=('VIGENTE_YA_CONOCIDA' if conocida else 'VIGENTE_NUEVA_PARA_RADAR') if r.get('vigencia')=='ABIERTA' else 'HISTORICA_RECUPERADA' if r.get('vigencia')=='VENCIDA' and not conocida else 'FECHA_O_VIGENCIA_PENDIENTE' if not conocida else 'YA_CONOCIDA_NO_ABIERTA'
         salida.append({**r,'comparacion_categoria':categoria,'detectada_barrido_inicial':o.identidad(r) in anteriores,'ya_catalogada':conocida})

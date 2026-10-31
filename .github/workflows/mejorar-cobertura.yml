@@ -139,6 +139,13 @@ jobs:
           DESPUES=work/barrido-captura/work/barrido/resultado.json
           if test -f work/barrido/resultado.json; then DESPUES=work/barrido/resultado.json; fi
           python -u tools/comparar_barrido.py --base-auditada --antes work/barrido-anterior/work/barrido/resultado.json --despues "$DESPUES" --catalogo "$CATALOGO_BASE" --salida work/barrido-comparativo --complemento work/barrido-intermedio/work/barrido/resultado.json --complemento work/barrido-regresion/work/barrido/resultado.json --complemento work/recuperacion-inicial/work/barrido/resultado.json --complemento work/recuperacion-navegacion/work/barrido/resultado.json
+      - name: Entrega completa del lote de recuperación sin nuevas consultas
+        if: steps.plan.outputs.comparar_barrido_run != ''
+        run: |
+          CATALOGO_BASE=$(find work/base-bd28813/work/barrido-comparativo/piloto/ejecuciones -name catalogo_completo.json | sort | tail -1)
+          CAPTURA=work/barrido-captura/work/barrido/resultado.json
+          if test -f work/barrido/resultado.json; then CAPTURA=work/barrido/resultado.json; fi
+          python tools/informar_recuperacion.py --base "$CATALOGO_BASE" --captura "$CAPTURA" --complemento work/recuperacion-inicial/work/barrido/resultado.json --complemento work/recuperacion-navegacion/work/barrido/resultado.json --salida work/informe-recuperacion --comparativo work/barrido-comparativo/resultado.json
       - name: Sondear enlaces oficiales con evidencia y tiempo acotado
         if: steps.plan.outputs.sondear == 'true'
         run: python -u tools/sondear_cobertura.py
@@ -253,6 +260,7 @@ jobs:
           name: cobertura-${{ github.run_id }}
           path: |
             work/barrido/
+            work/informe-recuperacion/
             work/barrido-comparativo/resultado.json
             work/barrido-comparativo/comparacion.json
             work/barrido-comparativo/piloto/ejecuciones/

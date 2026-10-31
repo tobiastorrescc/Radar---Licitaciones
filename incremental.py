@@ -163,13 +163,13 @@ def registrar(db,registros,informe):
     identidades_anteriores={}
     for antigua,dato in db.execute('SELECT id,dato FROM procedimientos ORDER BY primera,id'):
         identidades_anteriores.setdefault(o.identidad(json.loads(dato)),antigua)
-    catalogo_previo=[json.loads(f[0]) for f in db.execute('SELECT dato FROM procedimientos')]
+    catalogo_previo=o.indice_complementarias(json.loads(f[0]) for f in db.execute('SELECT dato FROM procedimientos'))
     referencias=cargar_indice_auditorias()
     dedup=o.deduplicar(registros,fecha);tipos=Counter();candidatos=0
     with db:
         for r in dedup:
             if r.get('clasificacion_registro')!='PROCEDIMIENTO':candidatos+=1;continue
-            antecedente=o.antecedente_complementario(r,catalogo_previo)
+            antecedente=o.antecedente_complementario(r,o.candidatos_complementarios(r,catalogo_previo))
             if antecedente:
                 r={**r,'identidad_ambito':antecedente.get('identidad_ambito',''),'numero_convocatoria':o.convocatoria(antecedente)}
             identidad_actual=o.identidad(r)

@@ -377,3 +377,16 @@ def antecedente_complementario(registro,catalogo):
         if len(comunes)<4 or len(comunes)/max(1,min(len(tokens),len(anteriores)))<0.65:continue
         encontrados[previo.get('id') or identidad(previo)]=previo
     return next(iter(encontrados.values())) if len(encontrados)==1 else None
+
+
+def indice_complementarias(catalogo):
+    """Índice de candidatos exactos: evita recorrer todo el historial por aviso."""
+    indice={}
+    for r in catalogo:
+        k=(norm(r.get('provincia')),norm(r.get('organismo')),procedimiento_canonico(r))
+        if k[2]:indice.setdefault(k,[]).append(r)
+    return indice
+
+
+def candidatos_complementarios(registro,indice):
+    return indice.get((norm(registro.get('provincia')),norm(registro.get('organismo')),procedimiento_canonico(registro)),[])
