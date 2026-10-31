@@ -395,6 +395,13 @@ def extraer(html,url,config=None):
             if sec:
                 cabecera=next((x.text for x in sec.iter() if x.clase('contrataciones-resumen__seccion-header')),'')
                 l['tipo_contexto']=re.sub(r'\s+\d+$','',cabecera)
+    if urlsplit(url).hostname in ('unr.edu.ar','www.unr.edu.ar') and urlsplit(url).path.startswith('/convocatoria'):
+        # La ficha institucional es un aviso válido aunque Diaguita no responda.
+        obra=next((n.text for n in dom.root.iter() if n.tag in ('h1','h2') and norm(n.text).startswith('obra publica ')),None)
+        publicada=next((n.attrs.get('datetime','')[:10] for n in dom.root.iter() if n.tag=='time' and n.attrs.get('datetime')),None)
+        for registro in agrupados.values():
+            if obra:registro['objeto']=obra
+            if publicada:registro['fecha_publicacion_texto']=publicada
     if config.get('admitir_avisos_sin_numero'):
         # Un aviso explícito de compra no necesita número, monto ni adjunto.
         # No convertir menús, normativa ni concursos de empleo en convocatorias.

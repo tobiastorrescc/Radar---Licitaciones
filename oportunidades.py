@@ -75,7 +75,7 @@ def normalizar(r,ahora=None):
             r['tipo_procedimiento']=next(iter(tipos));ev['tipo_procedimiento']={'url':origen,'texto':'Tipo explícito del mismo número en el documento: '+r['tipo_procedimiento']}
     if re.match(r'^\s*circular\s+(?:aclaratoria|modificatoria)',norm(texto_titulo)):r['tipo_documento']='CIRCULAR_ACLARATORIA'
 
-    for campo,patron in [('fecha_apertura',r'(?:(?:fecha\s+(?:de\s+)?)?apertura(?:\s+(?:de\s+)?(?:ofertas|sobres))?|llamese a licitacion (?:publica|privada) para el dia)\s*[:\-]?\s*(.{0,90})'),('fecha_limite_presentacion',r'(?:fecha\s+limite(?:\s+de\s+presentacion)?|limite\s+(?:de|para)\s+(?:la\s+)?(?:presentacion|recepcion)(?:\s+de\s+(?:ofertas|sobres))?|(?:presentacion|recepcion)\s+de\s+(?:ofertas|sobres)\s*[:\-]?\s*hasta|presentacion\s*:\s*hasta)\s*[:\-]?\s*(.{0,90})'),('fecha_publicacion',r'(?:fecha\s+(?:de\s+)?publicacion|publicad[oa](?:\s+el)?)\s*[:\-]?\s*(.{0,70})')]:
+    for campo,patron in [('fecha_apertura',r'(?:(?:fecha\s+(?:de\s+)?)?apertura(?:\s+(?:de\s+)?(?:ofertas|sobres))?|llamese a licitacion (?:publica|privada) para el dia)\s*[:\-]?\s*(.{0,90})'),('fecha_limite_presentacion',r'(?:fecha\s+limite(?:\s+de\s+presentacion)?|limite\s+(?:de|para)\s+(?:la\s+)?(?:presentacion|recepcion)(?:\s+de\s+(?:ofertas|sobres))?|(?:presentacion|recepcion)\s+de\s+(?:ofertas|sobres)\s*[:\-]?\s*hasta|(?:presentacion|recepcion)\s+de\s+(?:ofertas|sobres)\s*[:\-]|presentacion\s*:\s*hasta)\s*[:\-]?\s*(.{0,90})'),('fecha_publicacion',r'(?:fecha\s+(?:de\s+)?publicacion|publicad[oa](?:\s+el)?)\s*[:\-]?\s*(.{0,70})')]:
         dedicado=r.get(campo+'_texto')
         candidatos=[dedicado] if dedicado else [m[1] for contenido in (t,norm(texto_titulo)) for m in re.finditer(r"(?="+patron+r")",contenido)]
         raw='';valor=None
@@ -161,7 +161,7 @@ def normalizar(r,ahora=None):
     r['enlace_pliego']=r.get('enlace_pliego') if r.get('comprobacion_pliego',{}).get('estado')=='DOCUMENTO_ACCESIBLE' and r.get('enlace_pliego') in {d['url'] for d in r.get('documentos',[])} else next((d['url'] for d in r.get('documentos',[]) if 'pliego' in norm(d.get('titulo')) or 'pliego' in norm(d['url'].split('/')[-1])),None)
     for k in ('organismo','localidad','provincia','objeto','fecha_publicacion','fecha_apertura','presupuesto'):r.setdefault(k,None)
     objeto=r.get('objeto') or ''
-    especifico=re.search(r'\b(?:asunto\s*:?|objeto\s*:)\s*(.+?)(?=\s+(?:expediente|presupuesto oficial|fecha (?:y hora )?de apertura|consultas|descargas)\b|$)',objeto,re.I)
+    especifico=re.search(r'\b(?:asunto|objeto)\s*:\s*(.+?)(?=\s+(?:expediente|presupuesto oficial|fecha (?:y hora )?de apertura|consultas|descargas)\b|$)',objeto,re.I)
     if especifico:r['objeto']=especifico[1].strip()
     if r.get('detalle_completo') is False:r['objeto']=None
     r['campos_desconocidos']=[k for k in ('numero_procedimiento','organismo','localidad','provincia','objeto','presupuesto','fecha_apertura','fecha_publicacion','enlace_pliego') if not r.get(k)]

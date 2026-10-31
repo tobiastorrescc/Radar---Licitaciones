@@ -22,6 +22,19 @@ class BarridoDescubrimiento(unittest.TestCase):
         r=comparar({'registros':[uno]},{'registros':[dos]},[uno])
         self.assertEqual(r['categorias'],{'VIGENTE_NUEVA_PARA_RADAR':1})
 
+    def test_unr_aviso_real_conserva_objeto_y_fechas_sin_descargar_pliego(self):
+        from pathlib import Path
+        import oportunidades as o
+        url='https://unr.edu.ar/convocatoria-licitacion-publica-n-5-2026-aulas-2-piso-escuela-preuniversitaria-de-ciencias-sociales-y-humanisticas/'
+        html=Path('tests/fixtures/reales/unr5-aviso.html').read_text()
+        rs,_,_=extractores.extraer(html,url,{})
+        r=o.normalizar(rs[0],'2026-10-31T11:00:00-03:00')
+        self.assertIn('Aulas 2° Piso',r['objeto'])
+        self.assertEqual(r['fecha_apertura'],'2026-11-04')
+        self.assertEqual(r['fecha_limite_presentacion'],'2026-11-04')
+        self.assertEqual(r['fecha_publicacion'],'2026-10-02')
+        self.assertEqual(r['vigencia'],'ABIERTA')
+
     def test_sigue_boletines_oficiales_plural(self):
         calls=[]
         def fetch(url):

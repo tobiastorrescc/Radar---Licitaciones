@@ -10,7 +10,9 @@ import oportunidades as o
 
 def main():
     plan=json.load(open('inventario/barrido20.json'));config={f['id']:f for f in json.load(open('inventario/fuentes.json'))};fs=[]
+    lote=json.load(open('tools/plan_cobertura.json')).get('barrido_ids',[])
     for entrada in plan['fuentes']:
+        if lote and entrada['id'] not in lote:continue
         f={**config[entrada['id']],**entrada} if entrada['id'] in config else entrada
         fs.append({**f,'capturar_respuestas':True,'solo_descubrimiento':True,'ocr':False,'admitir_avisos_sin_numero':True,'conexion_timeout':3,'lectura_timeout':5})
     root=Path('work/barrido');root.mkdir(parents=True,exist_ok=True)

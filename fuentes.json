@@ -204,7 +204,8 @@
     "seguir_patrones": [
       "catid=42",
       "task=download.send",
-      "/index.php/blog/llamado-a-licitacion"
+      "/index.php/blog/llamado-a-licitacion",
+      "/index.php/licitaciones(?:/|$)"
     ],
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
@@ -439,7 +440,8 @@
       "publicaciones_detectadas": 51,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
     },
-    "enriquecer_fichas": true
+    "enriquecer_fichas": true,
+    "priorizar_listados": true
   },
   "https://www.ater.gob.ar/ater2/licitaciones.asp": {
     "organismo": "ATER",
