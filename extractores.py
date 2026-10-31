@@ -45,7 +45,12 @@ def procesos(texto):
         if not re.search(r'\d+\s*[/–-]\s*\d{2,4}',t):return []
     out=[]
     for m in PROCESO.finditer(t):
-        numero=re.sub(r'\s+','',m['numero']).replace('–','-')
+        num=m['numero']
+        # Tras un número anual completo, el guion separado puede introducir
+        # cantidades del objeto (070-23 – 12.000 litros), no otro segmento.
+        anual_seguido_objeto=re.match(r'^(\d+[-/](?:20\d{2}|\d{2}))\s+[–-]\s+\d',num)
+        if anual_seguido_objeto:num=anual_seguido_objeto[1]
+        numero=re.sub(r'\s+','',num).replace('–','-')
         if numero.isdigit() and 1900<=int(numero)<=2100 and not m['marca']:continue
         numero=re.sub(r'([/–-])(\d{2})$',lambda x:x[1]+str((2000 if int(x[2])<70 else 1900)+int(x[2])),numero)
         numero=re.sub(r'^0+(?=\d)','',numero)

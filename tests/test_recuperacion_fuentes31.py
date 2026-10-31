@@ -67,3 +67,19 @@ class RecuperacionFuentes(unittest.TestCase):
         self.assertEqual(r['estado_revision'],'ERROR_DE_ACCESO');self.assertTrue(r['pendiente'])
         r=estado_revision({'estado':'OPERATIVA','errores':[]},[{'id':'existente'}],[])
         self.assertEqual(r['estado_revision'],'REVISADA_SIN_NOVEDADES')
+
+    def test_carmen_real_siete_procedimientos_y_fechas_sin_inventar(self):
+        import oportunidades as o
+        html=Path('tests/fixtures/reales/carmen-areco-transparencia.html').read_text()
+        rs,_,_=extractores.extraer(html,'https://carmendeareco.gob.ar/transparencia/')
+        self.assertEqual(len(rs),7)
+        rs=[o.normalizar(r,'2026-10-31T10:00:00-03:00') for r in rs]
+        self.assertTrue(all(r['fecha_apertura'] for r in rs))
+        self.assertTrue(all(r['vigencia']=='VENCIDA' for r in rs))
+        self.assertTrue(all(r['fecha_publicacion'] is None for r in rs))
+
+    def test_victoria_no_absorbe_litros_como_anio(self):
+        import oportunidades as o
+        p=extractores.procesos('Concurso de Precios Nº 070-23 – 12.000 litros de gasoil')[0]
+        self.assertEqual(o.procedimiento_canonico({'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo']}),'concurso de precios 70/2023')
+        self.assertEqual(extractores.procesos('Licitación Pública 14-2/2026 equipos')[0]['numero'],'14-2/2026')

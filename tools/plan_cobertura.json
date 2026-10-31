@@ -1,5 +1,5 @@
 {
-  "etapa": "verificar-adaptadores-bonaerenses-y-descargas-publicas",
+  "etapa": "corrida-controlada-78-fuentes-deduplicacion-historial-completo",
   "sondear": false,
   "urls_sondeo": [
     "https://epe.santafe.gov.ar/app2/compras",
@@ -19,8 +19,8 @@
     "https://ramallo.gob.ar/",
     "https://drive.google.com/file/d/1ZloFmq9xo9-KUZR7mpP0W1bTNQwOiUvH/view?usp=drive_link"
   ],
-  "auditar": false,
-  "descubrir": true,
+  "auditar": true,
+  "descubrir": false,
   "reverificar_ids": [
     "fuente-003",
     "fuente-031",
@@ -42,6 +42,6 @@
     "https://sibom.slyt.gba.gob.ar/cities/20",
     "https://ramallo.gob.ar/"
   ],
-  "verificar_documentos": true,
+  "verificar_documentos": false,
   "documento_muestra": "4/2026"
 }

@@ -406,6 +406,112 @@
         ]
       },
       "origen_busqueda": "https://funes.gob.ar/"
+    },
+    {
+      "id": "auto-contraste-6b5fc6834def2add0155",
+      "url": "https://carmendeareco.gob.ar/transparencia/",
+      "config": {
+        "organismo": "Municipalidad de Carmen de Areco",
+        "localidad": "Carmen de Areco",
+        "provincia": "Buenos Aires",
+        "conector": "publicaciones",
+        "descubrir_menu": true,
+        "descubrir_contrataciones": true,
+        "lectura_adjuntos": "necesarios",
+        "ocr": false
+      },
+      "validacion": {
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Carmen de Areco",
+          "localidad": "Carmen de Areco",
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://carmendeareco.gob.ar/transparencia/",
+          "sha256": "94d119b545a4a01706d62aea788ee49d797b25057acff88ff18b7047e219ccb8",
+          "cabecera": "TRANSPARENCIA | Carmen de Areco - Municipio  Portal de transparencia Información pública organizada Últimas publicaciones Recursos y gastos Informes económico-financieros Ordenanza fiscal, impositiva y presupuesto Licitaciones y concursos Información salarial Declaraciones juradas patrimoniales Exportaciones RAFAM",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 7,
+        "fecha": "2026-10-31T12:06:31.520578+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Municipalidad de Carmen de Areco",
+            "numero_procedimiento": "6/2026",
+            "objeto": "Licitación Privada N°6 «Adquisición de 250 mts3 de conchilla de granulometría fina»",
+            "fecha_apertura": "2026-09-22",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://carmendeareco.gob.ar/wp-content/uploads/2026/08/pliego-licitacion-privada-6-adq-de-conchilla.pdf",
+            "evidencia_url": "https://carmendeareco.gob.ar/transparencia/"
+          },
+          {
+            "organismo": "Municipalidad de Carmen de Areco",
+            "numero_procedimiento": "7/2023",
+            "objeto": "Lic. Pública N°7 Refuerzo de Sistema de Producción y Almacenamiento en la Localidad de Gouin y Carmen de Areco (Barrio Norte y Barrio Marín)",
+            "fecha_apertura": "2023-11-27",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://carmendeareco.gob.ar/wp-content/uploads/2023/11/LICITACION-PUBLICA-N%C2%B07.pdf",
+            "evidencia_url": "https://carmendeareco.gob.ar/transparencia/"
+          },
+          {
+            "organismo": "Municipalidad de Carmen de Areco",
+            "numero_procedimiento": "9/2023",
+            "objeto": "Lic. Publica N°9 Adquisición de Camioneta Utilitaria",
+            "fecha_apertura": "2023-11-17",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://carmendeareco.gob.ar/wp-content/uploads/2023/10/LICITACION-PUBLICA-N%C2%B09.pdf",
+            "evidencia_url": "https://carmendeareco.gob.ar/transparencia/"
+          },
+          {
+            "organismo": "Municipalidad de Carmen de Areco",
+            "numero_procedimiento": "8/2023",
+            "objeto": "Lic. Publica N°8 Adquisición de Compactador",
+            "fecha_apertura": "2023-11-17",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://carmendeareco.gob.ar/wp-content/uploads/2023/10/LICITACION-PUBLICA-N%C2%B08.pdf",
+            "evidencia_url": "https://carmendeareco.gob.ar/transparencia/"
+          },
+          {
+            "organismo": "Municipalidad de Carmen de Areco",
+            "numero_procedimiento": "11/2023",
+            "objeto": "Lic. Publica N°11 Adquisición de Equipo de Nefrología",
+            "fecha_apertura": "2023-11-13",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://carmendeareco.gob.ar/wp-content/uploads/2023/10/LICITACION-PUBLICA-N%C2%B011.pdf",
+            "evidencia_url": "https://carmendeareco.gob.ar/transparencia/"
+          },
+          {
+            "organismo": "Municipalidad de Carmen de Areco",
+            "numero_procedimiento": "10/2023",
+            "objeto": "Lic. Publica N°10 Adquisición de Combi Mini Bus",
+            "fecha_apertura": "2023-11-13",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://carmendeareco.gob.ar/wp-content/uploads/2023/10/LICITACION-PUBLICA-N%C2%B010.pdf",
+            "evidencia_url": "https://carmendeareco.gob.ar/transparencia/"
+          },
+          {
+            "organismo": "Municipalidad de Carmen de Areco",
+            "numero_procedimiento": "7/2026",
+            "objeto": "Licitación Privada N°7 – Construcción de Red de Agua en Chacra 84",
+            "fecha_apertura": "2026-10-16",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://carmendeareco.gob.ar/wp-content/uploads/2026/09/Pliego-licitacion-privada-n-7-construccion-de-red-de-agua-en-chacra-84.pdf",
+            "evidencia_url": "https://carmendeareco.gob.ar/transparencia/"
+          }
+        ]
+      },
+      "origen_busqueda": "https://carmendeareco.gob.ar/transparencia/"
     }
   ]
 }
