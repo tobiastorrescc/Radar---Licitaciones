@@ -48,8 +48,9 @@ def objetivos(padron,fuentes):
     cubiertos={(o.norm(f['localidad']),f['provincia']) for f in fuentes if f.get('incorporada') and f.get('verificada_funcionando') and f.get('estado_verificacion')=='OPERATIVA' and o.norm(f['organismo']).startswith(('municipalidad','comuna','gobierno de timbues'))}
     territoriales=[{'clave':'territorio:'+m['codigo'],'localidad':m['localidad'],'provincia':m['provincia'],
         'organismo':('Comuna' if 'comuna' in o.norm(m.get('tipo_gobierno')) else 'Municipalidad')+' de '+m['localidad'],
-        'consulta':'"'+m['localidad']+'" "'+m['provincia']+'" compras licitaciones sitio oficial','tipo':'TERRITORIAL'}
-        for m in padron['municipios'] if (o.norm(m['localidad']),m['provincia']) not in cubiertos]
+        'consulta':'"'+m['localidad']+'" "'+m['provincia']+'" compras licitaciones sitio oficial','tipo':'TERRITORIAL',
+        'fuente_operativa_previa':(o.norm(m['localidad']),m['provincia']) in cubiertos}
+        for m in padron['municipios']]
     por_provincia={p:[q for q in territoriales if q['provincia']==p] for p in PROVINCIAS}
     territoriales=[grupo[i] for i in range(max((len(g) for g in por_provincia.values()),default=0)) for grupo in por_provincia.values() if i<len(grupo)]
     sectoriales=[{'clave':'sector:'+p+':'+s,'provincia':p,'consulta':'"'+p+'" '+s+' compras licitaciones sitio oficial','tipo':'SECTORIAL'} for p in PROVINCIAS for s in SECTORES]
@@ -71,7 +72,7 @@ def objetivos(padron,fuentes):
     # Orígenes conocidos y enlaces publicados: alternativa independiente al buscador.
     directorios=[]
     for f in fuentes:
-        if f['id'] not in pendientes:continue
+        if f['id'] not in pendientes and not o.norm(f['organismo']).startswith(('municipalidad','comuna')):continue
         origen=urlparse(f['url']);url=origen.scheme+'://'+origen.netloc+'/'
         directorios.append({'clave':'directorio:'+f['id'],'tipo':'TERRITORIAL' if o.norm(f['organismo']).startswith(('municipalidad','comuna')) else 'SECTORIAL',
             'organismo':f['organismo'],'localidad':f['localidad'],'provincia':f['provincia'],'metodo':'ENLACES_OFICIALES','url_directorio':url})

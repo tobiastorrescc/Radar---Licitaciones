@@ -41,6 +41,13 @@ class DescubrimientoTests(unittest.TestCase):
         self.assertEqual(d.aceptacion(resultado,{'verificada':True})['estado'],'VALIDADA')
         for r in [{**resultado,'estado':'PARCIAL'},{**resultado,'errores':[{'categoria':'RED'}]},{**resultado,'limites':['TIEMPO_TOTAL']}]:
             self.assertEqual(d.aceptacion(r,{'verificada':True})['estado'],'PENDIENTE')
+    def test_municipio_con_conector_operativo_se_revisa_permanentemente(self):
+        padron={'municipios':[{'codigo':'sf1','localidad':'Prueba','provincia':'Santa Fe','tipo_gobierno':'Municipio'}]}
+        fs=[{'id':'existente','organismo':'Municipalidad de Prueba','localidad':'Prueba','provincia':'Santa Fe','url':'https://prueba.gob.ar/compras','incorporada':True,'verificada_funcionando':True,'estado_verificacion':'OPERATIVA'}]
+        r=d.objetivos(padron,fs)
+        self.assertTrue(any(x['clave']=='territorio:sf1' and x['fuente_operativa_previa'] for x in r))
+        self.assertTrue(any(x['clave']=='directorio:existente' for x in r))
+
     def test_rotacion_prioriza_objetivos_no_buscados(self):
         obj=[{'clave':'a'},{'clave':'b'},{'clave':'c'}]
         self.assertEqual(d.plan_busquedas(obj,{'busquedas':{'a':'2026-10-27'}},2),obj[1:])

@@ -29,3 +29,5 @@ La muestra inicial es dirigida y pequeña, no un censo independiente de todos lo
 ## Conservación
 
 PR#1 y rama `mejora/radar-auditable`. No fusionar, modificar main/producción, respaldos ni programador. Las pruebas reales y comparaciones se ejecutan en copias aisladas bajo `work/`. El reporte se prepara sin activar correo, credenciales ni servicios pagos.
+
+La rotación de descubrimiento conserva también las localidades que ya tienen un conector operativo. Revisa sus portales institucionales y busca fuentes complementarias: un archivo extraído correctamente no acredita cobertura permanente de la localidad. Se reutiliza la cola y los límites existentes, sin modificar el programador.

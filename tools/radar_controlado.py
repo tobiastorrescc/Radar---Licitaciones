@@ -90,7 +90,7 @@ def generar_informe(db,resumen,registros,fuentes,destino):
     for tipo in sorted({e['clasificacion_novedad'] for e in eventos}):
         if tipo=='LINEA_BASE':continue # Todas las filas están en el catálogo, sin alertar miles de antiguas.
         lineas+=['',f'## {tipo}','',o.reporte([r for r in eventos if r['clasificacion_novedad']==tipo],fecha)]
-    lineas+=['',mt.markdown(metricas)]
+    lineas[4:4]=[mt.markdown(metricas),'']
     (destino/'reporte_diario.md').write_text('\n'.join(lineas)+'\n',encoding='utf-8')
     filas=[]
     for r in actuales:
@@ -112,6 +112,7 @@ def generar_informe(db,resumen,registros,fuentes,destino):
     html='<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Radar controlado</title><style>body{font:16px system-ui;margin:2rem;color:#172b4d}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccd;padding:.5rem;text-align:left;vertical-align:top}th{background:#edf3fa;position:sticky;top:0}input{font:inherit;padding:.6rem;width:min(90%,50rem)}td:nth-child(2){min-width:20rem;white-space:pre-wrap}a{color:#1254ad}</style>'
     html+= '<p><a href="metricas_territoriales.json">Total diario y desglose de las tres jurisdicciones</a> · <a href="auditoria_manual.json">Omisiones de la muestra auditada</a></p>'
     html+=f'<h1>Radar controlado</h1><p>{escape(fecha)} · {escape(resumen["estado"])} · {escape(resumen["mensaje"])}</p><p>{resumen["total_historial"]} registros, {resumen["novedades"]} novedades/cambios, {resumen["abiertas"]} abiertas y {resumen["proximas_a_vencer"]} próximas a vencer. Sin filtros comerciales ni límite de cantidad.</p><p>Los registros no observados hoy se conservan; su vigencia calculada requiere confirmar nuevamente la fuente.</p><input id="buscar" aria-label="Buscar" placeholder="Buscar organismo, objeto, pago o estado"><p><a href="reporte_diario.md">Informe diario</a> · <a href="eventos.json">Eventos JSON</a> · <a href="catalogo_completo.json">Catálogo JSON</a> · <a href="fichas.json">Fichas completas</a> · <a href="cola_documental.json">Cola documental</a></p><div style="overflow:auto"><table><thead><tr>'+''.join('<th>'+t+'</th>' for t in titulos)+'</tr></thead><tbody>'+''.join(filas)+'</tbody></table></div>'
+    html=html.replace('<input id="buscar"',mt.html_resumen(metricas)+'<input id="buscar"',1)
     html+='<p><a href="entrega/informe.md">Novedades y cambios separados</a> · <a href="entrega/oportunidades.csv">CSV íntegro</a> · <a href="entrega/informe.eml">Correo preparado sin enviar</a></p><script>document.getElementById("buscar").addEventListener("input",function(){const q=this.value.toLocaleLowerCase();document.querySelectorAll("tbody tr").forEach(r=>r.hidden=!r.textContent.toLocaleLowerCase().includes(q));});</script></html>'
     (destino/'index.html').write_text(html,encoding='utf-8')
     return resumen

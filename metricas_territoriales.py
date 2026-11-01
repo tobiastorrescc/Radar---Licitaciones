@@ -66,3 +66,13 @@ def markdown(m):
         lineas.append(f"| {p} | {r['nuevas_confirmadas']} | {r['abiertas_observadas']} | {r['abiertas_solo_historial']} | {r['vigencia_pendiente']} | {r['pago_rapido_verificado_abiertas']} | {muestra} | {len(r['fuentes_con_incidencias'])} |")
     lineas+=['',m['meta_alcance'],m['criterio'],'',f"Promedio de siete días: {m['promedio_7_dias'] if m['promedio_7_dias'] is not None else 'Pendiente: faltan días con ejecución'}. Días disponibles: {m['dias_con_ejecucion']}/7. La muestra manual se limita a sus URLs y fechas de revisión.",'','[Métricas completas](metricas_territoriales.json) · [Comparación de avisos y omisiones](auditoria_manual.json)']
     return '\n'.join(lineas)
+
+
+def html_resumen(m):
+    from html import escape
+    texto=f'<section><h2>Publicaciones genuinamente nuevas confirmadas: {m["total_nuevas_confirmadas"]}</h2><p>Meta: promedio conjunto de20 por día, condicionado al volumen real. Sin límite de resultados.</p><table><thead><tr><th>Provincia</th><th>Nuevas confirmadas</th><th>Abiertas observadas</th><th>Abiertas sólo por historial</th><th>Vigencia pendiente</th><th>Pago rápido en abiertas</th><th>Omitidas en muestra</th><th>Fuentes con incidencias</th></tr></thead><tbody>'
+    for p,r in m['jurisdicciones'].items():
+        a=r['auditoria_manual'];om=str(a['omitidas'])+'/'+str(a['comprobadas']) if a['comprobadas'] else 'Sin muestra'
+        valores=[p,r['nuevas_confirmadas'],r['abiertas_observadas'],r['abiertas_solo_historial'],r['vigencia_pendiente'],r['pago_rapido_verificado_abiertas'],om,len(r['fuentes_con_incidencias'])]
+        texto+='<tr>'+''.join('<td>'+escape(str(v))+'</td>' for v in valores)+'</tr>'
+    return texto+'</tbody></table><p>La muestra no demuestra cobertura provincial completa. Pago nominal hasta15días conserva sus unidades e hito; no promete acreditación inmediata. Los fallos no significan ausencia de publicaciones.</p></section>'

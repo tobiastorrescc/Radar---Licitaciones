@@ -33,12 +33,12 @@ def main():
     for origen,paquete in paquetes:
         urls={f['url'] for f in paquete['fuentes']}
         registros=[r for r in registros if r.get('fuente') not in urls]+paquete['registros']
-        for f in paquete['fuentes']:fuentes[f['id']]=f
+        for f in paquete['fuentes']:fuentes[f['url']]=f
         verificacion=json.load(open(origen/'verificacion.json'))
         for obs in verificacion['observaciones']:
             obs=dict(obs);original=obs.get('resultado_archivo')
             if original:obs['resultado_archivo']=str(origen/str(original).split('work/barrido/',1)[-1])
-            observaciones[obs['id']]=obs
+            observaciones[obs['url']]=obs
     despues={**despues,'registros':registros,'fuentes':list(fuentes.values())}
     resultado=comparar(antes,despues,cat)
     (root/'comparacion.json').write_text(json.dumps(resultado,ensure_ascii=False,indent=2)+'\n')
