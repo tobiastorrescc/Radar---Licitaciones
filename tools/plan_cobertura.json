@@ -1,9 +1,9 @@
 {
-  "etapa": "repetir-comparacion-por-url-y-revision-permanente",
+  "etapa": "cierre-tres-provincias-con-jurisdicciones-y-contador-estricto",
   "barrido": false,
   "barrido_manifest": "inventario/barrido_tres_provincias.json",
   "barrido_por_fuente": 75,
-  "sondear": true,
+  "sondear": false,
   "auditar": false,
   "descubrir": false,
   "reverificar_ids": [],

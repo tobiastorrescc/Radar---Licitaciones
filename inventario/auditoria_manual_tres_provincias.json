@@ -95,14 +95,18 @@
       "provincia": "Buenos Aires",
       "numero_procedimiento": "11/2026",
       "tipo_procedimiento": "licitacion publica",
-      "objeto": null,
+      "objeto": "Terminación de16 viviendas en Colón, expediente4024-218/2026",
       "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
       "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
       "fecha_revision": "2026-10-31",
       "comprobada": true,
       "fecha_publicacion": "2026-10-19",
-      "objeto_pendiente": "Aviso en imagen; número y publicación enHTML comprobados. No se repite OCR.",
-      "documento": "https://www.municipalidadcolonpba.gob.ar/edictos/licitacion_11-2026.jpg"
+      "documento": "https://www.municipalidadcolonpba.gob.ar/edictos/licitacion_11-2026.jpg",
+      "fecha_apertura": "2026-11-24",
+      "hora_apertura": "10:00",
+      "presupuesto_texto": "$333.031.337,04",
+      "evidencia_reutilizada_de": "Actions41237677685: texto OCR persistido del aviso licitacion_11-2026.jpg; sin volver a ejecutar OCR. Número y fecha de publicación contrastados enHTML oficial.",
+      "vigencia_documental_reutilizada": true
     },
     {
       "id_control": "ba-baradero1",
@@ -110,12 +114,12 @@
       "provincia": "Buenos Aires",
       "numero_procedimiento": "1/2026",
       "tipo_procedimiento": "licitacion publica",
-      "objeto": null,
+      "objeto": "Implementación del Servicio Alimentario Escolar y del programa MESA en Baradero, mayo a diciembre de2026",
       "url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica",
       "evidencia_url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica",
       "fecha_revision": "2026-10-31",
       "comprobada": true,
-      "objeto_pendiente": "Identificador en índice oficial; objeto, vigencia y ficha pendientes de contraste manual adicional."
+      "evidencia_reutilizada_de": "Texto oficial conservado en Actions41237677685; índice2026 contrastado por web. Fecha de apertura desconocida."
     },
     {
       "id_control": "ba-rojas7",

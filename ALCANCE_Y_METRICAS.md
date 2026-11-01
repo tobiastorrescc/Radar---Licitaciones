@@ -14,7 +14,7 @@ Revisar portales provinciales, boletines, sitios municipales, noticias, decretos
 
 `metricas_territoriales.json` y el informe Markdown muestran total confirmado y desglose por Santa Fe, Entre Ríos y Buenos Aires. Separan abiertas observadas de abiertas conservadas sólo por historial, vigencia desconocida, pago rápido documentado, errores de fuente y omisiones de la muestra manual. El catálogo, CSV y secciones de primeras detecciones, recuperaciones y cambios conservan todos los registros.
 
-La meta sólo cuenta `NUEVO_CONFIRMADO` con publicación comprobada y deduplicación por identidad, agregando todas las ejecuciones del día argentino. Una repetición no reinicia el contador diario. Históricas, modificaciones, datos completados, duplicados y primeras detecciones sin fecha no integran la meta; siguen visibles en secciones propias. «Primera detección» no equivale a fecha de publicación.
+La meta sólo cuenta `NUEVO_CONFIRMADO` con publicación comprobada dentro de la ventana reciente de72horas por día disponible, y deduplicación por identidad, agregando todas las ejecuciones del día argentino. Una repetición no reinicia el contador diario. Históricas, modificaciones, datos completados, duplicados y primeras detecciones sin fecha no integran la meta; siguen visibles en secciones propias. «Primera detección» no equivale a fecha de publicación.
 
 El promedio se calcula sobre siete días calendario con ejecuciones disponibles; mientras falten días se informa pendiente y se muestra por separado el promedio de los días observados. No se imputan los días sin ejecución como cero ni se garantiza el volumen editorial de los organismos. El promedio mide detecciones confirmadas del radar, no la totalidad de las publicaciones oficiales.
 

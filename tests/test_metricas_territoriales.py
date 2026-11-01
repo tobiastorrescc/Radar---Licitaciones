@@ -25,6 +25,7 @@ class MetricasTerritoriales(unittest.TestCase):
         r=self.registro(1);self.evento(r);self.evento(r,corrida='repetida')
         for n,t in enumerate(['MODIFICADO','HISTORICA_RECUPERADA','RECUPERACION_LINEA_BASE','NUEVA_DETECCION_FECHA_DESCONOCIDA'],2):self.evento(self.registro(n),t)
         self.evento(self.registro(6,fecha_publicacion=None))
+        self.evento(self.registro(7,fecha_publicacion='2020-01-01'))
         m=mt.generar(self.db,[],[],[],'2026-10-31T23:00:00-03:00');self.assertEqual(m['total_nuevas_confirmadas'],1)
     def test_abiertas_retenidas_y_pago_rapido_sin_documento_se_distinguen(self):
         valido={'estado':'VERIFICADO','clasificacion':'PLAZO','plazos_dias':[15],'documentos_respaldo':['https://prueba.gob.ar/pliego.pdf']}

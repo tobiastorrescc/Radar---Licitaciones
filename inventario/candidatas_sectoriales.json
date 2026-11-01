@@ -134,6 +134,15 @@
       "url": "https://portal.entrerios.gov.ar/api/public/consulta/uep/licitaciones",
       "evidencia_descubrimiento": "https://portal.entrerios.gov.ar/static/js/8931.31563bf3.chunk.js",
       "motivo_previo": "API pública leída en41212153456:64 registros históricos. Pendiente adaptador y prueba de extracción; no se incorpora por responder200."
+    },
+    {
+      "organismo": "Municipalidad de San Nicolás",
+      "localidad": "San Nicolás",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "http://www.sannicolas.gov.ar:8080/portalcompras/",
+      "evidencia_descubrimiento": "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos",
+      "motivo_previo": "Portal de Compras enlazado oficialmente en la página municipal; pendiente validación de acceso y procedimientos. Captura41265639687. No incorporada."
     }
   ]
 }

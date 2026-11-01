@@ -26,19 +26,22 @@ def comparar(antes,despues,catalogo):
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--antes',required=True);p.add_argument('--despues',required=True);p.add_argument('--catalogo',required=True);p.add_argument('--salida',required=True);p.add_argument('--complemento',action='append',default=[]);p.add_argument('--base-auditada',action='store_true');a=p.parse_args()
-    antes=json.load(open(a.antes));despues=json.load(open(a.despues));cat=json.load(open(a.catalogo))['oportunidades'];root=Path(a.salida);root.mkdir(parents=True,exist_ok=False)
+    antes=json.loads(Path(a.antes).read_text());despues=json.loads(Path(a.despues).read_text());cat=json.loads(Path(a.catalogo).read_text())['oportunidades'];root=Path(a.salida);root.mkdir(parents=True,exist_ok=False)
     # Los complementos son capturas anteriores de otras fuentes, sin reconsultarlas.
-    paquetes=[(Path(p).parent,json.load(open(p))) for p in a.complemento]+[(Path(a.despues).parent,despues)]
+    paquetes=[(Path(p).parent,json.loads(Path(p).read_text())) for p in a.complemento]+[(Path(a.despues).parent,despues)]
     registros=[];observaciones={};fuentes={}
     for origen,paquete in paquetes:
         urls={f['url'] for f in paquete['fuentes']}
         registros=[r for r in registros if r.get('fuente') not in urls]+paquete['registros']
         for f in paquete['fuentes']:fuentes[f['url']]=f
-        verificacion=json.load(open(origen/'verificacion.json'))
+        verificacion=json.loads((origen/'verificacion.json').read_text())
         for obs in verificacion['observaciones']:
             obs=dict(obs);original=obs.get('resultado_archivo')
             if original:obs['resultado_archivo']=str(origen/str(original).split('work/barrido/',1)[-1])
             observaciones[obs['url']]=obs
+    # La captura conserva jurisdicción aun para rutas complementarias que no
+    # forman parte del inventario diario de conectores independientes.
+    observaciones={u:{**{k:fuentes.get(u,{}).get(k) for k in ('organismo','localidad','provincia')},**obs} for u,obs in observaciones.items()}
     despues={**despues,'registros':registros,'fuentes':list(fuentes.values())}
     resultado=comparar(antes,despues,cat)
     (root/'comparacion.json').write_text(json.dumps(resultado,ensure_ascii=False,indent=2)+'\n')
