@@ -189,7 +189,8 @@ def registrar(db,registros,informe):
             evidencia=r.get('evidencia_numero_documental',{})
             num_prev=str(r.get('numero_documental_previo') or '')
             anual=re.fullmatch(r'(\d{1,6})/(20\d{2})',str(r.get('numero_procedimiento') or ''))
-            if (anual and num_prev.isdigit() and int(num_prev)==int(anual[1]) and evidencia.get('url')==r.get('url')
+            if (num_prev.isdigit() and (anual or re.fullmatch(r'\d{1,6}',str(r.get('numero_procedimiento') or '')))
+                and int(num_prev)==int(anual[1] if anual else r['numero_procedimiento']) and evidencia.get('url')==r.get('url')
                 and re.fullmatch('[0-9a-f]{64}',str(evidencia.get('sha256') or ''))):
                 k=(o.norm(r.get('provincia')),o.norm(r.get('organismo')),r.get('tipo_procedimiento'),r.get('url'),str(int(num_prev)))
                 posibles=sin_anio.get(k,[])

@@ -338,11 +338,18 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 plazo=re.search(r'para el\s*:\s*(\d{1,2}/\d{1,2}/20\d{2}\s+a las\s+\d{1,2}[.:]\d{2})',normalizar(t))
                 if plazo:r['fecha_limite_presentacion_texto']=plazo[1]
 
+            if config.get('resolver_numero_documental'):
+                if re.fullmatch(r'\d{1,6}',p['numero']):
+                    # Numeración literal estable por documento; no inferir año de la apertura.
+                    r.update(titulo=p['procedimiento'],registro_estructurado=True,numero_oficial_sin_interpretar=p['numero'])
+                rotulo=re.search(r'apertura\s*:\s*dia\s*:\s*(\d{1,2})\s+mes\s*:\s*([a-z]+)\s+ano\s*:\s*(20\d{2})\s+hora\s*:\s*(\d{1,2})\s*:\s*(\d{2})',normalizar(t))
+                if rotulo:
+                    r['fecha_apertura_texto']=rotulo[1]+' de '+rotulo[2]+' de '+rotulo[3]+' a las '+rotulo[4]+':'+rotulo[5]
             previo=items.get(referencia,{})
             anual=re.fullmatch(r'(\d{1,6})/(20\d{2})',p['numero'])
-            if (config.get('resolver_numero_documental') and len(unicos)==1 and anual
+            if (config.get('resolver_numero_documental') and len(unicos)==1 and (anual or re.fullmatch(r'\d{1,6}',p['numero']))
                 and re.fullmatch(r'\d{1,6}',str(previo.get('numero_procedimiento') or ''))
-                and int(previo['numero_procedimiento'])==int(anual[1])
+                and int(previo['numero_procedimiento'])==int(anual[1] if anual else p['numero'])
                 and previo.get('tipo_procedimiento')==p['tipo']):
                 # Únicamente el documento enlazado del mismo procedimiento aporta el año.
                 numero_previo=previo['numero_procedimiento']

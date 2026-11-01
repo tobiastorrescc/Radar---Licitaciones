@@ -18,4 +18,18 @@ class HistorialFuentes(unittest.TestCase):
         rs=list(contexto_json({'registros':[{'organismo':'Comuna de Ramayón','provincia':'Santa Fe','localidad':'Ramayón','numero_procedimiento':'1/2026','url':'https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026/2026-09-18licitaciones.html'}]}))
         self.assertEqual(rs[0][1]['localidad'],'Ramayón');self.assertTrue(rs[0][2])
 
+class DelimitadoresHistorial(unittest.TestCase):
+    def test_csv_no_concatena_estado_u_otra_url_al_enlace(self):
+        from tools.inventariar_historial import textos_json
+        datos=b'url,pliego,estado\nhttps://oficial.gob.ar/compras/,https://oficial.gob.ar/aviso.pdf,PARCIAL\n'
+        obj=json.loads(extraer_texto(datos,'reporte.csv'));us=set()
+        for t in textos_json(obj):us.update(referencias(t,set()))
+        self.assertEqual(us,{'https://oficial.gob.ar/compras/','https://oficial.gob.ar/aviso.pdf'})
+    def test_markdown_no_incluye_cierre_ni_columnas_y_respeta_parentesis_de_archivo(self):
+        texto='| [aviso](https://oficial.gob.ar/aviso.php) | 64 | [PDF](https://oficial.gob.ar/pliego(1).pdf) |'
+        self.assertEqual(referencias(texto,set()),{'https://oficial.gob.ar/aviso.php','https://oficial.gob.ar/pliego(1).pdf'})
+    def test_documento_hereda_organismo_y_localidad_del_procedimiento(self):
+        obj={'organismo':'Hospital de Prueba','localidad':'Rosario','provincia':'Santa Fe','numero_procedimiento':'1/2026','documentos':[{'url':'https://oficial.gob.ar/anexo.pdf'}]}
+        rs=list(contexto_json(obj));self.assertEqual(rs[0][1]['localidad'],'Rosario');self.assertEqual(rs[0][1]['organismo'],'Hospital de Prueba')
+
 if __name__=='__main__':unittest.main()

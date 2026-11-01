@@ -1,5 +1,5 @@
 {
-  "etapa": "completar-textos-historicos-y-validar-docx-arrecifes",
+  "etapa": "validar-docx-sin-fragmentos-y-limpiar-inventario-historico",
   "inventariar_historial": true,
   "barrido": true,
   "barrido_manifest": "inventario/barrido_fuentes_historicas.json",

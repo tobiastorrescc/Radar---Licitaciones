@@ -3,6 +3,7 @@
 No promueve fuentes: una URL histórica no demuestra acceso ni extracción actual.
 """
 import argparse,base64,csv,gzip,json,re,subprocess,sys,time,zlib
+from io import StringIO
 from collections import Counter
 from hashlib import sha256
 from html import unescape
@@ -10,11 +11,12 @@ from pathlib import Path
 from urllib.parse import urlsplit,urlunsplit
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 
-URL=re.compile(r'https?://[^\s<>"\'`\\\]]+')
+URL=re.compile(r'https?://[^\s<>"\'`\\\]|]+')
 TEXTOS=('.json','.txt','.md','.py','.html','.csv','.yml','.yaml','.b64')
 
 def normalizar_url(u):
-    u=unescape(u).rstrip('.,;:)}')
+    u=unescape(u).rstrip('.,;:}')
+    while u.endswith(')') and u.count(')')>u.count('('):u=u[:-1]
     try:p=urlsplit(u);host=(p.hostname or '').encode('idna').decode().lower()
     except (ValueError,UnicodeError):return None
     if p.scheme not in ('http','https') or not host or p.username or p.password:return None
@@ -36,20 +38,33 @@ def tipo_url(u):
 
 def extraer_texto(datos,path):
     if path.endswith('.gz.b64'):datos=gzip.decompress(base64.b64decode(datos,validate=False))
-    return datos.decode('utf-8-sig')
+    texto=datos.decode('utf-8-sig')
+    return json.dumps(list(csv.reader(StringIO(texto))),ensure_ascii=False) if path.endswith('.csv') else texto
 
 def referencias(texto,hosts):
     return {u for m in URL.finditer(texto) if (u:=normalizar_url(m.group())) and oficial(u,hosts)}
 
-def contexto_json(obj):
-    if isinstance(obj,dict):
-        if obj.get('organismo'):
-            urls=[obj.get(k) for k in ('url','fuente','evidencia_url','evidencia_descubrimiento','sitio_oficial') if isinstance(obj.get(k),str)]
-            identidad=obj.get('id') or sha256(json.dumps([obj.get(k) for k in ('organismo','provincia','numero_procedimiento','tipo_procedimiento','numero_convocatoria')],ensure_ascii=False).encode()).hexdigest()
-            for u in urls:yield u,obj,identidad if obj.get('numero_procedimiento') else None
-        for v in obj.values():yield from contexto_json(v)
+def textos_json(obj):
+    if isinstance(obj,str):yield obj
+    elif isinstance(obj,dict):
+        for k,v in obj.items():yield k;yield from textos_json(v)
     elif isinstance(obj,list):
-        for v in obj:yield from contexto_json(v)
+        for v in obj:yield from textos_json(v)
+
+
+def contexto_json(obj,padre=None):
+    if isinstance(obj,dict):
+        campos=('organismo','localidad','provincia','numero_procedimiento','tipo_procedimiento','numero_convocatoria','fuente','url','evidencia_url')
+        meta={**(padre or {}),**{k:obj[k] for k in campos if k in obj}}
+        if obj.get('numero_procedimiento'):meta['id']=obj.get('id')
+        if isinstance(meta.get('organismo'),str) and meta['organismo']:
+            urls=[obj.get(k) for k in ('url','fuente','evidencia_url','evidencia_descubrimiento','sitio_oficial') if isinstance(obj.get(k),str)]
+            identidad=meta.get('id') or sha256(json.dumps([meta.get(k) for k in ('organismo','provincia','numero_procedimiento','tipo_procedimiento','numero_convocatoria')],ensure_ascii=False).encode()).hexdigest()
+            for u in urls:yield u,meta,identidad if meta.get('numero_procedimiento') else None
+        for v in obj.values():yield from contexto_json(v,meta)
+    elif isinstance(obj,list):
+        for v in obj:yield from contexto_json(v,padre)
+
 
 def inventariar(salida,referencias_usuario='inventario/referencias_historicas_solicitadas.json'):
     inicio=time.monotonic();root=Path(salida);root.mkdir(parents=True,exist_ok=True)
@@ -92,11 +107,14 @@ def inventariar(salida,referencias_usuario='inventario/referencias_historicas_so
             except (ValueError,UnicodeError,OSError,EOFError,zlib.error) as e:
                 errores.append({'sha':sha,'path':path,'tipo':type(e).__name__});continue
             ev={'blob_sha':sha,'commit':evidencia.get(sha,(None,None))[0],'archivo':path}
-            us=referencias(texto,hosts)
-            for u in us:agregar(u,ev)
-            if path.endswith(('.json','.gz.b64')):
+            obj=None
+            if path.endswith(('.json','.gz.b64','.csv')):
                 try:obj=json.loads(texto)
-                except ValueError:obj=None
+                except ValueError:pass
+            us=set()
+            for campo in textos_json(obj) if obj is not None else [texto]:us.update(referencias(campo,hosts))
+            for u in us:agregar(u,ev)
+            if obj is not None:
                 for raw,meta,identidad in contexto_json(obj):
                     u=normalizar_url(raw)
                     if u not in us:continue

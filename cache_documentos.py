@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 import time
 from urllib.error import HTTPError
+from urllib.parse import urlsplit
 import uuid
 
 
@@ -61,15 +62,16 @@ def obtener(url,transport=None,fresco=300,sin_validadores=21600,reloj=time.time)
 def leer_texto(datos,tipo,url,ocr=False,progreso=None):
     import documentos
     digest=sha256(datos).hexdigest();path=raiz()/'textos'/(digest+'.json')
+    version_texto=2 if datos.startswith(b'PK') and (urlsplit(url).path.lower().endswith('.docx') or 'wordprocessingml' in tipo) else 1
     try:
         r=json.loads(path.read_text())
-        if r.get('version')==1 and r.get('sha256')==digest:return r['texto'],{**r,'cache_texto':True}
+        if r.get('version')==version_texto and r.get('sha256')==digest:return r['texto'],{**r,'cache_texto':True}
     except (OSError,ValueError,KeyError,TypeError,AttributeError):pass
     legacy=raiz()/(sha256(datos+b'ocr-v1').hexdigest()+'.txt')
-    if legacy.exists():texto=legacy.read_text();metodo='CACHE_LEGADO'
+    if version_texto==1 and legacy.exists():texto=legacy.read_text();metodo='CACHE_LEGADO'
     else:
         texto=documentos.leer(datos,tipo,url,ocr=ocr,progreso=progreso);metodo='TEXTO_O_OCR' if ocr else 'TEXTO'
-    r={'version':1,'sha256':digest,'texto':texto,'metodo':metodo}
+    r={'version':version_texto,'sha256':digest,'texto':texto,'metodo':metodo}
     # Nunca guardar como completo el avance de un OCR interrumpido.
     if texto.strip():atomico(path,r)
     return texto,{**r,'cache_texto':False}

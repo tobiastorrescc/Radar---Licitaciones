@@ -14,7 +14,8 @@ def docx(datos):
         i=z.getinfo('word/document.xml')
         if i.file_size>32_000_000:raise ValueError('DOCX excede tamaño seguro')
         root=ElementTree.fromstring(z.read(i))
-        return '\n'.join(' '.join(t.text or '' for t in p.iter() if t.tag.endswith('}t'))
+        # Los runs de Word son formato, no separadores de palabras/dígitos.
+        return '\n'.join(''.join((t.text or '') if t.tag.endswith('}t') else '\t' if t.tag.endswith('}tab') else '\n' if t.tag.endswith(('}br','}cr')) else '' for t in p.iter())
                          for p in root.iter() if p.tag.endswith('}p'))
 
 
