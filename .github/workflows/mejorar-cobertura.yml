@@ -270,6 +270,12 @@ jobs:
       - name: Revisar documentos de identidades dudosas sin escribir historial
         timeout-minutes: 3
         run: python -u tools/revisar_identidades.py
+      - name: Consolidar inventario histórico y comprobación actual sin promover fuentes
+        if: steps.plan.outputs.comparar_barrido_run != ''
+        run: |
+          if test -f work/barrido-captura/work/historial-fuentes/inventario.json; then
+            python tools/consolidar_fuentes_historicas.py --historial work/barrido-captura/work/historial-fuentes/inventario.json --captura work/referencias-historicas/work/barrido/resultado.json --captura work/barrido-captura/work/barrido/resultado.json --salida work/fuentes-historicas
+          fi
       - name: Guardar evidencia incluso si el lote queda incompleto
         if: always()
         uses: actions/upload-artifact@v4
@@ -278,6 +284,7 @@ jobs:
           path: |
             work/barrido/
             work/historial-fuentes/
+            work/fuentes-historicas/
             work/informe-recuperacion/
             work/barrido-comparativo/resultado.json
             work/barrido-comparativo/comparacion.json

@@ -1,5 +1,5 @@
 {
-  "etapa": "comparar-historia-restaurada-y-validar-repeticion",
+  "etapa": "consolidar-evidencias-antes-de-persistir-y-validar-segunda-pasada",
   "inventariar_historial": false,
   "barrido": false,
   "barrido_manifest": "inventario/barrido_fuentes_historicas.json",

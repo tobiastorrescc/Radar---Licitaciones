@@ -173,6 +173,7 @@ def registrar(db,registros,informe):
     referencias=cargar_indice_auditorias()
     dedup=o.deduplicar(registros,fecha);tipos=Counter();candidatos=0
     with db:
+        resueltos={}
         for r in dedup:
             if r.get('clasificacion_registro')!='PROCEDIMIENTO':candidatos+=1;continue
             antecedente=o.antecedente_complementario(r,o.candidatos_complementarios(r,catalogo_previo))
@@ -195,8 +196,13 @@ def registrar(db,registros,informe):
                 k=(o.norm(r.get('provincia')),o.norm(r.get('organismo')),r.get('tipo_procedimiento'),r.get('url'),str(int(num_prev)))
                 posibles=sin_anio.get(k,[])
                 if len(posibles)==1:clave=posibles[0]
-            viejo=db.execute('SELECT dato,huella FROM procedimientos WHERE id=?',(clave,)).fetchone()
             identidades_anteriores[identidad_actual]=clave
+            # Las equivalencias históricas se resuelven después de deduplicar.
+            # Consolidar todas sus evidencias antes de emitir un único evento.
+            resueltos[clave]=consolidar(resueltos.get(clave),r)
+        for clave,r in resueltos.items():
+            identidad_actual=o.identidad(r)
+            viejo=db.execute('SELECT dato,huella FROM procedimientos WHERE id=?',(clave,)).fetchone()
             anterior=json.loads(viejo[0]) if viejo else None
             dato=consolidar(anterior,r);firma=huella(dato);cambios=[]
             if not viejo:

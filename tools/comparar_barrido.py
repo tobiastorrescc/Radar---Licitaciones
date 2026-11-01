@@ -11,6 +11,9 @@ from tools.respaldo_piloto import restaurar
 def comparar(antes,despues,catalogo):
     previos={o.identidad(r) for r in catalogo}|set(inc.cargar_indice_auditorias());urls={(r.get('url'),o.procedimiento_canonico(r) or o.norm(r.get('titulo'))) for r in catalogo}
     anteriores={o.identidad(r) for r in antes['registros']}
+    # El texto mejorado no convierte un documento ya observado en hallazgo histórico.
+    literal=lambda r:(r.get('url'),o.norm(r.get('organismo')),o.norm(r.get('provincia')),o.norm(r.get('tipo_procedimiento')),r.get('numero_procedimiento'))
+    literales={literal(r) for r in catalogo if r.get('numero_procedimiento')}
     salida=[];publicaciones={};indice=o.indice_complementarias(catalogo)
     for r in despues['registros']:
         if r.get('clasificacion_registro')!='PROCEDIMIENTO':continue
@@ -19,7 +22,7 @@ def comparar(antes,despues,catalogo):
     for r in publicaciones.values():
         if r.get('clasificacion_registro')!='PROCEDIMIENTO':continue
         antecedente=o.antecedente_complementario(r,o.candidatos_complementarios(r,indice))
-        conocida=bool(antecedente) or o.identidad(r) in previos or (r.get('url'),o.procedimiento_canonico(r) or o.norm(r.get('titulo'))) in urls
+        conocida=bool(r.get('numero_procedimiento') and literal(r) in literales) or bool(antecedente) or o.identidad(r) in previos or (r.get('url'),o.procedimiento_canonico(r) or o.norm(r.get('titulo'))) in urls
         categoria=('VIGENTE_YA_CONOCIDA' if conocida else 'VIGENTE_NUEVA_PARA_RADAR') if r.get('vigencia')=='ABIERTA' else 'HISTORICA_RECUPERADA' if r.get('vigencia')=='VENCIDA' and not conocida else 'FECHA_O_VIGENCIA_PENDIENTE' if not conocida else 'YA_CONOCIDA_NO_ABIERTA'
         salida.append({**r,'comparacion_categoria':categoria,'detectada_barrido_inicial':o.identidad(r) in anteriores,'ya_catalogada':conocida})
     return {'categorias':dict(Counter(r['comparacion_categoria'] for r in salida)),'antes':len(antes['registros']),'despues':len(despues['registros']),'oportunidades':salida}
