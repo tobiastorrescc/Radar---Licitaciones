@@ -1,0 +1,22 @@
+{
+  "categorias": {
+    "YA_CONOCIDA_NO_ABIERTA": 2499,
+    "VIGENTE_YA_CONOCIDA": 94,
+    "FECHA_O_VIGENCIA_PENDIENTE": 1,
+    "HISTORICA_RECUPERADA": 2
+  },
+  "informe": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/barrido-comparativo/piloto/ejecuciones/20261101T010254-4b3a24cc/reporte_diario.md",
+  "produccion_intacta": true,
+  "respaldo_intacto": true,
+  "ocr_nuevo": 0,
+  "consultas_adicionales": 0,
+  "capturas_complementarias": [
+    "work/barrido-intermedio/work/barrido/resultado.json",
+    "work/barrido-regresion/work/barrido/resultado.json",
+    "work/recuperacion-inicial/work/barrido/resultado.json",
+    "work/recuperacion-navegacion/work/barrido/resultado.json",
+    "work/referencias-historicas/work/barrido/resultado.json"
+  ],
+  "fuentes_comparadas": 52,
+  "alcance": "Sólo fuentes del barrido; no es una ejecución completa de todos los organismos"
+}

@@ -1,0 +1,24 @@
+{
+  "github_run": 41271437311,
+  "primera": {
+    "clasificacion": {
+      "SIN_CAMBIOS": 2490,
+      "NUEVA_DETECCION_FECHA_DESCONOCIDA": 28,
+      "RECUPERACION_LINEA_BASE": 21,
+      "DATOS_COMPLETADOS": 10,
+      "MODIFICADO": 49
+    },
+    "novedades": 87,
+    "eventos_emitidos": 108,
+    "total_historial": 5849,
+    "total_nuevas_confirmadas": 0
+  },
+  "segunda": {
+    "clasificacion": {
+      "SIN_CAMBIOS": 2598
+    },
+    "novedades": 0,
+    "eventos_emitidos": 0,
+    "total_historial": 5849
+  }
+}
