@@ -1,20 +1,94 @@
 {
-  "etapa": "validar-consolidacion-y-separadores-de-boletin-sin-nuevas-consultas",
-  "inventariar_historial": false,
-  "barrido": false,
-  "barrido_manifest": "inventario/barrido_fuentes_historicas.json",
-  "barrido_por_fuente": 90,
-  "sondear": false,
-  "urls_sondeo": [],
+  "etapa": "diagnostico-vigentes-acceso-alternativo-y-23-rutas",
+  "sondear": true,
+  "urls_sondeo": [
+    "https://www.santafe.gob.ar/boletinoficial/recursos/boletines/pdf/2026/10/BO30102026.pdf",
+    "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/pdf/2026/10/BO30102026.pdf",
+    "https://www.santafe.gob.ar/boletinoficial/ver.php?seccion=2026%2F2026-10-30licitaciones.html",
+    "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026/2026-10-29licitaciones.html",
+    "https://www.santafe.gob.ar/boletinoficial/verPdf.php?archivo=recursos%2Fboletines%2Fpdf%2F2026%2F10%2FBO30102026.pdf",
+    "https://www.santafe.gov.ar/gestionesdecompras/",
+    "https://compras.santafe.gob.ar/",
+    "https://compras.santafe.gov.ar/",
+    "https://www.epe.santafe.gov.ar/app2/aperturas",
+    "https://epe.santafe.gov.ar/app2/compras",
+    "https://compras.unr.edu.ar/",
+    "https://sanjose.gob.ar/concursos-licitaciones/",
+    "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/"
+  ],
+  "peticiones": [
+    {
+      "url": "https://www.santafe.gob.ar/boletinoficial/recursos/boletines/pdf/2026/10/BO30102026.pdf",
+      "transporte": "curl",
+      "tls_max": "1.2"
+    },
+    {
+      "url": "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/pdf/2026/10/BO30102026.pdf",
+      "transporte": "curl",
+      "tls_max": "1.2"
+    },
+    {
+      "url": "https://www.santafe.gob.ar/boletinoficial/ver.php?seccion=2026%2F2026-10-30licitaciones.html",
+      "transporte": "curl",
+      "tls_max": "1.2"
+    },
+    {
+      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026/2026-10-29licitaciones.html",
+      "transporte": "curl",
+      "tls_max": "1.2"
+    },
+    {
+      "url": "https://www.santafe.gob.ar/boletinoficial/verPdf.php?archivo=recursos%2Fboletines%2Fpdf%2F2026%2F10%2FBO30102026.pdf",
+      "transporte": "curl",
+      "tls_max": "1.2"
+    },
+    {
+      "url": "https://www.santafe.gov.ar/gestionesdecompras/",
+      "transporte": "curl",
+      "tls_max": "1.2"
+    },
+    {
+      "url": "https://compras.santafe.gob.ar/",
+      "transporte": "curl",
+      "tls_max": "1.2"
+    },
+    {
+      "url": "https://compras.santafe.gov.ar/",
+      "transporte": "curl",
+      "tls_max": "1.2"
+    },
+    {
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "transporte": "curl",
+      "tls_max": "1.2"
+    },
+    {
+      "url": "https://epe.santafe.gov.ar/app2/compras",
+      "transporte": "curl",
+      "tls_max": "1.2"
+    },
+    {
+      "url": "https://compras.unr.edu.ar/",
+      "transporte": "curl",
+      "tls_max": "1.2"
+    },
+    {
+      "url": "https://sanjose.gob.ar/concursos-licitaciones/",
+      "transporte": "curl",
+      "tls_max": "1.2"
+    },
+    {
+      "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+      "transporte": "curl",
+      "tls_max": "1.2"
+    }
+  ],
+  "barrido": true,
+  "barrido_manifest": "inventario/recuperacion_vigentes.json",
+  "barrido_por_fuente": 75,
+  "validar_rutas": true,
   "auditar": false,
   "descubrir": false,
   "reverificar_ids": [],
-  "archivar_auditoria": false,
-  "barrido_ids": [
-    "referencia-14",
-    "control-sibom-ramallo"
-  ],
-  "comparar_barrido_run": "41270714736",
-  "comparar_base_run": "41266487895",
-  "entrega_recuperacion": false
+  "archivar_auditoria": false
 }
