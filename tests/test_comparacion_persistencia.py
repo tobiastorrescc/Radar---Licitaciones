@@ -55,6 +55,13 @@ class EvidenciasHistoricasConvergentes(unittest.TestCase):
             finally:db.close()
 
 class ComparacionLiteral(unittest.TestCase):
+    def test_guion_final_del_encabezado_no_crea_otro_organismo(self):
+        import oportunidades as o
+        base={'organismo':'Municipalidad de Seguí','provincia':'Entre Ríos','numero_procedimiento':'9/2026','tipo_procedimiento':'licitacion publica'}
+        self.assertEqual(o.identidad(base),o.identidad({**base,'organismo':'MUNICIPALIDAD DE SEGUÍ-'}))
+        self.assertNotEqual(o.identidad(base),o.identidad({**base,'provincia':'Santa Fe'}))
+        self.assertNotEqual(o.identidad(base),o.identidad({**base,'organismo':'Municipalidad de Viale'}))
+
     def test_texto_mejorado_no_es_hallazgo_y_mismo_numero_en_otro_documento_no_se_oculta(self):
         import oportunidades as o
         base={'organismo':'Municipalidad de Arrecifes','provincia':'Buenos Aires','numero_procedimiento':'3','tipo_procedimiento':'licitacion publica','url':'https://arrecifes.gob.ar/2024/3.docx','titulo':'Licitación Pública 3','objeto':'Explotación del balneario municipal','registro_estructurado':False}

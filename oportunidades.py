@@ -298,7 +298,8 @@ def convocatoria(r):
 
 def identidad(r):
     proc=procedimiento_canonico(r)
-    org=norm(r.get('organismo'))
+    # Separador de encabezado de boletín, no parte del nombre institucional.
+    org=norm(r.get('organismo')).rstrip(' -–—:;')
     if proc:
         partes=[norm(r.get('provincia')),org or r.get('fuente',''),proc,convocatoria(r),r.get('identidad_ambito','')]
     elif r.get('registro_estructurado') and r.get('numero_oficial_sin_interpretar') and r.get('evidencia_url'):

@@ -1,0 +1,9 @@
+{
+  "categorias": {
+    "VIGENTE_YA_CONOCIDA": 65,
+    "YA_CONOCIDA_NO_ABIERTA": 606,
+    "HISTORICA_RECUPERADA": 1
+  },
+  "antes": 5460,
+  "despues": 709
+}

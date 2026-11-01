@@ -1,0 +1,40 @@
+{
+  "head": "1c934622db45685cf1fb0be4b9b97124c80518cc",
+  "commits_alcanzables": 207,
+  "referencias_git": [
+    "1c934622db45685cf1fb0be4b9b97124c80518cc refs/heads/mejora/radar-auditable",
+    "dfca1a52c5371929ce6c07741a88fd209a7da852 refs/remotes/origin/main",
+    "1c934622db45685cf1fb0be4b9b97124c80518cc refs/remotes/origin/mejora/radar-auditable"
+  ],
+  "blobs_texto_revisados": 809,
+  "bytes_revisados": 65156268,
+  "urls_oficiales": 8870,
+  "por_tipo": {
+    "DOCUMENTO": 4689,
+    "REFERENCIA_INSTITUCIONAL": 783,
+    "PORTAL_O_SECCION": 1433,
+    "AVISO_O_BOLETIN_INTERNO": 507,
+    "AVISO_O_LISTADO_CON_PROCEDIMIENTOS": 1458
+  },
+  "referencias_solicitadas": 14,
+  "configuradas": 80,
+  "omitidos": [],
+  "ilegibles": [
+    {
+      "sha": "30730e1c45c8d854b7cf2ac4f10cdb5e9e002dd9",
+      "path": "inventario/historial_auditorias.json.gz.b64",
+      "tipo": "error"
+    }
+  ],
+  "segundos": 2.82,
+  "advertencia": "Completo sobre objetos alcanzables y textos legibles enumerados. No incluye mensajes manuales fuera de Git ni historia borrada/inaccesible. URL inventariada no demuestra extracción. Registros históricos asociados no son oportunidades nuevas ni vigencias comprobadas.",
+  "estados_actuales": {
+    "PENDIENTE_VALIDACION_ACTUAL": 8856,
+    "TIEMPO_FUENTE": 3,
+    "OPERATIVA": 4,
+    "BLOQUEADA": 7
+  },
+  "candidatas_para_validacion": 23,
+  "organismos_identificados": 121,
+  "advertencia_adicional": "URLs incluyen documentos, avisos y referencias; no equivalen a organismos ni a portales operativos. Metadatos históricos pueden ser candidatos erróneos. Fuentes no probadas quedan pendientes."
+}

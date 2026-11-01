@@ -1,5 +1,5 @@
 {
-  "etapa": "consolidar-evidencias-antes-de-persistir-y-validar-segunda-pasada",
+  "etapa": "validar-consolidacion-y-separadores-de-boletin-sin-nuevas-consultas",
   "inventariar_historial": false,
   "barrido": false,
   "barrido_manifest": "inventario/barrido_fuentes_historicas.json",
