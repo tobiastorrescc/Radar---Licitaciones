@@ -1,0 +1,131 @@
+{
+  "fecha": "2026-11-01",
+  "alcance": "Muestra dirigida de 8 avisos oficiales en tres jurisdicciones. No censo territorial ni cobertura exhaustiva. Lectura web1novUTC/31octAR; PDFER reutilizados de auditoría31oct sin OCR.",
+  "revisiones": [
+    {
+      "organismo": "San Nicolás",
+      "url": "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos",
+      "resultado": "Índice con descargas2018-2019; no demuestra cobertura de2026. Portal de compras delegado y publicaciones oficiales pendientes de extracción actual."
+    },
+    {
+      "organismo": "Ramayón / Boletín Santa Fe",
+      "url": "https://www.santafe.gov.ar/boletinoficial/",
+      "resultado": "Portal prioritario; timeout previo. No se declara vacío ni cubierto."
+    }
+  ],
+  "publicaciones": [
+    {
+      "id_control": "sf-unr5",
+      "organismo": "Universidad Nacional de Rosario",
+      "provincia": "Santa Fe",
+      "numero_procedimiento": "5/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": "Aulas 2° Piso Nido1 – EtapaII – Escuela Preuniversitaria de Ciencias Sociales y Humanísticas",
+      "url": "https://unr.edu.ar/convocatoria-licitacion-publica-n-5-2026-aulas-2-piso-escuela-preuniversitaria-de-ciencias-sociales-y-humanisticas/",
+      "evidencia_url": "https://unr.edu.ar/convocatoria-licitacion-publica-n-5-2026-aulas-2-piso-escuela-preuniversitaria-de-ciencias-sociales-y-humanisticas/",
+      "fecha_revision": "2026-10-31",
+      "comprobada": true,
+      "fecha_apertura": "2026-11-04",
+      "fecha_publicacion": "2026-10-02"
+    },
+    {
+      "id_control": "sf-cdg-nomencladores",
+      "organismo": "Municipalidad de Cañada de Gómez",
+      "provincia": "Santa Fe",
+      "numero_procedimiento": null,
+      "tipo_procedimiento": "concurso de precios",
+      "objeto": "nomencladores urbanos",
+      "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+      "evidencia_url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+      "fecha_revision": "2026-10-31",
+      "comprobada": true,
+      "fecha_apertura": "2026-11-10",
+      "fecha_limite_presentacion": "2026-11-10",
+      "numero_norma": "Decreto7839/26: no es número de procedimiento"
+    },
+    {
+      "id_control": "sf-ramayon1",
+      "organismo": "Comuna de Ramayón",
+      "provincia": "Santa Fe",
+      "numero_procedimiento": "1/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": "Un tractor nuevo0km",
+      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-09-18licitaciones.html",
+      "evidencia_url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-09-18licitaciones.html",
+      "fecha_revision": "2026-10-31",
+      "comprobada": true,
+      "fecha_apertura": "2026-10-08",
+      "historica": true,
+      "metodo": "Aviso oficial de control previo, contrastado con índice web; acceso del conector pendiente"
+    },
+    {
+      "id_control": "er-segui9",
+      "organismo": "Municipalidad de Seguí",
+      "provincia": "Entre Ríos",
+      "numero_procedimiento": "9/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": "Una máquina retroexcavadora0km",
+      "url": "https://www.segui.gob.ar/sitio/wp-content/uploads/2025/01/MUNICIPALIDAD-DE-SEGUI-Pliegos-Lic-Publica-09-2026-1.pdf",
+      "evidencia_url": "https://www.segui.gob.ar/sitio/wp-content/uploads/2025/01/MUNICIPALIDAD-DE-SEGUI-Pliegos-Lic-Publica-09-2026-1.pdf",
+      "fecha_revision": "2026-10-31",
+      "comprobada": true,
+      "fecha_apertura": "2026-11-03",
+      "metodo": "Texto documental nativo de Actions41236909527 reutilizado"
+    },
+    {
+      "id_control": "er-pingo2",
+      "organismo": "Municipalidad de El Pingo",
+      "provincia": "Entre Ríos",
+      "numero_procedimiento": "2/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": "Dos garitas de colectivos",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf",
+      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf",
+      "fecha_revision": "2026-10-31",
+      "comprobada": true,
+      "fecha_apertura": "2026-11-11",
+      "metodo": "Texto documental nativo de Actions41236909527 reutilizado"
+    },
+    {
+      "id_control": "ba-colon11",
+      "organismo": "Municipalidad de Colón",
+      "provincia": "Buenos Aires",
+      "numero_procedimiento": "11/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": null,
+      "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+      "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+      "fecha_revision": "2026-10-31",
+      "comprobada": true,
+      "fecha_publicacion": "2026-10-19",
+      "objeto_pendiente": "Aviso en imagen; número y publicación enHTML comprobados. No se repite OCR.",
+      "documento": "https://www.municipalidadcolonpba.gob.ar/edictos/licitacion_11-2026.jpg"
+    },
+    {
+      "id_control": "ba-baradero1",
+      "organismo": "Municipalidad de Baradero",
+      "provincia": "Buenos Aires",
+      "numero_procedimiento": "1/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": null,
+      "url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica",
+      "evidencia_url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica",
+      "fecha_revision": "2026-10-31",
+      "comprobada": true,
+      "objeto_pendiente": "Identificador en índice oficial; objeto, vigencia y ficha pendientes de contraste manual adicional."
+    },
+    {
+      "id_control": "ba-rojas7",
+      "organismo": "Municipalidad de Rojas",
+      "provincia": "Buenos Aires",
+      "numero_procedimiento": "7/2021",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": "Pavimento asfáltico en avenida Bicentenario, San Martín y Las Heras",
+      "url": "https://transparencia.rojas.gov.ar/index.php?action=17",
+      "evidencia_url": "https://transparencia.rojas.gov.ar/index.php?action=17",
+      "fecha_revision": "2026-10-31",
+      "comprobada": true,
+      "historica": true
+    }
+  ]
+}

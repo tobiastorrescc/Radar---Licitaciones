@@ -36,6 +36,10 @@ jobs:
           comparar=str(d.get('comparar_barrido_run',''))
           if comparar and not comparar.isdigit():raise ValueError('Run comparativo inválido')
           print('comparar_barrido_run='+comparar)
+          base=str(d.get('comparar_base_run','41213570935'))
+          if not base.isdigit():raise ValueError('Línea de base inválida')
+          print('comparar_base_run='+base)
+          print('entrega_recuperacion='+str(d.get('entrega_recuperacion',True)).lower())
           pagos=str(d.get('pagos_run',''))
           if pagos and not pagos.isdigit():raise ValueError('Run de pagos inválido')
           print('pagos_run='+pagos)
@@ -102,19 +106,19 @@ jobs:
           path: work/barrido-regresion
           run-id: 41211936296
           github-token: ${{ github.token }}
-      - name: Validar línea de base publicada bd28813
+      - name: Validar línea de base publicada de la rama
         if: steps.plan.outputs.comparar_barrido_run != ''
         uses: actions/github-script@v7
         with:
           script: |
-            const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:41213570935});
+            const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:Number('${{ steps.plan.outputs.comparar_base_run }}')});
             if(r.conclusion!=='success'||r.head_branch!=='mejora/radar-auditable'||r.head_repository.full_name!==`${context.repo.owner}/${context.repo.repo}`||r.path!=='.github/workflows/mejorar-cobertura.yml')throw Error('Línea de base inválida');
       - uses: actions/download-artifact@v4
         if: steps.plan.outputs.comparar_barrido_run != ''
         with:
-          name: cobertura-41213570935
+          name: cobertura-${{ steps.plan.outputs.comparar_base_run }}
           path: work/base-bd28813
-          run-id: 41213570935
+          run-id: ${{ steps.plan.outputs.comparar_base_run }}
           github-token: ${{ github.token }}
       - uses: actions/download-artifact@v4
         if: steps.plan.outputs.comparar_barrido_run != ''
@@ -140,7 +144,7 @@ jobs:
           if test -f work/barrido/resultado.json; then DESPUES=work/barrido/resultado.json; fi
           python -u tools/comparar_barrido.py --base-auditada --antes work/barrido-anterior/work/barrido/resultado.json --despues "$DESPUES" --catalogo "$CATALOGO_BASE" --salida work/barrido-comparativo --complemento work/barrido-intermedio/work/barrido/resultado.json --complemento work/barrido-regresion/work/barrido/resultado.json --complemento work/recuperacion-inicial/work/barrido/resultado.json --complemento work/recuperacion-navegacion/work/barrido/resultado.json
       - name: Entrega completa del lote de recuperación sin nuevas consultas
-        if: steps.plan.outputs.comparar_barrido_run != ''
+        if: steps.plan.outputs.comparar_barrido_run != '' && steps.plan.outputs.entrega_recuperacion == 'true'
         run: |
           CATALOGO_BASE=$(find work/base-bd28813/work/barrido-comparativo/piloto/ejecuciones -name catalogo_completo.json | sort | tail -1)
           CAPTURA=work/barrido-captura/work/barrido/resultado.json

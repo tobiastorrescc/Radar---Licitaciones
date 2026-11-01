@@ -36,9 +36,9 @@ def preparar(directorio,salida=None):
           'aviso':'No hay novedades confirmadas no significa ausencia de licitaciones si hay incidencias. Detecciones sin fecha no son publicaciones nuevas comprobadas.'}
     (destino/'resumen.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2)+'\n')
     (destino/'oportunidades.json').write_text(json.dumps({'resumen':meta,'grupos':grupos},ensure_ascii=False,indent=2)+'\n')
-    for nombre in ('cola_enriquecimiento.json','fichas.json','cola_documental.json','observaciones_previas_sin_revalidar.json','fichas_abiertas.md','oportunidades_abiertas.md','oportunidades_proximas_a_vencer.md'):
+    for nombre in ('metricas_territoriales.json','auditoria_manual.json','cola_enriquecimiento.json','fichas.json','cola_documental.json','observaciones_previas_sin_revalidar.json','fichas_abiertas.md','oportunidades_abiertas.md','oportunidades_proximas_a_vencer.md'):
         if (root/nombre).exists():shutil.copy2(root/nombre,destino/nombre)
-    campos=['etiqueta_novedad','primera_deteccion','ultima_deteccion','detalle_documental','organismo','numero_procedimiento','objeto','presupuesto','condiciones_pago','enlace_condiciones_pago','fecha_publicacion','fecha_apertura','fecha_limite_presentacion','vigencia','modalidad_presentacion','url','enlace_pliego','clasificacion_novedad']
+    campos=['etiqueta_novedad','primera_deteccion','ultima_deteccion','detalle_documental','provincia','localidad','organismo','numero_procedimiento','objeto','presupuesto','condiciones_pago','enlace_condiciones_pago','fecha_publicacion','fecha_apertura','fecha_limite_presentacion','vigencia','modalidad_presentacion','url','enlace_pliego','clasificacion_novedad']
     with (destino/'oportunidades.csv').open('w',encoding='utf-8-sig',newline='') as archivo:
         w=csv.DictWriter(archivo,fieldnames=campos);w.writeheader()
         for r in reportadas:
@@ -49,6 +49,10 @@ def preparar(directorio,salida=None):
     lineas=['# Informe diario del piloto', '',f'Fecha: {fecha}. Estado: **{resumen["estado"]}**.','',meta['aviso'],'',
             f'Nuevas con publicación comprobada: {len(grupos["nuevas_confirmadas"])}. Detecciones de fecha incierta o mismo día: {len(grupos["detecciones_sin_fecha_o_mismo_dia"])}. Cambios: {len(grupos["cambios"])}. Recuperaciones: {total_recuperaciones}.','',
             '[CSV completo](oportunidades.csv) · [JSON completo](oportunidades.json). Sin límite de cantidad.']
+    territorial=root/'metricas_territoriales.json'
+    if territorial.exists():
+        from metricas_territoriales import markdown
+        lineas+=['',markdown(json.loads(territorial.read_text()))]
     if enlace:lineas+=['',f'[Auditoría, abiertas, próximas a vencer y catálogo íntegro]({enlace}) (artefacto radar-controlado).']
     for nombre,datos in grupos.items():
         titulo='Primera detección, fecha pendiente o sin ventana horaria suficiente' if nombre=='detecciones_sin_fecha_o_mismo_dia' else 'Modificaciones, circulares y datos completados' if nombre=='cambios' else nombre.replace('_',' ').capitalize()

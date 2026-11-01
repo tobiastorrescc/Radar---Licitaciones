@@ -71,6 +71,13 @@ def generar_informe(db,resumen,registros,fuentes,destino):
     resumen={**resumen,'procedimientos_unicos_catalogo':len(actuales),'duplicados_historicos_unificados':resumen['total_historial']-len(actuales),'abiertas':len(vistas['abiertas']),'proximas_a_vencer':len(vistas['proximas_a_vencer']),
         'no_observadas_en_corrida':sum(not r['observada_esta_corrida'] for r in actuales),'cobertura_estricta':dict(Counter(f['estado_cobertura'] for f in fuentes)),
         'condiciones_pago':__import__('pagos').resumen(actuales)}
+    import metricas_territoriales as mt
+    manual_path=Path('inventario/auditoria_manual_tres_provincias.json')
+    manual=json.loads(manual_path.read_text()) if manual_path.exists() else None
+    metricas=mt.generar(db,actuales,eventos,fuentes,fecha,manual)
+    guardar(destino/'metricas_territoriales.json',metricas)
+    guardar(destino/'auditoria_manual.json',metricas['auditoria_manual'])
+    resumen['total_nuevas_confirmadas']=metricas['total_nuevas_confirmadas']
     guardar(destino/'resumen.json',resumen)
     from tools.preparar_entrega import preparar
     preparar(destino)
@@ -83,6 +90,7 @@ def generar_informe(db,resumen,registros,fuentes,destino):
     for tipo in sorted({e['clasificacion_novedad'] for e in eventos}):
         if tipo=='LINEA_BASE':continue # Todas las filas están en el catálogo, sin alertar miles de antiguas.
         lineas+=['',f'## {tipo}','',o.reporte([r for r in eventos if r['clasificacion_novedad']==tipo],fecha)]
+    lineas+=['',mt.markdown(metricas)]
     (destino/'reporte_diario.md').write_text('\n'.join(lineas)+'\n',encoding='utf-8')
     filas=[]
     for r in actuales:
@@ -102,6 +110,7 @@ def generar_informe(db,resumen,registros,fuentes,destino):
         filas.append('<tr>'+''.join('<td>'+v+'</td>' for v in valores)+'</tr>')
     titulos=['Organismo / procedimiento','Objeto','Detección','Vigencia','Publicación','Apertura','Límite de presentación','Presupuesto','Presentación','Pago','Documento de pago','Pliego','Señales','Última consulta']
     html='<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Radar controlado</title><style>body{font:16px system-ui;margin:2rem;color:#172b4d}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccd;padding:.5rem;text-align:left;vertical-align:top}th{background:#edf3fa;position:sticky;top:0}input{font:inherit;padding:.6rem;width:min(90%,50rem)}td:nth-child(2){min-width:20rem;white-space:pre-wrap}a{color:#1254ad}</style>'
+    html+= '<p><a href="metricas_territoriales.json">Total diario y desglose de las tres jurisdicciones</a> · <a href="auditoria_manual.json">Omisiones de la muestra auditada</a></p>'
     html+=f'<h1>Radar controlado</h1><p>{escape(fecha)} · {escape(resumen["estado"])} · {escape(resumen["mensaje"])}</p><p>{resumen["total_historial"]} registros, {resumen["novedades"]} novedades/cambios, {resumen["abiertas"]} abiertas y {resumen["proximas_a_vencer"]} próximas a vencer. Sin filtros comerciales ni límite de cantidad.</p><p>Los registros no observados hoy se conservan; su vigencia calculada requiere confirmar nuevamente la fuente.</p><input id="buscar" aria-label="Buscar" placeholder="Buscar organismo, objeto, pago o estado"><p><a href="reporte_diario.md">Informe diario</a> · <a href="eventos.json">Eventos JSON</a> · <a href="catalogo_completo.json">Catálogo JSON</a> · <a href="fichas.json">Fichas completas</a> · <a href="cola_documental.json">Cola documental</a></p><div style="overflow:auto"><table><thead><tr>'+''.join('<th>'+t+'</th>' for t in titulos)+'</tr></thead><tbody>'+''.join(filas)+'</tbody></table></div>'
     html+='<p><a href="entrega/informe.md">Novedades y cambios separados</a> · <a href="entrega/oportunidades.csv">CSV íntegro</a> · <a href="entrega/informe.eml">Correo preparado sin enviar</a></p><script>document.getElementById("buscar").addEventListener("input",function(){const q=this.value.toLocaleLowerCase();document.querySelectorAll("tbody tr").forEach(r=>r.hidden=!r.textContent.toLocaleLowerCase().includes(q));});</script></html>'
     (destino/'index.html').write_text(html,encoding='utf-8')
@@ -122,7 +131,8 @@ def _ejecutar_corrida(raiz,*,total=600,documentos=120,informe_previo=None):
     fuentes=[]
     for obs in informe['observaciones']:
         filas=[r for r in registros if obs['url'] in inc.fuentes_de(r)]
-        fuentes.append({**obs,'estado_cobertura':estado_cobertura(obs,filas)})
+        metadata=next((f for f in config if f['url']==obs['url']),{})
+        fuentes.append({**{k:metadata.get(k) for k in ('organismo','localidad','provincia')},**obs,'estado_cobertura':estado_cobertura(obs,filas)})
     informe={**informe,'observaciones':fuentes}
     guardar(carpeta/'auditoria_fuentes.json',{'fuentes':fuentes})
     db=inc.abrir(raiz/'estado.sqlite3')

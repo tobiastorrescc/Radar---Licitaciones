@@ -1,16 +1,11 @@
 {
-  "etapa": "repeticion-con-indice-completo-validado-por-hash",
-  "barrido": false,
-  "barrido_manifest": "inventario/recuperacion_fuentes.json",
-  "barrido_ids": [
-    "fuente-061",
-    "candidato-segui"
-  ],
-  "barrido_por_fuente": 90,
+  "etapa": "medir-descubrimiento-conjunto-tres-jurisdicciones",
+  "barrido": true,
+  "barrido_manifest": "inventario/barrido_tres_provincias.json",
+  "barrido_por_fuente": 75,
   "sondear": false,
   "auditar": false,
   "descubrir": false,
   "reverificar_ids": [],
-  "archivar_auditoria": false,
-  "comparar_barrido_run": "41236909527"
+  "archivar_auditoria": false
 }

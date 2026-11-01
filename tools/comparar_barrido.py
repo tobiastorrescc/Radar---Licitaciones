@@ -49,7 +49,7 @@ def main():
     if a.base_auditada:
         # Copia de trabajo: todas las observaciones de la auditoría anterior ya son conocidas.
         db=inc.abrir(piloto/'estado.sqlite3')
-        try:inc.registrar(db,cat,{**informe,'ejecucion_id':'base-auditada-bd28813','observaciones':[]})
+        try:inc.registrar(db,cat,{**informe,'ejecucion_id':'base-auditada-'+sha256(json.dumps(cat,sort_keys=True).encode()).hexdigest()[:16],'observaciones':[]})
         finally:db.close()
     primera,carpeta,_,_=ejecutar_corrida(piloto,informe_previo={**informe,'ejecucion_id':informe['ejecucion_id']+'-comparativo'})
     segunda,_,_,_=ejecutar_corrida(piloto,informe_previo={**informe,'ejecucion_id':informe['ejecucion_id']+'-repeticion'})

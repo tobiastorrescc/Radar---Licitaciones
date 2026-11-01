@@ -1,0 +1,39 @@
+{
+  "fecha": "2026-11-01",
+  "fuentes": [
+    {
+      "id": "fuente-060"
+    },
+    {
+      "id": "fuente-002"
+    },
+    {
+      "id": "fuente-003"
+    },
+    {
+      "id": "fuente-010"
+    },
+    {
+      "id": "fuente-079"
+    },
+    {
+      "id": "fuente-061"
+    },
+    {
+      "id": "fuente-082"
+    },
+    {
+      "id": "fuente-046"
+    },
+    {
+      "id": "fuente-051"
+    },
+    {
+      "id": "fuente-059"
+    },
+    {
+      "id": "fuente-052"
+    }
+  ],
+  "alcance": "Lote comparativo en las tres jurisdicciones; las demás fuentes se conservan en el piloto diario."
+}
