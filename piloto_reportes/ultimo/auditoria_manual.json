@@ -1,0 +1,199 @@
+{
+  "alcance": "Muestra dirigida de 8 avisos oficiales en tres jurisdicciones. No censo territorial ni cobertura exhaustiva. Lectura web1novUTC/31octAR; PDFER reutilizados de auditoría31oct sin OCR.",
+  "revisiones": [
+    {
+      "organismo": "San Nicolás",
+      "url": "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos",
+      "resultado": "Índice con descargas2018-2019; no demuestra cobertura de2026. Portal de compras delegado y publicaciones oficiales pendientes de extracción actual."
+    },
+    {
+      "organismo": "Ramayón / Boletín Santa Fe",
+      "url": "https://www.santafe.gov.ar/boletinoficial/",
+      "resultado": "Portal prioritario; timeout previo. No se declara vacío ni cubierto."
+    }
+  ],
+  "publicaciones": [
+    {
+      "id_control": "sf-unr5",
+      "organismo": "Universidad Nacional de Rosario",
+      "provincia": "Santa Fe",
+      "numero_procedimiento": "5/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": "Aulas 2° Piso Nido1 – EtapaII – Escuela Preuniversitaria de Ciencias Sociales y Humanísticas",
+      "url": "https://unr.edu.ar/convocatoria-licitacion-publica-n-5-2026-aulas-2-piso-escuela-preuniversitaria-de-ciencias-sociales-y-humanisticas/",
+      "evidencia_url": "https://unr.edu.ar/convocatoria-licitacion-publica-n-5-2026-aulas-2-piso-escuela-preuniversitaria-de-ciencias-sociales-y-humanisticas/",
+      "fecha_revision": "2026-10-31",
+      "comprobada": true,
+      "fecha_apertura": "2026-11-04",
+      "fecha_publicacion": "2026-10-02",
+      "organismo_aliases": [
+        "UNR"
+      ],
+      "resultado": "DETECTADA",
+      "evidencia_reciente": true,
+      "ids_radar": [
+        "8f1264cb9e8e2543fb19ceafe6fcc66216099de58da45d753962df502950c630"
+      ]
+    },
+    {
+      "id_control": "sf-cdg-nomencladores",
+      "organismo": "Municipalidad de Cañada de Gómez",
+      "provincia": "Santa Fe",
+      "numero_procedimiento": null,
+      "tipo_procedimiento": "concurso de precios",
+      "objeto": "nomencladores urbanos",
+      "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+      "evidencia_url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+      "fecha_revision": "2026-10-31",
+      "comprobada": true,
+      "fecha_apertura": "2026-11-10",
+      "fecha_limite_presentacion": "2026-11-10",
+      "numero_norma": "Decreto7839/26: no es número de procedimiento",
+      "resultado": "OMITIDA",
+      "evidencia_reciente": true,
+      "ids_radar": []
+    },
+    {
+      "id_control": "sf-ramayon1",
+      "organismo": "Comuna de Ramayón",
+      "provincia": "Santa Fe",
+      "numero_procedimiento": "1/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": "Un tractor nuevo0km",
+      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-09-18licitaciones.html",
+      "evidencia_url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-09-18licitaciones.html",
+      "fecha_revision": "2026-10-31",
+      "comprobada": true,
+      "fecha_apertura": "2026-10-08",
+      "historica": true,
+      "metodo": "Aviso oficial de control previo, contrastado con índice web; acceso del conector pendiente",
+      "resultado": "OMITIDA",
+      "evidencia_reciente": true,
+      "ids_radar": []
+    },
+    {
+      "id_control": "er-segui9",
+      "organismo": "Municipalidad de Seguí",
+      "provincia": "Entre Ríos",
+      "numero_procedimiento": "9/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": "Una máquina retroexcavadora0km",
+      "url": "https://www.segui.gob.ar/sitio/wp-content/uploads/2025/01/MUNICIPALIDAD-DE-SEGUI-Pliegos-Lic-Publica-09-2026-1.pdf",
+      "evidencia_url": "https://www.segui.gob.ar/sitio/wp-content/uploads/2025/01/MUNICIPALIDAD-DE-SEGUI-Pliegos-Lic-Publica-09-2026-1.pdf",
+      "fecha_revision": "2026-10-31",
+      "comprobada": true,
+      "fecha_apertura": "2026-11-03",
+      "metodo": "Texto documental nativo de Actions41236909527 reutilizado",
+      "resultado": "DETECTADA",
+      "evidencia_reciente": true,
+      "ids_radar": [
+        "7f0a1207ea77750368133f8211b89684f86990d8b04877ee68764b7306f9b0b5"
+      ]
+    },
+    {
+      "id_control": "er-pingo2",
+      "organismo": "Municipalidad de El Pingo",
+      "provincia": "Entre Ríos",
+      "numero_procedimiento": "2/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": "Dos garitas de colectivos",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf",
+      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf",
+      "fecha_revision": "2026-10-31",
+      "comprobada": true,
+      "fecha_apertura": "2026-11-11",
+      "metodo": "Texto documental nativo de Actions41236909527 reutilizado",
+      "resultado": "DETECTADA",
+      "evidencia_reciente": true,
+      "ids_radar": [
+        "55ceab9f32a2784713a5fecb88f0087020760299481dae607a981b7200b83c97"
+      ]
+    },
+    {
+      "id_control": "ba-colon11",
+      "organismo": "Municipalidad de Colón",
+      "provincia": "Buenos Aires",
+      "numero_procedimiento": "11/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": "Terminación de16 viviendas en Colón, expediente4024-218/2026",
+      "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+      "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+      "fecha_revision": "2026-10-31",
+      "comprobada": true,
+      "fecha_publicacion": "2026-10-19",
+      "documento": "https://www.municipalidadcolonpba.gob.ar/edictos/licitacion_11-2026.jpg",
+      "fecha_apertura": "2026-11-24",
+      "hora_apertura": "10:00",
+      "presupuesto_texto": "$333.031.337,04",
+      "evidencia_reutilizada_de": "Actions41237677685: texto OCR persistido del aviso licitacion_11-2026.jpg; sin volver a ejecutar OCR. Número y fecha de publicación contrastados enHTML oficial.",
+      "vigencia_documental_reutilizada": true,
+      "resultado": "DETECTADA",
+      "evidencia_reciente": true,
+      "ids_radar": [
+        "50c3ef5a782cb227a8e16db9fd04fa8c41aea101b480dee6ed755bce8e163c43"
+      ]
+    },
+    {
+      "id_control": "ba-baradero1",
+      "organismo": "Municipalidad de Baradero",
+      "provincia": "Buenos Aires",
+      "numero_procedimiento": "1/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": "Implementación del Servicio Alimentario Escolar y del programa MESA en Baradero, mayo a diciembre de2026",
+      "url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica",
+      "evidencia_url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica",
+      "fecha_revision": "2026-10-31",
+      "comprobada": true,
+      "evidencia_reutilizada_de": "Texto oficial conservado en Actions41237677685; índice2026 contrastado por web. Fecha de apertura desconocida.",
+      "resultado": "DETECTADA",
+      "evidencia_reciente": true,
+      "ids_radar": [
+        "5491983d5f157e43afa6d4e9e5e8dc020f7073453316d16eec6a592d6a863686"
+      ]
+    },
+    {
+      "id_control": "ba-rojas7",
+      "organismo": "Municipalidad de Rojas",
+      "provincia": "Buenos Aires",
+      "numero_procedimiento": "7/2021",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": "Pavimento asfáltico en avenida Bicentenario, San Martín y Las Heras",
+      "url": "https://transparencia.rojas.gov.ar/index.php?action=17",
+      "evidencia_url": "https://transparencia.rojas.gov.ar/index.php?action=17",
+      "fecha_revision": "2026-10-31",
+      "comprobada": true,
+      "historica": true,
+      "resultado": "DETECTADA",
+      "evidencia_reciente": true,
+      "ids_radar": [
+        "8a3fb4e52b6fa580522d840dcd674b30761d3fc4b7e49660554611689a110fb5"
+      ]
+    }
+  ],
+  "por_provincia": {
+    "Santa Fe": {
+      "comprobadas": 3,
+      "detectadas": 1,
+      "omitidas": 2,
+      "ambiguas": 0,
+      "omitidas_historicas": 1,
+      "omitidas_apertura_futura": 1
+    },
+    "Entre Ríos": {
+      "comprobadas": 2,
+      "detectadas": 2,
+      "omitidas": 0,
+      "ambiguas": 0,
+      "omitidas_historicas": 0,
+      "omitidas_apertura_futura": 0
+    },
+    "Buenos Aires": {
+      "comprobadas": 3,
+      "detectadas": 3,
+      "omitidas": 0,
+      "ambiguas": 0,
+      "omitidas_historicas": 0,
+      "omitidas_apertura_futura": 0
+    }
+  }
+}

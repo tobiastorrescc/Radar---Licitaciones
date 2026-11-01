@@ -1,6 +1,6 @@
 # Fichas completas de oportunidades abiertas
 
-Vigencia calculada a 2026-10-31T08:31:33.849077-03:00. Los datos pendientes no se completan por suposición.
+Vigencia calculada a 2026-11-01T08:31:08.968829-03:00. Los datos pendientes no se completan por suposición.
 
 ## Municipalidad de Chajarí — 19/2026
 
@@ -100,20 +100,20 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 ## IAFAS — 5/2026
 
-[Publicación oficial](https://www.iafas.gov.ar/proveedores/licitaciones/)
+[Publicación oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/23-10-26.pdf)
 
 - **Objeto**: La contratación del servicio de conexión corporativa a internet de las Salas y Casinos, el servicio de conexión corporativa a internet de IAFAS Central con una solución de seguridad perimetral y el servicio de revisión de vulnerabilidades (test de vulnerabilidades) , por el término de treinta y seis (36) meses.- (VERIFICADO).
 - **Productos alternativos**: [{"cantidad": 14, "cita": "provisión de 14 IPs públicas en lugar de las 6 solicitadas (Presentar como alternativa)", "pagina": 19, "producto": "IPs públicas en lugar de las 6 solicitadas (Presentar como alternativa)", "tipo_requerimiento": "ALTERNATIVA_PERMITIDA", "unidad": null}] (VERIFICADO).
   Respaldo: https://www.iafas.gov.ar/descargas/17685; página 19.
 - **Presupuesto**: Pendiente de verificar (PENDIENTE).
 - **Fecha publicacion**: 2026-10-22 (VERIFICADO).
-  Respaldo: https://www.iafas.gov.ar/proveedores/licitaciones/; página no identificada.
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/23-10-26.pdf; página no identificada.
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha apertura**: 2026-11-05 (VERIFICADO).
-  Respaldo: https://www.iafas.gov.ar/proveedores/licitaciones/; página no identificada.
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/23-10-26.pdf; página no identificada.
 - **Hora apertura**: 09:00 (VERIFICADO).
-  Respaldo: https://www.iafas.gov.ar/proveedores/licitaciones/; página no identificada.
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/23-10-26.pdf; página no identificada.
 - **Condiciones pago**: 30 días corridos desde recepción de la documentación correspondiente; exige entrega aceptada, factura y trámites administrativos; mensual a mes vencido (VERIFICADO).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -174,7 +174,6 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
 - **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
-  Respaldo: https://www.crespo.gob.ar/wp-content/uploads/2026/10/LICITACION-PUBLICA-No-06-26-Pliego.pdf; página no identificada.
 - **Garantias**: Pendiente de verificar (PENDIENTE).
 - **Requisitos**: Pendiente de verificar (PENDIENTE).
 - **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
@@ -253,7 +252,33 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
 - **Modalidad presentacion**: ["CORREO_ELECTRONICO"] (VERIFICADO).
-  Respaldo: https://aeropuertorosario.com/wp-content/uploads/2026/10/DOC-2026-00012875-APPSF-ODAeroRos.pdf; página no identificada.
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## Municipalidad de Basavilbaso — 3/2026
+
+[Publicación oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf)
+
+- **Objeto**: URUGUAY                                              MUNICIPIO DE BASAVI LBASO                                   Llam ado a Licitación Privada N° 03/2026 – D.E.M.B.   Convócase a Licitación Privada N° 03/2026 para la “ADQUISICIÓN DE MATERIAL BASE 0/30; Y TRASLADO DEL MISMO”, a ejecutarse en la ciudad de Basavilbaso, Dpto. Uruguay, Provincia de Entre Ríos.-   OBJETO: El objeto del presente llamado a Licitación Privada Nº 03/2026 es la adquisición de Mil Doscientas (1200) toneladas de Material Base 0/30 (Piedra partida), más el Traslado de dichos materiales desde cantera hasta la estación de carga de trenes de Yuquerí, Concordia, Provincia de Entre Ríos, para realizar acopio de la misma y destinarlo posteriormente al mejoramiento de calles de nuestra localidad de Basavilbaso.-   La adquisición de los materiales mencionados y traslado hasta Estación de tren mencionada se ejecutará con fondos propios del Municipio de Basavilbaso.-   PRESUPUESTO OFICIAL: Pesos Treinta y Nueve Millones Quinientos Mil con 00/100 ($ 39.500.000,00).-   FORMA DE PAGO: Se abonara en un plazo de 30 días, a contar de la fecha de presentación de Factura correspondiente.-   GARANTÍA DE OFERTA: Uno por ciento (1%) del valor total cotizado.-   APERTURA DE SOBRES: Jueves 12 de Noviembre de 2026 a las 08:00 horas, en la oficina de la Dirección de Asuntos Institucionales y Jurídicos del Municipio, o el día hábil siguiente en la misma hora si el fijado resultare inhábil.-   PRESENTACIÓN DE PROPUESTAS: Por Mesa de Entradas Municipal, hasta las 07:30 horas del día fijado para apertura de sobres.-   VALOR DE PLIEGO: Pesos Setenta y Nueve Mil con 00/100 ($ 79.000,00) para adquisición de Pliegos.-   Víctor Daniel Rinaldi, Secretario de Gobierno. (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: {"importe": "39500000.00", "moneda": "ARS"} (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-12 (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
+- **Hora apertura**: 08:00 (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
+- **Condiciones pago**: 30 días desde presentación de factura (VERIFICADO).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
 - **Garantias**: Pendiente de verificar (PENDIENTE).
 - **Requisitos**: Pendiente de verificar (PENDIENTE).
 - **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
@@ -313,6 +338,35 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## Universidad Nacional de Rosario — 5/2026
+
+[Publicación oficial](https://unr.edu.ar/convocatoria-licitacion-publica-n-5-2026-aulas-2-piso-escuela-preuniversitaria-de-ciencias-sociales-y-humanisticas/)
+
+- **Objeto**: Obra Pública “Aulas 2° Piso Nido 1 – Etapa II – Escuela Preuniversitaria de Ciencias Sociales y Humanísticas” (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: {"importe": "2173527434.36", "moneda": null} (VERIFICADO).
+  Respaldo: https://unr.edu.ar/convocatoria-licitacion-publica-n-5-2026-aulas-2-piso-escuela-preuniversitaria-de-ciencias-sociales-y-humanisticas/; página no identificada.
+- **Fecha publicacion**: 2026-10-02 (VERIFICADO).
+  Respaldo: https://unr.edu.ar/convocatoria-licitacion-publica-n-5-2026-aulas-2-piso-escuela-preuniversitaria-de-ciencias-sociales-y-humanisticas/; página no identificada.
+- **Fecha limite presentacion**: 2026-11-04 (VERIFICADO).
+  Respaldo: https://unr.edu.ar/convocatoria-licitacion-publica-n-5-2026-aulas-2-piso-escuela-preuniversitaria-de-ciencias-sociales-y-humanisticas/; página no identificada.
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+  Respaldo: https://unr.edu.ar/convocatoria-licitacion-publica-n-5-2026-aulas-2-piso-escuela-preuniversitaria-de-ciencias-sociales-y-humanisticas/; página no identificada.
+- **Fecha apertura**: 2026-11-04 (VERIFICADO).
+  Respaldo: https://unr.edu.ar/convocatoria-licitacion-publica-n-5-2026-aulas-2-piso-escuela-preuniversitaria-de-ciencias-sociales-y-humanisticas/; página no identificada.
+- **Hora apertura**: Pendiente de verificar (PENDIENTE).
+  Respaldo: https://unr.edu.ar/convocatoria-licitacion-publica-n-5-2026-aulas-2-piso-escuela-preuniversitaria-de-ciencias-sociales-y-humanisticas/; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## EPE — 7060002923
 
 [Publicación oficial](https://www.epe.santafe.gov.ar/app2/aperturas)
@@ -354,6 +408,32 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://aeropuertorosario.com/licitaciones/lpu-2026-00000003-appsf-od-com-con-air-ros/; página no identificada.
 - **Hora apertura**: 11:00 (VERIFICADO).
   Respaldo: https://aeropuertorosario.com/licitaciones/lpu-2026-00000003-appsf-od-com-con-air-ros/; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## MINISTERIO DE PLANEAMIENTO E INFRAESTRUCTURA — 12/2026
+
+[Publicación oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/29-10-26.pdf)
+
+- **Objeto**: Próximas Aperturas de Licitación Pública Dirección General de Arquitectura y Construcciones Licitación Pública 12/2026 DGAyC Cambio de tanques, cubierta, accesibilidad y refacción en baños Escuela de Educación Integral N° 9 "Dr. Luis Agote", San Salvador Apertura: miércoles, 25 de noviembre de 2026 - 10:00hs (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: {"importe": "998591718.22", "moneda": null} (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/29-10-26.pdf; página no identificada.
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-25 (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/29-10-26.pdf; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/29-10-26.pdf; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -443,6 +523,32 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## Municipalidad de Concepción del Uruguay — 36/2026
+
+[Publicación oficial](https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones)
+
+- **Objeto**: Refuncionalización de Toma de Agua Alternativa (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: {"importe": "647734531.36", "moneda": null} (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/22-10-26.pdf; página no identificada.
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-06 (VERIFICADO).
+  Respaldo: https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## Municipalidad de Funes — 12/2026
 
 [Publicación oficial](https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php)
@@ -450,21 +556,17 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Objeto**: “ADQUISICION 2.800 M3 DE HORMIGON ELABORADO H30” (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "644000000", "moneda": null} (VERIFICADO).
-  Respaldo: https://funes.gob.ar/views/assets/pdfs/licitaciones/49/LICITACION_PUBLICA_N___012-2026_2_800_M3_HORMIGON_FONDO_OBRAS_MENORES_6ae4a0872d1f98.37437365.pdf; página no identificada.
 - **Fecha publicacion**: 2026-10-30 (VERIFICADO).
   Respaldo: https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php; página no identificada.
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-20 (VERIFICADO).
-  Respaldo: https://funes.gob.ar/views/assets/pdfs/licitaciones/49/LICITACION_PUBLICA_N___012-2026_2_800_M3_HORMIGON_FONDO_OBRAS_MENORES_6ae4a0872d1f98.37437365.pdf; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://funes.gob.ar/views/assets/pdfs/licitaciones/49/LICITACION_PUBLICA_N___012-2026_2_800_M3_HORMIGON_FONDO_OBRAS_MENORES_6ae4a0872d1f98.37437365.pdf; página no identificada.
+- **Fecha apertura**: 2026-11-20 (PENDIENTE).
+- **Hora apertura**: 10:00 (PENDIENTE).
 - **Condiciones pago**: Pago mixto (VERIFICADO).
 - **Plazo entrega**: El plazo de entrega será entre 0 (cero días) y 90 (noventa (VERIFICADO).
   Respaldo: https://funes.gob.ar/views/assets/pdfs/licitaciones/49/LICITACION_PUBLICA_N___012-2026_2_800_M3_HORMIGON_FONDO_OBRAS_MENORES_6ae4a0872d1f98.37437365.pdf; página 7.
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
 - **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
-  Respaldo: https://funes.gob.ar/views/assets/pdfs/licitaciones/49/LICITACION_PUBLICA_N___012-2026_2_800_M3_HORMIGON_FONDO_OBRAS_MENORES_6ae4a0872d1f98.37437365.pdf; página no identificada.
 - **Garantias**: Pendiente de verificar (PENDIENTE).
 - **Requisitos**: Pendiente de verificar (PENDIENTE).
 - **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
@@ -531,7 +633,7 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Objeto**: Operación de la Disposición Final de Residuos Sólidos Urbanos en Relleno Sanitario San Cayetano (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "396421483.56", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.cdeluruguay.gob.ar/images/gobierno/GobiernoAbierto/2026/37/edicto.pdf; página no identificada.
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/23-10-26.pdf; página no identificada.
 - **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
@@ -578,20 +680,19 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 ## Municipalidad de Colón — 11/2026
 
-[Publicación oficial](https://www.municipalidadcolonpba.gob.ar/edictos/licitacion_11-2026.jpg)
+[Publicación oficial](https://www.municipalidadcolonpba.gob.ar/licitaciones.php)
 
 - **Objeto**: EDICTO LICITACION PÚBLICA N? 11/2026  POR DOS DIAS: Llámese a Li “TERMINACION DE  16 VIVIENDAS EN COLON” Expte N? 4024-218/2026.  tación Pública N° 11/2026 pa  Venta y Consulta de Pliegos: en Municipalidad de Colón (B) ~ Tesorería Municipal ~  calle 51 y 17 de la ciudad de Colón (B) = TE-  FAX: 02473 ~ 430404/10 ~ desde el 02/11/2026 hasta el dia 20/11/2026 en horarios Administrativos (de 7 131)  = Valor del Pliego: $150.000.0 (Pesos ciento cincuenta mi).  - Presupuesto Oficial: $333.031.337,04  = Apertura de Propuestas: 24 de noviembre de 2026 las 10.00 horas, en la Municipalidad  ~ Oficina de Compras ~ calles 51 y 17 de Colón (B)=  Manicpaiad ¡de Colón (8) pa oe  ee  Nota: El presente edicto es para ser publicado en el Boletin Oficial  (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "333031337.04", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.municipalidadcolonpba.gob.ar/edictos/licitacion_11-2026.jpg; página no identificada.
 - **Fecha publicacion**: 2026-10-19 (VERIFICADO).
-  Respaldo: https://www.municipalidadcolonpba.gob.ar/edictos/licitacion_11-2026.jpg; página no identificada.
+  Respaldo: https://www.municipalidadcolonpba.gob.ar/licitaciones.php; página no identificada.
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha apertura**: 2026-11-24 (VERIFICADO).
-  Respaldo: https://www.municipalidadcolonpba.gob.ar/edictos/licitacion_11-2026.jpg; página no identificada.
+  Respaldo: https://www.municipalidadcolonpba.gob.ar/licitaciones.php; página no identificada.
 - **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://www.municipalidadcolonpba.gob.ar/edictos/licitacion_11-2026.jpg; página no identificada.
+  Respaldo: https://www.municipalidadcolonpba.gob.ar/licitaciones.php; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -655,6 +756,32 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## Comuna de Aldea Salto — 2/2026
+
+[Publicación oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/16-10-26.pdf)
+
+- **Objeto**: COMUNA DE ALDEA SALTO-                                              Licitación Pública Nº 02/2026  OBJETO: Convocatoria a la contratación para la ejecución completa de la obra “Museo Comunal y Galpón para Maquinarias- Comuna de Aldea Salto”, de acuerdo a los planos, Pliego de Condiciones Generales, Particulares y Especificaciones Técnicas Particulares, Cómputo Métrico y demás documentación contractual.  PRESUPUESTO OFICIAL: $ 179.184.800,60 (Pesos ciento setenta y nueve millones ciento ochenta y cuatro mil ochocientos con 60/100).  APERTURA DE SOBRES: El día lunes 2 de noviembre de 2026 a partir de las 10:00 horas en la Sede Comunal de Aldea Salto, sita en calles Pueblo de los Molinos y Kheler Dorf.  VALOR DEL PLIEGO: $ 60.000,00 (Pesos sesenta mil).  VENTA Y CONSULTA DE PLIEGOS: En la Sede Comunal de Aldea Salto (calles Pueblo de los Molinos y Kheler Dorf), en forma presencial hasta el día 26 de octubre de 2026 inclusive, de lunes a viernes de 7.30 hs a 12.30 hs. Fdo. Daniel O. Ruhl Presidente Comunal; Priscila Schamne Secretaria Comunal. (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: {"importe": "179184800.60", "moneda": null} (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/16-10-26.pdf; página no identificada.
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-02 (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/16-10-26.pdf; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/16-10-26.pdf; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## EPE — 7060002925
 
 [Publicación oficial](https://www.epe.santafe.gov.ar/app2/aperturas)
@@ -674,6 +801,33 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
 - **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## Municipalidad de Seguí — 9/2026
+
+[Publicación oficial](https://www.segui.gob.ar/sitio/wp-content/uploads/2025/01/MUNICIPALIDAD-DE-SEGUI-Pliegos-Lic-Publica-09-2026-1.pdf)
+
+- **Objeto**:                               MUNICIPALIDAD DE SEGUÍ                             LICITACIÓN PÚBLICA N° 09/2026                           Apertura: 03 de Noviembre de 2026 — Hora: 10:00                                      Decreto N° 292/2026 D.E.M.                 PLIEGO DE BASES Y CONDICIONES PARTICULARES    1º- El presente llamado a Licitación Pública tiene por objeto la adquisición de una (1) Máquina Retroexcavadora 0km, dicho procedimiento será observado conforme al Art. 34° inc. a) y Art. 38° a 48° de la Ordenanza N° 34/2026; para ser destinada a la Subsecretaría de Planeamiento Urbano, Ambiente y Transporte, con las siguientes características:  CARACTERÍSTICAS GENERALES:     •   Retroexcavadora 0km. Tracción 4x4. Cabina Cerrada con Aire Acondicionado y Calefacción.        Brazo STD    •   Motor: Diesel de 4 Cilindros con 3,9 Lts de Cilindrada, turboalimentado, Refrigerado por        agua, toma de aire con flujo cruzado. Filtro de combustible con separador de agua. Potencia        Neta Mínima 94 HP. Certificación Tier 3.    •   Sistema Eléctrico: Tensión de 12V, una batería de 12V.    •   Transmisión: Tipo Power Shuttle Sincronizada 4 marchas de avance y 4 de retroceso.        Tracción 4x4.    •   Frenos: En baño de aceite, dos discos de cada lado. Accionados hidráulicamente,        autoajustables libre de mantenimiento. De montaje externo. De estacionamiento: montado        en la transmisión.    •   Dirección: Delantera, hidrostática total.    •   Sistema Hidráulico: Bomba hidráulica de engranajes dobles, caudal no inferior a 145 l/m.    •   Cargadora: Balde, capacidad mínima colmada 1m³.         Retroexcavadora:     •   Brazo profundidad máxima de excavación no inferior a 4,5 mts.    •   Debe contar con línea hidráulica para la colocación de martillo.    •   Ancho del Balde: De 24 a 26”.    •   Cabina: Cerrada de amplia visibilidad con 2 puertas de acceso, con aire acondicionado y        calefacción. Cabina con Certificación ROPS/FOPS.    •   Neumáticos: Delanteros 12,5/80 x18; traseros 19,5 x 28.  Observación:  La máquina ofrecida deberán ser de marcas internacionales y certificar que tengan una presencia en el país mayor a 30 años. El oferente debe ser distribuidor oficial con certificado emitido por el fabricante y con más de 20 años representando la marca, contar con servicio técnico especializado y un amplio stock de repuestos originales. Además, contar con una sala de capacitación para el dictado de curso al personal de la Municipalidad de Seguí.  ITEM CANT. MERCADERIA                            PRECIO UNIT.       OBSERVACIONES                  Máquina      Retroexcavadora   1       1                 0km                  TOTAL  Presupuesto Oficial: PESOS CIENTO CINCUENTA MILLONES ($150.000.000.-)    FORMA DE ENTREGA:  PLAZO DE ENTREGA:    FORMA DE PAGO:    LUGAR DE ENTREGA:    2º- CONTENIDO DE LA OFERTA TÉCNICA:     •   Marca. Modelo. Procedencia del Bien.    •   Especificaciones técnicas detalladas, folleto, ficha técnica o catálogo que permita verificar el        cumplimiento de lo requerido.    •   Garantía de fábrica y/o de posventa ofrecida, indicando extensión y alcance.    •   Disponibilidad de servicio técnico y repuestos en la zona.  3º- NORMATIVA APLICABLE: La presente Licitación Pública se rige por la Ordenanza N° 34/2026 (Título IV), si corresponde por la Ley N° 10.027, y supletoriamente por la Ley N° 5.140 y el Decreto N° 795/96 MEOSP, sin perjuicio de lo dispuesto en el Pliego de Bases y Condiciones Generales.  4º- LA MUNICIPALIDAD: Se reserva el derecho de rechazar las ofertas presentadas si no las considera convenientes a los intereses del Municipio, sin que ello genere derecho a reclamo o indemnización a favor de los oferentes (Art. 64° Ordenanza N° 34/2026).-  5°- MANTENIMIENTO DE LA OFERTA: De acuerdo al Art. 16° del Pliego de Bases y Condiciones Generales para Suministros o Servicios, los oferentes se obligarán a mantener sus ofertas por el término de treinta (30) días calendario, a partir de la fecha de apertura. En caso de no aceptarse esta condición, u ofrecer un plazo menor al señalado, la Municipalidad se reserva el derecho de poder condicionar la oferta.  6°- REGISTRO PROVEEDORES: Los oferentes deberán acreditar su inscripción vigente en el Registro Municipal de Proveedores (Art. 32° Ordenanza N° 34/2026).  7º- PRESENTACIÓN DE LAS OFERTAS: : Las ofertas podrán presentarse en Sobre cerrado en Mesa de Entradas Municipal.   8º- GARANTIA: Respecto de los Arts. 32° a 35° del Pliego de Bases y Condiciones Generales para Suministros o Servicios, se solicita a los oferentes que en oportunidad de presentar la propuesta adjunten el comprobante de la Garantía de Oferta (1% del valor total de la oferta) debidamente cumplimentado, a fin de evitar inconvenientes posteriores.  9º- CONTENIDO DEL SOBRE: El sobre deberá contener:       a) Constancia de inscripción vigente en el Registro Municipal de Proveedores;       b) Comprobante de cumplimiento de la Garantía de Oferta, conforme el Art. 8° de este       Pliego;       c) El Pliego de Bases y Condiciones Generales y el presente Pliego de Bases y Condiciones       Particulares, firmados por el proponente;       d) La oferta técnica y económica, con el contenido mínimo detallado en el Art. 2° de este       Pliego;     10º- APERTURAS DE SOBRES: La apertura de las ofertas se llevará a cabo en la Municipalidad de Seguí, en el día y hora indicados en los avisos respectivos, conforme el Art. 17° del Pliego de Bases y Condiciones Generales. 11°- CRITERIO DE EVALUACIÓN: Se observará lo establecido en el Titulo VII Evaluación y Adjudicación del Pliego de Bases y Condiciones Generales.  12°- DECLARACIÓN DE LLAMADO DESIERTO: En caso de no presentarse oferentes, o de no resultar admisibles las ofertas presentadas, se podrá disponer un nuevo llamado a los mismos fines, o proceder conforme las excepciones para contratación directa previstas en el Art. 36° (bienes, servicios y consultorías) o el Art. 37° (obras públicas) de la Ordenanza N° 34/2026, según corresponda.  13°.-EMPATE DE OFERTAS: Cuando se presenten dos o más ofertas igualmente convenientes, la Municipalidad podrá llamar a quienes se encuentren en tales condiciones a mejorar su oferta bajo sobre cerrado, dentro de las 48 horas posteriores al acto. En caso de subsistir la igualdad, se procederá a un sorteo.  14°.-CONDICIONES ESPECIFICAS: Se requiere a los oferentes que detallen claramente las condiciones de patentamiento, gestoría y gastos, tiempo de demora y si se encuentran incluidos en el precio o no.  DEPARTAMENTO EJECUTIVO MUNICIPAL, OCTUBRE, 13 de 2026.-                     PLIEGO DE BASES Y CONDICIONES GENERALES            PARA LLAMADOS A LICITACIÓN PÚBLICA – PRIVADA Y CONCURSO DE                                   PRECIOS.                       PARA SUMINISTROS O SERVICIOS                                 LICITACIÓN PUBLICA N° 09 / 2026                                      Decreto N° 292 / 2026 D.E.M.                        Acto de apertura: 03 de Noviembre de 2026 — Hora: 10:00     TÍTULO I — ÁMBITO DE APLICACIÓN Y MARCO NORMATIVO Artículo 1°.- ÁMBITO DE APLICACIÓN: El presente Pliego de Bases y Condiciones Generales rige todos los llamados a Licitación Pública, Licitación Privada, Concurso de Precios (Solicitud de Cotización), que efectúe la Municipalidad de Seguí para la adquisición de bienes, contratación de servicios, consultorías, compraventa de bienes nuevos y usados, locaciones y obras públicas, con excepción de las contrataciones de personal financiadas con la partida presupuestaria establecida a tal fin (Art. 30° Ordenanza N° 34/2026).  Artículo 2°.- MARCO NORMATIVO APLICABLE: Los procedimientos regulados por este Pliego se rigen, por su orden de prelación, por:      a) La Ordenanza N° 34/2026 (Organiza la Contabilidad Municipal), en especial su Título IV     “De las Contrataciones”;     b) La Ordenanza N° 30/2026 (Organiza la Obra Pública Municipal), cuando el objeto de la     contratación sea una obra pública o la adquisición de materiales, insumos o equipos destinados     a ella;     c) La Ley Provincial N° 10.027 (Régimen Municipal) y sus modificatorias, en especial el Art.     159° (texto según Ley N° 10.893/2021);     d) Supletoria y complementariamente, la Ley Provincial N° 5.140 de Contabilidad Pública y el     Decreto Provincial N° 795/96 MEOSP (modificado por Decreto N° 1328/2024) sobre Régimen     de Contrataciones del Estado, y los principios generales del derecho administrativo (Art. 3°     Ordenanza N° 34/2026);     e) El presente Pliego de Bases y Condiciones Generales y el Pliego de Bases y Condiciones     Particulares de cada convocatoria, que prevalece sobre aquel en caso de disposiciones     específicas y no contradictorias.  TÍTULO II — REQUISITOS Y ADMISIBILIDAD DE LOS OFERENTES Artículo 3°.- SUJETOS HABILITADOS: Podrán intervenir en las convocatorias todos los interesados mayores de edad, hábiles para disponer, con domicilio legal en la Provincia de Entre Ríos o constituido al efecto en la misma, sean personas físicas o jurídicas.  Artículo 4°.- INCOMPATIBILIDADES: No podrán contratar con el municipio:      a) El Presidente Municipal, los Concejales y los funcionarios municipales con nivel de     Subsecretario o superior;     b) Los agentes municipales que intervengan directamente en el procedimiento de contratación;     c) Las personas inhabilitadas por resolución judicial;     d) Los cónyuges y parientes hasta el segundo grado de consanguinidad o afinidad de las     personas indicadas en los incisos a) y b) incluidas sus formas asociativas (Art. 62° Ordenanza     N° 34/2026).     e) Proveedores inhabilitados (art. 104 Ordenanza N° 34/2026).-  TÍTULO III — REQUISITOS Y PRESENTACIÓN DE LAS OFERTAS Artículo 5°.- PRECIO DE LA OFERTA: Las ofertas especificarán el precio unitario y total, fijo y cierto, en números, con referencia a la unidad solicitada, determinando además el total general de la propuesta en letras y números. El precio cotizado deberá incluir el I.V.A-. (Impuesto al Valor Agregado) considerando a la Municipalidad como Sujeto exento.-  Artículo 6°.- MONEDA: Las ofertas serán presentadas en moneda argentina.  Artículo 7°.- PRESENTACIÓN DE LAS OFERTAS: Las ofertas podrán presentarse:      a) EN FORMATO FÍSICO: en sobre cerrado en Mesa de Entradas Municipal, consignándose en     la cubierta la clase y número de licitación objeto del llamado, fecha y hora de apertura;     b) EN FORMATO ELECTRÓNICO: a través de la plataforma digital habilitada por el     municipio, o mediante la casilla de correo electrónico oficial contrataciones@segui.gob.ar,     utilizando firma digital o mecanismos de autenticación que garanticen la identidad del oferente     y la integridad de la información, con la misma validez legal que la presentación física. Artículo 8°.- DEPÓSITO DE SOBRES: Para el depósito de los sobres que se entreguen antes de la hora de apertura, se habilitará su depósito en carácter de “Expediente” en Mesa de Entradas Municipal, con el número de convocatoria correspondiente. Una vez depositados, los interesados no podrán solicitar su devolución.  Artículo 9°.- CONTENIDO DEL SOBRE: El sobre (o el envío electrónico) contendrá:     a) Constancia de inscripción vigente en el Registro Municipal de Proveedores; es requisito de       admisibilidad de las ofertas que el oferente se encuentre inscripto en el Registro Municipal       de Proveedores;    b) Comprobante de cumplimiento de la Garantía de Oferta (Título VIII);    c) El Pliego de Bases y Condiciones Generales y Particulares firmados por el proponente, y la       oferta técnica y económica presentada conforme las especificaciones del Pliego Particular.  Artículo 10°.- RASPADURAS Y ENMIENDAS: Las raspaduras y enmiendas en partes esenciales de la oferta deberán ser salvadas por el oferente.  Artículo 11°.- FORMULACIÓN POR RENGLÓN: Las propuestas deberán formularse por la totalidad o parte de la mercadería licitada, pero siempre por el total del renglón. Podrán también cotizarse algunos renglones, si así fuere previsto en el Pliego de Condiciones Particulares, conforme las modalidades de adjudicación por renglón o en forma total previstas en el Art. 46° de la Ordenanza N° 34/2026.  Artículo 12°.- DEFECTOS DE FORMA: Cuando en las ofertas se observaren defectos de forma que, a juicio de la Comisión Evaluadora de Ofertas, no se refieran a la esencia de la propuesta y no impidan la comparación con las demás, se podrá requerir su cumplimiento o perfeccionamiento dentro de un plazo perentorio no mayor de cinco (5) días hábiles, siempre que no signifique una modificación a las cláusulas que expresamente determinen las condiciones estipuladas en el Pliego.  Artículo 13°.- PRÓRROGA O SUSPENSIÓN: La Municipalidad se reserva el derecho de prorrogar o suspender la convocatoria si lo considera conveniente, debiendo publicar la novedad por los mismos medios utilizados para el llamado original.  Artículo 14°.- ACEPTACIÓN DE LAS CONDICIONES: La sola presentación de oferta significa la aceptación lisa y llana de todas las estipulaciones que rigen la contratación, aún cuando este Pliego o el de Condiciones Particulares no se acompañen de la oferta o no estén firmados por el oferente. Artículo 15°.- CAPACIDAD TÉCNICA Y ANTECEDENTES: Los proponentes deben acreditar su capacidad técnica y antecedente, pudiendo la Municipalidad recabarlos directamente, aún respecto de su solvencia moral.  TÍTULO IV — VIGENCIA Y MANTENIMIENTO DE LAS OFERTAS Artículo 16°.- PLAZO DE MANTENIMIENTO: Los proponentes se obligarán a mantener sus ofertas por el término de treinta (30) días calendario a contar de la fecha del acto de apertura, salvo que el Pliego de Condiciones Particulares indique expresamente otro plazo. El Presidente Municipal podrá prorrogar este plazo por hasta treinta (30) días adicionales, mediante decreto fundado, por razones de evaluación técnica, ajustes presupuestarios u otras causas de conveniencia administrativa que deberán constar expresamente en el decreto (Art. 42° Ordenanza N° 34/2026).  TÍTULO V — APERTURA DE LAS OFERTAS Y COMISIÓN EVALUADORA Artículo 17°.- ACTO DE APERTURA: En la fecha y hora determinadas en el llamado o el día hábil siguiente, a la misma hora, si resultare feriado o se decretare asueto, se procederá a la apertura pública de los sobres recibidos, en presencia del Jefe del Área de Suministro, el Contador Municipal y el Asesor Legal, o quienes los reemplacen, y los proponentes que concurran al acto. Abierto el primer sobre no se permitirá la presentación de nuevas ofertas, ni aun existiendo causas fortuitas o de fuerza mayor.  Artículo 18°.- ACTA DE APERTURA: Efectuada la apertura se procederá a labrar acta correspondiente, que deberá reflejar fielmente el proceso e incidencias del acto licitatorio, especificando: a) número de ofertas o propuestas presentadas; b) nombre completo de las firmas oferentes; c) importe total de cada cotización, consignándose en caso de alternativas el importe mayor; d) documentación agregada a las propuestas; e) importe de la garantía, o constancia de que no ha sido presentada; y f) observaciones formuladas, si las hubiera. En caso de ofertas electrónicas, se dejará constancia del medio tecnológico utilizado, incorporándose al expediente el respaldo digital correspondiente (Art. 43° Ordenanza N° 34/2026).  Artículo 19°.- COMISIÓN EVALUADORA DE OFERTAS: El Presidente Municipal designará una Comisión Evaluadora integrada por al menos tres (3) miembros, que analizará las ofertas y emitirá dictamen técnico-económico previo a toda adjudicación. Podrá constituirse como Comisión Evaluadora Permanente, integrada por funcionarios y técnicos del municipio, o como Comisión Evaluadora Particular, designada para un procedimiento determinado, integrada por funcionarios de nivel jerárquico apropiado y, cuando corresponda, técnicos o consultores especializados en la materia (Art. 44° Ordenanza N° 34/2026).  Artículo 20°.- OFERTAS FUERA DE TÉRMINO: Cuando llegare una oferta fuera de término, se procederá a: a) si fue entregada en forma personal, se firmará en el reverso del sobre por la persona que entrega y el empleado que recibe, dejándose constancia del día y hora de recepción; b) si fue recibida por correo u otro medio, se dejarán las mismas constancias, firmando el empleado receptor; c) las ofertas serán abiertas por la misma autoridad que efectuó la apertura del acto principal y volcadas en un acta de “Propuestas Recibidas Fuera de Término”, confeccionada dentro de las 48 horas de finalizada la apertura principal. Esta documentación se agregará a las actuaciones, y a los interesados se les comunicará mediante nota que su propuesta no fue considerada por haberse recibido con posterioridad a la hora fijada para la apertura.  TÍTULO VI — MUESTRAS Artículo 21°.- PRESENTACIÓN DE MUESTRAS: Los proponentes deberán acompañar muestras de los artículos licitados cuando el Pliego de Condiciones Particulares lo establezca expresamente, no siendo considerada la propuesta en el renglón respectivo que no cumpla tal requisito.  Artículo 22°.- TAMAÑO Y CARACTERÍSTICAS: Las muestras se exigirán en un tamaño adecuado para los análisis o experiencias a que se las someta, según lo determine el Pliego de Condiciones Particulares. Artículo 23°.- IDENTIFICACIÓN DE LAS MUESTRAS: Las muestras deberán presentarse con un rótulo en lugar visible, asegurado mediante precinto o lacre sellado, con el número de la muestra, del renglón correspondiente y de la licitación, datos que deberán figurar también en la propuesta.  Artículo 24°.- RETIRO Y DISPOSICIÓN DE LAS MUESTRAS: Las muestras correspondientes a ofertas rechazadas quedarán a disposición de los proponentes para su retiro hasta treinta (30) días hábiles después de resuelta la adjudicación. Vencido este plazo, pasarán a ser propiedad de la Municipalidad. Los oferentes no tendrán derecho a reclamo por los deterioros provenientes de los análisis o ensayos a que se las someta.  TÍTULO VII — EVALUACIÓN Y ADJUDICACIÓN Artículo 25°.- CRITERIOS DE EVALUACIÓN: Se adjudicará a la oferta más conveniente para el municipio, considerando: precio; calidad del bien o servicio ofrecido; condiciones de pago; plazo de entrega o ejecución; antecedentes del oferente; garantías ofrecidas; capacidad técnica y financiera; y todo otro aspecto establecido en el Pliego de Condiciones Particulares. No será obligatorio adjudicar a la oferta de menor precio si existen razones técnicas o de conveniencia fundadas (Art. 45° Ordenanza N° 34/2026).  Artículo 26°.- INSPECCIÓN DE LOS ELEMENTOS A ADQUIRIR: A efectos de que los elementos a adquirir sean inspeccionados por personal especializado de la Municipalidad, los proponentes deberán determinar el lugar donde se encuentren los mismos.  Artículo 27°.- MODALIDADES DE ADJUDICACIÓN: Cuando el Pliego contemple distintos renglones, ítems o lotes, la adjudicación podrá otorgarse por renglón a diferentes oferentes, o en forma total a un único oferente cuando resulte más beneficioso para el municipio por economía de escala, simplificación administrativa, compatibilidad técnica u otra razón de conveniencia fundada (Art. 46° Ordenanza N° 34/2026).  Artículo 28°.- OFERTAS IGUALMENTE CONVENIENTES: Cuando se presenten dos o más ofertas igualmente convenientes, la Municipalidad podrá llamar a quienes se encuentren en tales condiciones a mejorar su oferta bajo sobre cerrado, dentro de las 48 horas posteriores al acto de apertura. En caso de subsistir la igualdad, se procederá a un sorteo.  Artículo 29°.- ACTO DE ADJUDICACIÓN: La adjudicación se efectuará mediante decreto fundado del Presidente Municipal, dentro de los treinta (30) días de la apertura de ofertas, previo dictamen de la Comisión Evaluadora, y podrá efectuarse aunque se hubiere presentado una sola oferta válida. El plazo podrá prorrogarse por hasta treinta (30) días adicionales mediante decreto fundado, por razones de evaluación técnica, ajustes presupuestarios u otras causas de conveniencia administrativa que deberán constar expresamente en el decreto (Art. 47° Ordenanza N° 34/2026).  Artículo 30°.- OFERTAS DESESTIMADAS: Podrán desestimarse todas las ofertas cuando existan razones de interés público debidamente fundadas o se compruebe la existencia de vicios en el procedimiento, sin que ello genere derecho a reclamo o indemnización a favor de los oferentes (Art. 64° Ordenanza N° 34/2026).  Artículo 31°.- DESISTIMIENTO POR PARTE DEL MUNICIPIO: El municipio podrá desistir del procedimiento de contratación en cualquier etapa previa a la adjudicación, sin que ello genere derecho a indemnización para los oferentes. Efectuada la adjudicación, el municipio sólo podrá revocar el acto por causas de ilegitimidad o de oportunidad, mérito o conveniencia, debiendo en tal caso indemnizar los daños causados (Art. 63° Ordenanza N° 34/2026).  TÍTULO VIII — GARANTÍAS Artículo 32°.- GARANTÍA DE OFERTA: El oferente deberá constituir garantía equivalente al uno por ciento (1%) del monto total de su propuesta, que será devuelta de oficio y bajo constancia a los no adjudicatarios una vez perfeccionado el contrato con el adjudicatario. Cuando la convocatoria tenga por objeto la venta de bienes municipales, la garantía de oferta será del cinco por ciento (5%) sobre el valor de la propuesta (Art. 48° inc. a) Ordenanza N° 34/2026). El comprobante de la garantía será adjuntado a la propuesta. Artículo 33°.- GARANTÍA DE CUMPLIMIENTO DE CONTRATO: El adjudicatario deberá constituir garantía equivalente al cinco por ciento (5%) del monto adjudicado, que será devuelta una vez cumplidas todas las obligaciones contractuales. Podrá prescindirse de esta garantía cuando el cumplimiento de las obligaciones contractuales sea inmediato, o en los casos que determine la Administración (Art. 48° inc. b) Ordenanza N° 34/2026).  Artículo 34°.- FORMAS DE CONSTITUCIÓN: Las garantías podrán presentarse en las siguientes formas: a) en efectivo, mediante ingreso a la Tesorería Municipal, depósito bancario o transferencia a la orden de la Municipalidad de Seguí, cuya boleta deberá acompañar a la propuesta; b) en documento a la vista, extendido o endosado a favor de la Municipalidad de Seguí, con sellado de ley; c) mediante cheque certificado extendido a la orden de la Municipalidad de Seguí; o d) mediante póliza de seguro de caución.  Artículo 35°.- SUBSANACIÓN DE DEFECTOS FORMALES: Cuando en el cumplimiento de las formas de garantía se observare falta de endoso y/o sellado de los documentos, error en su confección, o falta de aval bancario cuando corresponda, el Área de Suministro requerirá su subsanación dentro de un plazo de cinco (5) días hábiles de la fecha de apertura, que el interesado deberá cumplimentar en los cinco (5) días hábiles siguientes. El incumplimiento podrá ser pasible de sanciones, o de la cancelación de la inscripción en el Registro de Proveedores, sin perjuicio de las acciones que en derecho correspondan.  TÍTULO IX — FIRMA, EJECUCIÓN Y RECEPCIÓN DEL CONTRATO Artículo 36°.- FIRMA DEL CONTRATO: El proponente que resulte adjudicatario será notificado de ello y deberá presentarse a firmar el contrato de compraventa o de locación correspondiente dentro de los cinco (5) días hábiles administrativos de recibida la notificación, previa constitución de la Garantía de Cumplimiento de Contrato cuando corresponda. Cuando el oferente sea persona jurídica, deberá acreditar los extremos de su existencia jurídica, el instrumento de designación de su representante legal y el acto administrativo o societario que lo autorice a suscribir el contrato.  Artículo 37°.- MODIFICACIÓN DE CONTRATOS: Los contratos podrán ampliarse, reducirse o modificarse por mutuo acuerdo entre las partes, hasta un máximo del treinta por ciento (30%) del monto contratado, mediante decreto fundado del Presidente Municipal. Las modificaciones que impliquen aumento de precio no podrán superar el veinte por ciento (20%) del monto original, salvo causas excepcionales debidamente justificadas y con autorización del Concejo Deliberante (Art. 65° Ordenanza N° 34/2026).  Artículo 38°.- SUBCONTRATACIÓN Y CESIÓN: El contratista no podrá subcontratar total o parcialmente el objeto del contrato sin autorización expresa del municipio, lo que no lo libera de sus obligaciones contractuales. La cesión de contratos requiere autorización previa mediante decreto fundado, verificando que el cesionario reúna las mismas condiciones técnicas, económicas y financieras que el cedente (Arts. 69° y 70° Ordenanza N° 34/2026).  TÍTULO X — ENTREGA Y PAGO Artículo 39°.- RECEPCIÓN: Los bienes, servicios u obras contratados serán recepcionados por el área requirente o el Área de Suministro mediante factura conformada, remito o formulario de recepción. En la contratación para la realización de obras públicas se labrará acta de recepción provisoria y definitiva, conforme la Ordenanza N° 30/2026 (Art. 68° Ordenanza N° 34/2026).  Artículo 40°.- GASTOS DE ENTREGA: Serán a cargo del adjudicatario todos los gastos que se originen por flete, acarreo, carga y descarga para la entrega de la mercadería en el lugar que establezca el Pliego de Condiciones Particulares.  Artículo 41°.- FORMA DE PAGO: El pago de las mercaderías provistas, trabajos o servicios realizados, se abonará contra presentación de las facturas correspondientes, previa recepción de conformidad, pudiendo efectuarse entregas parciales o pago contra entrega cuando sea conveniente a los intereses de la Municipalidad, o cuando el Pliego de Condiciones Particulares prevea una forma distinta.  TÍTULO XI — PENALIDADES E INHABILITACIÓN Artículo 42°.- RESCISIÓN DE CONTRATOS: Los contratos podrán rescindirse por incumplimiento del contratista, por imposibilidad de ejecución, por mutuo acuerdo o por decisión unilateral del municipio fundada en razones de interés público. La rescisión se dispondrá por decreto fundado, previo informe del área técnica y dictamen legal (Art. 66° Ordenanza N° 34/2026).  Artículo 43°.- PENALIDADES: El incumplimiento de las obligaciones contractuales podrá dar lugar a: a) pérdida del depósito de garantía de oferta, en favor del municipio, si el proponente desistiera de su oferta dentro del plazo de mantenimiento sin mediar notificación anterior; b) multas por mora en el cumplimiento; c) ejecución de garantías; d) rescisión del contrato; y e) inhabilitación para contratar con el municipio por el plazo que se establezca (Art. 67° Ordenanza N° 34/2026).  Artículo 44°.- INHABILITACIÓN DE PROVEEDORES: Los proveedores que incurran en incumplimientos graves o reiterados podrán ser inhabilitados para contratar con el municipio por el plazo que determine el Presidente Municipal mediante decreto fundado, sin perjuicio de las penalidades contractuales aplicables (Art. 104° Ordenanza N° 34/2026).  Artículo 45°.- MORA AUTOMÁTICA: Se entenderá por “mercadería no entregada” también aquella que fuera entregada y rechazada por no ajustarse a las condiciones de la Orden de Compra, considerándose producida la mora automáticamente por el simple vencimiento del plazo contractual, sin necesidad de interpelación judicial o extrajudicial.  TÍTULO XII — IMPUGNACIONES Artículo 46°.- IMPUGNACIONES: Para impugnar los informes técnico-administrativos que se realicen con motivo de la adjudicación, el impugnante deberá depositar previamente en la Tesorería Municipal la suma del diez por ciento (10%) del valor de la oferta. Si la impugnación fuera rechazada por resolución del Departamento Ejecutivo Municipal, quedará finalizada la instancia y la suma depositada ingresará definitivamente al Patrimonio Municipal, sin derecho a reclamo alguno, en concepto de compensación de gastos de actuación administrativa.  TÍTULO XIII — DISPOSICIONES FINALES Artículo 47°.- DOMICILIO Y JURISDICCIÓN: Los proponentes deberán constituir domicilio especial en la Provincia de Entre Ríos a los efectos judiciales o extrajudiciales pertinentes, sometiéndose a la jurisdicción de los Tribunales en lo Contencioso Administrativo de la ciudad de Paraná, con renuncia a cualquier otro fuero, incluso el federal.  Artículo 48°.- DÍAS: Donde en este Pliego se mencionen “días” sin otra aclaración, se entenderá que son días hábiles administrativos para la Administración Municipal (Art. 110° Ordenanza N° 34/2026).  DEPARTAMENTO EJECUTIVO MUNICIPAL, OCTUBRE, 13 de 2026.-  (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: {"importe": "150000000", "moneda": null} (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/20-10-26.pdf; página no identificada.
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-03 (VERIFICADO).
+  Respaldo: https://www.segui.gob.ar/sitio/wp-content/uploads/2025/01/MUNICIPALIDAD-DE-SEGUI-Pliegos-Lic-Publica-09-2026-1.pdf; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://www.segui.gob.ar/sitio/wp-content/uploads/2025/01/MUNICIPALIDAD-DE-SEGUI-Pliegos-Lic-Publica-09-2026-1.pdf; página no identificada.
+- **Condiciones pago**: Pago mixto (VERIFICADO).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
+  Respaldo: https://www.segui.gob.ar/sitio/wp-content/uploads/2025/01/MUNICIPALIDAD-DE-SEGUI-Pliegos-Lic-Publica-09-2026-1.pdf; página no identificada.
 - **Garantias**: Pendiente de verificar (PENDIENTE).
 - **Requisitos**: Pendiente de verificar (PENDIENTE).
 - **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
@@ -811,6 +965,36 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## Municipalidad de Concepción del Uruguay — 35/2026
+
+[Publicación oficial](https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones)
+
+- **Objeto**: Adquisición de seiscientas (600) Luminarias Leds para Alumbrado Público (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: {"importe": "84720000.00", "moneda": null} (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/20-10-26.pdf; página no identificada.
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-04 (VERIFICADO).
+  Respaldo: https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+| Equipo | Renglón | Producto | Cantidad | Página |
+|---|---:|---|---:|---:|
+|  |  | luminarias leds para alumbrado publico”, destinados a instalaciones de alumbrado publico, en un todo de acuerdo | 600 | 1 |
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## EPE — 7050001924
 
 [Publicación oficial](https://www.epe.santafe.gov.ar/app2/aperturas)
@@ -878,6 +1062,34 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://www.epe.santafe.gov.ar/app2/aperturas; página no identificada.
 - **Hora apertura**: Pendiente de verificar (PENDIENTE).
   Respaldo: https://www.epe.santafe.gov.ar/app2/aperturas; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## Municipalidad de El Pingo — 2/2026
+
+[Publicación oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf)
+
+- **Objeto**: -- -- --                                               MUNICIPALIDAD EL PI NGO  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE 2 (DOS) GARITAS DE COLECTIVOS DESTINADAS A SER EMPLAZADAS SOBRE AV. 9 DE JULIO DE NUESTRA LOCALIDAD.-                                    Prim er Llam ado a: Licitación Pública Nº 02/2026                                             Decreto de Llamado Nº 65/2026  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 10/11/2026- 12 HS  FECHA DE APERTURA DE OFERTA: 11/11/2026- 10 HS  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232  PRESUPUESTO OFICIAL: $16.868.978,35 (Pesos DIECISÉIS MILLONES OCHOCIENTOS SESENTA Y OCHO MIL NOVECIENTOS SETENTA Y OCHO CON 35/100) IVA INCLUIDO  VALOR DEL PLIEGO: SIN COSTO  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE 2 (DOS) GARITAS DE COLECTIVOS DESTINADAS A SER EMPLAZADAS SOBRE AV. 9 DE JULIO DE NUESTRA LOCALIDAD.-  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS  OBJETO DE LA COMPRA  La presente gestión tiene por objeto la adquisición de dos (2) garitas de colectivos nuevas, sin uso, destinadas a ser emplazadas sobre Av. 9 de Julio de nuestra localidad, conforme a las características que se detallan en las presentes especificaciones.  DETALLE ESPECÍFICO DE LAS GARITAS  Tipo de Unidad: Garita para parada de colectivos, tipo modelo "IRON" o similar de igual o superior calidad.  - Cantidad: Dos (2) unidades.  - Dimensiones: Largo de tres (3) metros.  - Componentes: Con cesto de residuos y cerramiento lateral.  - Iluminación: Dos (2) reflectores solares de 30 W por garita.      - Materiales: Resistentes, sostenibles y de bajo mantenimiento, con posibilidad de adaptar paneles informativos y/o publicitarios.   - Pintura: Las garitas deberán entregarse pintadas, utilizando pinturas térmicas o reflectantes que reduzcan el impacto del calor extremo. La aplicación deberá realizarse bajo un control estricto de las condiciones ambientales (temperatura y humedad), conforme a las recomendaciones del fabricante de la pintura.   - Ploteo: El precio cotizado deberá incluir el ploteo de las garitas con las imágenes que el Municipio disponga.   Rupp, Laura Verónica, presidente municipal. (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: {"importe": "16868978.35", "moneda": null} (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: 2026-11-10 (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
+- **Fecha apertura**: 2026-11-11 (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
+- **Hora apertura**: Pendiente de verificar (PENDIENTE).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -1071,6 +1283,60 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## Municipalidad de Santa Ana — 6/2026
+
+[Publicación oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/16-10-26.pdf)
+
+- **Objeto**: FEDERACION                                       MUNICIPALIDAD DE SANTA ANA                                        Departamento de Federación                                        Licitación Publica N° 06/2026                                          Decreto N° 139/2026 D. E.  OBJETO: Provisión de mano de obra, materiales, maquinarias y herramientas para pavimento asfáltico en Santa Ana.-  APERTURA DE SOBRES: Viernes 06 de Noviembre de 2026, 10 hs.-  VALOR DEL PLIEGO: $ 150.000,00.- (Pesos Ciento Cincuenta Mil).-  PRESUPUESTO OFICIAL ESTIMADO: Pesos Seiscientos diez Millones ($ 610.000.000,00).-  LUGAR: Municipalidad de Santa Ana – ENTRE RIOS.-    INFORMES: Cupertino Otaño 576 - Edificio Municipal de Santa Ana (E. R.).-  Telefax: 03456-15466000.-  E-mail: intendencia@santaana.gob.ar – secretariagobierno@santaana.gob.ar Página web: www.santaana.gob.ar   CARLOS ALBERTO DALZOTTO (Secretario Municipal) ROGELIO LUIS ZANANDREA (Presidente Municipal) (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: {"importe": "610000000.00", "moneda": "ARS"} (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/16-10-26.pdf; página no identificada.
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-06 (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/16-10-26.pdf; página no identificada.
+- **Hora apertura**: Pendiente de verificar (PENDIENTE).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/16-10-26.pdf; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## Comuna de Colonia Tunas — 3/2026
+
+[Publicación oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf)
+
+- **Objeto**: FEDERACION                                       COMUNA DE COLONIA TUNAS (E.R.)                                  DPTO. FEDERACIÓN - PROV. DE ENTRE RÍ OS                                          Licitación Pública N° 03/2026  OBJETO: “ADQUISICIÓN DE TRITURADOR DE RAMAS"  Decreto Nº 08/2026 - D.E.  APERTURA: Fecha – Hora: 25 de noviembre de 2026 - Hora 10:00  Lugar: Sede Comunal – Av. Corrientes S/N (Centro Cívico) - San Jaime de la Frontera, Departamento Federación, Provincia de Entre Ríos.  Recepción de Sobres: 09:45 horas (25/11/2026)  Presupuesto Oficial Estimado: PESOS VEINTISIETE MILLONES con 00/100 ($ 27.000.000,00).    Contacto: María Julieta Ornetti (Secretaria)  Telefonía móvil: 3456-461413 - E-mail: comunacoloniatuna@gmail.com (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: {"importe": "27000000.00", "moneda": "ARS"} (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: 2026-11-25 (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
+- **Hora limite presentacion**: 09:45 (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
+- **Fecha apertura**: 2026-11-25 (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
+- **Hora apertura**: Pendiente de verificar (PENDIENTE).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## Municipalidad de Rosario — 11/2026
 
 [Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38648)
@@ -1110,6 +1376,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=1&recomendada=apertura&tipoRecomendada=5; página no identificada.
 - **Hora apertura**: 09:00 (VERIFICADO).
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=1&recomendada=apertura&tipoRecomendada=5; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## Poder Judicial de Entre Ríos — 270/2026
+
+[Publicación oficial](https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-270-26-por-provision-y-envio-de-un-modulo-operador-de-puerta-automatica-para-ascensor-central-no2-del-edificio-tribunales-de-la-localidad-de-parana/)
+
+- **Objeto**: Contrataciones Solicitud de Cotización Nº 270/26, por provisión y envío de un módulo operador de puerta automática para ascensor central Nº2 del Edificio Tribunales de la Localidad de Paraná PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 270/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 270/26, por provisión y envío de un módulo operador de puerta automática para ascensor central Nº2 del Edificio Tribunales de la Localidad de Paraná. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 02 de noviembre de 2026 a las 09:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 270-26 Descargar Imprmir Trámites y consultas a distancia Concursos Abiertos Concursos de Ingreso Contrataciones Firma digital Formularios en línea Inhábiles y Feriados Jurisprudencia Mesa Única Informatizada Sentencias y Expedientes Sistema de Coberturas Sistema SNE Sitios de interés Video conferencias Concursos Abiertos Concursos de Ingreso Contrataciones Firma digital Formularios en línea Inhábiles y Feriados Jurisprudencia Mesa Única Informatizada Sentencias y Expedientes Sistema de Coberturas Sistema SNE Sitios de interés Video conferencias (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-02 (VERIFICADO).
+  Respaldo: https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-270-26-por-provision-y-envio-de-un-modulo-operador-de-puerta-automatica-para-ascensor-central-no2-del-edificio-tribunales-de-la-localidad-de-parana/; página no identificada.
+- **Hora apertura**: 09:30 (VERIFICADO).
+  Respaldo: https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-270-26-por-provision-y-envio-de-un-modulo-operador-de-puerta-automatica-para-ascensor-central-no2-del-edificio-tribunales-de-la-localidad-de-parana/; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -1296,6 +1587,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## DIR. GRAL. DE CONTRATACIONES DEL ESTADO - MIN. DE ECONOMIA Y SERVICIOS PUBLICOS - PODER EJECUTIVO — 16/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: Contratar el alquiler de treinta (30) equipos fotocopiadores, con suministro de insumos (tóner, repuestos, materiales y accesorios, excepto papel) con mantenimiento y servicio técnico de los mismos (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-02 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## Municipalidad de Rosario — 110470/2026
 
 [Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38581)
@@ -1310,6 +1626,106 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
 - **Hora apertura**: 10:00 (VERIFICADO).
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 231/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: reparacion de vehiculo oficial ford 100 (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-02 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 235/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: COMPRA DE MATERIALES PARA CONFECCION DE SILLAS (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-02 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 238/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: COMPRA DE LIBROS (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-02 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## Vialidad Entre Ríos — 17/2026
+
+[Publicación oficial](https://www.dpver.gov.ar/wp-content/uploads/2026/LP_17-2026/Pliegos_de_consulta_LP_17-2026.pdf)
+
+- **Objeto**: ADQUISICIÓN DE CUBIERTAS, CAMARAS Y PROTECTORES. – APERTURA: El 02/11/26 a las 10:00 horas o siguiente/s si aquél fuera inhábil, en la Dirección Provincial de Vialidad, Av. Ramírez N° 2.197, Dirección de DESPACHO, 1° PISO, Paraná, Entre Ríos.- CONSULTA DE PLIEGOS: Departamento I SUMINISTROS, Avda. Ramírez Nº 2.197, Paraná, E. Ríos, T.E. 0343-4248750, o en www.dpver.gov.ar.- VENTA DE PLIEGOS: En la Dirección de Administración y Finanzas de la Dirección Provincial de Vialidad, Avda. Ramírez N° 2.197, de la ciudad de Paraná, podrá pagarse mediante transferencia a la cuenta corriente en pesos Nº 0095059 – CBU Nº 3860001001000000950597, del Banco Entre Ríos.- VALOR DEL PLIEGO: PESOS DIEZ MIL ($ 10.000,00).- Descargar documentación (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-02 (VERIFICADO).
+  Respaldo: https://www.dpver.gov.ar/2026/10/13/licitacion-publica-n-17-26/; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://www.dpver.gov.ar/2026/10/13/licitacion-publica-n-17-26/; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -1385,6 +1801,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
 - **Hora apertura**: 12:00 (VERIFICADO).
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## INSTITUTO AUTÁRQUICO BECARIO PROVINCIAL — 11/2026
+
+[Publicación oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/27-10-26.pdf)
+
+- **Objeto**: PARANA                                               GOBIERNO DE ENTRE RÍOS                                  INSTITUTO AUTÁRQUICO BECARIO PROVINCIAL                                              Licitación Pública N° 11/2026  OBJETO: Contratación del Servicio de Transporte Escolar Rural destinado al traslado de alumnos matriculados en los establecimientos educativos con asiento en los departamentos Diamante, Feliciano, Islas, Nogoyá y Victoria de la Provincia de Entre Ríos, a partir del 16 de noviembre de 2026 hasta el 31 de agosto de 2027, con opción de renovación por un año.  APERTURA: Instituto Autárquico Becario Provincial, el día 03/11/2026 a las 08:30 horas.  VENTA DE PLIEGOS: en el Instituto Autárquico Becario Provincial – San Martín 458 – Paraná – Entre Ríos  CONSULTA: 0343 4207979 - http://www.institutobecario.gov.ar              – comprasinstitutobecario@gmail.com – contable@institutobecario.gov.ar - transporte@institutobecario.gov.ar  VALOR DEL PLIEGO: Sin costo. (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-03 (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/27-10-26.pdf; página no identificada.
+- **Hora apertura**: 08:30 (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/27-10-26.pdf; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -1746,6 +2187,81 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 236/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: COMPRA DE ABERTURA PARA ESC 37 AMBROSETTI GUALGUAY (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-03 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 239/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: compra de materiales electricos (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-03 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 242/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: COMPRA DE ARTICULOS DE LIBRERIA (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-03 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## Municipalidad de Rosario — 24655/2026
 
 [Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38665)
@@ -1921,35 +2437,6 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
-## Municipalidad de Concepción del Uruguay — 35/2026
-
-[Publicación oficial](https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones)
-
-- **Objeto**: Adquisición de seiscientas (600) Luminarias Leds para Alumbrado Público (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-04 (VERIFICADO).
-  Respaldo: https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones; página no identificada.
-- **Hora apertura**: Pendiente de verificar (PENDIENTE).
-  Respaldo: https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-| Equipo | Renglón | Producto | Cantidad | Página |
-|---|---:|---|---:|---:|
-|  |  | luminarias leds para alumbrado publico”, destinados a instalaciones de alumbrado publico, en un todo de acuerdo | 600 | 1 |
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
 ## Municipalidad de Rosario — 10/2026
 
 [Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38661)
@@ -2114,6 +2601,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
 - **Hora apertura**: 10:30 (VERIFICADO).
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## Poder Judicial de Entre Ríos — 12/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: Cotejo de Precios Nº 12/26: "Obra Construcción cerco perimetral nuevo edificio tribunales San José de Feliciano" (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-04 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:30 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -2300,6 +2812,131 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## Poder Judicial de Entre Ríos — 9/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: Obra: Construcción Nuevo Edificio para Juzgado de Lucas González (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-05 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## MIN. SALUD - PODER EJECUTIVO — 20/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: Adquirir Quince (15) Sillones Odontológicos Completos solicitados por la Dirección de Odontología.- (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-05 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 245/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: compra de componentes informaticos (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-05 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 246/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: COMPRA DE CORREA POLI V PARA CACTUS CITROEN (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-05 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## Poder Judicial de Entre Ríos — 13/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: Cotejo de Precios Nº 13/26: "Obra: Nuevos Tanques de reserva, reparaciones en sanitarios y oficinas médicos forenses Edificio Tribunales Gualeguaychú" (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-05 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:30 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## Municipalidad de Rosario — 24675/2026
 
 [Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38668)
@@ -2375,31 +3012,6 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
-## Municipalidad de Concepción del Uruguay — 36/2026
-
-[Publicación oficial](https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones)
-
-- **Objeto**: Refuncionalización de Toma de Agua Alternativa (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones; página no identificada.
-- **Hora apertura**: Pendiente de verificar (PENDIENTE).
-  Respaldo: https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
 ## Municipalidad de Rosario — 20073/2026
 
 [Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38616)
@@ -2414,6 +3026,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=1; página no identificada.
 - **Hora apertura**: 09:00 (VERIFICADO).
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=1; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## Poder Judicial de Entre Ríos — 272/2026
+
+[Publicación oficial](https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-272-26-por-provision-y-envio-de-la-heladera-para-ser-destinada-a-la-camara-de-casacion-penal-sala-1-de-parana/)
+
+- **Objeto**: Contrataciones Solicitud de Cotización Nº 272/26, por provisión y envío de la heladera para ser destinada a la Cámara de Casación Penal Sala 1 de Paraná PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 272/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 272/26, por provisión y envío de la heladera para ser destinada a la Cámara de Casación Penal Sala 1 de Paraná. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 06 de noviembre de 2026 a las 09:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 272-26 Descargar Imprmir Trámites y consultas a distancia Concursos Abiertos Concursos de Ingreso Contrataciones Firma digital Formularios en línea Inhábiles y Feriados Jurisprudencia Mesa Única Informatizada Sentencias y Expedientes Sistema de Coberturas Sistema SNE Sitios de interés Video conferencias Concursos Abiertos Concursos de Ingreso Contrataciones Firma digital Formularios en línea Inhábiles y Feriados Jurisprudencia Mesa Única Informatizada Sentencias y Expedientes Sistema de Coberturas Sistema SNE Sitios de interés Video conferencias (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-06 (VERIFICADO).
+  Respaldo: https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-272-26-por-provision-y-envio-de-la-heladera-para-ser-destinada-a-la-camara-de-casacion-penal-sala-1-de-parana/; página no identificada.
+- **Hora apertura**: 09:30 (VERIFICADO).
+  Respaldo: https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-272-26-por-provision-y-envio-de-la-heladera-para-ser-destinada-a-la-camara-de-casacion-penal-sala-1-de-parana/; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -2525,6 +3162,81 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## Vialidad Entre Ríos — 33/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: ADQUISICION DE REPUESTOS PARA MOTONIVELADORA NEW HOLLAND EQ. M-33 (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-06 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 247/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: REPARACION DE PUERTA DE INGRESO CGE (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-06 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## Poder Judicial de Entre Ríos — 5/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: Obra: "Pintura y reparaciones Tribunales de La Paz" (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-06 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:30 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## Municipalidad de Rosario — 40611/2026
 
 [Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38642)
@@ -2539,6 +3251,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
 - **Hora apertura**: 11:00 (VERIFICADO).
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## Poder Judicial de Entre Ríos — 268/2026
+
+[Publicación oficial](https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-268-26-por-contratacion-de-servicio-de-viandas-para-los-juicios-por-jurados-a-realizarse-en-la-ciudad-de-gualeguay/)
+
+- **Objeto**: Contrataciones Solicitud de Cotización Nº 268/26, por contratación de servicio de viandas para los juicios por jurados a realizarse en la ciudad de Gualeguay PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 268/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 268/26, por contratación de servicio de viandas para los juicios por jurados a realizarse en la ciudad de Gualeguay. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 06 de noviembre de 2026 a las 11:00 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 268-26 Descargar Imprmir Trámites y consultas a distancia Concursos Abiertos Concursos de Ingreso Contrataciones Firma digital Formularios en línea Inhábiles y Feriados Jurisprudencia Mesa Única Informatizada Sentencias y Expedientes Sistema de Coberturas Sistema SNE Sitios de interés Video conferencias Concursos Abiertos Concursos de Ingreso Contrataciones Firma digital Formularios en línea Inhábiles y Feriados Jurisprudencia Mesa Única Informatizada Sentencias y Expedientes Sistema de Coberturas Sistema SNE Sitios de interés Video conferencias (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-06 (VERIFICADO).
+  Respaldo: https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-268-26-por-contratacion-de-servicio-de-viandas-para-los-juicios-por-jurados-a-realizarse-en-la-ciudad-de-gualeguay/; página no identificada.
+- **Hora apertura**: 11:00 (VERIFICADO).
+  Respaldo: https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-268-26-por-contratacion-de-servicio-de-viandas-para-los-juicios-por-jurados-a-realizarse-en-la-ciudad-de-gualeguay/; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -2614,6 +3351,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
 - **Hora apertura**: 10:00 (VERIFICADO).
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 240/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: servicio completo con mano de obra sprinter AF952RN (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-09 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -2702,6 +3464,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## Poder Judicial de Entre Ríos — 14/2026
+
+[Publicación oficial](https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-14-26-por-obra-trabajos-de-mantenimiento-interior-en-inmueble-de-juzgado-de-paz-de-general-campos/)
+
+- **Objeto**: De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Cotejo de Precios Nº 14/26, por Obra: “Trabajos de mantenimiento interior en inmueble de Juzgado de Paz de General Campos”. (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-10 (VERIFICADO).
+  Respaldo: https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-14-26-por-obra-trabajos-de-mantenimiento-interior-en-inmueble-de-juzgado-de-paz-de-general-campos/; página no identificada.
+- **Hora apertura**: 10:30 (VERIFICADO).
+  Respaldo: https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-14-26-por-obra-trabajos-de-mantenimiento-interior-en-inmueble-de-juzgado-de-paz-de-general-campos/; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## Municipalidad de Rosario — 40641/2026
 
 [Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38684)
@@ -2737,17 +3524,64 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-10 (VERIFICADO).
-  Respaldo: https://reconquista.gob.ar/wp-content/uploads/2026/10/Pliego-de-Bases-y-Condiciones-Concurso-de-Ofertas-No-04.2026.pdf; página no identificada.
-- **Hora apertura**: 11:00 (VERIFICADO).
-  Respaldo: https://reconquista.gob.ar/wp-content/uploads/2026/10/Pliego-de-Bases-y-Condiciones-Concurso-de-Ofertas-No-04.2026.pdf; página no identificada.
+- **Fecha apertura**: 2026-11-10 (PENDIENTE).
+- **Hora apertura**: 11:00 (PENDIENTE).
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
 - **Modalidad presentacion**: ["CORREO_ELECTRONICO", "PRESENCIAL"] (VERIFICADO).
-  Respaldo: https://reconquista.gob.ar/wp-content/uploads/2026/10/Pliego-de-Bases-y-Condiciones-Concurso-de-Ofertas-No-04.2026.pdf; página no identificada.
 - **Garantias**: La garantía de mantenimiento de oferta se establece en la suma de doscientos cuarenta y siete mil con 00/100 ($247.000,00). Área Licitaciones: Página 12 de 18 Correo electrónico: licitaciones@reconquista.gov.ar Tel: 03482-580881/82 Interno 2030 Dirección: Calle San Martín Nº 1077 Reconquista (STA FE) (VERIFICADO).
   Respaldo: https://reconquista.gob.ar/wp-content/uploads/2026/10/Pliego-de-Bases-y-Condiciones-Concurso-de-Ofertas-No-04.2026.pdf; página 13.
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## DIR. GRAL. DE CONTRATACIONES DEL ESTADO - MIN. DE ECONOMIA Y SERVICIOS PUBLICOS - PODER EJECUTIVO — 17/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: Adquirir elementos ortopédicos (bastones, sillas de ruedas, sillas posturales, sillas de ducha y bipedestadores).- (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-11 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## MIN. SALUD - PODER EJECUTIVO — 21/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: Adquirir Una (01) Lavadora Termodesinfectadora de Instrumental Quirúrgico.- (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-11 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
 - **Requisitos**: Pendiente de verificar (PENDIENTE).
 - **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
 - **Moneda literal**: Pendiente de verificar (PENDIENTE).
@@ -2768,6 +3602,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://www.dpver.gov.ar/2026/10/23/concurso-de-anteproyecto-no-02-26/; página no identificada.
 - **Hora apertura**: 10:00 (VERIFICADO).
   Respaldo: https://www.dpver.gov.ar/2026/10/23/concurso-de-anteproyecto-no-02-26/; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## Poder Judicial de Entre Ríos — 15/2026
+
+[Publicación oficial](https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-15-26-por-obra-3era-etapa-impermeabilizacion-cubierta-edificio-tribunales-rosario-del-tala/)
+
+- **Objeto**: De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Cotejo de Precios Nº 15/26, por Obra: “3era. Etapa impermeabilización cubierta Edificio Tribunales – Rosario del Tala”. (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-11 (VERIFICADO).
+  Respaldo: https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-15-26-por-obra-3era-etapa-impermeabilizacion-cubierta-edificio-tribunales-rosario-del-tala/; página no identificada.
+- **Hora apertura**: 10:30 (VERIFICADO).
+  Respaldo: https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-15-26-por-obra-3era-etapa-impermeabilizacion-cubierta-edificio-tribunales-rosario-del-tala/; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -2856,6 +3715,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## Poder Judicial de Entre Ríos — 16/2026
+
+[Publicación oficial](https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-16-26-por-obra-reparaciones-varias-en-edificio-tribunales-villaguay/)
+
+- **Objeto**: De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Cotejo de Precios Nº 16/26, por Obra: “Reparaciones varias en Edificio Tribunales – Villaguay”. (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-12 (VERIFICADO).
+  Respaldo: https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-16-26-por-obra-reparaciones-varias-en-edificio-tribunales-villaguay/; página no identificada.
+- **Hora apertura**: 10:30 (VERIFICADO).
+  Respaldo: https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-16-26-por-obra-reparaciones-varias-en-edificio-tribunales-villaguay/; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## Municipalidad de Rosario — 125/2026
 
 [Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38663)
@@ -2931,6 +3815,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## MIN. SALUD - PODER EJECUTIVO — 22/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: Adquirir Un (01) Ecógrafo básico.- (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-13 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## Municipalidad de Rosario — 124/2026
 
 [Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38650)
@@ -2945,6 +3854,56 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
 - **Hora apertura**: 10:00 (VERIFICADO).
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## Poder Judicial de Entre Ríos — 17/2026
+
+[Publicación oficial](https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-17-26-por-obra-trabajos-de-reparacion-impermeabilizacion-adecuacion-y-pintura-salas-de-audiencias-concordia/)
+
+- **Objeto**: De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Cotejo de Precios Nº 17/26, por Obra: “Trabajos de reparación, impermeabilización, adecuación y pintura – Salas de Audiencias – Concordia”. (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-13 (VERIFICADO).
+  Respaldo: https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-17-26-por-obra-trabajos-de-reparacion-impermeabilizacion-adecuacion-y-pintura-salas-de-audiencias-concordia/; página no identificada.
+- **Hora apertura**: 10:30 (VERIFICADO).
+  Respaldo: https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-17-26-por-obra-trabajos-de-reparacion-impermeabilizacion-adecuacion-y-pintura-salas-de-audiencias-concordia/; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## MIN. SALUD - PODER EJECUTIVO — 23/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: Adquirir Un (01) Analizador de Coágulos (Coagulómetro) y Un (01) Analizador Ión Selectivo (Electrolitos).- (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-16 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -2983,6 +3942,32 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## Municipalidad de Gualeguay — 17/2026
+
+[Publicación oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf)
+
+- **Objeto**: Licitacion Publica Nro 17-2026 - Alquiler de sonido, pantalla e iluminacion Corso 2027 27.10.26 09:48:48 679.81 KB (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-16 (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
+  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf; página no identificada.
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## IAFAS — 8/2026
 
 [Publicación oficial](https://www.iafas.gov.ar/proveedores/licitaciones/)
@@ -3002,7 +3987,6 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
 - **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
-  Respaldo: https://www.iafas.gov.ar/descargas/17688; página no identificada.
 - **Garantias**: Pendiente de verificar (PENDIENTE).
 - **Requisitos**: Pendiente de verificar (PENDIENTE).
 - **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
@@ -3011,6 +3995,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 | Equipo | Renglón | Producto | Cantidad | Página |
 |---|---:|---|---:|---:|
 |  |  | Contadora de Billetes | 1 | 1 |
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## MIN. SALUD - PODER EJECUTIVO — 24/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: Adquirir Diecisiete (17) Camas de Internación, colchones y almohadas.- (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-18 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
@@ -3039,20 +4048,45 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
-## Ministerio de Planeamiento e Infraestructura — 12/2026
+## DIR. GRAL. DE CONTRATACIONES DEL ESTADO - MIN. DE ECONOMIA Y SERVICIOS PUBLICOS - PODER EJECUTIVO — 13/2026
 
-[Publicación oficial](https://www.entrerios.gov.ar/minplan/licitaciones/lpn_dgayc_2026-12)
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
 
-- **Objeto**: Próximas Aperturas de Licitación Pública Dirección General de Arquitectura y Construcciones Licitación Pública 12/2026 DGAyC Cambio de tanques, cubierta, accesibilidad y refacción en baños Escuela de Educación Integral N° 9 "Dr. Luis Agote", San Salvador Apertura: miércoles, 25 de noviembre de 2026 - 10:00hs (VERIFICADO).
+- **Objeto**: Adquirir 2.253 colchones de una plaza. (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: Pendiente de verificar (PENDIENTE).
 - **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-25 (VERIFICADO).
-  Respaldo: https://www.entrerios.gov.ar/minplan/licitaciones; página no identificada.
+- **Fecha apertura**: 2026-11-19 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 09:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## MIN. SALUD - PODER EJECUTIVO — 25/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: Adquirir Una (01) Lámpara de Hendidura.- (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-24 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
 - **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://www.entrerios.gov.ar/minplan/licitaciones; página no identificada.
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -3073,8 +4107,10 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Presupuesto**: Pendiente de verificar (PENDIENTE).
 - **Fecha publicacion**: 2026-10-09 (VERIFICADO).
   Respaldo: https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/; página no identificada.
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: 2026-11-26 (VERIFICADO).
+  Respaldo: https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/; página no identificada.
+- **Hora limite presentacion**: 10:00 (VERIFICADO).
+  Respaldo: https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/; página no identificada.
 - **Fecha apertura**: 2026-11-26 (VERIFICADO).
   Respaldo: https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/; página no identificada.
 - **Hora apertura**: 11:00 (VERIFICADO).
@@ -3099,8 +4135,10 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Presupuesto**: Pendiente de verificar (PENDIENTE).
 - **Fecha publicacion**: 2026-10-19 (VERIFICADO).
   Respaldo: https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/; página no identificada.
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: 2027-02-15 (VERIFICADO).
+  Respaldo: https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/; página no identificada.
+- **Hora limite presentacion**: 10:00 (VERIFICADO).
+  Respaldo: https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/; página no identificada.
 - **Fecha apertura**: 2027-02-15 (VERIFICADO).
   Respaldo: https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/; página no identificada.
 - **Hora apertura**: 11:00 (VERIFICADO).

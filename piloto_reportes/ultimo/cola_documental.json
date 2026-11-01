@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-31T08:31:33.849077-03:00",
+  "fecha": "2026-11-01T08:31:08.968829-03:00",
   "pendientes": [
     {
       "id": "cf892a5fa00e38595d57b6ea999fa09518ba2b7b00647f64cb84ee802da014dc",
@@ -17,6 +17,15 @@
       "objeto": "Adquisición de empalmes y terminales con destino a mantenimiento y obras menores – Plan 2027",
       "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": []
+    },
+    {
+      "id": "8f1264cb9e8e2543fb19ceafe6fcc66216099de58da45d753962df502950c630",
+      "organismo": "Universidad Nacional de Rosario",
+      "numero_procedimiento": "5/2026",
+      "objeto": "Obra Pública “Aulas 2° Piso Nido 1 – Etapa II – Escuela Preuniversitaria de Ciencias Sociales y Humanísticas”",
+      "url": "https://unr.edu.ar/convocatoria-licitacion-publica-n-5-2026-aulas-2-piso-escuela-preuniversitaria-de-ciencias-sociales-y-humanisticas/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
     {
@@ -55,6 +64,20 @@
       ]
     },
     {
+      "id": "db0614da98180a3046963a7d94aa32e629b63c53dbaf534e34ecc8f379f3cf25",
+      "organismo": "MINISTERIO DE PLANEAMIENTO E INFRAESTRUCTURA",
+      "numero_procedimiento": "12/2026",
+      "objeto": "Próximas Aperturas de Licitación Pública Dirección General de Arquitectura y Construcciones Licitación Pública 12/2026 DGAyC Cambio de tanques, cubierta, accesibilidad y refacción en baños Escuela de Educación Integral N° 9 \"Dr. Luis Agote\", San Salvador Apertura: miércoles, 25 de noviembre de 2026 - 10:00hs",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/29-10-26.pdf",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/29-10-26.pdf"
+        }
+      ]
+    },
+    {
       "id": "11b634710d9e3d1f203c3646d30b7177c5e2a0d82bf509d57c335b08acbf9534",
       "organismo": "EPE",
       "numero_procedimiento": "7060002922",
@@ -80,6 +103,32 @@
       "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
       "documentos": []
+    },
+    {
+      "id": "c807127588da05084593406aafc3598ba8dbee1feb8b799d47f3ee2388d0152e",
+      "organismo": "Municipalidad de Concepción del Uruguay",
+      "numero_procedimiento": "36/2026",
+      "objeto": "Refuncionalización de Toma de Agua Alternativa",
+      "url": "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones",
+      "motivo": "REQUIERE_OCR_O_LECTURA",
+      "documentos": [
+        {
+          "titulo": "Edicto",
+          "url": "https://www.cdeluruguay.gob.ar/images/gobierno/GobiernoAbierto/2026/36/edicto.pdf"
+        },
+        {
+          "titulo": "Pliegos y documentación técnica",
+          "url": "https://www.cdeluruguay.gob.ar/images/gobierno/GobiernoAbierto/2026/36/pliegos.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/22-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/21-10-26.pdf"
+        }
+      ]
     },
     {
       "id": "b76812e9976609b514b2cae65c8923abbd3320c4975a5b515eb8157bdf003108",
@@ -132,6 +181,18 @@
         {
           "titulo": "Pliegos y documentación técnica",
           "url": "https://www.cdeluruguay.gob.ar/images/gobierno/GobiernoAbierto/2026/37/pliegos.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/23-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/22-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/21-10-26.pdf"
         }
       ]
     },
@@ -149,11 +210,11 @@
       "organismo": "Municipalidad de Colón",
       "numero_procedimiento": "11/2026",
       "objeto": "EDICTO\nLICITACION PÚBLICA N? 11/2026\n\nPOR DOS DIAS: Llámese a Li “TERMINACION DE\n\n16 VIVIENDAS EN COLON” Expte N? 4024-218/2026.\n\ntación Pública N° 11/2026 pa\n\nVenta y Consulta de Pliegos: en Municipalidad de Colón (B) ~ Tesorería Municipal ~\n\ncalle 51 y 17 de la ciudad de Colón (B) = TE-\n\nFAX: 02473 ~ 430404/10 ~ desde el\n02/11/2026 hasta el dia 20/11/2026 en horarios Administrativos (de 7 131)\n\n= Valor del Pliego: $150.000.0 (Pesos ciento cincuenta mi).\n\n- Presupuesto Oficial: $333.031.337,04\n\n= Apertura de Propuestas: 24 de noviembre de 2026 las 10.00 horas, en la Municipalidad\n\n~ Oficina de Compras ~ calles 51 y 17 de Colón (B)=\n\nManicpaiad ¡de Colón (8) pa oe\n\nee\n\nNota: El presente edicto es para ser publicado en el Boletin Oficial\n",
-      "url": "https://www.municipalidadcolonpba.gob.ar/edictos/licitacion_11-2026.jpg",
+      "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
       "motivo": "DOCUMENTO_NO_COMPROBADO",
       "documentos": [
         {
-          "titulo": "Documento",
+          "titulo": "Licitación Pública N° 11/2026",
           "url": "https://www.municipalidadcolonpba.gob.ar/edictos/licitacion_11-2026.jpg"
         }
       ]
@@ -177,6 +238,24 @@
       "documentos": []
     },
     {
+      "id": "0908d6f9702338f324467dd24e28f03126ac784f5edc6ff52d161a480b2c5e3d",
+      "organismo": "Comuna de Aldea Salto",
+      "numero_procedimiento": "2/2026",
+      "objeto": "COMUNA DE ALDEA SALTO-\n                                             Licitación Pública Nº 02/2026\n OBJETO: Convocatoria a la contratación para la ejecución completa de la obra “Museo Comunal y Galpón para\nMaquinarias- Comuna de Aldea Salto”, de acuerdo a los planos, Pliego de Condiciones Generales, Particulares y\nEspecificaciones Técnicas Particulares, Cómputo Métrico y demás documentación contractual.\n PRESUPUESTO OFICIAL: $ 179.184.800,60 (Pesos ciento setenta y nueve millones ciento ochenta y cuatro mil\nochocientos con 60/100).\n APERTURA DE SOBRES: El día lunes 2 de noviembre de 2026 a partir de las 10:00 horas en la Sede Comunal\nde Aldea Salto, sita en calles Pueblo de los Molinos y Kheler Dorf.\n VALOR DEL PLIEGO: $ 60.000,00 (Pesos sesenta mil).\n VENTA Y CONSULTA DE PLIEGOS: En la Sede Comunal de Aldea Salto (calles Pueblo de los Molinos y Kheler\nDorf), en forma presencial hasta el día 26 de octubre de 2026 inclusive, de lunes a viernes de 7.30 hs a 12.30 hs.\nFdo. Daniel O. Ruhl Presidente Comunal; Priscila Schamne Secretaria Comunal.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/16-10-26.pdf",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/16-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/15-10-26.pdf"
+        }
+      ]
+    },
+    {
       "id": "cb27cc6b155a95182e817ff153a544199dc20b57486af1a931db3022a43a05c0",
       "organismo": "EPE",
       "numero_procedimiento": "7060002925",
@@ -184,6 +263,32 @@
       "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
       "documentos": []
+    },
+    {
+      "id": "7f0a1207ea77750368133f8211b89684f86990d8b04877ee68764b7306f9b0b5",
+      "organismo": "Municipalidad de Seguí",
+      "numero_procedimiento": "9/2026",
+      "objeto": "                              MUNICIPALIDAD DE SEGUÍ\n                            LICITACIÓN PÚBLICA N° 09/2026\n                          Apertura: 03 de Noviembre de 2026 — Hora: 10:00\n                                     Decreto N° 292/2026 D.E.M.\n\n               PLIEGO DE BASES Y CONDICIONES PARTICULARES\n\n\n\n1º- El presente llamado a Licitación Pública tiene por objeto la adquisición de una (1) Máquina\nRetroexcavadora 0km, dicho procedimiento será observado conforme al Art. 34° inc. a) y Art. 38° a\n48° de la Ordenanza N° 34/2026; para ser destinada a la Subsecretaría de Planeamiento Urbano,\nAmbiente y Transporte, con las siguientes características:\n\nCARACTERÍSTICAS GENERALES:\n\n   •   Retroexcavadora 0km. Tracción 4x4. Cabina Cerrada con Aire Acondicionado y Calefacción.\n       Brazo STD\n   •   Motor: Diesel de 4 Cilindros con 3,9 Lts de Cilindrada, turboalimentado, Refrigerado por\n       agua, toma de aire con flujo cruzado. Filtro de combustible con separador de agua. Potencia\n       Neta Mínima 94 HP. Certificación Tier 3.\n   •   Sistema Eléctrico: Tensión de 12V, una batería de 12V.\n   •   Transmisión: Tipo Power Shuttle Sincronizada 4 marchas de avance y 4 de retroceso.\n       Tracción 4x4.\n   •   Frenos: En baño de aceite, dos discos de cada lado. Accionados hidráulicamente,\n       autoajustables libre de mantenimiento. De montaje externo. De estacionamiento: montado\n       en la transmisión.\n   •   Dirección: Delantera, hidrostática total.\n   •   Sistema Hidráulico: Bomba hidráulica de engranajes dobles, caudal no inferior a 145 l/m.\n   •   Cargadora: Balde, capacidad mínima colmada 1m³.\n\n       Retroexcavadora:\n\n   •   Brazo profundidad máxima de excavación no inferior a 4,5 mts.\n   •   Debe contar con línea hidráulica para la colocación de martillo.\n   •   Ancho del Balde: De 24 a 26”.\n   •   Cabina: Cerrada de amplia visibilidad con 2 puertas de acceso, con aire acondicionado y\n       calefacción. Cabina con Certificación ROPS/FOPS.\n   •   Neumáticos: Delanteros 12,5/80 x18; traseros 19,5 x 28.\n\nObservación:\n\nLa máquina ofrecida deberán ser de marcas internacionales y certificar que tengan una presencia en\nel país mayor a 30 años. El oferente debe ser distribuidor oficial con certificado emitido por el\nfabricante y con más de 20 años representando la marca, contar con servicio técnico especializado y\nun amplio stock de repuestos originales. Además, contar con una sala de capacitación para el\ndictado de curso al personal de la Municipalidad de Seguí.\n\nITEM CANT. MERCADERIA                            PRECIO UNIT.       OBSERVACIONES\n\n                Máquina      Retroexcavadora\n  1       1\n                0km\n\n                TOTAL\n\nPresupuesto Oficial: PESOS CIENTO CINCUENTA MILLONES ($150.000.000.-)\n\n\n FORMA DE ENTREGA:\n\f PLAZO DE ENTREGA:\n\n\n FORMA DE PAGO:\n\n\n LUGAR DE ENTREGA:\n\n\n\n2º- CONTENIDO DE LA OFERTA TÉCNICA:\n\n   •   Marca. Modelo. Procedencia del Bien.\n   •   Especificaciones técnicas detalladas, folleto, ficha técnica o catálogo que permita verificar el\n       cumplimiento de lo requerido.\n   •   Garantía de fábrica y/o de posventa ofrecida, indicando extensión y alcance.\n   •   Disponibilidad de servicio técnico y repuestos en la zona.\n\n3º- NORMATIVA APLICABLE: La presente Licitación Pública se rige por la Ordenanza N°\n34/2026 (Título IV), si corresponde por la Ley N° 10.027, y supletoriamente por la Ley N° 5.140 y el\nDecreto N° 795/96 MEOSP, sin perjuicio de lo dispuesto en el Pliego de Bases y Condiciones\nGenerales.\n\n4º- LA MUNICIPALIDAD: Se reserva el derecho de rechazar las ofertas presentadas si no las\nconsidera convenientes a los intereses del Municipio, sin que ello genere derecho a reclamo o\nindemnización a favor de los oferentes (Art. 64° Ordenanza N° 34/2026).-\n\n5°- MANTENIMIENTO DE LA OFERTA: De acuerdo al Art. 16° del Pliego de Bases y\nCondiciones Generales para Suministros o Servicios, los oferentes se obligarán a mantener sus\nofertas por el término de treinta (30) días calendario, a partir de la fecha de apertura. En caso de no\naceptarse esta condición, u ofrecer un plazo menor al señalado, la Municipalidad se reserva el\nderecho de poder condicionar la oferta.\n\n6°- REGISTRO PROVEEDORES: Los oferentes deberán acreditar su inscripción vigente en el\nRegistro Municipal de Proveedores (Art. 32° Ordenanza N° 34/2026).\n\n7º- PRESENTACIÓN DE LAS OFERTAS: : Las ofertas podrán presentarse en Sobre cerrado en\nMesa de Entradas Municipal.\n\n 8º- GARANTIA: Respecto de los Arts. 32° a 35° del Pliego de Bases y Condiciones Generales para\nSuministros o Servicios, se solicita a los oferentes que en oportunidad de presentar la propuesta\nadjunten el comprobante de la Garantía de Oferta (1% del valor total de la oferta) debidamente\ncumplimentado, a fin de evitar inconvenientes posteriores.\n\n9º- CONTENIDO DEL SOBRE: El sobre deberá contener:\n      a) Constancia de inscripción vigente en el Registro Municipal de Proveedores;\n      b) Comprobante de cumplimiento de la Garantía de Oferta, conforme el Art. 8° de este\n      Pliego;\n      c) El Pliego de Bases y Condiciones Generales y el presente Pliego de Bases y Condiciones\n      Particulares, firmados por el proponente;\n      d) La oferta técnica y económica, con el contenido mínimo detallado en el Art. 2° de este\n      Pliego;\n\n\n\n\n10º- APERTURAS DE SOBRES: La apertura de las ofertas se llevará a cabo en la Municipalidad de\nSeguí, en el día y hora indicados en los avisos respectivos, conforme el Art. 17° del Pliego de Bases\ny Condiciones Generales.\n\f11°- CRITERIO DE EVALUACIÓN: Se observará lo establecido en el Titulo VII Evaluación y\nAdjudicación del Pliego de Bases y Condiciones Generales.\n\n12°- DECLARACIÓN DE LLAMADO DESIERTO: En caso de no presentarse oferentes, o de no\nresultar admisibles las ofertas presentadas, se podrá disponer un nuevo llamado a los mismos\nfines, o proceder conforme las excepciones para contratación directa previstas en el Art. 36° (bienes,\nservicios y consultorías) o el Art. 37° (obras públicas) de la Ordenanza N° 34/2026, según\ncorresponda.\n\n13°.-EMPATE DE OFERTAS: Cuando se presenten dos o más ofertas igualmente convenientes, la\nMunicipalidad podrá llamar a quienes se encuentren en tales condiciones a mejorar su oferta bajo\nsobre cerrado, dentro de las 48 horas posteriores al acto. En caso de subsistir la igualdad, se\nprocederá a un sorteo.\n\n14°.-CONDICIONES ESPECIFICAS: Se requiere a los oferentes que detallen claramente las\ncondiciones de patentamiento, gestoría y gastos, tiempo de demora y si se encuentran incluidos en\nel precio o no.\n\nDEPARTAMENTO EJECUTIVO MUNICIPAL, OCTUBRE, 13 de 2026.-\n\f                    PLIEGO DE BASES Y CONDICIONES GENERALES\n           PARA LLAMADOS A LICITACIÓN PÚBLICA – PRIVADA Y CONCURSO DE\n                                  PRECIOS.\n                      PARA SUMINISTROS O SERVICIOS\n\n                               LICITACIÓN PUBLICA N° 09 / 2026\n                                     Decreto N° 292 / 2026 D.E.M.\n                       Acto de apertura: 03 de Noviembre de 2026 — Hora: 10:00\n\n\n\n\nTÍTULO I — ÁMBITO DE APLICACIÓN Y MARCO NORMATIVO\nArtículo 1°.- ÁMBITO DE APLICACIÓN: El presente Pliego de Bases y Condiciones Generales\nrige todos los llamados a Licitación Pública, Licitación Privada, Concurso de Precios (Solicitud de\nCotización), que efectúe la Municipalidad de Seguí para la adquisición de bienes, contratación de\nservicios, consultorías, compraventa de bienes nuevos y usados, locaciones y obras públicas, con\nexcepción de las contrataciones de personal financiadas con la partida presupuestaria establecida a\ntal fin (Art. 30° Ordenanza N° 34/2026).\n\nArtículo 2°.- MARCO NORMATIVO APLICABLE: Los procedimientos regulados por este Pliego\nse rigen, por su orden de prelación, por:\n\n    a) La Ordenanza N° 34/2026 (Organiza la Contabilidad Municipal), en especial su Título IV\n    “De las Contrataciones”;\n    b) La Ordenanza N° 30/2026 (Organiza la Obra Pública Municipal), cuando el objeto de la\n    contratación sea una obra pública o la adquisición de materiales, insumos o equipos destinados\n    a ella;\n    c) La Ley Provincial N° 10.027 (Régimen Municipal) y sus modificatorias, en especial el Art.\n    159° (texto según Ley N° 10.893/2021);\n    d) Supletoria y complementariamente, la Ley Provincial N° 5.140 de Contabilidad Pública y el\n    Decreto Provincial N° 795/96 MEOSP (modificado por Decreto N° 1328/2024) sobre Régimen\n    de Contrataciones del Estado, y los principios generales del derecho administrativo (Art. 3°\n    Ordenanza N° 34/2026);\n    e) El presente Pliego de Bases y Condiciones Generales y el Pliego de Bases y Condiciones\n    Particulares de cada convocatoria, que prevalece sobre aquel en caso de disposiciones\n    específicas y no contradictorias.\n\nTÍTULO II — REQUISITOS Y ADMISIBILIDAD DE LOS OFERENTES\nArtículo 3°.- SUJETOS HABILITADOS: Podrán intervenir en las convocatorias todos los\ninteresados mayores de edad, hábiles para disponer, con domicilio legal en la Provincia de Entre\nRíos o constituido al efecto en la misma, sean personas físicas o jurídicas.\n\nArtículo 4°.- INCOMPATIBILIDADES: No podrán contratar con el municipio:\n\n    a) El Presidente Municipal, los Concejales y los funcionarios municipales con nivel de\n    Subsecretario o superior;\n    b) Los agentes municipales que intervengan directamente en el procedimiento de contratación;\n    c) Las personas inhabilitadas por resolución judicial;\n\f    d) Los cónyuges y parientes hasta el segundo grado de consanguinidad o afinidad de las\n    personas indicadas en los incisos a) y b) incluidas sus formas asociativas (Art. 62° Ordenanza\n    N° 34/2026).\n    e) Proveedores inhabilitados (art. 104 Ordenanza N° 34/2026).-\n\nTÍTULO III — REQUISITOS Y PRESENTACIÓN DE LAS OFERTAS\nArtículo 5°.- PRECIO DE LA OFERTA: Las ofertas especificarán el precio unitario y total, fijo y\ncierto, en números, con referencia a la unidad solicitada, determinando además el total general de\nla propuesta en letras y números. El precio cotizado deberá incluir el I.V.A-. (Impuesto al Valor\nAgregado) considerando a la Municipalidad como Sujeto exento.-\n\nArtículo 6°.- MONEDA: Las ofertas serán presentadas en moneda argentina.\n\nArtículo 7°.- PRESENTACIÓN DE LAS OFERTAS: Las ofertas podrán presentarse:\n\n    a) EN FORMATO FÍSICO: en sobre cerrado en Mesa de Entradas Municipal, consignándose en\n    la cubierta la clase y número de licitación objeto del llamado, fecha y hora de apertura;\n    b) EN FORMATO ELECTRÓNICO: a través de la plataforma digital habilitada por el\n    municipio, o mediante la casilla de correo electrónico oficial contrataciones@segui.gob.ar,\n    utilizando firma digital o mecanismos de autenticación que garanticen la identidad del oferente\n    y la integridad de la información, con la misma validez legal que la presentación física.\nArtículo 8°.- DEPÓSITO DE SOBRES: Para el depósito de los sobres que se entreguen antes de la\nhora de apertura, se habilitará su depósito en carácter de “Expediente” en Mesa de Entradas\nMunicipal, con el número de convocatoria correspondiente. Una vez depositados, los interesados\nno podrán solicitar su devolución.\n\nArtículo 9°.- CONTENIDO DEL SOBRE: El sobre (o el envío electrónico) contendrá:\n\n   a) Constancia de inscripción vigente en el Registro Municipal de Proveedores; es requisito de\n      admisibilidad de las ofertas que el oferente se encuentre inscripto en el Registro Municipal\n      de Proveedores;\n   b) Comprobante de cumplimiento de la Garantía de Oferta (Título VIII);\n   c) El Pliego de Bases y Condiciones Generales y Particulares firmados por el proponente, y la\n      oferta técnica y económica presentada conforme las especificaciones del Pliego Particular.\n\nArtículo 10°.- RASPADURAS Y ENMIENDAS: Las raspaduras y enmiendas en partes esenciales\nde la oferta deberán ser salvadas por el oferente.\n\nArtículo 11°.- FORMULACIÓN POR RENGLÓN: Las propuestas deberán formularse por la\ntotalidad o parte de la mercadería licitada, pero siempre por el total del renglón. Podrán también\ncotizarse algunos renglones, si así fuere previsto en el Pliego de Condiciones Particulares, conforme\nlas modalidades de adjudicación por renglón o en forma total previstas en el Art. 46° de la\nOrdenanza N° 34/2026.\n\nArtículo 12°.- DEFECTOS DE FORMA: Cuando en las ofertas se observaren defectos de forma\nque, a juicio de la Comisión Evaluadora de Ofertas, no se refieran a la esencia de la propuesta y no\nimpidan la comparación con las demás, se podrá requerir su cumplimiento o perfeccionamiento\ndentro de un plazo perentorio no mayor de cinco (5) días hábiles, siempre que no signifique una\nmodificación a las cláusulas que expresamente determinen las condiciones estipuladas en el Pliego.\n\nArtículo 13°.- PRÓRROGA O SUSPENSIÓN: La Municipalidad se reserva el derecho de\nprorrogar o suspender la convocatoria si lo considera conveniente, debiendo publicar la novedad\npor los mismos medios utilizados para el llamado original.\n\nArtículo 14°.- ACEPTACIÓN DE LAS CONDICIONES: La sola presentación de oferta significa la\naceptación lisa y llana de todas las estipulaciones que rigen la contratación, aún cuando este Pliego\no el de Condiciones Particulares no se acompañen de la oferta o no estén firmados por el oferente.\n\fArtículo 15°.- CAPACIDAD TÉCNICA Y ANTECEDENTES: Los proponentes deben acreditar su\ncapacidad técnica y antecedente, pudiendo la Municipalidad recabarlos directamente, aún respecto\nde su solvencia moral.\n\nTÍTULO IV — VIGENCIA Y MANTENIMIENTO DE LAS OFERTAS\nArtículo 16°.- PLAZO DE MANTENIMIENTO: Los proponentes se obligarán a mantener sus\nofertas por el término de treinta (30) días calendario a contar de la fecha del acto de apertura, salvo\nque el Pliego de Condiciones Particulares indique expresamente otro plazo. El Presidente\nMunicipal podrá prorrogar este plazo por hasta treinta (30) días adicionales, mediante decreto\nfundado, por razones de evaluación técnica, ajustes presupuestarios u otras causas de conveniencia\nadministrativa que deberán constar expresamente en el decreto (Art. 42° Ordenanza N° 34/2026).\n\nTÍTULO V — APERTURA DE LAS OFERTAS Y COMISIÓN EVALUADORA\nArtículo 17°.- ACTO DE APERTURA: En la fecha y hora determinadas en el llamado o el día hábil\nsiguiente, a la misma hora, si resultare feriado o se decretare asueto, se procederá a la apertura\npública de los sobres recibidos, en presencia del Jefe del Área de Suministro, el Contador Municipal\ny el Asesor Legal, o quienes los reemplacen, y los proponentes que concurran al acto. Abierto el\nprimer sobre no se permitirá la presentación de nuevas ofertas, ni aun existiendo causas fortuitas o\nde fuerza mayor.\n\nArtículo 18°.- ACTA DE APERTURA: Efectuada la apertura se procederá a labrar acta\ncorrespondiente, que deberá reflejar fielmente el proceso e incidencias del acto licitatorio,\nespecificando: a) número de ofertas o propuestas presentadas; b) nombre completo de las firmas\noferentes; c) importe total de cada cotización, consignándose en caso de alternativas el importe\nmayor; d) documentación agregada a las propuestas; e) importe de la garantía, o constancia de que\nno ha sido presentada; y f) observaciones formuladas, si las hubiera. En caso de ofertas electrónicas,\nse dejará constancia del medio tecnológico utilizado, incorporándose al expediente el respaldo\ndigital correspondiente (Art. 43° Ordenanza N° 34/2026).\n\nArtículo 19°.- COMISIÓN EVALUADORA DE OFERTAS: El Presidente Municipal designará una\nComisión Evaluadora integrada por al menos tres (3) miembros, que analizará las ofertas y emitirá\ndictamen técnico-económico previo a toda adjudicación. Podrá constituirse como Comisión\nEvaluadora Permanente, integrada por funcionarios y técnicos del municipio, o como Comisión\nEvaluadora Particular, designada para un procedimiento determinado, integrada por funcionarios\nde nivel jerárquico apropiado y, cuando corresponda, técnicos o consultores especializados en la\nmateria (Art. 44° Ordenanza N° 34/2026).\n\nArtículo 20°.- OFERTAS FUERA DE TÉRMINO: Cuando llegare una oferta fuera de término, se\nprocederá a: a) si fue entregada en forma personal, se firmará en el reverso del sobre por la persona\nque entrega y el empleado que recibe, dejándose constancia del día y hora de recepción; b) si fue\nrecibida por correo u otro medio, se dejarán las mismas constancias, firmando el empleado\nreceptor; c) las ofertas serán abiertas por la misma autoridad que efectuó la apertura del acto\nprincipal y volcadas en un acta de “Propuestas Recibidas Fuera de Término”, confeccionada dentro\nde las 48 horas de finalizada la apertura principal. Esta documentación se agregará a las\nactuaciones, y a los interesados se les comunicará mediante nota que su propuesta no fue\nconsiderada por haberse recibido con posterioridad a la hora fijada para la apertura.\n\nTÍTULO VI — MUESTRAS\nArtículo 21°.- PRESENTACIÓN DE MUESTRAS: Los proponentes deberán acompañar muestras\nde los artículos licitados cuando el Pliego de Condiciones Particulares lo establezca expresamente,\nno siendo considerada la propuesta en el renglón respectivo que no cumpla tal requisito.\n\nArtículo 22°.- TAMAÑO Y CARACTERÍSTICAS: Las muestras se exigirán en un tamaño\nadecuado para los análisis o experiencias a que se las someta, según lo determine el Pliego de\nCondiciones Particulares.\n\fArtículo 23°.- IDENTIFICACIÓN DE LAS MUESTRAS: Las muestras deberán presentarse con un\nrótulo en lugar visible, asegurado mediante precinto o lacre sellado, con el número de la muestra,\ndel renglón correspondiente y de la licitación, datos que deberán figurar también en la propuesta.\n\nArtículo 24°.- RETIRO Y DISPOSICIÓN DE LAS MUESTRAS: Las muestras correspondientes a\nofertas rechazadas quedarán a disposición de los proponentes para su retiro hasta treinta (30) días\nhábiles después de resuelta la adjudicación. Vencido este plazo, pasarán a ser propiedad de la\nMunicipalidad. Los oferentes no tendrán derecho a reclamo por los deterioros provenientes de los\nanálisis o ensayos a que se las someta.\n\nTÍTULO VII — EVALUACIÓN Y ADJUDICACIÓN\nArtículo 25°.- CRITERIOS DE EVALUACIÓN: Se adjudicará a la oferta más conveniente para el\nmunicipio, considerando: precio; calidad del bien o servicio ofrecido; condiciones de pago; plazo de\nentrega o ejecución; antecedentes del oferente; garantías ofrecidas; capacidad técnica y financiera; y\ntodo otro aspecto establecido en el Pliego de Condiciones Particulares. No será obligatorio\nadjudicar a la oferta de menor precio si existen razones técnicas o de conveniencia fundadas (Art.\n45° Ordenanza N° 34/2026).\n\nArtículo 26°.- INSPECCIÓN DE LOS ELEMENTOS A ADQUIRIR: A efectos de que los\nelementos a adquirir sean inspeccionados por personal especializado de la Municipalidad, los\nproponentes deberán determinar el lugar donde se encuentren los mismos.\n\nArtículo 27°.- MODALIDADES DE ADJUDICACIÓN: Cuando el Pliego contemple distintos\nrenglones, ítems o lotes, la adjudicación podrá otorgarse por renglón a diferentes oferentes, o en\nforma total a un único oferente cuando resulte más beneficioso para el municipio por economía de\nescala, simplificación administrativa, compatibilidad técnica u otra razón de conveniencia fundada\n(Art. 46° Ordenanza N° 34/2026).\n\nArtículo 28°.- OFERTAS IGUALMENTE CONVENIENTES: Cuando se presenten dos o más\nofertas igualmente convenientes, la Municipalidad podrá llamar a quienes se encuentren en tales\ncondiciones a mejorar su oferta bajo sobre cerrado, dentro de las 48 horas posteriores al acto de\napertura. En caso de subsistir la igualdad, se procederá a un sorteo.\n\nArtículo 29°.- ACTO DE ADJUDICACIÓN: La adjudicación se efectuará mediante decreto\nfundado del Presidente Municipal, dentro de los treinta (30) días de la apertura de ofertas, previo\ndictamen de la Comisión Evaluadora, y podrá efectuarse aunque se hubiere presentado una sola\noferta válida. El plazo podrá prorrogarse por hasta treinta (30) días adicionales mediante decreto\nfundado, por razones de evaluación técnica, ajustes presupuestarios u otras causas de conveniencia\nadministrativa que deberán constar expresamente en el decreto (Art. 47° Ordenanza N° 34/2026).\n\nArtículo 30°.- OFERTAS DESESTIMADAS: Podrán desestimarse todas las ofertas cuando existan\nrazones de interés público debidamente fundadas o se compruebe la existencia de vicios en el\nprocedimiento, sin que ello genere derecho a reclamo o indemnización a favor de los oferentes (Art.\n64° Ordenanza N° 34/2026).\n\nArtículo 31°.- DESISTIMIENTO POR PARTE DEL MUNICIPIO: El municipio podrá desistir del\nprocedimiento de contratación en cualquier etapa previa a la adjudicación, sin que ello genere\nderecho a indemnización para los oferentes. Efectuada la adjudicación, el municipio sólo podrá\nrevocar el acto por causas de ilegitimidad o de oportunidad, mérito o conveniencia, debiendo en tal\ncaso indemnizar los daños causados (Art. 63° Ordenanza N° 34/2026).\n\nTÍTULO VIII — GARANTÍAS\nArtículo 32°.- GARANTÍA DE OFERTA: El oferente deberá constituir garantía equivalente al uno\npor ciento (1%) del monto total de su propuesta, que será devuelta de oficio y bajo constancia a los\nno adjudicatarios una vez perfeccionado el contrato con el adjudicatario. Cuando la convocatoria\ntenga por objeto la venta de bienes municipales, la garantía de oferta será del cinco por ciento (5%)\nsobre el valor de la propuesta (Art. 48° inc. a) Ordenanza N° 34/2026). El comprobante de la\ngarantía será adjuntado a la propuesta.\n\fArtículo 33°.- GARANTÍA DE CUMPLIMIENTO DE CONTRATO: El adjudicatario deberá\nconstituir garantía equivalente al cinco por ciento (5%) del monto adjudicado, que será devuelta\nuna vez cumplidas todas las obligaciones contractuales. Podrá prescindirse de esta garantía cuando\nel cumplimiento de las obligaciones contractuales sea inmediato, o en los casos que determine la\nAdministración (Art. 48° inc. b) Ordenanza N° 34/2026).\n\nArtículo 34°.- FORMAS DE CONSTITUCIÓN: Las garantías podrán presentarse en las siguientes\nformas: a) en efectivo, mediante ingreso a la Tesorería Municipal, depósito bancario o transferencia\na la orden de la Municipalidad de Seguí, cuya boleta deberá acompañar a la propuesta; b) en\ndocumento a la vista, extendido o endosado a favor de la Municipalidad de Seguí, con sellado de\nley; c) mediante cheque certificado extendido a la orden de la Municipalidad de Seguí; o d)\nmediante póliza de seguro de caución.\n\nArtículo 35°.- SUBSANACIÓN DE DEFECTOS FORMALES: Cuando en el cumplimiento de las\nformas de garantía se observare falta de endoso y/o sellado de los documentos, error en su\nconfección, o falta de aval bancario cuando corresponda, el Área de Suministro requerirá su\nsubsanación dentro de un plazo de cinco (5) días hábiles de la fecha de apertura, que el interesado\ndeberá cumplimentar en los cinco (5) días hábiles siguientes. El incumplimiento podrá ser pasible\nde sanciones, o de la cancelación de la inscripción en el Registro de Proveedores, sin perjuicio de las\nacciones que en derecho correspondan.\n\nTÍTULO IX — FIRMA, EJECUCIÓN Y RECEPCIÓN DEL CONTRATO\nArtículo 36°.- FIRMA DEL CONTRATO: El proponente que resulte adjudicatario será notificado\nde ello y deberá presentarse a firmar el contrato de compraventa o de locación correspondiente\ndentro de los cinco (5) días hábiles administrativos de recibida la notificación, previa constitución\nde la Garantía de Cumplimiento de Contrato cuando corresponda. Cuando el oferente sea persona\njurídica, deberá acreditar los extremos de su existencia jurídica, el instrumento de designación de\nsu representante legal y el acto administrativo o societario que lo autorice a suscribir el contrato.\n\nArtículo 37°.- MODIFICACIÓN DE CONTRATOS: Los contratos podrán ampliarse, reducirse o\nmodificarse por mutuo acuerdo entre las partes, hasta un máximo del treinta por ciento (30%) del\nmonto contratado, mediante decreto fundado del Presidente Municipal. Las modificaciones que\nimpliquen aumento de precio no podrán superar el veinte por ciento (20%) del monto original,\nsalvo causas excepcionales debidamente justificadas y con autorización del Concejo Deliberante\n(Art. 65° Ordenanza N° 34/2026).\n\nArtículo 38°.- SUBCONTRATACIÓN Y CESIÓN: El contratista no podrá subcontratar total o\nparcialmente el objeto del contrato sin autorización expresa del municipio, lo que no lo libera de\nsus obligaciones contractuales. La cesión de contratos requiere autorización previa mediante\ndecreto fundado, verificando que el cesionario reúna las mismas condiciones técnicas, económicas\ny financieras que el cedente (Arts. 69° y 70° Ordenanza N° 34/2026).\n\nTÍTULO X — ENTREGA Y PAGO\nArtículo 39°.- RECEPCIÓN: Los bienes, servicios u obras contratados serán recepcionados por el\nárea requirente o el Área de Suministro mediante factura conformada, remito o formulario de\nrecepción. En la contratación para la realización de obras públicas se labrará acta de recepción\nprovisoria y definitiva, conforme la Ordenanza N° 30/2026 (Art. 68° Ordenanza N° 34/2026).\n\nArtículo 40°.- GASTOS DE ENTREGA: Serán a cargo del adjudicatario todos los gastos que se\noriginen por flete, acarreo, carga y descarga para la entrega de la mercadería en el lugar que\nestablezca el Pliego de Condiciones Particulares.\n\nArtículo 41°.- FORMA DE PAGO: El pago de las mercaderías provistas, trabajos o servicios\nrealizados, se abonará contra presentación de las facturas correspondientes, previa recepción de\nconformidad, pudiendo efectuarse entregas parciales o pago contra entrega cuando sea\nconveniente a los intereses de la Municipalidad, o cuando el Pliego de Condiciones Particulares\nprevea una forma distinta.\n\nTÍTULO XI — PENALIDADES E INHABILITACIÓN\n\fArtículo 42°.- RESCISIÓN DE CONTRATOS: Los contratos podrán rescindirse por\nincumplimiento del contratista, por imposibilidad de ejecución, por mutuo acuerdo o por decisión\nunilateral del municipio fundada en razones de interés público. La rescisión se dispondrá por\ndecreto fundado, previo informe del área técnica y dictamen legal (Art. 66° Ordenanza N°\n34/2026).\n\nArtículo 43°.- PENALIDADES: El incumplimiento de las obligaciones contractuales podrá dar\nlugar a: a) pérdida del depósito de garantía de oferta, en favor del municipio, si el proponente\ndesistiera de su oferta dentro del plazo de mantenimiento sin mediar notificación anterior; b)\nmultas por mora en el cumplimiento; c) ejecución de garantías; d) rescisión del contrato; y e)\ninhabilitación para contratar con el municipio por el plazo que se establezca (Art. 67° Ordenanza\nN° 34/2026).\n\nArtículo 44°.- INHABILITACIÓN DE PROVEEDORES: Los proveedores que incurran en\nincumplimientos graves o reiterados podrán ser inhabilitados para contratar con el municipio por\nel plazo que determine el Presidente Municipal mediante decreto fundado, sin perjuicio de las\npenalidades contractuales aplicables (Art. 104° Ordenanza N° 34/2026).\n\nArtículo 45°.- MORA AUTOMÁTICA: Se entenderá por “mercadería no entregada” también\naquella que fuera entregada y rechazada por no ajustarse a las condiciones de la Orden de Compra,\nconsiderándose producida la mora automáticamente por el simple vencimiento del plazo\ncontractual, sin necesidad de interpelación judicial o extrajudicial.\n\nTÍTULO XII — IMPUGNACIONES\nArtículo 46°.- IMPUGNACIONES: Para impugnar los informes técnico-administrativos que se\nrealicen con motivo de la adjudicación, el impugnante deberá depositar previamente en la\nTesorería Municipal la suma del diez por ciento (10%) del valor de la oferta. Si la impugnación\nfuera rechazada por resolución del Departamento Ejecutivo Municipal, quedará finalizada la\ninstancia y la suma depositada ingresará definitivamente al Patrimonio Municipal, sin derecho a\nreclamo alguno, en concepto de compensación de gastos de actuación administrativa.\n\nTÍTULO XIII — DISPOSICIONES FINALES\nArtículo 47°.- DOMICILIO Y JURISDICCIÓN: Los proponentes deberán constituir domicilio\nespecial en la Provincia de Entre Ríos a los efectos judiciales o extrajudiciales pertinentes,\nsometiéndose a la jurisdicción de los Tribunales en lo Contencioso Administrativo de la ciudad de\nParaná, con renuncia a cualquier otro fuero, incluso el federal.\n\nArtículo 48°.- DÍAS: Donde en este Pliego se mencionen “días” sin otra aclaración, se entenderá\nque son días hábiles administrativos para la Administración Municipal (Art. 110° Ordenanza N°\n34/2026).\n\nDEPARTAMENTO EJECUTIVO MUNICIPAL, OCTUBRE, 13 de 2026.-\n\f",
+      "url": "https://www.segui.gob.ar/sitio/wp-content/uploads/2025/01/MUNICIPALIDAD-DE-SEGUI-Pliegos-Lic-Publica-09-2026-1.pdf",
+      "motivo": "PLAZO_O_HITO_PENDIENTE_DE_PRECISION",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/20-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/19-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/16-10-26.pdf"
+        },
+        {
+          "titulo": "LICITACIÓN PÚBLICA N° 09-2026 DESCARGAR PLIEGO - RETROEXCAVADORA 0KM",
+          "url": "https://www.segui.gob.ar/sitio/wp-content/uploads/2025/01/MUNICIPALIDAD-DE-SEGUI-Pliegos-Lic-Publica-09-2026-1.pdf"
+        }
+      ]
     },
     {
       "id": "7e6f4ddd874a6888f4f75c4f0478b86b9444ab1fb653a0bc63bdf584205b490f",
@@ -231,6 +336,36 @@
       "documentos": []
     },
     {
+      "id": "b7b890b04de7a159eab29e07632b5cf999e5f0458c827c4caeca01674e1622d1",
+      "organismo": "Municipalidad de Concepción del Uruguay",
+      "numero_procedimiento": "35/2026",
+      "objeto": "Adquisición de seiscientas (600) Luminarias Leds para Alumbrado Público",
+      "url": "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones",
+      "motivo": "SIN_CLAUSULA_PAGO_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "Edicto",
+          "url": "https://www.cdeluruguay.gob.ar/images/gobierno/GobiernoAbierto/2026/35/edicto.pdf"
+        },
+        {
+          "titulo": "Pliegos y documentación técnica",
+          "url": "https://www.cdeluruguay.gob.ar/images/gobierno/GobiernoAbierto/2026/35/pliegos.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/20-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/19-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/16-10-26.pdf"
+        }
+      ]
+    },
+    {
       "id": "aa1770734de8d99cf083f4b64a4172eb2099f59148d3fbd3995261762429b3f6",
       "organismo": "EPE",
       "numero_procedimiento": "7050001924",
@@ -273,6 +408,20 @@
       "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
       "documentos": []
+    },
+    {
+      "id": "55ceab9f32a2784713a5fecb88f0087020760299481dae607a981b7200b83c97",
+      "organismo": "Municipalidad de El Pingo",
+      "numero_procedimiento": "2/2026",
+      "objeto": "-- -- --\n                                              MUNICIPALIDAD EL PI NGO\n PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE 2 (DOS) GARITAS DE COLECTIVOS\nDESTINADAS A SER EMPLAZADAS SOBRE AV. 9 DE JULIO DE NUESTRA LOCALIDAD.-\n                                   Prim er Llam ado a: Licitación Pública Nº 02/2026\n                                            Decreto de Llamado Nº 65/2026\n FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 10/11/2026- 12 HS\n FECHA DE APERTURA DE OFERTA: 11/11/2026- 10 HS\n LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n PRESUPUESTO OFICIAL: $16.868.978,35 (Pesos DIECISÉIS MILLONES OCHOCIENTOS SESENTA Y OCHO\nMIL NOVECIENTOS SETENTA Y OCHO CON 35/100) IVA INCLUIDO\n VALOR DEL PLIEGO: SIN COSTO\n ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE 2 (DOS) GARITAS\nDE COLECTIVOS DESTINADAS A SER EMPLAZADAS SOBRE AV. 9 DE JULIO DE NUESTRA LOCALIDAD.-\n ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n OBJETO DE LA COMPRA\n La presente gestión tiene por objeto la adquisición de dos (2) garitas de colectivos nuevas, sin uso, destinadas a\nser emplazadas sobre Av. 9 de Julio de nuestra localidad, conforme a las características que se detallan en las\npresentes especificaciones.\n DETALLE ESPECÍFICO DE LAS GARITAS\n Tipo de Unidad: Garita para parada de colectivos, tipo modelo \"IRON\" o similar de igual o superior calidad.\n - Cantidad: Dos (2) unidades.\n - Dimensiones: Largo de tres (3) metros.\n - Componentes: Con cesto de residuos y cerramiento lateral.\n - Iluminación: Dos (2) reflectores solares de 30 W por garita.\n\n\n\n  - Materiales: Resistentes, sostenibles y de bajo mantenimiento, con posibilidad de adaptar paneles informativos\ny/o publicitarios.\n  - Pintura: Las garitas deberán entregarse pintadas, utilizando pinturas térmicas o reflectantes que reduzcan el\nimpacto del calor extremo. La aplicación deberá realizarse bajo un control estricto de las condiciones ambientales\n(temperatura y humedad), conforme a las recomendaciones del fabricante de la pintura.\n  - Ploteo: El precio cotizado deberá incluir el ploteo de las garitas con las imágenes que el Municipio disponga.\n  Rupp, Laura Verónica, presidente municipal.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf"
+        }
+      ]
     },
     {
       "id": "a90895a9b08505cfb400646331d350700635c1ecca8d71f0bff13fc6cbe078c4",
@@ -351,6 +500,42 @@
       "documentos": []
     },
     {
+      "id": "5f056dae38de629bf0de452fc608c6b9edecb78e6e65fa1c29442faf1c259b98",
+      "organismo": "Municipalidad de Santa Ana",
+      "numero_procedimiento": "6/2026",
+      "objeto": "FEDERACION\n\n                                     MUNICIPALIDAD DE SANTA ANA\n                                       Departamento de Federación\n                                       Licitación Publica N° 06/2026\n                                         Decreto N° 139/2026 D. E.\n OBJETO: Provisión de mano de obra, materiales, maquinarias y herramientas para pavimento asfáltico en Santa\nAna.-\n APERTURA DE SOBRES: Viernes 06 de Noviembre de 2026, 10 hs.-\n VALOR DEL PLIEGO: $ 150.000,00.- (Pesos Ciento Cincuenta Mil).-\n PRESUPUESTO OFICIAL ESTIMADO: Pesos Seiscientos diez Millones ($ 610.000.000,00).-\n LUGAR: Municipalidad de Santa Ana – ENTRE RIOS.-\n\n\n INFORMES: Cupertino Otaño 576 - Edificio Municipal de Santa Ana (E. R.).-\n Telefax: 03456-15466000.-\n E-mail: intendencia@santaana.gob.ar – secretariagobierno@santaana.gob.ar Página web: www.santaana.gob.ar\n  CARLOS ALBERTO DALZOTTO (Secretario Municipal) ROGELIO LUIS ZANANDREA (Presidente Municipal)",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/16-10-26.pdf",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/16-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/15-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/14-10-26.pdf"
+        }
+      ]
+    },
+    {
+      "id": "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0",
+      "organismo": "Comuna de Colonia Tunas",
+      "numero_procedimiento": "3/2026",
+      "objeto": "FEDERACION\n\n                                     COMUNA DE COLONIA TUNAS (E.R.)\n                                 DPTO. FEDERACIÓN - PROV. DE ENTRE RÍ OS\n                                         Licitación Pública N° 03/2026\n OBJETO: “ADQUISICIÓN DE TRITURADOR DE RAMAS\"\n Decreto Nº 08/2026 - D.E.\n APERTURA: Fecha – Hora: 25 de noviembre de 2026 - Hora 10:00\n Lugar: Sede Comunal – Av. Corrientes S/N (Centro Cívico) - San Jaime de la Frontera, Departamento\nFederación, Provincia de Entre Ríos.\n Recepción de Sobres: 09:45 horas (25/11/2026)\n Presupuesto Oficial Estimado: PESOS VEINTISIETE MILLONES con 00/100 ($ 27.000.000,00).\n\n\n Contacto: María Julieta Ornetti (Secretaria)\n Telefonía móvil: 3456-461413 - E-mail: comunacoloniatuna@gmail.com",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf"
+        }
+      ]
+    },
+    {
       "id": "2149035a7e912e83cc9d5f0d67383512c8ff05797f7a5e9458a1f0ff7616e6db",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "11/2026",
@@ -365,6 +550,15 @@
       "numero_procedimiento": "50891/2026",
       "objeto": "Compra Agil 50891/2026 Publicada para Apertura CAG 05-089-3194-2026 DROGAS PURAS Y ALERGENOS -HRSP- Apertura: 02/11/2026 09:00",
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38615",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": []
+    },
+    {
+      "id": "0dc8e0f0ce1842031c02a0082c1ffe81f023ebcc679d153fe3889d0b0883118c",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "270/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº 270/26, por provisión y envío de un módulo operador de puerta automática para ascensor central Nº2 del Edificio Tribunales de la Localidad de Paraná PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 270/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 270/26, por provisión y envío de un módulo operador de puerta automática para ascensor central Nº2 del Edificio Tribunales de la Localidad de Paraná. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 02 de noviembre de 2026 a las 09:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 270-26 Descargar Imprmir Trámites y consultas a distancia Concursos Abiertos Concursos de Ingreso Contrataciones Firma digital Formularios en línea Inhábiles y Feriados Jurisprudencia Mesa Única Informatizada Sentencias y Expedientes Sistema de Coberturas Sistema SNE Sitios de interés Video conferencias Concursos Abiertos Concursos de Ingreso Contrataciones Firma digital Formularios en línea Inhábiles y Feriados Jurisprudencia Mesa Única Informatizada Sentencias y Expedientes Sistema de Coberturas Sistema SNE Sitios de interés Video conferencias",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-270-26-por-provision-y-envio-de-un-modulo-operador-de-puerta-automatica-para-ascensor-central-no2-del-edificio-tribunales-de-la-localidad-de-parana/",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
       "documentos": []
     },
@@ -432,6 +626,15 @@
       "documentos": []
     },
     {
+      "id": "b4d478577cc4fbc46d4f34fc57809797110b6d8a06c2674f9128baec68040a2b",
+      "organismo": "DIR. GRAL. DE CONTRATACIONES DEL ESTADO - MIN. DE ECONOMIA Y SERVICIOS PUBLICOS - PODER EJECUTIVO",
+      "numero_procedimiento": "16/2026",
+      "objeto": "Contratar el alquiler de treinta (30) equipos fotocopiadores, con suministro de insumos (tóner, repuestos, materiales y accesorios, excepto papel) con mantenimiento y servicio técnico de los mismos",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "0c117b18a3f6c4c225900ca09d2cfa2c1247d7f61cfe5bc35d0d09b9c420ed72",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "110470/2026",
@@ -439,6 +642,55 @@
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38581",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
       "documentos": []
+    },
+    {
+      "id": "3b6c89ecaf544ec8b28487af21f1d649399e3aafd54867bccb684d9d94ca2676",
+      "organismo": "CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO",
+      "numero_procedimiento": "231/2026",
+      "objeto": "reparacion de vehiculo oficial ford 100",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "9d589f44b884fa01e6d9a63adf435c31763b6f422ebfe12a9fbad518f2939180",
+      "organismo": "CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO",
+      "numero_procedimiento": "235/2026",
+      "objeto": "COMPRA DE MATERIALES PARA CONFECCION DE SILLAS",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "8736a23d0fbf9e4ed4bef400c4d85af196076cd53b31df7cbf7c87b7badc276a",
+      "organismo": "CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO",
+      "numero_procedimiento": "238/2026",
+      "objeto": "COMPRA DE LIBROS",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "93011fad01f0c19fee88e306154e2d0c082ef53565b61e1d3890c7b876cc8504",
+      "organismo": "Vialidad Entre Ríos",
+      "numero_procedimiento": "17/2026",
+      "objeto": "ADQUISICIÓN DE CUBIERTAS, CAMARAS Y PROTECTORES. – APERTURA: El 02/11/26 a las 10:00 horas o siguiente/s si aquél fuera inhábil, en la Dirección Provincial de Vialidad, Av. Ramírez N° 2.197, Dirección de DESPACHO, 1° PISO, Paraná, Entre Ríos.- CONSULTA DE PLIEGOS: Departamento I SUMINISTROS, Avda. Ramírez Nº 2.197, Paraná, E. Ríos, T.E. 0343-4248750, o en www.dpver.gov.ar.- VENTA DE PLIEGOS: En la Dirección de Administración y Finanzas de la Dirección Provincial de Vialidad, Avda. Ramírez N° 2.197, de la ciudad de Paraná, podrá pagarse mediante transferencia a la cuenta corriente en pesos Nº 0095059 – CBU Nº 3860001001000000950597, del Banco Entre Ríos.- VALOR DEL PLIEGO: PESOS DIEZ MIL ($ 10.000,00).- Descargar documentación",
+      "url": "https://www.dpver.gov.ar/wp-content/uploads/2026/LP_17-2026/Pliegos_de_consulta_LP_17-2026.pdf",
+      "motivo": "DOCUMENTO_NO_COMPROBADO",
+      "documentos": [
+        {
+          "titulo": "Descargar documentación",
+          "url": "https://www.dpver.gov.ar/wp-content/uploads/2026/LP_17-2026/Pliegos_de_consulta_LP_17-2026.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/15-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/14-10-26.pdf"
+        }
+      ]
     },
     {
       "id": "65ac92b17318ae7a42069e98a784e44604449b5668d11b88e2bc7e3bb9ae386f",
@@ -466,6 +718,28 @@
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38664",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
       "documentos": []
+    },
+    {
+      "id": "dc0586d8c471e1df6501b4f4db287d0ea4a6779b2ffe7c18af25d0867c2e82b7",
+      "organismo": "INSTITUTO AUTÁRQUICO BECARIO PROVINCIAL",
+      "numero_procedimiento": "11/2026",
+      "objeto": "PARANA\n\n                                             GOBIERNO DE ENTRE RÍOS\n                                 INSTITUTO AUTÁRQUICO BECARIO PROVINCIAL\n                                             Licitación Pública N° 11/2026\n OBJETO: Contratación del Servicio de Transporte Escolar Rural destinado al traslado de alumnos matriculados\nen los establecimientos educativos con asiento en los departamentos Diamante, Feliciano, Islas, Nogoyá y Victoria\nde la Provincia de Entre Ríos, a partir del 16 de noviembre de 2026 hasta el 31 de agosto de 2027, con opción de\nrenovación por un año.\n APERTURA: Instituto Autárquico Becario Provincial, el día 03/11/2026 a las 08:30 horas.\n VENTA DE PLIEGOS: en el Instituto Autárquico Becario Provincial – San Martín 458 – Paraná – Entre Ríos\n CONSULTA: 0343 4207979 - http://www.institutobecario.gov.ar              – comprasinstitutobecario@gmail.com –\ncontable@institutobecario.gov.ar - transporte@institutobecario.gov.ar\n VALOR DEL PLIEGO: Sin costo.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/27-10-26.pdf",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/27-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/26-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/23-10-26.pdf"
+        }
+      ]
     },
     {
       "id": "52f7ff6d9f3005d0a9b055087e78af10b9b4881b2a5488e9eff901492b15b267",
@@ -594,6 +868,33 @@
       "documentos": []
     },
     {
+      "id": "4e9c9d5473c772ccc466c90b60fbe79dcf182bb86388a0067fed825e67a2b8ff",
+      "organismo": "CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO",
+      "numero_procedimiento": "236/2026",
+      "objeto": "COMPRA DE ABERTURA PARA ESC 37 AMBROSETTI GUALGUAY",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "95cd6a143aa4035c28d1743492d665b4158b01efa935dfa7aaae0197ac58759c",
+      "organismo": "CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO",
+      "numero_procedimiento": "239/2026",
+      "objeto": "compra de materiales electricos",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "c3a150d5e28867d3a3d2845293b4c5b710a3859a9c5e3def313679873fce8ea2",
+      "organismo": "CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO",
+      "numero_procedimiento": "242/2026",
+      "objeto": "COMPRA DE ARTICULOS DE LIBRERIA",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "dc1065f9d0d723a92c2aecd11d491de1aab1260bc60bbc2d4a6556039c05e08d",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "24655/2026",
@@ -657,24 +958,6 @@
       "documentos": []
     },
     {
-      "id": "b7b890b04de7a159eab29e07632b5cf999e5f0458c827c4caeca01674e1622d1",
-      "organismo": "Municipalidad de Concepción del Uruguay",
-      "numero_procedimiento": "35/2026",
-      "objeto": "Adquisición de seiscientas (600) Luminarias Leds para Alumbrado Público",
-      "url": "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones",
-      "motivo": "SIN_CLAUSULA_PAGO_COMPROBADA",
-      "documentos": [
-        {
-          "titulo": "Edicto",
-          "url": "https://www.cdeluruguay.gob.ar/images/gobierno/GobiernoAbierto/2026/35/edicto.pdf"
-        },
-        {
-          "titulo": "Pliegos y documentación técnica",
-          "url": "https://www.cdeluruguay.gob.ar/images/gobierno/GobiernoAbierto/2026/35/pliegos.pdf"
-        }
-      ]
-    },
-    {
       "id": "01a1227d0a1d5e4f98aec6871e269f8bbe69d118837297efc4454cba9d6085ac",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "10/2026",
@@ -734,6 +1017,15 @@
       "numero_procedimiento": "24665/2026",
       "objeto": "Compra Agil 24665/2026 Publicada para Apertura DROGAS CARDIOLOGICAS Y CARDIOVASCULARES NORMATIZADAS H.E.C.A Apertura: 04/11/2026 10:30",
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38666",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": []
+    },
+    {
+      "id": "c94fb4088ed48f98058115d52f9df83dc4756bd41ea3c5ddecc7b955e88186c4",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "12/2026",
+      "objeto": "Cotejo de Precios Nº 12/26: \"Obra Construcción cerco perimetral nuevo edificio tribunales San José de Feliciano\"",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
       "documentos": []
     },
@@ -801,6 +1093,77 @@
       "documentos": []
     },
     {
+      "id": "7a045fe6cfba7aae1e31ca28c0c30cbfa8d8a0d1685c7c8c7ed0a9ed3d5d9b94",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "9/2026",
+      "objeto": "Obra: Construcción Nuevo Edificio para Juzgado de Lucas González",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/19-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/16-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/15-10-26.pdf"
+        }
+      ]
+    },
+    {
+      "id": "253319312cf6f4f08005f5a56eed3db3a3163119564097f29ad2615b710edb4a",
+      "organismo": "MIN. SALUD - PODER EJECUTIVO",
+      "numero_procedimiento": "20/2026",
+      "objeto": "Adquirir Quince (15) Sillones Odontológicos Completos solicitados por la Dirección de Odontología.-",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/26-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/23-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/22-10-26.pdf"
+        }
+      ]
+    },
+    {
+      "id": "bcea3c50a76ddf93fb600208c5d2bf7e7ec2d375814fc93f0e4bb09879d561ff",
+      "organismo": "CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO",
+      "numero_procedimiento": "245/2026",
+      "objeto": "compra de componentes informaticos",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "0dd55b8869d3fde423543756ffd070174878fb05195d6043d690fb5d0a441fde",
+      "organismo": "CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO",
+      "numero_procedimiento": "246/2026",
+      "objeto": "COMPRA DE CORREA POLI V PARA CACTUS CITROEN",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "e59d2ecdd5929ae1b5639094c2926eedf2b8fff1dffa2c9d54e9e2c5d70ac20b",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "13/2026",
+      "objeto": "Cotejo de Precios Nº 13/26: \"Obra: Nuevos Tanques de reserva, reparaciones en sanitarios y oficinas médicos forenses Edificio Tribunales Gualeguaychú\"",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": []
+    },
+    {
       "id": "a1c8443edd896922b48e7f4ed0e2721cf8bee6be8948781d1842e71f23f8a03a",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "24675/2026",
@@ -828,29 +1191,20 @@
       "documentos": []
     },
     {
-      "id": "c807127588da05084593406aafc3598ba8dbee1feb8b799d47f3ee2388d0152e",
-      "organismo": "Municipalidad de Concepción del Uruguay",
-      "numero_procedimiento": "36/2026",
-      "objeto": "Refuncionalización de Toma de Agua Alternativa",
-      "url": "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones",
-      "motivo": "REQUIERE_OCR_O_LECTURA",
-      "documentos": [
-        {
-          "titulo": "Edicto",
-          "url": "https://www.cdeluruguay.gob.ar/images/gobierno/GobiernoAbierto/2026/36/edicto.pdf"
-        },
-        {
-          "titulo": "Pliegos y documentación técnica",
-          "url": "https://www.cdeluruguay.gob.ar/images/gobierno/GobiernoAbierto/2026/36/pliegos.pdf"
-        }
-      ]
-    },
-    {
       "id": "0a4e1421a87659ffb95e636c2a4c7ca1ba11d93177cbd9b1c691ab64124ffc6d",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "20073/2026",
       "objeto": "Licitación Privada 20073/2026 Publicada para Apertura Trabajos necesarios para poner en condiciones las instalaciones relevadas en el Polideportivo Cristalería, sito en Alberdi 3200 de la ciudad de Rosario Apertura: 06/11/2026 09:00",
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38616",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": []
+    },
+    {
+      "id": "5aef1c6f463f3f9943424a99b673037aa066d8d3db2d1f50dc50e1f4a2d540e6",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "272/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº 272/26, por provisión y envío de la heladera para ser destinada a la Cámara de Casación Penal Sala 1 de Paraná PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 272/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 272/26, por provisión y envío de la heladera para ser destinada a la Cámara de Casación Penal Sala 1 de Paraná. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 06 de noviembre de 2026 a las 09:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 272-26 Descargar Imprmir Trámites y consultas a distancia Concursos Abiertos Concursos de Ingreso Contrataciones Firma digital Formularios en línea Inhábiles y Feriados Jurisprudencia Mesa Única Informatizada Sentencias y Expedientes Sistema de Coberturas Sistema SNE Sitios de interés Video conferencias Concursos Abiertos Concursos de Ingreso Contrataciones Firma digital Formularios en línea Inhábiles y Feriados Jurisprudencia Mesa Única Informatizada Sentencias y Expedientes Sistema de Coberturas Sistema SNE Sitios de interés Video conferencias",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-272-26-por-provision-y-envio-de-la-heladera-para-ser-destinada-a-la-camara-de-casacion-penal-sala-1-de-parana/",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
       "documentos": []
     },
@@ -891,11 +1245,47 @@
       "documentos": []
     },
     {
+      "id": "13c0f615f0d9ed70e86303857fdd6b45707cba5a7fcbf48c0d305a08ee08deaf",
+      "organismo": "Vialidad Entre Ríos",
+      "numero_procedimiento": "33/2026",
+      "objeto": "ADQUISICION DE REPUESTOS PARA MOTONIVELADORA NEW HOLLAND EQ. M-33",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "ca14d1c50ddd9deaef843b34f731f2fbddade6c229b134ce8e1bfa648186b6e4",
+      "organismo": "CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO",
+      "numero_procedimiento": "247/2026",
+      "objeto": "REPARACION DE PUERTA DE INGRESO CGE",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "949fff70cc5fb16a346cbdd12de59757df7a5d616c541b4ee419b0d9d69c80f6",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "5/2026",
+      "objeto": "Obra: \"Pintura y reparaciones Tribunales de La Paz\"",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": []
+    },
+    {
       "id": "fefca0b07c5100eba53770b52c914b82c08797a791945bcf5eaed1572a4f5df2",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "40611/2026",
       "objeto": "Compra Agil 40611/2026 Publicada para Apertura ADQUISICION DE SABANAS Y FUNDAS PARA EL HOSPITAL I CARRASCO. Apertura: 06/11/2026 11:00",
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38642",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": []
+    },
+    {
+      "id": "41d208f52fb6bf7576743c19b7d9b4dac8bc5ffcf777b9584228ce7ba48b1138",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "268/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº 268/26, por contratación de servicio de viandas para los juicios por jurados a realizarse en la ciudad de Gualeguay PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 268/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 268/26, por contratación de servicio de viandas para los juicios por jurados a realizarse en la ciudad de Gualeguay. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 06 de noviembre de 2026 a las 11:00 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 268-26 Descargar Imprmir Trámites y consultas a distancia Concursos Abiertos Concursos de Ingreso Contrataciones Firma digital Formularios en línea Inhábiles y Feriados Jurisprudencia Mesa Única Informatizada Sentencias y Expedientes Sistema de Coberturas Sistema SNE Sitios de interés Video conferencias Concursos Abiertos Concursos de Ingreso Contrataciones Firma digital Formularios en línea Inhábiles y Feriados Jurisprudencia Mesa Única Informatizada Sentencias y Expedientes Sistema de Coberturas Sistema SNE Sitios de interés Video conferencias",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-268-26-por-contratacion-de-servicio-de-viandas-para-los-juicios-por-jurados-a-realizarse-en-la-ciudad-de-gualeguay/",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
       "documentos": []
     },
@@ -924,6 +1314,15 @@
       "objeto": "Licitación Privada 110480/2026 Publicada para Apertura QUÍMICA CLÍNICA AUTOANALIZADORES HECA DIRECCIÓN DE BIOQUÍMICA Apertura: 09/11/2026 10:00",
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38657",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": []
+    },
+    {
+      "id": "beee170ab8c4f021663d1bc801ffc8e0f00b66e54d10c0a7648fa44d813a7b7c",
+      "organismo": "CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO",
+      "numero_procedimiento": "240/2026",
+      "objeto": "servicio completo con mano de obra sprinter AF952RN",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
     {
@@ -975,6 +1374,15 @@
       "documentos": []
     },
     {
+      "id": "015f94babd9e25a514c9d1713f478bdd28395f38d4a1aa65a3643a3ea0ea54ef",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "14/2026",
+      "objeto": "De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Cotejo de Precios Nº 14/26, por Obra: “Trabajos de mantenimiento interior en inmueble de Juzgado de Paz de General Campos”.",
+      "url": "https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-14-26-por-obra-trabajos-de-mantenimiento-interior-en-inmueble-de-juzgado-de-paz-de-general-campos/",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": []
+    },
+    {
       "id": "130499b611d28dbd7034aaaeafdce88f91c73cf7cb068e1ea4408bc2baf66cbe",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "40641/2026",
@@ -998,13 +1406,63 @@
       ]
     },
     {
+      "id": "6a003278b71d5e26e3eac386b719a9022d0791f2f4f50b395070e62bde3c126f",
+      "organismo": "DIR. GRAL. DE CONTRATACIONES DEL ESTADO - MIN. DE ECONOMIA Y SERVICIOS PUBLICOS - PODER EJECUTIVO",
+      "numero_procedimiento": "17/2026",
+      "objeto": "Adquirir elementos ortopédicos (bastones, sillas de ruedas, sillas posturales, sillas de ducha y bipedestadores).-",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "e493121023485f49113e41eab184d7885daeb213fac2e5f29f15596ddb823acb",
+      "organismo": "MIN. SALUD - PODER EJECUTIVO",
+      "numero_procedimiento": "21/2026",
+      "objeto": "Adquirir Una (01) Lavadora Termodesinfectadora de Instrumental Quirúrgico.-",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/23-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/22-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/21-10-26.pdf"
+        }
+      ]
+    },
+    {
       "id": "0a871ef767d091c91a0efe1594118277e2c4f800eb0e7001a92ccd655a029ab8",
       "organismo": "Vialidad Entre Ríos",
       "numero_procedimiento": "2/2026",
       "objeto": "octubre 23, 2026 9:15 am CONCURSO DE ANTEPROYECTO Nº 02/26 PROYECTO A CONTRATAR: PROYECTO EJECUTIVO DE LA OBRA: RUTA PROVINCIAL Nº 20 – TRAMO: R.P. Nº 39 – R.N. Nº 130 – PROVINCIA DE ENTRE RÍOS CONSULTA DE PLIEGOS: www.dpver.gov.ar – [email protected] APERTURA DE LAS OFERTAS: El Acto de Apertura de las propuestas se llevará a cabo el día 11 de noviembre de 2026 a las 10:00 horas, o siguiente/s si aquél fuera inhábil a la misma hora, en la DIRECCIÓN PROVINCIAL DE VIALIDAD (Salón Malvinas), Av. Ramírez 2197 – Paraná – Entre Ríos. PRESENTACIÓN DE LAS OFERTAS: Las Ofertas deberán presentarse hasta el día y hora del Acto de Apertura en la Dirección de DESPACHO de la DIRECCIÓN PROVINCIAL DE VIALIDAD. PRESUPUESTO OFICIAL: PESOS MIL DOSCIENTOS CUARENTA Y OCHO MILLONES NOVECIENTOS SESENTA Y SEIS MIL CIENTO NOVENTA Y NUEVE CON TREINTA CENTAVOS ($1.248.966.199,30). Descargar documentación",
       "url": "https://www.dpver.gov.ar/2026/10/23/concurso-de-anteproyecto-no-02-26/",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
-      "documentos": []
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/26-10-26.pdf"
+        }
+      ]
+    },
+    {
+      "id": "de3bec8d7fa005b03159363f567391f7be1df1a4624ef18d3c5cac880af530dc",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "15/2026",
+      "objeto": "De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Cotejo de Precios Nº 15/26, por Obra: “3era. Etapa impermeabilización cubierta Edificio Tribunales – Rosario del Tala”.",
+      "url": "https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-15-26-por-obra-3era-etapa-impermeabilizacion-cubierta-edificio-tribunales-rosario-del-tala/",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": [
+        {
+          "titulo": "Cotejo de Precios 15-26",
+          "url": "https://www.jusentrerios.gov.ar/wp-content/uploads/2026/10/Cotejo-de-Precios-15-26.zip"
+        }
+      ]
     },
     {
       "id": "6218384fa6e3c64bbecdb831e5af2c6adc4f7d5cf9e03aa3cb519bbedd838557",
@@ -1055,6 +1513,20 @@
       ]
     },
     {
+      "id": "f7c28808a62acd2dd054e35a30c944e714510f976b9f464d964446f84bb6c1e4",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "16/2026",
+      "objeto": "De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Cotejo de Precios Nº 16/26, por Obra: “Reparaciones varias en Edificio Tribunales – Villaguay”.",
+      "url": "https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-16-26-por-obra-reparaciones-varias-en-edificio-tribunales-villaguay/",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": [
+        {
+          "titulo": "COTEJO DE PRECIOS Nº 16-26",
+          "url": "https://www.jusentrerios.gov.ar/wp-content/uploads/2026/10/COTEJO-DE-PRECIOS-No-16-26.zip"
+        }
+      ]
+    },
+    {
       "id": "3010b62557da2fe221c3d3d57c770c60fa82948d0679a01df3ba22354987e1fa",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "125/2026",
@@ -1082,12 +1554,44 @@
       "documentos": []
     },
     {
+      "id": "f7b479a7806f73e7790df6e47e8c40aa919c46ecfdac7f6a1556b35eeca0e6da",
+      "organismo": "MIN. SALUD - PODER EJECUTIVO",
+      "numero_procedimiento": "22/2026",
+      "objeto": "Adquirir Un (01) Ecógrafo básico.-",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "a247b9216d12caa4b0bc1cf64ce7311f8123f2abb44a692a328e14d855d672cd",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "124/2026",
       "objeto": "Licitación Pública 124/2026 Publicada para Apertura Provisión de luminarias led para distintos espacios públicos de la ciudad de Rosario - 2da Etapa - Ente Autárquico SUMAR Apertura: 13/11/2026 10:00",
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38650",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": []
+    },
+    {
+      "id": "77e07a1a115c283f4ac7c0e9fbe142a0030f9952324b6f2a92aeb281101445eb",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "17/2026",
+      "objeto": "De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Cotejo de Precios Nº 17/26, por Obra: “Trabajos de reparación, impermeabilización, adecuación y pintura – Salas de Audiencias – Concordia”.",
+      "url": "https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-17-26-por-obra-trabajos-de-reparacion-impermeabilizacion-adecuacion-y-pintura-salas-de-audiencias-concordia/",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": [
+        {
+          "titulo": "COTEJO DE PRECIOS Nº 17-26",
+          "url": "https://www.jusentrerios.gov.ar/wp-content/uploads/2026/10/COTEJO-DE-PRECIOS-No-17-26.zip"
+        }
+      ]
+    },
+    {
+      "id": "9f08698ba7d856168f3f4d781482e723ba791f6e58f4662f594a753152b3d0c8",
+      "organismo": "MIN. SALUD - PODER EJECUTIVO",
+      "numero_procedimiento": "23/2026",
+      "objeto": "Adquirir Un (01) Analizador de Coágulos (Coagulómetro) y Un (01) Analizador Ión Selectivo (Electrolitos).-",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
     {
@@ -1121,6 +1625,24 @@
       ]
     },
     {
+      "id": "15fefaf42a5305f8a3edfd7bb63471f4e1cc32c4af236122cda8d55842668c26",
+      "organismo": "Municipalidad de Gualeguay",
+      "numero_procedimiento": "17/2026",
+      "objeto": "Licitacion Publica Nro 17-2026 - Alquiler de sonido, pantalla e iluminacion Corso 2027 27.10.26 09:48:48 679.81 KB",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/29-10-26.pdf"
+        }
+      ]
+    },
+    {
       "id": "9b6816d1442519e95d96bf67719b800ad736ce3c120a0b82d6e37db9bdb0dea7",
       "organismo": "IAFAS",
       "numero_procedimiento": "8/2026",
@@ -1139,6 +1661,15 @@
       ]
     },
     {
+      "id": "c2a6770bb8f410bfc588b90078abb2bca98f0deb3c365911ffb535bcabe34631",
+      "organismo": "MIN. SALUD - PODER EJECUTIVO",
+      "numero_procedimiento": "24/2026",
+      "objeto": "Adquirir Diecisiete (17) Camas de Internación, colchones y almohadas.-",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "5f2b17fe0ee39473cb8f44dbe7eb41e6a9c5a146e1f249fbce95281e95a7424e",
       "organismo": "CAFESG",
       "numero_procedimiento": "15/2026",
@@ -1148,12 +1679,21 @@
       "documentos": []
     },
     {
-      "id": "db0614da98180a3046963a7d94aa32e629b63c53dbaf534e34ecc8f379f3cf25",
-      "organismo": "Ministerio de Planeamiento e Infraestructura",
-      "numero_procedimiento": "12/2026",
-      "objeto": "Próximas Aperturas de Licitación Pública Dirección General de Arquitectura y Construcciones Licitación Pública 12/2026 DGAyC Cambio de tanques, cubierta, accesibilidad y refacción en baños Escuela de Educación Integral N° 9 \"Dr. Luis Agote\", San Salvador Apertura: miércoles, 25 de noviembre de 2026 - 10:00hs",
-      "url": "https://www.entrerios.gov.ar/minplan/licitaciones/lpn_dgayc_2026-12",
-      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "id": "eaf22f7bd6cd7740d57cbdd0760fa96cad0946eddb9a0d8104d14f90712fd63a",
+      "organismo": "DIR. GRAL. DE CONTRATACIONES DEL ESTADO - MIN. DE ECONOMIA Y SERVICIOS PUBLICOS - PODER EJECUTIVO",
+      "numero_procedimiento": "13/2026",
+      "objeto": "Adquirir 2.253 colchones de una plaza.",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "564fb6a0432f629d352811f431b7896a2e5b636ed216e6eb9b7444ddb7bf58e9",
+      "organismo": "MIN. SALUD - PODER EJECUTIVO",
+      "numero_procedimiento": "25/2026",
+      "objeto": "Adquirir Una (01) Lámpara de Hendidura.-",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
     {
