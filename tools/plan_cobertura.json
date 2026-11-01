@@ -1,11 +1,17 @@
 {
-  "etapa": "medir-descubrimiento-conjunto-tres-jurisdicciones",
-  "barrido": true,
+  "etapa": "piloto-comparativo-meta-conjunta-y-auditoria-territorial",
+  "barrido": false,
   "barrido_manifest": "inventario/barrido_tres_provincias.json",
   "barrido_por_fuente": 75,
-  "sondear": false,
+  "sondear": true,
   "auditar": false,
   "descubrir": false,
   "reverificar_ids": [],
-  "archivar_auditoria": false
+  "archivar_auditoria": false,
+  "comparar_barrido_run": "41265639687",
+  "comparar_base_run": "41237677685",
+  "entrega_recuperacion": false,
+  "urls_sondeo": [
+    "http://www.sannicolas.gov.ar:8080/portalcompras/"
+  ]
 }

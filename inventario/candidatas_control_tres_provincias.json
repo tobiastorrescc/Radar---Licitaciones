@@ -1,0 +1,15 @@
+{
+  "fecha": "2026-11-01",
+  "candidatas": [
+    {
+      "organismo": "Municipalidad de San Nicolás",
+      "localidad": "San Nicolás",
+      "provincia": "Buenos Aires",
+      "url": "http://www.sannicolas.gov.ar:8080/portalcompras/",
+      "estado": "PENDIENTE",
+      "publicada_en": "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos",
+      "evidencia_run": 41265639687,
+      "evidencia": "Enlace municipal explícito Portal de Compras para cotizaciones online. Pendiente conexión y extracción; no se da alta por hallar URL."
+    }
+  ]
+}

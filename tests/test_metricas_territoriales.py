@@ -42,6 +42,13 @@ class MetricasTerritoriales(unittest.TestCase):
         r=self.registro(1,'Buenos Aires');manual={'publicaciones':[{**r,'comprobada':True,'fecha_revision':'2026-10-31','evidencia_url':r['url']}]}
         a=mt.contraste_manual(manual,[self.registro(1,'Entre Ríos')],'2026-10-31T23:00:00-03:00')
         self.assertEqual(a['publicaciones'][0]['resultado'],'OMITIDA')
+    def test_sigla_documentada_y_misma_ficha_no_crean_omision_falsa(self):
+        r=self.registro(1,organismo='UNR',fecha_apertura='2026-11-04')
+        m={**r,'organismo':'Universidad Nacional de Rosario','organismo_aliases':['UNR'],'comprobada':True,'fecha_revision':'2026-10-31','evidencia_url':r['url']}
+        a=mt.contraste_manual({'publicaciones':[m]},[r,{**r,'id':'otra-variante','identidad_ambito':'ficha'}],'2026-10-31T23:00:00-03:00')
+        self.assertEqual(a['publicaciones'][0]['resultado'],'DETECTADA')
+        self.assertEqual(len(a['publicaciones'][0]['ids_radar']),2)
+
     def test_falla_con_cero_resultados_no_es_sin_publicaciones(self):
         f={'url':'https://caido.gob.ar/','provincia':'Entre Ríos','estado':'BLOQUEADA','errores':[{'tipo':'TimeoutError'}]}
         m=mt.generar(self.db,[],[],[f],'2026-10-31T23:00:00-03:00')

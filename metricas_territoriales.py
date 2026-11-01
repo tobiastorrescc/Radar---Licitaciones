@@ -21,7 +21,8 @@ def contraste_manual(manual,registros,fecha):
     filas=[];hoy=datetime.fromisoformat(fecha).astimezone(o.ZONA).date()
     for m in manual.get('publicaciones',[]):
         if not m.get('evidencia_url') or not m.get('fecha_revision') or not m.get('comprobada'):continue
-        candidatos=[r for r in registros if provincia(r)==provincia(m) and o.norm(r.get('organismo'))==o.norm(m.get('organismo'))]
+        nombres={o.norm(m.get('organismo')),*[o.norm(a) for a in m.get('organismo_aliases',[])]}
+        candidatos=[r for r in registros if provincia(r)==provincia(m) and o.norm(r.get('organismo')) in nombres]
         proc=o.procedimiento_canonico(m)
         if proc:candidatos=[r for r in candidatos if o.procedimiento_canonico(r)==proc and o.convocatoria(r)==o.convocatoria(m)]
         else:
@@ -29,9 +30,10 @@ def contraste_manual(manual,registros,fecha):
             candidatos=[r for r in candidatos if o.norm(m.get('objeto')) and o.norm(m['objeto']) in o.norm(r.get('objeto')) and (r.get('url')==m.get('url') or m['evidencia_url'] in {d['url'] for d in r.get('documentos',[])})]
         candidatos={o.identidad(r):r for r in candidatos}
         actual=(hoy-datetime.fromisoformat(m['fecha_revision']).date()).days in (0,1)
-        estado='DETECTADA' if len(candidatos)==1 else 'AMBIGUA' if candidatos else 'OMITIDA'
+        directas=[r for r in candidatos.values() if r.get('url')==m.get('url') and m.get('fecha_apertura') and r.get('fecha_apertura')==m['fecha_apertura']]
+        estado='DETECTADA' if len(candidatos)==1 or directas else 'AMBIGUA' if candidatos else 'OMITIDA'
         filas.append({**m,'resultado':estado,'evidencia_reciente':actual,'ids_radar':[r.get('id') for r in candidatos.values()]})
-    return {'alcance':manual.get('alcance','Muestra comprobada, no cobertura global'),'revisiones':manual.get('revisiones',[]),'publicaciones':filas,'por_provincia':{p:{'comprobadas':sum(provincia(r)==p for r in filas),'detectadas':sum(provincia(r)==p and r['resultado']=='DETECTADA' for r in filas),'omitidas':sum(provincia(r)==p and r['resultado']=='OMITIDA' for r in filas),'ambiguas':sum(provincia(r)==p and r['resultado']=='AMBIGUA' for r in filas)} for p in PROVINCIAS}}
+    return {'alcance':manual.get('alcance','Muestra comprobada, no cobertura global'),'revisiones':manual.get('revisiones',[]),'publicaciones':filas,'por_provincia':{p:{'comprobadas':sum(provincia(r)==p for r in filas),'detectadas':sum(provincia(r)==p and r['resultado']=='DETECTADA' for r in filas),'omitidas':sum(provincia(r)==p and r['resultado']=='OMITIDA' for r in filas),'ambiguas':sum(provincia(r)==p and r['resultado']=='AMBIGUA' for r in filas),'omitidas_historicas':sum(provincia(r)==p and r['resultado']=='OMITIDA' and bool(r.get('historica')) for r in filas),'omitidas_apertura_futura':sum(provincia(r)==p and r['resultado']=='OMITIDA' and str(r.get('fecha_apertura') or '')>hoy.isoformat() for r in filas)} for p in PROVINCIAS}}
 
 def generar(db,actuales,eventos,fuentes,fecha,manual=None):
     hoy=datetime.fromisoformat(fecha).astimezone(o.ZONA).date();dias=[(hoy-timedelta(days=i)).isoformat() for i in range(6,-1,-1)]
@@ -55,7 +57,7 @@ def generar(db,actuales,eventos,fuentes,fecha,manual=None):
         resultado[p]={'nuevas_confirmadas':sum(provincia(r)==p for r in nuevas),'primeras_detecciones_no_comprobadas':sum(provincia(r)==p and r.get('clasificacion_novedad') in ('NUEVA_DETECCION_FECHA_DESCONOCIDA','NUEVA_DETECCION_MISMO_DIA') for r in eventos),'abiertas_observadas':len(observadas),'abiertas_solo_historial':len(abiertas)-len(observadas),'vigencia_pendiente':sum(r.get('vigencia')=='DESCONOCIDA' for r in rs),'pago_rapido_verificado_abiertas':sum(pago_rapido(r) for r in abiertas),'pago_rapido_observadas':sum(pago_rapido(r) for r in observadas),'fuentes_consultadas':len(fs),'fuentes_con_incidencias':fallas,'auditoria_manual':a,'omitidas_muestra':a['omitidas'] if a['comprobadas'] else None}
     serie=[{'fecha':d,'nuevas_confirmadas':sum(v[0]==d for v in confirmadas.values()),'ejecucion_disponible':d in dias_observados} for d in dias]
     disponibles=[x for x in serie if x['ejecucion_disponible']]
-    return {'fecha':fecha,'jurisdicciones':resultado,'total_nuevas_confirmadas':len(nuevas),'meta_promedio_diario':20,'meta_alcance':'Conjunto de Santa Fe, Entre Ríos y Buenos Aires dentro del alcance de Rosario; condicionado al volumen real. Sin límite de resultados.','serie_7_dias':serie,'dias_con_ejecucion':len(disponibles),'promedio_dias_observados':sum(x['nuevas_confirmadas'] for x in disponibles)/len(disponibles) if disponibles else None,'promedio_7_dias':sum(x['nuevas_confirmadas'] for x in serie)/7 if len(disponibles)==7 else None,'criterio':'Sólo NUEVO_CONFIRMADO con fecha publicada comprobada. Históricas, duplicados, primeras detecciones sin fecha y modificaciones no integran la meta. Días sin ejecución no se imputan como cero. Abierta observada no acredita exhaustividad de la fuente.','auditoria_manual':auditoria}
+    return {'fecha':fecha,'jurisdicciones':resultado,'total_nuevas_confirmadas':len(nuevas),'meta_promedio_diario':20,'meta_alcance':'Conjunto de Santa Fe, Entre Ríos y Buenos Aires dentro del alcance de Rosario; condicionado al volumen real. Sin límite de resultados.','serie_7_dias':serie,'dias_con_ejecucion':len(disponibles),'promedio_dias_observados':sum(x['nuevas_confirmadas'] for x in disponibles)/len(disponibles) if disponibles else None,'promedio_7_dias':sum(x['nuevas_confirmadas'] for x in serie)/7 if len(disponibles)==7 else None,'criterio':'Sólo NUEVO_CONFIRMADO con fecha publicada comprobada. Históricas, duplicados, primeras detecciones sin fecha y modificaciones no integran la meta. Días sin ejecución no se imputan como cero. Abierta observada no acredita exhaustividad de la fuente.','auditoria_manual':auditoria,'fuentes_sin_jurisdiccion_comprobada':[f for f in fuentes if provincia(f) not in PROVINCIAS]}
 
 def markdown(m):
     lineas=['## Descubrimiento diario en las tres jurisdicciones','',f"Total de publicaciones genuinamente nuevas confirmadas del día: **{m['total_nuevas_confirmadas']}**.",'','| Provincia | Nuevas confirmadas | Abiertas observadas | Abiertas sólo por historial | Vigencia pendiente | Pago rápido en abiertas | Omitidas / comprobadas en muestra | Fuentes con incidencias |','|---|---:|---:|---:|---:|---:|---|---:|']
