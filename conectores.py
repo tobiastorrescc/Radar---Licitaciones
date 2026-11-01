@@ -338,7 +338,19 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 plazo=re.search(r'para el\s*:\s*(\d{1,2}/\d{1,2}/20\d{2}\s+a las\s+\d{1,2}[.:]\d{2})',normalizar(t))
                 if plazo:r['fecha_limite_presentacion_texto']=plazo[1]
 
-            agregar(r)
+            previo=items.get(referencia,{})
+            anual=re.fullmatch(r'(\d{1,6})/(20\d{2})',p['numero'])
+            if (config.get('resolver_numero_documental') and len(unicos)==1 and anual
+                and re.fullmatch(r'\d{1,6}',str(previo.get('numero_procedimiento') or ''))
+                and int(previo['numero_procedimiento'])==int(anual[1])
+                and previo.get('tipo_procedimiento')==p['tipo']):
+                # Únicamente el documento enlazado del mismo procedimiento aporta el año.
+                numero_previo=previo['numero_procedimiento']
+                items.pop(referencia)
+                r={**previo,**r,'documentos':list({d['url']:d for d in previo.get('documentos',[])+r['documentos']}.values()),
+                   'numero_documental_previo':numero_previo,'evidencia_numero_documental':{'url':url,'sha256':hash_documento,'numero':p['numero']}}
+                referencia=agregar(r)
+            else:agregar(r)
             if referencia in items and items[referencia].get('procedimiento')==p['procedimiento']:
                 # Un aviso con varios llamados no puede asignar a todos el primer presupuesto/fecha.
                 unicos={p['procedimiento'] for linea in lineas for p in extractores.procesos(linea)}

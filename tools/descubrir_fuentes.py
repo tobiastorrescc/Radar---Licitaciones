@@ -237,12 +237,12 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_
         estado['candidatos'].setdefault(key,{**f,'tipo':'TERRITORIAL' if o.norm(f['organismo']).startswith(('municipalidad','comuna')) else 'SECTORIAL','id':'auto-'+key,'clave':key,'origen':'INVENTARIO_PREVIO','fecha_descubrimiento':fecha})
     # Semillas descubiertas por investigación del agente: nunca se promueven sin
     # pasar la misma verificación de identidad, jurisdicción y publicaciones.
-    semillas_path=Path('inventario/candidatas_sectoriales.json')
-    if semillas_path.exists():
-        for c in json.loads(semillas_path.read_text()).get('candidatos',[]):
-            key='contraste-'+sha256((c['url']+'|'+c['organismo']).encode()).hexdigest()[:20]
-            estado['candidatos'].setdefault(key,{**c,'id':'auto-'+key,'origen':'INVESTIGACION_AGENTE',
-                'fecha_descubrimiento':fecha,'validacion':{'estado':'PENDIENTE','motivo':c.get('motivo_previo')}})
+    for semillas_path in (Path('inventario/candidatas_sectoriales.json'),Path('inventario/candidatas_historia.json')):
+        if semillas_path.exists():
+            for c in json.loads(semillas_path.read_text()).get('candidatos',[]):
+                key='contraste-'+sha256((c['url']+'|'+c['organismo']).encode()).hexdigest()[:20]
+                estado['candidatos'].setdefault(key,{**c,'id':'auto-'+key,'origen':'HISTORIAL_GIT' if semillas_path.name=='candidatas_historia.json' else 'INVESTIGACION_AGENTE',
+                    'fecha_descubrimiento':fecha,'validacion':{'estado':'PENDIENTE','motivo':c.get('motivo_previo')}})
     lote=seleccionar_validaciones(estado['candidatos'].values(),existentes,auto,candidatos,revisar_pendientes,priorizar_urls)
     limite=max(1,total-(time.monotonic()-inicio)-3)
     entradas=raiz/'entradas';entradas.mkdir(exist_ok=True)

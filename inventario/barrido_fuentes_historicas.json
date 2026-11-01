@@ -435,7 +435,7 @@
         "observacion": "Llamados públicos 2026 indexados"
       },
       "verificada_funcionando": false,
-      "lectura_adjuntos": "necesarios",
+      "lectura_adjuntos": "todos",
       "ocr": false,
       "ultima_verificacion": "2026-10-29T17:49:58.887887-03:00",
       "evidencia_verificacion": {
@@ -447,7 +447,9 @@
       "admitir_avisos_sin_numero": true,
       "urls_inicio": [
         "https://arrecifes.gob.ar/informacion-publica/licitaciones/"
-      ]
+      ],
+      "documentos_para_descubrimiento": true,
+      "resolver_numero_documental": true
     },
     {
       "id": "control-sibom-ramallo",

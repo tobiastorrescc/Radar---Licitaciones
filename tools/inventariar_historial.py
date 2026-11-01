@@ -74,7 +74,7 @@ def inventariar(salida,referencias_usuario='inventario/referencias_historicas_so
         if u not in entradas:
             f=fuentes_por_url.get(u);candidatas=por_host.get((urlsplit(u).hostname or '').removeprefix('www.'),[])
             meta=f or (candidatas[0] if len(candidatas)==1 else {})
-            entradas[u]={'url':u,'tipo_url':tipo_url(u),'organismo':meta.get('organismo'),'localidad':meta.get('localidad'),'provincia':meta.get('provincia'),'incorporada_exactamente':bool(f and f.get('incorporada')),'estado_extraccion':f.get('estado_verificacion') if f else 'PENDIENTE','estado_es_historico':True,'evidencias':[],'organismos_en_documentos':set(),'registros_asociados':set(),'publicaciones':['No determinado; requiere validación de la sección'],'alcance':'Pendiente contrastar organismo y localidad; no alta automática'}
+            entradas[u]={'url':u,'tipo_url':tipo_url(u),'organismo':meta.get('organismo'),'localidad':meta.get('localidad'),'provincia':meta.get('provincia'),'incorporada_exactamente':bool(f and f.get('incorporada')),'estado_extraccion':'PENDIENTE_VALIDACION_ACTUAL','estado_previo':f.get('estado_verificacion') if f else None,'estado_es_historico':True,'evidencias':[],'organismos_en_documentos':set(),'registros_asociados':set(),'publicaciones':['No determinado; requiere validación de la sección'],'alcance':'Pendiente contrastar organismo y localidad; no alta automática'}
         r=entradas[u]
         if prueba not in r['evidencias']:r['evidencias'].append(prueba)
     proc=subprocess.Popen(['git','cat-file','--batch'],stdin=subprocess.PIPE,stdout=subprocess.PIPE)
@@ -86,7 +86,7 @@ def inventariar(salida,referencias_usuario='inventario/referencias_historicas_so
             if len(cab)!=3:raise ValueError('Respuesta cat-file incompleta')
             tam=int(cab[2]);datos=proc.stdout.read(tam);proc.stdout.read(1)
             if cab[1]!='blob':continue
-            if tam>16_000_000:omitidos.append({'sha':sha,'path':path,'motivo':'Tamaño superior a16MB; pendiente revisión explícita'});continue
+            if tam>64_000_000:omitidos.append({'sha':sha,'path':path,'motivo':'Tamaño superior a64MB; pendiente revisión explícita'});continue
             leidos+=1;bytes_leidos+=tam
             try:texto=extraer_texto(datos,path)
             except (ValueError,UnicodeError,OSError,EOFError,zlib.error) as e:
@@ -103,7 +103,10 @@ def inventariar(salida,referencias_usuario='inventario/referencias_historicas_so
                     r=entradas[u];org=meta.get('organismo');r['organismos_en_documentos'].add(org)
                     if not r.get('organismo') and meta.get('provincia') in ('Santa Fe','Entre Ríos','Buenos Aires'):
                         for k in ('organismo','localidad','provincia'):r[k]=meta.get(k)
-                    if identidad:r['registros_asociados'].add(str(identidad))
+                    if identidad:
+                        r['registros_asociados'].add(str(identidad))
+                        if r['tipo_url'] not in ('DOCUMENTO','PLANTILLA_INCOMPLETA') and u not in fuentes_por_url:
+                            r['tipo_url']='PORTAL_O_SECCION' if normalizar_url(str(meta.get('fuente') or ''))==u else 'AVISO_O_LISTADO_CON_PROCEDIMIENTOS'
             if leidos%100==0:print(json.dumps({'blobs_leidos':leidos,'urls':len(entradas),'segundos':round(time.monotonic()-inicio,1)}),flush=True)
     finally:
         proc.stdin.close();proc.wait(timeout=5)

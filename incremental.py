@@ -10,7 +10,7 @@ from urllib.parse import urlsplit
 import oportunidades as o
 
 VERSION=1
-CAMPOS=('aviso_oficial_sin_numero','tipo_documento','detalle_documental','titulo','objeto','numero_procedimiento','tipo_procedimiento','procedimiento','organismo','localidad','provincia',
+CAMPOS=('numero_documental_previo','evidencia_numero_documental','aviso_oficial_sin_numero','tipo_documento','detalle_documental','titulo','objeto','numero_procedimiento','tipo_procedimiento','procedimiento','organismo','localidad','provincia',
     'fecha_apertura','fecha_apertura_texto','hora_apertura','fecha_publicacion','fecha_publicacion_texto','presupuesto',
     'situacion_publicada','evento_publicado','documentos','enlace_pliego','comprobacion_pliego','evidencias_campos',
     'pago_evidencias','pago_motivo_pendiente','fuente','fuentes_observadas','url','urls_publicacion','evidencia_url',
@@ -164,6 +164,12 @@ def registrar(db,registros,informe):
     for antigua,dato in db.execute('SELECT id,dato FROM procedimientos ORDER BY primera,id'):
         identidades_anteriores.setdefault(o.identidad(json.loads(dato)),antigua)
     catalogo_previo=o.indice_complementarias(json.loads(f[0]) for f in db.execute('SELECT dato FROM procedimientos'))
+    sin_anio={}
+    for id_legacy,dato_legacy in db.execute('SELECT id,dato FROM procedimientos'):
+        previo=json.loads(dato_legacy);num=str(previo.get('numero_procedimiento') or '')
+        if re.fullmatch(r'\d{1,6}',num):
+            k=(o.norm(previo.get('provincia')),o.norm(previo.get('organismo')),previo.get('tipo_procedimiento'),previo.get('url'),str(int(num)))
+            sin_anio.setdefault(k,[]).append(id_legacy)
     referencias=cargar_indice_auditorias()
     dedup=o.deduplicar(registros,fecha);tipos=Counter();candidatos=0
     with db:
@@ -180,6 +186,14 @@ def registrar(db,registros,informe):
                     viejo_dato=db.execute('SELECT dato FROM procedimientos WHERE id=?',(legado,)).fetchone()
                     previo=json.loads(viejo_dato[0]) if viejo_dato else {}
                     if r.get('texto_listado') and o.norm(r['texto_listado']) in {o.norm(previo.get('objeto')),o.norm(previo.get('titulo'))}:clave=legado
+            evidencia=r.get('evidencia_numero_documental',{})
+            num_prev=str(r.get('numero_documental_previo') or '')
+            anual=re.fullmatch(r'(\d{1,6})/(20\d{2})',str(r.get('numero_procedimiento') or ''))
+            if (anual and num_prev.isdigit() and int(num_prev)==int(anual[1]) and evidencia.get('url')==r.get('url')
+                and re.fullmatch('[0-9a-f]{64}',str(evidencia.get('sha256') or ''))):
+                k=(o.norm(r.get('provincia')),o.norm(r.get('organismo')),r.get('tipo_procedimiento'),r.get('url'),str(int(num_prev)))
+                posibles=sin_anio.get(k,[])
+                if len(posibles)==1:clave=posibles[0]
             viejo=db.execute('SELECT dato,huella FROM procedimientos WHERE id=?',(clave,)).fetchone()
             identidades_anteriores[identidad_actual]=clave
             anterior=json.loads(viejo[0]) if viejo else None

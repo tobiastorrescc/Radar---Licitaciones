@@ -1,17 +1,17 @@
 {
-  "etapa": "recuperar-historia-git-y-validar-referencias-oficiales",
+  "etapa": "completar-textos-historicos-y-validar-docx-arrecifes",
   "inventariar_historial": true,
   "barrido": true,
   "barrido_manifest": "inventario/barrido_fuentes_historicas.json",
-  "barrido_por_fuente": 75,
-  "sondear": true,
-  "urls_sondeo": [
-    "https://sibom.slyt.gba.gob.ar/bulletins",
-    "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026/2026-09-18licitaciones.html",
-    "https://www.santafe.gov.ar/verPdf.php?seccion=2026%2F2026-09-18licitaciones.html"
-  ],
+  "barrido_por_fuente": 90,
+  "sondear": false,
+  "urls_sondeo": [],
   "auditar": false,
   "descubrir": false,
   "reverificar_ids": [],
-  "archivar_auditoria": false
+  "archivar_auditoria": false,
+  "barrido_ids": [
+    "referencia-14",
+    "control-sibom-ramallo"
+  ]
 }
