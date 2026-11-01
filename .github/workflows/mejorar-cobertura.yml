@@ -16,6 +16,8 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -25,7 +27,7 @@ jobs:
           python - <<'PY' >> "$GITHUB_OUTPUT"
           import json
           d=json.load(open('tools/plan_cobertura.json'))
-          for k in ('sondear','auditar','descubrir','revisar_cobro','barrido'):print(k+'='+str(d.get(k,False)).lower())
+          for k in ('sondear','auditar','descubrir','revisar_cobro','barrido','inventariar_historial'):print(k+'='+str(d.get(k,False)).lower())
           run=str(d.get('reprocesar_run',''))
           if run and not run.isdigit():raise ValueError('Run inválido')
           print('reprocesar_run='+run)
@@ -48,6 +50,10 @@ jobs:
               if not minimo<=valor<=maximo:raise ValueError('Límite de descubrimiento inválido')
               print(clave+'='+str(valor))
           PY
+      - name: Reconstruir todas las referencias de la historia accesible de Git
+        if: steps.plan.outputs.inventariar_historial == 'true'
+        timeout-minutes: 6
+        run: python -u tools/inventariar_historial.py
       - name: Preparar lectura documental
         timeout-minutes: 4
         run: bash tools/preparar_documentos.sh
@@ -264,6 +270,7 @@ jobs:
           name: cobertura-${{ github.run_id }}
           path: |
             work/barrido/
+            work/historial-fuentes/
             work/informe-recuperacion/
             work/barrido-comparativo/resultado.json
             work/barrido-comparativo/comparacion.json

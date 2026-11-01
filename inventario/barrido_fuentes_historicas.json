@@ -1,0 +1,493 @@
+{
+  "fecha": "2026-11-01",
+  "fuentes": [
+    {
+      "id": "referencia-01",
+      "organismo": "Boletín Oficial de Santa Fe",
+      "localidad": null,
+      "provincia": "Santa Fe",
+      "url": "https://www.santafe.gov.ar/boletinoficial/",
+      "tipo_portal": "boletin_html",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "estado_verificacion": "BLOQUEADA",
+      "verificada_funcionando": false,
+      "lote": "cobertura-2026-10-27",
+      "capturar_respuestas": true,
+      "investigar_scripts": true,
+      "lectura_adjuntos": "necesarios",
+      "ocr": false,
+      "evidencia_descubrimiento": {
+        "fecha": "2026-10-27",
+        "metodo": "Busqueda y apertura web oficial; pendiente conector real",
+        "url": "https://www.santafe.gov.ar/boletinoficial/"
+      },
+      "organismos_multiples": true,
+      "seguir_patrones": [
+        "ver.php.*licitaciones",
+        "fecha="
+      ],
+      "adaptador": "boletin-sf",
+      "descubrir_menu": true,
+      "descubrir_contrataciones": true,
+      "ultima_verificacion": "2026-10-29T17:50:06.370117-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 0,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      },
+      "barrido_institucional": true,
+      "admitir_avisos_sin_numero": true,
+      "urls_inicio": [
+        "https://www.santafe.gov.ar/boletinoficial/",
+        "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026/2026-09-18licitaciones.html"
+      ]
+    },
+    {
+      "id": "referencia-02",
+      "organismo": "Gobierno de Santa Fe",
+      "localidad": null,
+      "provincia": "Santa Fe",
+      "url": "https://compras.santafe.gov.ar/",
+      "tipo_portal": "tabla",
+      "estado_verificacion": "BLOQUEADA",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://compras.santafe.gob.ar/",
+        "fecha": "2026-10-25",
+        "observacion": "Cartelera indexada; consulta web directa agotó tiempo"
+      },
+      "verificada_funcionando": false,
+      "lectura_adjuntos": "necesarios",
+      "ocr": false,
+      "conexion_timeout": 12,
+      "lectura_timeout": 12,
+      "ultima_verificacion": "2026-10-29T17:48:09.899334-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 0,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      },
+      "barrido_institucional": true,
+      "admitir_avisos_sin_numero": true,
+      "urls_inicio": [
+        "https://compras.santafe.gov.ar/"
+      ],
+      "dominios_documentos": [
+        "compras.santafe.gov.ar",
+        "compras.santafe.gob.ar"
+      ]
+    },
+    {
+      "url": "https://www.santafe.gov.ar/gestionesdecompras/",
+      "organismo": "Gestiones de Compras Santa Fe",
+      "provincia": "Santa Fe",
+      "localidad": null,
+      "id": "referencia-03",
+      "conector": "publicaciones",
+      "ocr": false,
+      "barrido_institucional": true,
+      "admitir_avisos_sin_numero": true,
+      "urls_inicio": [
+        "https://www.santafe.gov.ar/gestionesdecompras/"
+      ],
+      "organismos_multiples": true,
+      "descubrir_menu": true,
+      "descubrir_contrataciones": true
+    },
+    {
+      "id": "referencia-04",
+      "organismo": "EPE",
+      "localidad": null,
+      "provincia": "Santa Fe",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "tipo_portal": "tabla",
+      "estado_verificacion": "PENDIENTE",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "fecha": "2026-10-25",
+        "observacion": "Listado indexado con publicaciones y enlaces de apertura"
+      },
+      "verificada_funcionando": false,
+      "lectura_adjuntos": "necesarios",
+      "ocr": false,
+      "adaptador": "epe",
+      "capturar_respuestas": true,
+      "ultima_verificacion": "2026-10-31T09:16:06.731213-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 41199939113,
+        "publicaciones_detectadas": 0,
+        "procedimientos_con_objeto": 0,
+        "criterio": "Número, objeto y enlace oficial; errores y pendientes documentales se conservan",
+        "error_acceso": true
+      },
+      "reintentos_transitorios": 1,
+      "conexion_timeout": 4,
+      "lectura_timeout": 6,
+      "urls_inicio": [
+        "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "https://epe.santafe.gov.ar/app2/aperturas"
+      ],
+      "estado_revision": "ERROR_DE_ACCESO",
+      "barrido_institucional": true,
+      "admitir_avisos_sin_numero": true
+    },
+    {
+      "url": "https://epe.santafe.gov.ar/app2/compras",
+      "organismo": "EPE",
+      "provincia": "Santa Fe",
+      "localidad": null,
+      "id": "referencia-05",
+      "conector": "publicaciones",
+      "ocr": false,
+      "barrido_institucional": true,
+      "admitir_avisos_sin_numero": true,
+      "urls_inicio": [
+        "https://epe.santafe.gov.ar/app2/compras"
+      ],
+      "adaptador": "epe",
+      "reintentos_transitorios": 1,
+      "dominios_documentos": [
+        "www.epe.santafe.gov.ar"
+      ]
+    },
+    {
+      "id": "referencia-06",
+      "organismo": "Municipalidad de Rosario",
+      "localidad": "Rosario",
+      "provincia": "Santa Fe",
+      "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "tipo_portal": "html",
+      "estado_verificacion": "PARCIAL",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+        "fecha": "2026-10-25",
+        "observacion": "Fuente heredada; pendiente detección estructurada"
+      },
+      "verificada_funcionando": false,
+      "lectura_adjuntos": "necesarios",
+      "ocr": false,
+      "adaptador": "rosario",
+      "urls_inicio": [
+        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=1",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=2",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=1",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=2",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=3",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=4"
+      ],
+      "seguir_patrones": [
+        "/inicio/result-busq-compras-licitaciones[?]recomendada=apertura&tipoRecomendada="
+      ],
+      "ultima_verificacion": "2026-10-29T17:48:09.897401-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 16,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      },
+      "enriquecer_fichas": true,
+      "priorizar_listados": true,
+      "capturar_respuestas": true,
+      "conexion_timeout": 3,
+      "lectura_timeout": 5,
+      "contextos_listado": {
+        "1": "Licitación Privada",
+        "2": "Licitación Pública",
+        "5": "Compra Agil"
+      },
+      "barrido_institucional": true,
+      "admitir_avisos_sin_numero": true
+    },
+    {
+      "id": "referencia-07",
+      "organismo": "UNR",
+      "localidad": "Rosario",
+      "provincia": "Santa Fe",
+      "url": "https://compras.unr.edu.ar/",
+      "tipo_portal": "siu_diaguita",
+      "estado_verificacion": "BLOQUEADA",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://compras.unr.edu.ar/",
+        "fecha": "2026-10-25",
+        "observacion": "URL enlazada por https://unr.edu.ar/compras-y-licitaciones/; falta inspeccionar listado"
+      },
+      "verificada_funcionando": false,
+      "capturar_respuestas": true,
+      "investigar_scripts": true,
+      "lectura_adjuntos": "necesarios",
+      "ocr": false,
+      "lote": "cobertura-2026-10-27",
+      "descubrir_menu": true,
+      "descubrir_contrataciones": true,
+      "ultima_verificacion": "2026-10-29T17:48:10.871323-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 0,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      },
+      "barrido_institucional": true,
+      "admitir_avisos_sin_numero": true,
+      "urls_inicio": [
+        "https://compras.unr.edu.ar/"
+      ]
+    },
+    {
+      "id": "referencia-08",
+      "organismo": "Aeropuerto Internacional Rosario",
+      "localidad": "Rosario",
+      "provincia": "Santa Fe",
+      "url": "https://aeropuertorosario.com/institucional/licitaciones/",
+      "tipo_portal": "html_paginado_pdf",
+      "estado_verificacion": "PARCIAL",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://aeropuertorosario.com/institucional/licitaciones/",
+        "fecha": "2026-10-25",
+        "observacion": "Listado leído por web; fichas y páginas 2 a 5 localizadas"
+      },
+      "verificada_funcionando": false,
+      "lectura_adjuntos": "necesarios",
+      "ocr": false,
+      "enriquecer_fichas": true,
+      "adaptador": "aeropuerto",
+      "ultima_verificacion": "2026-10-29T17:48:14.559326-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 38,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      },
+      "barrido_institucional": true,
+      "admitir_avisos_sin_numero": true,
+      "urls_inicio": [
+        "https://aeropuertorosario.com/institucional/licitaciones/"
+      ]
+    },
+    {
+      "id": "referencia-09",
+      "organismo": "Ministerio de Planeamiento e Infraestructura",
+      "localidad": null,
+      "provincia": "Entre Ríos",
+      "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "tipo_portal": "html_pdf",
+      "estado_verificacion": "OPERATIVA",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+        "fecha": "2026-10-25",
+        "observacion": "Listado oficial indexado con llamados 2026 e históricos"
+      },
+      "verificada_funcionando": true,
+      "lectura_adjuntos": "necesarios",
+      "ocr": false,
+      "organismos_multiples": true,
+      "adaptador": "minplan",
+      "ultima_verificacion": "2026-10-29T17:49:02.188858-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 516,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      },
+      "barrido_institucional": true,
+      "admitir_avisos_sin_numero": true,
+      "urls_inicio": [
+        "https://www.entrerios.gov.ar/minplan/licitaciones"
+      ]
+    },
+    {
+      "id": "referencia-10",
+      "organismo": "Municipalidad de San José",
+      "localidad": "San José",
+      "provincia": "Entre Ríos",
+      "url": "https://sanjose.gob.ar/concursos-licitaciones/",
+      "tipo_portal": "html_pdf",
+      "estado_verificacion": "OPERATIVA",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://sanjose.gob.ar/concursos-licitaciones/",
+        "fecha": "2026-10-25",
+        "observacion": "Listado oficial indexado: públicas, privadas, segundo llamado, desierta"
+      },
+      "verificada_funcionando": true,
+      "lectura_adjuntos": "necesarios",
+      "ocr": false,
+      "ultima_verificacion": "2026-10-31T09:16:06.731213-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 41199939113,
+        "publicaciones_detectadas": 152,
+        "procedimientos_con_objeto": 152,
+        "criterio": "Número, objeto y enlace oficial; errores y pendientes documentales se conservan",
+        "error_acceso": false
+      },
+      "enlaces_drive_publicos": true,
+      "dominios_documentos": [
+        "drive.google.com"
+      ],
+      "estado_revision": "REVISADA_SIN_NOVEDADES",
+      "barrido_institucional": true,
+      "admitir_avisos_sin_numero": true,
+      "urls_inicio": [
+        "https://sanjose.gob.ar/concursos-licitaciones/"
+      ]
+    },
+    {
+      "id": "referencia-12",
+      "organismo": "Municipalidad de Zárate",
+      "localidad": "Zárate",
+      "provincia": "Buenos Aires",
+      "url": "https://zarate.gob.ar/licitaciones-publicas/",
+      "tipo_portal": "html_pdf",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "estado_verificacion": "OPERATIVA",
+      "verificada_funcionando": true,
+      "lote": "cobertura-2026-10-27",
+      "capturar_respuestas": true,
+      "lectura_adjuntos": "necesarios",
+      "ocr": false,
+      "evidencia_descubrimiento": {
+        "fecha": "2026-10-27",
+        "metodo": "Busqueda oficial; pendiente conector real",
+        "url": "https://zarate.gob.ar/licitaciones-publicas/"
+      },
+      "descubrir_menu": true,
+      "descubrir_contrataciones": true,
+      "adaptador": "zarate",
+      "ultima_verificacion": "2026-10-29T17:50:42.574630-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 31,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      },
+      "barrido_institucional": true,
+      "admitir_avisos_sin_numero": true,
+      "urls_inicio": [
+        "https://zarate.gob.ar/licitaciones-publicas/"
+      ]
+    },
+    {
+      "id": "referencia-13",
+      "organismo": "Municipalidad de Salto",
+      "localidad": "Salto",
+      "provincia": "Buenos Aires",
+      "url": "https://salto.gob.ar/licitaciones/",
+      "tipo_portal": "html_pdf",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "estado_verificacion": "PARCIAL",
+      "verificada_funcionando": false,
+      "lote": "cobertura-2026-10-27",
+      "capturar_respuestas": true,
+      "lectura_adjuntos": "necesarios",
+      "ocr": false,
+      "evidencia_descubrimiento": {
+        "fecha": "2026-10-27",
+        "metodo": "Busqueda oficial y apertura web; pendiente conector real",
+        "url": "https://salto.gob.ar/licitaciones/"
+      },
+      "descubrir_menu": true,
+      "descubrir_contrataciones": true,
+      "ultima_verificacion": "2026-10-29T17:50:41.561981-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 21,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      },
+      "barrido_institucional": true,
+      "admitir_avisos_sin_numero": true,
+      "urls_inicio": [
+        "https://salto.gob.ar/licitaciones/"
+      ]
+    },
+    {
+      "id": "referencia-14",
+      "organismo": "Municipalidad de Arrecifes",
+      "localidad": "Arrecifes",
+      "provincia": "Buenos Aires",
+      "url": "https://arrecifes.gob.ar/informacion-publica/licitaciones/",
+      "tipo_portal": "html_pdf",
+      "estado_verificacion": "BLOQUEADA",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://arrecifes.gob.ar/informacion-publica/licitaciones/",
+        "fecha": "2026-10-25",
+        "observacion": "Llamados públicos 2026 indexados"
+      },
+      "verificada_funcionando": false,
+      "lectura_adjuntos": "necesarios",
+      "ocr": false,
+      "ultima_verificacion": "2026-10-29T17:49:58.887887-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 0,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      },
+      "barrido_institucional": true,
+      "admitir_avisos_sin_numero": true,
+      "urls_inicio": [
+        "https://arrecifes.gob.ar/informacion-publica/licitaciones/"
+      ]
+    },
+    {
+      "id": "control-sibom-ramallo",
+      "organismo": "Municipalidad de Ramallo",
+      "localidad": "Ramallo",
+      "provincia": "Buenos Aires",
+      "url": "https://ramallo.gob.ar/boletines",
+      "tipo_portal": "pdf_historico",
+      "estado_verificacion": "PARCIAL",
+      "incorporada": false,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://www.ramallo.gob.ar/sites/default/files/descargas/decretos_abril_2024_pdf_-_boletin_oficial_virtual.pdf",
+        "fecha": "2026-10-25",
+        "observacion": "PDF oficial histórico localizado; falta índice actualizado"
+      },
+      "verificada_funcionando": false,
+      "urls_inicio": [
+        "https://ramallo.gob.ar/boletines",
+        "https://sibom.slyt.gba.gob.ar/cities/102"
+      ],
+      "dominios_documentos": [
+        "sibom.slyt.gba.gob.ar"
+      ],
+      "adaptador": "sibom",
+      "seguir_patrones": [
+        "/bulletins/[0-9]+(?:/contents/[0-9]+)?(?:\\?|$)"
+      ],
+      "barrido_institucional": true,
+      "lectura_adjuntos": "necesarios",
+      "admitir_avisos_sin_numero": true,
+      "ocr": false,
+      "ultima_verificacion": "2026-10-31T19:38:00Z",
+      "evidencia_verificacion": {
+        "github_run_id": 41234956423,
+        "publicaciones_detectadas": 21,
+        "criterio": "Avisos SIBOM reales históricos; recorrido incompleto por tiempo."
+      }
+    }
+  ],
+  "advertencia": "Pruebas aisladas. Referencias no se dan de alta automáticamente."
+}

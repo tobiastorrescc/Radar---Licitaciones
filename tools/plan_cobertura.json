@@ -1,17 +1,17 @@
 {
-  "etapa": "cierre-tres-provincias-con-jurisdicciones-y-contador-estricto",
-  "barrido": false,
-  "barrido_manifest": "inventario/barrido_tres_provincias.json",
+  "etapa": "recuperar-historia-git-y-validar-referencias-oficiales",
+  "inventariar_historial": true,
+  "barrido": true,
+  "barrido_manifest": "inventario/barrido_fuentes_historicas.json",
   "barrido_por_fuente": 75,
-  "sondear": false,
+  "sondear": true,
+  "urls_sondeo": [
+    "https://sibom.slyt.gba.gob.ar/bulletins",
+    "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026/2026-09-18licitaciones.html",
+    "https://www.santafe.gov.ar/verPdf.php?seccion=2026%2F2026-09-18licitaciones.html"
+  ],
   "auditar": false,
   "descubrir": false,
   "reverificar_ids": [],
-  "archivar_auditoria": false,
-  "comparar_barrido_run": "41265639687",
-  "comparar_base_run": "41237677685",
-  "entrega_recuperacion": false,
-  "urls_sondeo": [
-    "http://www.sannicolas.gov.ar:8080/portalcompras/"
-  ]
+  "archivar_auditoria": false
 }

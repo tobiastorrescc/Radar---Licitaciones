@@ -1,0 +1,231 @@
+{
+  "fecha": "2026-11-01",
+  "fuentes": [
+    {
+      "id": "referencia-01",
+      "url": "https://www.santafe.gov.ar/boletinoficial/",
+      "organismo": "Boletín Oficial de Santa Fe",
+      "provincia": "Santa Fe",
+      "localidad": null,
+      "publicaciones": [
+        "licitaciones públicas y privadas",
+        "concursos de precios",
+        "compras directas/menores",
+        "solicitudes de cotización",
+        "segundos llamados/reaperturas"
+      ],
+      "estado": "PENDIENTE_VALIDACION_ACTUAL",
+      "fuente_configurada": "fuente-060"
+    },
+    {
+      "id": "referencia-02",
+      "url": "https://compras.santafe.gov.ar/",
+      "organismo": "Gobierno de Santa Fe",
+      "provincia": "Santa Fe",
+      "localidad": null,
+      "publicaciones": [
+        "licitaciones públicas y privadas",
+        "concursos de precios",
+        "compras directas/menores",
+        "solicitudes de cotización",
+        "segundos llamados/reaperturas"
+      ],
+      "estado": "PENDIENTE_VALIDACION_ACTUAL",
+      "fuente_configurada": "fuente-002"
+    },
+    {
+      "id": "referencia-03",
+      "url": "https://www.santafe.gov.ar/gestionesdecompras/",
+      "organismo": "Gestiones de Compras Santa Fe",
+      "provincia": "Santa Fe",
+      "localidad": null,
+      "publicaciones": [
+        "licitaciones públicas y privadas",
+        "concursos de precios",
+        "compras directas/menores",
+        "solicitudes de cotización",
+        "segundos llamados/reaperturas"
+      ],
+      "estado": "PENDIENTE_VALIDACION_ACTUAL",
+      "fuente_configurada": null
+    },
+    {
+      "id": "referencia-04",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "organismo": "EPE",
+      "provincia": "Santa Fe",
+      "localidad": null,
+      "publicaciones": [
+        "licitaciones públicas y privadas",
+        "concursos de precios",
+        "compras directas/menores",
+        "solicitudes de cotización",
+        "segundos llamados/reaperturas"
+      ],
+      "estado": "PENDIENTE_VALIDACION_ACTUAL",
+      "fuente_configurada": "fuente-003"
+    },
+    {
+      "id": "referencia-05",
+      "url": "https://epe.santafe.gov.ar/app2/compras",
+      "organismo": "EPE",
+      "provincia": "Santa Fe",
+      "localidad": null,
+      "publicaciones": [
+        "licitaciones públicas y privadas",
+        "concursos de precios",
+        "compras directas/menores",
+        "solicitudes de cotización",
+        "segundos llamados/reaperturas"
+      ],
+      "estado": "PENDIENTE_VALIDACION_ACTUAL",
+      "fuente_configurada": null
+    },
+    {
+      "id": "referencia-06",
+      "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "organismo": "Municipalidad de Rosario",
+      "provincia": "Santa Fe",
+      "localidad": "Rosario",
+      "publicaciones": [
+        "licitaciones públicas y privadas",
+        "concursos de precios",
+        "compras directas/menores",
+        "solicitudes de cotización",
+        "segundos llamados/reaperturas"
+      ],
+      "estado": "PENDIENTE_VALIDACION_ACTUAL",
+      "fuente_configurada": "fuente-001"
+    },
+    {
+      "id": "referencia-07",
+      "url": "https://compras.unr.edu.ar/",
+      "organismo": "UNR",
+      "provincia": "Santa Fe",
+      "localidad": "Rosario",
+      "publicaciones": [
+        "licitaciones públicas y privadas",
+        "concursos de precios",
+        "compras directas/menores",
+        "solicitudes de cotización",
+        "segundos llamados/reaperturas"
+      ],
+      "estado": "PENDIENTE_VALIDACION_ACTUAL",
+      "fuente_configurada": "fuente-005"
+    },
+    {
+      "id": "referencia-08",
+      "url": "https://aeropuertorosario.com/institucional/licitaciones/",
+      "organismo": "Aeropuerto Internacional Rosario",
+      "provincia": "Santa Fe",
+      "localidad": "Rosario",
+      "publicaciones": [
+        "licitaciones públicas y privadas",
+        "concursos de precios",
+        "compras directas/menores",
+        "solicitudes de cotización",
+        "segundos llamados/reaperturas"
+      ],
+      "estado": "PENDIENTE_VALIDACION_ACTUAL",
+      "fuente_configurada": "fuente-007"
+    },
+    {
+      "id": "referencia-09",
+      "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "organismo": "Ministerio de Planeamiento e Infraestructura",
+      "provincia": "Entre Ríos",
+      "localidad": null,
+      "publicaciones": [
+        "licitaciones públicas y privadas",
+        "concursos de precios",
+        "compras directas/menores",
+        "solicitudes de cotización",
+        "segundos llamados/reaperturas"
+      ],
+      "estado": "PENDIENTE_VALIDACION_ACTUAL",
+      "fuente_configurada": "fuente-024"
+    },
+    {
+      "id": "referencia-10",
+      "url": "https://sanjose.gob.ar/concursos-licitaciones/",
+      "organismo": "Municipalidad de San José",
+      "provincia": "Entre Ríos",
+      "localidad": "San José",
+      "publicaciones": [
+        "licitaciones públicas y privadas",
+        "concursos de precios",
+        "compras directas/menores",
+        "solicitudes de cotización",
+        "segundos llamados/reaperturas"
+      ],
+      "estado": "PENDIENTE_VALIDACION_ACTUAL",
+      "fuente_configurada": "fuente-032"
+    },
+    {
+      "id": "referencia-11",
+      "url": "https://sibom.slyt.gba.gob.ar/bulletins",
+      "organismo": "SIBOM",
+      "provincia": "Buenos Aires",
+      "localidad": null,
+      "publicaciones": [
+        "licitaciones públicas y privadas",
+        "concursos de precios",
+        "compras directas/menores",
+        "solicitudes de cotización",
+        "segundos llamados/reaperturas"
+      ],
+      "estado": "PENDIENTE_VALIDACION_ACTUAL",
+      "fuente_configurada": null,
+      "observacion": "Índice provincial complementario. No monitorear todos los municipios bonaerenses sin validar alcance territorial; prueba efectiva municipal por Ramallo/SIBOM102."
+    },
+    {
+      "id": "referencia-12",
+      "url": "https://zarate.gob.ar/licitaciones-publicas/",
+      "organismo": "Municipalidad de Zárate",
+      "provincia": "Buenos Aires",
+      "localidad": "Zárate",
+      "publicaciones": [
+        "licitaciones públicas y privadas",
+        "concursos de precios",
+        "compras directas/menores",
+        "solicitudes de cotización",
+        "segundos llamados/reaperturas"
+      ],
+      "estado": "PENDIENTE_VALIDACION_ACTUAL",
+      "fuente_configurada": "fuente-074"
+    },
+    {
+      "id": "referencia-13",
+      "url": "https://salto.gob.ar/licitaciones/",
+      "organismo": "Municipalidad de Salto",
+      "provincia": "Buenos Aires",
+      "localidad": "Salto",
+      "publicaciones": [
+        "licitaciones públicas y privadas",
+        "concursos de precios",
+        "compras directas/menores",
+        "solicitudes de cotización",
+        "segundos llamados/reaperturas"
+      ],
+      "estado": "PENDIENTE_VALIDACION_ACTUAL",
+      "fuente_configurada": "fuente-072"
+    },
+    {
+      "id": "referencia-14",
+      "url": "https://arrecifes.gob.ar/informacion-publica/licitaciones/",
+      "organismo": "Municipalidad de Arrecifes",
+      "provincia": "Buenos Aires",
+      "localidad": "Arrecifes",
+      "publicaciones": [
+        "licitaciones públicas y privadas",
+        "concursos de precios",
+        "compras directas/menores",
+        "solicitudes de cotización",
+        "segundos llamados/reaperturas"
+      ],
+      "estado": "PENDIENTE_VALIDACION_ACTUAL",
+      "fuente_configurada": "fuente-050"
+    }
+  ],
+  "criterio": "Referencia explícita del usuario: requiere prueba actual de extracción, no sólo respuesta HTTP."
+}
