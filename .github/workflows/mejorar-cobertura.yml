@@ -73,7 +73,7 @@ jobs:
           BARRIDO_RUN: ${{ steps.plan.outputs.comparar_barrido_run }}
         with:
           script: |
-            for(const id of [41210359641,41200546592,41211320771,41211936296,41234956423,41235922884,Number(process.env.BARRIDO_RUN)]){
+            for(const id of [41210359641,41200546592,41211320771,41211936296,41234956423,41235922884,41269203894,Number(process.env.BARRIDO_RUN)]){
               const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:id});
               if(r.conclusion!=='success'||r.head_branch!=='mejora/radar-auditable'||r.head_repository.full_name!==`${context.repo.owner}/${context.repo.repo}`||r.path!=='.github/workflows/mejorar-cobertura.yml')throw Error('Captura comparativa inválida');
             }
@@ -140,6 +140,13 @@ jobs:
           path: work/recuperacion-navegacion
           run-id: 41235922884
           github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        if: steps.plan.outputs.comparar_barrido_run != ''
+        with:
+          name: cobertura-41269203894
+          path: work/referencias-historicas
+          run-id: 41269203894
+          github-token: ${{ github.token }}
       - name: Piloto comparativo con persistencia y repetición sin red ni OCR
         if: steps.plan.outputs.comparar_barrido_run != ''
         timeout-minutes: 6
@@ -148,7 +155,7 @@ jobs:
           test -n "$CATALOGO_BASE"
           DESPUES=work/barrido-captura/work/barrido/resultado.json
           if test -f work/barrido/resultado.json; then DESPUES=work/barrido/resultado.json; fi
-          python -u tools/comparar_barrido.py --base-auditada --antes work/barrido-anterior/work/barrido/resultado.json --despues "$DESPUES" --catalogo "$CATALOGO_BASE" --salida work/barrido-comparativo --complemento work/barrido-intermedio/work/barrido/resultado.json --complemento work/barrido-regresion/work/barrido/resultado.json --complemento work/recuperacion-inicial/work/barrido/resultado.json --complemento work/recuperacion-navegacion/work/barrido/resultado.json
+          python -u tools/comparar_barrido.py --base-auditada --antes work/barrido-anterior/work/barrido/resultado.json --despues "$DESPUES" --catalogo "$CATALOGO_BASE" --salida work/barrido-comparativo --complemento work/barrido-intermedio/work/barrido/resultado.json --complemento work/barrido-regresion/work/barrido/resultado.json --complemento work/recuperacion-inicial/work/barrido/resultado.json --complemento work/recuperacion-navegacion/work/barrido/resultado.json --complemento work/referencias-historicas/work/barrido/resultado.json
       - name: Entrega completa del lote de recuperación sin nuevas consultas
         if: steps.plan.outputs.comparar_barrido_run != '' && steps.plan.outputs.entrega_recuperacion == 'true'
         run: |

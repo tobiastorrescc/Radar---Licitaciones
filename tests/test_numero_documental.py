@@ -13,6 +13,18 @@ class NumeroDocumental(unittest.TestCase):
             r=conectores.explorar(inicio,{'organismo':'Municipalidad de Arrecifes','provincia':'Buenos Aires','solo_descubrimiento':True,'documentos_para_descubrimiento':True,'lectura_adjuntos':'todos','resolver_numero_documental':True},fetch=fetch)
         self.assertEqual(len(r['oportunidades']),1)
         x=r['oportunidades'][0];self.assertEqual(x['numero_procedimiento'],'1/2026');self.assertEqual(x['numero_documental_previo'],'1');self.assertEqual(x['evidencia_numero_documental']['url'],doc)
+    def test_mismo_numero_en_documentos_distintos_y_fecha_rotulada(self):
+        inicio='https://arrecifes.gob.ar/licitaciones/'
+        html='<main><a href="/2024/3.docx">Licitación Pública 3</a><a href="/2026/3.docx">Licitación Pública 3</a></main>'
+        def fetch(u):return (html.encode(),'text/html',u) if u==inicio else (b'PK-prueba','application/vnd.openxmlformats-officedocument.wordprocessingml.document',u)
+        def texto(datos,mime,url,**kwargs):return ('LLAMADO A LICITACION PUBLICA 3\nOBJETO: Explotación de servicios del balneario municipal\nAPERTURA: DIA: 5 MES: OCTUBRE AÑO: '+('2024' if '/2024/' in url else '2026')+' HORA: 11:00',{})
+        with patch('cache_documentos.leer_texto',side_effect=texto):
+            r=conectores.explorar(inicio,{'organismo':'Municipalidad de Arrecifes','provincia':'Buenos Aires','solo_descubrimiento':True,'documentos_para_descubrimiento':True,'lectura_adjuntos':'todos','resolver_numero_documental':True},fetch=fetch)
+        xs=r['oportunidades'];self.assertEqual(len(xs),2)
+        self.assertEqual({x['numero_procedimiento'] for x in xs},{'3'})
+        self.assertEqual({x['fecha_apertura'] for x in xs},{'2024-10-05','2026-10-05'})
+        self.assertEqual(len({o.identidad(x) for x in xs}),2)
+
     def test_historial_bare_se_actualiza_sin_borrar_versiones_y_replay_cero(self):
         with tempfile.TemporaryDirectory() as tmp:
             db=inc.abrir(Path(tmp)/'estado.sqlite3');url='https://arrecifes.gob.ar/1.docx'

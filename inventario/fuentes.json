@@ -1466,7 +1466,7 @@
     "url": "https://ramallo.gob.ar/boletines",
     "tipo_portal": "pdf_historico",
     "estado_verificacion": "PARCIAL",
-    "incorporada": false,
+    "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
@@ -1490,11 +1490,12 @@
     "lectura_adjuntos": "necesarios",
     "admitir_avisos_sin_numero": true,
     "ocr": false,
-    "ultima_verificacion": "2026-10-31T19:38:00Z",
+    "ultima_verificacion": "2026-11-01",
     "evidencia_verificacion": {
-      "github_run_id": 41234956423,
+      "github_run_id": 41270106313,
       "publicaciones_detectadas": 21,
-      "criterio": "Avisos SIBOM reales históricos; recorrido incompleto por tiempo."
+      "criterio": "Publicaciones efectivamente extraídas en captura nativa. Históricas, ninguna vigente comprobada; no equivale a cobertura total.",
+      "incidencias": "Recorrido incompleto por límite de tiempo; un boletín SIBOM agotó lectura"
     }
   },
   {
@@ -1533,7 +1534,7 @@
     "provincia": "Buenos Aires",
     "url": "https://arrecifes.gob.ar/informacion-publica/licitaciones/",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "BLOQUEADA",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -1542,15 +1543,18 @@
       "fecha": "2026-10-25",
       "observacion": "Llamados públicos 2026 indexados"
     },
-    "verificada_funcionando": false,
-    "lectura_adjuntos": "necesarios",
-    "ocr": true,
-    "ultima_verificacion": "2026-10-29T17:49:58.887887-03:00",
+    "verificada_funcionando": true,
+    "lectura_adjuntos": "todos",
+    "ocr": false,
+    "ultima_verificacion": "2026-11-01",
     "evidencia_verificacion": {
-      "github_run_id": 40952155721,
-      "publicaciones_detectadas": 0,
-      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+      "github_run_id": 41270106313,
+      "publicaciones_detectadas": 6,
+      "criterio": "Publicaciones efectivamente extraídas en captura nativa. Históricas, ninguna vigente comprobada; no equivale a cobertura total.",
+      "incidencias": null
+    },
+    "documentos_para_descubrimiento": true,
+    "resolver_numero_documental": true
   },
   {
     "id": "fuente-051",
@@ -2249,8 +2253,8 @@
     "tipo_portal": "html_pdf",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PARCIAL",
-    "verificada_funcionando": false,
+    "estado_verificacion": "OPERATIVA",
+    "verificada_funcionando": true,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
     "lectura_adjuntos": "necesarios",
@@ -2262,11 +2266,12 @@
     },
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
-    "ultima_verificacion": "2026-10-29T17:50:41.561981-03:00",
+    "ultima_verificacion": "2026-11-01",
     "evidencia_verificacion": {
-      "github_run_id": 40952155721,
+      "github_run_id": 41269203894,
       "publicaciones_detectadas": 21,
-      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      "criterio": "Publicaciones efectivamente extraídas en captura nativa. Históricas, ninguna vigente comprobada; no equivale a cobertura total.",
+      "incidencias": null
     }
   },
   {

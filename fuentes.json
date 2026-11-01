@@ -1348,6 +1348,44 @@
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
     }
   },
+  "https://ramallo.gob.ar/boletines": {
+    "organismo": "Municipalidad de Ramallo",
+    "localidad": "Ramallo",
+    "provincia": "Buenos Aires",
+    "tipo_portal": "pdf_historico",
+    "estado_verificacion": "PARCIAL",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "evidencia_descubrimiento": {
+      "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+      "url": "https://www.ramallo.gob.ar/sites/default/files/descargas/decretos_abril_2024_pdf_-_boletin_oficial_virtual.pdf",
+      "fecha": "2026-10-25",
+      "observacion": "PDF oficial histórico localizado; falta índice actualizado"
+    },
+    "verificada_funcionando": false,
+    "urls_inicio": [
+      "https://ramallo.gob.ar/boletines",
+      "https://sibom.slyt.gba.gob.ar/cities/102"
+    ],
+    "dominios_documentos": [
+      "sibom.slyt.gba.gob.ar"
+    ],
+    "adaptador": "sibom",
+    "seguir_patrones": [
+      "/bulletins/[0-9]+(?:/contents/[0-9]+)?(?:\\?|$)"
+    ],
+    "barrido_institucional": true,
+    "lectura_adjuntos": "necesarios",
+    "admitir_avisos_sin_numero": true,
+    "ocr": false,
+    "ultima_verificacion": "2026-11-01",
+    "evidencia_verificacion": {
+      "github_run_id": 41270106313,
+      "publicaciones_detectadas": 21,
+      "criterio": "Publicaciones efectivamente extraídas en captura nativa. Históricas, ninguna vigente comprobada; no equivale a cobertura total.",
+      "incidencias": "Recorrido incompleto por límite de tiempo; un boletín SIBOM agotó lectura"
+    }
+  },
   "https://compras.pergamino.gob.ar/": {
     "organismo": "Municipalidad de Pergamino",
     "localidad": "Pergamino",
@@ -1380,7 +1418,7 @@
     "localidad": "Arrecifes",
     "provincia": "Buenos Aires",
     "tipo_portal": "html_pdf",
-    "estado_verificacion": "BLOQUEADA",
+    "estado_verificacion": "OPERATIVA",
     "incorporada": true,
     "conector": "publicaciones",
     "evidencia_descubrimiento": {
@@ -1389,15 +1427,18 @@
       "fecha": "2026-10-25",
       "observacion": "Llamados públicos 2026 indexados"
     },
-    "verificada_funcionando": false,
-    "lectura_adjuntos": "necesarios",
-    "ocr": true,
-    "ultima_verificacion": "2026-10-29T17:49:58.887887-03:00",
+    "verificada_funcionando": true,
+    "lectura_adjuntos": "todos",
+    "ocr": false,
+    "ultima_verificacion": "2026-11-01",
     "evidencia_verificacion": {
-      "github_run_id": 40952155721,
-      "publicaciones_detectadas": 0,
-      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+      "github_run_id": 41270106313,
+      "publicaciones_detectadas": 6,
+      "criterio": "Publicaciones efectivamente extraídas en captura nativa. Históricas, ninguna vigente comprobada; no equivale a cobertura total.",
+      "incidencias": null
+    },
+    "documentos_para_descubrimiento": true,
+    "resolver_numero_documental": true
   },
   "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones": {
     "organismo": "Municipalidad de Baradero",
@@ -2052,8 +2093,8 @@
     "tipo_portal": "html_pdf",
     "incorporada": true,
     "conector": "publicaciones",
-    "estado_verificacion": "PARCIAL",
-    "verificada_funcionando": false,
+    "estado_verificacion": "OPERATIVA",
+    "verificada_funcionando": true,
     "lote": "cobertura-2026-10-27",
     "capturar_respuestas": true,
     "lectura_adjuntos": "necesarios",
@@ -2065,11 +2106,12 @@
     },
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
-    "ultima_verificacion": "2026-10-29T17:50:41.561981-03:00",
+    "ultima_verificacion": "2026-11-01",
     "evidencia_verificacion": {
-      "github_run_id": 40952155721,
+      "github_run_id": 41269203894,
       "publicaciones_detectadas": 21,
-      "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      "criterio": "Publicaciones efectivamente extraídas en captura nativa. Históricas, ninguna vigente comprobada; no equivale a cobertura total.",
+      "incidencias": null
     }
   },
   "https://www.junin.gob.ar/servicio/licitaciones-y-concursos": {

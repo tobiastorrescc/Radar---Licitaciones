@@ -1,7 +1,7 @@
 {
-  "etapa": "validar-docx-sin-fragmentos-y-limpiar-inventario-historico",
-  "inventariar_historial": true,
-  "barrido": true,
+  "etapa": "comparar-historia-restaurada-y-validar-repeticion",
+  "inventariar_historial": false,
+  "barrido": false,
   "barrido_manifest": "inventario/barrido_fuentes_historicas.json",
   "barrido_por_fuente": 90,
   "sondear": false,
@@ -13,5 +13,8 @@
   "barrido_ids": [
     "referencia-14",
     "control-sibom-ramallo"
-  ]
+  ],
+  "comparar_barrido_run": "41270714736",
+  "comparar_base_run": "41266487895",
+  "entrega_recuperacion": false
 }

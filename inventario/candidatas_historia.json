@@ -1,0 +1,351 @@
+{
+  "fecha": "2026-11-01",
+  "candidatos": [
+    {
+      "url": "http://www.crespo.gob.ar/transparencia/licitaciones-publicas/",
+      "organismo": "Municipalidad de Crespo",
+      "localidad": "Crespo",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "http://www.crespo.gob.ar/transparencia/licitaciones-publicas/",
+      "evidencia_historial": {
+        "blob_sha": "6a47e3934da98950763b1a8c1f569af397e58b53",
+        "commit": "8f8a4fa8f45208f805ca302a5907657db8901db7",
+        "archivo": "piloto_reportes/ultimo/fichas.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://armstrong.gov.ar/index.php/licitaciones",
+      "organismo": "Municipalidad de Armstrong",
+      "localidad": "Armstrong",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://armstrong.gov.ar/index.php/licitaciones",
+      "evidencia_historial": {
+        "blob_sha": "d5c2b15209e48128f2996e114827db4bea80d0bc",
+        "commit": "f21c70329d17ed98570e945e265a24b921a60fc2",
+        "archivo": "fuentes.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://chajari.gob.ar/licitaciones",
+      "organismo": "Municipalidad de Chajarí",
+      "localidad": "Chajarí",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://chajari.gob.ar/licitaciones",
+      "evidencia_historial": {
+        "blob_sha": "d5a4e0cacc24d15d8e9862843c5491bc44492853",
+        "commit": "881f00d3adbba2a2f446646d1bc8854a9b54cd10",
+        "archivo": "inventario/descubrimiento_estado.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://colon.gov.ar/gobierno/gobierno-abierto/cuentasclaras/concursos/",
+      "organismo": "Municipalidad de Colón",
+      "localidad": "Colón",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://colon.gov.ar/gobierno/gobierno-abierto/cuentasclaras/concursos/",
+      "evidencia_historial": {
+        "blob_sha": "70056c4d0f2ee118f2789d1da3ddd2dddd30385f",
+        "commit": "11b0f0f8a94e470aef8715815ea0f06397a8b7a9",
+        "archivo": "tools/plan_cobertura.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://colon.gov.ar/licitaciones/",
+      "organismo": "Municipalidad de Colón",
+      "localidad": "Colón",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://colon.gov.ar/licitaciones/",
+      "evidencia_historial": {
+        "blob_sha": "70056c4d0f2ee118f2789d1da3ddd2dddd30385f",
+        "commit": "11b0f0f8a94e470aef8715815ea0f06397a8b7a9",
+        "archivo": "tools/plan_cobertura.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://epe.santafe.gov.ar/app2/compras",
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "tipo": "SECTORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://epe.santafe.gov.ar/app2/compras",
+      "evidencia_historial": {
+        "blob_sha": "a59390c783a8a8477243be565524e16de49822d4",
+        "commit": "b8560576893632ab7ed2112ef41a593d0a367838",
+        "archivo": "inventario/barrido_fuentes_historicas.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Privada",
+      "organismo": "Municipalidad de Baradero",
+      "localidad": "Baradero",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Privada",
+      "evidencia_historial": {
+        "blob_sha": "d5c2b15209e48128f2996e114827db4bea80d0bc",
+        "commit": "f21c70329d17ed98570e945e265a24b921a60fc2",
+        "archivo": "fuentes.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://haciendalapaz.gob.ar/concursos-de-precios",
+      "organismo": "Municipalidad de La Paz",
+      "localidad": "La Paz",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://haciendalapaz.gob.ar/concursos-de-precios",
+      "evidencia_historial": {
+        "blob_sha": "d5c2b15209e48128f2996e114827db4bea80d0bc",
+        "commit": "f21c70329d17ed98570e945e265a24b921a60fc2",
+        "archivo": "fuentes.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://haciendalapaz.gob.ar/licitaciones",
+      "organismo": "Municipalidad de La Paz",
+      "localidad": "La Paz",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://haciendalapaz.gob.ar/licitaciones",
+      "evidencia_historial": {
+        "blob_sha": "d5c2b15209e48128f2996e114827db4bea80d0bc",
+        "commit": "f21c70329d17ed98570e945e265a24b921a60fc2",
+        "archivo": "fuentes.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://lasparejas.gov.ar/index_boletin",
+      "organismo": "Municipalidad de Las Parejas",
+      "localidad": "Las Parejas",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://lasparejas.gov.ar/index_boletin",
+      "evidencia_historial": {
+        "blob_sha": "d5a4e0cacc24d15d8e9862843c5491bc44492853",
+        "commit": "881f00d3adbba2a2f446646d1bc8854a9b54cd10",
+        "archivo": "inventario/descubrimiento_estado.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://nuevo.nogoya.gob.ar/transparencia/compras-licitaciones-y-concursos/",
+      "organismo": "Municipalidad de Nogoyá",
+      "localidad": "Nogoyá",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://nuevo.nogoya.gob.ar/transparencia/compras-licitaciones-y-concursos/",
+      "evidencia_historial": {
+        "blob_sha": "d5c2b15209e48128f2996e114827db4bea80d0bc",
+        "commit": "f21c70329d17ed98570e945e265a24b921a60fc2",
+        "archivo": "fuentes.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://portal.entrerios.gov.ar/consultas/contratacionesuep",
+      "organismo": "Gobierno de Entre Ríos",
+      "localidad": "Paraná",
+      "provincia": "Entre Ríos",
+      "tipo": "SECTORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://portal.entrerios.gov.ar/consultas/contratacionesuep",
+      "evidencia_historial": {
+        "blob_sha": "6a286b07dbd80c42b09e4619307e93d3fc80ce22",
+        "commit": "a522bd79a064c46d82ba1e8f02f64d60ccfc4852",
+        "archivo": "informes/2026-11-01-tres-provincias/metricas_territoriales.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://salto.gob.ar/boletin-oficial-municipal/",
+      "organismo": "Municipalidad de Salto",
+      "localidad": "Salto",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://salto.gob.ar/boletin-oficial-municipal/",
+      "evidencia_historial": {
+        "blob_sha": "2ace2a12be9489c755970b5eb63f71044edf7624",
+        "commit": "bcf31da3d64ba8db750a77c8c88cb8d5b8bb770a",
+        "archivo": "informes/2026-10-29/fuentes.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://unr.edu.ar/category/noticias-compras-y-licitaciones/",
+      "organismo": "Universidad Nacional de Rosario",
+      "localidad": "Rosario",
+      "provincia": "Santa Fe",
+      "tipo": "SECTORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://unr.edu.ar/category/noticias-compras-y-licitaciones/",
+      "evidencia_historial": {
+        "blob_sha": "c284fc04b43818bdbbcc4eca5a4e211792a6cfd0",
+        "commit": "50f2ef1e9f36eaccee137dc77e2222f4e7df0c68",
+        "archivo": "informes/2026-10-31-recuperacion/piloto_comparativo.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://unr.edu.ar/compras-y-licitaciones/",
+      "organismo": "Universidad Nacional de Rosario",
+      "localidad": "Rosario",
+      "provincia": "Santa Fe",
+      "tipo": "SECTORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://unr.edu.ar/compras-y-licitaciones/",
+      "evidencia_historial": {
+        "blob_sha": "d5c2b15209e48128f2996e114827db4bea80d0bc",
+        "commit": "f21c70329d17ed98570e945e265a24b921a60fc2",
+        "archivo": "fuentes.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://villaelisa.gov.ar/transparencia/licitaciones/",
+      "organismo": "Municipalidad de Villa Elisa",
+      "localidad": "Villa Elisa",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://villaelisa.gov.ar/transparencia/licitaciones/",
+      "evidencia_historial": {
+        "blob_sha": "d5c2b15209e48128f2996e114827db4bea80d0bc",
+        "commit": "f21c70329d17ed98570e945e265a24b921a60fc2",
+        "archivo": "fuentes.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://villaelisa.gov.ar/transparencia/licitaciones/licitaciones-privadas/",
+      "organismo": "Municipalidad de Villa Elisa",
+      "localidad": "Villa Elisa",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://villaelisa.gov.ar/transparencia/licitaciones/licitaciones-privadas/",
+      "evidencia_historial": {
+        "blob_sha": "bc31c3c64b1675cf881ee272dd660ba966c3b065",
+        "commit": "7e874b88797db6181f68a8befd4fb48962de78e0",
+        "archivo": "informes/2026-10-31-fuentes/INFORME_RADAR_INTEGRO.md"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://villaelisa.gov.ar/transparencia/licitaciones/licitaciones-publicas/",
+      "organismo": "Municipalidad de Villa Elisa",
+      "localidad": "Villa Elisa",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://villaelisa.gov.ar/transparencia/licitaciones/licitaciones-publicas/",
+      "evidencia_historial": {
+        "blob_sha": "bc31c3c64b1675cf881ee272dd660ba966c3b065",
+        "commit": "7e874b88797db6181f68a8befd4fb48962de78e0",
+        "archivo": "informes/2026-10-31-fuentes/INFORME_RADAR_INTEGRO.md"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://www.concejosantafe.gov.ar/boletin",
+      "organismo": "Concejo Municipal de Santa Fe",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "tipo": "SECTORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://www.concejosantafe.gov.ar/boletin",
+      "evidencia_historial": {
+        "blob_sha": "d5a4e0cacc24d15d8e9862843c5491bc44492853",
+        "commit": "881f00d3adbba2a2f446646d1bc8854a9b54cd10",
+        "archivo": "inventario/descubrimiento_estado.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://www.crespo.gob.ar/transparencia/situacion-economico-financiera/compras-y-licitaciones/",
+      "organismo": "Municipalidad de Crespo",
+      "localidad": "Crespo",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://www.crespo.gob.ar/transparencia/situacion-economico-financiera/compras-y-licitaciones/",
+      "evidencia_historial": {
+        "blob_sha": "c455d8c6940a5f648aeacdb51400d37ebcc26f7a",
+        "commit": "50f2ef1e9f36eaccee137dc77e2222f4e7df0c68",
+        "archivo": "informes/2026-10-31-recuperacion/abiertas_comprobadas.csv"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/",
+      "organismo": "Boletín Oficial de Entre Ríos",
+      "localidad": null,
+      "provincia": "Entre Ríos",
+      "tipo": "SECTORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/",
+      "evidencia_historial": {
+        "blob_sha": "75d23e849b98f7b0285de9e80313c4de053a451a",
+        "commit": "f21c70329d17ed98570e945e265a24b921a60fc2",
+        "archivo": "barrido_institucional.py"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://www.jusentrerios.gov.ar/contrato/licitaciones/",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "localidad": "Paraná",
+      "provincia": "Entre Ríos",
+      "tipo": "SECTORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://www.jusentrerios.gov.ar/contrato/licitaciones/",
+      "evidencia_historial": {
+        "blob_sha": "d7cd2ac2748cb1c85c69c269eaf59df41c1843df",
+        "commit": "50f2ef1e9f36eaccee137dc77e2222f4e7df0c68",
+        "archivo": "informes/2026-10-31-recuperacion/eventos_piloto_completos.csv"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    },
+    {
+      "url": "https://www.roldan.gov.ar/wp/documents/licitaciones-publicas/",
+      "organismo": "Municipalidad de Roldán",
+      "localidad": "Roldán",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "estado": "PENDIENTE",
+      "evidencia_descubrimiento": "https://www.roldan.gov.ar/wp/documents/licitaciones-publicas/",
+      "evidencia_historial": {
+        "blob_sha": "1fa489b8b5f3da0a4b924e06b2bb6a846390795a",
+        "commit": "f3ab91ad2581385bdab6ed5bae565c36a751232c",
+        "archivo": "tools/objetivos_conectores.json"
+      },
+      "motivo_previo": "Ruta histórica de dominio conocido. Exige identidad y extracción actual; no fuente confiable todavía."
+    }
+  ],
+  "criterio": "Sólo índices estables; las fichas/documentos no se convierten en fuentes. Pendiente validación estricta antes de alta."
+}
