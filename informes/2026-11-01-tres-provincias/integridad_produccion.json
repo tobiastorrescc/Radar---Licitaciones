@@ -1,0 +1,15 @@
+{
+  "antes": {
+    "radar_estado.json": "fc132964cb736bf2453a6f93b1f5674326b8ac34c808e4df0710291092563ea6",
+    "licitaciones_nuevas.json": "33fa66343420c2c3da728f61fc396addd6346ca74e2f410535b1cda242ff9369",
+    "licitaciones_nuevas.md": null,
+    "auditoria_fuentes.json": "55a2ed952200ee9dab9f1d07f5fbd0b0378e16b4d9ab44df7e5770c8ec58ab29"
+  },
+  "despues": {
+    "radar_estado.json": "fc132964cb736bf2453a6f93b1f5674326b8ac34c808e4df0710291092563ea6",
+    "licitaciones_nuevas.json": "33fa66343420c2c3da728f61fc396addd6346ca74e2f410535b1cda242ff9369",
+    "licitaciones_nuevas.md": null,
+    "auditoria_fuentes.json": "55a2ed952200ee9dab9f1d07f5fbd0b0378e16b4d9ab44df7e5770c8ec58ab29"
+  },
+  "intacto": true
+}

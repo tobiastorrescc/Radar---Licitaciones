@@ -6,10 +6,12 @@
       "localidad": "San Nicolás",
       "provincia": "Buenos Aires",
       "url": "http://www.sannicolas.gov.ar:8080/portalcompras/",
-      "estado": "PENDIENTE",
+      "estado": "ERROR_DE_ACCESO",
       "publicada_en": "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos",
       "evidencia_run": 41265639687,
-      "evidencia": "Enlace municipal explícito Portal de Compras para cotizaciones online. Pendiente conexión y extracción; no se da alta por hallar URL."
+      "evidencia": "Enlace municipal explícito Portal de Compras para cotizaciones online. Pendiente conexión y extracción; no se da alta por hallar URL.",
+      "prueba_run": 41266080077,
+      "motivo": "GET al enlace publicado en puerto8080 agota conexión en5,63s. No se declara sin publicaciones ni se incorpora."
     }
   ]
 }
