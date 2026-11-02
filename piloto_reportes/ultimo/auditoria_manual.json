@@ -30,7 +30,7 @@
         "UNR"
       ],
       "resultado": "DETECTADA",
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "8f1264cb9e8e2543fb19ceafe6fcc66216099de58da45d753962df502950c630"
       ]
@@ -50,7 +50,7 @@
       "fecha_limite_presentacion": "2026-11-10",
       "numero_norma": "Decreto7839/26: no es número de procedimiento",
       "resultado": "OMITIDA",
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": []
     },
     {
@@ -68,7 +68,7 @@
       "historica": true,
       "metodo": "Aviso oficial de control previo, contrastado con índice web; acceso del conector pendiente",
       "resultado": "OMITIDA",
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": []
     },
     {
@@ -85,7 +85,7 @@
       "fecha_apertura": "2026-11-03",
       "metodo": "Texto documental nativo de Actions41236909527 reutilizado",
       "resultado": "DETECTADA",
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "7f0a1207ea77750368133f8211b89684f86990d8b04877ee68764b7306f9b0b5"
       ]
@@ -104,7 +104,7 @@
       "fecha_apertura": "2026-11-11",
       "metodo": "Texto documental nativo de Actions41236909527 reutilizado",
       "resultado": "DETECTADA",
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "55ceab9f32a2784713a5fecb88f0087020760299481dae607a981b7200b83c97"
       ]
@@ -128,7 +128,7 @@
       "evidencia_reutilizada_de": "Actions41237677685: texto OCR persistido del aviso licitacion_11-2026.jpg; sin volver a ejecutar OCR. Número y fecha de publicación contrastados enHTML oficial.",
       "vigencia_documental_reutilizada": true,
       "resultado": "DETECTADA",
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "50c3ef5a782cb227a8e16db9fd04fa8c41aea101b480dee6ed755bce8e163c43"
       ]
@@ -146,7 +146,7 @@
       "comprobada": true,
       "evidencia_reutilizada_de": "Texto oficial conservado en Actions41237677685; índice2026 contrastado por web. Fecha de apertura desconocida.",
       "resultado": "DETECTADA",
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "5491983d5f157e43afa6d4e9e5e8dc020f7073453316d16eec6a592d6a863686"
       ]
@@ -164,7 +164,7 @@
       "comprobada": true,
       "historica": true,
       "resultado": "DETECTADA",
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "8a3fb4e52b6fa580522d840dcd674b30761d3fc4b7e49660554611689a110fb5"
       ]

@@ -1188,6 +1188,51 @@
       "fecha_apertura_observada": "2026-10-30",
       "hora_apertura_observada": "13:00",
       "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
+    },
+    {
+      "id": "6e9a95e1e5131d9badae5ee67af2249db7d155d73efbf28200ae919fc5989f61",
+      "organismo": "Municipalidad de Rosario",
+      "procedimiento": "7/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38588",
+      "objeto": "Licitación Privada 7/2026 Publicada para Apertura Alquiler de equipos para el servicio de transmisión de televisión por circuito cerrado, filmación y difusión para las reuniones hípicas del Hipódromo Independencia - Sociedad del Estado Municipal Hipódromo Rosario Apertura: 03/11/2026 11:00",
+      "fecha_publicacion_anterior": null,
+      "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
+      "fecha_publicacion_diaria": null,
+      "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-03",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
+    },
+    {
+      "id": "0a4e1421a87659ffb95e636c2a4c7ca1ba11d93177cbd9b1c691ab64124ffc6d",
+      "organismo": "Municipalidad de Rosario",
+      "procedimiento": "20073/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38616",
+      "objeto": "Licitación Privada 20073/2026 Publicada para Apertura Trabajos necesarios para poner en condiciones las instalaciones relevadas en el Polideportivo Cristalería, sito en Alberdi 3200 de la ciudad de Rosario Apertura: 06/11/2026 09:00",
+      "fecha_publicacion_anterior": null,
+      "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
+      "fecha_publicacion_diaria": null,
+      "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-06",
+      "hora_apertura_observada": "09:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
+    },
+    {
+      "id": "3a36b5ef93b7f88d23296831ba4a5c1b03db682adae47860f2d533c51f95882c",
+      "organismo": "Municipalidad de Rosario",
+      "procedimiento": "10/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38572",
+      "objeto": "Licitación Privada 10/2026 Publicada para Apertura Provisión de Luminarias para Espacios Públicos de la Ciudad de Rosario - Ente Autárquico SUMAR SELLADO: deberá ser abonado únicamente por medio de depósito o transferencia electrónica a la cuenta 020-0008147/8 de Banco Municipal de Rosario (CBU:0650020701000000814789) Apertura: 06/11/2026 11:00",
+      "fecha_publicacion_anterior": null,
+      "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
+      "fecha_publicacion_diaria": null,
+      "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-06",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
-  "fecha": "2026-11-01T08:31:08.968829-03:00",
+  "fecha": "2026-11-02T08:50:13.547966-03:00",
   "jurisdicciones": {
     "Santa Fe": {
       "nuevas_confirmadas": 0,
       "primeras_detecciones_no_comprobadas": 1,
-      "abiertas_observadas": 83,
-      "abiertas_solo_historial": 24,
-      "vigencia_pendiente": 496,
+      "abiertas_observadas": 81,
+      "abiertas_solo_historial": 25,
+      "vigencia_pendiente": 500,
       "pago_rapido_verificado_abiertas": 0,
       "pago_rapido_observadas": 0,
       "fuentes_consultadas": 37,
@@ -15,6 +15,26 @@
           "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
           "estado": "TIEMPO_FUENTE",
           "errores": [
+            {
+              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5",
+              "tipo": "URLError",
+              "categoria": "RED",
+              "timeout": true,
+              "error": "<urlopen error timed out>",
+              "causa": "TIEMPO_ESPERA",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            },
+            {
+              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=1",
+              "tipo": "URLError",
+              "categoria": "RED",
+              "timeout": true,
+              "error": "<urlopen error timed out>",
+              "causa": "TIEMPO_ESPERA",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            },
             {
               "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=2",
               "tipo": "URLError",
@@ -46,6 +66,26 @@
               "permanencia": "NO_DETERMINADA"
             },
             {
+              "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38581",
+              "tipo": "URLError",
+              "categoria": "RED",
+              "timeout": true,
+              "error": "<urlopen error timed out>",
+              "causa": "TIEMPO_ESPERA",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            },
+            {
+              "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38615",
+              "tipo": "URLError",
+              "categoria": "RED",
+              "timeout": true,
+              "error": "<urlopen error timed out>",
+              "causa": "TIEMPO_ESPERA",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            },
+            {
               "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38622",
               "tipo": "URLError",
               "categoria": "RED",
@@ -56,7 +96,37 @@
               "permanencia": "NO_DETERMINADA"
             },
             {
+              "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38623",
+              "tipo": "URLError",
+              "categoria": "RED",
+              "timeout": true,
+              "error": "<urlopen error timed out>",
+              "causa": "TIEMPO_ESPERA",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            },
+            {
               "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38626",
+              "tipo": "URLError",
+              "categoria": "RED",
+              "timeout": true,
+              "error": "<urlopen error timed out>",
+              "causa": "TIEMPO_ESPERA",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            },
+            {
+              "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38627",
+              "tipo": "URLError",
+              "categoria": "RED",
+              "timeout": true,
+              "error": "<urlopen error timed out>",
+              "causa": "TIEMPO_ESPERA",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            },
+            {
+              "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38636",
               "tipo": "URLError",
               "categoria": "RED",
               "timeout": true,
@@ -77,26 +147,6 @@
             },
             {
               "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38653",
-              "tipo": "URLError",
-              "categoria": "RED",
-              "timeout": true,
-              "error": "<urlopen error timed out>",
-              "causa": "TIEMPO_ESPERA",
-              "restriccion_acceso_comprobada": false,
-              "permanencia": "NO_DETERMINADA"
-            },
-            {
-              "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38669",
-              "tipo": "URLError",
-              "categoria": "RED",
-              "timeout": true,
-              "error": "<urlopen error timed out>",
-              "causa": "TIEMPO_ESPERA",
-              "restriccion_acceso_comprobada": false,
-              "permanencia": "NO_DETERMINADA"
-            },
-            {
-              "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38585",
               "tipo": "URLError",
               "categoria": "RED",
               "timeout": true,
@@ -375,51 +425,11 @@
               "permanencia": "NO_DETERMINADA"
             },
             {
-              "url": "https://armstrong.gov.ar/index.php/licitaciones/2024?format=feed&type=atom",
-              "tipo": "ValueError",
-              "categoria": "EXTRACCION",
-              "timeout": false,
-              "error": "Formato de documento no admitido: application/atom+xml; charset=utf-8",
-              "causa": "ERROR_EXTRACCION",
-              "restriccion_acceso_comprobada": false,
-              "permanencia": "NO_DETERMINADA"
-            },
-            {
-              "url": "https://armstrong.gov.ar/index.php/licitaciones/2024?format=feed&type=rss",
-              "tipo": "ValueError",
-              "categoria": "EXTRACCION",
-              "timeout": false,
-              "error": "Formato de documento no admitido: application/rss+xml; charset=utf-8",
-              "causa": "ERROR_EXTRACCION",
-              "restriccion_acceso_comprobada": false,
-              "permanencia": "NO_DETERMINADA"
-            },
-            {
-              "url": "https://armstrong.gov.ar/index.php/licitaciones/2023?format=feed&type=atom",
-              "tipo": "ValueError",
-              "categoria": "EXTRACCION",
-              "timeout": false,
-              "error": "Formato de documento no admitido: application/atom+xml; charset=utf-8",
-              "causa": "ERROR_EXTRACCION",
-              "restriccion_acceso_comprobada": false,
-              "permanencia": "NO_DETERMINADA"
-            },
-            {
-              "url": "https://armstrong.gov.ar/index.php/licitaciones/2023?format=feed&type=rss",
-              "tipo": "ValueError",
-              "categoria": "EXTRACCION",
-              "timeout": false,
-              "error": "Formato de documento no admitido: application/rss+xml; charset=utf-8",
-              "causa": "ERROR_EXTRACCION",
-              "restriccion_acceso_comprobada": false,
-              "permanencia": "NO_DETERMINADA"
-            },
-            {
-              "categoria": "EXTRACCION",
+              "categoria": "RED",
               "tipo": "TIEMPO_FUENTE",
               "timeout": true,
               "error": "Plazo agotado; se conserva lo extraído",
-              "fase": "EXTRACCION"
+              "fase": "DESCARGA"
             }
           ],
           "limites": []
@@ -443,18 +453,18 @@
           "estado": "TIEMPO_FUENTE",
           "errores": [
             {
-              "categoria": "EXTRACCION",
+              "categoria": "RED",
               "tipo": "TIEMPO_FUENTE",
               "timeout": true,
               "error": "Plazo agotado; se conserva lo extraído",
-              "fase": "EXTRACCION"
+              "fase": "DESCARGA"
             }
           ],
           "limites": []
         },
         {
           "url": "https://perez.opendata.junar.com/home/",
-          "estado": "PENDIENTE",
+          "estado": "TIEMPO_FUENTE",
           "errores": [
             {
               "url": "https://perez.opendata.junar.com/datasets/199847-listados-de-licitaciones-publicas-2024.download/",
@@ -475,6 +485,13 @@
               "causa": "ERROR_EXTRACCION",
               "restriccion_acceso_comprobada": false,
               "permanencia": "NO_DETERMINADA"
+            },
+            {
+              "categoria": "RED",
+              "tipo": "TIEMPO_FUENTE",
+              "timeout": true,
+              "error": "Plazo agotado; se conserva lo extraído",
+              "fase": "DESCARGA"
             }
           ],
           "limites": []
@@ -628,8 +645,8 @@
     },
     "Entre Ríos": {
       "nuevas_confirmadas": 0,
-      "primeras_detecciones_no_comprobadas": 62,
-      "abiertas_observadas": 54,
+      "primeras_detecciones_no_comprobadas": 6,
+      "abiertas_observadas": 60,
       "abiertas_solo_historial": 0,
       "vigencia_pendiente": 1213,
       "pago_rapido_verificado_abiertas": 2,
@@ -1413,7 +1430,7 @@
     },
     "Buenos Aires": {
       "nuevas_confirmadas": 0,
-      "primeras_detecciones_no_comprobadas": 3,
+      "primeras_detecciones_no_comprobadas": 0,
       "abiertas_observadas": 1,
       "abiertas_solo_historial": 0,
       "vigencia_pendiente": 215,
@@ -1486,17 +1503,14 @@
         },
         {
           "url": "https://compras.pergamino.gob.ar/",
-          "estado": "BLOQUEADA",
+          "estado": "PENDIENTE",
           "errores": [
             {
               "url": "https://compras.pergamino.gob.ar/",
-              "tipo": "TimeoutError",
-              "categoria": "RED",
-              "timeout": true,
-              "error": "The read operation timed out",
-              "causa": "TIEMPO_ESPERA",
-              "restriccion_acceso_comprobada": false,
-              "permanencia": "NO_DETERMINADA"
+              "tipo": "AccesoRestringido",
+              "categoria": "ACCESO",
+              "timeout": false,
+              "error": "El portal requiere autenticación o red privada; no se elude"
             }
           ],
           "limites": []
@@ -1603,11 +1617,6 @@
   "meta_alcance": "Conjunto de Santa Fe, Entre Ríos y Buenos Aires dentro del alcance de Rosario; condicionado al volumen real. Sin límite de resultados.",
   "serie_7_dias": [
     {
-      "fecha": "2026-10-26",
-      "nuevas_confirmadas": 0,
-      "ejecucion_disponible": false
-    },
-    {
       "fecha": "2026-10-27",
       "nuevas_confirmadas": 0,
       "ejecucion_disponible": false
@@ -1636,9 +1645,14 @@
       "fecha": "2026-11-01",
       "nuevas_confirmadas": 0,
       "ejecucion_disponible": true
+    },
+    {
+      "fecha": "2026-11-02",
+      "nuevas_confirmadas": 0,
+      "ejecucion_disponible": true
     }
   ],
-  "dias_con_ejecucion": 5,
+  "dias_con_ejecucion": 6,
   "promedio_dias_observados": 0.0,
   "promedio_7_dias": null,
   "criterio": "Sólo NUEVO_CONFIRMADO con fecha publicada comprobada en la ventana reciente de72horas por día disponible (sin inventar hora). Históricas, duplicados, primeras detecciones sin fecha y modificaciones no integran la meta. Días sin ejecución no se imputan como cero. Abierta observada no acredita exhaustividad de la fuente.",
@@ -1674,7 +1688,7 @@
           "UNR"
         ],
         "resultado": "DETECTADA",
-        "evidencia_reciente": true,
+        "evidencia_reciente": false,
         "ids_radar": [
           "8f1264cb9e8e2543fb19ceafe6fcc66216099de58da45d753962df502950c630"
         ]
@@ -1694,7 +1708,7 @@
         "fecha_limite_presentacion": "2026-11-10",
         "numero_norma": "Decreto7839/26: no es número de procedimiento",
         "resultado": "OMITIDA",
-        "evidencia_reciente": true,
+        "evidencia_reciente": false,
         "ids_radar": []
       },
       {
@@ -1712,7 +1726,7 @@
         "historica": true,
         "metodo": "Aviso oficial de control previo, contrastado con índice web; acceso del conector pendiente",
         "resultado": "OMITIDA",
-        "evidencia_reciente": true,
+        "evidencia_reciente": false,
         "ids_radar": []
       },
       {
@@ -1729,7 +1743,7 @@
         "fecha_apertura": "2026-11-03",
         "metodo": "Texto documental nativo de Actions41236909527 reutilizado",
         "resultado": "DETECTADA",
-        "evidencia_reciente": true,
+        "evidencia_reciente": false,
         "ids_radar": [
           "7f0a1207ea77750368133f8211b89684f86990d8b04877ee68764b7306f9b0b5"
         ]
@@ -1748,7 +1762,7 @@
         "fecha_apertura": "2026-11-11",
         "metodo": "Texto documental nativo de Actions41236909527 reutilizado",
         "resultado": "DETECTADA",
-        "evidencia_reciente": true,
+        "evidencia_reciente": false,
         "ids_radar": [
           "55ceab9f32a2784713a5fecb88f0087020760299481dae607a981b7200b83c97"
         ]
@@ -1772,7 +1786,7 @@
         "evidencia_reutilizada_de": "Actions41237677685: texto OCR persistido del aviso licitacion_11-2026.jpg; sin volver a ejecutar OCR. Número y fecha de publicación contrastados enHTML oficial.",
         "vigencia_documental_reutilizada": true,
         "resultado": "DETECTADA",
-        "evidencia_reciente": true,
+        "evidencia_reciente": false,
         "ids_radar": [
           "50c3ef5a782cb227a8e16db9fd04fa8c41aea101b480dee6ed755bce8e163c43"
         ]
@@ -1790,7 +1804,7 @@
         "comprobada": true,
         "evidencia_reutilizada_de": "Texto oficial conservado en Actions41237677685; índice2026 contrastado por web. Fecha de apertura desconocida.",
         "resultado": "DETECTADA",
-        "evidencia_reciente": true,
+        "evidencia_reciente": false,
         "ids_radar": [
           "5491983d5f157e43afa6d4e9e5e8dc020f7073453316d16eec6a592d6a863686"
         ]
@@ -1808,7 +1822,7 @@
         "comprobada": true,
         "historica": true,
         "resultado": "DETECTADA",
-        "evidencia_reciente": true,
+        "evidencia_reciente": false,
         "ids_radar": [
           "8a3fb4e52b6fa580522d840dcd674b30761d3fc4b7e49660554611689a110fb5"
         ]
