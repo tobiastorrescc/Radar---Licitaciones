@@ -79,3 +79,9 @@ https://unr.edu.ar/obras-publicas/
 https://viale.gob.ar/pliegos/
 https://oroverde.gob.ar/portal/secciones/licitaciones/
 https://www.segui.gob.ar/sitio/?cat=26
+https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones
+https://municrespo.gov.ar/digesto/consulta.php?s=consulta
+https://www.concejorosario.gov.ar/compras/
+https://compras.concejorosario.gov.ar/
+https://www.santafe.gob.ar/gestionesdecompras/site/index.php
+https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5
