@@ -2374,5 +2374,137 @@
       "publicaciones_detectadas": 31,
       "criterio": "Procedimientos extraídos; recorrido/adjuntos incompletos, sin declarar cobertura total."
     }
+  },
+  "https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones": {
+    "organismo": "Municipalidad de Gualeguaychú",
+    "localidad": "Gualeguaychú",
+    "provincia": "Entre Ríos",
+    "tipo_portal": "html",
+    "estado_verificacion": "PENDIENTE",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "metodo": "URL oficial facilitada por usuario; pendiente prueba de extracción nativa",
+      "url": "https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones",
+      "fecha": "2026-11-02",
+      "observacion": "Alta de fuente para exploración, no acredita funcionamiento ni oportunidades vigentes"
+    },
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true,
+    "priorizar_listados": true,
+    "enriquecer_fichas": true
+  },
+  "https://municrespo.gov.ar/digesto/consulta.php?s=consulta": {
+    "organismo": "Municipalidad de Crespo",
+    "localidad": "Crespo",
+    "provincia": "Entre Ríos",
+    "tipo_portal": "html",
+    "estado_verificacion": "PENDIENTE",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "metodo": "URL oficial facilitada por usuario; pendiente prueba de extracción nativa",
+      "url": "https://municrespo.gov.ar/digesto/consulta.php?s=consulta",
+      "fecha": "2026-11-02",
+      "observacion": "Alta de fuente para exploración, no acredita funcionamiento ni oportunidades vigentes"
+    },
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true,
+    "priorizar_listados": true,
+    "enriquecer_fichas": true
+  },
+  "https://www.concejorosario.gov.ar/compras/": {
+    "organismo": "Concejo Municipal de Rosario",
+    "localidad": "Rosario",
+    "provincia": "Santa Fe",
+    "tipo_portal": "html",
+    "estado_verificacion": "PENDIENTE",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "metodo": "URL oficial facilitada por usuario; pendiente prueba de extracción nativa",
+      "url": "https://www.concejorosario.gov.ar/compras/",
+      "fecha": "2026-11-02",
+      "observacion": "Alta de fuente para exploración, no acredita funcionamiento ni oportunidades vigentes"
+    },
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true,
+    "priorizar_listados": true,
+    "enriquecer_fichas": true
+  },
+  "https://compras.concejorosario.gov.ar/": {
+    "organismo": "Concejo Municipal de Rosario - Portal de Compras",
+    "localidad": "Rosario",
+    "provincia": "Santa Fe",
+    "tipo_portal": "html",
+    "estado_verificacion": "PENDIENTE",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "metodo": "URL oficial facilitada por usuario; pendiente prueba de extracción nativa",
+      "url": "https://compras.concejorosario.gov.ar/",
+      "fecha": "2026-11-02",
+      "observacion": "Alta de fuente para exploración, no acredita funcionamiento ni oportunidades vigentes"
+    },
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true,
+    "priorizar_listados": true,
+    "enriquecer_fichas": true
+  },
+  "https://www.santafe.gob.ar/gestionesdecompras/site/index.php": {
+    "organismo": "Gobierno de Santa Fe - Gestiones de Compras",
+    "localidad": "Santa Fe",
+    "provincia": "Santa Fe",
+    "tipo_portal": "html",
+    "estado_verificacion": "PENDIENTE",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "metodo": "URL oficial facilitada por usuario; pendiente prueba de extracción nativa",
+      "url": "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
+      "fecha": "2026-11-02",
+      "observacion": "Alta de fuente para exploración, no acredita funcionamiento ni oportunidades vigentes"
+    },
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true,
+    "priorizar_listados": true,
+    "enriquecer_fichas": true
+  },
+  "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5": {
+    "organismo": "Municipalidad de Rosario - Compras Ágiles",
+    "localidad": "Rosario",
+    "provincia": "Santa Fe",
+    "tipo_portal": "html",
+    "estado_verificacion": "PENDIENTE",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "verificada_funcionando": false,
+    "lectura_adjuntos": "necesarios",
+    "ocr": true,
+    "evidencia_descubrimiento": {
+      "metodo": "URL oficial facilitada por usuario; pendiente prueba de extracción nativa",
+      "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5",
+      "fecha": "2026-11-02",
+      "observacion": "Alta de fuente para exploración, no acredita funcionamiento ni oportunidades vigentes"
+    },
+    "descubrir_menu": true,
+    "descubrir_contrataciones": true,
+    "priorizar_listados": true,
+    "enriquecer_fichas": true
   }
 }
