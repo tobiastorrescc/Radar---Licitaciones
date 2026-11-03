@@ -2003,6 +2003,7 @@
     "adaptador": "villa-elisa",
     "urls_inicio": [
       "https://villaelisa.gov.ar/transparencia/licitaciones/",
+      "https://villaelisa.gov.ar/transparencia/licitaciones/concursos-de-precios/",
       "https://villaelisa.gov.ar/"
     ],
     "enriquecer_fichas": true,
@@ -2011,7 +2012,9 @@
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+    },
+    "estado_revision": "PENDIENTE_REVALIDACION_RUTAS_DIRECTAS",
+    "observacion_mejora": "2026-11-02: agregar entrada directa a licitaciones y concursos de precios; la última verificación del conector seguía bloqueada. No declarar operativa sin ejecución real."
   },
   "https://www.generalramirez.gob.ar/licitaciones-y-concursos/": {
     "organismo": "Municipalidad de General Ramírez",
