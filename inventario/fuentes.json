@@ -469,7 +469,9 @@
     "lectura_adjuntos": "necesarios",
     "ocr": true,
     "seguir_patrones": [
-      "/wp/documents/(?:licitacion-|concurso-de-precios-|segundo-llamado-)"
+      "/wp/documents/(?:licitacion-|concurso-de-precios-|segundo-llamado-)",
+      "/wp/document-category/licitaciones-y-contrataciones/",
+      "/wp/documents/(?:licitaciones-publicas|licitacion-|concurso-de-precios-|segundo-llamado-)"
     ],
     "descubrir_menu": true,
     "ultima_verificacion": "2026-10-29T17:48:32.489156-03:00",
@@ -477,7 +479,16 @@
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 85,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+    },
+    "urls_inicio": [
+      "https://www.roldan.gov.ar/wp/documents/",
+      "https://www.roldan.gov.ar/wp/document-category/licitaciones-y-contrataciones/",
+      "https://www.roldan.gov.ar/wp/documents/licitaciones-publicas/",
+      "https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/"
+    ],
+    "priorizar_listados": true,
+    "enriquecer_fichas": true,
+    "nota_ampliacion": "2026-11-03: se agregan rutas de catálogo y categoría para barrido; verificar extracción integral en ejecución real."
   },
   {
     "id": "fuente-015",
