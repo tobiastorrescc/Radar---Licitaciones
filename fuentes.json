@@ -546,7 +546,7 @@
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/",
       "fecha": "2026-10-25",
-      "observacion": "Concursos públicos y privados indexados"
+      "observacion": "Fuente oficial existente; reintentos y recorrido habilitados en rama de mejora. Extracción real pendiente de verificar en ejecución."
     },
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
@@ -556,7 +556,16 @@
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+    },
+    "urls_inicio": [
+      "https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/"
+    ],
+    "reintentos_transitorios": 2,
+    "conexion_timeout": 8,
+    "lectura_timeout": 12,
+    "priorizar_listados": true,
+    "enriquecer_fichas": true,
+    "capturar_respuestas": true
   },
   "https://transparencia.santafeciudad.gov.ar/contrataciones-obra/": {
     "organismo": "Municipalidad de Santa Fe",
@@ -570,7 +579,7 @@
       "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
       "url": "https://transparencia.santafeciudad.gov.ar/contrataciones-obra/",
       "fecha": "2026-10-25",
-      "observacion": "Publicaciones de obras indexadas"
+      "observacion": "Fuente oficial existente; reintentos y recorrido habilitados en rama de mejora. Extracción real pendiente de verificar en ejecución."
     },
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
@@ -580,7 +589,16 @@
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+    },
+    "urls_inicio": [
+      "https://transparencia.santafeciudad.gov.ar/contrataciones-obra/"
+    ],
+    "reintentos_transitorios": 2,
+    "conexion_timeout": 8,
+    "lectura_timeout": 12,
+    "priorizar_listados": true,
+    "enriquecer_fichas": true,
+    "capturar_respuestas": true
   },
   "https://www.rafaela.gob.ar/gobiernoabierto/Licitaciones.aspx": {
     "organismo": "Municipalidad de Rafaela",
