@@ -28,7 +28,9 @@
       "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=4"
     ],
     "seguir_patrones": [
-      "/inicio/result-busq-compras-licitaciones[?]recomendada=apertura&tipoRecomendada="
+      "/inicio/result-busq-compras-licitaciones[?]recomendada=apertura&tipoRecomendada=",
+      "/inicio/compras-licitaciones/detalle/\\d+",
+      "/inicio/result-busq-compras-licitaciones(?:\\?|$)"
     ],
     "ultima_verificacion": "2026-10-29T17:48:09.897401-03:00",
     "evidencia_verificacion": {
@@ -45,7 +47,11 @@
       "1": "Licitación Privada",
       "2": "Licitación Pública",
       "5": "Compra Agil"
-    }
+    },
+    "requerir_ficha": true,
+    "detectar_carga_dinamica": true,
+    "estado_revision": "PENDIENTE_PRUEBA_COBERTURA",
+    "observacion_mejora": "Seguir fichas /detalle/ y paginación de las tres categorías; contrastar cantidad del portal con extracción real antes de declarar cobertura."
   },
   "https://compras.santafe.gob.ar/": {
     "organismo": "Gobierno de Santa Fe",
@@ -2537,6 +2543,12 @@
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
     "priorizar_listados": true,
-    "enriquecer_fichas": true
+    "enriquecer_fichas": true,
+    "seguir_patrones": [
+      "/inicio/compras-licitaciones/detalle/\\d+",
+      "/inicio/result-busq-compras-licitaciones(?:\\?|$)"
+    ],
+    "requerir_ficha": true,
+    "detectar_carga_dinamica": true
   }
 }
