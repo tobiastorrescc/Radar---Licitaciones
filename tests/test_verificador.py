@@ -43,6 +43,7 @@ class VerificadorTests(unittest.TestCase):
             data.update(estado='OPERATIVA',finalizado=True)
         codigo='import json,os,time,sys\nfrom pathlib import Path\np=Path(sys.argv[1])\n'
         codigo+='d=json.loads(sys.argv[2])\nt=p.with_suffix(".tmp")\nt.write_text(json.dumps(d))\nos.replace(t,p)\n'
+        if fuente.get('demora'):codigo+='time.sleep('+str(float(fuente['demora']))+')\n'
         if tipo in ('lento','parcial','terco'):
             if tipo=='terco': codigo+='import signal\nsignal.signal(signal.SIGTERM,signal.SIG_IGN)\n'
             codigo+='time.sleep(60)\n'
@@ -116,6 +117,12 @@ class VerificadorTests(unittest.TestCase):
             self.assertLessEqual(activos,2)
         self.assertEqual(maximos,2)
         self.assertEqual(r['resumen']['finalizadas'],4)
+    def test_presupuesto_por_fuente_no_extiende_el_total_ni_el_de_otras(self):
+        r=self.ejecutar([self.fuente(1,demora=.5,tiempo_maximo_fuente_segundos=1.5),self.fuente(2,demora=.5),self.fuente(3)],concurrencia=3,por_fuente=.2,total=3)
+        self.assertEqual([x['estado'] for x in r['observaciones']],['OPERATIVA','TIEMPO_FUENTE','OPERATIVA'])
+        self.assertEqual(r['limites']['fuente_por_id']['1'],1.5)
+        r=self.ejecutar([self.fuente(1,fixture='lento',tiempo_maximo_fuente_segundos=240)],por_fuente=.2,total=.3)
+        self.assertEqual(r['observaciones'][0]['estado'],'TIEMPO_TOTAL')
 
     def test_crash_worker_no_frena_y_error_interno(self):
         r=self.ejecutar([self.fuente(1,fixture='crash'),self.fuente(2)])

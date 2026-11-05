@@ -44,9 +44,15 @@ def resultados_html(html,base):
         if url and oficial(url):encontrados.append({'url':url,'titulo':l['texto']})
     return encontrados
 
+def clave_territorial(m):
+    if m.get('codigo'):return 'territorio:'+str(m['codigo'])
+    # Identificador interno: no inventa un código oficial ni invalida todo el padrón.
+    ambito='|'.join(o.norm(m.get(k)) for k in ('provincia','departamento','localidad'))
+    return 'territorio:sin-codigo:'+sha256(ambito.encode()).hexdigest()[:20]
+
 def objetivos(padron,fuentes):
     cubiertos={(o.norm(f['localidad']),f['provincia']) for f in fuentes if f.get('incorporada') and f.get('verificada_funcionando') and f.get('estado_verificacion')=='OPERATIVA' and o.norm(f['organismo']).startswith(('municipalidad','comuna','gobierno de timbues'))}
-    territoriales=[{'clave':'territorio:'+m['codigo'],'localidad':m['localidad'],'provincia':m['provincia'],
+    territoriales=[{'clave':clave_territorial(m),'localidad':m['localidad'],'provincia':m['provincia'],
         'organismo':('Comuna' if 'comuna' in o.norm(m.get('tipo_gobierno')) else 'Municipalidad')+' de '+m['localidad'],
         'consulta':'"'+m['localidad']+'" "'+m['provincia']+'" compras licitaciones sitio oficial','tipo':'TERRITORIAL',
         'fuente_operativa_previa':(o.norm(m['localidad']),m['provincia']) in cubiertos}

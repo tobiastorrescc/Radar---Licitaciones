@@ -123,7 +123,7 @@ class EntregaIntegraTests(unittest.TestCase):
             root=Path(d);registros=[]
             for i in range(105):
                 registros.append({'organismo':'Prueba','numero_procedimiento':str(i)+'/2026','titulo':'Objeto '+str(i),'objeto':'=no ejecutar' if i==0 else 'Materiales',
-                                  'url':'https://oficial.gob.ar/'+str(i),'clasificacion_novedad':'NUEVO_CONFIRMADO'})
+                                  'url':'https://oficial.gob.ar/'+str(i),'clasificacion_novedad':'NUEVO_CONFIRMADO','vigencia':'ABIERTA','fecha_apertura':'2026-11-10'})
             registros.append({**registros[0],'clasificacion_novedad':'RECUPERACION_LINEA_BASE'})
             (root/'eventos.json').write_text(json.dumps({'fecha':FECHA,'oportunidades':registros}))
             (root/'resumen.json').write_text(json.dumps({'estado':'COMPLETA_CON_INCIDENCIAS'}))
@@ -133,6 +133,16 @@ class EntregaIntegraTests(unittest.TestCase):
             self.assertIsNone(mensaje['To']);self.assertEqual(len(list(mensaje.iter_attachments())),2)
             with (root/'entrega/oportunidades.csv').open(encoding='utf-8-sig') as f:filas=list(csv.DictReader(f))
             self.assertEqual(len(filas),106);self.assertTrue(filas[0]['objeto'].startswith("'="))
+    def test_entrega_publicada_no_presenta_nuevas_vencidas_como_cotizables(self):
+        import json,csv
+        from tools.preparar_entrega import preparar
+        datos=[{'titulo':'LIC '+str(i),'objeto':obj,'url':'https://oficial.gob.ar/'+str(i),'clasificacion_novedad':'NUEVO_CONFIRMADO','vigencia':v} for i,(obj,v) in enumerate([('OFERTA ABIERTA','ABIERTA'),('AVISO VENCIDO','VENCIDA'),('VIGENCIA SIN COMPROBAR','DESCONOCIDA')])]
+        with tempfile.TemporaryDirectory() as d:
+            root=Path(d);(root/'eventos.json').write_text(json.dumps({'fecha':FECHA,'oportunidades':datos}));(root/'resumen.json').write_text(json.dumps({'estado':'COMPLETA_CON_INCIDENCIAS'}))
+            meta=preparar(root);self.assertEqual(meta['totales']['nuevas_confirmadas'],1);self.assertEqual(meta['totales']['publicaciones_nuevas_no_cotizables'],2)
+            informe=(root/'entrega/informe.md').read_text();self.assertIn('OFERTA ABIERTA',informe);self.assertNotIn('AVISO VENCIDO',informe);self.assertNotIn('VIGENCIA SIN COMPROBAR',informe)
+            self.assertIn('AVISO VENCIDO',(root/'entrega/auditoria_eventos.md').read_text())
+            with (root/'entrega/oportunidades.csv').open(encoding='utf-8-sig') as f:self.assertEqual(len(list(csv.DictReader(f))),3)
 
 class ASSAPublicaTests(unittest.TestCase):
     def test_api_real_recupera_cuatro_sin_inventar_fecha_publicacion(self):

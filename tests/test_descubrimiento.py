@@ -9,6 +9,16 @@ import registro_fuentes
 from tools import descubrir_fuentes as d
 
 class DescubrimientoTests(unittest.TestCase):
+    def test_padron_real_sin_codigo_no_detiene_descubrimiento_chabas(self):
+        padron=json.loads(Path('inventario/territorio.json').read_text())
+        objetivos=d.objetivos(padron,[])
+        chabas=next(m for m in padron['municipios'] if o.norm(m['localidad'])=='chabas' and not m.get('codigo'))
+        clave=d.clave_territorial(chabas)
+        self.assertTrue(any(x['clave']==clave for x in objetivos));self.assertTrue(clave.startswith('territorio:sin-codigo:'))
+        self.assertEqual(clave,d.clave_territorial(dict(chabas)))
+        self.assertNotEqual(clave,d.clave_territorial({**chabas,'provincia':'Entre Ríos'}))
+        self.assertEqual(d.clave_territorial({'codigo':'sf1'}),'territorio:sf1')
+
     def candidato(self,**kw):return {'tipo':'TERRITORIAL','organismo':'Municipalidad de Colón','localidad':'Colón','provincia':'Entre Ríos',**kw}
     def test_busqueda_no_es_evidencia_y_excluye_dominios_enganosos(self):
         datos=b'<rss><channel><item><title>Compras</title><link>https://colon.gob.ar/compras</link></item><item><link>https://colon.gob.ar.ejemplo.com/</link></item><item><link>https://ejemplo.com/colon</link></item></channel></rss>'

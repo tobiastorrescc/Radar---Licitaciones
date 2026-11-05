@@ -117,6 +117,12 @@ def ejecutar(fuentes, salida, *, concurrencia=4, conexion=5, lectura=10,
         raise ValueError('max_paginas debe ser positivo')
     if len({f['id'] for f in fuentes}) != len(fuentes):
         raise ValueError('IDs de fuente duplicados')
+    presupuestos={}
+    for f in fuentes:
+        valor=float(f.get('tiempo_maximo_fuente_segundos',por_fuente))
+        if not math.isfinite(valor) or valor<=0 or ('tiempo_maximo_fuente_segundos' in f and valor>240):
+            raise ValueError('El presupuesto explícito por fuente debe ser positivo, finito y no mayor a 240 segundos')
+        presupuestos[f['id']]=valor
     # Ruta de salida fija al área de auditoría; no permite sobrescribir datos de producción.
     salida = Path(salida).resolve()
     protegidos = {'radar_estado.json','licitaciones_nuevas.json','auditoria_fuentes.json'}
@@ -149,7 +155,7 @@ def ejecutar(fuentes, salida, *, concurrencia=4, conexion=5, lectura=10,
                    'metodo': 'conector HTTP en procesos aislados; sin historial de producción',
                    'duracion_segundos': round(time.monotonic()-inicio,3),
                    'limites': {'conexion_segundos': conexion, 'lectura_segundos': lectura,
-                              'fuente_segundos': por_fuente, 'total_segundos': total,
+                              'fuente_segundos': por_fuente, 'fuente_por_id':presupuestos,'total_segundos': total,
                               'concurrencia': concurrencia, 'max_paginas': max_paginas},
                    'resumen': resumen(observaciones), 'observaciones': observaciones}
         guardar(salida, informe)
@@ -214,9 +220,9 @@ def ejecutar(fuentes, salida, *, concurrencia=4, conexion=5, lectura=10,
                 args = comando(f, archivo) if comando else [sys.executable, '-u', str(Path(__file__).resolve()),
                     '--worker', str(config), '--checkpoint', str(archivo), '--conexion', str(conexion),
                     '--lectura', str(lectura), '--max-paginas', str(max_paginas)]
-                r.update(iniciada=True, estado='EN_CURSO', inicio=ahora(), resultado_archivo=str(archivo))
+                r.update(iniciada=True, estado='EN_CURSO', inicio=ahora(), resultado_archivo=str(archivo),limite_fuente_segundos=presupuestos[f['id']])
                 stderr = archivo.with_suffix('.stderr.log').open('w', encoding='utf-8')
-                evento('CONSULTANDO', id=r['id'], url=r['url'])
+                evento('CONSULTANDO', id=r['id'], url=r['url'],limite_segundos=presupuestos[f['id']])
                 try:
                     proceso = subprocess.Popen(args, stdout=subprocess.DEVNULL, stderr=stderr,
                                                start_new_session=os.name=='posix')
@@ -228,7 +234,7 @@ def ejecutar(fuentes, salida, *, concurrencia=4, conexion=5, lectura=10,
                     persistir()
                     continue
                 activos[proceso.pid] = {'proceso':proceso,'inicio':time.monotonic(),
-                                       'registro':r,'checkpoint':archivo,'stderr':stderr}
+                                       'registro':r,'checkpoint':archivo,'stderr':stderr,'limite':presupuestos[f['id']]}
                 persistir()
             for pid, info in list(activos.items()):
                 cargar_avance(info)
@@ -239,7 +245,7 @@ def ejecutar(fuentes, salida, *, concurrencia=4, conexion=5, lectura=10,
                     finalizar(info)
                     del activos[pid]
                     persistir()
-                elif time.monotonic()-info['inicio'] >= por_fuente:
+                elif time.monotonic()-info['inicio'] >= info['limite']:
                     detener(proceso)
                     finalizar(info, 'TIEMPO_FUENTE')
                     del activos[pid]
