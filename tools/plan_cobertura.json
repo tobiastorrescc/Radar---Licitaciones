@@ -1,5 +1,5 @@
 {
-  "etapa": "issue10-preservar-avisos-con-objeto-aunque-falle-ficha-y-contraste-sin-red",
+  "etapa": "issue10-cierre-con-enlaces-a-pliegos-identificados-en-la-ficha-oficial",
   "barrido": false,
   "barrido_manifest": "inventario/barrido_rosario_issue10.json",
   "barrido_por_fuente": 240,

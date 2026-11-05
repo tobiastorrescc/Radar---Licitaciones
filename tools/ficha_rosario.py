@@ -23,7 +23,7 @@ def extraer(html,url):
         for l in n.enlaces(url):
             u=l['url']
             # Únicamente endpoint de lectura efectivamente enlazado por la ficha.
-            if re.fullmatch(r'https://apimgw\.rosario\.gob\.ar/licitaciones-api/v1/licitaciones/'+id+r'/documentos/\d+',u):docs.append({'url':u,'titulo':l['texto']})
+            if re.fullmatch(r'https://apimgw\.rosario\.gob\.ar/licitaciones-api/v1/licitaciones/'+id+r'/documentos/\d+',u):docs.append({'url':u,'titulo':(k+': ' if 'pliego' in k else '')+l['texto'],'rotulo_oficial':k,'estado':'ENLACE_PUBLICADO_SIN_DESCARGA'})
     r={'url':url,'id_origen':id,'identidad_ambito':'ficha-rosario-'+id,'titulo':tipo+' '+numero+' '+obj,'objeto':obj,'numero_procedimiento':numero,'tipo_procedimiento':p['tipo'],'procedimiento':p['procedimiento'],'expediente':campos.get('expediente'),'documentos':docs,'detalle_completo':True,'registro_estructurado':True,'fecha_apertura_texto':campos.get('fecha de apertura'),'presupuesto_texto':campos.get('presupuesto oficial'),'situacion_publicada':extractores.situacion(campos.get('estado','')),'campos_oficiales':campos,'rango_evidencia':3,'evidencias_campos':{}}
     for k,campo in [('fecha de publicacion','fecha_publicacion')]:
         if campos.get(k):

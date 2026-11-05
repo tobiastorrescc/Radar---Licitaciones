@@ -26,6 +26,8 @@ class RosarioIssue10(unittest.TestCase):
         self.assertEqual(r['fecha_publicacion'],'2026-10-27');self.assertEqual(r['fecha_apertura'],'2026-11-06')
         self.assertEqual(r['presupuesto']['importe'],'33185433.00');self.assertEqual(r['vigencia'],'ABIERTA')
         self.assertTrue(r['documentos']);self.assertIn('PRESENCIAL',r['modalidad_presentacion'])
+        self.assertEqual(r['enlace_pliego'],r['documentos'][0]['url'])
+        self.assertEqual(r['documentos'][0]['estado'],'ENLACE_PUBLICADO_SIN_DESCARGA')
 
     def test_listado_y_detalle_no_duplican_ni_confunden_expediente(self):
         inicio=BASE+'result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5';ficha=BASE+'compras-licitaciones/detalle/38714';calls=[]
