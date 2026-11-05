@@ -1,23 +1,23 @@
 {
-  "fecha": "2026-11-02T08:50:13.547966-03:00",
+  "fecha": "2026-11-05T08:55:06.617395-03:00",
   "estado": "COMPLETA_CON_INCIDENCIAS",
   "totales": {
     "recuperadas_vigentes": 0,
-    "nuevas_confirmadas": 0,
-    "detecciones_sin_fecha_o_mismo_dia": 7,
-    "cambios": 23,
-    "recuperaciones_historicas": 0,
-    "recuperaciones_vigencia_pendiente": 2
+    "nuevas_confirmadas": 15,
+    "detecciones_sin_fecha_o_mismo_dia": 196,
+    "cambios": 171,
+    "recuperaciones_historicas": 47,
+    "recuperaciones_vigencia_pendiente": 839
   },
   "linea_base_sin_alerta": 0,
-  "total_informadas": 32,
+  "total_informadas": 1268,
   "limite_cantidad": null,
   "envio_activado": false,
-  "ejecucion": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/41438998084",
+  "ejecucion": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/42021794797",
   "cobertura_estricta": {
-    "PARCIAL": 23,
-    "BLOQUEADA": 12,
-    "OPERATIVA": 40,
+    "PARCIAL": 25,
+    "BLOQUEADA": 14,
+    "OPERATIVA": 41,
     "PENDIENTE": 7,
     "SIN_PUBLICACIONES_CONFIRMADO": 1
   },
