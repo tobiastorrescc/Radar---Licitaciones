@@ -1,6 +1,6 @@
 {
-  "etapa": "issue14-linea-base-y-diagnostico-oficial-csv-tls",
-  "barrido": true,
+  "etapa": "issue14-api-publicada-epe-y-clientes-oficiales",
+  "barrido": false,
   "barrido_manifest": "inventario/recuperacion_criticas_issue14.json",
   "barrido_por_fuente": 60,
   "barrido_ids": [
@@ -15,107 +15,14 @@
   ],
   "sondear": true,
   "urls_sondeo": [
-    "https://epe.santafe.gov.ar/app2/aperturas",
-    "https://www.epe.santafe.gov.ar/app2/aperturas",
-    "https://epe.santafe.gov.ar/app2/compras",
-    "https://epe.santafe.gov.ar/app2/",
-    "https://www.santafe.gov.ar/gestionesdecompras/",
-    "https://www.santafe.gov.ar/gestionesdecompras/site/",
-    "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
-    "https://www.santafe.gob.ar/gestionesdecompras/",
-    "https://www.santafe.gov.ar/boletinoficial/",
-    "https://www.santafe.gob.ar/boletinoficial/",
-    "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-05licitaciones.html",
-    "https://www.santafe.gob.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-05licitaciones.html",
-    "https://cdg.gob.ar/wp-json/wp/v2/pages?slug=licitaciones-y-concursos",
-    "https://unr.edu.ar/compras-y-licitaciones/"
+    "https://epe.santafe.gov.ar/app2/_nuxt/fe22d51.js",
+    "https://epe.santafe.gov.ar/app2/_nuxt/78aeda7.js",
+    "https://epe.santafe.gov.ar/app2/_nuxt/3608927.js",
+    "https://epe.santafe.gov.ar/app2/_nuxt/bd9d5db.js",
+    "https://epe.santafe.gov.ar/app2/api",
+    "https://www.santafe.gov.ar/gestionesdecompras/site/"
   ],
-  "peticiones": [
-    {
-      "url": "https://epe.santafe.gov.ar/app2/aperturas",
-      "transporte": "curl",
-      "ipv4": true,
-      "http1": true
-    },
-    {
-      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
-      "transporte": "curl",
-      "ipv4": true,
-      "http1": true
-    },
-    {
-      "url": "https://epe.santafe.gov.ar/app2/compras",
-      "transporte": "curl",
-      "ipv4": true,
-      "http1": true
-    },
-    {
-      "url": "https://epe.santafe.gov.ar/app2/",
-      "transporte": "curl",
-      "ipv4": true,
-      "http1": true
-    },
-    {
-      "url": "https://www.santafe.gov.ar/gestionesdecompras/",
-      "transporte": "curl",
-      "ipv4": true,
-      "http1": true
-    },
-    {
-      "url": "https://www.santafe.gov.ar/gestionesdecompras/site/",
-      "transporte": "curl",
-      "ipv4": true,
-      "http1": true
-    },
-    {
-      "url": "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
-      "transporte": "curl",
-      "ipv4": true,
-      "http1": true
-    },
-    {
-      "url": "https://www.santafe.gob.ar/gestionesdecompras/",
-      "transporte": "curl",
-      "ipv4": true,
-      "http1": true
-    },
-    {
-      "url": "https://www.santafe.gov.ar/boletinoficial/",
-      "transporte": "curl",
-      "ipv4": true,
-      "http1": true
-    },
-    {
-      "url": "https://www.santafe.gob.ar/boletinoficial/",
-      "transporte": "curl",
-      "ipv4": true,
-      "http1": true
-    },
-    {
-      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-05licitaciones.html",
-      "transporte": "curl",
-      "ipv4": true,
-      "http1": true
-    },
-    {
-      "url": "https://www.santafe.gob.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-05licitaciones.html",
-      "transporte": "curl",
-      "ipv4": true,
-      "http1": true
-    },
-    {
-      "url": "https://cdg.gob.ar/wp-json/wp/v2/pages?slug=licitaciones-y-concursos",
-      "transporte": "curl",
-      "ipv4": true,
-      "http1": true
-    },
-    {
-      "url": "https://unr.edu.ar/compras-y-licitaciones/",
-      "transporte": "curl",
-      "ipv4": true,
-      "http1": true
-    }
-  ],
+  "peticiones": [],
   "lectura_liviana": true,
   "descubrir": false,
   "auditar": false,
