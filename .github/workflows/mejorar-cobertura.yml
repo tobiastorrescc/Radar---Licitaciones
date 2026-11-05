@@ -27,7 +27,7 @@ jobs:
           python - <<'PY' >> "$GITHUB_OUTPUT"
           import json
           d=json.load(open('tools/plan_cobertura.json'))
-          for k in ('sondear','auditar','descubrir','revisar_cobro','barrido','inventariar_historial','validar_rutas'):print(k+'='+str(d.get(k,False)).lower())
+          for k in ('sondear','auditar','descubrir','revisar_cobro','barrido','inventariar_historial','validar_rutas','barrido_ampliado'):print(k+'='+str(d.get(k,False)).lower())
           run=str(d.get('reprocesar_run',''))
           if run and not run.isdigit():raise ValueError('Run inválido')
           print('reprocesar_run='+run)
@@ -66,6 +66,10 @@ jobs:
         if: steps.plan.outputs.barrido == 'true'
         timeout-minutes: 10
         run: python -u tools/auditar_barrido.py
+      - name: Barrido de URLs solicitadas en Issue 10 sin altas automáticas
+        if: steps.plan.outputs.barrido_ampliado == 'true'
+        timeout-minutes: 9
+        run: python -u tools/auditar_barrido.py --manifest inventario/barrido_issue10_ampliado.json --salida work/barrido-ampliado --por-fuente 45
       - name: Validar capturas del piloto comparativo
         if: steps.plan.outputs.comparar_barrido_run != ''
         uses: actions/github-script@v7
@@ -287,6 +291,7 @@ jobs:
           name: cobertura-${{ github.run_id }}
           path: |
             work/barrido/
+            work/barrido-ampliado/
             work/historial-fuentes/
             work/fuentes-historicas/
             work/rutas-historicas/

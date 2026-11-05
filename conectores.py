@@ -274,7 +274,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     intentos_http.append({'url':url,'intento':intento+1,'estado':'RESPUESTA_RECIBIDA','segundos':round(time.monotonic()-inicio,3)})
                     return respuesta
                 except Exception as error:
-                    transitorio=(isinstance(error,HTTPError) and error.code in (500,502,503,504)) or isinstance(error,(RemoteDisconnected,TimeoutError,socket.timeout))
+                    transitorio=(isinstance(error,HTTPError) and error.code in (500,502,503,504)) or isinstance(error,(RemoteDisconnected,TimeoutError,socket.timeout)) or (isinstance(error,URLError) and isinstance(error.reason,(RemoteDisconnected,TimeoutError,socket.timeout)))
                     intentos_http.append({'url':url,'intento':intento+1,'estado':'ERROR','http_status':getattr(error,'code',None),'error':str(error),'segundos':round(time.monotonic()-inicio,3),'reintentable':transitorio})
                     if not transitorio or intento==reintentos:raise
                     time.sleep(min(1,0.25*(2**intento)))

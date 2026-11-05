@@ -1,21 +1,21 @@
 {
-  "etapa": "issue10-fichas-oficiales-rosario-y-concejo-integradas",
+  "etapa": "issue10-reintentos-transitorios-y-barrido-ampliado-oficial",
   "barrido": true,
   "barrido_manifest": "inventario/barrido_rosario_issue10.json",
   "barrido_por_fuente": 90,
   "sondear": true,
   "urls_sondeo": [
-    "https://compras.concejorosario.gov.ar/compras/3209",
-    "https://compras.concejorosario.gov.ar/compras/3185"
+    "https://transparencia.rojas.gov.ar/index.php?busqueda=1&action=18&input_proveedor=&inputDependencia=&selectEjercicio=2026",
+    "https://www.santafe.gob.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-04licitaciones.html",
+    "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/pdf/2026/11/BO04112026.pdf",
+    "https://unr.edu.ar/category/noticias-compras-y-licitaciones/"
   ],
   "auditar": false,
   "descubrir": false,
   "archivar_auditoria": false,
   "reverificar_ids": [],
   "barrido_ids": [
-    "fuente-001",
-    "fuente-024",
-    "fuente-085",
-    "fuente-086"
-  ]
+    "fuente-001"
+  ],
+  "barrido_ampliado": true
 }

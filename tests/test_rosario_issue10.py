@@ -52,10 +52,13 @@ class RosarioIssue10(unittest.TestCase):
         inicio=BASE+'result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5';calls=[]
         def fetch(u):
             calls.append(u);n=int(parse_qs(urlsplit(u).query).get('page',['0'])[0])
+            if n==2 and calls.count(u)==1:
+                from urllib.error import URLError
+                raise URLError(TimeoutError('Lectura temporalmente agotada'))
             html='<main><h2 class="contrataciones-resumen__total-titulo">Compra Agil</h2><div class="contrataciones-resumen__tarjeta">Compra Agil '+str(n+1)+'/2026 Provisión de caños. Apertura: 10/12/2026 10:00</div>'
             if n<5:html+='<a rel="next" href="?page='+str(n+1)+'&amp;recomendada=apertura&amp;tipoRecomendada=5">Siguiente</a>'
             return (html+'</main>').encode(),'text/html',u
-        r=conectores.explorar(inicio,{'adaptador':'rosario','solo_descubrimiento':True,'priorizar_listados':True},fetch=fetch)
-        self.assertEqual(len(calls),6);self.assertEqual(len(r['oportunidades']),6)
+        r=conectores.explorar(inicio,{'adaptador':'rosario','solo_descubrimiento':True,'priorizar_listados':True,'reintentos_transitorios':1},fetch=fetch)
+        self.assertEqual(len(calls),7);self.assertEqual(len(set(calls)),6);self.assertEqual(len(r['oportunidades']),6)
 
 if __name__=='__main__':unittest.main()
