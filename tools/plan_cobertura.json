@@ -1,5 +1,5 @@
 {
-  "etapa": "issue14-apis-wordpress-oficiales-y-rutas-unr",
+  "etapa": "issue14-unr-portal-oficial-y-api-publicada-aeropuerto",
   "barrido": false,
   "barrido_manifest": "inventario/recuperacion_criticas_issue14.json",
   "barrido_por_fuente": 60,
@@ -15,11 +15,10 @@
   ],
   "sondear": true,
   "urls_sondeo": [
-    "https://aeropuertorosario.com/wp-json/wp/v2/types",
-    "https://www.jusentrerios.gov.ar/wp-json/wp/v2/types",
-    "https://unr.edu.ar/compras-publicas/",
-    "https://unr.edu.ar/portal-de-proveedores/",
-    "https://www.epe.santafe.gov.ar/app2/_nuxt/fe22d51.js"
+    "https://unr.edu.ar/portal-de-compras-publicas/",
+    "https://aeropuertorosario.com/wp-json/",
+    "https://aeropuertorosario.com/wp-json/wp/v2/pages/214",
+    "https://aeropuertorosario.com/wp-json/wp/v2/posts?per_page=10"
   ],
   "peticiones": [],
   "lectura_liviana": true,
