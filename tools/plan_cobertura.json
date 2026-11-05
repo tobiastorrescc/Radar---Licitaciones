@@ -1,28 +1,124 @@
 {
-  "etapa": "issue10-validacion-html-sin-instalar-ocr-descubrimiento-y-presupuesto-rosario",
+  "etapa": "issue14-linea-base-y-diagnostico-oficial-csv-tls",
   "barrido": true,
-  "barrido_manifest": "inventario/barrido_rosario_issue10.json",
+  "barrido_manifest": "inventario/recuperacion_criticas_issue14.json",
   "barrido_por_fuente": 60,
-  "sondear": false,
-  "urls_sondeo": [
-    "https://transparencia.rojas.gov.ar/index.php?busqueda=1&action=18&input_proveedor=&inputDependencia=&selectEjercicio=2026",
-    "https://www.santafe.gob.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-04licitaciones.html",
-    "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/pdf/2026/11/BO04112026.pdf",
-    "https://unr.edu.ar/category/noticias-compras-y-licitaciones/"
-  ],
-  "auditar": false,
-  "descubrir": true,
-  "archivar_auditoria": false,
-  "reverificar_ids": [],
   "barrido_ids": [
-    "fuente-001"
+    "fuente-003",
+    "fuente-087",
+    "fuente-060",
+    "fuente-010",
+    "fuente-005",
+    "fuente-004",
+    "fuente-007",
+    "fuente-026"
   ],
-  "barrido_ampliado": false,
-  "captura_run": "",
-  "contrastar_barrido": false,
-  "captura_rosario_run": "",
-  "desc_total": 180,
-  "desc_busquedas": 12,
-  "desc_candidatos": 36,
-  "lectura_liviana": true
+  "sondear": true,
+  "urls_sondeo": [
+    "https://epe.santafe.gov.ar/app2/aperturas",
+    "https://www.epe.santafe.gov.ar/app2/aperturas",
+    "https://epe.santafe.gov.ar/app2/compras",
+    "https://epe.santafe.gov.ar/app2/",
+    "https://www.santafe.gov.ar/gestionesdecompras/",
+    "https://www.santafe.gov.ar/gestionesdecompras/site/",
+    "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
+    "https://www.santafe.gob.ar/gestionesdecompras/",
+    "https://www.santafe.gov.ar/boletinoficial/",
+    "https://www.santafe.gob.ar/boletinoficial/",
+    "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-05licitaciones.html",
+    "https://www.santafe.gob.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-05licitaciones.html",
+    "https://cdg.gob.ar/wp-json/wp/v2/pages?slug=licitaciones-y-concursos",
+    "https://unr.edu.ar/compras-y-licitaciones/"
+  ],
+  "peticiones": [
+    {
+      "url": "https://epe.santafe.gov.ar/app2/aperturas",
+      "transporte": "curl",
+      "ipv4": true,
+      "http1": true
+    },
+    {
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "transporte": "curl",
+      "ipv4": true,
+      "http1": true
+    },
+    {
+      "url": "https://epe.santafe.gov.ar/app2/compras",
+      "transporte": "curl",
+      "ipv4": true,
+      "http1": true
+    },
+    {
+      "url": "https://epe.santafe.gov.ar/app2/",
+      "transporte": "curl",
+      "ipv4": true,
+      "http1": true
+    },
+    {
+      "url": "https://www.santafe.gov.ar/gestionesdecompras/",
+      "transporte": "curl",
+      "ipv4": true,
+      "http1": true
+    },
+    {
+      "url": "https://www.santafe.gov.ar/gestionesdecompras/site/",
+      "transporte": "curl",
+      "ipv4": true,
+      "http1": true
+    },
+    {
+      "url": "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
+      "transporte": "curl",
+      "ipv4": true,
+      "http1": true
+    },
+    {
+      "url": "https://www.santafe.gob.ar/gestionesdecompras/",
+      "transporte": "curl",
+      "ipv4": true,
+      "http1": true
+    },
+    {
+      "url": "https://www.santafe.gov.ar/boletinoficial/",
+      "transporte": "curl",
+      "ipv4": true,
+      "http1": true
+    },
+    {
+      "url": "https://www.santafe.gob.ar/boletinoficial/",
+      "transporte": "curl",
+      "ipv4": true,
+      "http1": true
+    },
+    {
+      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-05licitaciones.html",
+      "transporte": "curl",
+      "ipv4": true,
+      "http1": true
+    },
+    {
+      "url": "https://www.santafe.gob.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-05licitaciones.html",
+      "transporte": "curl",
+      "ipv4": true,
+      "http1": true
+    },
+    {
+      "url": "https://cdg.gob.ar/wp-json/wp/v2/pages?slug=licitaciones-y-concursos",
+      "transporte": "curl",
+      "ipv4": true,
+      "http1": true
+    },
+    {
+      "url": "https://unr.edu.ar/compras-y-licitaciones/",
+      "transporte": "curl",
+      "ipv4": true,
+      "http1": true
+    }
+  ],
+  "lectura_liviana": true,
+  "descubrir": false,
+  "auditar": false,
+  "archivar_auditoria": false,
+  "reverificar_ids": []
 }

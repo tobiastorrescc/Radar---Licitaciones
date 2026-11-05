@@ -21,6 +21,8 @@ def worker(entrada,salida):
     if f.get('transporte')=='curl':
         # Diagnóstico público: CA/TLS y proxy heredados, sin cookies ni evasión.
         opciones_tls=['--tls-max','1.2'] if f.get('tls_max')=='1.2' else []
+        opciones_tls+=['--ipv4'] if f.get('ipv4') else []
+        opciones_tls+=['--http1.1'] if f.get('http1') else []
         r=subprocess.run(['curl',*opciones_tls,'--silent','--show-error','--location','--max-redirs','3',
             '--proto','=https','--proto-redir','=https','--connect-timeout','8','--max-time','24',
             '--max-filesize','12000000','--user-agent','RadarLicitaciones/2.0',
@@ -37,10 +39,11 @@ def worker(entrada,salida):
     if conectores._host(final)!=conectores._host(u):raise ValueError('Redirección a otro dominio: requiere contraste')
     dom=extractores.DOM(conectores.decodificar_html(datos,tipo)) if 'html' in tipo.lower() and not datos.startswith(b'%PDF-') else None
     enlaces=[] if dom is None else [{k:l[k] for k in ('url','texto')} for l in dom.root.enlaces(final)
-        if re.search(r'licit|compra|contrata|cotiza|concurso|boletin|proveedor',l['url']+' '+l['texto'],re.I)]
+        if re.search(r'licit|compra|contrata|cotiza|concurso|boletin|proveedor|csv|excel|export',l['url']+' '+l['texto'],re.I)]
+    scripts=[] if dom is None else [extractores.url_publica(n.attrs['src'],final) for n in dom.root.iter() if n.tag=='script' and n.attrs.get('src')]
     guardar(salida,{'estado':'OPERATIVA','finalizado':True,'paginas_correctas':1,'oportunidades':[],
         'url':u,'final':final,'transporte':f.get('transporte','urllib'),'metodo':'POST' if 'datos_post' in f else 'GET','parametros':f.get('datos_post'),'tipo':tipo,'sha256':sha256(datos).hexdigest(),'archivo':str(root/(nombre+'.bin')),
-        'enlaces':enlaces,'aviso':'Captura de investigación; no prueba extracción de procedimientos'})
+        'enlaces':enlaces,'scripts_publicados':scripts,'extraccion_verificada':False,'aviso':'Captura de investigación; no prueba extracción de procedimientos'})
 
 
 def main():
