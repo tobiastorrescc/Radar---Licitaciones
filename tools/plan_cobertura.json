@@ -1,5 +1,5 @@
 {
-  "etapa": "issue14-api-publicada-epe-y-clientes-oficiales",
+  "etapa": "issue14-apis-wordpress-oficiales-y-rutas-unr",
   "barrido": false,
   "barrido_manifest": "inventario/recuperacion_criticas_issue14.json",
   "barrido_por_fuente": 60,
@@ -15,12 +15,11 @@
   ],
   "sondear": true,
   "urls_sondeo": [
-    "https://epe.santafe.gov.ar/app2/_nuxt/fe22d51.js",
-    "https://epe.santafe.gov.ar/app2/_nuxt/78aeda7.js",
-    "https://epe.santafe.gov.ar/app2/_nuxt/3608927.js",
-    "https://epe.santafe.gov.ar/app2/_nuxt/bd9d5db.js",
-    "https://epe.santafe.gov.ar/app2/api",
-    "https://www.santafe.gov.ar/gestionesdecompras/site/"
+    "https://aeropuertorosario.com/wp-json/wp/v2/types",
+    "https://www.jusentrerios.gov.ar/wp-json/wp/v2/types",
+    "https://unr.edu.ar/compras-publicas/",
+    "https://unr.edu.ar/portal-de-proveedores/",
+    "https://www.epe.santafe.gov.ar/app2/_nuxt/fe22d51.js"
   ],
   "peticiones": [],
   "lectura_liviana": true,
