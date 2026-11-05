@@ -49,6 +49,31 @@ class CriticasIssue14(unittest.TestCase):
             with patch('conectores.time.sleep'),patch('conectores.descargar',side_effect=error) as f:
                 r=conectores.explorar(url,{'adaptador':'epe','reintentos_transitorios':1},fetch=f)
                 self.assertEqual(f.call_count,1);self.assertNotEqual(r['estado'],'SIN_PUBLICACIONES')
+    def test_boletin_epe_no_descarta_numeracion_oficial_de_diez_digitos(self):
+        url='https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026/2026-11-05licitaciones.html'
+        html='<p>EMPRESA PROVINCIAL DE LA ENERGÍA DE SANTA FE</p><p>LICITACIÓN PÚBLICA N° 7060002563</p><p>OBJETO: ADQUISICIÓN DE CABLES.</p><p>APERTURA: 20 de noviembre de 2026 a las 10:00 horas.</p>'
+        rs=extractores.extraer(html,url,{'adaptador':'boletin-sf'})[0]
+        self.assertEqual(len(rs),1);r=o.normalizar(rs[0],'2026-11-05T08:00:00-03:00')
+        self.assertEqual(r['organismo'],'EPE');self.assertEqual(r['clasificacion_registro'],'PROCEDIMIENTO')
+        self.assertEqual(o.procedimiento_canonico(r),'licitacion publica 7060002563');self.assertEqual(r['vigencia'],'ABIERTA')
+        # Mismo correlativo del portal primario: un alias, no otra oportunidad.
+        primaria={**r,'url':'https://www.epe.santafe.gov.ar/app2/aperturas','evidencia_url':'https://www.epe.santafe.gov.ar/app2/aperturas','es_fuente_complementaria':False}
+        self.assertEqual(o.procedimiento_canonico(primaria),o.procedimiento_canonico(r))
+    def test_prefetch_fuera_de_rosario_respeta_tres_hilos_y_no_repite_fichas(self):
+        import threading,time
+        inicio='https://aeropuertorosario.com/institucional/licitaciones/'
+        html=Path('tests/fixtures/reales/fuente-007.html').read_bytes();lock=threading.Lock();activos=0;maximo=0;calls=[]
+        def fetch(u):
+            nonlocal activos,maximo
+            with lock:activos+=1;maximo=max(maximo,activos);calls.append(u)
+            try:
+                time.sleep(0.02)
+                return (html if u==inicio else b'<main>Detalle temporalmente incompleto</main>'),'text/html',u
+            finally:
+                with lock:activos-=1
+        r=conectores.explorar(inicio,{'adaptador':'aeropuerto','concurrencia_detalles':3,'enriquecer_fichas':True,'solo_descubrimiento':True},fetch=fetch)
+        self.assertTrue(1<maximo<=3);self.assertEqual(len(calls),len(set(calls)));self.assertEqual(len(r['oportunidades']),2)
+
     def test_alerta_critica_persistente_no_confunde_fallo_con_ausencia(self):
         r=alertas_criticas([{'id':'fuente-003','url':'https://www.epe.santafe.gov.ar/app2/aperturas','estado':'BLOQUEADA','errores':[{'categoria':'RED','causa':'ERROR_CONEXION_TLS'}]},{'id':'fuente-060','url':'https://www.santafe.gov.ar/boletinoficial/','estado':'SIN_PUBLICACIONES'}])
         self.assertEqual(len(r),1);self.assertEqual(r[0]['causas'],['ERROR_CONEXION_TLS'])

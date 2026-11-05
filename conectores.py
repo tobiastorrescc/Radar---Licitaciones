@@ -520,10 +520,6 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 estructurados=gestiones_html(dom,final)
                 if estructurados:registros=estructurados
                 for u in enlaces_csv(dom,final):pending.appendleft((u,'CSV_PUBLICADO',None))
-            if config.get('patron_fecha_articulo') and len(registros)==1:
-                from fuentes_criticas import fecha_articulo
-                publicada=fecha_articulo(dom,final,config['patron_fecha_articulo'])
-                if publicada:registros[0]['fecha_publicacion_texto']=publicada
             if config.get('adaptador')=='rosario' and clase=='LISTADO':
                 for nodo in dom.root.iter():
                     if nodo.clase('contrataciones-resumen__conteo-item'):

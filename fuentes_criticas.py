@@ -42,13 +42,6 @@ def gestiones_csv(datos,url,fuente):
         registros.append({'url':destino,'evidencia_url':url,'organismo':org,'provincia':'Santa Fe','localidad':None,'titulo':t+' '+num+' '+obj,'objeto':obj,'numero_procedimiento':num,'tipo_procedimiento':e.norm(t),'procedimiento':e.norm(t)+' '+num,'registro_estructurado':True,'detalle_completo':True,'fecha_apertura_texto':fila.get(apertura),'fecha_publicacion_texto':fila.get(publicada) if publicada else None,'fecha_limite_presentacion_texto':fila.get(limite) if limite else None,'presupuesto_texto':fila.get(monto) if monto else None,'documentos':[],'formato_evidencia':'CSV_PUBLICADO','es_fuente_complementaria':True})
     return registros,errores
 
-def fecha_articulo(dom,url,patron):
-    if not re.fullmatch(patron,urlsplit(url).path):return None
-    fechas={n.attrs.get('content','') for n in dom.root.iter() if n.tag=='meta' and n.attrs.get('property')=='article:published_time'}
-    fechas.update(n.attrs.get('datetime','') for n in dom.root.iter() if n.tag=='time' and 'published' in n.attrs.get('class','').split())
-    validas={f for f in fechas if re.fullmatch(r'20\d{2}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:[+-]\d{2}:\d{2}|Z)?',f)}
-    return next(iter(validas)) if len(validas)==1 else None
-
 def gestiones_html(dom,url):
     """Misma identificación de columnas para el listado HTML y la exportación."""
     registros=[]

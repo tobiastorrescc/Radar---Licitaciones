@@ -330,7 +330,12 @@ jobs:
           python -u tools/reprocesar_lote_capturado.py --barrido work/control-antes/work/barrido/resultado.json --barrido work/control-detalles/work/barrido/resultado.json --barrido work/captura-origen/work/barrido/resultado.json --barrido work/captura-origen/work/barrido-ampliado/resultado.json --barrido "$BARRIDO_FINAL"
       - name: Contrastar todo el historial y revisar informe sin nuevas consultas
         if: steps.plan.outputs.captura_run != '' && steps.plan.outputs.contrastar_barrido != 'true'
-        run: python tools/reprocesar_lote_capturado.py
+        run: |
+          if test -f work/captura-origen/work/barrido/resultado.json; then
+            python tools/reprocesar_lote_capturado.py --barrido work/captura-origen/work/barrido/resultado.json
+          else
+            python tools/reprocesar_lote_capturado.py
+          fi
       - name: Revisar candidatas sin publicar automáticamente cambios de inventario
         if: steps.plan.outputs.descubrir == 'true'
         run: python -u tools/descubrir_fuentes.py --salida work/descubrimiento --total ${{ steps.plan.outputs.desc_total }} --busquedas ${{ steps.plan.outputs.desc_busquedas }} --candidatos ${{ steps.plan.outputs.desc_candidatos }} --revisar-pendientes --priorizar-plan

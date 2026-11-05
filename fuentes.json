@@ -2120,7 +2120,7 @@
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
     },
-    "boletin_dias": 3,
+    "boletin_sf_dias": 3,
     "reintentos_transitorios": 1,
     "conexion_timeout": 4,
     "lectura_timeout": 6

@@ -1,6 +1,6 @@
 {
-  "etapa": "issue14-barrido-integrado-corregido-ocho-fuentes",
-  "barrido": true,
+  "etapa": "issue14-contraste-incremental-y-diagnostico-final-criticas",
+  "barrido": false,
   "barrido_manifest": "inventario/recuperacion_criticas_issue14.json",
   "barrido_por_fuente": 60,
   "barrido_ids": [
@@ -13,12 +13,38 @@
     "fuente-007",
     "fuente-026"
   ],
-  "sondear": false,
+  "sondear": true,
   "urls_sondeo": [],
-  "peticiones": [],
+  "peticiones": [
+    {
+      "url": "https://epe.santafe.gov.ar/app2/aperturas",
+      "transporte": "curl",
+      "tls_max": "1.2",
+      "ipv4": true,
+      "http1": true
+    },
+    {
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "transporte": "curl",
+      "tls_max": "1.2",
+      "ipv4": true,
+      "http1": true
+    },
+    {
+      "url": "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
+      "conexion_timeout": 12,
+      "lectura_timeout": 20
+    },
+    {
+      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-05licitaciones.html",
+      "conexion_timeout": 12,
+      "lectura_timeout": 20
+    }
+  ],
   "lectura_liviana": true,
   "descubrir": false,
   "auditar": false,
   "archivar_auditoria": false,
-  "reverificar_ids": []
+  "reverificar_ids": [],
+  "captura_run": "42106222026"
 }
