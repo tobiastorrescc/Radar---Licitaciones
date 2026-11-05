@@ -1,0 +1,69 @@
+{
+  "fecha_evidencia": "2026-11-05T01:26:31.321004-03:00",
+  "fichas_releidas_sin_red": 48,
+  "repeticion_correcta": true,
+  "produccion_y_respaldos_intactos": true,
+  "consultas_nuevas": 0,
+  "ocr_nuevo": 0,
+  "run": 41969428731,
+  "run_red_rosario": 41967362168,
+  "run_red_ampliado": 41965803234,
+  "base_diaria_run": 41438998084,
+  "base_fecha": "2026-11-02",
+  "base_procedimientos": 4823,
+  "estados_fuentes": {
+    "PARCIAL": 18,
+    "BLOQUEADA": 10,
+    "OPERATIVA": 11,
+    "PENDIENTE": 4,
+    "SIN_PUBLICACIONES_CONFIRMADO": 1
+  },
+  "fuentes_revisadas": 44,
+  "nuevas_confirmadas_vigentes": 25,
+  "nuevas_por_provincia": {
+    "Santa Fe": 25
+  },
+  "primeras_detecciones_sin_fecha": 118,
+  "primeras_detecciones_sin_fecha_abiertas": 20,
+  "cambios": 99,
+  "cambios_abiertos": 26,
+  "recuperaciones": 175,
+  "recuperaciones_abiertas": 2,
+  "abiertas_fecha_observada": 87,
+  "abiertas_catalogo_calculadas": 145,
+  "rosario_antes_fichas": 48,
+  "rosario_despues_fichas": 63,
+  "rosario_avisos_no_detectados_antes": 15,
+  "rosario_omitidas_que_son_ineditas_confirmadas": 5,
+  "rosario_antes_fecha_publicacion": 1,
+  "rosario_despues_fecha_publicacion": 48,
+  "rosario_objetos_comprobados": 63,
+  "rosario_fichas_pendientes": 15,
+  "muestra_actual": {
+    "DETECTADA_INCOMPLETA": 5,
+    "DETECTADA": 9
+  },
+  "segunda": {
+    "novedades": 0,
+    "clasificacion": {
+      "SIN_CAMBIOS": 2115
+    },
+    "eventos_emitidos": 0,
+    "total_historial": 5141,
+    "estado": "COMPLETA_CON_INCIDENCIAS",
+    "mensaje": "SIN_NOVEDADES_CONFIRMADAS_CON_INCIDENCIAS"
+  },
+  "primera_clasificacion": {
+    "NUEVO_CONFIRMADO": 25,
+    "MODIFICADO": 84,
+    "HISTORICA_RECUPERADA": 10,
+    "NUEVA_DETECCION_FECHA_DESCONOCIDA": 118,
+    "SIN_CAMBIOS": 1698,
+    "DATOS_COMPLETADOS": 15,
+    "RECUPERACION_LINEA_BASE": 165
+  },
+  "duplicados_nuevas": 0,
+  "vencidas_en_nuevas": 0,
+  "pago_rapido_abiertas_fecha_observada": 0,
+  "main_preservado": "c4c44de36b8064bf84db4fa1071004e0f8c45ad8"
+}

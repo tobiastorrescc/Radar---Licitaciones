@@ -1,0 +1,262 @@
+{
+  "run": 42045949031,
+  "fecha": "2026-11-05T11:36:36.185769-03:00",
+  "observaciones": [
+    {
+      "id": "fuente-001",
+      "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "estado": "PARCIAL",
+      "iniciada": true,
+      "publicaciones_detectadas": 64,
+      "paginas_correctas": 52,
+      "errores": [
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38733",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38718",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38716",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38712",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38710",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38708",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38706",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38703",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38702",
+          "tipo": "TimeoutError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "The read operation timed out",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38701",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38694",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38688",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38674",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38671",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38643",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38631",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/37368",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+          "tipo": "DetalleIncompleto",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso",
+          "publicaciones": [
+            "122e4a1dddd74a630c3a232687dcc601afaea47b49bc9478be166586520aba73",
+            "83f8a6ee05a20c8b54f8ae486441dfa0f3b0a017b377feea95311e6c3f730835",
+            "df96720e8be6a8afa69bd15a38ed04f2173aacbe3b98bb8d4bb6c87791be4eaf",
+            "cbb8d312a8ea30c771996b1b0b0ba81130dff5122ef47cd71950c884ba116081",
+            "1d7baf1d610833e0425d7c609609d572cd3d86cf338f8998329a6ae600e88592",
+            "8ff9ef15c3d0b676b9251514452e38add21776b6c8772de080710506360435f5",
+            "dcf26162f19a5887f4fcaf714aa752c44503294527f9b07445af60fd49620513",
+            "cb0c7158b6c616b4e9f000e76a0729b40403d95e384845095fa9827861b12b10",
+            "cdf7ed6c55f6c368839fb448b71953a9b2e78cd1574276e88c8bdd23ff33d17c",
+            "4cb358a671676f453e67b860f131c1a4e97a5e6ef0193021782c93391af1f53f",
+            "bddd30e78399277fc4989cd14b2ccf0d2016c272812166d1c301e0dd37979597",
+            "a14cc67d3ca4ce2761d84a7ff888766cd86c294f213062b97e37f99f3ac1f112",
+            "23419ffe6e337e07a6860315cf3d9ffec1ec9821c11b88faaeea35468ecf79db",
+            "c0f16e21d1a6003c61a243ccd06649eb92e43d2edba240f3554e7f5f310da60c",
+            "efd40ab7ca207e7c8f302240c90bbe04863c8be9302f6d3ab3dda5fa98b13a34",
+            "fd993510e3fcfd9793d6b5db3fd906298808493728062f6aab923817c2f309c6",
+            "1b5e4a452f18855824c53ae5a2eac3460ce82f93626dfed2ca2d6994f3354616",
+            "9e0799dff4d1bf92662257e669810d117c79fae11539b6c96338d9b9489e130a",
+            "55edb00b043a6d87b7a4e67266d66ca441b0ad91a7db38573425a087188f5fd3"
+          ]
+        }
+      ],
+      "duracion_segundos": 235.943,
+      "limites": [],
+      "inicio": "2026-11-05T11:32:40.232432-03:00",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/barrido/verificacion_ejecuciones/20261105T143240-daa80dbf/0000.json",
+      "limite_fuente_segundos": 240.0,
+      "paginas_visitadas": 71,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0,
+      "alcance": "Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto",
+      "documentos_pendientes": [],
+      "evidencias_listado_vacio": []
+    }
+  ],
+  "avisos": 64,
+  "objetos": 64,
+  "fechas_publicacion": 45,
+  "capacidades_documentales": {
+    "modo": "DESCUBRIMIENTO_LIVIANO",
+    "instalaciones_o_ejecuciones_ocr_nuevas": 0,
+    "binarios": {
+      "pdftotext": false,
+      "pdfinfo": false,
+      "tesseract": false
+    },
+    "planillas": {
+      "openpyxl": false,
+      "xlrd": false
+    }
+  }
+}

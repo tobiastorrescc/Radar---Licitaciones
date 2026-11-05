@@ -1,0 +1,15 @@
+{
+  "identidades_anteriores": 4651,
+  "identidades_actuales": 4724,
+  "agregadas": 73,
+  "eliminadas": 0,
+  "alteradas": 0,
+  "respaldos_modificados": false,
+  "comprobacion_con_copia_diaria": {
+    "SIN_CAMBIOS": 23,
+    "RECUPERACION_LINEA_BASE": 17,
+    "DATOS_COMPLETADOS": 9,
+    "MODIFICADO": 15
+  },
+  "alcance": "Sólo avisos oficiales de Rosario efectivamente observados. No son nuevos procedimientos cargados manualmente ni cambios del SQLite diario."
+}

@@ -1,0 +1,172 @@
+{
+  "resumen": {
+    "fecha": "2026-11-05T14:36:36.534060+00:00",
+    "github_run_id": "42045949031",
+    "descubiertas_automaticamente": 0,
+    "hallazgos_nuevos": 0,
+    "candidatos_acumulados": 147,
+    "hallazgos_acumulados": 269,
+    "consultadas": 36,
+    "validadas": 1,
+    "validadas_acumuladas": 2,
+    "incorporadas": 0,
+    "incorporadas_acumuladas": 2,
+    "pendientes": 145,
+    "errores_busqueda": [
+      {
+        "objetivo": "directorio:fuente-001",
+        "url": "https://www.rosario.gob.ar/",
+        "errores": [
+          {
+            "tipo": "URLError",
+            "categoria": "RED",
+            "timeout": true,
+            "error": "<urlopen error timed out>",
+            "causa": "TIEMPO_ESPERA",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "reparar:fuente-001",
+        "url": "https://www.bing.com/search?q=%22Municipalidad+de+Rosario%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "directorio:fuente-002",
+        "url": "https://compras.santafe.gob.ar/",
+        "errores": [
+          {
+            "tipo": "URLError",
+            "categoria": "RED",
+            "timeout": true,
+            "error": "<urlopen error timed out>",
+            "causa": "TIEMPO_ESPERA",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "reparar:fuente-002",
+        "url": "https://www.bing.com/search?q=%22Gobierno+de+Santa+Fe%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "directorio:fuente-003",
+        "url": "https://www.epe.santafe.gov.ar/",
+        "errores": [
+          {
+            "tipo": "HTTPError",
+            "categoria": "RED",
+            "timeout": false,
+            "error": "HTTP Error 500: Internal Server Error",
+            "http_status": 500,
+            "causa": "ERROR_SERVIDOR_TEMPORAL",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "reparar:fuente-003",
+        "url": "https://www.bing.com/search?q=%22EPE%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "directorio:fuente-006",
+        "url": "https://www.justiciasantafe.gov.ar/",
+        "errores": [
+          {
+            "tipo": "URLError",
+            "categoria": "RED",
+            "timeout": true,
+            "error": "<urlopen error timed out>",
+            "causa": "TIEMPO_ESPERA",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "reparar:fuente-006",
+        "url": "https://www.bing.com/search?q=%22Poder+Judicial+de+Santa+Fe%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "reparar:fuente-007",
+        "url": "https://www.bing.com/search?q=%22Aeropuerto+Internacional+Rosario%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      },
+      {
+        "objetivo": "reparar:fuente-010",
+        "url": "https://www.bing.com/search?q=%22Municipalidad+de+Ca%C3%B1ada+de+G%C3%B3mez%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+        "errores": [
+          {
+            "tipo": "ValueError",
+            "categoria": "EXTRACCION",
+            "timeout": false,
+            "error": "Buscador alternativo requiere verificación humana; no se elude",
+            "causa": "ERROR_EXTRACCION",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA"
+          }
+        ]
+      }
+    ],
+    "duracion_segundos": 155.99,
+    "cobertura_completa": false
+  },
+  "incorporadas": []
+}

@@ -1,0 +1,46 @@
+{
+  "run": 42045949031,
+  "primera": {
+    "corrida": "control-html-42045949031",
+    "fecha": "2026-11-05T11:36:36.185769-03:00",
+    "primera_ejecucion": false,
+    "estado": "COMPLETA_CON_INCIDENCIAS",
+    "observadas": 64,
+    "candidatos_sin_confirmar": 0,
+    "clasificacion": {
+      "SIN_CAMBIOS": 23,
+      "NUEVA_DETECCION_FECHA_DESCONOCIDA": 4,
+      "NUEVO_CONFIRMADO": 13,
+      "DATOS_COMPLETADOS": 9,
+      "MODIFICADO": 15
+    },
+    "novedades": 41,
+    "eventos_emitidos": 41,
+    "total_historial": 5937,
+    "fuentes": {
+      "PARCIAL": 1
+    },
+    "mensaje": "CON_NOVEDADES"
+  },
+  "segunda": {
+    "corrida": "control-html-42045949031-replay",
+    "fecha": "2026-11-05T11:36:36.185769-03:00",
+    "primera_ejecucion": false,
+    "estado": "COMPLETA_CON_INCIDENCIAS",
+    "observadas": 64,
+    "candidatos_sin_confirmar": 0,
+    "clasificacion": {
+      "SIN_CAMBIOS": 64
+    },
+    "novedades": 0,
+    "eventos_emitidos": 0,
+    "total_historial": 5937,
+    "fuentes": {
+      "PARCIAL": 1
+    },
+    "mensaje": "SIN_NOVEDADES_CONFIRMADAS_CON_INCIDENCIAS"
+  },
+  "estado_diario_original_intacto": true,
+  "ocr_nuevo": 0,
+  "consultas_adicionales": 0
+}

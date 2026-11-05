@@ -1,0 +1,70 @@
+{
+  "fecha_calculo_vigencia": "2026-11-05T11:52:17.429575-03:00",
+  "fecha_ultima_corrida_diaria": "2026-11-05T08:55:06.617395-03:00",
+  "run_diario": 42021794797,
+  "commit_respaldo_automatico": "94bf5fc963cf4df81cd09357264206b5727c9976",
+  "estado_job_escaneo": "success",
+  "estado_job_descubrimiento_original": "failure: KeyError codigo (Chabás)",
+  "respaldado": true,
+  "estado_restaurado_sha256": "f965f2cbf93b9b0f94dcb372fb328ddb4619c5a623c8fcccf95fa3c5555cc50b",
+  "base_procedimientos": 4823,
+  "procedimientos_despues_diario": 5920,
+  "cobertura_antes": {
+    "OPERATIVA": 40,
+    "PARCIAL": 23,
+    "BLOQUEADA": 12,
+    "PENDIENTE": 7,
+    "SIN_PUBLICACIONES_CONFIRMADO": 1
+  },
+  "cobertura_diaria": {
+    "PARCIAL": 25,
+    "OPERATIVA": 41,
+    "BLOQUEADA": 14,
+    "PENDIENTE": 7,
+    "SIN_PUBLICACIONES_CONFIRMADO": 1
+  },
+  "fuentes_antes": 83,
+  "fuentes_diario": 88,
+  "publicaciones_nuevas_confirmadas_eventos_diario": 15,
+  "nuevas_cotizables_al_corte_diario": 12,
+  "nuevas_cotizables_diario_al_recalcular": 11,
+  "nuevas_cotizables_union_auditoria_y_diario": 36,
+  "run_control_presupuesto_240": 42045949031,
+  "nuevas_confirmadas_control_contra_base_diaria": 13,
+  "publicaciones_5nov_en_control_nuevas_contra_base_diaria": 8,
+  "nuevas_diario_adicionales_a_captura_nocturna": 4,
+  "nuevas_captura_nocturna_que_vencieron": 2,
+  "nuevas_por_provincia": {
+    "Santa Fe": 36
+  },
+  "sin_duplicados": true,
+  "pliegos_identificados": 36,
+  "pago_verificado": 0,
+  "entrega_corregida": {
+    "fecha": "2026-11-05T08:55:06.617395-03:00",
+    "estado": "COMPLETA_CON_INCIDENCIAS",
+    "totales": {
+      "recuperadas_vigentes": 0,
+      "nuevas_confirmadas": 12,
+      "publicaciones_nuevas_no_cotizables": 3,
+      "detecciones_sin_fecha_o_mismo_dia": 196,
+      "cambios": 171,
+      "recuperaciones_historicas": 47,
+      "recuperaciones_vigencia_pendiente": 839
+    },
+    "linea_base_sin_alerta": 0,
+    "total_informadas": 1268,
+    "limite_cantidad": null,
+    "envio_activado": false,
+    "ejecucion": null,
+    "cobertura_estricta": null,
+    "aviso": "No hay novedades confirmadas no significa ausencia de licitaciones si hay incidencias. Detecciones sin fecha no son publicaciones nuevas comprobadas.",
+    "totales_comerciales": {
+      "nuevas_confirmadas": 12,
+      "detecciones_sin_fecha_o_mismo_dia": 47,
+      "cambios": 11,
+      "recuperadas_vigentes": 0
+    }
+  },
+  "observacion": "La unión de auditorías no equivale a publicaciones del día. No se suman oportunidades coincidentes. Los plazos se recalculan sin nueva consulta ni OCR."
+}
