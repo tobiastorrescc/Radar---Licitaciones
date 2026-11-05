@@ -273,7 +273,8 @@ def procedimiento_canonico(r):
         # Numeración propia de EPE, acreditada por ficha con objeto dedicado.
         # No relajar la detección de teléfonos/números sueltos en otros portales.
         host=urlsplit(r.get('evidencia_url') or '').hostname
-        if (host in ('www.epe.santafe.gov.ar','epe.santafe.gov.ar')
+        origen_boletin=(host in ('www.santafe.gov.ar','www.santafe.gob.ar','santafe.gov.ar','santafe.gob.ar') and r.get('es_fuente_complementaria') and norm(r.get('organismo'))=='epe' and '/boletinoficial/' in urlsplit(r.get('evidencia_url') or '').path)
+        if ((host in ('www.epe.santafe.gov.ar','epe.santafe.gov.ar') or origen_boletin)
                 and r.get('registro_estructurado') and re.fullmatch(r'\d{10}',numero)
                 and tipo in ('licitacion publica','licitacion privada','concurso privado','compra menor','compra directa','contratacion directa')):
             return tipo+' '+numero

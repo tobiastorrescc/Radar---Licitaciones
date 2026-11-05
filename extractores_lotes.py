@@ -114,6 +114,7 @@ def boletin_santafe(raiz,url,config):
     aliases={'empresa provincial de la energia':'EPE','aguas santafesinas s.a.':'ASSA','aeropuerto internacional rosario':'Aeropuerto Internacional Rosario'}
     for g in grupos:
         org=aliases.get(norm(g['organismo']),g['organismo'].title())
+        if norm(g['organismo']).startswith('empresa provincial de la energia'):org='EPE'
         comuna=re.match(r'^(?:municipalidad|comuna) de (.+)$',org,re.I)
         localidad=comuna[1].strip() if comuna else None
         texto='\n'.join(n.text for n in g['bloques'])
@@ -128,7 +129,7 @@ def boletin_santafe(raiz,url,config):
             else:fragmento=texto
             docs=[{'url':l['url'],'titulo':l['texto']} for n in g['bloques'] for l in n.enlaces(url) if urlsplit(l['url']).path.lower().endswith(ADJUNTOS)] if len(unicos)==1 else []
             evento='|'.join(sorted(set(EVENTO.findall(norm(fragmento))))) or None
-            registros.append({'organismo':org,'localidad':localidad,'provincia':config.get('provincia','Santa Fe'),'titulo':p['procedimiento']+' '+fragmento,'objeto':fragmento,'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'procedimiento':p['procedimiento'],'url':url,'evidencia_url':url,'documentos':docs,'evento_publicado':evento,'llamado_especial':bool(evento),'detalle_completo':True,'fecha_publicacion_texto':fecha(unquote(url)),'es_fuente_complementaria':True})
+            registros.append({'organismo':org,'localidad':localidad,'provincia':config.get('provincia','Santa Fe'),'titulo':p['procedimiento']+' '+fragmento,'objeto':fragmento,'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'procedimiento':p['procedimiento'],'url':url,'evidencia_url':url,'documentos':docs,'evento_publicado':evento,'llamado_especial':bool(evento),'detalle_completo':True,'registro_estructurado':True,'fecha_publicacion_texto':fecha(unquote(url)),'es_fuente_complementaria':True})
     return registros
 
 

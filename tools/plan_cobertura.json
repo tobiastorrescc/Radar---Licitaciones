@@ -1,6 +1,6 @@
 {
-  "etapa": "issue14-unr-portal-oficial-y-api-publicada-aeropuerto",
-  "barrido": false,
+  "etapa": "issue14-barrido-integrado-corregido-ocho-fuentes",
+  "barrido": true,
   "barrido_manifest": "inventario/recuperacion_criticas_issue14.json",
   "barrido_por_fuente": 60,
   "barrido_ids": [
@@ -13,13 +13,8 @@
     "fuente-007",
     "fuente-026"
   ],
-  "sondear": true,
-  "urls_sondeo": [
-    "https://unr.edu.ar/portal-de-compras-publicas/",
-    "https://aeropuertorosario.com/wp-json/",
-    "https://aeropuertorosario.com/wp-json/wp/v2/pages/214",
-    "https://aeropuertorosario.com/wp-json/wp/v2/posts?per_page=10"
-  ],
+  "sondear": false,
+  "urls_sondeo": [],
   "peticiones": [],
   "lectura_liviana": true,
   "descubrir": false,

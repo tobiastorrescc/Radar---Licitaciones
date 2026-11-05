@@ -101,6 +101,14 @@ def resumen(observaciones):
         'errores_por_categoria': dict(errores)}
 
 
+def alertas_criticas(observaciones):
+    criticas={'fuente-003','fuente-087','fuente-060'}
+    return [{'id':r['id'],'url':r['url'],'estado':r['estado'],
+             'publicaciones_conservadas':r.get('publicaciones_detectadas',0),
+             'causas':sorted({e.get('causa') or e.get('categoria','DESCONOCIDA') for e in r.get('errores',[])})}
+            for r in observaciones if r['id'] in criticas and r['estado'] not in ('OPERATIVA','SIN_PUBLICACIONES')]
+
+
 def ejecutar(fuentes, salida, *, concurrencia=4, conexion=5, lectura=10,
              por_fuente=60, total=600, max_paginas=1000, intervalo=1,
              comando=None, emitir=None):
@@ -157,7 +165,8 @@ def ejecutar(fuentes, salida, *, concurrencia=4, conexion=5, lectura=10,
                    'limites': {'conexion_segundos': conexion, 'lectura_segundos': lectura,
                               'fuente_segundos': por_fuente, 'fuente_por_id':presupuestos,'total_segundos': total,
                               'concurrencia': concurrencia, 'max_paginas': max_paginas},
-                   'resumen': resumen(observaciones), 'observaciones': observaciones}
+                   'resumen': resumen(observaciones), 'observaciones': observaciones,
+                   'alertas_fuentes_criticas':alertas_criticas(observaciones)}
         guardar(salida, informe)
         guardar(directorio/'resumen.json', informe)
         return informe
@@ -269,6 +278,9 @@ def ejecutar(fuentes, salida, *, concurrencia=4, conexion=5, lectura=10,
             r['motivo_no_iniciada'] = terminal
         pendientes.clear()
         informe = persistir()
+        for alerta in informe['alertas_fuentes_criticas']:
+            evento('ALERTA_FUENTE_CRITICA',**alerta)
+            emitir('::warning title=Fuente crítica sin cobertura completa::'+alerta['id']+' '+alerta['estado']+'; revisar auditoría de la fuente. No equivale a sin novedades.')
         evento('RESUMEN', **informe['resumen'], segundos=informe['duracion_segundos'], estado=terminal)
         for sig, handler in anteriores.items():
             signal.signal(sig, handler)

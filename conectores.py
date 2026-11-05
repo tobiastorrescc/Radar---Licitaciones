@@ -2,7 +2,7 @@
 from collections import deque
 from hashlib import sha256
 from html.parser import HTMLParser
-from urllib.parse import urljoin, urlparse, urldefrag,urlencode,parse_qs,urlsplit,urlunsplit
+from urllib.parse import urljoin, urlparse, urldefrag,urlencode,parse_qs,urlsplit,urlunsplit,unquote
 from urllib.request import Request, build_opener, HTTPHandler, HTTPSHandler
 from http.client import HTTPConnection, HTTPSConnection
 import socket
@@ -20,6 +20,7 @@ import pagos
 import oportunidades
 import gzip
 import json
+import ssl
 
 
 def normalizar(texto):
@@ -274,11 +275,14 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     intentos_http.append({'url':url,'intento':intento+1,'estado':'RESPUESTA_RECIBIDA','segundos':round(time.monotonic()-inicio,3)})
                     return respuesta
                 except Exception as error:
-                    transitorio=(isinstance(error,HTTPError) and error.code in (500,502,503,504)) or isinstance(error,(RemoteDisconnected,TimeoutError,socket.timeout)) or (isinstance(error,URLError) and isinstance(error.reason,(RemoteDisconnected,TimeoutError,socket.timeout)))
+                    transitorio=(isinstance(error,HTTPError) and error.code in (500,502,503,504)) or isinstance(error,(RemoteDisconnected,TimeoutError,socket.timeout,ssl.SSLEOFError)) or (isinstance(error,URLError) and isinstance(error.reason,(RemoteDisconnected,TimeoutError,socket.timeout,ssl.SSLEOFError)))
                     intentos_http.append({'url':url,'intento':intento+1,'estado':'ERROR','http_status':getattr(error,'code',None),'error':str(error),'segundos':round(time.monotonic()-inicio,3),'reintentable':transitorio})
                     if not transitorio or intento==reintentos:raise
                     time.sleep(min(1,0.25*(2**intento)))
     pending=deque([(extractores.url_publica(u) or u,'LISTADO',{'tipo_contexto':config.get('contextos_listado',{}).get(parse_qs(urlparse(u).query).get('tipoRecomendada',[''])[0])}) for u in config.get('urls_inicio',[fuente])])
+    if config.get('adaptador')=='boletin-sf':
+        from fuentes_criticas import ediciones_santafe
+        for u in reversed(ediciones_santafe(fuente,config.get('boletin_sf_dias',3))):pending.appendleft((u,'LISTADO',{}))
     seen=set();items={};errors=[];limits=[];correctas=0;documentos_leidos=0
     respuestas_detalles={}
     conteos_rosario={}
@@ -386,7 +390,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
         if not url or peticion in seen or _host(url) not in hosts:continue
         seen.add(peticion);fase='DESCARGA';snapshot(fase,url)
         try:
-            if clase=='DETALLE' and config.get('adaptador')=='rosario' and int(config.get('concurrencia_detalles',1))>1:
+            if clase=='DETALLE' and int(config.get('concurrencia_detalles',1))>1:
                 if url not in respuestas_detalles:
                     from concurrent.futures import ThreadPoolExecutor
                     lote=[url]
@@ -406,6 +410,13 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             else:datos,tipo,final=fetch(url,datos_post=post) if post is not None else fetch(url)
             fase='EXTRACCION';snapshot(fase,url)
             if _host(final) not in hosts:raise ValueError('Redirección fuera de dominios oficiales declarados')
+            if clase=='CSV_PUBLICADO':
+                from fuentes_criticas import gestiones_csv
+                registros,fallos=gestiones_csv(datos,final,fuente)
+                for r in registros:agregar(r)
+                errors.extend({'url':url,**e} for e in fallos)
+                if not registros and not fallos:vacios.append({'url':url,'texto':'CSV oficial con columnas de convocatorias y sin filas'})
+                correctas+=1;snapshot('PAGINA_FINALIZADA',url);continue
             if config.get('barrido_institucional') and ('rss' in tipo.lower() or 'atom+xml' in tipo.lower() or ('xml' in tipo.lower() and re.search(br'<(?:rss|feed)\b',datos[:1000]))):
                 from barrido_institucional import extraer_feed
                 registros,enlaces,cantidad=extraer_feed(datos,final,config)
@@ -504,6 +515,15 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 pending.append((endpoint,'DATATABLES',{'post':parametros}))
             pagina_config={**config,**(referencia if isinstance(referencia,dict) else {})}
             registros,links,dom=extractores.extraer(html,final,pagina_config)
+            if config.get('adaptador')=='gestiones-sf':
+                from fuentes_criticas import enlaces_csv,gestiones_html
+                estructurados=gestiones_html(dom,final)
+                if estructurados:registros=estructurados
+                for u in enlaces_csv(dom,final):pending.appendleft((u,'CSV_PUBLICADO',None))
+            if config.get('patron_fecha_articulo') and len(registros)==1:
+                from fuentes_criticas import fecha_articulo
+                publicada=fecha_articulo(dom,final,config['patron_fecha_articulo'])
+                if publicada:registros[0]['fecha_publicacion_texto']=publicada
             if config.get('adaptador')=='rosario' and clase=='LISTADO':
                 for nodo in dom.root.iter():
                     if nodo.clase('contrataciones-resumen__conteo-item'):
@@ -581,6 +601,10 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             posiciones={k:i for i,k in enumerate(items)}
             def orden_pendiente(entrada):
                 u,c,ref=entrada
+                if c=='CSV_PUBLICADO':return (-1,0,0,'',u)
+                if config.get('adaptador')=='boletin-sf':
+                    edicion=re.search(r'(20\d{2}-\d{2}-\d{2})licitaciones[.]html',unquote(u))
+                    if edicion:return (-1,-int(edicion[1].replace('-','')),0,'',u)
                 item=items.get(ref,{}) if isinstance(ref,str) else {}
                 anios=re.findall(r'20\d{2}',item.get('numero_procedimiento') or '')
                 if clase=='LISTADO' and not anios:
