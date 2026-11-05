@@ -1,0 +1,555 @@
+[
+  {
+    "etapa": "base",
+    "url": "https://epe.santafe.gov.ar/app2/aperturas",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "OSError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "curl 52: curl: (52) Empty reply from server",
+        "causa": "ERROR_RED_POR_CONFIRMAR",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "base",
+    "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "HTTPError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "HTTP Error 500: Respuesta HTTP en diagnóstico público",
+        "http_status": 500,
+        "causa": "ERROR_SERVIDOR_TEMPORAL",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "base",
+    "url": "https://epe.santafe.gov.ar/app2/compras",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "OSError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "curl 52: curl: (52) Empty reply from server",
+        "causa": "ERROR_RED_POR_CONFIRMAR",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "base",
+    "url": "https://epe.santafe.gov.ar/app2/",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "OSError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "curl 52: curl: (52) Empty reply from server",
+        "causa": "ERROR_RED_POR_CONFIRMAR",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "base",
+    "url": "https://www.santafe.gov.ar/gestionesdecompras/",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "OSError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "curl 28: curl: (28) Connection timed out after 8002 milliseconds",
+        "causa": "TIEMPO_ESPERA",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "base",
+    "url": "https://www.santafe.gov.ar/gestionesdecompras/site/",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "OSError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "curl 28: curl: (28) Connection timed out after 8002 milliseconds",
+        "causa": "TIEMPO_ESPERA",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "base",
+    "url": "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "OSError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "curl 28: curl: (28) Connection timed out after 8002 milliseconds",
+        "causa": "TIEMPO_ESPERA",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "base",
+    "url": "https://www.santafe.gob.ar/gestionesdecompras/",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "OSError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "curl 28: curl: (28) Connection timed out after 8002 milliseconds",
+        "causa": "TIEMPO_ESPERA",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "base",
+    "url": "https://www.santafe.gov.ar/boletinoficial/",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "OSError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "curl 28: curl: (28) Connection timed out after 8002 milliseconds",
+        "causa": "TIEMPO_ESPERA",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "base",
+    "url": "https://www.santafe.gob.ar/boletinoficial/",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "OSError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "curl 28: curl: (28) Connection timed out after 8002 milliseconds",
+        "causa": "TIEMPO_ESPERA",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "base",
+    "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-05licitaciones.html",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "OSError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "curl 28: curl: (28) Connection timed out after 8002 milliseconds",
+        "causa": "TIEMPO_ESPERA",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "base",
+    "url": "https://www.santafe.gob.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-05licitaciones.html",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "OSError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "curl 28: curl: (28) Connection timed out after 8001 milliseconds",
+        "causa": "TIEMPO_ESPERA",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "base",
+    "url": "https://cdg.gob.ar/wp-json/wp/v2/pages?slug=licitaciones-y-concursos",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "HTTPError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "HTTP Error 403: Respuesta HTTP en diagnóstico público",
+        "http_status": 403,
+        "causa": "RESTRICCION_HTTP",
+        "restriccion_acceso_comprobada": true,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "base",
+    "url": "https://unr.edu.ar/compras-y-licitaciones/",
+    "estado_acceso": "OPERATIVA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": "f97c1d8c432d27d2a3c31968f964fe053a4e4bc4b36b692b06ad7928e96a1cd6",
+    "errores": [],
+    "tipo": "text/html; charset=UTF-8"
+  },
+  {
+    "etapa": "api",
+    "url": "https://epe.santafe.gov.ar/app2/_nuxt/fe22d51.js",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "RemoteDisconnected",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "Remote end closed connection without response",
+        "causa": "ERROR_RED_POR_CONFIRMAR",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "api",
+    "url": "https://epe.santafe.gov.ar/app2/_nuxt/78aeda7.js",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "RemoteDisconnected",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "Remote end closed connection without response",
+        "causa": "ERROR_RED_POR_CONFIRMAR",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "api",
+    "url": "https://epe.santafe.gov.ar/app2/_nuxt/3608927.js",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "HTTPError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "HTTP Error 500: Internal Server Error",
+        "http_status": 500,
+        "causa": "ERROR_SERVIDOR_TEMPORAL",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "api",
+    "url": "https://epe.santafe.gov.ar/app2/_nuxt/bd9d5db.js",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "RemoteDisconnected",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "Remote end closed connection without response",
+        "causa": "ERROR_RED_POR_CONFIRMAR",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "api",
+    "url": "https://epe.santafe.gov.ar/app2/api",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "RemoteDisconnected",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "Remote end closed connection without response",
+        "causa": "ERROR_RED_POR_CONFIRMAR",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "api",
+    "url": "https://www.santafe.gov.ar/gestionesdecompras/site/",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "URLError",
+        "categoria": "RED",
+        "timeout": true,
+        "error": "<urlopen error timed out>",
+        "causa": "TIEMPO_ESPERA",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "wp",
+    "url": "https://aeropuertorosario.com/wp-json/wp/v2/types",
+    "estado_acceso": "OPERATIVA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": "cc661eedf4fca5482331e1da853b3c8efa0dec70537030c65ee62c242fa2611f",
+    "errores": [],
+    "tipo": "application/json; charset=UTF-8"
+  },
+  {
+    "etapa": "wp",
+    "url": "https://www.jusentrerios.gov.ar/wp-json/wp/v2/types",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "HTTPError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "HTTP Error 403: Forbidden",
+        "http_status": 403,
+        "causa": "RESTRICCION_HTTP",
+        "restriccion_acceso_comprobada": true,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "wp",
+    "url": "https://unr.edu.ar/compras-publicas/",
+    "estado_acceso": "OPERATIVA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": "5f49dc01b77f652a014026e74b42d1c31490581f4aed4db6148be7402807047b",
+    "errores": [],
+    "tipo": "text/html; charset=UTF-8"
+  },
+  {
+    "etapa": "wp",
+    "url": "https://unr.edu.ar/portal-de-proveedores/",
+    "estado_acceso": "OPERATIVA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": "bd1d8a047256f06fce439acd803913a2addeb630e7ccb36156c451b6fd175eee",
+    "errores": [],
+    "tipo": "text/html; charset=UTF-8"
+  },
+  {
+    "etapa": "wp",
+    "url": "https://www.epe.santafe.gov.ar/app2/_nuxt/fe22d51.js",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "HTTPError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "HTTP Error 500: Internal Server Error",
+        "http_status": 500,
+        "causa": "ERROR_SERVIDOR_TEMPORAL",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "unr",
+    "url": "https://unr.edu.ar/portal-de-compras-publicas/",
+    "estado_acceso": "OPERATIVA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": "54cd17418f61ca3a624f3f5470aee8c9dc3e3ca4c4370a22c6b40e74da7e64a5",
+    "errores": [],
+    "tipo": "text/html; charset=UTF-8"
+  },
+  {
+    "etapa": "unr",
+    "url": "https://aeropuertorosario.com/wp-json/",
+    "estado_acceso": "OPERATIVA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": "78fecfcb671fb9f60d1eee7c9ea553e9ea487ebf867737a5cef50e32f9825db0",
+    "errores": [],
+    "tipo": "application/json; charset=UTF-8"
+  },
+  {
+    "etapa": "unr",
+    "url": "https://aeropuertorosario.com/wp-json/wp/v2/pages/214",
+    "estado_acceso": "OPERATIVA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": "d8e24802c85f67833ef11a061033b2e45ec1b2d31c46a3b3571dc5b073e814d4",
+    "errores": [],
+    "tipo": "application/json; charset=UTF-8"
+  },
+  {
+    "etapa": "unr",
+    "url": "https://aeropuertorosario.com/wp-json/wp/v2/posts?per_page=10",
+    "estado_acceso": "OPERATIVA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": "56126d8f95418546f6d1e6b2df87df29e44969ab953154698128dc60a8e732c9",
+    "errores": [],
+    "tipo": "application/json; charset=UTF-8"
+  },
+  {
+    "etapa": "final",
+    "url": "https://epe.santafe.gov.ar/app2/aperturas",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "HTTPError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "HTTP Error 500: Respuesta HTTP en diagnóstico público",
+        "http_status": 500,
+        "causa": "ERROR_SERVIDOR_TEMPORAL",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "final",
+    "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "OSError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "curl 52: curl: (52) Empty reply from server",
+        "causa": "ERROR_RED_POR_CONFIRMAR",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "final",
+    "url": "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "URLError",
+        "categoria": "RED",
+        "timeout": true,
+        "error": "<urlopen error timed out>",
+        "causa": "TIEMPO_ESPERA",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  },
+  {
+    "etapa": "final",
+    "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-05licitaciones.html",
+    "estado_acceso": "BLOQUEADA",
+    "extraccion_verificada": false,
+    "sha256_respuesta": null,
+    "errores": [
+      {
+        "tipo": "URLError",
+        "categoria": "RED",
+        "timeout": true,
+        "error": "<urlopen error timed out>",
+        "causa": "TIEMPO_ESPERA",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ],
+    "tipo": null
+  }
+]

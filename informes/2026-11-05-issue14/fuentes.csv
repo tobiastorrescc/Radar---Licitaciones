@@ -1,0 +1,9 @@
+id,organismo,url,estado_antes,estado_despues,procedimientos_antes,procedimientos_despues,abiertas_antes,abiertas_despues,segundos_barrido_integrado,segundos_ultima_validacion,run_validacion,error_pendiente,evidencia_extraccion
+fuente-003,EPE,https://www.epe.santafe.gov.ar/app2/aperturas,BLOQUEADA,BLOQUEADA,0,0,0,0,3.148,3.148,42106222026,ERROR_CONEXION_TLS,False
+fuente-087,Gobierno de Santa Fe - Gestiones de Compras,https://www.santafe.gob.ar/gestionesdecompras/site/index.php,BLOQUEADA,BLOQUEADA,0,0,0,0,9.03,9.03,42106222026,TIEMPO_ESPERA,False
+fuente-060,Boletín Oficial de Santa Fe,https://www.santafe.gov.ar/boletinoficial/,BLOQUEADA,BLOQUEADA,0,0,0,0,43.475,43.475,42106222026,TIEMPO_ESPERA,False
+fuente-010,Municipalidad de Cañada de Gómez,https://cdg.gob.ar/transparencia/licitaciones-y-concursos/,BLOQUEADA,BLOQUEADA,0,0,0,0,0.309,0.309,42106222026,RESTRICCION_HTTP,False
+fuente-005,UNR,https://compras.unr.edu.ar/,BLOQUEADA,BLOQUEADA,0,0,0,0,1.513,1.513,42106222026,RESTRICCION_HTTP,False
+fuente-004,ASSA,https://www.aguassantafesinas.com.ar/portal/licitaciones,OPERATIVA,OPERATIVA,3,3,3,3,3.747,3.747,42106222026,,True
+fuente-007,Aeropuerto Internacional Rosario,https://aeropuertorosario.com/institucional/licitaciones/,TIEMPO_FUENTE,TIEMPO_FUENTE,32,152,5,5,120.042,120.042,42106222026,TIEMPO_FUENTE,True
+fuente-026,Poder Judicial de Entre Ríos,https://www.jusentrerios.gov.ar/contrataciones/,TIEMPO_FUENTE,OPERATIVA,58,58,6,8,104.725,84.68,42107794847,,True

@@ -357,7 +357,7 @@
     "ocr": true,
     "adaptador": "epe",
     "capturar_respuestas": true,
-    "ultima_verificacion": "2026-10-31T09:16:06.731213-03:00",
+    "ultima_verificacion": "2026-11-05T17:47:23.906151-03:00",
     "evidencia_verificacion": {
       "github_run_id": 41969428731,
       "origen_red_rosario": null,
@@ -402,6 +402,14 @@
       "procedimientos_con_objeto": 0,
       "criterio": "Número, objeto y enlace oficial; errores y pendientes documentales se conservan",
       "error_acceso": true
+    },
+    "evidencia_verificacion_issue14": {
+      "github_run_id": 42106222026,
+      "procedimientos_verificados": 0,
+      "abiertas_observadas": 0,
+      "estado": "BLOQUEADA",
+      "segundos": 3.148,
+      "error_pendiente": "ERROR_CONEXION_TLS"
     }
   },
   "https://www.aguassantafesinas.com.ar/portal/licitaciones": {
@@ -430,11 +438,19 @@
     "urls_inicio": [
       "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/all?page=0&pageSize=100"
     ],
-    "ultima_verificacion": "2026-10-29T17:48:09.905330-03:00",
+    "ultima_verificacion": "2026-11-05T17:47:23.906151-03:00",
     "evidencia_verificacion": {
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 4,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    },
+    "evidencia_verificacion_issue14": {
+      "github_run_id": 42106222026,
+      "procedimientos_verificados": 3,
+      "abiertas_observadas": 3,
+      "estado": "OPERATIVA",
+      "segundos": 3.747,
+      "error_pendiente": ""
     }
   },
   "https://compras.unr.edu.ar/": {
@@ -459,7 +475,7 @@
     "lote": "cobertura-2026-10-27",
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
-    "ultima_verificacion": "2026-10-29T17:48:10.871323-03:00",
+    "ultima_verificacion": "2026-11-05T17:47:23.906151-03:00",
     "evidencia_verificacion": {
       "github_run_id": 41969428731,
       "origen_red_rosario": null,
@@ -485,6 +501,14 @@
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+    },
+    "evidencia_verificacion_issue14": {
+      "github_run_id": 42106222026,
+      "procedimientos_verificados": 0,
+      "abiertas_observadas": 0,
+      "estado": "BLOQUEADA",
+      "segundos": 1.513,
+      "error_pendiente": "RESTRICCION_HTTP"
     }
   },
   "https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/": {
@@ -532,7 +556,7 @@
     "ocr": true,
     "enriquecer_fichas": true,
     "adaptador": "aeropuerto",
-    "ultima_verificacion": "2026-10-29T17:48:14.559326-03:00",
+    "ultima_verificacion": "2026-11-05T17:47:23.906151-03:00",
     "evidencia_verificacion": {
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 38,
@@ -541,7 +565,15 @@
     "concurrencia_detalles": 3,
     "tiempo_maximo_fuente_segundos": 120,
     "conexion_timeout": 4,
-    "lectura_timeout": 6
+    "lectura_timeout": 6,
+    "evidencia_verificacion_issue14": {
+      "github_run_id": 42106222026,
+      "procedimientos_verificados": 152,
+      "abiertas_observadas": 5,
+      "estado": "TIEMPO_FUENTE",
+      "segundos": 120.042,
+      "error_pendiente": "TIEMPO_FUENTE"
+    }
   },
   "https://www.casilda.gob.ar/web/licitaciones-casilda/": {
     "organismo": "Municipalidad de Casilda",
@@ -631,13 +663,21 @@
     "verificada_funcionando": false,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "ultima_verificacion": "2026-10-29T17:48:25.918383-03:00",
+    "ultima_verificacion": "2026-11-05T17:47:23.906151-03:00",
     "evidencia_verificacion": {
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
     },
-    "barrido_institucional": true
+    "barrido_institucional": true,
+    "evidencia_verificacion_issue14": {
+      "github_run_id": 42106222026,
+      "procedimientos_verificados": 0,
+      "abiertas_observadas": 0,
+      "estado": "BLOQUEADA",
+      "segundos": 0.309,
+      "error_pendiente": "RESTRICCION_HTTP"
+    }
   },
   "https://armstrong.gov.ar/index.php/transparencia": {
     "organismo": "Municipalidad de Armstrong",
@@ -1118,7 +1158,7 @@
     "verificada_funcionando": true,
     "lectura_adjuntos": "necesarios",
     "ocr": true,
-    "ultima_verificacion": "2026-10-29T17:49:07.501757-03:00",
+    "ultima_verificacion": "2026-11-05T17:57:02.380466-03:00",
     "evidencia_verificacion": {
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 51,
@@ -1130,7 +1170,15 @@
     "concurrencia_detalles": 3,
     "tiempo_maximo_fuente_segundos": 120,
     "conexion_timeout": 4,
-    "lectura_timeout": 6
+    "lectura_timeout": 6,
+    "evidencia_verificacion_issue14": {
+      "github_run_id": 42107794847,
+      "procedimientos_verificados": 58,
+      "abiertas_observadas": 8,
+      "estado": "OPERATIVA",
+      "segundos": 84.68,
+      "error_pendiente": ""
+    }
   },
   "https://www.ater.gob.ar/ater2/licitaciones.asp": {
     "organismo": "ATER",
@@ -2114,7 +2162,7 @@
     "adaptador": "boletin-sf",
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
-    "ultima_verificacion": "2026-10-29T17:50:06.370117-03:00",
+    "ultima_verificacion": "2026-11-05T17:47:23.906151-03:00",
     "evidencia_verificacion": {
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 0,
@@ -2123,7 +2171,15 @@
     "boletin_sf_dias": 3,
     "reintentos_transitorios": 1,
     "conexion_timeout": 4,
-    "lectura_timeout": 6
+    "lectura_timeout": 6,
+    "evidencia_verificacion_issue14": {
+      "github_run_id": 42106222026,
+      "procedimientos_verificados": 0,
+      "abiertas_observadas": 0,
+      "estado": "BLOQUEADA",
+      "segundos": 43.475,
+      "error_pendiente": "TIEMPO_ESPERA"
+    }
   },
   "https://www.entrerios.gov.ar/boletin/": {
     "organismo": "Boletín Oficial de Entre Ríos",
@@ -2893,7 +2949,7 @@
     "localidad": "Santa Fe",
     "provincia": "Santa Fe",
     "tipo_portal": "html",
-    "estado_verificacion": "PENDIENTE",
+    "estado_verificacion": "BLOQUEADA",
     "incorporada": true,
     "conector": "publicaciones",
     "verificada_funcionando": false,
@@ -2913,6 +2969,15 @@
     "organismos_multiples": true,
     "reintentos_transitorios": 1,
     "conexion_timeout": 4,
-    "lectura_timeout": 6
+    "lectura_timeout": 6,
+    "ultima_verificacion": "2026-11-05T17:47:23.906151-03:00",
+    "evidencia_verificacion_issue14": {
+      "github_run_id": 42106222026,
+      "procedimientos_verificados": 0,
+      "abiertas_observadas": 0,
+      "estado": "BLOQUEADA",
+      "segundos": 9.03,
+      "error_pendiente": "TIEMPO_ESPERA"
+    }
   }
 }
