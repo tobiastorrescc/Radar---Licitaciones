@@ -19,4 +19,11 @@ class MinplanAvisos(unittest.TestCase):
         iapv=next(x for x in abiertos if x['numero_procedimiento']=='1/2026')
         self.assertIn('IAPV',iapv['organismo']);self.assertIsNone(iapv['presupuesto']) # Dos presupuestos publicados, no reducirlos a uno.
 
+    def test_recepcion_cotizaciones_no_se_inventa_como_apertura(self):
+        html=Path('tests/fixtures/rosario_issue10/minplan-5nov.html').read_text()
+        rs=extractores.extraer(html,'https://www.entrerios.gov.ar/minplan/licitaciones',{'adaptador':'minplan'})[0]
+        r=o.normalizar(next(r for r in rs if 'Antonia' in r['objeto']),'2026-11-05T08:00:00-03:00')
+        self.assertEqual(r['fecha_limite_presentacion'],'2026-11-10');self.assertIsNone(r['fecha_apertura'])
+        self.assertEqual(r['vigencia'],'ABIERTA');self.assertIsNone(r['numero_procedimiento'])
+
 if __name__=='__main__':unittest.main()

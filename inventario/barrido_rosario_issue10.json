@@ -324,6 +324,36 @@
       "urls_inicio": [
         "https://compras.concejorosario.gov.ar/compras"
       ]
+    },
+    {
+      "id": "fuente-052",
+      "organismo": "Municipalidad de Rojas",
+      "localidad": "Rojas",
+      "provincia": "Buenos Aires",
+      "url": "https://transparencia.rojas.gov.ar/index.php?action=17",
+      "tipo_portal": "html_pdf",
+      "estado_verificacion": "OPERATIVA",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://transparencia.rojas.gov.ar/index.php?action=17",
+        "fecha": "2026-10-25",
+        "observacion": "Listado oficial de públicas con objetos indexado"
+      },
+      "verificada_funcionando": true,
+      "lectura_adjuntos": "necesarios",
+      "ocr": true,
+      "urls_inicio": [
+        "https://transparencia.rojas.gov.ar/index.php?action=17",
+        "https://transparencia.rojas.gov.ar/index.php?action=23"
+      ],
+      "ultima_verificacion": "2026-10-29T17:49:59.736224-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 10,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      }
     }
   ]
 }

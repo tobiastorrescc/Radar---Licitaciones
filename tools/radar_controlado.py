@@ -87,9 +87,12 @@ def generar_informe(db,resumen,registros,fuentes,destino):
         '[Consulta completa y búsqueda: index.html](index.html) · [Catálogo completo](catalogo_completo.md) · [Abiertas](oportunidades_abiertas.md) · [Próximas a vencer](oportunidades_proximas_a_vencer.md)','',
         '| Fuente | Estado de consulta | Cobertura estricta | Publicaciones |','|---|---|---|---:|']
     lineas.extend(f"| {f['url']} | {f['estado']} | {f['estado_cobertura']} | {f.get('publicaciones_detectadas',0)} |" for f in fuentes)
-    for tipo in sorted({e['clasificacion_novedad'] for e in eventos}):
-        if tipo=='LINEA_BASE':continue # Todas las filas están en el catálogo, sin alertar miles de antiguas.
-        lineas+=['',f'## {tipo}','',o.reporte([r for r in eventos if r['clasificacion_novedad']==tipo],fecha)]
+    comerciales=[r for r in eventos if r.get('clasificacion_registro')=='PROCEDIMIENTO' and r.get('vigencia')=='ABIERTA' and r.get('clasificacion_novedad') in inc.NOVEDADES]
+    guardar(destino/'novedades_vigentes.json',{'fecha':fecha,'total':len(comerciales),'oportunidades':comerciales})
+    (destino/'novedades_vigentes.md').write_text(o.reporte(comerciales,fecha),encoding='utf-8')
+    lineas+=['','## Oportunidades nuevas y cambios con plazo vigente','',f'{len(comerciales)} oportunidades observadas con vigencia comprobada. Fecha de primera detección no equivale a fecha de publicación.','[Todas las novedades vigentes](novedades_vigentes.md) · [Auditoría completa de eventos e históricos](eventos.md)']
+    for tipo in sorted({e['clasificacion_novedad'] for e in comerciales}):
+        lineas+=['',f'## {tipo}','',o.reporte([r for r in comerciales if r['clasificacion_novedad']==tipo],fecha)]
     lineas[4:4]=[mt.markdown(metricas),'']
     (destino/'reporte_diario.md').write_text('\n'.join(lineas)+'\n',encoding='utf-8')
     filas=[]

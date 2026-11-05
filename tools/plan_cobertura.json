@@ -1,9 +1,9 @@
 {
-  "etapa": "issue10-reintentos-transitorios-y-barrido-ampliado-oficial",
+  "etapa": "issue10-validacion-vigentes-contra-respaldo-real-y-replay",
   "barrido": true,
   "barrido_manifest": "inventario/barrido_rosario_issue10.json",
-  "barrido_por_fuente": 90,
-  "sondear": true,
+  "barrido_por_fuente": 240,
+  "sondear": false,
   "urls_sondeo": [
     "https://transparencia.rojas.gov.ar/index.php?busqueda=1&action=18&input_proveedor=&inputDependencia=&selectEjercicio=2026",
     "https://www.santafe.gob.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-04licitaciones.html",
@@ -15,7 +15,11 @@
   "archivar_auditoria": false,
   "reverificar_ids": [],
   "barrido_ids": [
-    "fuente-001"
+    "fuente-001",
+    "fuente-024",
+    "fuente-052"
   ],
-  "barrido_ampliado": true
+  "barrido_ampliado": false,
+  "captura_run": "41965803234",
+  "contrastar_barrido": true
 }

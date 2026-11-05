@@ -102,6 +102,18 @@ class IncrementalTests(unittest.TestCase):
         piloto.generar_informe(self.db,r,[fila],[],destino)
         html=(destino/'index.html').read_text();self.assertIn('&lt;script&gt;alert(1)',html)
         self.assertNotIn('<script>alert(1)</script>',html);self.assertIn('LINEA_BASE',html)
+    def test_informe_principal_solo_vigentes_auditoria_conserva_vencidas_y_desconocidas(self):
+        inc.registrar(self.db,[self.fila('1/2020')],self.informe())
+        filas=[self.fila('2/2026',objeto='VIGENTE DE CONTROL',fecha_publicacion='2026-10-27',fecha_apertura='2026-11-05'),
+               self.fila('3/2026',objeto='VENCIDA DE CONTROL',fecha_publicacion='2026-10-27',fecha_apertura='2026-10-20'),
+               self.fila('4/2026',objeto='SIN VIGENCIA COMPROBADA',fecha_publicacion='2026-10-27')]
+        r=inc.registrar(self.db,filas,self.informe('dos',fecha='2026-10-27T12:00:00-03:00'))
+        destino=Path(self.tmp.name)/'informe';destino.mkdir()
+        piloto.generar_informe(self.db,r,filas,[],destino)
+        comercial=json.loads((destino/'novedades_vigentes.json').read_text())
+        self.assertEqual(comercial['total'],1);self.assertEqual(comercial['oportunidades'][0]['objeto'],'VIGENTE DE CONTROL')
+        principal=(destino/'reporte_diario.md').read_text();self.assertNotIn('VENCIDA DE CONTROL',principal);self.assertNotIn('SIN VIGENCIA COMPROBADA',principal)
+        auditoria=(destino/'catalogo_completo.json').read_text();self.assertIn('VENCIDA DE CONTROL',auditoria);self.assertIn('SIN VIGENCIA COMPROBADA',auditoria)
     def test_revisar_pendientes_no_repite_urls_ni_requiere_esperar_siete_dias(self):
         from tools.descubrir_fuentes import seleccionar_validaciones
         from datetime import datetime,timezone

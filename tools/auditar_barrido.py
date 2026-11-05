@@ -21,7 +21,7 @@ def main():
     root=Path(a.salida);
     if root==Path('work') or root.is_absolute() or not str(root).startswith('work/'):raise ValueError('Salida fuera de work')
     root.mkdir(parents=True,exist_ok=True)
-    informe=ejecutar(fs,root/'verificacion.json',concurrencia=4,por_fuente=min(90,max(15,int(a.por_fuente or parametros.get('barrido_por_fuente',65)))),total=480)
+    informe=ejecutar(fs,root/'verificacion.json',concurrencia=4,por_fuente=min(240,max(15,int(a.por_fuente or parametros.get('barrido_por_fuente',65)))),total=480)
     rs=registros_checkpoint(informe);validos=[r for r in rs if r.get('clasificacion_registro')=='PROCEDIMIENTO']
     guardar(root/'resultado.json',{'fecha':informe['actualizado'],'run':informe['github_run_id'],'fuentes':fs,'observaciones':informe['observaciones'],'registros':rs,'validos':len(validos),'por_fuente':dict(Counter(r['fuente'] for r in validos)),'descubrimiento_independiente':True,'ocr_nuevo':0})
     print('BARRIDO_REAL '+json.dumps({'fuentes':len(fs),'procedimientos':len(validos),'estados':dict(Counter(f['estado'] for f in informe['observaciones']))},ensure_ascii=False),flush=True)

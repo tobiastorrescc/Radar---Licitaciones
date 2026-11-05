@@ -292,6 +292,7 @@ def extraer(html,url,config=None):
             if tipo and objeto:
                 key=(norm(tipo),norm(objeto),entidad)
                 apertura=next((x.attrs.get('datetime') or x.text for x in n.iter() if x.tag=='time'),None)
+                es_recepcion='recepcion de cotizaciones hasta' in norm(n.text)
                 ubicacion=next((x.text for x in n.iter() if x.clase('contratacion-ubicacion')),None)
                 lugar=re.sub(r'^Ubicación:\s*','',ubicacion or '',flags=re.I).split(',')[0] or None
                 datos={}
@@ -305,7 +306,7 @@ def extraer(html,url,config=None):
                 if monto and len(re.findall(r'\$',monto))>1:monto=None
                 ps_tipo=procesos(tipo);p_tipo=ps_tipo[0] if ps_tipo else None
                 agrupados[key]={'titulo':tipo+' '+objeto,'objeto':objeto,'organismo':entidad or config.get('organismo'),
-                    'procedimiento':p_tipo['procedimiento'] if p_tipo else None,'numero_procedimiento':p_tipo['numero'] if p_tipo else None,'tipo_procedimiento':p_tipo['tipo'] if p_tipo else norm(tipo),'aviso_oficial_sin_numero':not bool(p_tipo),'registro_estructurado':True,'url':url,'evidencia_url':url,'localidad':lugar,'provincia':'Entre Ríos','fecha_apertura_texto':apertura,'presupuesto_texto':monto,'campos_oficiales':datos,
+                    'procedimiento':p_tipo['procedimiento'] if p_tipo else None,'numero_procedimiento':p_tipo['numero'] if p_tipo else None,'tipo_procedimiento':p_tipo['tipo'] if p_tipo else norm(tipo),'aviso_oficial_sin_numero':not bool(p_tipo),'registro_estructurado':True,'url':url,'evidencia_url':url,'localidad':lugar,'provincia':'Entre Ríos','fecha_apertura_texto':None if es_recepcion else apertura,'fecha_limite_presentacion_texto':apertura if es_recepcion else None,'presupuesto_texto':monto,'campos_oficiales':datos,
                     'documentos':[{'url':l['url'],'titulo':l['texto']} for l in n.enlaces(url) if urlsplit(l['url']).path.lower().endswith(ADJUNTOS)],
                     'detalle_completo':True,'evento_publicado':None,'llamado_especial':False,'situacion_publicada':None}
     if config.get('adaptador')=='baradero':

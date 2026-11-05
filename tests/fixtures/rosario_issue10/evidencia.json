@@ -26,5 +26,12 @@
     "github_run": 41269203894,
     "sha256_respuesta": "c78c5c22d9f8cd4068c983f3503ed7e4d31bc8ceb6239ff1e060567a799a60de",
     "transformacion": "Sólo ocho tarjetas DOM, sin cambios de campos"
+  },
+  {
+    "archivo": "minplan-5nov.html",
+    "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+    "sha256_respuesta": "576f452c645715422c7aac7d9da9236270057b95b0affe7bc80c3b881d0cd6e9",
+    "github_run": 41965803234,
+    "transformacion": "Diez tarjetas DOM oficiales, sin scripts ni menú; incluye recepción de cotizaciones distinta de apertura."
   }
 ]

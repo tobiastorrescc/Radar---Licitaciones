@@ -2,6 +2,7 @@
 from collections import Counter
 from datetime import datetime,timedelta
 import json,re
+from urllib.parse import urlsplit
 from pathlib import Path
 import oportunidades as o
 
@@ -23,6 +24,7 @@ def contraste_manual(manual,registros,fecha):
         if not m.get('evidencia_url') or not m.get('fecha_revision') or not m.get('comprobada'):continue
         nombres={o.norm(m.get('organismo')),*[o.norm(a) for a in m.get('organismo_aliases',[])]}
         candidatos=[r for r in registros if provincia(r)==provincia(m) and o.norm(r.get('organismo')) in nombres]
+        candidatos_originales=list(candidatos)
         proc=o.procedimiento_canonico(m)
         if proc:candidatos=[r for r in candidatos if o.procedimiento_canonico(r)==proc and o.convocatoria(r)==o.convocatoria(m)]
         else:
@@ -32,8 +34,19 @@ def contraste_manual(manual,registros,fecha):
         actual=(hoy-datetime.fromisoformat(m['fecha_revision']).date()).days in (0,1)
         directas=[r for r in candidatos.values() if r.get('url')==m.get('url') and m.get('fecha_apertura') and r.get('fecha_apertura')==m['fecha_apertura']]
         estado='DETECTADA' if len(candidatos)==1 or directas else 'AMBIGUA' if candidatos else 'OMITIDA'
-        filas.append({**m,'resultado':estado,'evidencia_reciente':actual,'ids_radar':[r.get('id') for r in candidatos.values()]})
-    return {'alcance':manual.get('alcance','Muestra comprobada, no cobertura global'),'revisiones':manual.get('revisiones',[]),'publicaciones':filas,'por_provincia':{p:{'comprobadas':sum(provincia(r)==p for r in filas),'detectadas':sum(provincia(r)==p and r['resultado']=='DETECTADA' for r in filas),'omitidas':sum(provincia(r)==p and r['resultado']=='OMITIDA' for r in filas),'ambiguas':sum(provincia(r)==p and r['resultado']=='AMBIGUA' for r in filas),'omitidas_historicas':sum(provincia(r)==p and r['resultado']=='OMITIDA' and bool(r.get('historica')) for r in filas),'omitidas_apertura_futura':sum(provincia(r)==p and r['resultado']=='OMITIDA' and str(r.get('fecha_apertura') or '')>hoy.isoformat() for r in filas)} for p in PROVINCIAS}}
+        faltantes=[]
+        if not candidatos:
+            url=urlsplit(m.get('url') or '')
+            if url.hostname in ('www.rosario.gob.ar','rosario.gob.ar') and re.fullmatch(r'/inicio/compras-licitaciones/detalle/\d+',url.path):
+                coincidentes=[r for r in candidatos_originales if urlsplit(r.get('url') or '').path==url.path and urlsplit(r.get('url') or '').hostname in ('www.rosario.gob.ar','rosario.gob.ar')]
+                if coincidentes:
+                    candidatos={o.identidad(r):r for r in coincidentes};estado='DETECTADA_INCOMPLETA';faltantes.append('numero_procedimiento')
+        if estado=='DETECTADA':
+            for campo in ('fecha_apertura','fecha_publicacion'):
+                if m.get(campo) and not any(r.get(campo)==m[campo] for r in candidatos.values()):faltantes.append(campo)
+            if faltantes:estado='DETECTADA_INCOMPLETA'
+        filas.append({**m,'resultado':estado,'campos_pendientes_contraste':faltantes,'evidencia_reciente':actual,'ids_radar':[r.get('id') for r in candidatos.values()]})
+    return {'alcance':manual.get('alcance','Muestra comprobada, no cobertura global'),'revisiones':manual.get('revisiones',[]),'publicaciones':filas,'por_provincia':{p:{'comprobadas':sum(provincia(r)==p for r in filas),'detectadas':sum(provincia(r)==p and r['resultado']=='DETECTADA' for r in filas),'omitidas':sum(provincia(r)==p and r['resultado']=='OMITIDA' for r in filas),'incompletas':sum(provincia(r)==p and r['resultado']=='DETECTADA_INCOMPLETA' for r in filas),'ambiguas':sum(provincia(r)==p and r['resultado']=='AMBIGUA' for r in filas),'omitidas_historicas':sum(provincia(r)==p and r['resultado']=='OMITIDA' and bool(r.get('historica')) for r in filas),'omitidas_apertura_futura':sum(provincia(r)==p and r['resultado']=='OMITIDA' and str(r.get('fecha_apertura') or '')>hoy.isoformat() for r in filas)} for p in PROVINCIAS}}
 
 def generar(db,actuales,eventos,fuentes,fecha,manual=None):
     hoy=datetime.fromisoformat(fecha).astimezone(o.ZONA).date();dias=[(hoy-timedelta(days=i)).isoformat() for i in range(6,-1,-1)]
@@ -44,7 +57,8 @@ def generar(db,actuales,eventos,fuentes,fecha,manual=None):
         if d in dias:dias_observados.add(d)
     for id,f,clave,dato in db.execute("SELECT e.procedimiento,x.fecha,e.corrida,v.dato FROM eventos e JOIN ejecuciones x ON x.id=e.corrida JOIN versiones v ON v.procedimiento=e.procedimiento AND v.huella=e.huella WHERE e.tipo='NUEVO_CONFIRMADO' ORDER BY x.fecha"):
         r=json.loads(dato);d=datetime.fromisoformat(f).astimezone(o.ZONA).date().isoformat();publicada=o.fecha(r.get('fecha_publicacion'))
-        if publicada and (datetime.fromisoformat(d).date()-timedelta(days=3)).isoformat()<=publicada<=d and provincia(r) in PROVINCIAS:confirmadas.setdefault(o.identidad(r),(d,r))
+        vigente=o.normalizar(r,fecha if d==hoy.isoformat() else f).get('vigencia')=='ABIERTA'
+        if vigente and publicada and (datetime.fromisoformat(d).date()-timedelta(days=3)).isoformat()<=publicada<=d and provincia(r) in PROVINCIAS:confirmadas.setdefault(o.identidad(r),(d,r))
     nuevas=[r for d,r in confirmadas.values() if d==hoy.isoformat()]
     fuente_prov={f['url']:provincia(f) for f in fuentes};manual=manual or {'publicaciones':[]}
     auditoria=contraste_manual(manual,actuales,fecha)
@@ -62,7 +76,7 @@ def generar(db,actuales,eventos,fuentes,fecha,manual=None):
 def markdown(m):
     lineas=['## Descubrimiento diario en las tres jurisdicciones','',f"Total de publicaciones genuinamente nuevas confirmadas del día: **{m['total_nuevas_confirmadas']}**.",'','| Provincia | Nuevas confirmadas | Abiertas observadas | Abiertas sólo por historial | Vigencia pendiente | Pago rápido en abiertas | Omitidas / comprobadas en muestra | Fuentes con incidencias |','|---|---:|---:|---:|---:|---:|---|---:|']
     for p,r in m['jurisdicciones'].items():
-        a=r['auditoria_manual'];muestra=f"{a['omitidas']} / {a['comprobadas']}" if a['comprobadas'] else 'Sin muestra comprobada'
+        a=r['auditoria_manual'];muestra=f"{a['omitidas']} omitidas, {a.get('incompletas',0)} incompletas / {a['comprobadas']}" if a['comprobadas'] else 'Sin muestra comprobada'
         lineas.append(f"| {p} | {r['nuevas_confirmadas']} | {r['abiertas_observadas']} | {r['abiertas_solo_historial']} | {r['vigencia_pendiente']} | {r['pago_rapido_verificado_abiertas']} | {muestra} | {len(r['fuentes_con_incidencias'])} |")
     lineas+=['',m['meta_alcance'],m['criterio'],'',f"Promedio de siete días: {m['promedio_7_dias'] if m['promedio_7_dias'] is not None else 'Pendiente: faltan días con ejecución'}. Días disponibles: {m['dias_con_ejecucion']}/7. La muestra manual se limita a sus URLs y fechas de revisión.",'','[Métricas completas](metricas_territoriales.json) · [Comparación de avisos y omisiones](auditoria_manual.json)']
     return '\n'.join(lineas)

@@ -8,7 +8,7 @@ class MetricasTerritoriales(unittest.TestCase):
         self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup)
         self.db=inc.abrir(Path(self.tmp.name)/'estado.sqlite3');self.addCleanup(self.db.close)
     def registro(self,n,prov='Santa Fe',**kw):
-        return {'id':str(n),'organismo':'Municipio de Prueba','provincia':prov,'numero_procedimiento':str(n)+'/2026','tipo_procedimiento':'licitacion publica','objeto':'Compra de materiales','clasificacion_registro':'PROCEDIMIENTO','vigencia':'ABIERTA','observada_esta_corrida':True,'url':'https://prueba.gob.ar/'+str(n),'fecha_publicacion':'2026-10-31',**kw}
+        return {'id':str(n),'organismo':'Municipio de Prueba','provincia':prov,'numero_procedimiento':str(n)+'/2026','tipo_procedimiento':'licitacion publica','objeto':'Compra de materiales','clasificacion_registro':'PROCEDIMIENTO','vigencia':'ABIERTA','observada_esta_corrida':True,'url':'https://prueba.gob.ar/'+str(n),'fecha_publicacion':'2026-10-31','fecha_apertura':'2026-11-03',**kw}
     def evento(self,r,tipo='NUEVO_CONFIRMADO',fecha='2026-11-01T01:00:00+00:00',corrida='uno'):
         self.db.execute('INSERT OR IGNORE INTO ejecuciones VALUES(?,?,?)',(corrida,fecha,'{}'))
         huella=corrida+r['id']
@@ -27,6 +27,21 @@ class MetricasTerritoriales(unittest.TestCase):
         self.evento(self.registro(6,fecha_publicacion=None))
         self.evento(self.registro(7,fecha_publicacion='2020-01-01'))
         m=mt.generar(self.db,[],[],[],'2026-10-31T23:00:00-03:00');self.assertEqual(m['total_nuevas_confirmadas'],1)
+    def test_vencidas_y_vigencia_desconocida_no_integran_meta_comercial(self):
+        self.evento(self.registro(1))
+        self.evento(self.registro(2,fecha_apertura='2026-10-30'))
+        self.evento(self.registro(3,fecha_apertura=None))
+        self.assertEqual(mt.generar(self.db,[],[],[],'2026-10-31T23:00:00-03:00')['total_nuevas_confirmadas'],1)
+
+    def test_ficha_con_expediente_es_incompleta_no_omision_de_url(self):
+        base=self.registro(1,organismo='Municipalidad de Rosario',url='https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38714',numero_procedimiento='88/2026')
+        manual={'publicaciones':[{**base,'comprobada':True,'fecha_revision':'2026-10-31','evidencia_url':base['url']}]}
+        anterior={**base,'numero_procedimiento':'110881/2026','fecha_publicacion':None}
+        a=mt.contraste_manual(manual,[anterior],'2026-10-31T23:00:00-03:00')
+        self.assertEqual(a['publicaciones'][0]['resultado'],'DETECTADA_INCOMPLETA')
+        self.assertEqual(a['por_provincia']['Santa Fe']['incompletas'],1)
+        self.assertEqual(mt.contraste_manual(manual,[base],'2026-10-31T23:00:00-03:00')['publicaciones'][0]['resultado'],'DETECTADA')
+
     def test_abiertas_retenidas_y_pago_rapido_sin_documento_se_distinguen(self):
         valido={'estado':'VERIFICADO','clasificacion':'PLAZO','plazos_dias':[15],'documentos_respaldo':['https://prueba.gob.ar/pliego.pdf']}
         rs=[self.registro(1,pago=valido),self.registro(2,observada_esta_corrida=False,pago={**valido,'plazos_dias':[60]}),self.registro(3,pago={**valido,'documentos_respaldo':[]}),self.registro(4,vigencia='DESCONOCIDA')]
