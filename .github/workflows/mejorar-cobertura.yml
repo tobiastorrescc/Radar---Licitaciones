@@ -27,7 +27,7 @@ jobs:
           python - <<'PY' >> "$GITHUB_OUTPUT"
           import json
           d=json.load(open('tools/plan_cobertura.json'))
-          for k in ('sondear','auditar','descubrir','revisar_cobro','barrido','inventariar_historial','validar_rutas','barrido_ampliado','contrastar_barrido'):print(k+'='+str(d.get(k,False)).lower())
+          for k in ('sondear','auditar','descubrir','revisar_cobro','barrido','inventariar_historial','validar_rutas','barrido_ampliado','contrastar_barrido','lectura_liviana'):print(k+'='+str(d.get(k,False)).lower())
           run=str(d.get('reprocesar_run',''))
           if run and not run.isdigit():raise ValueError('Run inválido')
           print('reprocesar_run='+run)
@@ -58,8 +58,20 @@ jobs:
         timeout-minutes: 6
         run: python -u tools/inventariar_historial.py
       - name: Preparar lectura documental
+        if: steps.plan.outputs.lectura_liviana != 'true'
         timeout-minutes: 4
         run: bash tools/preparar_documentos.sh
+      - name: Diagnosticar lectores disponibles sin instalar OCR para descubrir HTML
+        if: steps.plan.outputs.lectura_liviana == 'true'
+        run: |
+          python - <<'PY_CAPACIDADES'
+          import json,shutil,importlib.util
+          from pathlib import Path
+          d={'modo':'DESCUBRIMIENTO_LIVIANO','instalaciones_o_ejecuciones_ocr_nuevas':0,'binarios':{n:bool(shutil.which(n)) for n in ('pdftotext','pdfinfo','tesseract')},'planillas':{n:bool(importlib.util.find_spec(n)) for n in ('openpyxl','xlrd')}}
+          Path('work').mkdir(exist_ok=True)
+          Path('work/capacidades_documentales.json').write_text(json.dumps(d,indent=2)+'\n')
+          print(json.dumps(d))
+          PY_CAPACIDADES
       - uses: actions/cache@v4
         with:
           path: work/cache-documentos
@@ -337,6 +349,7 @@ jobs:
         with:
           name: cobertura-${{ github.run_id }}
           path: |
+            work/capacidades_documentales.json
             work/barrido/
             work/barrido-ampliado/
             work/historial-fuentes/

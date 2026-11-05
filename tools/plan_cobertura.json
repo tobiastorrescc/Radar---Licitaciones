@@ -1,5 +1,5 @@
 {
-  "etapa": "issue10-corregir-descubrimiento-chabas-y-presupuesto-real-rosario",
+  "etapa": "issue10-validacion-html-sin-instalar-ocr-descubrimiento-y-presupuesto-rosario",
   "barrido": true,
   "barrido_manifest": "inventario/barrido_rosario_issue10.json",
   "barrido_por_fuente": 60,
@@ -23,5 +23,6 @@
   "captura_rosario_run": "",
   "desc_total": 180,
   "desc_busquedas": 12,
-  "desc_candidatos": 36
+  "desc_candidatos": 36,
+  "lectura_liviana": true
 }
