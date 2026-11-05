@@ -10,7 +10,7 @@ class EntreRiosAPI(unittest.TestCase):
         self.assertEqual(len(r['oportunidades']),32)
         self.assertEqual(r['estado'],'OPERATIVA')
         self.assertTrue(all(x['objeto'] for x in r['oportunidades']))
-        self.assertTrue(all(x['vigencia']=='ABIERTA' for x in r['oportunidades']))
+        self.assertTrue(all(o.normalizar(x,'2026-10-31T11:00:00-03:00')['vigencia']=='ABIERTA' for x in r['oportunidades']))
         self.assertTrue(all(x.get('fecha_publicacion') is None for x in r['oportunidades']))
         self.assertTrue(all(not x['documentos'] for x in r['oportunidades']))
     def test_categoria_generica_no_duplica_cotejos_del_mismo_objeto(self):

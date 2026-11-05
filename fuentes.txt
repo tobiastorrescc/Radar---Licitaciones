@@ -84,6 +84,3 @@ https://municrespo.gov.ar/digesto/consulta.php?s=consulta
 https://www.concejorosario.gov.ar/compras/
 https://compras.concejorosario.gov.ar/
 https://www.santafe.gob.ar/gestionesdecompras/site/index.php
-https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5
-https://villaelisa.gov.ar/transparencia/licitaciones/
-https://villaelisa.gov.ar/transparencia/licitaciones/concursos-de-precios/

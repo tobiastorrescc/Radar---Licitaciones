@@ -19,7 +19,7 @@ class BarridoDescubrimiento(unittest.TestCase):
         from tools.comparar_barrido import comparar
         uno={'organismo':'Comuna','provincia':'Santa Fe','url':'https://oficial.gob.ar/compras/','fuente':'https://oficial.gob.ar/compras/','numero_procedimiento':'1/2026','tipo_procedimiento':'licitacion publica','clasificacion_registro':'PROCEDIMIENTO','vigencia':'ABIERTA','fecha_apertura':'2026-11-04'}
         dos={**uno,'numero_procedimiento':'2/2026'}
-        r=comparar({'registros':[uno]},{'registros':[dos]},[uno])
+        r=comparar({'registros':[uno]},{'registros':[dos],'fecha':'2026-10-31T11:00:00-03:00'},[uno])
         self.assertEqual(r['categorias'],{'VIGENTE_NUEVA_PARA_RADAR':1})
 
     def test_unr_aviso_real_conserva_objeto_y_fechas_sin_descargar_pliego(self):

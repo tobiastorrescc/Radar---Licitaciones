@@ -48,8 +48,6 @@
       "2": "Licitación Pública",
       "5": "Compra Agil"
     },
-    "requerir_ficha": true,
-    "detectar_carga_dinamica": true,
     "estado_revision": "PENDIENTE_PRUEBA_COBERTURA",
     "observacion_mejora": "Seguir fichas /detalle/ y paginación de las tres categorías; contrastar cantidad del portal con extracción real antes de declarar cobertura."
   },
@@ -860,8 +858,6 @@
     "seguir_patrones": [
       "/category/licitaciones-2026/page/"
     ],
-    "requerir_ficha": true,
-    "detectar_carga_dinamica": true,
     "ultima_verificacion": "2026-10-29T17:49:19.564078-03:00",
     "evidencia_verificacion": {
       "github_run_id": 40952155721,
@@ -2480,7 +2476,7 @@
     "enriquecer_fichas": true
   },
   "https://compras.concejorosario.gov.ar/": {
-    "organismo": "Concejo Municipal de Rosario - Portal de Compras",
+    "organismo": "Concejo Municipal de Rosario",
     "localidad": "Rosario",
     "provincia": "Santa Fe",
     "tipo_portal": "html",
@@ -2522,33 +2518,5 @@
     "descubrir_contrataciones": true,
     "priorizar_listados": true,
     "enriquecer_fichas": true
-  },
-  "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5": {
-    "organismo": "Municipalidad de Rosario - Compras Ágiles",
-    "localidad": "Rosario",
-    "provincia": "Santa Fe",
-    "tipo_portal": "html",
-    "estado_verificacion": "PENDIENTE",
-    "incorporada": true,
-    "conector": "publicaciones",
-    "verificada_funcionando": false,
-    "lectura_adjuntos": "necesarios",
-    "ocr": true,
-    "evidencia_descubrimiento": {
-      "metodo": "URL oficial facilitada por usuario; pendiente prueba de extracción nativa",
-      "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5",
-      "fecha": "2026-11-02",
-      "observacion": "Alta de fuente para exploración, no acredita funcionamiento ni oportunidades vigentes"
-    },
-    "descubrir_menu": true,
-    "descubrir_contrataciones": true,
-    "priorizar_listados": true,
-    "enriquecer_fichas": true,
-    "seguir_patrones": [
-      "/inicio/compras-licitaciones/detalle/\\d+",
-      "/inicio/result-busq-compras-licitaciones(?:\\?|$)"
-    ],
-    "requerir_ficha": true,
-    "detectar_carga_dinamica": true
   }
 }

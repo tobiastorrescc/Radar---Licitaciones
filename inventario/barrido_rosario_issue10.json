@@ -1,0 +1,323 @@
+{
+  "fecha": "2026-11-05",
+  "fuentes": [
+    {
+      "id": "fuente-001",
+      "organismo": "Municipalidad de Rosario",
+      "localidad": "Rosario",
+      "provincia": "Santa Fe",
+      "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "tipo_portal": "html",
+      "estado_verificacion": "PARCIAL",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+        "fecha": "2026-10-25",
+        "observacion": "Fuente heredada; pendiente detección estructurada"
+      },
+      "verificada_funcionando": false,
+      "lectura_adjuntos": "necesarios",
+      "ocr": true,
+      "adaptador": "rosario",
+      "urls_inicio": [
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=1",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=2",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=1",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=2",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=3",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=4"
+      ],
+      "seguir_patrones": [
+        "/inicio/result-busq-compras-licitaciones[?]recomendada=apertura&tipoRecomendada=",
+        "/inicio/compras-licitaciones/detalle/\\d+",
+        "/inicio/result-busq-compras-licitaciones(?:\\?|$)"
+      ],
+      "ultima_verificacion": "2026-10-29T17:48:09.897401-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 16,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      },
+      "enriquecer_fichas": true,
+      "priorizar_listados": true,
+      "capturar_respuestas": true,
+      "conexion_timeout": 3,
+      "lectura_timeout": 5,
+      "contextos_listado": {
+        "1": "Licitación Privada",
+        "2": "Licitación Pública",
+        "5": "Compra Agil"
+      },
+      "estado_revision": "PENDIENTE_PRUEBA_COBERTURA",
+      "observacion_mejora": "Seguir fichas /detalle/ y paginación de las tres categorías; contrastar cantidad del portal con extracción real antes de declarar cobertura."
+    },
+    {
+      "id": "fuente-002",
+      "organismo": "Gobierno de Santa Fe",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "url": "https://compras.santafe.gob.ar/",
+      "tipo_portal": "tabla",
+      "estado_verificacion": "BLOQUEADA",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://compras.santafe.gob.ar/",
+        "fecha": "2026-10-25",
+        "observacion": "Cartelera indexada; consulta web directa agotó tiempo"
+      },
+      "verificada_funcionando": false,
+      "lectura_adjuntos": "necesarios",
+      "ocr": true,
+      "conexion_timeout": 12,
+      "lectura_timeout": 12,
+      "ultima_verificacion": "2026-10-29T17:48:09.899334-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 0,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      }
+    },
+    {
+      "id": "fuente-003",
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "tipo_portal": "tabla",
+      "estado_verificacion": "PENDIENTE",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "fecha": "2026-10-25",
+        "observacion": "Listado indexado con publicaciones y enlaces de apertura"
+      },
+      "verificada_funcionando": false,
+      "lectura_adjuntos": "necesarios",
+      "ocr": true,
+      "adaptador": "epe",
+      "capturar_respuestas": true,
+      "ultima_verificacion": "2026-10-31T09:16:06.731213-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 41199939113,
+        "publicaciones_detectadas": 0,
+        "procedimientos_con_objeto": 0,
+        "criterio": "Número, objeto y enlace oficial; errores y pendientes documentales se conservan",
+        "error_acceso": true
+      },
+      "reintentos_transitorios": 1,
+      "conexion_timeout": 4,
+      "lectura_timeout": 6,
+      "urls_inicio": [
+        "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "https://epe.santafe.gov.ar/app2/aperturas"
+      ],
+      "estado_revision": "ERROR_DE_ACCESO"
+    },
+    {
+      "id": "fuente-005",
+      "organismo": "UNR",
+      "localidad": "Rosario",
+      "provincia": "Santa Fe",
+      "url": "https://compras.unr.edu.ar/",
+      "tipo_portal": "siu_diaguita",
+      "estado_verificacion": "BLOQUEADA",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://compras.unr.edu.ar/",
+        "fecha": "2026-10-25",
+        "observacion": "URL enlazada por https://unr.edu.ar/compras-y-licitaciones/; falta inspeccionar listado"
+      },
+      "verificada_funcionando": false,
+      "capturar_respuestas": true,
+      "investigar_scripts": true,
+      "lectura_adjuntos": "necesarios",
+      "ocr": true,
+      "lote": "cobertura-2026-10-27",
+      "descubrir_menu": true,
+      "descubrir_contrataciones": true,
+      "ultima_verificacion": "2026-10-29T17:48:10.871323-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 0,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      }
+    },
+    {
+      "id": "fuente-007",
+      "organismo": "Aeropuerto Internacional Rosario",
+      "localidad": "Rosario",
+      "provincia": "Santa Fe",
+      "url": "https://aeropuertorosario.com/institucional/licitaciones/",
+      "tipo_portal": "html_paginado_pdf",
+      "estado_verificacion": "PARCIAL",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://aeropuertorosario.com/institucional/licitaciones/",
+        "fecha": "2026-10-25",
+        "observacion": "Listado leído por web; fichas y páginas 2 a 5 localizadas"
+      },
+      "verificada_funcionando": false,
+      "lectura_adjuntos": "necesarios",
+      "ocr": true,
+      "enriquecer_fichas": true,
+      "adaptador": "aeropuerto",
+      "ultima_verificacion": "2026-10-29T17:48:14.559326-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 38,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      }
+    },
+    {
+      "id": "fuente-010",
+      "organismo": "Municipalidad de Cañada de Gómez",
+      "localidad": "Cañada de Gómez",
+      "provincia": "Santa Fe",
+      "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+      "tipo_portal": "html_pdf",
+      "estado_verificacion": "BLOQUEADA",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
+        "fecha": "2026-10-25",
+        "observacion": "Listado indexado con convocatoria de vigilancia"
+      },
+      "verificada_funcionando": false,
+      "lectura_adjuntos": "necesarios",
+      "ocr": true,
+      "ultima_verificacion": "2026-10-29T17:48:25.918383-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 0,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      },
+      "barrido_institucional": true
+    },
+    {
+      "id": "fuente-024",
+      "organismo": "Ministerio de Planeamiento e Infraestructura",
+      "localidad": "Paraná",
+      "provincia": "Entre Ríos",
+      "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "tipo_portal": "html_pdf",
+      "estado_verificacion": "OPERATIVA",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "evidencia_descubrimiento": {
+        "metodo": "web: búsqueda oficial / apertura; no prueba de conector",
+        "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+        "fecha": "2026-10-25",
+        "observacion": "Listado oficial indexado con llamados 2026 e históricos"
+      },
+      "verificada_funcionando": true,
+      "lectura_adjuntos": "necesarios",
+      "ocr": true,
+      "organismos_multiples": true,
+      "adaptador": "minplan",
+      "ultima_verificacion": "2026-10-29T17:49:02.188858-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 516,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      }
+    },
+    {
+      "id": "fuente-060",
+      "organismo": "Boletín Oficial de Santa Fe",
+      "localidad": null,
+      "provincia": "Santa Fe",
+      "url": "https://www.santafe.gov.ar/boletinoficial/",
+      "tipo_portal": "boletin_html",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "estado_verificacion": "BLOQUEADA",
+      "verificada_funcionando": false,
+      "lote": "cobertura-2026-10-27",
+      "capturar_respuestas": true,
+      "investigar_scripts": true,
+      "lectura_adjuntos": "necesarios",
+      "ocr": true,
+      "evidencia_descubrimiento": {
+        "fecha": "2026-10-27",
+        "metodo": "Busqueda y apertura web oficial; pendiente conector real",
+        "url": "https://www.santafe.gov.ar/boletinoficial/"
+      },
+      "organismos_multiples": true,
+      "seguir_patrones": [
+        "ver.php.*licitaciones",
+        "fecha="
+      ],
+      "adaptador": "boletin-sf",
+      "descubrir_menu": true,
+      "descubrir_contrataciones": true,
+      "ultima_verificacion": "2026-10-29T17:50:06.370117-03:00",
+      "evidencia_verificacion": {
+        "github_run_id": 40952155721,
+        "publicaciones_detectadas": 0,
+        "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
+      }
+    },
+    {
+      "id": "fuente-085",
+      "url": "https://www.concejorosario.gov.ar/compras/",
+      "organismo": "Concejo Municipal de Rosario",
+      "localidad": "Rosario",
+      "provincia": "Santa Fe",
+      "tipo_portal": "html",
+      "estado_verificacion": "PENDIENTE",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "verificada_funcionando": false,
+      "lectura_adjuntos": "necesarios",
+      "ocr": true,
+      "evidencia_descubrimiento": {
+        "metodo": "URL oficial facilitada por usuario; pendiente prueba de extracción nativa",
+        "url": "https://www.concejorosario.gov.ar/compras/",
+        "fecha": "2026-11-02",
+        "observacion": "Alta de fuente para exploración, no acredita funcionamiento ni oportunidades vigentes"
+      },
+      "descubrir_menu": true,
+      "descubrir_contrataciones": true,
+      "priorizar_listados": true,
+      "enriquecer_fichas": true
+    },
+    {
+      "id": "fuente-086",
+      "url": "https://compras.concejorosario.gov.ar/",
+      "organismo": "Concejo Municipal de Rosario",
+      "localidad": "Rosario",
+      "provincia": "Santa Fe",
+      "tipo_portal": "html",
+      "estado_verificacion": "PENDIENTE",
+      "incorporada": true,
+      "conector": "publicaciones",
+      "verificada_funcionando": false,
+      "lectura_adjuntos": "necesarios",
+      "ocr": true,
+      "evidencia_descubrimiento": {
+        "metodo": "URL oficial facilitada por usuario; pendiente prueba de extracción nativa",
+        "url": "https://compras.concejorosario.gov.ar/",
+        "fecha": "2026-11-02",
+        "observacion": "Alta de fuente para exploración, no acredita funcionamiento ni oportunidades vigentes"
+      },
+      "descubrir_menu": true,
+      "descubrir_contrataciones": true,
+      "priorizar_listados": true,
+      "enriquecer_fichas": true
+    }
+  ]
+}

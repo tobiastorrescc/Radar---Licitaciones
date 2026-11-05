@@ -1,94 +1,17 @@
 {
-  "etapa": "diagnostico-vigentes-acceso-alternativo-y-23-rutas",
+  "etapa": "issue10-baseline-rosario-concejo-y-fuentes-criticas",
+  "barrido": true,
+  "barrido_manifest": "inventario/barrido_rosario_issue10.json",
+  "barrido_por_fuente": 90,
   "sondear": true,
   "urls_sondeo": [
-    "https://www.santafe.gob.ar/boletinoficial/recursos/boletines/pdf/2026/10/BO30102026.pdf",
-    "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/pdf/2026/10/BO30102026.pdf",
-    "https://www.santafe.gob.ar/boletinoficial/ver.php?seccion=2026%2F2026-10-30licitaciones.html",
-    "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026/2026-10-29licitaciones.html",
-    "https://www.santafe.gob.ar/boletinoficial/verPdf.php?archivo=recursos%2Fboletines%2Fpdf%2F2026%2F10%2FBO30102026.pdf",
-    "https://www.santafe.gov.ar/gestionesdecompras/",
-    "https://compras.santafe.gob.ar/",
-    "https://compras.santafe.gov.ar/",
-    "https://www.epe.santafe.gov.ar/app2/aperturas",
-    "https://epe.santafe.gov.ar/app2/compras",
-    "https://compras.unr.edu.ar/",
-    "https://sanjose.gob.ar/concursos-licitaciones/",
-    "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/"
+    "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones",
+    "https://www.concejorosario.gov.ar/compras/",
+    "https://compras.concejorosario.gov.ar/",
+    "https://www.santafe.gob.ar/gestionesdecompras/site/index.php"
   ],
-  "peticiones": [
-    {
-      "url": "https://www.santafe.gob.ar/boletinoficial/recursos/boletines/pdf/2026/10/BO30102026.pdf",
-      "transporte": "curl",
-      "tls_max": "1.2"
-    },
-    {
-      "url": "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/pdf/2026/10/BO30102026.pdf",
-      "transporte": "curl",
-      "tls_max": "1.2"
-    },
-    {
-      "url": "https://www.santafe.gob.ar/boletinoficial/ver.php?seccion=2026%2F2026-10-30licitaciones.html",
-      "transporte": "curl",
-      "tls_max": "1.2"
-    },
-    {
-      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026/2026-10-29licitaciones.html",
-      "transporte": "curl",
-      "tls_max": "1.2"
-    },
-    {
-      "url": "https://www.santafe.gob.ar/boletinoficial/verPdf.php?archivo=recursos%2Fboletines%2Fpdf%2F2026%2F10%2FBO30102026.pdf",
-      "transporte": "curl",
-      "tls_max": "1.2"
-    },
-    {
-      "url": "https://www.santafe.gov.ar/gestionesdecompras/",
-      "transporte": "curl",
-      "tls_max": "1.2"
-    },
-    {
-      "url": "https://compras.santafe.gob.ar/",
-      "transporte": "curl",
-      "tls_max": "1.2"
-    },
-    {
-      "url": "https://compras.santafe.gov.ar/",
-      "transporte": "curl",
-      "tls_max": "1.2"
-    },
-    {
-      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
-      "transporte": "curl",
-      "tls_max": "1.2"
-    },
-    {
-      "url": "https://epe.santafe.gov.ar/app2/compras",
-      "transporte": "curl",
-      "tls_max": "1.2"
-    },
-    {
-      "url": "https://compras.unr.edu.ar/",
-      "transporte": "curl",
-      "tls_max": "1.2"
-    },
-    {
-      "url": "https://sanjose.gob.ar/concursos-licitaciones/",
-      "transporte": "curl",
-      "tls_max": "1.2"
-    },
-    {
-      "url": "https://cdg.gob.ar/transparencia/licitaciones-y-concursos/",
-      "transporte": "curl",
-      "tls_max": "1.2"
-    }
-  ],
-  "barrido": true,
-  "barrido_manifest": "inventario/recuperacion_vigentes.json",
-  "barrido_por_fuente": 75,
-  "validar_rutas": true,
   "auditar": false,
   "descubrir": false,
-  "reverificar_ids": [],
-  "archivar_auditoria": false
+  "archivar_auditoria": false,
+  "reverificar_ids": []
 }
