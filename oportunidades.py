@@ -300,7 +300,13 @@ def identidad(r):
     proc=procedimiento_canonico(r)
     # Separador de encabezado de boletín, no parte del nombre institucional.
     org=norm(r.get('organismo')).rstrip(' -–—:;')
-    if proc:
+    origen=urlsplit(r.get('url') or '')
+    ficha=re.fullmatch(r'/inicio/compras-licitaciones/detalle/(\d+)',origen.path) if origen.hostname in ('www.rosario.gob.ar','rosario.gob.ar') else None
+    if ficha:
+        # Un ID de ficha oficial representa una convocatoria: corregir expediente
+        # por número de contratación no crea otra oportunidad ni borra el historial.
+        partes=[norm(r.get('provincia')),org,'ficha-rosario-'+ficha[1],convocatoria(r)]
+    elif proc:
         partes=[norm(r.get('provincia')),org or r.get('fuente',''),proc,convocatoria(r),r.get('identidad_ambito','')]
     elif r.get('registro_estructurado') and r.get('numero_oficial_sin_interpretar') and r.get('evidencia_url'):
         # Dos accesos al mismo registro API: igualdad literal comprobada sin inventar número.

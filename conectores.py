@@ -280,6 +280,8 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     time.sleep(min(1,0.25*(2**intento)))
     pending=deque([(extractores.url_publica(u) or u,'LISTADO',{'tipo_contexto':config.get('contextos_listado',{}).get(parse_qs(urlparse(u).query).get('tipoRecomendada',[''])[0])}) for u in config.get('urls_inicio',[fuente])])
     seen=set();items={};errors=[];limits=[];correctas=0;documentos_leidos=0
+    respuestas_detalles={}
+    conteos_rosario={}
     hosts={_host(fuente),*(_host('https://'+h) for h in config.get('dominios_documentos',[]))}
     documento_pendiente={};vacios=[];paginas_api=set()
     modo=config.get('lectura_adjuntos','todos')
@@ -288,7 +290,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
            'paginas_visitadas':len(seen),'paginas_correctas':correctas,'documentos_leidos':documentos_leidos,
            'cobertura_completa':False,'fase':fase,'url_actual':actual,'finalizado':finalizado,
            'alcance':config.get('alcance_publicaciones','Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto'),
-           'intentos_http':list(intentos_http),'documentos_pendientes':list(documento_pendiente.values()),'evidencias_listado_vacio':list(vacios)}
+           'totales_publicados_rosario':{t:sorted(v) for t,v in conteos_rosario.items()},'intentos_http':list(intentos_http),'documentos_pendientes':list(documento_pendiente.values()),'evidencias_listado_vacio':list(vacios)}
         if progreso:progreso(r)
         return r
     def agregar(r):
@@ -384,7 +386,24 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
         if not url or peticion in seen or _host(url) not in hosts:continue
         seen.add(peticion);fase='DESCARGA';snapshot(fase,url)
         try:
-            datos,tipo,final=fetch(url,datos_post=post) if post is not None else fetch(url)
+            if clase=='DETALLE' and config.get('adaptador')=='rosario' and int(config.get('concurrencia_detalles',1))>1:
+                if url not in respuestas_detalles:
+                    from concurrent.futures import ThreadPoolExecutor
+                    lote=[url]
+                    for u,c,_ in pending:
+                        u=extractores.url_publica(u)
+                        if c=='DETALLE' and u and u not in seen and u not in lote and u not in respuestas_detalles and _host(u) in hosts:lote.append(u)
+                        if len(lote)>=min(3,int(config['concurrencia_detalles'])):break
+                    def obtener(u):
+                        try:return u,(True,fetch(u))
+                        except Exception as e:return u,(False,e)
+                    # Sólo HTTP en paralelo: análisis y checkpoints permanecen secuenciales.
+                    with ThreadPoolExecutor(max_workers=min(3,int(config['concurrencia_detalles']))) as pool:
+                        respuestas_detalles.update(pool.map(obtener,lote))
+                ok,respuesta=respuestas_detalles.pop(url)
+                if not ok:raise respuesta
+                datos,tipo,final=respuesta
+            else:datos,tipo,final=fetch(url,datos_post=post) if post is not None else fetch(url)
             fase='EXTRACCION';snapshot(fase,url)
             if _host(final) not in hosts:raise ValueError('Redirección fuera de dominios oficiales declarados')
             if config.get('barrido_institucional') and ('rss' in tipo.lower() or 'atom+xml' in tipo.lower() or ('xml' in tipo.lower() and re.search(br'<(?:rss|feed)\b',datos[:1000]))):
@@ -485,6 +504,14 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 pending.append((endpoint,'DATATABLES',{'post':parametros}))
             pagina_config={**config,**(referencia if isinstance(referencia,dict) else {})}
             registros,links,dom=extractores.extraer(html,final,pagina_config)
+            if config.get('adaptador')=='rosario' and clase=='LISTADO':
+                for nodo in dom.root.iter():
+                    if nodo.clase('contrataciones-resumen__conteo-item'):
+                        m=re.match(r'^(\d+)\s+(.+)$',nodo.text.strip())
+                        if m:conteos_rosario.setdefault(normalizar(m[2]),set()).add(int(m[1]))
+                    elif nodo.clase('contrataciones-resumen__total-titulo') and normalizar(nodo.text)!='contrataciones':
+                        numero=next((x.text for x in nodo.parent.iter() if x.tag=='strong' and x.text.isdigit()),None)
+                        if numero:conteos_rosario.setdefault(normalizar(nodo.text),set()).add(int(numero))
             if config.get('adaptador')=='vgg':
                 from extractores_lotes import endpoints_vgg
                 for endpoint in endpoints_vgg(dom,html,final):pending.append((endpoint,'LISTADO',None))
@@ -504,6 +531,12 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 r['rango_evidencia']=3 if clase=='DETALLE' else 1
                 if clase=='DETALLE':r['texto_documento']=r['titulo']
                 if config.get('requerir_ficha') and clase=='LISTADO':r['detalle_completo']=False
+                if (config.get('adaptador')=='rosario' and clase=='DETALLE' and referencia in items
+                    and r.get('id_origen') and r.get('id_origen')==items[referencia].get('id_origen')
+                    and extractores.url_publica(r['url'])==extractores.url_publica(items[referencia]['url'])):
+                    # El listado muestra expediente; la ficha publica número de contratación.
+                    previo=items.pop(referencia)
+                    r={**previo,**r,'texto_listado':previo.get('texto_listado') or previo.get('titulo')}
                 key=agregar(r)
                 if clase=='DETALLE' and referencia in items and oportunidades.procedimiento_canonico(r)==oportunidades.procedimiento_canonico(items[referencia]):
                     detalle={**r,'texto_documento':r['titulo'],'rango_evidencia':3}
@@ -535,6 +568,10 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     navegar=navegar or bool(re.search(r'licitacion(?:es)?|concursos? de precios|compras|contrataciones|bolet(?:in|ines) oficial(?:es)?',et))
                 if config.get('barrido_institucional') and clase=='LISTADO' and len(et)<120:
                     navegar=navegar or bool(re.fullmatch(r'(?:todas? las? )?(?:noticias|novedades|boletines?(?: oficiales?)?|decretos|resoluciones|publicaciones administrativas|transparencia|gobierno abierto|cuentas claras|informacion publica|normativa municipal|digesto municipal)',et))
+                if config.get('adaptador')=='rosario' and re.fullmatch(r'/inicio/compras-licitaciones/detalle/\d+',path):
+                    # Nunca reclasificar la ficha como LISTADO por seguir_patrones.
+                    if not any(u==destino and c=='DETALLE' for u,c,_ in pending):pending.append((destino,'DETALLE',None))
+                    continue
                 if pagina or navegar:
                     contexto={'tipo_contexto':l.get('tipo_contexto',pagina_config.get('tipo_contexto'))}
                     pending.append((destino,'LISTADO',contexto))
@@ -551,6 +588,9 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     # manteniendo todos los anteriores en la cola y en la auditoría.
                     anios=re.findall(r'(?<!\d)20\d{2}(?!\d)',urlparse(u).path+'?'+urlparse(u).query)
                 # Presupuesto de lectura: documentos recientes primero; no se descarta el archivo.
+                if config.get('adaptador')=='rosario' and c=='DETALLE' and config.get('priorizar_listados'):
+                    ficha=re.search(r'/detalle/(\d+)',u)
+                    return (1,-int(ficha[1]) if ficha else 0,0,'',u)
                 if config.get('adaptador')=='sibom':
                     boletin=re.search(r'/bulletins/(\d+)',u)
                     return (0 if c=='LISTADO' else 1,-int(boletin[1]) if boletin else 0,u)
@@ -564,6 +604,10 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             snapshot('PAGINA_FINALIZADA',url)
             if isinstance(e,HTTPError) and e.code==429:
                 limits.append('HTTP_429_REINTENTO_POSPUESTO');break
+    if config.get('adaptador')=='rosario' and conteos_rosario:
+        reales={t:{r['url'] for r in items.values() if r.get('tipo_procedimiento')==t} for t in conteos_rosario}
+        faltantes={t:{'publicadas':max(v),'extraidas':len(reales.get(t,set()))} for t,v in conteos_rosario.items() if len(reales.get(t,set()))<max(v)}
+        if faltantes:errors.append({'url':fuente,'tipo':'ConteoRosarioIncompleto','categoria':'EXTRACCION','timeout':False,'error':'El recorrido no alcanza el total publicado por el portal; no se declara cobertura completa','por_tipo':faltantes})
     incompletas=[r['id'] for r in items.values() if not r.get('detalle_completo') and not r.get('documento_desglosado')]
     if incompletas:
         errors.append({'url':fuente,'tipo':'DetalleIncompleto','categoria':'EXTRACCION','timeout':False,

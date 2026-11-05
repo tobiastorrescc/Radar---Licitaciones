@@ -1,17 +1,21 @@
 {
-  "etapa": "issue10-baseline-rosario-concejo-y-fuentes-criticas",
+  "etapa": "issue10-fichas-oficiales-rosario-y-concejo-integradas",
   "barrido": true,
   "barrido_manifest": "inventario/barrido_rosario_issue10.json",
   "barrido_por_fuente": 90,
   "sondear": true,
   "urls_sondeo": [
-    "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones",
-    "https://www.concejorosario.gov.ar/compras/",
-    "https://compras.concejorosario.gov.ar/",
-    "https://www.santafe.gob.ar/gestionesdecompras/site/index.php"
+    "https://compras.concejorosario.gov.ar/compras/3209",
+    "https://compras.concejorosario.gov.ar/compras/3185"
   ],
   "auditar": false,
   "descubrir": false,
   "archivar_auditoria": false,
-  "reverificar_ids": []
+  "reverificar_ids": [],
+  "barrido_ids": [
+    "fuente-001",
+    "fuente-024",
+    "fuente-085",
+    "fuente-086"
+  ]
 }

@@ -23,16 +23,10 @@
       "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
       "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=1",
       "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=2",
-      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5",
-      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=1",
-      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=2",
-      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=3",
-      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5&page=4"
+      "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5"
     ],
     "seguir_patrones": [
-      "/inicio/result-busq-compras-licitaciones[?]recomendada=apertura&tipoRecomendada=",
-      "/inicio/compras-licitaciones/detalle/\\d+",
-      "/inicio/result-busq-compras-licitaciones(?:\\?|$)"
+      "/inicio/result-busq-compras-licitaciones[?]recomendada=apertura&tipoRecomendada="
     ],
     "ultima_verificacion": "2026-10-29T17:48:09.897401-03:00",
     "evidencia_verificacion": {
@@ -51,7 +45,14 @@
       "5": "Compra Agil"
     },
     "estado_revision": "PENDIENTE_PRUEBA_COBERTURA",
-    "observacion_mejora": "Seguir fichas /detalle/ y paginación de las tres categorías; contrastar cantidad del portal con extracción real antes de declarar cobertura."
+    "observacion_mejora": "Seguir fichas /detalle/ y paginación de las tres categorías; contrastar cantidad del portal con extracción real antes de declarar cobertura.",
+    "requerir_ficha": true,
+    "detectar_carga_dinamica": true,
+    "concurrencia_detalles": 3,
+    "priorizar_fichas_recientes": true,
+    "dominios_documentos": [
+      "apimgw.rosario.gob.ar"
+    ]
   },
   {
     "id": "fuente-002",
@@ -2683,7 +2684,11 @@
     "descubrir_menu": true,
     "descubrir_contrataciones": true,
     "priorizar_listados": true,
-    "enriquecer_fichas": true
+    "enriquecer_fichas": true,
+    "adaptador": "concejo-rosario",
+    "urls_inicio": [
+      "https://compras.concejorosario.gov.ar/compras"
+    ]
   },
   {
     "id": "fuente-087",

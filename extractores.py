@@ -148,6 +148,10 @@ def situacion(texto):
 def extraer(html,url,config=None):
     config=config or {}
     dom=DOM(html);raiz=dom.root
+    if config.get('adaptador')=='rosario' and urlsplit(url).hostname in ('www.rosario.gob.ar','rosario.gob.ar') and re.fullmatch(r'/inicio/compras-licitaciones/detalle/\d+',urlsplit(url).path):
+        # Mismo lector oficial ya utilizado por la revisión manual, ahora en descubrimiento.
+        from tools.ficha_rosario import extraer as ficha_rosario
+        return ficha_rosario(html,url),dom.root.enlaces(url),dom
     if config.get('adaptador')=='villa-elisa' and not urlsplit(url).path.strip('/'):
         # La portada enlaza avisos; no convertir toda su navegación en un objeto.
         return [],dom.root.enlaces(url),dom
@@ -167,6 +171,7 @@ def extraer(html,url,config=None):
     rosario_tarjetas=config.get('adaptador')=='rosario' and any(n.clase('contrataciones-resumen__tarjeta') for n in raiz.iter())
     for n in raiz.iter():
         if excluido(n,allow_aside):continue
+        if config.get('adaptador')=='minplan' and any(p.clase('contratacion') for p in n.padres()):continue
         texto=n.text
         if rosario_tarjetas:
             if not n.clase('contrataciones-resumen__tarjeta'):continue
@@ -238,6 +243,7 @@ def extraer(html,url,config=None):
         detail=next((l['url'] for l in links if not urlsplit(l['url']).path.lower().endswith(ADJUNTOS)
                      and procesos(l['texto'])),None)
         if rosario_tarjetas:detail=next((l['url'] for l in links if '/inicio/compras-licitaciones/detalle/' in l['url']),None)
+        if config.get('adaptador')=='concejo-rosario':detail=next((l['url'] for l in links if re.fullmatch(r'/compras/\d+',urlsplit(l['url']).path) and norm(l['texto'])=='ver detalle'),detail)
         destino=detail or (documents[0]['url'] if documents else url)
         # Campos dedicados, donde existen, evitan confundir número con objeto.
         objeto=next((x.text for x in n.iter() if x.clase('objeto')),None)
@@ -285,8 +291,21 @@ def extraer(html,url,config=None):
             entidad=next((x.text for x in n.iter() if x.clase('contratacion-org')),None)
             if tipo and objeto:
                 key=(norm(tipo),norm(objeto),entidad)
+                apertura=next((x.attrs.get('datetime') or x.text for x in n.iter() if x.tag=='time'),None)
+                ubicacion=next((x.text for x in n.iter() if x.clase('contratacion-ubicacion')),None)
+                lugar=re.sub(r'^Ubicación:\s*','',ubicacion or '',flags=re.I).split(',')[0] or None
+                datos={}
+                for dl in n.iter():
+                    if dl.tag=='dl':
+                        etiqueta=None
+                        for hijo in dl.children:
+                            if isinstance(hijo,Nodo) and hijo.tag=='dt':etiqueta=norm(hijo.text)
+                            elif isinstance(hijo,Nodo) and hijo.tag=='dd' and etiqueta:datos[etiqueta]=hijo.text
+                monto=datos.get('presupuesto oficial')
+                if monto and len(re.findall(r'\$',monto))>1:monto=None
+                ps_tipo=procesos(tipo);p_tipo=ps_tipo[0] if ps_tipo else None
                 agrupados[key]={'titulo':tipo+' '+objeto,'objeto':objeto,'organismo':entidad or config.get('organismo'),
-                    'procedimiento':None,'numero_procedimiento':None,'registro_estructurado':True,'url':url,'evidencia_url':url,
+                    'procedimiento':p_tipo['procedimiento'] if p_tipo else None,'numero_procedimiento':p_tipo['numero'] if p_tipo else None,'tipo_procedimiento':p_tipo['tipo'] if p_tipo else norm(tipo),'aviso_oficial_sin_numero':not bool(p_tipo),'registro_estructurado':True,'url':url,'evidencia_url':url,'localidad':lugar,'provincia':'Entre Ríos','fecha_apertura_texto':apertura,'presupuesto_texto':monto,'campos_oficiales':datos,
                     'documentos':[{'url':l['url'],'titulo':l['texto']} for l in n.enlaces(url) if urlsplit(l['url']).path.lower().endswith(ADJUNTOS)],
                     'detalle_completo':True,'evento_publicado':None,'llamado_especial':False,'situacion_publicada':None}
     if config.get('adaptador')=='baradero':

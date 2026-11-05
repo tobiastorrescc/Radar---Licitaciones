@@ -1,0 +1,30 @@
+[
+  {
+    "archivo": "38714.html",
+    "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38714",
+    "sha256_respuesta": "a7230931f9ffe8fb422a6aa10b0f270f1c32f54d406546a38e73458fda38af59",
+    "github_run": 41962855073,
+    "transformacion": "Recorte DOM de la ficha oficial; sin cambios de campos"
+  },
+  {
+    "archivo": "38616.html",
+    "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38616",
+    "sha256_respuesta": "6fa48b055dac6559e74c91b54e08e4af7f12eeb49d8da5dc69551f8737a90840",
+    "github_run": 41962855073,
+    "transformacion": "Recorte DOM de la ficha oficial; sin cambios de campos"
+  },
+  {
+    "archivo": "listado.html",
+    "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=1&recomendada=apertura&tipoRecomendada=5",
+    "sha256_respuesta": "bfccc649c999f531882e44326cea960f7e2d6d794d018eec93251503ebbfbb90",
+    "github_run": 41962855073,
+    "transformacion": "Recorte DOM: cabecera y todas las tarjetas, sin paginador ni otros menús"
+  },
+  {
+    "archivo": "minplan-tarjetas.html",
+    "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+    "github_run": 41269203894,
+    "sha256_respuesta": "c78c5c22d9f8cd4068c983f3503ed7e4d31bc8ceb6239ff1e060567a799a60de",
+    "transformacion": "Sólo ocho tarjetas DOM, sin cambios de campos"
+  }
+]

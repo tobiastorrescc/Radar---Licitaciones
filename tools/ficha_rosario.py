@@ -29,4 +29,9 @@ def extraer(html,url):
         if campos.get(k):
             try:r[campo]=datetime.strptime(campos[k].strip(),'%d/%m/%Y').date().isoformat();r['evidencias_campos'][campo]={'url':url,'texto':k+': '+campos[k]}
             except ValueError:pass
+    recepcion=campos.get('recepcion de ofertas','')
+    if re.search(r'hasta el dia y hora de apertura',extractores.norm(recepcion)):
+        r['fecha_limite_presentacion_texto']=campos.get('fecha de apertura')
+    if recepcion and re.search(r'oferta en papel|mesa de entradas|sobre cerrado',extractores.norm(dom.root.text)):
+        r['modalidad_presentacion']=['PRESENCIAL']
     return [r]
