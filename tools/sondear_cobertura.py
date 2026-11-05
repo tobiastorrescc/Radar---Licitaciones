@@ -62,7 +62,7 @@ def main():
         u=f['url'];s=urlsplit(u);base=s.scheme+'://'+s.netloc+'/'
         if f.get('incorporada'):urls.setdefault(base,{'url':base,'organismo':f['organismo']})
     plan=json.loads(Path('tools/plan_cobertura.json').read_text())
-    if plan.get('urls_sondeo'):
+    if 'urls_sondeo' in plan:
         urls={u:{'url':u} for u in plan['urls_sondeo']}
     for peticion in plan.get('peticiones',[]):urls[peticion['url']]=peticion
     entradas=root/'entradas';entradas.mkdir(exist_ok=True)

@@ -327,6 +327,10 @@ def fusionar(a,b,ahora=None):
     calidad=lambda r:(r.get('rango_evidencia',0),-len(r.get('campos_desconocidos',[])),bool(r.get('texto_documento')),bool(r.get('detalle_completo')))
     principal,otro=(b,a) if calidad(b)>calidad(a) else (a,b)
     salida=dict(principal)
+    # Un bloque administrativo no reemplaza el objeto concreto ya publicado.
+    administrativo=lambda r:bool(re.match(r'^(?:provision de pliegos|valor del pliego|lugar de presentacion)\s*:',norm(r.get('objeto'))))
+    if administrativo(principal) and otro.get('objeto') and not administrativo(otro):
+        salida['objeto']=otro['objeto'];salida['titulo']=otro.get('titulo') or salida.get('titulo')
     if principal.get('tipo_documento')=='CIRCULAR_ACLARATORIA' and otro.get('tipo_documento')!='CIRCULAR_ACLARATORIA' and otro.get('objeto'):
         salida['objeto']=otro['objeto'];salida['titulo']=otro.get('titulo') or salida.get('titulo');salida['tipo_documento']='CONVOCATORIA_CON_CIRCULARES'
     for k,v in otro.items():

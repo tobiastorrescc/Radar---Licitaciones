@@ -74,6 +74,13 @@ class CriticasIssue14(unittest.TestCase):
         r=conectores.explorar(inicio,{'adaptador':'aeropuerto','concurrencia_detalles':3,'enriquecer_fichas':True,'solo_descubrimiento':True},fetch=fetch)
         self.assertTrue(1<maximo<=3);self.assertEqual(len(calls),len(set(calls)));self.assertEqual(len(r['oportunidades']),2)
 
+    def test_bloque_administrativo_de_la_paz_no_borra_objeto_y_aporta_apertura(self):
+        url='https://www.jusentrerios.gov.ar/compras/concurso-de-precios-no-05-26-por-obra-pintura-y-reparaciones-tribunales-de-la-paz/'
+        base={'url':url,'fuente':'https://www.jusentrerios.gov.ar/contrataciones/','organismo':'Poder Judicial de Entre Ríos','numero_procedimiento':'5/2026','tipo_procedimiento':'concurso de precios','titulo':'Concurso de Precios 05/26 Obra: Pintura y reparaciones Tribunales de La Paz','objeto':'Obra: Pintura y reparaciones Tribunales de La Paz','detalle_completo':True,'rango_evidencia':1}
+        detalle={**base,'titulo':'PROVISION DE PLIEGOS: consultas. APERTURA DE LAS PROPUESTAS: 06 de noviembre de 2026 a las 10:30 horas. DESCARGAS: Concurso de Precios 05-26','objeto':'PROVISION DE PLIEGOS: consultas.','texto_documento':'APERTURA DE LAS PROPUESTAS: 06 de noviembre de 2026 a las 10:30 horas.','rango_evidencia':3}
+        r=o.fusionar(base,detalle,'2026-11-05T08:00:00-03:00')
+        self.assertIn('Pintura y reparaciones',r['objeto']);self.assertEqual(r['fecha_apertura'],'2026-11-06');self.assertEqual(r['vigencia'],'ABIERTA')
+
     def test_alerta_critica_persistente_no_confunde_fallo_con_ausencia(self):
         r=alertas_criticas([{'id':'fuente-003','url':'https://www.epe.santafe.gov.ar/app2/aperturas','estado':'BLOQUEADA','errores':[{'categoria':'RED','causa':'ERROR_CONEXION_TLS'}]},{'id':'fuente-060','url':'https://www.santafe.gov.ar/boletinoficial/','estado':'SIN_PUBLICACIONES'}])
         self.assertEqual(len(r),1);self.assertEqual(r[0]['causas'],['ERROR_CONEXION_TLS'])

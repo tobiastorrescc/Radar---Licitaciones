@@ -1,16 +1,9 @@
 {
-  "etapa": "issue14-contraste-incremental-y-diagnostico-final-criticas",
-  "barrido": false,
+  "etapa": "issue14-validar-objeto-pjer-y-transporte-criticas",
+  "barrido": true,
   "barrido_manifest": "inventario/recuperacion_criticas_issue14.json",
   "barrido_por_fuente": 60,
   "barrido_ids": [
-    "fuente-003",
-    "fuente-087",
-    "fuente-060",
-    "fuente-010",
-    "fuente-005",
-    "fuente-004",
-    "fuente-007",
     "fuente-026"
   ],
   "sondear": true,
@@ -45,6 +38,5 @@
   "descubrir": false,
   "auditar": false,
   "archivar_auditoria": false,
-  "reverificar_ids": [],
-  "captura_run": "42106222026"
+  "reverificar_ids": []
 }
