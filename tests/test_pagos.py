@@ -74,6 +74,8 @@ class PagosTests(unittest.TestCase):
         for n,texto in enumerate(['Forma de pago: a 90 días.','Forma de pago: contra entrega.','Forma de pago: al contado.','Sin información']):
             rs.append(o.normalizar({'titulo':str(n),'url':URL,'pago_evidencias':pagos.extraer(texto,URL,SHA)}))
         orden=sorted(rs,key=o.prioridad);self.assertEqual([r['titulo'] for r in orden],['1','2','0','3'])
+        rs[-1]['llamado_especial']=True
+        self.assertEqual([r['titulo'] for r in sorted(rs,key=o.prioridad)],['3','1','2','0'])
 
 class CacheTests(unittest.TestCase):
     def setUp(self):

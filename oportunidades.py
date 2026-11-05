@@ -67,6 +67,9 @@ def normalizar(r,ahora=None):
     numero_rotulado=extractores.procesos(r.get('numero_procedimiento') or '')
     if len(numero_rotulado)==1:r['numero_procedimiento']=numero_rotulado[0]['numero']
     dato('numero_procedimiento',r.get('numero_procedimiento') or (ps[0]['numero'] if ps else None),r.get('procedimiento'))
+    numero_ficha=any(k.startswith('n') and 'de contratacion' in k and v for k,v in r.get('campos_oficiales',{}).items())
+    if r.get('numero_pendiente_ficha') and not numero_ficha:
+        r['numero_procedimiento']=None;r['procedimiento']=None
     if r.get('numero_procedimiento'):r['numero_procedimiento']=re.sub(r'^(\d+)[–-](20\d{2})$',r'\1/\2',r['numero_procedimiento'])
     dato('tipo_procedimiento',r.get('tipo_procedimiento') or (ps[0]['tipo'] if ps else None),r.get('procedimiento'))
     if r.get('tipo_procedimiento')=='licitacion':
@@ -163,7 +166,7 @@ def normalizar(r,ahora=None):
     objeto=r.get('objeto') or ''
     especifico=re.search(r'\b(?:asunto(?!\s+del?\s+(?:mail|correo))\s*:?|objeto\s*:)\s*(.+?)(?=\s+(?:expediente|presupuesto oficial|fecha (?:y hora )?de apertura|consultas|descargas)\b|$)',objeto,re.I)
     if especifico:r['objeto']=especifico[1].strip()
-    if r.get('detalle_completo') is False:r['objeto']=None
+    if r.get('detalle_completo') is False and not r.get('objeto_listado_verificado'):r['objeto']=None
     r['campos_desconocidos']=[k for k in ('numero_procedimiento','organismo','localidad','provincia','objeto','presupuesto','fecha_apertura','fecha_publicacion','enlace_pliego') if not r.get(k)]
     return r
 
@@ -174,7 +177,7 @@ def prioridad(r):
     try:importe=Decimal(presupuesto.get('importe') or '0')
     except (InvalidOperation,AttributeError):importe=Decimal(0)
     # Monedas diferentes se agrupan; no se convierten ni se estima rentabilidad.
-    return (grupo,not r.get('llamado_especial',False),not bool(presupuesto),presupuesto.get('moneda') or '',-importe,
+    return (not r.get('llamado_especial',False),grupo,not bool(presupuesto),presupuesto.get('moneda') or '',-importe,
             r.get('fecha_hora_limite_presentacion') or r.get('fecha_limite_presentacion') or r.get('fecha_hora_apertura') or r.get('fecha_apertura') or '9999',r.get('titulo',''))
 
 

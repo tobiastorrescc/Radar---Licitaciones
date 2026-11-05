@@ -27,10 +27,19 @@ def cerrar_barrido(entradas,salida,respaldo='piloto_respaldo/diario'):
         for obs in paquete['observaciones']:observaciones[obs['url']]=obs
         for meta in origen.parent.rglob('capturas/*/*.json'):
             m=json.loads(meta.read_text());txt=meta.with_suffix('.txt');u=extractores.url_publica(m.get('url',''))
-            if txt.is_file() and '/inicio/compras-licitaciones/detalle/' in (u or ''):
+            if txt.is_file() and any(p in (u or '') for p in ('/inicio/compras-licitaciones/detalle/','/inicio/result-busq-compras-licitaciones')):
                 capturas[u]=(txt,m,paquete['fecha'],paquete.get('run'))
     fecha=max(fechas);registros=[r for rs in por_fuente.values() for r in rs];releidas=0
+    from urllib.parse import urlsplit,parse_qs
     for url,(txt,meta,f,run) in capturas.items():
+        if '/inicio/result-busq-compras-licitaciones' not in url:continue
+        tipo={'1':'Licitación Privada','2':'Licitación Pública','5':'Compra Agil'}.get(parse_qs(urlsplit(url).query).get('tipoRecomendada',[''])[0])
+        for r in extractores.extraer(txt.read_text(),url,{'adaptador':'rosario','tipo_contexto':tipo})[0]:
+            for i,base in enumerate(registros):
+                if extractores.url_publica(base.get('url',''))==r['url'] and base.get('rango_evidencia',1)<3:
+                    registros[i]=o.normalizar({**base,**r,'rango_evidencia':1,'detalle_completo':False},fecha)
+    for url,(txt,meta,f,run) in capturas.items():
+        if '/inicio/compras-licitaciones/detalle/' not in url:continue
         matches=[i for i,r in enumerate(registros) if extractores.url_publica(r.get('url',''))==url]
         if not matches:continue # No inventar oportunidades fuera del listado observado.
         nuevos=extractores.extraer(txt.read_text(),url,{'adaptador':'rosario'})[0]

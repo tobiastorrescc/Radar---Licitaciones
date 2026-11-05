@@ -1,6 +1,6 @@
 {
   "fecha": "2026-11-05",
-  "alcance": "Muestra dirigida en tres jurisdicciones. Nueve fichas de Rosario revisadas el 5/11 por lectura independiente del portal oficial; controles anteriores se conservan con su fecha, no se presentan como revisión reciente ni cobertura territorial completa.",
+  "alcance": "Muestra dirigida, no censo: nueve fichas de Rosario, cuatro avisos del Ministerio de Planeamiento ER y una licitación de Salto revisados por lectura web independiente el 5/11. Se conservan ocho controles anteriores con su fecha y alcance, sin presentarlos como revisiones actuales.",
   "revisiones": [
     {
       "organismo": "San Nicolás",
@@ -276,8 +276,8 @@
       "localidad": "Rosario",
       "provincia": "Santa Fe",
       "numero_procedimiento": "47/2026",
-      "tipo_procedimiento": "licitacion publica",
-      "objeto": "PROVISIÓN DE CRISTALERÍA",
+      "tipo_procedimiento": "licitacion privada",
+      "objeto": "Trabajos necesarios para poner en condiciones las instalaciones relevadas en el Polideportivo Cristalería, sito en Alberdi 3200 de la ciudad de Rosario",
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38616",
       "evidencia_url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38616",
       "comprobada": true,
@@ -286,6 +286,82 @@
       "fecha_apertura": "2026-11-06",
       "hora_apertura": "09:00",
       "metodo": "Lectura independiente de ficha oficial, sin OCR; número distinto del expediente."
+    },
+    {
+      "id_control": "er-tabossi-emergencia",
+      "organismo": "Coordinación Ministerial del MPeI",
+      "provincia": "Entre Ríos",
+      "localidad": "Tabossi",
+      "objeto": "Reparación Cubiertas de Techos, Instalación Eléctrica e Instalación Sanitaria. Escuela Nº 27",
+      "tipo_procedimiento": "emergencia",
+      "numero_procedimiento": null,
+      "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "evidencia_url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "fecha_revision": "2026-11-05",
+      "comprobada": true,
+      "metodo": "Lectura web independiente de tarjetas oficiales. Fecha de publicación no publicada; no se confunde el número de escuela con procedimiento.",
+      "fecha_limite_presentacion": "2026-11-10"
+    },
+    {
+      "id_control": "er-durazno-emergencia",
+      "organismo": "Coordinación Ministerial del MPeI",
+      "provincia": "Entre Ríos",
+      "localidad": "Durazno",
+      "objeto": "Reparación de Pisos y Perforación de Pozo de Agua. Escuela Nº 18",
+      "tipo_procedimiento": "emergencia",
+      "numero_procedimiento": null,
+      "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "evidencia_url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "fecha_revision": "2026-11-05",
+      "comprobada": true,
+      "metodo": "Lectura web independiente de tarjetas oficiales. Fecha de publicación no publicada; no se confunde el número de escuela con procedimiento.",
+      "fecha_limite_presentacion": "2026-11-11"
+    },
+    {
+      "id_control": "er-lapaz-primera-junta",
+      "organismo": "Dirección General de Arquitectura y Construcciones",
+      "provincia": "Entre Ríos",
+      "localidad": "La Paz",
+      "objeto": "Reparación de pisos Escuela Nº 2 Primera Junta",
+      "tipo_procedimiento": "cotejo de precios",
+      "numero_procedimiento": null,
+      "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "evidencia_url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "fecha_revision": "2026-11-05",
+      "comprobada": true,
+      "metodo": "Lectura web independiente de tarjetas oficiales. Fecha de publicación no publicada; no se confunde el número de escuela con procedimiento.",
+      "fecha_apertura": "2026-11-11"
+    },
+    {
+      "id_control": "er-ceibas-cisterna",
+      "organismo": "Dirección General de Arquitectura y Construcciones",
+      "provincia": "Entre Ríos",
+      "localidad": "Ceibas",
+      "objeto": "Reparación general y colocación de tanque cisterna",
+      "tipo_procedimiento": "cotejo de precios",
+      "numero_procedimiento": null,
+      "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "evidencia_url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "fecha_revision": "2026-11-05",
+      "comprobada": true,
+      "metodo": "Lectura web independiente de tarjetas oficiales. Fecha de publicación no publicada; no se confunde el número de escuela con procedimiento.",
+      "fecha_apertura": "2026-11-12"
+    },
+    {
+      "id_control": "ba-salto-3-2026",
+      "organismo": "Municipalidad de Salto",
+      "provincia": "Buenos Aires",
+      "localidad": "Salto",
+      "numero_procedimiento": "3/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "objeto": "Terminación de obra suspendida en calle Francia y J. C. Salaverry de Salto, Escuela de Educación Secundaria Nº 2 Barrio El Ceibo",
+      "url": "https://salto.gob.ar/licitaciones/",
+      "evidencia_url": "https://salto.gob.ar/licitaciones/",
+      "fecha_revision": "2026-11-05",
+      "comprobada": true,
+      "fecha_apertura": "2026-11-25",
+      "hora_apertura": "10:00",
+      "metodo": "Lectura web independiente del índice oficial actualizado; fecha de publicación y presupuesto no publicados en este aviso."
     }
   ]
 }

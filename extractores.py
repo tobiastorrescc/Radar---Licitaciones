@@ -246,7 +246,8 @@ def extraer(html,url,config=None):
         if config.get('adaptador')=='concejo-rosario':detail=next((l['url'] for l in links if re.fullmatch(r'/compras/\d+',urlsplit(l['url']).path) and norm(l['texto'])=='ver detalle'),detail)
         destino=detail or (documents[0]['url'] if documents else url)
         # Campos dedicados, donde existen, evitan confundir número con objeto.
-        objeto=next((x.text for x in n.iter() if x.clase('objeto')),None)
+        objeto=next((x.text for x in n.iter() if x.clase('objeto') or (rosario_tarjetas and x.clase('contrataciones-resumen__tarjeta-objeto'))),None)
+        objeto_listado_verificado=bool(rosario_tarjetas and objeto)
         if not objeto and config.get('adaptador')=='epe':
             objeto=next((x.text for x in n.iter() if x.tag=='button' and x.text),None)
         celdas=[x for x in n.children if isinstance(x,Nodo) and x.tag=='td']
@@ -266,7 +267,8 @@ def extraer(html,url,config=None):
             'fecha_publicacion_texto':next((v for k,v in campos_tabla.items() if re.fullmatch(r'(?:fecha (?:de )?)?publicacion',k)),None) or next((x.attrs.get('datetime') or x.text for x in n.iter() if x.tag=='time' and ('published' in x.attrs.get('class','') or x.attrs.get('itemprop')=='datePublished')),None),
             'documentos':documents,'evento_publicado':evento,'llamado_especial':bool(evento),
             'fecha_apertura_texto':apertura_epe[0] if apertura_epe else (next((x.text for x in n.children if isinstance(x,Nodo) and x.tag=='td' and re.search(r'\d{1,2}/\d{1,2}/20\d{2}',x.text)),None) if config.get('tipo_tabla') else None),
-            'registro_estructurado':bool(epe),
+            'registro_estructurado':bool(epe or objeto_listado_verificado),
+            **({'objeto_listado_verificado':True,'numero_oficial_sin_interpretar':p['numero'],'numero_pendiente_ficha':True} if objeto_listado_verificado else {}),
             **({'id_origen':re.search(r'/detalle/(\d+)',destino)[1],'identidad_ambito':'ficha-rosario-'+re.search(r'/detalle/(\d+)',destino)[1],'texto_listado':texto} if rosario_tarjetas and re.search(r'/detalle/(\d+)',destino) else {}),
             'evidencia_url':url,'detalle_completo':bool(set(re.findall(r'\b[a-z]{4,}\b',norm(objeto)[p['end']:] if objeto==texto else norm(objeto)))-{'pliego','descargar','anexo','numero','apertura','fecha','vigente','tramite','documento','descarga'}),
             'situacion_publicada':situacion(texto)})

@@ -1,6 +1,6 @@
 {
-  "etapa": "issue10-validacion-vigentes-contra-respaldo-real-y-replay",
-  "barrido": true,
+  "etapa": "issue10-preservar-avisos-con-objeto-aunque-falle-ficha-y-contraste-sin-red",
+  "barrido": false,
   "barrido_manifest": "inventario/barrido_rosario_issue10.json",
   "barrido_por_fuente": 240,
   "sondear": false,
@@ -21,5 +21,6 @@
   ],
   "barrido_ampliado": false,
   "captura_run": "41965803234",
-  "contrastar_barrido": true
+  "contrastar_barrido": true,
+  "captura_rosario_run": "41967362168"
 }

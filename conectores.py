@@ -611,7 +611,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
     incompletas=[r['id'] for r in items.values() if not r.get('detalle_completo') and not r.get('documento_desglosado')]
     if incompletas:
         errors.append({'url':fuente,'tipo':'DetalleIncompleto','categoria':'EXTRACCION','timeout':False,
-                       'error':'Publicaciones identificadas sin objeto completo','publicaciones':incompletas})
+                       'error':'Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso','publicaciones':incompletas})
     estado='OPERATIVA' if items else 'PENDIENTE'
     if not items and vacios and not errors and not limits:estado='SIN_PUBLICACIONES'
     if not correctas and errors:estado='BLOQUEADA' if all(e['categoria'] in ('RED','ACCESO') for e in errors) else 'PENDIENTE'

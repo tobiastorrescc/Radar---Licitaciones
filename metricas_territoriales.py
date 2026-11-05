@@ -24,6 +24,11 @@ def contraste_manual(manual,registros,fecha):
         if not m.get('evidencia_url') or not m.get('fecha_revision') or not m.get('comprobada'):continue
         nombres={o.norm(m.get('organismo')),*[o.norm(a) for a in m.get('organismo_aliases',[])]}
         candidatos=[r for r in registros if provincia(r)==provincia(m) and o.norm(r.get('organismo')) in nombres]
+        ficha=urlsplit(m.get('url') or '')
+        if ficha.hostname in ('www.rosario.gob.ar','rosario.gob.ar') and re.fullmatch(r'/inicio/compras-licitaciones/detalle/\d+',ficha.path):
+            # Dos reparticiones pueden compartir número: el control de una ficha
+            # individual no se satisface con otra convocatoria del mismo municipio.
+            candidatos=[r for r in candidatos if urlsplit(r.get('url') or '').path==ficha.path and urlsplit(r.get('url') or '').hostname in ('www.rosario.gob.ar','rosario.gob.ar')]
         candidatos_originales=list(candidatos)
         proc=o.procedimiento_canonico(m)
         if proc:candidatos=[r for r in candidatos if o.procedimiento_canonico(r)==proc and o.convocatoria(r)==o.convocatoria(m)]
@@ -42,7 +47,7 @@ def contraste_manual(manual,registros,fecha):
                 if coincidentes:
                     candidatos={o.identidad(r):r for r in coincidentes};estado='DETECTADA_INCOMPLETA';faltantes.append('numero_procedimiento')
         if estado=='DETECTADA':
-            for campo in ('fecha_apertura','fecha_publicacion'):
+            for campo in ('fecha_apertura','fecha_limite_presentacion','fecha_publicacion'):
                 if m.get(campo) and not any(r.get(campo)==m[campo] for r in candidatos.values()):faltantes.append(campo)
             if faltantes:estado='DETECTADA_INCOMPLETA'
         filas.append({**m,'resultado':estado,'campos_pendientes_contraste':faltantes,'evidencia_reciente':actual,'ids_radar':[r.get('id') for r in candidatos.values()]})

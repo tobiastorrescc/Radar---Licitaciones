@@ -6,6 +6,18 @@ ROOT=Path('tests/fixtures/rosario_issue10')
 BASE='https://www.rosario.gob.ar/inicio/'
 
 class RosarioIssue10(unittest.TestCase):
+    def test_ficha_inaccesible_no_borra_objeto_publicado_ni_inventa_numero(self):
+        from urllib.error import URLError
+        inicio=BASE+'result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5'
+        def fetch(u):
+            if u!=inicio:raise URLError(TimeoutError('Ficha temporalmente inaccesible'))
+            return (ROOT/'listado.html').read_bytes(),'text/html',u
+        r=conectores.explorar(inicio,{'adaptador':'rosario','tipo_contexto':'Compra Agil','solo_descubrimiento':True,'requerir_ficha':True},fetch=fetch)
+        x=next(x for x in r['oportunidades'] if x['url'].endswith('/38714'))
+        self.assertIn('DESCARTABLES DE CLÍNICA',x['objeto']);self.assertEqual(x['numero_oficial_sin_interpretar'],'110881/2026')
+        self.assertIsNone(x['numero_procedimiento']);self.assertFalse(x['detalle_completo'])
+        self.assertEqual(x['clasificacion_registro'],'PROCEDIMIENTO');self.assertNotEqual(r['estado'],'SIN_PUBLICACIONES')
+
     def test_ficha_real_se_lee_en_descubrimiento_sin_descargar_pliego(self):
         url=BASE+'compras-licitaciones/detalle/38616'
         rs,_,_=extractores.extraer((ROOT/'38616.html').read_text(),url,{'adaptador':'rosario'})

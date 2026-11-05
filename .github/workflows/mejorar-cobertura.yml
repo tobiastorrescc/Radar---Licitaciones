@@ -35,6 +35,9 @@ jobs:
           captura=str(d.get('captura_run',''))
           if captura and not captura.isdigit():raise ValueError('Run de captura inválido')
           print('captura_run='+captura)
+          final=str(d.get('captura_rosario_run',''))
+          if final and not final.isdigit():raise ValueError('Captura Rosario inválida')
+          print('captura_rosario_run='+final)
           comparar=str(d.get('comparar_barrido_run',''))
           if comparar and not comparar.isdigit():raise ValueError('Run comparativo inválido')
           print('comparar_barrido_run='+comparar)
@@ -292,11 +295,27 @@ jobs:
           path: work/control-detalles
           run-id: 41964622976
           github-token: ${{ github.token }}
+      - name: Validar captura final de Rosario
+        if: steps.plan.outputs.captura_rosario_run != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:Number('${{ steps.plan.outputs.captura_rosario_run }}')});
+            if(r.conclusion!=='success'||r.head_branch!=='mejora/radar-auditable'||r.head_repository.full_name!==`${context.repo.owner}/${context.repo.repo}`||r.path!=='.github/workflows/mejorar-cobertura.yml')throw Error('Captura final inválida');
+      - uses: actions/download-artifact@v4
+        if: steps.plan.outputs.captura_rosario_run != ''
+        with:
+          name: cobertura-${{ steps.plan.outputs.captura_rosario_run }}
+          path: work/control-rosario
+          run-id: ${{ steps.plan.outputs.captura_rosario_run }}
+          github-token: ${{ github.token }}
       - name: Contrastar descubrimientos y repetir contra copia del respaldo diario
         if: steps.plan.outputs.contrastar_barrido == 'true'
         timeout-minutes: 6
         run: |
-          python -u tools/reprocesar_lote_capturado.py --barrido work/control-antes/work/barrido/resultado.json --barrido work/control-detalles/work/barrido/resultado.json --barrido work/captura-origen/work/barrido/resultado.json --barrido work/captura-origen/work/barrido-ampliado/resultado.json --barrido work/barrido/resultado.json
+          BARRIDO_FINAL=work/barrido/resultado.json
+          if ! test -f "$BARRIDO_FINAL"; then BARRIDO_FINAL=work/control-rosario/work/barrido/resultado.json; fi
+          python -u tools/reprocesar_lote_capturado.py --barrido work/control-antes/work/barrido/resultado.json --barrido work/control-detalles/work/barrido/resultado.json --barrido work/captura-origen/work/barrido/resultado.json --barrido work/captura-origen/work/barrido-ampliado/resultado.json --barrido "$BARRIDO_FINAL"
       - name: Contrastar todo el historial y revisar informe sin nuevas consultas
         if: steps.plan.outputs.captura_run != '' && steps.plan.outputs.contrastar_barrido != 'true'
         run: python tools/reprocesar_lote_capturado.py

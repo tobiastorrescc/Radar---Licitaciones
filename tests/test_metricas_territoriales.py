@@ -42,6 +42,12 @@ class MetricasTerritoriales(unittest.TestCase):
         self.assertEqual(a['por_provincia']['Santa Fe']['incompletas'],1)
         self.assertEqual(mt.contraste_manual(manual,[base],'2026-10-31T23:00:00-03:00')['publicaciones'][0]['resultado'],'DETECTADA')
 
+    def test_control_rosario_no_se_satisface_con_otro_id_del_mismo_numero(self):
+        base=self.registro(1,organismo='Municipalidad de Rosario',url='https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38714')
+        manual={'publicaciones':[{**base,'comprobada':True,'fecha_revision':'2026-10-31','evidencia_url':base['url']}]}
+        otra={**base,'url':'https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38715'}
+        self.assertEqual(mt.contraste_manual(manual,[otra],'2026-10-31T23:00:00-03:00')['publicaciones'][0]['resultado'],'OMITIDA')
+
     def test_abiertas_retenidas_y_pago_rapido_sin_documento_se_distinguen(self):
         valido={'estado':'VERIFICADO','clasificacion':'PLAZO','plazos_dias':[15],'documentos_respaldo':['https://prueba.gob.ar/pliego.pdf']}
         rs=[self.registro(1,pago=valido),self.registro(2,observada_esta_corrida=False,pago={**valido,'plazos_dias':[60]}),self.registro(3,pago={**valido,'documentos_respaldo':[]}),self.registro(4,vigencia='DESCONOCIDA')]

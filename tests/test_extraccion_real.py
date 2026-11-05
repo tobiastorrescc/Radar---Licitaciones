@@ -73,7 +73,7 @@ class ExtraccionRealTests(unittest.TestCase):
             return inicial.encode(),'text/html',u
         r=c.explorar('https://www.rosario.gob.ar/inicio/compras-y-licitaciones',metadata,fetch=fetch)
         self.assertTrue(any('tipoRecomendada=' in u for u in calls))
-        self.assertTrue(any('123/2026' in p.get('procedimiento','') for p in r['oportunidades']))
+        self.assertTrue(any('123/2026' in (p.get('procedimiento') or p.get('numero_oficial_sin_interpretar') or '') for p in r['oportunidades']))
 
     def test_numero_y_fecha_solos_no_sustituyen_la_ficha(self):
         cf={'requerir_ficha':True,'lectura_adjuntos':'necesarios'}
