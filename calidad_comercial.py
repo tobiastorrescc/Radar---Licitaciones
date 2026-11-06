@@ -10,9 +10,9 @@ def presentacion(registro,fecha):
     r=o.normalizar(registro,fecha);ahora=datetime.fromisoformat(fecha) if isinstance(fecha,str) else fecha
     if not ahora.tzinfo:ahora=ahora.replace(tzinfo=o.ZONA)
     estado='PENDIENTE_VERIFICAR_PRESENTACION';motivo='Apertura futura no acredita por sí sola un cierre de recepción vigente';limite=None
-    if r.get('requiere_revalidacion') or registro.get('observada_esta_corrida') is False:
+    if r['vigencia']=='VENCIDA':estado='VENCIDA_O_CERRADA';motivo=r.get('motivo_vigencia')
+    elif r.get('requiere_revalidacion') or registro.get('observada_esta_corrida') is False:
         estado='PENDIENTE_REVALIDACION';motivo='Evidencia anterior o no observada en esta corrida'
-    elif r['vigencia']=='VENCIDA':estado='VENCIDA_O_CERRADA';motivo=r.get('motivo_vigencia')
     elif r.get('fecha_limite_presentacion'):
         limite=r.get('fecha_hora_limite_presentacion')
         if limite:

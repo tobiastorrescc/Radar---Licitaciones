@@ -15,6 +15,8 @@ class RecuperacionEfectiva(unittest.TestCase):
         r=self.r(fecha_limite_presentacion_texto='19/11/2026 09:00');self.assertTrue(presentacion(r,self.fecha)['presentacion_verificada'])
         self.assertFalse(presentacion({**r,'observada_esta_corrida':False},self.fecha)['presentacion_verificada'])
         self.assertFalse(presentacion({**r,'requiere_revalidacion':True},self.fecha)['presentacion_verificada'])
+        vencida=self.r(fecha_apertura_texto='01/11/2026',requiere_revalidacion=True,observada_esta_corrida=False)
+        self.assertEqual(presentacion(vencida,self.fecha)['estado_comercial'],'VENCIDA_O_CERRADA')
     def test_hora_de_cierre_y_fecha_publicacion_son_independientes(self):
         r=self.r(fecha_limite_presentacion_texto='06/11/2026 07:00',fecha_publicacion_texto='05/11/2026')
         self.assertFalse(presentacion(r,self.fecha)['presentacion_verificada']);self.assertEqual(r['fecha_publicacion'],'2026-11-05')
