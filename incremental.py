@@ -207,6 +207,14 @@ def registrar(db,registros,informe):
             viejo=db.execute('SELECT dato,huella FROM procedimientos WHERE id=?',(clave,)).fetchone()
             anterior=json.loads(viejo[0]) if viejo else None
             archivo_pendiente=bool(anterior and r.get('recuperacion_archivo') and r.get('requiere_revalidacion'))
+            if anterior and r.get('recuperacion_archivo') and not archivo_pendiente:
+                previa=db.execute('SELECT ultima FROM procedimientos WHERE id=?',(clave,)).fetchone()[0]
+                captura=r['recuperacion_archivo'].get('capturado_en')
+                try:
+                    anterior_fecha=datetime.fromisoformat(previa)
+                    if not anterior_fecha.tzinfo:anterior_fecha=anterior_fecha.replace(tzinfo=o.ZONA)
+                    archivo_pendiente=not captura or datetime.fromisoformat(captura)<=anterior_fecha
+                except (ValueError,TypeError):archivo_pendiente=True
             dato=compacto(anterior) if archivo_pendiente else consolidar(anterior,r)
             firma=huella(dato);cambios=[]
             if not viejo:

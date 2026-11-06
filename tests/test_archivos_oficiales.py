@@ -48,6 +48,9 @@ class ArchivosOficiales(unittest.TestCase):
         base={'organismo':'EPE','numero_procedimiento':'7060002931','tipo_procedimiento':'licitacion publica','registro_estructurado':True,'objeto':'Aisladores','titulo':'Licitación Pública 7060002931','url':'https://www.epe.santafe.gov.ar/app2/aperturas','evidencia_url':'https://www.epe.santafe.gov.ar/app2/aperturas','fecha_apertura_texto':'20/11/2026','rango_evidencia':3,'requiere_revalidacion':False}
         viejo={**base,'fecha_apertura_texto':'10/11/2026','rango_evidencia':-1,'requiere_revalidacion':True}
         r=inc.consolidar(base,viejo);self.assertFalse(r['requiere_revalidacion']);self.assertEqual(r['fecha_apertura_texto'],'20/11/2026')
+        copia={**base,'fecha_apertura_texto':'10/11/2026','recuperacion_archivo':{'metodo':'HTTP_OFICIAL'}}
+        unico=a.combinar([base],[copia],'2026-11-06T08:00:00-03:00')
+        self.assertEqual(len(unico),1);self.assertEqual(unico[0]['fecha_apertura'],'2026-11-20')
     def test_recibo_persistente_sobrevive_respaldo_y_restauracion(self):
         from tools import respaldo_piloto as b
         Path('work').mkdir(exist_ok=True)
@@ -63,6 +66,7 @@ class ArchivosOficiales(unittest.TestCase):
     def test_igual_archivo_en_distintos_organismos_no_comparte_recibo(self):
         x={'fuente_id':'uno','url_oficial':'https://uno.gob.ar/','sha256':'abc'}
         self.assertNotEqual(a.clave(x),a.clave({**x,'fuente_id':'dos','url_oficial':'https://dos.gob.ar/'}))
+        self.assertNotEqual(a.clave(x),a.clave({**x,'capturado_en':'2026-11-06T08:00:00-03:00','recibo':{'metodo':'HTTP_OFICIAL'}}))
 
     def test_pdf_boletin_saltea_indice_y_cubre_todos_los_avisos_de_la_seccion(self):
         from fuentes_criticas import seccion_licitaciones
@@ -110,6 +114,20 @@ class ArchivosOficiales(unittest.TestCase):
                 registro=inc.actuales(db,'2026-11-06T08:00:00-03:00','archivo')[0]
                 self.assertFalse(registro['observada_esta_corrida']);self.assertEqual(registro['ultima_deteccion'],base['actualizado']);self.assertEqual(registro['objeto'],'Caños de PVC')
             finally:db.close()
+
+    @unittest.skipUnless(__import__('shutil').which('pdftotext'),'lector PDF no disponible')
+    def test_pdf_con_texto_se_importa_con_lector_real_sin_ocr(self):
+        # PDF sintético de regresión, no evidencia de descarga ni oportunidad nueva.
+        lineas=['VI - LICITACIONES','COMUNA DE RAMAYON','LICITACION PUBLICA N 01/2026','Objeto: Provision de un tractor','Apertura: 08/10/2026 a las 10:30','VII - AVISOS OFICIALES']
+        stream=('BT /F1 12 Tf 50 780 Td '+' '.join('('+l+') Tj 0 -18 Td' for l in lineas)+' ET').encode()
+        objetos=[b'<< /Type /Catalog /Pages 2 0 R >>',b'<< /Type /Pages /Kids [3 0 R] /Count 1 >>',b'<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>',b'<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>',b'<< /Length '+str(len(stream)).encode()+b' >>\nstream\n'+stream+b'\nendstream']
+        pdf=b'%PDF-1.4\n';offsets=[]
+        for i,objeto in enumerate(objetos,1):offsets.append(len(pdf));pdf+=str(i).encode()+b' 0 obj\n'+objeto+b'\nendobj\n'
+        xref=len(pdf);pdf+=b'xref\n0 6\n0000000000 65535 f \n'+b''.join(f'{x:010d} 00000 n \n'.encode() for x in offsets)+b'trailer\n<< /Size 6 /Root 1 0 R >>\nstartxref\n'+str(xref).encode()+b'\n%%EOF\n'
+        with tempfile.TemporaryDirectory() as tmp,patch.dict('os.environ',{'RADAR_CACHE_DOCUMENTOS':str(Path(tmp)/'cache')}):
+            url='https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026/2026-09-18licitaciones.html'
+            e=self.entrada(tmp,pdf,'application/pdf',url,'fuente-060')
+            rs,errores=a.leer(e,tmp,'2026-11-06T08:00:00-03:00');self.assertFalse(errores);self.assertEqual(len(rs),1);self.assertEqual(rs[0]['numero_procedimiento'],'1/2026');self.assertEqual(rs[0]['vigencia'],'VENCIDA')
 
     def test_busqueda_no_importa_snippets_y_no_elude_403(self):
         url='https://www.epe.santafe.gov.ar/app2/aperturas';ficha='https://www.epe.santafe.gov.ar/app2/apertura/19417';calls=[]

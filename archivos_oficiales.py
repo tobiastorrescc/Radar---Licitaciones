@@ -9,7 +9,7 @@ import conectores,extractores,oportunidades as o
 RAIZ=Path('entradas_oficiales')
 
 def clave(entrada):
-    return sha256('|'.join(str(entrada.get(k,'')) for k in ('fuente_id','url_oficial','sha256')).encode()).hexdigest()
+    return sha256(('|'.join(str(entrada.get(k,'')) for k in ('fuente_id','url_oficial','sha256','capturado_en'))+'|'+str(entrada.get('recibo',{}).get('metodo',''))).encode()).hexdigest()
 
 
 def configuracion(entrada):
@@ -62,7 +62,7 @@ def leer(entrada,raiz=RAIZ,ahora=None):
     salida=[]
     for r in rs:
         registro={k:f.get(k) for k in ('organismo','localidad','provincia')}
-        registro.update(r);registro.update(fuente=f['url'],rango_evidencia=-1 if pendiente else 1,requiere_revalidacion=pendiente,
+        registro.update(r);registro.update(fuente=f['url'],rango_evidencia=-1 if pendiente else 3,requiere_revalidacion=pendiente,
             recuperacion_archivo={'sha256':digest,'url_oficial':url,'capturado_en':entrada.get('capturado_en'),'metodo':'ARCHIVO_OFICIAL','procedencia':'RECIBO_HTTP_OFICIAL' if procedencia else 'PROCEDENCIA_PENDIENTE','revalidacion_pendiente':pendiente})
         salida.append(o.normalizar(registro,ahora))
     return o.deduplicar(salida,ahora),errores
@@ -110,3 +110,9 @@ def registrar_recibos(db,informe):
             if obs['estado']!='OPERATIVA':continue
             dato=leer_checkpoint(obs['resultado_archivo']);digest=dato.get('archivo_clave')
             if digest:db.execute('INSERT OR IGNORE INTO meta VALUES (?,?)',('archivo_importado:'+digest,json.dumps({'fecha':informe['actualizado'],'archivo':dato.get('archivo_entrada')})))
+
+
+def combinar(directos,archivos,fecha):
+    # Una copia externa nunca sustituye una observación directa de la misma corrida.
+    ids={o.identidad(r) for r in directos}
+    return o.deduplicar(directos+[r for r in archivos if o.identidad(r) not in ids],fecha)

@@ -130,10 +130,10 @@ def _ejecutar_corrida(raiz,*,total=600,documentos=120,informe_previo=None):
     registros=registros_checkpoint(informe)
     revision={}
     if informe_previo is None:
-        from archivos_oficiales import importar,vistos
+        from archivos_oficiales import importar,vistos,combinar
         importados,revision=importar(carpeta/'importados',vistos=vistos(raiz/'estado.sqlite3'))
         guardar(carpeta/'auditoria_archivos_oficiales.json',revision)
-        registros=o.deduplicar(registros+importados,informe['actualizado'])
+        registros=combinar(registros,importados,informe['actualizado'])
     if enriquecer:comprobar_pliegos.comprobar(registros,informe['actualizado'],config,total=documentos,salida_parcial=carpeta/'documentos_parciales.jsonl')
     guardar(carpeta/'cola_enriquecimiento.json',{'etapa':'ENRIQUECIMIENTO_POSTERIOR','bloquea_descubrimiento':False,'oportunidades':registros})
     registros=[o.normalizar(r,informe['actualizado']) for r in registros]

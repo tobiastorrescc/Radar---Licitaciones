@@ -8,6 +8,7 @@
   "recibo": {
     "metodo": "CAPTURA_ACTIONS_ANTERIOR",
     "sha256_original": "9364597500792a048744542a19dc384912ed21d8a9ad9956aaba884d55b078e9",
-    "transformacion": "Recorte DOM de todas las apertura-item, sin scripts, estilos ni atributos de ejecución. No es una descarga actual."
+    "transformacion": "Recorte DOM de todas las apertura-item, sin scripts, estilos ni atributos de ejecución. No es una descarga actual.",
+    "github_run_id": 40688224634
   }
 }
