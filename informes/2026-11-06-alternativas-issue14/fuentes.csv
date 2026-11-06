@@ -1,0 +1,9 @@
+id,fuente,url,estado_anterior,estado_nuevo,convocatorias_directas,procedimientos_archivo,abiertas_verificadas,nuevas_vigentes_confirmadas,apertura_futura_archivo_sin_revalidar,segundos_barrido_integrado,segundos_ultima_prueba,errores,metodo
+fuente-003,EPE,https://www.epe.santafe.gov.ar/app2/aperturas,BLOQUEADA,BLOQUEADA,0,37,0,0,17,3.017,3.017,ERROR_CONEXION_TLS,HTML oficial archivado + búsqueda de URLs oficiales; acceso directo falla
+fuente-087,Gobierno de Santa Fe - Gestiones de Compras,https://www.santafe.gob.ar/gestionesdecompras/site/index.php,BLOQUEADA,BLOQUEADA,0,0,0,0,0,9.667,18.82,TIEMPO_ESPERA,HTML y tabla imprimible; CSV preparado sin endpoint verificado
+fuente-060,Boletín Oficial de Santa Fe,https://www.santafe.gov.ar/boletinoficial/,BLOQUEADA,BLOQUEADA,0,0,0,0,0,53.773,53.773,TIEMPO_ESPERA,Secciones HTML diarias + PDF completo alternativo + buscador
+fuente-010,Municipalidad de Cañada de Gómez,https://cdg.gob.ar/transparencia/licitaciones-y-concursos/,BLOQUEADA,BLOQUEADA,0,0,0,0,0,0.311,0.311,RESTRICCION_HTTP,Consulta HTML oficial
+fuente-005,UNR,https://compras.unr.edu.ar/,BLOQUEADA,BLOQUEADA,0,0,0,0,0,1.065,1.065,RESTRICCION_HTTP,Consulta HTML oficial
+fuente-004,ASSA,https://www.aguassantafesinas.com.ar/portal/licitaciones,OPERATIVA,OPERATIVA,3,0,3,0,0,3.213,3.213,,API JSON pública
+fuente-007,Aeropuerto Internacional Rosario,https://aeropuertorosario.com/institucional/licitaciones/,PARCIAL,PARCIAL,162,0,5,0,0,120.061,120.061,TIEMPO_FUENTE,"HTML paginado, fichas concurrentes"
+fuente-026,Poder Judicial de Entre Ríos,https://www.jusentrerios.gov.ar/contrataciones/,OPERATIVA,OPERATIVA,58,0,8,0,0,87.619,87.619,,HTML y fichas concurrentes

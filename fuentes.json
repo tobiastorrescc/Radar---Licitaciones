@@ -413,7 +413,17 @@
     },
     "consultas_respaldo": [
       "site:epe.santafe.gov.ar/app2/apertura licitacion"
-    ]
+    ],
+    "evidencia_alternativas_issue14": {
+      "github_run_id": 42139240107,
+      "estado_directo": "BLOQUEADA",
+      "convocatorias_directas": 0,
+      "abiertas_verificadas": 0,
+      "archivo_procesado": 37,
+      "aperturas_futuras_sin_revalidar": 17,
+      "nuevas_vigentes": 0,
+      "errores": "ERROR_CONEXION_TLS"
+    }
   },
   "https://www.aguassantafesinas.com.ar/portal/licitaciones": {
     "organismo": "ASSA",
@@ -454,6 +464,16 @@
       "estado": "OPERATIVA",
       "segundos": 3.747,
       "error_pendiente": ""
+    },
+    "evidencia_alternativas_issue14": {
+      "github_run_id": 42139240107,
+      "estado_directo": "OPERATIVA",
+      "convocatorias_directas": 3,
+      "abiertas_verificadas": 3,
+      "archivo_procesado": 0,
+      "aperturas_futuras_sin_revalidar": 0,
+      "nuevas_vigentes": 0,
+      "errores": ""
     }
   },
   "https://compras.unr.edu.ar/": {
@@ -512,6 +532,16 @@
       "estado": "BLOQUEADA",
       "segundos": 1.513,
       "error_pendiente": "RESTRICCION_HTTP"
+    },
+    "evidencia_alternativas_issue14": {
+      "github_run_id": 42139240107,
+      "estado_directo": "BLOQUEADA",
+      "convocatorias_directas": 0,
+      "abiertas_verificadas": 0,
+      "archivo_procesado": 0,
+      "aperturas_futuras_sin_revalidar": 0,
+      "nuevas_vigentes": 0,
+      "errores": "RESTRICCION_HTTP"
     }
   },
   "https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/": {
@@ -576,6 +606,16 @@
       "estado": "TIEMPO_FUENTE",
       "segundos": 120.042,
       "error_pendiente": "TIEMPO_FUENTE"
+    },
+    "evidencia_alternativas_issue14": {
+      "github_run_id": 42139240107,
+      "estado_directo": "PARCIAL",
+      "convocatorias_directas": 162,
+      "abiertas_verificadas": 5,
+      "archivo_procesado": 0,
+      "aperturas_futuras_sin_revalidar": 0,
+      "nuevas_vigentes": 0,
+      "errores": "TIEMPO_FUENTE"
     }
   },
   "https://www.casilda.gob.ar/web/licitaciones-casilda/": {
@@ -680,6 +720,16 @@
       "estado": "BLOQUEADA",
       "segundos": 0.309,
       "error_pendiente": "RESTRICCION_HTTP"
+    },
+    "evidencia_alternativas_issue14": {
+      "github_run_id": 42139240107,
+      "estado_directo": "BLOQUEADA",
+      "convocatorias_directas": 0,
+      "abiertas_verificadas": 0,
+      "archivo_procesado": 0,
+      "aperturas_futuras_sin_revalidar": 0,
+      "nuevas_vigentes": 0,
+      "errores": "RESTRICCION_HTTP"
     }
   },
   "https://armstrong.gov.ar/index.php/transparencia": {
@@ -1181,6 +1231,16 @@
       "estado": "OPERATIVA",
       "segundos": 84.68,
       "error_pendiente": ""
+    },
+    "evidencia_alternativas_issue14": {
+      "github_run_id": 42139240107,
+      "estado_directo": "OPERATIVA",
+      "convocatorias_directas": 58,
+      "abiertas_verificadas": 8,
+      "archivo_procesado": 0,
+      "aperturas_futuras_sin_revalidar": 0,
+      "nuevas_vigentes": 0,
+      "errores": ""
     }
   },
   "https://www.ater.gob.ar/ater2/licitaciones.asp": {
@@ -2187,7 +2247,17 @@
       "site:santafe.gov.ar/boletinoficial/ver.php licitaciones {anio}"
     ],
     "pdf_diario_alternativo": true,
-    "boletin_edicion_completa": true
+    "boletin_edicion_completa": true,
+    "evidencia_alternativas_issue14": {
+      "github_run_id": 42139240107,
+      "estado_directo": "BLOQUEADA",
+      "convocatorias_directas": 0,
+      "abiertas_verificadas": 0,
+      "archivo_procesado": 0,
+      "aperturas_futuras_sin_revalidar": 0,
+      "nuevas_vigentes": 0,
+      "errores": "TIEMPO_ESPERA"
+    }
   },
   "https://www.entrerios.gov.ar/boletin/": {
     "organismo": "Boletín Oficial de Entre Ríos",
@@ -2996,6 +3066,16 @@
     ],
     "dominios_documentos": [
       "www.santafe.gov.ar"
-    ]
+    ],
+    "evidencia_alternativas_issue14": {
+      "github_run_id": 42139811814,
+      "estado_directo": "BLOQUEADA",
+      "convocatorias_directas": 0,
+      "abiertas_verificadas": 0,
+      "archivo_procesado": 0,
+      "aperturas_futuras_sin_revalidar": 0,
+      "nuevas_vigentes": 0,
+      "errores": "TIEMPO_ESPERA"
+    }
   }
 }
