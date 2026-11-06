@@ -1,6 +1,6 @@
 {
-  "etapa": "alternativas-nov6-validar-host-alternativo-gestiones",
-  "barrido": true,
+  "etapa": "alternativas-nov6-validacion-final-sin-rejuvenecer-archivos",
+  "barrido": false,
   "barrido_manifest": "inventario/recuperacion_criticas_issue14.json",
   "barrido_por_fuente": 60,
   "barrido_ids": [
@@ -13,5 +13,6 @@
   "descubrir": false,
   "auditar": false,
   "archivar_auditoria": false,
-  "reverificar_ids": []
+  "reverificar_ids": [],
+  "captura_run": "42139240107"
 }

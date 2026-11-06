@@ -98,6 +98,19 @@ class ArchivosOficiales(unittest.TestCase):
             (root/'malo.json').unlink();rs,inf=a.importar(root/'segunda',root,vistos={a.clave(d)})
             self.assertFalse(rs);self.assertEqual(inf['ya_importados'],1)
 
+    def test_archivo_pendiente_no_rejuvenece_observacion_previa_ni_reemplaza_sus_datos(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            d=self.entrada(tmp);rs,_=a.leer(d,tmp,'2026-11-06T08:00:00-03:00');directo={**rs[0],'requiere_revalidacion':False,'rango_evidencia':3};directo.pop('recuperacion_archivo')
+            db=inc.abrir(Path(tmp)/'estado.sqlite3');base={'ejecucion_id':'antes','actualizado':'2026-11-05T08:00:00-03:00','estado_ejecucion':'COMPLETADA','resumen':{'configuradas':0,'finalizadas':0},'observaciones':[]}
+            try:
+                inc.registrar(db,[directo],base)
+                copia={**rs[0],'requiere_revalidacion':True,'rango_evidencia':-1,'objeto':'Texto viejo'}
+                r=inc.registrar(db,[copia],{**base,'ejecucion_id':'archivo','actualizado':'2026-11-06T08:00:00-03:00'})
+                self.assertEqual(r['eventos_emitidos'],0)
+                registro=inc.actuales(db,'2026-11-06T08:00:00-03:00','archivo')[0]
+                self.assertFalse(registro['observada_esta_corrida']);self.assertEqual(registro['ultima_deteccion'],base['actualizado']);self.assertEqual(registro['objeto'],'Caños de PVC')
+            finally:db.close()
+
     def test_busqueda_no_importa_snippets_y_no_elude_403(self):
         url='https://www.epe.santafe.gov.ar/app2/aperturas';ficha='https://www.epe.santafe.gov.ar/app2/apertura/19417';calls=[]
         def fetch(u):

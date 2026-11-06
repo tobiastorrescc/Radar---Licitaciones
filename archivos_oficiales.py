@@ -84,6 +84,9 @@ def importar(salida,manifest='entradas_oficiales',total=60,vistos=()):
     informe=ejecutar(fs,destino/'importacion.json',concurrencia=2,por_fuente=40,total=total,
         comando=lambda f,path:[sys.executable,'tools/importar_oficiales.py','--worker',f['archivo_entrada'],'--checkpoint',str(path)])
     informe['ya_importados']=omitidos
+    informe['metodo']='IMPORTACION_LOCAL_ARCHIVOS_OFICIALES; no acredita acceso en vivo al portal'
+    informe['fuentes_recuperadas_en_vivo']=0
+    guardar(destino/'importacion.json',informe)
     rs=[]
     for obs in informe['observaciones']:
         p=Path(obs.get('resultado_archivo',''))

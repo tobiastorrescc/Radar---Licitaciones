@@ -206,7 +206,9 @@ def registrar(db,registros,informe):
             identidad_actual=o.identidad(r)
             viejo=db.execute('SELECT dato,huella FROM procedimientos WHERE id=?',(clave,)).fetchone()
             anterior=json.loads(viejo[0]) if viejo else None
-            dato=consolidar(anterior,r);firma=huella(dato);cambios=[]
+            archivo_pendiente=bool(anterior and r.get('recuperacion_archivo') and r.get('requiere_revalidacion'))
+            dato=compacto(anterior) if archivo_pendiente else consolidar(anterior,r)
+            firma=huella(dato);cambios=[]
             if not viejo:
                 referencia=referencias.get(identidad_actual)
                 tipo='LINEA_BASE' if primera else 'RECUPERACION_LINEA_BASE' if referencia else tipo_nuevo(r,previas,fecha)
@@ -223,8 +225,9 @@ def registrar(db,registros,informe):
                 if not cambios:firma=viejo[1]
             else:tipo='SIN_CAMBIOS'
             tipos[tipo]+=1
+            ultima,vista=(db.execute('SELECT ultima,corrida FROM procedimientos WHERE id=?',(clave,)).fetchone() if archivo_pendiente else (fecha,corrida))
             db.execute('INSERT INTO procedimientos VALUES (?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET ultima=excluded.ultima,corrida=excluded.corrida,huella=excluded.huella,dato=excluded.dato',
-                (clave,fecha,fecha,corrida,firma,serializar(dato)))
+                (clave,fecha,ultima,vista,firma,serializar(dato)))
             if tipo!='SIN_CAMBIOS':
                 db.execute('INSERT OR IGNORE INTO versiones VALUES (?,?,?,?,?)',(clave,firma,fecha,corrida,serializar(dato)))
                 db.execute('INSERT INTO eventos VALUES (?,?,?,?,?)',(corrida,clave,firma,tipo,serializar(cambios)))
