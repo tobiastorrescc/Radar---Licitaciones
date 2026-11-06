@@ -1,0 +1,50 @@
+{
+  "urls_sondeo": [],
+  "peticiones": [
+    {
+      "url": "https://epe.santafe.gov.ar/app2/aperturas",
+      "transporte": "curl",
+      "tls_max": "1.2",
+      "config_extraccion": {
+        "adaptador": "epe",
+        "organismos_multiples": false
+      }
+    },
+    {
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "transporte": "curl",
+      "tls_max": "1.2",
+      "config_extraccion": {
+        "adaptador": "epe",
+        "organismos_multiples": false
+      }
+    },
+    {
+      "url": "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
+      "transporte": "curl",
+      "tls_max": "1.2",
+      "config_extraccion": {
+        "adaptador": "gestiones-sf",
+        "organismos_multiples": true
+      }
+    },
+    {
+      "url": "https://www.santafe.gov.ar/gestionesdecompras/site/output.php?a=consultas.imprimir&anio=2026&estado=AP&limit=10000&start=0",
+      "transporte": "curl",
+      "tls_max": "1.2",
+      "config_extraccion": {
+        "adaptador": "gestiones-sf",
+        "organismos_multiples": true
+      }
+    },
+    {
+      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-05licitaciones.html",
+      "transporte": "curl",
+      "tls_max": "1.2",
+      "config_extraccion": {
+        "adaptador": "boletin-sf",
+        "organismos_multiples": true
+      }
+    }
+  ]
+}

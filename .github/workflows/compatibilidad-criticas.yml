@@ -1,0 +1,31 @@
+name: Compatibilidad TLS de fuentes críticas aislada
+on:
+  push:
+    branches: [mejora/radar-auditable]
+    paths: [tools/plan_compatibilidad.json]
+permissions:
+  contents: read
+concurrency:
+  group: compatibilidad-tls-criticas-aislada
+  cancel-in-progress: false
+jobs:
+  sondear:
+    if: github.ref == 'refs/heads/mejora/radar-auditable'
+    runs-on: windows-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Identificar transporte TLS estándar sin alterar certificados
+        run: curl.exe --version
+      - name: Consultar únicamente rutas oficiales publicadas
+        run: python -u tools/sondear_cobertura.py --plan tools/plan_compatibilidad.json --salida work/compatibilidad
+      - name: Conservar respuestas y métricas incluso ante fallos
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: compatibilidad-criticas-${{ github.run_id }}
+          path: work/compatibilidad/
+          retention-days: 90

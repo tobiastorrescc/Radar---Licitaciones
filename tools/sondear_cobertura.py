@@ -65,7 +65,7 @@ def worker(entrada,salida):
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--worker');p.add_argument('--salida',default='work/sondeo');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--worker');p.add_argument('--plan',default='tools/plan_cobertura.json');p.add_argument('--salida',default='work/sondeo');a=p.parse_args()
     if a.worker:
         inicio=time.monotonic()
         try:worker(a.worker,a.salida)
@@ -82,7 +82,7 @@ def main():
     for f in fs:
         u=f['url'];s=urlsplit(u);base=s.scheme+'://'+s.netloc+'/'
         if f.get('incorporada'):urls.setdefault(base,{'url':base,'organismo':f['organismo']})
-    plan=json.loads(Path('tools/plan_cobertura.json').read_text())
+    plan=json.loads(Path(a.plan).read_text())
     if 'urls_sondeo' in plan:
         urls={u:{'url':u} for u in plan['urls_sondeo']}
     for peticion in plan.get('peticiones',[]):urls[peticion['url']]=peticion
