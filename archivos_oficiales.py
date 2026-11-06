@@ -8,6 +8,10 @@ import conectores,extractores,oportunidades as o
 
 RAIZ=Path('entradas_oficiales')
 
+def clave(entrada):
+    return sha256('|'.join(str(entrada.get(k,'')) for k in ('fuente_id','url_oficial','sha256')).encode()).hexdigest()
+
+
 def configuracion(entrada):
     fs=json.loads(Path('inventario/fuentes.json').read_text())
     f=next((x for x in fs if x['id']==entrada['fuente_id']),None)
@@ -72,7 +76,7 @@ def importar(salida,manifest='entradas_oficiales',total=60,vistos=()):
     if not root.exists():return [],{'archivos':0,'observaciones':[]}
     for p in sorted(root.glob('*.json')):
         try:
-            if json.loads(p.read_text()).get('sha256') in vistos:omitidos+=1;continue
+            if clave(json.loads(p.read_text())) in vistos:omitidos+=1;continue
         except (ValueError,TypeError):pass
         fs.append({'id':'archivo-'+sha256(str(p).encode()).hexdigest()[:20],'url':'archivo://'+p.name,'archivo_entrada':str(p)})
     destino=Path(salida);destino.mkdir(parents=True,exist_ok=True)
@@ -101,5 +105,5 @@ def registrar_recibos(db,informe):
     with db:
         for obs in informe.get('observaciones',[]):
             if obs['estado']!='OPERATIVA':continue
-            dato=leer_checkpoint(obs['resultado_archivo']);digest=dato.get('archivo_sha256')
+            dato=leer_checkpoint(obs['resultado_archivo']);digest=dato.get('archivo_clave')
             if digest:db.execute('INSERT OR IGNORE INTO meta VALUES (?,?)',('archivo_importado:'+digest,json.dumps({'fecha':informe['actualizado'],'archivo':dato.get('archivo_entrada')})))

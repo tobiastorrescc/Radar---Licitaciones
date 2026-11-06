@@ -25,7 +25,7 @@ class ArchivosOficiales(unittest.TestCase):
             for cambio in ({'sha256':'0'*64},{'archivo':'../../etc/passwd'},{'url_oficial':'https://nooficial.example/archivo'},{'capturado_en':'2027-01-01T00:00:00+00:00'},{'capturado_en':'2026-11-06'}):
                 with self.assertRaises(ValueError):a.leer({**d,**cambio},tmp,'2026-11-06T08:00:00-03:00')
     def test_html_y_pdf_boletin_no_exigen_pliego_ni_presupuesto(self):
-        texto='COMUNA DE RAMAYON\nLICITACION PUBLICA N° 1/2026\nObjeto: Provisión de un tractor.\nApertura: 20 de noviembre de 2026 a las 10:00 horas.'
+        texto='VI - LICITACIONES\nCOMUNA DE RAMAYON\nLICITACION PUBLICA N° 1/2026\nObjeto: Provisión de un tractor.\nApertura: 20 de noviembre de 2026 a las 10:00 horas.'
         with tempfile.TemporaryDirectory() as tmp:
             url='https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026/2026-11-05licitaciones.html'
             html=''.join('<p>'+x+'</p>' for x in texto.splitlines())
@@ -40,14 +40,43 @@ class ArchivosOficiales(unittest.TestCase):
             try:
                 inc.registrar(db,rs,informe);segunda=inc.registrar(db,rs,{**informe,'ejecucion_id':'segunda'});self.assertEqual(segunda['eventos_emitidos'],0)
                 self.assertEqual(inc.actuales(db,informe['actualizado'],'segunda')[0]['vigencia'],'DESCONOCIDA')
-                cp=Path(tmp)/'checkpoint.json';cp.write_text(json.dumps({'archivo_sha256':d['sha256']}))
+                cp=Path(tmp)/'checkpoint.json';cp.write_text(json.dumps({'archivo_clave':a.clave(d),'archivo_sha256':d['sha256']}))
                 a.registrar_recibos(db,{'actualizado':informe['actualizado'],'observaciones':[{'estado':'OPERATIVA','resultado_archivo':str(cp)}]})
             finally:db.close()
-            self.assertIn(d['sha256'],a.vistos(path))
+            self.assertIn(a.clave(d),a.vistos(path))
     def test_respaldo_inferior_no_borra_vigencia_o_datos_directos(self):
         base={'organismo':'EPE','numero_procedimiento':'7060002931','tipo_procedimiento':'licitacion publica','registro_estructurado':True,'objeto':'Aisladores','titulo':'Licitación Pública 7060002931','url':'https://www.epe.santafe.gov.ar/app2/aperturas','evidencia_url':'https://www.epe.santafe.gov.ar/app2/aperturas','fecha_apertura_texto':'20/11/2026','rango_evidencia':3,'requiere_revalidacion':False}
         viejo={**base,'fecha_apertura_texto':'10/11/2026','rango_evidencia':-1,'requiere_revalidacion':True}
         r=inc.consolidar(base,viejo);self.assertFalse(r['requiere_revalidacion']);self.assertEqual(r['fecha_apertura_texto'],'20/11/2026')
+    def test_recibo_persistente_sobrevive_respaldo_y_restauracion(self):
+        from tools import respaldo_piloto as b
+        Path('work').mkdir(exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=Path('work').resolve()) as tmp:
+            root=Path(tmp);origen=root/'origen';origen.mkdir();db=inc.abrir(origen/'estado.sqlite3')
+            informe={'ejecucion_id':'uno','actualizado':'2026-11-06T08:00:00-03:00','estado_ejecucion':'COMPLETADA','resumen':{'configuradas':0,'finalizadas':0},'observaciones':[]}
+            try:
+                inc.registrar(db,[],informe)
+                with db:db.execute('INSERT INTO meta VALUES (?,?)',('archivo_importado:abc','{}'))
+            finally:db.close()
+            b.exportar(origen,root/'respaldo');b.restaurar(root/'respaldo',root/'restaurado')
+            self.assertEqual(a.vistos(root/'restaurado/estado.sqlite3'),{'abc'})
+    def test_igual_archivo_en_distintos_organismos_no_comparte_recibo(self):
+        x={'fuente_id':'uno','url_oficial':'https://uno.gob.ar/','sha256':'abc'}
+        self.assertNotEqual(a.clave(x),a.clave({**x,'fuente_id':'dos','url_oficial':'https://dos.gob.ar/'}))
+
+    def test_pdf_boletin_saltea_indice_y_cubre_todos_los_avisos_de_la_seccion(self):
+        from fuentes_criticas import seccion_licitaciones
+        texto='VI - LICITACIONES\nVII - AVISOS OFICIALES\ntexto índice\nVI - LICITACIONES\nCOMUNA DE RAMAYON\nLICITACION PUBLICA 1/2026 tractor\nVI - LICITACIONES\nCOMUNA DE OLIVEROS\nCONCURSO DE PRECIOS 8/2026 caños\nVII - AVISOS OFICIALES\nLICITACION PUBLICA 999/2026 mención ajena'
+        r=seccion_licitaciones(texto);self.assertIn('1/2026',r);self.assertIn('8/2026',r);self.assertNotIn('999/2026',r)
+    def test_tabla_imprimible_y_csv_no_duplican_modalidad(self):
+        from fuentes_criticas import gestiones_html,gestiones_csv
+        import extractores
+        html='<table><tr><th>Apertura</th><th>Tipo y Número</th><th>Objeto</th><th>Organismo</th></tr><tr><td>20/11/2026</td><td>LICITACION PUBLICA 7-2026</td><td>Caños</td><td>Comuna de Ramayón</td></tr></table>'
+        a1=gestiones_html(extractores.DOM(html),self.url)[0]
+        csv='Apertura;N° - Año;Tipo Gestión Modalidad;Objeto;Organismo Licitante\n20/11/2026;7-2026;Licitación Pública Sin Modalidad;Caños;Comuna de Ramayón\n'
+        b=gestiones_csv(csv.encode(),self.url,self.url)[0][0]
+        self.assertEqual(o.identidad(a1),o.identidad(b));self.assertEqual(b['tipo_procedimiento'],'licitacion publica')
+
     def test_busqueda_no_importa_snippets_y_no_elude_403(self):
         url='https://www.epe.santafe.gov.ar/app2/aperturas';ficha='https://www.epe.santafe.gov.ar/app2/apertura/19417';calls=[]
         def fetch(u):

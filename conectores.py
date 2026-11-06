@@ -286,7 +286,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
         for u in reversed(ediciones_santafe(fuente,config.get('boletin_sf_dias',3))):pending.appendleft((u,'LISTADO',{}))
     seen=set();items={};errors=[];limits=[];correctas=0;documentos_leidos=0
     respuestas_detalles={}
-    respaldo_intentado=False;rutas_respaldo=[]
+    respaldo_intentado=False;respaldo_pdf_intentado=False;rutas_respaldo=[]
     conteos_rosario={}
     hosts={_host(fuente),*(_host('https://'+h) for h in config.get('dominios_documentos',[]))}
     documento_pendiente={};vacios=[];paginas_api=set()
@@ -384,8 +384,14 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 if esperados and None not in esperados and esperados<=recuperados:
                     # El enlace colectivo es un índice, no una oportunidad adicional.
                     items[referencia]['documento_desglosado']={'procedimientos':sorted(esperados),'url':url,'sha256':hash_documento}
-    while pending or (not respaldo_intentado and config.get('consultas_respaldo') and not items and (errors or not vacios) and not any(e.get('http_status') in (401,403,429) for e in errors)):
+    while pending or (((not respaldo_intentado and config.get('consultas_respaldo')) or (not respaldo_pdf_intentado and config.get('pdf_diario_alternativo'))) and not items and (errors or not vacios) and not any(e.get('http_status') in (401,403,429) for e in errors)):
         if not pending:
+            if config.get('pdf_diario_alternativo') and not respaldo_pdf_intentado:
+                from fuentes_criticas import pdf_santafe
+                respaldo_pdf_intentado=True
+                pending.append((pdf_santafe(fuente),'DOCUMENTO',None))
+                snapshot('PDF_OFICIAL_ALTERNATIVO')
+                continue
             respaldo_intentado=True
             from tools.descubrir_fuentes import rss
             for consulta in config['consultas_respaldo']:

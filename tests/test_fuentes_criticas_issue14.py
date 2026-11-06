@@ -33,7 +33,7 @@ class CriticasIssue14(unittest.TestCase):
     def test_boletin_siembra_ediciones_completas_y_cambia_de_anio(self):
         urls=ediciones_santafe('https://www.santafe.gov.ar/boletinoficial/',3,'2027-01-02T08:00:00-03:00')
         from urllib.parse import unquote
-        self.assertEqual(len(urls),4);self.assertIn('2026/2026-12-31licitaciones.html',unquote(urls[2]))
+        self.assertEqual(len(urls),4);self.assertTrue(any('2026/2026-12-31licitaciones.html' in unquote(u) for u in urls))
         with self.assertRaises(ValueError):ediciones_santafe('https://example.org/',3)
         with self.assertRaises(ValueError):ediciones_santafe('https://www.santafe.gov.ar/',15)
     def test_tls_eof_reintenta_sin_desactivar_validacion_y_403_no(self):

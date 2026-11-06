@@ -134,6 +134,9 @@ def boletin_santafe(raiz,url,config):
 
 
 def boletin_texto(texto,url,config):
+    if config.get('boletin_edicion_completa'):
+        from fuentes_criticas import seccion_licitaciones
+        texto=seccion_licitaciones(texto)
     from html import escape
     from extractores import DOM
     html=''.join('<p>'+escape(linea.strip())+'</p>' for linea in texto.splitlines() if linea.strip())

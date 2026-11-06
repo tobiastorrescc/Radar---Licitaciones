@@ -27,7 +27,7 @@ def main():
     if d.worker:
         try:
             path=Path(d.worker);entrada=json.loads(path.read_text());rs,errors=a.leer(entrada,path.parent)
-            guardar(d.checkpoint,{'archivo_sha256':entrada['sha256'],'archivo_entrada':str(path),'estado':'PARCIAL' if errors else 'OPERATIVA','finalizado':True,'paginas_correctas':1,'oportunidades':rs,'errores':errors,'limites':[],'fase':'EXTRACCION'})
+            guardar(d.checkpoint,{'archivo_clave':a.clave(entrada),'archivo_sha256':entrada['sha256'],'archivo_entrada':str(path),'estado':'PARCIAL' if errors else 'OPERATIVA','finalizado':True,'paginas_correctas':1,'oportunidades':rs,'errores':errors,'limites':[],'fase':'EXTRACCION'})
         except Exception as e:guardar(d.checkpoint,{'estado':'ERROR_IMPORTACION','finalizado':True,'paginas_correctas':0,'oportunidades':[],'errores':[conectores.clasificar_error(e,'EXTRACCION')],'limites':[]})
     elif d.url:
         if not d.fuente:p.error('--url necesita --fuente')

@@ -2185,7 +2185,9 @@
     },
     "consultas_respaldo": [
       "site:santafe.gov.ar/boletinoficial/ver.php licitaciones {anio}"
-    ]
+    ],
+    "pdf_diario_alternativo": true,
+    "boletin_edicion_completa": true
   },
   "https://www.entrerios.gov.ar/boletin/": {
     "organismo": "Boletín Oficial de Entre Ríos",
