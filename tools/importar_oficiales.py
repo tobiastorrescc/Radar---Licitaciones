@@ -22,13 +22,28 @@ def capturar(fuente,url,destino):
     return root/(digest+'.json')
 
 
+def registrar_archivo(fuente,url,archivo,bandeja,capturado_en=None):
+    _,url=a.configuracion({'fuente_id':fuente,'url_oficial':url})
+    archivo=Path(archivo)
+    if archivo.stat().st_size>12_000_000:raise ValueError('Archivo excede 12 MB')
+    tipo={'.html':'text/html','.htm':'text/html','.csv':'text/csv','.pdf':'application/pdf'}.get(archivo.suffix.lower())
+    if not tipo:raise ValueError('Se necesita HTML, CSV o PDF')
+    datos=archivo.read_bytes();h=sha256(datos).hexdigest();root=Path(bandeja);root.mkdir(parents=True,exist_ok=True)
+    nombre=h+archivo.suffix.lower();(root/nombre).write_bytes(datos)
+    entrada={'fuente_id':fuente,'url_oficial':url,'archivo':nombre,'tipo':tipo,'sha256':h,'capturado_en':capturado_en,'registrado_en':datetime.now(o.ZONA).isoformat(),'recibo':{'metodo':'ARCHIVO_APORTADO','revalidacion_pendiente':True}}
+    guardar(root/(h+'.json'),entrada);return root/(h+'.json')
+
+
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--worker');p.add_argument('--checkpoint');p.add_argument('--fuente');p.add_argument('--url');p.add_argument('--bandeja',default='entradas_oficiales');p.add_argument('--salida',default='work/importados');d=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--worker');p.add_argument('--checkpoint');p.add_argument('--fuente');p.add_argument('--url');p.add_argument('--archivo');p.add_argument('--capturado-en');p.add_argument('--bandeja',default='entradas_oficiales');p.add_argument('--salida',default='work/importados');d=p.parse_args()
     if d.worker:
         try:
             path=Path(d.worker);entrada=json.loads(path.read_text());rs,errors=a.leer(entrada,path.parent)
             guardar(d.checkpoint,{'archivo_clave':a.clave(entrada),'archivo_sha256':entrada['sha256'],'archivo_entrada':str(path),'estado':'PARCIAL' if errors else 'OPERATIVA','finalizado':True,'paginas_correctas':1,'oportunidades':rs,'errores':errors,'limites':[],'fase':'EXTRACCION'})
         except Exception as e:guardar(d.checkpoint,{'estado':'ERROR_IMPORTACION','finalizado':True,'paginas_correctas':0,'oportunidades':[],'errores':[conectores.clasificar_error(e,'EXTRACCION')],'limites':[]})
+    elif d.archivo:
+        if not d.fuente or not d.url:p.error('--archivo necesita --fuente y --url oficial')
+        print(registrar_archivo(d.fuente,d.url,d.archivo,d.bandeja,d.capturado_en))
     elif d.url:
         if not d.fuente:p.error('--url necesita --fuente')
         print(capturar(d.fuente,d.url,d.bandeja))

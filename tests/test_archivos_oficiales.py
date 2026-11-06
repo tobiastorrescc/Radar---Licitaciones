@@ -77,6 +77,27 @@ class ArchivosOficiales(unittest.TestCase):
         b=gestiones_csv(csv.encode(),self.url,self.url)[0][0]
         self.assertEqual(o.identidad(a1),o.identidad(b));self.assertEqual(b['tipo_procedimiento'],'licitacion publica')
 
+    def test_rutas_alternativas_configuradas_tienen_host_declarado(self):
+        fs=json.loads(Path('inventario/fuentes.json').read_text())
+        f=next(x for x in fs if x['id']=='fuente-087')
+        permitidos={conectores._host(f['url']),*(conectores._host('https://'+h) for h in f.get('dominios_documentos',[]))}
+        self.assertTrue(all(conectores._host(u) in permitidos for u in f['urls_inicio']))
+
+    def test_archivo_aportado_sin_fecha_no_inventa_fecha_de_captura(self):
+        from tools.importar_oficiales import registrar_archivo
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);entrada=root/'descarga.csv';entrada.write_text(self.csv)
+            meta=registrar_archivo('fuente-087',self.url,entrada,root/'bandeja')
+            d=json.loads(meta.read_text());self.assertIsNone(d['capturado_en'])
+            rs,_=a.leer(d,meta.parent,'2026-11-06T08:00:00-03:00');self.assertEqual(rs[0]['vigencia'],'DESCONOCIDA')
+    def test_archivo_fallido_no_impide_importar_el_siguiente_y_recibo_evade_relectura(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);d=self.entrada(root);(root/'bueno.json').write_text(json.dumps(d));(root/'malo.json').write_text(json.dumps({**d,'sha256':'0'*64}))
+            rs,informe=a.importar(root/'salida',root,total=10);self.assertEqual(len(rs),1)
+            self.assertEqual({x['estado'] for x in informe['observaciones']},{'OPERATIVA','ERROR_IMPORTACION'})
+            (root/'malo.json').unlink();rs,inf=a.importar(root/'segunda',root,vistos={a.clave(d)})
+            self.assertFalse(rs);self.assertEqual(inf['ya_importados'],1)
+
     def test_busqueda_no_importa_snippets_y_no_elude_403(self):
         url='https://www.epe.santafe.gov.ar/app2/aperturas';ficha='https://www.epe.santafe.gov.ar/app2/apertura/19417';calls=[]
         def fetch(u):

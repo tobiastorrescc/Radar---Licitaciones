@@ -29,8 +29,8 @@ def leer(entrada,raiz=RAIZ,ahora=None):
     b=p.read_bytes();digest=sha256(b).hexdigest()
     if digest!=entrada['sha256']:raise ValueError('La huella no coincide con el archivo')
     ahora=datetime.fromisoformat(ahora) if isinstance(ahora,str) else ahora or datetime.now(o.ZONA)
-    fecha=datetime.fromisoformat(entrada['capturado_en'])
-    if not fecha.tzinfo or fecha>ahora+timedelta(minutes=5):raise ValueError('Fecha de captura sin zona o futura')
+    fecha=datetime.fromisoformat(entrada['capturado_en']) if entrada.get('capturado_en') else None
+    if fecha is not None and (not fecha.tzinfo or fecha>ahora+timedelta(minutes=5)):raise ValueError('Fecha de captura sin zona o futura')
     tipo=entrada['tipo'];errores=[]
     if tipo=='text/csv':
         from fuentes_criticas import gestiones_csv
@@ -56,14 +56,14 @@ def leer(entrada,raiz=RAIZ,ahora=None):
     else:raise ValueError('Formato de archivo no admitido: '+tipo)
     if not rs:raise ValueError('Archivo sin convocatorias reconocidas; no equivale a ausencia de novedades')
     recibo=entrada.get('recibo',{})
-    reciente=timedelta(0)<=ahora-fecha<=timedelta(hours=72)
+    reciente=fecha is not None and timedelta(0)<=ahora-fecha<=timedelta(hours=72)
     procedencia=(recibo.get('metodo')=='HTTP_OFICIAL' and recibo.get('codigo_http')==200 and recibo.get('url_final')==url and recibo.get('sha256')==digest)
     pendiente=not(procedencia and reciente)
     salida=[]
     for r in rs:
         registro={k:f.get(k) for k in ('organismo','localidad','provincia')}
         registro.update(r);registro.update(fuente=f['url'],rango_evidencia=-1 if pendiente else 1,requiere_revalidacion=pendiente,
-            recuperacion_archivo={'sha256':digest,'url_oficial':url,'capturado_en':entrada['capturado_en'],'metodo':'ARCHIVO_OFICIAL','procedencia':'RECIBO_HTTP_OFICIAL' if procedencia else 'PROCEDENCIA_PENDIENTE','revalidacion_pendiente':pendiente})
+            recuperacion_archivo={'sha256':digest,'url_oficial':url,'capturado_en':entrada.get('capturado_en'),'metodo':'ARCHIVO_OFICIAL','procedencia':'RECIBO_HTTP_OFICIAL' if procedencia else 'PROCEDENCIA_PENDIENTE','revalidacion_pendiente':pendiente})
         salida.append(o.normalizar(registro,ahora))
     return o.deduplicar(salida,ahora),errores
 

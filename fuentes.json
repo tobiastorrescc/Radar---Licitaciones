@@ -2993,6 +2993,9 @@
     "urls_inicio": [
       "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
       "https://www.santafe.gov.ar/gestionesdecompras/site/output.php?a=consultas.imprimir&anio=2026&estado=AP&limit=10000&start=0"
+    ],
+    "dominios_documentos": [
+      "www.santafe.gov.ar"
     ]
   }
 }
