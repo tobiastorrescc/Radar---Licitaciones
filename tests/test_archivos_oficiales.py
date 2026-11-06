@@ -129,6 +129,18 @@ class ArchivosOficiales(unittest.TestCase):
             e=self.entrada(tmp,pdf,'application/pdf',url,'fuente-060')
             rs,errores=a.leer(e,tmp,'2026-11-06T08:00:00-03:00');self.assertFalse(errores);self.assertEqual(len(rs),1);self.assertEqual(rs[0]['numero_procedimiento'],'1/2026');self.assertEqual(rs[0]['vigencia'],'VENCIDA')
 
+    def test_revalidacion_actual_de_copia_pendiente_informa_dato_completado_no_publicacion_nueva(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            d=self.entrada(tmp,recibo=False);rs,_=a.leer(d,tmp,'2026-11-06T08:00:00-03:00');db=inc.abrir(Path(tmp)/'estado.sqlite3')
+            informe={'ejecucion_id':'copia','actualizado':'2026-11-06T08:00:00-03:00','estado_ejecucion':'COMPLETADA','resumen':{'configuradas':0,'finalizadas':0},'observaciones':[]}
+            try:
+                inc.registrar(db,rs,informe)
+                fresco={**rs[0],'requiere_revalidacion':False,'rango_evidencia':3,'recuperacion_archivo':{**rs[0]['recuperacion_archivo'],'capturado_en':'2026-11-06T09:00:00-03:00'}}
+                r=inc.registrar(db,[fresco],{**informe,'ejecucion_id':'revalidada','actualizado':'2026-11-06T09:30:00-03:00'})
+                self.assertEqual(r['clasificacion'].get('DATOS_COMPLETADOS'),1);self.assertNotIn('NUEVO_CONFIRMADO',r['clasificacion'])
+                self.assertEqual(inc.eventos(db,'revalidada','2026-11-06T09:30:00-03:00')[0]['vigencia'],'ABIERTA')
+            finally:db.close()
+
     def test_busqueda_no_importa_snippets_y_no_elude_403(self):
         url='https://www.epe.santafe.gov.ar/app2/aperturas';ficha='https://www.epe.santafe.gov.ar/app2/apertura/19417';calls=[]
         def fetch(u):

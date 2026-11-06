@@ -115,7 +115,7 @@ def contenido(r):
     if r.get('detalle_documental'):
         # Transporte/caché no son modificaciones de la convocatoria.
         campos['detalle_documental']={k:{'valor':v.get('valor'),'estado':v.get('estado'),'evidencia':{c:v.get('evidencia',{}).get(c) for c in ('url','sha256','pagina','cita')}} for k,v in r['detalle_documental'].items()}
-    return {**campos,'documentos':docs,'documentos_versiones':r.get('documentos_versiones',{}),
+    return {**campos,'requiere_revalidacion':bool(r.get('requiere_revalidacion')),'documentos':docs,'documentos_versiones':r.get('documentos_versiones',{}),
         'pago':{'estado':pago.get('estado'),'clasificacion':pago.get('clasificacion'),'plazos_dias':sorted(pago.get('plazos_dias') or []),
             'hitos_inicio':sorted(pago.get('hitos_inicio') or []),'documentos':sorted(pago.get('documentos_respaldo') or [])}}
 
@@ -225,6 +225,7 @@ def registrar(db,registros,informe):
                 a=contenido(anterior);b=contenido(dato)
                 cambios=[k for k in b if a.get(k)!=b[k]]
                 def completado(k):
+                    if k=='requiere_revalidacion':return bool(a.get(k)) and not b.get(k)
                     if k=='objeto' and calidad(dato)>calidad(anterior):return True
                     if k=='documentos_versiones':return all(b[k].get(u)==v for u,v in a.get(k,{}).items())
                     if k=='pago':return a[k].get('estado')!='VERIFICADO' and b[k].get('estado')=='VERIFICADO'
