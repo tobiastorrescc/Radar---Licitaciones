@@ -1,0 +1,1655 @@
+{
+  "origen_run": 40688224634,
+  "solo_antecedentes": true,
+  "casos": [
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Servicios 06-11-2026 Quedan 9 días Licitación Pública Nº 7060002927 Contratación de servicio de toma de estado de medidores de energía eléctrica en la Sucursal San Lorenzo Presupuesto Oficial $457.326.378,52 Expediente Nº EE-2026-00046290-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "Contratación de servicio de toma de estado de medidores de energía eléctrica en la Sucursal San Lorenzo",
+      "procedimiento": "licitacion publica 7060002927",
+      "numero_procedimiento": "7060002927",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "06-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-06",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "457326378.52",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002927",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-06",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002927"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002927"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "06-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $457.326.378,52"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 06-11-2026 Quedan 9 días Concurso Privado Nº 7040004997 Adquisición de sillas operativas ergonómicas Presupuesto Oficial $9.983.053,7 Expediente Nº EE-2026-00043236-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "Adquisición de sillas operativas ergonómicas",
+      "procedimiento": "concurso privado 7040004997",
+      "numero_procedimiento": "7040004997",
+      "tipo_procedimiento": "concurso privado",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "06-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-06",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "9983053.7",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "concurso privado 7040004997",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-06",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004997"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004997"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "06-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $9.983.053,7"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 06-11-2026 Quedan 9 días Concurso Privado Nº 7040004999 ADQUISICIÓN DE ACCESORIOS PARA P.A.T. TRANSITORIAS Presupuesto Oficial $9.506.852,61 Expediente Nº EE-2026-00060680-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "ADQUISICIÓN DE ACCESORIOS PARA P.A.T. TRANSITORIAS",
+      "procedimiento": "concurso privado 7040004999",
+      "numero_procedimiento": "7040004999",
+      "tipo_procedimiento": "concurso privado",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "06-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-06",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "9506852.61",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "concurso privado 7040004999",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-06",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004999"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004999"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "06-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $9.506.852,61"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 10-11-2026 Quedan 13 días Licitación Privada Nº 7050001923 ADQUISICIÓN DE TRAILERS PARA CABINA DE GU MÓVIL Presupuesto Oficial $117.159.749,23 Expediente Nº EE-2026-00025126-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "ADQUISICIÓN DE TRAILERS PARA CABINA DE GU MÓVIL",
+      "procedimiento": "licitacion privada 7050001923",
+      "numero_procedimiento": "7050001923",
+      "tipo_procedimiento": "licitacion privada",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "10-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-10",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "117159749.23",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion privada 7050001923",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-10",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion privada 7050001923"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion privada 7050001923"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "10-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $117.159.749,23"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 10-11-2026 Quedan 13 días Licitación Pública Nº 7060002931 Adquisición de aisladores con destino a mantenimiento – Plan 2027 Presupuesto Oficial $323.764.469,22 Expediente Nº EE-2026-00055881-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "Adquisición de aisladores con destino a mantenimiento – Plan 2027",
+      "procedimiento": "licitacion publica 7060002931",
+      "numero_procedimiento": "7060002931",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "10-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-10",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "323764469.22",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002931",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-10",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002931"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002931"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "10-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $323.764.469,22"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Obras 11-11-2026 Quedan 14 días Licitación Pública Nº 7060002924 REMODELACIÓN LAMT 13,2 KV POR FER - DISTRITO MONTES DE OCA - AGENCIA LAS ROSAS Presupuesto Oficial $413.095.338,58 Expediente Nº 1-2024-1138558 Rafaela Descargar Enviar",
+      "objeto": "REMODELACIÓN LAMT 13,2 KV POR FER - DISTRITO MONTES DE OCA - AGENCIA LAS ROSAS",
+      "procedimiento": "licitacion publica 7060002924",
+      "numero_procedimiento": "7060002924",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "11-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-11",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "413095338.58",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002924",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-11",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002924"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002924"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "11-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $413.095.338,58"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Servicios 11-11-2026 Quedan 14 días Licitación Pública Nº 7060002929 PROVISIÓN DE MANO DE OBRA, EQUIPOS Y HERRAMIENTAS PARA EL RELEVAMIENTO Y ACTUALIZACIÓN DE CLIENTES DE MEDIA Y BAJA TENSIÓN EN SUCURSAL SANTA FE SUR Presupuesto Oficial $104.005.760,98 Expediente Nº EE-2026-00032425-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "PROVISIÓN DE MANO DE OBRA, EQUIPOS Y HERRAMIENTAS PARA EL RELEVAMIENTO Y ACTUALIZACIÓN DE CLIENTES DE MEDIA Y BAJA TENSIÓN EN SUCURSAL SANTA FE SUR",
+      "procedimiento": "licitacion publica 7060002929",
+      "numero_procedimiento": "7060002929",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "11-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-11",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "104005760.98",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002929",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-11",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002929"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002929"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "11-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $104.005.760,98"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 12-11-2026 Quedan 15 días Licitación Pública Nº 7060002925 ADQUISICIÓN DE FUSIBLES NH CON DESTINO A MANTENIMIENTO Y OBRAS MENORES Presupuesto Oficial $163.339.507,69 Expediente Nº EE-2026-00059910-APPSF-OD Compra Web Rafaela Descargar Enviar",
+      "objeto": "ADQUISICIÓN DE FUSIBLES NH CON DESTINO A MANTENIMIENTO Y OBRAS MENORES",
+      "procedimiento": "licitacion publica 7060002925",
+      "numero_procedimiento": "7060002925",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "12-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-12",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "163339507.69",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002925",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-12",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002925"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002925"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "12-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $163.339.507,69"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 12-11-2026 Quedan 15 días Licitación Pública Nº 7060002928 Adquisición de Fusibles Tipo K con destino a mantenimiento - Plan 2027 Presupuesto Oficial $336.216.955,79 Expediente Nº EE-2026-00058679-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "Adquisición de Fusibles Tipo K con destino a mantenimiento - Plan 2027",
+      "procedimiento": "licitacion publica 7060002928",
+      "numero_procedimiento": "7060002928",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "12-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-12",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "336216955.79",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002928",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-12",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002928"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002928"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "12-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $336.216.955,79"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Servicios 13-11-2026 Quedan 16 días Licitación Privada Nº 7050001924 CONTRATACIÓN DE MATERIALES, MANO DE OBRA Y EQUIPOS PARA \"REACONDICIONAMIENTO BOX TRANSFORMADOR N° 2 ET VCR” Presupuesto Oficial $49.641.441,12 Expediente Nº EE-2026-00040568-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "CONTRATACIÓN DE MATERIALES, MANO DE OBRA Y EQUIPOS PARA \"REACONDICIONAMIENTO BOX TRANSFORMADOR N° 2 ET VCR”",
+      "procedimiento": "licitacion privada 7050001924",
+      "numero_procedimiento": "7050001924",
+      "tipo_procedimiento": "licitacion privada",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "13-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-13",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "49641441.12",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion privada 7050001924",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-13",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion privada 7050001924"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion privada 7050001924"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "13-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $49.641.441,12"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Obras 16-11-2026 Quedan 19 días Licitación Pública Nº 7060002921 Remodelación de L.A.B.T. en la localidad de Aarón Castellanos - Departamento General López - Ley 13.414 FER Presupuesto Oficial $733.803.410,69 Expediente Nº 1-2023-1102976 Rosario Descargar Enviar",
+      "objeto": "Remodelación de L.A.B.T. en la localidad de Aarón Castellanos - Departamento General López - Ley 13.414 FER",
+      "procedimiento": "licitacion publica 7060002921",
+      "numero_procedimiento": "7060002921",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "16-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-16",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "733803410.69",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002921",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-16",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002921"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002921"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "16-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $733.803.410,69"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 16-11-2026 Quedan 19 días Licitación Pública Nº 7060002930 Adquisición de Postes PRFV con destino a Mantenimiento Presupuesto Oficial $206.249.325,9 Expediente Nº EE-2026-00062469-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "Adquisición de Postes PRFV con destino a Mantenimiento",
+      "procedimiento": "licitacion publica 7060002930",
+      "numero_procedimiento": "7060002930",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "16-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-16",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "206249325.9",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002930",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-16",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002930"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002930"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "16-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $206.249.325,9"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 16-11-2026 Quedan 19 días Licitación Pública Nº 7060002934 Adquisición de empalmes y terminales con destino a mantenimiento y obras menores – Plan 2027 Presupuesto Oficial $3.766.462.111,5 Expediente Nº EE-2026-00061532-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "Adquisición de empalmes y terminales con destino a mantenimiento y obras menores – Plan 2027",
+      "procedimiento": "licitacion publica 7060002934",
+      "numero_procedimiento": "7060002934",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "16-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-16",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "3766462111.5",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002934",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-16",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002934"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002934"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "16-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $3.766.462.111,5"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Obras 17-11-2026 Quedan 20 días Licitación Pública Nº 7060002922 FER (LEY 13.414) - REMODELACIÓN MT EN EL DISTRITO DE MARÍA JUANA - AGENCIA MARÍA JUANA - SUCURSAL RAFAELA Presupuesto Oficial $867.887.141,34 Expediente Nº 1-2025-1170034 Rafaela Descargar Enviar",
+      "objeto": "FER (LEY 13.414) - REMODELACIÓN MT EN EL DISTRITO DE MARÍA JUANA - AGENCIA MARÍA JUANA - SUCURSAL RAFAELA",
+      "procedimiento": "licitacion publica 7060002922",
+      "numero_procedimiento": "7060002922",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "17-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-17",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "867887141.34",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002922",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-17",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002922"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002922"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "17-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $867.887.141,34"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Obras 20-11-2026 Quedan 23 días Licitación Pública Nº 7060002932 REMODELACIÓN LAMT 13,2 KV ESTEBAN RAMS - CAMPO GARAY - DEPARTAMENTO 9 DE JULIO - LEY FER 13.414 Presupuesto Oficial $853.177.478,41 Expediente Nº 1-2023-1120349 Rafaela Descargar Enviar",
+      "objeto": "REMODELACIÓN LAMT 13,2 KV ESTEBAN RAMS - CAMPO GARAY - DEPARTAMENTO 9 DE JULIO - LEY FER 13.414",
+      "procedimiento": "licitacion publica 7060002932",
+      "numero_procedimiento": "7060002932",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "20-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-20",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "853177478.41",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002932",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-20",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002932"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002932"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "20-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $853.177.478,41"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Obras 26-11-2026 Quedan 29 días Licitación Pública Nº 7060002923 REMODELACIÓN POR FER LÍNEA 13,2 KV - SALIDA N° 1 SANCOR - EL TRÉBOL - DPTO. SAN MARTÍN - LEY FER 13.414 Presupuesto Oficial $2.152.303.339,67 Expediente Nº 1-2023-1123448 Rafaela Descargar Enviar",
+      "objeto": "REMODELACIÓN POR FER LÍNEA 13,2 KV - SALIDA N° 1 SANCOR - EL TRÉBOL - DPTO. SAN MARTÍN - LEY FER 13.414",
+      "procedimiento": "licitacion publica 7060002923",
+      "numero_procedimiento": "7060002923",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "26-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-26",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "2152303339.67",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002923",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-26",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002923"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002923"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "26-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $2.152.303.339,67"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Obras 02-12-2026 Quedan 35 días Licitación Pública Nº 7060002933 CONSTRUCCIÓN Y REMODELACIÓN DE LAMT 33 KV. ENTRE LAS LOCALIDADES DE HERISILIA - ARRUFÓ - DEPARTAMENTO SAM CRISTOBAL - LEY FER 13.414 Presupuesto Oficial $4.331.508.541,76 Expediente Nº 1-2023-1100536 Rafaela Descargar Enviar",
+      "objeto": "CONSTRUCCIÓN Y REMODELACIÓN DE LAMT 33 KV. ENTRE LAS LOCALIDADES DE HERISILIA - ARRUFÓ - DEPARTAMENTO SAM CRISTOBAL - LEY FER 13.414",
+      "procedimiento": "licitacion publica 7060002933",
+      "numero_procedimiento": "7060002933",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "02-12-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-12-02",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "4331508541.76",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002933",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-12-02",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002933"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002933"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "02-12-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $4.331.508.541,76"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    }
+  ]
+}

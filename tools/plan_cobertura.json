@@ -1,11 +1,9 @@
 {
-  "etapa": "alternativas-nov6-revalidacion-documental-sin-falsas-novedades",
-  "barrido": false,
-  "barrido_manifest": "inventario/recuperacion_criticas_issue14.json",
+  "etapa": "recuperacion-efectiva-9-fuentes-control-manual",
+  "barrido": true,
+  "barrido_manifest": "inventario/control_efectivo_issue14.json",
   "barrido_por_fuente": 60,
-  "barrido_ids": [
-    "fuente-087"
-  ],
+  "barrido_ids": [],
   "sondear": false,
   "urls_sondeo": [],
   "peticiones": [],
@@ -14,5 +12,5 @@
   "auditar": false,
   "archivar_auditoria": false,
   "reverificar_ids": [],
-  "captura_run": "42139240107"
+  "revisar_efectiva": true
 }

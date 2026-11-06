@@ -1,0 +1,33 @@
+{
+  "fecha": "2026-11-05",
+  "fuentes": [
+    {
+      "id": "fuente-003"
+    },
+    {
+      "id": "fuente-087"
+    },
+    {
+      "id": "fuente-060"
+    },
+    {
+      "id": "fuente-010"
+    },
+    {
+      "id": "fuente-005"
+    },
+    {
+      "id": "fuente-004"
+    },
+    {
+      "id": "fuente-007"
+    },
+    {
+      "id": "fuente-026"
+    },
+    {
+      "id": "fuente-001"
+    }
+  ],
+  "alcance_control": "Ocho críticas y Rosario para comparación manual; no se añade una fuente nueva al piloto"
+}

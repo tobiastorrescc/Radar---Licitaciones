@@ -79,15 +79,26 @@ def generar_informe(db,resumen,registros,fuentes,destino):
     guardar(destino/'auditoria_manual.json',metricas['auditoria_manual'])
     resumen['total_nuevas_confirmadas']=metricas['total_nuevas_confirmadas']
     guardar(destino/'resumen.json',resumen)
+    from calidad_comercial import escribir as informe_presentacion
+    resumen.update(informe_presentacion(actuales,fecha,destino))
+    from estado_criticas import evaluar,CRITICAS
+    estados_criticos=[evaluar(f,registros,eventos) for f in fuentes if f.get('id') in CRITICAS]
+    guardar(destino/'alertas_criticas_detalladas.json',{'fuentes':estados_criticos})
+    for estado in estados_criticos:
+        nivel='warning' if estado['no_equivale_a_cero_publicaciones'] else 'notice'
+        print('::'+nivel+' title=Estado de fuente crítica::'+str(estado['id'])+' '+estado['estado_revision_critica']+'; acceso directo '+estado['estado_acceso_directo'],flush=True)
+    guardar(destino/'resumen.json',resumen)
     from tools.preparar_entrega import preparar
     preparar(destino)
     lineas=['# Radar diario controlado', '',f"Fecha: {fecha}. Estado: **{resumen['estado']}**. {resumen['mensaje']}.",'',
         f"Historial: {resumen['total_historial']}; novedades y cambios: {resumen['novedades']}; abiertas: {resumen['abiertas']}; próximas a vencer: {resumen['proximas_a_vencer']}.",'',
         'La primera corrida es línea de base sin alertas de novedades. Fecha de detección no equivale a fecha de publicación. Una fuente con incidencias no permite afirmar ausencia de novedades. Se conserva todo el historial, incluso registros no recuperados en esta consulta.','',
+        '[Informe comercial: recepción vigente comprobada](informe_comercial.md) · [Plazos pendientes de verificar](presentacion_pendiente.json)','',
         '[Consulta completa y búsqueda: index.html](index.html) · [Catálogo completo](catalogo_completo.md) · [Abiertas](oportunidades_abiertas.md) · [Próximas a vencer](oportunidades_proximas_a_vencer.md)','',
         '| Fuente | Estado de consulta | Cobertura estricta | Publicaciones |','|---|---|---|---:|']
     lineas.extend(f"| {f['url']} | {f['estado']} | {f['estado_cobertura']} | {f.get('publicaciones_detectadas',0)} |" for f in fuentes)
-    comerciales=[r for r in eventos if r.get('clasificacion_registro')=='PROCEDIMIENTO' and r.get('vigencia')=='ABIERTA' and r.get('clasificacion_novedad') in inc.NOVEDADES]
+    from calidad_comercial import presentacion
+    comerciales=[r for r in eventos if r.get('clasificacion_registro')=='PROCEDIMIENTO' and presentacion(r,fecha)['presentacion_verificada'] and r.get('clasificacion_novedad') in inc.NOVEDADES]
     guardar(destino/'novedades_vigentes.json',{'fecha':fecha,'total':len(comerciales),'oportunidades':comerciales})
     (destino/'novedades_vigentes.md').write_text(o.reporte(comerciales,fecha),encoding='utf-8')
     lineas+=['','## Oportunidades nuevas y cambios con plazo vigente','',f'{len(comerciales)} oportunidades observadas con vigencia comprobada. Fecha de primera detección no equivale a fecha de publicación.','[Todas las novedades vigentes](novedades_vigentes.md) · [Auditoría completa de eventos e históricos](eventos.md)']
@@ -143,6 +154,9 @@ def _ejecutar_corrida(raiz,*,total=600,documentos=120,informe_previo=None):
         filas=[r for r in registros if obs['url'] in inc.fuentes_de(r)]
         metadata=next((f for f in config if f['url']==obs['url']),{})
         fuentes.append({**{k:metadata.get(k) for k in ('organismo','localidad','provincia')},**obs,'estado_cobertura':estado_cobertura(obs,filas)})
+    from estado_criticas import evaluar,CRITICAS
+    for f in fuentes:
+        if f.get('id') in CRITICAS:f.update(evaluar(f,registros))
     informe={**informe,'observaciones':fuentes}
     guardar(carpeta/'auditoria_fuentes.json',{'fuentes':fuentes})
     db=inc.abrir(raiz/'estado.sqlite3')

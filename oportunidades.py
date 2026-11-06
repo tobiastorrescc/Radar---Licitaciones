@@ -316,6 +316,8 @@ def identidad(r):
         partes=[norm(r.get('provincia')),org,'ficha-rosario-'+ficha[1],convocatoria(r)]
     elif proc:
         partes=[norm(r.get('provincia')),org or r.get('fuente',''),proc,convocatoria(r),r.get('identidad_ambito','')]
+    elif r.get('aviso_oficial_sin_numero') and r.get('huella_aviso_oficial'):
+        partes=[norm(r.get('provincia')),org,'aviso-sin-numero',r['huella_aviso_oficial'],convocatoria(r)]
     elif r.get('registro_estructurado') and r.get('numero_oficial_sin_interpretar') and r.get('evidencia_url'):
         # Dos accesos al mismo registro API: igualdad literal comprobada sin inventar número.
         partes=[norm(r.get('provincia')),org,r['evidencia_url'],str(r['numero_oficial_sin_interpretar']),norm(r.get('titulo')),convocatoria(r)]

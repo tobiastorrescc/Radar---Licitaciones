@@ -104,7 +104,7 @@ class IncrementalTests(unittest.TestCase):
         self.assertNotIn('<script>alert(1)</script>',html);self.assertIn('LINEA_BASE',html)
     def test_informe_principal_solo_vigentes_auditoria_conserva_vencidas_y_desconocidas(self):
         inc.registrar(self.db,[self.fila('1/2020')],self.informe())
-        filas=[self.fila('2/2026',objeto='VIGENTE DE CONTROL',fecha_publicacion='2026-10-27',fecha_apertura='2026-11-05'),
+        filas=[self.fila('2/2026',objeto='VIGENTE DE CONTROL',fecha_publicacion='2026-10-27',fecha_apertura='2026-11-05',fecha_limite_presentacion_texto='04/11/2026 10:00'),
                self.fila('3/2026',objeto='VENCIDA DE CONTROL',fecha_publicacion='2026-10-27',fecha_apertura='2026-10-20'),
                self.fila('4/2026',objeto='SIN VIGENCIA COMPROBADA',fecha_publicacion='2026-10-27')]
         r=inc.registrar(self.db,filas,self.informe('dos',fecha='2026-10-27T12:00:00-03:00'))

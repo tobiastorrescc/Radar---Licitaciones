@@ -384,7 +384,7 @@ def extraer(html,url,config=None):
             break
     if config.get('adaptador') in ('boletin-sf','boletin-er'):
         from extractores_lotes import boletin_santafe
-        agrupados={(r['organismo'],r['procedimiento'],r['evento_publicado']):r for r in boletin_santafe(raiz,url,config)}
+        agrupados={(r['organismo'],r['procedimiento'] or r.get('huella_aviso_oficial'),r['evento_publicado']):r for r in boletin_santafe(raiz,url,config)}
     if config.get('adaptador') in ('encabezados','colon-pba'):
         from extractores_lotes import encabezados
         secciones=encabezados(raiz,url,config)

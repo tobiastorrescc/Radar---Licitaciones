@@ -24,14 +24,12 @@ def siguiente(links,actual=None):
         if ('next' in l.get('rel','').split() or texto in ('siguiente','siguiente ›','›','»')) and oficial(l['url']) and l['url']!=actual and not l.get('disabled') and not any(n.attrs.get('aria-disabled')=='true' or n.clase('disabled') for n in l.get('node',extractores.Nodo('a')).padres()):return l['url']
     return None
 
-def total_publicado(texto):
-    m=re.search(r'mostrando\s+\d+\s+(?:a|al)\s+\d+\s+de\s+([\d.]+)\s+(?:registros|resultados|gestiones)',o.norm(texto))
-    return int(m[1].replace('.','')) if m else None
+from fuentes_criticas import total_gestiones as total_publicado
 
 async def auditar(plan,salida):
-    root=Path(salida);root.mkdir(parents=True,exist_ok=True);inicio=time.monotonic();rs=[];errores=[];red=[];paginas=[];capturas=[];limites=[];total=None
+    root=Path(salida);root.mkdir(parents=True,exist_ok=True);inicio=time.monotonic();rs=[];errores=[];red=[];paginas=[];capturas=[];formularios=[];limites=[];total=None
     def persistir(estado):
-        guardar(root/'resultado.json',{'estado':estado,'fecha':o.datetime.now(o.ZONA).isoformat(),'segundos':round(time.monotonic()-inicio,3),'convocatorias':len({o.identidad(r) for r in rs}),'oportunidades':o.deduplicar(rs,o.datetime.now(o.ZONA)),'errores':errores,'red':red,'paginas':paginas,'archivos':capturas,'total_publicado':total,'limites':limites,'acceso_verificado_por':'CHROMIUM_ESTANDAR_TLS_VALIDADO','ocr_nuevo':0})
+        guardar(root/'resultado.json',{'estado':estado,'fecha':o.datetime.now(o.ZONA).isoformat(),'segundos':round(time.monotonic()-inicio,3),'convocatorias':len({o.identidad(r) for r in rs}),'oportunidades':o.deduplicar(rs,o.datetime.now(o.ZONA)),'errores':errores,'red':red,'paginas':paginas,'archivos':capturas,'formularios':formularios,'total_publicado':total,'limites':limites,'acceso_verificado_por':'CHROMIUM_ESTANDAR_TLS_VALIDADO','ocr_nuevo':0})
     persistir('INICIADA')
     try:from playwright.async_api import async_playwright
     except ImportError:
@@ -75,6 +73,8 @@ async def auditar(plan,salida):
                         try:await page.wait_for_selector('table tbody tr',timeout=5000)
                         except Exception:pass
                         contenido=await page.content();conectores.comprobar_acceso(contenido)
+                        forms=await page.evaluate("() => [...document.forms].map(f=>({action:f.action,method:f.method,campos:[...f.elements].map(e=>({nombre:e.name,tipo:e.type}))}))")
+                        formularios.extend({**f,'action':url_log(f['action'])} for f in forms)
                         dom=extractores.DOM(contenido);nuevos=gestiones_html(dom,page.url)
                         for r in nuevos:rs.append(o.normalizar({**r,'fuente':config['url'],'rango_evidencia':3,'requiere_revalidacion':False}))
                         total=total_publicado(dom.root.text) or total

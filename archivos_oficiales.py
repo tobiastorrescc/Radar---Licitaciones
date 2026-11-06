@@ -57,7 +57,7 @@ def leer(entrada,raiz=RAIZ,ahora=None):
     if not rs:raise ValueError('Archivo sin convocatorias reconocidas; no equivale a ausencia de novedades')
     recibo=entrada.get('recibo',{})
     reciente=fecha is not None and timedelta(0)<=ahora-fecha<=timedelta(hours=72)
-    procedencia=(recibo.get('metodo')=='HTTP_OFICIAL' and recibo.get('codigo_http')==200 and recibo.get('url_final')==url and recibo.get('sha256')==digest)
+    procedencia=(recibo.get('metodo') in ('HTTP_OFICIAL','NAVEGADOR_OFICIAL') and recibo.get('codigo_http')==200 and recibo.get('url_final')==url and recibo.get('sha256')==digest)
     pendiente=not(procedencia and reciente)
     salida=[]
     for r in rs:

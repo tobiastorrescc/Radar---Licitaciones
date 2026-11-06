@@ -97,3 +97,8 @@ def seccion_licitaciones(texto):
         if e.procesos(seccion):secciones.append(seccion)
     if not secciones:raise ValueError('Sección localizada pero sin convocatorias reconocidas; requiere revisión')
     return '\n'.join(secciones)
+
+
+def total_gestiones(texto):
+    m=re.search(r'mostrando\s+\d+\s+(?:a|al)\s+\d+\s+de\s+([\d.]+)\s+(?:registros|resultados|gestiones)',e.norm(texto))
+    return int(m[1].replace('.','')) if m else None

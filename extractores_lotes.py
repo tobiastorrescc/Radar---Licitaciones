@@ -103,7 +103,7 @@ def boletin_santafe(raiz,url,config):
     if 'licitaciones' not in url and not config.get('boletin_documento'):return []
     bloques=[n for n in raiz.iter() if n.tag in ('p','h1','h2','h3','h4','h5','h6') and not excluido(n) and n.text]
     grupos=[];actual=None
-    patron=r'^(?:municipalidad de|comuna de|hospital|samco|s\.a\.m\.c\.o\.|ministerio de|empresa provincial de la energia|aguas santafesinas|aeropuerto internacional|ente administrador|direccion provincial de|universidad nacional|instituto|poder judicial|administradora tributaria)\b'
+    patron=r'^(?:municipalidad de|municipio de|comuna de|consorcio|cofer|hospital|samco|s\.a\.m\.c\.o\.|ministerio de|empresa provincial de la energia|aguas santafesinas|aeropuerto internacional|ente administrador|direccion provincial de|universidad nacional|instituto|poder judicial|administradora tributaria)\b'
     for n in bloques:
         txt=n.text
         es_org=len(txt)<180 and re.match(patron,norm(txt)) and txt.upper()==txt
@@ -111,15 +111,22 @@ def boletin_santafe(raiz,url,config):
             actual={'organismo':txt,'bloques':[]};grupos.append(actual)
         elif actual:actual['bloques'].append(n)
     registros=[]
-    aliases={'empresa provincial de la energia':'EPE','aguas santafesinas s.a.':'ASSA','aeropuerto internacional rosario':'Aeropuerto Internacional Rosario'}
+    aliases={'empresa provincial de la energia':'EPE','aguas santafesinas s.a.':'ASSA','aeropuerto internacional rosario':'Aeropuerto Internacional Rosario','cofer':'Consorcio Ferial Rosario'}
     for g in grupos:
         org=aliases.get(norm(g['organismo']),g['organismo'].title())
         if norm(g['organismo']).startswith('empresa provincial de la energia'):org='EPE'
-        comuna=re.match(r'^(?:municipalidad|comuna) de (.+)$',org,re.I)
+        comuna=re.match(r'^(?:municipalidad|municipio|comuna) de (.+)$',org,re.I)
         localidad=comuna[1].strip() if comuna else None
         texto='\n'.join(n.text for n in g['bloques'])
         # Una mención repetida de un mismo llamado no crea un aviso adicional.
         ps=procesos(texto);unicos={p['procedimiento'] for p in ps}
+        if not ps and config.get('admitir_avisos_sin_numero'):
+            from extractores import TIPO
+            encabezado=next((n.text for n in g['bloques'] if re.fullmatch(TIPO,norm(n.text))),None)
+            objeto=next((n.text.split(':',1)[1].strip() for n in g['bloques'] if re.match(r'^objeto\s*:',norm(n.text))),None)
+            if encabezado and objeto:
+                from hashlib import sha256
+                registros.append({'organismo':org,'localidad':localidad,'provincia':config.get('provincia','Santa Fe'),'titulo':encabezado+' '+objeto,'objeto':objeto,'texto_documento':texto,'numero_procedimiento':None,'tipo_procedimiento':norm(encabezado),'procedimiento':None,'url':url,'evidencia_url':url,'documentos':[],'detalle_completo':True,'registro_estructurado':True,'aviso_oficial_sin_numero':True,'evento_publicado':None,'llamado_especial':False,'huella_aviso_oficial':sha256(norm(texto).encode()).hexdigest(),'es_fuente_complementaria':True})
         for proc in dict.fromkeys(p['procedimiento'] for p in ps):
             p=next(p for p in ps if p['procedimiento']==proc)
             if len(unicos)>1:
@@ -128,8 +135,10 @@ def boletin_santafe(raiz,url,config):
                 fragmento=norm(texto)[p['start']:fin]
             else:fragmento=texto
             docs=[{'url':l['url'],'titulo':l['texto']} for n in g['bloques'] for l in n.enlaces(url) if urlsplit(l['url']).path.lower().endswith(ADJUNTOS)] if len(unicos)==1 else []
-            evento='|'.join(sorted(set(EVENTO.findall(norm(fragmento))))) or None
-            registros.append({'organismo':org,'localidad':localidad,'provincia':config.get('provincia','Santa Fe'),'titulo':p['procedimiento']+' '+fragmento,'objeto':fragmento,'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'procedimiento':p['procedimiento'],'url':url,'evidencia_url':url,'documentos':docs,'evento_publicado':evento,'llamado_especial':bool(evento),'detalle_completo':True,'registro_estructurado':True,'fecha_publicacion_texto':fecha(unquote(url)),'es_fuente_complementaria':True})
+            evento='|'.join(sorted(set(EVENTO.findall(norm(fragmento)))|set(re.findall(r'prorroga|nueva fecha de apertura',norm(fragmento))))) or None
+            nueva_fecha=re.search(r'nueva fecha(?: y hora)? de apertura\s*:\s*(.{0,100})',norm(fragmento))
+            campos_fecha={'fecha_apertura_texto':nueva_fecha[1]} if nueva_fecha and fecha(nueva_fecha[1]) else {}
+            registros.append({'organismo':org,'localidad':localidad,'provincia':config.get('provincia','Santa Fe'),'titulo':p['procedimiento']+' '+fragmento,'objeto':fragmento,'numero_procedimiento':p['numero'],'tipo_procedimiento':p['tipo'],'procedimiento':p['procedimiento'],'url':url,'evidencia_url':url,'documentos':docs,'evento_publicado':evento,'llamado_especial':bool(evento),'detalle_completo':True,'registro_estructurado':True,'fecha_publicacion_texto':fecha(unquote(url)),'es_fuente_complementaria':True,**campos_fecha})
     return registros
 
 

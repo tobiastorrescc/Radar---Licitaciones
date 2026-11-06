@@ -288,6 +288,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
     respuestas_detalles={}
     respaldo_intentado=False;respaldo_pdf_intentado=False;rutas_respaldo=[]
     conteos_rosario={}
+    paginas_gestiones=set();totales_gestiones=[]
     hosts={_host(fuente),*(_host('https://'+h) for h in config.get('dominios_documentos',[]))}
     documento_pendiente={};vacios=[];paginas_api=set()
     modo=config.get('lectura_adjuntos','todos')
@@ -541,9 +542,16 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             pagina_config={**config,**(referencia if isinstance(referencia,dict) else {})}
             registros,links,dom=extractores.extraer(html,final,pagina_config)
             if config.get('adaptador')=='gestiones-sf':
-                from fuentes_criticas import enlaces_csv,gestiones_html
+                from fuentes_criticas import enlaces_csv,gestiones_html,total_gestiones
                 estructurados=gestiones_html(dom,final)
-                if estructurados:registros=estructurados
+                if estructurados:
+                    firma=sha256(json.dumps(sorted(oportunidades.identidad(r) for r in estructurados)).encode()).hexdigest()
+                    if pagina_config.get('es_paginacion') and firma in paginas_gestiones:
+                        errors.append({'url':url,'tipo':'PaginacionGestionesRepetida','categoria':'EXTRACCION','timeout':False,'error':'La página siguiente repite procedimientos; recorrido no confirmado'})
+                        snapshot('PAGINA_FINALIZADA',url);continue
+                    paginas_gestiones.add(firma);registros=estructurados
+                total=total_gestiones(dom.root.text)
+                if total is not None:totales_gestiones.append(total)
                 for u in enlaces_csv(dom,final):pending.appendleft((u,'CSV_PUBLICADO',None))
             if config.get('adaptador')=='rosario' and clase=='LISTADO':
                 for nodo in dom.root.iter():
@@ -614,7 +622,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     if not any(u==destino and c=='DETALLE' for u,c,_ in pending):pending.append((destino,'DETALLE',None))
                     continue
                 if pagina or navegar:
-                    contexto={'tipo_contexto':l.get('tipo_contexto',pagina_config.get('tipo_contexto'))}
+                    contexto={'tipo_contexto':l.get('tipo_contexto',pagina_config.get('tipo_contexto')),'es_paginacion':bool(pagina)}
                     pending.append((destino,'LISTADO',contexto))
                 # Un documento del índice de boletines puede contener llamados sin título HTML.
                 if not registros and config.get('indice_documentos') and path.lower().endswith(extractores.ADJUNTOS):
@@ -653,6 +661,8 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
         reales={t:{r['url'] for r in items.values() if r.get('tipo_procedimiento')==t} for t in conteos_rosario}
         faltantes={t:{'publicadas':max(v),'extraidas':len(reales.get(t,set()))} for t,v in conteos_rosario.items() if len(reales.get(t,set()))<max(v)}
         if faltantes:errors.append({'url':fuente,'tipo':'ConteoRosarioIncompleto','categoria':'EXTRACCION','timeout':False,'error':'El recorrido no alcanza el total publicado por el portal; no se declara cobertura completa','por_tipo':faltantes})
+    if totales_gestiones and len(items)<max(totales_gestiones):
+        errors.append({'url':fuente,'tipo':'ConteoGestionesIncompleto','categoria':'EXTRACCION','timeout':False,'error':'No se alcanzó el total publicado; conservar parciales','publicadas':max(totales_gestiones),'extraidas':len(items)})
     incompletas=[r['id'] for r in items.values() if not r.get('detalle_completo') and not r.get('documento_desglosado')]
     if incompletas:
         errors.append({'url':fuente,'tipo':'DetalleIncompleto','categoria':'EXTRACCION','timeout':False,

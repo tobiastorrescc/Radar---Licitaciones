@@ -81,6 +81,8 @@ jobs:
         if: steps.plan.outputs.barrido == 'true'
         timeout-minutes: 10
         run: python -u tools/auditar_barrido.py
+      - name: Revisar recepción vigente, controles manuales y 17 antecedentes EPE
+        run: python -u tools/validar_recuperacion_efectiva.py
       - name: Barrido de URLs solicitadas en Issue 10 sin altas automáticas
         if: steps.plan.outputs.barrido_ampliado == 'true'
         timeout-minutes: 9
@@ -355,6 +357,7 @@ jobs:
           name: cobertura-${{ github.run_id }}
           path: |
             work/capacidades_documentales.json
+            work/recuperacion-efectiva/
             work/barrido/
             work/barrido-ampliado/
             work/historial-fuentes/
