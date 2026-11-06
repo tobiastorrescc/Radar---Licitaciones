@@ -23,7 +23,7 @@ def configuracion(entrada):
     return f,u
 
 def leer(entrada,raiz=RAIZ,ahora=None):
-    f,url=configuracion(entrada);raiz=Path(raiz).resolve();p=(raiz/entrada['archivo']).resolve()
+    f,url=configuracion(entrada);f={**f,'admitir_avisos_sin_numero':True};raiz=Path(raiz).resolve();p=(raiz/entrada['archivo']).resolve()
     if not p.is_relative_to(raiz) or not p.is_file():raise ValueError('Archivo fuera de la bandeja o inexistente')
     if p.stat().st_size>12_000_000:raise ValueError('Archivo excede 12 MB')
     b=p.read_bytes();digest=sha256(b).hexdigest()
@@ -52,7 +52,7 @@ def leer(entrada,raiz=RAIZ,ahora=None):
         html=conectores.decodificar_html(b,tipo);rs,_,dom=extractores.extraer(html,url,f)
         if f.get('adaptador')=='gestiones-sf':
             from fuentes_criticas import gestiones_html
-            rs=gestiones_html(dom,url) or rs
+            rs=gestiones_html(dom,url)
     else:raise ValueError('Formato de archivo no admitido: '+tipo)
     if not rs:raise ValueError('Archivo sin convocatorias reconocidas; no equivale a ausencia de novedades')
     recibo=entrada.get('recibo',{})

@@ -137,6 +137,7 @@ class EntregaIntegraTests(unittest.TestCase):
         import json,csv
         from tools.preparar_entrega import preparar
         datos=[{'titulo':'LIC '+str(i),'objeto':obj,'url':'https://oficial.gob.ar/'+str(i),'clasificacion_novedad':'NUEVO_CONFIRMADO','vigencia':v} for i,(obj,v) in enumerate([('OFERTA ABIERTA','ABIERTA'),('AVISO VENCIDO','VENCIDA'),('VIGENCIA SIN COMPROBAR','DESCONOCIDA')])]
+        datos[0].update(fecha_limite_presentacion_texto='10/11/2026 10:00',organismo='Comuna de Prueba',numero_procedimiento='7/2026',tipo_procedimiento='concurso de precios',registro_estructurado=True)
         with tempfile.TemporaryDirectory() as d:
             root=Path(d);(root/'eventos.json').write_text(json.dumps({'fecha':FECHA,'oportunidades':datos}));(root/'resumen.json').write_text(json.dumps({'estado':'COMPLETA_CON_INCIDENCIAS'}))
             meta=preparar(root);self.assertEqual(meta['totales']['nuevas_confirmadas'],1);self.assertEqual(meta['totales']['publicaciones_nuevas_no_cotizables'],2)

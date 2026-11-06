@@ -41,7 +41,9 @@ def escribir(registros,fecha,destino):
     for r in vigentes:
         filas.append({'organismo':r.get('organismo') or PENDIENTE,'numero':r.get('numero_procedimiento') or PENDIENTE,'objeto':r.get('objeto') or PENDIENTE,'apertura':r.get('fecha_hora_apertura') or r.get('fecha_apertura') or PENDIENTE,'limite_presentacion':r['limite_presentacion_comprobado'],'presupuesto':json.dumps(r['presupuesto'],ensure_ascii=False) if r.get('presupuesto') else PENDIENTE,'pago':r.get('condiciones_pago') if r.get('pago',{}).get('estado')=='VERIFICADO' else PENDIENTE,'modalidad_presentacion':', '.join(r.get('modalidad_presentacion') or []) or PENDIENTE,'url':r.get('url') or PENDIENTE,'pliego':r.get('enlace_pliego') or PENDIENTE})
     with (root/'informe_comercial.csv').open('w',newline='') as out:
-        w=csv.DictWriter(out,fieldnames=campos);w.writeheader();w.writerows(filas)
+        w=csv.DictWriter(out,fieldnames=campos);w.writeheader()
+        for fila in filas:
+            w.writerow({k:("'"+str(v) if str(v).startswith(('=','+','-','@','\t','\r')) else v) for k,v in fila.items()})
     escapar=lambda x:str(x).replace('|','/').replace('\n',' ')
     lineas=['# Convocatorias con recepción vigente comprobada','',f'Fecha: {fecha}. Total: {len(filas)}. Sin recortes por rubro, monto ni pago.','', '| '+' | '.join(campos)+' |','|'+'|'.join(['---']*len(campos))+'|']
     lineas+=['| '+' | '.join(escapar(r[k]) for k in campos)+' |' for r in filas]

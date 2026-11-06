@@ -12,6 +12,7 @@ import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import oportunidades as o
 import shutil
+from calidad_comercial import presentacion
 
 
 def preparar(directorio,salida=None):
@@ -35,10 +36,10 @@ def preparar(directorio,salida=None):
           'total_informadas':len(reportadas),'limite_cantidad':None,'envio_activado':False,'ejecucion':enlace,
           'cobertura_estricta':resumen.get('cobertura_estricta'),
           'aviso':'No hay novedades confirmadas no significa ausencia de licitaciones si hay incidencias. Detecciones sin fecha no son publicaciones nuevas comprobadas.'}
-    meta['totales_comerciales']={k:sum(r.get('vigencia')=='ABIERTA' for r in grupos[k]) for k in ('nuevas_confirmadas','detecciones_sin_fecha_o_mismo_dia','cambios','recuperadas_vigentes')}
+    meta['totales_comerciales']={k:sum(presentacion(r,fecha)['presentacion_verificada'] for r in grupos[k]) for k in ('nuevas_confirmadas','detecciones_sin_fecha_o_mismo_dia','cambios','recuperadas_vigentes')}
     (destino/'resumen.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2)+'\n')
     (destino/'oportunidades.json').write_text(json.dumps({'resumen':meta,'grupos':grupos},ensure_ascii=False,indent=2)+'\n')
-    for nombre in ('metricas_territoriales.json','auditoria_manual.json','cola_enriquecimiento.json','fichas.json','cola_documental.json','observaciones_previas_sin_revalidar.json','fichas_abiertas.md','oportunidades_abiertas.md','oportunidades_proximas_a_vencer.md'):
+    for nombre in ('metricas_territoriales.json','auditoria_manual.json','cola_enriquecimiento.json','fichas.json','cola_documental.json','observaciones_previas_sin_revalidar.json','fichas_abiertas.md','oportunidades_abiertas.md','oportunidades_proximas_a_vencer.md','informe_comercial.md','informe_comercial.json','informe_comercial.csv','presentacion_pendiente.json'):
         if (root/nombre).exists():shutil.copy2(root/nombre,destino/nombre)
     campos=['etiqueta_novedad','primera_deteccion','ultima_deteccion','detalle_documental','provincia','localidad','organismo','numero_procedimiento','objeto','presupuesto','condiciones_pago','enlace_condiciones_pago','fecha_publicacion','fecha_apertura','hora_apertura','fecha_hora_apertura','fecha_limite_presentacion','hora_limite_presentacion','fecha_hora_limite_presentacion','vigencia','modalidad_presentacion','url','enlace_pliego','clasificacion_novedad']
     with (destino/'oportunidades.csv').open('w',encoding='utf-8-sig',newline='') as archivo:
@@ -49,8 +50,8 @@ def preparar(directorio,salida=None):
             fila={k:"'"+v if v.startswith(('=','+','-','@','\t','\r')) else v for k,v in fila.items()};w.writerow(fila)
     total_recuperaciones=sum(len(grupos[k]) for k in ('recuperadas_vigentes','recuperaciones_historicas','recuperaciones_vigencia_pendiente'))
     lineas=['# Informe diario del piloto', '',f'Fecha: {fecha}. Estado: **{resumen["estado"]}**.','',meta['aviso'],'',
-            f'Nuevas vigentes con publicación comprobada: {len(grupos["nuevas_confirmadas"])}. Primeras detecciones abiertas con publicación pendiente: {meta["totales_comerciales"]["detecciones_sin_fecha_o_mismo_dia"]}. Cambios abiertos: {meta["totales_comerciales"]["cambios"]}. El archivo de auditoría conserva {len(reportadas)} eventos de toda vigencia, incluidas {total_recuperaciones} recuperaciones.','',
-            '[CSV completo](oportunidades.csv) · [JSON completo](oportunidades.json). Sin límite de cantidad.']
+            f'Nuevas vigentes con publicación comprobada: {meta["totales_comerciales"]["nuevas_confirmadas"]}. Primeras detecciones abiertas con publicación pendiente: {meta["totales_comerciales"]["detecciones_sin_fecha_o_mismo_dia"]}. Cambios abiertos: {meta["totales_comerciales"]["cambios"]}. El archivo de auditoría conserva {len(reportadas)} eventos de toda vigencia, incluidas {total_recuperaciones} recuperaciones.','',
+            '[Recepción vigente comprobada](informe_comercial.md) · [Presentación pendiente](presentacion_pendiente.json) · [CSV completo de auditoría](oportunidades.csv) · [JSON completo](oportunidades.json). Sin límite de cantidad.']
     territorial=root/'metricas_territoriales.json'
     if territorial.exists():
         from metricas_territoriales import markdown
@@ -63,7 +64,7 @@ def preparar(directorio,salida=None):
         if nombre=='recuperaciones_vigencia_pendiente':titulo='Recuperaciones con vigencia pendiente de comprobar'
         auditoria+=['','## '+titulo,'',o.reporte(datos,fecha)]
         if nombre in ('nuevas_confirmadas','detecciones_sin_fecha_o_mismo_dia','cambios','recuperadas_vigentes'):
-            lineas+=['','## '+titulo,'',o.reporte([r for r in datos if r.get('vigencia')=='ABIERTA'],fecha)]
+            lineas+=['','## '+titulo,'',o.reporte([r for r in datos if presentacion(r,fecha)['presentacion_verificada']],fecha)]
     lineas+=['','[Auditoría de todos los eventos, vencidos y vigencia pendiente](auditoria_eventos.md). El CSV y JSON conservan la totalidad, sin recorte.']
     previo=root/'observaciones_previas_sin_revalidar.json'
     if previo.exists():
@@ -79,7 +80,7 @@ def preparar(directorio,salida=None):
     if proximas.exists():lineas+=['','## Próximas a vencer','','[Consultar vencimientos y estado de revalidación](oportunidades_proximas_a_vencer.md). Las calculadas sólo por historial requieren confirmar nuevamente la fuente.']
     contenido='\n'.join(lineas)+'\n';(destino/'informe.md').write_text(contenido)
     mensaje=EmailMessage(policy=SMTP)
-    mensaje['Subject']=f'Radar {fecha[:10]}: {len(grupos["nuevas_confirmadas"])} nuevas confirmadas; {len(reportadas)} registros informados'
+    mensaje['Subject']=f'Radar {fecha[:10]}: {meta["totales_comerciales"]["nuevas_confirmadas"]} nuevas vigentes verificadas; {len(reportadas)} registros informados'
     mensaje.set_content(contenido)
     for nombre,tipo in [('oportunidades.csv','csv'),('oportunidades.json','json')]:
         mensaje.add_attachment((destino/nombre).read_bytes(),maintype='text' if tipo=='csv' else 'application',subtype=tipo,filename=nombre)

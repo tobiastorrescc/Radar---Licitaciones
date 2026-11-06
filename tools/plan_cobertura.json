@@ -1,6 +1,6 @@
 {
-  "etapa": "recuperacion-efectiva-9-fuentes-control-manual",
-  "barrido": true,
+  "etapa": "cierre-efectivo-captura-42150027629",
+  "barrido": false,
   "barrido_manifest": "inventario/control_efectivo_issue14.json",
   "barrido_por_fuente": 60,
   "barrido_ids": [],
@@ -12,5 +12,6 @@
   "auditar": false,
   "archivar_auditoria": false,
   "reverificar_ids": [],
-  "revisar_efectiva": true
+  "revisar_efectiva": false,
+  "captura_run": "42150027629"
 }

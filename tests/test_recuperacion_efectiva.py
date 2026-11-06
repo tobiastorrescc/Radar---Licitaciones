@@ -34,7 +34,7 @@ class RecuperacionEfectiva(unittest.TestCase):
         viejo=self.r(recuperacion_archivo={'sha256':'abc'},requiere_revalidacion=True)
         self.assertEqual(evaluar(obs,[viejo])['estado_revision_critica'],'FUENTE_INACCESIBLE')
         fresco={**viejo,'requiere_revalidacion':False};s=evaluar(obs,[fresco]);self.assertEqual(s['estado_revision_critica'],'RECUPERADA_MEDIANTE_ARCHIVO_MANUAL');self.assertEqual(s['estado_acceso_directo'],'BLOQUEADA')
-        self.assertEqual(evaluar({**obs,'estado':'OPERATIVA','errores':[]},[])['estado_revision_critica'],'REVISADA_CORRECTAMENTE_SIN_NOVEDADES')
+        self.assertEqual(evaluar({**obs,'estado':'OPERATIVA','errores':[]},[],[])['estado_revision_critica'],'REVISADA_CORRECTAMENTE_SIN_NOVEDADES')
     def test_comparacion_separa_tres_grupos_y_no_imputa_fuera_de_lote(self):
         a=self.r();b=self.r(numero_procedimiento='8/2026',url='https://prueba.gob.ar/compra/8')
         m={**a,'comprobada':True,'fecha_revision':'2026-11-06','evidencia_url':a['url']};omitida={**b,'comprobada':True,'fecha_revision':'2026-11-06','evidencia_url':b['url']}
@@ -74,12 +74,32 @@ class RecuperacionEfectiva(unittest.TestCase):
             return tabla(n,n<7).encode(),'text/html',u
         config={'adaptador':'gestiones-sf','organismos_multiples':True,'solo_descubrimiento':True}
         r=conectores.explorar(url,config,fetch=fetch);self.assertEqual(len(r['oportunidades']),7);self.assertEqual(len(calls),7)
+        incompleta=conectores.explorar(url,config,fetch=lambda u:((tabla(1,False)+'<p>Mostrando 1 a 1 de 75 registros</p>').encode(),'text/html',u))
+        self.assertEqual(incompleta['estado'],'PARCIAL');self.assertTrue(any(e['tipo']=='ConteoGestionesIncompleto' for e in incompleta['errores']))
         r=conectores.explorar(url,config,fetch=lambda u:(tabla(1).encode(),'text/html',u))
         self.assertEqual(r['estado'],'PARCIAL');self.assertTrue(any(e['tipo']=='PaginacionGestionesRepetida' for e in r['errores']))
     def test_csv_no_se_recorta_a_veinte_filas_y_conteo_incompleto_no_es_operativo(self):
         from fuentes_criticas import gestiones_csv
         csv='Apertura;N° - Año;Tipo Gestión Modalidad;Objeto;Organismo Licitante\n'+''.join(f'20/11/2026;{n}-2026;Concurso de precios;Caños;Comuna de Prueba\n' for n in range(1,76))
         rs,errs=gestiones_csv(csv.encode(),'https://www.santafe.gob.ar/export.csv','https://www.santafe.gob.ar/gestionesdecompras/site/index.php');self.assertEqual(len(rs),75);self.assertFalse(errs);self.assertEqual(rs[-1]['numero_procedimiento'],'75/2026')
+
+    def test_entrega_no_publica_apertura_sin_recepcion_comprobada(self):
+        from tools.preparar_entrega import preparar
+        sin=self.r(objeto='OBJETO SIN CIERRE');con=self.r(numero_procedimiento='8/2026',objeto='OBJETO CON CIERRE',fecha_limite_presentacion_texto='19/11/2026 10:00')
+        with tempfile.TemporaryDirectory() as d:
+            root=Path(d);root.joinpath('eventos.json').write_text(json.dumps({'fecha':self.fecha,'oportunidades':[{**r,'clasificacion_novedad':'NUEVO_CONFIRMADO'} for r in (sin,con)]}));root.joinpath('resumen.json').write_text(json.dumps({'estado':'COMPLETA'}))
+            meta=preparar(root);publicado=root.joinpath('entrega/informe.md').read_text()
+            self.assertEqual(meta['totales_comerciales']['nuevas_confirmadas'],1);self.assertIn('OBJETO CON CIERRE',publicado);self.assertNotIn('OBJETO SIN CIERRE',publicado);self.assertIn('OBJETO SIN CIERRE',root.joinpath('entrega/auditoria_eventos.md').read_text())
+
+    def test_importacion_boletin_sin_numero_no_exige_enriquecimiento(self):
+        import archivos_oficiales as a
+        from hashlib import sha256
+        html='<p>CONSORCIO FERIAL ROSARIO</p><p>LICITACION PUBLICA</p><p>OBJETO: Reparación del techo del pabellón. Recepción de ofertas hasta el 20/11/2026 10:00.</p>'
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d,'edicion.html');p.write_text(html)
+            entrada={'fuente_id':'fuente-060','url_oficial':'https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026/2026-11-05licitaciones.html','archivo':p.name,'tipo':'text/html','sha256':sha256(p.read_bytes()).hexdigest()}
+            rs,errs=a.leer(entrada,d,ahora=self.fecha)
+            self.assertEqual(len(rs),1);self.assertFalse(rs[0]['numero_procedimiento']);self.assertTrue(rs[0]['requiere_revalidacion']);self.assertFalse(errs)
 
     def test_epe_archivo_con_apertura_futura_no_se_revalida_solo(self):
         r=self.r(organismo='EPE',requiere_revalidacion=True,recuperacion_archivo={'capturado_en':'2026-10-28T10:00:00-03:00'})
