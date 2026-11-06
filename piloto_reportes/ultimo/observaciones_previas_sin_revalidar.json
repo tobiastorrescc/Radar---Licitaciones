@@ -1640,6 +1640,21 @@
       "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
+      "id": "d24513a2291a29581e9235f1d8138dceec4885bc81a694bae0fd060969e23b70",
+      "organismo": "Municipalidad de Rosario",
+      "procedimiento": "101261/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38667",
+      "objeto": "Compra Agil 101261/2026 Publicada para Apertura CAG 10-126-26 LIMPIEZA DEL SISTEMA DE DESAGÜE SIES MOVILIDAD Y LOGÍSTICA Apertura: 05/11/2026 09:00",
+      "fecha_publicacion_anterior": null,
+      "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
+      "fecha_publicacion_diaria": null,
+      "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-05",
+      "hora_apertura_observada": "09:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
+    },
+    {
       "id": "1153d3c3fd45ab05e6dcb3cc3320ac3738c0bc2ddde139832dc71c9106fb3ac6",
       "organismo": "Municipalidad de Rosario",
       "procedimiento": "44/2026",
@@ -1655,6 +1670,21 @@
       "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
+      "id": "a1c8443edd896922b48e7f4ed0e2721cf8bee6be8948781d1842e71f23f8a03a",
+      "organismo": "Municipalidad de Rosario",
+      "procedimiento": "24675/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38668",
+      "objeto": "Compra Agil 24675/2026 Publicada para Apertura BIOMEDICOS DE USO GENERAL Hospital de Emergencias Dr. C.Alvarez Apertura: 05/11/2026 11:00",
+      "fecha_publicacion_anterior": null,
+      "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
+      "fecha_publicacion_diaria": null,
+      "primera_deteccion_diaria": null,
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-05",
+      "hora_apertura_observada": "11:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
+    },
+    {
       "id": "d1109b9a66784520cd57912f2e7f8a99a1f63bdcac0aa3e19cf701c30af18f55",
       "organismo": "Municipalidad de Rosario",
       "procedimiento": "2/2026",
@@ -1667,51 +1697,6 @@
       "ultima_observacion_diaria": null,
       "fecha_apertura_observada": "2026-11-05",
       "hora_apertura_observada": "12:00",
-      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
-    },
-    {
-      "id": "2d824702a45b54f6dcf1eee302d76b4de1ce23eb069757d4764786c838dbd6c2",
-      "organismo": "Municipalidad de Rosario",
-      "procedimiento": "19/2026",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38643",
-      "objeto": "Compra Agil 19/2026 Publicada para Apertura Adquisición de fibra óptica y materiales - D. G. de Informática y TIC - Agencia de Modernización Rosario Digital - Jefatura de Gabinete Apertura: 06/11/2026 10:00",
-      "fecha_publicacion_anterior": null,
-      "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
-      "fecha_publicacion_diaria": null,
-      "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null,
-      "fecha_apertura_observada": "2026-11-06",
-      "hora_apertura_observada": "10:00",
-      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
-    },
-    {
-      "id": "4765f889b6817426e3b8d39cad33f4c65f0ca2d023c81e0a066f96557e26a19b",
-      "organismo": "Municipalidad de Rosario",
-      "procedimiento": "29/2026",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38631",
-      "objeto": "Compra Agil 29/2026 Publicada para Apertura Compra de Equipos e Insumos de Informática - Ente Turístico Rosario Apertura: 06/11/2026 10:00",
-      "fecha_publicacion_anterior": null,
-      "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
-      "fecha_publicacion_diaria": null,
-      "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null,
-      "fecha_apertura_observada": "2026-11-06",
-      "hora_apertura_observada": "10:00",
-      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
-    },
-    {
-      "id": "d5c6f207a7370c3e8df5fe5f907143f690b5d46619bf406d172b1551b3782c4a",
-      "organismo": "Municipalidad de Rosario",
-      "procedimiento": "46/2026",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38618",
-      "objeto": "Compra Agil 46/2026 Publicada para Apertura Adquisición de uniformes de Verano para la Dir. Gral de Control Urbano Apertura: 06/11/2026 10:00",
-      "fecha_publicacion_anterior": null,
-      "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
-      "fecha_publicacion_diaria": null,
-      "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null,
-      "fecha_apertura_observada": "2026-11-06",
-      "hora_apertura_observada": "10:00",
       "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     }
   ]

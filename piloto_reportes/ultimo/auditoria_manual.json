@@ -193,10 +193,8 @@
       "fecha_apertura": "2026-11-06",
       "hora_apertura": "10:30",
       "metodo": "Lectura independiente de ficha oficial, sin OCR; número distinto del expediente.",
-      "resultado": "DETECTADA_INCOMPLETA",
-      "campos_pendientes_contraste": [
-        "numero_procedimiento"
-      ],
+      "resultado": "DETECTADA",
+      "campos_pendientes_contraste": [],
       "evidencia_reciente": true,
       "ids_radar": [
         "c0f16e21d1a6003c61a243ccd06649eb92e43d2edba240f3554e7f5f310da60c"
@@ -287,10 +285,12 @@
       "fecha_apertura": "2026-11-06",
       "hora_apertura": "10:00",
       "metodo": "Lectura independiente de ficha oficial, sin OCR; número distinto del expediente.",
-      "resultado": "OMITIDA",
+      "resultado": "DETECTADA",
       "campos_pendientes_contraste": [],
       "evidencia_reciente": true,
-      "ids_radar": []
+      "ids_radar": [
+        "efd40ab7ca207e7c8f302240c90bbe04863c8be9302f6d3ab3dda5fa98b13a34"
+      ]
     },
     {
       "id_control": "sf-rosario-38709",
@@ -333,10 +333,8 @@
       "fecha_apertura": "2026-11-10",
       "hora_apertura": "10:00",
       "metodo": "Lectura independiente de ficha oficial, sin OCR; número distinto del expediente.",
-      "resultado": "DETECTADA_INCOMPLETA",
-      "campos_pendientes_contraste": [
-        "numero_procedimiento"
-      ],
+      "resultado": "DETECTADA",
+      "campos_pendientes_contraste": [],
       "evidencia_reciente": true,
       "ids_radar": [
         "8ff9ef15c3d0b676b9251514452e38add21776b6c8772de080710506360435f5"
@@ -502,12 +500,12 @@
   "por_provincia": {
     "Santa Fe": {
       "comprobadas": 12,
-      "detectadas": 4,
-      "omitidas": 3,
-      "incompletas": 5,
+      "detectadas": 7,
+      "omitidas": 2,
+      "incompletas": 3,
       "ambiguas": 0,
       "omitidas_historicas": 1,
-      "omitidas_apertura_futura": 2
+      "omitidas_apertura_futura": 1
     },
     "Entre Ríos": {
       "comprobadas": 6,

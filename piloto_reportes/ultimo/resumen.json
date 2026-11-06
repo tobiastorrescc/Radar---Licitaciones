@@ -1,25 +1,32 @@
 {
-  "fecha": "2026-11-05T08:55:06.617395-03:00",
+  "fecha": "2026-11-06T08:52:44.049074-03:00",
   "estado": "COMPLETA_CON_INCIDENCIAS",
   "totales": {
-    "recuperadas_vigentes": 0,
-    "nuevas_confirmadas": 15,
-    "detecciones_sin_fecha_o_mismo_dia": 196,
-    "cambios": 171,
-    "recuperaciones_historicas": 47,
-    "recuperaciones_vigencia_pendiente": 839
+    "recuperadas_vigentes": 17,
+    "nuevas_confirmadas": 4,
+    "publicaciones_nuevas_no_cotizables": 1,
+    "detecciones_sin_fecha_o_mismo_dia": 20,
+    "cambios": 117,
+    "recuperaciones_historicas": 97,
+    "recuperaciones_vigencia_pendiente": 2
   },
   "linea_base_sin_alerta": 0,
-  "total_informadas": 1268,
+  "total_informadas": 258,
   "limite_cantidad": null,
   "envio_activado": false,
-  "ejecucion": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/42021794797",
+  "ejecucion": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/42212333787",
   "cobertura_estricta": {
-    "PARCIAL": 25,
-    "BLOQUEADA": 14,
-    "OPERATIVA": 41,
-    "PENDIENTE": 7,
+    "PARCIAL": 24,
+    "BLOQUEADA": 13,
+    "OPERATIVA": 42,
+    "PENDIENTE": 8,
     "SIN_PUBLICACIONES_CONFIRMADO": 1
   },
-  "aviso": "No hay novedades confirmadas no significa ausencia de licitaciones si hay incidencias. Detecciones sin fecha no son publicaciones nuevas comprobadas."
+  "aviso": "No hay novedades confirmadas no significa ausencia de licitaciones si hay incidencias. Detecciones sin fecha no son publicaciones nuevas comprobadas.",
+  "totales_comerciales": {
+    "nuevas_confirmadas": 2,
+    "detecciones_sin_fecha_o_mismo_dia": 3,
+    "cambios": 4,
+    "recuperadas_vigentes": 0
+  }
 }
