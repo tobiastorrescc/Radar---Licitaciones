@@ -1,0 +1,32 @@
+name: Gestiones SF con navegador oficial aislado
+on:
+  push:
+    branches: [mejora/radar-auditable]
+    paths: [tools/plan_gestiones_navegador.json]
+permissions:
+  contents: read
+concurrency:
+  group: gestiones-navegador-aislado
+  cancel-in-progress: false
+jobs:
+  consultar:
+    if: github.ref == 'refs/heads/mejora/radar-auditable'
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Preparar navegador sin instalar OCR ni cambiar el piloto
+        continue-on-error: true
+        run: python -m pip install --disable-pip-version-check --timeout 15 --retries 1 playwright==1.56.0
+      - name: Inspeccionar portal, exportación y páginas
+        run: python -u tools/auditar_gestiones_navegador.py
+      - name: Conservar resultados parciales y evidencia
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gestiones-navegador-${{ github.run_id }}
+          path: work/gestiones-navegador/
+          retention-days: 90

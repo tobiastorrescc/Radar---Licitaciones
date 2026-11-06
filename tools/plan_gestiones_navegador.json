@@ -1,0 +1,9 @@
+{
+  "etapa": "gestiones-browser-control-1",
+  "total_segundos": 150,
+  "urls": [
+    "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
+    "https://www.santafe.gov.ar/gestionesdecompras/site/",
+    "https://www.santafe.gov.ar/gestionesdecompras/site/output.php?a=consultas.imprimir&anio=2026&estado=AP&limit=10000&start=0"
+  ]
+}
