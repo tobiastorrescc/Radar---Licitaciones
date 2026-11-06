@@ -10,7 +10,7 @@ from urllib.parse import urlsplit
 import oportunidades as o
 
 VERSION=1
-CAMPOS=('numero_documental_previo','evidencia_numero_documental','aviso_oficial_sin_numero','tipo_documento','detalle_documental','titulo','objeto','numero_procedimiento','tipo_procedimiento','procedimiento','organismo','localidad','provincia',
+CAMPOS=('requiere_revalidacion','recuperacion_archivo','numero_documental_previo','evidencia_numero_documental','aviso_oficial_sin_numero','tipo_documento','detalle_documental','titulo','objeto','numero_procedimiento','tipo_procedimiento','procedimiento','organismo','localidad','provincia',
     'fecha_apertura','fecha_apertura_texto','hora_apertura','fecha_publicacion','fecha_publicacion_texto','presupuesto',
     'situacion_publicada','evento_publicado','documentos','enlace_pliego','comprobacion_pliego','evidencias_campos',
     'pago_evidencias','pago_motivo_pendiente','fuente','fuentes_observadas','url','urls_publicacion','evidencia_url',
@@ -69,6 +69,7 @@ def consolidar(anterior,nuevo):
     mejor=calidad(nuevo)>=calidad(anterior)
     for k,v in entrada.items():
         if v is None or v=='' or v==[]:continue
+        if k=='requiere_revalidacion' and not mejor:continue
         if k=='rango_evidencia':salida[k]=max(anterior.get(k,0),v);continue
         if k=='detalle_completo':salida[k]=bool(anterior.get(k) or v);continue
         if k in ('objeto','presupuesto','fecha_apertura','fecha_publicacion','hora_apertura') and salida.get(k) and not mejor:continue
@@ -123,6 +124,7 @@ def huella(r):return sha256(serializar(contenido(r)).encode()).hexdigest()
 def fuentes_de(r):return sorted({u for u in [r.get('fuente'),*r.get('fuentes_observadas',[])] if u})
 
 def tipo_nuevo(r,previas,fecha):
+    if r.get('requiere_revalidacion'):return 'ARCHIVO_PENDIENTE_REVALIDACION'
     disponibles=[previas[u] for u in fuentes_de(r) if u in previas and previas[u]['base_completa']]
     publicada=r.get('fecha_publicacion')
     hoy=datetime.fromisoformat(fecha).astimezone(o.ZONA).date().isoformat()

@@ -46,7 +46,10 @@ def worker(entrada,salida):
     if f.get('config_extraccion'):
         try:
             config=f['config_extraccion']
-            if 'csv' in tipo.lower():
+            if config.get('adaptador')=='assa-api' and 'json' in tipo.lower():
+                from extractores_lotes import extraer_assa
+                registros=extraer_assa(datos,final)[0]
+            elif 'csv' in tipo.lower():
                 from fuentes_criticas import gestiones_csv
                 registros,errores_extraccion=gestiones_csv(datos,final,final)
             elif dom is not None:

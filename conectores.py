@@ -286,6 +286,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
         for u in reversed(ediciones_santafe(fuente,config.get('boletin_sf_dias',3))):pending.appendleft((u,'LISTADO',{}))
     seen=set();items={};errors=[];limits=[];correctas=0;documentos_leidos=0
     respuestas_detalles={}
+    respaldo_intentado=False;rutas_respaldo=[]
     conteos_rosario={}
     hosts={_host(fuente),*(_host('https://'+h) for h in config.get('dominios_documentos',[]))}
     documento_pendiente={};vacios=[];paginas_api=set()
@@ -295,13 +296,13 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
            'paginas_visitadas':len(seen),'paginas_correctas':correctas,'documentos_leidos':documentos_leidos,
            'cobertura_completa':False,'fase':fase,'url_actual':actual,'finalizado':finalizado,
            'alcance':config.get('alcance_publicaciones','Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto'),
-           'totales_publicados_rosario':{t:sorted(v) for t,v in conteos_rosario.items()},'intentos_http':list(intentos_http),'documentos_pendientes':list(documento_pendiente.values()),'evidencias_listado_vacio':list(vacios)}
+           'totales_publicados_rosario':{t:sorted(v) for t,v in conteos_rosario.items()},'intentos_http':list(intentos_http),'documentos_pendientes':list(documento_pendiente.values()),'evidencias_listado_vacio':list(vacios),'rutas_respaldo_descubiertas':list(rutas_respaldo),'busqueda_respaldo_intentada':respaldo_intentado}
         if progreso:progreso(r)
         return r
     def agregar(r):
         provisional=sha256('|'.join((fuente,r['url'],normalizar(r['titulo']))).encode()).hexdigest()
         registro={'id':provisional,'fuente':fuente,'estado':'PUBLICACION_DETECTADA',
-             'organismo':config.get('organismo'),'localidad':config.get('localidad'),'provincia':config.get('provincia'),
+             'requiere_revalidacion':False,'organismo':config.get('organismo'),'localidad':config.get('localidad'),'provincia':config.get('provincia'),
              **clasificar(r['titulo']),**r}
         if config.get('organismos_multiples') and not r.get('organismo'):registro['identidad_ambito']=r['url']
         registro=oportunidades.normalizar(registro)
@@ -383,7 +384,24 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 if esperados and None not in esperados and esperados<=recuperados:
                     # El enlace colectivo es un índice, no una oportunidad adicional.
                     items[referencia]['documento_desglosado']={'procedimientos':sorted(esperados),'url':url,'sha256':hash_documento}
-    while pending:
+    while pending or (not respaldo_intentado and config.get('consultas_respaldo') and not items and (errors or not vacios) and not any(e.get('http_status') in (401,403,429) for e in errors)):
+        if not pending:
+            respaldo_intentado=True
+            from tools.descubrir_fuentes import rss
+            for consulta in config['consultas_respaldo']:
+                consulta=consulta.replace('{anio}',str(oportunidades.datetime.now(oportunidades.ZONA).year))
+                buscador='https://www.bing.com/search?'+urlencode({'q':consulta,'format':'rss','setlang':'es','cc':'ar'})
+                snapshot('BUSQUEDA_COMPLEMENTARIA',buscador)
+                try:
+                    datos,_,_=fetch(buscador)
+                    candidatos=[c for c in rss(datos) if _host(c['url']) in hosts]
+                    for c in candidatos:
+                        if c['url'] not in seen:
+                            rutas_respaldo.append(c);pending.append((c['url'],'LISTADO',{}))
+                except Exception as error:
+                    errors.append({'url':buscador,**clasificar_error(error,'DESCARGA'),'metodo':'BUSCADOR_COMPLEMENTARIO'})
+                snapshot('BUSQUEDA_COMPLEMENTARIA_FINALIZADA',buscador)
+            if not pending:break
         if len(seen)>=max_paginas:limits.append('max_paginas');break
         url,clase,referencia=pending.popleft();url=extractores.url_publica(url)
         post=urlencode(referencia['post']).encode() if clase in ('DATATABLES','AJAX_PUBLICADO') else (b'{"":""}' if config.get('adaptador')=='chajari-api' and re.search(r'/licitaciones/(?:para_apertura|en_evaluacion|adjudicada)/\d+$',url or '') else None)

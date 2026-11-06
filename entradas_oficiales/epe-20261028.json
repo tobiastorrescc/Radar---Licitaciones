@@ -1,0 +1,13 @@
+{
+  "fuente_id": "fuente-003",
+  "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+  "archivo": "epe-20261028.html",
+  "tipo": "text/html",
+  "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+  "capturado_en": "2026-10-28T12:31:37+00:00",
+  "recibo": {
+    "metodo": "CAPTURA_ACTIONS_ANTERIOR",
+    "sha256_original": "9364597500792a048744542a19dc384912ed21d8a9ad9956aaba884d55b078e9",
+    "transformacion": "Recorte DOM de todas las apertura-item, sin scripts, estilos ni atributos de ejecución. No es una descarga actual."
+  }
+}

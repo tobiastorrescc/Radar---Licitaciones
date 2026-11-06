@@ -161,6 +161,10 @@ def normalizar(r,ahora=None):
     r['motivo_sin_estimacion']='No hay costos propios, cantidades y precio de venta comprobables para estimar margen'
     r['evidencias_campos']=ev
     # Solo llamar pliego al enlace identificado como tal: otros adjuntos quedan en documentos.
+    if r.get('requiere_revalidacion'):
+        r['vigencia_documental']=r['vigencia']
+        if r['vigencia']!='VENCIDA':r['vigencia']='DESCONOCIDA'
+        r['motivo_vigencia']='Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo'
     r['enlace_pliego']=r.get('enlace_pliego') if r.get('comprobacion_pliego',{}).get('estado')=='DOCUMENTO_ACCESIBLE' and r.get('enlace_pliego') in {d['url'] for d in r.get('documentos',[])} else next((d['url'] for d in r.get('documentos',[]) if 'pliego' in norm(d.get('titulo')) or 'pliego' in norm(d['url'].split('/')[-1])),None)
     for k in ('organismo','localidad','provincia','objeto','fecha_publicacion','fecha_apertura','presupuesto'):r.setdefault(k,None)
     objeto=r.get('objeto') or ''

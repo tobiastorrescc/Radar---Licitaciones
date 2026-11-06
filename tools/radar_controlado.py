@@ -128,6 +128,12 @@ def _ejecutar_corrida(raiz,*,total=600,documentos=120,informe_previo=None):
     carpeta=raiz/'ejecuciones'/(datetime.now(o.ZONA).strftime('%Y%m%dT%H%M%S')+'-'+uuid.uuid4().hex[:8]);carpeta.mkdir(parents=True)
     informe=informe_previo or ejecutar(config,carpeta/'verificacion.json',concurrencia=4,conexion=5,lectura=10,por_fuente=60,total=total)
     registros=registros_checkpoint(informe)
+    revision={}
+    if informe_previo is None:
+        from archivos_oficiales import importar,vistos
+        importados,revision=importar(carpeta/'importados',vistos=vistos(raiz/'estado.sqlite3'))
+        guardar(carpeta/'auditoria_archivos_oficiales.json',revision)
+        registros=o.deduplicar(registros+importados,informe['actualizado'])
     if enriquecer:comprobar_pliegos.comprobar(registros,informe['actualizado'],config,total=documentos,salida_parcial=carpeta/'documentos_parciales.jsonl')
     guardar(carpeta/'cola_enriquecimiento.json',{'etapa':'ENRIQUECIMIENTO_POSTERIOR','bloquea_descubrimiento':False,'oportunidades':registros})
     registros=[o.normalizar(r,informe['actualizado']) for r in registros]
@@ -142,6 +148,9 @@ def _ejecutar_corrida(raiz,*,total=600,documentos=120,informe_previo=None):
     db=inc.abrir(raiz/'estado.sqlite3')
     try:
         resumen=inc.registrar(db,registros,informe)
+        if revision:
+            from archivos_oficiales import registrar_recibos
+            registrar_recibos(db,revision)
         from tools.auditar_lote_fuentes import estado_revision
         eventos=inc.eventos(db,resumen['corrida'],resumen['fecha'])
         for obs in fuentes:

@@ -416,7 +416,10 @@
       "estado": "BLOQUEADA",
       "segundos": 3.148,
       "error_pendiente": "ERROR_CONEXION_TLS"
-    }
+    },
+    "consultas_respaldo": [
+      "site:epe.santafe.gov.ar/app2/apertura licitacion"
+    ]
   },
   {
     "id": "fuente-004",
@@ -2315,7 +2318,10 @@
       "estado": "BLOQUEADA",
       "segundos": 43.475,
       "error_pendiente": "TIEMPO_ESPERA"
-    }
+    },
+    "consultas_respaldo": [
+      "site:santafe.gov.ar/boletinoficial/ver.php licitaciones {anio}"
+    ]
   },
   {
     "id": "fuente-061",
@@ -3168,7 +3174,14 @@
       "estado": "BLOQUEADA",
       "segundos": 9.03,
       "error_pendiente": "TIEMPO_ESPERA"
-    }
+    },
+    "consultas_respaldo": [
+      "site:santafe.gov.ar/gestionesdecompras/site/gestion.php licitacion {anio}"
+    ],
+    "urls_inicio": [
+      "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
+      "https://www.santafe.gov.ar/gestionesdecompras/site/output.php?a=consultas.imprimir&anio=2026&estado=AP&limit=10000&start=0"
+    ]
   },
   {
     "id": "fuente-088",

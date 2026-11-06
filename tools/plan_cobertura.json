@@ -1,42 +1,25 @@
 {
-  "etapa": "alternativas-nov6-http-oficial-y-respaldo-en-desarrollo",
-  "barrido": false,
+  "etapa": "alternativas-nov6-integrada-ocho-fuentes-con-importacion",
+  "barrido": true,
   "barrido_manifest": "inventario/recuperacion_criticas_issue14.json",
   "barrido_por_fuente": 60,
   "barrido_ids": [
+    "fuente-003",
+    "fuente-087",
+    "fuente-060",
+    "fuente-010",
+    "fuente-005",
+    "fuente-004",
+    "fuente-007",
     "fuente-026"
   ],
   "sondear": true,
   "urls_sondeo": [],
   "peticiones": [
     {
-      "url": "http://www.santafe.gov.ar/gestionesdecompras/site/index.php",
+      "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/all?page=0&pageSize=100",
       "config_extraccion": {
-        "adaptador": "gestiones-sf"
-      }
-    },
-    {
-      "url": "http://www.santafe.gov.ar/gestionesdecompras/site/output.php?a=consultas.imprimir&anio=2026&estado=AP&limit=10000&start=0",
-      "config_extraccion": {
-        "adaptador": "gestiones-sf"
-      }
-    },
-    {
-      "url": "http://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-05licitaciones.html",
-      "config_extraccion": {
-        "adaptador": "boletin-sf"
-      }
-    },
-    {
-      "url": "http://epe.santafe.gov.ar/app2/aperturas",
-      "config_extraccion": {
-        "adaptador": "epe"
-      }
-    },
-    {
-      "url": "http://www.epe.santafe.gov.ar/app2/aperturas",
-      "config_extraccion": {
-        "adaptador": "epe"
+        "adaptador": "assa-api"
       }
     }
   ],
