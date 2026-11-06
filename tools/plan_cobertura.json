@@ -1,6 +1,6 @@
 {
-  "etapa": "issue14-validar-objeto-pjer-y-transporte-criticas",
-  "barrido": true,
+  "etapa": "alternativas-nov6-rutas-publicadas",
+  "barrido": false,
   "barrido_manifest": "inventario/recuperacion_criticas_issue14.json",
   "barrido_por_fuente": 60,
   "barrido_ids": [
@@ -10,28 +10,74 @@
   "urls_sondeo": [],
   "peticiones": [
     {
-      "url": "https://epe.santafe.gov.ar/app2/aperturas",
-      "transporte": "curl",
-      "tls_max": "1.2",
-      "ipv4": true,
-      "http1": true
+      "url": "https://www.santafe.gov.ar/gestionesdecompras/site/output.php?a=consultas.imprimir&anio=2026&estado=AP&limit=10000&start=0",
+      "config_extraccion": {
+        "adaptador": "gestiones-sf",
+        "organismos_multiples": true
+      }
     },
     {
-      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
-      "transporte": "curl",
-      "tls_max": "1.2",
-      "ipv4": true,
-      "http1": true
+      "url": "https://www.santafe.gov.ar/gestionesdecompras/site/gestion.php?contar=1&idGestion=138502",
+      "config_extraccion": {
+        "adaptador": "gestiones-sf",
+        "organismos_multiples": true
+      }
     },
     {
-      "url": "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
-      "conexion_timeout": 12,
-      "lectura_timeout": 20
+      "url": "https://epe.santafe.gov.ar/app2/apertura/19417",
+      "config_extraccion": {
+        "adaptador": "epe",
+        "organismos_multiples": false
+      }
     },
     {
-      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-05licitaciones.html",
-      "conexion_timeout": 12,
-      "lectura_timeout": 20
+      "url": "https://epe.santafe.gov.ar/app2/apertura/19377",
+      "config_extraccion": {
+        "adaptador": "epe",
+        "organismos_multiples": false
+      }
+    },
+    {
+      "url": "https://epe.santafe.gov.ar/app2/api/archivo?id=13749&modulo=apertura",
+      "config_extraccion": {
+        "adaptador": "epe",
+        "organismos_multiples": false
+      }
+    },
+    {
+      "url": "https://www.epe.santafe.gov.ar/institucional/",
+      "config_extraccion": {
+        "adaptador": "epe",
+        "organismos_multiples": false
+      }
+    },
+    {
+      "url": "https://www.santafe.gov.ar/boletinoficial/resumendia.php?dia=2026-11-06&pdia=fecha",
+      "config_extraccion": {
+        "adaptador": "boletin-sf",
+        "organismos_multiples": true
+      }
+    },
+    {
+      "url": "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/pdf/2026/11/BO06112026.pdf",
+      "config_extraccion": {
+        "adaptador": "boletin-sf",
+        "organismos_multiples": true
+      }
+    },
+    {
+      "url": "https://www.santafe.gov.ar/boletinoficial/index.php/verPdf.php?archivo=recursos%2Fboletines%2Fpdf%2F2026%2F10%2FBO09102026.pdf",
+      "config_extraccion": {
+        "adaptador": "boletin-sf",
+        "organismos_multiples": true
+      }
+    },
+    {
+      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-06licitaciones.html",
+      "config_extraccion": {
+        "adaptador": "boletin-sf",
+        "organismos_multiples": true
+      }
     }
   ],
   "lectura_liviana": true,

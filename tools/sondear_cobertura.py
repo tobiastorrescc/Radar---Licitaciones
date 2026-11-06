@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 import sys
 import subprocess
+import time
 from urllib.error import HTTPError
 from urllib.parse import urlsplit
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
@@ -34,26 +35,43 @@ def worker(entrada,salida):
         datos=archivo.read_bytes()
     else:
         conexion=max(1,min(12,int(f.get('conexion_timeout',5))));lectura=max(1,min(20,int(f.get('lectura_timeout',8))))
-        datos,tipo,final=conectores.descargar(u,conexion_timeout=conexion,lectura_timeout=lectura,datos_post=f.get('datos_post','').encode() if 'datos_post' in f else None,headers_extra={'Content-Type':f.get('content_type','application/json')} if 'datos_post' in f else None)
+        datos,tipo,final,estado=conectores.descargar(u,devolver_estado=True,conexion_timeout=conexion,lectura_timeout=lectura,datos_post=f.get('datos_post','').encode() if 'datos_post' in f else None,headers_extra={'Content-Type':f.get('content_type','application/json')} if 'datos_post' in f else None)
         archivo.write_bytes(datos)
     if conectores._host(final)!=conectores._host(u):raise ValueError('Redirección a otro dominio: requiere contraste')
     dom=extractores.DOM(conectores.decodificar_html(datos,tipo)) if 'html' in tipo.lower() and not datos.startswith(b'%PDF-') else None
     enlaces=[] if dom is None else [{k:l[k] for k in ('url','texto')} for l in dom.root.enlaces(final)
         if re.search(r'licit|compra|contrata|cotiza|concurso|boletin|proveedor|csv|excel|export',l['url']+' '+l['texto'],re.I)]
     scripts=[] if dom is None else [extractores.url_publica(n.attrs['src'],final) for n in dom.root.iter() if n.tag=='script' and n.attrs.get('src')]
+    registros=[];errores_extraccion=[]
+    if f.get('config_extraccion'):
+        try:
+            config=f['config_extraccion']
+            if 'csv' in tipo.lower():
+                from fuentes_criticas import gestiones_csv
+                registros,errores_extraccion=gestiones_csv(datos,final,final)
+            elif dom is not None:
+                registros=extractores.extraer(conectores.decodificar_html(datos,tipo),final,config)[0]
+                if config.get('adaptador')=='gestiones-sf':
+                    from fuentes_criticas import gestiones_html
+                    registros=gestiones_html(dom,final) or registros
+            else:raise ValueError('Formato sin lector configurado en sondeo')
+        except Exception as e:errores_extraccion=[conectores.clasificar_error(e,'EXTRACCION')]
     guardar(salida,{'estado':'OPERATIVA','finalizado':True,'paginas_correctas':1,'oportunidades':[],
-        'url':u,'final':final,'transporte':f.get('transporte','urllib'),'metodo':'POST' if 'datos_post' in f else 'GET','parametros':f.get('datos_post'),'tipo':tipo,'sha256':sha256(datos).hexdigest(),'archivo':str(root/(nombre+'.bin')),
-        'enlaces':enlaces,'scripts_publicados':scripts,'extraccion_verificada':False,'aviso':'Captura de investigación; no prueba extracción de procedimientos'})
+        'url':u,'final':final,'transporte':f.get('transporte','urllib'),'metodo':'POST' if 'datos_post' in f else 'GET','parametros':f.get('datos_post'),'tipo':tipo,'codigo_http':int(estado),'tamano_bytes':len(datos),'sha256':sha256(datos).hexdigest(),'archivo':str(root/(nombre+'.bin')),
+        'enlaces':enlaces,'scripts_publicados':scripts,'extraccion_verificada':bool(registros),'convocatorias_extraidas':len(registros),'registros_extraidos':registros,'errores_extraccion':errores_extraccion,'aviso':'Captura de investigación; no prueba extracción de procedimientos'})
 
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--worker');p.add_argument('--salida',default='work/sondeo');a=p.parse_args()
     if a.worker:
+        inicio=time.monotonic()
         try:worker(a.worker,a.salida)
         except Exception as e:
             f=json.loads(Path(a.worker).read_text())
             error=conectores.clasificar_error(e,'DESCARGA')
-            guardar(a.salida,{'estado':'ERROR_EXTRACCION' if error.get('categoria')=='EXTRACCION' else 'BLOQUEADA','finalizado':True,'url':f['url'],'paginas_correctas':0,'oportunidades':[],'errores':[error]})
+            guardar(a.salida,{'estado':'ERROR_EXTRACCION' if error.get('categoria')=='EXTRACCION' else 'BLOQUEADA','finalizado':True,'url':f['url'],'paginas_correctas':0,'oportunidades':[],'codigo_http':getattr(e,'code',None),'tipo':e.headers.get('Content-Type') if isinstance(e,HTTPError) and e.headers else None,'tamano_bytes':None,'convocatorias_extraidas':0,'extraccion_verificada':False,'errores':[error]})
+        finally:
+            d=json.loads(Path(a.salida).read_text());d['duracion_segundos']=round(time.monotonic()-inicio,3);guardar(a.salida,d)
         return
     root=Path(a.salida);root.mkdir(parents=True,exist_ok=True)
     fs=json.loads(Path('inventario/fuentes.json').read_text())

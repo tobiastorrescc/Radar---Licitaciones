@@ -157,7 +157,7 @@ class _HTTPSHandler(HTTPSHandler):
                             req, context=self._context)
 
 
-def descargar(url, conexion_timeout=5, lectura_timeout=10, headers_extra=None, devolver_headers=False,datos_post=None,max_bytes=12_000_000):
+def descargar(url, conexion_timeout=5, lectura_timeout=10, headers_extra=None, devolver_headers=False,datos_post=None,max_bytes=12_000_000,devolver_estado=False):
     if not 1<=max_bytes<=32_000_000:raise ValueError('Tamaño máximo de respuesta fuera de rango')
     # build_opener conserva proxies del entorno y validación TLS predeterminada.
     opener = build_opener(_HTTPHandler(lectura_timeout), _HTTPSHandler(lectura_timeout))
@@ -173,6 +173,7 @@ def descargar(url, conexion_timeout=5, lectura_timeout=10, headers_extra=None, d
             datos=gzip.decompress(datos)
             if len(datos)>max_bytes:raise ValueError('Contenido descomprimido supera 12 MB')
         resultado=(datos, r.headers.get('Content-Type', ''), r.geturl())
+        if devolver_estado:resultado=(*resultado,r.status)
         return (*resultado,dict(r.headers.items())) if devolver_headers else resultado
 
 
