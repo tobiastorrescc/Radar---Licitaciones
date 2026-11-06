@@ -75,7 +75,7 @@ class CapturaBinaria(unittest.TestCase):
         with TemporaryDirectory() as tmp:
             entrada=Path(tmp)/'entrada.json';salida=Path(tmp)/'salida.json'
             entrada.write_text(json.dumps({'url':'https://oficial.gob.ar/aviso.pdf'}))
-            with patch('conectores.descargar',return_value=(b'%PDF-1.4\nbinario','application/pdf','https://oficial.gob.ar/aviso.pdf')),patch('extractores.DOM',side_effect=AssertionError('PDF no es HTML')):
+            with patch('conectores.descargar',return_value=(b'%PDF-1.4\nbinario','application/pdf','https://oficial.gob.ar/aviso.pdf',200)),patch('extractores.DOM',side_effect=AssertionError('PDF no es HTML')):
                 worker(entrada,salida)
             r=json.loads(salida.read_text());self.assertEqual(r['paginas_correctas'],1);self.assertEqual(r['enlaces'],[])
             self.assertEqual(Path(r['archivo']).read_bytes(),b'%PDF-1.4\nbinario')
