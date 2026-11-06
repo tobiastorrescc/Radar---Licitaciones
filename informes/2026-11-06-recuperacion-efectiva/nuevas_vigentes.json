@@ -1,0 +1,142 @@
+{
+  "fecha": "2026-11-05T23:27:28.151024-03:00",
+  "oportunidades": [
+    {
+      "campos_oficiales": {
+        "consulta pliego": "Oficina de Compras (SCyE) - DEL VALLE ARISTOBULO 2734 - Lunes a viernes (hábiles administrativos) de 08:00 a 14:00 | Consultas: notificaciones_sce@rosario.gob.ar",
+        "declaracion jurada de presentacion de ofertas": "Para presentar una oferta, completá la Declaración Jurada de conocimiento de Pliegos y Normativas a través de tu Perfil Digital. Luego, imprimila, firmala y adjuntala a tu oferta en papel. Al presentar la Declaración Jurada, se reemplaza la presentación en papel de los pliegos y normativas correspondientes a la licitación. Completar DDJJ",
+        "estado": "Publicada para Apertura",
+        "expediente": "36308/2026",
+        "fecha de apertura": "10/11/2026 10:00",
+        "fecha de publicacion": "05/11/2026",
+        "fecha ultima actualizacion": "05/11/2026",
+        "lugar de apertura": "Oficina de Compras (SCyE) - DEL VALLE ARISTOBULO 2734 - -",
+        "n° de contratacion": "128/2026",
+        "objeto": "Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa»",
+        "presupuesto oficial": "$ 5.800.000,00",
+        "recepcion de ofertas": "Oficina de Compras (SCyE) - DEL VALLE ARISTOBULO 2734 - Lunes a viernes (hábiles administrativos) de 08:00 a 14:00, hasta el día y hora de apertura de sobres.",
+        "reparticion licitante": "Secretaría de Cultura y Educación - DEL VALLE ARISTOBULO 2734",
+        "tipo de contratacion": "Compra Agil",
+        "ver pliego adjunto apto para cotizar": "128-36308.2026-pliego.pdf"
+      },
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: 128-36308.2026-pliego.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38736/documentos/102974"
+        }
+      ],
+      "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38736/documentos/102974",
+      "evento_publicado": null,
+      "evidencia_url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
+          "texto": "10/11/2026 10:00"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
+          "texto": "10/11/2026 10:00"
+        },
+        "fecha_publicacion": {
+          "texto": "fecha de publicacion: 05/11/2026",
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736"
+        },
+        "numero_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
+          "texto": "compra agil 128/2026"
+        },
+        "presupuesto": {
+          "texto": "presupuesto oficial $ 5.800.000,00",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
+          "texto": "compra agil 128/2026"
+        }
+      },
+      "fecha_apertura": "2026-11-10",
+      "fecha_apertura_texto": "10/11/2026 10:00",
+      "fecha_limite_presentacion": "2026-11-10",
+      "fecha_limite_presentacion_texto": "10/11/2026 10:00",
+      "fecha_publicacion": "2026-11-05",
+      "fecha_publicacion_texto": null,
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "fuentes_observadas": [
+        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones"
+      ],
+      "hora_apertura": "10:00",
+      "hora_limite_presentacion": "10:00",
+      "id_origen": "38736",
+      "identidad_ambito": "ficha-rosario-38736",
+      "localidad": "Rosario",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_oficial_sin_interpretar": "36308/2026",
+      "numero_procedimiento": "128/2026",
+      "objeto": "Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa»",
+      "organismo": "Municipalidad de Rosario",
+      "pago_evidencias": [],
+      "presupuesto": {
+        "importe": "5800000.00",
+        "moneda": null
+      },
+      "procedimiento": "compra agil 128/2026",
+      "provincia": "Santa Fe",
+      "rango_evidencia": 3,
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "texto_listado": "Compra Agil 36308/2026 Publicada para Apertura Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa» Apertura: 10/11/2026 10:00",
+      "tipo_procedimiento": "compra agil",
+      "titulo": "Compra Agil 128/2026 Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa»",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736",
+      "urls_publicacion": [
+        "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5"
+      ],
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "compra agil 128/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": "2026-11-10T10:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": "2026-11-10T10:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-10",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [],
+      "id": "7d202e7e182f73335074088d19c7e397382e2c3663a7f0e9caa591ae88387588",
+      "clasificacion_novedad": "NUEVO_CONFIRMADO",
+      "campos_modificados": [],
+      "primera_deteccion": "2026-11-05T23:27:28.151024-03:00",
+      "ultima_deteccion": "2026-11-05T23:27:28.151024-03:00",
+      "etiqueta_novedad": "NUEVO_CONFIRMADO"
+    }
+  ]
+}

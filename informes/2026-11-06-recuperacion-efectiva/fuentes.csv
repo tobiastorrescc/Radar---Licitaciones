@@ -1,0 +1,10 @@
+id,organismo,url,estado,segundos,procedimientos_directos,apertura_documental_futura,recepcion_vigente_comprobada,errores_red,errores_extraccion,errores
+fuente-003,EPE,https://www.epe.santafe.gov.ar/app2/aperturas,BLOQUEADA,2.959,0,0,0,2,0,URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>
+fuente-087,Gobierno de Santa Fe - Gestiones de Compras,https://www.santafe.gob.ar/gestionesdecompras/site/index.php,BLOQUEADA,17.686,0,0,0,2,0,URLError: <urlopen error timed out>
+fuente-060,Boletín Oficial de Santa Fe,https://www.santafe.gov.ar/boletinoficial/,BLOQUEADA,54.255,0,0,0,6,0,URLError: <urlopen error timed out>
+fuente-010,Municipalidad de Cañada de Gómez,https://cdg.gob.ar/transparencia/licitaciones-y-concursos/,BLOQUEADA,0.309,0,0,0,1,0,HTTPError: HTTP Error 403: Forbidden
+fuente-005,UNR,https://compras.unr.edu.ar/,BLOQUEADA,1.216,0,0,0,1,0,HTTPError: HTTP Error 403: Forbidden
+fuente-004,ASSA,https://www.aguassantafesinas.com.ar/portal/licitaciones,OPERATIVA,3.356,3,3,3,0,0,
+fuente-007,Aeropuerto Internacional Rosario,https://aeropuertorosario.com/institucional/licitaciones/,TIEMPO_FUENTE,120.068,162,5,0,1,0,TIEMPO_FUENTE: Plazo agotado; se conserva lo extraído
+fuente-026,Poder Judicial de Entre Ríos,https://www.jusentrerios.gov.ar/contrataciones/,OPERATIVA,91.767,58,8,0,0,0,
+fuente-001,Municipalidad de Rosario,https://www.rosario.gob.ar/inicio/compras-y-licitaciones,PARCIAL,190.459,65,65,3,13,1,URLError: <urlopen error timed out>; DetalleIncompleto: Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso

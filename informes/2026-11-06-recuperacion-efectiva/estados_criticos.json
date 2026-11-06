@@ -1,0 +1,140 @@
+{
+  "fuentes": [
+    {
+      "id": "fuente-003",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "estado_revision_critica": "FUENTE_INACCESIBLE",
+      "estado_acceso_directo": "BLOQUEADA",
+      "publicaciones_directas": 0,
+      "archivos_comprobados": 0,
+      "archivo_pendiente_revalidacion": 37,
+      "no_equivale_a_cero_publicaciones": true,
+      "errores": [
+        {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>",
+          "causa": "ERROR_CONEXION_TLS",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://epe.santafe.gov.ar/app2/aperturas",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>",
+          "causa": "ERROR_CONEXION_TLS",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ]
+    },
+    {
+      "id": "fuente-087",
+      "url": "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
+      "estado_revision_critica": "FUENTE_INACCESIBLE",
+      "estado_acceso_directo": "BLOQUEADA",
+      "publicaciones_directas": 0,
+      "archivos_comprobados": 0,
+      "archivo_pendiente_revalidacion": 0,
+      "no_equivale_a_cero_publicaciones": true,
+      "errores": [
+        {
+          "url": "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.santafe.gov.ar/gestionesdecompras/site/output.php?a=consultas.imprimir&anio=2026&estado=AP&limit=10000&start=0",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ]
+    },
+    {
+      "id": "fuente-060",
+      "url": "https://www.santafe.gov.ar/boletinoficial/",
+      "estado_revision_critica": "FUENTE_INACCESIBLE",
+      "estado_acceso_directo": "BLOQUEADA",
+      "publicaciones_directas": 0,
+      "archivos_comprobados": 0,
+      "archivo_pendiente_revalidacion": 0,
+      "no_equivale_a_cero_publicaciones": true,
+      "errores": [
+        {
+          "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-05licitaciones.html",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-04licitaciones.html",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-03licitaciones.html",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-02licitaciones.html",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.santafe.gov.ar/boletinoficial/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/pdf/2026/11/BO05112026.pdf",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "estado": "INACCESIBLE",
+  "fecha": "2026-11-05T22:56:10.044278-03:00",
+  "segundos": 69.084,
+  "convocatorias": 0,
+  "oportunidades": [],
+  "errores": [
+    {
+      "url": "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
+      "tipo": "NAVEGACION_FALLIDA",
+      "categoria": "RED",
+      "error": "Page.goto: Timeout 18000ms exceeded.\nCall log:\n  - navigating to \"https://www.santafe.gob.ar/gestionesdecompras/site/index.php\", waiting until \"domcontentloaded\"\n",
+      "segundos": 18.005
+    },
+    {
+      "url": "https://www.santafe.gov.ar/gestionesdecompras/site/",
+      "tipo": "NAVEGACION_FALLIDA",
+      "categoria": "RED",
+      "error": "Page.goto: Timeout 18000ms exceeded.\nCall log:\n  - navigating to \"https://www.santafe.gov.ar/gestionesdecompras/site/\", waiting until \"domcontentloaded\"\n",
+      "segundos": 18.003
+    },
+    {
+      "url": "https://www.santafe.gov.ar/gestionesdecompras/site/output.php?a=consultas.imprimir&anio=2026&estado=AP&limit=10000&start=0",
+      "tipo": "NAVEGACION_FALLIDA",
+      "categoria": "RED",
+      "error": "Page.goto: Timeout 18000ms exceeded.\nCall log:\n  - navigating to \"https://www.santafe.gov.ar/gestionesdecompras/site/output.php?a=consultas.imprimir&anio=2026&estado=AP&limit=10000&start=0\", waiting until \"domcontentloaded\"\n",
+      "segundos": 18.003
+    }
+  ],
+  "red": [],
+  "paginas": [],
+  "archivos": [],
+  "total_publicado": null,
+  "limites": [],
+  "acceso_verificado_por": "CHROMIUM_ESTANDAR_TLS_VALIDADO",
+  "ocr_nuevo": 0
+}
