@@ -290,6 +290,14 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
     conteos_rosario={}
     paginas_gestiones=set();totales_gestiones=[]
     reintentos_diferidos={}
+    if config.get('adaptador')=='rosario' and config.get('consultar_meses_rosario'):
+        hoy=oportunidades.datetime.now(oportunidades.ZONA)
+        for delta in (0,1):
+            mes=(hoy.month-1+delta)%12+1;anio=hoy.year+(hoy.month-1+delta)//12
+            # Parámetros obtenidos del formulario público, ver evidencia del 7/11.
+            alternativa='https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?'+urlencode({'mesApertura[0]':str(mes).zfill(2),'anioApertura[0]':str(anio)})
+            pending.append((alternativa,'LISTADO',{}))
+
     hosts={_host(fuente),*(_host('https://'+h) for h in config.get('dominios_documentos',[]))}
     documento_pendiente={};vacios=[];paginas_api=set()
     modo=config.get('lectura_adjuntos','todos')
@@ -557,7 +565,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 total=total_gestiones(dom.root.text)
                 if total is not None:totales_gestiones.append(total)
                 for u in enlaces_csv(dom,final):pending.appendleft((u,'CSV_PUBLICADO',None))
-            if config.get('adaptador')=='rosario' and clase=='LISTADO':
+            if config.get('adaptador')=='rosario' and clase=='LISTADO' and 'recomendada=apertura' in urlparse(url).query:
                 for nodo in dom.root.iter():
                     if nodo.clase('contrataciones-resumen__conteo-item'):
                         m=re.match(r'^(\d+)\s+(.+)$',nodo.text.strip())
@@ -621,6 +629,8 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     navegar=navegar or bool(re.search(r'licitacion(?:es)?|concursos? de precios|compras|contrataciones|bolet(?:in|ines) oficial(?:es)?',et))
                 if config.get('barrido_institucional') and clase=='LISTADO' and len(et)<120:
                     navegar=navegar or bool(re.fullmatch(r'(?:todas? las? )?(?:noticias|novedades|boletines?(?: oficiales?)?|decretos|resoluciones|publicaciones administrativas|transparencia|gobierno abierto|cuentas claras|informacion publica|normativa municipal|digesto municipal)',et))
+                if config.get('adaptador')=='rosario' and path.endswith('/result-busq-compras-licitaciones') and 'verTipo=' in urlparse(destino).query:
+                    navegar=True
                 if config.get('adaptador')=='rosario' and re.fullmatch(r'/inicio/compras-licitaciones/detalle/\d+',path):
                     # Nunca reclasificar la ficha como LISTADO por seguir_patrones.
                     if not any(u==destino and c=='DETALLE' for u,c,_ in pending):pending.append((destino,'DETALLE',None))
@@ -670,7 +680,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             if isinstance(e,HTTPError) and e.code==429:
                 limits.append('HTTP_429_REINTENTO_POSPUESTO');break
     if config.get('adaptador')=='rosario' and conteos_rosario:
-        reales={t:{r['url'] for r in items.values() if r.get('tipo_procedimiento')==t} for t in conteos_rosario}
+        reales={t:{r['url'] for r in items.values() if r.get('tipo_procedimiento')==t and (not config.get('consultar_meses_rosario') or r.get('vigencia')=='ABIERTA')} for t in conteos_rosario}
         faltantes={t:{'publicadas':max(v),'extraidas':len(reales.get(t,set()))} for t,v in conteos_rosario.items() if len(reales.get(t,set()))<max(v)}
         if faltantes:errors.append({'url':fuente,'tipo':'ConteoRosarioIncompleto','categoria':'EXTRACCION','timeout':False,'error':'El recorrido no alcanza el total publicado por el portal; no se declara cobertura completa','por_tipo':faltantes})
     if totales_gestiones and len(items)<max(totales_gestiones):

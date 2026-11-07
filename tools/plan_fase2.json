@@ -1,10 +1,9 @@
 {
-  "etapa": "recuperar-rosario-y-probar-13-candidatas",
+  "etapa": "rosario-mensual-y-tarjetas-oficiales",
   "lotes": 4,
   "ids": [
-    "fuente-001",
-    "fuente-052"
+    "fuente-001"
   ],
-  "candidatas": "inventario/candidatas_fase2.json",
+  "candidatas": "inventario/candidatas_fase2_tarjetas.json",
   "diagnosticar_criticas": false
 }

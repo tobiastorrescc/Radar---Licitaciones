@@ -221,7 +221,7 @@
       "conector": "publicaciones",
       "descubrir_contrataciones": true,
       "barrido_institucional": true,
-      "indice_documentos": true,
+      "indice_documentos": false,
       "priorizar_listados": true,
       "lectura_adjuntos": "necesarios",
       "ocr": false,
@@ -230,7 +230,8 @@
         "fecha": "2026-11-07",
         "url": "https://aplicaciones.vialidadentrerios.gob.ar/contrataciones-licitaciones"
       },
-      "requiere_validacion_previa_alta": true
+      "requiere_validacion_previa_alta": true,
+      "adaptador": "dpver-tarjetas"
     },
     {
       "id": "fuente-099",
@@ -244,7 +245,7 @@
       "conector": "publicaciones",
       "descubrir_contrataciones": true,
       "barrido_institucional": true,
-      "indice_documentos": true,
+      "indice_documentos": false,
       "priorizar_listados": true,
       "lectura_adjuntos": "necesarios",
       "ocr": false,
@@ -253,7 +254,23 @@
         "fecha": "2026-11-07",
         "url": "https://www.mpba.gov.ar/licitaciones"
       },
-      "requiere_validacion_previa_alta": true
+      "requiere_validacion_previa_alta": true,
+      "adaptador": "mpba-tarjetas",
+      "departamentos_publicados": {
+        "4": "Junín",
+        "13": "Pergamino",
+        "17": "San Nicolás",
+        "19": "Zárate / Campana"
+      },
+      "urls_inicio": [
+        "https://www.mpba.gov.ar/v2021/licitaciones?department_id=4",
+        "https://www.mpba.gov.ar/v2021/licitaciones?department_id=13",
+        "https://www.mpba.gov.ar/v2021/licitaciones?department_id=17",
+        "https://www.mpba.gov.ar/v2021/licitaciones?department_id=19"
+      ],
+      "seguir_patrones": [
+        "/v2021/licitaciones[?].*department_id="
+      ]
     },
     {
       "id": "fuente-100",

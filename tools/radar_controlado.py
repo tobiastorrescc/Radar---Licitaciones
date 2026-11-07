@@ -80,7 +80,7 @@ def generar_informe(db,resumen,registros,fuentes,destino):
     resumen['total_nuevas_confirmadas']=metricas['total_nuevas_confirmadas']
     guardar(destino/'resumen.json',resumen)
     from calidad_comercial import escribir as informe_presentacion
-    resumen.update(informe_presentacion(actuales,fecha,destino))
+    resumen.update(informe_presentacion(actuales,fecha,destino,fuentes=fuentes))
     from estado_criticas import evaluar,CRITICAS
     estados_criticos=[evaluar(f,registros,eventos) for f in fuentes if f.get('id') in CRITICAS]
     guardar(destino/'alertas_criticas_detalladas.json',{'fuentes':estados_criticos})

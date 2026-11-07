@@ -148,6 +148,10 @@ def situacion(texto):
 def extraer(html,url,config=None):
     config=config or {}
     dom=DOM(html);raiz=dom.root
+    if config.get('adaptador') in ('dpver-tarjetas','mpba-tarjetas'):
+        from fuentes_fase2 import dpver,mpba
+        rs=dpver(dom,url) if config['adaptador']=='dpver-tarjetas' else mpba(dom,url,config)
+        return rs,dom.root.enlaces(url),dom
     if config.get('adaptador')=='rosario' and urlsplit(url).hostname in ('www.rosario.gob.ar','rosario.gob.ar') and re.fullmatch(r'/inicio/compras-licitaciones/detalle/\d+',urlsplit(url).path):
         # Mismo lector oficial ya utilizado por la revisión manual, ahora en descubrimiento.
         from tools.ficha_rosario import extraer as ficha_rosario
