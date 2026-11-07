@@ -1,0 +1,10 @@
+{
+  "fecha": "2026-11-07T09:22:46.485320-03:00",
+  "run": "42372161366",
+  "url_sondeada": "https://transparencia.rojas.gov.ar/index.php?busqueda=1&action=18&input_proveedor=&inputDependencia=&selectEjercicio=2026",
+  "filas_administrativas_extraidas": 1800,
+  "convocatorias_vigentes_comprobadas": 0,
+  "validada_para_descubrir_convocatorias": false,
+  "incorporada_al_monitoreo": false,
+  "motivo": "Tabla de compras/expedientes 2026 sin fecha de apertura ni límite de recepción comprobados. No se tratan 1.800 referencias como llamados nuevos. Se conserva el conector previo de Rojas."
+}

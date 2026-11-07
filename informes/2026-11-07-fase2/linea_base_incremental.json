@@ -1,0 +1,570 @@
+{
+  "resumen": {
+    "corrida": "fase2-solo-base",
+    "fecha": "2026-11-07T08:13:32.874294-03:00",
+    "primera_ejecucion": false,
+    "estado": "COMPLETA_CON_INCIDENCIAS",
+    "observadas": 4780,
+    "candidatos_sin_confirmar": 132,
+    "clasificacion": {
+      "NUEVA_DETECCION_FECHA_DESCONOCIDA": 10,
+      "SIN_CAMBIOS": 4581,
+      "NUEVO_CONFIRMADO": 4,
+      "DATOS_COMPLETADOS": 4,
+      "MODIFICADO": 44,
+      "RECUPERACION_LINEA_BASE": 2
+    },
+    "novedades": 62,
+    "eventos_emitidos": 64,
+    "total_historial": 6077,
+    "fuentes": {
+      "PARCIAL": 14,
+      "BLOQUEADA": 13,
+      "TIEMPO_FUENTE": 14,
+      "PENDIENTE": 7,
+      "OPERATIVA": 39,
+      "SIN_PUBLICACIONES": 1
+    },
+    "mensaje": "CON_NOVEDADES"
+  },
+  "nuevas": [
+    {
+      "campos_oficiales": {
+        "consulta pliego": "Secretaría de Ambiente y Espacios Públicos - PELLEGRINI CARLOS 2808 - notificaciones_saep_dgap@rosario.gov.ar, notificaciones_saep@rosario.gov.ar",
+        "costo de adquisicion del pliego": "$ 1.588.000,00 Sellado",
+        "costo de impugnacion": "$ 1.588.000,00",
+        "declaracion jurada de presentacion de ofertas": "Para presentar una oferta, completá la Declaración Jurada de conocimiento de Pliegos y Normativas a través de tu Perfil Digital. Luego, imprimila, firmala y adjuntala a tu oferta en papel. Al presentar la Declaración Jurada, se reemplaza la presentación en papel de los pliegos y normativas correspondientes a la licitación. Completar DDJJ",
+        "estado": "Publicada para Apertura",
+        "expediente": "23340/2026",
+        "fecha de apertura": "16/11/2026 09:00",
+        "fecha de publicacion": "06/11/2026",
+        "fecha ultima actualizacion": "06/11/2026",
+        "lugar de apertura": "Secretaría de Ambiente y Espacios Públicos - PELLEGRINI CARLOS 2808 - -",
+        "n° de contratacion": "58/2026",
+        "objeto": "Provisión de Iluminarias LED para Obras por administración de Alumbrado Público - Iluminación en Barrios y Avenida - 2026 - Secretaría de Ambiente y Espacio Público",
+        "pliego unico y normativas": "Consultar pliego único. Consultar normativa vigente.",
+        "presupuesto oficial": "$ 1.588.000.000,00",
+        "recepcion de ofertas": "Secretaría de Ambiente y Espacios Públicos - PELLEGRINI CARLOS 2808 - Plazo: Hasta el momento de la Apertura",
+        "reparticion licitante": "Dirección General de Alumbrado Público - PELLEGRINI CARLOS 2808",
+        "tipo de contratacion": "Licitación Pública",
+        "ver pliego adjunto apto para cotizar": "lic_alumbradoexpte23340-26.pdf"
+      },
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: lic_alumbradoexpte23340-26.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38744/documentos/102985"
+        }
+      ],
+      "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38744/documentos/102985",
+      "evento_publicado": null,
+      "evidencia_url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+          "texto": "16/11/2026 09:00"
+        },
+        "fecha_publicacion": {
+          "texto": "fecha de publicacion: 06/11/2026",
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744"
+        },
+        "numero_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+          "texto": "licitacion publica 58/2026"
+        },
+        "presupuesto": {
+          "texto": "presupuesto oficial $ 1.588.000.000,00",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+          "texto": "licitacion publica 58/2026"
+        }
+      },
+      "fecha_apertura": "2026-11-16",
+      "fecha_apertura_texto": "16/11/2026 09:00",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": "2026-11-06",
+      "fecha_publicacion_texto": null,
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "fuentes_observadas": [
+        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones"
+      ],
+      "hora_apertura": "09:00",
+      "hora_limite_presentacion": null,
+      "id_origen": "38744",
+      "identidad_ambito": "ficha-rosario-38744",
+      "localidad": "Rosario",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_oficial_sin_interpretar": "23340/2026",
+      "numero_procedimiento": "58/2026",
+      "objeto": "Provisión de Iluminarias LED para Obras por administración de Alumbrado Público - Iluminación en Barrios y Avenida - 2026 - Secretaría de Ambiente y Espacio Público",
+      "organismo": "Municipalidad de Rosario",
+      "pago_evidencias": [],
+      "presupuesto": {
+        "importe": "1588000000.00",
+        "moneda": null
+      },
+      "procedimiento": "licitacion publica 58/2026",
+      "provincia": "Santa Fe",
+      "rango_evidencia": 3,
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "texto_listado": "Licitación Pública 23340/2026 Publicada para Apertura Provisión de Iluminarias LED para Obras por administración de Alumbrado Público - Iluminación en Barrios y Avenida - 2026 - Secretaría de Ambiente y Espacio Público Apertura: 16/11/2026 09:00",
+      "tipo_procedimiento": "licitacion publica",
+      "titulo": "Licitación Pública 58/2026 Provisión de Iluminarias LED para Obras por administración de Alumbrado Público - Iluminación en Barrios y Avenida - 2026 - Secretaría de Ambiente y Espacio Público",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+      "urls_publicacion": [
+        "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=2"
+      ],
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "licitacion publica 58/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": "2026-11-16T09:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-16",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "motivo_vigencia": "APERTURA_FUTURA",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [],
+      "id": "144746a43f4d9e30a1dcccedafbe550d25711925abc28198a970defc5ec9dfe6",
+      "clasificacion_novedad": "NUEVO_CONFIRMADO",
+      "campos_modificados": [],
+      "primera_deteccion": "2026-11-07T08:13:32.874294-03:00",
+      "ultima_deteccion": "2026-11-07T08:13:32.874294-03:00",
+      "etiqueta_novedad": "NUEVO_CONFIRMADO"
+    },
+    {
+      "campos_oficiales": {
+        "consulta pliego": "SIES (Sistema Integrado de Emergencia Sanitaria) - BALCARCE 983 - CONSULTA EN OFICINA COMPRAS SIES - AV. DANTE ALIGHIERI 2510 - ROSARIO (Hipódromo Rosario)",
+        "declaracion jurada de presentacion de ofertas": "Para presentar una oferta, completá la Declaración Jurada de conocimiento de Pliegos y Normativas a través de tu Perfil Digital. Luego, imprimila, firmala y adjuntala a tu oferta en papel. Al presentar la Declaración Jurada, se reemplaza la presentación en papel de los pliegos y normativas correspondientes a la licitación. Completar DDJJ",
+        "estado": "Publicada para Apertura",
+        "expediente": "100100/2026",
+        "fecha de apertura": "25/11/2026 09:00",
+        "fecha de publicacion": "06/11/2026",
+        "fecha ultima actualizacion": "06/11/2026",
+        "lugar de apertura": "SIES (Sistema Integrado de Emergencia Sanitaria) - BALCARCE 983 - APERTURA EN OFICINA DE COMPRAS SIES - AV. DANTE ALIGHIERI 2510 - ROSARIO (Hipódromo Rosario)",
+        "n° de contratacion": "10/2026",
+        "objeto": "LP 10-010-26 MANTENIMIENTO DE FLOTA - SIES",
+        "observaciones": "Las consultas técnicas deberán dirigirse a Ing. Renzo Bozzini - rbozzin0@rosario.gob.ar Nueva dirección Oficina Compras SIES: Av. Dante Alighieri 2510 - Rosario (Hipódromo Rosario)",
+        "pliego unico y normativas": "Consultar pliego único. Consultar normativa vigente.",
+        "presupuesto oficial": "$ 46.000.000,00",
+        "recepcion de ofertas": "SIES (Sistema Integrado de Emergencia Sanitaria) - BALCARCE 983 - RECEPCIÓN EN OFICINA DE COMPRAS SIES - AV. DANTE ALIGHIERI 2510 - ROSARIO (Hipódromo Rosario)",
+        "reparticion licitante": "SIES (Sistema Integrado de Emergencia Sanitaria) - BALCARCE 983",
+        "tipo de contratacion": "Licitación Privada",
+        "ver pliego adjunto apto para cotizar": "lp10-010-26mantenimientodeflota-sies.pdf"
+      },
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: lp10-010-26mantenimientodeflota-sies.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38743/documentos/102984"
+        }
+      ],
+      "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38743/documentos/102984",
+      "evento_publicado": null,
+      "evidencia_url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+          "texto": "25/11/2026 09:00"
+        },
+        "fecha_publicacion": {
+          "texto": "fecha de publicacion: 06/11/2026",
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38743"
+        },
+        "numero_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+          "texto": "licitacion privada 10/2026"
+        },
+        "presupuesto": {
+          "texto": "presupuesto oficial $ 46.000.000,00",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+          "texto": "licitacion privada 10/2026"
+        }
+      },
+      "fecha_apertura": "2026-11-25",
+      "fecha_apertura_texto": "25/11/2026 09:00",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": "2026-11-06",
+      "fecha_publicacion_texto": null,
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "fuentes_observadas": [
+        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones"
+      ],
+      "hora_apertura": "09:00",
+      "hora_limite_presentacion": null,
+      "id_origen": "38743",
+      "identidad_ambito": "ficha-rosario-38743",
+      "localidad": "Rosario",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_oficial_sin_interpretar": "100100/2026",
+      "numero_procedimiento": "10/2026",
+      "objeto": "LP 10-010-26 MANTENIMIENTO DE FLOTA - SIES",
+      "organismo": "Municipalidad de Rosario",
+      "pago_evidencias": [],
+      "presupuesto": {
+        "importe": "46000000.00",
+        "moneda": null
+      },
+      "procedimiento": "licitacion privada 10/2026",
+      "provincia": "Santa Fe",
+      "rango_evidencia": 3,
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "texto_listado": "Licitación Privada 100100/2026 Publicada para Apertura LP 10-010-26 MANTENIMIENTO DE FLOTA - SIES Apertura: 25/11/2026 09:00",
+      "tipo_procedimiento": "licitacion privada",
+      "titulo": "Licitación Privada 10/2026 LP 10-010-26 MANTENIMIENTO DE FLOTA - SIES",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38743",
+      "urls_publicacion": [
+        "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38743",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=1"
+      ],
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "licitacion privada 10/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": "2026-11-25T09:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-25",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "motivo_vigencia": "APERTURA_FUTURA",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [],
+      "id": "d5f3bbdc7196b45b5260e1b6eb980c37a1b9525003ddb6f5a329bbad7f6098c3",
+      "clasificacion_novedad": "NUEVO_CONFIRMADO",
+      "campos_modificados": [],
+      "primera_deteccion": "2026-11-07T08:13:32.874294-03:00",
+      "ultima_deteccion": "2026-11-07T08:13:32.874294-03:00",
+      "etiqueta_novedad": "NUEVO_CONFIRMADO"
+    },
+    {
+      "campos_oficiales": {
+        "consulta pliego": "APS (S.S.P.) - SAN LUIS 2020 - notificaciones_SSP_contadirecentros@rosario.gov.ar",
+        "declaracion jurada de presentacion de ofertas": "Para presentar una oferta, completá la Declaración Jurada de conocimiento de Pliegos y Normativas a través de tu Perfil Digital. Luego, imprimila, firmala y adjuntala a tu oferta en papel. Al presentar la Declaración Jurada, se reemplaza la presentación en papel de los pliegos y normativas correspondientes a la licitación. Completar DDJJ",
+        "estado": "Publicada para Apertura",
+        "expediente": "81531/2026",
+        "fecha de apertura": "13/11/2026 10:00",
+        "fecha de publicacion": "06/11/2026",
+        "fecha ultima actualizacion": "06/11/2026",
+        "lugar de apertura": "APS (S.S.P.) - SAN LUIS 2020 - -",
+        "n° de contratacion": "153/2026",
+        "objeto": "Realización de canalización, despliegue de cableado estructurado vertical en fibra óptica y horizontal en cobre, instalación de tablero seccional eléctrico y cableado eléctrico para los puertos de informática y alimentación del nuevo rack a instalar e instalación del equipamiento y accesorios necesarios para la provisión de puestos de trabajo en el nuevo salón que brindará el Centro de Salud Débora Ferrandini.",
+        "observaciones": "Visita de Obra miércoles 11 de Noviembre de 2026 a las 09:00 Hs. en el Centro de Salud Débora Ferrandini cito en calle Av. Provincias Unidas Bis 150",
+        "presupuesto oficial": "$ 11.765.000,00",
+        "recepcion de ofertas": "APS (S.S.P.) - SAN LUIS 2020 - -",
+        "reparticion licitante": "APS (S.S.P.) - SAN LUIS 2020",
+        "tipo de contratacion": "Compra Agil",
+        "ver pliego adjunto apto para cotizar": "ca08-153-26.pdf"
+      },
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: ca08-153-26.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38739/documentos/102980"
+        }
+      ],
+      "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38739/documentos/102980",
+      "evento_publicado": null,
+      "evidencia_url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+          "texto": "13/11/2026 10:00"
+        },
+        "fecha_publicacion": {
+          "texto": "fecha de publicacion: 06/11/2026",
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38739"
+        },
+        "numero_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+          "texto": "compra agil 153/2026"
+        },
+        "presupuesto": {
+          "texto": "presupuesto oficial $ 11.765.000,00",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+          "texto": "compra agil 153/2026"
+        }
+      },
+      "fecha_apertura": "2026-11-13",
+      "fecha_apertura_texto": "13/11/2026 10:00",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": "2026-11-06",
+      "fecha_publicacion_texto": null,
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "fuentes_observadas": [
+        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones"
+      ],
+      "hora_apertura": "10:00",
+      "hora_limite_presentacion": null,
+      "id_origen": "38739",
+      "identidad_ambito": "ficha-rosario-38739",
+      "localidad": "Rosario",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_oficial_sin_interpretar": "81531/2026",
+      "numero_procedimiento": "153/2026",
+      "objeto": "Realización de canalización, despliegue de cableado estructurado vertical en fibra óptica y horizontal en cobre, instalación de tablero seccional eléctrico y cableado eléctrico para los puertos de informática y alimentación del nuevo rack a instalar e instalación del equipamiento y accesorios necesarios para la provisión de puestos de trabajo en el nuevo salón que brindará el Centro de Salud Débora Ferrandini.",
+      "organismo": "Municipalidad de Rosario",
+      "pago_evidencias": [],
+      "presupuesto": {
+        "importe": "11765000.00",
+        "moneda": null
+      },
+      "procedimiento": "compra agil 153/2026",
+      "provincia": "Santa Fe",
+      "rango_evidencia": 3,
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "texto_listado": "Compra Agil 81531/2026 Publicada para Apertura Realización de canalización, despliegue de cableado estructurado vertical en fibra óptica y horizontal en cobre, instalación de tablero seccional eléctrico y cableado eléctrico para los puertos de informática y alimentación del nuevo rack a instalar e instalación del equipamiento y accesorios necesarios para la provisión de puestos de trabajo en el nuevo salón que brindará el Centro de Salud Débora Ferrandini. Apertura: 13/11/2026 10:00",
+      "tipo_procedimiento": "compra agil",
+      "titulo": "Compra Agil 153/2026 Realización de canalización, despliegue de cableado estructurado vertical en fibra óptica y horizontal en cobre, instalación de tablero seccional eléctrico y cableado eléctrico para los puertos de informática y alimentación del nuevo rack a instalar e instalación del equipamiento y accesorios necesarios para la provisión de puestos de trabajo en el nuevo salón que brindará el Centro de Salud Débora Ferrandini.",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38739",
+      "urls_publicacion": [
+        "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38739",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5"
+      ],
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "compra agil 153/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": "2026-11-13T10:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-13",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "motivo_vigencia": "APERTURA_FUTURA",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [],
+      "id": "64fae3266d96af6410abf02b3ba13ed1d18b986ca6261563d3cdf2ecfd8f89ff",
+      "clasificacion_novedad": "NUEVO_CONFIRMADO",
+      "campos_modificados": [],
+      "primera_deteccion": "2026-11-07T08:13:32.874294-03:00",
+      "ultima_deteccion": "2026-11-07T08:13:32.874294-03:00",
+      "etiqueta_novedad": "NUEVO_CONFIRMADO"
+    },
+    {
+      "campos_oficiales": {
+        "consulta pliego": "APS (S.S.P.) - SAN LUIS 2020 - notificaciones_SSP_contadirecentros@rosario.gov.ar",
+        "declaracion jurada de presentacion de ofertas": "Para presentar una oferta, completá la Declaración Jurada de conocimiento de Pliegos y Normativas a través de tu Perfil Digital. Luego, imprimila, firmala y adjuntala a tu oferta en papel. Al presentar la Declaración Jurada, se reemplaza la presentación en papel de los pliegos y normativas correspondientes a la licitación. Completar DDJJ",
+        "estado": "Publicada para Apertura",
+        "expediente": "81541/2026",
+        "fecha de apertura": "11/11/2026 11:00",
+        "fecha de publicacion": "06/11/2026",
+        "fecha ultima actualizacion": "06/11/2026",
+        "lugar de apertura": "APS (S.S.P.) - SAN LUIS 2020 - Primer piso, subiendo la rampa, primera oficina a la derecha.-",
+        "n° de contratacion": "154/2026",
+        "objeto": "Compra de pisos para la obra de reforma del centro de salud \"Luis Pasteur\" y compra de cerámicos de pisos y pastina / pegamento para la obra de reforma del centro de salud \"Elena Bazet\". Perteneciente a la Dirección de Centros de Salud.-",
+        "presupuesto oficial": "$ 5.020.102,00",
+        "recepcion de ofertas": "APS (S.S.P.) - SAN LUIS 2020 - Primer piso, subiendo la rampa, primera oficina a la derecha.-",
+        "reparticion licitante": "APS (S.S.P.) - SAN LUIS 2020",
+        "tipo de contratacion": "Compra Agil",
+        "ver pliego adjunto apto para cotizar": "ca08-154-26.pdf"
+      },
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: ca08-154-26.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38740/documentos/102981"
+        }
+      ],
+      "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38740/documentos/102981",
+      "evento_publicado": null,
+      "evidencia_url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+          "texto": "11/11/2026 11:00"
+        },
+        "fecha_publicacion": {
+          "texto": "fecha de publicacion: 06/11/2026",
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38740"
+        },
+        "numero_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+          "texto": "compra agil 154/2026"
+        },
+        "presupuesto": {
+          "texto": "presupuesto oficial $ 5.020.102,00",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+          "texto": "compra agil 154/2026"
+        }
+      },
+      "fecha_apertura": "2026-11-11",
+      "fecha_apertura_texto": "11/11/2026 11:00",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": "2026-11-06",
+      "fecha_publicacion_texto": null,
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "fuentes_observadas": [
+        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones"
+      ],
+      "hora_apertura": "11:00",
+      "hora_limite_presentacion": null,
+      "id_origen": "38740",
+      "identidad_ambito": "ficha-rosario-38740",
+      "localidad": "Rosario",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_oficial_sin_interpretar": "81541/2026",
+      "numero_procedimiento": "154/2026",
+      "objeto": "Compra de pisos para la obra de reforma del centro de salud \"Luis Pasteur\" y compra de cerámicos de pisos y pastina / pegamento para la obra de reforma del centro de salud \"Elena Bazet\". Perteneciente a la Dirección de Centros de Salud.-",
+      "organismo": "Municipalidad de Rosario",
+      "pago_evidencias": [],
+      "presupuesto": {
+        "importe": "5020102.00",
+        "moneda": null
+      },
+      "procedimiento": "compra agil 154/2026",
+      "provincia": "Santa Fe",
+      "rango_evidencia": 3,
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "texto_listado": "Compra Agil 81541/2026 Publicada para Apertura Compra de pisos para la obra de reforma del centro de salud \"Luis Pasteur\" y compra de cerámicos de pisos y pastina / pegamento para la obra de reforma del centro de salud \"Elena Bazet\". Perteneciente a la Dirección de Centros de Salud.- Apertura: 11/11/2026 11:00",
+      "tipo_procedimiento": "compra agil",
+      "titulo": "Compra Agil 154/2026 Compra de pisos para la obra de reforma del centro de salud \"Luis Pasteur\" y compra de cerámicos de pisos y pastina / pegamento para la obra de reforma del centro de salud \"Elena Bazet\". Perteneciente a la Dirección de Centros de Salud.-",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38740",
+      "urls_publicacion": [
+        "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38740",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5"
+      ],
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "compra agil 154/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": "2026-11-11T11:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-11",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "motivo_vigencia": "APERTURA_FUTURA",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [],
+      "id": "c1636fd38d7f4bac9e97e2322ba871031996ca814d3960275269688ed6d754ab",
+      "clasificacion_novedad": "NUEVO_CONFIRMADO",
+      "campos_modificados": [],
+      "primera_deteccion": "2026-11-07T08:13:32.874294-03:00",
+      "ultima_deteccion": "2026-11-07T08:13:32.874294-03:00",
+      "etiqueta_novedad": "NUEVO_CONFIRMADO"
+    }
+  ]
+}

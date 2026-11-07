@@ -143,6 +143,72 @@
       "url": "http://www.sannicolas.gov.ar:8080/portalcompras/",
       "evidencia_descubrimiento": "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos",
       "motivo_previo": "Portal de Compras enlazado oficialmente en la página municipal; pendiente validación de acceso y procedimientos. Captura41265639687. No incorporada."
+    },
+    {
+      "organismo": "Municipio de Bigand",
+      "localidad": "Bigand",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "url": "https://www.bigand.gob.ar/",
+      "evidencia_descubrimiento": "https://www.bigand.gob.ar/",
+      "barrido_institucional": true,
+      "ocr": false,
+      "motivo_previo": "Auditoría real Fase 2: PENDIENTE; revisar publicaciones, no basta HTTP 200."
+    },
+    {
+      "organismo": "Municipalidad de Granadero Baigorria",
+      "localidad": "Granadero Baigorria",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "url": "https://baigorria.gob.ar/compras/",
+      "evidencia_descubrimiento": "https://baigorria.gob.ar/compras/",
+      "barrido_institucional": true,
+      "ocr": false,
+      "motivo_previo": "Auditoría real Fase 2: PENDIENTE; revisar publicaciones, no basta HTTP 200."
+    },
+    {
+      "organismo": "Comuna de Pujato",
+      "localidad": "Pujato",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "url": "https://pujato.gob.ar/",
+      "evidencia_descubrimiento": "https://pujato.gob.ar/",
+      "barrido_institucional": true,
+      "ocr": false,
+      "motivo_previo": "Auditoría real Fase 2: PENDIENTE; revisar publicaciones, no basta HTTP 200."
+    },
+    {
+      "organismo": "Municipalidad de Fray Luis Beltrán",
+      "localidad": "Fray Luis Beltrán",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "url": "https://frayluisbeltran.gob.ar/",
+      "evidencia_descubrimiento": "https://frayluisbeltran.gob.ar/",
+      "barrido_institucional": true,
+      "ocr": false,
+      "motivo_previo": "Auditoría real Fase 2: PENDIENTE; revisar publicaciones, no basta HTTP 200."
+    },
+    {
+      "organismo": "Municipalidad de María Grande",
+      "localidad": "María Grande",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "url": "https://mariagrande.gob.ar/licitaciones-y-concursos/",
+      "evidencia_descubrimiento": "https://mariagrande.gob.ar/licitaciones-y-concursos/",
+      "barrido_institucional": true,
+      "ocr": false,
+      "motivo_previo": "Auditoría real Fase 2: TIEMPO_FUENTE; revisar publicaciones, no basta HTTP 200."
+    },
+    {
+      "organismo": "Municipalidad de San Benito",
+      "localidad": "San Benito",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "url": "https://sanbenito.gob.ar/",
+      "evidencia_descubrimiento": "https://sanbenito.gob.ar/",
+      "barrido_institucional": true,
+      "ocr": false,
+      "motivo_previo": "Auditoría real Fase 2: PENDIENTE; revisar publicaciones, no basta HTTP 200."
     }
   ]
 }
