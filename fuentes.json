@@ -277,12 +277,12 @@
       "apimgw.rosario.gob.ar"
     ],
     "reintentos_transitorios": 1,
-    "ultima_revision_issue10": "2026-11-05T11:36:36.185769-03:00",
     "evidencia_verificacion_anterior_issue10": {
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 16,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
     },
+    "ultima_revision_issue10": "2026-11-05T11:36:36.185769-03:00",
     "tiempo_maximo_fuente_segundos": 240,
     "ultima_ejecucion_diaria_issue10": {
       "run": 42021794797,
@@ -290,6 +290,14 @@
       "estado": "PARCIAL",
       "publicaciones_detectadas": 49,
       "paginas_correctas": 17
+    },
+    "reintentar_listados_diferidos": 1,
+    "consultar_meses_rosario": true,
+    "evidencia_busqueda_mensual": {
+      "fecha": "2026-11-07",
+      "formulario": "https://www.rosario.gob.ar/inicio/compras-licitaciones",
+      "resultado_comprobado": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026",
+      "metodo": "POST de consulta pública seguido de redirección GET; no requiere login"
     }
   },
   "https://compras.santafe.gob.ar/": {
@@ -331,12 +339,12 @@
       ],
       "criterio": "Avisos y campos extraídos de capturas oficiales; estado parcial/acceso conservado. Un HTTP 200 no acredita cobertura."
     },
-    "ultima_revision_issue10": "2026-11-05T00:39:01.040754-03:00",
     "evidencia_verificacion_anterior_issue10": {
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
-    }
+    },
+    "ultima_revision_issue10": "2026-11-05T00:39:01.040754-03:00"
   },
   "https://www.epe.santafe.gov.ar/app2/aperturas": {
     "organismo": "EPE",
@@ -395,7 +403,6 @@
       "https://epe.santafe.gov.ar/app2/aperturas"
     ],
     "estado_revision": "ERROR_DE_ACCESO",
-    "ultima_revision_issue10": "2026-11-05T00:39:01.042431-03:00",
     "evidencia_verificacion_anterior_issue10": {
       "github_run_id": 41199939113,
       "publicaciones_detectadas": 0,
@@ -403,6 +410,7 @@
       "criterio": "Número, objeto y enlace oficial; errores y pendientes documentales se conservan",
       "error_acceso": true
     },
+    "ultima_revision_issue10": "2026-11-05T00:39:01.042431-03:00",
     "evidencia_verificacion_issue14": {
       "github_run_id": 42106222026,
       "procedimientos_verificados": 0,
@@ -519,12 +527,12 @@
       ],
       "criterio": "Avisos y campos extraídos de capturas oficiales; estado parcial/acceso conservado. Un HTTP 200 no acredita cobertura."
     },
-    "ultima_revision_issue10": "2026-11-05T01:11:09.898008-03:00",
     "evidencia_verificacion_anterior_issue10": {
       "github_run_id": 40952155721,
       "publicaciones_detectadas": 0,
       "criterio": "Publicaciones efectivamente extraídas; estado a la fecha, no garantía futura"
     },
+    "ultima_revision_issue10": "2026-11-05T01:11:09.898008-03:00",
     "evidencia_verificacion_issue14": {
       "github_run_id": 42106222026,
       "procedimientos_verificados": 0,
@@ -1414,7 +1422,6 @@
       "drive.google.com"
     ],
     "estado_revision": "REVISADA_SIN_NOVEDADES",
-    "ultima_revision_issue10": "2026-11-05T01:11:00.199778-03:00",
     "evidencia_verificacion_anterior_issue10": {
       "github_run_id": 41199939113,
       "publicaciones_detectadas": 152,
@@ -1422,6 +1429,7 @@
       "criterio": "Número, objeto y enlace oficial; errores y pendientes documentales se conservan",
       "error_acceso": false
     },
+    "ultima_revision_issue10": "2026-11-05T01:11:00.199778-03:00",
     "ultima_ejecucion_diaria_issue10": {
       "run": 42021794797,
       "fecha": "2026-11-05T08:50:31.963808-03:00",
@@ -2962,6 +2970,7 @@
     "descubrir_contrataciones": true,
     "priorizar_listados": true,
     "enriquecer_fichas": true,
+    "evidencia_verificacion_anterior_issue10": null,
     "ultima_revision_issue10": "2026-11-05T00:56:26.812118-03:00",
     "evidencia_verificacion": {
       "github_run_id": 41969428731,
@@ -2981,8 +2990,7 @@
         }
       ],
       "criterio": "Avisos y campos extraídos de capturas oficiales; estado parcial/acceso conservado. Un HTTP 200 no acredita cobertura."
-    },
-    "evidencia_verificacion_anterior_issue10": null
+    }
   },
   "https://compras.concejorosario.gov.ar/": {
     "organismo": "Concejo Municipal de Rosario",
@@ -3009,6 +3017,7 @@
     "urls_inicio": [
       "https://compras.concejorosario.gov.ar/compras"
     ],
+    "evidencia_verificacion_anterior_issue10": null,
     "ultima_revision_issue10": "2026-11-05T00:56:26.815041-03:00",
     "evidencia_verificacion": {
       "github_run_id": 41969428731,
@@ -3019,8 +3028,7 @@
       "criterio": "Avisos y campos extraídos de capturas oficiales; estado parcial/acceso conservado. Un HTTP 200 no acredita cobertura.",
       "convocatorias_vigentes": 0,
       "convocatorias_vencidas": 2
-    },
-    "evidencia_verificacion_anterior_issue10": null
+    }
   },
   "https://www.santafe.gob.ar/gestionesdecompras/site/index.php": {
     "organismo": "Gobierno de Santa Fe - Gestiones de Compras",
@@ -3077,5 +3085,188 @@
       "nuevas_vigentes": 0,
       "errores": "TIEMPO_ESPERA"
     }
+  },
+  "https://sanjusto.gov.ar/": {
+    "organismo": "Municipalidad de San Justo",
+    "localidad": "San Justo",
+    "provincia": "Santa Fe",
+    "tipo_portal": "html",
+    "estado_verificacion": "OPERATIVA",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "descubrir_contrataciones": true,
+    "barrido_institucional": true,
+    "indice_documentos": true,
+    "priorizar_listados": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": false,
+    "evidencia_descubrimiento": {
+      "metodo": "Portal institucional observado; pendiente extracción real en Actions",
+      "fecha": "2026-11-07",
+      "url": "https://sanjusto.gov.ar/"
+    },
+    "verificada_funcionando": true,
+    "evidencia_verificacion": {
+      "github_run_id": 42367624095,
+      "publicaciones_detectadas": 3,
+      "convocatorias_vigentes_verificadas": 0,
+      "criterio": "Extracción de publicaciones oficiales comprobada; no acredita cobertura global ni que los antecedentes sean oportunidades nuevas."
+    },
+    "ultima_verificacion": "2026-11-07"
+  },
+  "https://www.suardiciudad.ar/": {
+    "organismo": "Municipalidad de Suardi",
+    "localidad": "Suardi",
+    "provincia": "Santa Fe",
+    "tipo_portal": "html",
+    "estado_verificacion": "PARCIAL",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "descubrir_contrataciones": true,
+    "barrido_institucional": true,
+    "indice_documentos": true,
+    "priorizar_listados": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": false,
+    "evidencia_descubrimiento": {
+      "metodo": "Portal institucional observado; pendiente extracción real en Actions",
+      "fecha": "2026-11-07",
+      "url": "https://www.suardiciudad.ar/"
+    },
+    "verificada_funcionando": false,
+    "evidencia_verificacion": {
+      "github_run_id": 42367624095,
+      "publicaciones_detectadas": 8,
+      "convocatorias_vigentes_verificadas": 0,
+      "criterio": "Extracción de publicaciones oficiales comprobada; no acredita cobertura global ni que los antecedentes sean oportunidades nuevas."
+    },
+    "ultima_verificacion": "2026-11-07"
+  },
+  "https://coloniaavellaneda.gob.ar/web/informacion-publica/": {
+    "organismo": "Municipalidad de Colonia Avellaneda",
+    "localidad": "Colonia Avellaneda",
+    "provincia": "Entre Ríos",
+    "tipo_portal": "html",
+    "estado_verificacion": "OPERATIVA",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "descubrir_contrataciones": true,
+    "barrido_institucional": true,
+    "indice_documentos": true,
+    "priorizar_listados": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": false,
+    "evidencia_descubrimiento": {
+      "metodo": "Portal institucional observado; pendiente extracción real en Actions",
+      "fecha": "2026-11-07",
+      "url": "https://coloniaavellaneda.gob.ar/web/informacion-publica/"
+    },
+    "verificada_funcionando": true,
+    "evidencia_verificacion": {
+      "github_run_id": 42367624095,
+      "publicaciones_detectadas": 9,
+      "convocatorias_vigentes_verificadas": 0,
+      "criterio": "Extracción de publicaciones oficiales comprobada; no acredita cobertura global ni que los antecedentes sean oportunidades nuevas."
+    },
+    "ultima_verificacion": "2026-11-07"
+  },
+  "https://aplicaciones.vialidadentrerios.gob.ar/contrataciones-licitaciones": {
+    "organismo": "Vialidad Entre Ríos",
+    "localidad": "Paraná",
+    "provincia": "Entre Ríos",
+    "tipo_portal": "html",
+    "estado_verificacion": "OPERATIVA",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "descubrir_contrataciones": true,
+    "barrido_institucional": true,
+    "indice_documentos": false,
+    "priorizar_listados": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": false,
+    "evidencia_descubrimiento": {
+      "metodo": "Portal institucional observado; pendiente extracción real en Actions",
+      "fecha": "2026-11-07",
+      "url": "https://aplicaciones.vialidadentrerios.gob.ar/contrataciones-licitaciones"
+    },
+    "adaptador": "dpver-tarjetas",
+    "verificada_funcionando": true,
+    "evidencia_verificacion": {
+      "github_run_id": 42369784799,
+      "publicaciones_detectadas": 517,
+      "convocatorias_vigentes_verificadas": 0,
+      "criterio": "Extracción de publicaciones oficiales comprobada; no acredita cobertura global ni que los antecedentes sean oportunidades nuevas."
+    },
+    "ultima_verificacion": "2026-11-07",
+    "complementaria_de": "fuente-028"
+  },
+  "https://www.mpba.gov.ar/licitaciones": {
+    "organismo": "Ministerio Público de Buenos Aires",
+    "localidad": null,
+    "provincia": "Buenos Aires",
+    "tipo_portal": "html",
+    "estado_verificacion": "PARCIAL",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "descubrir_contrataciones": false,
+    "barrido_institucional": false,
+    "indice_documentos": false,
+    "priorizar_listados": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": false,
+    "evidencia_descubrimiento": {
+      "metodo": "Portal institucional observado; pendiente extracción real en Actions",
+      "fecha": "2026-11-07",
+      "url": "https://www.mpba.gov.ar/licitaciones"
+    },
+    "adaptador": "mpba-tarjetas",
+    "departamentos_publicados": {
+      "4": "Junín",
+      "13": "Pergamino",
+      "17": "San Nicolás",
+      "19": "Zárate / Campana"
+    },
+    "urls_inicio": [
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Pergamino",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=San%20Nicol%C3%A1s",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Ramallo",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=San%20Pedro",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Baradero",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Arrecifes",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Rojas",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Col%C3%B3n",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Jun%C3%ADn",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Z%C3%A1rate",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Campana",
+      "https://www.mpba.gov.ar/v2021/licitaciones?department_id=4",
+      "https://www.mpba.gov.ar/v2021/licitaciones?department_id=13",
+      "https://www.mpba.gov.ar/v2021/licitaciones?department_id=17",
+      "https://www.mpba.gov.ar/v2021/licitaciones?department_id=19"
+    ],
+    "seguir_patrones": [
+      "/v2021/licitaciones[?].*department_id="
+    ],
+    "localidades_publicadas": [
+      "Pergamino",
+      "San Nicolás",
+      "Ramallo",
+      "San Pedro",
+      "Baradero",
+      "Arrecifes",
+      "Rojas",
+      "Colón",
+      "Junín",
+      "Zárate",
+      "Campana"
+    ],
+    "tiempo_maximo_fuente_segundos": 90,
+    "verificada_funcionando": false,
+    "evidencia_verificacion": {
+      "github_run_id": 42369784799,
+      "publicaciones_detectadas": 95,
+      "convocatorias_vigentes_verificadas": 0,
+      "criterio": "Extracción de publicaciones oficiales comprobada; no acredita cobertura global ni que los antecedentes sean oportunidades nuevas."
+    },
+    "ultima_verificacion": "2026-11-07"
   }
 }

@@ -36,6 +36,13 @@ class RecuperacionPaginacion(unittest.TestCase):
   import oportunidades as o
   r={'organismo':'Ministerio Público de Buenos Aires','provincia':'Buenos Aires','numero_procedimiento':'341/2026','tipo_procedimiento':'licitacion publica','identidad_ambito':None}
   sin={k:v for k,v in r.items() if k!='identidad_ambito'};self.assertEqual(o.identidad(r),o.identidad(sin))
+  import tempfile,incremental as inc
+  from pathlib import Path
+  fecha='2026-11-07T09:00:00-03:00';r=o.normalizar({**r,'fuente':'https://www.mpba.gov.ar/licitaciones','url':'https://www.mpba.gov.ar/licitaciones?keyword=Pergamino','objeto':'Sellado de cristales del inmueble de Fiscalía de Cámara','registro_estructurado':True},fecha)
+  with tempfile.TemporaryDirectory() as d:
+   db=inc.abrir(Path(d)/'estado.sqlite3');informe={'ejecucion_id':'uno','actualizado':fecha,'estado_ejecucion':'COMPLETADA','resumen':{'configuradas':0,'finalizadas':0},'observaciones':[]}
+   try:inc.registrar(db,[r],informe);self.assertEqual(inc.registrar(db,[r],{**informe,'ejecucion_id':'dos'})['eventos_emitidos'],0)
+   finally:db.close()
  def test_calendario_no_multiplica_paginacion_ni_borra_filtros_reales(self):
   from barrido_institucional import sin_calendario_widget
   u='https://pujato.gob.ar/category/noticias/page/3/?yr=2026&month=3&dy&cid=mc_mini_widget-2'

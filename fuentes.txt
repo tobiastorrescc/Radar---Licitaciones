@@ -84,3 +84,8 @@ https://municrespo.gov.ar/digesto/consulta.php?s=consulta
 https://www.concejorosario.gov.ar/compras/
 https://compras.concejorosario.gov.ar/
 https://www.santafe.gob.ar/gestionesdecompras/site/index.php
+https://sanjusto.gov.ar/
+https://www.suardiciudad.ar/
+https://coloniaavellaneda.gob.ar/web/informacion-publica/
+https://aplicaciones.vialidadentrerios.gob.ar/contrataciones-licitaciones
+https://www.mpba.gov.ar/licitaciones

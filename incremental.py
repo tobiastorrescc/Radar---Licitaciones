@@ -183,7 +183,7 @@ def registrar(db,registros,informe):
                 r={**r,'identidad_ambito':antecedente.get('identidad_ambito',''),'numero_convocatoria':o.convocatoria(antecedente)}
             identidad_actual=o.identidad(r)
             clave=identidades_anteriores.get(identidad_actual,identidad_actual)
-            if clave==identidad_actual and r.get('identidad_ambito','').startswith('ficha-rosario-'):
+            if clave==identidad_actual and (r.get('identidad_ambito') or '').startswith('ficha-rosario-'):
                 legado=identidades_anteriores.get(o.identidad({**r,'identidad_ambito':''}))
                 if legado:
                     viejo_dato=db.execute('SELECT dato FROM procedimientos WHERE id=?',(legado,)).fetchone()

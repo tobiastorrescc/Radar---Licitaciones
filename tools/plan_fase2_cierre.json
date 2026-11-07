@@ -1,5 +1,11 @@
 {
-  "etapa": "contraste-fase2-con-respaldos-nov6-y-nov7",
-  "runs": [42367128746, 42367624095, 42368523333, 42369430468, 42369784799],
+  "etapa": "contraste-fase2-catalogo-sincronizado-ambitos-opcionales",
+  "runs": [
+    42367128746,
+    42367624095,
+    42368523333,
+    42369430468,
+    42369784799
+  ],
   "respaldo_inicial": "76ebec55998a0a6269d0e41737d47cbc0347fe19"
 }

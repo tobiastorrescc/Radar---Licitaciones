@@ -9,7 +9,9 @@ def main():
  p=argparse.ArgumentParser();p.add_argument('--lote',type=int,required=True);a=p.parse_args();plan=json.load(open('tools/plan_fase2.json'))
  fs=[] if plan.get('solo_candidatas') else fuentes_configuradas();ids=plan.get('ids',[])
  if ids:fs=[f for f in fs if f['id'] in ids]
- if plan.get('candidatas'):fs+=json.load(open(plan['candidatas']))['fuentes']
+ if plan.get('candidatas'):
+  existentes={f['id'] for f in fs};urls={f['url'] for f in fs}
+  fs += [f for f in json.load(open(plan['candidatas']))['fuentes'] if f['id'] not in existentes and f['url'] not in urls]
  if len({f['id'] for f in fs})!=len(fs):raise ValueError('IDs repetidos')
  n=int(plan.get('lotes',4))
  if not 1<=n<=8 or not 0<=a.lote<n:raise ValueError('Lote inválido')
