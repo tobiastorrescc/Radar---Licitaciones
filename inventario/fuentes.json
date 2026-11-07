@@ -3305,5 +3305,198 @@
     ],
     "fuente_principal": "fuente-001",
     "motivo": "Ruta ya recorrida por la fuente principal; no segundo organismo ni monitor duplicado"
+  },
+  {
+    "id": "fuente-092",
+    "organismo": "Municipalidad de San Justo",
+    "localidad": "San Justo",
+    "provincia": "Santa Fe",
+    "url": "https://sanjusto.gov.ar/",
+    "tipo_portal": "html",
+    "estado_verificacion": "OPERATIVA",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "descubrir_contrataciones": true,
+    "barrido_institucional": true,
+    "indice_documentos": true,
+    "priorizar_listados": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": false,
+    "evidencia_descubrimiento": {
+      "metodo": "Portal institucional observado; pendiente extracción real en Actions",
+      "fecha": "2026-11-07",
+      "url": "https://sanjusto.gov.ar/"
+    },
+    "verificada_funcionando": true,
+    "evidencia_verificacion": {
+      "github_run_id": 42367624095,
+      "publicaciones_detectadas": 3,
+      "convocatorias_vigentes_verificadas": 0,
+      "criterio": "Extracción de publicaciones oficiales comprobada; no acredita cobertura global ni que los antecedentes sean oportunidades nuevas."
+    },
+    "ultima_verificacion": "2026-11-07"
+  },
+  {
+    "id": "fuente-093",
+    "organismo": "Municipalidad de Suardi",
+    "localidad": "Suardi",
+    "provincia": "Santa Fe",
+    "url": "https://www.suardiciudad.ar/",
+    "tipo_portal": "html",
+    "estado_verificacion": "PARCIAL",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "descubrir_contrataciones": true,
+    "barrido_institucional": true,
+    "indice_documentos": true,
+    "priorizar_listados": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": false,
+    "evidencia_descubrimiento": {
+      "metodo": "Portal institucional observado; pendiente extracción real en Actions",
+      "fecha": "2026-11-07",
+      "url": "https://www.suardiciudad.ar/"
+    },
+    "verificada_funcionando": false,
+    "evidencia_verificacion": {
+      "github_run_id": 42367624095,
+      "publicaciones_detectadas": 8,
+      "convocatorias_vigentes_verificadas": 0,
+      "criterio": "Extracción de publicaciones oficiales comprobada; no acredita cobertura global ni que los antecedentes sean oportunidades nuevas."
+    },
+    "ultima_verificacion": "2026-11-07"
+  },
+  {
+    "id": "fuente-097",
+    "organismo": "Municipalidad de Colonia Avellaneda",
+    "localidad": "Colonia Avellaneda",
+    "provincia": "Entre Ríos",
+    "url": "https://coloniaavellaneda.gob.ar/web/informacion-publica/",
+    "tipo_portal": "html",
+    "estado_verificacion": "OPERATIVA",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "descubrir_contrataciones": true,
+    "barrido_institucional": true,
+    "indice_documentos": true,
+    "priorizar_listados": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": false,
+    "evidencia_descubrimiento": {
+      "metodo": "Portal institucional observado; pendiente extracción real en Actions",
+      "fecha": "2026-11-07",
+      "url": "https://coloniaavellaneda.gob.ar/web/informacion-publica/"
+    },
+    "verificada_funcionando": true,
+    "evidencia_verificacion": {
+      "github_run_id": 42367624095,
+      "publicaciones_detectadas": 9,
+      "convocatorias_vigentes_verificadas": 0,
+      "criterio": "Extracción de publicaciones oficiales comprobada; no acredita cobertura global ni que los antecedentes sean oportunidades nuevas."
+    },
+    "ultima_verificacion": "2026-11-07"
+  },
+  {
+    "id": "fuente-098",
+    "organismo": "Vialidad Entre Ríos",
+    "localidad": "Paraná",
+    "provincia": "Entre Ríos",
+    "url": "https://aplicaciones.vialidadentrerios.gob.ar/contrataciones-licitaciones",
+    "tipo_portal": "html",
+    "estado_verificacion": "OPERATIVA",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "descubrir_contrataciones": true,
+    "barrido_institucional": true,
+    "indice_documentos": false,
+    "priorizar_listados": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": false,
+    "evidencia_descubrimiento": {
+      "metodo": "Portal institucional observado; pendiente extracción real en Actions",
+      "fecha": "2026-11-07",
+      "url": "https://aplicaciones.vialidadentrerios.gob.ar/contrataciones-licitaciones"
+    },
+    "adaptador": "dpver-tarjetas",
+    "verificada_funcionando": true,
+    "evidencia_verificacion": {
+      "github_run_id": 42369784799,
+      "publicaciones_detectadas": 517,
+      "convocatorias_vigentes_verificadas": 0,
+      "criterio": "Extracción de publicaciones oficiales comprobada; no acredita cobertura global ni que los antecedentes sean oportunidades nuevas."
+    },
+    "ultima_verificacion": "2026-11-07",
+    "complementaria_de": "fuente-028"
+  },
+  {
+    "id": "fuente-099",
+    "organismo": "Ministerio Público de Buenos Aires",
+    "localidad": null,
+    "provincia": "Buenos Aires",
+    "url": "https://www.mpba.gov.ar/licitaciones",
+    "tipo_portal": "html",
+    "estado_verificacion": "PARCIAL",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "descubrir_contrataciones": false,
+    "barrido_institucional": false,
+    "indice_documentos": false,
+    "priorizar_listados": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": false,
+    "evidencia_descubrimiento": {
+      "metodo": "Portal institucional observado; pendiente extracción real en Actions",
+      "fecha": "2026-11-07",
+      "url": "https://www.mpba.gov.ar/licitaciones"
+    },
+    "adaptador": "mpba-tarjetas",
+    "departamentos_publicados": {
+      "4": "Junín",
+      "13": "Pergamino",
+      "17": "San Nicolás",
+      "19": "Zárate / Campana"
+    },
+    "urls_inicio": [
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Pergamino",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=San%20Nicol%C3%A1s",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Ramallo",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=San%20Pedro",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Baradero",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Arrecifes",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Rojas",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Col%C3%B3n",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Jun%C3%ADn",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Z%C3%A1rate",
+      "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Campana",
+      "https://www.mpba.gov.ar/v2021/licitaciones?department_id=4",
+      "https://www.mpba.gov.ar/v2021/licitaciones?department_id=13",
+      "https://www.mpba.gov.ar/v2021/licitaciones?department_id=17",
+      "https://www.mpba.gov.ar/v2021/licitaciones?department_id=19"
+    ],
+    "seguir_patrones": [
+      "/v2021/licitaciones[?].*department_id="
+    ],
+    "localidades_publicadas": [
+      "Pergamino",
+      "San Nicolás",
+      "Ramallo",
+      "San Pedro",
+      "Baradero",
+      "Arrecifes",
+      "Rojas",
+      "Colón",
+      "Junín",
+      "Zárate",
+      "Campana"
+    ],
+    "tiempo_maximo_fuente_segundos": 90,
+    "verificada_funcionando": false,
+    "evidencia_verificacion": {
+      "github_run_id": 42369784799,
+      "publicaciones_detectadas": 95,
+      "convocatorias_vigentes_verificadas": 0,
+      "criterio": "Extracción de publicaciones oficiales comprobada; no acredita cobertura global ni que los antecedentes sean oportunidades nuevas."
+    },
+    "ultima_verificacion": "2026-11-07"
   }
 ]

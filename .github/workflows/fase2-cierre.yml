@@ -1,0 +1,83 @@
+name: Cierre comparativo Fase 2 sin red de portales
+on:
+  push:
+    branches: [mejora/radar-auditable]
+    paths: [tools/plan_fase2_cierre.json]
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: fase2-cierre-aislado
+  cancel-in-progress: false
+jobs:
+  comparar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validar origen de todas las capturas
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs=require('fs');
+            for(const id of JSON.parse(fs.readFileSync('tools/plan_fase2_cierre.json')).runs){
+              const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:id});
+              if(r.conclusion!=='success'||r.head_branch!=='mejora/radar-auditable'||r.path!=='.github/workflows/fase2-cobertura.yml'||r.head_repository.full_name!==`${context.repo.owner}/${context.repo.repo}`)throw Error('Captura ajena o incompleta');
+            }
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: fase2-42367128746-*
+          merge-multiple: true
+          path: work/fase2-cierre/capturas/42367128746
+          run-id: 42367128746
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: fase2-42367624095-*
+          merge-multiple: true
+          path: work/fase2-cierre/capturas/42367624095
+          run-id: 42367624095
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: fase2-42368523333-*
+          merge-multiple: true
+          path: work/fase2-cierre/capturas/42368523333
+          run-id: 42368523333
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: fase2-42369430468-*
+          merge-multiple: true
+          path: work/fase2-cierre/capturas/42369430468
+          run-id: 42369430468
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: fase2-42369784799-*
+          merge-multiple: true
+          path: work/fase2-cierre/capturas/42369784799
+          run-id: 42369784799
+          github-token: ${{ github.token }}
+      - name: Contrastar contra dos copias de respaldo y repetir sin red ni OCR
+        run: python -u tools/fase2_cerrar.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fase2-cierre-${{ github.run_id }}
+          path: |
+            work/fase2-cierre/resultado.json
+            work/fase2-cierre/antes.json
+            work/fase2-cierre/despues.json
+            work/fase2-cierre/rosario.json
+            work/fase2-cierre/epe_17.json
+            work/fase2-cierre/cierre-*.json
+            work/fase2-cierre/nuevas-vigentes-*.json
+            work/fase2-cierre/fuentes_auditadas.json
+            work/fase2-cierre/comercial/
+          retention-days: 90
