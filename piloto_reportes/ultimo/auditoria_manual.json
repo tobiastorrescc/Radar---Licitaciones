@@ -195,7 +195,7 @@
       "metodo": "Lectura independiente de ficha oficial, sin OCR; número distinto del expediente.",
       "resultado": "DETECTADA",
       "campos_pendientes_contraste": [],
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "c0f16e21d1a6003c61a243ccd06649eb92e43d2edba240f3554e7f5f310da60c"
       ]
@@ -218,7 +218,7 @@
       "metodo": "Lectura independiente de ficha oficial, sin OCR; número distinto del expediente.",
       "resultado": "DETECTADA",
       "campos_pendientes_contraste": [],
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "6606b38d5b607670c71f7aba4102d4a866f37526d2e2319c6edda3b8f2bafc31"
       ]
@@ -241,7 +241,7 @@
       "metodo": "Lectura independiente de ficha oficial, sin OCR; número distinto del expediente.",
       "resultado": "DETECTADA",
       "campos_pendientes_contraste": [],
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "a14cc67d3ca4ce2761d84a7ff888766cd86c294f213062b97e37f99f3ac1f112"
       ]
@@ -264,7 +264,7 @@
       "metodo": "Lectura independiente de ficha oficial, sin OCR; número distinto del expediente.",
       "resultado": "DETECTADA",
       "campos_pendientes_contraste": [],
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "aa52802a0e9b61b2fe6b8c76a5824239e7fc960b9d97da3a06575b95cebd5817"
       ]
@@ -287,7 +287,7 @@
       "metodo": "Lectura independiente de ficha oficial, sin OCR; número distinto del expediente.",
       "resultado": "DETECTADA",
       "campos_pendientes_contraste": [],
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "efd40ab7ca207e7c8f302240c90bbe04863c8be9302f6d3ab3dda5fa98b13a34"
       ]
@@ -312,7 +312,7 @@
       "campos_pendientes_contraste": [
         "numero_procedimiento"
       ],
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "06823a71cfa92fdf933bb7f051f3cdbc04893147dd37146ff368538c93f99be3"
       ]
@@ -335,7 +335,7 @@
       "metodo": "Lectura independiente de ficha oficial, sin OCR; número distinto del expediente.",
       "resultado": "DETECTADA",
       "campos_pendientes_contraste": [],
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "8ff9ef15c3d0b676b9251514452e38add21776b6c8772de080710506360435f5"
       ]
@@ -360,7 +360,7 @@
       "campos_pendientes_contraste": [
         "numero_procedimiento"
       ],
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "335721fab3e1e6fde82c03b52965ce5e66651f8827e912eee75a221a997ccdcc"
       ]
@@ -385,7 +385,7 @@
       "campos_pendientes_contraste": [
         "numero_procedimiento"
       ],
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "0a4e1421a87659ffb95e636c2a4c7ca1ba11d93177cbd9b1c691ab64124ffc6d"
       ]
@@ -406,7 +406,7 @@
       "fecha_limite_presentacion": "2026-11-10",
       "resultado": "DETECTADA",
       "campos_pendientes_contraste": [],
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "c77572e3ac53491f5ee882a61d10579490bd6e40eb4efbb222a942e7812f77ec"
       ]
@@ -427,7 +427,7 @@
       "fecha_limite_presentacion": "2026-11-11",
       "resultado": "DETECTADA",
       "campos_pendientes_contraste": [],
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "9f2a2203870d1d1e5a2558753f16733eaa800a413047e7bc812bd6f9bd19a586"
       ]
@@ -448,7 +448,7 @@
       "fecha_apertura": "2026-11-11",
       "resultado": "DETECTADA",
       "campos_pendientes_contraste": [],
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "f55f3b51332e4561bcf402addba4a2822f45788397b8924cdae6918ee9fb7a9b"
       ]
@@ -469,7 +469,7 @@
       "fecha_apertura": "2026-11-12",
       "resultado": "DETECTADA",
       "campos_pendientes_contraste": [],
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "e625f7923da2c606f8e1ca1d3a68cbba9934af60fd805992e326a0f03e8dbe85"
       ]
@@ -491,7 +491,7 @@
       "metodo": "Lectura web independiente del índice oficial actualizado; fecha de publicación y presupuesto no publicados en este aviso.",
       "resultado": "DETECTADA",
       "campos_pendientes_contraste": [],
-      "evidencia_reciente": true,
+      "evidencia_reciente": false,
       "ids_radar": [
         "1642324a05e765617609312a35a6eb681fcb8a998041e91dee3021596bbea18d"
       ]

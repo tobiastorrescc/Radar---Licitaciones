@@ -1,6 +1,6 @@
 # Fichas completas de oportunidades abiertas
 
-Vigencia calculada a 2026-11-06T08:52:44.049074-03:00. Los datos pendientes no se completan por suposición.
+Vigencia calculada a 2026-11-07T08:36:35.631351-03:00. Los datos pendientes no se completan por suposición.
 
 ## Municipalidad de Chajarí — 19/2026
 
@@ -269,9 +269,7 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Objeto**: Contratación del servicio de provisión de combustibles a través de dispositivos de identificación y sistema de administración informatizado y provisión de urea automotriz para los vehículos que forman parte del ente - Ente Autárquico SUMAR (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "1570602689.94", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
-- **Fecha publicacion**: 2026-10-29 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38663; página no identificada.
+- **Fecha publicacion**: 2026-10-29 (PENDIENTE).
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha apertura**: 2026-11-12 (VERIFICADO).
@@ -382,32 +380,6 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://www.epe.santafe.gov.ar/app2/aperturas; página no identificada.
 - **Hora apertura**: Pendiente de verificar (PENDIENTE).
   Respaldo: https://www.epe.santafe.gov.ar/app2/aperturas; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Municipalidad de Concepción del Uruguay — 36/2026
-
-[Publicación oficial](https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones)
-
-- **Objeto**: Refuncionalización de Toma de Agua Alternativa (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: {"importe": "647734531.36", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/22-10-26.pdf; página no identificada.
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -608,9 +580,7 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Objeto**: ORDENANZA 10586, PRORROGADA POR ORD.10750 PARA LA CONTRATACIÓN DEL SERVICIO DE SEGURIDAD PRIVADA PARA PARQUE HUERTA NORTE,PUNTO CUIDAR LATINOAMERICANO Y PARQUE HUERTA EL BOSQUE DEPENDIENTES DE LA SUBSECRETARÍA DE ECONOMÍA SOCIAL"SECRETARÍA DE DESARROLLO HUMANO Y HÁBITAT" (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "218324940.00", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Fecha publicacion**: 2026-11-02 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38698; página no identificada.
+- **Fecha publicacion**: 2026-11-02 (PENDIENTE).
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha apertura**: 2026-11-10 (VERIFICADO).
@@ -739,45 +709,19 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Objeto**: INMUNOMODULADORES ESPECIFICOS Hospital de Emergencias Dr. C.Alvarez (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "87300000.00", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=1; página no identificada.
 - **Fecha publicacion**: 2026-11-05 (VERIFICADO).
   Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38735; página no identificada.
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha apertura**: 2026-11-16 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=1; página no identificada.
 - **Hora apertura**: 11:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=1; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
 - **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Poder Judicial de Entre Ríos — 5/2026
-
-[Publicación oficial](https://www.jusentrerios.gov.ar/compras/concurso-de-precios-no-05-26-por-obra-pintura-y-reparaciones-tribunales-de-la-paz/concurso-de-precios-05-26/)
-
-- **Objeto**: De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Concurso de Precios Nº 05/26, por Obra: “Pintura y reparaciones Tribunales de La Paz”. (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: {"importe": "82950075.67", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.jusentrerios.gov.ar/compras/concurso-de-precios-no-05-26-por-obra-pintura-y-reparaciones-tribunales-de-la-paz/; página no identificada.
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.jusentrerios.gov.ar/compras/concurso-de-precios-no-05-26-por-obra-pintura-y-reparaciones-tribunales-de-la-paz/; página no identificada.
-- **Hora apertura**: 10:30 (VERIFICADO).
-  Respaldo: https://www.jusentrerios.gov.ar/compras/concurso-de-precios-no-05-26-por-obra-pintura-y-reparaciones-tribunales-de-la-paz/; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
 - **Garantias**: Pendiente de verificar (PENDIENTE).
 - **Requisitos**: Pendiente de verificar (PENDIENTE).
 - **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
@@ -819,9 +763,7 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Objeto**: ADQUISICION DE ESTACION DE ANESTESIA DE ALTA COMPEJIDAD "HOSPITAL DE NIÑOS VICTOR J. VILELA" (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "71495625.00", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
-- **Fecha publicacion**: 2026-11-04 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38722; página no identificada.
+- **Fecha publicacion**: 2026-11-04 (PENDIENTE).
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha apertura**: 2026-11-14 (VERIFICADO).
@@ -969,6 +911,33 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## Municipalidad de Rosario — 10/2026
+
+[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38743)
+
+- **Objeto**: LP 10-010-26 MANTENIMIENTO DE FLOTA - SIES (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: {"importe": "46000000.00", "moneda": null} (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+- **Fecha publicacion**: 2026-11-06 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38743; página no identificada.
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-25 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+- **Hora apertura**: 09:00 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## Municipalidad de Rosario — 90/2026
 
 [Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38726)
@@ -976,7 +945,9 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Objeto**: BIOLOGIA MOLECULAR (TUBERCULOSIS) DIRECCIÓN DE BIOQUÍMICA) (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "43676160.00", "moneda": null} (VERIFICADO).
-- **Fecha publicacion**: 2026-11-04 (PENDIENTE).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+- **Fecha publicacion**: 2026-11-04 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38726; página no identificada.
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha apertura**: 2026-11-12 (VERIFICADO).
@@ -1126,33 +1097,6 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
-## Municipalidad de Rosario — 213/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38710)
-
-- **Objeto**: MEDICAMENTOS BAJO PROGRAMAS (HOSP. VILELA) (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: {"importe": "37679860.50", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Fecha publicacion**: 2026-11-03 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38710; página no identificada.
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 10:30 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
 ## Coordinación Ministerial del MPeI — 
 
 [Publicación oficial](https://www.entrerios.gov.ar/minplan/licitaciones)
@@ -1179,33 +1123,6 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
-## Municipalidad de Rosario — 211/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38708)
-
-- **Objeto**: COMPRA ÁGIL MEDICAMENTOS - ESPECIALIDADES MEDICINALES (HOSP. VILELA) (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: {"importe": "27783433.57", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Fecha publicacion**: 2026-11-03 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38708; página no identificada.
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
 ## Municipalidad de Rosario — 12/2026
 
 [Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38675)
@@ -1213,9 +1130,7 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Objeto**: UNIFORMES "HOSPITAL DE NIÑOS VICTOR J. VILELA" (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "27624524.71", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
-- **Fecha publicacion**: 2026-10-29 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38675; página no identificada.
+- **Fecha publicacion**: 2026-10-29 (PENDIENTE).
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha apertura**: 2026-11-10 (VERIFICADO).
@@ -1266,9 +1181,7 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Objeto**: Servicio de Limpieza para la Sec. de Desarrollo Económico y Empleo (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "26209008.00", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
-- **Fecha publicacion**: 2026-11-05 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38707; página no identificada.
+- **Fecha publicacion**: 2026-11-05 (PENDIENTE).
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha apertura**: 2026-11-16 (VERIFICADO).
@@ -1420,22 +1333,22 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
-## Municipalidad de Rosario — 62/2026
+## Municipalidad de Rosario — 153/2026
 
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38660)
+[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38739)
 
-- **Objeto**: Compra Ágil - Servicio de Mantenimiento de ESPACIOS VERDES - HOSPITAL I. CARRASCO (VERIFICADO).
+- **Objeto**: Realización de canalización, despliegue de cableado estructurado vertical en fibra óptica y horizontal en cobre, instalación de tablero seccional eléctrico y cableado eléctrico para los puertos de informática y alimentación del nuevo rack a instalar e instalación del equipamiento y accesorios necesarios para la provisión de puestos de trabajo en el nuevo salón que brindará el Centro de Salud Débora Ferrandini. (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: {"importe": "11400000.00", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Fecha publicacion**: 2026-10-29 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38660; página no identificada.
+- **Presupuesto**: {"importe": "11765000.00", "moneda": null} (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+- **Fecha publicacion**: 2026-11-06 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38739; página no identificada.
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 12:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
+- **Fecha apertura**: 2026-11-13 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -1447,20 +1360,22 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
-## Municipalidad de Rosario — 216/2026
+## Municipalidad de Rosario — 92/2026
 
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38712)
+[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38673)
 
-- **Objeto**: ALQUILER MENSUAL DE MESA DE CIRUGIA "HOSPITAL DE NIÑOS VICTOR J. VILELA" (VERIFICADO).
+- **Objeto**: CAG 05-092-3197-2026 BIOMEDICOS ESPECIALES -HRSP- (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: {"importe": "11304000.00", "moneda": null} (VERIFICADO).
-- **Fecha publicacion**: 2026-11-03 (PENDIENTE).
+- **Presupuesto**: {"importe": "11452656.27", "moneda": null} (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
+- **Fecha publicacion**: 2026-10-29 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38673; página no identificada.
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 09:30 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
+- **Fecha apertura**: 2026-11-13 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
+- **Hora apertura**: 09:00 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -1488,6 +1403,33 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
 - **Hora apertura**: 11:00 (VERIFICADO).
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## Municipalidad de Rosario — 150/2026
+
+[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38705)
+
+- **Objeto**: Compra de puertas y ventanas para el centro de salud "Elena Bazet" y para los centros de salud. (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: {"importe": "8004325.52", "moneda": null} (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
+- **Fecha publicacion**: 2026-11-03 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38705; página no identificada.
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-10 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -1560,9 +1502,7 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Objeto**: Compra de materiales para emplacado con placas de roca de yeso para varios centros de salud. Perteneciente a la Dirección de Centros de Salud.- (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "7225026.57", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Fecha publicacion**: 2026-11-03 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38700; página no identificada.
+- **Fecha publicacion**: 2026-11-03 (PENDIENTE).
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha apertura**: 2026-11-11 (VERIFICADO).
@@ -1634,6 +1574,33 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## Municipalidad de Rosario — 152/2026
+
+[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38745)
+
+- **Objeto**: Monitoreo de alarma para Centros de Salud (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: {"importe": "5670000.00", "moneda": null} (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
+- **Fecha publicacion**: 2026-11-06 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38745; página no identificada.
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-13 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
+- **Hora apertura**: 09:00 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## Aeropuerto Internacional Rosario — 53/2026
 
 [Publicación oficial](https://aeropuertorosario.com/licitaciones/contratacion-directa-no-53-2026/)
@@ -1687,11 +1654,38 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## Municipalidad de Rosario — 154/2026
+
+[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38740)
+
+- **Objeto**: Compra de pisos para la obra de reforma del centro de salud "Luis Pasteur" y compra de cerámicos de pisos y pastina / pegamento para la obra de reforma del centro de salud "Elena Bazet". Perteneciente a la Dirección de Centros de Salud.- (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: {"importe": "5020102.00", "moneda": null} (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+- **Fecha publicacion**: 2026-11-06 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38740; página no identificada.
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-11 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+- **Hora apertura**: 11:00 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## Municipalidad de San Salvador — 29/2026
 
 [Publicación oficial](https://sansalvadorer.gob.ar/llamado-a-concurso-de-precios-n-29-2026/)
 
-- **Objeto**: Desarrollo Social Destacadas Noticias Portada Llamado a Concurso de Precios N° 29-2026 05/11/2026 103 El Departamento de Compras y Suministros llama a Concurso de Precios N° 29-2026 que tiene por objeto la Compra de 200 cargas de Gas Envasado en garrafas de 10kg – con Destino a Ayuda Directa ; y se regirá por las condiciones establecidas en Pliego de Bases, Condiciones Generales y Particulares aprobados por Decreto N° 347/26. Apertura de sobres: 11 de noviembre de 2026 a las 11:00 horas , en la oficina de compras –planta baja – edificio municipal. Presupuesto oficial: $5.000.000- (Pesos cinco millones.-). Se adjunta PLIEGO en total de diez fojas. Artículo anterior La Municipalidad realizará una subasta pública online de bienes municipales en desuso MSS (VERIFICADO).
+- **Objeto**: Desarrollo Social Destacadas Noticias Portada Llamado a Concurso de Precios N° 29-2026 05/11/2026 121 El Departamento de Compras y Suministros llama a Concurso de Precios N° 29-2026 que tiene por objeto la Compra de 200 cargas de Gas Envasado en garrafas de 10kg – con Destino a Ayuda Directa ; y se regirá por las condiciones establecidas en Pliego de Bases, Condiciones Generales y Particulares aprobados por Decreto N° 347/26. Apertura de sobres: 11 de noviembre de 2026 a las 11:00 horas , en la oficina de compras –planta baja – edificio municipal. Presupuesto oficial: $5.000.000- (Pesos cinco millones.-). Se adjunta PLIEGO en total de diez fojas. Artículo anterior La Municipalidad realizará una subasta pública online de bienes municipales en desuso MSS (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "5000000", "moneda": null} (VERIFICADO).
   Respaldo: https://sansalvadorer.gob.ar/llamado-a-concurso-de-precios-n-29-2026/; página no identificada.
@@ -1720,71 +1714,13 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Objeto**: MATERNIDAD MARTIN TELA VINILICA BLACK PARA CORTINAS ROLLERS (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "4880000.00", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Fecha publicacion**: 2026-11-04 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38715; página no identificada.
+- **Fecha publicacion**: 2026-11-04 (PENDIENTE).
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha apertura**: 2026-11-12 (VERIFICADO).
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
 - **Hora apertura**: 10:30 (VERIFICADO).
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Municipalidad de Rosario — 126/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38688)
-
-- **Objeto**: Servicio de alquiler de bafles potenciados (monitores) para eventos organizados por el Galpón 11 (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: {"importe": "4800000.00", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Fecha publicacion**: 2026-11-02 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38688; página no identificada.
-- **Fecha limite presentacion**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora limite presentacion**: 10:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Municipalidad de Rosario — 473/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38703)
-
-- **Objeto**: ESTANTES Y PUERTA PARA BIBLIOTECA (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: {"importe": "4699640.00", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Fecha publicacion**: 2026-11-03 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38703; página no identificada.
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -1830,9 +1766,7 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Objeto**: CAG 05-091-3196-2026 MEDICAMENTOS SIN VISADO -HRSP- (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "4401455.95", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Fecha publicacion**: 2026-10-29 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38672; página no identificada.
+- **Fecha publicacion**: 2026-10-29 (PENDIENTE).
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha apertura**: 2026-11-12 (VERIFICADO).
@@ -1882,7 +1816,9 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Objeto**: DESCARTABLES DE CLÍNICA ( DESESTIMADOS CA 11-074-26). DIRECCIÓN DE BIOQUÍMICA. (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "3579000.00", "moneda": null} (VERIFICADO).
-- **Fecha publicacion**: 2026-11-04 (PENDIENTE).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+- **Fecha publicacion**: 2026-11-04 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38714; página no identificada.
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha apertura**: 2026-11-11 (VERIFICADO).
@@ -1916,33 +1852,6 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
 - **Hora apertura**: 11:00 (VERIFICADO).
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Municipalidad de Rosario — 87/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38694)
-
-- **Objeto**: DESCARTABLES ANATOMÍA PATOLÓGICA. DESESTIMADOS CA 11-077-26. DIRECCIÓN DE BIOQUÍMICA (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: {"importe": "3122904.00", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
-- **Fecha publicacion**: 2026-11-02 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38694; página no identificada.
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -2008,31 +1917,6 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
-## Municipalidad de Rosario — 214/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38711)
-
-- **Objeto**: CONTRATACION DE SERVICIOS DE LAVANDERIA PARA PACIENTES (KIT DE ROPA) "HOSPITAL DE NIÑOS VICTOR J. VILELA" (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: {"importe": "1875580.61", "moneda": null} (VERIFICADO).
-- **Fecha publicacion**: 2026-11-03 (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
 ## Municipalidad de Rosario — 71/2026
 
 [Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38718)
@@ -2040,7 +1924,9 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Objeto**: Herramientas Menores para el Hospital J. B. Alberdi (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "1063763.83", "moneda": null} (VERIFICADO).
-- **Fecha publicacion**: 2026-11-04 (PENDIENTE).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
+- **Fecha publicacion**: 2026-11-04 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38718; página no identificada.
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha apertura**: 2026-11-12 (VERIFICADO).
@@ -2074,33 +1960,6 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
 - **Hora apertura**: 10:30 (VERIFICADO).
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: ["PRESENCIAL"] (VERIFICADO).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Municipalidad de Rosario — 82/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38676)
-
-- **Objeto**: Adquisición de Cristales para Salud Animal Rosario (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: {"importe": "240000.00", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
-- **Fecha publicacion**: 2026-10-30 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38676; página no identificada.
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -2146,9 +2005,7 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Objeto**: Materiales Eléctricos Hospital J. B. Alberdi (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: {"importe": "140915.00", "moneda": null} (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Fecha publicacion**: 2026-11-03 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38701; página no identificada.
+- **Fecha publicacion**: 2026-11-03 (PENDIENTE).
 - **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
 - **Fecha apertura**: 2026-11-10 (VERIFICADO).
@@ -2327,456 +2184,6 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
-## Municipalidad de Rosario — 20073/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38616)
-
-- **Objeto**: Licitación Privada 20073/2026 Publicada para Apertura Trabajos necesarios para poner en condiciones las instalaciones relevadas en el Polideportivo Cristalería, sito en Alberdi 3200 de la ciudad de Rosario Apertura: 06/11/2026 09:00 (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=1; página no identificada.
-- **Hora apertura**: 09:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=1; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Poder Judicial de Entre Ríos — 272/2026
-
-[Publicación oficial](https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-272-26-por-provision-y-envio-de-la-heladera-para-ser-destinada-a-la-camara-de-casacion-penal-sala-1-de-parana/)
-
-- **Objeto**: Contrataciones Solicitud de Cotización Nº 272/26, por provisión y envío de la heladera para ser destinada a la Cámara de Casación Penal Sala 1 de Paraná PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 272/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 272/26, por provisión y envío de la heladera para ser destinada a la Cámara de Casación Penal Sala 1 de Paraná. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 06 de noviembre de 2026 a las 09:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 272-26 Descargar Imprmir (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-272-26-por-provision-y-envio-de-la-heladera-para-ser-destinada-a-la-camara-de-casacion-penal-sala-1-de-parana/; página no identificada.
-- **Hora apertura**: 09:30 (VERIFICADO).
-  Respaldo: https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-272-26-por-provision-y-envio-de-la-heladera-para-ser-destinada-a-la-camara-de-casacion-penal-sala-1-de-parana/; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Municipalidad de Rosario — 19/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38643)
-
-- **Objeto**: Compra Agil 19/2026 Publicada para Apertura Adquisición de fibra óptica y materiales - D. G. de Informática y TIC - Agencia de Modernización Rosario Digital - Jefatura de Gabinete Apertura: 06/11/2026 10:00 (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Municipalidad de Rosario — 29/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38631)
-
-- **Objeto**: Compra Agil 29/2026 Publicada para Apertura Compra de Equipos e Insumos de Informática - Ente Turístico Rosario Apertura: 06/11/2026 10:00 (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Municipalidad de Rosario — 46/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38618)
-
-- **Objeto**: Compra Agil 46/2026 Publicada para Apertura Adquisición de uniformes de Verano para la Dir. Gral de Control Urbano Apertura: 06/11/2026 10:00 (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Vialidad Entre Ríos — 33/2026
-
-[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
-
-- **Objeto**: ADQUISICION DE REPUESTOS PARA MOTONIVELADORA NEW HOLLAND EQ. M-33 (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 247/2026
-
-[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
-
-- **Objeto**: REPARACION DE PUERTA DE INGRESO CGE (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 249/2026
-
-[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
-
-- **Objeto**: COMPRA DE ARTICULOS DEPORTIVOS (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 254/2026
-
-[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
-
-- **Objeto**: CONTRATACION DE TRANSPORTE PARA TRASLADO DE GUALEGUAYCHU Y C DEL URUGUAY HACIA PARANA DÍA 17 DE NOV. 2026 (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 257/2026
-
-[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
-
-- **Objeto**: CONTRATACION DE TRANSPORTE PARA TRASLADO DE VILLAGUAY Y NOGOYA HACIA PARANA DÍA 17 DE NOV. 2026 (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Municipalidad de Rosario — 3212/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38709)
-
-- **Objeto**: Pendiente de verificar (PENDIENTE).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 10:15 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Municipalidad de Rosario — 35836/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38696)
-
-- **Objeto**: Pendiente de verificar (PENDIENTE).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 11:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Municipalidad de Rosario — 40611/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38642)
-
-- **Objeto**: Compra Agil 40611/2026 Publicada para Apertura ADQUISICION DE SABANAS Y FUNDAS PARA EL HOSPITAL I CARRASCO. Apertura: 06/11/2026 11:00 (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 11:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Municipalidad de Rosario — 5/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38695)
-
-- **Objeto**: Pendiente de verificar (PENDIENTE).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 11:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Municipalidad de Rosario — 71201/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38691)
-
-- **Objeto**: Pendiente de verificar (PENDIENTE).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 11:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Poder Judicial de Entre Ríos — 268/2026
-
-[Publicación oficial](https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-268-26-por-contratacion-de-servicio-de-viandas-para-los-juicios-por-jurados-a-realizarse-en-la-ciudad-de-gualeguay/)
-
-- **Objeto**: Contrataciones Solicitud de Cotización Nº 268/26, por contratación de servicio de viandas para los juicios por jurados a realizarse en la ciudad de Gualeguay PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 268/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 268/26, por contratación de servicio de viandas para los juicios por jurados a realizarse en la ciudad de Gualeguay. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 06 de noviembre de 2026 a las 11:00 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 268-26 Descargar Imprmir (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-268-26-por-contratacion-de-servicio-de-viandas-para-los-juicios-por-jurados-a-realizarse-en-la-ciudad-de-gualeguay/; página no identificada.
-- **Hora apertura**: 11:00 (VERIFICADO).
-  Respaldo: https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-268-26-por-contratacion-de-servicio-de-viandas-para-los-juicios-por-jurados-a-realizarse-en-la-ciudad-de-gualeguay/; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Municipalidad de Rosario — 10/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38572)
-
-- **Objeto**: Licitación Privada 10/2026 Publicada para Apertura Provisión de Luminarias para Espacios Públicos de la Ciudad de Rosario - Ente Autárquico SUMAR SELLADO: deberá ser abonado únicamente por medio de depósito o transferencia electrónica a la cuenta 020-0008147/8 de Banco Municipal de Rosario (CBU:0650020701000000814789) Apertura: 06/11/2026 11:00 (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=1; página no identificada.
-- **Hora apertura**: 11:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=1; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Municipalidad de Rosario — 20/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38704)
-
-- **Objeto**: Pendiente de verificar (PENDIENTE).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-06 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 11:30 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
 ## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 240/2026
 
 [Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
@@ -2918,31 +2325,6 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
 - **Hora apertura**: 10:00 (VERIFICADO).
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
-## Municipalidad de Rosario — 81501/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38705)
-
-- **Objeto**: Pendiente de verificar (PENDIENTE).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-10 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 10:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -3453,6 +2835,56 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## Poder Judicial de Entre Ríos — 284/2026
+
+[Publicación oficial](https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-284-26-contratacion-del-servicio-de-lunch-para-cien-100-personas-por-el-acto-de-reconocimiento-de-jubilados-y-empleados-que-cumplen-25-anos-de-servicio-en/)
+
+- **Objeto**: Contrataciones Solicitud de Cotización Nº 284/26: “Contratación del servicio de lunch para cien (100) personas por el Acto de Reconocimiento de Jubilados y Empleados que cumplen 25 años de servicio en el Poder Judicial” RECTIFICADA PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 284/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 284/26: “Contratación del servicio de lunch para cien (100) personas por el Acto de Reconocimiento de Jubilados y Empleados que cumplen 25 años de servicio en el Poder Judicial”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 12 de noviembre de 2026 a las 09:00 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 284-26 RECTIFICADA Descargar Imprmir (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-12 (VERIFICADO).
+  Respaldo: https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-284-26-contratacion-del-servicio-de-lunch-para-cien-100-personas-por-el-acto-de-reconocimiento-de-jubilados-y-empleados-que-cumplen-25-anos-de-servicio-en/; página no identificada.
+- **Hora apertura**: 09:00 (VERIFICADO).
+  Respaldo: https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-284-26-contratacion-del-servicio-de-lunch-para-cien-100-personas-por-el-acto-de-reconocimiento-de-jubilados-y-empleados-que-cumplen-25-anos-de-servicio-en/; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 260/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: CONTRATACION DE SERVICIO DE CATERING PARA 100 PERSONAS CON MOTIVO DE JORNADA A REALIZARSE EL 19/11/2026 EN LA LOCALIDAD DE FEDERACION (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-12 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 09:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## Poder Judicial de Entre Ríos — 277/2026
 
 [Publicación oficial](https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-277-26-provision-y-envio-de-la-camara-fotografica-para-ser-destinados-al-departamento-medico-forense-de-la-localidad-de-federacion/)
@@ -3580,31 +3012,6 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
-## Municipalidad de Rosario — 50921/2026
-
-[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38673)
-
-- **Objeto**: Compra Agil 50921/2026 Publicada para Apertura CAG 05-092-3197-2026 BIOMEDICOS ESPECIALES -HRSP- Apertura: 13/11/2026 09:00 (VERIFICADO).
-- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
-- **Presupuesto**: Pendiente de verificar (PENDIENTE).
-- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
-- **Fecha apertura**: 2026-11-13 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Hora apertura**: 09:00 (VERIFICADO).
-  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
-- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
-- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
-- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
-- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
-- **Garantias**: Pendiente de verificar (PENDIENTE).
-- **Requisitos**: Pendiente de verificar (PENDIENTE).
-- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
-- **Moneda literal**: Pendiente de verificar (PENDIENTE).
-
-Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
-
 ## Municipalidad de Rosario — 50931/2026
 
 [Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38674)
@@ -3619,6 +3026,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
 - **Hora apertura**: 09:15 (VERIFICADO).
   Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura&tipoRecomendada=5; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 10/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: compra de 10 discos ssd dell (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-13 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -3782,6 +3214,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## Municipalidad de Rosario — 23340/2026
+
+[Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744)
+
+- **Objeto**: Pendiente de verificar (PENDIENTE).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-16 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+- **Hora apertura**: 09:00 (VERIFICADO).
+  Respaldo: https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## Municipalidad de Rosario — 1/2026
 
 [Publicación oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38723)
@@ -3886,6 +3343,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 259/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: COMPRA DE HERRAMIENTAS ELECTRICAS (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-16 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## Municipalidad de Gualeguay — 17/2026
 
 [Publicación oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf)
@@ -3967,6 +3449,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
 
+## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 261/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: INSPECCION Y CONTROL DE MATAGUEGOS CGE (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-17 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
 ## MIN. SALUD - PODER EJECUTIVO — 24/2026
 
 [Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
@@ -4030,6 +3537,31 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 - **Fecha apertura**: 2026-11-19 (VERIFICADO).
   Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
 - **Hora apertura**: 09:00 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 262/2026
+
+[Publicación oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones)
+
+- **Objeto**: COMPRA DE MATERIALES CONSTRUCCION EN SECO (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Hora limite presentacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha apertura**: 2026-11-19 (VERIFICADO).
+  Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
   Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
@@ -4131,6 +3663,33 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
   Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
 - **Hora apertura**: 10:00 (VERIFICADO).
   Respaldo: https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones; página no identificada.
+- **Condiciones pago**: Pendiente de verificar (PENDIENTE).
+- **Plazo entrega**: Pendiente de verificar (PENDIENTE).
+- **Lugar entrega**: Pendiente de verificar (PENDIENTE).
+- **Modalidad presentacion**: Pendiente de verificar (PENDIENTE).
+- **Garantias**: Pendiente de verificar (PENDIENTE).
+- **Requisitos**: Pendiente de verificar (PENDIENTE).
+- **Limite nota contrasena**: Pendiente de verificar (PENDIENTE).
+- **Moneda literal**: Pendiente de verificar (PENDIENTE).
+
+Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El plazo contractual no equivale a recuperación efectiva del capital.
+
+## ASSA — 1730
+
+[Publicación oficial](https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/eca265b00de6496bb7f992e8dc0b4788)
+
+- **Objeto**: ADQUISICION DE PIEZAS DE RACORERIA PARA AGUAS SANTAFESINAS S.A. (VERIFICADO).
+- **Productos alternativos**: Pendiente de verificar (PENDIENTE).
+- **Presupuesto**: Pendiente de verificar (PENDIENTE).
+- **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
+- **Fecha limite presentacion**: 2026-11-24 (VERIFICADO).
+  Respaldo: https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/eca265b00de6496bb7f992e8dc0b4788; página no identificada.
+- **Hora limite presentacion**: 10:00 (VERIFICADO).
+  Respaldo: https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/eca265b00de6496bb7f992e8dc0b4788; página no identificada.
+- **Fecha apertura**: 2026-11-24 (VERIFICADO).
+  Respaldo: https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/eca265b00de6496bb7f992e8dc0b4788; página no identificada.
+- **Hora apertura**: 10:00 (VERIFICADO).
+  Respaldo: https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/eca265b00de6496bb7f992e8dc0b4788; página no identificada.
 - **Condiciones pago**: Pendiente de verificar (PENDIENTE).
 - **Plazo entrega**: Pendiente de verificar (PENDIENTE).
 - **Lugar entrega**: Pendiente de verificar (PENDIENTE).
@@ -4322,9 +3881,9 @@ Tiempo efectivo hasta acreditación bancaria: **pendiente de verificar**. El pla
 
 ## Municipalidad de Venado Tuerto — 27/2026
 
-[Publicación oficial](https://venadotuerto.gob.ar/licitaciones/)
+[Publicación oficial](https://venadotuerto.gob.ar/wp-content/uploads/2026/11/Pliego-de-Condiciones-Licitacion-Publica-N%C2%B0-027-26.pdf)
 
-- **Objeto**: LICITACIÓN PÚBLICA Nº 027/26 – Ejecución de Instalación Eléctrica en el Proyecto Área Recreativa Norte Presupuesto oficial : Item 1: $ 780.000.000,00 (pesos setecientos ochenta millones); Item 2: $ 126.500.000,00 (pesos ciento veintiséis millones quinientos mil); Item 3: $ 159.019.941,00 (ciento cincuenta y nueve millones diecinueve mil novecientos cuarenta y uno). Garantía de la Oferta : Item 1: $ 7.800.000,00 (pesos siete millones ochocientos mil), Item 2: $ 1.265.000,00 (pesos un millón doscientos sesenta y cinco mil), Item 3: $ 1.590.199,41 (pesos un millón quinientos noventa mil ciento noventa y nueve con cuarenta y un centavos). Retiro del Pliego : Se establece como fecha máxima, y desde la publicación del presente para retiro de legajo, el día 10 de diciembre de 2026 hasta las 8,30, en la Dirección de Logística y Suministros, sita en calle 25 de Mayo 789, Municipalidad de Venado Tuerto, sin cargo. También se podrá descargar de esta página web. Recepción de ofertas: Se fija el día 10 de diciembre de 2026 hasta la hora 9:00, en mesa de entrada de la Secretaría de Desarrollo Económico, Belgrano y 25 de Mayo . Acto de apertura de sobres: Lugar: MUNICIPALIDAD DE VENADO TUERTO – Sala de Reuniones – Calle San Martín 899 – C.P. 2600 – Ciudad de Venado Tuerto – Provincia de Santa Fe.- Fecha: 10 de diciembre de 2026 . Hora: 10:00 hs. (VERIFICADO).
+- **Objeto**: Pliego de condiciones Licitación Pública Nº 027-26 Haz clic aquí (VERIFICADO).
 - **Productos alternativos**: Pendiente de verificar (PENDIENTE).
 - **Presupuesto**: Pendiente de verificar (PENDIENTE).
 - **Fecha publicacion**: Pendiente de verificar (PENDIENTE).
