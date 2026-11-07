@@ -1,0 +1,55 @@
+name: Fase 2 cobertura territorial aislada
+on:
+  push:
+    branches: [mejora/radar-auditable]
+    paths: [tools/plan_fase2.json]
+permissions:
+  contents: read
+concurrency:
+  group: fase2-cobertura-aislada
+  cancel-in-progress: false
+jobs:
+  barrer:
+    if: github.ref == 'refs/heads/mejora/radar-auditable'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        lote: [0, 1, 2, 3]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reutilizar lector PDF de texto; no instalar OCR
+        timeout-minutes: 2
+        continue-on-error: true
+        run: |
+          if ! command -v pdftotext; then
+            sudo apt-get -o Acquire::Retries=0 -o Acquire::http::Timeout=8 -o Acquire::https::Timeout=8 install -y --no-install-recommends poppler-utils
+          fi
+      - name: Consultar lote y guardar avances por fuente
+        run: python -u tools/fase2_barrido.py --lote ${{ matrix.lote }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fase2-${{ github.run_id }}-${{ matrix.lote }}
+          path: work/fase2/
+          retention-days: 90
+  transporte:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -u tools/fase2_transporte.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fase2-transporte-${{ github.run_id }}
+          path: work/fase2/transporte/
+          retention-days: 90
