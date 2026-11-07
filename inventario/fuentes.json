@@ -292,7 +292,8 @@
       "estado": "PARCIAL",
       "publicaciones_detectadas": 49,
       "paginas_correctas": 17
-    }
+    },
+    "reintentar_listados_diferidos": 1
   },
   {
     "id": "fuente-002",

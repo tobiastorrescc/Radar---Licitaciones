@@ -289,6 +289,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
     respaldo_intentado=False;respaldo_pdf_intentado=False;rutas_respaldo=[]
     conteos_rosario={}
     paginas_gestiones=set();totales_gestiones=[]
+    reintentos_diferidos={}
     hosts={_host(fuente),*(_host('https://'+h) for h in config.get('dominios_documentos',[]))}
     documento_pendiente={};vacios=[];paginas_api=set()
     modo=config.get('lectura_adjuntos','todos')
@@ -434,6 +435,9 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 if not ok:raise respuesta
                 datos,tipo,final=respuesta
             else:datos,tipo,final=fetch(url,datos_post=post) if post is not None else fetch(url)
+            if reintentos_diferidos.get(url):
+                for incidencia in errors:
+                    if incidencia.get('url')==url and incidencia.get('reintento_diferido'):incidencia.update(acceso_recuperado=True,permanencia='TRANSITORIA_RECUPERADA')
             fase='EXTRACCION';snapshot(fase,url)
             if _host(final) not in hosts:raise ValueError('Redirección fuera de dominios oficiales declarados')
             if clase=='CSV_PUBLICADO':
@@ -653,7 +657,15 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             pending=deque(sorted(pending,key=orden_pendiente))
             snapshot('PAGINA_FINALIZADA',url)
         except Exception as e:
-            errors.append({'url':url,**clasificar_error(e,fase)})
+            incidencia={'url':url,**clasificar_error(e,fase)}
+            limite=min(1,max(0,int(config.get('reintentar_listados_diferidos',0))))
+            # Un error transitorio de paginación no corta permanentemente la cadena.
+            # Una sola segunda oportunidad después de las demás páginas/fichas;
+            # los plazos del supervisor siguen limitando todo el trabajo.
+            if clase=='LISTADO' and fase=='DESCARGA' and incidencia['categoria']=='RED' and not incidencia.get('restriccion_acceso_comprobada') and (incidencia.get('timeout') or incidencia.get('http_status') in (502,503,504)) and reintentos_diferidos.get(url,0)<limite:
+                reintentos_diferidos[url]=reintentos_diferidos.get(url,0)+1
+                incidencia['reintento_diferido']=True;seen.discard(peticion);pending.append((url,clase,referencia))
+            errors.append(incidencia)
             snapshot('PAGINA_FINALIZADA',url)
             if isinstance(e,HTTPError) and e.code==429:
                 limits.append('HTTP_429_REINTENTO_POSPUESTO');break

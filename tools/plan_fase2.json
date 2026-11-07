@@ -1,1 +1,10 @@
-{"etapa":"linea-base-catalogo-88-76ebec5","lotes":4,"ids":[],"candidatas":null,"diagnosticar_criticas":true}
+{
+  "etapa": "recuperar-rosario-y-probar-13-candidatas",
+  "lotes": 4,
+  "ids": [
+    "fuente-001",
+    "fuente-052"
+  ],
+  "candidatas": "inventario/candidatas_fase2.json",
+  "diagnosticar_criticas": false
+}
