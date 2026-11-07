@@ -1,5 +1,5 @@
 {
-  "etapa": "validar-recepcion-y-cobertura-final-fase2",
+  "etapa": "comprobar-todas-modalidades-y-ambito-nulo",
   "lotes": 4,
   "ids": [],
   "candidatas": "inventario/candidatas_fase2_tarjetas.json",

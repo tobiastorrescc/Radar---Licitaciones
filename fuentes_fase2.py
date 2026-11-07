@@ -13,11 +13,11 @@ def dpver(dom,url):
    if dt.tag=='dt':
     dd=next((n.text for n in dt.parent.iter() if n.tag=='dd'),None);campos[e.norm(dt.text)]=dd
   numero=next((v for k,v in campos.items() if 'contrato' in k),None);apertura=campos.get('fecha de apertura')
-  tipo=next((n.text for n in card.iter() if n.tag=='span' and e.norm(n.text) in ('solicitud de cotizacion','licitacion privada','licitacion publica','concurso de precios','compra directa')),None)
+  tipo=next((n.text for n in card.iter() if n.tag=='span' and n.clase('font-medium')),None)
   doc=next((l['url'] for l in card.enlaces(url) if re.search(r'/api/contrataciones-licitaciones/\d+/adjunto$',urlsplit(l['url']).path)),None)
-  if not titulo or not numero or not tipo or not doc:continue
-  id=re.search(r'/contrataciones-licitaciones/(\d+)/',doc)[1];hora=re.search(r'a las\s+(\d{1,2}:\d{2})',e.norm(titulo))
-  rs.append({'titulo':tipo+' '+numero+' '+titulo,'objeto':re.split(r'\s*[-–]\s*FECHA DE APERTURA',titulo,flags=re.I)[0],'numero_procedimiento':numero,'tipo_procedimiento':e.norm(tipo),'procedimiento':e.norm(tipo)+' '+numero,'expediente':campos.get('expediente'),'identidad_ambito':'dpver-'+id,'id_origen':id,'url':doc,'evidencia_url':url,'documentos':[{'url':doc,'titulo':'Pliego oficial'}],'fecha_apertura_texto':(apertura+' '+hora[1] if apertura and hora else apertura),'registro_estructurado':True,'detalle_completo':True})
+  if not titulo or not tipo:continue
+  id=re.search(r'/contrataciones-licitaciones/(\d+)/',doc)[1] if doc else __import__('hashlib').sha256((tipo+'|'+str(numero)+'|'+titulo+'|'+str(apertura)).encode()).hexdigest();hora=re.search(r'a las\s+(\d{1,2}:\d{2})',e.norm(titulo))
+  rs.append({'titulo':tipo+' '+str(numero or '')+' '+titulo,'objeto':re.split(r'\s*[-–]\s*FECHA DE APERTURA',titulo,flags=re.I)[0],'numero_procedimiento':numero,'tipo_procedimiento':e.norm(tipo),'procedimiento':e.norm(tipo)+' '+numero if numero else None,'expediente':campos.get('expediente'),'identidad_ambito':'dpver-'+id,'id_origen':id,'url':doc or url,'evidencia_url':url,'documentos':[{'url':doc,'titulo':'Pliego oficial'}] if doc else [],'fecha_apertura_texto':(apertura+' '+hora[1] if apertura and hora else apertura),'registro_estructurado':True,'detalle_completo':True})
  return rs
 
 def mpba(dom,url,config):

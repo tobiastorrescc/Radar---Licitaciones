@@ -288,7 +288,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
     respuestas_detalles={}
     respaldo_intentado=False;respaldo_pdf_intentado=False;rutas_respaldo=[]
     conteos_rosario={}
-    paginas_gestiones=set();totales_gestiones=[]
+    paginas_gestiones=set();totales_gestiones=[];totales_dpv=[]
     reintentos_diferidos={}
     if config.get('adaptador')=='rosario' and config.get('consultar_meses_rosario'):
         hoy=oportunidades.datetime.now(oportunidades.ZONA)
@@ -566,6 +566,9 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 total=total_gestiones(dom.root.text)
                 if total is not None:totales_gestiones.append(total)
                 for u in enlaces_csv(dom,final):pending.appendleft((u,'CSV_PUBLICADO',None))
+            if config.get('adaptador')=='dpver-tarjetas':
+                contador=re.search(r'mostrando\s+\d+\s*[-–]\s*\d+\s+de\s+(\d+)\s+publicaciones',normalizar(dom.root.text))
+                if contador:totales_dpv.append(int(contador[1]))
             if config.get('adaptador')=='rosario' and clase=='LISTADO' and 'recomendada=apertura' in urlparse(url).query:
                 for nodo in dom.root.iter():
                     if nodo.clase('contrataciones-resumen__conteo-item'):
@@ -690,6 +693,8 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
         reales={t:{r['url'] for r in items.values() if r.get('tipo_procedimiento')==t and (not config.get('consultar_meses_rosario') or r.get('vigencia')=='ABIERTA')} for t in conteos_rosario}
         faltantes={t:{'publicadas':max(v),'extraidas':len(reales.get(t,set()))} for t,v in conteos_rosario.items() if len(reales.get(t,set()))<max(v)}
         if faltantes:errors.append({'url':fuente,'tipo':'ConteoRosarioIncompleto','categoria':'EXTRACCION','timeout':False,'error':'El recorrido no alcanza el total publicado por el portal; no se declara cobertura completa','por_tipo':faltantes})
+    if totales_dpv and len(items)<max(totales_dpv):
+        errors.append({'url':fuente,'tipo':'ConteoDPVIncompleto','categoria':'EXTRACCION','timeout':False,'error':'No se alcanzó el total publicado de tarjetas; no se declara cobertura completa','publicadas':max(totales_dpv),'extraidas':len(items)})
     if totales_gestiones and len(items)<max(totales_gestiones):
         errors.append({'url':fuente,'tipo':'ConteoGestionesIncompleto','categoria':'EXTRACCION','timeout':False,'error':'No se alcanzó el total publicado; conservar parciales','publicadas':max(totales_gestiones),'extraidas':len(items)})
     incompletas=[r['id'] for r in items.values() if not r.get('detalle_completo') and not r.get('documento_desglosado')]

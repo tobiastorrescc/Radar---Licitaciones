@@ -3,53 +3,6 @@
   "advertencia": "Candidatas, no fuentes operativas ni altas automáticas. MPBA requiere ámbito bonaerense cercano. Ramallo requiere enlace institucional a su portal secundario.",
   "fuentes": [
     {
-      "id": "fuente-091",
-      "organismo": "Comuna de Pujato",
-      "localidad": "Pujato",
-      "provincia": "Santa Fe",
-      "url": "https://pujato.gob.ar/",
-      "tipo_portal": "html",
-      "estado_verificacion": "PENDIENTE",
-      "incorporada": false,
-      "conector": "publicaciones",
-      "descubrir_contrataciones": true,
-      "barrido_institucional": true,
-      "indice_documentos": true,
-      "priorizar_listados": true,
-      "lectura_adjuntos": "necesarios",
-      "ocr": false,
-      "evidencia_descubrimiento": {
-        "metodo": "Portal institucional observado; pendiente extracción real en Actions",
-        "fecha": "2026-11-07",
-        "url": "https://pujato.gob.ar/"
-      },
-      "requiere_validacion_previa_alta": true
-    },
-    {
-      "id": "fuente-094",
-      "organismo": "Municipalidad de Fray Luis Beltrán",
-      "localidad": "Fray Luis Beltrán",
-      "provincia": "Santa Fe",
-      "url": "https://frayluisbeltran.gob.ar/",
-      "tipo_portal": "html",
-      "estado_verificacion": "PENDIENTE",
-      "incorporada": false,
-      "conector": "publicaciones",
-      "descubrir_contrataciones": true,
-      "barrido_institucional": true,
-      "indice_documentos": true,
-      "priorizar_listados": true,
-      "lectura_adjuntos": "necesarios",
-      "ocr": false,
-      "evidencia_descubrimiento": {
-        "metodo": "Portal institucional observado; pendiente extracción real en Actions",
-        "fecha": "2026-11-07",
-        "url": "http://www.frayluisbeltran.gov.ar/",
-        "redireccion_oficial_comprobada": "http://www.frayluisbeltran.gov.ar/ → https://frayluisbeltran.gob.ar/"
-      },
-      "requiere_validacion_previa_alta": true
-    },
-    {
       "id": "fuente-098",
       "organismo": "Vialidad Entre Ríos",
       "localidad": "Paraná",

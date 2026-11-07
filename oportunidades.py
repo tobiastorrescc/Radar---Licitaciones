@@ -315,7 +315,7 @@ def identidad(r):
         # por número de contratación no crea otra oportunidad ni borra el historial.
         partes=[norm(r.get('provincia')),org,'ficha-rosario-'+ficha[1],convocatoria(r)]
     elif proc:
-        partes=[norm(r.get('provincia')),org or r.get('fuente',''),proc,convocatoria(r),r.get('identidad_ambito','')]
+        partes=[norm(r.get('provincia')),org or r.get('fuente',''),proc,convocatoria(r),(r.get('identidad_ambito') or '')]
     elif r.get('aviso_oficial_sin_numero') and r.get('huella_aviso_oficial'):
         partes=[norm(r.get('provincia')),org,'aviso-sin-numero',r['huella_aviso_oficial'],convocatoria(r)]
     elif r.get('registro_estructurado') and r.get('numero_oficial_sin_interpretar') and r.get('evidencia_url'):
