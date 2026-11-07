@@ -3,6 +3,53 @@
   "advertencia": "Candidatas, no fuentes operativas ni altas automáticas. MPBA requiere ámbito bonaerense cercano. Ramallo requiere enlace institucional a su portal secundario.",
   "fuentes": [
     {
+      "id": "fuente-091",
+      "organismo": "Comuna de Pujato",
+      "localidad": "Pujato",
+      "provincia": "Santa Fe",
+      "url": "https://pujato.gob.ar/",
+      "tipo_portal": "html",
+      "estado_verificacion": "PENDIENTE",
+      "incorporada": false,
+      "conector": "publicaciones",
+      "descubrir_contrataciones": true,
+      "barrido_institucional": true,
+      "indice_documentos": true,
+      "priorizar_listados": true,
+      "lectura_adjuntos": "necesarios",
+      "ocr": false,
+      "evidencia_descubrimiento": {
+        "metodo": "Portal institucional observado; pendiente extracción real en Actions",
+        "fecha": "2026-11-07",
+        "url": "https://pujato.gob.ar/"
+      },
+      "requiere_validacion_previa_alta": true
+    },
+    {
+      "id": "fuente-094",
+      "organismo": "Municipalidad de Fray Luis Beltrán",
+      "localidad": "Fray Luis Beltrán",
+      "provincia": "Santa Fe",
+      "url": "https://frayluisbeltran.gob.ar/",
+      "tipo_portal": "html",
+      "estado_verificacion": "PENDIENTE",
+      "incorporada": false,
+      "conector": "publicaciones",
+      "descubrir_contrataciones": true,
+      "barrido_institucional": true,
+      "indice_documentos": true,
+      "priorizar_listados": true,
+      "lectura_adjuntos": "necesarios",
+      "ocr": false,
+      "evidencia_descubrimiento": {
+        "metodo": "Portal institucional observado; pendiente extracción real en Actions",
+        "fecha": "2026-11-07",
+        "url": "http://www.frayluisbeltran.gov.ar/",
+        "redireccion_oficial_comprobada": "http://www.frayluisbeltran.gov.ar/ → https://frayluisbeltran.gob.ar/"
+      },
+      "requiere_validacion_previa_alta": true
+    },
+    {
       "id": "fuente-098",
       "organismo": "Vialidad Entre Ríos",
       "localidad": "Paraná",
@@ -36,8 +83,8 @@
       "estado_verificacion": "PENDIENTE",
       "incorporada": false,
       "conector": "publicaciones",
-      "descubrir_contrataciones": true,
-      "barrido_institucional": true,
+      "descubrir_contrataciones": false,
+      "barrido_institucional": false,
       "indice_documentos": false,
       "priorizar_listados": true,
       "lectura_adjuntos": "necesarios",
@@ -56,6 +103,17 @@
         "19": "Zárate / Campana"
       },
       "urls_inicio": [
+        "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Pergamino",
+        "https://www.mpba.gov.ar/v2021/licitaciones?keyword=San%20Nicol%C3%A1s",
+        "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Ramallo",
+        "https://www.mpba.gov.ar/v2021/licitaciones?keyword=San%20Pedro",
+        "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Baradero",
+        "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Arrecifes",
+        "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Rojas",
+        "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Col%C3%B3n",
+        "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Jun%C3%ADn",
+        "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Z%C3%A1rate",
+        "https://www.mpba.gov.ar/v2021/licitaciones?keyword=Campana",
         "https://www.mpba.gov.ar/v2021/licitaciones?department_id=4",
         "https://www.mpba.gov.ar/v2021/licitaciones?department_id=13",
         "https://www.mpba.gov.ar/v2021/licitaciones?department_id=17",
@@ -63,7 +121,21 @@
       ],
       "seguir_patrones": [
         "/v2021/licitaciones[?].*department_id="
-      ]
+      ],
+      "localidades_publicadas": [
+        "Pergamino",
+        "San Nicolás",
+        "Ramallo",
+        "San Pedro",
+        "Baradero",
+        "Arrecifes",
+        "Rojas",
+        "Colón",
+        "Junín",
+        "Zárate",
+        "Campana"
+      ],
+      "tiempo_maximo_fuente_segundos": 90
     }
   ]
 }

@@ -7,7 +7,7 @@ from tools.verificar_fuentes import ejecutar,guardar
 
 def main():
  p=argparse.ArgumentParser();p.add_argument('--lote',type=int,required=True);a=p.parse_args();plan=json.load(open('tools/plan_fase2.json'))
- fs=fuentes_configuradas();ids=plan.get('ids',[])
+ fs=[] if plan.get('solo_candidatas') else fuentes_configuradas();ids=plan.get('ids',[])
  if ids:fs=[f for f in fs if f['id'] in ids]
  if plan.get('candidatas'):fs+=json.load(open(plan['candidatas']))['fuentes']
  if len({f['id'] for f in fs})!=len(fs):raise ValueError('IDs repetidos')

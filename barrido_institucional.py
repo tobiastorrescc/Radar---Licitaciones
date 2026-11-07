@@ -145,3 +145,11 @@ def boletin_entre_rios(texto,url):
             else:bloque.append(l)
     if activo:emitir(bloque)
     return registros
+
+
+def sin_calendario_widget(url):
+    """Quitar controles del widget My Calendar, conservando la página de noticias."""
+    from urllib.parse import urlsplit,urlunsplit,parse_qsl,urlencode
+    p=urlsplit(url);q=parse_qsl(p.query,keep_blank_values=True)
+    if not any(k=='cid' and v.startswith('mc_mini_widget-') for k,v in q):return url
+    return urlunsplit((p.scheme,p.netloc,p.path,urlencode([(k,v) for k,v in q if k not in ('cid','yr','month','dy','time','mcat')]),p.fragment))

@@ -32,10 +32,16 @@ class RecuperacionPaginacion(unittest.TestCase):
    return html,'text/html',url
   r=conectores.explorar(origen,{'adaptador':'rosario','reintentar_listados_diferidos':1,'solo_descubrimiento':True},fetch=fetch)
   self.assertTrue({'38723','38741'}<={x['url'].rsplit('/',1)[-1] for x in r['oportunidades']})
+ def test_calendario_no_multiplica_paginacion_ni_borra_filtros_reales(self):
+  from barrido_institucional import sin_calendario_widget
+  u='https://pujato.gob.ar/category/noticias/page/3/?yr=2026&month=3&dy&cid=mc_mini_widget-2'
+  self.assertEqual(sin_calendario_widget(u),'https://pujato.gob.ar/category/noticias/page/3/')
+  u='https://prueba.gob.ar/licitaciones?year=2026&month=3';self.assertEqual(sin_calendario_widget(u),u)
  def test_tarjetas_dpv_extraen_numero_y_fecha_sin_descargar_pdf(self):
   import extractores
   from pathlib import Path
   html=Path('tests/fixtures/fase2_dpv_tarjeta.html').read_text()
   rs,_,_=extractores.extraer(html,'https://aplicaciones.vialidadentrerios.gob.ar/contrataciones-licitaciones',{'adaptador':'dpver-tarjetas'})
   self.assertEqual(len(rs),1);self.assertEqual(rs[0]['numero_procedimiento'],'86');self.assertEqual(rs[0]['fecha_apertura_texto'],'05/11/2026 10:00');self.assertIn('/533/adjunto',rs[0]['url'])
+  rs,_,_=extractores.extraer(html.replace('Fecha de apertura','Fecha no informada'),'https://aplicaciones.vialidadentrerios.gob.ar/contrataciones-licitaciones',{'adaptador':'dpver-tarjetas'});self.assertEqual(len(rs),1);self.assertIsNone(rs[0]['fecha_apertura_texto'])
 if __name__=='__main__':unittest.main()

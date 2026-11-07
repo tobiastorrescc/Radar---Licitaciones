@@ -301,6 +301,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
     hosts={_host(fuente),*(_host('https://'+h) for h in config.get('dominios_documentos',[]))}
     documento_pendiente={};vacios=[];paginas_api=set()
     modo=config.get('lectura_adjuntos','todos')
+    semillas_listado={u for u,c,_ in pending if c=='LISTADO'}
     def snapshot(fase,actual=None,finalizado=False):
         r={'oportunidades':list(items.values()),'errores':list(errors),'limites':list(limits),
            'paginas_visitadas':len(seen),'paginas_correctas':correctas,'documentos_leidos':documentos_leidos,
@@ -617,9 +618,14 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 from barrido_institucional import busquedas_publicadas
                 for u in busquedas_publicadas(dom,final):pending.append((u,'LISTADO',{}))
             for l in links:
-                destino=l['url'];et=normalizar(l['texto']);path=urlparse(destino).path
+                destino=l['url'];et=normalizar(l['texto'])
+                if config.get('barrido_institucional'):
+                    from barrido_institucional import sin_calendario_widget
+                    destino=sin_calendario_widget(destino)
+                path=urlparse(destino).path
                 if config.get('ignorar_suscripciones_feed') and path.rstrip('/').endswith('/feed'):continue
                 if _host(destino) not in hosts or destino in seen or destino==url:continue
+                if config.get('adaptador')=='mpba-tarjetas' and urlparse(destino).path.rstrip('/') in ('/licitaciones','/v2021/licitaciones') and not any(k in parse_qs(urlparse(destino).query) for k in ('department_id','keyword')):continue
                 raices={urlparse(u).path.rstrip('/') for u in config.get('urls_inicio',[fuente])}
                 raices.update((urlparse(fuente).path.rstrip('/'),urlparse(url).path.rstrip('/')))
                 pagina=clase=='LISTADO' and (('next' in l['rel'].split() or et in ('siguiente','siguiente »','next','»','›') or
@@ -644,6 +650,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
             posiciones={k:i for i,k in enumerate(items)}
             def orden_pendiente(entrada):
                 u,c,ref=entrada
+                if config.get('priorizar_listados') and c=='LISTADO' and u in semillas_listado:return (-2,0,0,'',u)
                 if c=='CSV_PUBLICADO':return (-1,0,0,'',u)
                 if config.get('adaptador')=='boletin-sf':
                     edicion=re.search(r'(20\d{2}-\d{2}-\d{2})licitaciones[.]html',unquote(u))

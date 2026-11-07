@@ -17,7 +17,7 @@ def dpver(dom,url):
   doc=next((l['url'] for l in card.enlaces(url) if re.search(r'/api/contrataciones-licitaciones/\d+/adjunto$',urlsplit(l['url']).path)),None)
   if not titulo or not numero or not tipo or not doc:continue
   id=re.search(r'/contrataciones-licitaciones/(\d+)/',doc)[1];hora=re.search(r'a las\s+(\d{1,2}:\d{2})',e.norm(titulo))
-  rs.append({'titulo':tipo+' '+numero+' '+titulo,'objeto':re.split(r'\s*[-–]\s*FECHA DE APERTURA',titulo,flags=re.I)[0],'numero_procedimiento':numero,'tipo_procedimiento':e.norm(tipo),'procedimiento':e.norm(tipo)+' '+numero,'expediente':campos.get('expediente'),'identidad_ambito':'dpver-'+id,'id_origen':id,'url':doc,'evidencia_url':url,'documentos':[{'url':doc,'titulo':'Pliego oficial'}],'fecha_apertura_texto':(apertura+' '+hora[1] if hora else apertura),'registro_estructurado':True,'detalle_completo':True})
+  rs.append({'titulo':tipo+' '+numero+' '+titulo,'objeto':re.split(r'\s*[-–]\s*FECHA DE APERTURA',titulo,flags=re.I)[0],'numero_procedimiento':numero,'tipo_procedimiento':e.norm(tipo),'procedimiento':e.norm(tipo)+' '+numero,'expediente':campos.get('expediente'),'identidad_ambito':'dpver-'+id,'id_origen':id,'url':doc,'evidencia_url':url,'documentos':[{'url':doc,'titulo':'Pliego oficial'}],'fecha_apertura_texto':(apertura+' '+hora[1] if apertura and hora else apertura),'registro_estructurado':True,'detalle_completo':True})
  return rs
 
 def mpba(dom,url,config):
@@ -34,6 +34,10 @@ def mpba(dom,url,config):
   # por una mención accidental de una localidad en el objeto.
   id=parse_qs(urlsplit(url).query).get('department_id',[None])[0]
   lugar=config.get('departamentos_publicados',{}).get(id)
+  if not lugar:
+   for candidata in config.get('localidades_publicadas',[]):
+    ciudad=e.norm(candidata)
+    if re.search(r'(?:ciudad de|departamento judicial(?: de)?)\s+'+re.escape(ciudad)+r'\b',e.norm(cuerpo)):lugar=candidata;break
   if not lugar:continue
   titulo=next((n for n in card.iter() if n.clase('auction-body-title')),card)
   texto=titulo.text

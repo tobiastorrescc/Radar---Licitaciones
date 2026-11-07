@@ -1,9 +1,8 @@
 {
-  "etapa": "rosario-mensual-y-tarjetas-oficiales",
+  "etapa": "validar-recepcion-y-cobertura-final-fase2",
   "lotes": 4,
-  "ids": [
-    "fuente-001"
-  ],
+  "ids": [],
   "candidatas": "inventario/candidatas_fase2_tarjetas.json",
-  "diagnosticar_criticas": false
+  "diagnosticar_criticas": false,
+  "solo_candidatas": true
 }
