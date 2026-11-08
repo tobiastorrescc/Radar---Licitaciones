@@ -308,10 +308,8 @@
       "fecha_apertura": "2026-11-06",
       "hora_apertura": "10:15",
       "metodo": "Lectura independiente de ficha oficial, sin OCR; número distinto del expediente.",
-      "resultado": "DETECTADA_INCOMPLETA",
-      "campos_pendientes_contraste": [
-        "numero_procedimiento"
-      ],
+      "resultado": "DETECTADA",
+      "campos_pendientes_contraste": [],
       "evidencia_reciente": false,
       "ids_radar": [
         "06823a71cfa92fdf933bb7f051f3cdbc04893147dd37146ff368538c93f99be3"
@@ -356,10 +354,8 @@
       "fecha_apertura": "2026-11-06",
       "hora_apertura": "11:00",
       "metodo": "Lectura independiente de ficha oficial, sin OCR; número distinto del expediente.",
-      "resultado": "DETECTADA_INCOMPLETA",
-      "campos_pendientes_contraste": [
-        "numero_procedimiento"
-      ],
+      "resultado": "DETECTADA",
+      "campos_pendientes_contraste": [],
       "evidencia_reciente": false,
       "ids_radar": [
         "335721fab3e1e6fde82c03b52965ce5e66651f8827e912eee75a221a997ccdcc"
@@ -500,9 +496,9 @@
   "por_provincia": {
     "Santa Fe": {
       "comprobadas": 12,
-      "detectadas": 7,
+      "detectadas": 9,
       "omitidas": 2,
-      "incompletas": 3,
+      "incompletas": 1,
       "ambiguas": 0,
       "omitidas_historicas": 1,
       "omitidas_apertura_futura": 1

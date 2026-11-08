@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-07T08:36:35.631351-03:00",
+  "fecha": "2026-11-08T08:38:47.945269-03:00",
   "pendientes": [
     {
       "id": "cf892a5fa00e38595d57b6ea999fa09518ba2b7b00647f64cb84ee802da014dc",
@@ -51,6 +51,22 @@
         {
           "titulo": "RESCONJ-2026-00000332-APPSF-ODAeroRosMEyD-AIR-ROS.pdf",
           "url": "https://aeropuertorosario.com/wp-content/uploads/2026/10/RESCONJ-2026-00000332-APPSF-ODAeroRosMEyD-AIR-ROS.pdf"
+        }
+      ]
+    },
+    {
+      "id": "144746a43f4d9e30a1dcccedafbe550d25711925abc28198a970defc5ec9dfe6",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "58/2026",
+      "objeto": "Provisión de Iluminarias LED para Obras por administración de Alumbrado Público - Iluminación en Barrios y Avenida - 2026 - Secretaría de Ambiente y Espacio Público",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: lic_alumbradoexpte23340-26.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38744/documentos/102985"
         }
       ]
     },
@@ -233,6 +249,22 @@
       "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
       "documentos": []
+    },
+    {
+      "id": "7dcf77a2a71d596ab8d337cca5cf9da7d293ad3db68e900e596bc7691cd69ba0",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "104/2026",
+      "objeto": "ORDENANZA 10586 PRORROGADA POR ORD.10750- COMPRA DE CAJAS CON ALIMENTOS PARA LA DIRECCIÓN GENERAL DE INTEGRACIÓN COMUNITARIA \"SECRETARÍA DE DESARROLLO HUMANO Y HÁBITAT\"",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38697",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: ca70838-2026cajasconalimentos.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38697/documentos/102903"
+        }
+      ]
     },
     {
       "id": "d7b075cafefc560fa44af33b3c8b8a0e451d823801d4d4de9438f3efe3b34ba8",
@@ -745,6 +777,56 @@
       ]
     },
     {
+      "id": "adad4f1f8cd914469aa68f7a1244da99a5ef2c85c030b7a882ed15517776717f",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "470/2026",
+      "objeto": "Servicio de limpieza para la Dirección General de Compras y Suministros - Sec de Hacienda y Economía",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38723",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: planilladecotización.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38723/documentos/102952"
+        },
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: especificacionestec.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38723/documentos/102951"
+        },
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: constanciavisita.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38723/documentos/102950"
+        },
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: pliego1.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38723/documentos/102949"
+        }
+      ]
+    },
+    {
+      "id": "df96720e8be6a8afa69bd15a38ed04f2173aacbe3b98bb8d4bb6c87791be4eaf",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "26/2026",
+      "objeto": "Compra de celulares, mesas plásticas plegables, heladera, tableta gráfica, tablets, proyectores.",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38702",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: licitacion026_051803.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38702/documentos/102908"
+        }
+      ]
+    },
+    {
       "id": "9166a5edc2e76ed8974a992352fcaac3e3849085c8f9247b24f16e2cf4bd6ac8",
       "organismo": "Aeropuerto Internacional Rosario",
       "numero_procedimiento": "LPR-2026-00000003-APPSF-OD-COM-CON-AIR-ROS",
@@ -907,6 +989,34 @@
       ]
     },
     {
+      "id": "cdf7ed6c55f6c368839fb448b71953a9b2e78cd1574276e88c8bdd23ff33d17c",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "474/2026",
+      "objeto": "BIOM. PARA UNIDAD RENAL Y ESPECIALIDADES UROLOGICAS H.E.C.A",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38706",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: biomedicoscondicionesparticularesactualizadas21dejulio2025(sololectura).pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38706/documentos/102915"
+        },
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: dispo019multasaproveedores(sololectura).pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38706/documentos/102914"
+        },
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: cag474unidadrenal.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38706/documentos/102913"
+        }
+      ]
+    },
+    {
       "id": "d4bbb21f831c07ce3d3e12c0b86d1242dfd04dfcdede348aeaad8dff04ed0b95",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "151/2026",
@@ -935,6 +1045,28 @@
           "rotulo_oficial": "ver pliego adjunto apto para cotizar",
           "titulo": "ver pliego adjunto apto para cotizar: 20261104130854225.pdf",
           "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38724/documentos/102954"
+        }
+      ]
+    },
+    {
+      "id": "3cefc9967f3d5e47a80c37eb3ce5ef2e68ca379d31076aa4179a095289e09105",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "471/2026",
+      "objeto": "Compra de artículos de limpieza para la Dirección General de Defunciones y Cementerios - Sec. de Ambiente y Espacio Público",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38741",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: decreton°1431-anexoideclaracionjurada.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38741/documentos/102983"
+        },
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: pliegocompraagiln°6compradeartlimpieza.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38741/documentos/102982"
         }
       ]
     },
@@ -1020,10 +1152,26 @@
       "id": "4d052ad9ea97e39d2456bd7af19286e3454b3f1b48f7ec07dd2a9879a061e3bb",
       "organismo": "Municipalidad de San Salvador",
       "numero_procedimiento": "29/2026",
-      "objeto": "Desarrollo Social Destacadas Noticias Portada Llamado a Concurso de Precios N° 29-2026 05/11/2026 121 El Departamento de Compras y Suministros llama a Concurso de Precios N° 29-2026 que tiene por objeto la Compra de 200 cargas de Gas Envasado en garrafas de 10kg – con Destino a Ayuda Directa ; y se regirá por las condiciones establecidas en Pliego de Bases, Condiciones Generales y Particulares aprobados por Decreto N° 347/26. Apertura de sobres: 11 de noviembre de 2026 a las 11:00 horas , en la oficina de compras –planta baja – edificio municipal. Presupuesto oficial: $5.000.000- (Pesos cinco millones.-). Se adjunta PLIEGO en total de diez fojas. Artículo anterior La Municipalidad realizará una subasta pública online de bienes municipales en desuso MSS",
+      "objeto": "Desarrollo Social Destacadas Noticias Portada Llamado a Concurso de Precios N° 29-2026 05/11/2026 131 El Departamento de Compras y Suministros llama a Concurso de Precios N° 29-2026 que tiene por objeto la Compra de 200 cargas de Gas Envasado en garrafas de 10kg – con Destino a Ayuda Directa ; y se regirá por las condiciones establecidas en Pliego de Bases, Condiciones Generales y Particulares aprobados por Decreto N° 347/26. Apertura de sobres: 11 de noviembre de 2026 a las 11:00 horas , en la oficina de compras –planta baja – edificio municipal. Presupuesto oficial: $5.000.000- (Pesos cinco millones.-). Se adjunta PLIEGO en total de diez fojas. Artículo anterior La Municipalidad realizará una subasta pública online de bienes municipales en desuso MSS",
       "url": "https://sansalvadorer.gob.ar/llamado-a-concurso-de-precios-n-29-2026/",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
+    },
+    {
+      "id": "7e6c53e2ba010869bab8a5d3574836517b040a6d096d94b6037aea617c9331aa",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "467/2026",
+      "objeto": "Contratación del servicio de impresiones para la Secretaría de Igualdad, Género y DDHH",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: pliegoimpresionesdef.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38717/documentos/102938"
+        }
+      ]
     },
     {
       "id": "64c5ba320216be8dd8e628e3a92a2ec4469ac822175444d1b75297055900c6bf",
@@ -1042,6 +1190,28 @@
       ]
     },
     {
+      "id": "ded2850cdaeda7537383e3b3fbde42c06a2beaa9c85b40e7cc2a7d3bdb980207",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "468/2026",
+      "objeto": "Provisión de Resmas de Papel para ser distribuidas por las diferentes áreas que dependen de la Sec. de Obras Públicas",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38720",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: pliegoresmas.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38720/documentos/102942"
+        },
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: planilladecotización.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38720/documentos/102941"
+        }
+      ]
+    },
+    {
       "id": "cbb8d312a8ea30c771996b1b0b0ba81130dff5122ef47cd71950c884ba116081",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "125/2026",
@@ -1054,6 +1224,22 @@
           "rotulo_oficial": "ver pliego adjunto apto para cotizar",
           "titulo": "ver pliego adjunto apto para cotizar: ca07-125-2026.pdf",
           "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38733/documentos/102969"
+        }
+      ]
+    },
+    {
+      "id": "55edb00b043a6d87b7a4e67266d66ca441b0ad91a7db38573425a087188f5fd3",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "463/2026",
+      "objeto": "Compra y alquiler de elementos ortopédicos para el Programa de Salud de las Trabajadoras y los Trabajadores",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: pliegocompraagil7-2026ortopedia.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38692/documentos/102898"
         }
       ]
     },
@@ -1184,6 +1370,22 @@
           "rotulo_oficial": "ver pliego adjunto apto para cotizar",
           "titulo": "ver pliego adjunto apto para cotizar: cagn°06-071-2026.pdf",
           "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38718/documentos/102939"
+        }
+      ]
+    },
+    {
+      "id": "32874dfbd21ca34fde3abea6599456f6df468888694705c6274323b6f897f0b3",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "83/2026",
+      "objeto": "Adquisición de Instrumental Quirúrgico para Salud Animal Rosario.",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38729",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: ca083.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38729/documentos/102965"
         }
       ]
     },
@@ -1394,15 +1596,6 @@
       "documentos": []
     },
     {
-      "id": "7e6c53e2ba010869bab8a5d3574836517b040a6d096d94b6037aea617c9331aa",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "10/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
       "id": "0fd6882ff40743233aa70be314a6391eae327bd000ce13874136a9ed33e059ff",
       "organismo": "Poder Judicial de Entre Ríos",
       "numero_procedimiento": "273/2026",
@@ -1440,15 +1633,6 @@
           "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/2339de25-7826-4855-a013-79d1f9bdfd22.pdf"
         }
       ]
-    },
-    {
-      "id": "32874dfbd21ca34fde3abea6599456f6df468888694705c6274323b6f897f0b3",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "120831/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38729",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
     },
     {
       "id": "71bcbecb0edf5d70f58fe3cd63bdc7f4b23cd54643137499d9ccff145d0d040a",
@@ -1510,33 +1694,6 @@
       ]
     },
     {
-      "id": "cdf7ed6c55f6c368839fb448b71953a9b2e78cd1574276e88c8bdd23ff33d17c",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "24745/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38706",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "55edb00b043a6d87b7a4e67266d66ca441b0ad91a7db38573425a087188f5fd3",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "7/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "7dcf77a2a71d596ab8d337cca5cf9da7d293ad3db68e900e596bc7691cd69ba0",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "70838/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38697",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
       "id": "e9a193b86263ca1c3cc45aaa702770337d74afa2d5b7d0d6a43a2a0dcbb8ac0d",
       "organismo": "Municipalidad de Reconquista",
       "numero_procedimiento": "4/2026",
@@ -1565,15 +1722,6 @@
       "numero_procedimiento": "274/2026",
       "objeto": "Contrataciones Solicitud de Cotización Nº 274/26: “Servicio de alquiler de cuatro cocheras para alojar los vehículos del Ministerio Púbico Fiscal” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 274/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 274/26: “Servicio de alquiler de cuatro cocheras para alojar los vehículos del Ministerio Púbico Fiscal”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 10 de noviembre de 2026 a las 11:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 274-26 Descargar Imprmir",
       "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-274-26-servicio-de-alquiler-de-cuatro-cocheras-para-alojar-los-vehiculos-del-ministerio-pubico-fiscal/",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "ded2850cdaeda7537383e3b3fbde42c06a2beaa9c85b40e7cc2a7d3bdb980207",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "49/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38720",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
@@ -1821,15 +1969,6 @@
       ]
     },
     {
-      "id": "df96720e8be6a8afa69bd15a38ed04f2173aacbe3b98bb8d4bb6c87791be4eaf",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "10260/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38702",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
       "id": "8c36de4c4c1763fef9dbf793ce6d87d266d37f2e76dfc28cd0c10351fe91f3dc",
       "organismo": "Municipalidad de GDOR. MACIÁ",
       "numero_procedimiento": "6/2026",
@@ -1846,24 +1985,6 @@
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
         }
       ]
-    },
-    {
-      "id": "144746a43f4d9e30a1dcccedafbe550d25711925abc28198a970defc5ec9dfe6",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "23340/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "adad4f1f8cd914469aa68f7a1244da99a5ef2c85c030b7a882ed15517776717f",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "1/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38723",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
     },
     {
       "id": "9f08698ba7d856168f3f4d781482e723ba791f6e58f4662f594a753152b3d0c8",

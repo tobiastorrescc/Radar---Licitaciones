@@ -1,6 +1,6 @@
 {
-  "fecha": "2026-11-07T08:36:35.631351-03:00",
-  "total": 18,
+  "fecha": "2026-11-08T08:38:47.945269-03:00",
+  "total": 19,
   "oportunidades": [
     {
       "detalle_completo": true,
@@ -160,7 +160,7 @@
       ],
       "id": "5231a9468b54e221860f9af7e1adaa07efd7beef1de4f8bf63342e7ee6bdd1d3",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "5231a9468b54e221860f9af7e1adaa07efd7beef1de4f8bf63342e7ee6bdd1d3"
@@ -287,7 +287,7 @@
       ],
       "id": "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4"
@@ -418,7 +418,7 @@
       ],
       "id": "fdda2824c3aeb064b939506c593c09a5768c0e5dfe45716069beb517ccbf601d",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fdda2824c3aeb064b939506c593c09a5768c0e5dfe45716069beb517ccbf601d"
@@ -553,7 +553,7 @@
       ],
       "id": "9f2a2203870d1d1e5a2558753f16733eaa800a413047e7bc812bd6f9bd19a586",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9f2a2203870d1d1e5a2558753f16733eaa800a413047e7bc812bd6f9bd19a586"
@@ -688,7 +688,7 @@
       ],
       "id": "c77572e3ac53491f5ee882a61d10579490bd6e40eb4efbb222a942e7812f77ec",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "c77572e3ac53491f5ee882a61d10579490bd6e40eb4efbb222a942e7812f77ec"
@@ -836,7 +836,7 @@
       ],
       "id": "9993d4ab51a5152f5cb866fb2602e3a93fad53f53096f18e166ca7746911450d",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9993d4ab51a5152f5cb866fb2602e3a93fad53f53096f18e166ca7746911450d"
@@ -983,7 +983,7 @@
       ],
       "id": "55ceab9f32a2784713a5fecb88f0087020760299481dae607a981b7200b83c97",
       "primera_deteccion": "2026-11-01T08:31:08.968829-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "55ceab9f32a2784713a5fecb88f0087020760299481dae607a981b7200b83c97"
@@ -1019,6 +1019,171 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-10"
+    },
+    {
+      "campos_oficiales": {
+        "consulta pliego": "Oficina de Compras (SCyE) - DEL VALLE ARISTOBULO 2734 - Lunes a viernes (hábiles administrativos) de 08:00 a 14:00 | Consultas: notificaciones_sce@rosario.gob.ar",
+        "declaracion jurada de presentacion de ofertas": "Para presentar una oferta, completá la Declaración Jurada de conocimiento de Pliegos y Normativas a través de tu Perfil Digital. Luego, imprimila, firmala y adjuntala a tu oferta en papel. Al presentar la Declaración Jurada, se reemplaza la presentación en papel de los pliegos y normativas correspondientes a la licitación. Completar DDJJ",
+        "estado": "Publicada para Apertura",
+        "expediente": "36308/2026",
+        "fecha de apertura": "10/11/2026 10:00",
+        "fecha de publicacion": "05/11/2026",
+        "fecha ultima actualizacion": "05/11/2026",
+        "lugar de apertura": "Oficina de Compras (SCyE) - DEL VALLE ARISTOBULO 2734 - -",
+        "n° de contratacion": "128/2026",
+        "objeto": "Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa»",
+        "presupuesto oficial": "$ 5.800.000,00",
+        "recepcion de ofertas": "Oficina de Compras (SCyE) - DEL VALLE ARISTOBULO 2734 - Lunes a viernes (hábiles administrativos) de 08:00 a 14:00, hasta el día y hora de apertura de sobres.",
+        "reparticion licitante": "Secretaría de Cultura y Educación - DEL VALLE ARISTOBULO 2734",
+        "tipo de contratacion": "Compra Agil",
+        "ver pliego adjunto apto para cotizar": "128-36308.2026-pliego.pdf"
+      },
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: 128-36308.2026-pliego.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38736/documentos/102974"
+        }
+      ],
+      "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38736/documentos/102974",
+      "evento_publicado": null,
+      "evidencia_url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "10/11/2026 10:00"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "10/11/2026 10:00"
+        },
+        "fecha_publicacion": {
+          "texto": "fecha de publicacion: 05/11/2026",
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736"
+        },
+        "numero_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "compra agil 128/2026"
+        },
+        "presupuesto": {
+          "texto": "presupuesto oficial $ 5.800.000,00",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "compra agil 128/2026"
+        }
+      },
+      "fecha_apertura": "2026-11-10",
+      "fecha_apertura_texto": "10/11/2026 10:00",
+      "fecha_limite_presentacion": "2026-11-10",
+      "fecha_limite_presentacion_texto": "10/11/2026 10:00",
+      "fecha_publicacion": "2026-11-05",
+      "fecha_publicacion_texto": null,
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "fuentes_observadas": [
+        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones"
+      ],
+      "hora_apertura": "10:00",
+      "hora_limite_presentacion": "10:00",
+      "id_origen": "38736",
+      "identidad_ambito": "ficha-rosario-38736",
+      "localidad": "Rosario",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_oficial_sin_interpretar": "36308/2026",
+      "numero_procedimiento": "128/2026",
+      "objeto": "Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa»",
+      "organismo": "Municipalidad de Rosario",
+      "pago_evidencias": [],
+      "presupuesto": {
+        "importe": "5800000.00",
+        "moneda": null
+      },
+      "procedimiento": "compra agil 128/2026",
+      "provincia": "Santa Fe",
+      "rango_evidencia": 3,
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "texto_listado": "Compra Agil 36308/2026 Publicada para Apertura Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa» Apertura: 10/11/2026 10:00",
+      "tipo_procedimiento": "compra agil",
+      "titulo": "Compra Agil 128/2026 Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa»",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736",
+      "urls_publicacion": [
+        "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=1",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5"
+      ],
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "compra agil 128/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": "2026-11-10T10:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": "2026-11-10T10:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-10",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [],
+      "id": "7d202e7e182f73335074088d19c7e397382e2c3663a7f0e9caa591ae88387588",
+      "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "7d202e7e182f73335074088d19c7e397382e2c3663a7f0e9caa591ae88387588"
+      ],
+      "variantes_historial": [
+        {
+          "id": "7d202e7e182f73335074088d19c7e397382e2c3663a7f0e9caa591ae88387588",
+          "numero_procedimiento": "128/2026",
+          "objeto": "Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa»",
+          "fecha_apertura": "2026-11-10",
+          "fecha_limite_presentacion": "2026-11-10",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736",
+          "documentos": [
+            {
+              "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+              "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+              "titulo": "ver pliego adjunto apto para cotizar: 128-36308.2026-pliego.pdf",
+              "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38736/documentos/102974"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-10T10:00:00-03:00"
     },
     {
       "detalle_completo": true,
@@ -1129,7 +1294,7 @@
       ],
       "id": "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0",
       "primera_deteccion": "2026-11-01T08:31:08.968829-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0"
@@ -1276,7 +1441,7 @@
       ],
       "id": "feaa8290be244ba40a2e124362aaebe9b552587220cd2b1fb95084194c3932d2",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "feaa8290be244ba40a2e124362aaebe9b552587220cd2b1fb95084194c3932d2"
@@ -1572,7 +1737,7 @@
       ],
       "id": "3d8a5b2d0b09fb7c8dd2ec3c67796892d074a749ba8ad230f2b4b3fde4ea3f4b",
       "primera_deteccion": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3d8a5b2d0b09fb7c8dd2ec3c67796892d074a749ba8ad230f2b4b3fde4ea3f4b"
@@ -1920,7 +2085,7 @@
       ],
       "id": "17d09da7fe9747097ca66f708d4a01463160144d472a92912775962a2e4c47c7",
       "primera_deteccion": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "17d09da7fe9747097ca66f708d4a01463160144d472a92912775962a2e4c47c7"
@@ -2074,7 +2239,7 @@
       ],
       "id": "9a57dd9d2d120a269675af49fa10d4bb1c1a1c444db20d6f99d116efa42db6b4",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9a57dd9d2d120a269675af49fa10d4bb1c1a1c444db20d6f99d116efa42db6b4"
@@ -2216,7 +2381,7 @@
       ],
       "id": "f0b099f3d1a1b4e9ecbd40a7aa89371a7954c9f56f52bb301ac9ec6b93c2558d",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "f0b099f3d1a1b4e9ecbd40a7aa89371a7954c9f56f52bb301ac9ec6b93c2558d"
@@ -2556,7 +2721,7 @@
       ],
       "id": "4b6f68e57c711f667e4430a7df9957d3145707878b242696961c0d1405d285cb",
       "primera_deteccion": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "4b6f68e57c711f667e4430a7df9957d3145707878b242696961c0d1405d285cb"
@@ -2876,7 +3041,7 @@
       ],
       "id": "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7",
       "primera_deteccion": "2026-11-07T08:36:35.631351-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7"
@@ -2916,7 +3081,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -2979,7 +3143,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 111 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 83 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 70 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 67 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 72 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 76 click 9 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 114 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 84 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 72 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 68 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 75 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 78 click 9 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
@@ -3024,7 +3188,7 @@
       ],
       "id": "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a"
@@ -3148,7 +3312,7 @@
       ],
       "id": "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9"
@@ -3176,7 +3340,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -3239,7 +3402,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 189 click 19 octubre, 2026 ANEXO I • 2 MB • 114 click 19 octubre, 2026 Anexo II • 112 kB • 94 click 19 octubre, 2026 Anexo III • 174 kB • 103 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 99 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 99 click 19 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 193 click 19 octubre, 2026 ANEXO I • 2 MB • 116 click 19 octubre, 2026 Anexo II • 112 kB • 95 click 19 octubre, 2026 Anexo III • 174 kB • 105 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 101 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 100 click 19 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
@@ -3284,7 +3447,7 @@
       ],
       "id": "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-07T08:36:35.631351-03:00",
+      "ultima_deteccion": "2026-11-08T08:38:47.945269-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99"
