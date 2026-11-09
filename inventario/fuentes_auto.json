@@ -4903,6 +4903,264 @@
         ]
       },
       "origen_busqueda": "https://arrecifes.gob.ar/"
+    },
+    {
+      "id": "auto-fase6-01-08",
+      "url": "https://sanjeronimodelsauce.gob.ar/",
+      "config": {
+        "organismo": "Comuna de San Jerónimo del Sauce",
+        "localidad": "San Jerónimo del Sauce",
+        "provincia": "Santa Fe",
+        "conector": "publicaciones",
+        "descubrir_menu": true,
+        "descubrir_contrataciones": true,
+        "barrido_institucional": true,
+        "buscador_institucional": true,
+        "solo_descubrimiento": true,
+        "lectura_adjuntos": "necesarios",
+        "ocr": false,
+        "admitir_avisos_sin_numero": true,
+        "capturar_respuestas": true,
+        "documentos_para_descubrimiento": true,
+        "noticias_comunales": true
+      },
+      "validacion": {
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Comuna de San Jerónimo del Sauce",
+          "localidad": "San Jerónimo del Sauce",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://sanjeronimodelsauce.gob.ar/",
+          "sha256": "a394726d97b79808580d1f5ea080299028ac8fc0d318347267a22148f2ba7576",
+          "cabecera": "Home - Comuna de San Jerónimo del Sauce  Servicios Tramites Horarios de Colectivos Contacto Útiles Servicio de Recolección de Residuos Reclamos Bienal Internacional de Esculturas Ultimas Noticias Contacto Teléfono Secciones Secciones Lorem Ipsum es simplemente el texto de relleno",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 1,
+        "fecha": "2026-11-09T18:50:04.400093+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Comuna de San Jerónimo del Sauce",
+            "numero_procedimiento": null,
+            "objeto": "Resultados de búsqueda para: licitacion",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://sanjeronimodelsauce.gob.ar/?s=licitacion",
+            "evidencia_url": "https://sanjeronimodelsauce.gob.ar/?s=licitacion"
+          }
+        ]
+      }
+    },
+    {
+      "id": "auto-fase6-01-10",
+      "url": "https://sastreciudad.gob.ar/intendencia/",
+      "config": {
+        "organismo": "Municipalidad de Sastre y Ortiz",
+        "localidad": "Sastre y Ortiz",
+        "provincia": "Santa Fe",
+        "conector": "publicaciones",
+        "descubrir_menu": true,
+        "descubrir_contrataciones": true,
+        "barrido_institucional": true,
+        "buscador_institucional": true,
+        "solo_descubrimiento": true,
+        "lectura_adjuntos": "necesarios",
+        "ocr": false,
+        "admitir_avisos_sin_numero": true,
+        "capturar_respuestas": true,
+        "documentos_para_descubrimiento": true,
+        "noticias_comunales": true
+      },
+      "validacion": {
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Sastre y Ortiz",
+          "localidad": "Sastre y Ortiz",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://sastreciudad.gob.ar/intendencia/",
+          "sha256": "420a20df7d40fcf4f2e33bbc13327a27e574bd2262c0e28579feaa617da06134",
+          "cabecera": "Intendencia - Municipalidad de Sastre y Ortiz  Intendencia María del Carmen Amero de Brunazzo",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 10,
+        "fecha": "2026-11-09T18:50:08.784829+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Municipalidad de Sastre y Ortiz",
+            "numero_procedimiento": "2/2026",
+            "objeto": "Inicio › Noticias › La Municipalidad de Sastre y Ortiz llamó a Licitación Pública para adquirir una niveladora de arrastre Institucional 📅 07 de August de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz anunció el llamado a Licitación Pública N.º 02/2026 para la adquisición de una niveladora de arrastre, destinada a fortalecer y ampliar el equipamiento municipal. De acuerdo con la convocatoria, el objeto de la licitación es la compra de una (1) niveladora de arrastre , herramienta que será incorporada al parque de maquinaria del municipio para acompañar las tareas y servicios que se desarrollan en la ciudad. Los interesados en participar podrán retirar el Pliego de Bases en el Palacio Municipal, en días hábiles, de 7:15 a 12:00 horas . También podrán solicitarlo por correo electrónico a arealegal@sastre.gob.ar . El valor del pliego fue establecido en $85.000 (pesos ochenta y cinco mil) . La apertura de sobres se realizará el próximo 3 de septiembre de 2026, a las 10:00 horas , en el Palacio Municipal de Sastre y Ortiz. Desde el municipio indicaron que quienes requieran mayor información podrán acercarse a la sede municipal o comunicarse a través de los medios habilitados. La convocatoria forma parte de las acciones orientadas a fortalecer el equipamiento municipal y mejorar las herramientas disponibles para el desarrollo de obras y la prestación de servicios a la comunidad. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Sastre realizará una nueva Feria de Emprendedores y Artesanos Locales en Plaza Independencia 05/11/2026 Más de 150 perros y gatos recibieron la vacuna antirrábica en Sastre 05/11/2026 Sastre llevó adelante la charla “Tejiendo puentes para acompañar la muerte perinatal” 05/11/2026 Sastre será sede del Encuentro Regional de las Artes: dos jornadas para celebrar la cultura y el talento regional 05/11/2026",
+            "fecha_apertura": "2026-09-03",
+            "fecha_publicacion": "2026-10-29",
+            "vigencia": "VENCIDA",
+            "url": "https://sastreciudad.gob.ar/la-municipalidad-de-sastre-y-ortiz-llamo-a-licitacion-publica-para-adquirir-una-niveladora-de-arrastre/",
+            "evidencia_url": "https://sastreciudad.gob.ar/la-municipalidad-de-sastre-y-ortiz-llamo-a-licitacion-publica-para-adquirir-una-niveladora-de-arrastre/"
+          },
+          {
+            "organismo": "Municipalidad de Sastre y Ortiz",
+            "numero_procedimiento": "5/2026",
+            "objeto": "Inicio › Noticias › Licitación Pública N.º 05/2026: el Municipio convoca a la presentación de ofertas Institucional 📅 28 de September de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz informa el llamado a Licitación Pública N.º 05/2026 para la adquisición de hormigón elaborado destinado a obras y trabajos que se llevarán adelante en la ciudad. El objeto de la licitación contempla la compra de 826 m³ de hormigón elaborado tipo H-25, con piedra granítica 1:3 y un asentamiento de 6 cm, admitiéndose una variación de más o menos el 20%. Los interesados podrán retirar el Pliego de Bases y Condiciones en el Palacio Municipal, de lunes a viernes, en el horario de 7:15 a 12:30 hs., durante los días hábiles. El valor del pliego es de $200.000. La apertura de sobres se realizará el domingo 18 de octubre de 2026, a las 10:00 hs., en el Palacio Municipal. La Municipalidad de Sastre y Ortiz continúa impulsando los procesos administrativos necesarios para la ejecución de obras y el mejoramiento de la infraestructura de la ciudad. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Sastre realizará una nueva Feria de Emprendedores y Artesanos Locales en Plaza Independencia 05/11/2026 Más de 150 perros y gatos recibieron la vacuna antirrábica en Sastre 05/11/2026 Sastre llevó adelante la charla “Tejiendo puentes para acompañar la muerte perinatal” 05/11/2026 Sastre será sede del Encuentro Regional de las Artes: dos jornadas para celebrar la cultura y el talento regional 05/11/2026",
+            "fecha_apertura": "2026-10-18",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://sastreciudad.gob.ar/licitacion-publica-n-o-05-2026-el-municipio-convoca-a-la-presentacion-de-ofertas/",
+            "evidencia_url": "https://sastreciudad.gob.ar/licitacion-publica-n-o-05-2026-el-municipio-convoca-a-la-presentacion-de-ofertas/"
+          },
+          {
+            "organismo": "Municipalidad de Sastre y Ortiz",
+            "numero_procedimiento": "6/2026",
+            "objeto": "Inicio › Noticias › Licitación Pública N.º 06/2026: el Municipio convoca a la presentación de ofertas Institucional 📅 28 de September de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz informa el llamado a Licitación Pública N.º 06/2026 para la adquisición de un hidroelevador nuevo, destinado a fortalecer el equipamiento y las herramientas de trabajo del Municipio. El objeto de la licitación contempla la compra de un (1) hidroelevador nuevo, montado sobre tráiler, con un alcance no menor a 12 metros de altura. Los interesados podrán retirar el Pliego de Bases y Condiciones en el Palacio Municipal, de lunes a viernes, de 7:15 a 12:00 hs., durante los días hábiles. También podrán solicitarlo vía correo electrónico a arealegal@sastre.gob.ar. El valor del pliego es de $70.000. La apertura de sobres se realizará el miércoles 21 de octubre de 2026, a las 10:00 hs., en el Palacio Municipal. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Sastre realizará una nueva Feria de Emprendedores y Artesanos Locales en Plaza Independencia 05/11/2026 Más de 150 perros y gatos recibieron la vacuna antirrábica en Sastre 05/11/2026 Sastre llevó adelante la charla “Tejiendo puentes para acompañar la muerte perinatal” 05/11/2026 Sastre será sede del Encuentro Regional de las Artes: dos jornadas para celebrar la cultura y el talento regional 05/11/2026",
+            "fecha_apertura": "2026-10-21",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://sastreciudad.gob.ar/licitacion-publica-n-o-06-2026-el-municipio-convoca-a-la-presentacion-de-ofertas/",
+            "evidencia_url": "https://sastreciudad.gob.ar/licitacion-publica-n-o-06-2026-el-municipio-convoca-a-la-presentacion-de-ofertas/"
+          },
+          {
+            "organismo": "Municipalidad de Sastre y Ortiz",
+            "numero_procedimiento": "1/2026",
+            "objeto": "La Licitación N.º 01/2026 , cuya apertura tuvo lugar el pasado 4 de septiembre, está destinada a la concesión del servicio de Bar-Confitería ubicado en la Terminal de Ómnibus Municipal. Para esta convocatoria se registró la presentación de una oferta formal, la cual ingresará en etapa de análisis por parte de la comisión evaluadora para verificar el cumplimiento de las condiciones fijadas en el pliego de bases y condiciones.",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://sastreciudad.gob.ar/la-municipalidad-realizo-la-apertura-de-sobres-de-las-licitaciones-n-o-01-y-02-2026/",
+            "evidencia_url": "https://sastreciudad.gob.ar/la-municipalidad-realizo-la-apertura-de-sobres-de-las-licitaciones-n-o-01-y-02-2026/"
+          },
+          {
+            "organismo": "Municipalidad de Sastre y Ortiz",
+            "numero_procedimiento": "2/2026",
+            "objeto": "Por su parte, la Licitación N.º 02/2026 —cuya apertura se concretó el 3 de septiembre— contempla la adquisición de una niveladora de arrastre para reforzar las tareas de mantenimiento urbano y rural en la localidad. Para este llamado se presentaron dos propuestas económicas. Cabe destacar que la compra de esta maquinaria cuenta con el financiamiento del Programa de Obras Menores del Gobierno de la Provincia de Santa Fe.",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://sastreciudad.gob.ar/la-municipalidad-realizo-la-apertura-de-sobres-de-las-licitaciones-n-o-01-y-02-2026/",
+            "evidencia_url": "https://sastreciudad.gob.ar/la-municipalidad-realizo-la-apertura-de-sobres-de-las-licitaciones-n-o-01-y-02-2026/"
+          },
+          {
+            "organismo": "Municipalidad de Sastre y Ortiz",
+            "numero_procedimiento": "4/2026",
+            "objeto": "Inicio › Noticias › La Municipalidad de Sastre y Ortiz llamó a Licitación Pública para adquirir un nuevo tractor Institucional 📅 07 de August de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz anunció el llamado a Licitación Pública N.º 04/2026 para la adquisición de un tractor, con el objetivo de continuar fortaleciendo el equipamiento municipal y mejorar la prestación de servicios a la comunidad. El objeto de la convocatoria es la compra de un (1) tractor, que será incorporado al parque de maquinaria municipal para acompañar las distintas tareas operativas que se desarrollan en la localidad. Los interesados podrán retirar el Pliego de Bases en el Palacio Municipal, en días hábiles, de 7:15 a 12:00 horas. También podrán solicitarlo vía correo electrónico a arealegal@sastre.gob.ar . El valor del pliego fue establecido en $90.000 (pesos noventa mil). La apertura de sobres se realizará el 8 de septiembre de 2026, a las 11:30 horas, en el Palacio Municipal de Sastre y Ortiz. Para mayor información, los interesados podrán acercarse a la Municipalidad o comunicarse a través de los medios habilitados. Con esta nueva convocatoria, el municipio continúa avanzando en el fortalecimiento de su equipamiento, con el propósito de contar con mejores herramientas para el desarrollo de las tareas y la prestación de servicios en la comunidad. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Sastre realizará una nueva Feria de Emprendedores y Artesanos Locales en Plaza Independencia 05/11/2026 Más de 150 perros y gatos recibieron la vacuna antirrábica en Sastre 05/11/2026 Sastre llevó adelante la charla “Tejiendo puentes para acompañar la muerte perinatal” 05/11/2026 Sastre será sede del Encuentro Regional de las Artes: dos jornadas para celebrar la cultura y el talento regional 05/11/2026",
+            "fecha_apertura": "2026-09-08",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://sastreciudad.gob.ar/la-municipalidad-de-sastre-y-ortiz-llamo-a-licitacion-publica-para-adquirir-un-nuevo-tractor/",
+            "evidencia_url": "https://sastreciudad.gob.ar/la-municipalidad-de-sastre-y-ortiz-llamo-a-licitacion-publica-para-adquirir-un-nuevo-tractor/"
+          },
+          {
+            "organismo": "Municipalidad de Sastre y Ortiz",
+            "numero_procedimiento": "3/2026",
+            "objeto": "Inicio › Noticias › La Municipalidad de Sastre y Ortiz llamó a Licitación Pública para adquirir un tractor Institucional 📅 07 de August de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz anunció el llamado a Licitación Pública N.º 03/2026 para la adquisición de un tractor, con el objetivo de fortalecer el equipamiento y las tareas operativas que lleva adelante el municipio. El proceso contempla la compra de un (1) tractor , que será destinado a ampliar y mejorar el parque de maquinaria municipal y acompañar las distintas labores que se desarrollan en la ciudad. Los interesados podrán retirar el Pliego de Bases en el Palacio Municipal, en días hábiles, de 7:15 a 12:00 horas . Asimismo, podrán solicitarlo vía correo electrónico a arealegal@sastre.gob.ar . El valor del pliego fue fijado en $65.000 (pesos sesenta y cinco mil) . La apertura de sobres tendrá lugar el 8 de septiembre de 2026, a las 10:00 horas , en el Palacio Municipal de Sastre y Ortiz. Para obtener mayor información, los interesados podrán acercarse a la Municipalidad o comunicarse a través de los medios habilitados. La convocatoria se enmarca en el objetivo de continuar fortaleciendo el equipamiento municipal y mejorar las herramientas disponibles para las tareas operativas y la prestación de servicios a la comunidad. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Sastre realizará una nueva Feria de Emprendedores y Artesanos Locales en Plaza Independencia 05/11/2026 Más de 150 perros y gatos recibieron la vacuna antirrábica en Sastre 05/11/2026 Sastre llevó adelante la charla “Tejiendo puentes para acompañar la muerte perinatal” 05/11/2026 Sastre será sede del Encuentro Regional de las Artes: dos jornadas para celebrar la cultura y el talento regional 05/11/2026",
+            "fecha_apertura": "2026-09-08",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://sastreciudad.gob.ar/la-municipalidad-de-sastre-y-ortiz-llamo-a-licitacion-publica-para-adquirir-un-tractor/",
+            "evidencia_url": "https://sastreciudad.gob.ar/la-municipalidad-de-sastre-y-ortiz-llamo-a-licitacion-publica-para-adquirir-un-tractor/"
+          },
+          {
+            "organismo": "Municipalidad de Sastre y Ortiz",
+            "numero_procedimiento": "1/2026",
+            "objeto": "Inicio › Noticias › Licitación Pública N.º 01/2026: Concesión del Bar-Confitería de la Terminal de Ómnibus “Manuel Belgrano” Institucional 📅 06 de August de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz informa a la comunidad y a los interesados que se encuentra abierta la Licitación Pública N.º 01/2026, destinada a la concesión en arrendamiento del servicio de Bar-Confitería de la Terminal de Ómnibus Municipal “Manuel Belgrano”. Objeto de la licitación Concesión del servicio de Bar-Confitería ubicado en la Terminal de Ómnibus Municipal. Pliego de Bases y Condiciones Los interesados podrán retirar el Pliego de Bases y Condiciones en el Palacio Municipal, de lunes a viernes, en el horario de 7:15 a 12:30 horas. Valor del pliego: $30.000 (pesos treinta mil). Apertura de sobres Fecha: 4 de septiembre de 2026 Hora: 10:00 horas Lugar: Palacio Municipal. Para obtener mayor información, los interesados deberán dirigirse a la Municipalidad dentro del horario de atención establecido. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Sastre realizará una nueva Feria de Emprendedores y Artesanos Locales en Plaza Independencia 05/11/2026 Más de 150 perros y gatos recibieron la vacuna antirrábica en Sastre 05/11/2026 Sastre llevó adelante la charla “Tejiendo puentes para acompañar la muerte perinatal” 05/11/2026 Sastre será sede del Encuentro Regional de las Artes: dos jornadas para celebrar la cultura y el talento regional 05/11/2026",
+            "fecha_apertura": "2026-09-04",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://sastreciudad.gob.ar/licitacion-publica-n-o-01-2026-concesion-del-bar-confiteria-de-la-terminal-de-omnibus-manuel-belgrano/",
+            "evidencia_url": "https://sastreciudad.gob.ar/licitacion-publica-n-o-01-2026-concesion-del-bar-confiteria-de-la-terminal-de-omnibus-manuel-belgrano/"
+          },
+          {
+            "organismo": "Municipalidad de Sastre y Ortiz",
+            "numero_procedimiento": "3/2026",
+            "objeto": "Licitación N.º 03/2026 (Tractor): Orientada a la adquisición de una unidad tractora. Para este llamado se presentaron 5 oferentes .",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://sastreciudad.gob.ar/la-municipalidad-concreto-la-apertura-de-sobres-para-la-compra-de-dos-nuevos-tractores/",
+            "evidencia_url": "https://sastreciudad.gob.ar/la-municipalidad-concreto-la-apertura-de-sobres-para-la-compra-de-dos-nuevos-tractores/"
+          },
+          {
+            "organismo": "Municipalidad de Sastre y Ortiz",
+            "numero_procedimiento": "4/2026",
+            "objeto": "Licitación N.º 04/2026 (Tractor): Destinada a la compra de una segunda unidad tractora. El acto registró la participación de 10 oferentes .",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://sastreciudad.gob.ar/la-municipalidad-concreto-la-apertura-de-sobres-para-la-compra-de-dos-nuevos-tractores/",
+            "evidencia_url": "https://sastreciudad.gob.ar/la-municipalidad-concreto-la-apertura-de-sobres-para-la-compra-de-dos-nuevos-tractores/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "auto-fase6-01-18",
+      "url": "https://galarza.gov.ar/autoridades/",
+      "config": {
+        "organismo": "Municipalidad de General Galarza",
+        "localidad": "General Galarza",
+        "provincia": "Entre Ríos",
+        "conector": "publicaciones",
+        "descubrir_menu": true,
+        "descubrir_contrataciones": true,
+        "barrido_institucional": true,
+        "buscador_institucional": true,
+        "solo_descubrimiento": true,
+        "lectura_adjuntos": "necesarios",
+        "ocr": false,
+        "admitir_avisos_sin_numero": true,
+        "capturar_respuestas": true,
+        "documentos_para_descubrimiento": true,
+        "noticias_comunales": true
+      },
+      "validacion": {
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de General Galarza",
+          "localidad": "General Galarza",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://galarza.gov.ar/autoridades/",
+          "sha256": "86a3128fcb6a11f48be1d42e03b56aa9b257c070707c530ffd61343152cd0550",
+          "cabecera": "AUTORIDADES – Municipalidad de General Galarza Presidente HCD Secretarío HCD",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 1,
+        "fecha": "2026-11-09T18:50:50.841789+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Municipalidad de General Galarza",
+            "numero_procedimiento": null,
+            "objeto": "SE PUBLICÓ LA LICITACIÓN DE LA OBRA DE CORDÓN CUNETA",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-11-13",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://galarza.gov.ar/2022/11/13/se-publico-la-licitacion-de-la-obra-de-cordon-cuneta/",
+            "evidencia_url": "https://galarza.gov.ar/2022/11/13/se-publico-la-licitacion-de-la-obra-de-cordon-cuneta/"
+          }
+        ]
+      }
     }
   ]
 }
