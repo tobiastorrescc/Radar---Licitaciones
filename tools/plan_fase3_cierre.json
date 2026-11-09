@@ -2,7 +2,12 @@
   "barrido": 42543122865,
   "revalidacion": 42543677143,
   "candidatas": 42543506680,
-  "altas": {},
-  "extras": [],
-  "etapa": "relectura-con-pdf-nativo-y-organismo-conservado"
+  "altas": {
+    "fase3-001": "fuente-102"
+  },
+  "extras": [
+    42544649973
+  ],
+  "etapa": "cierre-final-recepcion-y-santaana-sin-red",
+  "altas_run": 42544649973
 }

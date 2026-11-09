@@ -32,6 +32,10 @@ def extraer(html,url):
     recepcion=campos.get('recepcion de ofertas','')
     if re.search(r'hasta el dia y hora de apertura',extractores.norm(recepcion)):
         r['fecha_limite_presentacion_texto']=campos.get('fecha de apertura')
+    if recepcion:
+        from presentacion_documental import clausula
+        import oportunidades as o
+        r.update(clausula('Recepción de ofertas: '+recepcion,o.normalizar(r),url))
     if recepcion and re.search(r'oferta en papel|mesa de entradas|sobre cerrado',extractores.norm(dom.root.text)):
         r['modalidad_presentacion']=['PRESENCIAL']
     return [r]

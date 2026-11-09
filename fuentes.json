@@ -3268,5 +3268,38 @@
       "criterio": "Extracción de publicaciones oficiales comprobada; no acredita cobertura global ni que los antecedentes sean oportunidades nuevas."
     },
     "ultima_verificacion": "2026-11-07"
+  },
+  "https://www.santaana.gob.ar/home/licitaciones/": {
+    "organismo": "Municipalidad de Santa Ana",
+    "localidad": "Santa Ana",
+    "provincia": "Entre Ríos",
+    "estado_verificacion": "PARCIAL",
+    "evidencia_descubrimiento": {
+      "metodo": "Consulta web oficial 9/11 UTC; todavía no extracción nativa validada",
+      "url": "https://www.santaana.gob.ar/home/licitaciones/"
+    },
+    "adaptador": "santaana",
+    "descubrir_contrataciones": false,
+    "barrido_institucional": false,
+    "indice_documentos": false,
+    "tipo_portal": "html_avisos_intercalados_pdf",
+    "incorporada": true,
+    "conector": "publicaciones",
+    "lectura_adjuntos": "necesarios",
+    "solo_descubrimiento": true,
+    "ocr": false,
+    "verificada_funcionando": false,
+    "capturar_respuestas": true,
+    "urls_inicio": [
+      "https://www.santaana.gob.ar/home/licitaciones/"
+    ],
+    "evidencia_verificacion": {
+      "github_run_id": 42544649973,
+      "publicaciones_detectadas": 33,
+      "avisos_2026_fechas_correctas": 6,
+      "vigentes_verificadas": 0,
+      "segundos": 1.716,
+      "observacion": "Extracción HTML comprobada. Pendientes datos de avisos anteriores; no se presentan como nuevas las convocatorias vencidas."
+    }
   }
 }

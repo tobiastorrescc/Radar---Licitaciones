@@ -34,16 +34,17 @@ def main():
  guardar(ROOT/'revalidacion_119.json',{'fecha':fecha,'casos':casos,'resumen':dict(Counter(c['estado_revalidacion'] for c in casos))})
  # Sólo se ingieren fuentes del catálogo, no todas las candidatas de diagnóstico.
  incorporadas={f['id']:f for f in fuentes_configuradas()};candidatas=None
- for p in archivos(plan['candidatas'],'resultado.json'):
-  if p.parent.name!='candidatas':continue
-  candidatas=json.load(open(p))
-  for old,new in plan.get('altas',{}).items():
+ for run in [plan['candidatas']]+plan.get('extras',[]):
+  paths=[p for p in archivos(run,'resultado.json') if p.parent.name=='candidatas']
+  if not paths:continue
+  candidatas=json.load(open(paths[0]))
+  for old,new in (plan.get('altas',{}) if run==plan.get('altas_run') else {}).items():
    cf=next(f for f in candidatas['fuentes'] if f['id']==old)
    if new not in incorporadas or cf['url']!=incorporadas[new]['url']:raise ValueError('Alta no comprobada contra configuración')
    ob=next(s for s in candidatas['observaciones'] if s['id']==old)
    if not ob.get('publicaciones_detectadas'):raise ValueError('No se promueve fuente sin extracción real')
    fs.append(incorporadas[new]);observaciones.append({**ob,'id':new});actuales +=[r for r in candidatas['registros'] if r.get('fuente')==cf['url']]
-  guardar(ROOT/'candidatas.json',candidatas)
+  guardar(ROOT/('candidatas-'+str(run)+'.json'),candidatas)
  registros=o.deduplicar(rs+actuales,fecha);despues={'fecha':fecha,'fuentes':fs,'observaciones':observaciones,'registros':registros};guardar(ROOT/'despues.json',despues)
  guardar(ROOT/'captura-consolidada.json',despues)
  cerrar_barrido([str(ROOT/'captura-consolidada.json')],str(ROOT/'historial-aislado'))

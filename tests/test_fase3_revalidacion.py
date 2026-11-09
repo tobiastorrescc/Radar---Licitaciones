@@ -62,3 +62,14 @@ class TrazabilidadRegresion(unittest.TestCase):
   with tempfile.TemporaryDirectory() as tmp,patch('tools.fase3_revalidar.obtener',return_value=(b'<main>Compra de combustible</main>',{'tipo':'text/html','url':c['url'],'sha256':'abc'})),patch('tools.fase3_revalidar.extractores.extraer',return_value=([raw],[],extractores.DOM('<main>Compra de combustible</main>'))):
    p=Path(tmp)/'r.json';worker(c,p);r=json.load(open(p))['oportunidades'][0]
    self.assertEqual(r['organismo'],c['organismo']);self.assertEqual(r['provincia'],'Santa Fe')
+
+class RosarioRecepcionReal(unittest.TestCase):
+ def test_ficha_38717_admite_ofertas_hasta_momento_explicito(self):
+  from tools.ficha_rosario import extraer
+  from pathlib import Path
+  url='https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717'
+  r,=extraer(Path('tests/fixtures/fase3_rosario_38717.html').read_text(),url)
+  self.assertEqual(r['numero_procedimiento'],'467/2026')
+  self.assertIn('momento de la apertura',r['evidencia_recepcion']['cita'])
+  self.assertTrue(presentacion(r,'2026-11-09T09:00:00-03:00')['presentacion_verificada'])
+  self.assertFalse(presentacion(r,'2026-11-10T09:01:00-03:00')['presentacion_verificada'])
