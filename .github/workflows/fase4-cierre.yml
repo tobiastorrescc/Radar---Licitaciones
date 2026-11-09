@@ -1,0 +1,59 @@
+name: Fase 4 comparación comercial sin modificar el piloto
+on:
+  push:
+    branches: [mejora/radar-auditable]
+    paths: [tools/plan_fase4_cierre.json]
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: fase4-comparacion-aislada
+  cancel-in-progress: false
+jobs:
+  comparar:
+    if: github.ref == 'refs/heads/mejora/radar-auditable'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Pruebas Python y Node
+        run: |
+          python -m unittest discover -s tests
+          node tests/test_programador_github.cjs
+      - name: Descargar evidencia nativa del mismo repositorio y rama
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs=require('fs'),cp=require('child_process');
+            const p=JSON.parse(fs.readFileSync('tools/plan_fase4_cierre.json'));
+            for(const id of [p.base,...p.descubrimiento]){
+              const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:id});
+              if(r.head_branch!=='mejora/radar-auditable'||r.head_repository.full_name!==`${context.repo.owner}/${context.repo.repo}`||!['.github/workflows/fase2-cobertura.yml','.github/workflows/fase4-descubrimiento.yml'].includes(r.path))throw Error('Origen no autorizado');
+              const jobs=await github.paginate(github.rest.actions.listJobsForWorkflowRun,{...context.repo,run_id:id});
+              for(const a of await github.paginate(github.rest.actions.listWorkflowRunArtifacts,{...context.repo,run_id:id})){
+                const base=id===p.base;
+                if(!(base?/^fase2-\d+-[0-3]$/:/^fase4-descubrimiento-\d+$/).test(a.name))continue;
+                const job=jobs.find(j=>j.name===(base?`barrer (${a.name.slice(-1)})`:'descubrir'));
+                if(!job||job.conclusion!=='success')throw Error('Captura incompleta: '+a.name);
+                if(a.size_in_bytes>32000000)throw Error('Artefacto excede presupuesto');
+                const {data}=await github.rest.actions.downloadArtifact({...context.repo,artifact_id:a.id,archive_format:'zip'});
+                const d=`work/fase4-cierre/capturas/${id}`;fs.mkdirSync(d,{recursive:true});const z=d+'/'+a.id+'.zip';fs.writeFileSync(z,Buffer.from(data));cp.execFileSync('unzip',['-q','-o',z,'-d',d]);fs.unlinkSync(z);
+              }
+            }
+      - name: Comparar con historial aislado y segunda pasada sin red ni OCR
+        run: python -u tools/fase4_cerrar.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fase4-comparacion-${{ github.run_id }}
+          path: |
+            work/fase4-cierre/*.json
+            work/fase4-cierre/*.csv
+            work/fase4-cierre/comercial/
+            work/fase4-cierre/nuevas/
+          retention-days: 90

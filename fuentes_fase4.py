@@ -38,6 +38,24 @@ def comuna_cms(dom,url):
  docs=[{'url':l['url'],'titulo':l['texto']} for l in bloque.enlaces(url) if urlsplit(l['url']).path.lower().endswith(e.ADJUNTOS)]
  fecha=re.search(r'(?i)publicado[,:]?\s*(.{0,90})',texto)
  r={'url':url,'evidencia_url':url,'titulo':titulo,'objeto':obj[1].strip() if obj else titulo,'texto_documento':texto,'numero_procedimiento':p['numero'] if p else None,'tipo_procedimiento':tipo,'procedimiento':p['procedimiento'] if p else None,'aviso_oficial_sin_numero':p is None,'registro_estructurado':True,'detalle_completo':True,'fecha_publicacion_texto':fecha[1] if fecha else None,'situacion_publicada':'FINALIZADA' if re.search(r'\bcerrad[oa]\b',norm) else e.situacion(titulo),'documentos':docs}
+ if p is None:
+  from hashlib import sha256
+  idp=parse_qs(urlsplit(url).query).get('idp',[None])[0]
+  clave=(urlsplit(url).hostname or '').removeprefix('www.')+urlsplit(url).path+'|idp='+str(idp) if idp else url
+  r['huella_aviso_oficial']=sha256(clave.encode()).hexdigest()
  r.update(clausula(texto,o.normalizar(r),url))
  if 'en sobre cerrado' in e.norm(texto):r['modalidad_presentacion']=['PRESENCIAL']
  return [r]
+
+def refinar_ceres(r):
+ """Objeto acotado al rótulo, conservando íntegro el texto oficial y sus fechas."""
+ r=dict(r);texto=r.get('texto_documento') or r.get('objeto') or ''
+ m=re.search(r'(?im)^\s*OBJETO\s*:\s*(.+?)(?:\n\s*\n|\n\s*PLAZO|$)',texto,re.S)
+ if m:
+  r['texto_documento']=texto;r['objeto']=' '.join(m[1].split())
+ return r
+
+def naturaleza_convocatoria(r):
+ """Una venta de bienes municipales no es una compra a proveedores; no se elimina."""
+ obj=e.norm(r.get('objeto') or '')
+ return 'VENTA_BIENES_PUBLICOS' if re.search(r'^venta\b.{0,50}(?:lotes|propiedad municipal)',obj) else 'COMPRA_O_SERVICIO'

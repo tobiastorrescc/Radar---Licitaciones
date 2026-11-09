@@ -90,3 +90,5 @@ https://coloniaavellaneda.gob.ar/web/informacion-publica/
 https://aplicaciones.vialidadentrerios.gob.ar/contrataciones-licitaciones
 https://www.mpba.gov.ar/licitaciones
 https://www.santaana.gob.ar/home/licitaciones/
+https://ceres.gob.ar/compras/
+https://mariateresa.gob.ar/

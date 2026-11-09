@@ -7,6 +7,7 @@ from tools.verificar_fuentes import ejecutar,guardar
 def main():
  p=json.load(open('tools/plan_fase4.json'));ids={c['caso_id'] for c in csv.DictReader(open('informes/2026-11-09-fase3/119_pendientes.csv'))};cs=[c for c in json.load(open('inventario/revalidacion_fase3.json'))['casos'] if c['caso_id'] in ids]
  cs.sort(key=lambda c:(c.get('fecha_limite_presentacion') or c.get('fecha_apertura') or '9999',not bool(c.get('documentos') or c.get('enlace_pliego')),c['caso_id']))
+ Path('work/fase4/revalidacion').mkdir(parents=True,exist_ok=True)
  if not p.get('revalidar',True):
   guardar('work/fase4/revalidacion/resultado.json',{'cola':len(cs),'consultadas':0,'estado':'DIFERIDA_PARA_PRIORIZAR_DESCUBRIMIENTO','presupuesto_independiente':True});return
  fs=[{'id':c['caso_id'],'url':c['url']} for c in cs];root=Path('work/fase4/revalidacion');root.mkdir(parents=True,exist_ok=True)

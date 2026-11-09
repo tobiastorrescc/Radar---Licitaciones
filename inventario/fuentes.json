@@ -3533,5 +3533,75 @@
       "segundos": 1.716,
       "observacion": "Extracción HTML comprobada. Pendientes datos de avisos anteriores; no se presentan como nuevas las convocatorias vencidas."
     }
+  },
+  {
+    "id": "fuente-103",
+    "url": "https://ceres.gob.ar/compras/",
+    "organismo": "Municipalidad de Ceres",
+    "localidad": "Ceres",
+    "provincia": "Santa Fe",
+    "adaptador": "ceres",
+    "incorporada": true,
+    "tipo_portal": "html_documentos",
+    "conector": "publicaciones",
+    "estado_verificacion": "PARCIAL",
+    "verificada_funcionando": false,
+    "solo_descubrimiento": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": false,
+    "descubrir_contrataciones": true,
+    "barrido_institucional": true,
+    "buscador_institucional": true,
+    "admitir_avisos_sin_numero": true,
+    "capturar_respuestas": true,
+    "tiempo_maximo_fuente_segundos": 45,
+    "documentos_para_descubrimiento": true,
+    "resolver_numero_documental": true,
+    "evidencia_verificacion": {
+      "github_run_id": 42617716565,
+      "publicaciones_detectadas": 8,
+      "recepcion_vigente_comprobada": 1,
+      "estado_real": "Extracción comprobada; navegación parcial, no cobertura completa",
+      "fecha": "2026-11-09"
+    },
+    "evidencia_descubrimiento": {
+      "url": "https://ceres.gob.ar/compras/",
+      "metodo": "Listado institucional y navegación nativa en GitHub Actions con capturas y documentos oficiales"
+    }
+  },
+  {
+    "id": "fuente-104",
+    "url": "https://mariateresa.gob.ar/",
+    "organismo": "Comuna de María Teresa",
+    "localidad": "María Teresa",
+    "provincia": "Santa Fe",
+    "adaptador": "comuna-cms",
+    "incorporada": true,
+    "tipo_portal": "noticias_comunales_html",
+    "conector": "publicaciones",
+    "estado_verificacion": "PARCIAL",
+    "verificada_funcionando": false,
+    "solo_descubrimiento": true,
+    "lectura_adjuntos": "necesarios",
+    "ocr": false,
+    "descubrir_contrataciones": true,
+    "barrido_institucional": true,
+    "buscador_institucional": true,
+    "admitir_avisos_sin_numero": true,
+    "capturar_respuestas": true,
+    "tiempo_maximo_fuente_segundos": 45,
+    "documentos_para_descubrimiento": false,
+    "resolver_numero_documental": false,
+    "evidencia_verificacion": {
+      "github_run_id": 42619310716,
+      "publicaciones_detectadas": 16,
+      "recepcion_vigente_comprobada": 1,
+      "estado_real": "Extracción comprobada; navegación parcial, no cobertura completa",
+      "fecha": "2026-11-09"
+    },
+    "evidencia_descubrimiento": {
+      "url": "https://mariateresa.gob.ar/",
+      "metodo": "Listado institucional y navegación nativa en GitHub Actions con capturas y documentos oficiales"
+    }
   }
 ]

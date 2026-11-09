@@ -58,3 +58,38 @@ class ComunaSinNumero(unittest.TestCase):
   url='https://mariateresa.gob.ar/index.php?idp=859&pagina=detalle'
   r,=extractores.extraer(Path('tests/fixtures/fase4_mariateresa_cajas.html').read_text(),url,{'adaptador':'comuna-cms'})[0]
   n=o.normalizar(r,'2026-11-09T10:00:00-03:00');self.assertIsNone(n['numero_procedimiento']);self.assertEqual(n['fecha_publicacion'],'2026-10-26');self.assertIn('200',n['objeto']);self.assertTrue(presentacion(n,'2026-11-09T10:00:00-03:00')['presentacion_verificada']);self.assertFalse(presentacion(n,'2026-11-10T11:01:00-03:00')['presentacion_verificada'])
+
+class IdentidadSinNumero(unittest.TestCase):
+ def test_la_misma_ficha_comunal_en_dos_fuentes_no_duplica(self):
+  from pathlib import Path
+  import extractores,oportunidades as o
+  html=Path('tests/fixtures/fase4_mariateresa_cajas.html').read_text()
+  a,=extractores.extraer(html,'https://mariateresa.gob.ar/index.php?idp=859&pagina=detalle',{'adaptador':'comuna-cms'})[0]
+  b,=extractores.extraer(html,'https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859',{'adaptador':'comuna-cms'})[0]
+  m={'organismo':'Comuna de María Teresa','provincia':'Santa Fe'}
+  self.assertEqual(o.identidad({**m,**a,'fuente':'https://mariateresa.gob.ar/'}),o.identidad({**m,**b,'fuente':b['url']}))
+
+class RevalidacionDiferida(unittest.TestCase):
+ def test_no_depende_de_directorio_preexistente(self):
+  import tempfile,os,json
+  from pathlib import Path
+  from tools.fase4_revalidar import main
+  cwd=Path.cwd()
+  with tempfile.TemporaryDirectory() as tmp:
+   try:
+    os.chdir(tmp)
+    for d in ('tools','informes/2026-11-09-fase3','inventario'):Path(d).mkdir(parents=True,exist_ok=True)
+    Path('tools/plan_fase4.json').write_text(json.dumps({'revalidar':False}))
+    Path('informes/2026-11-09-fase3/119_pendientes.csv').write_text('caso_id\npendiente\n')
+    Path('inventario/revalidacion_fase3.json').write_text(json.dumps({'casos':[{'caso_id':'pendiente'}]}))
+    main()
+    d=json.loads(Path('work/fase4/revalidacion/resultado.json').read_text())
+    self.assertEqual(d['cola'],1);self.assertEqual(d['consultadas'],0)
+   finally:os.chdir(cwd)
+
+class ObjetoCeres(unittest.TestCase):
+ def test_venta_municipal_no_se_confunde_con_compra_a_proveedores(self):
+  from fuentes_fase4 import refinar_ceres,naturaleza_convocatoria
+  r=refinar_ceres({'objeto':'Cabecera\nOBJETO: Venta y Adjudicación de Tres (3) lotes de propiedad municipal.\n\nPLAZO PARA ENTREGA DE SOBRES: 17/11/2026'})
+  self.assertEqual(r['objeto'],'Venta y Adjudicación de Tres (3) lotes de propiedad municipal.')
+  self.assertIn('PLAZO',r['texto_documento']);self.assertEqual(naturaleza_convocatoria(r),'VENTA_BIENES_PUBLICOS')

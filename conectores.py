@@ -303,6 +303,9 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
     modo=config.get('lectura_adjuntos','todos')
     semillas_listado={u for u,c,_ in pending if c=='LISTADO'}
     def snapshot(fase,actual=None,finalizado=False):
+        if config.get('adaptador')=='ceres':
+            from fuentes_fase4 import refinar_ceres
+            for k,v in list(items.items()):items[k]=refinar_ceres(v)
         r={'oportunidades':list(items.values()),'errores':list(errors),'limites':list(limits),
            'paginas_visitadas':len(seen),'paginas_correctas':correctas,'documentos_leidos':documentos_leidos,
            'cobertura_completa':False,'fase':fase,'url_actual':actual,'finalizado':finalizado,
