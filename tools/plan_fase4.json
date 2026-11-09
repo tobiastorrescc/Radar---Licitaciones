@@ -1,15 +1,13 @@
 {
-  "etapa": "control-maria-teresa-y-secciones-institucionales",
-  "descubrimiento_segundos": 220,
+  "etapa": "avisos-sin-numero-en-noticias-comunales",
+  "descubrimiento_segundos": 160,
   "revalidacion_segundos": 60,
-  "busquedas": 4,
-  "candidatas_por_lote": 6,
+  "busquedas": 1,
+  "candidatas_por_lote": 3,
   "priorizar_urls": [
-    "https://mariateresa.gob.ar/index.php?idp=859&pagina=detalle",
     "https://mariateresa.gob.ar/",
-    "https://eltrebol.gov.ar/licitaciones-y-contrataciones/",
-    "https://eltrebol.gov.ar/tipo_licitaciones/licitacion-publica/",
-    "https://ceres.gob.ar/compras/",
-    "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica"
-  ]
+    "https://mariateresa.gob.ar/index.php?idp=859&pagina=detalle",
+    "https://mariateresa.gob.ar/index.php?pagina=lista&sec=270"
+  ],
+  "revalidar": false
 }

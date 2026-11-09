@@ -24,6 +24,14 @@ jobs:
         timeout-minutes: 2
         run: |
           if ! command -v pdftotext; then sudo apt-get -o Acquire::Retries=0 -o Acquire::http::Timeout=8 install -y --no-install-recommends poppler-utils; fi
+      - name: Reutilizar caché documental sin descargar ni convertir de nuevo lo que no cambió
+        uses: actions/cache@v4
+        with:
+          path: work/cache-documentos
+          key: fase4-textos-${{ github.run_id }}
+          restore-keys: |
+            fase4-textos-
+            textos-v1-
       - name: Descubrir y verificar sin revalidación secundaria
         run: python -u tools/fase4_descubrir.py
       - uses: actions/upload-artifact@v4

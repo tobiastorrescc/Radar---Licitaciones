@@ -180,7 +180,9 @@ def worker(entrada,salida):
             return capturar(u,transporte(u))
         def progreso(r):guardar(salida,{**r,'identidad':identidad,'config':config,'finalizado':False})
         resultado=conectores.explorar(url,config,fetch=fetch,progreso=progreso)
-        guardar(salida,{**resultado,'config':config,'validacion':aceptacion(resultado,identidad),'finalizado':True})
+        validacion=aceptacion(resultado,identidad)
+        if c.get('solo_control'):validacion={**validacion,'estado':'PENDIENTE','motivo':'Ficha individual de control; no se incorpora como portal reutilizable'}
+        guardar(salida,{**resultado,'config':config,'validacion':validacion,'finalizado':True})
     except Exception as e:
         guardar(salida,{'estado':'PENDIENTE','finalizado':True,'oportunidades':[],
             'errores':[conectores.clasificar_error(e,'DESCARGA')],
@@ -293,7 +295,7 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_
                 key='contraste-'+sha256((c['url']+'|'+c['organismo']).encode()).hexdigest()[:20]
                 estado['candidatos'].setdefault(key,{**c,'id':'auto-'+key,'origen':'HISTORIAL_GIT' if semillas_path.name=='candidatas_historia.json' else 'INVESTIGACION_AGENTE',
                     'fecha_descubrimiento':fecha,'validacion':{'estado':'PENDIENTE','motivo':c.get('motivo_previo')}})
-                if semillas_path.name=='fase4_semillas.json':estado['candidatos'][key].update({k:v for k,v in c.items() if k in ('identidad_url','config_publica')})
+                if semillas_path.name=='fase4_semillas.json':estado['candidatos'][key].update({k:v for k,v in c.items() if k in ('identidad_url','config_publica','solo_control')})
     lote=seleccionar_validaciones(estado['candidatos'].values(),existentes,auto,candidatos,revisar_pendientes,priorizar_urls)
     limite=max(1,total-(time.monotonic()-inicio)-3)
     entradas=raiz/'entradas';entradas.mkdir(exist_ok=True)

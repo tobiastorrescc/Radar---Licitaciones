@@ -49,3 +49,12 @@ class NoticiasNoSonPortales(unittest.TestCase):
   from tools.descubrir_fuentes import seleccionar_validaciones
   c={'id':'falso','tipo':'TERRITORIAL','localidad':'Arrecifes','provincia':'Buenos Aires','url':'https://arrecifes.gob.ar/felicitaciones-titan/'}
   self.assertEqual(seleccionar_validaciones([c],set(),{},10,True),[])
+
+class ComunaSinNumero(unittest.TestCase):
+ def test_cajas_de_maria_teresa_no_necesita_numero_ni_pliego(self):
+  from pathlib import Path
+  import extractores,oportunidades as o
+  from calidad_comercial import presentacion
+  url='https://mariateresa.gob.ar/index.php?idp=859&pagina=detalle'
+  r,=extractores.extraer(Path('tests/fixtures/fase4_mariateresa_cajas.html').read_text(),url,{'adaptador':'comuna-cms'})[0]
+  n=o.normalizar(r,'2026-11-09T10:00:00-03:00');self.assertIsNone(n['numero_procedimiento']);self.assertEqual(n['fecha_publicacion'],'2026-10-26');self.assertIn('200',n['objeto']);self.assertTrue(presentacion(n,'2026-11-09T10:00:00-03:00')['presentacion_verificada']);self.assertFalse(presentacion(n,'2026-11-10T11:01:00-03:00')['presentacion_verificada'])

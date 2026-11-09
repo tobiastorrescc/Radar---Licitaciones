@@ -167,7 +167,10 @@
       "provincia": "Santa Fe",
       "url": "https://mariateresa.gob.ar/",
       "evidencia_descubrimiento": "https://mariateresa.gob.ar/",
-      "motivo_previo": "Menú institucional y aviso de 200 cajas navideñas, recepción 10/11/2026 11:00 observada externamente. Pendiente extracción nativa, no alta operativa."
+      "motivo_previo": "Menú institucional y aviso de 200 cajas navideñas, recepción 10/11/2026 11:00 observada externamente. Pendiente extracción nativa, no alta operativa.",
+      "config_publica": {
+        "adaptador": "comuna-cms"
+      }
     },
     {
       "tipo": "TERRITORIAL",
@@ -176,7 +179,10 @@
       "provincia": "Santa Fe",
       "url": "https://mariateresa.gob.ar/index.php?pagina=lista&sec=270",
       "evidencia_descubrimiento": "https://mariateresa.gob.ar/",
-      "motivo_previo": "Menú institucional y aviso de 200 cajas navideñas, recepción 10/11/2026 11:00 observada externamente. Pendiente extracción nativa, no alta operativa."
+      "motivo_previo": "Menú institucional y aviso de 200 cajas navideñas, recepción 10/11/2026 11:00 observada externamente. Pendiente extracción nativa, no alta operativa.",
+      "config_publica": {
+        "adaptador": "comuna-cms"
+      }
     },
     {
       "tipo": "TERRITORIAL",
@@ -185,7 +191,11 @@
       "provincia": "Santa Fe",
       "url": "https://mariateresa.gob.ar/index.php?idp=859&pagina=detalle",
       "evidencia_descubrimiento": "https://mariateresa.gob.ar/",
-      "motivo_previo": "Menú institucional y aviso de 200 cajas navideñas, recepción 10/11/2026 11:00 observada externamente. Pendiente extracción nativa, no alta operativa."
+      "motivo_previo": "Menú institucional y aviso de 200 cajas navideñas, recepción 10/11/2026 11:00 observada externamente. Pendiente extracción nativa, no alta operativa.",
+      "config_publica": {
+        "adaptador": "comuna-cms"
+      },
+      "solo_control": true
     }
   ],
   "fecha": "2026-11-09",
