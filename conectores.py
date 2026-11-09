@@ -639,7 +639,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                           bool(re.search(r'/page/\d+|[?&](?:page|pagina|paged|start)=\d+',destino))) and any(path.startswith(raiz) for raiz in raices))
                 navegar=any(re.search(patron,destino) for patron in config.get('seguir_patrones',[]))
                 if config.get('descubrir_contrataciones') and clase=='LISTADO' and len(et)<120 and not extractores.procesos(et):
-                    navegar=navegar or bool(re.search(r'licitacion(?:es)?|concursos? de precios|compras|contrataciones|bolet(?:in|ines) oficial(?:es)?',et))
+                    navegar=navegar or bool(re.search(r'\b(?:licitacion(?:es)?|concursos? de precios|compras|contrataciones|bolet(?:in|ines) oficial(?:es)?)\b',et))
                 if config.get('barrido_institucional') and clase=='LISTADO' and len(et)<120:
                     navegar=navegar or bool(re.fullmatch(r'(?:todas? las? )?(?:noticias|novedades|boletines?(?: oficiales?)?|decretos|resoluciones|publicaciones administrativas|transparencia|gobierno abierto|cuentas claras|informacion publica|normativa municipal|digesto municipal)',et))
                 if config.get('adaptador')=='rosario' and path.endswith('/result-busq-compras-licitaciones') and 'verTipo=' in urlparse(destino).query:

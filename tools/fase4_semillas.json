@@ -159,6 +159,33 @@
       "url": "https://www.minfra.gba.gob.ar/licitacionesV2/",
       "evidencia_descubrimiento": "https://www.minfra.gba.gob.ar/licitacionesV2/",
       "motivo_previo": "Requiere filtro municipal dentro del alcance; sin alta automática sectorial genérica."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Comuna de María Teresa",
+      "localidad": "María Teresa",
+      "provincia": "Santa Fe",
+      "url": "https://mariateresa.gob.ar/",
+      "evidencia_descubrimiento": "https://mariateresa.gob.ar/",
+      "motivo_previo": "Menú institucional y aviso de 200 cajas navideñas, recepción 10/11/2026 11:00 observada externamente. Pendiente extracción nativa, no alta operativa."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Comuna de María Teresa",
+      "localidad": "María Teresa",
+      "provincia": "Santa Fe",
+      "url": "https://mariateresa.gob.ar/index.php?pagina=lista&sec=270",
+      "evidencia_descubrimiento": "https://mariateresa.gob.ar/",
+      "motivo_previo": "Menú institucional y aviso de 200 cajas navideñas, recepción 10/11/2026 11:00 observada externamente. Pendiente extracción nativa, no alta operativa."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Comuna de María Teresa",
+      "localidad": "María Teresa",
+      "provincia": "Santa Fe",
+      "url": "https://mariateresa.gob.ar/index.php?idp=859&pagina=detalle",
+      "evidencia_descubrimiento": "https://mariateresa.gob.ar/",
+      "motivo_previo": "Menú institucional y aviso de 200 cajas navideñas, recepción 10/11/2026 11:00 observada externamente. Pendiente extracción nativa, no alta operativa."
     }
   ],
   "fecha": "2026-11-09",

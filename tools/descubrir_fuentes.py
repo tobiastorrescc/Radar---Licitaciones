@@ -146,7 +146,13 @@ def worker(entrada,salida):
             if oficial(raiz) and (host(final)==host(raiz) or host(final).endswith('.'+host(raiz))):
                 try:
                     rb,rt,rf=conectores.descargar(raiz,conexion_timeout=4,lectura_timeout=6)
-                    ident=verificar_identidad(conectores.decodificar_html(rb,rt),rf,c)
+                    rh=conectores.decodificar_html(rb,rt);ident=verificar_identidad(rh,rf,c)
+                    if not ident['verificada']:
+                        ubicaciones=[l['url'] for l in extractores.DOM(rh).root.enlaces(rf) if host(l['url'])==host(rf) and re.search(r'ubicacion|como llegar|contacto',o.norm(l['texto']))]
+                        for enlace in list(dict.fromkeys(ubicaciones))[:2]:
+                            ub,ut,uf=conectores.descargar(enlace,conexion_timeout=3,lectura_timeout=4)
+                            candidata=verificar_identidad(conectores.decodificar_html(ub,ut),uf,c)
+                            if candidata['verificada']:ident=candidata;rb=ub;rf=uf;break
                     if ident['verificada'] and (host(final)==host(rf) or host(final).endswith('.'+host(rf))):
                         identidad={**ident,'url':final,'sha256':sha256(html.encode()).hexdigest(),'evidencia_raiz':{'url':rf,'sha256':sha256(rb).hexdigest(),'criterio':'IDENTIDAD_PUBLICADA_EN_RAIZ_OFICIAL_MISMO_ORGANISMO'}}
                 except Exception:pass # Incidencia de identidad conserva la sección pendiente, nunca valida por HTTP.
@@ -188,7 +194,7 @@ def worker_busqueda(entrada,salida):
         if q.get('metodo')=='ENLACES_OFICIALES':
             dom=extractores.DOM(conectores.decodificar_html(datos,'text/html'))
             resultados=[{'url':l['url'],'titulo':l['texto'],'evidencia_enlace':url} for l in dom.root.enlaces(url)
-                if l['tag']=='a' and host(l['url'])==host(url) and re.search(r'licitaciones|compras|contrataciones|concursos|boletin',o.norm(l['texto'])+' '+l['url']) and l['url']!=url]
+                if l['tag']=='a' and host(l['url'])==host(url) and re.search(r'\b(?:licitaciones|compras|contrataciones|concursos|boletin)\b',o.norm(l['texto'])+' '+l['url']) and l['url']!=url]
         else:
             resultados=rss(datos)
             if not resultados:
@@ -224,6 +230,7 @@ def contar_portales(candidatos):
 def seleccionar_validaciones(candidatos,existentes,auto,limite,revisar_pendientes=False,priorizar_urls=()):
     por_url={}
     for c in candidatos:
+        if re.search(r'\bfelicitaciones\b',o.norm(c['url'])):continue
         if c.get('busqueda_url') and not resultado_pertinente(c,c):continue
         if c['url'] in existentes and c['url'] not in auto:continue
         vencida=c.get('version_verificador')!=4 or not c.get('ultima_revision') or datetime.fromisoformat(c['ultima_revision'])<datetime.now(timezone.utc)-timedelta(days=7)
@@ -294,6 +301,13 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_
     informe=ejecutar(lote,raiz/'verificacion.json',concurrencia=3,por_fuente=35,total=limite,
         comando=lambda f,path:[sys.executable,__file__,'--worker',str(entradas/(f['id']+'.json')),'--salida',str(path)],emitir=lambda s:print('DESCUBRIMIENTO '+s,flush=True))
     registro=json.loads(auto_path.read_text()) if auto_path.exists() else {'schema_version':1,'fuentes':[]}
+    # Una noticia de felicitaciones no es un portal de compras: no inferirlo
+    # por el fragmento textual 'licitaciones' contenido dentro de esa palabra.
+    retiradas=[f for f in registro['fuentes'] if re.search(r'\bfelicitaciones\b',o.norm(f['url']))]
+    registro['fuentes']=[f for f in registro['fuentes'] if f not in retiradas]
+    for f in retiradas:
+        for c in estado['candidatos'].values():
+            if c['url']==f['url']:c['validacion']={'estado':'PENDIENTE','motivo':'RUTA_DE_NOTICIA_AJENA_A_CONTRATACIONES; extracción provenía de menús globales','identidad_verificada':True,'procedimientos_con_objeto':0}
     validadas=set()
     por_id={c['id']:c for c in estado['candidatos'].values()}
     for obs in informe['observaciones']:

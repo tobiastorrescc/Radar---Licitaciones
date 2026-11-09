@@ -43,3 +43,9 @@ class CasosRealesFase4(unittest.TestCase):
   from tools.descubrir_fuentes import verificar_identidad
   c={'tipo':'TERRITORIAL','organismo':'Municipalidad de Larroque','localidad':'Larroque','provincia':'Entre Ríos'}
   self.assertTrue(verificar_identidad('<title>Larroque :: Gobierno Abierto</title><footer>Municipalidad de Larroque. Entre Ríos</footer>','https://larroque.gob.ar/',c)['verificada'])
+
+class NoticiasNoSonPortales(unittest.TestCase):
+ def test_felicitaciones_titan_no_reingresa_como_fuente(self):
+  from tools.descubrir_fuentes import seleccionar_validaciones
+  c={'id':'falso','tipo':'TERRITORIAL','localidad':'Arrecifes','provincia':'Buenos Aires','url':'https://arrecifes.gob.ar/felicitaciones-titan/'}
+  self.assertEqual(seleccionar_validaciones([c],set(),{},10,True),[])

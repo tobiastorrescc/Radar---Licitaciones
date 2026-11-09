@@ -1,7 +1,15 @@
 {
-  "etapa": "identidad-en-raiz-y-tarjetas-documentales-oficiales",
-  "descubrimiento_segundos": 360,
+  "etapa": "control-maria-teresa-y-secciones-institucionales",
+  "descubrimiento_segundos": 220,
   "revalidacion_segundos": 60,
-  "busquedas": 24,
-  "candidatas_por_lote": 26
+  "busquedas": 4,
+  "candidatas_por_lote": 6,
+  "priorizar_urls": [
+    "https://mariateresa.gob.ar/index.php?idp=859&pagina=detalle",
+    "https://mariateresa.gob.ar/",
+    "https://eltrebol.gov.ar/licitaciones-y-contrataciones/",
+    "https://eltrebol.gov.ar/tipo_licitaciones/licitacion-publica/",
+    "https://ceres.gob.ar/compras/",
+    "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica"
+  ]
 }
