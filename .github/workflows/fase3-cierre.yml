@@ -1,0 +1,65 @@
+name: Fase 3 cierre comercial y continuidad aislada
+on:
+  push:
+    branches: [mejora/radar-auditable]
+    paths: [tools/plan_fase3_cierre.json]
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: fase3-cierre-aislado
+  cancel-in-progress: false
+jobs:
+  comparar:
+    if: github.ref == 'refs/heads/mejora/radar-auditable'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Descargar sólo capturas del propio repositorio y rama
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs=require('fs'),cp=require('child_process');
+            const p=JSON.parse(fs.readFileSync('tools/plan_fase3_cierre.json'));
+            for(const id of [...new Set([p.barrido,p.revalidacion,p.candidatas,...(p.extras||[])])]){
+              const {data:r}=await github.rest.actions.getWorkflowRun({...context.repo,run_id:id});
+              if(r.head_branch!=='mejora/radar-auditable'||r.head_repository.full_name!==`${context.repo.owner}/${context.repo.repo}`||!['.github/workflows/fase2-cobertura.yml','.github/workflows/fase3-validacion.yml'].includes(r.path))throw Error('Origen no autorizado');
+              const jobs=await github.paginate(github.rest.actions.listJobsForWorkflowRun,{...context.repo,run_id:id});
+              for(const a of await github.paginate(github.rest.actions.listWorkflowRunArtifacts,{...context.repo,run_id:id})){
+                if(!/^fase[23]-\d+-(?:[0-3]|revalidar|criticas|candidatas)$/.test(a.name))continue;
+                if(id===p.candidatas&&a.name.endsWith('-revalidar'))continue;
+                const nombre=a.name.match(/-(revalidar|criticas|candidatas)$/)?.[1];
+                const job=jobs.find(j=>nombre?j.name===`revisar (${nombre})`:j.name===`barrer (${a.name.slice(-1)})`);
+                if(!job||job.conclusion!=='success')throw Error('Captura de tarea incompleta: '+a.name);
+                if(a.size_in_bytes>80000000)throw Error('Artefacto excede presupuesto');
+                const {data}=await github.rest.actions.downloadArtifact({...context.repo,artifact_id:a.id,archive_format:'zip'});
+                const d=`work/fase3-cierre/capturas/${id}`;fs.mkdirSync(d,{recursive:true});const z=d+'/'+a.id+'.zip';fs.writeFileSync(z,Buffer.from(data));cp.execFileSync('unzip',['-q','-o',z,'-d',d]);fs.unlinkSync(z);
+              }
+            }
+      - name: Releer documentos ya descargados sin red ni OCR
+        env:
+          FASE3_SIN_RED: '1'
+        run: |
+          python - <<'PYCACHE'
+          import json,shutil
+          from pathlib import Path
+          p=json.load(open('tools/plan_fase3_cierre.json'))
+          src=Path('work/fase3-cierre/capturas')/str(p['revalidacion'])/'revalidacion/cache'
+          shutil.copytree(src,'work/fase3/revalidacion/cache')
+          PYCACHE
+          python -u tools/fase3_revalidar.py
+      - name: Contrastar con copia del historial y segunda pasada
+        run: python -u tools/fase3_cerrar.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fase3-cierre-${{ github.run_id }}
+          path: |
+            work/fase3-cierre/*.json
+            work/fase3-cierre/comercial/
+            work/fase3/revalidacion/resultado.json
+          retention-days: 90

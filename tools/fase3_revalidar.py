@@ -22,6 +22,7 @@ def obtener(url):
             m=json.load(open(meta))
             if 'error' in m:raise ValueError(m['error'])
             return p.with_suffix('.bin').read_bytes(),m
+        if os.environ.get('FASE3_SIN_RED')=='1':raise ValueError('No hay captura reutilizable; no se repite consulta')
         start=time.monotonic()
         try:
             b,t,u,s=conectores.descargar(url,conexion_timeout=4,lectura_timeout=7,devolver_estado=True,max_bytes=8_000_000)
@@ -58,12 +59,12 @@ def worker(caso,path):
     rs=[o.normalizar(r,ahora) for r in rs];r=elegir(caso,rs)
     if not r:
         guardar(path,{'estado':'PENDIENTE','finalizado':True,'paginas_correctas':1,'oportunidades':[],'errores':[{'tipo':'ProcedimientoNoIdentificado','timeout':False,'categoria':'EXTRACCION','error':'No se identificó inequívocamente el mismo procedimiento; no se heredan fechas de otra convocatoria'}],'caso_id':caso['caso_id'],'evidencias':evidencias});return
-    r={**caso,**r,'observada_esta_corrida':True,'requiere_revalidacion':False,'evidencia_captura':m}
+    r={**{k:caso.get(k) for k in ('organismo','localidad','provincia','fuente','caso_id')},**r,'observada_esta_corrida':True,'requiere_revalidacion':False,'evidencia_captura':m}
     # En ediciones colectivas sólo el aviso identificado, nunca texto de otros avisos.
     texto_aviso=r.get('texto_documento') or r.get('objeto') or ''
     if len(rs)==1 and html: texto_aviso=texto
     r.update(clausula(texto_aviso,r,url,m['sha256']))
-    docs=r.get('documentos') or caso.get('documentos') or []
+    docs=r.get('documentos') or []
     if r.get('enlace_pliego') and not docs:docs=[{'url':r['enlace_pliego'],'titulo':'Pliego'}]
     pendientes=[]
     for d in docs[:4]:
@@ -88,7 +89,7 @@ def main():
     if a.worker:
         caso=next(r for r in casos if r['caso_id']==a.worker)
         try:worker(caso,a.checkpoint)
-        except Exception as e:guardar(a.checkpoint,{'estado':'ERROR_ACCESO','finalizado':True,'paginas_correctas':0,'oportunidades':[],'errores':[conectores.clasificar_error(e,'RED')],'caso_id':a.worker})
+        except Exception as e:guardar(a.checkpoint,{'estado':'ERROR_ACCESO','finalizado':True,'paginas_correctas':0,'oportunidades':[],'errores':[conectores.clasificar_error(e,'DESCARGA')],'caso_id':a.worker})
         return
     ROOT.mkdir(parents=True,exist_ok=True)
     casos.sort(key=lambda r:r.get('fecha_apertura') or '9999')
@@ -98,5 +99,5 @@ def main():
     for obs in informe['observaciones']:
         c=next(r for r in casos if r['caso_id']==obs['id']);q=Path(obs.get('resultado_archivo',''));d=json.load(open(q)) if q.is_file() else {};rs=d.get('oportunidades',[])
         salida.append({'caso_id':c['caso_id'],'original':c,'resultado':rs[0] if rs else None,'estado_acceso':obs['estado'],'errores':d.get('errores',obs['errores']),'evidencias':d.get('evidencias',[]),'segundos':obs.get('duracion_segundos')})
-    guardar(ROOT/'resultado.json',{'fecha':informe['actualizado'],'run':os.environ.get('GITHUB_RUN_ID'),'casos':salida,'segundos':informe['duracion_segundos'],'ocr_nuevo':0})
+    guardar(ROOT/'resultado.json',{'fecha':informe['actualizado'],'run':os.environ.get('GITHUB_RUN_ID'),'casos':salida,'segundos':informe['duracion_segundos'],'ocr_nuevo':0,'metodo':'RELECTURA_CAPTURAS_SIN_RED' if os.environ.get('FASE3_SIN_RED')=='1' else 'CONSULTA_OFICIAL_EN_ACTIONS'})
 if __name__=='__main__':main()

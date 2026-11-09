@@ -39,7 +39,7 @@ def main():
     s['estado']='REVISADA_CON_RESULTADOS';registros +=[o.normalizar({**{k:fs[id].get(k) for k in ('organismo','localidad','provincia')},**r,'fuente':fs[id]['url']},datetime.now(o.ZONA)) for r in rs]
    s['convocatorias']=len(rs)
    (root/(id+'.html')).write_bytes(b)
-  except Exception as e:s['error']=conectores.clasificar_error(e,'RED')
+  except Exception as e:s['error']=conectores.clasificar_error(e,'DESCARGA')
   s['segundos']=round(time.monotonic()-start,3);audit.append(s);guardar(root/'resultado.json',{'fecha':datetime.now(o.ZONA).isoformat(),'run':os.environ.get('GITHUB_RUN_ID'),'fuentes':audit,'registros':registros,'segundos':round(time.monotonic()-inicio,3),'alternativa':'Importador CSV/HTML/PDF oficial; nunca falla=sin novedades','tls_verificado':True,'ocr_nuevo':0});print(json.dumps(s,ensure_ascii=False),flush=True)
  # Bandeja del usuario: el código ya valida dominio, huella, fecha y procedencia.
  rs,im=a.importar(root/'importacion','entradas_oficiales',total=45)
