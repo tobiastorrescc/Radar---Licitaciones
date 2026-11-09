@@ -1,0 +1,54 @@
+{
+  "fecha": "2026-11-08T22:26:08.724083-03:00",
+  "runs": {
+    "barrido": 42543122865,
+    "revalidacion": 42543677143,
+    "candidatas": 42543506680,
+    "altas": {
+      "fase3-001": "fuente-102"
+    },
+    "extras": [
+      42544649973
+    ],
+    "etapa": "cierre-final-sin-herencia-entre-avisos-colectivos",
+    "altas_run": 42544649973
+  },
+  "antes": {
+    "fuentes_consultadas": 94,
+    "PARCIAL": 30,
+    "INACCESIBLE": 15,
+    "PENDIENTE": 7,
+    "OPERATIVA": 42,
+    "procedimientos": 6112,
+    "apertura_futura_documental": 138,
+    "recepcion_vigente_comprobada": 19
+  },
+  "despues": {
+    "fuentes_consultadas": 94,
+    "PARCIAL": 30,
+    "INACCESIBLE": 15,
+    "PENDIENTE": 7,
+    "OPERATIVA": 42,
+    "procedimientos": 6150,
+    "apertura_futura_documental": 144,
+    "recepcion_vigente_comprobada": 26
+  },
+  "pendientes_119": {
+    "INCIERTA": 112,
+    "VIGENTE_CONFIRMADA": 7
+  },
+  "recuperadas_vigentes": 7,
+  "publicaciones_nuevas_vigentes": 0,
+  "eventos_primera": {
+    "SIN_CAMBIOS": 6051,
+    "DATOS_COMPLETADOS": 21,
+    "MODIFICADO": 39,
+    "RECUPERACION_LINEA_BASE": 30,
+    "NUEVA_DETECCION_FECHA_DESCONOCIDA": 3
+  },
+  "segunda_novedades": 0,
+  "segunda_eventos": 0,
+  "repeticion_correcta": true,
+  "protegidos_intactos": true,
+  "ocr_nuevo": 0
+}

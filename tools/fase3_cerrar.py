@@ -21,7 +21,7 @@ def main():
  if len({f['id'] for f in fs})!=93:raise ValueError('No se consultaron las 93 fuentes de partida')
  reval=Path('work/fase3/revalidacion/resultado.json');v=json.load(open(reval));fechas.append(v['fecha'])
  if len(v['casos'])!=119:raise ValueError('Faltan controles individuales')
- fecha=max(fechas);base={'fecha':fecha,'fuentes':fs,'observaciones':observaciones,'registros':o.deduplicar(rs,fecha)};guardar(ROOT/'antes.json',base)
+ fecha=max(fechas);base={'fecha':fecha,'fuentes':list(fs),'observaciones':list(observaciones),'registros':o.deduplicar(rs,fecha)};guardar(ROOT/'antes.json',base)
  casos=[];actuales=[]
  for caso in v['casos']:
   r=caso['resultado'];estado='INCIERTA';evidencia=None

@@ -1,0 +1,378 @@
+[
+  {
+    "run": 42543506680,
+    "id_candidata": "fase3-001",
+    "fuente_incorporada": null,
+    "organismo": "Universidad Tecnológica Nacional — Facultad Regional Paraná",
+    "provincia": "Entre Ríos",
+    "localidad": "Paraná",
+    "url": "https://www.frp.utn.edu.ar/info2/?page_id=32743",
+    "estado_extraccion": "BLOQUEADA",
+    "publicaciones_detectadas": 0,
+    "incorporada": false,
+    "segundos": 1.779,
+    "errores": [
+      {
+        "url": "https://www.frp.utn.edu.ar/info2/?page_id=32743",
+        "tipo": "URLError",
+        "categoria": "RED",
+        "timeout": false,
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>",
+        "causa": "ERROR_CERTIFICADO_TLS",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ]
+  },
+  {
+    "run": 42543506680,
+    "id_candidata": "fase3-002",
+    "fuente_incorporada": null,
+    "organismo": "Universidad Autónoma de Entre Ríos",
+    "provincia": "Entre Ríos",
+    "localidad": "Paraná",
+    "url": "https://uader.edu.ar/novedades/licitaciones-publicas",
+    "estado_extraccion": "PENDIENTE",
+    "publicaciones_detectadas": 0,
+    "incorporada": false,
+    "segundos": 1.319,
+    "errores": [
+      {
+        "url": "https://uader.edu.ar/novedades/licitaciones-publicas",
+        "tipo": "SinPublicacionesDetectadas",
+        "categoria": "EXTRACCION",
+        "timeout": false,
+        "error": "Listado no reconocido; no se declara vacío"
+      }
+    ]
+  },
+  {
+    "run": 42543506680,
+    "id_candidata": "fase3-003",
+    "fuente_incorporada": null,
+    "organismo": "Municipalidad de Ramallo",
+    "provincia": "Buenos Aires",
+    "localidad": "Ramallo",
+    "url": "https://www.ramallo.gob.ar/boletines",
+    "estado_extraccion": "PENDIENTE",
+    "publicaciones_detectadas": 0,
+    "incorporada": false,
+    "segundos": 2.082,
+    "errores": [
+      {
+        "url": "https://www.ramallo.gob.ar/boletines",
+        "tipo": "SinPublicacionesDetectadas",
+        "categoria": "EXTRACCION",
+        "timeout": false,
+        "error": "Listado no reconocido; no se declara vacío"
+      }
+    ]
+  },
+  {
+    "run": 42543506680,
+    "id_candidata": "fase3-004",
+    "fuente_incorporada": null,
+    "organismo": "Municipalidad de Ramallo",
+    "provincia": "Buenos Aires",
+    "localidad": "Ramallo",
+    "url": "https://sibom.slyt.gba.gob.ar/cities/102",
+    "estado_extraccion": "TIEMPO_FUENTE",
+    "publicaciones_detectadas": 0,
+    "incorporada": false,
+    "segundos": 45.02,
+    "errores": [
+      {
+        "categoria": "RED",
+        "tipo": "TIEMPO_FUENTE",
+        "timeout": true,
+        "error": "Plazo agotado; se conserva lo extraído",
+        "fase": "DESCARGA"
+      }
+    ]
+  },
+  {
+    "run": 42543506680,
+    "id_candidata": "fase3-005",
+    "fuente_incorporada": null,
+    "organismo": "Municipalidad de Campana",
+    "provincia": "Buenos Aires",
+    "localidad": "Campana",
+    "url": "https://www.campana.gob.ar/compras/",
+    "estado_extraccion": "PENDIENTE",
+    "publicaciones_detectadas": 0,
+    "incorporada": false,
+    "segundos": 0.764,
+    "errores": [
+      {
+        "url": "https://www.campana.gob.ar/compras/",
+        "tipo": "SinPublicacionesDetectadas",
+        "categoria": "EXTRACCION",
+        "timeout": false,
+        "error": "Listado no reconocido; no se declara vacío"
+      }
+    ]
+  },
+  {
+    "run": 42543506680,
+    "id_candidata": "fase3-006",
+    "fuente_incorporada": null,
+    "organismo": "Municipalidad de Chacabuco",
+    "provincia": "Buenos Aires",
+    "localidad": "Chacabuco",
+    "url": "https://chacabuco.gob.ar/licitaciones/",
+    "estado_extraccion": "PARCIAL",
+    "publicaciones_detectadas": 5,
+    "incorporada": false,
+    "segundos": 30.881,
+    "errores": [
+      {
+        "url": "https://chacabuco.gob.ar/wp-content/uploads/tasas/ORDENANZA%20OFICIAL%202024.pdf",
+        "tipo": "ValueError",
+        "categoria": "EXTRACCION",
+        "timeout": false,
+        "error": "PDF sin texto: requiere OCR; no se declara vacío",
+        "causa": "ERROR_EXTRACCION",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ]
+  },
+  {
+    "run": 42543506680,
+    "id_candidata": "fase3-007",
+    "fuente_incorporada": null,
+    "organismo": "Municipalidad de Chacabuco",
+    "provincia": "Buenos Aires",
+    "localidad": "Chacabuco",
+    "url": "https://chacabuco.gob.ar/licitaciones-privadas/",
+    "estado_extraccion": "PARCIAL",
+    "publicaciones_detectadas": 9,
+    "incorporada": false,
+    "segundos": 37.111,
+    "errores": [
+      {
+        "url": "https://chacabuco.gob.ar/wp-content/uploads/tasas/ORDENANZA%20OFICIAL%202024.pdf",
+        "tipo": "ValueError",
+        "categoria": "EXTRACCION",
+        "timeout": false,
+        "error": "PDF sin texto: requiere OCR; no se declara vacío",
+        "causa": "ERROR_EXTRACCION",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ]
+  },
+  {
+    "run": 42543506680,
+    "id_candidata": "fase3-008",
+    "fuente_incorporada": null,
+    "organismo": "Municipalidad de Chacabuco",
+    "provincia": "Buenos Aires",
+    "localidad": "Chacabuco",
+    "url": "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+    "estado_extraccion": "PARCIAL",
+    "publicaciones_detectadas": 9,
+    "incorporada": false,
+    "segundos": 21.024,
+    "errores": [
+      {
+        "url": "https://chacabuco.gob.ar/wp-content/uploads/tasas/ORDENANZA%20OFICIAL%202024.pdf",
+        "tipo": "ValueError",
+        "categoria": "EXTRACCION",
+        "timeout": false,
+        "error": "PDF sin texto: requiere OCR; no se declara vacío",
+        "causa": "ERROR_EXTRACCION",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ]
+  },
+  {
+    "run": 42543506680,
+    "id_candidata": "fase3-009",
+    "fuente_incorporada": null,
+    "organismo": "Municipalidad de General Arenales",
+    "provincia": "Buenos Aires",
+    "localidad": "General Arenales",
+    "url": "https://www.generalarenales.gob.ar/licitaciones",
+    "estado_extraccion": "BLOQUEADA",
+    "publicaciones_detectadas": 0,
+    "incorporada": false,
+    "segundos": 4.551,
+    "errores": [
+      {
+        "url": "https://www.generalarenales.gob.ar/licitaciones",
+        "tipo": "URLError",
+        "categoria": "RED",
+        "timeout": true,
+        "error": "<urlopen error timed out>",
+        "causa": "TIEMPO_ESPERA",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ]
+  },
+  {
+    "run": 42543506680,
+    "id_candidata": "fase3-010",
+    "fuente_incorporada": null,
+    "organismo": "Municipalidad de Capitán Sarmiento",
+    "provincia": "Buenos Aires",
+    "localidad": "Capitán Sarmiento",
+    "url": "https://sibom.slyt.gba.gob.ar/cities/20",
+    "estado_extraccion": "TIEMPO_FUENTE",
+    "publicaciones_detectadas": 0,
+    "incorporada": false,
+    "segundos": 45.029,
+    "errores": [
+      {
+        "categoria": "RED",
+        "tipo": "TIEMPO_FUENTE",
+        "timeout": true,
+        "error": "Plazo agotado; se conserva lo extraído",
+        "fase": "DESCARGA"
+      }
+    ]
+  },
+  {
+    "run": 42543506680,
+    "id_candidata": "fase3-011",
+    "fuente_incorporada": null,
+    "organismo": "Municipalidad de Ramallo",
+    "provincia": "Buenos Aires",
+    "localidad": "Ramallo",
+    "url": "https://ramallo.gob.ar/",
+    "estado_extraccion": "PENDIENTE",
+    "publicaciones_detectadas": 0,
+    "incorporada": false,
+    "segundos": 3.084,
+    "errores": [
+      {
+        "url": "https://ramallo.gob.ar/",
+        "tipo": "SinPublicacionesDetectadas",
+        "categoria": "EXTRACCION",
+        "timeout": false,
+        "error": "Listado no reconocido; no se declara vacío"
+      }
+    ]
+  },
+  {
+    "run": 42543506680,
+    "id_candidata": "fase3-012",
+    "fuente_incorporada": null,
+    "organismo": "Unidad Ejecutora Provincial de Entre Ríos",
+    "provincia": "Entre Ríos",
+    "localidad": null,
+    "url": "https://portal.entrerios.gov.ar/api/public/consulta/uep/licitaciones",
+    "estado_extraccion": "PENDIENTE",
+    "publicaciones_detectadas": 0,
+    "incorporada": false,
+    "segundos": 1.417,
+    "errores": [
+      {
+        "url": "https://portal.entrerios.gov.ar/api/public/consulta/uep/licitaciones",
+        "tipo": "ValueError",
+        "categoria": "EXTRACCION",
+        "timeout": false,
+        "error": "Formato de documento no admitido: application/json",
+        "causa": "ERROR_EXTRACCION",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ]
+  },
+  {
+    "run": 42543506680,
+    "id_candidata": "fase3-013",
+    "fuente_incorporada": null,
+    "organismo": "Municipalidad de San Nicolás",
+    "provincia": "Buenos Aires",
+    "localidad": "San Nicolás",
+    "url": "http://www.sannicolas.gov.ar:8080/portalcompras/",
+    "estado_extraccion": "BLOQUEADA",
+    "publicaciones_detectadas": 0,
+    "incorporada": false,
+    "segundos": 4.612,
+    "errores": [
+      {
+        "url": "http://www.sannicolas.gov.ar:8080/portalcompras/",
+        "tipo": "URLError",
+        "categoria": "RED",
+        "timeout": true,
+        "error": "<urlopen error timed out>",
+        "causa": "TIEMPO_ESPERA",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      }
+    ]
+  },
+  {
+    "run": 42544649973,
+    "id_candidata": "fase3-001",
+    "fuente_incorporada": "fuente-102",
+    "organismo": "Municipalidad de Santa Ana",
+    "provincia": "Entre Ríos",
+    "localidad": "Santa Ana",
+    "url": "https://www.santaana.gob.ar/home/licitaciones/",
+    "estado_extraccion": "PARCIAL",
+    "publicaciones_detectadas": 33,
+    "incorporada": true,
+    "segundos": 1.716,
+    "errores": [
+      {
+        "url": "https://www.santaana.gob.ar/home/licitaciones/",
+        "tipo": "DetalleIncompleto",
+        "categoria": "EXTRACCION",
+        "timeout": false,
+        "error": "Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso",
+        "publicaciones": [
+          "e3a7b77debbf4aae4692f7e753a0a579b64bbd01877337f589c2ecfc65b80de3",
+          "f0624be0fc967d33c63ca3bde917b8a38e0f9b626612274eaed2f484a35f9e06",
+          "f76e1946e536b267a9b14438bae2190af27ab1fad3819cb68137d91eb5ac5414",
+          "ee0f3fb7d313c7dd5d9da5f24db833131aee35fe5d393341bf7dd361a47005d5",
+          "ffa36566fd10d577bef78d1da45bd5ba50eeb934e242d73ebd08e6492a639d6a",
+          "a419ae49e6fff5b0e605941aa97be6a39f33c33e778b4b0853b6f24b5ce78e88",
+          "4587ce53d4ebe5dfa85aaf24aeef9a2a06a5a007a684df10df8fa90efc00c6eb",
+          "81c4d08a2c4f7f1671b08a4564b0e19a538ffdc36b5530e37a37d214acd1af0d",
+          "5528a4a89ff77c572ed19d2ac04ead972e12fe3fad66730c9e2d1f596dcfa483",
+          "333cbf6019ef7b8aa6cfd467ca18553ca684d40256ba268523259c5da3272fdf",
+          "2b9166f8f999d13d15e6a0e1b2de055114948a639beec6c8592491cf2d5dff5b",
+          "5e3acad4260162bc21f97e0902e6fab5fcd8ac9fc28747ce0fb2758be1d54603",
+          "36da28a57fca6fe2b7e49b9e90c8a00c23e168cc72b1d6703f2697aee805d565",
+          "e45a5715542fbb27bcf05138770d4331cb3c433863e74c3f9055c5296b54bbdc",
+          "c8bfc33051758aed57ebb0b7481e16c4d85056d8a8fdd01b8d84ea265a8b1e03",
+          "365bf4ea21221f2a341146ac0be67f11c7cc29fb517fff11ca3f8a3755c876ab",
+          "9347f76b22e1aa0805614506de31b1b203cde670a336fb0719241323999d4851",
+          "129d3b09afeaa6870982d18f01b5eb125d02c524ae0c14323d2461ed1e5d63e3",
+          "485104c99d5e3b358d2dd2b530675a5a4be558585cc360aea9b9161a25d7612c",
+          "71d3a97c9b769d24cc70a556adea4422d3e8d073a1349b2fc29a2e78604b8e43",
+          "ce930b798909a79fb05ea39a870a6944b21f34a2fb20f2ba7b24660eece1c834",
+          "1bc3366ff796747a21b796c859da32da3e753117054333f136062e1bec1e7326",
+          "8cec27312823d63c06aa9814e4d2a26e7ec17e2c05b83114fc4dbc6b8645aae8"
+        ]
+      }
+    ]
+  },
+  {
+    "run": 42544649973,
+    "id_candidata": "fase3-002",
+    "fuente_incorporada": null,
+    "organismo": "Comuna de Fighiera",
+    "provincia": "Santa Fe",
+    "localidad": "Fighiera",
+    "url": "https://comunadefighiera.gob.ar/",
+    "estado_extraccion": "PENDIENTE",
+    "publicaciones_detectadas": 0,
+    "incorporada": false,
+    "segundos": 2.072,
+    "errores": [
+      {
+        "url": "https://comunadefighiera.gob.ar/",
+        "tipo": "SinPublicacionesDetectadas",
+        "categoria": "EXTRACCION",
+        "timeout": false,
+        "error": "Listado no reconocido; no se declara vacío"
+      }
+    ]
+  }
+]

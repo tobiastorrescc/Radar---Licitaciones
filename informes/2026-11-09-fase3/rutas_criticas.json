@@ -1,0 +1,63 @@
+{
+  "fecha": "2026-11-08T22:04:07.349255-03:00",
+  "run": "42543506680",
+  "fuentes": [
+    {
+      "fuente": "fuente-003",
+      "url": "https://epe.santafe.gov.ar/app2/aperturas",
+      "estado": "INACCESIBLE",
+      "convocatorias": 0,
+      "exportaciones_observadas": [],
+      "error": {
+        "tipo": "HTTPError",
+        "categoria": "EXTRACCION",
+        "timeout": false,
+        "error": "HTTP Error 500: Internal Server Error",
+        "http_status": 500,
+        "causa": "ERROR_SERVIDOR_TEMPORAL",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      },
+      "segundos": 0.608
+    },
+    {
+      "fuente": "fuente-087",
+      "url": "https://www.santafe.gob.ar/gestionesdecompras/site/index.php",
+      "estado": "INACCESIBLE",
+      "convocatorias": 0,
+      "exportaciones_observadas": [],
+      "error": {
+        "tipo": "URLError",
+        "categoria": "EXTRACCION",
+        "timeout": true,
+        "error": "<urlopen error timed out>",
+        "causa": "TIEMPO_ESPERA",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      },
+      "segundos": 4.413
+    },
+    {
+      "fuente": "fuente-060",
+      "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-06licitaciones.html",
+      "estado": "INACCESIBLE",
+      "convocatorias": 0,
+      "exportaciones_observadas": [],
+      "error": {
+        "tipo": "URLError",
+        "categoria": "EXTRACCION",
+        "timeout": true,
+        "error": "<urlopen error timed out>",
+        "causa": "TIEMPO_ESPERA",
+        "restriccion_acceso_comprobada": false,
+        "permanencia": "NO_DETERMINADA"
+      },
+      "segundos": 4.204
+    }
+  ],
+  "registros": [],
+  "segundos": 9.228,
+  "alternativa": "Importador CSV/HTML/PDF oficial; nunca falla=sin novedades",
+  "tls_verificado": true,
+  "ocr_nuevo": 0
+}

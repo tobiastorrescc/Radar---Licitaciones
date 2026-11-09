@@ -1,0 +1,11 @@
+{
+  "files": 69,
+  "changed": [],
+  "baseline": "ce79e45e116a9ab6ae1e528a9c66298797ba9e6a",
+  "main": "c4c44de36b8064bf84db4fa1071004e0f8c45ad8",
+  "verificado_en": "2026-11-09 UTC",
+  "ocr_nuevo": 0,
+  "programador_modificado": false,
+  "produccion_modificada": false,
+  "comparacion": "Árbol GitHub ce79e45 frente al commit de implementación 382e793. Los siguientes cambios sólo añaden informe, estado de candidatas y una corrección de copia del resumen."
+}

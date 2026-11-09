@@ -1,0 +1,1735 @@
+{
+  "fecha": "2026-11-08T22:05:47.165470-03:00",
+  "run": "42543506680",
+  "fuentes": [
+    {
+      "organismo": "Universidad Tecnológica Nacional — Facultad Regional Paraná",
+      "localidad": "Paraná",
+      "provincia": "Entre Ríos",
+      "tipo": "SECTORIAL",
+      "url": "https://www.frp.utn.edu.ar/info2/?page_id=32743",
+      "evidencia_descubrimiento": "https://www.frp.utn.edu.ar/info2/?page_id=32743",
+      "motivo_previo": "Procedimiento 17/2026 indexado con objeto; captura directa agotó tiempo. No incorporada.",
+      "id": "fase3-001",
+      "conector": "publicaciones",
+      "descubrir_contrataciones": true,
+      "barrido_institucional": true,
+      "indice_documentos": true,
+      "priorizar_listados": true,
+      "lectura_adjuntos": "necesarios",
+      "solo_descubrimiento": true,
+      "ocr": false,
+      "capturar_respuestas": true,
+      "admitir_avisos_sin_numero": true,
+      "conexion_timeout": 4,
+      "lectura_timeout": 7
+    },
+    {
+      "organismo": "Universidad Autónoma de Entre Ríos",
+      "localidad": "Paraná",
+      "provincia": "Entre Ríos",
+      "tipo": "SECTORIAL",
+      "url": "https://uader.edu.ar/novedades/licitaciones-publicas",
+      "evidencia_descubrimiento": "https://uader.edu.ar/secretarias/economico-financiera",
+      "motivo_previo": "Sección oficial capturada pero sin texto de procedimientos reconocido. No incorporada.",
+      "id": "fase3-002",
+      "conector": "publicaciones",
+      "descubrir_contrataciones": true,
+      "barrido_institucional": true,
+      "indice_documentos": true,
+      "priorizar_listados": true,
+      "lectura_adjuntos": "necesarios",
+      "solo_descubrimiento": true,
+      "ocr": false,
+      "capturar_respuestas": true,
+      "admitir_avisos_sin_numero": true,
+      "conexion_timeout": 4,
+      "lectura_timeout": 7
+    },
+    {
+      "organismo": "Municipalidad de Ramallo",
+      "localidad": "Ramallo",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://www.ramallo.gob.ar/boletines",
+      "evidencia_descubrimiento": "https://www.ramallo.gob.ar/",
+      "motivo_previo": "Nuevo índice oficial enlaza SIBOM; aún no acredita convocatorias extraídas. No incorporada.",
+      "id": "fase3-003",
+      "conector": "publicaciones",
+      "descubrir_contrataciones": true,
+      "barrido_institucional": true,
+      "indice_documentos": true,
+      "priorizar_listados": true,
+      "lectura_adjuntos": "necesarios",
+      "solo_descubrimiento": true,
+      "ocr": false,
+      "capturar_respuestas": true,
+      "admitir_avisos_sin_numero": true,
+      "conexion_timeout": 4,
+      "lectura_timeout": 7
+    },
+    {
+      "organismo": "Municipalidad de Ramallo",
+      "localidad": "Ramallo",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://sibom.slyt.gba.gob.ar/cities/102",
+      "evidencia_descubrimiento": "https://www.ramallo.gob.ar/boletines",
+      "motivo_previo": "Identidad municipal corroborada. Índice de boletines capturado; falta extracción y clasificación de convocatorias. No incorporada.",
+      "id": "fase3-004",
+      "conector": "publicaciones",
+      "descubrir_contrataciones": true,
+      "barrido_institucional": true,
+      "indice_documentos": true,
+      "priorizar_listados": true,
+      "lectura_adjuntos": "necesarios",
+      "solo_descubrimiento": true,
+      "ocr": false,
+      "capturar_respuestas": true,
+      "admitir_avisos_sin_numero": true,
+      "conexion_timeout": 4,
+      "lectura_timeout": 7
+    },
+    {
+      "organismo": "Municipalidad de Campana",
+      "localidad": "Campana",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://www.campana.gob.ar/compras/",
+      "evidencia_descubrimiento": "https://www.campana.gob.ar/compras/",
+      "fecha_descubrimiento": "2026-10-31",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada",
+      "id": "fase3-005",
+      "conector": "publicaciones",
+      "descubrir_contrataciones": true,
+      "barrido_institucional": true,
+      "indice_documentos": true,
+      "priorizar_listados": true,
+      "lectura_adjuntos": "necesarios",
+      "solo_descubrimiento": true,
+      "ocr": false,
+      "capturar_respuestas": true,
+      "admitir_avisos_sin_numero": true,
+      "conexion_timeout": 4,
+      "lectura_timeout": 7
+    },
+    {
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://chacabuco.gob.ar/licitaciones/",
+      "evidencia_descubrimiento": "https://chacabuco.gob.ar/licitaciones/",
+      "fecha_descubrimiento": "2026-10-31",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada",
+      "id": "fase3-006",
+      "conector": "publicaciones",
+      "descubrir_contrataciones": true,
+      "barrido_institucional": true,
+      "indice_documentos": true,
+      "priorizar_listados": true,
+      "lectura_adjuntos": "necesarios",
+      "solo_descubrimiento": true,
+      "ocr": false,
+      "capturar_respuestas": true,
+      "admitir_avisos_sin_numero": true,
+      "conexion_timeout": 4,
+      "lectura_timeout": 7
+    },
+    {
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://chacabuco.gob.ar/licitaciones-privadas/",
+      "evidencia_descubrimiento": "https://chacabuco.gob.ar/licitaciones-privadas/",
+      "fecha_descubrimiento": "2026-10-31",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada",
+      "id": "fase3-007",
+      "conector": "publicaciones",
+      "descubrir_contrataciones": true,
+      "barrido_institucional": true,
+      "indice_documentos": true,
+      "priorizar_listados": true,
+      "lectura_adjuntos": "necesarios",
+      "solo_descubrimiento": true,
+      "ocr": false,
+      "capturar_respuestas": true,
+      "admitir_avisos_sin_numero": true,
+      "conexion_timeout": 4,
+      "lectura_timeout": 7
+    },
+    {
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+      "evidencia_descubrimiento": "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+      "fecha_descubrimiento": "2026-10-31",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada",
+      "id": "fase3-008",
+      "conector": "publicaciones",
+      "descubrir_contrataciones": true,
+      "barrido_institucional": true,
+      "indice_documentos": true,
+      "priorizar_listados": true,
+      "lectura_adjuntos": "necesarios",
+      "solo_descubrimiento": true,
+      "ocr": false,
+      "capturar_respuestas": true,
+      "admitir_avisos_sin_numero": true,
+      "conexion_timeout": 4,
+      "lectura_timeout": 7
+    },
+    {
+      "organismo": "Municipalidad de General Arenales",
+      "localidad": "General Arenales",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://www.generalarenales.gob.ar/licitaciones",
+      "evidencia_descubrimiento": "https://www.generalarenales.gob.ar/licitaciones",
+      "fecha_descubrimiento": "2026-10-31",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada",
+      "id": "fase3-009",
+      "conector": "publicaciones",
+      "descubrir_contrataciones": true,
+      "barrido_institucional": true,
+      "indice_documentos": true,
+      "priorizar_listados": true,
+      "lectura_adjuntos": "necesarios",
+      "solo_descubrimiento": true,
+      "ocr": false,
+      "capturar_respuestas": true,
+      "admitir_avisos_sin_numero": true,
+      "conexion_timeout": 4,
+      "lectura_timeout": 7
+    },
+    {
+      "organismo": "Municipalidad de Capitán Sarmiento",
+      "localidad": "Capitán Sarmiento",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://sibom.slyt.gba.gob.ar/cities/20",
+      "evidencia_descubrimiento": "https://sibom.slyt.gba.gob.ar/cities/20",
+      "fecha_descubrimiento": "2026-10-31",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada",
+      "id": "fase3-010",
+      "conector": "publicaciones",
+      "descubrir_contrataciones": true,
+      "barrido_institucional": true,
+      "indice_documentos": true,
+      "priorizar_listados": true,
+      "lectura_adjuntos": "necesarios",
+      "solo_descubrimiento": true,
+      "ocr": false,
+      "capturar_respuestas": true,
+      "admitir_avisos_sin_numero": true,
+      "conexion_timeout": 4,
+      "lectura_timeout": 7
+    },
+    {
+      "organismo": "Municipalidad de Ramallo",
+      "localidad": "Ramallo",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "https://ramallo.gob.ar/",
+      "evidencia_descubrimiento": "https://ramallo.gob.ar/",
+      "fecha_descubrimiento": "2026-10-31",
+      "motivo_previo": "Portal encontrado mediante búsqueda específica y contraste de jurisdicción; falta extracción real e identidad para promoción. Revisión por ruta, no cobertura completa del municipio.",
+      "criterio_geografico": "Municipio solicitado expresamente por el usuario; distancia exacta por ruta no calculada",
+      "id": "fase3-011",
+      "conector": "publicaciones",
+      "descubrir_contrataciones": true,
+      "barrido_institucional": true,
+      "indice_documentos": true,
+      "priorizar_listados": true,
+      "lectura_adjuntos": "necesarios",
+      "solo_descubrimiento": true,
+      "ocr": false,
+      "capturar_respuestas": true,
+      "admitir_avisos_sin_numero": true,
+      "conexion_timeout": 4,
+      "lectura_timeout": 7
+    },
+    {
+      "organismo": "Unidad Ejecutora Provincial de Entre Ríos",
+      "localidad": null,
+      "provincia": "Entre Ríos",
+      "tipo": "SECTORIAL",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/uep/licitaciones",
+      "evidencia_descubrimiento": "https://portal.entrerios.gov.ar/static/js/8931.31563bf3.chunk.js",
+      "motivo_previo": "API pública leída en41212153456:64 registros históricos. Pendiente adaptador y prueba de extracción; no se incorpora por responder200.",
+      "id": "fase3-012",
+      "conector": "publicaciones",
+      "descubrir_contrataciones": true,
+      "barrido_institucional": true,
+      "indice_documentos": true,
+      "priorizar_listados": true,
+      "lectura_adjuntos": "necesarios",
+      "solo_descubrimiento": true,
+      "ocr": false,
+      "capturar_respuestas": true,
+      "admitir_avisos_sin_numero": true,
+      "conexion_timeout": 4,
+      "lectura_timeout": 7
+    },
+    {
+      "organismo": "Municipalidad de San Nicolás",
+      "localidad": "San Nicolás",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "url": "http://www.sannicolas.gov.ar:8080/portalcompras/",
+      "evidencia_descubrimiento": "https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos",
+      "motivo_previo": "Portal de Compras enlazado oficialmente en la página municipal; pendiente validación de acceso y procedimientos. Captura41265639687. No incorporada.",
+      "id": "fase3-013",
+      "conector": "publicaciones",
+      "descubrir_contrataciones": true,
+      "barrido_institucional": true,
+      "indice_documentos": true,
+      "priorizar_listados": true,
+      "lectura_adjuntos": "necesarios",
+      "solo_descubrimiento": true,
+      "ocr": false,
+      "capturar_respuestas": true,
+      "admitir_avisos_sin_numero": true,
+      "conexion_timeout": 4,
+      "lectura_timeout": 7
+    }
+  ],
+  "observaciones": [
+    {
+      "id": "fase3-001",
+      "url": "https://www.frp.utn.edu.ar/info2/?page_id=32743",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.frp.utn.edu.ar/info2/?page_id=32743",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>",
+          "causa": "ERROR_CERTIFICADO_TLS",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "duracion_segundos": 1.779,
+      "limites": [],
+      "inicio": "2026-11-08T22:04:17.716391-03:00",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase3/candidatas/auditoria_ejecuciones/20261109T010417-bd3be061/0000.json",
+      "limite_fuente_segundos": 45.0,
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0,
+      "alcance": "Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto",
+      "documentos_pendientes": [],
+      "evidencias_listado_vacio": []
+    },
+    {
+      "id": "fase3-002",
+      "url": "https://uader.edu.ar/novedades/licitaciones-publicas",
+      "estado": "PENDIENTE",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 1,
+      "errores": [
+        {
+          "url": "https://uader.edu.ar/novedades/licitaciones-publicas",
+          "tipo": "SinPublicacionesDetectadas",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Listado no reconocido; no se declara vacío"
+        }
+      ],
+      "duracion_segundos": 1.319,
+      "limites": [],
+      "inicio": "2026-11-08T22:04:17.718120-03:00",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase3/candidatas/auditoria_ejecuciones/20261109T010417-bd3be061/0001.json",
+      "limite_fuente_segundos": 45.0,
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0,
+      "alcance": "Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto",
+      "documentos_pendientes": [],
+      "evidencias_listado_vacio": []
+    },
+    {
+      "id": "fase3-003",
+      "url": "https://www.ramallo.gob.ar/boletines",
+      "estado": "PENDIENTE",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 2,
+      "errores": [
+        {
+          "url": "https://www.ramallo.gob.ar/boletines",
+          "tipo": "SinPublicacionesDetectadas",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Listado no reconocido; no se declara vacío"
+        }
+      ],
+      "duracion_segundos": 2.082,
+      "limites": [],
+      "inicio": "2026-11-08T22:04:17.720011-03:00",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase3/candidatas/auditoria_ejecuciones/20261109T010417-bd3be061/0002.json",
+      "limite_fuente_segundos": 45.0,
+      "paginas_visitadas": 2,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0,
+      "alcance": "Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto",
+      "documentos_pendientes": [],
+      "evidencias_listado_vacio": []
+    },
+    {
+      "id": "fase3-004",
+      "url": "https://sibom.slyt.gba.gob.ar/cities/102",
+      "estado": "TIEMPO_FUENTE",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 45,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "duracion_segundos": 45.02,
+      "limites": [],
+      "inicio": "2026-11-08T22:04:19.089871-03:00",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase3/candidatas/auditoria_ejecuciones/20261109T010417-bd3be061/0003.json",
+      "limite_fuente_segundos": 45.0,
+      "paginas_visitadas": 46,
+      "fase": "DESCARGA",
+      "url_actual": "https://sibom.slyt.gba.gob.ar/bulletins?page=1419",
+      "documentos_leidos": 0,
+      "alcance": "Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto",
+      "documentos_pendientes": [],
+      "evidencias_listado_vacio": []
+    },
+    {
+      "id": "fase3-005",
+      "url": "https://www.campana.gob.ar/compras/",
+      "estado": "PENDIENTE",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 1,
+      "errores": [
+        {
+          "url": "https://www.campana.gob.ar/compras/",
+          "tipo": "SinPublicacionesDetectadas",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Listado no reconocido; no se declara vacío"
+        }
+      ],
+      "duracion_segundos": 0.764,
+      "limites": [],
+      "inicio": "2026-11-08T22:04:19.547706-03:00",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase3/candidatas/auditoria_ejecuciones/20261109T010417-bd3be061/0004.json",
+      "limite_fuente_segundos": 45.0,
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0,
+      "alcance": "Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto",
+      "documentos_pendientes": [],
+      "evidencias_listado_vacio": []
+    },
+    {
+      "id": "fase3-006",
+      "url": "https://chacabuco.gob.ar/licitaciones/",
+      "estado": "PARCIAL",
+      "iniciada": true,
+      "publicaciones_detectadas": 5,
+      "paginas_correctas": 13,
+      "errores": [
+        {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/tasas/ORDENANZA%20OFICIAL%202024.pdf",
+          "tipo": "ValueError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "PDF sin texto: requiere OCR; no se declara vacío",
+          "causa": "ERROR_EXTRACCION",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "duracion_segundos": 30.881,
+      "limites": [],
+      "inicio": "2026-11-08T22:04:19.856197-03:00",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase3/candidatas/auditoria_ejecuciones/20261109T010417-bd3be061/0005.json",
+      "limite_fuente_segundos": 45.0,
+      "paginas_visitadas": 14,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 1,
+      "alcance": "Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto",
+      "documentos_pendientes": [],
+      "evidencias_listado_vacio": []
+    },
+    {
+      "id": "fase3-007",
+      "url": "https://chacabuco.gob.ar/licitaciones-privadas/",
+      "estado": "PARCIAL",
+      "iniciada": true,
+      "publicaciones_detectadas": 9,
+      "paginas_correctas": 23,
+      "errores": [
+        {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/tasas/ORDENANZA%20OFICIAL%202024.pdf",
+          "tipo": "ValueError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "PDF sin texto: requiere OCR; no se declara vacío",
+          "causa": "ERROR_EXTRACCION",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "duracion_segundos": 37.111,
+      "limites": [],
+      "inicio": "2026-11-08T22:04:20.364215-03:00",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase3/candidatas/auditoria_ejecuciones/20261109T010417-bd3be061/0006.json",
+      "limite_fuente_segundos": 45.0,
+      "paginas_visitadas": 24,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 5,
+      "alcance": "Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto",
+      "documentos_pendientes": [],
+      "evidencias_listado_vacio": []
+    },
+    {
+      "id": "fase3-008",
+      "url": "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+      "estado": "PARCIAL",
+      "iniciada": true,
+      "publicaciones_detectadas": 9,
+      "paginas_correctas": 22,
+      "errores": [
+        {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/tasas/ORDENANZA%20OFICIAL%202024.pdf",
+          "tipo": "ValueError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "PDF sin texto: requiere OCR; no se declara vacío",
+          "causa": "ERROR_EXTRACCION",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "duracion_segundos": 21.024,
+      "limites": [],
+      "inicio": "2026-11-08T22:04:50.791253-03:00",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase3/candidatas/auditoria_ejecuciones/20261109T010417-bd3be061/0007.json",
+      "limite_fuente_segundos": 45.0,
+      "paginas_visitadas": 23,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 5,
+      "alcance": "Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto",
+      "documentos_pendientes": [],
+      "evidencias_listado_vacio": []
+    },
+    {
+      "id": "fase3-009",
+      "url": "https://www.generalarenales.gob.ar/licitaciones",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://www.generalarenales.gob.ar/licitaciones",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "duracion_segundos": 4.551,
+      "limites": [],
+      "inicio": "2026-11-08T22:04:57.530358-03:00",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase3/candidatas/auditoria_ejecuciones/20261109T010417-bd3be061/0008.json",
+      "limite_fuente_segundos": 45.0,
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0,
+      "alcance": "Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto",
+      "documentos_pendientes": [],
+      "evidencias_listado_vacio": []
+    },
+    {
+      "id": "fase3-010",
+      "url": "https://sibom.slyt.gba.gob.ar/cities/20",
+      "estado": "TIEMPO_FUENTE",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 51,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "duracion_segundos": 45.029,
+      "limites": [],
+      "inicio": "2026-11-08T22:05:02.133947-03:00",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase3/candidatas/auditoria_ejecuciones/20261109T010417-bd3be061/0009.json",
+      "limite_fuente_segundos": 45.0,
+      "paginas_visitadas": 52,
+      "fase": "DESCARGA",
+      "url_actual": "https://sibom.slyt.gba.gob.ar/bulletins?page=1395",
+      "documentos_leidos": 0,
+      "alcance": "Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto",
+      "documentos_pendientes": [],
+      "evidencias_listado_vacio": []
+    },
+    {
+      "id": "fase3-011",
+      "url": "https://ramallo.gob.ar/",
+      "estado": "PENDIENTE",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 3,
+      "errores": [
+        {
+          "url": "https://ramallo.gob.ar/",
+          "tipo": "SinPublicacionesDetectadas",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Listado no reconocido; no se declara vacío"
+        }
+      ],
+      "duracion_segundos": 3.084,
+      "limites": [],
+      "inicio": "2026-11-08T22:05:04.163961-03:00",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase3/candidatas/auditoria_ejecuciones/20261109T010417-bd3be061/0010.json",
+      "limite_fuente_segundos": 45.0,
+      "paginas_visitadas": 3,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0,
+      "alcance": "Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto",
+      "documentos_pendientes": [],
+      "evidencias_listado_vacio": []
+    },
+    {
+      "id": "fase3-012",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/uep/licitaciones",
+      "estado": "PENDIENTE",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "https://portal.entrerios.gov.ar/api/public/consulta/uep/licitaciones",
+          "tipo": "ValueError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Formato de documento no admitido: application/json",
+          "causa": "ERROR_EXTRACCION",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "duracion_segundos": 1.417,
+      "limites": [],
+      "inicio": "2026-11-08T22:05:07.300862-03:00",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase3/candidatas/auditoria_ejecuciones/20261109T010417-bd3be061/0011.json",
+      "limite_fuente_segundos": 45.0,
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0,
+      "alcance": "Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto",
+      "documentos_pendientes": [],
+      "evidencias_listado_vacio": []
+    },
+    {
+      "id": "fase3-013",
+      "url": "http://www.sannicolas.gov.ar:8080/portalcompras/",
+      "estado": "BLOQUEADA",
+      "iniciada": true,
+      "publicaciones_detectadas": 0,
+      "paginas_correctas": 0,
+      "errores": [
+        {
+          "url": "http://www.sannicolas.gov.ar:8080/portalcompras/",
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "duracion_segundos": 4.612,
+      "limites": [],
+      "inicio": "2026-11-08T22:05:08.771220-03:00",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase3/candidatas/auditoria_ejecuciones/20261109T010417-bd3be061/0012.json",
+      "limite_fuente_segundos": 45.0,
+      "paginas_visitadas": 1,
+      "fase": "FINALIZADA",
+      "url_actual": null,
+      "documentos_leidos": 0,
+      "alcance": "Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto",
+      "documentos_pendientes": [],
+      "evidencias_listado_vacio": []
+    }
+  ],
+  "registros": [
+    {
+      "id": "a05a2f47a2cc868d1a16ebbcddc49c798b14651b48c308e31f77938a21f538f3",
+      "fuente": "https://chacabuco.gob.ar/licitaciones/",
+      "estado": "PUBLICACION_DETECTADA",
+      "requiere_revalidacion": false,
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "procedimiento": "licitacion publica 4/2023",
+      "llamado_especial": false,
+      "evento_publicado": null,
+      "situacion_publicada": null,
+      "titulo": "LICITACIÓN PÚBLICA N° 04/2023 EXPEDIENTE MUNICIPAL Nº 4029 – 0028/2023",
+      "objeto": "LICITACIÓN PÚBLICA N° 04/2023 EXPEDIENTE MUNICIPAL Nº 4029 – 0028/2023",
+      "numero_procedimiento": "4/2023",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://chacabuco.gob.ar/licitacion-publica-n-04-2023-expediente-municipal-no-4029-0028-2023/",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "fecha_apertura_texto": null,
+      "registro_estructurado": false,
+      "evidencia_url": "https://chacabuco.gob.ar/licitaciones/",
+      "detalle_completo": true,
+      "rango_evidencia": 1,
+      "fecha_apertura": null,
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": null,
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 4/2023",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": null,
+      "tipo_fecha_vencimiento": "DESCONOCIDA",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "FECHA_U_HORA_INSUFICIENTE",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://chacabuco.gob.ar/licitaciones/",
+          "texto": "licitacion publica 4/2023"
+        },
+        "tipo_procedimiento": {
+          "url": "https://chacabuco.gob.ar/licitaciones/",
+          "texto": "licitacion publica 4/2023"
+        }
+      },
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_apertura",
+        "fecha_publicacion",
+        "enlace_pliego"
+      ],
+      "pago_evidencias": [],
+      "fuentes_observadas": [
+        "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+        "https://chacabuco.gob.ar/licitaciones-privadas/",
+        "https://chacabuco.gob.ar/licitaciones/"
+      ],
+      "urls_publicacion": [
+        "https://chacabuco.gob.ar/licitacion-publica-n-04-2023-expediente-municipal-no-4029-0028-2023/",
+        "https://chacabuco.gob.ar/licitaciones/",
+        "https://chacabuco.gob.ar/portada/page/348/"
+      ]
+    },
+    {
+      "id": "2db5aeee59cd87777002ac7bafc92216a60e16499ea236c82ad1fb820bfdc06f",
+      "fuente": "https://chacabuco.gob.ar/licitaciones/",
+      "estado": "PUBLICACION_DETECTADA",
+      "requiere_revalidacion": false,
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "procedimiento": "licitacion 5/2023",
+      "llamado_especial": false,
+      "evento_publicado": null,
+      "situacion_publicada": null,
+      "titulo": "Pintura de sendas peatonales y reductores de velocidad en Chacabuco – EXPTE : 4029-0236/23 Feb 28, 2023 Pintura de sendas peatonales y reductores de velocidad en Chacabuco - EXPTE : 4029-0236/23 Licitacion N°5/2023 leer más",
+      "objeto": "Pintura de sendas peatonales y reductores de velocidad en Chacabuco – EXPTE : 4029-0236/23 Feb 28, 2023 Pintura de sendas peatonales y reductores de velocidad en Chacabuco - EXPTE : 4029-0236/23 Licitacion N°5/2023 leer más",
+      "numero_procedimiento": "5/2023",
+      "tipo_procedimiento": "licitacion",
+      "url": "https://chacabuco.gob.ar/portada/page/348/",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "fecha_apertura_texto": null,
+      "registro_estructurado": false,
+      "evidencia_url": "https://chacabuco.gob.ar/portada/page/348/",
+      "detalle_completo": true,
+      "rango_evidencia": 1,
+      "fecha_apertura": null,
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": null,
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion 5/2023",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": null,
+      "tipo_fecha_vencimiento": "DESCONOCIDA",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "FECHA_U_HORA_INSUFICIENTE",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://chacabuco.gob.ar/portada/page/348/",
+          "texto": "licitacion 5/2023"
+        },
+        "tipo_procedimiento": {
+          "url": "https://chacabuco.gob.ar/portada/page/348/",
+          "texto": "licitacion 5/2023"
+        }
+      },
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_apertura",
+        "fecha_publicacion",
+        "enlace_pliego"
+      ],
+      "pago_evidencias": [],
+      "fuentes_observadas": [
+        "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+        "https://chacabuco.gob.ar/licitaciones-privadas/",
+        "https://chacabuco.gob.ar/licitaciones/"
+      ],
+      "urls_publicacion": [
+        "https://chacabuco.gob.ar/licitaciones/",
+        "https://chacabuco.gob.ar/portada/page/348/"
+      ]
+    },
+    {
+      "id": "d53c6e3584e50220974ed393e719aabc5547653e0fa4239fcdc3f082177fcd8f",
+      "fuente": "https://chacabuco.gob.ar/licitaciones/",
+      "estado": "PUBLICACION_DETECTADA",
+      "requiere_revalidacion": false,
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "procedimiento": "licitacion 1-2023",
+      "llamado_especial": false,
+      "evento_publicado": null,
+      "situacion_publicada": null,
+      "titulo": "Licitacion 01-23 Av garay segunda etapa Licitacion 01-23 Av garay segunda etapa OBRA: REMODELACIÓN DE AVENIDA GARAY – ETAPA 2 Nota Aclaratoria",
+      "objeto": "Licitacion 01-23 Av garay segunda etapa Licitacion 01-23 Av garay segunda etapa OBRA: REMODELACIÓN DE AVENIDA GARAY – ETAPA 2 Nota Aclaratoria",
+      "numero_procedimiento": "1/2023",
+      "tipo_procedimiento": "licitacion",
+      "url": "https://chacabuco.gob.ar/licitacion-01-23-av-garay-segunda-etapa/",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "fecha_apertura_texto": null,
+      "registro_estructurado": false,
+      "evidencia_url": "https://chacabuco.gob.ar/licitaciones/",
+      "detalle_completo": true,
+      "rango_evidencia": 1,
+      "fecha_apertura": null,
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": null,
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion 1/2023",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": null,
+      "tipo_fecha_vencimiento": "DESCONOCIDA",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "FECHA_U_HORA_INSUFICIENTE",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://chacabuco.gob.ar/licitaciones/",
+          "texto": "licitacion 1-2023"
+        },
+        "tipo_procedimiento": {
+          "url": "https://chacabuco.gob.ar/licitaciones/",
+          "texto": "licitacion 1-2023"
+        }
+      },
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_apertura",
+        "fecha_publicacion",
+        "enlace_pliego"
+      ],
+      "pago_evidencias": [],
+      "fuentes_observadas": [
+        "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+        "https://chacabuco.gob.ar/licitaciones-privadas/",
+        "https://chacabuco.gob.ar/licitaciones/"
+      ],
+      "urls_publicacion": [
+        "https://chacabuco.gob.ar/licitacion-01-23-av-garay-segunda-etapa/",
+        "https://chacabuco.gob.ar/licitaciones/",
+        "https://chacabuco.gob.ar/portada/page/348/"
+      ]
+    },
+    {
+      "id": "c55a7ca7919189b047f4ab6b4d3f4f0ac358770aae43c58ff87efb6e3165d0cf",
+      "fuente": "https://chacabuco.gob.ar/licitaciones/",
+      "estado": "PUBLICACION_DETECTADA",
+      "requiere_revalidacion": false,
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "procedimiento": "licitacion publica 3/2023",
+      "llamado_especial": false,
+      "evento_publicado": null,
+      "situacion_publicada": null,
+      "titulo": "PLIEGO DE LICITACION PÚBLICA No 03 / 2023 – Ejecución de Pozo de Agua Nº 23 en la ciudad de Chacabuco- PLIEGO DE LICITACION PÚBLICA No 03 / 2023 - Ejecución de Pozo de Agua Nº 23 en la ciudad de Chacabuco- Nota Aclaratoria",
+      "objeto": "PLIEGO DE LICITACION PÚBLICA No 03 / 2023 – Ejecución de Pozo de Agua Nº 23 en la ciudad de Chacabuco- PLIEGO DE LICITACION PÚBLICA No 03 / 2023 - Ejecución de Pozo de Agua Nº 23 en la ciudad de Chacabuco- Nota Aclaratoria",
+      "numero_procedimiento": "3/2023",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://chacabuco.gob.ar/pliego-de-licitacion-publica-no-03-2023-ejecucion-de-pozo-de-agua-no-23-en-la-ciudad-de-chacabuco/",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "fecha_apertura_texto": null,
+      "registro_estructurado": false,
+      "evidencia_url": "https://chacabuco.gob.ar/licitaciones/",
+      "detalle_completo": true,
+      "rango_evidencia": 1,
+      "fecha_apertura": null,
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": null,
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 3/2023",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": null,
+      "tipo_fecha_vencimiento": "DESCONOCIDA",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "FECHA_U_HORA_INSUFICIENTE",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://chacabuco.gob.ar/licitaciones/",
+          "texto": "licitacion publica 3/2023"
+        },
+        "tipo_procedimiento": {
+          "url": "https://chacabuco.gob.ar/licitaciones/",
+          "texto": "licitacion publica 3/2023"
+        }
+      },
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_apertura",
+        "fecha_publicacion",
+        "enlace_pliego"
+      ],
+      "pago_evidencias": [],
+      "fuentes_observadas": [
+        "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+        "https://chacabuco.gob.ar/licitaciones-privadas/",
+        "https://chacabuco.gob.ar/licitaciones/"
+      ],
+      "urls_publicacion": [
+        "https://chacabuco.gob.ar/licitaciones/",
+        "https://chacabuco.gob.ar/pliego-de-licitacion-publica-no-03-2023-ejecucion-de-pozo-de-agua-no-23-en-la-ciudad-de-chacabuco/",
+        "https://chacabuco.gob.ar/portada/page/348/"
+      ]
+    },
+    {
+      "id": "67a577f8b1ad5fa634af33c1c534742d22cf2744aa54bf8a2650adf5d45b21ce",
+      "fuente": "https://chacabuco.gob.ar/licitaciones/",
+      "estado": "PUBLICACION_DETECTADA",
+      "requiere_revalidacion": false,
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "procedimiento": "licitacion publica 16/2022",
+      "llamado_especial": false,
+      "evento_publicado": null,
+      "situacion_publicada": null,
+      "titulo": "LICITACION PUBLICA 16/2022 Cordón Cuneta en seis (6) calles de la localidad de Chacabuco LICITACION PUBLICA 16/2022 Cordón Cuneta en seis (6) calles de la localidad de Chacabuco Nota Aclaratoria",
+      "objeto": "LICITACION PUBLICA 16/2022 Cordón Cuneta en seis (6) calles de la localidad de Chacabuco LICITACION PUBLICA 16/2022 Cordón Cuneta en seis (6) calles de la localidad de Chacabuco Nota Aclaratoria",
+      "numero_procedimiento": "16/2022",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://chacabuco.gob.ar/licitacion-publica-16-2022-cordon-cuneta-en-seis-6-calles-de-la-localidad-de-chacabuco/",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "fecha_apertura_texto": null,
+      "registro_estructurado": false,
+      "evidencia_url": "https://chacabuco.gob.ar/licitaciones/",
+      "detalle_completo": true,
+      "rango_evidencia": 1,
+      "fecha_apertura": null,
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": null,
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 16/2022",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": null,
+      "tipo_fecha_vencimiento": "DESCONOCIDA",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "FECHA_U_HORA_INSUFICIENTE",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://chacabuco.gob.ar/licitaciones/",
+          "texto": "licitacion publica 16/2022"
+        },
+        "tipo_procedimiento": {
+          "url": "https://chacabuco.gob.ar/licitaciones/",
+          "texto": "licitacion publica 16/2022"
+        }
+      },
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_apertura",
+        "fecha_publicacion",
+        "enlace_pliego"
+      ],
+      "pago_evidencias": [],
+      "fuentes_observadas": [
+        "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+        "https://chacabuco.gob.ar/licitaciones-privadas/",
+        "https://chacabuco.gob.ar/licitaciones/"
+      ],
+      "urls_publicacion": [
+        "https://chacabuco.gob.ar/licitacion-publica-16-2022-cordon-cuneta-en-seis-6-calles-de-la-localidad-de-chacabuco/",
+        "https://chacabuco.gob.ar/licitaciones/",
+        "https://chacabuco.gob.ar/portada/page/348/"
+      ]
+    },
+    {
+      "id": "4f7f82192388d281fdb39898ec19abc8fda5740807314d68cdd10909a0b67822",
+      "fuente": "https://chacabuco.gob.ar/licitaciones-privadas/",
+      "estado": "PUBLICACION_DETECTADA",
+      "requiere_revalidacion": false,
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "procedimiento": "licitacion privada 10/2025",
+      "llamado_especial": false,
+      "evento_publicado": null,
+      "situacion_publicada": null,
+      "titulo": "licitacion privada no 10/ 2025 lugar, fecha y hora del acto de apertura en la oficina de compras de la municipalidad.- este sobre debera contener: 1.- a) un ejemplar del ",
+      "objeto": "Licitación Privada Nº 10/ 2025 Lugar, fecha y hora del Acto de Apertura en la Oficina de Compras de la Municipalidad.- Este sobre deberá contener: 1.-           a) un ejemplar del pliego de bases y condiciones con todos sus folios debidamente firmados por el oferente.-               b) comprobante del pago del pliego de bases y condiciones.-               c) la garantía de oferta que deberá constituirse de acuerdo a lo establecido en la cláusula 8ª.-               d) constancia de inscripción en el Registro de Proveedores de la Municipalidad de Chacabuco.-               e) declaración jurada donde constituye domicilio especial en la ciudad de Chacabuco.-                f) Certificados y/o constancias de las autorizaciones legales requeridas para la manipulación y distribución de oxígeno.  2.- Un sobre cerrado en cuyo frente se colocará:                1) El nombre y razón social del proponente.-                2) La palabra PROPUESTA.-                3) El número de expediente.-                4) El número de licitación pública.-                5) La fecha y hora del acto de apertura de la licitación.- Este sobre contendrá solamente la PROPUESTA formulada por el oferente en formularios propios con el membrete correspondiente. La propuesta no podrá contener enmiendas, interlíneas o raspaduras que no estén debidamente salvadas.- La omisión de alguno de los requisitos citados en el punto 1 de este artículo, será causa de rechazo inmediato de la propuesta, no dándose apertura al sobre que la contiene, el que será devuelto - sin más trámite - al oferente, si es que se hallara presente en el acto, caso contrario será agregado al expediente sin abrirlo.-  Cláusula 8ª: GARANTIA DE OFERTA: El oferente garantizará la propuesta por el valor del uno por ciento (1%) del presupuesto oficial, lo que arroja un importe de $1.072.634,28 (Pesos Un Millón Setenta y Dos Mil Seiscientos Treinta y Cuatro con 28/100), estando obligado a mantener su propuesta por el plazo de treinta (30) días corridos. La garantía podrá ser integrada en alguna de las formas que a continuación se señalan: a) En efectivo, en cuyo caso se adjuntará a la presente el recibo otorgado por la Tesorería Municipal.- b) En títulos de la deuda pública, nacional-provincial, tomados a su valor nominal y cuyos intereses serán pertenencia del titular y no incrementarán de modo alguno la garantía. Se agregará en este caso el recibo de la Tesorería Municipal, donde deberán ser depositados.- c) Fianza o aval bancario.-                 Municipalidad de Chacabuco               Reconquista 26 - Tel. (2352) 471300 - Fax int.122              E-Mail: compras@chacabuco.gob.ar              C.P. B6740 AWA-Chacabuco (B)    d) Seguro de caución de una Compañía a satisfacción del Departamento Ejecutivo deberá acompañarse en este caso, póliza de seguro, no admitiéndose certificado de cobertura.- e) Cheque al día a la orden de la Municipalidad de Chacabuco ingresado en la Tesorería municipal antes de la apertura de propuestas. Las formas indicadas precedentemente para la constitución de la garantía de oferta son excluyentes, no admitiéndose ninguna otra forma que las señaladas.-  Cláusula 9ª: VALOR DEL PLIEGO: El valor del pliego de bases y condiciones se establece en la suma de PESOS SETENTA MIL ($ 70.000,00).-  Cláusula 10ª: APERTURA DE LAS PROPUESTAS: Los sobres conteniendo las propuestas serán abiertos 19 de diciembre a las 10.30 hs., en la Oficina de Compras, de la Municipalidad de Chacabuco.-  Cláusula 11ª: PLAZO DE MANTENIMIENTO DE LAS OFERTAS: Las ofertas deberán ser mantenidas por el término de treinta (30) días corridos, a contar desde la fecha de apertura de las propuestas.  Cláusula 12ª: CONDICION: Se deja establecido que quien resulte adjudicatario, deberá facturar en forma directa a la Municipalidad.-  Cláusula 13ª: MEJORA DE PRECIOS: Si entre las propuestas presentadas y admitidas hubiera dos o más igualmente convenientes, se llamará a mejora de precios entre ellas. Se fijará día y hora de la nueva presentación y la oferta se entregará en sobre cerrado.-  Cláusula 14ª: RECHAZO DE LAS PROPUESTAS: El Departamento Ejecutivo no está obligado a aceptar ninguna de las propuestas, reservándose el derecho a rechazarlas a todas, si no resultaran convenientes a los intereses municipales.-  Cláusula 15ª: ADJUDICACION: La adjudicación se realizará dentro de los veinte (20) días hábiles contados desde la fecha de apertura de las propuestas y recaerá en la oferta más conveniente y ventajosa a los intereses municipales. La notificación de dicha adjudicación, se realizará dentro de los cinco (5) días hábiles siguientes al dictado del acto administrativo correspondiente.-  Cláusula 16ª: FIRMA DE CONTRATO: Dentro de los cinco (5) días de notificada la Adjudicación se formalizará el respectivo contrato de adjudicación.  Cláusula 17ª: VIGENCIA Y PRÓRROGA: El plazo de vigencia de la contratación se establece desde el 1 de enero 2026 al 31 de mayo 2026, con opción a prórroga en iguales condiciones de precios y servicios, de común acuerdo entre las partes.-  Cláusula 18ª: GARANTIA DE CONTRATO: El importe de la garantía de contrato será del 5% (cinco por ciento) del monto del mismo.- El depósito de la garantía de contrato se podrá formar integrando la garantía de propuesta.- La garantía de contrato podrá cumplimentarse en algunas de las formas establecidas en el art. 8º del presente pliego.-                 Municipalidad de Chacabuco               Reconquista 26 - Tel. (2352) 471300 - Fax int.122              E-Mail: compras@chacabuco.gob.ar              C.P. B6740 AWA-Chacabuco (B)    Cláusula 19ª: DEVOLUCION DE LA GARANTIA DE OFERTA: La garantía de propuesta será devuelta a los proponentes al efectuarse la firma del contrato. -  Cláusula 20ª: INVARIABILIDAD DE PRECIOS: Los precios contratados serán invariables y no se reconocerán mayores costos, ni intereses financieros por ninguna causa.-  Cláusula 21ª: RESPONSABILIDAD DEL ADJUDICATARIO: El adjudicatario será responsable en todos los casos, del material a proveer en cuanto a su calidad, cantidad y formas de entrega.- Será responsable de los daños y perjuicios ocasionados por la inoperancia de sus agentes y equipos, necesarios para el suministro del oxígeno. El adjudicatario responderá directamente a la Municipalidad o a terceros por los daños producidos a las personas o a las cosas con motivo de la provisión.-  Cláusula 22ª: PLAZO Y LUGAR DE ENTREGA: La provisión del oxígeno se hará de acuerdo a la demanda y necesidad. Las entregas deberán efectuarse en el Hospital Municipal Nuestra Señora del Carmen y los eventuales gastos de flete, acarreo, carga y descarga estarán a cargo del adjudicatario.- La distribución a los Centros de Salud de las Delegaciones estará a cargo del Municipio.  Cláusula 23ª: SEGURO: Es obligación del adjudicatario contratar un seguro para el personal a cargo del transporte y descarga que contemplará los riesgos de accidente, enfermedad, muerte o incapacidad total o parcial.-  Cláusula 24º: FORMA DE PAGO: Cada provisión de oxígeno será abonada a los treinta (30) días de la entrega, previa certificación de la misma por parte de la Secretaría de Salud.- ",
+      "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20Ox%C3%ADgeno%204214.pdf",
+      "evidencia_url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20Ox%C3%ADgeno%204214.pdf",
+      "documentos": [
+        {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20Ox%C3%ADgeno%204214.pdf",
+          "titulo": "Documento"
+        }
+      ],
+      "numero_procedimiento": "10/2025",
+      "tipo_procedimiento": "licitacion privada",
+      "detalle_completo": true,
+      "rango_evidencia": 3,
+      "pago_evidencias": [
+        {
+          "categoria": "PLAZO_30_DIAS",
+          "etiqueta": "30 días",
+          "plazos_dias": [
+            30
+          ],
+          "unidades_dias": [
+            "no indicada"
+          ],
+          "hitos_inicio": [],
+          "direccion": "NO_ESPECIFICADA",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": false,
+          "prioritario": false,
+          "pagos_parciales": false,
+          "anticipo_publicado": false,
+          "facturacion_parcial": false,
+          "acreditacion_inmediata_comprobada": false,
+          "clausula": "Articulo 8",
+          "cita": "FORMA DE PAGO: Cada provisión de oxígeno será abonada a los treinta (30) días de la entrega, previa certificación de la misma por parte de la Secretaría de Salud.-",
+          "url_documento": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20Ox%C3%ADgeno%204214.pdf",
+          "sha256": "d090df0c9d881e8bb24ee57048d66d474d5499b2dabc433f968c0b1f3a108d3b",
+          "pagina": null,
+          "metodo_extraccion": "SECCION_DOCUMENTO",
+          "version_analizador": 15
+        }
+      ],
+      "fecha_apertura": null,
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": null,
+      "pago": {
+        "estado": "VERIFICADO",
+        "clasificacion": "PLAZO_30_DIAS",
+        "etiqueta": "30 días",
+        "plazos_dias": [
+          30
+        ],
+        "hitos_inicio": [],
+        "unidades_dias": [
+          "no indicada"
+        ],
+        "direccion": "NO_ESPECIFICADA",
+        "documento_respaldo": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20Ox%C3%ADgeno%204214.pdf",
+        "documentos_respaldo": [
+          "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20Ox%C3%ADgeno%204214.pdf"
+        ],
+        "evidencias": [
+          {
+            "categoria": "PLAZO_30_DIAS",
+            "etiqueta": "30 días",
+            "plazos_dias": [
+              30
+            ],
+            "unidades_dias": [
+              "no indicada"
+            ],
+            "hitos_inicio": [],
+            "direccion": "NO_ESPECIFICADA",
+            "contado_mencionado": false,
+            "contra_entrega_mencionado": false,
+            "prioritario": false,
+            "pagos_parciales": false,
+            "anticipo_publicado": false,
+            "facturacion_parcial": false,
+            "acreditacion_inmediata_comprobada": false,
+            "clausula": "Articulo 8",
+            "cita": "FORMA DE PAGO: Cada provisión de oxígeno será abonada a los treinta (30) días de la entrega, previa certificación de la misma por parte de la Secretaría de Salud.-",
+            "url_documento": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20Ox%C3%ADgeno%204214.pdf",
+            "sha256": "d090df0c9d881e8bb24ee57048d66d474d5499b2dabc433f968c0b1f3a108d3b",
+            "pagina": null,
+            "metodo_extraccion": "SECCION_DOCUMENTO",
+            "version_analizador": 15
+          }
+        ],
+        "prioritario": false,
+        "motivo": null
+      },
+      "condiciones_pago": "30 días",
+      "enlace_condiciones_pago": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20Ox%C3%ADgeno%204214.pdf",
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion privada 10/2025",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": null,
+      "tipo_fecha_vencimiento": "DESCONOCIDA",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "motivo_vigencia": "FECHA_U_HORA_INSUFICIENTE",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20Ox%C3%ADgeno%204214.pdf",
+          "texto": "licitacion privada 10/2025"
+        },
+        "tipo_procedimiento": {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20Ox%C3%ADgeno%204214.pdf",
+          "texto": "licitacion privada 10/2025"
+        },
+        "modalidad_presentacion": {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20Ox%C3%ADgeno%204214.pdf",
+          "texto": "Licitación Privada Nº 10/ 2025 Lugar, fecha y hora del Acto de Apertura en la Oficina de Compras de la Municipalidad.- Este sobre deberá contener: 1.-           a) un ejemplar del pliego de bases y condiciones con todos sus folios debidamente firmados por el oferente.-               b) comprobante del pago del pliego de bases y condiciones.-               c) la garantía de oferta que deberá constituirse de acuerdo a lo establecido en la cláusula 8ª.-               d) constancia de inscripción en el Registro de Proveedores de la Municipalidad de Chacabuco.-               e) declaración jurada donde constituye domicilio especial en la ciudad de Chacabuco.-                f) Certificados y/o constancias de las autorizaciones legales requeridas para la manipulación y distribución de oxígeno.  2.- Un sobre cerrado en cuyo frente se colocará:                1) El nombre y razón social del proponente.-                2) La palabra PROPUESTA.-                3) El número de expediente.-                4) El número de licitación pública.-                5) La fecha y hora del acto de apertura de la licitación.- Este sobre contendrá solamente la PROPUESTA formulada por el oferente en formularios propios con el membrete correspondiente. La propuesta no podrá contener enmiendas, interlíneas o raspaduras que no estén debidamente salvadas.- La omisión de alguno de los requisitos citados en el punto 1 de este artículo, será causa de rechazo inmediato de la propuesta, no dándose apertura al sobre que la contiene, el que será devuelto - sin más trámite - al oferente, si es que se hallara presente en el acto, caso contrario será agregado al expediente sin abrirlo.-  Cláusula 8ª: GARANTIA DE OFERTA: El oferente garantizará la propuesta por el valor del uno por ciento (1%) del presupuesto oficial, lo que arroja un importe de $1.072.634,28 (Pesos Un Millón Setenta y Dos Mil Seiscientos Treinta y Cuatro con 28/100), estando obligado a mantener su propuesta por el plazo de treinta (30) días corridos. La garantía podrá ser integrada en alguna de las formas que a continuación se señalan: a) En efectivo, en cuyo caso se adjuntará a la presente el recibo otorgado por la Tesorería Municipal.- b) En títulos de la deuda pública, nacional-provincial, tomados a su valor nominal y cuyos intereses serán pertenencia del titular y no incrementarán de modo alguno la garantía. Se agregará en este caso el recibo de la Tesorería Municipal, donde deberán ser depositados.- c) Fianza o aval bancario.-                 Municipalidad de Chacabuco               Reconquista 26 - Tel. (2352) 471300 - Fax int.122              E-Mail: compras@chacabuco.gob.ar              C.P. B6740 AWA-Chacabuco (B)    d) Seguro de caución de una Compañía a satisfacción del Departamento Ejecutivo deberá acompañarse en este caso, póliza de seguro, no admitiéndose certificado de cobertura.- e) Cheque al día a la orden de la Municipalidad de Chacabuco ingresado en la Tesorería municipal antes de la apertura de propuestas. Las formas indicadas precedentemente para la constitución de la garantía de oferta son excluyentes, no admitiéndose ninguna otra forma que las señaladas.-  Cláusula 9ª: VALOR DEL PLIEGO: El valor del pliego de bases y condiciones se establece en la suma de PESOS SETENTA MIL ($ 70.000,00).-  Cláusula 10ª: APERTURA DE LAS PROPUESTAS: Los sobres conteniendo las propuestas serán abiertos 19 de diciembre a las 10.30 hs., en la Oficina de Compras, de la Municipalidad de Chacabuco.-  Cláusula 11ª: PLAZO DE MANTENIMIENTO DE LAS OFERTAS: Las ofertas deberán ser mantenidas por el término de treinta (30) días corridos, a contar desde la fecha de apertura de las propuestas.  Cláusula 12ª: CONDICION: Se deja establecido que quien resulte adjudicatario, deberá facturar en forma directa a la Municipalidad.-  Cláusula 13ª: MEJORA DE PRECIOS: Si entre las propuestas presentadas y admitidas hubiera dos o más igualmente convenientes, se llamará a mejora de precios entre ellas. Se fijará día y hora de la nueva presentación y la oferta se entregará en sobre cerrado.-  Cláusula 14ª: RECHAZO DE LAS PROPUESTAS: El Departamento Ejecutivo no está obligado a aceptar ninguna de las propuestas, reservándose el derecho a rechazarlas a todas, si no resultaran convenientes a los intereses municipales.-  Cláusula 15ª: ADJUDICACION: La adjudicación se realizará dentro de los veinte (20) días hábiles contados desde la fecha de apertura de las propuestas y recaerá en la oferta más conveniente y ventajosa a los intereses municipales. La notificación de dicha adjudicación, se realizará dentro de los cinco (5) días hábiles siguientes al dictado del acto administrativo correspondiente.-  Cláusula 16ª: FIRMA DE CONTRATO: Dentro de los cinco (5) días de notificada la Adjudicación se formalizará el respectivo contrato de adjudicación.  Cláusula 17ª: VIGENCIA Y PRÓRROGA: El plazo de vigencia de la contratación se establece desde el 1 de enero 2026 al 31 de mayo 2026, con opción a prórroga en iguales condiciones de precios y servicios, de común acuerdo entre las partes.-  Cláusula 18ª: GARANTIA DE CONTRATO: El importe de la garantía de contrato será del 5% (cinco por ciento) del monto del mismo.- El depósito de la garantía de contrato se podrá formar integrando la garantía de propuesta.- La garantía de contrato podrá cumplimentarse en algunas de las formas establecidas en el art. 8º del presente pliego.-                 Municipalidad de Chacabuco               Reconquista 26 - Tel. (2352) 471300 - Fax int.122              E-Mail: compras@chacabuco.gob.ar              C.P. B6740 AWA-Chacabuco (B)    Cláusula 19ª: DEVOLUCION DE LA GARANTIA DE OFERTA: La garantía de propuesta será devuelta a los proponentes al efectuarse la firma del contrato. -  Cláusula 20ª: INVARIABILIDAD DE PRECIOS: Los precios contratados serán invariables y no se reconocerán mayores costos, ni intereses financieros por ninguna causa.-  Cláusula 21ª: RESPONSABILIDAD DEL ADJUDICATARIO: El adjudicatario será responsable en todos los casos, del material a proveer en cuanto a su calidad, cantidad y formas de entrega.- Será responsable de los daños y perjuicios ocasionados por la inoperancia de sus agentes y equipos, necesarios para el suministro del oxígeno. El adjudicatario responderá directamente a la Municipalidad o a terceros por los daños producidos a las personas o a las cosas con motivo de la provisión.-  Cláusula 22ª: PLAZO Y LUGAR DE ENTREGA: La provisión del oxígeno se hará de acuerdo a la demanda y necesidad. Las entregas deberán efectuarse en el Hospital Municipal Nuestra Señora del Carmen y los eventuales gastos de flete, acarreo, carga y descarga estarán a cargo del adjudicatario.- La distribución a los Centros de Salud de las Delegaciones estará a cargo del Municipio.  Cláusula 23ª: SEGURO: Es obligación del adjudicatario contratar un seguro para el personal a cargo del transporte y descarga que contemplará los riesgos de accidente, enfermedad, muerte o incapacidad total o parcial.-  Cláusula 24º: FORMA DE PAGO: Cada provisión de oxígeno será abonada a los treinta (30) días de la entrega, previa certificación de la misma por parte de la Secretaría de Salud.- "
+        }
+      },
+      "enlace_pliego": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20Ox%C3%ADgeno%204214.pdf",
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_apertura",
+        "fecha_publicacion"
+      ],
+      "fuentes_observadas": [
+        "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+        "https://chacabuco.gob.ar/licitaciones-privadas/"
+      ],
+      "urls_publicacion": [
+        "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20Ox%C3%ADgeno%204214.pdf"
+      ]
+    },
+    {
+      "id": "74bd135358ce2ab209e1ff7756bd8c10acfbd9404e57dcad7fbe24b997db71a9",
+      "fuente": "https://chacabuco.gob.ar/licitaciones-privadas/",
+      "estado": "PUBLICACION_DETECTADA",
+      "requiere_revalidacion": false,
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "procedimiento": "licitacion privada 3/2025",
+      "llamado_especial": false,
+      "evento_publicado": null,
+      "situacion_publicada": null,
+      "titulo": "licitacion privada no3/2025 lugar, fecha y hora del acto de apertura en la oficina de compras de la municipalidad.- este sobre debera contener: 1.- a) un ejemplar del ",
+      "objeto": "Licitación Privada Nº3/2025 Lugar, fecha y hora del Acto de Apertura en la Oficina de Compras de la Municipalidad.- Este sobre deberá contener: 1.-            a) un ejemplar del pliego de bases y condiciones con todos sus folios debidamente firmados por el oferente.-                b) comprobante del pago del pliego de bases y condiciones.-                c) la garantía de oferta que deberá constituirse de acuerdo a lo establecido en la cláusula 8ª.-                d) constancia de inscripción en el Registro de Proveedores de la Municipalidad de Chacabuco.-                e) declaración jurada donde constituye domicilio especial en la ciudad de Chacabuco, según formulario adjunto.  2.- Un sobre cerrado en cuyo frente se colocará:                1) El nombre y razón social del proponente.-                2) La palabra PROPUESTA.-                3) El número de expediente.-                4) El número de licitación privada.-                5) La fecha y hora del acto de apertura de la licitación.- Este sobre contendrá solamente la PROPUESTA formulada por el oferente en formularios propios con el membrete correspondiente. La propuesta no podrá contener enmiendas, interlíneas o raspaduras que no estén debidamente salvadas.- La omisión de alguno de los requisitos citados en el punto 1 de este artículo, será causa de rechazo inmediato de la propuesta, no dándose apertura al sobre que la contiene, el que será devuelto sin más trámite al oferente si es que se hallara presente el acto, caso contrario será agregado al expediente sin abrirlo.-           Las Islas Malvinas, Georgias del Sur y Sándwich del Sur, son Argentinas  Cláusula 9ª: GARANTIA DE OFERTA: El oferente garantizará la propuesta por el valor del uno por ciento (1%) del presupuesto oficial, estando obligado a mantener su propuesta por el plazo de treinta (30) días corridos. La garantía podrá ser integrada en alguna de las formas que a continuación se señalan: a) En efectivo, en cuyo caso se adjuntará a la presente el recibo otorgado por la Tesorería Municipal.- b) En títulos de la deuda pública, nacional-provincial, tomados a su valor nominal y cuyos intereses serán pertenencia del titular y no incrementarán de modo alguno la garantía. Se agregará en este caso el recibo de la Tesorería Municipal, donde deberán ser depositados.- c) Fianza o aval bancario.- d) Seguro de caución de una Compañía a satisfacción del Departamento Ejecutivo deberá acompañarse en este caso, póliza de seguro, no admitiéndose certificado de cobertura.- e) Cheque al día, a la orden de la Municipalidad de Chacabuco, ingresado en la tesorería municipal antes de la apertura de propuestas. Las formas indicadas precedentemente para la constitución de la garantía de oferta son excluyentes, no admitiéndose ninguna otra forma que las señaladas.-  Cláusula 10ª: VALOR DEL PLIEGO: El valor del pliego de bases y condiciones se establece en la suma de PESOS TREINTA MIL ($30.000,00).-  Cláusula 11ª: APERTURA DE LAS PROPUESTAS: Los sobres conteniendo las propuestas serán abiertos el día 16 de abril de 2025 a las 10:30 hs. en la Oficina de Compras de la Municipalidad de Chacabuco.  Cláusula 12ª: PLAZO DE MANTENIMIENTO DE LAS OFERTAS: Las ofertas deberán ser mantenidas por el término de treinta (30) días corridos, a contar desde la fecha de apertura de las propuestas.-  Cláusula 13ª: EXCEDENTES: Se deberá presentar además de la propuesta inicial una escala de precios discriminados de acuerdo a las cantidades retiradas para poder aplicar esas tarifas en caso de que haya     excedentes de retiros de bolsas, por cuestiones excepcionales e imprevistas.-   Cláusula 14ª: CONDICION: Se deja establecido que quien resulte adjudicatario, deberá facturar en forma directa a la Municipalidad.-  Cláusula 15ª: MEJORA DE PRECIOS: Si entre las propuestas presentadas y admitidas hubiera dos o más igualmente convenientes, se llamará a mejora de precios entre ellas. Se fijará día y hora de la nueva presentación y la oferta se entregará en sobre cerrado.-   Cláusula 16ª: RECHAZO DE LAS PROPUESTAS: El Departamento Ejecutivo no está obligado a aceptar ninguna de las propuestas, reservándose el derecho a rechazarlas a todas, si no resultaran convenientes a los intereses municipales.-            Las Islas Malvinas, Georgias del Sur y Sándwich del Sur, son Argentinas  Cláusula 17ª: .- ADJUDICACION: La adjudicación se realizará dentro de los veinte (20) días hábiles contados desde la fecha de apertura de las propuestas y recaerá en la oferta más conveniente y ventajosa a los intereses municipales. La notificación de dicha adjudicación, se realizará dentro de los cinco (5) días hábiles siguientes al dictado del acto administrativo correspondiente.-  Cláusula 18ª: FIRMA DE CONTRATO: Dentro de los cinco (5) días de notificada la Adjudicación se formalizará el respectivo contrato de adjudicación.   Cláusula 19ª: GARANTIA DE CONTRATO: El importe de la garantía de contrato será del 5% (cinco por ciento) del monto del mismo.- El depósito de la garantía de contrato se podrá formar integrando la garantía de propuesta.- La garantía de contrato podrá cumplimentarse en algunas de las formas establecidas en el art. 8º del presente pliego  Cláusula 20ª: DEVOLUCION DE LA GARANTIA DE OFERTA: La garantía de propuesta será devuelta a los proponentes al efectuarse la firma del contrato. -  Cláusula 21ª: INVARIABILIDAD DE PRECIOS: Los precios contratados serán invariables y no se reconocerán mayores costos, ni intereses financieros por ninguna causa.-  Cláusula 22ª: RESPONSABILIDAD DEL ADJUDICATARIO: El adjudicatario será responsable en todos los casos, de los bienes a proveer en cuanto a su calidad, cantidad y forma de entrega.- Será responsable de los daños y perjuicios ocasionados por la inoperancia de sus agentes y equipos. El adjudicatario responderá directamente a la Municipalidad o a terceros por los daños producidos a las personas o a las cosas con motivo de la provisión del equipamiento.-  Cláusula 23ª: INSPECCIÓN: Los bienes entregados serán verificados por el personal que al efecto designe la Secretaría de Salud, siendo responsable del control del funcionamiento de los mismos y del correcto cumplimiento del contrato.-  Cláusula 24º: FORMA DE PAGO: El precio de la contratación será abonado en cuotas mensuales, iguales y consecutivas, dentro de los veinte (20) hábiles de la presentación de las facturas en la Oficina de Compras de la Municipalidad de Chacabuco. Los pagos se efectuarán mediante cheques emitidos por la Tesorería Municipal.-            Las Islas Malvinas, Georgias del Sur y Sándwich del Sur, son Argentinas                                            FORMULARIO  SECRETARIA DE SALUD  Contratación: “Servicio de recolección y tratamiento de residuos patológicos”   Expte. N* 4029-1074/2025                                                   DECLARACION JURADA                                                           CHACABUCO,..............de.......................de 2.025.-    Al señor INTENDENTE MUNICIPAL de CHACABUCO:                                      El                                                                                      que suscribe………………................................................................. en                     representación de la     firma       ..........................................................,   con    domicilio         real      en    calle ..................................., N° ............. de la localidad de               ........................., declara bajo juramento que ha constituido domicilio                                    legal en      calle      ……........................... N°................ de la ciudad de Chacabuco (B), domicilio electrónico……………………… Para cualquier cuestión judicial que se suscite acepta la jurisdicción de los tribunales Ordinarios de la Ciudad de Junín (B) renunciando a todo otro fuero o jurisdicción.-                                   Se declara además expresamente bajo juramento: A) que conoce y acepta el Pliego de Bases y Condiciones que rige esta Licitación.-     ...................................                                                ....................................  Aclaración de la firma                                                               Firma del proponente                Las Islas Malvinas, Georgias del Sur y Sándwich del Sur, son Argentinas ",
+      "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20RESIDUOS%20PATOLOGICOS%201074.pdf",
+      "evidencia_url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20RESIDUOS%20PATOLOGICOS%201074.pdf",
+      "documentos": [
+        {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20RESIDUOS%20PATOLOGICOS%201074.pdf",
+          "titulo": "Documento"
+        }
+      ],
+      "numero_procedimiento": "3/2025",
+      "tipo_procedimiento": "licitacion privada",
+      "detalle_completo": true,
+      "rango_evidencia": 3,
+      "pago_evidencias": [
+        {
+          "categoria": "PAGOS_PARCIALES",
+          "etiqueta": "Pagos parciales; plazo no indicado",
+          "plazos_dias": [],
+          "unidades_dias": [],
+          "hitos_inicio": [
+            "PRESENTACION_FACTURA"
+          ],
+          "direccion": "NO_ESPECIFICADA",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": false,
+          "prioritario": false,
+          "pagos_parciales": true,
+          "anticipo_publicado": false,
+          "facturacion_parcial": false,
+          "acreditacion_inmediata_comprobada": false,
+          "clausula": "Articulo 8",
+          "cita": "FORMA DE PAGO: El precio de la contratación será abonado en cuotas mensuales, iguales y consecutivas, dentro de los veinte (20) hábiles de la presentación de las facturas en la Oficina de Compras de la Municipalidad de Chacabuco. Los pagos se efectuarán mediante cheques emitidos por la Tesorería Municipal.- Las Islas Malvinas, Georgias del Sur y Sándwich del Sur, son Argentinas FORMULARIO SECRETARIA DE SALUD Contratación: “Servicio de recolección y tratamiento de residuos patológicos” Expte. N* 4029-1074/2025 DECLARACION JURADA CHACABUCO,..............de.......................de 2.025.- Al señor INTENDENTE MUNICIPAL de CHACABUCO: El que suscribe………………................................................................. en representación de la firma .........................................................., con domicilio real en calle ..................................., N° ............. de la localidad de ........................., declara bajo juramento que ha constituido domicilio legal en calle ……........................... N°................ de la ciudad de Chacabuco (B), domicilio electrónico……………………… Para cualquier cuestión judicial que se suscite acepta la jurisdicción de los tribunales Ordinarios de la Ciudad de Junín (B) renunciando a todo otro fuero o jurisdicción.- Se declara además expresamente bajo juramento: A) que conoce y acepta el Pliego de Bases y Condiciones que rige esta Licitación.- ................................... .................................... Aclaración de la firma Firma del proponente Las Islas Malvinas, Georgias del Sur y Sándwich del Sur, son Argentinas",
+          "url_documento": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20RESIDUOS%20PATOLOGICOS%201074.pdf",
+          "sha256": "3b5f2b642f29c9387b296cefb4e3cb835394f4a493d3a70cbe6577c6cd6b6b2d",
+          "pagina": null,
+          "metodo_extraccion": "SECCION_DOCUMENTO",
+          "version_analizador": 15
+        }
+      ],
+      "fecha_apertura": null,
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": null,
+      "pago": {
+        "estado": "VERIFICADO",
+        "clasificacion": "PAGOS_PARCIALES",
+        "etiqueta": "Pagos parciales; plazo no indicado",
+        "plazos_dias": [],
+        "hitos_inicio": [
+          "PRESENTACION_FACTURA"
+        ],
+        "unidades_dias": [],
+        "direccion": "NO_ESPECIFICADA",
+        "documento_respaldo": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20RESIDUOS%20PATOLOGICOS%201074.pdf",
+        "documentos_respaldo": [
+          "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20RESIDUOS%20PATOLOGICOS%201074.pdf"
+        ],
+        "evidencias": [
+          {
+            "categoria": "PAGOS_PARCIALES",
+            "etiqueta": "Pagos parciales; plazo no indicado",
+            "plazos_dias": [],
+            "unidades_dias": [],
+            "hitos_inicio": [
+              "PRESENTACION_FACTURA"
+            ],
+            "direccion": "NO_ESPECIFICADA",
+            "contado_mencionado": false,
+            "contra_entrega_mencionado": false,
+            "prioritario": false,
+            "pagos_parciales": true,
+            "anticipo_publicado": false,
+            "facturacion_parcial": false,
+            "acreditacion_inmediata_comprobada": false,
+            "clausula": "Articulo 8",
+            "cita": "FORMA DE PAGO: El precio de la contratación será abonado en cuotas mensuales, iguales y consecutivas, dentro de los veinte (20) hábiles de la presentación de las facturas en la Oficina de Compras de la Municipalidad de Chacabuco. Los pagos se efectuarán mediante cheques emitidos por la Tesorería Municipal.- Las Islas Malvinas, Georgias del Sur y Sándwich del Sur, son Argentinas FORMULARIO SECRETARIA DE SALUD Contratación: “Servicio de recolección y tratamiento de residuos patológicos” Expte. N* 4029-1074/2025 DECLARACION JURADA CHACABUCO,..............de.......................de 2.025.- Al señor INTENDENTE MUNICIPAL de CHACABUCO: El que suscribe………………................................................................. en representación de la firma .........................................................., con domicilio real en calle ..................................., N° ............. de la localidad de ........................., declara bajo juramento que ha constituido domicilio legal en calle ……........................... N°................ de la ciudad de Chacabuco (B), domicilio electrónico……………………… Para cualquier cuestión judicial que se suscite acepta la jurisdicción de los tribunales Ordinarios de la Ciudad de Junín (B) renunciando a todo otro fuero o jurisdicción.- Se declara además expresamente bajo juramento: A) que conoce y acepta el Pliego de Bases y Condiciones que rige esta Licitación.- ................................... .................................... Aclaración de la firma Firma del proponente Las Islas Malvinas, Georgias del Sur y Sándwich del Sur, son Argentinas",
+            "url_documento": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20RESIDUOS%20PATOLOGICOS%201074.pdf",
+            "sha256": "3b5f2b642f29c9387b296cefb4e3cb835394f4a493d3a70cbe6577c6cd6b6b2d",
+            "pagina": null,
+            "metodo_extraccion": "SECCION_DOCUMENTO",
+            "version_analizador": 15
+          }
+        ],
+        "prioritario": false,
+        "motivo": null
+      },
+      "condiciones_pago": "Pagos parciales; plazo no indicado",
+      "enlace_condiciones_pago": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20RESIDUOS%20PATOLOGICOS%201074.pdf",
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion privada 3/2025",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": null,
+      "tipo_fecha_vencimiento": "DESCONOCIDA",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "motivo_vigencia": "FECHA_U_HORA_INSUFICIENTE",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20RESIDUOS%20PATOLOGICOS%201074.pdf",
+          "texto": "licitacion privada 3/2025"
+        },
+        "tipo_procedimiento": {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20RESIDUOS%20PATOLOGICOS%201074.pdf",
+          "texto": "licitacion privada 3/2025"
+        },
+        "modalidad_presentacion": {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20RESIDUOS%20PATOLOGICOS%201074.pdf",
+          "texto": "Licitación Privada Nº3/2025 Lugar, fecha y hora del Acto de Apertura en la Oficina de Compras de la Municipalidad.- Este sobre deberá contener: 1.-            a) un ejemplar del pliego de bases y condiciones con todos sus folios debidamente firmados por el oferente.-                b) comprobante del pago del pliego de bases y condiciones.-                c) la garantía de oferta que deberá constituirse de acuerdo a lo establecido en la cláusula 8ª.-                d) constancia de inscripción en el Registro de Proveedores de la Municipalidad de Chacabuco.-                e) declaración jurada donde constituye domicilio especial en la ciudad de Chacabuco, según formulario adjunto.  2.- Un sobre cerrado en cuyo frente se colocará:                1) El nombre y razón social del proponente.-                2) La palabra PROPUESTA.-                3) El número de expediente.-                4) El número de licitación privada.-                5) La fecha y hora del acto de apertura de la licitación.- Este sobre contendrá solamente la PROPUESTA formulada por el oferente en formularios propios con el membrete correspondiente. La propuesta no podrá contener enmiendas, interlíneas o raspaduras que no estén debidamente salvadas.- La omisión de alguno de los requisitos citados en el punto 1 de este artículo, será causa de rechazo inmediato de la propuesta, no dándose apertura al sobre que la contiene, el que será devuelto sin más trámite al oferente si es que se hallara presente el acto, caso contrario será agregado al expediente sin abrirlo.-           Las Islas Malvinas, Georgias del Sur y Sándwich del Sur, son Argentinas  Cláusula 9ª: GARANTIA DE OFERTA: El oferente garantizará la propuesta por el valor del uno por ciento (1%) del presupuesto oficial, estando obligado a mantener su propuesta por el plazo de treinta (30) días corridos. La garantía podrá ser integrada en alguna de las formas que a continuación se señalan: a) En efectivo, en cuyo caso se adjuntará a la presente el recibo otorgado por la Tesorería Municipal.- b) En títulos de la deuda pública, nacional-provincial, tomados a su valor nominal y cuyos intereses serán pertenencia del titular y no incrementarán de modo alguno la garantía. Se agregará en este caso el recibo de la Tesorería Municipal, donde deberán ser depositados.- c) Fianza o aval bancario.- d) Seguro de caución de una Compañía a satisfacción del Departamento Ejecutivo deberá acompañarse en este caso, póliza de seguro, no admitiéndose certificado de cobertura.- e) Cheque al día, a la orden de la Municipalidad de Chacabuco, ingresado en la tesorería municipal antes de la apertura de propuestas. Las formas indicadas precedentemente para la constitución de la garantía de oferta son excluyentes, no admitiéndose ninguna otra forma que las señaladas.-  Cláusula 10ª: VALOR DEL PLIEGO: El valor del pliego de bases y condiciones se establece en la suma de PESOS TREINTA MIL ($30.000,00).-  Cláusula 11ª: APERTURA DE LAS PROPUESTAS: Los sobres conteniendo las propuestas serán abiertos el día 16 de abril de 2025 a las 10:30 hs. en la Oficina de Compras de la Municipalidad de Chacabuco.  Cláusula 12ª: PLAZO DE MANTENIMIENTO DE LAS OFERTAS: Las ofertas deberán ser mantenidas por el término de treinta (30) días corridos, a contar desde la fecha de apertura de las propuestas.-  Cláusula 13ª: EXCEDENTES: Se deberá presentar además de la propuesta inicial una escala de precios discriminados de acuerdo a las cantidades retiradas para poder aplicar esas tarifas en caso de que haya     excedentes de retiros de bolsas, por cuestiones excepcionales e imprevistas.-   Cláusula 14ª: CONDICION: Se deja establecido que quien resulte adjudicatario, deberá facturar en forma directa a la Municipalidad.-  Cláusula 15ª: MEJORA DE PRECIOS: Si entre las propuestas presentadas y admitidas hubiera dos o más igualmente convenientes, se llamará a mejora de precios entre ellas. Se fijará día y hora de la nueva presentación y la oferta se entregará en sobre cerrado.-   Cláusula 16ª: RECHAZO DE LAS PROPUESTAS: El Departamento Ejecutivo no está obligado a aceptar ninguna de las propuestas, reservándose el derecho a rechazarlas a todas, si no resultaran convenientes a los intereses municipales.-            Las Islas Malvinas, Georgias del Sur y Sándwich del Sur, son Argentinas  Cláusula 17ª: .- ADJUDICACION: La adjudicación se realizará dentro de los veinte (20) días hábiles contados desde la fecha de apertura de las propuestas y recaerá en la oferta más conveniente y ventajosa a los intereses municipales. La notificación de dicha adjudicación, se realizará dentro de los cinco (5) días hábiles siguientes al dictado del acto administrativo correspondiente.-  Cláusula 18ª: FIRMA DE CONTRATO: Dentro de los cinco (5) días de notificada la Adjudicación se formalizará el respectivo contrato de adjudicación.   Cláusula 19ª: GARANTIA DE CONTRATO: El importe de la garantía de contrato será del 5% (cinco por ciento) del monto del mismo.- El depósito de la garantía de contrato se podrá formar integrando la garantía de propuesta.- La garantía de contrato podrá cumplimentarse en algunas de las formas establecidas en el art. 8º del presente pliego  Cláusula 20ª: DEVOLUCION DE LA GARANTIA DE OFERTA: La garantía de propuesta será devuelta a los proponentes al efectuarse la firma del contrato. -  Cláusula 21ª: INVARIABILIDAD DE PRECIOS: Los precios contratados serán invariables y no se reconocerán mayores costos, ni intereses financieros por ninguna causa.-  Cláusula 22ª: RESPONSABILIDAD DEL ADJUDICATARIO: El adjudicatario será responsable en todos los casos, de los bienes a proveer en cuanto a su calidad, cantidad y forma de entrega.- Será responsable de los daños y perjuicios ocasionados por la inoperancia de sus agentes y equipos. El adjudicatario responderá directamente a la Municipalidad o a terceros por los daños producidos a las personas o a las cosas con motivo de la provisión del equipamiento.-  Cláusula 23ª: INSPECCIÓN: Los bienes entregados serán verificados por el personal que al efecto designe la Secretaría de Salud, siendo responsable del control del funcionamiento de los mismos y del correcto cumplimiento del contrato.-  Cláusula 24º: FORMA DE PAGO: El precio de la contratación será abonado en cuotas mensuales, iguales y consecutivas, dentro de los veinte (20) hábiles de la presentación de las facturas en la Oficina de Compras de la Municipalidad de Chacabuco. Los pagos se efectuarán mediante cheques emitidos por la Tesorería Municipal.-            Las Islas Malvinas, Georgias del Sur y Sándwich del Sur, son Argentinas                                            FORMULARIO  SECRETARIA DE SALUD  Contratación: “Servicio de recolección y tratamiento de residuos patológicos”   Expte. N* 4029-1074/2025                                                   DECLARACION JURADA                                                           CHACABUCO,..............de.......................de 2.025.-    Al señor INTENDENTE MUNICIPAL de CHACABUCO:                                      El                                                                                      que suscribe………………................................................................. en                     representación de la     firma       ..........................................................,   con    domicilio         real      en    calle ..................................., N° ............. de la localidad de               ........................., declara bajo juramento que ha constituido domicilio                                    legal en      calle      ……........................... N°................ de la ciudad de Chacabuco (B), domicilio electrónico……………………… Para cualquier cuestión judicial que se suscite acepta la jurisdicción de los tribunales Ordinarios de la Ciudad de Junín (B) renunciando a todo otro fuero o jurisdicción.-                                   Se declara además expresamente bajo juramento: A) que conoce y acepta el Pliego de Bases y Condiciones que rige esta Licitación.-     ...................................                                                ....................................  Aclaración de la firma                                                               Firma del proponente                Las Islas Malvinas, Georgias del Sur y Sándwich del Sur, son Argentinas "
+        }
+      },
+      "enlace_pliego": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20RESIDUOS%20PATOLOGICOS%201074.pdf",
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_apertura",
+        "fecha_publicacion"
+      ],
+      "fuentes_observadas": [
+        "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+        "https://chacabuco.gob.ar/licitaciones-privadas/"
+      ],
+      "urls_publicacion": [
+        "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/PLIEGO%20RESIDUOS%20PATOLOGICOS%201074.pdf"
+      ]
+    },
+    {
+      "id": "18399e2fecf31f37d4ddf70f8b6dcc9ff2f2fab8967d2a15621cb824956091fd",
+      "fuente": "https://chacabuco.gob.ar/licitaciones-privadas/",
+      "estado": "PUBLICACION_DETECTADA",
+      "requiere_revalidacion": false,
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "procedimiento": "licitacion publica 1/2026",
+      "llamado_especial": false,
+      "evento_publicado": null,
+      "situacion_publicada": null,
+      "titulo": "licitacion publica no 01/26 lugar, fecha y hora del acto de apertura, en la oficina de compras de la municipalidad. este sobre debe contener: 1.- a) un ejemplar del ",
+      "objeto": "Licitación Pública nº 01/26 Lugar, fecha y hora del acto de apertura, en la Oficina de Compras de la Municipalidad. Este sobre debe contener:      1.- a) un ejemplar del pliego de bases y condiciones con todos sus folios      debidamente firmados por el oferente.-          b) comprobante del pago del pliego de bases y condiciones.-          c) la garantía de oferta que deberá constituirse de acuerdo a lo establecido en          la cláusula 8ª.-          d) constancia de inscripción en el Registro de Proveedores de la Municipalidad          de Chacabuco.-          e) declaración jurada donde constituye domicilio especial en la ciudad de          Chacabuco.-          f) Constancia de inscripción en el Ministerio de Salud de la Nación o de la Pcia.          de Buenos Aires.-          g) constancia de contratación de un seguro de responsabilidad por mala praxis.-          h) constancia de contratación de un seguro para el personal a su cargo que          atenderá las consultas, que contemplará los riesgos de accidente, enfermedad,          muerte o incapacidad total o parcial.-          i) nómina de los profesionales a cargo de la atención indicando: nombre,          apellido, DNI, especialidad y matrícula. En caso de existir bajas o nuevas          incorporaciones, las mismas deberán ser informadas a la Secretaría de Salud.-  2.-Un sobre cerrado en cuyo frente se colocará:        a) el nombre y/o razón social del proponente.-        b) la palabra PROPUESTA.-        c) el número de expediente.-        d) el número de Licitación Pública.-        e) fecha y hora del acto de apertura de la licitación.- Este sobre contendrá solamente la PROPUESTA formulada por el oferente en formularios propios con el membrete correspondiente. La propuesta no podrá contener enmiendas, interlíneas o raspaduras que no estén debidamente salvadas.- La omisión de alguno de los requisitos citados en el punto 1 de esta cláusula, será causa de rechazo de la propuesta.-  Cláusula 8ª: GARANTIA DE OFERTA: El oferente garantizará la propuesta por el valor del uno por ciento (1%) del presupuesto oficial, estando obligado a mantener dicha propuesta por el término de treinta (30) días corridos. La garantía podrá ser integrada en alguna de estas formas:     a) En efectivo, en cuyo caso se adjuntará el recibo otorgado por la Tesorería        Municipal.-    b) En títulos de la deuda pública nacional-provincial, tomados a su valor nominal y       cuyos intereses serán de pertenencia del titular y no incrementarán la garantía.       Se agregará en este caso el recibo de la Tesorería Municipal, donde deberán ser       depositados.-    c) Fianza o aval bancario.-    d) Seguro de caución de una compañía a satisfacción del Departamento Ejecutivo.       En este caso deberá acompañarse la póliza de seguro, no admitiéndose el       certificado de cobertura.-    e) Cheque cruzado, certificado por la correspondiente entidad bancaria, a la orden       de la Municipalidad de Chacabuco. La certificación del cheque deberá       extenderse durante todo el plazo de mantenimiento de la oferta.        Las formas indicadas precedentemente para la constitución de la garantía de        oferta son excluyentes, no admitiéndose ninguna otra forma que la señalada.-  Cláusula 9ª: VALOR DEL PLIEGO: El valor del pliego de bases y condiciones se establece en la suma de PESOS CIENTO CINCUENTA MIL ($ 150.000).-  Cláusula 10ª: APERTURA DE LAS OFERTAS: Los sobres conteniendo las propuestas serán abiertos el día 10 de marzo de 2026, a las 10:00hs. en la Oficina de Compras de la Municipalidad de Chacabuco, sita en calle Reconquista nº 26, Chacabuco, Tel. 02352-470300.-  Cláusula 11ª: PLAZO DE MANTENIMIENTO DE LAS OFERTAS: Las ofertas deberán ser mantenidas por el término de treinta (30) días corridos, contados a partir de la fecha del acto de apertura de propuestas.-  Cláusula 12ª: CONDICION: Se deja establecido que quien resulte adjudicatario deberá facturar en forma directa a la Municipalidad.-  Cláusula 13ª: MEJORA DE PRECIOS: Si entre las propuestas presentadas y admitidas hubiera dos o más igualmente convenientes, se llamará a mejora de precios entre ellas. Se fijará día y hora de la nueva presentación y la oferta se entregará en sobre cerrado.-  Cláusula 14ª: RECHAZO DE LAS PROPUESTAS: El Departamento Ejecutivo no está obligado a aceptar ninguna de las propuestas presentadas, reservándose el derecho de rechazarlas a todas, si no resultaran convenientes a los intereses municipales.-  Cláusula 15ª: ADJUDICACION: La adjudicación se realizará dentro de los quince (15) días hábiles contados a partir de la fecha de apertura de las propuestas y recaerá en la oferta más conveniente a los intereses municipales. La notificación de dicha adjudicación se realizará dentro de los cinco (5) días hábiles siguientes al dictado del acto administrativo correspondiente.-  Cláusula 16ª: FIRMA DEL CONTRATO: El contrato de adjudicación se formalizará dentro de los cinco (5) días hábiles de notificada la adjudicación.-  Cláusula 17ª: GARANTIA DE CONTRATO: El importe de la garantía de contrato será equivalente al cinco por ciento (5%) del monto del mismo. Se podrá constituir en algunas de las formas indicadas en la cláusula 8ª del presente pliego. Se deja establecido que, a opción del adjudicatario, la garantía de contrato podrá integrarse con la garantía de oferta.-  Cláusula 18ª: DEVOLUCION DE LA GARANTIA DE OFERTA: La garantía de oferta será devuelta a los proponentes que no resultaron adjudicados una vez firmado el contrato de adjudicación.-  Cláusula 19ª: INVARIABILIDAD DE PRECIOS: Los precios contratados serán invariables y no se reconocerán mayores costos, ni intereses financieros por ningún concepto.-  Cláusula 20ª: RESPONSABILIDAD DEL ADJUDICATARIO: El adjudicatario será responsable del cumplimiento del contrato. Será, responsable de la adecuada prestación que brinde y de la calidad de la prestación.-  Cláusula 21ª: VERIFICACION: La Secretaría de Salud, será quien verifique el cumplimiento del contrato por parte del adjudicatario y de las obligaciones que asume en virtud del mismo.-  Cláusula 22ª: PLAZO PUESTA EN FUNCIONAMIENTO DEL SERVICIO: Se establece un plazo de diez (10) días hábiles posteriores a la firma del contrato para la puesta en funcionamiento del servicio por parte del adjudicatario.-  Cláusula 23ª. El monto contractual será abonado por la Municipalidad de Chacabuco, en doce (12) cuotas mensuales. Los pagos se efectivizarán en la Tesorería Municipal, previa certificación por parte del Secretario de Salud, de las horas y tareas desarrolladas por la adjudicataria.- ",
+      "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20Telemedicinaultimo.pdf",
+      "evidencia_url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20Telemedicinaultimo.pdf",
+      "documentos": [
+        {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20Telemedicinaultimo.pdf",
+          "titulo": "Documento"
+        }
+      ],
+      "numero_procedimiento": "1/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "detalle_completo": true,
+      "rango_evidencia": 3,
+      "pago_evidencias": [],
+      "fecha_apertura": null,
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": null,
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 1/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": null,
+      "tipo_fecha_vencimiento": "DESCONOCIDA",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "motivo_vigencia": "FECHA_U_HORA_INSUFICIENTE",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20Telemedicinaultimo.pdf",
+          "texto": "licitacion publica 1/2026"
+        },
+        "tipo_procedimiento": {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20Telemedicinaultimo.pdf",
+          "texto": "licitacion publica 1/2026"
+        },
+        "modalidad_presentacion": {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20Telemedicinaultimo.pdf",
+          "texto": "Licitación Pública nº 01/26 Lugar, fecha y hora del acto de apertura, en la Oficina de Compras de la Municipalidad. Este sobre debe contener:      1.- a) un ejemplar del pliego de bases y condiciones con todos sus folios      debidamente firmados por el oferente.-          b) comprobante del pago del pliego de bases y condiciones.-          c) la garantía de oferta que deberá constituirse de acuerdo a lo establecido en          la cláusula 8ª.-          d) constancia de inscripción en el Registro de Proveedores de la Municipalidad          de Chacabuco.-          e) declaración jurada donde constituye domicilio especial en la ciudad de          Chacabuco.-          f) Constancia de inscripción en el Ministerio de Salud de la Nación o de la Pcia.          de Buenos Aires.-          g) constancia de contratación de un seguro de responsabilidad por mala praxis.-          h) constancia de contratación de un seguro para el personal a su cargo que          atenderá las consultas, que contemplará los riesgos de accidente, enfermedad,          muerte o incapacidad total o parcial.-          i) nómina de los profesionales a cargo de la atención indicando: nombre,          apellido, DNI, especialidad y matrícula. En caso de existir bajas o nuevas          incorporaciones, las mismas deberán ser informadas a la Secretaría de Salud.-  2.-Un sobre cerrado en cuyo frente se colocará:        a) el nombre y/o razón social del proponente.-        b) la palabra PROPUESTA.-        c) el número de expediente.-        d) el número de Licitación Pública.-        e) fecha y hora del acto de apertura de la licitación.- Este sobre contendrá solamente la PROPUESTA formulada por el oferente en formularios propios con el membrete correspondiente. La propuesta no podrá contener enmiendas, interlíneas o raspaduras que no estén debidamente salvadas.- La omisión de alguno de los requisitos citados en el punto 1 de esta cláusula, será causa de rechazo de la propuesta.-  Cláusula 8ª: GARANTIA DE OFERTA: El oferente garantizará la propuesta por el valor del uno por ciento (1%) del presupuesto oficial, estando obligado a mantener dicha propuesta por el término de treinta (30) días corridos. La garantía podrá ser integrada en alguna de estas formas:     a) En efectivo, en cuyo caso se adjuntará el recibo otorgado por la Tesorería        Municipal.-    b) En títulos de la deuda pública nacional-provincial, tomados a su valor nominal y       cuyos intereses serán de pertenencia del titular y no incrementarán la garantía.       Se agregará en este caso el recibo de la Tesorería Municipal, donde deberán ser       depositados.-    c) Fianza o aval bancario.-    d) Seguro de caución de una compañía a satisfacción del Departamento Ejecutivo.       En este caso deberá acompañarse la póliza de seguro, no admitiéndose el       certificado de cobertura.-    e) Cheque cruzado, certificado por la correspondiente entidad bancaria, a la orden       de la Municipalidad de Chacabuco. La certificación del cheque deberá       extenderse durante todo el plazo de mantenimiento de la oferta.        Las formas indicadas precedentemente para la constitución de la garantía de        oferta son excluyentes, no admitiéndose ninguna otra forma que la señalada.-  Cláusula 9ª: VALOR DEL PLIEGO: El valor del pliego de bases y condiciones se establece en la suma de PESOS CIENTO CINCUENTA MIL ($ 150.000).-  Cláusula 10ª: APERTURA DE LAS OFERTAS: Los sobres conteniendo las propuestas serán abiertos el día 10 de marzo de 2026, a las 10:00hs. en la Oficina de Compras de la Municipalidad de Chacabuco, sita en calle Reconquista nº 26, Chacabuco, Tel. 02352-470300.-  Cláusula 11ª: PLAZO DE MANTENIMIENTO DE LAS OFERTAS: Las ofertas deberán ser mantenidas por el término de treinta (30) días corridos, contados a partir de la fecha del acto de apertura de propuestas.-  Cláusula 12ª: CONDICION: Se deja establecido que quien resulte adjudicatario deberá facturar en forma directa a la Municipalidad.-  Cláusula 13ª: MEJORA DE PRECIOS: Si entre las propuestas presentadas y admitidas hubiera dos o más igualmente convenientes, se llamará a mejora de precios entre ellas. Se fijará día y hora de la nueva presentación y la oferta se entregará en sobre cerrado.-  Cláusula 14ª: RECHAZO DE LAS PROPUESTAS: El Departamento Ejecutivo no está obligado a aceptar ninguna de las propuestas presentadas, reservándose el derecho de rechazarlas a todas, si no resultaran convenientes a los intereses municipales.-  Cláusula 15ª: ADJUDICACION: La adjudicación se realizará dentro de los quince (15) días hábiles contados a partir de la fecha de apertura de las propuestas y recaerá en la oferta más conveniente a los intereses municipales. La notificación de dicha adjudicación se realizará dentro de los cinco (5) días hábiles siguientes al dictado del acto administrativo correspondiente.-  Cláusula 16ª: FIRMA DEL CONTRATO: El contrato de adjudicación se formalizará dentro de los cinco (5) días hábiles de notificada la adjudicación.-  Cláusula 17ª: GARANTIA DE CONTRATO: El importe de la garantía de contrato será equivalente al cinco por ciento (5%) del monto del mismo. Se podrá constituir en algunas de las formas indicadas en la cláusula 8ª del presente pliego. Se deja establecido que, a opción del adjudicatario, la garantía de contrato podrá integrarse con la garantía de oferta.-  Cláusula 18ª: DEVOLUCION DE LA GARANTIA DE OFERTA: La garantía de oferta será devuelta a los proponentes que no resultaron adjudicados una vez firmado el contrato de adjudicación.-  Cláusula 19ª: INVARIABILIDAD DE PRECIOS: Los precios contratados serán invariables y no se reconocerán mayores costos, ni intereses financieros por ningún concepto.-  Cláusula 20ª: RESPONSABILIDAD DEL ADJUDICATARIO: El adjudicatario será responsable del cumplimiento del contrato. Será, responsable de la adecuada prestación que brinde y de la calidad de la prestación.-  Cláusula 21ª: VERIFICACION: La Secretaría de Salud, será quien verifique el cumplimiento del contrato por parte del adjudicatario y de las obligaciones que asume en virtud del mismo.-  Cláusula 22ª: PLAZO PUESTA EN FUNCIONAMIENTO DEL SERVICIO: Se establece un plazo de diez (10) días hábiles posteriores a la firma del contrato para la puesta en funcionamiento del servicio por parte del adjudicatario.-  Cláusula 23ª. El monto contractual será abonado por la Municipalidad de Chacabuco, en doce (12) cuotas mensuales. Los pagos se efectivizarán en la Tesorería Municipal, previa certificación por parte del Secretario de Salud, de las horas y tareas desarrolladas por la adjudicataria.- "
+        }
+      },
+      "enlace_pliego": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20Telemedicinaultimo.pdf",
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_apertura",
+        "fecha_publicacion"
+      ],
+      "fuentes_observadas": [
+        "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+        "https://chacabuco.gob.ar/licitaciones-privadas/"
+      ],
+      "urls_publicacion": [
+        "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20Telemedicinaultimo.pdf"
+      ]
+    },
+    {
+      "id": "180401e2d60d0842016966b83d656e6c30df16409213fd7c270c0ac22875557c",
+      "fuente": "https://chacabuco.gob.ar/licitaciones-privadas/",
+      "estado": "PUBLICACION_DETECTADA",
+      "requiere_revalidacion": false,
+      "organismo": "Municipalidad de Chacabuco",
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "procedimiento": "licitacion privada 2/2026",
+      "llamado_especial": false,
+      "evento_publicado": null,
+      "situacion_publicada": null,
+      "titulo": "licitacion privada no 2/2026 lugar, fecha y hora del acto de apertura en la oficina de compras de la municipalidad.- este sobre debera contener: 1.- a) un ejemplar del ",
+      "objeto": "Licitacion Privada Nº 2/2026 Lugar, fecha y hora del Acto de Apertura en la Oficina de Compras de la Municipalidad.- Este sobre deberá contener: 1.-            a) un ejemplar del pliego de bases y condiciones con todos sus folios debidamente firmados por el oferente.-                b) comprobante del pago del pliego de bases y condiciones.-                c) la garantía de oferta que deberá constituirse de acuerdo a lo establecido en la cláusula 8ª.-                d) constancia de inscripción en el Registro de Proveedores de la Municipalidad de Chacabuco.-                e) domicilio real y legal, siendo indispensable que éste último cuente con asiento en la ciudad de Chacabuco y con una casilla de correo (domicilio electrónico) que surtirán de efecto como constituidos, sometiéndose a la Jurisdicción de Los Tribunales Ordinarios de Junín, renunciando a cualquier otro fuero o Jurisdicción                f) Documentación que respalde la intervención de un profesional “Nutricionista” en la elaboración de las viandas               g) Certificado de libre deuda expedido por el Registro de Deudores Alimentarios Morosos de la Pcia. de Buenos Aires, del Ministerio de Justicia de la provincia de Buenos Aires    2.- Un sobre cerrado en cuyo frente se colocará:              1) El nombre y razón social del proponente.-              2) La palabra PROPUESTA.-              3) El número de expediente.-              4) El número de Concurso de Precios.-              5) La fecha y hora del acto de apertura de la licitación .-  Este sobre contendrá solamente la PROPUESTA formulada por el oferente en formularios propios con el membrete correspondiente. La propuesta no podrá contener enmiendas, interlíneas o raspaduras que no estén debidamente salvadas.- La omisión de alguno de los requisitos citados en el punto 1 de este artículo, será causa de rechazo inmediato de la propuesta, no dándose apertura al sobre que la contiene, el que será devuelto sin más trámite al oferente si es que se hallara presente el acto, caso contrario será agregado al expediente sin abrirlo.-  Cláusula 8ª: GARANTIA DE OFERTA: El oferente garantizará la propuesta por el valor del uno por ciento (1%) del presupuesto oficial: $ 660.000 PESOS SEISICIENTOS SESENTA Y SEIS MIL CON 00/100), estando obligado a mantener su propuesta por el plazo de treinta (30) días corridos. La garantía podrá ser integrada en alguna de las formas que a continuación se señalan: a) En efectivo, en cuyo caso se adjuntará a la presente el recibo otorgado por la Tesorería Municipal.- b) En títulos de la deuda pública, nacional-provincial, tomados a su valor nominal y cuyos intereses serán pertenencia del titular y no incrementarán de modo alguno la garantía. Se agregará en este caso el recibo de la Tesorería Municipal, donde deberán ser depositados.- c) Fianza o aval bancario.- d) Seguro de caución de una Compañía a satisfacción del Departamento Ejecutivo deberá acompañarse en este caso, póliza de seguro, no admitiéndose certificado de cobertura.- e) Cheque al día depositado en la Tesorería antes de la hora de la Licitación. f) Pagaré a la vista firmado por el oferente y certificado por Escribano Público o Funcionario Idóneo.  Las formas indicadas precedentemente para la constitución de la garantía de oferta son excluyentes, no admitiéndose ninguna otra forma que las señaladas.-   Cláusula 9ª: VALOR DEL PLIEGO: El valor del pliego de bases y condiciones se establece en la suma de PESOS CUARENTA MIL ($ 40.000,00).-  Cláusula 10ª: APERTURA DE LAS PROPUESTAS: Los sobres conteniendo las propuestas serán abiertos el día 27 de febrero de 2026 a las 10:30 hs. en la Oficina de Compras de la Municipalidad de Chacabuco.  Cláusula 11ª: PLAZO DE MANTENIMIENTO DE LAS OFERTAS: Las ofertas deberán ser mantenidas por el término de treinta (30) días corridos, a contar desde la fecha de apertura de las propuestas.-  Cláusula 12ª: CONDICION: Se deja establecido que quien                     resulte adjudicatario, deberá facturar en forma directa a la Municipalidad.-  Cláusula 13ª: MEJORA DE PRECIOS: Si entre las propuestas presentadas y admitidas hubiera dos o más igualmente convenientes, se llamará a mejora de precios entre ellas. Se fijará día y hora de la nueva presentación y la oferta se entregará en sobre cerrado.-  Cláusula 14ª: RECHAZO DE LAS PROPUESTAS: El Departamento Ejecutivo no está obligado a aceptar ninguna de las propuestas, reservándose el derecho a rechazarlas a todas, si no resultaran convenientes a los intereses municipales.-  Cláusula 15ª: ADJUDICACION: La adjudicación se realizará dentro de los veinte (20) días hábiles contados desde la fecha de apertura de las propuestas y recaerá en la oferta más conveniente y ventajosa a los intereses municipales. La notificación de dicha adjudicación, se realizará dentro de los cinco (5) días hábiles siguientes al dictado del acto administrativo correspondiente.-  Cláusula 16ª: FIRMA DE CONTRATO: Dentro de los cinco (5) días hábiles de notificada la    adjudicación, se formalizará el respectivo contrato de adjudicación.  Cláusula 17ª: PENALIDADES POR NO CONCURRIR A FIRMAR EL CONTRATO: En caso de que el adjudicatario no formalizara el contrato dentro del plazo estipulado, se hará pasible de una multa equivalente al 5% del DEPÓSITO DE GARANTIA de OFERTA por cada día de retraso. La Municipalidad se reserva el derecho de revocar la adjudicación del servicio y retener el importe de la GARANTIA DE OFERTA, la que se dará por perdida al proponente a favor de la Municipalidad, todo ello sin necesidad de interpelación alguna y sin perjuicio de la aplicación de otras penalidades previstas por ley.  Cláusula 18ª: GARANTIA DE CONTRATO: El importe de la garantía de contrato será del 5% (cinco por ciento) del monto del mismo.- El depósito de la garantía de contrato se podrá formar integrando la garantía de propuesta.- La garantía de contrato podrá cumplimentarse en algunas de las formas establecidas en el art. 8º del presente pliego.-  Cláusula 19ª: DEVOLUCION DE LA GARANTIA DE OFERTA: La garantía de propuesta será devuelta a los proponentes al efectuarse la firma del contrato. -  Cláusula 20ª: INVARIABILIDAD DE PRECIOS: Los precios contratados serán invariables y no se reconocerán mayores costos, ni intereses financieros por ninguna causa.  Cláusula 21ª: RESPONSABILIDAD DEL ADJUDICATARIO: El adjudicatario será responsable en todos los casos, de los daños y perjuicios ocasionados por la inoperancia de sus agentes en la elaboración de las viandas, garantizando productos inocuos de calidad y aporte nutricional, como también de la mala fe o falta de honradez en la prestación del servicio. El proveedor responderá en todos los casos directamente al Municipio o a terceros por los daños y/o perjuicios a las personas con motivo de la prestación del servicio.-  Cláusula 22ª: CUMPLIMIENTO DE LAS NORMAS LABORALES Y PREVISIONALES VIGENTES: El proveedor es único responsable del cumplimiento de las normas previsionales y laborales vigentes del personal a su cargo. En caso de no cumplir dicha obligación se suspenderá la prestación del servicio sin interrumpir el plazo contractual con aplicación de las penalidades previstas para el caso de suspensión injustificada de la prestación del servicio. En caso que la Municipalidad lo considere necesario, el proveedor deberá presentar constancias fehacientes de dicho cumplimiento.   Cláusula 23ª: PLAZO DEL SERVICIO: El plazo de prestación del servicio se establece en seis (6) meses.  Cláusula 24ª: SEGURO: Es obligación del proveedor asegurar al personal, vehículos intervinientes, y personas a transportar en Compañías de Seguros reconocidas por la Superintendencia de Seguros de la Nación, durante el termino de la prestación del servicio, debiendo hacerlo por la totalidad de los jornales invocando taxativamente los riesgos que cubre, reconociéndose incapacidad total o parcial, asistencia médica, internación y medicación. Asimismo deberá presentar el proveedor un certificado de la Compañía de Seguros con el monto de la póliza correspondiente.  Cláusula 26ª: FORMA DE PAGO: El precio de la contratación será abonado dentro de los 10 días posteriores al término de cada mes de la prestación del servicio. Los pagos se efectuarán mediante cheques emitidos por la Tesorería Municipal. ",
+      "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20concurso%20663%20ProgramaAbuelos.pdf",
+      "evidencia_url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20concurso%20663%20ProgramaAbuelos.pdf",
+      "documentos": [
+        {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20concurso%20663%20ProgramaAbuelos.pdf",
+          "titulo": "Documento"
+        }
+      ],
+      "numero_procedimiento": "2/2026",
+      "tipo_procedimiento": "licitacion privada",
+      "detalle_completo": true,
+      "rango_evidencia": 3,
+      "pago_evidencias": [
+        {
+          "categoria": "PLAZO_10_DIAS",
+          "etiqueta": "10 días",
+          "plazos_dias": [
+            10
+          ],
+          "unidades_dias": [
+            "no indicada"
+          ],
+          "hitos_inicio": [],
+          "direccion": "NO_ESPECIFICADA",
+          "contado_mencionado": false,
+          "contra_entrega_mencionado": false,
+          "prioritario": false,
+          "pagos_parciales": false,
+          "anticipo_publicado": false,
+          "facturacion_parcial": false,
+          "acreditacion_inmediata_comprobada": false,
+          "clausula": "Articulo 8",
+          "cita": "FORMA DE PAGO: El precio de la contratación será abonado dentro de los 10 días posteriores al término de cada mes de la prestación del servicio. Los pagos se efectuarán mediante cheques emitidos por la Tesorería Municipal.",
+          "url_documento": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20concurso%20663%20ProgramaAbuelos.pdf",
+          "sha256": "e066f4998805b5f55118d78618ee49c17e8b04fcd9199e4fd1f4691499d56d0a",
+          "pagina": null,
+          "metodo_extraccion": "SECCION_DOCUMENTO",
+          "version_analizador": 15
+        }
+      ],
+      "fecha_apertura": null,
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "660000",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "VERIFICADO",
+        "clasificacion": "PLAZO_10_DIAS",
+        "etiqueta": "10 días",
+        "plazos_dias": [
+          10
+        ],
+        "hitos_inicio": [],
+        "unidades_dias": [
+          "no indicada"
+        ],
+        "direccion": "NO_ESPECIFICADA",
+        "documento_respaldo": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20concurso%20663%20ProgramaAbuelos.pdf",
+        "documentos_respaldo": [
+          "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20concurso%20663%20ProgramaAbuelos.pdf"
+        ],
+        "evidencias": [
+          {
+            "categoria": "PLAZO_10_DIAS",
+            "etiqueta": "10 días",
+            "plazos_dias": [
+              10
+            ],
+            "unidades_dias": [
+              "no indicada"
+            ],
+            "hitos_inicio": [],
+            "direccion": "NO_ESPECIFICADA",
+            "contado_mencionado": false,
+            "contra_entrega_mencionado": false,
+            "prioritario": false,
+            "pagos_parciales": false,
+            "anticipo_publicado": false,
+            "facturacion_parcial": false,
+            "acreditacion_inmediata_comprobada": false,
+            "clausula": "Articulo 8",
+            "cita": "FORMA DE PAGO: El precio de la contratación será abonado dentro de los 10 días posteriores al término de cada mes de la prestación del servicio. Los pagos se efectuarán mediante cheques emitidos por la Tesorería Municipal.",
+            "url_documento": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20concurso%20663%20ProgramaAbuelos.pdf",
+            "sha256": "e066f4998805b5f55118d78618ee49c17e8b04fcd9199e4fd1f4691499d56d0a",
+            "pagina": null,
+            "metodo_extraccion": "SECCION_DOCUMENTO",
+            "version_analizador": 15
+          }
+        ],
+        "prioritario": false,
+        "motivo": null
+      },
+      "condiciones_pago": "10 días",
+      "enlace_condiciones_pago": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20concurso%20663%20ProgramaAbuelos.pdf",
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion privada 2/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": null,
+      "tipo_fecha_vencimiento": "DESCONOCIDA",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "motivo_vigencia": "FECHA_U_HORA_INSUFICIENTE",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20concurso%20663%20ProgramaAbuelos.pdf",
+          "texto": "licitacion privada 2/2026"
+        },
+        "tipo_procedimiento": {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20concurso%20663%20ProgramaAbuelos.pdf",
+          "texto": "licitacion privada 2/2026"
+        },
+        "presupuesto": {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20concurso%20663%20ProgramaAbuelos.pdf",
+          "texto": "presupuesto oficial: $ 660.000"
+        },
+        "modalidad_presentacion": {
+          "url": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20concurso%20663%20ProgramaAbuelos.pdf",
+          "texto": "Licitacion Privada Nº 2/2026 Lugar, fecha y hora del Acto de Apertura en la Oficina de Compras de la Municipalidad.- Este sobre deberá contener: 1.-            a) un ejemplar del pliego de bases y condiciones con todos sus folios debidamente firmados por el oferente.-                b) comprobante del pago del pliego de bases y condiciones.-                c) la garantía de oferta que deberá constituirse de acuerdo a lo establecido en la cláusula 8ª.-                d) constancia de inscripción en el Registro de Proveedores de la Municipalidad de Chacabuco.-                e) domicilio real y legal, siendo indispensable que éste último cuente con asiento en la ciudad de Chacabuco y con una casilla de correo (domicilio electrónico) que surtirán de efecto como constituidos, sometiéndose a la Jurisdicción de Los Tribunales Ordinarios de Junín, renunciando a cualquier otro fuero o Jurisdicción                f) Documentación que respalde la intervención de un profesional “Nutricionista” en la elaboración de las viandas               g) Certificado de libre deuda expedido por el Registro de Deudores Alimentarios Morosos de la Pcia. de Buenos Aires, del Ministerio de Justicia de la provincia de Buenos Aires    2.- Un sobre cerrado en cuyo frente se colocará:              1) El nombre y razón social del proponente.-              2) La palabra PROPUESTA.-              3) El número de expediente.-              4) El número de Concurso de Precios.-              5) La fecha y hora del acto de apertura de la licitación .-  Este sobre contendrá solamente la PROPUESTA formulada por el oferente en formularios propios con el membrete correspondiente. La propuesta no podrá contener enmiendas, interlíneas o raspaduras que no estén debidamente salvadas.- La omisión de alguno de los requisitos citados en el punto 1 de este artículo, será causa de rechazo inmediato de la propuesta, no dándose apertura al sobre que la contiene, el que será devuelto sin más trámite al oferente si es que se hallara presente el acto, caso contrario será agregado al expediente sin abrirlo.-  Cláusula 8ª: GARANTIA DE OFERTA: El oferente garantizará la propuesta por el valor del uno por ciento (1%) del presupuesto oficial: $ 660.000 PESOS SEISICIENTOS SESENTA Y SEIS MIL CON 00/100), estando obligado a mantener su propuesta por el plazo de treinta (30) días corridos. La garantía podrá ser integrada en alguna de las formas que a continuación se señalan: a) En efectivo, en cuyo caso se adjuntará a la presente el recibo otorgado por la Tesorería Municipal.- b) En títulos de la deuda pública, nacional-provincial, tomados a su valor nominal y cuyos intereses serán pertenencia del titular y no incrementarán de modo alguno la garantía. Se agregará en este caso el recibo de la Tesorería Municipal, donde deberán ser depositados.- c) Fianza o aval bancario.- d) Seguro de caución de una Compañía a satisfacción del Departamento Ejecutivo deberá acompañarse en este caso, póliza de seguro, no admitiéndose certificado de cobertura.- e) Cheque al día depositado en la Tesorería antes de la hora de la Licitación. f) Pagaré a la vista firmado por el oferente y certificado por Escribano Público o Funcionario Idóneo.  Las formas indicadas precedentemente para la constitución de la garantía de oferta son excluyentes, no admitiéndose ninguna otra forma que las señaladas.-   Cláusula 9ª: VALOR DEL PLIEGO: El valor del pliego de bases y condiciones se establece en la suma de PESOS CUARENTA MIL ($ 40.000,00).-  Cláusula 10ª: APERTURA DE LAS PROPUESTAS: Los sobres conteniendo las propuestas serán abiertos el día 27 de febrero de 2026 a las 10:30 hs. en la Oficina de Compras de la Municipalidad de Chacabuco.  Cláusula 11ª: PLAZO DE MANTENIMIENTO DE LAS OFERTAS: Las ofertas deberán ser mantenidas por el término de treinta (30) días corridos, a contar desde la fecha de apertura de las propuestas.-  Cláusula 12ª: CONDICION: Se deja establecido que quien                     resulte adjudicatario, deberá facturar en forma directa a la Municipalidad.-  Cláusula 13ª: MEJORA DE PRECIOS: Si entre las propuestas presentadas y admitidas hubiera dos o más igualmente convenientes, se llamará a mejora de precios entre ellas. Se fijará día y hora de la nueva presentación y la oferta se entregará en sobre cerrado.-  Cláusula 14ª: RECHAZO DE LAS PROPUESTAS: El Departamento Ejecutivo no está obligado a aceptar ninguna de las propuestas, reservándose el derecho a rechazarlas a todas, si no resultaran convenientes a los intereses municipales.-  Cláusula 15ª: ADJUDICACION: La adjudicación se realizará dentro de los veinte (20) días hábiles contados desde la fecha de apertura de las propuestas y recaerá en la oferta más conveniente y ventajosa a los intereses municipales. La notificación de dicha adjudicación, se realizará dentro de los cinco (5) días hábiles siguientes al dictado del acto administrativo correspondiente.-  Cláusula 16ª: FIRMA DE CONTRATO: Dentro de los cinco (5) días hábiles de notificada la    adjudicación, se formalizará el respectivo contrato de adjudicación.  Cláusula 17ª: PENALIDADES POR NO CONCURRIR A FIRMAR EL CONTRATO: En caso de que el adjudicatario no formalizara el contrato dentro del plazo estipulado, se hará pasible de una multa equivalente al 5% del DEPÓSITO DE GARANTIA de OFERTA por cada día de retraso. La Municipalidad se reserva el derecho de revocar la adjudicación del servicio y retener el importe de la GARANTIA DE OFERTA, la que se dará por perdida al proponente a favor de la Municipalidad, todo ello sin necesidad de interpelación alguna y sin perjuicio de la aplicación de otras penalidades previstas por ley.  Cláusula 18ª: GARANTIA DE CONTRATO: El importe de la garantía de contrato será del 5% (cinco por ciento) del monto del mismo.- El depósito de la garantía de contrato se podrá formar integrando la garantía de propuesta.- La garantía de contrato podrá cumplimentarse en algunas de las formas establecidas en el art. 8º del presente pliego.-  Cláusula 19ª: DEVOLUCION DE LA GARANTIA DE OFERTA: La garantía de propuesta será devuelta a los proponentes al efectuarse la firma del contrato. -  Cláusula 20ª: INVARIABILIDAD DE PRECIOS: Los precios contratados serán invariables y no se reconocerán mayores costos, ni intereses financieros por ninguna causa.  Cláusula 21ª: RESPONSABILIDAD DEL ADJUDICATARIO: El adjudicatario será responsable en todos los casos, de los daños y perjuicios ocasionados por la inoperancia de sus agentes en la elaboración de las viandas, garantizando productos inocuos de calidad y aporte nutricional, como también de la mala fe o falta de honradez en la prestación del servicio. El proveedor responderá en todos los casos directamente al Municipio o a terceros por los daños y/o perjuicios a las personas con motivo de la prestación del servicio.-  Cláusula 22ª: CUMPLIMIENTO DE LAS NORMAS LABORALES Y PREVISIONALES VIGENTES: El proveedor es único responsable del cumplimiento de las normas previsionales y laborales vigentes del personal a su cargo. En caso de no cumplir dicha obligación se suspenderá la prestación del servicio sin interrumpir el plazo contractual con aplicación de las penalidades previstas para el caso de suspensión injustificada de la prestación del servicio. En caso que la Municipalidad lo considere necesario, el proveedor deberá presentar constancias fehacientes de dicho cumplimiento.   Cláusula 23ª: PLAZO DEL SERVICIO: El plazo de prestación del servicio se establece en seis (6) meses.  Cláusula 24ª: SEGURO: Es obligación del proveedor asegurar al personal, vehículos intervinientes, y personas a transportar en Compañías de Seguros reconocidas por la Superintendencia de Seguros de la Nación, durante el termino de la prestación del servicio, debiendo hacerlo por la totalidad de los jornales invocando taxativamente los riesgos que cubre, reconociéndose incapacidad total o parcial, asistencia médica, internación y medicación. Asimismo deberá presentar el proveedor un certificado de la Compañía de Seguros con el monto de la póliza correspondiente.  Cláusula 26ª: FORMA DE PAGO: El precio de la contratación será abonado dentro de los 10 días posteriores al término de cada mes de la prestación del servicio. Los pagos se efectuarán mediante cheques emitidos por la Tesorería Municipal. "
+        }
+      },
+      "enlace_pliego": "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20concurso%20663%20ProgramaAbuelos.pdf",
+      "campos_desconocidos": [
+        "fecha_apertura",
+        "fecha_publicacion"
+      ],
+      "fuentes_observadas": [
+        "https://chacabuco.gob.ar/category/licitacionesprivadas/",
+        "https://chacabuco.gob.ar/licitaciones-privadas/"
+      ],
+      "urls_publicacion": [
+        "https://chacabuco.gob.ar/wp-content/uploads/licitacionesprivada/Pliego%20concurso%20663%20ProgramaAbuelos.pdf"
+      ]
+    }
+  ],
+  "segundos": 89.45,
+  "alta_automatica": false
+}

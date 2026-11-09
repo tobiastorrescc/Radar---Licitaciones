@@ -1,0 +1,95 @@
+id,organismo,localidad,provincia,url,adaptador,estado,publicaciones_detectadas,vigentes_verificadas,duracion_segundos,causas
+fuente-001,Municipalidad de Rosario,Rosario,Santa Fe,https://www.rosario.gob.ar/inicio/compras-y-licitaciones,rosario,TIEMPO_FUENTE,122,6,240.062,"[""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""Plazo agotado; se conserva lo extraído""]"
+fuente-005,UNR,Rosario,Santa Fe,https://compras.unr.edu.ar/,,BLOQUEADA,0,0,1.229,"[""RESTRICCION_HTTP""]"
+fuente-009,Municipalidad de Carcarañá,Carcarañá,Santa Fe,https://xn--carcaraa-j3a.gob.ar/,,TIEMPO_FUENTE,4,0,55.026,"[""Plazo agotado; se conserva lo extraído""]"
+fuente-013,Municipalidad de Funes,Funes,Santa Fe,https://funes.gob.ar/,,PARCIAL,40,0,6.827,"[""ERROR_EXTRACCION"", ""Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso""]"
+fuente-017,Municipalidad de Santo Tomé,Santo Tomé,Santa Fe,https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia,,PENDIENTE,0,0,1.416,"[""Listado no reconocido; no se declara vacío""]"
+fuente-021,Municipalidad de Venado Tuerto,Venado Tuerto,Santa Fe,https://venadotuerto.gob.ar/licitaciones/,,OPERATIVA,27,1,1.991,[]
+fuente-025,CAFESG,Concordia,Entre Ríos,https://cafesg.gob.ar/cafesg2/licitaciones/,,OPERATIVA,68,0,2.514,[]
+fuente-029,ENERSA,Paraná,Entre Ríos,https://www.enersa.com.ar/area-proveedores/,,BLOQUEADA,0,0,0.637,"[""ERROR_CERTIFICADO_TLS""]"
+fuente-033,Municipalidad de Colón,Colón,Entre Ríos,https://colon.gov.ar/compras-contratos-suministros/licitaciones/,,PENDIENTE,0,0,9.13,"[""Listado no reconocido; no se declara vacío""]"
+fuente-038,Municipalidad de Crespo,Crespo,Entre Ríos,https://www.crespo.gob.ar/licitaciones-privadas-2026/,,OPERATIVA,7,0,1.235,[]
+fuente-042,Municipalidad de Nogoyá,Nogoyá,Entre Ríos,https://nuevo.nogoya.gob.ar/compras-licitaciones-y-concursos-nuevo/,,OPERATIVA,20,0,1.291,[]
+fuente-046,Municipalidad de San Nicolás,San Nicolás,Buenos Aires,https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos,,PARCIAL,10,0,2.426,"[""Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso""]"
+fuente-050,Municipalidad de Arrecifes,Arrecifes,Buenos Aires,https://arrecifes.gob.ar/informacion-publica/licitaciones/,,OPERATIVA,6,0,10.274,[]
+fuente-054,Ente Administrador Puerto Rosario (ENAPRO),Rosario,Santa Fe,https://enapro.com.ar/category/licitaciones/,,OPERATIVA,18,2,34.827,[]
+fuente-058,Universidad Nacional de Entre Ríos (UNER),Concepción del Uruguay,Entre Ríos,https://compras.uner.edu.ar/,,BLOQUEADA,0,0,1.395,"[""RESTRICCION_HTTP""]"
+fuente-062,Comuna de General Lagos,General Lagos,Santa Fe,https://cglagos.gob.ar/comuna/compras-y-licitaciones,,PARCIAL,10,0,1.296,"[""Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso""]"
+fuente-066,Municipalidad de Sunchales,Sunchales,Santa Fe,https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/,,OPERATIVA,81,0,32.308,[]
+fuente-070,Municipalidad de Lucas González,Lucas González,Entre Ríos,https://lucasgonzalez.gob.ar/licitaciones-y-concursos/,,OPERATIVA,2,0,3.242,[]
+fuente-074,Municipalidad de Zárate,Zárate,Buenos Aires,https://zarate.gob.ar/licitaciones-publicas/,zarate,OPERATIVA,31,0,6.944,[]
+fuente-078,Comuna de Humboldt,Humboldt,Santa Fe,https://www.humboldt.gob.ar/,,BLOQUEADA,0,0,0.458,"[""ERROR_RED_POR_CONFIRMAR""]"
+fuente-082,Municipalidad de Seguí,Seguí,Entre Ríos,https://www.segui.gob.ar/sitio/?cat=26,,PARCIAL,40,0,29.461,"[""ERROR_EXTRACCION"", ""Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso""]"
+fuente-086,Concejo Municipal de Rosario,Rosario,Santa Fe,https://compras.concejorosario.gov.ar/,concejo-rosario,OPERATIVA,2,0,3.667,[]
+fuente-097,Municipalidad de Colonia Avellaneda,Colonia Avellaneda,Entre Ríos,https://coloniaavellaneda.gob.ar/web/informacion-publica/,,OPERATIVA,9,0,5.426,[]
+auto-contraste-6b5fc6834def2add0155,Municipalidad de Carmen de Areco,Carmen de Areco,Buenos Aires,https://carmendeareco.gob.ar/transparencia/,,OPERATIVA,7,0,1.456,[]
+fuente-002,Gobierno de Santa Fe,Santa Fe,Santa Fe,https://compras.santafe.gob.ar/,,BLOQUEADA,0,0,5.306,"[""TIEMPO_ESPERA""]"
+fuente-006,Poder Judicial de Santa Fe,Santa Fe,Santa Fe,https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/,,BLOQUEADA,0,0,5.473,"[""TIEMPO_ESPERA""]"
+fuente-010,Municipalidad de Cañada de Gómez,Cañada de Gómez,Santa Fe,https://cdg.gob.ar/transparencia/licitaciones-y-concursos/,,BLOQUEADA,0,0,0.317,"[""RESTRICCION_HTTP""]"
+fuente-014,Municipalidad de Roldán,Roldán,Santa Fe,https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/,,TIEMPO_FUENTE,187,0,55.033,"[""Plazo agotado; se conserva lo extraído""]"
+fuente-018,Municipalidad de Santa Fe,Santa Fe,Santa Fe,https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/,,BLOQUEADA,0,0,0.255,"[""RESTRICCION_HTTP""]"
+fuente-022,Municipalidad de Reconquista,Reconquista,Santa Fe,https://reconquista.gob.ar/licitaciones/,,OPERATIVA,13,0,2.558,[]
+fuente-026,Poder Judicial de Entre Ríos,Paraná,Entre Ríos,https://www.jusentrerios.gov.ar/contrataciones/,,OPERATIVA,59,0,101.617,[]
+fuente-030,Instituto Becario,Paraná,Entre Ríos,https://institutobecario.gov.ar/licitaciones.php,,BLOQUEADA,0,0,0.664,"[""ERROR_CERTIFICADO_TLS""]"
+fuente-035,Municipalidad de Concepción del Uruguay,Concepción del Uruguay,Entre Ríos,https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones,cdelu,OPERATIVA,266,0,1.491,[]
+fuente-039,Municipalidad de Crespo,Crespo,Entre Ríos,https://www.crespo.gob.ar/category/licitacion-publica/,,PARCIAL,175,0,8.614,"[""ERROR_RED_POR_CONFIRMAR"", ""ERROR_RED_POR_CONFIRMAR"", ""ERROR_RED_POR_CONFIRMAR"", ""ERROR_RED_POR_CONFIRMAR"", ""Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso""]"
+fuente-043,Municipalidad de La Paz,La Paz,Entre Ríos,https://haciendalapaz.gob.ar/compras/,lapaz,OPERATIVA,50,0,5.017,[]
+fuente-047,Municipalidad de San Pedro,San Pedro,Buenos Aires,https://sanpedro.net.ar/portal.php,,PENDIENTE,0,0,1.37,"[""Listado no reconocido; no se declara vacío""]"
+fuente-051,Municipalidad de Baradero,Baradero,Buenos Aires,https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones,baradero,OPERATIVA,128,0,1.123,[]
+fuente-055,Municipalidad de Alvear,Alvear,Santa Fe,https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones,,PARCIAL,64,0,50.636,"[""Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso""]"
+fuente-059,Municipalidad de Colón,Colón,Buenos Aires,https://www.municipalidadcolonpba.gob.ar/licitaciones.php,colon-pba,PARCIAL,57,0,1.217,"[""Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso""]"
+fuente-063,Comuna de Arequito,Arequito,Santa Fe,https://comunaarequito.gob.ar/licitaciones/,,OPERATIVA,10,0,2.213,[]
+fuente-067,Concejo Municipal de Santa Fe,Santa Fe,Santa Fe,https://www.concejosantafe.gov.ar/concursos-y-licitaciones,,OPERATIVA,2,0,5.028,[]
+fuente-071,Municipalidad de San Salvador,San Salvador,Entre Ríos,https://sansalvadorer.gob.ar/,,OPERATIVA,8,0,22.665,[]
+fuente-075,Municipalidad de San Andrés de Giles,San Andrés de Giles,Buenos Aires,https://www.sanandresdegiles.gob.ar/?q=licitaciones-publicas,,OPERATIVA,3,0,3.104,[]
+fuente-079,Universidad Nacional de Rosario,Rosario,Santa Fe,https://unr.edu.ar/obras-publicas/,,OPERATIVA,14,0,47.149,[]
+fuente-083,Municipalidad de Gualeguaychú,Gualeguaychú,Entre Ríos,https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones,,TIEMPO_FUENTE,283,2,55.049,"[""Plazo agotado; se conserva lo extraído""]"
+fuente-087,Gobierno de Santa Fe - Gestiones de Compras,Santa Fe,Santa Fe,https://www.santafe.gob.ar/gestionesdecompras/site/index.php,gestiones-sf,BLOQUEADA,0,0,22.021,"[""TIEMPO_ESPERA"", ""TIEMPO_ESPERA""]"
+fuente-098,Vialidad Entre Ríos,Paraná,Entre Ríos,https://aplicaciones.vialidadentrerios.gob.ar/contrataciones-licitaciones,dpver-tarjetas,OPERATIVA,517,0,15.004,[]
+fuente-003,EPE,Santa Fe,Santa Fe,https://www.epe.santafe.gov.ar/app2/aperturas,epe,BLOQUEADA,0,0,3.225,"[""ERROR_CONEXION_TLS"", ""ERROR_CONEXION_TLS""]"
+fuente-007,Aeropuerto Internacional Rosario,Rosario,Santa Fe,https://aeropuertorosario.com/institucional/licitaciones/,aeropuerto,TIEMPO_FUENTE,163,0,120.018,"[""Plazo agotado; se conserva lo extraído""]"
+fuente-011,Municipalidad de Armstrong,Armstrong,Santa Fe,https://armstrong.gov.ar/index.php/transparencia,,TIEMPO_FUENTE,52,0,55.017,"[""ERROR_EXTRACCION"", ""ERROR_EXTRACCION"", ""ERROR_EXTRACCION"", ""ERROR_EXTRACCION"", ""ERROR_EXTRACCION"", ""ERROR_EXTRACCION"", ""ERROR_EXTRACCION"", ""ERROR_EXTRACCION"", ""ERROR_EXTRACCION"", ""ERROR_EXTRACCION"", ""ERROR_EXTRACCION"", ""ERROR_EXTRACCION"", ""ERROR_EXTRACCION"", ""Plazo agotado; se conserva lo extraído""]"
+fuente-015,Municipalidad de Pérez,Pérez,Santa Fe,https://perez.opendata.junar.com/home/,,TIEMPO_FUENTE,0,0,55.025,"[""ERROR_EXTRACCION"", ""ERROR_EXTRACCION"", ""Plazo agotado; se conserva lo extraído""]"
+fuente-019,Municipalidad de Santa Fe,Santa Fe,Santa Fe,https://transparencia.santafeciudad.gov.ar/contrataciones-obra/,,BLOQUEADA,0,0,0.255,"[""RESTRICCION_HTTP""]"
+fuente-023,Gobierno de Entre Ríos,Paraná,Entre Ríos,https://portal.entrerios.gov.ar/haciendayfinanzas/contrataciones/,entre-rios-api,OPERATIVA,27,0,1.275,[]
+fuente-027,ATER,Paraná,Entre Ríos,https://www.ater.gob.ar/ater2/licitaciones.asp,,OPERATIVA,219,0,4.613,[]
+fuente-031,Municipalidad de Victoria,Victoria,Entre Ríos,https://victoria.gob.ar/web-compras/Invitaciones-Compras/concurso-de-precios/,,PARCIAL,398,0,8.985,"[""LIMITE_SOLICITUDES_TEMPORAL"", ""Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso""]"
+fuente-036,Municipalidad de Gualeguaychú,Gualeguaychú,Entre Ríos,https://w3.gualeguaychu.gov.ar/tramites/compras-y-licitaciones/acceso-a-licitaciones-p%C3%BAblicas,,BLOQUEADA,0,0,5.211,"[""TIEMPO_ESPERA""]"
+fuente-040,Municipalidad de Chajarí,Chajarí,Entre Ríos,https://chajari.gob.ar/,chajari-api,OPERATIVA,701,0,22.06,[]
+fuente-044,Municipalidad de Villaguay,Villaguay,Entre Ríos,https://villaguay.gob.ar/boletindigital/,,PENDIENTE,0,0,5.766,"[""ERROR_RED_POR_CONFIRMAR"", ""ERROR_RED_POR_CONFIRMAR"", ""LIMITE_SOLICITUDES_TEMPORAL""]"
+fuente-048,Municipalidad de Ramallo,Ramallo,Buenos Aires,https://ramallo.gob.ar/boletines,sibom,TIEMPO_FUENTE,21,0,55.024,"[""TIEMPO_ESPERA"", ""Plazo agotado; se conserva lo extraído""]"
+fuente-052,Municipalidad de Rojas,Rojas,Buenos Aires,https://transparencia.rojas.gov.ar/index.php?action=17,,OPERATIVA,10,0,0.825,[]
+fuente-056,Municipalidad de San Lorenzo,San Lorenzo,Santa Fe,https://sanlorenzo.gob.ar/licitaciones/,,PENDIENTE,0,0,1.404,"[""Listado no reconocido; no se declara vacío""]"
+fuente-060,Boletín Oficial de Santa Fe,,Santa Fe,https://www.santafe.gov.ar/boletinoficial/,boletin-sf,TIEMPO_FUENTE,0,0,55.016,"[""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""TIEMPO_ESPERA"", ""Plazo agotado; se conserva lo extraído""]"
+fuente-064,Comuna de Chabás,Chabás,Santa Fe,https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5002-licitacion-publica-01-2026,,OPERATIVA,3,0,7.779,[]
+fuente-068,Municipalidad de Villa Elisa,Villa Elisa,Entre Ríos,https://villaelisa.gov.ar/transparencia/,villa-elisa,PARCIAL,87,0,24.997,"[""Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso""]"
+fuente-072,Municipalidad de Salto,Salto,Buenos Aires,https://salto.gob.ar/licitaciones/,,OPERATIVA,22,0,1.854,[]
+fuente-076,Municipalidad de Reconquista,Reconquista,Santa Fe,https://reconquista.gob.ar/concurso-de-ofertas/,,OPERATIVA,4,0,2.602,[]
+fuente-080,Municipalidad de Viale,Viale,Entre Ríos,https://viale.gob.ar/pliegos/,,TIEMPO_FUENTE,24,1,55.012,"[""Plazo agotado; se conserva lo extraído""]"
+fuente-084,Municipalidad de Crespo,Crespo,Entre Ríos,https://municrespo.gov.ar/digesto/consulta.php?s=consulta,,TIEMPO_FUENTE,775,0,55.058,"[""Plazo agotado; se conserva lo extraído""]"
+fuente-092,Municipalidad de San Justo,San Justo,Santa Fe,https://sanjusto.gov.ar/,,OPERATIVA,3,0,2.147,[]
+fuente-099,Ministerio Público de Buenos Aires,,Buenos Aires,https://www.mpba.gov.ar/licitaciones,mpba-tarjetas,TIEMPO_FUENTE,120,0,90.048,"[""Plazo agotado; se conserva lo extraído""]"
+fuente-004,ASSA,Rosario,Santa Fe,https://www.aguassantafesinas.com.ar/portal/licitaciones,assa-api,OPERATIVA,4,4,4.579,[]
+fuente-008,Municipalidad de Casilda,Casilda,Santa Fe,https://www.casilda.gob.ar/web/licitaciones-casilda/,,OPERATIVA,74,0,6.024,[]
+fuente-012,Municipalidad de Las Parejas,Las Parejas,Santa Fe,https://lasparejas.gov.ar/,,PENDIENTE,0,0,2.437,"[""Listado no reconocido; no se declara vacío""]"
+fuente-016,Municipalidad de Villa Gobernador Gálvez,Villa Gobernador Gálvez,Santa Fe,https://vggmunicipalidad.gov.ar/licitaciones/,vgg,OPERATIVA,105,0,10.024,[]
+fuente-020,Municipalidad de Rafaela,Rafaela,Santa Fe,https://www.rafaela.gob.ar/gobiernoabierto/Licitaciones.aspx,,OPERATIVA,11,0,5.052,[]
+fuente-024,Ministerio de Planeamiento e Infraestructura,Paraná,Entre Ríos,https://www.entrerios.gov.ar/minplan/licitaciones,minplan,OPERATIVA,528,3,3.297,[]
+fuente-028,Vialidad Entre Ríos,Paraná,Entre Ríos,https://www.dpver.gov.ar/category/licitaciones-2026/,,OPERATIVA,21,0,4.978,[]
+fuente-032,Municipalidad de San José,San José,Entre Ríos,https://sanjose.gob.ar/concursos-licitaciones/,,OPERATIVA,152,0,4.5,[]
+fuente-037,Municipalidad de Gualeguay,Gualeguay,Entre Ríos,https://municipalidad.gualeguay.gob.ar/modulos/transparencia/licitaciones_publicas.php,,OPERATIVA,6,0,5.254,[]
+fuente-041,Municipalidad de Federación,Federación,Entre Ríos,https://www.federacion.gob.ar/licitaciones,,PARCIAL,38,0,30.218,"[""ERROR_EXTRACCION"", ""ERROR_EXTRACCION"", ""Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso""]"
+fuente-045,Municipalidad de Rosario del Tala,Rosario del Tala,Entre Ríos,https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas,,PARCIAL,4,0,3.246,"[""Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso""]"
+fuente-049,Municipalidad de Pergamino,Pergamino,Buenos Aires,https://compras.pergamino.gob.ar/,,PENDIENTE,0,0,6.636,"[""El portal requiere autenticación o red privada; no se elude""]"
+fuente-053,Municipalidad de Rojas,Rojas,Buenos Aires,https://transparencia.rojas.gov.ar/index.php?action=24,generico,SIN_PUBLICACIONES,0,0,0.719,[]
+fuente-057,IAFAS,Paraná,Entre Ríos,https://www.iafas.gov.ar/proveedores/licitaciones/,encabezados,PARCIAL,99,0,18.608,"[""ERROR_EXTRACCION"", ""ERROR_EXTRACCION"", ""ERROR_EXTRACCION"", ""Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso""]"
+fuente-061,Boletín Oficial de Entre Ríos,,Entre Ríos,https://www.entrerios.gov.ar/boletin/,boletin-er,TIEMPO_FUENTE,54,7,55.025,"[""Plazo agotado; se conserva lo extraído""]"
+fuente-065,Gobierno de Timbúes,Timbúes,Santa Fe,https://www.timbues.gob.ar/index.php?pagina=lista&sec=210,,TIEMPO_FUENTE,104,0,55.053,"[""Plazo agotado; se conserva lo extraído""]"
+fuente-069,Municipalidad de General Ramírez,General Ramírez,Entre Ríos,https://www.generalramirez.gob.ar/licitaciones-y-concursos/,ramirez,OPERATIVA,88,0,48.396,[]
+fuente-073,Municipalidad de Junín,Junín,Buenos Aires,https://www.junin.gob.ar/servicio/licitaciones-y-concursos,junin,TIEMPO_FUENTE,28,0,55.059,"[""Plazo agotado; se conserva lo extraído""]"
+fuente-077,Municipalidad de Reconquista,Reconquista,Santa Fe,https://reconquista.gob.ar/concurso-de-precios/,,OPERATIVA,14,0,3.011,[]
+fuente-081,Municipio de Oro Verde,Oro Verde,Entre Ríos,https://oroverde.gob.ar/portal/secciones/licitaciones/,,TIEMPO_FUENTE,46,0,55.019,"[""Plazo agotado; se conserva lo extraído""]"
+fuente-085,Concejo Municipal de Rosario,Rosario,Santa Fe,https://www.concejorosario.gov.ar/compras/,,TIEMPO_FUENTE,4,0,55.041,"[""Plazo agotado; se conserva lo extraído""]"
+fuente-093,Municipalidad de Suardi,Suardi,Santa Fe,https://www.suardiciudad.ar/,,PARCIAL,8,0,5.219,"[""Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso""]"
+auto-e3bcb048ef52c8c543bb,Municipalidad de Funes,Funes,Santa Fe,https://funes.gob.ar/boletin_oficial,,PARCIAL,40,0,4.499,"[""ERROR_EXTRACCION"", ""Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso""]"
+fuente-102,Municipalidad de Santa Ana,Santa Ana,Entre Ríos,https://www.santaana.gob.ar/home/licitaciones/,santaana,PARCIAL,33,0,1.716,"[""Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso""]"

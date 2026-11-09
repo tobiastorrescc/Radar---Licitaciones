@@ -1,0 +1,3654 @@
+{
+  "registros": [
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 28-10-2026 Hoy Licitación Pública Nº 7060002910 CONTRATACIÓN DEL SERVICIO DE PROVISIÓN DE COMBUSTIBLE CON TRANSPORTE Y ALMACENAMIENTO Presupuesto Oficial $549.096.490 Expediente Nº EE-2026-00027417-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "CONTRATACIÓN DEL SERVICIO DE PROVISIÓN DE COMBUSTIBLE CON TRANSPORTE Y ALMACENAMIENTO",
+      "procedimiento": "licitacion publica 7060002910",
+      "numero_procedimiento": "7060002910",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "28-10-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-10-28",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "549096490",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002910",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-10-28",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002910"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002910"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "28-10-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $549.096.490"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 28-10-2026 Hoy Licitación Pública Nº 7060002911 Adquisición de fusibles neozed con destino a mantenimiento – Plan 2027 Presupuesto Oficial $39.281.938,95 Expediente Nº EE-2026-00056596-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "Adquisición de fusibles neozed con destino a mantenimiento – Plan 2027",
+      "procedimiento": "licitacion publica 7060002911",
+      "numero_procedimiento": "7060002911",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "28-10-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-10-28",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "39281938.95",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002911",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-10-28",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002911"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002911"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "28-10-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $39.281.938,95"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 28-10-2026 Hoy Concurso Privado Nº 7040004981 ADQUISICIÓN DE INSUMOS PARA TRABAJOS CON ACEITES DIELÉCTRICOS Presupuesto Oficial $6.495.493,82 Expediente Nº EE-2026-00051697-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "ADQUISICIÓN DE INSUMOS PARA TRABAJOS CON ACEITES DIELÉCTRICOS",
+      "procedimiento": "concurso privado 7040004981",
+      "numero_procedimiento": "7040004981",
+      "tipo_procedimiento": "concurso privado",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "28-10-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-10-28",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "6495493.82",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "concurso privado 7040004981",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-10-28",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004981"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004981"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "28-10-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $6.495.493,82"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Servicios 28-10-2026 Hoy Concurso Privado Nº 7040004990 PINTURA Y MANTENIMIENTO DE OFICINA ACTUAL DE MASH RAFAELA PARA RESTITUCIÓN A PROPIETARIO - SUCURSAL RAFAELA Presupuesto Oficial $22.034.705 Expediente Nº EE-2026-00013133-APPSF-OD Compra Web Rafaela Descargar Enviar",
+      "objeto": "PINTURA Y MANTENIMIENTO DE OFICINA ACTUAL DE MASH RAFAELA PARA RESTITUCIÓN A PROPIETARIO - SUCURSAL RAFAELA",
+      "procedimiento": "concurso privado 7040004990",
+      "numero_procedimiento": "7040004990",
+      "tipo_procedimiento": "concurso privado",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "28-10-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-10-28",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "22034705",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "concurso privado 7040004990",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-10-28",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004990"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004990"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "28-10-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $22.034.705"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 28-10-2026 Hoy Concurso Privado Nº 7040004994 ADQUISICIÓN DE UPS PARA RECONQUISTA Presupuesto Oficial $8.925.270,09 Expediente Nº EE-2026-00014668-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "ADQUISICIÓN DE UPS PARA RECONQUISTA",
+      "procedimiento": "concurso privado 7040004994",
+      "numero_procedimiento": "7040004994",
+      "tipo_procedimiento": "concurso privado",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "28-10-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-10-28",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "8925270.09",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "concurso privado 7040004994",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-10-28",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004994"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004994"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "28-10-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $8.925.270,09"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 29-10-2026 Mañana Licitación Pública Nº 7060002909 ADQUISICIÓN DE POSTES DE EUCALIPTOS CON DESTINO A MANTENIMIENTO \"PLAN 2027\" Presupuesto Oficial $138.200.404,1 Expediente Nº EE-2026-00051668-APPSF-OD Compra Web Rafaela Descargar Enviar",
+      "objeto": "ADQUISICIÓN DE POSTES DE EUCALIPTOS CON DESTINO A MANTENIMIENTO \"PLAN 2027\"",
+      "procedimiento": "licitacion publica 7060002909",
+      "numero_procedimiento": "7060002909",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "29-10-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-10-29",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "138200404.1",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002909",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-10-29",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002909"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002909"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "29-10-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $138.200.404,1"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Servicios 29-10-2026 Mañana Concurso Privado Nº 7040004991 Contratación del servicio de Mantenimiento Edilicio en el Distrito Zenón Pereyra, dependiente de la Agencia María Juana – Sucursal Rafaela, con provisión de materiales Presupuesto Oficial $40.515.413,85 Expediente Nº EE-2026-00051377-APPSF-OD Compra Web Rafaela Descargar Enviar",
+      "objeto": "Contratación del servicio de Mantenimiento Edilicio en el Distrito Zenón Pereyra, dependiente de la Agencia María Juana – Sucursal Rafaela, con provisión de materiales",
+      "procedimiento": "concurso privado 7040004991",
+      "numero_procedimiento": "7040004991",
+      "tipo_procedimiento": "concurso privado",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "29-10-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-10-29",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "40515413.85",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "concurso privado 7040004991",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-10-29",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004991"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004991"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "29-10-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $40.515.413,85"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Servicios 29-10-2026 Mañana Concurso Privado Nº 7040004992 Contratación del servicio de mantenimiento edilicio para pintura en oficina de servicio Oliveros Presupuesto Oficial $10.393.900 Expediente Nº EE-2026-00058797-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "Contratación del servicio de mantenimiento edilicio para pintura en oficina de servicio Oliveros",
+      "procedimiento": "concurso privado 7040004992",
+      "numero_procedimiento": "7040004992",
+      "tipo_procedimiento": "concurso privado",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "29-10-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-10-29",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "10393900",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "concurso privado 7040004992",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-10-29",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004992"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004992"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "29-10-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $10.393.900"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 29-10-2026 Mañana Concurso Privado Nº 7040004996 ADQUISICÓN DE CAÑOS PVC Presupuesto Oficial $9.438.021,67 Expediente Nº EE-2026-00053920-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "ADQUISICÓN DE CAÑOS PVC",
+      "procedimiento": "concurso privado 7040004996",
+      "numero_procedimiento": "7040004996",
+      "tipo_procedimiento": "concurso privado",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "29-10-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-10-29",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "9438021.67",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "concurso privado 7040004996",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-10-29",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004996"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004996"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "29-10-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $9.438.021,67"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Obras 29-10-2026 Mañana Licitación Pública Nº 7060002904 REMODELACIÓN DE LAMT EN LA ZONA RURAL DE SAN JUSTO - DEPARTAMENTO SAN JUSTO - LEY FER 13.414 Presupuesto Oficial $1.035.419.815 Expediente Nº 1-2023-1121887 Santa Fe Descargar Enviar",
+      "objeto": "REMODELACIÓN DE LAMT EN LA ZONA RURAL DE SAN JUSTO - DEPARTAMENTO SAN JUSTO - LEY FER 13.414",
+      "procedimiento": "licitacion publica 7060002904",
+      "numero_procedimiento": "7060002904",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "29-10-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-10-29",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "1035419815",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002904",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-10-29",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002904"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002904"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "29-10-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $1.035.419.815"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 30-10-2026 Quedan 2 días Licitación Pública Nº 7060002920 Adquisición de grampas y conectores con destino a mantenimiento y obras menores – Plan 2027 Presupuesto Oficial $703.992.065,33 Expediente Nº EE-2026-00054538-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "Adquisición de grampas y conectores con destino a mantenimiento y obras menores – Plan 2027",
+      "procedimiento": "licitacion publica 7060002920",
+      "numero_procedimiento": "7060002920",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "30-10-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-10-30",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "703992065.33",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002920",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-10-30",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002920"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002920"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "30-10-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $703.992.065,33"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Servicios 30-10-2026 Quedan 2 días Concurso Privado Nº 7040004993 Contratación del servicio de impermeabilización en edificio cabecera de la Sucursal San Lorenzo Presupuesto Oficial $22.031.437,65 Expediente Nº EE-2026-00024063-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "Contratación del servicio de impermeabilización en edificio cabecera de la Sucursal San Lorenzo",
+      "procedimiento": "concurso privado 7040004993",
+      "numero_procedimiento": "7040004993",
+      "tipo_procedimiento": "concurso privado",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "30-10-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-10-30",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "22031437.65",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "concurso privado 7040004993",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-10-30",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004993"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004993"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "30-10-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $22.031.437,65"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 30-10-2026 Quedan 2 días Compra Menor Nº 7010004618 COMPRA DE SILLAS Presupuesto Oficial $2.787.636,78 Expediente Nº EE-2026-00030741-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "COMPRA DE SILLAS",
+      "procedimiento": "compra menor 7010004618",
+      "numero_procedimiento": "7010004618",
+      "tipo_procedimiento": "compra menor",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "30-10-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-10-30",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "2787636.78",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "compra menor 7010004618",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-10-30",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "compra menor 7010004618"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "compra menor 7010004618"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "30-10-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $2.787.636,78"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 02-11-2026 Quedan 5 días Licitación Privada Nº 7050001920 ADQUISICIÓN DE PUESTA A TIERRA MT - UNIDAD MASH SANTA FE Presupuesto Oficial $124.521.432,76 Expediente Nº EE-2026-00057340-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "ADQUISICIÓN DE PUESTA A TIERRA MT - UNIDAD MASH SANTA FE",
+      "procedimiento": "licitacion privada 7050001920",
+      "numero_procedimiento": "7050001920",
+      "tipo_procedimiento": "licitacion privada",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "02-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-02",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "124521432.76",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion privada 7050001920",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-02",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion privada 7050001920"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion privada 7050001920"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "02-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $124.521.432,76"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 02-11-2026 Quedan 5 días Concurso Privado Nº 7040004995 ADQUISICIÓN DE CANDADOS Y PORTA CANDADOS MULTIPLES Presupuesto Oficial $24.220.193,69 Expediente Nº EE-2026-00063720-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "ADQUISICIÓN DE CANDADOS Y PORTA CANDADOS MULTIPLES",
+      "procedimiento": "concurso privado 7040004995",
+      "numero_procedimiento": "7040004995",
+      "tipo_procedimiento": "concurso privado",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "02-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-02",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "24220193.69",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "concurso privado 7040004995",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-02",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004995"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004995"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "02-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $24.220.193,69"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 03-11-2026 Quedan 6 días Licitación Privada Nº 7050001921 COMPRA DE TILLAS PARA MANTENIMIENTO Y OBRAS MENORES Presupuesto Oficial $16.695.517,8 Expediente Nº EE-2026-00050828-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "COMPRA DE TILLAS PARA MANTENIMIENTO Y OBRAS MENORES",
+      "procedimiento": "licitacion privada 7050001921",
+      "numero_procedimiento": "7050001921",
+      "tipo_procedimiento": "licitacion privada",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "03-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-03",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "16695517.8",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion privada 7050001921",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-03",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion privada 7050001921"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion privada 7050001921"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "03-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $16.695.517,8"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 03-11-2026 Quedan 6 días Concurso Privado Nº 7040004998 GESTION DE COMPRA ABIERTA DE FLEJES Y HEBILLAS CON DESTINO A MANTENIMIENTO – PLAN 2027 Presupuesto Oficial $12.068.597,41 Expediente Nº EE-2026-00067027-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "GESTION DE COMPRA ABIERTA DE FLEJES Y HEBILLAS CON DESTINO A MANTENIMIENTO – PLAN 2027",
+      "procedimiento": "concurso privado 7040004998",
+      "numero_procedimiento": "7040004998",
+      "tipo_procedimiento": "concurso privado",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "03-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-03",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "12068597.41",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "concurso privado 7040004998",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-03",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004998"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004998"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "03-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $12.068.597,41"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 03-11-2026 Quedan 6 días Compra Menor Nº 7010004619 ADQUISICIÓN DE CHAPA ANTIDESLIZANTE Presupuesto Oficial $8.439.867,81 Expediente Nº EE-2026-00072342-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "ADQUISICIÓN DE CHAPA ANTIDESLIZANTE",
+      "procedimiento": "compra menor 7010004619",
+      "numero_procedimiento": "7010004619",
+      "tipo_procedimiento": "compra menor",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "03-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-03",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "8439867.81",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "compra menor 7010004619",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-03",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "compra menor 7010004619"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "compra menor 7010004619"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "03-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $8.439.867,81"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 05-11-2026 Quedan 8 días Licitación Pública Nº 7060002926 Adquisición de fusibles HHC con destino a mantenimiento – Plan 2027 Presupuesto Oficial $121.117.938,88 Expediente Nº EE-2026-00057516-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "Adquisición de fusibles HHC con destino a mantenimiento – Plan 2027",
+      "procedimiento": "licitacion publica 7060002926",
+      "numero_procedimiento": "7060002926",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "05-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-05",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "121117938.88",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002926",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-05",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002926"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002926"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "05-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $121.117.938,88"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 05-11-2026 Quedan 8 días Licitación Privada Nº 7050001922 COMPRA DE PRECINTOS MN 97 PARA EL ÁREA CONTROL DE PÉRDIDAS - TELEMEDICIÓN Presupuesto Oficial $129.094.900 Expediente Nº EE-2026-00056008-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "COMPRA DE PRECINTOS MN 97 PARA EL ÁREA CONTROL DE PÉRDIDAS - TELEMEDICIÓN",
+      "procedimiento": "licitacion privada 7050001922",
+      "numero_procedimiento": "7050001922",
+      "tipo_procedimiento": "licitacion privada",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "05-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-05",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "129094900",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion privada 7050001922",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-05",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion privada 7050001922"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion privada 7050001922"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "05-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $129.094.900"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Servicios 06-11-2026 Quedan 9 días Licitación Pública Nº 7060002927 Contratación de servicio de toma de estado de medidores de energía eléctrica en la Sucursal San Lorenzo Presupuesto Oficial $457.326.378,52 Expediente Nº EE-2026-00046290-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "Contratación de servicio de toma de estado de medidores de energía eléctrica en la Sucursal San Lorenzo",
+      "procedimiento": "licitacion publica 7060002927",
+      "numero_procedimiento": "7060002927",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "06-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-06",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "457326378.52",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002927",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-06",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002927"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002927"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "06-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $457.326.378,52"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 06-11-2026 Quedan 9 días Concurso Privado Nº 7040004997 Adquisición de sillas operativas ergonómicas Presupuesto Oficial $9.983.053,7 Expediente Nº EE-2026-00043236-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "Adquisición de sillas operativas ergonómicas",
+      "procedimiento": "concurso privado 7040004997",
+      "numero_procedimiento": "7040004997",
+      "tipo_procedimiento": "concurso privado",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "06-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-06",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "9983053.7",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "concurso privado 7040004997",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-06",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004997"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004997"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "06-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $9.983.053,7"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 06-11-2026 Quedan 9 días Concurso Privado Nº 7040004999 ADQUISICIÓN DE ACCESORIOS PARA P.A.T. TRANSITORIAS Presupuesto Oficial $9.506.852,61 Expediente Nº EE-2026-00060680-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "ADQUISICIÓN DE ACCESORIOS PARA P.A.T. TRANSITORIAS",
+      "procedimiento": "concurso privado 7040004999",
+      "numero_procedimiento": "7040004999",
+      "tipo_procedimiento": "concurso privado",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "06-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-06",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "9506852.61",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "concurso privado 7040004999",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "VENCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-06",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004999"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "concurso privado 7040004999"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "06-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $9.506.852,61"
+        }
+      },
+      "vigencia_documental": "VENCIDA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 10-11-2026 Quedan 13 días Licitación Privada Nº 7050001923 ADQUISICIÓN DE TRAILERS PARA CABINA DE GU MÓVIL Presupuesto Oficial $117.159.749,23 Expediente Nº EE-2026-00025126-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "ADQUISICIÓN DE TRAILERS PARA CABINA DE GU MÓVIL",
+      "procedimiento": "licitacion privada 7050001923",
+      "numero_procedimiento": "7050001923",
+      "tipo_procedimiento": "licitacion privada",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "10-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-10",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "117159749.23",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion privada 7050001923",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-10",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion privada 7050001923"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion privada 7050001923"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "10-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $117.159.749,23"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 10-11-2026 Quedan 13 días Licitación Pública Nº 7060002931 Adquisición de aisladores con destino a mantenimiento – Plan 2027 Presupuesto Oficial $323.764.469,22 Expediente Nº EE-2026-00055881-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "Adquisición de aisladores con destino a mantenimiento – Plan 2027",
+      "procedimiento": "licitacion publica 7060002931",
+      "numero_procedimiento": "7060002931",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "10-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-10",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "323764469.22",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002931",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-10",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002931"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002931"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "10-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $323.764.469,22"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Obras 11-11-2026 Quedan 14 días Licitación Pública Nº 7060002924 REMODELACIÓN LAMT 13,2 KV POR FER - DISTRITO MONTES DE OCA - AGENCIA LAS ROSAS Presupuesto Oficial $413.095.338,58 Expediente Nº 1-2024-1138558 Rafaela Descargar Enviar",
+      "objeto": "REMODELACIÓN LAMT 13,2 KV POR FER - DISTRITO MONTES DE OCA - AGENCIA LAS ROSAS",
+      "procedimiento": "licitacion publica 7060002924",
+      "numero_procedimiento": "7060002924",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "11-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-11",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "413095338.58",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002924",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-11",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002924"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002924"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "11-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $413.095.338,58"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Servicios 11-11-2026 Quedan 14 días Licitación Pública Nº 7060002929 PROVISIÓN DE MANO DE OBRA, EQUIPOS Y HERRAMIENTAS PARA EL RELEVAMIENTO Y ACTUALIZACIÓN DE CLIENTES DE MEDIA Y BAJA TENSIÓN EN SUCURSAL SANTA FE SUR Presupuesto Oficial $104.005.760,98 Expediente Nº EE-2026-00032425-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "PROVISIÓN DE MANO DE OBRA, EQUIPOS Y HERRAMIENTAS PARA EL RELEVAMIENTO Y ACTUALIZACIÓN DE CLIENTES DE MEDIA Y BAJA TENSIÓN EN SUCURSAL SANTA FE SUR",
+      "procedimiento": "licitacion publica 7060002929",
+      "numero_procedimiento": "7060002929",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "11-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-11",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "104005760.98",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002929",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-11",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002929"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002929"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "11-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $104.005.760,98"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 12-11-2026 Quedan 15 días Licitación Pública Nº 7060002925 ADQUISICIÓN DE FUSIBLES NH CON DESTINO A MANTENIMIENTO Y OBRAS MENORES Presupuesto Oficial $163.339.507,69 Expediente Nº EE-2026-00059910-APPSF-OD Compra Web Rafaela Descargar Enviar",
+      "objeto": "ADQUISICIÓN DE FUSIBLES NH CON DESTINO A MANTENIMIENTO Y OBRAS MENORES",
+      "procedimiento": "licitacion publica 7060002925",
+      "numero_procedimiento": "7060002925",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "12-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-12",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "163339507.69",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002925",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-12",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002925"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002925"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "12-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $163.339.507,69"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 12-11-2026 Quedan 15 días Licitación Pública Nº 7060002928 Adquisición de Fusibles Tipo K con destino a mantenimiento - Plan 2027 Presupuesto Oficial $336.216.955,79 Expediente Nº EE-2026-00058679-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "Adquisición de Fusibles Tipo K con destino a mantenimiento - Plan 2027",
+      "procedimiento": "licitacion publica 7060002928",
+      "numero_procedimiento": "7060002928",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "12-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-12",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "336216955.79",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002928",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-12",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002928"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002928"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "12-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $336.216.955,79"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Servicios 13-11-2026 Quedan 16 días Licitación Privada Nº 7050001924 CONTRATACIÓN DE MATERIALES, MANO DE OBRA Y EQUIPOS PARA \"REACONDICIONAMIENTO BOX TRANSFORMADOR N° 2 ET VCR” Presupuesto Oficial $49.641.441,12 Expediente Nº EE-2026-00040568-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "CONTRATACIÓN DE MATERIALES, MANO DE OBRA Y EQUIPOS PARA \"REACONDICIONAMIENTO BOX TRANSFORMADOR N° 2 ET VCR”",
+      "procedimiento": "licitacion privada 7050001924",
+      "numero_procedimiento": "7050001924",
+      "tipo_procedimiento": "licitacion privada",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "13-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-13",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "49641441.12",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion privada 7050001924",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-13",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion privada 7050001924"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion privada 7050001924"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "13-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $49.641.441,12"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Obras 16-11-2026 Quedan 19 días Licitación Pública Nº 7060002921 Remodelación de L.A.B.T. en la localidad de Aarón Castellanos - Departamento General López - Ley 13.414 FER Presupuesto Oficial $733.803.410,69 Expediente Nº 1-2023-1102976 Rosario Descargar Enviar",
+      "objeto": "Remodelación de L.A.B.T. en la localidad de Aarón Castellanos - Departamento General López - Ley 13.414 FER",
+      "procedimiento": "licitacion publica 7060002921",
+      "numero_procedimiento": "7060002921",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "16-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-16",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "733803410.69",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002921",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-16",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002921"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002921"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "16-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $733.803.410,69"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 16-11-2026 Quedan 19 días Licitación Pública Nº 7060002930 Adquisición de Postes PRFV con destino a Mantenimiento Presupuesto Oficial $206.249.325,9 Expediente Nº EE-2026-00062469-APPSF-OD Compra Web Santa Fe Descargar Enviar",
+      "objeto": "Adquisición de Postes PRFV con destino a Mantenimiento",
+      "procedimiento": "licitacion publica 7060002930",
+      "numero_procedimiento": "7060002930",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "16-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-16",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "206249325.9",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002930",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-16",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002930"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002930"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "16-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $206.249.325,9"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Materiales 16-11-2026 Quedan 19 días Licitación Pública Nº 7060002934 Adquisición de empalmes y terminales con destino a mantenimiento y obras menores – Plan 2027 Presupuesto Oficial $3.766.462.111,5 Expediente Nº EE-2026-00061532-APPSF-OD Compra Web Rosario Descargar Enviar",
+      "objeto": "Adquisición de empalmes y terminales con destino a mantenimiento y obras menores – Plan 2027",
+      "procedimiento": "licitacion publica 7060002934",
+      "numero_procedimiento": "7060002934",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "16-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-16",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "3766462111.5",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002934",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-16",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002934"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002934"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "16-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $3.766.462.111,5"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Obras 17-11-2026 Quedan 20 días Licitación Pública Nº 7060002922 FER (LEY 13.414) - REMODELACIÓN MT EN EL DISTRITO DE MARÍA JUANA - AGENCIA MARÍA JUANA - SUCURSAL RAFAELA Presupuesto Oficial $867.887.141,34 Expediente Nº 1-2025-1170034 Rafaela Descargar Enviar",
+      "objeto": "FER (LEY 13.414) - REMODELACIÓN MT EN EL DISTRITO DE MARÍA JUANA - AGENCIA MARÍA JUANA - SUCURSAL RAFAELA",
+      "procedimiento": "licitacion publica 7060002922",
+      "numero_procedimiento": "7060002922",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "17-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-17",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "867887141.34",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002922",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-17",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002922"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002922"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "17-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $867.887.141,34"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Obras 20-11-2026 Quedan 23 días Licitación Pública Nº 7060002932 REMODELACIÓN LAMT 13,2 KV ESTEBAN RAMS - CAMPO GARAY - DEPARTAMENTO 9 DE JULIO - LEY FER 13.414 Presupuesto Oficial $853.177.478,41 Expediente Nº 1-2023-1120349 Rafaela Descargar Enviar",
+      "objeto": "REMODELACIÓN LAMT 13,2 KV ESTEBAN RAMS - CAMPO GARAY - DEPARTAMENTO 9 DE JULIO - LEY FER 13.414",
+      "procedimiento": "licitacion publica 7060002932",
+      "numero_procedimiento": "7060002932",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "20-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-20",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "853177478.41",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002932",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-20",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002932"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002932"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "20-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $853.177.478,41"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Obras 26-11-2026 Quedan 29 días Licitación Pública Nº 7060002923 REMODELACIÓN POR FER LÍNEA 13,2 KV - SALIDA N° 1 SANCOR - EL TRÉBOL - DPTO. SAN MARTÍN - LEY FER 13.414 Presupuesto Oficial $2.152.303.339,67 Expediente Nº 1-2023-1123448 Rafaela Descargar Enviar",
+      "objeto": "REMODELACIÓN POR FER LÍNEA 13,2 KV - SALIDA N° 1 SANCOR - EL TRÉBOL - DPTO. SAN MARTÍN - LEY FER 13.414",
+      "procedimiento": "licitacion publica 7060002923",
+      "numero_procedimiento": "7060002923",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "26-11-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-11-26",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "2152303339.67",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002923",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-26",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002923"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002923"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "26-11-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $2.152.303.339,67"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    },
+    {
+      "organismo": "EPE",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "titulo": "Obras 02-12-2026 Quedan 35 días Licitación Pública Nº 7060002933 CONSTRUCCIÓN Y REMODELACIÓN DE LAMT 33 KV. ENTRE LAS LOCALIDADES DE HERISILIA - ARRUFÓ - DEPARTAMENTO SAM CRISTOBAL - LEY FER 13.414 Presupuesto Oficial $4.331.508.541,76 Expediente Nº 1-2023-1100536 Rafaela Descargar Enviar",
+      "objeto": "CONSTRUCCIÓN Y REMODELACIÓN DE LAMT 33 KV. ENTRE LAS LOCALIDADES DE HERISILIA - ARRUFÓ - DEPARTAMENTO SAM CRISTOBAL - LEY FER 13.414",
+      "procedimiento": "licitacion publica 7060002933",
+      "numero_procedimiento": "7060002933",
+      "tipo_procedimiento": "licitacion publica",
+      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": "02-12-2026",
+      "registro_estructurado": true,
+      "evidencia_url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "fuente": "https://www.epe.santafe.gov.ar/app2/aperturas",
+      "rango_evidencia": -1,
+      "requiere_revalidacion": true,
+      "recuperacion_archivo": {
+        "sha256": "c0b36732254d238f4d0102687799310d017bdf5e7eaa3e3b8e2922db4e6edf2e",
+        "url_oficial": "https://www.epe.santafe.gov.ar/app2/aperturas",
+        "capturado_en": "2026-10-28T12:31:37+00:00",
+        "metodo": "ARCHIVO_OFICIAL",
+        "procedencia": "PROCEDENCIA_PENDIENTE",
+        "revalidacion_pendiente": true
+      },
+      "fecha_apertura": "2026-12-02",
+      "fecha_limite_presentacion": null,
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "4331508541.76",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "licitacion publica 7060002933",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": null,
+      "fecha_hora_apertura": null,
+      "vigencia": "DESCONOCIDA",
+      "hora_limite_presentacion": null,
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-12-02",
+      "tipo_fecha_vencimiento": "APERTURA_REFERENCIAL",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "Archivo oficial anterior o de procedencia pendiente; no revalidado en vivo",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002933"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "licitacion publica 7060002933"
+        },
+        "fecha_apertura": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "02-12-2026"
+        },
+        "presupuesto": {
+          "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
+          "texto": "presupuesto oficial $4.331.508.541,76"
+        }
+      },
+      "vigencia_documental": "ABIERTA",
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ]
+    }
+  ],
+  "auditoria": {
+    "schema_version": 2,
+    "ejecucion_id": "20261109T010407-c7989268",
+    "github_run_id": "42543506680",
+    "revision": "a8750a8ab4222a220a28079f9c386265fa15bca6",
+    "fecha": "2026-11-08T22:04:07.350928-03:00",
+    "actualizado": "2026-11-08T22:04:07.613942-03:00",
+    "estado_ejecucion": "COMPLETADA",
+    "metodo": "IMPORTACION_LOCAL_ARCHIVOS_OFICIALES; no acredita acceso en vivo al portal",
+    "duracion_segundos": 0.263,
+    "limites": {
+      "conexion_segundos": 5,
+      "lectura_segundos": 10,
+      "fuente_segundos": 40,
+      "fuente_por_id": {
+        "archivo-460b5f7120fa2ce69d85": 40.0
+      },
+      "total_segundos": 45,
+      "concurrencia": 2,
+      "max_paginas": 1000
+    },
+    "resumen": {
+      "configuradas": 1,
+      "consultadas": 1,
+      "finalizadas": 1,
+      "funcionaron": 1,
+      "parciales_con_publicaciones": 0,
+      "sin_publicaciones_confirmado": 0,
+      "con_publicaciones": 1,
+      "con_respuesta_procesada": 1,
+      "fallaron": 0,
+      "no_iniciadas": 0,
+      "fuentes_error_red": 0,
+      "fuentes_error_extraccion": 0,
+      "fuentes_acceso_restringido": 0,
+      "fuentes_error_interno": 0,
+      "fuentes_timeout": 0,
+      "fuentes_presupuesto_o_cancelacion": 0,
+      "errores_por_categoria": {}
+    },
+    "observaciones": [
+      {
+        "id": "archivo-460b5f7120fa2ce69d85",
+        "url": "archivo://epe-20261028.json",
+        "estado": "OPERATIVA",
+        "iniciada": true,
+        "publicaciones_detectadas": 37,
+        "paginas_correctas": 1,
+        "errores": [],
+        "duracion_segundos": 0.257,
+        "limites": [],
+        "inicio": "2026-11-08T22:04:07.351767-03:00",
+        "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase3/criticas/importacion/importacion_ejecuciones/20261109T010407-c7989268/0000.json",
+        "limite_fuente_segundos": 40.0,
+        "fase": "EXTRACCION"
+      }
+    ],
+    "alertas_fuentes_criticas": [],
+    "ya_importados": 0,
+    "fuentes_recuperadas_en_vivo": 0
+  }
+}

@@ -1,0 +1,1344 @@
+{
+  "fecha": "2026-11-08T22:26:08.724083-03:00",
+  "total": 7,
+  "oportunidades": [
+    {
+      "organismo": "Municipalidad de Rosario",
+      "localidad": "Rosario",
+      "provincia": "Santa Fe",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "caso_id": "pendiente-034",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+      "id_origen": "38744",
+      "identidad_ambito": "ficha-rosario-38744",
+      "titulo": "Licitación Pública 58/2026 Provisión de Iluminarias LED para Obras por administración de Alumbrado Público - Iluminación en Barrios y Avenida - 2026 - Secretaría de Ambiente y Espacio Público",
+      "objeto": "Provisión de Iluminarias LED para Obras por administración de Alumbrado Público - Iluminación en Barrios y Avenida - 2026 - Secretaría de Ambiente y Espacio Público",
+      "numero_procedimiento": "58/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "procedimiento": "licitacion publica 58/2026",
+      "expediente": "23340/2026",
+      "documentos": [
+        {
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38744/documentos/102985",
+          "titulo": "ver pliego adjunto apto para cotizar: lic_alumbradoexpte23340-26.pdf",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA"
+        }
+      ],
+      "detalle_completo": true,
+      "registro_estructurado": true,
+      "fecha_apertura_texto": "16/11/2026 09:00",
+      "presupuesto_texto": "$ 1.588.000.000,00",
+      "situacion_publicada": null,
+      "campos_oficiales": {
+        "tipo de contratacion": "Licitación Pública",
+        "estado": "Publicada para Apertura",
+        "n° de contratacion": "58/2026",
+        "expediente": "23340/2026",
+        "objeto": "Provisión de Iluminarias LED para Obras por administración de Alumbrado Público - Iluminación en Barrios y Avenida - 2026 - Secretaría de Ambiente y Espacio Público",
+        "presupuesto oficial": "$ 1.588.000.000,00",
+        "fecha de apertura": "16/11/2026 09:00",
+        "costo de adquisicion del pliego": "$ 1.588.000,00 Sellado",
+        "costo de impugnacion": "$ 1.588.000,00",
+        "declaracion jurada de presentacion de ofertas": "Para presentar una oferta, completá la Declaración Jurada de conocimiento de Pliegos y Normativas a través de tu Perfil Digital. Luego, imprimila, firmala y adjuntala a tu oferta en papel. Al presentar la Declaración Jurada, se reemplaza la presentación en papel de los pliegos y normativas correspondientes a la licitación. Completar DDJJ",
+        "pliego unico y normativas": "Consultar pliego único. Consultar normativa vigente.",
+        "fecha de publicacion": "06/11/2026",
+        "fecha ultima actualizacion": "06/11/2026",
+        "consulta pliego": "Secretaría de Ambiente y Espacios Públicos - PELLEGRINI CARLOS 2808 - notificaciones_saep_dgap@rosario.gov.ar, notificaciones_saep@rosario.gov.ar",
+        "recepcion de ofertas": "Secretaría de Ambiente y Espacios Públicos - PELLEGRINI CARLOS 2808 - Plazo: Hasta el momento de la Apertura",
+        "lugar de apertura": "Secretaría de Ambiente y Espacios Públicos - PELLEGRINI CARLOS 2808 - -",
+        "reparticion licitante": "Dirección General de Alumbrado Público - PELLEGRINI CARLOS 2808",
+        "ver pliego adjunto apto para cotizar": "lic_alumbradoexpte23340-26.pdf"
+      },
+      "rango_evidencia": 3,
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+          "texto": "licitacion publica 58/2026"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+          "texto": "licitacion publica 58/2026"
+        },
+        "fecha_apertura": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+          "texto": "16/11/2026 09:00"
+        },
+        "fecha_publicacion": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+          "texto": "fecha de publicacion: 06/11/2026"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+          "texto": "2026-11-16t09:00:00-03:00"
+        },
+        "presupuesto": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+          "texto": "presupuesto oficial $ 1.588.000.000,00"
+        }
+      },
+      "fecha_publicacion": "2026-11-06",
+      "fecha_limite_presentacion_texto": "2026-11-16T09:00:00-03:00",
+      "evidencia_recepcion": {
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+        "sha256": "7ca06088a6a173f4188f83837dc330e5a24f75e075d3c026e85ac990aaa7b2a9",
+        "cita": "recepcion de ofertas secretaria de ambiente y espacios publicos - pellegrini carlos 2808 - plazo: hasta el momento de la apertura ",
+        "fragmento_fecha": "el momento de la apertura ",
+        "regla": "CLAUSULA_EXPLICITA"
+      },
+      "evidencia_url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "fecha_apertura": "2026-11-16",
+      "fecha_limite_presentacion": "2026-11-16",
+      "presupuesto": {
+        "importe": "1588000000.00",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "licitacion publica 58/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": "09:00",
+      "fecha_hora_apertura": "2026-11-16T09:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "hora_limite_presentacion": "09:00",
+      "fecha_hora_limite_presentacion": "2026-11-16T09:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-16",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38744/documentos/102985",
+      "campos_desconocidos": [],
+      "observada_esta_corrida": true,
+      "requiere_revalidacion": false,
+      "evidencia_captura": {
+        "url_solicitada": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+        "http": 200,
+        "tipo": "text/html; charset=UTF-8",
+        "bytes": 41314,
+        "segundos": 1.413,
+        "sha256": "7ca06088a6a173f4188f83837dc330e5a24f75e075d3c026e85ac990aaa7b2a9",
+        "fecha": "2026-11-08T22:08:06.384386-03:00"
+      },
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-16T09:00:00-03:00",
+      "revalidacion_documental": {
+        "caso_id": "pendiente-034",
+        "fecha": "2026-11-08T22:26:03.944747-03:00",
+        "evidencias": [
+          {
+            "url_solicitada": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+            "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+            "http": 200,
+            "tipo": "text/html; charset=UTF-8",
+            "bytes": 41314,
+            "segundos": 1.413,
+            "sha256": "7ca06088a6a173f4188f83837dc330e5a24f75e075d3c026e85ac990aaa7b2a9",
+            "fecha": "2026-11-08T22:08:06.384386-03:00"
+          }
+        ],
+        "documentos_pendientes": [],
+        "errores": [
+          {
+            "tipo": "URLError",
+            "categoria": "RED",
+            "timeout": false,
+            "error": "<urlopen error <urlopen error _ssl.c:1001: The handshake operation timed out>>",
+            "causa": "TIEMPO_ESPERA",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA",
+            "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38744/documentos/102985"
+          }
+        ]
+      },
+      "id": "144746a43f4d9e30a1dcccedafbe550d25711925abc28198a970defc5ec9dfe6",
+      "estado": "PUBLICACION_DETECTADA",
+      "evento_publicado": null,
+      "fecha_publicacion_texto": null,
+      "objeto_listado_verificado": true,
+      "numero_oficial_sin_interpretar": "23340/2026",
+      "numero_pendiente_ficha": true,
+      "texto_listado": "Licitación Pública 23340/2026 Publicada para Apertura Provisión de Iluminarias LED para Obras por administración de Alumbrado Público - Iluminación en Barrios y Avenida - 2026 - Secretaría de Ambiente y Espacio Público Apertura: 16/11/2026 09:00",
+      "pago_evidencias": [],
+      "fuentes_observadas": [
+        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones"
+      ],
+      "urls_publicacion": [
+        "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=2",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?recomendada=apertura"
+      ]
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "localidad": "Rosario",
+      "provincia": "Santa Fe",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "caso_id": "pendiente-021",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
+      "id_origen": "38717",
+      "identidad_ambito": "ficha-rosario-38717",
+      "titulo": "Compra Agil 467/2026 Contratación del servicio de impresiones para la Secretaría de Igualdad, Género y DDHH",
+      "objeto": "Contratación del servicio de impresiones para la Secretaría de Igualdad, Género y DDHH",
+      "numero_procedimiento": "467/2026",
+      "tipo_procedimiento": "compra agil",
+      "procedimiento": "compra agil 467/2026",
+      "expediente": "10/2026",
+      "documentos": [
+        {
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38717/documentos/102938",
+          "titulo": "ver pliego adjunto apto para cotizar: pliegoimpresionesdef.pdf",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA"
+        }
+      ],
+      "detalle_completo": true,
+      "registro_estructurado": true,
+      "fecha_apertura_texto": "10/11/2026 09:00",
+      "presupuesto_texto": "$ 4.921.000,00",
+      "situacion_publicada": null,
+      "campos_oficiales": {
+        "tipo de contratacion": "Compra Agil",
+        "estado": "Publicada para Apertura",
+        "n° de contratacion": "467/2026",
+        "expediente": "10/2026",
+        "objeto": "Contratación del servicio de impresiones para la Secretaría de Igualdad, Género y DDHH",
+        "presupuesto oficial": "$ 4.921.000,00",
+        "fecha de apertura": "10/11/2026 09:00",
+        "declaracion jurada de presentacion de ofertas": "Para presentar una oferta, completá la Declaración Jurada de conocimiento de Pliegos y Normativas a través de tu Perfil Digital. Luego, imprimila, firmala y adjuntala a tu oferta en papel. Al presentar la Declaración Jurada, se reemplaza la presentación en papel de los pliegos y normativas correspondientes a la licitación. Completar DDJJ",
+        "fecha de publicacion": "04/11/2026",
+        "fecha ultima actualizacion": "04/11/2026",
+        "consulta pliego": "Dirección de Administración Económica Financiera (Sec. Igualdad, Género y DDHH) - BUENOS AIRES 856 - 4° piso, de lunes a viernes de 9 a 14hs notificaciones_daefSGDH@rosario.gob.ar",
+        "recepcion de ofertas": "Dirección de Administración Económica Financiera (Sec. Igualdad, Género y DDHH) - BUENOS AIRES 856 - 4° piso (ala derecha, final del pasillo, última oficina) De lunes a viernes de 9 a 14hs Hasta el momento de la apertura",
+        "lugar de apertura": "Dirección de Administración Económica Financiera (Sec. Igualdad, Género y DDHH) - BUENOS AIRES 856 - 4° piso (ala derecha, final del pasillo, última oficina)",
+        "reparticion licitante": "Secretaría de Igualdad, Género y Derechos Humanos - PASEO DE LAS ARTES 301",
+        "ver pliego adjunto apto para cotizar": "pliegoimpresionesdef.pdf"
+      },
+      "rango_evidencia": 3,
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
+          "texto": "compra agil 467/2026"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
+          "texto": "compra agil 467/2026"
+        },
+        "fecha_apertura": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
+          "texto": "10/11/2026 09:00"
+        },
+        "fecha_publicacion": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
+          "texto": "fecha de publicacion: 04/11/2026"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
+          "texto": "2026-11-10t09:00:00-03:00"
+        },
+        "presupuesto": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
+          "texto": "presupuesto oficial $ 4.921.000,00"
+        }
+      },
+      "fecha_publicacion": "2026-11-04",
+      "fecha_limite_presentacion_texto": "2026-11-10T09:00:00-03:00",
+      "evidencia_recepcion": {
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
+        "sha256": "8e6b4a2ab1bed70b1b0561bd56a85349155881e01ccc5823c90a8e522de2ae41",
+        "cita": "recepcion de ofertas direccion de administracion economica financiera (sec. igualdad, genero y ddhh) - buenos aires 856 - 4° piso (ala derecha, final del pasillo, ultima oficina) de lunes a viernes de 9 a 14hs hasta el momento de la apertura ",
+        "fragmento_fecha": "el momento de la apertura ",
+        "regla": "CLAUSULA_EXPLICITA"
+      },
+      "evidencia_url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "fecha_apertura": "2026-11-10",
+      "fecha_limite_presentacion": "2026-11-10",
+      "presupuesto": {
+        "importe": "4921000.00",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "compra agil 467/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": "09:00",
+      "fecha_hora_apertura": "2026-11-10T09:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "hora_limite_presentacion": "09:00",
+      "fecha_hora_limite_presentacion": "2026-11-10T09:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-10",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38717/documentos/102938",
+      "campos_desconocidos": [],
+      "observada_esta_corrida": true,
+      "requiere_revalidacion": false,
+      "evidencia_captura": {
+        "url_solicitada": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
+        "http": 200,
+        "tipo": "text/html; charset=UTF-8",
+        "bytes": 39779,
+        "segundos": 1.609,
+        "sha256": "8e6b4a2ab1bed70b1b0561bd56a85349155881e01ccc5823c90a8e522de2ae41",
+        "fecha": "2026-11-08T22:06:27.070804-03:00"
+      },
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-10T09:00:00-03:00",
+      "revalidacion_documental": {
+        "caso_id": "pendiente-021",
+        "fecha": "2026-11-08T22:25:56.274945-03:00",
+        "evidencias": [
+          {
+            "url_solicitada": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
+            "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
+            "http": 200,
+            "tipo": "text/html; charset=UTF-8",
+            "bytes": 39779,
+            "segundos": 1.609,
+            "sha256": "8e6b4a2ab1bed70b1b0561bd56a85349155881e01ccc5823c90a8e522de2ae41",
+            "fecha": "2026-11-08T22:06:27.070804-03:00"
+          }
+        ],
+        "documentos_pendientes": [],
+        "errores": [
+          {
+            "tipo": "URLError",
+            "categoria": "RED",
+            "timeout": false,
+            "error": "<urlopen error <urlopen error _ssl.c:1001: The handshake operation timed out>>",
+            "causa": "TIEMPO_ESPERA",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA",
+            "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38717/documentos/102938"
+          }
+        ]
+      },
+      "id": "7e6c53e2ba010869bab8a5d3574836517b040a6d096d94b6037aea617c9331aa",
+      "estado": "PUBLICACION_DETECTADA",
+      "evento_publicado": null,
+      "fecha_publicacion_texto": null,
+      "objeto_listado_verificado": true,
+      "numero_oficial_sin_interpretar": "10/2026",
+      "numero_pendiente_ficha": true,
+      "texto_listado": "Compra Agil 10/2026 Publicada para Apertura Contratación del servicio de impresiones para la Secretaría de Igualdad, Género y DDHH Apertura: 10/11/2026 09:00",
+      "pago_evidencias": [],
+      "fuentes_observadas": [
+        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones"
+      ],
+      "urls_publicacion": [
+        "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=2",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5"
+      ]
+    },
+    {
+      "organismo": "Municipalidad de Rosario",
+      "localidad": "Rosario",
+      "provincia": "Santa Fe",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "caso_id": "pendiente-026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
+      "id_origen": "38692",
+      "identidad_ambito": "ficha-rosario-38692",
+      "titulo": "Compra Agil 463/2026 Compra y alquiler de elementos ortopédicos para el Programa de Salud de las Trabajadoras y los Trabajadores",
+      "objeto": "Compra y alquiler de elementos ortopédicos para el Programa de Salud de las Trabajadoras y los Trabajadores",
+      "numero_procedimiento": "463/2026",
+      "tipo_procedimiento": "compra agil",
+      "procedimiento": "compra agil 463/2026",
+      "expediente": "7/2026",
+      "documentos": [
+        {
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38692/documentos/102898",
+          "titulo": "ver pliego adjunto apto para cotizar: pliegocompraagil7-2026ortopedia.pdf",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA"
+        }
+      ],
+      "detalle_completo": true,
+      "registro_estructurado": true,
+      "fecha_apertura_texto": "10/11/2026 11:00",
+      "presupuesto_texto": "$ 4.500.000,00",
+      "situacion_publicada": null,
+      "campos_oficiales": {
+        "tipo de contratacion": "Compra Agil",
+        "estado": "Publicada para Apertura",
+        "n° de contratacion": "463/2026",
+        "expediente": "7/2026",
+        "objeto": "Compra y alquiler de elementos ortopédicos para el Programa de Salud de las Trabajadoras y los Trabajadores",
+        "presupuesto oficial": "$ 4.500.000,00",
+        "fecha de apertura": "10/11/2026 11:00",
+        "declaracion jurada de presentacion de ofertas": "Para presentar una oferta, completá la Declaración Jurada de conocimiento de Pliegos y Normativas a través de tu Perfil Digital. Luego, imprimila, firmala y adjuntala a tu oferta en papel. Al presentar la Declaración Jurada, se reemplaza la presentación en papel de los pliegos y normativas correspondientes a la licitación. Completar DDJJ",
+        "fecha de publicacion": "02/11/2026",
+        "fecha ultima actualizacion": "02/11/2026",
+        "consulta pliego": "Programa Salud de los Trabajadores - SAN LUIS 2020 - 4° piso, oficina 13 de lunes a viernes de 9 a 14hs artmunicipal@rosario.gov.ar",
+        "recepcion de ofertas": "Programa Salud de los Trabajadores - SAN LUIS 2020 - 4°piso, oficina 13 Hasta el momento de la apertura",
+        "lugar de apertura": "Programa Salud de los Trabajadores - SAN LUIS 2020 - 4°piso, oficina 13 Oficina de Contaduría",
+        "reparticion licitante": "Programa Salud de los Trabajadores - SAN LUIS 2020",
+        "ver pliego adjunto apto para cotizar": "pliegocompraagil7-2026ortopedia.pdf"
+      },
+      "rango_evidencia": 3,
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
+          "texto": "compra agil 463/2026"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
+          "texto": "compra agil 463/2026"
+        },
+        "fecha_apertura": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
+          "texto": "10/11/2026 11:00"
+        },
+        "fecha_publicacion": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
+          "texto": "fecha de publicacion: 02/11/2026"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
+          "texto": "2026-11-10t11:00:00-03:00"
+        },
+        "presupuesto": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
+          "texto": "presupuesto oficial $ 4.500.000,00"
+        }
+      },
+      "fecha_publicacion": "2026-11-02",
+      "fecha_limite_presentacion_texto": "2026-11-10T11:00:00-03:00",
+      "evidencia_recepcion": {
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
+        "sha256": "2b1f05e38d4e4fc9c51260b2127b60eaefd8d0098db2ac5572fa36c0cb798bad",
+        "cita": "recepcion de ofertas programa salud de los trabajadores - san luis 2020 - 4°piso, oficina 13 hasta el momento de la apertura ",
+        "fragmento_fecha": "el momento de la apertura ",
+        "regla": "CLAUSULA_EXPLICITA"
+      },
+      "evidencia_url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "fecha_apertura": "2026-11-10",
+      "fecha_limite_presentacion": "2026-11-10",
+      "presupuesto": {
+        "importe": "4500000.00",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "compra agil 463/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": "11:00",
+      "fecha_hora_apertura": "2026-11-10T11:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "hora_limite_presentacion": "11:00",
+      "fecha_hora_limite_presentacion": "2026-11-10T11:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-10",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38692/documentos/102898",
+      "campos_desconocidos": [],
+      "observada_esta_corrida": true,
+      "requiere_revalidacion": false,
+      "evidencia_captura": {
+        "url_solicitada": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
+        "http": 200,
+        "tipo": "text/html; charset=UTF-8",
+        "bytes": 39556,
+        "segundos": 1.633,
+        "sha256": "2b1f05e38d4e4fc9c51260b2127b60eaefd8d0098db2ac5572fa36c0cb798bad",
+        "fecha": "2026-11-08T22:06:36.994593-03:00"
+      },
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-10T11:00:00-03:00",
+      "revalidacion_documental": {
+        "caso_id": "pendiente-026",
+        "fecha": "2026-11-08T22:25:56.669015-03:00",
+        "evidencias": [
+          {
+            "url_solicitada": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
+            "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
+            "http": 200,
+            "tipo": "text/html; charset=UTF-8",
+            "bytes": 39556,
+            "segundos": 1.633,
+            "sha256": "2b1f05e38d4e4fc9c51260b2127b60eaefd8d0098db2ac5572fa36c0cb798bad",
+            "fecha": "2026-11-08T22:06:36.994593-03:00"
+          }
+        ],
+        "documentos_pendientes": [],
+        "errores": [
+          {
+            "tipo": "URLError",
+            "categoria": "RED",
+            "timeout": false,
+            "error": "<urlopen error <urlopen error _ssl.c:1001: The handshake operation timed out>>",
+            "causa": "TIEMPO_ESPERA",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA",
+            "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38692/documentos/102898"
+          }
+        ]
+      },
+      "id": "55edb00b043a6d87b7a4e67266d66ca441b0ad91a7db38573425a087188f5fd3",
+      "estado": "PUBLICACION_DETECTADA",
+      "evento_publicado": null,
+      "fecha_publicacion_texto": null,
+      "objeto_listado_verificado": true,
+      "numero_oficial_sin_interpretar": "7/2026",
+      "numero_pendiente_ficha": true,
+      "texto_listado": "Compra Agil 7/2026 Publicada para Apertura Compra y alquiler de elementos ortopédicos para el Programa de Salud de las Trabajadoras y los Trabajadores Apertura: 10/11/2026 11:00",
+      "pago_evidencias": [],
+      "fuentes_observadas": [
+        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones"
+      ],
+      "urls_publicacion": [
+        "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=3",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5"
+      ]
+    },
+    {
+      "id": "adad4f1f8cd914469aa68f7a1244da99a5ef2c85c030b7a882ed15517776717f",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "estado": "PUBLICACION_DETECTADA",
+      "requiere_revalidacion": false,
+      "organismo": "Municipalidad de Rosario",
+      "localidad": "Rosario",
+      "provincia": "Santa Fe",
+      "procedimiento": "compra agil 470/2026",
+      "llamado_especial": false,
+      "evento_publicado": null,
+      "situacion_publicada": null,
+      "titulo": "Compra Agil 470/2026 Servicio de limpieza para la Dirección General de Compras y Suministros - Sec de Hacienda y Economía",
+      "objeto": "Servicio de limpieza para la Dirección General de Compras y Suministros - Sec de Hacienda y Economía",
+      "numero_procedimiento": "470/2026",
+      "tipo_procedimiento": "compra agil",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38723",
+      "presupuesto_texto": "$ 14.630.616,00",
+      "fecha_publicacion_texto": null,
+      "documentos": [
+        {
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38723/documentos/102952",
+          "titulo": "ver pliego adjunto apto para cotizar: planilladecotización.pdf",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA"
+        },
+        {
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38723/documentos/102951",
+          "titulo": "ver pliego adjunto apto para cotizar: especificacionestec.pdf",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA"
+        },
+        {
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38723/documentos/102950",
+          "titulo": "ver pliego adjunto apto para cotizar: constanciavisita.pdf",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA"
+        },
+        {
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38723/documentos/102949",
+          "titulo": "ver pliego adjunto apto para cotizar: pliego1.pdf",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA"
+        }
+      ],
+      "fecha_apertura_texto": "16/11/2026 10:00",
+      "registro_estructurado": true,
+      "objeto_listado_verificado": true,
+      "numero_oficial_sin_interpretar": "1/2026",
+      "numero_pendiente_ficha": true,
+      "id_origen": "38723",
+      "identidad_ambito": "ficha-rosario-38723",
+      "texto_listado": "Compra Agil 1/2026 Publicada para Apertura Servicio de limpieza para la Dirección General de Compras y Suministros - Sec de Hacienda y Economía Apertura: 16/11/2026 10:00",
+      "evidencia_url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+      "detalle_completo": true,
+      "rango_evidencia": 3,
+      "fecha_apertura": "2026-11-16",
+      "fecha_limite_presentacion": "2026-11-16",
+      "fecha_publicacion": "2026-11-04",
+      "presupuesto": {
+        "importe": "14630616.00",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "compra agil 470/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": "10:00",
+      "fecha_hora_apertura": "2026-11-16T10:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "hora_limite_presentacion": "10:00",
+      "fecha_hora_limite_presentacion": "2026-11-16T10:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-16",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "fecha_publicacion": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38723",
+          "texto": "fecha de publicacion: 04/11/2026"
+        },
+        "numero_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "compra agil 470/2026"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "compra agil 470/2026"
+        },
+        "fecha_apertura": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "16/11/2026 10:00"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "2026-11-16t10:00:00-03:00"
+        },
+        "presupuesto": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "presupuesto oficial $ 14.630.616,00"
+        }
+      },
+      "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38723/documentos/102952",
+      "campos_desconocidos": [],
+      "pago_evidencias": [],
+      "fuentes_observadas": [
+        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones"
+      ],
+      "urls_publicacion": [
+        "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38723",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=1",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5"
+      ],
+      "expediente": "1/2026",
+      "campos_oficiales": {
+        "tipo de contratacion": "Compra Agil",
+        "estado": "Publicada para Apertura",
+        "n° de contratacion": "470/2026",
+        "expediente": "1/2026",
+        "objeto": "Servicio de limpieza para la Dirección General de Compras y Suministros - Sec de Hacienda y Economía",
+        "presupuesto oficial": "$ 14.630.616,00",
+        "fecha de apertura": "16/11/2026 10:00",
+        "declaracion jurada de presentacion de ofertas": "Para presentar una oferta, completá la Declaración Jurada de conocimiento de Pliegos y Normativas a través de tu Perfil Digital. Luego, imprimila, firmala y adjuntala a tu oferta en papel. Al presentar la Declaración Jurada, se reemplaza la presentación en papel de los pliegos y normativas correspondientes a la licitación. Completar DDJJ",
+        "fecha de publicacion": "04/11/2026",
+        "fecha ultima actualizacion": "04/11/2026",
+        "consulta pliego": "Dirección General de Compras y Suministros (S.H.yE.) - SANTA FE 664 - notificaciones_comprasysuministros@rosario.gov.ar Hasta el momento de la apertura",
+        "recepcion de ofertas": "Dirección General de Compras y Suministros (S.H.yE.) - SANTA FE 664 - Planta Alta de lunes a viernes de 8 a 12hs Hasta el momento de la apertura",
+        "lugar de apertura": "Dirección General de Compras y Suministros (S.H.yE.) - SANTA FE 664 - Sala de apertura",
+        "reparticion licitante": "Dirección General de Compras y Suministros (S.H.yE.) - SANTA FE 664",
+        "observaciones": "Horario para la visita: de 8 a 12hs. Plazo: hasta el día hábil anterior a la apertura.",
+        "ver pliego adjunto apto para cotizar": "planilladecotización.pdf especificacionestec.pdf constanciavisita.pdf pliego1.pdf"
+      },
+      "texto_documento": "Compra Agil 470/2026 Servicio de limpieza para la Dirección General de Compras y Suministros - Sec de Hacienda y Economía",
+      "caso_id": "pendiente-017",
+      "fecha_limite_presentacion_texto": "2026-11-16T10:00:00-03:00",
+      "evidencia_recepcion": {
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38723",
+        "sha256": "49e9492811639bd4da309748d57bf8cc6248bd341bedaf320ab84c29e50237ae",
+        "cita": "recepcion de ofertas direccion general de compras y suministros (s.h.ye.) - santa fe 664 - planta alta de lunes a viernes de 8 a 12hs hasta el momento de la apertura ",
+        "fragmento_fecha": "el momento de la apertura ",
+        "regla": "CLAUSULA_EXPLICITA"
+      },
+      "observada_esta_corrida": true,
+      "evidencia_captura": {
+        "url_solicitada": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38723",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38723",
+        "http": 200,
+        "tipo": "text/html; charset=UTF-8",
+        "bytes": 40698,
+        "segundos": 1.535,
+        "sha256": "49e9492811639bd4da309748d57bf8cc6248bd341bedaf320ab84c29e50237ae",
+        "fecha": "2026-11-08T22:08:05.086408-03:00"
+      },
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-16T10:00:00-03:00",
+      "revalidacion_documental": {
+        "caso_id": "pendiente-017",
+        "fecha": "2026-11-08T22:26:03.936305-03:00",
+        "evidencias": [
+          {
+            "url_solicitada": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38723",
+            "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38723",
+            "http": 200,
+            "tipo": "text/html; charset=UTF-8",
+            "bytes": 40698,
+            "segundos": 1.535,
+            "sha256": "49e9492811639bd4da309748d57bf8cc6248bd341bedaf320ab84c29e50237ae",
+            "fecha": "2026-11-08T22:08:05.086408-03:00"
+          }
+        ],
+        "documentos_pendientes": [],
+        "errores": [
+          {
+            "tipo": "URLError",
+            "categoria": "RED",
+            "timeout": false,
+            "error": "<urlopen error <urlopen error _ssl.c:1001: The handshake operation timed out>>",
+            "causa": "TIEMPO_ESPERA",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA",
+            "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38723/documentos/102952"
+          },
+          {
+            "tipo": "URLError",
+            "categoria": "RED",
+            "timeout": false,
+            "error": "<urlopen error <urlopen error _ssl.c:1001: The handshake operation timed out>>",
+            "causa": "TIEMPO_ESPERA",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA",
+            "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38723/documentos/102951"
+          },
+          {
+            "tipo": "URLError",
+            "categoria": "RED",
+            "timeout": false,
+            "error": "<urlopen error <urlopen error _ssl.c:1001: The handshake operation timed out>>",
+            "causa": "TIEMPO_ESPERA",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA",
+            "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38723/documentos/102950"
+          },
+          {
+            "tipo": "URLError",
+            "categoria": "RED",
+            "timeout": false,
+            "error": "<urlopen error <urlopen error _ssl.c:1001: The handshake operation timed out>>",
+            "causa": "TIEMPO_ESPERA",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA",
+            "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38723/documentos/102949"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fd993510e3fcfd9793d6b5db3fd906298808493728062f6aab923817c2f309c6",
+      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+      "estado": "PUBLICACION_DETECTADA",
+      "requiere_revalidacion": false,
+      "organismo": "Municipalidad de Rosario",
+      "localidad": "Rosario",
+      "provincia": "Santa Fe",
+      "procedimiento": "compra agil 469/2026",
+      "llamado_especial": false,
+      "evento_publicado": null,
+      "situacion_publicada": null,
+      "titulo": "Compra Agil 469/2026 Provisión de accesorios para pintura para la Secretaría de Obras Públicas - Dirección General de Arquitectura",
+      "objeto": "Provisión de accesorios para pintura para la Secretaría de Obras Públicas - Dirección General de Arquitectura",
+      "numero_procedimiento": "469/2026",
+      "tipo_procedimiento": "compra agil",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
+      "presupuesto_texto": "$ 10.000.000,00",
+      "fecha_publicacion_texto": null,
+      "documentos": [
+        {
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38721/documentos/102945",
+          "titulo": "ver pliego adjunto apto para cotizar: pliegoprovisióndeaccesoriosparapintura.pdf",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA"
+        },
+        {
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38721/documentos/102944",
+          "titulo": "ver pliego adjunto apto para cotizar: planilladecotización.pdf",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA"
+        }
+      ],
+      "fecha_apertura_texto": "11/11/2026 11:00",
+      "registro_estructurado": true,
+      "objeto_listado_verificado": true,
+      "numero_oficial_sin_interpretar": "50/2026",
+      "numero_pendiente_ficha": true,
+      "id_origen": "38721",
+      "identidad_ambito": "ficha-rosario-38721",
+      "texto_listado": "Compra Agil 50/2026 Publicada para Apertura Provisión de accesorios para pintura para la Secretaría de Obras Públicas - Dirección General de Arquitectura Apertura: 11/11/2026 11:00",
+      "evidencia_url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+      "detalle_completo": true,
+      "rango_evidencia": 3,
+      "fecha_apertura": "2026-11-11",
+      "fecha_limite_presentacion": "2026-11-11",
+      "fecha_publicacion": "2026-11-04",
+      "presupuesto": {
+        "importe": "10000000.00",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "procedimiento_canonico": "compra agil 469/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": "11:00",
+      "fecha_hora_apertura": "2026-11-11T11:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "hora_limite_presentacion": "11:00",
+      "fecha_hora_limite_presentacion": "2026-11-11T11:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-11",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "fecha_publicacion": {
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
+          "texto": "fecha de publicacion: 04/11/2026"
+        },
+        "numero_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "compra agil 469/2026"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "compra agil 469/2026"
+        },
+        "fecha_apertura": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "11/11/2026 11:00"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "2026-11-11t11:00:00-03:00"
+        },
+        "presupuesto": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "presupuesto oficial $ 10.000.000,00"
+        }
+      },
+      "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38721/documentos/102945",
+      "campos_desconocidos": [],
+      "pago_evidencias": [],
+      "fuentes_observadas": [
+        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones"
+      ],
+      "urls_publicacion": [
+        "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=1",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5"
+      ],
+      "expediente": "50/2026",
+      "campos_oficiales": {
+        "tipo de contratacion": "Compra Agil",
+        "estado": "Publicada para Apertura",
+        "n° de contratacion": "469/2026",
+        "expediente": "50/2026",
+        "objeto": "Provisión de accesorios para pintura para la Secretaría de Obras Públicas - Dirección General de Arquitectura",
+        "presupuesto oficial": "$ 10.000.000,00",
+        "fecha de apertura": "11/11/2026 11:00",
+        "declaracion jurada de presentacion de ofertas": "Para presentar una oferta, completá la Declaración Jurada de conocimiento de Pliegos y Normativas a través de tu Perfil Digital. Luego, imprimila, firmala y adjuntala a tu oferta en papel. Al presentar la Declaración Jurada, se reemplaza la presentación en papel de los pliegos y normativas correspondientes a la licitación. Completar DDJJ",
+        "fecha de publicacion": "04/11/2026",
+        "fecha ultima actualizacion": "04/11/2026",
+        "consulta pliego": "Dirección de Compras y Contrataciones (S.O.P.) - URQUIZA GRAL. JUSTO JOSE 902 - notificaciones_compras_sop@rosario.gov.ar",
+        "recepcion de ofertas": "Dirección de Compras y Contrataciones (S.O.P.) - URQUIZA GRAL. JUSTO JOSE 902 - 2°piso, oficina 210 De 7 a 12hs, hasta el momento de la apertura",
+        "lugar de apertura": "Dirección de Compras y Contrataciones (S.O.P.) - URQUIZA GRAL. JUSTO JOSE 902 - 2°piso, oficina 210",
+        "reparticion licitante": "Dirección General de Arquitectura (Sec. Obras Públicas) - URQUIZA GRAL. JUSTO JOSE 902",
+        "ver pliego adjunto apto para cotizar": "pliegoprovisióndeaccesoriosparapintura.pdf planilladecotización.pdf"
+      },
+      "texto_documento": "Compra Agil 469/2026 Provisión de accesorios para pintura para la Secretaría de Obras Públicas - Dirección General de Arquitectura",
+      "caso_id": "pendiente-018",
+      "fecha_limite_presentacion_texto": "2026-11-11T11:00:00-03:00",
+      "evidencia_recepcion": {
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
+        "sha256": "aedf145b5d51d8c4092c7da123514bdc5ce2ede3126116c7572ff33f17416844",
+        "cita": "recepcion de ofertas direccion de compras y contrataciones (s.o.p.) - urquiza gral. justo jose 902 - 2°piso, oficina 210 de 7 a 12hs, hasta el momento de la apertura ",
+        "fragmento_fecha": "el momento de la apertura ",
+        "regla": "CLAUSULA_EXPLICITA"
+      },
+      "observada_esta_corrida": true,
+      "evidencia_captura": {
+        "url_solicitada": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
+        "http": 200,
+        "tipo": "text/html; charset=UTF-8",
+        "bytes": 39893,
+        "segundos": 1.741,
+        "sha256": "aedf145b5d51d8c4092c7da123514bdc5ce2ede3126116c7572ff33f17416844",
+        "fecha": "2026-11-08T22:07:04.285260-03:00"
+      },
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-11T11:00:00-03:00",
+      "revalidacion_documental": {
+        "caso_id": "pendiente-018",
+        "fecha": "2026-11-08T22:25:58.513881-03:00",
+        "evidencias": [
+          {
+            "url_solicitada": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
+            "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
+            "http": 200,
+            "tipo": "text/html; charset=UTF-8",
+            "bytes": 39893,
+            "segundos": 1.741,
+            "sha256": "aedf145b5d51d8c4092c7da123514bdc5ce2ede3126116c7572ff33f17416844",
+            "fecha": "2026-11-08T22:07:04.285260-03:00"
+          }
+        ],
+        "documentos_pendientes": [],
+        "errores": [
+          {
+            "tipo": "URLError",
+            "categoria": "RED",
+            "timeout": false,
+            "error": "<urlopen error <urlopen error _ssl.c:1001: The handshake operation timed out>>",
+            "causa": "TIEMPO_ESPERA",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA",
+            "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38721/documentos/102945"
+          },
+          {
+            "tipo": "URLError",
+            "categoria": "RED",
+            "timeout": false,
+            "error": "<urlopen error <urlopen error _ssl.c:1001: The handshake operation timed out>>",
+            "causa": "TIEMPO_ESPERA",
+            "restriccion_acceso_comprobada": false,
+            "permanencia": "NO_DETERMINADA",
+            "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38721/documentos/102944"
+          }
+        ]
+      }
+    },
+    {
+      "organismo": "Comuna de El Palenque",
+      "localidad": "El Palenque",
+      "provincia": "Entre Ríos",
+      "fuente": "https://www.entrerios.gov.ar/boletin/",
+      "caso_id": "pendiente-106",
+      "presupuesto_texto": "$ 25.470.000,00",
+      "organismo_publicado": "COMUNA DE EL PALENQUE",
+      "numero_procedimiento": "8/2026",
+      "numero_oficial_sin_interpretar": "8/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "procedimiento": "licitacion publica 8/2026",
+      "titulo": "licitacion publica 8/2026 -- -- --\n                                           COMUNA DE EL PALENQUE\n                                            Licitación Pública Nº 08/26\n OBJETO: Adquisición de inmueble urbano destinado a la construcción de una sala de velatorios.\n PRESUPUESTO OFICIAL: $ 25.470.000,00 (pesos veinticinco millones cuatrocientos setenta mil)\n RECEPCIÓN DE PROPUESTAS: 20/11/2026 hasta las 10:59 hs. en Sede Administrativa de El Palenque.\n APERTURA DE OFERTAS: 20/11/2026 a las 11:00 horas, Lugar: Sede Administrativa de la Comuna de El\nPalenque, sito en calle San Martín sin número, El Palenque (E.R.).\n VALOR DEL PLIEGO: pesos cero ($ 0,00).\n Por consulta de pliegos dirigirse a la Comuna de El Palenque en días hábiles administrativos, en horario de 8:30\na 13:00 horas, teléfono 0343-156115732, comunaelpalenque@gmail.com.\n Comuna de El Palenque, Grosso, Ricardo Rubén, Presidente Comunal.",
+      "objeto": "Adquisición de inmueble urbano destinado a la construcción de una sala de velatorios.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+      "registro_estructurado": true,
+      "detalle_completo": true,
+      "es_fuente_complementaria": true,
+      "evento_publicado": null,
+      "situacion_publicada": null,
+      "fecha_apertura_texto": "20/11/2026 a las 11:00",
+      "documentos": [
+        {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+          "titulo": "Boletín Oficial Entre Ríos"
+        },
+        {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
+          "titulo": "Boletín complementario"
+        }
+      ],
+      "texto_documento": "licitacion publica 8/2026 -- -- --\n                                           COMUNA DE EL PALENQUE\n                                            Licitación Pública Nº 08/26\n OBJETO: Adquisición de inmueble urbano destinado a la construcción de una sala de velatorios.\n PRESUPUESTO OFICIAL: $ 25.470.000,00 (pesos veinticinco millones cuatrocientos setenta mil)\n RECEPCIÓN DE PROPUESTAS: 20/11/2026 hasta las 10:59 hs. en Sede Administrativa de El Palenque.\n APERTURA DE OFERTAS: 20/11/2026 a las 11:00 horas, Lugar: Sede Administrativa de la Comuna de El\nPalenque, sito en calle San Martín sin número, El Palenque (E.R.).\n VALOR DEL PLIEGO: pesos cero ($ 0,00).\n Por consulta de pliegos dirigirse a la Comuna de El Palenque en días hábiles administrativos, en horario de 8:30\na 13:00 horas, teléfono 0343-156115732, comunaelpalenque@gmail.com.\n Comuna de El Palenque, Grosso, Ricardo Rubén, Presidente Comunal.",
+      "fecha_limite_presentacion_texto": "2026-11-20T10:59:00-03:00",
+      "evidencia_recepcion": {
+        "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+        "sha256": "0cc723a9635682fe8ba17da1f13369bf53dbe27b1a7bb8001585e25862352ac4",
+        "cita": "recepcion de propuestas: 20/11/2026 hasta las 10:59 hs. en sede administrativa de el palenque. ",
+        "fragmento_fecha": "las 10:59 hs. en sede administrativa de el palenque. ",
+        "regla": "CLAUSULA_EXPLICITA"
+      },
+      "fecha_apertura": "2026-11-20",
+      "fecha_limite_presentacion": "2026-11-20",
+      "fecha_publicacion": null,
+      "presupuesto": {
+        "importe": "25470000.00",
+        "moneda": null
+      },
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "licitacion publica 8/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": "11:00",
+      "fecha_hora_apertura": "2026-11-20T11:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "hora_limite_presentacion": "10:59",
+      "fecha_hora_limite_presentacion": "2026-11-20T10:59:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-20",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "modalidad_presentacion": [],
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+          "texto": "licitacion publica 8/2026"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+          "texto": "licitacion publica 8/2026"
+        },
+        "fecha_apertura": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+          "texto": "20/11/2026 a las 11:00"
+        },
+        "presupuesto": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+          "texto": "presupuesto oficial $ 25.470.000,00"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+          "texto": "2026-11-20t10:59:00-03:00"
+        }
+      },
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "fecha_publicacion",
+        "enlace_pliego"
+      ],
+      "observada_esta_corrida": true,
+      "requiere_revalidacion": false,
+      "evidencia_captura": {
+        "url_solicitada": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+        "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+        "http": 200,
+        "tipo": "application/pdf",
+        "bytes": 1409353,
+        "segundos": 1.51,
+        "sha256": "0cc723a9635682fe8ba17da1f13369bf53dbe27b1a7bb8001585e25862352ac4",
+        "fecha": "2026-11-08T22:08:13.442823-03:00"
+      },
+      "pago_evidencias": [],
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-20T10:59:00-03:00",
+      "revalidacion_documental": {
+        "caso_id": "pendiente-106",
+        "fecha": "2026-11-08T22:26:06.620421-03:00",
+        "evidencias": [
+          {
+            "url_solicitada": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+            "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+            "http": 200,
+            "tipo": "application/pdf",
+            "bytes": 1409353,
+            "segundos": 1.51,
+            "sha256": "0cc723a9635682fe8ba17da1f13369bf53dbe27b1a7bb8001585e25862352ac4",
+            "fecha": "2026-11-08T22:08:13.442823-03:00"
+          }
+        ],
+        "documentos_pendientes": [],
+        "errores": []
+      },
+      "id": "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59",
+      "estado": "PUBLICACION_DETECTADA",
+      "fuentes_observadas": [
+        "https://www.entrerios.gov.ar/boletin/"
+      ],
+      "urls_publicacion": [
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf"
+      ]
+    },
+    {
+      "organismo": "Municipalidad de Gualeguay",
+      "localidad": "Gualeguay",
+      "provincia": "Entre Ríos",
+      "fuente": "https://www.entrerios.gov.ar/boletin/",
+      "caso_id": "pendiente-116",
+      "presupuesto_texto": null,
+      "organismo_publicado": "MUNICIPALIDAD DE GUALEGUAY",
+      "numero_procedimiento": "17/2026",
+      "numero_oficial_sin_interpretar": "17/2026",
+      "tipo_procedimiento": "licitacion publica",
+      "procedimiento": "licitacion publica 17/2026",
+      "titulo": "licitacion publica 17/2026 GUALEGUAY\n\n                                         MUNICIPALIDAD DE GUALEGUAY\n                                             Licitación Pública Nº 17/2026\n                                          Decreto de Llamado Nº 925/2026\n La Municipalidad de Gualeguay, llama a la Licitación Pública Nº 17/2026 - convocada para la contratación de\nalquiler de sonido, iluminación y pantalla, instalado en Corsódromo de Gualeguay durante las diez (10) noches de\nCorso Oficial 2027, según especificaciones adjuntas.\n\n\n  RECEPCIÓN DE PROPUESTAS: Día 16 de Noviembre de 2026 - hasta las 09:30 horas en Mesa de Entradas de\nla Municipalidad de Gualeguay Entre Ríos.\n  APERTURA DE PROPUESTAS: Día 16 de Noviembre de 2026 - a las 10:00 horas en la Secretaría de Hacienda\nde la Municipalidad de Gualeguay Entre Ríos.\n  VALOR DEL PLIEGO: SIN COSTO\n  Sra. Moron Fernanda, Jefa Del Departamento de Compras, Municipalidad de Gualeguay.",
+      "objeto": "GUALEGUAY\n\n                                         MUNICIPALIDAD DE GUALEGUAY\n                                             Licitación Pública Nº 17/2026\n                                          Decreto de Llamado Nº 925/2026\n La Municipalidad de Gualeguay, llama a la Licitación Pública Nº 17/2026 - convocada para la contratación de\nalquiler de sonido, iluminación y pantalla, instalado en Corsódromo de Gualeguay durante las diez (10) noches de\nCorso Oficial 2027, según especificaciones adjuntas.\n\n\n  RECEPCIÓN DE PROPUESTAS: Día 16 de Noviembre de 2026 - hasta las 09:30 horas en Mesa de Entradas de\nla Municipalidad de Gualeguay Entre Ríos.\n  APERTURA DE PROPUESTAS: Día 16 de Noviembre de 2026 - a las 10:00 horas en la Secretaría de Hacienda\nde la Municipalidad de Gualeguay Entre Ríos.\n  VALOR DEL PLIEGO: SIN COSTO\n  Sra. Moron Fernanda, Jefa Del Departamento de Compras, Municipalidad de Gualeguay.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
+      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
+      "registro_estructurado": true,
+      "detalle_completo": true,
+      "es_fuente_complementaria": true,
+      "evento_publicado": null,
+      "situacion_publicada": null,
+      "fecha_apertura_texto": null,
+      "documentos": [
+        {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
+          "titulo": "Boletín Oficial Entre Ríos"
+        },
+        {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf",
+          "titulo": "Boletín complementario"
+        },
+        {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/29-10-26.pdf",
+          "titulo": "Boletín complementario"
+        }
+      ],
+      "texto_documento": "licitacion publica 17/2026 GUALEGUAY\n\n                                         MUNICIPALIDAD DE GUALEGUAY\n                                             Licitación Pública Nº 17/2026\n                                          Decreto de Llamado Nº 925/2026\n La Municipalidad de Gualeguay, llama a la Licitación Pública Nº 17/2026 - convocada para la contratación de\nalquiler de sonido, iluminación y pantalla, instalado en Corsódromo de Gualeguay durante las diez (10) noches de\nCorso Oficial 2027, según especificaciones adjuntas.\n\n\n  RECEPCIÓN DE PROPUESTAS: Día 16 de Noviembre de 2026 - hasta las 09:30 horas en Mesa de Entradas de\nla Municipalidad de Gualeguay Entre Ríos.\n  APERTURA DE PROPUESTAS: Día 16 de Noviembre de 2026 - a las 10:00 horas en la Secretaría de Hacienda\nde la Municipalidad de Gualeguay Entre Ríos.\n  VALOR DEL PLIEGO: SIN COSTO\n  Sra. Moron Fernanda, Jefa Del Departamento de Compras, Municipalidad de Gualeguay.",
+      "fecha_limite_presentacion_texto": "2026-11-16T09:30:00-03:00",
+      "evidencia_recepcion": {
+        "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
+        "sha256": "5a9d195b6c289f5cc2790c54e2adfb5bcdfc61849645471cc135f0fcaeaee045",
+        "cita": "recepcion de propuestas: dia 16 de noviembre de 2026 - hasta las 09:30 horas en mesa de entradas de la municipalidad de gualeguay entre rios. ",
+        "fragmento_fecha": "las 09:30 horas en mesa de entradas de la municipalidad de gualeguay entre rios. ",
+        "regla": "CLAUSULA_EXPLICITA"
+      },
+      "fecha_apertura": "2026-11-16",
+      "fecha_limite_presentacion": "2026-11-16",
+      "fecha_publicacion": null,
+      "presupuesto": null,
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "licitacion publica 17/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "hora_apertura": "10:00",
+      "fecha_hora_apertura": "2026-11-16T10:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "hora_limite_presentacion": "09:30",
+      "fecha_hora_limite_presentacion": "2026-11-16T09:30:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-16",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "evidencias_campos": {
+        "numero_procedimiento": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
+          "texto": "licitacion publica 17/2026"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
+          "texto": "licitacion publica 17/2026"
+        },
+        "fecha_apertura": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
+          "texto": "de propuestas: dia 16 de noviembre de 2026 - a las 10:00 horas en la secretaria de haciend"
+        },
+        "modalidad_presentacion": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
+          "texto": "licitacion publica 17/2026 GUALEGUAY\n\n                                         MUNICIPALIDAD DE GUALEGUAY\n                                             Licitación Pública Nº 17/2026\n                                          Decreto de Llamado Nº 925/2026\n La Municipalidad de Gualeguay, llama a la Licitación Pública Nº 17/2026 - convocada para la contratación de\nalquiler de sonido, iluminación y pantalla, instalado en Corsódromo de Gualeguay durante las diez (10) noches de\nCorso Oficial 2027, según especificaciones adjuntas.\n\n\n  RECEPCIÓN DE PROPUESTAS: Día 16 de Noviembre de 2026 - hasta las 09:30 horas en Mesa de Entradas de\nla Municipalidad de Gualeguay Entre Ríos.\n  APERTURA DE PROPUESTAS: Día 16 de Noviembre de 2026 - a las 10:00 horas en la Secretaría de Hacienda\nde la Municipalidad de Gualeguay Entre Ríos.\n  VALOR DEL PLIEGO: SIN COSTO\n  Sra. Moron Fernanda, Jefa Del Departamento de Compras, Municipalidad de Gualeguay."
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
+          "texto": "2026-11-16t09:30:00-03:00"
+        }
+      },
+      "enlace_pliego": null,
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_publicacion",
+        "enlace_pliego"
+      ],
+      "observada_esta_corrida": true,
+      "requiere_revalidacion": false,
+      "evidencia_captura": {
+        "url_solicitada": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
+        "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
+        "http": 200,
+        "tipo": "application/pdf",
+        "bytes": 1298945,
+        "segundos": 1.774,
+        "sha256": "5a9d195b6c289f5cc2790c54e2adfb5bcdfc61849645471cc135f0fcaeaee045",
+        "fecha": "2026-11-08T22:08:15.163563-03:00"
+      },
+      "pago_evidencias": [],
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-16T09:30:00-03:00",
+      "revalidacion_documental": {
+        "caso_id": "pendiente-116",
+        "fecha": "2026-11-08T22:26:04.320748-03:00",
+        "evidencias": [
+          {
+            "url_solicitada": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
+            "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
+            "http": 200,
+            "tipo": "application/pdf",
+            "bytes": 1298945,
+            "segundos": 1.774,
+            "sha256": "5a9d195b6c289f5cc2790c54e2adfb5bcdfc61849645471cc135f0fcaeaee045",
+            "fecha": "2026-11-08T22:08:15.163563-03:00"
+          }
+        ],
+        "documentos_pendientes": [],
+        "errores": []
+      },
+      "id": "15fefaf42a5305f8a3edfd7bb63471f4e1cc32c4af236122cda8d55842668c26",
+      "estado": "PUBLICACION_DETECTADA",
+      "fuentes_observadas": [
+        "https://www.entrerios.gov.ar/boletin/"
+      ],
+      "urls_publicacion": [
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/29-10-26.pdf",
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf"
+      ]
+    }
+  ]
+}
