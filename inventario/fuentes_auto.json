@@ -4905,62 +4905,6 @@
       "origen_busqueda": "https://arrecifes.gob.ar/"
     },
     {
-      "id": "auto-fase6-01-08",
-      "url": "https://sanjeronimodelsauce.gob.ar/",
-      "config": {
-        "organismo": "Comuna de San Jerónimo del Sauce",
-        "localidad": "San Jerónimo del Sauce",
-        "provincia": "Santa Fe",
-        "conector": "publicaciones",
-        "descubrir_menu": true,
-        "descubrir_contrataciones": true,
-        "barrido_institucional": true,
-        "buscador_institucional": true,
-        "solo_descubrimiento": true,
-        "lectura_adjuntos": "necesarios",
-        "ocr": false,
-        "admitir_avisos_sin_numero": true,
-        "capturar_respuestas": true,
-        "documentos_para_descubrimiento": true,
-        "noticias_comunales": true
-      },
-      "validacion": {
-        "estado": "VALIDADA",
-        "identidad_verificada": true,
-        "identidad": {
-          "verificada": true,
-          "organismo": "Comuna de San Jerónimo del Sauce",
-          "localidad": "San Jerónimo del Sauce",
-          "ubicacion": {
-            "verificado": true,
-            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
-          },
-          "dominio_oficial": true,
-          "nombre_publicado": true,
-          "jurisdiccion_publicada": true,
-          "url": "https://sanjeronimodelsauce.gob.ar/",
-          "sha256": "a394726d97b79808580d1f5ea080299028ac8fc0d318347267a22148f2ba7576",
-          "cabecera": "Home - Comuna de San Jerónimo del Sauce  Servicios Tramites Horarios de Colectivos Contacto Útiles Servicio de Recolección de Residuos Reclamos Bienal Internacional de Esculturas Ultimas Noticias Contacto Teléfono Secciones Secciones Lorem Ipsum es simplemente el texto de relleno",
-          "motivo": null
-        },
-        "procedimientos_con_objeto": 1,
-        "fecha": "2026-11-09T18:50:04.400093+00:00",
-        "motivo": null,
-        "ejemplos": [
-          {
-            "organismo": "Comuna de San Jerónimo del Sauce",
-            "numero_procedimiento": null,
-            "objeto": "Resultados de búsqueda para: licitacion",
-            "fecha_apertura": null,
-            "fecha_publicacion": null,
-            "vigencia": "DESCONOCIDA",
-            "url": "https://sanjeronimodelsauce.gob.ar/?s=licitacion",
-            "evidencia_url": "https://sanjeronimodelsauce.gob.ar/?s=licitacion"
-          }
-        ]
-      }
-    },
-    {
       "id": "auto-fase6-01-10",
       "url": "https://sastreciudad.gob.ar/intendencia/",
       "config": {

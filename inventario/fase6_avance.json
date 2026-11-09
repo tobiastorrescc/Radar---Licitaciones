@@ -2,21 +2,21 @@
   "schema_version": 1,
   "lotes": {
     "01": {
-      "fecha": "2026-11-09T15:51:20.040059-03:00",
+      "fecha": "2026-11-09T16:05:40.583429-03:00",
       "lote": "01",
-      "github_run_id": "42677364803",
+      "github_run_id": "42679698776",
       "programadas": 20,
-      "intentadas": 20,
-      "revision_efectiva": 16,
+      "intentadas": 5,
+      "revision_efectiva": 18,
       "lote_completo": false,
-      "altas_validadas": 3,
+      "altas_validadas": 0,
       "estados": {
-        "PENDIENTE": 12,
-        "OPERATIVA": 4,
-        "TIEMPO_FUENTE": 4
+        "PENDIENTE": 3,
+        "TIEMPO_FUENTE": 2
       },
-      "duracion_segundos": 119.656,
+      "duracion_segundos": 67.927,
       "produccion_intacta": true,
+      "intentadas_ultima_ejecucion": 5,
       "localidades": [
         {
           "id": "fase6-01-01",
@@ -96,7 +96,9 @@
           "provincia": "Santa Fe",
           "revision_efectiva": false,
           "urls_revisadas": [
-            "https://www.comunasangregorio.gob.ar/"
+            "https://www.comunasangregorio.gob.ar/pages/tesoreria.php",
+            "https://www.comunasangregorio.gob.ar/",
+            "https://www.comunasangregorio.gob.ar/pages/actos.php"
           ],
           "secciones_revisadas": [],
           "identidad": {
@@ -116,17 +118,36 @@
             "motivo": null
           },
           "oportunidades_recuperadas": 0,
-          "recepcion_vigente_comprobada": 0
+          "recepcion_vigente_comprobada": 0,
+          "ultima_revision": "2026-11-09T16:05:40.583429-03:00",
+          "revision_efectiva_previa": false
         },
         {
           "id": "fase6-01-04",
           "localidad": "San José de la Esquina",
           "provincia": "Santa Fe",
-          "revision_efectiva": false,
-          "urls_revisadas": [],
-          "secciones_revisadas": [],
+          "revision_efectiva": true,
+          "urls_revisadas": [
+            "https://munisje.gob.ar/?s=compra&pagina=5",
+            "https://munisje.gob.ar/?s=compra&pagina=2",
+            "https://munisje.gob.ar/?s=compra",
+            "https://munisje.gob.ar/?s=compra&pagina=4",
+            "https://munisje.gob.ar/?s=compra&pagina=6",
+            "https://munisje.gob.ar/?s=compra&pagina=3",
+            "https://munisje.gob.ar/?s=compra&pagina=7",
+            "https://munisje.gob.ar/ciudad/"
+          ],
+          "secciones_revisadas": [
+            "https://munisje.gob.ar/?s=compra&pagina=5",
+            "https://munisje.gob.ar/?s=compra&pagina=2",
+            "https://munisje.gob.ar/?s=compra",
+            "https://munisje.gob.ar/?s=compra&pagina=4",
+            "https://munisje.gob.ar/?s=compra&pagina=6",
+            "https://munisje.gob.ar/?s=compra&pagina=3",
+            "https://munisje.gob.ar/?s=compra&pagina=7"
+          ],
           "identidad": {
-            "verificada": false,
+            "verificada": true,
             "organismo": "Municipalidad de San José de la Esquina",
             "localidad": "San José de la Esquina",
             "ubicacion": {
@@ -134,15 +155,17 @@
               "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
             },
             "dominio_oficial": true,
-            "nombre_publicado": false,
+            "nombre_publicado": true,
             "jurisdiccion_publicada": true,
             "url": "https://munisje.gob.ar/ciudad/",
             "sha256": "366e9aa45b5fb16b586b77e09296a463d40189b5b6e8efe65ad4666dbdb324bd",
             "cabecera": "Ciudad — San José de la Esquina   Descubrí San José",
-            "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+            "motivo": null
           },
-          "oportunidades_recuperadas": 0,
-          "recepcion_vigente_comprobada": 0
+          "oportunidades_recuperadas": 28,
+          "recepcion_vigente_comprobada": 0,
+          "ultima_revision": "2026-11-09T16:05:40.583429-03:00",
+          "revision_efectiva_previa": false
         },
         {
           "id": "fase6-01-05",
@@ -404,12 +427,14 @@
             "nombre_publicado": true,
             "jurisdiccion_publicada": true,
             "url": "https://sanjeronimodelsauce.gob.ar/",
-            "sha256": "a394726d97b79808580d1f5ea080299028ac8fc0d318347267a22148f2ba7576",
+            "sha256": "fced92c196d13044a646c68ab903310a6a5ae5e417a90d6b944834b8b725b5b4",
             "cabecera": "Home - Comuna de San Jerónimo del Sauce  Servicios Tramites Horarios de Colectivos Contacto Útiles Servicio de Recolección de Residuos Reclamos Bienal Internacional de Esculturas Ultimas Noticias Contacto Teléfono Secciones Secciones Lorem Ipsum es simplemente el texto de relleno",
             "motivo": null
           },
-          "oportunidades_recuperadas": 1,
-          "recepcion_vigente_comprobada": 0
+          "oportunidades_recuperadas": 0,
+          "recepcion_vigente_comprobada": 0,
+          "ultima_revision": "2026-11-09T16:05:40.583429-03:00",
+          "revision_efectiva_previa": true
         },
         {
           "id": "fase6-01-09",
@@ -553,11 +578,60 @@
           "id": "fase6-01-11",
           "localidad": "San Guillermo",
           "provincia": "Santa Fe",
-          "revision_efectiva": false,
-          "urls_revisadas": [],
-          "secciones_revisadas": [],
+          "revision_efectiva": true,
+          "urls_revisadas": [
+            "https://sanguillermo.gob.ar/category/noticias/",
+            "https://sanguillermo.gob.ar?s=compra",
+            "https://sanguillermo.gob.ar/category/noticias/page/17/",
+            "https://sanguillermo.gob.ar/category/noticias/page/2/",
+            "https://sanguillermo.gob.ar/category/noticias/page/9/",
+            "https://sanguillermo.gob.ar/category/noticias/page/4/",
+            "https://sanguillermo.gob.ar/pliegos-y-licitaciones/",
+            "https://sanguillermo.gob.ar/category/noticias/page/16/",
+            "https://sanguillermo.gob.ar?s=concurso",
+            "https://sanguillermo.gob.ar/category/noticias/page/10/",
+            "https://sanguillermo.gob.ar/category/noticias/page/7/",
+            "https://sanguillermo.gob.ar/",
+            "https://sanguillermo.gob.ar/category/noticias/page/5/",
+            "https://sanguillermo.gob.ar/decretos/",
+            "https://sanguillermo.gob.ar/category/noticias/page/14/",
+            "https://sanguillermo.gob.ar/category/noticias/page/6/",
+            "https://sanguillermo.gob.ar/category/noticias/page/8/",
+            "https://sanguillermo.gob.ar/category/noticias/page/13/",
+            "https://sanguillermo.gob.ar/category/noticias/page/12/",
+            "https://sanguillermo.gob.ar/category/noticias/page/11/",
+            "https://sanguillermo.gob.ar/seccion-noticias/",
+            "https://sanguillermo.gob.ar/sin-categoria/llamado-a-licitacion-publica/",
+            "https://sanguillermo.gob.ar/category/noticias/page/3/",
+            "https://sanguillermo.gob.ar/category/noticias/page/15/"
+          ],
+          "secciones_revisadas": [
+            "https://sanguillermo.gob.ar/category/noticias/",
+            "https://sanguillermo.gob.ar?s=compra",
+            "https://sanguillermo.gob.ar/category/noticias/page/17/",
+            "https://sanguillermo.gob.ar/category/noticias/page/2/",
+            "https://sanguillermo.gob.ar/category/noticias/page/9/",
+            "https://sanguillermo.gob.ar/category/noticias/page/4/",
+            "https://sanguillermo.gob.ar/pliegos-y-licitaciones/",
+            "https://sanguillermo.gob.ar/category/noticias/page/16/",
+            "https://sanguillermo.gob.ar?s=concurso",
+            "https://sanguillermo.gob.ar/category/noticias/page/10/",
+            "https://sanguillermo.gob.ar/category/noticias/page/7/",
+            "https://sanguillermo.gob.ar/category/noticias/page/5/",
+            "https://sanguillermo.gob.ar/decretos/",
+            "https://sanguillermo.gob.ar/category/noticias/page/14/",
+            "https://sanguillermo.gob.ar/category/noticias/page/6/",
+            "https://sanguillermo.gob.ar/category/noticias/page/8/",
+            "https://sanguillermo.gob.ar/category/noticias/page/13/",
+            "https://sanguillermo.gob.ar/category/noticias/page/12/",
+            "https://sanguillermo.gob.ar/category/noticias/page/11/",
+            "https://sanguillermo.gob.ar/seccion-noticias/",
+            "https://sanguillermo.gob.ar/sin-categoria/llamado-a-licitacion-publica/",
+            "https://sanguillermo.gob.ar/category/noticias/page/3/",
+            "https://sanguillermo.gob.ar/category/noticias/page/15/"
+          ],
           "identidad": {
-            "verificada": false,
+            "verificada": true,
             "organismo": "Municipalidad de San Guillermo",
             "localidad": "San Guillermo",
             "ubicacion": {
@@ -566,14 +640,21 @@
             },
             "dominio_oficial": true,
             "nombre_publicado": true,
-            "jurisdiccion_publicada": false,
+            "jurisdiccion_publicada": true,
             "url": "https://sanguillermo.gob.ar/",
             "sha256": "4a24e6e719571fa9c04b1e10d2d6d2213401ced9886ab065262a0acd2d7d0d87",
-            "cabecera": "Inicio - Municipalidad de San Guillermo  ¿Qué necesitas hacer? Hacete escuchar Botones rápidos info útil para el ciudadano Noticias",
-            "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+            "cabecera": " San Guillermo | Municipalidad San Guillermo Formulario de búsqueda Contenido principal",
+            "motivo": null,
+            "evidencia_raiz": {
+              "url": "https://concejosanguillermo.gob.ar/",
+              "sha256": "bda1b82212f05a91eb4eabf3cc556c84c1d0b0da4546f2cc64a66b88ee61a801",
+              "criterio": "IDENTIDAD_PUBLICADA_EN_RAIZ_OFICIAL_MISMO_ORGANISMO"
+            }
           },
-          "oportunidades_recuperadas": 0,
-          "recepcion_vigente_comprobada": 0
+          "oportunidades_recuperadas": 40,
+          "recepcion_vigente_comprobada": 0,
+          "ultima_revision": "2026-11-09T16:05:40.583429-03:00",
+          "revision_efectiva_previa": false
         },
         {
           "id": "fase6-01-12",
@@ -591,7 +672,7 @@
               "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
             },
             "dominio_oficial": true,
-            "nombre_publicado": false,
+            "nombre_publicado": true,
             "jurisdiccion_publicada": false,
             "url": "https://www.mtotoras.gob.ar/",
             "sha256": "61e7e75c741f73ae4ce28c7f97b6a3e50587d8bf310aaae6a653484f4ef4f55b",
@@ -599,7 +680,9 @@
             "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
           },
           "oportunidades_recuperadas": 0,
-          "recepcion_vigente_comprobada": 0
+          "recepcion_vigente_comprobada": 0,
+          "ultima_revision": "2026-11-09T16:05:40.583429-03:00",
+          "revision_efectiva_previa": false
         },
         {
           "id": "fase6-01-13",
