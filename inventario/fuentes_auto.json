@@ -5527,11 +5527,11 @@
       "origen_busqueda": null
     },
     {
-      "id": "auto-contraste-fe4dbcc4e450d31c96f4",
-      "url": "https://chabas.gob.ar/",
+      "id": "auto-contraste-f51628f7964f3620425c",
+      "url": "https://acebal.gob.ar/acebal/",
       "config": {
-        "organismo": "Comuna de Chabás",
-        "localidad": "Chabás",
+        "organismo": "Comuna de Acebal",
+        "localidad": "Acebal",
         "provincia": "Santa Fe",
         "conector": "publicaciones",
         "descubrir_menu": true,
@@ -5543,6 +5543,7 @@
         "ocr": false,
         "admitir_avisos_sin_numero": true,
         "capturar_respuestas": true,
+        "documentos_para_descubrimiento": true,
         "noticias_comunales": true
       },
       "validacion": {
@@ -5550,8 +5551,8 @@
         "identidad_verificada": true,
         "identidad": {
           "verificada": true,
-          "organismo": "Comuna de Chabás",
-          "localidad": "Chabás",
+          "organismo": "Comuna de Acebal",
+          "localidad": "Acebal",
           "ubicacion": {
             "verificado": true,
             "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
@@ -5559,39 +5560,24 @@
           "dominio_oficial": true,
           "nombre_publicado": true,
           "jurisdiccion_publicada": true,
-          "url": "https://chabas.gob.ar/",
-          "sha256": "74c88f01cdd6bda9f4dafbec23b9654a7692058d9e85de3ec2c29c498c8d23e8",
-          "cabecera": "Contacto  Comuna de Chabás Contacto comentario",
-          "motivo": null,
-          "evidencia_raiz": {
-            "url": "https://chabas.gob.ar/contacto",
-            "sha256": "350a502faff1c11f749c56743316335f8eebc0e01572ef6495e529bc9c4abf4c",
-            "criterio": "IDENTIDAD_PUBLICADA_EN_RAIZ_OFICIAL_MISMO_ORGANISMO"
-          }
+          "url": "https://acebal.gob.ar/acebal/",
+          "sha256": "ecf80168430adfd44f85ef1b2bcc55fdcb8528b18fedc01a3d65121cc3a18482",
+          "cabecera": "Nuestro Pueblo – Municipio de Acebal Acebal, nuestro lugar en el mundo Dónde estamos Cantidad de habitantes Cuándo nacimos Nuestro gobierno Capital Provincial de la Poesía Acebal respira carnaval Instituciones DIRECCIONES Transporte Urbano",
+          "motivo": null
         },
-        "procedimientos_con_objeto": 2,
-        "fecha": "2026-11-09T13:31:19.352503+00:00",
+        "procedimientos_con_objeto": 1,
+        "fecha": "2026-11-09T13:38:55.642824+00:00",
         "motivo": null,
         "ejemplos": [
           {
-            "organismo": "Comuna de Chabás",
-            "numero_procedimiento": "1/2026",
-            "objeto": "LICITACION PUBLICA 01-2026 LICITACION PUBLICA 01-2026.pdf Descarga Detalles",
+            "organismo": "Comuna de Acebal",
+            "numero_procedimiento": null,
+            "objeto": "Acebal, nuestro lugar en el mundo",
             "fecha_apertura": null,
             "fecha_publicacion": null,
             "vigencia": "DESCONOCIDA",
-            "url": "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5002-licitacion-publica-01-2026",
-            "evidencia_url": "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026"
-          },
-          {
-            "organismo": "Comuna de Chabás",
-            "numero_procedimiento": "2/2026",
-            "objeto": "LICITACION PUBLICA 02-2026 LICITACION PUBLICA 02-2026.pdf Descarga Detalles",
-            "fecha_apertura": null,
-            "fecha_publicacion": null,
-            "vigencia": "DESCONOCIDA",
-            "url": "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5003-licitacion-publica-02-2026",
-            "evidencia_url": "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026"
+            "url": "https://acebal.gob.ar/acebal/",
+            "evidencia_url": "https://acebal.gob.ar/acebal/"
           }
         ]
       },

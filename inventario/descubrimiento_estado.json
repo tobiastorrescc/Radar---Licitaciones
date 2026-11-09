@@ -714,7 +714,8 @@
     "reparar:fuente-078": "2026-11-09T13:28:17.622625+00:00",
     "territorio:820007": "2026-11-09T13:28:17.622625+00:00",
     "directorio:fuente-043": "2026-11-09T13:28:17.622625+00:00",
-    "directorio:fuente-075": "2026-11-09T13:28:17.622625+00:00"
+    "directorio:fuente-075": "2026-11-09T13:28:17.622625+00:00",
+    "reparar:fuente-085": "2026-11-09T13:38:46.784260+00:00"
   },
   "candidatos": {
     "inventario-fuente-034": {
@@ -11209,7 +11210,8 @@
       ],
       "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0037.json",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       }
     },
     "contraste-89e2ffb55568d2a06970": {
@@ -11308,7 +11310,8 @@
       ],
       "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0038.json",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       }
     },
     "contraste-589ecca9cfe42860c58e": {
@@ -11969,7 +11972,8 @@
       "errores": [],
       "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0036.json",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       }
     },
     "908c8aed7368de30a61d": {
@@ -16592,7 +16596,27 @@
       "titulo": "CODIGO PENAL - mpf.gob.ar",
       "descripcion": "ARTICULO 2. - Si la ley vigente al tiempo de cometerse el delito fuere distinta de la que exista al pronunciarse el fallo o en el tiempo intermedio, se aplicará siempre la más benigna. Si durante la condena se dictare una ley más benigna, la pena se limitará a la establecida por esa ley.",
       "busqueda_url": "https://www.bing.com/search?q=%22San+Crist%C3%B3bal%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
-      "fecha_descubrimiento": "2026-11-09T12:31:40.895731+00:00"
+      "fecha_descubrimiento": "2026-11-09T12:31:40.895731+00:00",
+      "ultima_revision": "2026-11-09T13:38:46.784260+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "La identidad requiere una página HTML oficial; PDF aislado queda pendiente",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "ValueError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "La identidad requiere una página HTML oficial; PDF aislado queda pendiente",
+          "causa": "ERROR_EXTRACCION",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0009.json"
     },
     "5eb8afbd0d349376c434": {
       "clave": "directorio:fuente-050",
@@ -17164,7 +17188,8 @@
       ],
       "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T124335-2220d9ad/0002.json",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       }
     },
     "contraste-2d703bf10ab48a9e1c95": {
@@ -17253,7 +17278,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-f90ab81d11080f22ecb9",
       "origen": "INVESTIGACION_AGENTE",
@@ -17271,7 +17297,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-444db5dd91c59bd7d6c8",
       "origen": "INVESTIGACION_AGENTE",
@@ -17327,7 +17354,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-1456d5e4730602c532df",
       "origen": "INVESTIGACION_AGENTE",
@@ -17369,7 +17397,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-630ea3b4df2c5ec6114c",
       "origen": "INVESTIGACION_AGENTE",
@@ -17988,7 +18017,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-367f1d42ab710e2efa4f",
       "origen": "INVESTIGACION_AGENTE",
@@ -17997,7 +18027,7 @@
         "estado": "PENDIENTE",
         "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
       },
-      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "ultima_revision": "2026-11-09T13:38:46.784260+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -18008,7 +18038,7 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0008.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0003.json"
     },
     "contraste-4a1694aa27d8bb8f46d2": {
       "url": "https://www.generalramirez.gob.ar/",
@@ -18018,7 +18048,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-4a1694aa27d8bb8f46d2",
       "origen": "INVESTIGACION_AGENTE",
@@ -18042,20 +18073,10 @@
           "cabecera": "Municipalidad de General Ramírez Datos útiles ¿Más información? Contáctanos TELÉFONOS DE EMERGENCIAS PORTAL INTERNO",
           "motivo": null
         },
-        "procedimientos_con_objeto": 5,
-        "fecha": "2026-11-09T13:29:19.556843+00:00",
+        "procedimientos_con_objeto": 2,
+        "fecha": "2026-11-09T13:39:12.620154+00:00",
         "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
         "ejemplos": [
-          {
-            "organismo": "Municipalidad de General Ramírez",
-            "numero_procedimiento": null,
-            "objeto": "Concursos y Licitaciones",
-            "fecha_apertura": null,
-            "fecha_publicacion": null,
-            "vigencia": "DESCONOCIDA",
-            "url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/",
-            "evidencia_url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/"
-          },
           {
             "organismo": "Municipalidad de General Ramírez",
             "numero_procedimiento": "13/2022",
@@ -18075,30 +18096,10 @@
             "vigencia": "VENCIDA",
             "url": "https://www.generalramirez.gob.ar/contenidos/medios/licitaciones-concursos/DECRETO-39-202326072023.pdf",
             "evidencia_url": "https://www.generalramirez.gob.ar/concursos/22-m3-hormigon-elaborado-h30-reposicion-licitacion-13-2022/"
-          },
-          {
-            "organismo": "Municipalidad de General Ramírez",
-            "numero_procedimiento": null,
-            "objeto": "Licitaciones privadas",
-            "fecha_apertura": "2026-09-01",
-            "fecha_publicacion": null,
-            "vigencia": "VENCIDA",
-            "url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/licitaciones-privadas/",
-            "evidencia_url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/licitaciones-privadas/"
-          },
-          {
-            "organismo": "Municipalidad de General Ramírez",
-            "numero_procedimiento": null,
-            "objeto": "Licitaciones públicas",
-            "fecha_apertura": "2026-09-11",
-            "fecha_publicacion": null,
-            "vigencia": "VENCIDA",
-            "url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/licitaciones-publicas/",
-            "evidencia_url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/licitaciones-publicas/"
           }
         ]
       },
-      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "ultima_revision": "2026-11-09T13:38:46.784260+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -18111,9 +18112,29 @@
           "causa": "ERROR_RED_POR_CONFIRMAR",
           "restriccion_acceso_comprobada": false,
           "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.generalramirez.gob.ar/contenidos/medios/licitaciones-concursos/DECRETO-39-202326072023.pdf",
+          "tipo": "ValueError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "PDF sin texto: requiere OCR; no se declara vacío",
+          "causa": "ERROR_EXTRACCION",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://www.generalramirez.gob.ar/contenidos/medios/licitaciones-concursos/DECRETO-68-202326072023.pdf",
+          "tipo": "ValueError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "PDF sin texto: requiere OCR; no se declara vacío",
+          "causa": "ERROR_EXTRACCION",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0010.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0004.json"
     },
     "contraste-f24f4caaed618bc6ea5b": {
       "url": "http://www.sannicolas.gov.ar:8080/",
@@ -18123,7 +18144,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-f24f4caaed618bc6ea5b",
       "origen": "INVESTIGACION_AGENTE",
@@ -18157,7 +18179,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-a9fd4c997e610562d71c",
       "origen": "INVESTIGACION_AGENTE",
@@ -18187,7 +18210,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-65df751950437c8759d1",
       "origen": "INVESTIGACION_AGENTE",
@@ -18243,7 +18267,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-79db4174204aff8e907e",
       "origen": "INVESTIGACION_AGENTE",
@@ -18293,7 +18318,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-02a2fbb0c9289c920bec",
       "origen": "INVESTIGACION_AGENTE",
@@ -18328,7 +18354,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-829acf279d08dfad5f68",
       "origen": "INVESTIGACION_AGENTE",
@@ -18358,7 +18385,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-571baa3d5dc65fe9ebd7",
       "origen": "INVESTIGACION_AGENTE",
@@ -18388,7 +18416,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-56f4b8e56d6b295bd918",
       "origen": "INVESTIGACION_AGENTE",
@@ -18397,7 +18426,7 @@
         "estado": "PENDIENTE",
         "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
       },
-      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "ultima_revision": "2026-11-09T13:38:46.784260+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -18408,7 +18437,7 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0012.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0005.json"
     },
     "contraste-c2cad7e488ba79eb67f3": {
       "url": "https://transparencia.urdinarrain.gov.ar/",
@@ -18418,7 +18447,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-c2cad7e488ba79eb67f3",
       "origen": "INVESTIGACION_AGENTE",
@@ -18460,7 +18490,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-ddf5e4329d4a32dd57ba",
       "origen": "INVESTIGACION_AGENTE",
@@ -18490,7 +18521,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-51829e55452257e786a9",
       "origen": "INVESTIGACION_AGENTE",
@@ -18538,7 +18570,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-365475f24b236f1101b9",
       "origen": "INVESTIGACION_AGENTE",
@@ -18568,7 +18601,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-c25c4408e27f848b470c",
       "origen": "INVESTIGACION_AGENTE",
@@ -18618,7 +18652,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-f94b2db904eb0d5ad388",
       "origen": "INVESTIGACION_AGENTE",
@@ -18672,7 +18707,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-0ada2f8edf64b3689a04",
       "origen": "INVESTIGACION_AGENTE",
@@ -18706,7 +18742,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-5ec665d7388286e4c56d",
       "origen": "INVESTIGACION_AGENTE",
@@ -18740,7 +18777,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-5abd0d58f84c444bdcae",
       "origen": "INVESTIGACION_AGENTE",
@@ -18782,7 +18820,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-1000ad442a9e14876de1",
       "origen": "INVESTIGACION_AGENTE",
@@ -18830,7 +18869,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-bdc717588ac4e06b9a5c",
       "origen": "INVESTIGACION_AGENTE",
@@ -18848,7 +18888,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-b49764a17fe540c2758c",
       "origen": "INVESTIGACION_AGENTE",
@@ -18896,7 +18937,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-baf70a9747bd08e2d9ea",
       "origen": "INVESTIGACION_AGENTE",
@@ -18905,7 +18947,78 @@
         "estado": "PENDIENTE",
         "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
       },
-      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "ultima_revision": "2026-11-09T13:38:46.784260+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "url": "https://comunaarequito.gob.ar/wp-content/plugins/download-attachments/includes/download.php?id=MH5yiActHKm-eZu0O5OKrA,,",
+          "tipo": "ModuleNotFoundError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "No module named 'xlrd'",
+          "causa": "ERROR_EXTRACCION",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://comunaarequito.gob.ar/wp-content/plugins/download-attachments/includes/download.php?id=P2-6jE53qAmfnqNb34Nmnw,,",
+          "tipo": "ModuleNotFoundError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "No module named 'xlrd'",
+          "causa": "ERROR_EXTRACCION",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://comunaarequito.gob.ar/wp-content/plugins/download-attachments/includes/download.php?id=Petokln1I9gfZ8_pYrRg4Q,,",
+          "tipo": "ValueError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Respuesta supera 12000000 bytes; recorrido parcial",
+          "causa": "ERROR_EXTRACCION",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "url": "https://comunaarequito.gob.ar/wp-content/plugins/download-attachments/includes/download.php?id=ctpBuNSunriZFd06Vi9jNg,,",
+          "tipo": "ModuleNotFoundError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "No module named 'xlrd'",
+          "causa": "ERROR_EXTRACCION",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0007.json"
+    },
+    "contraste-fe4dbcc4e450d31c96f4": {
+      "url": "https://chabas.gob.ar/",
+      "organismo": "Comuna de Chabás",
+      "localidad": "Chabás",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
+      },
+      "id": "auto-contraste-fe4dbcc4e450d31c96f4",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "ultima_revision": "2026-11-09T13:38:46.784260+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -18916,75 +19029,7 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0025.json"
-    },
-    "contraste-fe4dbcc4e450d31c96f4": {
-      "url": "https://chabas.gob.ar/",
-      "organismo": "Comuna de Chabás",
-      "localidad": "Chabás",
-      "provincia": "Santa Fe",
-      "tipo": "TERRITORIAL",
-      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
-      "config_publica": {
-        "noticias_comunales": true
-      },
-      "id": "auto-contraste-fe4dbcc4e450d31c96f4",
-      "origen": "INVESTIGACION_AGENTE",
-      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
-      "validacion": {
-        "estado": "VALIDADA",
-        "identidad_verificada": true,
-        "identidad": {
-          "verificada": true,
-          "organismo": "Comuna de Chabás",
-          "localidad": "Chabás",
-          "ubicacion": {
-            "verificado": true,
-            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
-          },
-          "dominio_oficial": true,
-          "nombre_publicado": true,
-          "jurisdiccion_publicada": true,
-          "url": "https://chabas.gob.ar/",
-          "sha256": "74c88f01cdd6bda9f4dafbec23b9654a7692058d9e85de3ec2c29c498c8d23e8",
-          "cabecera": "Contacto  Comuna de Chabás Contacto comentario",
-          "motivo": null,
-          "evidencia_raiz": {
-            "url": "https://chabas.gob.ar/contacto",
-            "sha256": "350a502faff1c11f749c56743316335f8eebc0e01572ef6495e529bc9c4abf4c",
-            "criterio": "IDENTIDAD_PUBLICADA_EN_RAIZ_OFICIAL_MISMO_ORGANISMO"
-          }
-        },
-        "procedimientos_con_objeto": 2,
-        "fecha": "2026-11-09T13:31:19.352503+00:00",
-        "motivo": null,
-        "ejemplos": [
-          {
-            "organismo": "Comuna de Chabás",
-            "numero_procedimiento": "1/2026",
-            "objeto": "LICITACION PUBLICA 01-2026 LICITACION PUBLICA 01-2026.pdf Descarga Detalles",
-            "fecha_apertura": null,
-            "fecha_publicacion": null,
-            "vigencia": "DESCONOCIDA",
-            "url": "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5002-licitacion-publica-01-2026",
-            "evidencia_url": "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026"
-          },
-          {
-            "organismo": "Comuna de Chabás",
-            "numero_procedimiento": "2/2026",
-            "objeto": "LICITACION PUBLICA 02-2026 LICITACION PUBLICA 02-2026.pdf Descarga Detalles",
-            "fecha_apertura": null,
-            "fecha_publicacion": null,
-            "vigencia": "DESCONOCIDA",
-            "url": "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5003-licitacion-publica-02-2026",
-            "evidencia_url": "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026"
-          }
-        ]
-      },
-      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
-      "version_verificador": 4,
-      "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0034.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0008.json"
     },
     "contraste-0dcb7da935dd3a237fd0": {
       "url": "https://sunchales.gob.ar/",
@@ -18994,7 +19039,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-0dcb7da935dd3a237fd0",
       "origen": "INVESTIGACION_AGENTE",
@@ -19024,7 +19070,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-deae9ce8e054d6df4e2f",
       "origen": "INVESTIGACION_AGENTE",
@@ -19054,7 +19101,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-75fc17dcf2e7bbbd39f1",
       "origen": "INVESTIGACION_AGENTE",
@@ -19096,7 +19144,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-bfbcaff50e8488da37fa",
       "origen": "INVESTIGACION_AGENTE",
@@ -19138,7 +19187,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-ae36f40d34bd88baff42",
       "origen": "INVESTIGACION_AGENTE",
@@ -19180,7 +19230,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-707f1a69a900d8142f40",
       "origen": "INVESTIGACION_AGENTE",
@@ -19198,7 +19249,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-c260a6477cd76f9a4d9b",
       "origen": "INVESTIGACION_AGENTE",
@@ -19240,7 +19292,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "BUSQUEDA_Y_APERTURA_WEB_OFICIAL_2026_11_09",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-280beec5b9d3a294a299",
       "origen": "INVESTIGACION_AGENTE",
@@ -19290,7 +19343,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "BUSQUEDA_Y_APERTURA_WEB_OFICIAL_2026_11_09",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-2c2c062c4d1298b36622",
       "origen": "INVESTIGACION_AGENTE",
@@ -19332,7 +19386,8 @@
       "tipo": "TERRITORIAL",
       "metodo": "BUSQUEDA_Y_APERTURA_WEB_OFICIAL_2026_11_09",
       "config_publica": {
-        "noticias_comunales": true
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
       },
       "id": "auto-contraste-b2def06f5b9875154e17",
       "origen": "INVESTIGACION_AGENTE",
@@ -19357,11 +19412,11 @@
           "motivo": null
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-11-09T13:29:57.483791+00:00",
+        "fecha": "2026-11-09T13:39:14.062859+00:00",
         "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
         "ejemplos": []
       },
-      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "ultima_revision": "2026-11-09T13:38:46.784260+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -19372,8 +19427,164 @@
           "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0023.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0006.json"
+    },
+    "contraste-6c218da33a01928517fd": {
+      "url": "https://www.alcorta.gob.ar/",
+      "organismo": "Comuna de Alcorta",
+      "localidad": "Alcorta",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RESULTADO_WEB_OFICIAL_2026_11_09",
+      "config_publica": {
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
+      },
+      "id": "auto-contraste-6c218da33a01928517fd",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:38:46.784260+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Comuna de Alcorta",
+          "localidad": "Alcorta",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://www.alcorta.gob.ar/",
+          "sha256": "817ecc065b8a6094b2b0395773626a5e5990c7c1519e01473c2e5eb7ad8cd015",
+          "cabecera": "Comuna de Alcorta Tareas de mantenimiento del acceso Alberdi Primer etapa de bacheo Gestión al Ciudadano + Teléfonos útiles",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:38:48.594983+00:00",
+        "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:38:46.784260+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "url": "https://www.alcorta.gob.ar/",
+          "tipo": "SinPublicacionesDetectadas",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Listado no reconocido; no se declara vacío"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0000.json"
+    },
+    "contraste-f51628f7964f3620425c": {
+      "url": "https://acebal.gob.ar/acebal/",
+      "organismo": "Comuna de Acebal",
+      "localidad": "Acebal",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RESULTADO_WEB_OFICIAL_2026_11_09",
+      "config_publica": {
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
+      },
+      "id": "auto-contraste-f51628f7964f3620425c",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:38:46.784260+00:00",
+      "validacion": {
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Comuna de Acebal",
+          "localidad": "Acebal",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://acebal.gob.ar/acebal/",
+          "sha256": "ecf80168430adfd44f85ef1b2bcc55fdcb8528b18fedc01a3d65121cc3a18482",
+          "cabecera": "Nuestro Pueblo – Municipio de Acebal Acebal, nuestro lugar en el mundo Dónde estamos Cantidad de habitantes Cuándo nacimos Nuestro gobierno Capital Provincial de la Poesía Acebal respira carnaval Instituciones DIRECCIONES Transporte Urbano",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 1,
+        "fecha": "2026-11-09T13:38:55.642824+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Comuna de Acebal",
+            "numero_procedimiento": null,
+            "objeto": "Acebal, nuestro lugar en el mundo",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://acebal.gob.ar/acebal/",
+            "evidencia_url": "https://acebal.gob.ar/acebal/"
+          }
+        ]
+      },
+      "ultima_revision": "2026-11-09T13:38:46.784260+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0002.json"
+    },
+    "contraste-cc068bf890f1a51977ec": {
+      "url": "https://maximopaz.gob.ar/",
+      "organismo": "Comuna de Máximo Paz",
+      "localidad": "Máximo Paz",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RESULTADO_WEB_OFICIAL_2026_11_09",
+      "config_publica": {
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true
+      },
+      "id": "auto-contraste-cc068bf890f1a51977ec",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:38:46.784260+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Comuna de Máximo Paz",
+          "localidad": "Máximo Paz",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://maximopaz.gob.ar/",
+          "sha256": "82b8ef3ef5289d11eb503dbc0d96fd1d3e75472c53a2c802451eb5fd0056ddd4",
+          "cabecera": "Máximo Paz Municipio · Inicio Máximo Paz Municipio Trámites y Servicios Información de interés Comunicados y Publicaciones Teléfonos Útiles",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:38:48.107356+00:00",
+        "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:38:46.784260+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "url": "https://maximopaz.gob.ar/",
+          "tipo": "SinPublicacionesDetectadas",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Listado no reconocido; no se declara vacío"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0001.json"
     }
   },
-  "ultima_ejecucion": "2026-11-09T13:28:17.622625+00:00"
+  "ultima_ejecucion": "2026-11-09T13:38:46.784260+00:00"
 }
