@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "identidades": {
+    "8ad948f538f666fac8a29d2a8eac61af90df76666a7ded67bdfeb6e19ffcb29f": {
+      "fecha": "2026-11-09T09:44:10.689342-03:00",
+      "github_run_id": 42621183825,
+      "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
+      "evidencia": "informes/2026-11-09-fase4/nuevas_verificadas.json"
+    },
+    "0fd1dd1b9529cb0495576af1ab1251a3c5816b8cf93e944c3a5f9a092191ee4f": {
+      "fecha": "2026-11-09T09:44:10.689342-03:00",
+      "github_run_id": 42621183825,
+      "url": "http://ceres.gob.ar/wp-content/uploads/2026/10/PLIEGO-DE-BASES-Y-COND-VENTA-3-LOTES-LIC-054-2026.docx.pdf",
+      "evidencia": "informes/2026-11-09-fase4/nuevas_verificadas.json"
+    }
+  }
+}

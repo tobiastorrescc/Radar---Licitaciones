@@ -152,6 +152,11 @@ def cargar_indice_auditorias():
     import gzip,base64
     datos=json.loads(gzip.decompress(base64.b64decode(path.read_text(),validate=False)))
     if datos.get('schema_version')!=1 or not isinstance(datos.get('identidades'),dict):raise ValueError('Índice de auditorías no válido')
+    adicionales=Path(__file__).parent/'inventario/referencias_descubrimiento.json'
+    if adicionales.exists():
+        ref=json.loads(adicionales.read_text())
+        if ref.get('schema_version')!=1 or not isinstance(ref.get('identidades'),dict):raise ValueError('Referencias de descubrimiento no válidas')
+        for k,v in ref['identidades'].items():datos['identidades'].setdefault(k,v)
     return datos['identidades']
 
 def registrar(db,registros,informe):

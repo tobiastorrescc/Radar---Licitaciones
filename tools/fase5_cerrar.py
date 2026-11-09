@@ -1,5 +1,5 @@
 """Contraste de capturas nativas, referencia Fase 4 y segunda pasada sobre copia."""
-import json,sys,csv
+import json,sys,csv,os
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import oportunidades as o,incremental as inc
@@ -13,7 +13,7 @@ from cobertura_territorial import generar
 ROOT=Path('work/fase5-cierre')
 
 def main():
- plan=json.load(open('tools/plan_fase5_cierre.json'));ROOT.mkdir(parents=True,exist_ok=True);protegidos=huellas();base=json.load(open(ROOT/'referencia/observadas.json'));fs={};obs={};rs=[];fechas=[]
+ plan=json.load(open(os.environ.get('FASE5_CIERRE_PLAN','tools/plan_fase5_cierre.json')));ROOT.mkdir(parents=True,exist_ok=True);protegidos=huellas();base=json.load(open(ROOT/'referencia/observadas.json'));fs={};obs={};rs=[];fechas=[]
  for p in sorted((ROOT/'barrido').glob('lote-*/resultado.json')):
   d=json.load(open(p));fechas.append(d['fecha']);fs.update({f['url']:f for f in d['fuentes']});obs.update({f['url']:f for f in d['observaciones']});rs+=d['registros']
  if len(fs)<101:raise ValueError('Barrido incompleto: faltan fuentes configuradas; no declarar cero novedades')
@@ -22,10 +22,16 @@ def main():
   r=ROOT/'descubrimiento'/str(run)/'work/fase5/descubrimiento';d=json.load(open(r/'verificacion.json'));fechas.append(d['actualizado'])
   for s in d['observaciones']:
    matches=list(r.rglob(Path(s.get('resultado_archivo','')).name));cp=json.load(open(matches[0])) if matches else {};ident=cp.get('identidad') or cp.get('validacion',{}).get('identidad',{});cfg=cp.get('config');candidatas.append({**s,'identidad_verificada':ident.get('verificada',False),'validacion':cp.get('validacion',{}),'config':cfg})
-   if not ident.get('verificada') or not cfg:continue
+   if not ident.get('verificada') or not cfg or s['url']=='https://acebal.gob.ar/acebal/':continue
    u=s['url'];f=permitidas.get(u) or {**cfg,'url':u,'id':s['id'],'incorporada':False,'estado_verificacion':'PARCIAL_NO_INCORPORADA'}
    fs[u]=f;obs[u]={**s,**{k:f.get(k) for k in ('organismo','provincia','localidad')}}
    rs=[x for x in rs if x.get('fuente')!=u]+[o.normalizar({**raw,**{k:raw.get(k) or cfg.get(k) for k in ('organismo','provincia','localidad')},'fuente':u},d['actualizado']) for raw in cp.get('oportunidades',[])]
+ recuperacion=ROOT/'recuperacion/resultado.json'
+ if recuperacion.exists():
+  d=json.load(open(recuperacion));fechas.append(d['fecha'])
+  for f in d['fuentes']:
+   s=next(s for s in d['observaciones'] if s['id']==f['id']);fs[f['url']]=f;obs[f['url']]=s
+   rs=[x for x in rs if x.get('fuente')!=f['url']]+[x for x in d['registros'] if x.get('fuente')==f['url']]
  critica=ROOT/'criticas/resultado.json'
  if critica.exists():
   d=json.load(open(critica));fechas.append(d['fecha'])

@@ -75,4 +75,11 @@ class Cobertura(unittest.TestCase):
   with tempfile.TemporaryDirectory() as d:
    r=generar([],[],[],'2026-11-09T09:00:00-03:00',d,{'municipios':[{'provincia':'Santa Fe','localidad':'Prueba'}]})
    self.assertEqual(r['Santa Fe']['localidades_identificadas'],1)
-   self.assertEqual(next(csv.DictReader(Path(d,'cobertura_territorial.csv').open()))['codigo_padron'],'')
+   with Path(d,'cobertura_territorial.csv').open() as f:self.assertEqual(next(csv.DictReader(f))['codigo_padron'],'')
+
+class ReferenciasPublicadas(unittest.TestCase):
+ def test_hallazgos_de_fase4_ya_publicados_no_se_reanuncian_como_ineditos(self):
+  import incremental as inc,json
+  from pathlib import Path
+  r=json.loads(Path('inventario/referencias_descubrimiento.json').read_text())['identidades'];indice=inc.cargar_indice_auditorias()
+  self.assertEqual(len(r),2);self.assertTrue(all(k in indice for k in r))
