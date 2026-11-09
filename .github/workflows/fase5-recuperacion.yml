@@ -1,0 +1,32 @@
+name: Fase 5 preservar fuentes operativas
+on:
+  push:
+    branches: [mejora/radar-auditable]
+    paths: [tools/plan_fase5_recuperacion.json]
+permissions:
+  contents: read
+concurrency:
+  group: fase5-recuperacion-aislada
+  cancel-in-progress: false
+jobs:
+  revisar:
+    if: github.ref == 'refs/heads/mejora/radar-auditable'
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: PDF nativo sin OCR
+        run: |
+          if ! command -v pdftotext; then sudo apt-get -o Acquire::Retries=0 -o Acquire::http::Timeout=8 install -y --no-install-recommends poppler-utils; fi
+      - run: python -u tools/fase5_recuperar.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fase5-recuperacion-${{ github.run_id }}
+          path: work/fase5/recuperacion/
+          retention-days: 90
