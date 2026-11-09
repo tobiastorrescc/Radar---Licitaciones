@@ -21,6 +21,25 @@ class DescubrimientoFase4(unittest.TestCase):
   self.assertTrue(alcance_ba({'provincia':'Buenos Aires','localidad':'Ramallo'})['verificado'])
  def test_publicacion_desconocida_y_fecha_sin_hora(self):
   self.assertFalse(ventanas(None,'2026-11-09T10:00:00-03:00')['72h'])
-  r=ventanas('2026-11-08','2026-11-09T10:00:00-03:00');self.assertTrue(r['24h']);self.assertEqual(r['precision'],'DIA_CALENDARIO_SIN_HORA')
+  r=ventanas('2026-11-08','2026-11-09T10:00:00-03:00');self.assertFalse(r['24h']);self.assertTrue(r['posible_24h']);self.assertEqual(r['precision'],'DIA_CALENDARIO_SIN_HORA')
   self.assertFalse(ventanas('2026-11-10','2026-11-09T10:00:00-03:00')['72h'])
 if __name__=='__main__':unittest.main()
+
+class CasosRealesFase4(unittest.TestCase):
+ def test_ceres_054_sin_palabra_licitacion_no_se_omite(self):
+  from pathlib import Path
+  import extractores
+  html=Path('tests/fixtures/fase4_ceres_054.html').read_text()
+  r=extractores.extraer(html,'https://ceres.gob.ar/compras/',{'adaptador':'ceres'})[0]
+  self.assertTrue(any(x['numero_procedimiento']=='54/2026' for x in r))
+  self.assertIn('VENTA-3-LOTES',r[0]['documentos'][0]['url'])
+ def test_identidad_es_distinta_del_alcance_vial(self):
+  from tools.descubrir_fuentes import verificar_identidad,aceptacion
+  c={'tipo':'TERRITORIAL','organismo':'Municipalidad de Campana','localidad':'Campana','provincia':'Buenos Aires'}
+  v=verificar_identidad('<title>Municipalidad de Campana</title><p>Buenos Aires</p>','https://campana.gob.ar/',c)
+  self.assertTrue(v['verificada']);self.assertFalse(v['ubicacion']['verificado'])
+  self.assertEqual(aceptacion({'estado':'OPERATIVA','oportunidades':[]},v)['estado'],'PENDIENTE')
+ def test_larroque_titulo_y_nombre_publicado_no_solo_dominio(self):
+  from tools.descubrir_fuentes import verificar_identidad
+  c={'tipo':'TERRITORIAL','organismo':'Municipalidad de Larroque','localidad':'Larroque','provincia':'Entre Ríos'}
+  self.assertTrue(verificar_identidad('<title>Larroque :: Gobierno Abierto</title><footer>Municipalidad de Larroque. Entre Ríos</footer>','https://larroque.gob.ar/',c)['verificada'])

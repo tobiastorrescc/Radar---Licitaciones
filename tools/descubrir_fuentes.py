@@ -100,6 +100,7 @@ def verificar_identidad(html,url,candidato):
     if candidato.get('tipo')=='TERRITORIAL':
         loc=o.norm(candidato['localidad'])
         nombre=bool(re.search(r'\b(?:municipalidad|municipio|comuna|gobierno|ciudad)(?:\s+de)?\s+'+re.escape(loc)+r'\b',o.norm(cabeceras)) or re.search(r'\b'+re.escape(loc)+r'\s*[-–|]\s*municipio\b',o.norm(cabeceras)))
+        nombre=nombre or bool(re.search(r'\b'+re.escape(loc)+r'\b',o.norm(cabeceras)) and re.search(r'\b(?:municipalidad|municipio|comuna)(?:\s+de)?\s+'+re.escape(loc)+r'\b',texto))
         organismo=candidato['organismo'];localidad=candidato['localidad']
     else:
         # Nombre publicado en título, nunca derivado del dominio o búsqueda.
@@ -110,7 +111,7 @@ def verificar_identidad(html,url,candidato):
     alcance=candidato.get('tipo')=='TERRITORIAL' or candidato['provincia']!='Buenos Aires'
     publico=host(url).endswith(('.gob.ar','.gov.ar')) or bool(re.search(r'universidad (?:nacional|provincial)',o.norm(organismo)))
     ubicacion=alcance_ba(candidato)
-    valida=oficial(url) and publico and nombre and jurisdiccion and alcance and ubicacion['verificado']
+    valida=oficial(url) and publico and nombre and jurisdiccion and alcance
     return {'verificada':valida,'organismo':organismo,'localidad':localidad,
         'ubicacion':ubicacion,'dominio_oficial':oficial(url),'nombre_publicado':nombre,'jurisdiccion_publicada':jurisdiccion,
         'url':url,'sha256':sha256(html.encode()).hexdigest(),'cabecera':cabeceras[:1000],
@@ -118,7 +119,7 @@ def verificar_identidad(html,url,candidato):
 
 def aceptacion(resultado,identidad):
     validos=[r for raw in resultado.get('oportunidades',[]) if (r:=o.normalizar(raw)).get('clasificacion_registro')=='PROCEDIMIENTO' and (r.get('procedimiento_canonico') or r.get('aviso_oficial_sin_numero')) and r.get('objeto') and r.get('detalle_completo')]
-    ok=identidad.get('verificada') and bool(validos) and resultado.get('estado')=='OPERATIVA' and not resultado.get('errores') and not resultado.get('limites')
+    ok=identidad.get('verificada') and identidad.get('ubicacion',{}).get('verificado',True) and bool(validos) and resultado.get('estado')=='OPERATIVA' and not resultado.get('errores') and not resultado.get('limites')
     return {'estado':'VALIDADA' if ok else 'PENDIENTE','identidad_verificada':identidad.get('verificada',False),
         'identidad':identidad,'procedimientos_con_objeto':len(validos),'fecha':datetime.now(timezone.utc).isoformat(),
         'motivo':None if ok else identidad.get('motivo') or 'Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias',
@@ -136,12 +137,25 @@ def worker(entrada,salida):
             cab=' '.join(n.text for n in extractores.DOM(html).root.iter() if n.tag in ('title','h1','h2'))
             padron=json.loads(Path('inventario/territorio.json').read_text())
             nombres={m['localidad'] for m in padron['municipios'] if m['provincia']==c['provincia'] and re.search(r'\b(?:municipalidad|municipio|comuna|ciudad)(?:\s+de)?\s+'+re.escape(o.norm(m['localidad']))+r'\b',o.norm(cab))}
-            if len(nombres)==1:c={**c,'tipo':'TERRITORIAL','localidad':next(iter(nombres)),'organismo':'Municipalidad de '+next(iter(nombres))}
+            if len(nombres)==1:
+                loc=next(iter(nombres));m=next(m for m in padron['municipios'] if m['provincia']==c['provincia'] and m['localidad']==loc)
+                c={**c,'tipo':'TERRITORIAL','localidad':loc,'organismo':('Comuna' if 'comuna' in o.norm(m.get('tipo_gobierno')) else 'Municipalidad')+' de '+loc}
         identidad=verificar_identidad(html,final,c)
+        if not identidad['verificada'] and oficial(final) and c.get('tipo')=='TERRITORIAL':
+            origen=urlparse(final);raiz=c.get('identidad_url') or origen.scheme+'://'+origen.netloc+'/'
+            if oficial(raiz) and (host(final)==host(raiz) or host(final).endswith('.'+host(raiz))):
+                try:
+                    rb,rt,rf=conectores.descargar(raiz,conexion_timeout=4,lectura_timeout=6)
+                    ident=verificar_identidad(conectores.decodificar_html(rb,rt),rf,c)
+                    if ident['verificada'] and (host(final)==host(rf) or host(final).endswith('.'+host(rf))):
+                        identidad={**ident,'url':final,'sha256':sha256(html.encode()).hexdigest(),'evidencia_raiz':{'url':rf,'sha256':sha256(rb).hexdigest(),'criterio':'IDENTIDAD_PUBLICADA_EN_RAIZ_OFICIAL_MISMO_ORGANISMO'}}
+                except Exception:pass # Incidencia de identidad conserva la sección pendiente, nunca valida por HTTP.
         if not identidad['verificada']:
             guardar(salida,{'estado':'PENDIENTE','finalizado':True,'validacion':aceptacion({},identidad),'oportunidades':[]});return
         config={'organismo':identidad['organismo'],'localidad':identidad['localidad'],'provincia':c['provincia'],
             'conector':'publicaciones','descubrir_menu':True,'descubrir_contrataciones':True,'barrido_institucional':True,'buscador_institucional':True,'solo_descubrimiento':True,'lectura_adjuntos':'necesarios','ocr':False,'admitir_avisos_sin_numero':True,'capturar_respuestas':True}
+        for k in ('adaptador','documentos_para_descubrimiento','indice_documentos','resolver_numero_documental'):
+            if k in c.get('config_publica',{}):config[k]=c['config_publica'][k]
         inicial={url:(datos,tipo,final)}
         def capturar(u,respuesta):
             b,t,f=respuesta
@@ -272,6 +286,7 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_
                 key='contraste-'+sha256((c['url']+'|'+c['organismo']).encode()).hexdigest()[:20]
                 estado['candidatos'].setdefault(key,{**c,'id':'auto-'+key,'origen':'HISTORIAL_GIT' if semillas_path.name=='candidatas_historia.json' else 'INVESTIGACION_AGENTE',
                     'fecha_descubrimiento':fecha,'validacion':{'estado':'PENDIENTE','motivo':c.get('motivo_previo')}})
+                if semillas_path.name=='fase4_semillas.json':estado['candidatos'][key].update({k:v for k,v in c.items() if k in ('identidad_url','config_publica')})
     lote=seleccionar_validaciones(estado['candidatos'].values(),existentes,auto,candidatos,revisar_pendientes,priorizar_urls)
     limite=max(1,total-(time.monotonic()-inicio)-3)
     entradas=raiz/'entradas';entradas.mkdir(exist_ok=True)

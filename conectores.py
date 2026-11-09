@@ -365,6 +365,10 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 if rotulo:
                     r['fecha_apertura_texto']=rotulo[1]+' de '+rotulo[2]+' de '+rotulo[3]+' a las '+rotulo[4]+':'+rotulo[5]
             previo=items.get(referencia,{})
+            if (config.get('resolver_numero_documental') and len(unicos)==1 and previo.get('tipo_procedimiento')=='licitacion' and p['tipo'] in ('licitacion publica','licitacion privada') and previo.get('numero_procedimiento')==p['numero'] and url in {d['url'] for d in previo.get('documentos',[])}):
+                items.pop(referencia)
+                r={**previo,**r,'documentos':list({d['url']:d for d in previo.get('documentos',[])+r['documentos']}.values())}
+                referencia=agregar(r)
             anual=re.fullmatch(r'(\d{1,6})/(20\d{2})',p['numero'])
             if (config.get('resolver_numero_documental') and len(unicos)==1 and (anual or re.fullmatch(r'\d{1,6}',p['numero']))
                 and re.fullmatch(r'\d{1,6}',str(previo.get('numero_procedimiento') or ''))

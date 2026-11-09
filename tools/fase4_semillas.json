@@ -25,7 +25,12 @@
       "provincia": "Santa Fe",
       "url": "https://ceres.gob.ar/compras/",
       "evidencia_descubrimiento": "https://ceres.gob.ar/compras/",
-      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia.",
+      "config_publica": {
+        "adaptador": "ceres",
+        "documentos_para_descubrimiento": true,
+        "resolver_numero_documental": true
+      }
     },
     {
       "tipo": "TERRITORIAL",
@@ -124,7 +129,8 @@
       "provincia": "Buenos Aires",
       "url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica",
       "evidencia_descubrimiento": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica",
-      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia.",
+      "identidad_url": "https://baradero.gob.ar/"
     },
     {
       "tipo": "TERRITORIAL",
@@ -133,7 +139,8 @@
       "provincia": "Buenos Aires",
       "url": "https://gobiernoabierto.baradero.gob.ar/decretos-y-ordenanzas",
       "evidencia_descubrimiento": "https://gobiernoabierto.baradero.gob.ar/decretos-y-ordenanzas",
-      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia.",
+      "identidad_url": "https://baradero.gob.ar/"
     },
     {
       "tipo": "TERRITORIAL",

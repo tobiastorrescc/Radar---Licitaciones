@@ -31,9 +31,9 @@ def ventanas(publicacion,ahora):
  try:d=datetime.fromisoformat(publicacion)
  except ValueError:return {'24h':False,'48h':False,'72h':False,'precision':'FECHA_INVALIDA'}
  if 'T' not in publicacion:
-  edad=(actual.astimezone(o.ZONA).date()-d.date()).days
-  # Ventanas por días de calendario; sin atribuir una hora inexistente.
-  return {'24h':0<=edad<=1,'48h':0<=edad<=2,'72h':0<=edad<=3,'precision':'DIA_CALENDARIO_SIN_HORA'}
+  inicio=d.replace(tzinfo=o.ZONA);fin=min(inicio+timedelta(days=1),actual)
+  maxima=(actual-inicio).total_seconds()/3600;minima=max(0,(actual-fin).total_seconds()/3600)
+  return {**{str(n)+'h':0<=maxima<=n for n in (24,48,72)},**{'posible_'+str(n)+'h':maxima>=0 and minima<=n for n in (24,48,72)},'precision':'DIA_CALENDARIO_SIN_HORA','intervalo_horas':[minima,maxima]}
  if not d.tzinfo:return {'24h':False,'48h':False,'72h':False,'precision':'HORA_SIN_ZONA'}
  horas=(actual-d).total_seconds()/3600
  return {**{str(n)+'h':0<=horas<=n for n in (24,48,72)},'precision':'INSTANTE_PUBLICADO'}
