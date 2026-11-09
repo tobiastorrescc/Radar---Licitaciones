@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-08T08:38:47.945269-03:00",
+  "fecha": "2026-11-09T08:57:32.920433-03:00",
   "pendientes": [
     {
       "id": "cf892a5fa00e38595d57b6ea999fa09518ba2b7b00647f64cb84ee802da014dc",
@@ -897,6 +897,28 @@
       ]
     },
     {
+      "id": "6218384fa6e3c64bbecdb831e5af2c6adc4f7d5cf9e03aa3cb519bbedd838557",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "90/2026",
+      "objeto": "CAG 05-090-3195-2026 MEDICAMENTOS CON VISADO -HRSP-",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38671",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: medicamentosdescentralizadoscondicionesparticularesactualizadas21dejulio2025(todoshospitalesyfccs).pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38671/documentos/102859"
+        },
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: cag05-090-3195-2026medicamentosconvisado.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38671/documentos/102858"
+        }
+      ]
+    },
+    {
       "id": "cb8b91cfb70755465e4a44b5dc5a332c8e1cfb668a66a1d14da6ec77bc039554",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "92/2026",
@@ -1152,7 +1174,7 @@
       "id": "4d052ad9ea97e39d2456bd7af19286e3454b3f1b48f7ec07dd2a9879a061e3bb",
       "organismo": "Municipalidad de San Salvador",
       "numero_procedimiento": "29/2026",
-      "objeto": "Desarrollo Social Destacadas Noticias Portada Llamado a Concurso de Precios N° 29-2026 05/11/2026 131 El Departamento de Compras y Suministros llama a Concurso de Precios N° 29-2026 que tiene por objeto la Compra de 200 cargas de Gas Envasado en garrafas de 10kg – con Destino a Ayuda Directa ; y se regirá por las condiciones establecidas en Pliego de Bases, Condiciones Generales y Particulares aprobados por Decreto N° 347/26. Apertura de sobres: 11 de noviembre de 2026 a las 11:00 horas , en la oficina de compras –planta baja – edificio municipal. Presupuesto oficial: $5.000.000- (Pesos cinco millones.-). Se adjunta PLIEGO en total de diez fojas. Artículo anterior La Municipalidad realizará una subasta pública online de bienes municipales en desuso MSS",
+      "objeto": "Desarrollo Social Destacadas Noticias Portada Llamado a Concurso de Precios N° 29-2026 05/11/2026 143 El Departamento de Compras y Suministros llama a Concurso de Precios N° 29-2026 que tiene por objeto la Compra de 200 cargas de Gas Envasado en garrafas de 10kg – con Destino a Ayuda Directa ; y se regirá por las condiciones establecidas en Pliego de Bases, Condiciones Generales y Particulares aprobados por Decreto N° 347/26. Apertura de sobres: 11 de noviembre de 2026 a las 11:00 horas , en la oficina de compras –planta baja – edificio municipal. Presupuesto oficial: $5.000.000- (Pesos cinco millones.-). Se adjunta PLIEGO en total de diez fojas. Artículo anterior La Municipalidad realizará una subasta pública online de bienes municipales en desuso MSS",
       "url": "https://sansalvadorer.gob.ar/llamado-a-concurso-de-precios-n-29-2026/",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
@@ -1208,6 +1230,28 @@
           "rotulo_oficial": "ver pliego adjunto apto para cotizar",
           "titulo": "ver pliego adjunto apto para cotizar: planilladecotización.pdf",
           "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38720/documentos/102941"
+        }
+      ]
+    },
+    {
+      "id": "fa8777cb334c1a3e4f75ed078e4d64a94917ac48a10ed75c49d92a6872858d67",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "93/2026",
+      "objeto": "CAG 05-093-3198-2026 BIOMEDICOS GENERALES -HRSP-",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38674",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: descartablesdescentralizados-biomedicoscondicionesparticularesactualizadas21dejulio2025.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38674/documentos/102865"
+        },
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: cag05-093-3198-2026biomedicosgenerales.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38674/documentos/102864"
         }
       ]
     },
@@ -1358,6 +1402,44 @@
       ]
     },
     {
+      "id": "5a830109b95726c8d5a5ea8d94d5f63ca710e368913839c7a98c8b90ec5625a5",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "63/2026",
+      "objeto": "ADQUISICIÓN DE EXTINTORES PARA EL HOSPITAL I CARRASCO.",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38659",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: 063extintores.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38659/documentos/102831"
+        }
+      ]
+    },
+    {
+      "id": "ba2704c608c790b46fd1a01b1ba7389584331c7bccc382e1ba99e0a76d58fec2",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "475/2026",
+      "objeto": "DESMOLDANTE, SILICONA EN AEROSOL H.E.C.A",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38725",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: cag475silicona.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38725/documentos/102956"
+        },
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: pliegounicodebasesycondicionesgenerales(sololectura).pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38725/documentos/102955"
+        }
+      ]
+    },
+    {
       "id": "1d7baf1d610833e0425d7c609609d572cd3d86cf338f8998329a6ae600e88592",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "71/2026",
@@ -1386,6 +1468,34 @@
           "rotulo_oficial": "ver pliego adjunto apto para cotizar",
           "titulo": "ver pliego adjunto apto para cotizar: ca083.pdf",
           "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38729/documentos/102965"
+        }
+      ]
+    },
+    {
+      "id": "cd97f14888bc426760cc4acd9d393d70b77c82fa216640537fe33e12e3bc2e6d",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "478/2026",
+      "objeto": "PLACA ANATOMICA HÚMERO PROXIMAL",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38737",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: biomedicoscondicionesparticularesactualizadas21dejulio2025(sololectura).pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38737/documentos/102978"
+        },
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: dispo019multasaproveedores(sololectura).pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38737/documentos/102977"
+        },
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: cag478.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38737/documentos/102976"
         }
       ]
     },
@@ -1587,15 +1697,6 @@
       "documentos": []
     },
     {
-      "id": "5a830109b95726c8d5a5ea8d94d5f63ca710e368913839c7a98c8b90ec5625a5",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "40631/2026",
-      "objeto": "Compra Agil 40631/2026 Publicada para Apertura ADQUISICIÓN DE EXTINTORES PARA EL HOSPITAL I CARRASCO. Apertura: 09/11/2026 11:00",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38659",
-      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
-      "documentos": []
-    },
-    {
       "id": "0fd6882ff40743233aa70be314a6391eae327bd000ce13874136a9ed33e059ff",
       "organismo": "Poder Judicial de Entre Ríos",
       "numero_procedimiento": "273/2026",
@@ -1708,15 +1809,6 @@
       ]
     },
     {
-      "id": "cd97f14888bc426760cc4acd9d393d70b77c82fa216640537fe33e12e3bc2e6d",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "24785/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38737",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
       "id": "7826f9dca0026ec93b32d8323ca0f61ef1f16e3f3103c524b4de4b5d98067e8d",
       "organismo": "Poder Judicial de Entre Ríos",
       "numero_procedimiento": "274/2026",
@@ -1747,15 +1839,6 @@
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/26-10-26.pdf"
         }
       ]
-    },
-    {
-      "id": "ba2704c608c790b46fd1a01b1ba7389584331c7bccc382e1ba99e0a76d58fec2",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "24755/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38725",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
     },
     {
       "id": "6a003278b71d5e26e3eac386b719a9022d0791f2f4f50b395070e62bde3c126f",
@@ -1801,15 +1884,6 @@
           "url": "https://www.jusentrerios.gov.ar/wp-content/uploads/2026/10/Cotejo-de-Precios-15-26.zip"
         }
       ]
-    },
-    {
-      "id": "6218384fa6e3c64bbecdb831e5af2c6adc4f7d5cf9e03aa3cb519bbedd838557",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "50901/2026",
-      "objeto": "Compra Agil 50901/2026 Publicada para Apertura CAG 05-090-3195-2026 MEDICAMENTOS CON VISADO -HRSP- Apertura: 12/11/2026 09:00",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38671",
-      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
-      "documentos": []
     },
     {
       "id": "bd319981e93bcc0b35e8464fb88f118efb2ed74e81895efdc08203c86f4d4422",
@@ -1901,15 +1975,6 @@
       "documentos": []
     },
     {
-      "id": "fa8777cb334c1a3e4f75ed078e4d64a94917ac48a10ed75c49d92a6872858d67",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "50931/2026",
-      "objeto": "Compra Agil 50931/2026 Publicada para Apertura CAG 05-093-3198-2026 BIOMEDICOS GENERALES -HRSP- Apertura: 13/11/2026 09:15",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38674",
-      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
-      "documentos": []
-    },
-    {
       "id": "1befdfe4d546a4d9df99849cfc06696ada65fe5877a9bf27d10d270ee42b26fc",
       "organismo": "CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO",
       "numero_procedimiento": "10/2026",
@@ -1987,6 +2052,28 @@
       ]
     },
     {
+      "id": "15fefaf42a5305f8a3edfd7bb63471f4e1cc32c4af236122cda8d55842668c26",
+      "organismo": "Municipalidad de Gualeguay",
+      "numero_procedimiento": "17/2026",
+      "objeto": "Licitacion Publica Nro 17-2026 - Alquiler de sonido, pantalla e iluminacion Corso 2027 27.10.26 09:48:48 679.81 KB",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
+      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/29-10-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf"
+        }
+      ]
+    },
+    {
       "id": "9f08698ba7d856168f3f4d781482e723ba791f6e58f4662f594a753152b3d0c8",
       "organismo": "MIN. SALUD - PODER EJECUTIVO",
       "numero_procedimiento": "23/2026",
@@ -2051,28 +2138,6 @@
       "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
-    },
-    {
-      "id": "15fefaf42a5305f8a3edfd7bb63471f4e1cc32c4af236122cda8d55842668c26",
-      "organismo": "Municipalidad de Gualeguay",
-      "numero_procedimiento": "17/2026",
-      "objeto": "Licitacion Publica Nro 17-2026 - Alquiler de sonido, pantalla e iluminacion Corso 2027 27.10.26 09:48:48 679.81 KB",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
-      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
-      "documentos": [
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/29-10-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf"
-        }
-      ]
     },
     {
       "id": "9b6816d1442519e95d96bf67719b800ad736ce3c120a0b82d6e37db9bdb0dea7",
