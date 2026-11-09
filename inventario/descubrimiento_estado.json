@@ -710,7 +710,11 @@
     "reparar:fuente-064": "2026-11-09T12:37:26.282648+00:00",
     "directorio:fuente-042": "2026-11-09T12:37:26.282648+00:00",
     "territorio:060413": "2026-11-09T12:37:26.282648+00:00",
-    "territorio:822028": "2026-11-09T12:43:35.074612+00:00"
+    "territorio:822028": "2026-11-09T12:43:35.074612+00:00",
+    "reparar:fuente-078": "2026-11-09T13:28:17.622625+00:00",
+    "territorio:820007": "2026-11-09T13:28:17.622625+00:00",
+    "directorio:fuente-043": "2026-11-09T13:28:17.622625+00:00",
+    "directorio:fuente-075": "2026-11-09T13:28:17.622625+00:00"
   },
   "candidatos": {
     "inventario-fuente-034": {
@@ -734,7 +738,7 @@
       "clave": "inventario-fuente-034",
       "origen": "INVENTARIO_PREVIO",
       "fecha_descubrimiento": "2026-10-27T23:13:42.954528+00:00",
-      "ultima_revision": "2026-10-31T12:00:00.553010+00:00",
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
       "validacion": {
         "estado": "PENDIENTE",
         "identidad_verificada": false,
@@ -742,6 +746,10 @@
           "verificada": false,
           "organismo": "Municipalidad de Concordia",
           "localidad": "Concordia",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
           "dominio_oficial": true,
           "nombre_publicado": false,
           "jurisdiccion_publicada": false,
@@ -751,12 +759,12 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-10-31T12:00:06.209962+00:00",
+        "fecha": "2026-11-09T13:31:08.031494+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120001-5e64dba1/0008.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0035.json",
       "version_verificador": 4
     },
     "inventario-fuente-048": {
@@ -11171,20 +11179,24 @@
           "verificada": true,
           "organismo": "Municipio de Bigand",
           "localidad": "Bigand",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
           "dominio_oficial": true,
           "nombre_publicado": true,
           "jurisdiccion_publicada": true,
           "url": "https://www.bigand.gob.ar/",
-          "sha256": "29f82b4e8addf908b2617ee8b23cc629ed9c093619191ba023058d1739535f60",
+          "sha256": "220fbe56a5823057b88a22433ccfcde6fa58ebc2f7e418d4007f8e6786d1cb32",
           "cabecera": "Inicio | Municipio De Bigand  NUESTRO PORTAL WhatsApp Denuncias Anónimas Boleta Web Noticias Boletín Oficial Talleres CONTACTOS Y REDES Policía Bigand 3464461013 Guardia Urbana 3464517244 Ambulancia 3464554000 SAMCo Bigand 3464461028 Bomberos 3464517246 0 ELIGEN BIGAND 15 DE JULIO 1909 30.000 HECTAREAS 194 HECTAREAS (ZONA URBANA) Depto Caseros. Sur de la Prov. de Santa Fé. Se localiza en el cruce de la Ruta Nacional 178 con la Provincial 14 BIGANDENSE",
           "motivo": null
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-11-09T12:01:00.510120+00:00",
+        "fecha": "2026-11-09T13:31:13.197693+00:00",
         "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
         "ejemplos": []
       },
-      "ultima_revision": "2026-11-09T12:00:09.556636+00:00",
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -11195,7 +11207,10 @@
           "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261109T120013-77121b8a/0011.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0037.json",
+      "config_publica": {
+        "noticias_comunales": true
+      }
     },
     "contraste-89e2ffb55568d2a06970": {
       "organismo": "Municipalidad de Granadero Baigorria",
@@ -11258,20 +11273,43 @@
       "fecha_descubrimiento": "2026-11-09T12:00:09.556636+00:00",
       "validacion": {
         "estado": "PENDIENTE",
-        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Comuna de Pujato",
+          "localidad": "Pujato",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://pujato.gob.ar/",
+          "sha256": "df3dc36ad7ca0ee1f43814135ce3e8b115665230109129e5a032aed53f36936d",
+          "cabecera": "Pujato – El cambio lo hacemos juntos.  PUJATO. ORGULLO DE UN PUEBLO EN MOVIMIENTO Larga “La Scaloneta” en el Rally de Pujato. Pujato mejora, progresa y cambia. Continúan las mejoras en la ruta 33 La Comuna recupera un camión con personal propio. Obras en la Ruta 33: Avanzan las reparación entre Casilda y Pujato Así homenajeamos a nuestro Lionel. Se esperan 80 mil personas para la nueva edición de la Fiesta del Transporte en Pujato La gestión del Presidente Comunal prioriza la seguridad trabajando personalmente en conjunto con la policía. Daniel Quacquarini asumió su cuarta gestión al frente de la comuna de Pujato Nueva ambulancia para Pujato. Fue reelecto el presidente comunal de Pujato Daniel Quacquarini. Comenzamos con la recolección de residuos diferenciada. Eventos en noviembre 2026",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:31:38.306129+00:00",
+        "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+        "ejemplos": []
       },
-      "ultima_revision": "2026-11-09T12:00:09.556636+00:00",
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
       "version_verificador": 4,
       "errores": [
         {
-          "categoria": "RED",
-          "tipo": "TIEMPO_FUENTE",
-          "timeout": true,
-          "error": "Plazo agotado; se conserva lo extraído",
-          "fase": "DESCARGA"
+          "url": "https://pujato.gob.ar/",
+          "tipo": "SinPublicacionesDetectadas",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261109T120013-77121b8a/0013.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0038.json",
+      "config_publica": {
+        "noticias_comunales": true
+      }
     },
     "contraste-589ecca9cfe42860c58e": {
       "organismo": "Municipalidad de Fray Luis Beltrán",
@@ -11909,23 +11947,30 @@
           "verificada": false,
           "organismo": "Municipalidad de San Benito",
           "localidad": "San Benito",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
           "dominio_oficial": true,
           "nombre_publicado": false,
           "jurisdiccion_publicada": true,
           "url": "https://sanbenito.gob.ar/",
-          "sha256": "e10fc2124aab64f29f7785e168c968cebe6b60b49043bf0314878012ed28a1b4",
+          "sha256": "3d6e12517bcd9c7c127b5228a47b7f11950724fd9142ffe5c490f359ace9e6f5",
           "cabecera": "Inicio  Trámites y Servicios Agenda",
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-11-09T12:00:50.724113+00:00",
+        "fecha": "2026-11-09T13:31:11.062330+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
-      "ultima_revision": "2026-11-09T12:00:09.556636+00:00",
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
       "version_verificador": 4,
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261109T120013-77121b8a/0008.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0036.json",
+      "config_publica": {
+        "noticias_comunales": true
+      }
     },
     "908c8aed7368de30a61d": {
       "clave": "departamento:Santa Fe:la capital",
@@ -16337,7 +16382,35 @@
       "titulo": "CODIGO PENAL DE LA NACION ARGENTINA",
       "descripcion": "Las penas que este Código establece son las siguientes: reclusión, prisión, multa e inhabilitación. ARTICULO 6º.- La pena de reclusión, perpetua o temporal, se cumplirá con trabajo obligatorio en los establecimientos destinados al efecto.",
       "busqueda_url": "https://www.bing.com/search?q=%22San+Crist%C3%B3bal%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
-      "fecha_descubrimiento": "2026-11-09T12:31:40.895731+00:00"
+      "fecha_descubrimiento": "2026-11-09T12:31:40.895731+00:00",
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": null,
+          "localidad": null,
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": false,
+          "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/16546/texact.htm",
+          "sha256": "eec1e63102d9741e2d4b3cfb41b1b68bd3d6b36d1e01822f99fff690375fec07",
+          "cabecera": "CODIGO PENAL DE LA NACION ARGENTINA",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:31:19.719214+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0041.json"
     },
     "af5145b8714c3e06be39": {
       "clave": "departamento:Santa Fe:san cristobal",
@@ -16437,7 +16510,35 @@
       "titulo": "Código Penal de la Nación - Parte General - Argentina.gob.ar",
       "descripcion": "La aplicación de la pena se deja en suspenso mientras la persona condenada cumpla la condición que se le impone. El juez puede decidir la condena condicional en los casos de primera condena a prisión con pena no mayor a 3 años.",
       "busqueda_url": "https://www.bing.com/search?q=%22San+Crist%C3%B3bal%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
-      "fecha_descubrimiento": "2026-11-09T12:31:40.895731+00:00"
+      "fecha_descubrimiento": "2026-11-09T12:31:40.895731+00:00",
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": null,
+          "localidad": null,
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": false,
+          "url": "https://www.argentina.gob.ar/justicia/derechofacil/leysimple/codigo-penal-de-la-nacion-parte-general",
+          "sha256": "fe273c6b80b7c121a24e49f2e28934171033ac0a5a61ea5fe046a1d86cc0aefb",
+          "cabecera": " Ley simple: Código Penal de la Nación - Parte General | Argentina.gob.ar Presidencia de la Nación Código Penal de la Nación - Parte General Trámites Acerca de la República Argentina Acerca de Argentina.gob.ar",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:31:17.054150+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0040.json"
     },
     "24c41c4f138c577cf228": {
       "clave": "departamento:Santa Fe:san cristobal",
@@ -16773,7 +16874,35 @@
       "titulo": "Boedo | Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma de Buenos ...",
       "descripcion": "Este barrio debe su nombre a Mariano Joaquín Boedo, prócer de la independencia argentina y diputado nacional por la provincia de Salta. Fue abogado y jurisconsulto.",
       "busqueda_url": "https://www.bing.com/search?q=%22San+Mart%C3%ADn%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
-      "fecha_descubrimiento": "2026-11-09T12:31:40.895731+00:00"
+      "fecha_descubrimiento": "2026-11-09T12:31:40.895731+00:00",
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": null,
+          "localidad": null,
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": false,
+          "url": "https://buenosaires.gob.ar/gcaba_historico/laciudad/barrios/boedo",
+          "sha256": "eeedb68344ff292ebb5ffde828e8dfad32cdca9cc514f51e41f83b4468e37104",
+          "cabecera": "Boedo | Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma de Buenos Aires Boedo Ayudanos a mejorar",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:31:14.904278+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0039.json"
     },
     "af6bfc3d625a612fbd52": {
       "clave": "departamento:Santa Fe:san martin",
@@ -17035,7 +17164,7 @@
       ],
       "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T124335-2220d9ad/0002.json",
       "config_publica": {
-        "adaptador": "comuna-cms"
+        "noticias_comunales": true
       }
     },
     "contraste-2d703bf10ab48a9e1c95": {
@@ -17100,7 +17229,2151 @@
         "adaptador": "comuna-cms"
       },
       "solo_control": true
+    },
+    "250e6e4558ced74a5e36": {
+      "clave": "directorio:fuente-075",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de San Andrés de Giles",
+      "localidad": "San Andrés de Giles",
+      "provincia": "Buenos Aires",
+      "metodo": "ENLACES_OFICIALES",
+      "url_directorio": "https://www.sanandresdegiles.gob.ar/",
+      "id": "auto-250e6e4558ced74a5e36",
+      "url": "https://www.sanandresdegiles.gob.ar/?q=boletin-oficial",
+      "titulo": "Boletín oficial",
+      "evidencia_enlace": "https://www.sanandresdegiles.gob.ar/",
+      "busqueda_url": "https://www.sanandresdegiles.gob.ar/",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00"
+    },
+    "contraste-f90ab81d11080f22ecb9": {
+      "url": "https://compras.concordia.gob.ar/",
+      "organismo": "Municipalidad de Concordia",
+      "localidad": "Concordia",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-f90ab81d11080f22ecb9",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-444db5dd91c59bd7d6c8": {
+      "url": "https://www.ramallo.gob.ar/",
+      "organismo": "Municipalidad de Ramallo",
+      "localidad": "Ramallo",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-444db5dd91c59bd7d6c8",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Ramallo",
+          "localidad": "Ramallo",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "LOCALIDAD_EXPLICITAMENTE_SOLICITADA_Y_PADRON_OFICIAL",
+            "codigo": "060665",
+            "centroide": {
+              "lon": -60.05839812,
+              "lat": -33.587692457
+            },
+            "distancia_por_ruta_km": null
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://www.ramallo.gob.ar/",
+          "sha256": "25f7e1efd6d3d0ebabef5d5dc0a052e7df513c37fb90f873a97ff990f8e5b2f3",
+          "cabecera": "Municipalidad de Ramallo Tu municipio, más cerca tuyo Los más buscados Consultá el Marco Legal y Tributario 2026 Próximos eventos Últimas noticias Contanos qué te parece la nueva web",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:28:59.616164+00:00",
+        "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "url": "https://www.ramallo.gob.ar/",
+          "tipo": "SinPublicacionesDetectadas",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Listado no reconocido; no se declara vacío"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0009.json"
+    },
+    "contraste-1456d5e4730602c532df": {
+      "url": "https://alvear.gob.ar/",
+      "organismo": "Municipalidad de Alvear",
+      "localidad": "Alvear",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-1456d5e4730602c532df",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Alvear",
+          "localidad": "Alvear",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": false,
+          "url": "https://alvear.gob.ar/",
+          "sha256": "f0d12b96b841f6503ebb0f7852d776eb9a25943931171f29eb26540cee1f4b8a",
+          "cabecera": "ALVEAR CIUDAD",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:28:28.435469+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0004.json"
+    },
+    "contraste-630ea3b4df2c5ec6114c": {
+      "url": "https://www.municipalidadcolonpba.gob.ar/",
+      "organismo": "Municipalidad de Colón",
+      "localidad": "Colón",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-630ea3b4df2c5ec6114c",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Colón",
+          "localidad": "Colón",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "LOCALIDAD_EXPLICITAMENTE_SOLICITADA_Y_PADRON_OFICIAL",
+            "codigo": "060175",
+            "centroide": {
+              "lon": -61.062735917,
+              "lat": -33.886074746
+            },
+            "distancia_por_ruta_km": null
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://www.municipalidadcolonpba.gob.ar/",
+          "sha256": "7cd9af55dad04d5450e4a44536415d2e2a91897b76a20ad0c00e229f719d6a17",
+          "cabecera": "Municipio de Colón Buenos Aires CIUDAD DE COLON, BUENOS AIRES Trámites digitales DIRECCION DE PRODUCCION, EMPLEO Y TURISMO DIGESTO MUNICIPAL AREAS DE GESTION INFORMACION UTIL Boletín de noticias Partido Contacto",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 57,
+        "fecha": "2026-11-09T13:29:28.634420+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "12/2026",
+            "objeto": "Licitación Pública N° 12/2026 Fecha de publicación: miércoles 04/11/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-11-04",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "9/2026",
+            "objeto": "Licitación Pública N° 9/2026 Segundo llamado Fecha de publicación: viernes 30/10/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-10-30",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "11/2026",
+            "objeto": "Licitación Pública N° 11/2026 Fecha de publicación: lunes 19/10/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-10-19",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "10/2026",
+            "objeto": "Licitación Pública N° 10/2026 Fecha de publicación: viernes 25/09/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-09-25",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "9/2026",
+            "objeto": "Licitación Pública N° 9/2026 Fecha de publicación: jueves 17/09/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-09-17",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "8/2026",
+            "objeto": "Licitación Pública N° 8/2026 Fecha de publicación: viernes 11/09/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-09-11",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "7/2026",
+            "objeto": "Licitación Pública N° 7/2026 Fecha de publicación: lunes 10/08/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-08-10",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "6/2026",
+            "objeto": "Licitación Pública N° 6/2026 Fecha de publicación: lunes 20/07/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-07-20",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "5/2026",
+            "objeto": "Licitación Pública N° 5/2026 Fecha de publicación: viernes 17/04/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-04-17",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "4/2026",
+            "objeto": "Licitación Pública N° 4/2026 Fecha de publicación: viernes 17/04/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-04-17",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "3/2026",
+            "objeto": "Licitación Pública N° 3/2026 Fecha de publicación: viernes 17/04/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-04-17",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "2/2026",
+            "objeto": "Licitación Pública N° 2/2026 Fecha de publicación: viernes 17/04/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-04-17",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "11/2025",
+            "objeto": "Licitación Pública 11/2025 Fecha de publicación: jueves 23/10/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-10-23",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "10/2025",
+            "objeto": "Licitación Pública 10/2025 Fecha de publicación: jueves 21/08/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-08-21",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "9/2025",
+            "objeto": "Licitación Pública 9/2025 Fecha de publicación: viernes 08/08/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-08-08",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "8/2025",
+            "objeto": "Licitación Pública 8/2025 Fecha de publicación: miércoles 16/07/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-07-16",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "7/2025",
+            "objeto": "Licitación Pública 7/2025 Fecha de publicación: martes 24/06/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-06-24",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "6/2025",
+            "objeto": "Licitación Pública 6/2025 Fecha de publicación: viernes 06/06/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-06-06",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "5/2025",
+            "objeto": "Licitación Pública 5/2025 Fecha de publicación: martes 03/06/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-06-03",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "3/2025",
+            "objeto": "Licitación Pública 3/2025 Fecha de publicación: lunes 02/06/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-06-02",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "4/2025",
+            "objeto": "Licitación Pública 4/2025 Fecha de publicación: martes 06/05/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-05-06",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "2/2025",
+            "objeto": "Licitación Pública 2/2025 Fecha de publicación: viernes 14/02/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-02-14",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "1/2025",
+            "objeto": "Licitación Pública 1/2025 Fecha de publicación: lunes 13/01/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-01-13",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "6/2024",
+            "objeto": "Licitación Pública 6/2024 Fecha de publicación: miércoles 06/11/2024",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2024-11-06",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "5/2024",
+            "objeto": "Licitación Pública 5/2024 Fecha de publicación: martes 10/09/2024",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2024-09-10",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "4/2024",
+            "objeto": "Licitación Pública 4/2024 Fecha de publicación: lunes 09/09/2024",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2024-09-09",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "3/2024",
+            "objeto": "Licitación Pública 3/2024 Fecha de publicación: martes 04/06/2024",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2024-06-04",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "1/2024",
+            "objeto": "Licitación Pública 1/2024 Fecha de publicación: viernes 19/04/2024",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2024-04-19",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "2/2024",
+            "objeto": "Licitación Pública 2/2024 Fecha de publicación: viernes 19/04/2024",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2024-04-19",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "13/2023",
+            "objeto": "EDICTO LICITACION PUBLICA 13/2023 Fecha de publicación: miércoles 11/10/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-10-11",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "10/2023",
+            "objeto": "Licitación Pública 10/2023 - Segundo llamado Fecha de publicación: martes 11/07/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-07-11",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "12/2023",
+            "objeto": "Licitación Pública 12/2023 Fecha de publicación: martes 04/07/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-07-04",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "11/2023",
+            "objeto": "Licitación Pública 11/2023 Fecha de publicación: martes 30/05/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-05-30",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "9/2023",
+            "objeto": "Licitación Pública 9/2023 Fecha de publicación: viernes 02/05/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-05-02",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "10/2023",
+            "objeto": "Licitación Pública 10/2023 Fecha de publicación: viernes 02/05/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-05-02",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "5/2023",
+            "objeto": "Licitación Pública 5/2023 Segundo llamado Fecha de publicación: martes 02/05/2023 hasta el martes 09/05/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-05-02",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "8/2023",
+            "objeto": "Licitación Pública 8/2023 Fecha de publicación: jueves 27/04/2023 hasta el jueves 04/05/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-04-27",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "6/2023",
+            "objeto": "Licitación Pública 6/2023 Fecha de publicación: miércoles 05/04/2023 hasta el viernes 14/04/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-04-05",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "7/2023",
+            "objeto": "Licitación Pública 7/2023 Fecha de publicación: miércoles 05/04/2023 hasta el viernes 14/04/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-04-05",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "5/2023",
+            "objeto": "Licitación Pública 5/2023 Fecha de publicación: jueves 23/03/2023 hasta el viernes 31/03/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-03-23",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "2/2023",
+            "objeto": "Licitación Pública 2/2023-Segundo llamado Fecha de publicación: lunes 20/03/2023 hasta el lunes 27/03/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-03-20",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "3/2023",
+            "objeto": "Licitación Pública 3/2023 Fecha de publicación: martes 07/03/2023 hasta el martes 14/03/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-03-07",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "1/2023",
+            "objeto": "Licitación Pública 1/2023 Fecha de publicación: martes 07/02/2023 hasta el martes 14/02/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-02-07",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "18/2022",
+            "objeto": "Licitación Pública 18/2022 Fecha de publicación: lunes 12/12/2022 hasta el lunes 19/12/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-12-12",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "17/2022",
+            "objeto": "Licitación Pública 17/2022 Fecha de publicación: lunes 03/10/2022 hasta el lunes 10/10/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-10-03",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "16/2022",
+            "objeto": "Licitación Pública 16/2022 Fecha de publicación: lunes 26/09/2022 hasta el lunes 03/10/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-09-26",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "15/2022",
+            "objeto": "Licitación Pública 15/2022 Fecha de publicación: lunes 19/09/2022 hasta el lunes 26/09/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-09-19",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "14/2022",
+            "objeto": "Licitación Pública 14/2022 Fecha de publicación: lunes 05/09/2022 hasta el lunes 12/09/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-09-05",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "13/2022",
+            "objeto": "Licitación Pública 13/2022 Fecha de publicación: lunes 05/09/2022 hasta el lunes 12/09/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-09-05",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "12/2022",
+            "objeto": "Licitación Pública 12/2022 Fecha de publicación: martes 05/07/2022 hasta el martes 12/07/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-07-05",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "11/2022",
+            "objeto": "Licitación pública 11/2022 Fecha de publicación: martes 14/06/2022 hasta el martes 21/06/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-06-14",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "10/2022",
+            "objeto": "Licitación pública 10/2022 Fecha de publicación: martes 31/05/2022 hasta el martes 07/06/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-05-31",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "6/2022",
+            "objeto": "Licitación pública 6/2022 Fecha de publicación: viernes 06/05/2022 hasta el viernes 13/05/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-05-06",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "9/2022",
+            "objeto": "Licitación pública 9/2022 Fecha de publicación: viernes 06/05/2022 hasta el viernes 13/05/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-05-06",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "8/2022",
+            "objeto": "Licitación pública 8/2022 Fecha de publicación: miércoles 13/04/2022 hasta el miércoles 20/04/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-04-13",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "5/2022",
+            "objeto": "Licitación pública 5/2022 Fecha de publicación: miércoles 16/03/2022 hasta el martes 22/03/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-03-16",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "4/2022",
+            "objeto": "Licitación pública 4/2022 Fecha de publicación: jueves 10/02/2022 hasta el jueves 17/02/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-02-10",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          }
+        ]
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0016.json"
+    },
+    "contraste-367f1d42ab710e2efa4f": {
+      "url": "https://www.timbues.gob.ar/",
+      "organismo": "Gobierno de Timbúes",
+      "localidad": "Timbúes",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-367f1d42ab710e2efa4f",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0008.json"
+    },
+    "contraste-4a1694aa27d8bb8f46d2": {
+      "url": "https://www.generalramirez.gob.ar/",
+      "organismo": "Municipalidad de General Ramírez",
+      "localidad": "General Ramírez",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-4a1694aa27d8bb8f46d2",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de General Ramírez",
+          "localidad": "General Ramírez",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://www.generalramirez.gob.ar/",
+          "sha256": "e8072f74d4c8ccfc6e0fba440acbfed82f302b98fa264c6c52d5879a7a073bda",
+          "cabecera": "Municipalidad de General Ramírez Datos útiles ¿Más información? Contáctanos TELÉFONOS DE EMERGENCIAS PORTAL INTERNO",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 5,
+        "fecha": "2026-11-09T13:29:19.556843+00:00",
+        "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+        "ejemplos": [
+          {
+            "organismo": "Municipalidad de General Ramírez",
+            "numero_procedimiento": null,
+            "objeto": "Concursos y Licitaciones",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/",
+            "evidencia_url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/"
+          },
+          {
+            "organismo": "Municipalidad de General Ramírez",
+            "numero_procedimiento": "13/2022",
+            "objeto": "S JURIDICOS MOBILIARIO AVENIDA SAN MARTIN 75 M3 DE BROZA CEMENTO AL 10% 20 UN. TUBOS DE HORMIGON 1 MT. 50 HS CAMION VOLCADOR, 100 HS. RETRO ORUGA MANO DE OBRA CAMBIO ABERTURAS ESC. 4 FCO. RAMIREZ SUMINISTRO COMBUSTIBLES, GAS OIL COMUN, GAS OIL PREMIUM, NAFTA SUPER MATERIALES EXTENSION Y RECAMBIO CAÑERIAS CLOACAS ELEMENTOS PROTECCION PERSONAL SONIDO, ILUMINACION, PANTALLAS, ESCENARIO Y ESTRUCTURAS RAMIREZ FESTEJA MATERIALES MANTENIMIENTO DE CALLES MANO DE OBRA Y MAQUINARIA TRABAJOS PARQUE INDUSTRIAL 100 LAMPARAS LED 50W E40 MANO DE OBRA REFORMA ESPACIO PUBLICO BOULEVARD SAN MARTIN 3000 LT GAS OIL COMUN, 3000 LT GAS OIL PREMIUM",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.generalramirez.gob.ar/concursos/22-m3-hormigon-elaborado-h30-reposicion-licitacion-13-2022/",
+            "evidencia_url": "https://www.generalramirez.gob.ar/search/licitacion"
+          },
+          {
+            "organismo": "Municipalidad de General Ramírez",
+            "numero_procedimiento": "13/2022",
+            "objeto": "10 / 2023 22 M3 HORMIGON ELABORADO H30 REPOSICION LICITACION 13/2022 Apertura: 23/02/2023 Presupuesto: $ 750.000,00 Oferentes: COOP. LA GANADERA G.R.L. $ 748,000,00 LEFFLER Y WOLLERT S.R.L. $ 686,400,00 Adjudicado: LEFFLER Y WOLLERT S.R.L. $ 686,400,00 Descarga Dec. llamado Dec. adjudicado Histórico: Concursos de precios Año 2026 Año 2025 Año 2024 Año 2023 Año 2022 Año 2021 Año 2020 Año 2019",
+            "fecha_apertura": "2023-02-23",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://www.generalramirez.gob.ar/contenidos/medios/licitaciones-concursos/DECRETO-39-202326072023.pdf",
+            "evidencia_url": "https://www.generalramirez.gob.ar/concursos/22-m3-hormigon-elaborado-h30-reposicion-licitacion-13-2022/"
+          },
+          {
+            "organismo": "Municipalidad de General Ramírez",
+            "numero_procedimiento": null,
+            "objeto": "Licitaciones privadas",
+            "fecha_apertura": "2026-09-01",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/licitaciones-privadas/",
+            "evidencia_url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/licitaciones-privadas/"
+          },
+          {
+            "organismo": "Municipalidad de General Ramírez",
+            "numero_procedimiento": null,
+            "objeto": "Licitaciones públicas",
+            "fecha_apertura": "2026-09-11",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/licitaciones-publicas/",
+            "evidencia_url": "https://www.generalramirez.gob.ar/licitaciones-y-concursos/licitaciones-publicas/"
+          }
+        ]
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "url": "https://www.generalramirez.gob.ar/concursos/concurso_2026-06%20BIS/",
+          "tipo": "HTTPError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "HTTP Error 404: Not Found",
+          "http_status": 404,
+          "causa": "ERROR_RED_POR_CONFIRMAR",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0010.json"
+    },
+    "contraste-f24f4caaed618bc6ea5b": {
+      "url": "http://www.sannicolas.gov.ar:8080/",
+      "organismo": "Municipalidad de San Nicolás",
+      "localidad": "San Nicolás",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-f24f4caaed618bc6ea5b",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error timed out>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0032.json"
+    },
+    "contraste-a9fd4c997e610562d71c": {
+      "url": "https://colon.gov.ar/",
+      "organismo": "Municipalidad de Colón",
+      "localidad": "Colón",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-a9fd4c997e610562d71c",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0021.json"
+    },
+    "contraste-65df751950437c8759d1": {
+      "url": "https://gobiernoabierto.baradero.gob.ar/",
+      "organismo": "Municipalidad de Baradero",
+      "localidad": "Baradero",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-65df751950437c8759d1",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Baradero",
+          "localidad": "Baradero",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "LOCALIDAD_EXPLICITAMENTE_SOLICITADA_Y_PADRON_OFICIAL",
+            "codigo": "060070",
+            "centroide": {
+              "lon": -59.493247304,
+              "lat": -33.932989945
+            },
+            "distancia_por_ruta_km": null
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://gobiernoabierto.baradero.gob.ar/",
+          "sha256": "4fb9cc5cfe832fd6b33447e0500ae8dee218871cae8bc4c6913f39fdf3095178",
+          "cabecera": "Gobierno Abierto GOBIERNO ABIERTO Municipio de Baradero",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:29:30.106561+00:00",
+        "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "url": "https://gobiernoabierto.baradero.gob.ar/",
+          "tipo": "SinPublicacionesDetectadas",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Listado no reconocido; no se declara vacío"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0017.json"
+    },
+    "contraste-79db4174204aff8e907e": {
+      "url": "https://haciendalapaz.gob.ar/",
+      "organismo": "Municipalidad de La Paz",
+      "localidad": "La Paz",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-79db4174204aff8e907e",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de La Paz",
+          "localidad": "La Paz",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://haciendalapaz.gob.ar/transparencia/2026/#data",
+          "sha256": "36f873721d8fbde772b9cdbcd33a41d5ef0955fb756f8e2ab7daf353ec76f62c",
+          "cabecera": "Transparencia / Hacienda, Gobierno de la Ciudad de La Paz, Entre Ríos. Gobierno de la Ciudad de La Paz, Entre Ríos Transparencia / Hacienda INFORMACIÓN CUATRIMESTRAL (ART. 113 Y 114 LEY 10027, MODIF POR LEY 10082) INFORMACIÓN SALARIAL INFORMACIÓN SEGÚN LEY DE RESPONSABILIDAD FISCAL N°25917 Y MODIFICATORIAS NORMATIVA TRIBUTARIA PRESUPUESTO 2026",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:29:46.184997+00:00",
+        "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "url": "https://haciendalapaz.gob.ar/",
+          "tipo": "SinPublicacionesDetectadas",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Listado no reconocido; no se declara vacío"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0019.json"
+    },
+    "contraste-02a2fbb0c9289c920bec": {
+      "url": "https://nuevo.nogoya.gob.ar/",
+      "organismo": "Municipalidad de Nogoyá",
+      "localidad": "Nogoyá",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-02a2fbb0c9289c920bec",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Permanently",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "tipo": "HTTPError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Permanently",
+          "http_status": 301,
+          "causa": "ERROR_RED_POR_CONFIRMAR",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0000.json"
+    },
+    "contraste-829acf279d08dfad5f68": {
+      "url": "https://mariagrande.gob.ar/",
+      "organismo": "Municipalidad de María Grande",
+      "localidad": "María Grande",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-829acf279d08dfad5f68",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0020.json"
+    },
+    "contraste-571baa3d5dc65fe9ebd7": {
+      "url": "https://ceres.gob.ar/",
+      "organismo": "Municipalidad de Ceres",
+      "localidad": "Ceres",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-571baa3d5dc65fe9ebd7",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0013.json"
+    },
+    "contraste-56f4b8e56d6b295bd918": {
+      "url": "https://www.larroque.gob.ar/",
+      "organismo": "Municipalidad de Larroque",
+      "localidad": "Larroque",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-56f4b8e56d6b295bd918",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0012.json"
+    },
+    "contraste-c2cad7e488ba79eb67f3": {
+      "url": "https://transparencia.urdinarrain.gov.ar/",
+      "organismo": "Municipalidad de Urdinarrain",
+      "localidad": "Urdinarrain",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-c2cad7e488ba79eb67f3",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Urdinarrain",
+          "localidad": "Urdinarrain",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": false,
+          "url": "https://transparencia.urdinarrain.gov.ar/dashboard",
+          "sha256": "902c416914a300677fa20b5724f14c269d9a18a422d8530a703818a70064cb15",
+          "cabecera": "Panel de Control | Portal de Transparencia Municipal de Urdinarrain  Panel de Control Panel de Transparencia Ver sección Ver sección Ver sección Ver sección Ver sección",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:30:30.813105+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0029.json"
+    },
+    "contraste-ddf5e4329d4a32dd57ba": {
+      "url": "https://www.ibicuy.gob.ar/",
+      "organismo": "Municipalidad de Ibicuy",
+      "localidad": "Ibicuy",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-ddf5e4329d4a32dd57ba",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0030.json"
+    },
+    "contraste-51829e55452257e786a9": {
+      "url": "https://arrecifes.gob.ar/",
+      "organismo": "Municipalidad de Arrecifes",
+      "localidad": "Arrecifes",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-51829e55452257e786a9",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Arrecifes",
+          "localidad": "Arrecifes",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "LOCALIDAD_EXPLICITAMENTE_SOLICITADA_Y_PADRON_OFICIAL",
+            "codigo": "060077",
+            "centroide": {
+              "lon": -60.062883878,
+              "lat": -34.011525509
+            },
+            "distancia_por_ruta_km": null
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://arrecifes.gob.ar/",
+          "sha256": "7b009a3016db7ef4fd5c772420ff5a2f68147a9ccc059d37ee5e5284da01b196",
+          "cabecera": "Municipalidad de Arrecifes Municipalidad de Arrecifes Municipalidad de Arrecifes ¡MÁS MEDALLAS PARA ARRECIFES EN LOS JUEGOS BONAERENSES 2026! BOUVIER GESTIONÓ MEJORAS CLAVE ANTE VIALIDAD PROVINCIAL FIXTURE JUEGOS BONAERENSES JUEGOS BONAERENSES 2026 | ARRECIFES AVANZA EL PROYECTO DEL PARQUE SOLAR EN ARRECIFES ENSEÑAR CON CIENCIA. TRANSFORMAR FUTUROS. FELICITACIONES TITÁN CONTINÚA LA CAMPAÑA DE VACUNACIÓN ANTIRRÁBICA Instalan un limnígrafo en el Puente de Todd para monitorear el río ARRECIFES AVANZA EN EL CUIDADO DEL AMBIENTE: ENVIAMOS 4.820 KG DE NEUMÁTICOS PARA RECICLAR DEFENSA CIVIL ZONA X: REUNIÓN ZONAL EN RAMALLO PARA FORTALECER LA PREVENCIÓN ANTE EL FENÓMENO EL NIÑO JORNADA DE SALUD MENTAL EN PLAZA MITRE LLEGA LA 1° FIESTA DEL MATE Y LA REPOSERA EN ARRECIFES! GESTIÓN Y ACOMPAÑAMIENTO PARA EL DEPORTE DE ARRECIFES",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:29:19.255372+00:00",
+        "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0011.json"
+    },
+    "contraste-365475f24b236f1101b9": {
+      "url": "https://www.federacion.gob.ar/",
+      "organismo": "Municipalidad de Federación",
+      "localidad": "Federación",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-365475f24b236f1101b9",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0007.json"
+    },
+    "contraste-c25c4408e27f848b470c": {
+      "url": "https://www.rafaela.gob.ar/",
+      "organismo": "Municipalidad de Rafaela",
+      "localidad": "Rafaela",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-c25c4408e27f848b470c",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Rafaela",
+          "localidad": "Rafaela",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://www.rafaela.gob.ar/Sitio/#/Inicio/",
+          "sha256": "dbffbc0f8bcb207923af9a76313ed2b96472bb6c301fc61671cf7c8f0cee3a5f",
+          "cabecera": "Municipalidad de Rafaela",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:30:22.747345+00:00",
+        "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "url": "https://www.rafaela.gob.ar/",
+          "tipo": "SinPublicacionesDetectadas",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Listado no reconocido; no se declara vacío"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0027.json"
+    },
+    "contraste-f94b2db904eb0d5ad388": {
+      "url": "https://victoria.gob.ar/",
+      "organismo": "Municipalidad de Victoria",
+      "localidad": "Victoria",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-f94b2db904eb0d5ad388",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Victoria",
+          "localidad": "Victoria",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://victoria.gob.ar/es/",
+          "sha256": "6aadf7a6b57f5fb0c64d10af8eff32e10986bfbfb9f10d60adfc293ec10af3e5",
+          "cabecera": "Municipalidad de Victoria – Entre Ríos | victoria.gob.ar NOVEDADES NOTICIAS SERVICIOS AGENDA INSCRIPCIÓN BECAS MUNICIPALES",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:30:45.153079+00:00",
+        "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "url": "https://victoria.gob.ar/es/transparencia/",
+          "tipo": "HTTPError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "HTTP Error 429: Too Many Requests",
+          "http_status": 429,
+          "causa": "LIMITE_SOLICITUDES_TEMPORAL",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0033.json"
+    },
+    "contraste-0ada2f8edf64b3689a04": {
+      "url": "https://w3.gualeguaychu.gov.ar/",
+      "organismo": "Municipalidad de Gualeguaychú",
+      "localidad": "Gualeguaychú",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-0ada2f8edf64b3689a04",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error timed out>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0001.json"
+    },
+    "contraste-5ec665d7388286e4c56d": {
+      "url": "https://municipalidad.gualeguay.gob.ar/",
+      "organismo": "Municipalidad de Gualeguay",
+      "localidad": "Gualeguay",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-5ec665d7388286e4c56d",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Respuesta supera 12000000 bytes; recorrido parcial",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "tipo": "ValueError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Respuesta supera 12000000 bytes; recorrido parcial",
+          "causa": "ERROR_EXTRACCION",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0015.json"
+    },
+    "contraste-5abd0d58f84c444bdcae": {
+      "url": "https://villaguay.gob.ar/",
+      "organismo": "Municipalidad de Villaguay",
+      "localidad": "Villaguay",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-5abd0d58f84c444bdcae",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Villaguay",
+          "localidad": "Villaguay",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": false,
+          "url": "https://villaguay.gob.ar/",
+          "sha256": "a5f14df39341e68f1b87db5f578ce5bcfd99fe484729fadbf5519dc4d73287b8",
+          "cabecera": "Municipalidad de Villaguay",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:29:21.332708+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0014.json"
+    },
+    "contraste-1000ad442a9e14876de1": {
+      "url": "https://www.sannicolasciudad.gob.ar/",
+      "organismo": "Municipalidad de San Nicolás",
+      "localidad": "San Nicolás",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-1000ad442a9e14876de1",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de San Nicolás",
+          "localidad": "San Nicolás",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "LOCALIDAD_EXPLICITAMENTE_SOLICITADA_Y_PADRON_OFICIAL",
+            "codigo": "060763",
+            "centroide": {
+              "lon": -60.294250231,
+              "lat": -33.48506158
+            },
+            "distancia_por_ruta_km": null
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": false,
+          "url": "https://www.sannicolasciudad.gob.ar/",
+          "sha256": "077d982f7d0e7d362b784518205da9a557f981ce3faa619b4d3704c76a3b9082",
+          "cabecera": "San Nicolás Ciudad Trámites más frecuentes:",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:28:27.562336+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0003.json"
+    },
+    "contraste-bdc717588ac4e06b9a5c": {
+      "url": "https://compras.pergamino.gob.ar/",
+      "organismo": "Municipalidad de Pergamino",
+      "localidad": "Pergamino",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-bdc717588ac4e06b9a5c",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-b49764a17fe540c2758c": {
+      "url": "https://transparencia.rojas.gov.ar/",
+      "organismo": "Municipalidad de Rojas",
+      "localidad": "Rojas",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-b49764a17fe540c2758c",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Rojas",
+          "localidad": "Rojas",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "LOCALIDAD_EXPLICITAMENTE_SOLICITADA_Y_PADRON_OFICIAL",
+            "codigo": "060686",
+            "centroide": {
+              "lon": -60.787811394,
+              "lat": -34.192819935
+            },
+            "distancia_por_ruta_km": null
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": false,
+          "url": "https://transparencia.rojas.gov.ar/",
+          "sha256": "8cadff5230defa5cea096d6d44a8e39f05bc81a08fcc063896f090bd70b2f21d",
+          "cabecera": "MUNICIPIO DE ROJAS",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:29:58.709016+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0024.json"
+    },
+    "contraste-baf70a9747bd08e2d9ea": {
+      "url": "https://comunaarequito.gob.ar/",
+      "organismo": "Comuna de Arequito",
+      "localidad": "Arequito",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-baf70a9747bd08e2d9ea",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0025.json"
+    },
+    "contraste-fe4dbcc4e450d31c96f4": {
+      "url": "https://chabas.gob.ar/",
+      "organismo": "Comuna de Chabás",
+      "localidad": "Chabás",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-fe4dbcc4e450d31c96f4",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Comuna de Chabás",
+          "localidad": "Chabás",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://chabas.gob.ar/",
+          "sha256": "74c88f01cdd6bda9f4dafbec23b9654a7692058d9e85de3ec2c29c498c8d23e8",
+          "cabecera": "Contacto  Comuna de Chabás Contacto comentario",
+          "motivo": null,
+          "evidencia_raiz": {
+            "url": "https://chabas.gob.ar/contacto",
+            "sha256": "350a502faff1c11f749c56743316335f8eebc0e01572ef6495e529bc9c4abf4c",
+            "criterio": "IDENTIDAD_PUBLICADA_EN_RAIZ_OFICIAL_MISMO_ORGANISMO"
+          }
+        },
+        "procedimientos_con_objeto": 2,
+        "fecha": "2026-11-09T13:31:19.352503+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Comuna de Chabás",
+            "numero_procedimiento": "1/2026",
+            "objeto": "LICITACION PUBLICA 01-2026 LICITACION PUBLICA 01-2026.pdf Descarga Detalles",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5002-licitacion-publica-01-2026",
+            "evidencia_url": "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026"
+          },
+          {
+            "organismo": "Comuna de Chabás",
+            "numero_procedimiento": "2/2026",
+            "objeto": "LICITACION PUBLICA 02-2026 LICITACION PUBLICA 02-2026.pdf Descarga Detalles",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5003-licitacion-publica-02-2026",
+            "evidencia_url": "https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026"
+          }
+        ]
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0034.json"
+    },
+    "contraste-0dcb7da935dd3a237fd0": {
+      "url": "https://sunchales.gob.ar/",
+      "organismo": "Municipalidad de Sunchales",
+      "localidad": "Sunchales",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-0dcb7da935dd3a237fd0",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0002.json"
+    },
+    "contraste-deae9ce8e054d6df4e2f": {
+      "url": "https://viale.gob.ar/",
+      "organismo": "Municipalidad de Viale",
+      "localidad": "Viale",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-deae9ce8e054d6df4e2f",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0031.json"
+    },
+    "contraste-75fc17dcf2e7bbbd39f1": {
+      "url": "https://oroverde.gob.ar/",
+      "organismo": "Municipio de Oro Verde",
+      "localidad": "Oro Verde",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-75fc17dcf2e7bbbd39f1",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipio de Oro Verde",
+          "localidad": "Oro Verde",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": false,
+          "url": "https://oroverde.gob.ar/portal/",
+          "sha256": "b293783f3aeee3b61356496c793243ed014e2a37a395eccc6e3066bd43cc5a87",
+          "cabecera": "Principal - Municipio de Oro Verde  Municipio de Oro Verde",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:29:35.269620+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0018.json"
+    },
+    "contraste-bfbcaff50e8488da37fa": {
+      "url": "https://www.segui.gob.ar/",
+      "organismo": "Municipalidad de Seguí",
+      "localidad": "Seguí",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-bfbcaff50e8488da37fa",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Seguí",
+          "localidad": "Seguí",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": false,
+          "url": "https://www.segui.gob.ar/sitio/",
+          "sha256": "f8960ce0b41255cea0b9b086d0015e4deccdf37d012ae349acf331ef047a7778",
+          "cabecera": "Municipalidad de Seguí – Donde Queremos Estar  Donde Queremos Estar PORTAL AUTOGESTIÓN Licitación Privada Nº 1-2.025 Licitación Pública Nº 2-2.024 Sol.Cotización Nº 13-2.025 Licitación Pública Nº 03-2.024 Sol. Cotización Nº 14-2.025 Licitacion Publica Nº 04-2.024",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:30:21.932020+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0026.json"
+    },
+    "contraste-ae36f40d34bd88baff42": {
+      "url": "https://datosabiertos.gualeguaychu.gov.ar/",
+      "organismo": "Municipalidad de Gualeguaychú",
+      "localidad": "Gualeguaychú",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-ae36f40d34bd88baff42",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Gualeguaychú",
+          "localidad": "Gualeguaychú",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": false,
+          "url": "https://datosabiertos.gualeguaychu.gov.ar/",
+          "sha256": "1a8051c50b2f5b4261f4c51bce7553fd775a332252a6d6b93c9b34a5f0fa5eda",
+          "cabecera": " Municipalidad de Gualeguaychú Municipalidad de Gualeguaychú NUESTROS DATASETS DESTACADOS Boletín oficial de enero 2024 Boletín oficial de diciembre 2023 Boletín oficial de diciembre 2023 Boletín oficial de noviembre 2023 Boletín oficial de abril 2023 Boletín oficial de agosto 2023 Boletín oficial de septiembre 2023 Boletín oficial de julio 2023 Boletín oficial de octubre 2023 Boletín oficial de junio 2023 Boletín oficial de mayo 2023 Boletín Oficial de marzo 2023 Resultados TuPrimerTerreno Sorteo 8 Boletín Oficial de enero 2023 Boletín Oficial de febrero 2023 Estados contables Febrero 2022 Estados contables Enero 2022 Estados Contables año 2019 Estados contables Noviembre 2019 Boletín Oficial de Diciembre 2022 Boletín Oficial de Noviembre 2022 Boletín Oficial de Octubre 2022 Boletín Oficial de Septiembre 2022 Boletín Oficial de Agosto 2022 Boletín Oficial",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:29:55.967907+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0022.json"
+    },
+    "contraste-707f1a69a900d8142f40": {
+      "url": "https://sanjusto.gov.ar/",
+      "organismo": "Municipalidad de San Justo",
+      "localidad": "San Justo",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-707f1a69a900d8142f40",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-c260a6477cd76f9a4d9b": {
+      "url": "https://coloniaavellaneda.gob.ar/",
+      "organismo": "Municipalidad de Colonia Avellaneda",
+      "localidad": "Colonia Avellaneda",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-c260a6477cd76f9a4d9b",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Municipalidad de Colonia Avellaneda",
+          "localidad": "Colonia Avellaneda",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": false,
+          "url": "https://coloniaavellaneda.gob.ar/web/",
+          "sha256": "6fae9dc1be952ef667c00aed0d1340cd2e79c5d74c433ce8f3a63013f316f3af",
+          "cabecera": "Municipalidad de Colonia Avellaneda | Octubre Rosa: una jornada de deporte y concientización Plaza Activa vuelve con una edición especial por el Mes de la Juventud Nuevas obras previstas para el Centro de Salud de Colonia Avellaneda Boleta Digital para tasas municipales en Colonia Avellaneda Colonia Avellaneda presentó Polo Educativo Colonia Avellaneda presenta su nueva app municipal",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:30:35.824947+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0028.json"
+    },
+    "contraste-280beec5b9d3a294a299": {
+      "url": "https://pavonarriba.gob.ar/",
+      "organismo": "Comuna de Pavón Arriba",
+      "localidad": "Pavón Arriba",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "BUSQUEDA_Y_APERTURA_WEB_OFICIAL_2026_11_09",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-280beec5b9d3a294a299",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Comuna de Pavón Arriba",
+          "localidad": "Pavón Arriba",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://pavonarriba.gob.ar/",
+          "sha256": "9fc484957ee699665c390dafaa1ce76e43027800c81a021237024bd5bd19c8ed",
+          "cabecera": "Pavón Arriba – Municipio Bienvenid@s a Capital Provincial del Durazno. Últimas Novedades CONTINUAMOS CON LA OBRA DE DESAGÜE FIRMA DE CONVENIO PARA MEJORAS EN EL EDIFICIO DE LA COMISARIA SEMBREMOS FUTURO RESOLUCIÓN N° 910 – AUTORIZACIÓN OBRA GAS NATURAL ENTREGA DE CAMPERAS A LA ESCUELA SECUNDARIA N° 321 NUEVO EQUIPAMIENTO PARA EL CONSULTORIO ODONTOLÓGIO SERVICIO DE VETERINARIA EN LA LOCALIDAD NOS VISITÓ MARÍA DE LOS ÁNGELES SACNUN APORTE TECNOLÓGICO PARA EL DESARROLLO DEL APRENDIZAJE DEL NIVEL INICIAL TALLER DE PREVENCIÓN DE ADICCIONES FIRMA DE CONVENIO – IGUALDAD Y GÉNERO SI EL DEPORTE AVANZA, LA CONTENCIÓN EN NUESTROS NIÑOS Y ADOLESCENTES TAMBIÉN El Clima en Pavón Servicio de Transporte Conexión con Interbus Pavón Arriba – Cuatro Esquinas Conexión con Interbus · Pavón Arriba – Cuatro Esquinas Servicio de Recolección de Residuos Cuidar nuestro pueblo es trabajo de todos Telefonos Utiles Calendario de Eventos Información de Contacto Departamento de Constitución Provincia de Santa Fe Ind",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:28:28.088100+00:00",
+        "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "url": "https://pavonarriba.gob.ar/",
+          "tipo": "SinPublicacionesDetectadas",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Listado no reconocido; no se declara vacío"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0005.json"
+    },
+    "contraste-2c2c062c4d1298b36622": {
+      "url": "https://www.cglagos.gob.ar/",
+      "organismo": "Comuna de General Lagos",
+      "localidad": "General Lagos",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "BUSQUEDA_Y_APERTURA_WEB_OFICIAL_2026_11_09",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-2c2c062c4d1298b36622",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": "Comuna de General Lagos",
+          "localidad": "General Lagos",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": false,
+          "url": "https://www.cglagos.gob.ar/",
+          "sha256": "c7c85155f82e5d1912ca79a5a85b29fd8d7637f27b901c9be06817482b2605be",
+          "cabecera": "Comuna de General Lagos - Inicio GENERAL LAGOS ANUNCIÓ EL DESEMBARCO DE CINCO IMPORTANTES INVERSIONES PRODUCTIVAS La Comuna destinó más de $10.000.000 en gestión educativa local Incorporación de maquinaria para el área de medio ambiente AMPLIACIÓN DEL PARQUE AUTOMOTOR GRAN CONVOCATORIA EN LA FIESTA DEL TRABAJADOR Y LA TRABAJADORA",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:28:30.943405+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0006.json"
+    },
+    "contraste-b2def06f5b9875154e17": {
+      "url": "https://www.comunasme.gob.ar/",
+      "organismo": "Comuna de San Martín de las Escobas",
+      "localidad": "San Martín de las Escobas",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "BUSQUEDA_Y_APERTURA_WEB_OFICIAL_2026_11_09",
+      "config_publica": {
+        "noticias_comunales": true
+      },
+      "id": "auto-contraste-b2def06f5b9875154e17",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Comuna de San Martín de las Escobas",
+          "localidad": "San Martín de las Escobas",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://www.comunasme.gob.ar/",
+          "sha256": "87ce48837455d4c4089cadd1bbc4315208214c3bdaba88f5b2cda8781b0601ef",
+          "cabecera": "Comuna de San Martin de las Escobas",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T13:29:57.483791+00:00",
+        "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
+        "ejemplos": []
+      },
+      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "url": "https://www.comunasme.gob.ar/",
+          "tipo": "SinPublicacionesDetectadas",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Listado no reconocido; no se declara vacío"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0023.json"
     }
   },
-  "ultima_ejecucion": "2026-11-09T12:43:35.074612+00:00"
+  "ultima_ejecucion": "2026-11-09T13:28:17.622625+00:00"
 }
