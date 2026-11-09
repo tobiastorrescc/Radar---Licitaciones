@@ -1,0 +1,83 @@
+name: Fase 5 expansión territorial intensiva
+on:
+  push:
+    branches: [mejora/radar-auditable]
+    paths: [tools/plan_fase5.json]
+permissions:
+  contents: read
+concurrency:
+  group: descubrimiento-mejora/radar-auditable
+  cancel-in-progress: false
+jobs:
+  descubrir:
+    if: github.ref == 'refs/heads/mejora/radar-auditable'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reutilizar PDF nativo sin OCR
+        timeout-minutes: 2
+        run: |
+          if ! command -v pdftotext; then sudo apt-get -o Acquire::Retries=0 -o Acquire::http::Timeout=8 install -y --no-install-recommends poppler-utils; fi
+      - name: Reutilizar caché documental sin descargar ni convertir de nuevo lo que no cambió
+        uses: actions/cache@v4
+        with:
+          path: work/cache-documentos
+          key: fase4-textos-${{ github.run_id }}
+          restore-keys: |
+            fase4-textos-
+            textos-v1-
+      - name: Descubrir y verificar sin revalidación secundaria
+        run: python -u tools/fase5_descubrir.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fase5-descubrimiento-${{ github.run_id }}
+          path: |
+            work/fase5/descubrimiento/
+            inventario/fuentes_auto.json
+            inventario/descubrimiento_estado.json
+          retention-days: 90
+      - name: Persistir solamente la cola y las altas verificadas en la rama del PR
+        run: |
+          test "$GITHUB_REF" = 'refs/heads/mejora/radar-auditable'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add inventario/fuentes_auto.json inventario/descubrimiento_estado.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Persistir descubrimiento Fase 5 sin tocar producción [skip ci]'
+            git pull --rebase origin mejora/radar-auditable
+            git push origin HEAD:mejora/radar-auditable
+          fi
+  barrer:
+    if: github.ref == 'refs/heads/mejora/radar-auditable'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        lote: [0, 1, 2, 3]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: PDF nativo existente sin OCR
+        timeout-minutes: 2
+        run: |
+          if ! command -v pdftotext; then sudo apt-get -o Acquire::Retries=0 -o Acquire::http::Timeout=8 install -y --no-install-recommends poppler-utils; fi
+      - run: python -u tools/fase5_barrido.py --lote ${{ matrix.lote }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fase5-barrido-${{ github.run_id }}-${{ matrix.lote }}
+          path: work/fase5/
+          retention-days: 90

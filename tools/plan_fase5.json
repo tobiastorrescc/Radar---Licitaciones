@@ -1,0 +1,8 @@
+{
+  "etapa": "noticias-comunales-y-raices-oficiales",
+  "descubrimiento_segundos": 600,
+  "barrido_segundos": 480,
+  "revalidacion_segundos": 60,
+  "busquedas": 4,
+  "candidatas_por_lote": 42
+}

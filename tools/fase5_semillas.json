@@ -1,0 +1,468 @@
+{
+  "fecha": "2026-11-09",
+  "advertencia": "Candidatas pendientes de identidad y extracción nativa; no son fuentes operativas por su URL.",
+  "candidatos": [
+    {
+      "url": "https://compras.concordia.gob.ar/",
+      "organismo": "Municipalidad de Concordia",
+      "localidad": "Concordia",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://www.ramallo.gob.ar/",
+      "organismo": "Municipalidad de Ramallo",
+      "localidad": "Ramallo",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://alvear.gob.ar/",
+      "organismo": "Municipalidad de Alvear",
+      "localidad": "Alvear",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://www.municipalidadcolonpba.gob.ar/",
+      "organismo": "Municipalidad de Colón",
+      "localidad": "Colón",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://www.timbues.gob.ar/",
+      "organismo": "Gobierno de Timbúes",
+      "localidad": "Timbúes",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://www.generalramirez.gob.ar/",
+      "organismo": "Municipalidad de General Ramírez",
+      "localidad": "General Ramírez",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "http://www.sannicolas.gov.ar:8080/",
+      "organismo": "Municipalidad de San Nicolás",
+      "localidad": "San Nicolás",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://colon.gov.ar/",
+      "organismo": "Municipalidad de Colón",
+      "localidad": "Colón",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://gobiernoabierto.baradero.gob.ar/",
+      "organismo": "Municipalidad de Baradero",
+      "localidad": "Baradero",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://haciendalapaz.gob.ar/",
+      "organismo": "Municipalidad de La Paz",
+      "localidad": "La Paz",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://nuevo.nogoya.gob.ar/",
+      "organismo": "Municipalidad de Nogoyá",
+      "localidad": "Nogoyá",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://www.bigand.gob.ar/",
+      "organismo": "Municipio de Bigand",
+      "localidad": "Bigand",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://pujato.gob.ar/",
+      "organismo": "Comuna de Pujato",
+      "localidad": "Pujato",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://mariagrande.gob.ar/",
+      "organismo": "Municipalidad de María Grande",
+      "localidad": "María Grande",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://sanbenito.gob.ar/",
+      "organismo": "Municipalidad de San Benito",
+      "localidad": "San Benito",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://ceres.gob.ar/",
+      "organismo": "Municipalidad de Ceres",
+      "localidad": "Ceres",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://www.larroque.gob.ar/",
+      "organismo": "Municipalidad de Larroque",
+      "localidad": "Larroque",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://transparencia.urdinarrain.gov.ar/",
+      "organismo": "Municipalidad de Urdinarrain",
+      "localidad": "Urdinarrain",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://www.ibicuy.gob.ar/",
+      "organismo": "Municipalidad de Ibicuy",
+      "localidad": "Ibicuy",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://arrecifes.gob.ar/",
+      "organismo": "Municipalidad de Arrecifes",
+      "localidad": "Arrecifes",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://www.federacion.gob.ar/",
+      "organismo": "Municipalidad de Federación",
+      "localidad": "Federación",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://mariateresa.gob.ar/",
+      "organismo": "Comuna de María Teresa",
+      "localidad": "María Teresa",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://www.rafaela.gob.ar/",
+      "organismo": "Municipalidad de Rafaela",
+      "localidad": "Rafaela",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://victoria.gob.ar/",
+      "organismo": "Municipalidad de Victoria",
+      "localidad": "Victoria",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://w3.gualeguaychu.gov.ar/",
+      "organismo": "Municipalidad de Gualeguaychú",
+      "localidad": "Gualeguaychú",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://municipalidad.gualeguay.gob.ar/",
+      "organismo": "Municipalidad de Gualeguay",
+      "localidad": "Gualeguay",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://villaguay.gob.ar/",
+      "organismo": "Municipalidad de Villaguay",
+      "localidad": "Villaguay",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://www.sannicolasciudad.gob.ar/",
+      "organismo": "Municipalidad de San Nicolás",
+      "localidad": "San Nicolás",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://compras.pergamino.gob.ar/",
+      "organismo": "Municipalidad de Pergamino",
+      "localidad": "Pergamino",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://transparencia.rojas.gov.ar/",
+      "organismo": "Municipalidad de Rojas",
+      "localidad": "Rojas",
+      "provincia": "Buenos Aires",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://comunaarequito.gob.ar/",
+      "organismo": "Comuna de Arequito",
+      "localidad": "Arequito",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://chabas.gob.ar/",
+      "organismo": "Comuna de Chabás",
+      "localidad": "Chabás",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://sunchales.gob.ar/",
+      "organismo": "Municipalidad de Sunchales",
+      "localidad": "Sunchales",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://viale.gob.ar/",
+      "organismo": "Municipalidad de Viale",
+      "localidad": "Viale",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://oroverde.gob.ar/",
+      "organismo": "Municipio de Oro Verde",
+      "localidad": "Oro Verde",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://www.segui.gob.ar/",
+      "organismo": "Municipalidad de Seguí",
+      "localidad": "Seguí",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://datosabiertos.gualeguaychu.gov.ar/",
+      "organismo": "Municipalidad de Gualeguaychú",
+      "localidad": "Gualeguaychú",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://sanjusto.gov.ar/",
+      "organismo": "Municipalidad de San Justo",
+      "localidad": "San Justo",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://coloniaavellaneda.gob.ar/",
+      "organismo": "Municipalidad de Colonia Avellaneda",
+      "localidad": "Colonia Avellaneda",
+      "provincia": "Entre Ríos",
+      "tipo": "TERRITORIAL",
+      "metodo": "RAIZ_DE_HOST_OFICIAL_PREVIAMENTE_REGISTRADO",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://pavonarriba.gob.ar/",
+      "organismo": "Comuna de Pavón Arriba",
+      "localidad": "Pavón Arriba",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "BUSQUEDA_Y_APERTURA_WEB_OFICIAL_2026_11_09",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://www.cglagos.gob.ar/",
+      "organismo": "Comuna de General Lagos",
+      "localidad": "General Lagos",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "BUSQUEDA_Y_APERTURA_WEB_OFICIAL_2026_11_09",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    },
+    {
+      "url": "https://www.comunasme.gob.ar/",
+      "organismo": "Comuna de San Martín de las Escobas",
+      "localidad": "San Martín de las Escobas",
+      "provincia": "Santa Fe",
+      "tipo": "TERRITORIAL",
+      "metodo": "BUSQUEDA_Y_APERTURA_WEB_OFICIAL_2026_11_09",
+      "config_publica": {
+        "noticias_comunales": true
+      }
+    }
+  ]
+}

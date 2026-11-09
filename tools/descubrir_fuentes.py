@@ -160,7 +160,7 @@ def worker(entrada,salida):
             guardar(salida,{'estado':'PENDIENTE','finalizado':True,'validacion':aceptacion({},identidad),'oportunidades':[]});return
         config={'organismo':identidad['organismo'],'localidad':identidad['localidad'],'provincia':c['provincia'],
             'conector':'publicaciones','descubrir_menu':True,'descubrir_contrataciones':True,'barrido_institucional':True,'buscador_institucional':True,'solo_descubrimiento':True,'lectura_adjuntos':'necesarios','ocr':False,'admitir_avisos_sin_numero':True,'capturar_respuestas':True}
-        for k in ('adaptador','documentos_para_descubrimiento','indice_documentos','resolver_numero_documental'):
+        for k in ('adaptador','documentos_para_descubrimiento','indice_documentos','resolver_numero_documental','noticias_comunales'):
             if k in c.get('config_publica',{}):config[k]=c['config_publica'][k]
         inicial={url:(datos,tipo,final)}
         def capturar(u,respuesta):
@@ -289,13 +289,13 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_
         estado['candidatos'].setdefault(key,{**f,'tipo':'TERRITORIAL' if o.norm(f['organismo']).startswith(('municipalidad','comuna')) else 'SECTORIAL','id':'auto-'+key,'clave':key,'origen':'INVENTARIO_PREVIO','fecha_descubrimiento':fecha})
     # Semillas descubiertas por investigación del agente: nunca se promueven sin
     # pasar la misma verificación de identidad, jurisdicción y publicaciones.
-    for semillas_path in (Path('inventario/candidatas_sectoriales.json'),Path('inventario/candidatas_historia.json'),Path('tools/fase4_semillas.json')):
+    for semillas_path in (Path('inventario/candidatas_sectoriales.json'),Path('inventario/candidatas_historia.json'),Path('tools/fase4_semillas.json'),Path('tools/fase5_semillas.json')):
         if semillas_path.exists():
             for c in json.loads(semillas_path.read_text()).get('candidatos',[]):
                 key='contraste-'+sha256((c['url']+'|'+c['organismo']).encode()).hexdigest()[:20]
                 estado['candidatos'].setdefault(key,{**c,'id':'auto-'+key,'origen':'HISTORIAL_GIT' if semillas_path.name=='candidatas_historia.json' else 'INVESTIGACION_AGENTE',
                     'fecha_descubrimiento':fecha,'validacion':{'estado':'PENDIENTE','motivo':c.get('motivo_previo')}})
-                if semillas_path.name=='fase4_semillas.json':estado['candidatos'][key].update({k:v for k,v in c.items() if k in ('identidad_url','config_publica','solo_control')})
+                if semillas_path.name in ('fase4_semillas.json','fase5_semillas.json'):estado['candidatos'][key].update({k:v for k,v in c.items() if k in ('identidad_url','config_publica','solo_control')})
     lote=seleccionar_validaciones(estado['candidatos'].values(),existentes,auto,candidatos,revisar_pendientes,priorizar_urls)
     limite=max(1,total-(time.monotonic()-inicio)-3)
     entradas=raiz/'entradas';entradas.mkdir(exist_ok=True)

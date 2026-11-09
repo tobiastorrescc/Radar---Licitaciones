@@ -463,4 +463,8 @@ def extraer(html,url,config=None):
             clave=('aviso_sin_numero',link,t)
             agrupados.setdefault(clave,{'titulo':texto,'objeto':texto,'url':link,'evidencia_url':url,'documentos':[],
                 'registro_estructurado':True,'aviso_oficial_sin_numero':True,'detalle_completo':True,'tipo_procedimiento':'aviso de contratacion','numero_procedimiento':None,'procedimiento':None})
+    if config.get('noticias_comunales'):
+        from descubrimiento_noticias import noticia
+        nuevos=noticia(dom,url)
+        if nuevos:return nuevos,enlaces,dom
     return list(agrupados.values()),enlaces,dom

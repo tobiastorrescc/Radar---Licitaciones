@@ -25,15 +25,15 @@ def alcance_ba(candidato,padron=None):
  return {'verificado':ok,'criterio':'LOCALIDAD_EXPLICITAMENTE_SOLICITADA_Y_PADRON_OFICIAL' if ok and localidad in {o.norm(x) for x in BA_PRIORIZADAS} else 'DISTANCIA_VIAL_DOCUMENTADA' if ok else 'DISTANCIA_VIAL_O_LOCALIDAD_PENDIENTE','codigo':m.get('codigo') if m else None,'centroide':m.get('centroide') if m else None,'distancia_por_ruta_km':m.get('distancia_por_ruta_km') if m else None}
 
 def ventanas(publicacion,ahora):
- if not publicacion:return {'24h':False,'48h':False,'72h':False,'precision':'FECHA_DESCONOCIDA'}
+ if not publicacion:return {'24h':False,'48h':False,'72h':False,'168h':False,'precision':'FECHA_DESCONOCIDA'}
  actual=datetime.fromisoformat(ahora) if isinstance(ahora,str) else ahora
  if not actual.tzinfo:actual=actual.replace(tzinfo=o.ZONA)
  try:d=datetime.fromisoformat(publicacion)
- except ValueError:return {'24h':False,'48h':False,'72h':False,'precision':'FECHA_INVALIDA'}
+ except ValueError:return {'24h':False,'48h':False,'72h':False,'168h':False,'precision':'FECHA_INVALIDA'}
  if 'T' not in publicacion:
   inicio=d.replace(tzinfo=o.ZONA);fin=min(inicio+timedelta(days=1),actual)
   maxima=(actual-inicio).total_seconds()/3600;minima=max(0,(actual-fin).total_seconds()/3600)
-  return {**{str(n)+'h':0<=maxima<=n for n in (24,48,72)},**{'posible_'+str(n)+'h':maxima>=0 and minima<=n for n in (24,48,72)},'precision':'DIA_CALENDARIO_SIN_HORA','intervalo_horas':[minima,maxima]}
- if not d.tzinfo:return {'24h':False,'48h':False,'72h':False,'precision':'HORA_SIN_ZONA'}
+  return {**{str(n)+'h':0<=maxima<=n for n in (24,48,72,168)},**{'posible_'+str(n)+'h':maxima>=0 and minima<=n for n in (24,48,72,168)},'precision':'DIA_CALENDARIO_SIN_HORA','intervalo_horas':[minima,maxima]}
+ if not d.tzinfo:return {'24h':False,'48h':False,'72h':False,'168h':False,'precision':'HORA_SIN_ZONA'}
  horas=(actual-d).total_seconds()/3600
- return {**{str(n)+'h':0<=horas<=n for n in (24,48,72)},'precision':'INSTANTE_PUBLICADO'}
+ return {**{str(n)+'h':0<=horas<=n for n in (24,48,72,168)},'precision':'INSTANTE_PUBLICADO'}

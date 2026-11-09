@@ -601,7 +601,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 errors.append({'url':url,'tipo':'AccesoRestringido','categoria':'ACCESO','timeout':False,'error':'El portal requiere autenticación o red privada; no se elude'})
             for r in registros:
                 r['rango_evidencia']=3 if clase=='DETALLE' else 1
-                if clase=='DETALLE':r['texto_documento']=r['titulo']
+                if clase=='DETALLE':r.setdefault('texto_documento',r['titulo'])
                 if config.get('requerir_ficha') and clase=='LISTADO':r['detalle_completo']=False
                 if (config.get('adaptador')=='rosario' and clase=='DETALLE' and referencia in items
                     and r.get('id_origen') and r.get('id_origen')==items[referencia].get('id_origen')
@@ -651,6 +651,10 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     # Nunca reclasificar la ficha como LISTADO por seguir_patrones.
                     if not any(u==destino and c=='DETALLE' for u,c,_ in pending):pending.append((destino,'DETALLE',None))
                     continue
+                if config.get('noticias_comunales') and clase=='LISTADO':
+                    from descubrimiento_noticias import pertinente
+                    if pertinente(l['texto']) and len(l['texto'])<600 and not path.lower().endswith(extractores.ADJUNTOS):
+                        pending.appendleft((destino,'DETALLE',None))
                 if pagina or navegar:
                     contexto={'tipo_contexto':l.get('tipo_contexto',pagina_config.get('tipo_contexto')),'es_paginacion':bool(pagina)}
                     pending.append((destino,'LISTADO',contexto))
