@@ -6,5 +6,6 @@
     42618519935,
     42619310716
   ],
-  "descripcion": "Capturas oficiales completas en fuentes, contraste con copia del respaldo actual; sin red ni OCR"
+  "descripcion": "Capturas oficiales completas en fuentes, contraste con copia del respaldo actual; sin red ni OCR",
+  "revision": "dependencias-nativas-de-pruebas-sin-ocr"
 }
