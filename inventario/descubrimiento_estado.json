@@ -709,7 +709,8 @@
     "reparar:fuente-063": "2026-11-09T12:37:26.282648+00:00",
     "reparar:fuente-064": "2026-11-09T12:37:26.282648+00:00",
     "directorio:fuente-042": "2026-11-09T12:37:26.282648+00:00",
-    "territorio:060413": "2026-11-09T12:37:26.282648+00:00"
+    "territorio:060413": "2026-11-09T12:37:26.282648+00:00",
+    "territorio:822028": "2026-11-09T12:43:35.074612+00:00"
   },
   "candidatos": {
     "inventario-fuente-034": {
@@ -17021,7 +17022,7 @@
         "estado": "PENDIENTE",
         "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
       },
-      "ultima_revision": "2026-11-09T12:37:26.282648+00:00",
+      "ultima_revision": "2026-11-09T12:43:35.074612+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -17032,7 +17033,10 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123728-513b9151/0001.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T124335-2220d9ad/0002.json",
+      "config_publica": {
+        "adaptador": "comuna-cms"
+      }
     },
     "contraste-2d703bf10ab48a9e1c95": {
       "tipo": "TERRITORIAL",
@@ -17047,8 +17051,23 @@
       "fecha_descubrimiento": "2026-11-09T12:37:26.282648+00:00",
       "validacion": {
         "estado": "PENDIENTE",
-        "motivo": "Menú institucional y aviso de 200 cajas navideñas, recepción 10/11/2026 11:00 observada externamente. Pendiente extracción nativa, no alta operativa."
-      }
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "config_publica": {
+        "adaptador": "comuna-cms"
+      },
+      "ultima_revision": "2026-11-09T12:43:35.074612+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T124335-2220d9ad/0000.json"
     },
     "contraste-7de28883923216c66958": {
       "tipo": "TERRITORIAL",
@@ -17065,7 +17084,7 @@
         "estado": "PENDIENTE",
         "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
       },
-      "ultima_revision": "2026-11-09T12:37:26.282648+00:00",
+      "ultima_revision": "2026-11-09T12:43:35.074612+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -17076,8 +17095,12 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123728-513b9151/0000.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T124335-2220d9ad/0001.json",
+      "config_publica": {
+        "adaptador": "comuna-cms"
+      },
+      "solo_control": true
     }
   },
-  "ultima_ejecucion": "2026-11-09T12:37:26.282648+00:00"
+  "ultima_ejecucion": "2026-11-09T12:43:35.074612+00:00"
 }
