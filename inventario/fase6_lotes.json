@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "lotes": [
+    {
+      "id": "01",
+      "estado": "PROGRAMADO",
+      "localidades": [
+        {
+          "id": "fase6-01-01",
+          "localidad": "Teodelina",
+          "provincia": "Santa Fe",
+          "departamento": "General López",
+          "organismo": "Municipalidad de Teodelina",
+          "url": "https://teodelina.gob.ar/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-02",
+          "localidad": "Hughes",
+          "provincia": "Santa Fe",
+          "departamento": "General López",
+          "organismo": "Comuna de Hughes",
+          "url": "https://hughes.gob.ar/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-03",
+          "localidad": "San Gregorio",
+          "provincia": "Santa Fe",
+          "departamento": "General López",
+          "organismo": "Comuna de San Gregorio",
+          "url": "https://www.comunasangregorio.gob.ar/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-04",
+          "localidad": "San José de la Esquina",
+          "provincia": "Santa Fe",
+          "departamento": "Caseros",
+          "organismo": "Municipalidad de San José de la Esquina",
+          "url": "https://munisje.gob.ar/ciudad/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-05",
+          "localidad": "Villa Mugueta",
+          "provincia": "Santa Fe",
+          "departamento": "San Lorenzo",
+          "organismo": "Comuna de Villa Mugueta",
+          "url": "https://www.comunavillamugueta.gob.ar/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-06",
+          "localidad": "Pilar",
+          "provincia": "Santa Fe",
+          "departamento": "Las Colonias",
+          "organismo": "Comuna de Pilar",
+          "url": "https://www.comunadepilar.gob.ar/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-07",
+          "localidad": "Franck",
+          "provincia": "Santa Fe",
+          "departamento": "Las Colonias",
+          "organismo": "Comuna de Franck",
+          "url": "https://www.franck.gob.ar/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-08",
+          "localidad": "San Jerónimo del Sauce",
+          "provincia": "Santa Fe",
+          "departamento": "Las Colonias",
+          "organismo": "Comuna de San Jerónimo del Sauce",
+          "url": "https://sanjeronimodelsauce.gob.ar/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-09",
+          "localidad": "San Jerónimo Norte",
+          "provincia": "Santa Fe",
+          "departamento": "Las Colonias",
+          "organismo": "Municipalidad de San Jerónimo Norte",
+          "url": "https://sanjeronimonorte.gob.ar/gobierno/organizacion/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-10",
+          "localidad": "Sastre y Ortiz",
+          "provincia": "Santa Fe",
+          "departamento": "San Martín",
+          "organismo": "Municipalidad de Sastre y Ortiz",
+          "url": "https://sastreciudad.gob.ar/intendencia/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-11",
+          "localidad": "San Guillermo",
+          "provincia": "Santa Fe",
+          "departamento": "San Cristóbal",
+          "organismo": "Municipalidad de San Guillermo",
+          "url": "https://sanguillermo.gob.ar/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-12",
+          "localidad": "Totoras",
+          "provincia": "Santa Fe",
+          "departamento": "Iriondo",
+          "organismo": "Municipalidad de Totoras",
+          "url": "https://www.mtotoras.gob.ar/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-13",
+          "localidad": "San Javier",
+          "provincia": "Santa Fe",
+          "departamento": "San Javier",
+          "organismo": "Municipalidad de San Javier",
+          "url": "https://sanjavier.gob.ar/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-14",
+          "localidad": "Malabrigo",
+          "provincia": "Santa Fe",
+          "departamento": "General Obligado",
+          "organismo": "Municipalidad de Malabrigo",
+          "url": "https://www.malabrigo.gob.ar/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-15",
+          "localidad": "Avellaneda",
+          "provincia": "Santa Fe",
+          "departamento": "General Obligado",
+          "organismo": "Municipalidad de Avellaneda",
+          "url": "https://avellaneda.gob.ar/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-16",
+          "localidad": "Cayastá",
+          "provincia": "Santa Fe",
+          "departamento": "Garay",
+          "organismo": "Comuna de Cayastá",
+          "url": "https://cayasta.gob.ar/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-17",
+          "localidad": "Valle María",
+          "provincia": "Entre Ríos",
+          "departamento": "Diamante",
+          "organismo": "Municipalidad de Valle María",
+          "url": "https://www.vallemaria.gob.ar/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-18",
+          "localidad": "General Galarza",
+          "provincia": "Entre Ríos",
+          "departamento": "Gualeguay",
+          "organismo": "Municipalidad de General Galarza",
+          "url": "https://galarza.gov.ar/autoridades/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-19",
+          "localidad": "Ubajay",
+          "provincia": "Entre Ríos",
+          "departamento": "Colón",
+          "organismo": "Municipalidad de Ubajay",
+          "url": "https://ubajay.gob.ar/institucional/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        },
+        {
+          "id": "fase6-01-20",
+          "localidad": "Aldea San Antonio",
+          "provincia": "Entre Ríos",
+          "departamento": "Gualeguaychú",
+          "organismo": "Municipalidad de Aldea San Antonio",
+          "url": "https://www.aldeasanantonio.gob.ar/",
+          "tipo": "TERRITORIAL",
+          "config_publica": {
+            "noticias_comunales": true,
+            "documentos_para_descubrimiento": true
+          },
+          "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
+          "identidad_pendiente_validacion_nativa": true
+        }
+      ]
+    }
+  ],
+  "advertencia": "Búsquedas oficiales localizan candidatas, no prueban extracción ni cobertura. Departamentos del lote sujetos a contraste con padrón oficial."
+}

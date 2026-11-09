@@ -1,0 +1,7 @@
+{
+  "lote": "01",
+  "revision": "barrido-antes-de-modificar-lectores",
+  "total_segundos": 600,
+  "por_fuente_segundos": 60,
+  "concurrencia": 4
+}

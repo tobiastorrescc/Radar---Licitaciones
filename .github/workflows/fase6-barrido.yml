@@ -1,0 +1,55 @@
+name: Fase 6 lote territorial real de 20 localidades
+on:
+  push:
+    branches: [mejora/radar-auditable]
+    paths: [tools/plan_fase6.json]
+permissions:
+  contents: read
+concurrency:
+  group: descubrimiento-mejora/radar-auditable
+  cancel-in-progress: false
+jobs:
+  barrer:
+    if: github.ref == 'refs/heads/mejora/radar-auditable'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: PDF nativo existente sin OCR
+        timeout-minutes: 2
+        run: |
+          if ! command -v pdftotext; then sudo apt-get -o Acquire::Retries=0 -o Acquire::http::Timeout=8 install -y --no-install-recommends poppler-utils; fi
+      - uses: actions/cache@v4
+        with:
+          path: work/cache-documentos
+          key: fase6-documentos-${{ github.run_id }}
+          restore-keys: |
+            fase6-documentos-
+            fase4-textos-
+      - name: Inventario anterior y barrido efectivo del lote
+        run: python -u tools/fase6_barrido.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fase6-lote-${{ github.run_id }}
+          path: |
+            work/fase6/
+            inventario/fuentes_auto.json
+            inventario/fase6_avance.json
+          retention-days: 90
+      - name: Persistir avance y únicamente fuentes con extracción validada en el PR
+        run: |
+          test "$GITHUB_REF" = 'refs/heads/mejora/radar-auditable'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add inventario/fase6_avance.json inventario/fuentes_auto.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Conservar barrido Fase 6 por localidad y altas comprobadas [skip ci]'
+            git pull --rebase origin mejora/radar-auditable
+            git push origin HEAD:mejora/radar-auditable
+          fi
