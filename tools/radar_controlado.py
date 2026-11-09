@@ -88,12 +88,14 @@ def generar_informe(db,resumen,registros,fuentes,destino):
         nivel='warning' if estado['no_equivale_a_cero_publicaciones'] else 'notice'
         print('::'+nivel+' title=Estado de fuente crítica::'+str(estado['id'])+' '+estado['estado_revision_critica']+'; acceso directo '+estado['estado_acceso_directo'],flush=True)
     guardar(destino/'resumen.json',resumen)
+    from informe_descubrimiento import desde_db
+    resumen['descubrimiento_diario']=desde_db(db,actuales,eventos,fecha,corrida,destino/'descubrimiento')
     from tools.preparar_entrega import preparar
     preparar(destino)
     lineas=['# Radar diario controlado', '',f"Fecha: {fecha}. Estado: **{resumen['estado']}**. {resumen['mensaje']}.",'',
         f"Historial: {resumen['total_historial']}; novedades y cambios: {resumen['novedades']}; abiertas: {resumen['abiertas']}; próximas a vencer: {resumen['proximas_a_vencer']}.",'',
         'La primera corrida es línea de base sin alertas de novedades. Fecha de detección no equivale a fecha de publicación. Una fuente con incidencias no permite afirmar ausencia de novedades. Se conserva todo el historial, incluso registros no recuperados en esta consulta.','',
-        '[Informe comercial: recepción vigente comprobada](informe_comercial.md) · [Plazos pendientes de verificar](presentacion_pendiente.json)','',
+        '[Descubrimiento A/B/C/D y alertas de cierre](descubrimiento/informe.md) · [Informe comercial: recepción vigente comprobada](informe_comercial.md) · [Plazos pendientes de verificar](presentacion_pendiente.json)','',
         '[Consulta completa y búsqueda: index.html](index.html) · [Catálogo completo](catalogo_completo.md) · [Abiertas](oportunidades_abiertas.md) · [Próximas a vencer](oportunidades_proximas_a_vencer.md)','',
         '| Fuente | Estado de consulta | Cobertura estricta | Publicaciones |','|---|---|---|---:|']
     lineas.extend(f"| {f['url']} | {f['estado']} | {f['estado_cobertura']} | {f.get('publicaciones_detectadas',0)} |" for f in fuentes)

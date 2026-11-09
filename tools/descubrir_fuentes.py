@@ -117,8 +117,14 @@ def verificar_identidad(html,url,candidato):
         'url':url,'sha256':sha256(html.encode()).hexdigest(),'cabecera':cabeceras[:1000],
         'motivo':None if valida else 'Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste'}
 
+def objeto_comprobado(r):
+    # Calidad de extracción, no filtro de rubro: rechazar sólo encabezados/archivos genéricos.
+    t=o.norm(r.get('objeto'))
+    t=re.sub(r'\b(?:licitacion|concurso|publica|privada|precios|pliego|pdf|descarga|detalles|fecha|publicacion|lunes|martes|miercoles|jueves|viernes|sabado|domingo|n|no|de|del|la|el|y)\b|[\d\W_]+',' ',t)
+    return bool(t.strip())
+
 def aceptacion(resultado,identidad):
-    validos=[r for raw in resultado.get('oportunidades',[]) if (r:=o.normalizar(raw)).get('clasificacion_registro')=='PROCEDIMIENTO' and (r.get('procedimiento_canonico') or r.get('aviso_oficial_sin_numero')) and r.get('objeto') and r.get('detalle_completo')]
+    validos=[r for raw in resultado.get('oportunidades',[]) if (r:=o.normalizar(raw)).get('clasificacion_registro')=='PROCEDIMIENTO' and (r.get('procedimiento_canonico') or r.get('aviso_oficial_sin_numero')) and objeto_comprobado(r) and r.get('detalle_completo')]
     ok=identidad.get('verificada') and identidad.get('ubicacion',{}).get('verificado',True) and bool(validos) and resultado.get('estado')=='OPERATIVA' and not resultado.get('errores') and not resultado.get('limites')
     return {'estado':'VALIDADA' if ok else 'PENDIENTE','identidad_verificada':identidad.get('verificada',False),
         'identidad':identidad,'procedimientos_con_objeto':len(validos),'fecha':datetime.now(timezone.utc).isoformat(),
@@ -248,6 +254,12 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_
     estado_path=Path('inventario/descubrimiento_estado.json');auto_path=Path('inventario/fuentes_auto.json')
     estado=json.loads(estado_path.read_text()) if estado_path.exists() else {'schema_version':1,'busquedas':{},'candidatos':{}}
     urls_previas={c['url'] for c in estado['candidatos'].values()}
+    if auto_path.exists():
+        registro_previo=json.loads(auto_path.read_text());retiradas={f['url'] for f in registro_previo['fuentes'] if f.get('validacion',{}).get('ejemplos') and not any(objeto_comprobado(r) for r in f['validacion']['ejemplos'])}
+        if retiradas:
+            registro_previo['fuentes']=[f for f in registro_previo['fuentes'] if f['url'] not in retiradas];guardar(auto_path,registro_previo)
+            for c in estado['candidatos'].values():
+                if c['url'] in retiradas:c['validacion']={**c.get('validacion',{}),'estado':'PENDIENTE','motivo':'Encabezados sin objeto concreto; requiere extracción de fichas o documentos'}
     fs=json.loads(Path('inventario/fuentes.json').read_text());auto=cargar_auto()
     existentes={f['url'] for f in fs if f.get('incorporada')}|set(auto)
     fecha=datetime.now(timezone.utc).isoformat();errores=[];descubiertos=set();nuevos=[]

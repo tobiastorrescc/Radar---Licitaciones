@@ -32,7 +32,10 @@ def presentacion(registro,fecha):
 def escribir(registros,fecha,destino,fuentes=None):
     root=Path(destino);root.mkdir(parents=True,exist_ok=True)
     revisadas=[{**r,**presentacion(r,fecha)} for r in registros if r.get('clasificacion_registro')=='PROCEDIMIENTO']
-    vigentes=sorted([r for r in revisadas if r['presentacion_verificada']],key=o.prioridad)
+    from fuentes_fase4 import naturaleza_convocatoria
+    ventas=[r for r in revisadas if r['presentacion_verificada'] and naturaleza_convocatoria(r)=='VENTA_BIENES_PUBLICOS']
+    (root/'ventas_municipales.json').write_text(json.dumps({'fecha':fecha,'total':len(ventas),'oportunidades':[{k:r.get(k) for k in ('organismo','numero_procedimiento','objeto','url','fecha_limite_presentacion')} for r in ventas]},ensure_ascii=False,indent=2)+'\n')
+    vigentes=sorted([r for r in revisadas if r['presentacion_verificada'] and naturaleza_convocatoria(r)!='VENTA_BIENES_PUBLICOS'],key=o.prioridad)
     pendientes=[r for r in revisadas if r['estado_comercial'].startswith('PENDIENTE')]
     (root/'informe_comercial.json').write_text(json.dumps({'fecha':fecha,'total':len(vigentes),'oportunidades':vigentes},ensure_ascii=False,indent=2)+'\n')
     (root/'presentacion_pendiente.json').write_text(json.dumps({'fecha':fecha,'total':len(pendientes),'oportunidades':pendientes},ensure_ascii=False,indent=2)+'\n')

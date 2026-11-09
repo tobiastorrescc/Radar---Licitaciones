@@ -57,5 +57,5 @@ def refinar_ceres(r):
 
 def naturaleza_convocatoria(r):
  """Una venta de bienes municipales no es una compra a proveedores; no se elimina."""
- obj=e.norm(r.get('objeto') or '')
- return 'VENTA_BIENES_PUBLICOS' if re.search(r'^venta\b.{0,50}(?:lotes|propiedad municipal)',obj) else 'COMPRA_O_SERVICIO'
+ obj=e.norm(r.get('objeto') or '')[:500]
+ return 'VENTA_BIENES_PUBLICOS' if re.search(r'\b(?:venta(?! de pliegos?)|enajenacion)\b.{0,100}(?:lotes|terrenos|inmueble|tractor|vehiculo|bienes|maquinaria|propiedad municipal)',obj) else 'COMPRA_O_SERVICIO'

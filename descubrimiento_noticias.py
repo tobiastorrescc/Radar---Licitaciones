@@ -5,6 +5,9 @@ from urllib.parse import urlsplit,urlunsplit,parse_qsl,urlencode
 import extractores as e
 
 EXPRESIONES=r'\b(?:licitacion(?:es)?|concurso(?:s)? (?:de precios|privado)|solicitud(?:es)? de (?:presupuestos?|cotizacion)|pedido(?:s)? de (?:presupuestos?|cotizacion)|convocatoria a proveedores|compra(?:s)? (?:directa|agil|menor)|segundo llamado|prorroga de (?:recepcion|presentacion)|presentacion de ofertas|apertura de sobres)\b'
+def es_seccion(texto):
+ return bool(re.fullmatch(r'(?:compras(?: y contrataciones)?|licitaciones(?: publicas| privadas)?(?: y concursos)?|concursos(?: y licitaciones)?|concursos de precios)(?: 20\d{2})?',e.norm(texto)))
+
 def pertinente(texto):
  return bool(re.search(EXPRESIONES,e.norm(texto)))
 
@@ -12,6 +15,7 @@ def noticia(dom,url):
  hs=[n for n in dom.root.iter() if n.tag=='h1' and not e.excluido(n)]
  if len(hs)!=1:return []
  h=hs[0];titulo=h.text
+ if es_seccion(titulo):return []
  bloque=next((n for n in h.padres() if n.tag=='article'),None)
  if bloque is None:bloque=next((n for n in h.padres() if n.tag=='main'),None)
  if bloque is None:return []

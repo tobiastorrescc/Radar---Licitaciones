@@ -1,0 +1,18 @@
+{
+  "etapa": "recorrido-de-menus-y-documentos",
+  "descubrimiento_segundos": 300,
+  "busquedas": 1,
+  "candidatas_por_lote": 10,
+  "priorizar_urls": [
+    "https://www.alcorta.gob.ar/",
+    "https://acebal.gob.ar/acebal/",
+    "https://maximopaz.gob.ar/",
+    "https://chabas.gob.ar/",
+    "https://www.municipalidadcolonpba.gob.ar/",
+    "https://www.timbues.gob.ar/",
+    "https://www.generalramirez.gob.ar/",
+    "https://www.larroque.gob.ar/",
+    "https://comunaarequito.gob.ar/",
+    "https://www.comunasme.gob.ar/"
+  ]
+}

@@ -17,3 +17,46 @@ class Noticias(unittest.TestCase):
  def test_seguimiento_no_es_publicacion(self):
   from descubrimiento_territorial import ventanas
   self.assertTrue(ventanas('2026-11-04','2026-11-09T09:00:00-03:00')['168h']);self.assertFalse(ventanas(None,'2026-11-09T09:00:00-03:00')['168h'])
+
+class Diario(unittest.TestCase):
+ def test_urgencias_no_inventan_hora_de_cierre(self):
+  from informe_descubrimiento import urgencia
+  base={'titulo':'Concurso de precios 1/2026 compra de insumos','objeto':'Compra de insumos','fecha_limite_presentacion':'2026-11-10','fecha_apertura':'2026-11-10'}
+  self.assertEqual(urgencia(base,'2026-11-09T09:00:00-03:00'),'HORA_LIMITE_PENDIENTE')
+  self.assertEqual(urgencia({**base,'fecha_limite_presentacion_texto':'2026-11-10T08:00:00-03:00'},'2026-11-09T09:00:00-03:00'),'MENOS_24H')
+ def test_venta_no_se_cuenta_como_suministro(self):
+  from fuentes_fase4 import naturaleza_convocatoria
+  self.assertEqual(naturaleza_convocatoria({'objeto':'Licitación 5/2026 venta de tractor municipal'}),'VENTA_BIENES_PUBLICOS')
+  self.assertEqual(naturaleza_convocatoria({'objeto':'Adquisición de tractor. Venta de pliegos en oficina.'}),'COMPRA_O_SERVICIO')
+
+class Navegacion(unittest.TestCase):
+ def test_menu_licitaciones_no_se_trata_como_ficha_individual(self):
+  import conectores
+  root='https://comuna.gob.ar/'
+  paginas={root:'<a href="/compras">Licitaciones</a>',root+'compras':'<a href="/aviso">Licitación Pública 1/2026</a>',root+'aviso':'<article><h1>Licitación Pública 1/2026 compra de insumos</h1><p>Presentación de ofertas hasta el 20 de noviembre de 2026 a las 10:30 horas.</p></article>'}
+  visitadas=[]
+  def fetch(u):visitadas.append(u);return paginas[u].encode(),'text/html',u
+  r=conectores.explorar(root,{'noticias_comunales':True,'descubrir_contrataciones':True,'solo_descubrimiento':True},fetch=fetch)
+  self.assertIn(root+'aviso',visitadas);self.assertTrue(any(presentacion(x,'2026-11-09T09:00:00-03:00')['presentacion_verificada'] for x in r['oportunidades']))
+ def test_encabezado_pdf_sin_objeto_no_valida_fuente(self):
+  from tools.descubrir_fuentes import objeto_comprobado
+  self.assertFalse(objeto_comprobado({'objeto':'LICITACION PUBLICA 01-2026.pdf Descarga Detalles'}))
+  self.assertTrue(objeto_comprobado({'objeto':'Licitación 1/2026 suministro de equipos'}))
+
+class Categorias(unittest.TestCase):
+ def test_primera_deteccion_no_es_publicacion_reciente_ni_recuperacion_conocida(self):
+  from informe_descubrimiento import clasificar
+  r=o.normalizar({'id':'nuevo','organismo':'Comuna A','titulo':'Concurso de precios 1/2026 compra de insumos','objeto':'Compra de insumos','fecha_publicacion_texto':'2026-10-01','fecha_limite_presentacion_texto':'2026-11-20T10:00:00-03:00','observada_esta_corrida':True},'2026-11-09T09:00:00-03:00')
+  e={**r,'clasificacion_novedad':'RECUPERACION_LINEA_BASE'}
+  gs=clasificar([r],[e],'2026-11-09T09:00:00-03:00',{})
+  self.assertEqual(len(gs['B_VIGENTES_DESCONOCIDAS']),1);self.assertFalse(gs['A_PUBLICACIONES_NUEVAS_VIGENTES'])
+  gs=clasificar([r],[e],'2026-11-09T09:00:00-03:00',{},['nuevo']);self.assertFalse(gs['B_VIGENTES_DESCONOCIDAS'])
+ def test_informe_comercial_separa_venta_y_conserva_compra(self):
+  import tempfile,json
+  from pathlib import Path
+  from calidad_comercial import escribir
+  base={'organismo':'Comuna A','titulo':'Licitación Pública 1/2026','fecha_limite_presentacion_texto':'2026-11-20T10:00:00-03:00'}
+  rs=[o.normalizar({**base,'objeto':obj,'url':'https://comuna.gob.ar/'+str(i)},'2026-11-09T09:00:00-03:00') for i,obj in enumerate(['Adquisición de tractor','Venta de tractor municipal'])]
+  with tempfile.TemporaryDirectory() as d:
+   self.assertEqual(escribir(rs,'2026-11-09T09:00:00-03:00',d)['vigentes_presentacion_verificada'],1)
+   self.assertEqual(json.loads(Path(d,'ventas_municipales.json').read_text())['total'],1)

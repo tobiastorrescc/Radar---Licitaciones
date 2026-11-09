@@ -652,8 +652,8 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     if not any(u==destino and c=='DETALLE' for u,c,_ in pending):pending.append((destino,'DETALLE',None))
                     continue
                 if config.get('noticias_comunales') and clase=='LISTADO':
-                    from descubrimiento_noticias import pertinente
-                    if pertinente(l['texto']) and len(l['texto'])<600 and not path.lower().endswith(extractores.ADJUNTOS):
+                    from descubrimiento_noticias import pertinente,es_seccion
+                    if pertinente(l['texto']) and not es_seccion(l['texto']) and len(l['texto'])<600 and not path.lower().endswith(extractores.ADJUNTOS):
                         pending.appendleft((destino,'DETALLE',None))
                 if pagina or navegar:
                     contexto={'tipo_contexto':l.get('tipo_contexto',pagina_config.get('tipo_contexto')),'es_paginacion':bool(pagina)}
