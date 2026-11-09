@@ -705,7 +705,11 @@
     "directorio:fuente-022": "2026-11-09T12:31:40.895731+00:00",
     "territorio:823372": "2026-11-09T12:31:40.895731+00:00",
     "directorio:fuente-041": "2026-11-09T12:31:40.895731+00:00",
-    "directorio:fuente-072": "2026-11-09T12:31:40.895731+00:00"
+    "directorio:fuente-072": "2026-11-09T12:31:40.895731+00:00",
+    "reparar:fuente-063": "2026-11-09T12:37:26.282648+00:00",
+    "reparar:fuente-064": "2026-11-09T12:37:26.282648+00:00",
+    "directorio:fuente-042": "2026-11-09T12:37:26.282648+00:00",
+    "territorio:060413": "2026-11-09T12:37:26.282648+00:00"
   },
   "candidatos": {
     "inventario-fuente-034": {
@@ -15702,7 +15706,7 @@
         "estado": "PENDIENTE",
         "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
       },
-      "ultima_revision": "2026-11-09T12:31:40.895731+00:00",
+      "ultima_revision": "2026-11-09T12:37:26.282648+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -15733,7 +15737,7 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123149-ed8a2f3d/0016.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123728-513b9151/0003.json",
       "config_publica": {
         "adaptador": "ceres",
         "documentos_para_descubrimiento": true,
@@ -16175,14 +16179,14 @@
           "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-11-09T12:31:49.779660+00:00",
+        "fecha": "2026-11-09T12:37:29.110527+00:00",
         "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
         "ejemplos": []
       },
-      "ultima_revision": "2026-11-09T12:31:40.895731+00:00",
+      "ultima_revision": "2026-11-09T12:37:26.282648+00:00",
       "version_verificador": 4,
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123149-ed8a2f3d/0001.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123728-513b9151/0002.json",
       "identidad_url": "https://baradero.gob.ar/"
     },
     "contraste-822590436bcf400fb594": {
@@ -16345,7 +16349,27 @@
       "titulo": "CÓDIGO PENAL DE LA NACIÓN ARGENTINA LEY N° 11",
       "descripcion": "En la unificación de condenas, la pena resultante será la suma aritmética de las penas impuestas en las sentencias consideradas para el dictado de la pena única.",
       "busqueda_url": "https://www.bing.com/search?q=%22San+Crist%C3%B3bal%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
-      "fecha_descubrimiento": "2026-11-09T12:31:40.895731+00:00"
+      "fecha_descubrimiento": "2026-11-09T12:31:40.895731+00:00",
+      "ultima_revision": "2026-11-09T12:37:26.282648+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "<urlopen error timed out>",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "errores": [
+        {
+          "tipo": "URLError",
+          "categoria": "RED",
+          "timeout": true,
+          "error": "<urlopen error timed out>",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123728-513b9151/0004.json"
     },
     "a885811c1f1ff68b72c2": {
       "clave": "departamento:Santa Fe:san cristobal",
@@ -16555,55 +16579,10 @@
       "ultima_revision": "2026-11-09T12:31:40.895731+00:00",
       "version_verificador": 4,
       "validacion": {
-        "estado": "VALIDADA",
+        "estado": "PENDIENTE",
+        "motivo": "RUTA_DE_NOTICIA_AJENA_A_CONTRATACIONES; extracción provenía de menús globales",
         "identidad_verificada": true,
-        "identidad": {
-          "verificada": true,
-          "organismo": "Municipalidad de Arrecifes",
-          "localidad": "Arrecifes",
-          "ubicacion": {
-            "verificado": true,
-            "criterio": "LOCALIDAD_EXPLICITAMENTE_SOLICITADA_Y_PADRON_OFICIAL",
-            "codigo": "060077",
-            "centroide": {
-              "lon": -60.062883878,
-              "lat": -34.011525509
-            },
-            "distancia_por_ruta_km": null
-          },
-          "dominio_oficial": true,
-          "nombre_publicado": true,
-          "jurisdiccion_publicada": true,
-          "url": "https://arrecifes.gob.ar/felicitaciones-titan/",
-          "sha256": "1a51796b3885fe6427926c135db8a168c7901458679f840273803b3e047d17e2",
-          "cabecera": "FELICITACIONES TITÁN – Municipalidad de Arrecifes Notas destacadas FELICITACIONES TITÁN Navegación de entradas Noticias relacionadas ¡MÁS MEDALLAS PARA ARRECIFES EN LOS JUEGOS BONAERENSES 2026! FIXTURE JUEGOS BONAERENSES JUEGOS BONAERENSES 2026 | ARRECIFES GESTIÓN Y ACOMPAÑAMIENTO PARA EL DEPORTE DE ARRECIFES ÁREAS Últimas noticias ¡MÁS MEDALLAS PARA ARRECIFES EN LOS JUEGOS BONAERENSES 2026! BOUVIER GESTIONÓ MEJORAS CLAVE ANTE VIALIDAD PROVINCIAL FIXTURE JUEGOS BONAERENSES JUEGOS BONAERENSES 2026 | ARRECIFES AVANZA EL PROYECTO DEL PARQUE SOLAR EN ARRECIFES ENSEÑAR CON CIENCIA. TRANSFORMAR FUTUROS. FELICITACIONES TITÁN CONTINÚA LA CAMPAÑA DE VACUNACIÓN ANTIRRÁBICA",
-          "motivo": null
-        },
-        "procedimientos_con_objeto": 2,
-        "fecha": "2026-11-09T12:33:16.935386+00:00",
-        "motivo": null,
-        "ejemplos": [
-          {
-            "organismo": "Municipalidad de Arrecifes",
-            "numero_procedimiento": "3/2021",
-            "objeto": "Establecer las características estratigráficas y litológicas del subsuelo, para ajustar con los registros del perfilaje el proyecto de perforación definitiva en el acuífero Puelche. Esta obra se efectuara previamente a la ejecución de la perforación definitiva, etapa que formara parte de la factibilidad.            La profundidad máxima será de 80 metros, considerada a partir del nivel del terreno natural.         2º Metodología: Se perforara a rotación, en diámetro de 100mm. Se efectuará sin la adición de bentonita a la inyección.         3º Se extraerán muestras de terreno atravesado por cada metro de avance. No se admitirá el muestro por canaleta pero si directamente a la salida de boca de pozo.            Se extraerá una cantidad mínima de 1 kg. y serán embolsadas por duplicado        4º Las muestras serán embolsadas en plástico reforzado y rotuladas con una etiqueta donde conste: empresa, localidad, identificación de la obra, profundidad, fecha y hora.          5º Perfilaje geofísico: Se deberá asegurar la estabilidad de las paredes para que en el tiempo demandado por el desarmado de las barras de sondeo y ejecución completa de los registros geofísicos solicitados, no se produzcan desmoronamientos, disminución del diámetro ni de la profundidad total de la perforación.          Inmediatamente se efectuará el perfilaje con registro de radiación gamma natural y resistividad normal corta y larga. Los resultados del perfilaje permitirán ajustar los obtenidos en el cutting para el diseño del entubamiento.            Pozo de estudio         6º A cinco (5) metros del pozo de reconocimiento se realizara la perforación de estudio comenzando con un diámetro no inferior a 200mm, el extremo inferior quedara alojado en el estrato de baja permeabilidad.          7º El pozo de estudio se entubara con PVC reforzado clase 10 de 115 mm de diámetro exterior y junta enchufada para pegar en boca de pozo.         8º La cañería de entubamiento quedara fijada y cementada mediante lechada de cemento por su interior a presión de bomba desde abajo hacia arriba, con el empleo de una cañería auxiliar, rellenando como mínimo el espacio anular entre la pared de la perforación y la cañería de entubamiento una altura de 10m.           9º Sé pre-perforará por el interior de la camisa a fin de instalar el portafiltro de PVC reforzado de 2” de diámetro interior hasta introducir en forma de enchufe cuatro metros como mínimo dentro del caño de aislamiento y la columna filtrante de PVC reforzado de 2” de diámetro interior y longitud de 9 m.                                                                                                         7                                      MUNICIPALIDAD DE ARRECIFES       LICITACIÓN PÚBLICA Nº3/2021 | OBRA: EXPLORACIÓN Y PERFORACIÓN DE POZO DE AGUA POTABLE Nº24                                      NEXOS Y OBRAS COMPLEMENTARIAS           10º La sección filtrante anterior será rellenada exteriormente en toda su longitud mediante una pared de grava de granulometría adecuada, formando un pre-filtro con dicho material.        11º La perforación de estudio se limpiará y desarrollará utilizando una electrobomba sumergible, con un caudal mínimo de 20.000 l/h hasta obtener agua cristalina, libre de sólidos en suspensión. El bombeo tendrá una duración mínima de 24hs         12º Muestreo químico: Se extraerán dos muestras de agua del acuífero primario, uno a cargo de Obras Sanitarias y otro de la empresa.         Pozo Definitivo          A partir del diseño definido con los resultados obtenidos en el pozo de estudio y luego de confirmada la calidad del agua a partir de análisis efectuados a las muestras extraídas, se realizará el Pozo Definitivo dentro de un radio no mayor de 3 metros de donde se hicieron los pozos testigo y de estudio.         En un principio y de acuerdo a los antecedentes de los pozos existentes, las perforaciones definitivas responderán al siguiente esquema (con los ajustes que surjan de los pozos de estudio)         Se perforará hasta los 58 mbbp con un diámetro de 14”.         Se bajará cañería de aislación de 10” Se cementará el espacio anular con cemento inyectado de abajo hacia arriba y hasta el extremo superior de la cañería camisa.         Se reperforará por dentro con 10” hasta los 80 mbbp. aproximadamente.         A continuación se armará el tren de 12 metros de filtros de 4” de acero inoxidable de ranura continua de 1 mm, con cañería portafiltro de PVC tipo Fortilit roscada de 4”, la cual se extenderá hasta los 46 m.b.b.p. En el extremo inferior de los filtros se colocará un caño ciego y un tapón.         Desde el nivel de fondo y hasta 1 m por debajo del extremo de la cañería portafiltro se colocará un prefiltro de grava seleccionada de acuerdo a lo que surja del análisis granulométrico efectuado en la etapa del pozo de exploración.         Finalmente se procederá a limpiar, desarrollar, y realizar el ensayo de bombeo con extracción de muestras para análisis químico durante 48 horas.         El pozo se completa con la instalación de una electrobomba sumergible de 15 Hp (50 m3/h a 48 mca de altura manométrica), cañería de elevación de 4¨ de HºGº, tablero eléctrico con las protecciones correspondientes y una cámara que responderá a lo indicado en el plano adjunto. III.         Ejecución de cañerías de impulsión y cierres de mallas.        En los dos puntos anteriores se han descripto las obras necesarias para asegurar la producción de agua en cantidad suficiente para satisfacer la demanda de la ciudad.          A continuación, se describirán las obras proyectadas para asegurar la correcta distribución en los sectores identificados como más críticos en el análisis efectuado en el punto referido al diagnóstico del funcionamiento del sistema.                                                                                                     8                                     MUNICIPALIDAD DE ARRECIFES       LICITACIÓN PÚBLICA Nº3/2021 | OBRA: EXPLORACIÓN Y PERFORACIÓN DE POZO DE AGUA POTABLE Nº24                                      NEXOS Y OBRAS COMPLEMENTARIAS            La cañería de PVC clase 10 de 160 milímetros de diámetro, se unirá a la red existente de calle Bolivia, de igual diámetro.          La fuente de abastecimiento la constituye el acuífero PUELCHES. Es el acuífero más importante de la región por su calidad y buenos rendimientos. Las Arenas Puelches son arenas cuarzosas, maduras, prácticamente carentes de cemento, de colores amarillentos a grisáceos o blanquecinos, de grano fino a mediano, con intercalaciones de gravillas y rodados en sus niveles inferiores. Se encuentra a profundidades variables entre 40 m en las cercanías del Río Paraná, a más de 100 m en Pergamino, y 120 m en Junín. En el caso de Arrecifes se localizan a profundidades del orden de los 50 a 70 metros aproximadamente.        Los parámetros hidráulicos medios se pueden sintetizar en los siguientes valores: - Porosidad efectiva de hasta 20 %.         - Permeabilidad de hasta 25 m/d. - Transmisividad entre 300-500 m2/d.       - Coef. de Almacenamiento orden 10-3 e incluso 10-4 - Caudales Específicos más comunes: entre 3 y 11m3/h - Caudales obtenibles más comunes: entre 50 y 120 m3/h         - Caudales máximos sin garantías de sustentabilidad: hasta 200 m3/h         Desde el punto de vista hidroquímico, las aguas del Puelches son generalmente consideradas bicarbonatadas cálcicas-magnésicas sódicas y carbonato-cloruradas. La calidad química del Acuífero Puelches en la zona de estudio en términos generales es buena, con valores de residuo seco salino inferiores a los 500 mg/l.           ARTÍCULO 2: ALCANCE DE LOS TRABAJOS          La contratación comprende, además de la ejecución de las obras, servicios, tareas y documentación previstos en la Documentación Licitatoria, los trabajos que a continuación se enumeran: realización del proyecto ejecutivo, cálculo estructural que deberá ser aprobado por la oficina de Obras Públicas de la Municipalidad, provisión de materiales, equipos, herramientas, andamios, mano de obra y las tramitaciones y obtención de habilitaciones y permisos que corresponda efectuar ante organismos gubernamentales o del sector privado necesarios para la ejecución completa de la obra y su finalización.           ARTÍCULO 3: SISTEMA DE CONTRATACIÓN         La demolición, construcción, trabajos y/o servicios que se contraten según el presente pliego están sometidos al sistema por ajuste alzado bajo el régimen previsto por la Ley Nº13.064 y normativa aplicable, conforme el objeto de la presente Licitación Pública y lo especificado en el PCG.           ARTÍCULO 4: GLOSARIO         Siempre que en estos documentos se especifique \"MUNICIPALIDAD\" o \"MUNICIPIO\" se refiere a la Municipalidad de Arrecifes, \"INTENDENTE\" al señor Intendente Municipal de Arrecifes.                                                                                                     9                                     MUNICIPALIDAD DE ARRECIFES  LICITACIÓN PÚBLICA Nº3/2021 | OBRA: EXPLORACIÓN Y PERFORACIÓN DE POZO DE AGUA POTABLE Nº24                                 NEXOS Y OBRAS COMPLEMENTARIAS     1) COMITENTE: MUNICIPALIDAD DE ARRECIFES   2) LICITANTE: MUNICIPALIDAD DE ARRECIFES   3) DIRECCIÓN: DIRECCIÓN DE OBRAS PÚBLICAS de la MUNICIPALIDAD DE       ARRECIFES. Tiene a cargo el control de la fiel interpretación de los planos y de la       documentación técnica que forma parte del proyecto.   4) LICITACIÓN: es el procedimiento de selección del contratista destinado a la       ejecución de la obra denominada “EXPLORACIÓN Y PERFORACIÓN DE POZO DE       AGUA POTABLE Nº24, NEXOS Y OBRAS COMPLEMENTARIAS” sito en el predio       ubicado en la intersección de la avenida Intendente Blanco y calle Amadeo Paz de la       ciudad de Arrecifes, Provincia de Buenos Aires.   5) ACTA DE INICIO: es el documento suscripto entre el Comitente y el Contratista que       da inicio formal a la ejecución de la obra.   6) ADJUDICATARIO: el oferente al que se le ha comunicado la adjudicación de la obra       a su favor, hasta la firma del contrato.   7) ANÁLISIS DE PRECIOS: desarrollo de los componentes de la estructura que forman       parte del precio de cada ítem del presupuesto.   8) CIRCULAR CON CONSULTA: las contestaciones del Licitante a los pedidos de       aclaración formuladas con relación a la documentación licitatoria.   9) CIRCULAR SIN CONSULTA: las aclaraciones de oficio que el Licitante formule con       relación a la documentación licitatoria.   10) COMISIÓN EVALUADORA: es la que examina todas las propuestas recibidas y       aconseja la adjudicación de la propuesta más conveniente, y el rechazo de las que,       conforme al pliego, resulten inadmisibles.   11) CONTRATISTA: el adjudicatario después que ha firmado el contrato y sus       complementos.   12) DÍA/S: salvo indicación en contrario, se entenderán por días hábiles.   13) DÍA/S HÁBIL/ES: los días en que funcionan los servicios del comitente.   14) DOCUMENTACIÓN LICITATORIA: o Documentos de la Licitación. Está constituida       por el presente pliego, el Pliego de Bases y Condiciones Generales, el Pliego de       Especificaciones Técnicas., el juego completo de planos y planillas, la memoria       descriptiva y el",
-            "fecha_apertura": "2021-07-16",
-            "fecha_publicacion": null,
-            "vigencia": "VENCIDA",
-            "url": "https://arrecifes.gob.ar/wp-content/uploads/2024/02/licitacion_municipalidad_de_arrecifes_-_pozo_no24_1.pdf",
-            "evidencia_url": "https://arrecifes.gob.ar/wp-content/uploads/2024/02/licitacion_municipalidad_de_arrecifes_-_pozo_no24_1.pdf"
-          },
-          {
-            "organismo": "Municipalidad de Arrecifes",
-            "numero_procedimiento": "4/2021",
-            "objeto": "Establecer las características estratigráficas y litológicas del subsuelo, para ajustar con los registros del perfilaje el proyecto de perforación definitiva en el acuífero Puelche. Esta obra se efectuara previamente a la ejecución de la perforación definitiva, etapa que formara parte de la factibilidad.            La profundidad máxima será de 80 metros, considerada a partir del nivel del terreno natural.         2º Metodología: Se perforara a rotación, en diámetro de 100mm. Se efectuará sin la adición de bentonita a la inyección.         3º Se extraerán muestras de terreno atravesado por cada metro de avance. No se admitirá el muestro por canaleta pero si directamente a la salida de boca de pozo.            Se extraerá una cantidad mínima de 1 kg. y serán embolsadas por duplicado        4º Las muestras serán embolsadas en plástico reforzado y rotuladas con una etiqueta donde conste: empresa, localidad, identificación de la obra, profundidad, fecha y hora.          5º Perfilaje geofísico: Se deberá asegurar la estabilidad de las paredes para que en el tiempo demandado por el desarmado de las barras de sondeo y ejecución completa de los registros geofísicos solicitados, no se produzcan desmoronamientos, disminución del diámetro ni de la profundidad total de la perforación.          Inmediatamente se efectuará el perfilaje con registro de radiación gamma natural y resistividad normal corta y larga. Los resultados del perfilaje permitirán ajustar los obtenidos en el cutting para el diseño del entubamiento.            Pozo de estudio         6º A cinco (5) metros del pozo de reconocimiento se realizara la perforación de estudio comenzando con un diámetro no inferior a 200mm, el extremo inferior quedara alojado en el estrato de baja permeabilidad.          7º El pozo de estudio se entubara con PVC reforzado clase 10 de 115 mm de diámetro exterior y junta enchufada para pegar en boca de pozo.         8º La cañería de entubamiento quedara fijada y cementada mediante lechada de cemento por su interior a presión de bomba desde abajo hacia arriba, con el empleo de una cañería auxiliar, rellenando como mínimo el espacio anular entre la pared de la perforación y la cañería de entubamiento una altura de 10m.           9º Sé pre-perforará por el interior de la camisa a fin de instalar el portafiltro de PVC reforzado de 2” de diámetro interior hasta introducir en forma de enchufe cuatro metros como mínimo dentro del caño de aislamiento y la columna filtrante de PVC reforzado de 2” de diámetro interior y longitud de 9 m.                                                                                                         7                                      MUNICIPALIDAD DE ARRECIFES       LICITACIÓN PÚBLICA Nº4/2021 | OBRA: EXPLORACIÓN Y PERFORACIÓN DE POZO DE AGUA POTABLE Nº25                                      NEXOS Y OBRAS COMPLEMENTARIAS           10º La sección filtrante anterior será rellenada exteriormente en toda su longitud mediante una pared de grava de granulometría adecuada, formando un pre-filtro con dicho material.        11º La perforación de estudio se limpiará y desarrollará utilizando una electrobomba sumergible, con un caudal mínimo de 20.000 l/h hasta obtener agua cristalina, libre de sólidos en suspensión. El bombeo tendrá una duración mínima de 24hs         12º Muestreo químico: Se extraerán dos muestras de agua del acuífero primario, uno a cargo de Obras Sanitarias y otro de la empresa.         Pozo Definitivo          A partir del diseño definido con los resultados obtenidos en el pozo de estudio y luego de confirmada la calidad del agua a partir de análisis efectuados a las muestras extraídas, se realizará el Pozo Definitivo dentro de un radio no mayor de 3 metros de donde se hicieron los pozos testigo y de estudio.         En un principio y de acuerdo a los antecedentes de los pozos existentes, las perforaciones definitivas responderán al siguiente esquema (con los ajustes que surjan de los pozos de estudio)         Se perforará hasta los 58 mbbp con un diámetro de 14”.         Se bajará cañería de aislación de 10” Se cementará el espacio anular con cemento inyectado de abajo hacia arriba y hasta el extremo superior de la cañería camisa.         Se reperforará por dentro con 10” hasta los 80 mbbp. aproximadamente.         A continuación se armará el tren de 12 metros de filtros de 4” de acero inoxidable de ranura continua de 1 mm, con cañería portafiltro de PVC tipo Fortilit roscada de 4”, la cual se extenderá hasta los 46 m.b.b.p. En el extremo inferior de los filtros se colocará un caño ciego y un tapón.         Desde el nivel de fondo y hasta 1 m por debajo del extremo de la cañería portafiltro se colocará un prefiltro de grava seleccionada de acuerdo a lo que surja del análisis granulométrico efectuado en la etapa del pozo de exploración.         Finalmente se procederá a limpiar, desarrollar, y realizar el ensayo de bombeo con extracción de muestras para análisis químico durante 48 horas.         El pozo se completa con la instalación de una electrobomba sumergible de 15 Hp (50 m3/h a 48 mca de altura manométrica), cañería de elevación de 4¨ de HºGº, tablero eléctrico con las protecciones correspondientes y una cámara que responderá a lo indicado en el plano adjunto. III.         Ejecución de cañerías de impulsión y cierres de mallas.        En los dos puntos anteriores se han descripto las obras necesarias para asegurar la producción de agua en cantidad suficiente para satisfacer la demanda de la ciudad.          A continuación, se describirán las obras proyectadas para asegurar la correcta distribución en los sectores identificados como más críticos en el análisis efectuado en el punto referido al diagnóstico del funcionamiento del sistema.                                                                                                     8                                     MUNICIPALIDAD DE ARRECIFES       LICITACIÓN PÚBLICA Nº4/2021 | OBRA: EXPLORACIÓN Y PERFORACIÓN DE POZO DE AGUA POTABLE Nº25                                      NEXOS Y OBRAS COMPLEMENTARIAS            La cañería de PVC clase 10 de 160 milímetros de diámetro, se unirá a la red existente de calle Bolivia, de igual diámetro.          La fuente de abastecimiento la constituye el acuífero PUELCHES. Es el acuífero más importante de la región por su calidad y buenos rendimientos. Las Arenas Puelches son arenas cuarzosas, maduras, prácticamente carentes de cemento, de colores amarillentos a grisáceos o blanquecinos, de grano fino a mediano, con intercalaciones de gravillas y rodados en sus niveles inferiores. Se encuentra a profundidades variables entre 40 m en las cercanías del Río Paraná, a más de 100 m en Pergamino, y 120 m en Junín. En el caso de Arrecifes se localizan a profundidades del orden de los 50 a 70 metros aproximadamente.        Los parámetros hidráulicos medios se pueden sintetizar en los siguientes valores: - Porosidad efectiva de hasta 20 %.         - Permeabilidad de hasta 25 m/d. - Transmisividad entre 300-500 m2/d.       - Coef. de Almacenamiento orden 10-3 e incluso 10-4 - Caudales Específicos más comunes: entre 3 y 11m3/h - Caudales obtenibles más comunes: entre 50 y 120 m3/h         - Caudales máximos sin garantías de sustentabilidad: hasta 200 m3/h         Desde el punto de vista hidroquímico, las aguas del Puelches son generalmente consideradas bicarbonatadas cálcicas-magnésicas sódicas y carbonato-cloruradas. La calidad química del Acuífero Puelches en la zona de estudio en términos generales es buena, con valores de residuo seco salino inferiores a los 500 mg/l.           ARTÍCULO 2: ALCANCE DE LOS TRABAJOS          La contratación comprende, además de la ejecución de las obras, servicios, tareas y documentación previstos en la Documentación Licitatoria, los trabajos que a continuación se enumeran: realización del proyecto ejecutivo, cálculo estructural que deberá ser aprobado por la oficina de Obras Públicas de la Municipalidad, provisión de materiales, equipos, herramientas, andamios, mano de obra y las tramitaciones y obtención de habilitaciones y permisos que corresponda efectuar ante organismos gubernamentales o del sector privado necesarios para la ejecución completa de la obra y su finalización.           ARTÍCULO 3: SISTEMA DE CONTRATACIÓN         La demolición, construcción, trabajos y/o servicios que se contraten según el presente pliego están sometidos al sistema por ajuste alzado bajo el régimen previsto por la Ley Nº13.064 y normativa aplicable, conforme el objeto de la presente Licitación Pública y lo especificado en el PCG.           ARTÍCULO 4: GLOSARIO         Siempre que en estos documentos se especifique \"MUNICIPALIDAD\" o \"MUNICIPIO\" se refiere a la Municipalidad de Arrecifes, \"INTENDENTE\" al señor Intendente Municipal de Arrecifes.                                                                                                     9                                     MUNICIPALIDAD DE ARRECIFES  LICITACIÓN PÚBLICA Nº4/2021 | OBRA: EXPLORACIÓN Y PERFORACIÓN DE POZO DE AGUA POTABLE Nº25                                 NEXOS Y OBRAS COMPLEMENTARIAS     1) COMITENTE: MUNICIPALIDAD DE ARRECIFES   2) LICITANTE: MUNICIPALIDAD DE ARRECIFES   3) DIRECCIÓN: DIRECCIÓN DE OBRAS PÚBLICAS de la MUNICIPALIDAD DE       ARRECIFES. Tiene a cargo el control de la fiel interpretación de los planos y de la       documentación técnica que forma parte del proyecto.   4) LICITACIÓN: es el procedimiento de selección del contratista destinado a la       ejecución de la obra denominada “EXPLORACIÓN Y PERFORACIÓN DE POZO DE       AGUA POTABLE Nº25, NEXOS Y OBRAS COMPLEMENTARIAS” en el predio de       Dominio municipal del Corralón Municipal, sito en el Barrio La Cumbre en la calle       Bolivia 1500, Nomenclatura Catastral CIRC. II / SECC. B / CH. 105 / MZ. 105J /       PARC. 7 al 14.   5) ACTA DE INICIO: es el documento suscripto entre el Comitente y el Contratista que       da inicio formal a la ejecución de la obra.   6) ADJUDICATARIO: el oferente al que se le ha comunicado la adjudicación de la obra       a su favor, hasta la firma del contrato.   7) ANÁLISIS DE PRECIOS: desarrollo de los componentes de la estructura que forman       parte del precio de cada ítem del presupuesto.   8) CIRCULAR CON CONSULTA: las contestaciones del Licitante a los pedidos de       aclaración formuladas con relación a la documentación licitatoria.   9) CIRCULAR SIN CONSULTA: las aclaraciones de oficio que el Licitante formule con       relación a la documentación licitatoria.   10) COMISIÓN EVALUADORA: es la que examina todas las propuestas recibidas y       aconseja la adjudicación de la propuesta más conveniente, y el rechazo de las que,       conforme al pliego, resulten inadmisibles.   11) CONTRATISTA: el adjudicatario después que ha firmado el contrato y sus       complementos.   12) DÍA/S: salvo indicación en contrario, se entenderán por días hábiles.   13) DÍA/S HÁBIL/ES: los días en que funcionan los servicios del comitente.   14) DOCUMENTACIÓN LICITATORIA: o Documentos de la Licitación. Está constituida       por el presente pliego, el Pliego de Bases y Condiciones Generales, el Pliego de       Especificaciones Técnicas., el juego completo de planos y planillas, la memoria       descriptiva y el",
-            "fecha_apertura": "2021-07-16",
-            "fecha_publicacion": null,
-            "vigencia": "VENCIDA",
-            "url": "https://arrecifes.gob.ar/wp-content/uploads/2024/02/licitacion_municipalidad_de_arrecifes_-_pozo_no25_1.pdf",
-            "evidencia_url": "https://arrecifes.gob.ar/wp-content/uploads/2024/02/licitacion_municipalidad_de_arrecifes_-_pozo_no25_1.pdf"
-          }
-        ]
+        "procedimientos_con_objeto": 0
       },
       "errores": [],
       "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123149-ed8a2f3d/0017.json"
@@ -16806,7 +16785,35 @@
       "titulo": "Boedo | Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma de Buenos ...",
       "descripcion": "Este barrio debe su nombre a Mariano Joaquín Boedo, prócer de la independencia argentina y diputado nacional por la provincia de Salta. Fue abogado y jurisconsulto.",
       "busqueda_url": "https://www.bing.com/search?q=%22San+Mart%C3%ADn%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
-      "fecha_descubrimiento": "2026-11-09T12:31:40.895731+00:00"
+      "fecha_descubrimiento": "2026-11-09T12:31:40.895731+00:00",
+      "ultima_revision": "2026-11-09T12:37:26.282648+00:00",
+      "version_verificador": 4,
+      "validacion": {
+        "estado": "PENDIENTE",
+        "identidad_verificada": false,
+        "identidad": {
+          "verificada": false,
+          "organismo": null,
+          "localidad": null,
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": false,
+          "jurisdiccion_publicada": false,
+          "url": "https://buenosaires.gob.ar/gcaba_historico/laciudad/boedo",
+          "sha256": "e4f509fc03af779314d947842aa242c9dc1e90f23d726d8666d1814c93d6e638",
+          "cabecera": "Boedo | Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma de Buenos Aires Boedo Ayudanos a mejorar",
+          "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+        },
+        "procedimientos_con_objeto": 0,
+        "fecha": "2026-11-09T12:38:06.880197+00:00",
+        "motivo": "Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste",
+        "ejemplos": []
+      },
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123728-513b9151/0005.json"
     },
     "cb1d789e9f00261c7ec2": {
       "clave": "departamento:Santa Fe:san martin",
@@ -16998,7 +17005,79 @@
       "evidencia_enlace": "https://salto.gob.ar/",
       "busqueda_url": "https://salto.gob.ar/",
       "fecha_descubrimiento": "2026-11-09T12:31:40.895731+00:00"
+    },
+    "contraste-a3f9e3471298c7424dfb": {
+      "tipo": "TERRITORIAL",
+      "organismo": "Comuna de María Teresa",
+      "localidad": "María Teresa",
+      "provincia": "Santa Fe",
+      "url": "https://mariateresa.gob.ar/",
+      "evidencia_descubrimiento": "https://mariateresa.gob.ar/",
+      "motivo_previo": "Menú institucional y aviso de 200 cajas navideñas, recepción 10/11/2026 11:00 observada externamente. Pendiente extracción nativa, no alta operativa.",
+      "id": "auto-contraste-a3f9e3471298c7424dfb",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T12:37:26.282648+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "ultima_revision": "2026-11-09T12:37:26.282648+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123728-513b9151/0001.json"
+    },
+    "contraste-2d703bf10ab48a9e1c95": {
+      "tipo": "TERRITORIAL",
+      "organismo": "Comuna de María Teresa",
+      "localidad": "María Teresa",
+      "provincia": "Santa Fe",
+      "url": "https://mariateresa.gob.ar/index.php?pagina=lista&sec=270",
+      "evidencia_descubrimiento": "https://mariateresa.gob.ar/",
+      "motivo_previo": "Menú institucional y aviso de 200 cajas navideñas, recepción 10/11/2026 11:00 observada externamente. Pendiente extracción nativa, no alta operativa.",
+      "id": "auto-contraste-2d703bf10ab48a9e1c95",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T12:37:26.282648+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Menú institucional y aviso de 200 cajas navideñas, recepción 10/11/2026 11:00 observada externamente. Pendiente extracción nativa, no alta operativa."
+      }
+    },
+    "contraste-7de28883923216c66958": {
+      "tipo": "TERRITORIAL",
+      "organismo": "Comuna de María Teresa",
+      "localidad": "María Teresa",
+      "provincia": "Santa Fe",
+      "url": "https://mariateresa.gob.ar/index.php?idp=859&pagina=detalle",
+      "evidencia_descubrimiento": "https://mariateresa.gob.ar/",
+      "motivo_previo": "Menú institucional y aviso de 200 cajas navideñas, recepción 10/11/2026 11:00 observada externamente. Pendiente extracción nativa, no alta operativa.",
+      "id": "auto-contraste-7de28883923216c66958",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-09T12:37:26.282648+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "ultima_revision": "2026-11-09T12:37:26.282648+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123728-513b9151/0000.json"
     }
   },
-  "ultima_ejecucion": "2026-11-09T12:31:40.895731+00:00"
+  "ultima_ejecucion": "2026-11-09T12:37:26.282648+00:00"
 }
