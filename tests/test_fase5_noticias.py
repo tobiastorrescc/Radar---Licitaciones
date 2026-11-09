@@ -66,3 +66,13 @@ class IdentidadEditorial(unittest.TestCase):
   from descubrimiento_noticias import noticia
   html='<article><h1>Acebal, nuestro lugar en el mundo</h1><p>La escuela convoca a concurso. La comuna realizó la compra de materiales.</p></article>'
   self.assertEqual(noticia(extractores.DOM(html),'https://acebal.gob.ar/acebal/'),[])
+
+class Cobertura(unittest.TestCase):
+ def test_localidad_sin_codigo_no_inventa_identificador_oficial(self):
+  from cobertura_territorial import generar
+  import tempfile,csv
+  from pathlib import Path
+  with tempfile.TemporaryDirectory() as d:
+   r=generar([],[],[],'2026-11-09T09:00:00-03:00',d,{'municipios':[{'provincia':'Santa Fe','localidad':'Prueba'}]})
+   self.assertEqual(r['Santa Fe']['localidades_identificadas'],1)
+   self.assertEqual(next(csv.DictReader(Path(d,'cobertura_territorial.csv').open()))['codigo_padron'],'')
