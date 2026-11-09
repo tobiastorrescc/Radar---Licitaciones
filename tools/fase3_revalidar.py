@@ -13,6 +13,14 @@ from tools.verificar_fuentes import ejecutar,guardar
 from tools.radar_controlado import fuentes_configuradas
 ROOT=Path('work/fase3/revalidacion')
 
+class ErrorObtencion(Exception):pass
+
+def error_documentado(e):
+    if isinstance(e,ErrorObtencion):
+        from urllib.error import URLError
+        return conectores.clasificar_error(URLError(str(e)),'DESCARGA')
+    return conectores.clasificar_error(e,'EXTRACCION')
+
 def obtener(url):
     cache=ROOT/'cache';cache.mkdir(parents=True,exist_ok=True);p=cache/sha256(url.encode()).hexdigest()
     with p.with_suffix('.lock').open('w') as lock:
@@ -20,7 +28,7 @@ def obtener(url):
         meta=p.with_suffix('.json')
         if meta.exists():
             m=json.load(open(meta))
-            if 'error' in m:raise ValueError(m['error'])
+            if 'error' in m:raise ErrorObtencion(m['error'])
             return p.with_suffix('.bin').read_bytes(),m
         if os.environ.get('FASE3_SIN_RED')=='1':raise ValueError('No hay captura reutilizable; no se repite consulta')
         start=time.monotonic()
@@ -28,7 +36,9 @@ def obtener(url):
             b,t,u,s=conectores.descargar(url,conexion_timeout=4,lectura_timeout=7,devolver_estado=True,max_bytes=8_000_000)
             m={'url_solicitada':url,'url':u,'http':s,'tipo':t,'bytes':len(b),'segundos':round(time.monotonic()-start,3),'sha256':sha256(b).hexdigest(),'fecha':datetime.now(o.ZONA).isoformat()}
             p.with_suffix('.bin').write_bytes(b);guardar(meta,m);return b,m
-        except Exception as e:guardar(meta,{'url':url,'error':str(e),'segundos':round(time.monotonic()-start,3)});raise
+        except Exception as e:
+            guardar(meta,{'url':url,'error':str(e),'segundos':round(time.monotonic()-start,3)})
+            raise ErrorObtencion(str(e)) from e
 
 def elegir(caso,rs):
     def score(r):
@@ -60,6 +70,8 @@ def worker(caso,path):
     if not r:
         guardar(path,{'estado':'PENDIENTE','finalizado':True,'paginas_correctas':1,'oportunidades':[],'errores':[{'tipo':'ProcedimientoNoIdentificado','timeout':False,'categoria':'EXTRACCION','error':'No se identificó inequívocamente el mismo procedimiento; no se heredan fechas de otra convocatoria'}],'caso_id':caso['caso_id'],'evidencias':evidencias});return
     r={**{k:caso.get(k) for k in ('organismo','localidad','provincia','fuente','caso_id')},**r,'observada_esta_corrida':True,'requiere_revalidacion':False,'evidencia_captura':m}
+    for k in ('organismo','localidad','provincia','fuente','caso_id'):
+        if not r.get(k):r[k]=caso.get(k)
     # En ediciones colectivas sólo el aviso identificado, nunca texto de otros avisos.
     texto_aviso=r.get('texto_documento') or r.get('objeto') or ''
     if len(rs)==1 and html: texto_aviso=texto
@@ -77,9 +89,13 @@ def worker(caso,path):
             bb,mm=obtener(u);evidencias.append(mm)
             import cache_documentos
             tt,cache=cache_documentos.leer_texto(bb,mm['tipo'],mm['url'],ocr=False)
-            r.update(clausula(tt,r,u,mm['sha256']))
+            for pagina,texto_pagina in enumerate(tt.split('\f'),1):
+                rc=clausula(texto_pagina,r,u,mm['sha256'])
+                if rc:
+                    rc['evidencia_recepcion']['pagina']=pagina
+                    r.update(rc);break
             r['pago_evidencias']=r.get('pago_evidencias',[])+pagos.extraer(tt,u,mm['sha256'],pdf=bb.startswith(b'%PDF-'))
-        except Exception as e:errors.append({**conectores.clasificar_error(e,'EXTRACCION'),'url':u})
+        except Exception as e:errors.append({**error_documentado(e),'url':u})
     if len(docs)>4:pendientes.extend({'url':d.get('url'),'motivo':'Cupo documental por pasada; no se declara completa'} for d in docs[4:])
     r=o.normalizar(r,ahora);r.update(presentacion(r,ahora));r['revalidacion_documental']={'caso_id':caso['caso_id'],'fecha':ahora,'evidencias':evidencias,'documentos_pendientes':pendientes,'errores':errors}
     guardar(path,{'estado':'PARCIAL' if errors or pendientes else 'OPERATIVA','finalizado':True,'paginas_correctas':len(evidencias),'oportunidades':[r],'errores':errors,'caso_id':caso['caso_id'],'evidencias':evidencias})
@@ -89,7 +105,7 @@ def main():
     if a.worker:
         caso=next(r for r in casos if r['caso_id']==a.worker)
         try:worker(caso,a.checkpoint)
-        except Exception as e:guardar(a.checkpoint,{'estado':'ERROR_ACCESO','finalizado':True,'paginas_correctas':0,'oportunidades':[],'errores':[conectores.clasificar_error(e,'DESCARGA')],'caso_id':a.worker})
+        except Exception as e:guardar(a.checkpoint,{'estado':'ERROR_ACCESO' if isinstance(e,ErrorObtencion) else 'ERROR_EXTRACCION','finalizado':True,'paginas_correctas':0,'oportunidades':[],'errores':[error_documentado(e)],'caso_id':a.worker})
         return
     ROOT.mkdir(parents=True,exist_ok=True)
     casos.sort(key=lambda r:r.get('fecha_apertura') or '9999')

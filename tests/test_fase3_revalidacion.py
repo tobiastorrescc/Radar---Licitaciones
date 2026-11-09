@@ -42,3 +42,23 @@ class SantaAnaReal(unittest.TestCase):
   self.assertEqual(r['vigencia'],'VENCIDA')
   self.assertIn('Pavimento Urbano',r['objeto'])
   self.assertFalse(presentacion(r,'2026-11-09T09:00:00-03:00')['presentacion_verificada'])
+
+class TrazabilidadRegresion(unittest.TestCase):
+ def test_fecha_con_puntos_no_se_convierte_en_hora(self):
+  r=clausula('Recepción de ofertas hasta el 12.11.2026 a las 09.30 hs.',{},'https://oficial')
+  self.assertEqual(r['fecha_limite_presentacion_texto'],'2026-11-12T09:30:00-03:00')
+ def test_errores_de_cache_siguen_siendo_red(self):
+  from tools.fase3_revalidar import error_documentado,ErrorObtencion
+  self.assertEqual(error_documentado(ErrorObtencion('timed out'))['categoria'],'RED')
+  self.assertEqual(error_documentado(ValueError('PDF no reconocido'))['categoria'],'EXTRACCION')
+ def test_ficha_sin_organismo_no_borra_identidad(self):
+  from unittest.mock import patch
+  from tools.fase3_revalidar import worker
+  from pathlib import Path
+  import tempfile,json
+  c={'organismo':'Municipalidad de Rosario','localidad':'Rosario','provincia':'Santa Fe','fuente':'https://www.rosario.gob.ar/inicio/compras-y-licitaciones','url':'https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/12345','caso_id':'prueba','objeto':'Compra de combustible','numero_procedimiento':'1/2026'}
+  raw={'organismo':None,'localidad':None,'provincia':None,'url':c['url'],'titulo':'Compra ágil 1/2026 Compra de combustible','objeto':c['objeto'],'numero_procedimiento':'1/2026','tipo_procedimiento':'compra agil','registro_estructurado':True}
+  import extractores
+  with tempfile.TemporaryDirectory() as tmp,patch('tools.fase3_revalidar.obtener',return_value=(b'<main>Compra de combustible</main>',{'tipo':'text/html','url':c['url'],'sha256':'abc'})),patch('tools.fase3_revalidar.extractores.extraer',return_value=([raw],[],extractores.DOM('<main>Compra de combustible</main>'))):
+   p=Path(tmp)/'r.json';worker(c,p);r=json.load(open(p))['oportunidades'][0]
+   self.assertEqual(r['organismo'],c['organismo']);self.assertEqual(r['provincia'],'Santa Fe')
