@@ -1,8 +1,8 @@
 {
-  "etapa": "verificar-compras-rojas-ejercicio-2026",
+  "etapa": "fase3-catalogo-completo-93-2026-11-09",
   "lotes": 4,
   "ids": [],
-  "candidatas": "inventario/control_rojas_fase2.json",
+  "candidatas": null,
   "diagnosticar_criticas": false,
-  "solo_candidatas": true
+  "solo_candidatas": false
 }
