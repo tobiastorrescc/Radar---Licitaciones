@@ -144,6 +144,12 @@ def boletin_entre_rios(texto,url):
             if re.search(r'\bID:\s*\d+',l):emitir(bloque);bloque=[]
             else:bloque.append(l)
     if activo:emitir(bloque)
+    # Enriquecer únicamente el aviso ya segmentado por ID editorial.
+    from presentacion_documental import clausula
+    import oportunidades as o
+    for r in registros:
+        r['texto_documento']=r['titulo']
+        r.update(clausula(r['texto_documento'],o.normalizar(r),url))
     return registros
 
 

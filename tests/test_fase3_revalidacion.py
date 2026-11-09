@@ -60,7 +60,7 @@ class TrazabilidadRegresion(unittest.TestCase):
   raw={'organismo':None,'localidad':None,'provincia':None,'url':c['url'],'titulo':'Compra ágil 1/2026 Compra de combustible','objeto':c['objeto'],'numero_procedimiento':'1/2026','tipo_procedimiento':'compra agil','registro_estructurado':True}
   import extractores
   with tempfile.TemporaryDirectory() as tmp,patch('tools.fase3_revalidar.obtener',return_value=(b'<main>Compra de combustible</main>',{'tipo':'text/html','url':c['url'],'sha256':'abc'})),patch('tools.fase3_revalidar.extractores.extraer',return_value=([raw],[],extractores.DOM('<main>Compra de combustible</main>'))):
-   p=Path(tmp)/'r.json';worker(c,p);r=json.load(open(p))['oportunidades'][0]
+   p=Path(tmp)/'r.json';worker(c,p);r=json.loads(p.read_text())['oportunidades'][0]
    self.assertEqual(r['organismo'],c['organismo']);self.assertEqual(r['provincia'],'Santa Fe')
 
 class RosarioRecepcionReal(unittest.TestCase):
@@ -73,3 +73,25 @@ class RosarioRecepcionReal(unittest.TestCase):
   self.assertIn('momento de la apertura',r['evidencia_recepcion']['cita'])
   self.assertTrue(presentacion(r,'2026-11-09T09:00:00-03:00')['presentacion_verificada'])
   self.assertFalse(presentacion(r,'2026-11-10T09:01:00-03:00')['presentacion_verificada'])
+
+class BoletinAislamiento(unittest.TestCase):
+ def test_fecha_de_recepcion_previa_a_hasta_no_hereda_apertura(self):
+  d=clausula('RECEPCIÓN DE PROPUESTAS: 18/11/2026 hasta las 10:59 hs. APERTURA DE OFERTAS: 20/11/2026 a las 11:00',{},'https://oficial')
+  self.assertEqual(d['fecha_limite_presentacion_texto'],'2026-11-18T10:59:00-03:00')
+ def test_aviso_judicial_no_hereda_recepcion_de_comuna(self):
+  from barrido_institucional import boletin_entre_rios
+  txt='''LICITACIONES
+PODER JUDICIAL DE ENTRE RÍOS
+Licitación Pública 14/2026
+Objeto: Construcción de juzgado. Apertura: 25/11/2026 a las 10:00.
+ID: 1
+COMUNA DE EL PALENQUE
+Licitación Pública 08/2026
+OBJETO: Compra de inmueble.
+RECEPCIÓN DE PROPUESTAS: 20/11/2026 hasta las 10:59 hs.
+APERTURA DE OFERTAS: 20/11/2026 a las 11:00.
+ID: 2
+'''
+  rs=boletin_entre_rios(txt,'https://www.entrerios.gov.ar/boletin/edicion.pdf');self.assertEqual(len(rs),2)
+  self.assertNotIn('fecha_limite_presentacion_texto',rs[0])
+  self.assertEqual(rs[1]['fecha_limite_presentacion_texto'],'2026-11-20T10:59:00-03:00')

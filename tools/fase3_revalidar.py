@@ -66,6 +66,8 @@ def worker(caso,path):
             rs=boletin_texto(texto,url,f)
     else:
         html=conectores.decodificar_html(b,tipo);rs,links,dom=extractores.extraer(html,url,{**f,'admitir_avisos_sin_numero':True});texto=dom.root.text
+    if b.startswith(b'%PDF-') and f.get('adaptador') in ('boletin-er','boletin-sf'):
+        rs=[{**r,'texto_documento':r.get('texto_documento') or r.get('titulo') or r.get('objeto')} for r in rs]
     rs=[o.normalizar(r,ahora) for r in rs];r=elegir(caso,rs)
     if not r:
         guardar(path,{'estado':'PENDIENTE','finalizado':True,'paginas_correctas':1,'oportunidades':[],'errores':[{'tipo':'ProcedimientoNoIdentificado','timeout':False,'categoria':'EXTRACCION','error':'No se identificó inequívocamente el mismo procedimiento; no se heredan fechas de otra convocatoria'}],'caso_id':caso['caso_id'],'evidencias':evidencias});return
@@ -76,12 +78,15 @@ def worker(caso,path):
     texto_aviso=r.get('texto_documento') or r.get('objeto') or ''
     if len(rs)==1 and html: texto_aviso=texto
     r.update(clausula(texto_aviso,r,url,m['sha256']))
+    if b.startswith(b'%PDF-') and f.get('adaptador') in ('boletin-er','boletin-sf'):
+        r['pago_evidencias']=pagos.extraer(texto_aviso,url,m['sha256'],pdf=False,metodo='AVISO_SEGMENTADO_SIN_PAGINA_INFERIDA')
     docs=r.get('documentos') or []
     if r.get('enlace_pliego') and not docs:docs=[{'url':r['enlace_pliego'],'titulo':'Pliego'}]
     pendientes=[]
     for d in docs[:4]:
         u=d.get('url')
         if not u:continue
+        if extractores.url_publica(u)==extractores.url_publica(caso['url']):continue # Ya se segmentó el documento colectivo; no volver a leerlo como pliego individual
         # Sólo enlaces publicados por la ficha oficial y hosts autorizados de la fuente.
         hosts={conectores._host(caso['url']),*(conectores._host('https://'+h) for h in f.get('dominios_documentos',[]))}
         if conectores._host(u) not in hosts:pendientes.append({'url':u,'motivo':'Dominio documental no validado en fuente'});continue
