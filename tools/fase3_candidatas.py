@@ -12,6 +12,8 @@ def main():
  for c in candidatas:
   if c['url'].rstrip('/') in conocidas:continue
   f={**c,'id':'fase3-'+str(len(fs)+1).zfill(3),'conector':'publicaciones','descubrir_contrataciones':True,'barrido_institucional':True,'indice_documentos':True,'priorizar_listados':True,'lectura_adjuntos':'necesarios','solo_descubrimiento':True,'ocr':False,'capturar_respuestas':True,'admitir_avisos_sin_numero':True,'conexion_timeout':4,'lectura_timeout':7}
+  for k in ('adaptador','descubrir_contrataciones','barrido_institucional','indice_documentos'):
+   if k in c:f[k]=c[k]
   fs.append(f)
  root=Path('work/fase3/candidatas');root.mkdir(parents=True,exist_ok=True)
  informe=ejecutar(fs,root/'auditoria.json',concurrencia=3,por_fuente=45,total=260)

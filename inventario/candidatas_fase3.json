@@ -9,7 +9,11 @@
       "evidencia_descubrimiento": {
         "metodo": "Consulta web oficial 9/11 UTC; todavía no extracción nativa validada",
         "url": "https://www.santaana.gob.ar/home/licitaciones/"
-      }
+      },
+      "adaptador": "santaana",
+      "descubrir_contrataciones": false,
+      "barrido_institucional": false,
+      "indice_documentos": false
     },
     {
       "organismo": "Comuna de Fighiera",

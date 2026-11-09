@@ -28,3 +28,17 @@ class RecepcionDocumental(unittest.TestCase):
   r=o.normalizar({'titulo':'Concurso de precios 1/2026 Combustible','url':'https://oficial','fecha_limite_presentacion_texto':'2026-11-09T08:00:00-03:00'},'2026-11-09T09:00:00-03:00')
   self.assertFalse(presentacion(r,'2026-11-09T09:00:00-03:00')['presentacion_verificada'])
 if __name__=='__main__':unittest.main()
+
+class SantaAnaReal(unittest.TestCase):
+ def test_separa_seis_llamados_y_no_asume_en_curso_como_vigente(self):
+  from pathlib import Path
+  import extractores
+  html=Path('tests/fixtures/fase3_santaana.html').read_text()
+  rs=extractores.extraer(html,'https://www.santaana.gob.ar/home/licitaciones/',{'adaptador':'santaana'})[0]
+  self.assertEqual(len(rs),6)
+  r=o.normalizar(rs[0],'2026-11-09T09:00:00-03:00')
+  self.assertEqual(r['fecha_apertura'],'2026-11-06')
+  self.assertEqual(r['numero_procedimiento'],'6/2026')
+  self.assertEqual(r['vigencia'],'VENCIDA')
+  self.assertIn('Pavimento Urbano',r['objeto'])
+  self.assertFalse(presentacion(r,'2026-11-09T09:00:00-03:00')['presentacion_verificada'])
