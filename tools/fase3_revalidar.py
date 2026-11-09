@@ -57,7 +57,7 @@ def worker(caso,path):
         html=conectores.decodificar_html(b,tipo);rs,links,dom=extractores.extraer(html,url,{**f,'admitir_avisos_sin_numero':True});texto=dom.root.text
     rs=[o.normalizar(r,ahora) for r in rs];r=elegir(caso,rs)
     if not r:
-        guardar(path,{'estado':'PENDIENTE','finalizado':True,'paginas_correctas':1,'oportunidades':[],'errores':[{'categoria':'EXTRACCION','error':'No se identificó inequívocamente el mismo procedimiento; no se heredan fechas de otra convocatoria'}],'caso_id':caso['caso_id'],'evidencias':evidencias});return
+        guardar(path,{'estado':'PENDIENTE','finalizado':True,'paginas_correctas':1,'oportunidades':[],'errores':[{'tipo':'ProcedimientoNoIdentificado','timeout':False,'categoria':'EXTRACCION','error':'No se identificó inequívocamente el mismo procedimiento; no se heredan fechas de otra convocatoria'}],'caso_id':caso['caso_id'],'evidencias':evidencias});return
     r={**caso,**r,'observada_esta_corrida':True,'requiere_revalidacion':False,'evidencia_captura':m}
     # En ediciones colectivas sólo el aviso identificado, nunca texto de otros avisos.
     texto_aviso=r.get('texto_documento') or r.get('objeto') or ''
@@ -78,7 +78,7 @@ def worker(caso,path):
             tt,cache=cache_documentos.leer_texto(bb,mm['tipo'],mm['url'],ocr=False)
             r.update(clausula(tt,r,u,mm['sha256']))
             r['pago_evidencias']=r.get('pago_evidencias',[])+pagos.extraer(tt,u,mm['sha256'],pdf=bb.startswith(b'%PDF-'))
-        except Exception as e:errors.append({'categoria':'DOCUMENTO','url':u,'error':str(e)})
+        except Exception as e:errors.append({**conectores.clasificar_error(e,'EXTRACCION'),'url':u})
     if len(docs)>4:pendientes.extend({'url':d.get('url'),'motivo':'Cupo documental por pasada; no se declara completa'} for d in docs[4:])
     r=o.normalizar(r,ahora);r.update(presentacion(r,ahora));r['revalidacion_documental']={'caso_id':caso['caso_id'],'fecha':ahora,'evidencias':evidencias,'documentos_pendientes':pendientes,'errores':errors}
     guardar(path,{'estado':'PARCIAL' if errors or pendientes else 'OPERATIVA','finalizado':True,'paginas_correctas':len(evidencias),'oportunidades':[r],'errores':errors,'caso_id':caso['caso_id'],'evidencias':evidencias})

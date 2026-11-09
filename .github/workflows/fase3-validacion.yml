@@ -30,7 +30,19 @@ jobs:
           if ! command -v pdftotext; then
             sudo apt-get -o Acquire::Retries=0 -o Acquire::http::Timeout=8 install -y --no-install-recommends poppler-utils
           fi
+      - name: Leer tareas autorizadas por el plan aislado
+        id: plan
+        env:
+          TAREA: ${{ matrix.tarea }}
+        run: |
+          python - <<'PYPLAN'
+          import json,os
+          p=json.load(open('tools/plan_fase3.json'))
+          with open(os.environ['GITHUB_OUTPUT'],'a') as out:
+              out.write('ejecutar='+str(os.environ['TAREA'] in p.get('tareas',['revalidar','criticas','candidatas'])).lower()+'\n')
+          PYPLAN
       - name: Ejecutar revisión con plazos y resultados parciales
+        if: steps.plan.outputs.ejecutar == 'true'
         run: python -u tools/fase3_${{ matrix.tarea }}.py
       - uses: actions/upload-artifact@v4
         if: always()
