@@ -1,0 +1,26 @@
+import unittest
+from descubrimiento_territorial import departamentos,resultado_pertinente,alcance_ba,ventanas
+from tools.descubrir_fuentes import plan_busquedas
+class DescubrimientoFase4(unittest.TestCase):
+ def test_no_validar_otro_municipio_por_resultado_generico(self):
+  q={'tipo':'TERRITORIAL','localidad':'Bombal','provincia':'Santa Fe'}
+  self.assertFalse(resultado_pertinente({'titulo':'Registro Civil Entre Ríos'},q))
+  self.assertTrue(resultado_pertinente({'titulo':'Comuna de Bombal - concursos'},q))
+ def test_menu_oficial_no_requiere_repetir_localidad_en_enlace(self):
+  self.assertTrue(resultado_pertinente({'titulo':'Compras'},{'tipo':'TERRITORIAL','localidad':'Bombal','metodo':'ENLACES_OFICIALES'}))
+ def test_19_departamentos_son_consultas_no_fuentes_inventadas(self):
+  ds=departamentos();self.assertEqual(len(ds),19);self.assertEqual(len({d['clave'] for d in ds}),19);self.assertTrue(all('url' not in d for d in ds))
+ def test_rotacion_2_sf_1_er_1_ba_y_persistencia(self):
+  qs=[{'clave':str(i),'provincia':p} for i,p in enumerate(['Santa Fe']*4+['Entre Ríos']*2+['Buenos Aires']*2)]
+  r=plan_busquedas(qs,{},4);self.assertEqual([q['provincia'] for q in r],['Santa Fe','Santa Fe','Entre Ríos','Buenos Aires'])
+  st={'busquedas':{q['clave']:'2026-11-09' for q in r}}
+  self.assertTrue(not any(q in r for q in plan_busquedas(qs,st,4)))
+ def test_ba_geodesica_no_sustituye_distancia_vial(self):
+  p={'municipios':[{'provincia':'Buenos Aires','localidad':'Localidad lejana','centroide':{'lat':-34,'lon':-60},'distancia_geodesica_rosario_km':250}]}
+  self.assertFalse(alcance_ba({'provincia':'Buenos Aires','localidad':'Localidad lejana'},p)['verificado'])
+  self.assertTrue(alcance_ba({'provincia':'Buenos Aires','localidad':'Ramallo'})['verificado'])
+ def test_publicacion_desconocida_y_fecha_sin_hora(self):
+  self.assertFalse(ventanas(None,'2026-11-09T10:00:00-03:00')['72h'])
+  r=ventanas('2026-11-08','2026-11-09T10:00:00-03:00');self.assertTrue(r['24h']);self.assertEqual(r['precision'],'DIA_CALENDARIO_SIN_HORA')
+  self.assertFalse(ventanas('2026-11-10','2026-11-09T10:00:00-03:00')['72h'])
+if __name__=='__main__':unittest.main()

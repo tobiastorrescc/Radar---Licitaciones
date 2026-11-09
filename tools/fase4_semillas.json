@@ -1,0 +1,159 @@
+{
+  "candidatos": [
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de El Trébol",
+      "localidad": "El Trébol",
+      "provincia": "Santa Fe",
+      "url": "https://eltrebol.gov.ar/licitaciones-y-contrataciones/",
+      "evidencia_descubrimiento": "https://eltrebol.gov.ar/licitaciones-y-contrataciones/",
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de El Trébol",
+      "localidad": "El Trébol",
+      "provincia": "Santa Fe",
+      "url": "https://eltrebol.gov.ar/tipo_licitaciones/licitacion-publica/",
+      "evidencia_descubrimiento": "https://eltrebol.gov.ar/tipo_licitaciones/licitacion-publica/",
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Ceres",
+      "localidad": "Ceres",
+      "provincia": "Santa Fe",
+      "url": "https://ceres.gob.ar/compras/",
+      "evidencia_descubrimiento": "https://ceres.gob.ar/compras/",
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Esperanza",
+      "localidad": "Esperanza",
+      "provincia": "Santa Fe",
+      "url": "https://esperanza.gob.ar/secretaria-de-hacienda/",
+      "evidencia_descubrimiento": "https://esperanza.gob.ar/secretaria-de-hacienda/",
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Firmat",
+      "localidad": "Firmat",
+      "provincia": "Santa Fe",
+      "url": "https://firmat.gob.ar/",
+      "evidencia_descubrimiento": "https://firmat.gob.ar/",
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Villa Ocampo",
+      "localidad": "Villa Ocampo",
+      "provincia": "Santa Fe",
+      "url": "https://www.villaocampo.gob.ar/mi-villa-ocampo/boletin-oficial/licitaciones.html",
+      "evidencia_descubrimiento": "https://www.villaocampo.gob.ar/mi-villa-ocampo/boletin-oficial/licitaciones.html",
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de San Carlos Centro",
+      "localidad": "San Carlos Centro",
+      "provincia": "Santa Fe",
+      "url": "https://www.sancarloscentro.com/licitaciones",
+      "evidencia_descubrimiento": "https://www.sancarloscentro.com/licitaciones",
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Larroque",
+      "localidad": "Larroque",
+      "provincia": "Entre Ríos",
+      "url": "https://www.larroque.gob.ar/licitaciones",
+      "evidencia_descubrimiento": "https://www.larroque.gob.ar/licitaciones",
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Larroque",
+      "localidad": "Larroque",
+      "provincia": "Entre Ríos",
+      "url": "https://www.larroque.gob.ar/licitaciones_privadas",
+      "evidencia_descubrimiento": "https://www.larroque.gob.ar/licitaciones_privadas",
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Larroque",
+      "localidad": "Larroque",
+      "provincia": "Entre Ríos",
+      "url": "https://www.larroque.gob.ar/concursos",
+      "evidencia_descubrimiento": "https://www.larroque.gob.ar/concursos",
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Urdinarrain",
+      "localidad": "Urdinarrain",
+      "provincia": "Entre Ríos",
+      "url": "https://transparencia.urdinarrain.gov.ar/dashboard",
+      "evidencia_descubrimiento": "https://transparencia.urdinarrain.gov.ar/dashboard",
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Ibicuy",
+      "localidad": "Ibicuy",
+      "provincia": "Entre Ríos",
+      "url": "https://www.ibicuy.gob.ar/?q=tags%2Flicitaciones",
+      "evidencia_descubrimiento": "https://www.ibicuy.gob.ar/?q=tags%2Flicitaciones",
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Santa Elena",
+      "localidad": "Santa Elena",
+      "provincia": "Entre Ríos",
+      "url": "https://www.santaelenaciudad.com.ar/tipo/licitaciones-publicas/",
+      "evidencia_descubrimiento": "https://www.santaelenaciudad.com.ar/tipo/licitaciones-publicas/",
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Baradero",
+      "localidad": "Baradero",
+      "provincia": "Buenos Aires",
+      "url": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica",
+      "evidencia_descubrimiento": "https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones/Publica",
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Baradero",
+      "localidad": "Baradero",
+      "provincia": "Buenos Aires",
+      "url": "https://gobiernoabierto.baradero.gob.ar/decretos-y-ordenanzas",
+      "evidencia_descubrimiento": "https://gobiernoabierto.baradero.gob.ar/decretos-y-ordenanzas",
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+    },
+    {
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de San Antonio de Areco",
+      "localidad": "San Antonio de Areco",
+      "provincia": "Buenos Aires",
+      "url": "https://areco.ar/category/licitaciones/",
+      "evidencia_descubrimiento": "https://areco.ar/category/licitaciones/",
+      "motivo_previo": "Ruta observada en consulta web oficial; pendiente prueba nativa. No se presume operativa ni vigencia."
+    },
+    {
+      "tipo": "SECTORIAL",
+      "organismo": "Ministerio de Infraestructura y Servicios Públicos de Buenos Aires",
+      "provincia": "Buenos Aires",
+      "localidad": null,
+      "url": "https://www.minfra.gba.gob.ar/licitacionesV2/",
+      "evidencia_descubrimiento": "https://www.minfra.gba.gob.ar/licitacionesV2/",
+      "motivo_previo": "Requiere filtro municipal dentro del alcance; sin alta automática sectorial genérica."
+    }
+  ],
+  "fecha": "2026-11-09",
+  "alta_automatica_solo_tras_validacion": true
+}

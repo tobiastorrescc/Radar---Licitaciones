@@ -1,0 +1,69 @@
+name: Fase 4 descubrimiento territorial prioritario
+on:
+  push:
+    branches: [mejora/radar-auditable]
+    paths: [tools/plan_fase4.json]
+permissions:
+  contents: read
+concurrency:
+  group: descubrimiento-mejora/radar-auditable
+  cancel-in-progress: false
+jobs:
+  descubrir:
+    if: github.ref == 'refs/heads/mejora/radar-auditable'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reutilizar PDF nativo sin OCR
+        timeout-minutes: 2
+        run: |
+          if ! command -v pdftotext; then sudo apt-get -o Acquire::Retries=0 -o Acquire::http::Timeout=8 install -y --no-install-recommends poppler-utils; fi
+      - name: Descubrir y verificar sin revalidación secundaria
+        run: python -u tools/fase4_descubrir.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fase4-descubrimiento-${{ github.run_id }}
+          path: |
+            work/fase4/descubrimiento/
+            inventario/fuentes_auto.json
+            inventario/descubrimiento_estado.json
+          retention-days: 90
+      - name: Persistir solamente la cola y las altas verificadas en la rama del PR
+        run: |
+          test "$GITHUB_REF" = 'refs/heads/mejora/radar-auditable'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add inventario/fuentes_auto.json inventario/descubrimiento_estado.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Persistir descubrimiento Fase 4 sin tocar producción [skip ci]'
+            git pull --rebase origin mejora/radar-auditable
+            git push origin HEAD:mejora/radar-auditable
+          fi
+  revalidar:
+    if: github.ref == 'refs/heads/mejora/radar-auditable'
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reutilizar PDF nativo sin OCR
+        timeout-minutes: 2
+        run: |
+          if ! command -v pdftotext; then sudo apt-get -o Acquire::Retries=0 -o Acquire::http::Timeout=8 install -y --no-install-recommends poppler-utils; fi
+      - name: Revalidación secundaria con presupuesto propio
+        run: python -u tools/fase4_revalidar.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fase4-revalidacion-${{ github.run_id }}
+          path: work/fase4/revalidacion/
+          retention-days: 90

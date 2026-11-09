@@ -19,6 +19,7 @@ import conectores
 import extractores
 import oportunidades as o
 from registro_fuentes import cargar_auto
+from descubrimiento_territorial import resultado_pertinente,alcance_ba,departamentos
 from tools.verificar_fuentes import ejecutar,guardar
 
 SECTORES=('(hospital OR SAMCo)','(universidad nacional OR universidad provincial)','(empresa pública OR ente descentralizado OR puerto OR vialidad)')
@@ -32,7 +33,7 @@ def oficial(url):
 
 def rss(datos):
     root=ET.fromstring(datos)
-    return [{'url':u,'titulo':i.findtext('title') or ''} for i in root.findall('.//item')
+    return [{'url':u,'titulo':i.findtext('title') or '', 'descripcion':i.findtext('description') or ''} for i in root.findall('.//item')
             if (u:=extractores.url_publica(i.findtext('link') or '')) and oficial(u)]
 
 def resultados_html(html,base):
@@ -108,9 +109,10 @@ def verificar_identidad(html,url,candidato):
     # El radio BA no se infiere de una mera mención provincial en un organismo.
     alcance=candidato.get('tipo')=='TERRITORIAL' or candidato['provincia']!='Buenos Aires'
     publico=host(url).endswith(('.gob.ar','.gov.ar')) or bool(re.search(r'universidad (?:nacional|provincial)',o.norm(organismo)))
-    valida=oficial(url) and publico and nombre and jurisdiccion and alcance
+    ubicacion=alcance_ba(candidato)
+    valida=oficial(url) and publico and nombre and jurisdiccion and alcance and ubicacion['verificado']
     return {'verificada':valida,'organismo':organismo,'localidad':localidad,
-        'dominio_oficial':oficial(url),'nombre_publicado':nombre,'jurisdiccion_publicada':jurisdiccion,
+        'ubicacion':ubicacion,'dominio_oficial':oficial(url),'nombre_publicado':nombre,'jurisdiccion_publicada':jurisdiccion,
         'url':url,'sha256':sha256(html.encode()).hexdigest(),'cabecera':cabeceras[:1000],
         'motivo':None if valida else 'Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste'}
 
@@ -129,20 +131,33 @@ def worker(entrada,salida):
         if host(url)!=host(final):raise ValueError('Redirección a otro dominio: requiere contraste independiente')
         if 'html' not in tipo:raise ValueError('La identidad requiere una página HTML oficial; PDF aislado queda pendiente')
         html=conectores.decodificar_html(datos,tipo)
+        Path(salida).with_suffix('.oficial.html').write_text(html)
+        if c.get('tipo')=='DEPARTAMENTAL':
+            cab=' '.join(n.text for n in extractores.DOM(html).root.iter() if n.tag in ('title','h1','h2'))
+            padron=json.loads(Path('inventario/territorio.json').read_text())
+            nombres={m['localidad'] for m in padron['municipios'] if m['provincia']==c['provincia'] and re.search(r'\b(?:municipalidad|municipio|comuna|ciudad)(?:\s+de)?\s+'+re.escape(o.norm(m['localidad']))+r'\b',o.norm(cab))}
+            if len(nombres)==1:c={**c,'tipo':'TERRITORIAL','localidad':next(iter(nombres)),'organismo':'Municipalidad de '+next(iter(nombres))}
         identidad=verificar_identidad(html,final,c)
         if not identidad['verificada']:
             guardar(salida,{'estado':'PENDIENTE','finalizado':True,'validacion':aceptacion({},identidad),'oportunidades':[]});return
         config={'organismo':identidad['organismo'],'localidad':identidad['localidad'],'provincia':c['provincia'],
-            'conector':'publicaciones','descubrir_menu':True,'descubrir_contrataciones':True,'barrido_institucional':True,'buscador_institucional':True,'solo_descubrimiento':True,'lectura_adjuntos':'necesarios','ocr':False,'admitir_avisos_sin_numero':True}
+            'conector':'publicaciones','descubrir_menu':True,'descubrir_contrataciones':True,'barrido_institucional':True,'buscador_institucional':True,'solo_descubrimiento':True,'lectura_adjuntos':'necesarios','ocr':False,'admitir_avisos_sin_numero':True,'capturar_respuestas':True}
         inicial={url:(datos,tipo,final)}
+        def capturar(u,respuesta):
+            b,t,f=respuesta
+            if 'html' in t:
+                root=Path(salida).parent/'capturas'/c['id'];root.mkdir(parents=True,exist_ok=True);key=sha256(u.encode()).hexdigest()
+                (root/(key+'.txt')).write_text(conectores.decodificar_html(b,t))
+                guardar(root/(key+'.json'),{'url':f,'url_solicitada':u,'sha256':sha256(b).hexdigest(),'bytes':len(b),'tipo':t,'fecha':datetime.now(timezone.utc).isoformat()})
+            return respuesta
         def fetch(u,datos_post=None):
-            if u in inicial:return inicial.pop(u)
+            if u in inicial:return capturar(u,inicial.pop(u))
             import cache_documentos
             from functools import partial
             transporte=partial(conectores.descargar,conexion_timeout=4,lectura_timeout=6)
-            if datos_post is not None:return transporte(u,datos_post=datos_post)
+            if datos_post is not None:return capturar(u,transporte(u,datos_post=datos_post))
             if urlparse(u).path.lower().endswith(extractores.ADJUNTOS):return cache_documentos.obtener(u,transport=transporte)[:3]
-            return transporte(u)
+            return capturar(u,transporte(u))
         def progreso(r):guardar(salida,{**r,'identidad':identidad,'config':config,'finalizado':False})
         resultado=conectores.explorar(url,config,fetch=fetch,progreso=progreso)
         guardar(salida,{**resultado,'config':config,'validacion':aceptacion(resultado,identidad),'finalizado':True})
@@ -176,7 +191,13 @@ def worker_busqueda(entrada,salida):
 
 def plan_busquedas(obj,estado,limite):
     hechos=estado.setdefault('busquedas',{})
-    return sorted(obj,key=lambda q:hechos.get(q['clave'],''))[:limite]
+    ordenados=sorted(obj,key=lambda q:hechos.get(q['clave'],''))
+    if not all(q.get('provincia') in PROVINCIAS for q in ordenados):return ordenados[:limite]
+    grupos={p:[q for q in ordenados if q['provincia']==p] for p in PROVINCIAS};salida=[]
+    while len(salida)<limite and any(grupos.values()):
+        for p in ('Santa Fe','Santa Fe','Entre Ríos','Buenos Aires'):
+            if grupos[p] and len(salida)<limite:salida.append(grupos[p].pop(0))
+    return salida
 
 def contar_portales(candidatos):
     """Un URL puede aparecer en varias búsquedas: conservar evidencia, contar una vez."""
@@ -189,6 +210,7 @@ def contar_portales(candidatos):
 def seleccionar_validaciones(candidatos,existentes,auto,limite,revisar_pendientes=False,priorizar_urls=()):
     por_url={}
     for c in candidatos:
+        if c.get('busqueda_url') and not resultado_pertinente(c,c):continue
         if c['url'] in existentes and c['url'] not in auto:continue
         vencida=c.get('version_verificador')!=4 or not c.get('ultima_revision') or datetime.fromisoformat(c['ultima_revision'])<datetime.now(timezone.utc)-timedelta(days=7)
         forzada=revisar_pendientes and c['url'] not in auto and c.get('validacion',{}).get('estado')!='VALIDADA'
@@ -207,7 +229,7 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_
     existentes={f['url'] for f in fs if f.get('incorporada')}|set(auto)
     fecha=datetime.now(timezone.utc).isoformat();errores=[];descubiertos=set();nuevos=[]
     padron=json.loads(Path('inventario/territorio.json').read_text())
-    consultas=plan_busquedas(objetivos(padron,fs),estado,busquedas)
+    consultas=plan_busquedas(departamentos()+objetivos(padron,fs),estado,busquedas)
     def persistir():guardar(estado_path,estado);guardar(raiz/'estado.json',estado)
     entradas_busqueda=raiz/'consultas';entradas_busqueda.mkdir(exist_ok=True)
     trabajos=[]
@@ -224,6 +246,7 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_
         resultados=r.get('resultados',[])
         if obs['estado']=='OPERATIVA':
             for r in resultados:
+                if not resultado_pertinente(r,q):continue
                 if r['url'] in existentes:continue
                 key=sha256((r['url']+'|'+q['clave']).encode()).hexdigest()[:20]
                 c={**q,**r,'id':'auto-'+key,'busqueda_url':url,'fecha_descubrimiento':fecha}
@@ -243,7 +266,7 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_
         estado['candidatos'].setdefault(key,{**f,'tipo':'TERRITORIAL' if o.norm(f['organismo']).startswith(('municipalidad','comuna')) else 'SECTORIAL','id':'auto-'+key,'clave':key,'origen':'INVENTARIO_PREVIO','fecha_descubrimiento':fecha})
     # Semillas descubiertas por investigación del agente: nunca se promueven sin
     # pasar la misma verificación de identidad, jurisdicción y publicaciones.
-    for semillas_path in (Path('inventario/candidatas_sectoriales.json'),Path('inventario/candidatas_historia.json')):
+    for semillas_path in (Path('inventario/candidatas_sectoriales.json'),Path('inventario/candidatas_historia.json'),Path('tools/fase4_semillas.json')):
         if semillas_path.exists():
             for c in json.loads(semillas_path.read_text()).get('candidatos',[]):
                 key='contraste-'+sha256((c['url']+'|'+c['organismo']).encode()).hexdigest()[:20]
