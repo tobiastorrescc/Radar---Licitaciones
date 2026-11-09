@@ -1,0 +1,40 @@
+name: Fase 3 revalidación documental y fuentes aisladas
+on:
+  push:
+    branches: [mejora/radar-auditable]
+    paths: [tools/plan_fase3.json]
+permissions:
+  contents: read
+concurrency:
+  group: fase3-validacion-aislada
+  cancel-in-progress: false
+jobs:
+  revisar:
+    if: github.ref == 'refs/heads/mejora/radar-auditable'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        tarea: [revalidar, criticas, candidatas]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reutilizar extracción PDF nativa, sin OCR
+        timeout-minutes: 2
+        continue-on-error: true
+        run: |
+          if ! command -v pdftotext; then
+            sudo apt-get -o Acquire::Retries=0 -o Acquire::http::Timeout=8 install -y --no-install-recommends poppler-utils
+          fi
+      - name: Ejecutar revisión con plazos y resultados parciales
+        run: python -u tools/fase3_${{ matrix.tarea }}.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fase3-${{ github.run_id }}-${{ matrix.tarea }}
+          path: work/fase3/
+          retention-days: 90
