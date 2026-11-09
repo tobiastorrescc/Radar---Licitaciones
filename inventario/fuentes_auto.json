@@ -512,6 +512,666 @@
         ]
       },
       "origen_busqueda": "https://carmendeareco.gob.ar/transparencia/"
+    },
+    {
+      "id": "auto-ec418adcca664bb082e9",
+      "url": "https://www.municipalidadcolonpba.gob.ar/boletin.php",
+      "config": {
+        "organismo": "Municipalidad de Colón",
+        "localidad": "Colón",
+        "provincia": "Buenos Aires",
+        "conector": "publicaciones",
+        "descubrir_menu": true,
+        "descubrir_contrataciones": true,
+        "barrido_institucional": true,
+        "buscador_institucional": true,
+        "solo_descubrimiento": true,
+        "lectura_adjuntos": "necesarios",
+        "ocr": false,
+        "admitir_avisos_sin_numero": true
+      },
+      "validacion": {
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Colón",
+          "localidad": "Colón",
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://www.municipalidadcolonpba.gob.ar/boletin.php",
+          "sha256": "db560edd0bdfd4362a5c43a301077ccd7c34469c8447020ec9feab5d9b5ae3af",
+          "cabecera": "Municipio de Colón PBA BOLETIN OFICIAL",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 57,
+        "fecha": "2026-11-09T12:01:34.612055+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "12/2026",
+            "objeto": "Licitación Pública N° 12/2026 Fecha de publicación: miércoles 04/11/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-11-04",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "9/2026",
+            "objeto": "Licitación Pública N° 9/2026 Segundo llamado Fecha de publicación: viernes 30/10/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-10-30",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "11/2026",
+            "objeto": "Licitación Pública N° 11/2026 Fecha de publicación: lunes 19/10/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-10-19",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "10/2026",
+            "objeto": "Licitación Pública N° 10/2026 Fecha de publicación: viernes 25/09/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-09-25",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "9/2026",
+            "objeto": "Licitación Pública N° 9/2026 Fecha de publicación: jueves 17/09/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-09-17",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "8/2026",
+            "objeto": "Licitación Pública N° 8/2026 Fecha de publicación: viernes 11/09/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-09-11",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "7/2026",
+            "objeto": "Licitación Pública N° 7/2026 Fecha de publicación: lunes 10/08/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-08-10",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "6/2026",
+            "objeto": "Licitación Pública N° 6/2026 Fecha de publicación: lunes 20/07/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-07-20",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "5/2026",
+            "objeto": "Licitación Pública N° 5/2026 Fecha de publicación: viernes 17/04/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-04-17",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "4/2026",
+            "objeto": "Licitación Pública N° 4/2026 Fecha de publicación: viernes 17/04/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-04-17",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "3/2026",
+            "objeto": "Licitación Pública N° 3/2026 Fecha de publicación: viernes 17/04/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-04-17",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "2/2026",
+            "objeto": "Licitación Pública N° 2/2026 Fecha de publicación: viernes 17/04/2026",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2026-04-17",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "11/2025",
+            "objeto": "Licitación Pública 11/2025 Fecha de publicación: jueves 23/10/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-10-23",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "10/2025",
+            "objeto": "Licitación Pública 10/2025 Fecha de publicación: jueves 21/08/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-08-21",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "9/2025",
+            "objeto": "Licitación Pública 9/2025 Fecha de publicación: viernes 08/08/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-08-08",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "8/2025",
+            "objeto": "Licitación Pública 8/2025 Fecha de publicación: miércoles 16/07/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-07-16",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "7/2025",
+            "objeto": "Licitación Pública 7/2025 Fecha de publicación: martes 24/06/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-06-24",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "6/2025",
+            "objeto": "Licitación Pública 6/2025 Fecha de publicación: viernes 06/06/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-06-06",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "5/2025",
+            "objeto": "Licitación Pública 5/2025 Fecha de publicación: martes 03/06/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-06-03",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "3/2025",
+            "objeto": "Licitación Pública 3/2025 Fecha de publicación: lunes 02/06/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-06-02",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "4/2025",
+            "objeto": "Licitación Pública 4/2025 Fecha de publicación: martes 06/05/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-05-06",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "2/2025",
+            "objeto": "Licitación Pública 2/2025 Fecha de publicación: viernes 14/02/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-02-14",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "1/2025",
+            "objeto": "Licitación Pública 1/2025 Fecha de publicación: lunes 13/01/2025",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2025-01-13",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "6/2024",
+            "objeto": "Licitación Pública 6/2024 Fecha de publicación: miércoles 06/11/2024",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2024-11-06",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "5/2024",
+            "objeto": "Licitación Pública 5/2024 Fecha de publicación: martes 10/09/2024",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2024-09-10",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "4/2024",
+            "objeto": "Licitación Pública 4/2024 Fecha de publicación: lunes 09/09/2024",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2024-09-09",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "3/2024",
+            "objeto": "Licitación Pública 3/2024 Fecha de publicación: martes 04/06/2024",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2024-06-04",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "1/2024",
+            "objeto": "Licitación Pública 1/2024 Fecha de publicación: viernes 19/04/2024",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2024-04-19",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "2/2024",
+            "objeto": "Licitación Pública 2/2024 Fecha de publicación: viernes 19/04/2024",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2024-04-19",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "13/2023",
+            "objeto": "EDICTO LICITACION PUBLICA 13/2023 Fecha de publicación: miércoles 11/10/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-10-11",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "10/2023",
+            "objeto": "Licitación Pública 10/2023 - Segundo llamado Fecha de publicación: martes 11/07/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-07-11",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "12/2023",
+            "objeto": "Licitación Pública 12/2023 Fecha de publicación: martes 04/07/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-07-04",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "11/2023",
+            "objeto": "Licitación Pública 11/2023 Fecha de publicación: martes 30/05/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-05-30",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "9/2023",
+            "objeto": "Licitación Pública 9/2023 Fecha de publicación: viernes 02/05/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-05-02",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "10/2023",
+            "objeto": "Licitación Pública 10/2023 Fecha de publicación: viernes 02/05/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-05-02",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "5/2023",
+            "objeto": "Licitación Pública 5/2023 Segundo llamado Fecha de publicación: martes 02/05/2023 hasta el martes 09/05/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-05-02",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "8/2023",
+            "objeto": "Licitación Pública 8/2023 Fecha de publicación: jueves 27/04/2023 hasta el jueves 04/05/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-04-27",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "6/2023",
+            "objeto": "Licitación Pública 6/2023 Fecha de publicación: miércoles 05/04/2023 hasta el viernes 14/04/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-04-05",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "7/2023",
+            "objeto": "Licitación Pública 7/2023 Fecha de publicación: miércoles 05/04/2023 hasta el viernes 14/04/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-04-05",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "5/2023",
+            "objeto": "Licitación Pública 5/2023 Fecha de publicación: jueves 23/03/2023 hasta el viernes 31/03/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-03-23",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "2/2023",
+            "objeto": "Licitación Pública 2/2023-Segundo llamado Fecha de publicación: lunes 20/03/2023 hasta el lunes 27/03/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-03-20",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "3/2023",
+            "objeto": "Licitación Pública 3/2023 Fecha de publicación: martes 07/03/2023 hasta el martes 14/03/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-03-07",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "1/2023",
+            "objeto": "Licitación Pública 1/2023 Fecha de publicación: martes 07/02/2023 hasta el martes 14/02/2023",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2023-02-07",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "18/2022",
+            "objeto": "Licitación Pública 18/2022 Fecha de publicación: lunes 12/12/2022 hasta el lunes 19/12/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-12-12",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "17/2022",
+            "objeto": "Licitación Pública 17/2022 Fecha de publicación: lunes 03/10/2022 hasta el lunes 10/10/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-10-03",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "16/2022",
+            "objeto": "Licitación Pública 16/2022 Fecha de publicación: lunes 26/09/2022 hasta el lunes 03/10/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-09-26",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "15/2022",
+            "objeto": "Licitación Pública 15/2022 Fecha de publicación: lunes 19/09/2022 hasta el lunes 26/09/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-09-19",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "14/2022",
+            "objeto": "Licitación Pública 14/2022 Fecha de publicación: lunes 05/09/2022 hasta el lunes 12/09/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-09-05",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "13/2022",
+            "objeto": "Licitación Pública 13/2022 Fecha de publicación: lunes 05/09/2022 hasta el lunes 12/09/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-09-05",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "12/2022",
+            "objeto": "Licitación Pública 12/2022 Fecha de publicación: martes 05/07/2022 hasta el martes 12/07/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-07-05",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "11/2022",
+            "objeto": "Licitación pública 11/2022 Fecha de publicación: martes 14/06/2022 hasta el martes 21/06/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-06-14",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "10/2022",
+            "objeto": "Licitación pública 10/2022 Fecha de publicación: martes 31/05/2022 hasta el martes 07/06/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-05-31",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "6/2022",
+            "objeto": "Licitación pública 6/2022 Fecha de publicación: viernes 06/05/2022 hasta el viernes 13/05/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-05-06",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "9/2022",
+            "objeto": "Licitación pública 9/2022 Fecha de publicación: viernes 06/05/2022 hasta el viernes 13/05/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-05-06",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "8/2022",
+            "objeto": "Licitación pública 8/2022 Fecha de publicación: miércoles 13/04/2022 hasta el miércoles 20/04/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-04-13",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "5/2022",
+            "objeto": "Licitación pública 5/2022 Fecha de publicación: miércoles 16/03/2022 hasta el martes 22/03/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-03-16",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Colón",
+            "numero_procedimiento": "4/2022",
+            "objeto": "Licitación pública 4/2022 Fecha de publicación: jueves 10/02/2022 hasta el jueves 17/02/2022",
+            "fecha_apertura": null,
+            "fecha_publicacion": "2022-02-10",
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php",
+            "evidencia_url": "https://www.municipalidadcolonpba.gob.ar/licitaciones.php"
+          }
+        ]
+      },
+      "origen_busqueda": "https://www.municipalidadcolonpba.gob.ar/"
+    },
+    {
+      "id": "auto-f83eb92cc424cbc01b7f",
+      "url": "https://www.generalramirez.gob.ar/boletin-informativo/",
+      "config": {
+        "organismo": "Municipalidad de General Ramírez",
+        "localidad": "General Ramírez",
+        "provincia": "Entre Ríos",
+        "conector": "publicaciones",
+        "descubrir_menu": true,
+        "descubrir_contrataciones": true,
+        "barrido_institucional": true,
+        "buscador_institucional": true,
+        "solo_descubrimiento": true,
+        "lectura_adjuntos": "necesarios",
+        "ocr": false,
+        "admitir_avisos_sin_numero": true
+      },
+      "validacion": {
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de General Ramírez",
+          "localidad": "General Ramírez",
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://www.generalramirez.gob.ar/boletin-informativo/",
+          "sha256": "cca87761062b92ff1eea9fe597e88cde377847bf87008402418b3f95a33cc396",
+          "cabecera": "Boletín informativo municipal – Municipalidad de General Ramírez Boletines Boletín Informativo Municipal - Agosto 2026 Histórico: Boletines Anteriores TELÉFONOS DE EMERGENCIAS PORTAL INTERNO",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 1,
+        "fecha": "2026-11-09T12:01:52.048395+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Municipalidad de General Ramírez",
+            "numero_procedimiento": "13/2022",
+            "objeto": "S JURIDICOS MOBILIARIO AVENIDA SAN MARTIN 75 M3 DE BROZA CEMENTO AL 10% 20 UN. TUBOS DE HORMIGON 1 MT. 50 HS CAMION VOLCADOR, 100 HS. RETRO ORUGA MANO DE OBRA CAMBIO ABERTURAS ESC. 4 FCO. RAMIREZ SUMINISTRO COMBUSTIBLES, GAS OIL COMUN, GAS OIL PREMIUM, NAFTA SUPER MATERIALES EXTENSION Y RECAMBIO CAÑERIAS CLOACAS ELEMENTOS PROTECCION PERSONAL SONIDO, ILUMINACION, PANTALLAS, ESCENARIO Y ESTRUCTURAS RAMIREZ FESTEJA MATERIALES MANTENIMIENTO DE CALLES MANO DE OBRA Y MAQUINARIA TRABAJOS PARQUE INDUSTRIAL 100 LAMPARAS LED 50W E40 MANO DE OBRA REFORMA ESPACIO PUBLICO BOULEVARD SAN MARTIN 3000 LT GAS OIL COMUN, 3000 LT GAS OIL PREMIUM",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.generalramirez.gob.ar/concursos/22-m3-hormigon-elaborado-h30-reposicion-licitacion-13-2022/",
+            "evidencia_url": "https://www.generalramirez.gob.ar/search/licitacion"
+          }
+        ]
+      },
+      "origen_busqueda": "https://www.generalramirez.gob.ar/"
     }
   ]
 }
