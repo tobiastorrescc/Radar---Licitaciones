@@ -120,7 +120,7 @@ def verificar_identidad(html,url,candidato):
 def objeto_comprobado(r):
     # Calidad de extracción, no filtro de rubro: rechazar sólo encabezados/archivos genéricos.
     t=o.norm(r.get('objeto'))
-    t=re.sub(r'\b(?:licitacion|concurso|publica|privada|precios|pliego|pdf|descarga|detalles|fecha|publicacion|lunes|martes|miercoles|jueves|viernes|sabado|domingo|n|no|de|del|la|el|y)\b|[\d\W_]+',' ',t)
+    t=re.sub(r'\b(?:licitacion|concurso|publica|privada|precios|pliego|pdf|descarga|detalles|fecha|publicacion|lunes|martes|miercoles|jueves|viernes|sabado|domingo|publicado|publicada|segundo|tercer|llamado|prorroga|convocatoria|n|no|de|del|la|el|y)\b|[\d\W_]+',' ',t)
     return bool(t.strip())
 
 def aceptacion(resultado,identidad):
@@ -254,8 +254,10 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_
     estado_path=Path('inventario/descubrimiento_estado.json');auto_path=Path('inventario/fuentes_auto.json')
     estado=json.loads(estado_path.read_text()) if estado_path.exists() else {'schema_version':1,'busquedas':{},'candidatos':{}}
     urls_previas={c['url'] for c in estado['candidatos'].values()}
+    controles_path=Path('tools/fase5_control_fuentes.json')
+    cuarentena={c['url']:c['motivo'] for c in json.loads(controles_path.read_text()).get('cuarentena',[])} if controles_path.exists() else {}
     if auto_path.exists():
-        registro_previo=json.loads(auto_path.read_text());retiradas={f['url'] for f in registro_previo['fuentes'] if f.get('validacion',{}).get('ejemplos') and not any(objeto_comprobado(r) for r in f['validacion']['ejemplos'])}
+        registro_previo=json.loads(auto_path.read_text());retiradas={f['url'] for f in registro_previo['fuentes'] if f['url'] in cuarentena or (f.get('validacion',{}).get('ejemplos') and not any(objeto_comprobado(r) for r in f['validacion']['ejemplos']) and f.get('config',{}).get('noticias_comunales'))}
         if retiradas:
             registro_previo['fuentes']=[f for f in registro_previo['fuentes'] if f['url'] not in retiradas];guardar(auto_path,registro_previo)
             for c in estado['candidatos'].values():

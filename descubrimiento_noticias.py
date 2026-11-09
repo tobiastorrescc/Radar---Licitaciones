@@ -22,7 +22,10 @@ def noticia(dom,url):
  # No usar una portada con varias noticias como ficha de un procedimiento.
  if sum(n.tag=='h1' for n in bloque.iter())!=1:return []
  texto=bloque.text;t=e.norm(texto);cab=e.norm(titulo)
- if not pertinente(titulo) and not re.search(r'\b(?:se solicitan|llamase|llamado a|convoca a|invitacion a cotizar)\b',t):return []
+ if not pertinente(titulo):
+  encabezado=re.match(r'(?:aviso|convocatoria|invitacion|decreto|resolucion)\b',cab)
+  llamado=re.search(r'\b(?:se solicitan? (?:presupuestos|cotizaciones)|llamase a (?:licitacion|concurso de precios)|convoca a (?:licitacion|concurso de precios|proveedores))\b',t)
+  if not encabezado or not llamado:return []
  if re.search(r'concurso.{0,50}(?:cargo|personal|fotograf|literari|cultura)|inscripcion de aspirantes',cab):return []
  if not re.search(r'adquisicion|provision|compra de|servicio|contratacion|material|insumos|obra|presupuesto|ofertas|sobres',t):return []
  ps=e.procesos(titulo);ps=ps or e.procesos(texto)

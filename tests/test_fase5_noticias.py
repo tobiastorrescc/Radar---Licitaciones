@@ -60,3 +60,9 @@ class Categorias(unittest.TestCase):
   with tempfile.TemporaryDirectory() as d:
    self.assertEqual(escribir(rs,'2026-11-09T09:00:00-03:00',d)['vigentes_presentacion_verificada'],1)
    self.assertEqual(json.loads(Path(d,'ventas_municipales.json').read_text())['total'],1)
+
+class IdentidadEditorial(unittest.TestCase):
+ def test_historia_municipal_con_mencion_a_concurso_no_es_convocatoria(self):
+  from descubrimiento_noticias import noticia
+  html='<article><h1>Acebal, nuestro lugar en el mundo</h1><p>La escuela convoca a concurso. La comuna realizó la compra de materiales.</p></article>'
+  self.assertEqual(noticia(extractores.DOM(html),'https://acebal.gob.ar/acebal/'),[])

@@ -17,13 +17,22 @@ def main():
  for p in sorted((ROOT/'barrido').glob('lote-*/resultado.json')):
   d=json.load(open(p));fechas.append(d['fecha']);fs.update({f['url']:f for f in d['fuentes']});obs.update({f['url']:f for f in d['observaciones']});rs+=d['registros']
  if len(fs)<101:raise ValueError('Barrido incompleto: faltan fuentes configuradas; no declarar cero novedades')
- candidatas=[];r=ROOT/'descubrimiento/work/fase5/descubrimiento';d=json.load(open(r/'verificacion.json'));fechas.append(d['actualizado']);permitidas={f['url']:f for f in fuentes_configuradas()}
- for s in d['observaciones']:
-  matches=list(r.rglob(Path(s.get('resultado_archivo','')).name));cp=json.load(open(matches[0])) if matches else {};ident=cp.get('identidad') or cp.get('validacion',{}).get('identidad',{});cfg=cp.get('config');candidatas.append({**s,'identidad_verificada':ident.get('verificada',False),'validacion':cp.get('validacion',{}),'config':cfg})
-  if not ident.get('verificada') or not cfg:continue
-  u=s['url'];f=permitidas.get(u) or {**cfg,'url':u,'id':s['id'],'incorporada':False,'estado_verificacion':'PARCIAL_NO_INCORPORADA'}
-  fs[u]=f;obs[u]={**s,**{k:f.get(k) for k in ('organismo','provincia','localidad')}}
-  rs=[x for x in rs if x.get('fuente')!=u]+[o.normalizar({**raw,**{k:raw.get(k) or cfg.get(k) for k in ('organismo','provincia','localidad')},'fuente':u},d['actualizado']) for raw in cp.get('oportunidades',[])]
+ candidatas=[];permitidas={f['url']:f for f in fuentes_configuradas()}
+ for run in plan['descubrimientos']:
+  r=ROOT/'descubrimiento'/str(run)/'work/fase5/descubrimiento';d=json.load(open(r/'verificacion.json'));fechas.append(d['actualizado'])
+  for s in d['observaciones']:
+   matches=list(r.rglob(Path(s.get('resultado_archivo','')).name));cp=json.load(open(matches[0])) if matches else {};ident=cp.get('identidad') or cp.get('validacion',{}).get('identidad',{});cfg=cp.get('config');candidatas.append({**s,'identidad_verificada':ident.get('verificada',False),'validacion':cp.get('validacion',{}),'config':cfg})
+   if not ident.get('verificada') or not cfg:continue
+   u=s['url'];f=permitidas.get(u) or {**cfg,'url':u,'id':s['id'],'incorporada':False,'estado_verificacion':'PARCIAL_NO_INCORPORADA'}
+   fs[u]=f;obs[u]={**s,**{k:f.get(k) for k in ('organismo','provincia','localidad')}}
+   rs=[x for x in rs if x.get('fuente')!=u]+[o.normalizar({**raw,**{k:raw.get(k) or cfg.get(k) for k in ('organismo','provincia','localidad')},'fuente':u},d['actualizado']) for raw in cp.get('oportunidades',[])]
+ critica=ROOT/'criticas/resultado.json'
+ if critica.exists():
+  d=json.load(open(critica));fechas.append(d['fecha'])
+  for f in d['fuentes']:
+   s=next(s for s in d['observaciones'] if s['id']==f['id']);extra=[r for r in d['registros'] if r.get('fuente')==f['url']]
+   if extra:
+    fs[f['url']]=f;obs[f['url']]={**s,'metodo':'macOS curl nativo TLS verificado'};rs+=extra
  fecha=max(fechas);rs=o.deduplicar(rs,fecha);fuentes=list(fs.values());observaciones=list(obs.values());snapshot={'fecha':fecha,'fuentes':fuentes,'observaciones':observaciones,'registros':rs};guardar(ROOT/'observadas.json',snapshot)
  copia=ROOT/'historial-aislado';restaurar('piloto_respaldo/diario',copia);db=inc.abrir(copia/'estado.sqlite3')
  # Reconstruir sólo el catálogo ya observado en Fase 4. No volver a informar sus dos hallazgos.
@@ -40,7 +49,9 @@ def main():
  for nombre,datos in [('fuentes_consultadas',observaciones),('candidatas_consultadas',candidatas)]:
   with (ROOT/(nombre+'.csv')).open('w',newline='') as out:
    campos=['id','organismo','provincia','localidad','url','estado','iniciada','publicaciones_detectadas','duracion_segundos','errores'];w=csv.DictWriter(out,fieldnames=campos);w.writeheader();w.writerows({k:json.dumps(r.get(k),ensure_ascii=False) if isinstance(r.get(k),(dict,list)) else r.get(k) for k in campos} for r in datos)
- resultado={'fecha':fecha,'plan':plan,'antes':metrica(base),'despues':metrica(snapshot),'antes_catalogo_recepecion_verificada_incluye_ventas':antes_comercial,'despues_compras_vigentes':comercial['vigentes_presentacion_verificada'],'categorias':resumen_diario,'nuevas_compras_vigentes':len(nuevos),'candidatas_consultadas':len(candidatas),'fuentes_incorporadas_efectivas':sum(bool(f.get('incorporada')) for f in fuentes),'primera':primera,'segunda':segunda,'cobertura':cobertura,'rosario':rosario,'protegidos_intactos':protegidos==huellas(),'ocr_nuevo':0}
+ urls_configuradas={f['url'] for f in fuentes if f.get('incorporada')}
+ medido_configuradas={**snapshot,'fuentes':[f for f in fuentes if f.get('incorporada')],'observaciones':[s for s in observaciones if s['url'] in urls_configuradas],'registros':[r for r in rs if r.get('fuente') in urls_configuradas]}
+ resultado={'configuradas_efectivas':len(permitidas),'fuentes_y_candidatas_identificadas_revisadas':len(fuentes),'fecha':fecha,'plan':plan,'antes':metrica(base),'despues':metrica(medido_configuradas),'antes_catalogo_recepecion_verificada_incluye_ventas':antes_comercial,'despues_compras_vigentes':comercial['vigentes_presentacion_verificada'],'categorias':resumen_diario,'nuevas_compras_vigentes':len(nuevos),'candidatas_consultadas':len(candidatas),'fuentes_incorporadas_efectivas':sum(bool(f.get('incorporada')) for f in fuentes),'primera':primera,'segunda':segunda,'cobertura':cobertura,'rosario':rosario,'protegidos_intactos':protegidos==huellas(),'ocr_nuevo':0}
  guardar(ROOT/'resultado.json',resultado);print(json.dumps({k:v for k,v in resultado.items() if k not in ('primera','segunda')},ensure_ascii=False),flush=True)
  if segunda['novedades'] or segunda['eventos_emitidos'] or not resultado['protegidos_intactos']:raise ValueError('Falló repetición o integridad')
 if __name__=='__main__':main()
