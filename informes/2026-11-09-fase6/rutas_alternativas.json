@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://totoras.gob.ar/",
+    "url_final": "https://totoras.gob.ar/",
+    "estado": "REVISADA",
+    "bytes": 152637,
+    "tipo": "text/html; charset=UTF-8",
+    "sha256": "a7e21bda8b673b642ada0b0db137ecd17cf97c34907b6b4e65506e472a0c0a10",
+    "convocatorias_extraidas": 0,
+    "cobertura_compras": "PENDIENTE: no se acredita ausencia de convocatorias por estas páginas"
+  },
+  {
+    "url": "https://totoras.gob.ar/municipio/",
+    "url_final": "https://totoras.gob.ar/municipio/",
+    "estado": "REVISADA",
+    "bytes": 114174,
+    "tipo": "text/html; charset=UTF-8",
+    "sha256": "64fb6f8c84167a0a286c72bf70e67cb4f3a550ccb189c6166979556748fc7421",
+    "convocatorias_extraidas": 0,
+    "cobertura_compras": "PENDIENTE: no se acredita ausencia de convocatorias por estas páginas"
+  },
+  {
+    "url": "https://totoras.gob.ar/autoridades/",
+    "url_final": "https://totoras.gob.ar/autoridades/",
+    "estado": "REVISADA",
+    "bytes": 117964,
+    "tipo": "text/html; charset=UTF-8",
+    "sha256": "e024821235bd99d2eb531e556b48a32a50a8b59e3a96d9b0649bb2212f7c132a",
+    "convocatorias_extraidas": 0,
+    "cobertura_compras": "PENDIENTE: no se acredita ausencia de convocatorias por estas páginas"
+  },
+  {
+    "url": "https://www.comunasangregorio.gob.ar/pages/actos.php",
+    "url_final": "https://www.comunasangregorio.gob.ar/pages/actos.php",
+    "estado": "REVISADA",
+    "bytes": 14729,
+    "tipo": "text/html; charset=UTF-8",
+    "sha256": "64665e29179c0f07a960dcc71c5f24680193e5a4f47620e5976a83cfbcb786bc",
+    "convocatorias_extraidas": 0,
+    "cobertura_compras": "PENDIENTE: no se acredita ausencia de convocatorias por estas páginas"
+  },
+  {
+    "url": "https://www.comunasangregorio.gob.ar/pages/tesoreria.php",
+    "url_final": "https://www.comunasangregorio.gob.ar/pages/tesoreria.php",
+    "estado": "REVISADA",
+    "bytes": 13868,
+    "tipo": "text/html; charset=UTF-8",
+    "sha256": "c97d09dbc5a49cbb3dba4999ccafd26f4b7d25486c3e57089cfcd344d2ffdbf9",
+    "convocatorias_extraidas": 0,
+    "cobertura_compras": "PENDIENTE: no se acredita ausencia de convocatorias por estas páginas"
+  }
+]

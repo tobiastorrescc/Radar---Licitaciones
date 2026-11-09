@@ -1,0 +1,21 @@
+provincia,departamento_propuesto,localidad,organismo,url_oficial,revision_mas_alla_de_portada,cobertura_exhaustiva_comprobada,identidad_verificada,incorporada,estado_extraccion,publicaciones_extraidas,convocatorias_vigentes_verificadas,ultima_revision,evidencia
+Santa Fe,General López,Teodelina,Municipalidad de Teodelina,https://teodelina.gob.ar/,True,False,True,False,PENDIENTE,0,0,2026-11-09T16:17:41.083009-03:00,42677364803
+Santa Fe,General López,Hughes,Comuna de Hughes,https://hughes.gob.ar/,True,False,True,False,OPERATIVA,1,0,2026-11-09T16:17:41.083009-03:00,42677364803
+Santa Fe,General López,San Gregorio,Comuna de San Gregorio,https://www.comunasangregorio.gob.ar/,True,False,True,False,PENDIENTE,0,0,2026-11-09T16:17:41.083009-03:00,"42677364803,42679698776"
+Santa Fe,Caseros,San José de la Esquina,Municipalidad de San José de la Esquina,https://munisje.gob.ar/ciudad/,True,False,True,False,TIEMPO_FUENTE,28,0,2026-11-09T16:17:41.083009-03:00,"42677364803,42679698776"
+Santa Fe,San Lorenzo,Villa Mugueta,Comuna de Villa Mugueta,https://www.comunavillamugueta.gob.ar/,True,False,True,False,PENDIENTE,0,0,2026-11-09T16:17:41.083009-03:00,42677364803
+Santa Fe,Las Colonias,Pilar,Comuna de Pilar,https://www.comunadepilar.gob.ar/,True,False,True,False,PENDIENTE,0,0,2026-11-09T16:17:41.083009-03:00,42677364803
+Santa Fe,Las Colonias,Franck,Comuna de Franck,https://www.franck.gob.ar/,True,False,True,False,TIEMPO_FUENTE,4,0,2026-11-09T16:17:41.083009-03:00,42677364803
+Santa Fe,Las Colonias,San Jerónimo del Sauce,Comuna de San Jerónimo del Sauce,https://sanjeronimodelsauce.gob.ar/,True,False,True,False,PENDIENTE,0,0,2026-11-09T16:17:41.083009-03:00,"42677364803,42679698776"
+Santa Fe,Las Colonias,San Jerónimo Norte,Municipalidad de San Jerónimo Norte,https://sanjeronimonorte.gob.ar/gobierno/organizacion/,True,False,True,False,PENDIENTE,0,0,2026-11-09T16:17:41.083009-03:00,42677364803
+Santa Fe,San Martín,Sastre y Ortiz,Municipalidad de Sastre y Ortiz,https://sastreciudad.gob.ar/intendencia/,True,False,True,True,OPERATIVA,10,0,2026-11-09T16:17:41.083009-03:00,42677364803
+Santa Fe,San Cristóbal,San Guillermo,Municipalidad de San Guillermo,https://sanguillermo.gob.ar/,True,False,True,False,TIEMPO_FUENTE,40,0,2026-11-09T16:17:41.083009-03:00,"42677364803,42679698776"
+Santa Fe,Iriondo,Totoras,Municipalidad de Totoras,https://totoras.gob.ar/,True,False,False,False,PENDIENTE,0,0,2026-11-09T16:17:41.083009-03:00,"42677364803,42679698776"
+Santa Fe,San Javier,San Javier,Municipalidad de San Javier,https://sanjavier.gob.ar/,True,False,True,False,PENDIENTE,0,0,2026-11-09T16:17:41.083009-03:00,42677364803
+Santa Fe,General Obligado,Malabrigo,Municipalidad de Malabrigo,https://www.malabrigo.gob.ar/,True,False,True,False,TIEMPO_FUENTE,11,0,2026-11-09T16:17:41.083009-03:00,42677364803
+Santa Fe,General Obligado,Avellaneda,Municipalidad de Avellaneda,https://avellaneda.gob.ar/,True,False,True,False,TIEMPO_FUENTE,0,0,2026-11-09T16:17:41.083009-03:00,42677364803
+Santa Fe,Garay,Cayastá,Comuna de Cayastá,https://cayasta.gob.ar/,True,False,True,False,PENDIENTE,0,0,2026-11-09T16:17:41.083009-03:00,42677364803
+Entre Ríos,Diamante,Valle María,Municipalidad de Valle María,https://www.vallemaria.gob.ar/,True,False,True,False,TIEMPO_FUENTE,47,0,2026-11-09T16:17:41.083009-03:00,42677364803
+Entre Ríos,Gualeguay,General Galarza,Municipalidad de General Galarza,https://galarza.gov.ar/autoridades/,True,False,True,True,OPERATIVA,1,0,2026-11-09T16:17:41.083009-03:00,42677364803
+Entre Ríos,Colón,Ubajay,Municipalidad de Ubajay,https://ubajay.gob.ar/institucional/,True,False,True,False,PENDIENTE,0,0,2026-11-09T16:17:41.083009-03:00,42677364803
+Entre Ríos,Gualeguaychú,Aldea San Antonio,Municipalidad de Aldea San Antonio,https://www.aldeasanantonio.gob.ar/,True,False,True,False,PENDIENTE,0,0,2026-11-09T16:17:41.083009-03:00,42677364803

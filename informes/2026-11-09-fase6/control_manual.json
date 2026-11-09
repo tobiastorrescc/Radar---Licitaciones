@@ -1,0 +1,82 @@
+{
+  "fecha": "2026-11-09",
+  "muestra": [
+    {
+      "localidad": "Sastre y Ortiz",
+      "numero": "5/2026",
+      "objeto": "826 m³ de hormigón H-25",
+      "url": "https://sastreciudad.gob.ar/licitacion-publica-n-o-05-2026-el-municipio-convoca-a-la-presentacion-de-ofertas/",
+      "fecha_publicacion": "2026-09-28",
+      "recepcion": null,
+      "apertura": "2026-10-18T10:00:00-03:00",
+      "aviso_detectado_por_agente": true,
+      "objeto_y_fechas_completos": true,
+      "vigente": false,
+      "pago": "Pendiente de verificar",
+      "motivo_omision_anterior": "FUENTE_FALTANTE",
+      "limitacion": null
+    },
+    {
+      "localidad": "Sastre y Ortiz",
+      "numero": "6/2026",
+      "objeto": "Un hidroelevador sobre tráiler de al menos 12 m",
+      "url": "https://sastreciudad.gob.ar/licitacion-publica-n-o-06-2026-el-municipio-convoca-a-la-presentacion-de-ofertas/",
+      "fecha_publicacion": "2026-09-28",
+      "recepcion": null,
+      "apertura": "2026-10-21T10:00:00-03:00",
+      "aviso_detectado_por_agente": true,
+      "objeto_y_fechas_completos": true,
+      "vigente": false,
+      "pago": "Pendiente de verificar",
+      "motivo_omision_anterior": "FUENTE_FALTANTE",
+      "limitacion": null
+    },
+    {
+      "localidad": "Malabrigo",
+      "numero": "3/2026",
+      "objeto": "Materiales e insumos para viviendas de la tercera edad",
+      "url": "https://www.malabrigo.gob.ar/?q=content/malabrigo-licitacion-publica-no-032026",
+      "fecha_publicacion": null,
+      "recepcion": "2026-10-16T13:00:00-03:00",
+      "apertura": "2026-10-19T11:00:00-03:00",
+      "aviso_detectado_por_agente": true,
+      "objeto_y_fechas_completos": true,
+      "vigente": false,
+      "pago": "Pendiente de verificar",
+      "motivo_omision_anterior": "FUENTE_FALTANTE",
+      "limitacion": null
+    },
+    {
+      "localidad": "Franck",
+      "numero": "2240/2026",
+      "objeto": "Tribunas modulares de hormigón",
+      "url": "https://www.franck.gob.ar/index.php/licitaciones/319-licitacion-publica-ordenanza-n-2240-26",
+      "fecha_publicacion": null,
+      "recepcion": "2026-05-11T10:30:00-03:00",
+      "apertura": "2026-05-11T11:00:00-03:00",
+      "aviso_detectado_por_agente": true,
+      "objeto_y_fechas_completos": true,
+      "vigente": false,
+      "pago": "Pendiente de verificar",
+      "motivo_omision_anterior": "FUENTE_FALTANTE",
+      "limitacion": null
+    },
+    {
+      "localidad": "San Guillermo",
+      "numero": "3/2026",
+      "objeto": "40 moldes base rectos, 50 moldes de cordón rectos, dos moldes curvos y una regla vibradora",
+      "url": "https://sanguillermo.gob.ar/pliegos-y-licitaciones/",
+      "fecha_publicacion": null,
+      "recepcion": "2026-11-05T10:00:00-03:00",
+      "apertura": "2026-11-05T10:30:00-03:00",
+      "aviso_detectado_por_agente": true,
+      "objeto_y_fechas_completos": false,
+      "vigente": false,
+      "pago": "Pendiente de verificar",
+      "motivo_omision_anterior": "FUENTE_FALTANTE",
+      "limitacion": "Enlace Drive y número recuperados; objeto y fechas requieren documento externo",
+      "documento": "https://drive.google.com/file/d/1urldu4Akl8axyfFpGE_MuwQubLYFHOCn/view"
+    }
+  ],
+  "advertencia": "Cinco casos, todos cerrados. No acredita cobertura global. Sastre indica domingo 18/10; se conserva su fecha oficial. No se confunde apertura con recepción."
+}

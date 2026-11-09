@@ -1,0 +1,35 @@
+{
+  "muestra": 53,
+  "detectadas": 52,
+  "omisiones": [
+    {
+      "titulo": "Compra Agil 40631/2026 Publicada para Apertura ADQUISICIÓN DE EXTINTORES PARA EL HOSPITAL I CARRASCO. Apertura: 09/11/2026 11:00",
+      "objeto": "ADQUISICIÓN DE EXTINTORES PARA EL HOSPITAL I CARRASCO.",
+      "procedimiento": "compra agil 40631/2026",
+      "numero_procedimiento": "40631/2026",
+      "tipo_procedimiento": "compra agil",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38659",
+      "presupuesto_texto": null,
+      "fecha_publicacion_texto": null,
+      "documentos": [],
+      "evento_publicado": null,
+      "llamado_especial": false,
+      "fecha_apertura_texto": null,
+      "registro_estructurado": true,
+      "objeto_listado_verificado": true,
+      "numero_oficial_sin_interpretar": "40631/2026",
+      "numero_pendiente_ficha": true,
+      "id_origen": "38659",
+      "identidad_ambito": "ficha-rosario-38659",
+      "texto_listado": "Compra Agil 40631/2026 Publicada para Apertura ADQUISICIÓN DE EXTINTORES PARA EL HOSPITAL I CARRASCO. Apertura: 09/11/2026 11:00",
+      "evidencia_url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
+      "detalle_completo": true,
+      "situacion_publicada": null,
+      "organismo": "Municipalidad de Rosario",
+      "localidad": "Rosario",
+      "provincia": "Santa Fe",
+      "comprobada": true,
+      "fecha_revision": "2026-11-07"
+    }
+  ]
+}

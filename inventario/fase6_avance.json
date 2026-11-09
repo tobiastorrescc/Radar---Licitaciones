@@ -1185,7 +1185,16 @@
           "oportunidades_recuperadas": 0,
           "recepcion_vigente_comprobada": 0
         }
-      ]
+      ],
+      "control_adicional": {
+        "run": 42681225274,
+        "localidades_exploradas_mas_alla_portada": 20,
+        "auditoria_exhaustiva_completada": false,
+        "rosario_control_vivo": "52/53; consulta parcial y timeout; un caso pendiente de contraste",
+        "fuentes_nuevas_incorporadas_y_consultadas": 2,
+        "compras_vigentes_ineditas": 0,
+        "segunda_pasada_eventos": 0
+      }
     }
   }
 }

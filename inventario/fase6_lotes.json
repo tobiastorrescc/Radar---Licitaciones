@@ -177,14 +177,16 @@
           "provincia": "Santa Fe",
           "departamento": "Iriondo",
           "organismo": "Municipalidad de Totoras",
-          "url": "https://www.mtotoras.gob.ar/",
+          "url": "https://totoras.gob.ar/",
           "tipo": "TERRITORIAL",
           "config_publica": {
             "noticias_comunales": true,
             "documentos_para_descubrimiento": true
           },
           "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
-          "identidad_pendiente_validacion_nativa": true
+          "identidad_pendiente_validacion_nativa": true,
+          "portal_tramites_complementario": "https://www.mtotoras.gob.ar/",
+          "evidencia_ruta": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/42681225274"
         },
         {
           "id": "fase6-01-13",

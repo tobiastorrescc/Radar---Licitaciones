@@ -1,0 +1,110 @@
+{
+  "fecha": "2026-11-09T16:17:41.083009-03:00",
+  "github_run_id": "42681225274",
+  "fuentes_configuradas_antes": 101,
+  "fuentes_configuradas_despues": 103,
+  "fuentes_del_catalogo_consultadas_en_cierre": 3,
+  "estados_consulta_catalogo": {
+    "fuente-001": "TIEMPO_TOTAL",
+    "auto-fase6-01-10": "OPERATIVA",
+    "auto-fase6-01-18": "OPERATIVA"
+  },
+  "publicaciones_consulta_catalogo": {
+    "fuente-001": 64,
+    "auto-fase6-01-10": 10,
+    "auto-fase6-01-18": 1
+  },
+  "localidades_intentadas": 20,
+  "localidades_con_revision_mas_alla_portada": 20,
+  "auditoria_exhaustiva_del_lote_completada": false,
+  "registros_brutos_territoriales": 143,
+  "registros_unicos_territoriales": 143,
+  "comercial_muestra_incluye_rosario": {
+    "vigentes_presentacion_verificada": 6,
+    "pendientes_presentacion_o_revalidacion": 157
+  },
+  "compras_vigentes_ineditas_del_lote": 0,
+  "publicaciones_nuevas_confirmadas_del_lote": 0,
+  "fuentes_nuevas_incorporadas": 2,
+  "primera": {
+    "corrida": "fase6-lote01-control-registradas-y-repeticion",
+    "fecha": "2026-11-09T16:17:41.083009-03:00",
+    "primera_ejecucion": false,
+    "estado": "COMPLETA_CON_INCIDENCIAS",
+    "observadas": 207,
+    "candidatos_sin_confirmar": 0,
+    "clasificacion": {
+      "NUEVA_DETECCION_FECHA_DESCONOCIDA": 30,
+      "RECUPERACION_LINEA_BASE": 113,
+      "SIN_CAMBIOS": 61,
+      "DATOS_COMPLETADOS": 3
+    },
+    "novedades": 33,
+    "eventos_emitidos": 146,
+    "total_historial": 6914,
+    "fuentes": {
+      "TIEMPO_TOTAL": 1,
+      "OPERATIVA": 2
+    },
+    "mensaje": "CON_NOVEDADES"
+  },
+  "segunda": {
+    "corrida": "fase6-lote01-control-registradas-y-repeticion-repeticion",
+    "fecha": "2026-11-09T16:17:41.083009-03:00",
+    "primera_ejecucion": false,
+    "estado": "COMPLETA_CON_INCIDENCIAS",
+    "observadas": 207,
+    "candidatos_sin_confirmar": 0,
+    "clasificacion": {
+      "SIN_CAMBIOS": 207
+    },
+    "novedades": 0,
+    "eventos_emitidos": 0,
+    "total_historial": 6914,
+    "fuentes": {
+      "TIEMPO_TOTAL": 1,
+      "OPERATIVA": 2
+    },
+    "mensaje": "SIN_NOVEDADES_CONFIRMADAS_CON_INCIDENCIAS"
+  },
+  "historial_copia_inicial": 6771,
+  "rosario": {
+    "muestra": 53,
+    "detectadas": 52,
+    "omisiones": [
+      {
+        "titulo": "Compra Agil 40631/2026 Publicada para Apertura ADQUISICIÓN DE EXTINTORES PARA EL HOSPITAL I CARRASCO. Apertura: 09/11/2026 11:00",
+        "objeto": "ADQUISICIÓN DE EXTINTORES PARA EL HOSPITAL I CARRASCO.",
+        "procedimiento": "compra agil 40631/2026",
+        "numero_procedimiento": "40631/2026",
+        "tipo_procedimiento": "compra agil",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38659",
+        "presupuesto_texto": null,
+        "fecha_publicacion_texto": null,
+        "documentos": [],
+        "evento_publicado": null,
+        "llamado_especial": false,
+        "fecha_apertura_texto": null,
+        "registro_estructurado": true,
+        "objeto_listado_verificado": true,
+        "numero_oficial_sin_interpretar": "40631/2026",
+        "numero_pendiente_ficha": true,
+        "id_origen": "38659",
+        "identidad_ambito": "ficha-rosario-38659",
+        "texto_listado": "Compra Agil 40631/2026 Publicada para Apertura ADQUISICIÓN DE EXTINTORES PARA EL HOSPITAL I CARRASCO. Apertura: 09/11/2026 11:00",
+        "evidencia_url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
+        "detalle_completo": true,
+        "situacion_publicada": null,
+        "organismo": "Municipalidad de Rosario",
+        "localidad": "Rosario",
+        "provincia": "Santa Fe",
+        "comprobada": true,
+        "fecha_revision": "2026-11-07"
+      }
+    ]
+  },
+  "protegidos_intactos": true,
+  "ocr_nuevo": 0,
+  "segundos_barrido_final": 240.015,
+  "advertencia": "El número de registros territoriales incluye históricos, anexos, adjudicaciones y avisos sin vigencia comprobada. No equivale a oportunidades comerciales; el lote mantiene limitaciones y no acredita cobertura exhaustiva."
+}

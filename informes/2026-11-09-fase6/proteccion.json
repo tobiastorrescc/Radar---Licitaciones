@@ -1,0 +1,341 @@
+{
+  "referencia": "5ebae02a23e141034d1fca16bdd120002ed2452b",
+  "revision": "3926cd57df96020f7ef32d6a0073879bd6a3b19c",
+  "main": "c4c44de36b8064bf84db4fa1071004e0f8c45ad8",
+  "archivos_protegidos": 83,
+  "cambiados": [],
+  "archivos": [
+    {
+      "path": ".github/workflows/compatibilidad-criticas.yml",
+      "sha": "d2fd458f0061c1efe8eb5a8828df4bcabc6c2dcd"
+    },
+    {
+      "path": ".github/workflows/descubrir-fuentes.yml",
+      "sha": "96f9e81b517f2bd8b2e52b574609322b88577d76"
+    },
+    {
+      "path": ".github/workflows/fase2-cierre.yml",
+      "sha": "c00d4ae836ab528ad3fed127990e52370e025195"
+    },
+    {
+      "path": ".github/workflows/fase2-cobertura.yml",
+      "sha": "f84435489deb999d969340e2e9fb0e2bb7f4276b"
+    },
+    {
+      "path": ".github/workflows/fase3-cierre.yml",
+      "sha": "a73116fc60b0cf58079762bdff81ef674ddfab4d"
+    },
+    {
+      "path": ".github/workflows/fase3-validacion.yml",
+      "sha": "b07940ad7f46c08d5c2c45b8abcb5108826fe2cd"
+    },
+    {
+      "path": ".github/workflows/fase4-cierre.yml",
+      "sha": "43ca846d016d1a5e65748d8a2b31b695913c0e4f"
+    },
+    {
+      "path": ".github/workflows/fase4-descubrimiento.yml",
+      "sha": "98a10e440689d6c37d69bf156e636ed09981903f"
+    },
+    {
+      "path": ".github/workflows/fase5-cierre.yml",
+      "sha": "228283be0baa64bcc4288c56fa554386a3b28fc9"
+    },
+    {
+      "path": ".github/workflows/fase5-descubrimiento.yml",
+      "sha": "330a41c46e09e174a63afe2fdff4f2d6d4cae5fb"
+    },
+    {
+      "path": ".github/workflows/fase5-expansion.yml",
+      "sha": "edb47d57f5b91113d126630db12f6b955a23162f"
+    },
+    {
+      "path": ".github/workflows/fase5-final.yml",
+      "sha": "d999606ddacd6e5b5c494fbd637da71083e5d863"
+    },
+    {
+      "path": ".github/workflows/fase5-recuperacion.yml",
+      "sha": "cee194d5769210fc150991d008fc0ca3d61354e9"
+    },
+    {
+      "path": ".github/workflows/gestiones-navegador.yml",
+      "sha": "78574588634a2d8e341d6bb5f532ed1cafd86385"
+    },
+    {
+      "path": ".github/workflows/mejorar-cobertura.yml",
+      "sha": "d96a7498e7eb82da266456e3eb49d117d335861e"
+    },
+    {
+      "path": ".github/workflows/programar-piloto.yml",
+      "sha": "e2cc5fc2448e80a5bae724838c59ff19abd0c4d8"
+    },
+    {
+      "path": ".github/workflows/radar-diario.yml",
+      "sha": "c99899a88073e819c8e8352ea284d614bd6d833c"
+    },
+    {
+      "path": "auditoria_fuentes.json",
+      "sha": "b956ab5603270c8c73ffd48a2afc2f4e08a38402"
+    },
+    {
+      "path": "despliegue/github-actions/instalacion.json",
+      "sha": "317d2a175ebcbe574ecf8b25b5a654448c632256"
+    },
+    {
+      "path": "despliegue/github-actions/manifesto.json",
+      "sha": "dd2c7d554478efe584106747a5715d175487f633"
+    },
+    {
+      "path": "despliegue/github-actions/programador.cjs",
+      "sha": "ed6c2735b7a208a28827f84c034da73c7a31e375"
+    },
+    {
+      "path": "despliegue/github-actions/programar-piloto.yml.instalado",
+      "sha": "cd8a3ae2b451bdc8f508a8295d24df0f245a243f"
+    },
+    {
+      "path": "despliegue/github-actions/programar-piloto.yml.propuesto",
+      "sha": "eae9dcb2868712d82096887b36a7d256cccb37a5"
+    },
+    {
+      "path": "despliegue/github-actions/validacion-instalada.json",
+      "sha": "967add0390a996bf63a6d379f106205fff0cc4db"
+    },
+    {
+      "path": "despliegue/piloto.json",
+      "sha": "88dbd6441104de4d1684aa57f9a32f94d17e4b13"
+    },
+    {
+      "path": "despliegue/systemd/radar-piloto.service",
+      "sha": "9461f64e8d6082b114d6659994540d3303c06da6"
+    },
+    {
+      "path": "despliegue/systemd/radar-piloto.timer",
+      "sha": "6a93e611301aa21df8875ed3dc5415d08abe414b"
+    },
+    {
+      "path": "licitaciones_nuevas.json",
+      "sha": "50cbf08905ab72372ef569f01fe048fc5b2bed78"
+    },
+    {
+      "path": "piloto_reportes/ultimo/auditoria_diaria.json",
+      "sha": "3eac47de5598624754d7bc7196f401aca8a9c9fd"
+    },
+    {
+      "path": "piloto_reportes/ultimo/auditoria_diaria.md",
+      "sha": "acc8abd14c5507e06f76c2aefffe47b622161855"
+    },
+    {
+      "path": "piloto_reportes/ultimo/auditoria_eventos.md",
+      "sha": "1a59cf267948f328b5583e65aac61d84802f9388"
+    },
+    {
+      "path": "piloto_reportes/ultimo/auditoria_manual.json",
+      "sha": "7e5a1842097272c4175feab3f57f7c6c747256b1"
+    },
+    {
+      "path": "piloto_reportes/ultimo/cola_documental.json",
+      "sha": "348bfc93e18bbbb7de81e11a30c8f53cfd127546"
+    },
+    {
+      "path": "piloto_reportes/ultimo/cola_enriquecimiento.json",
+      "sha": "4c0a8c389e33619ac03166c9f7b7ce76166bc033"
+    },
+    {
+      "path": "piloto_reportes/ultimo/fichas.json",
+      "sha": "27586f0d6d7804df85e5300d470d45c513953da8"
+    },
+    {
+      "path": "piloto_reportes/ultimo/fichas_abiertas.md",
+      "sha": "d9a8d55997a84d8b57f487550a61f25de8ba0b50"
+    },
+    {
+      "path": "piloto_reportes/ultimo/informe.eml",
+      "sha": "c195d265acfbb41aa0eb3c87d12052df2b3c73a3"
+    },
+    {
+      "path": "piloto_reportes/ultimo/informe.md",
+      "sha": "57c8b75372738fd6265fcb5b17d9a0df657da631"
+    },
+    {
+      "path": "piloto_reportes/ultimo/informe_comercial.csv",
+      "sha": "ddc08760d2408c6a03ba9b53f286090a9805106f"
+    },
+    {
+      "path": "piloto_reportes/ultimo/informe_comercial.json",
+      "sha": "0683192897fd1427ffae73de8d5a9a4f4da5170f"
+    },
+    {
+      "path": "piloto_reportes/ultimo/informe_comercial.md",
+      "sha": "3bec9146cd9df7400858810c363b188b506ab60f"
+    },
+    {
+      "path": "piloto_reportes/ultimo/metricas_territoriales.json",
+      "sha": "759afc771aaaf8a4b03cc48a8616833aa91a7dad"
+    },
+    {
+      "path": "piloto_reportes/ultimo/observaciones_previas_sin_revalidar.json",
+      "sha": "46b947ed4b33ffaf292b2448f4257dbc5ce2ac9c"
+    },
+    {
+      "path": "piloto_reportes/ultimo/oportunidades.csv",
+      "sha": "2ce17e5bb1253af84bcfd3f78740e5912eee5a4b"
+    },
+    {
+      "path": "piloto_reportes/ultimo/oportunidades.json",
+      "sha": "58fb330893b96339f30272a808783cdc8a24af97"
+    },
+    {
+      "path": "piloto_reportes/ultimo/oportunidades_abiertas.md",
+      "sha": "9a3e770a2d071649d42fedb9c6b958b953db0d7c"
+    },
+    {
+      "path": "piloto_reportes/ultimo/oportunidades_proximas_a_vencer.md",
+      "sha": "0646e5447f2e107e1673cf1a24e05a64eb1efc11"
+    },
+    {
+      "path": "piloto_reportes/ultimo/presentacion_pendiente.json",
+      "sha": "2d39b73e72ebc4d48e03f0c0d86beb21ccb1f6ef"
+    },
+    {
+      "path": "piloto_reportes/ultimo/resumen.json",
+      "sha": "c0a72b3b241b822ea52147e7c64c743fb6789db9"
+    },
+    {
+      "path": "piloto_respaldo/auditorias/2026-10-29/000000-fb7f4c78383d17df3a2ba63ba5f633b7a81a39957b21c540eecd5983a1b4ee34.json.gz",
+      "sha": "8aa58ecb9bf139ea00213074b572afd2143b6e8b"
+    },
+    {
+      "path": "piloto_respaldo/auditorias/2026-10-29/indice.json",
+      "sha": "49d25c0cd9679e56ab446859043639b50fb7df3f"
+    },
+    {
+      "path": "piloto_respaldo/diario/000000-cd66425fae2c5d968536f689a6f3ae294ccbf8ad55917da64c4ac0e751de58a7.json.gz",
+      "sha": "cb007fe2173082d59b57c5a92a0eba614f8fab27"
+    },
+    {
+      "path": "piloto_respaldo/diario/000001-e7320351758809904614bce7cfe214d241204955573bb6add00876d9459658ba.json.gz",
+      "sha": "4fed468bcca215ca6280cb314b16666cac5d3e8d"
+    },
+    {
+      "path": "piloto_respaldo/diario/000002-7a8f4d882abed58cafe821337a528c4119c332789036a7c3169c101e6888718d.json.gz",
+      "sha": "4273021b5becf321e53f2b7ed84981d3372e2946"
+    },
+    {
+      "path": "piloto_respaldo/diario/000003-5cc18ba9256911e9cb1828a8873329926aa83b59d1cb631bb36b28aaff727c42.json.gz",
+      "sha": "4c92980731358e52e19a138b0742dadc998681e0"
+    },
+    {
+      "path": "piloto_respaldo/diario/000004-611a47dbeccd2d612207df9a948559c25d3acb81dcbb87d3b7b6d3b06a9f539d.json.gz",
+      "sha": "4b464f30186cab3501bc87c789189aa721b3d9d8"
+    },
+    {
+      "path": "piloto_respaldo/diario/000005-a5b61fc111cbd515c8ccc73075298b096a7912ac461dbab8bf5f99f54c3605e9.json.gz",
+      "sha": "32091432ba1bd0da5f30e7639e9db5cc09608a47"
+    },
+    {
+      "path": "piloto_respaldo/diario/000006-3ba4c28c8483cf1f94f49da3fe2d2f1379992c423c10ba645b14ca1e16b259fc.json.gz",
+      "sha": "b4380508c3de7155fb2671a7d5cf91551f6294c5"
+    },
+    {
+      "path": "piloto_respaldo/diario/000007-3d682cb432feee02eb60eccda8f054cd5abd3402b90b49635ce09853e3b3c3a0.json.gz",
+      "sha": "192c8a72d1424ac41cd7d5a4d4a53ee09d5c2222"
+    },
+    {
+      "path": "piloto_respaldo/diario/000008-6b7ab34c91cf9cfa2983998cec2f11be7a56ce23da494034fff896c61743dec3.json.gz",
+      "sha": "1800d8723ba90a12b605d4916525f303ac7158fb"
+    },
+    {
+      "path": "piloto_respaldo/diario/000009-9d80e2bb91dd1a4d0f0f79942478f2c42b3f77ed1b3af33955480e0b477b79b1.json.gz",
+      "sha": "93bb5f715b36dbe79945e2d4ddefd6dbd309e2d5"
+    },
+    {
+      "path": "piloto_respaldo/diario/000010-82e11ccd0a02747ef7cfca8a913f98ba8dc9dbbf2294b8618a1787a04a2b13b0.json.gz",
+      "sha": "0214a3077d9494b1fbaeaddd4765dd51d5c91182"
+    },
+    {
+      "path": "piloto_respaldo/diario/000011-bd84201e74de0a9ae9cf747b1cbf7eeb3f8c0bad23cc6b746dfa379d5105a310.json.gz",
+      "sha": "b4010e31b8ffb90cc034566025b1f09bf59a10bb"
+    },
+    {
+      "path": "piloto_respaldo/diario/PROCEDENCIA.json",
+      "sha": "fbd2dcd062e57756fd17c04e780b45334bb6173b"
+    },
+    {
+      "path": "piloto_respaldo/diario/indice.json",
+      "sha": "82e879b25f8a97fc67884055818121c59e092982"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/0ea4ce8b935d85eb7f599e2b86924c1b587f0054/000000-cd66425fae2c5d968536f689a6f3ae294ccbf8ad55917da64c4ac0e751de58a7.json.gz",
+      "sha": "cb007fe2173082d59b57c5a92a0eba614f8fab27"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/0ea4ce8b935d85eb7f599e2b86924c1b587f0054/000001-e7320351758809904614bce7cfe214d241204955573bb6add00876d9459658ba.json.gz",
+      "sha": "4fed468bcca215ca6280cb314b16666cac5d3e8d"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/0ea4ce8b935d85eb7f599e2b86924c1b587f0054/indice.json",
+      "sha": "af3d91d87a06ba4ffacda681469144e81a287e90"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/43f349f79704b11a10b9eb2a143105c3253bc6d9/000000-5a8bbaaba3b794d7984f23fb31777316132a2046f462b35f1dcda6d6fba1a582.json.gz",
+      "sha": "ec158c28aeefb7e9cec843995f2a54c255b8eaf4"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/43f349f79704b11a10b9eb2a143105c3253bc6d9/000001-4d9b494d570ad30259495e5dd97371eb91d8cbe1f918b38e9c32e88c43286a46.json.gz",
+      "sha": "6d2fafe4076c438cb321c451a767db17a83ddbfb"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/43f349f79704b11a10b9eb2a143105c3253bc6d9/indice.json",
+      "sha": "36796f906b45897b93197d53b375f4c2e0399c0e"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/529c2258f34ebe45f0dcde9d70e303821c4a21f1/000000-544c9031aa5a4807257afb7296da9fb7046062cb494f63e79c3726e63585863b.json.gz",
+      "sha": "d249b4481d3ddc85e6c8d359c9c242c1835efec8"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/529c2258f34ebe45f0dcde9d70e303821c4a21f1/000001-5228e734f53c4626a030c47bfbe7257eac7bbbebff3ac77dea1992fb26c74ca6.json.gz",
+      "sha": "c7df5cc93e7fcaf6280a997d9b87fc511346d43d"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/529c2258f34ebe45f0dcde9d70e303821c4a21f1/indice.json",
+      "sha": "401acf1b68d10cb32422ff2b16764dd135c0918c"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/9e19dfcbf57fdfdb04116dfdf6f3dbf5d8eaaea8/000000-a412fe6d41c9a02719a1888eb93c90470e1b0362be5a80369ecbf42f2296fde7.json.gz",
+      "sha": "185bb07e2e324b3f611b4018b0da694eba0688c8"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/9e19dfcbf57fdfdb04116dfdf6f3dbf5d8eaaea8/indice.json",
+      "sha": "6381ac5c4c4dbded67ad3fae0ccd19fa62c9e7f5"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/bbb42a1c4b1b307626d05245f2e015cc9b1a7f70/000000-7be5a839c573dfa8e6b1356556845adc766b61fea15020016a99247fbd47cbad.json.gz",
+      "sha": "4cf718f77a800bd36a41816a1479af2e67ba5e39"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/bbb42a1c4b1b307626d05245f2e015cc9b1a7f70/000001-0319a824c2007f5c84bbae31c81336e129159b7cacac9d94b8ee30677f8ea8b2.json.gz",
+      "sha": "8c4d1a3b413080beb75773d271277c1f42e6e89c"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/bbb42a1c4b1b307626d05245f2e015cc9b1a7f70/indice.json",
+      "sha": "e1967d6e71ccec52e16d6b255b420723f4c2ce19"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/bfeb14bb4d8e09edb300d1a5330819000ce1e7bc/000000-4461fc9a82ea2c9e8ad6fdfaf0a8c82010f313d2719b931a88ac13ea1d8844a4.json.gz",
+      "sha": "d9539004d9bf9ef9a46aad2fd1f499053d1dc13e"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/bfeb14bb4d8e09edb300d1a5330819000ce1e7bc/000001-56b1c1866b3712680ce3d3c6315174c048d143bbee58e500c73561ca09faf771.json.gz",
+      "sha": "329f504ba1f05a883cd95830e03c934d9c7b90d5"
+    },
+    {
+      "path": "piloto_respaldo/validaciones/bfeb14bb4d8e09edb300d1a5330819000ce1e7bc/indice.json",
+      "sha": "62e5aab65df5aecc48c59ce509a8b36dc230a656"
+    },
+    {
+      "path": "radar_estado.json",
+      "sha": "802e45907de3ad3cd178eec4c126a1d281e89269"
+    }
+  ]
+}

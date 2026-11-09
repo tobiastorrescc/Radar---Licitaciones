@@ -1,0 +1,289 @@
+{
+  "fecha": "2026-11-09",
+  "metodo": "Lectura web independiente del proceso Python; referencias ambiguas conservadas sin contabilizar como sección comprobada.",
+  "paginas": [
+    {
+      "url_solicitada": "https://teodelina.gob.ar/",
+      "url_en_respuesta": "https://teodelina.gob.ar/",
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://hughes.gob.ar/",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://www.comunasangregorio.gob.ar/",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://munisje.gob.ar/ciudad/",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://www.comunavillamugueta.gob.ar/",
+      "url_en_respuesta": "https://www.comunavillamugueta.gob.ar/",
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://www.comunadepilar.gob.ar/",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://www.franck.gob.ar/",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://sanjeronimodelsauce.gob.ar/",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://sanjeronimonorte.gob.ar/gobierno/organizacion/",
+      "url_en_respuesta": "https://sanjeronimonorte.gob.ar/gobierno/organizacion/",
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://sastreciudad.gob.ar/intendencia/",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://sanguillermo.gob.ar/",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://www.mtotoras.gob.ar/",
+      "url_en_respuesta": null,
+      "lectura_disponible": false,
+      "limitacion": "No se obtuvo contenido suficiente para una comprobación independiente"
+    },
+    {
+      "url_solicitada": "https://sanjavier.gob.ar/",
+      "url_en_respuesta": "https://sanjavier.gob.ar/",
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://www.malabrigo.gob.ar/",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://avellaneda.gob.ar/",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://cayasta.gob.ar/",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://www.vallemaria.gob.ar/",
+      "url_en_respuesta": "https://www.vallemaria.gob.ar/",
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://galarza.gov.ar/autoridades/",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://ubajay.gob.ar/institucional/",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "https://www.aldeasanantonio.gob.ar/",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn969876view1",
+      "url_en_respuesta": "https://hughes.gob.ar/transparencia/compras-y-contrataciones",
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn969876view1",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn969876view1",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn969876view1",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn969876view1",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn969876view2",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn969876view2",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": null,
+      "url_en_respuesta": "https://sanjeronimodelsauce.gob.ar/wp-content/uploads/2026/03/fff.jpg",
+      "lectura_disponible": false,
+      "limitacion": "No se obtuvo contenido suficiente para una comprobación independiente"
+    },
+    {
+      "url_solicitada": "turn205282view3",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn205282view1",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn205282view1",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn205282view1",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn205282view1",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn205282view2",
+      "url_en_respuesta": null,
+      "lectura_disponible": false,
+      "limitacion": "No se obtuvo contenido suficiente para una comprobación independiente"
+    },
+    {
+      "url_solicitada": null,
+      "url_en_respuesta": "https://www.malabrigo.gob.ar/sites/default/files/styles/imagen_destacada/public/recbuehab26_malabrigo.jpg?itok=J4nzlTKf",
+      "lectura_disponible": false,
+      "limitacion": "No se obtuvo contenido suficiente para una comprobación independiente"
+    },
+    {
+      "url_solicitada": "turn245949view2",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn245949view2",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn245949view2",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn245949view0",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn245949view1",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": null,
+      "url_en_respuesta": null,
+      "lectura_disponible": false,
+      "limitacion": "No se obtuvo contenido suficiente para una comprobación independiente"
+    },
+    {
+      "url_solicitada": "turn517001view3",
+      "url_en_respuesta": null,
+      "lectura_disponible": false,
+      "limitacion": "No se obtuvo contenido suficiente para una comprobación independiente"
+    },
+    {
+      "url_solicitada": "turn517001view1",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn517001view2",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn517001view2",
+      "url_en_respuesta": null,
+      "lectura_disponible": true,
+      "limitacion": null
+    },
+    {
+      "url_solicitada": "turn517001view2",
+      "url_en_respuesta": null,
+      "lectura_disponible": false,
+      "limitacion": "No se obtuvo contenido suficiente para una comprobación independiente"
+    },
+    {
+      "url_solicitada": null,
+      "url_en_respuesta": null,
+      "lectura_disponible": false,
+      "limitacion": "No se obtuvo contenido suficiente para una comprobación independiente"
+    }
+  ],
+  "comparacion_exhaustiva": false
+}

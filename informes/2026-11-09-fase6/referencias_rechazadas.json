@@ -1,0 +1,31 @@
+{
+  "motivo": "Encabezados sin convocatoria, capturados en la primera exploración; conservados en artefactos, excluidos de la cola comercial y sin fuente automática validada.",
+  "registros": [
+    {
+      "organismo": "Comuna de Hughes",
+      "localidad": "Hughes",
+      "provincia": "Santa Fe",
+      "numero_procedimiento": "Pendiente de verificar",
+      "objeto": "Concurso de precios",
+      "fecha_publicacion": "Pendiente de verificar",
+      "fecha_apertura": "Pendiente de verificar",
+      "fecha_limite_presentacion": "Pendiente de verificar",
+      "condiciones_pago": "Pendiente de verificar",
+      "url": "https://hughes.gob.ar/transparencia/compras-y-contrataciones/concurso-de-precios",
+      "estado_comercial": "PENDIENTE_VERIFICAR_PRESENTACION"
+    },
+    {
+      "organismo": "Comuna de San Jerónimo del Sauce",
+      "localidad": "San Jerónimo del Sauce",
+      "provincia": "Santa Fe",
+      "numero_procedimiento": "Pendiente de verificar",
+      "objeto": "Resultados de búsqueda para: licitacion",
+      "fecha_publicacion": "Pendiente de verificar",
+      "fecha_apertura": "Pendiente de verificar",
+      "fecha_limite_presentacion": "Pendiente de verificar",
+      "condiciones_pago": "Pendiente de verificar",
+      "url": "https://sanjeronimodelsauce.gob.ar/?s=licitacion",
+      "estado_comercial": "PENDIENTE_VERIFICAR_PRESENTACION"
+    }
+  ]
+}
