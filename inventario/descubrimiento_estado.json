@@ -17404,7 +17404,7 @@
       "origen": "INVESTIGACION_AGENTE",
       "fecha_descubrimiento": "2026-11-09T13:28:17.622625+00:00",
       "validacion": {
-        "estado": "VALIDADA",
+        "estado": "PENDIENTE",
         "identidad_verificada": true,
         "identidad": {
           "verificada": true,
@@ -17430,7 +17430,7 @@
         },
         "procedimientos_con_objeto": 57,
         "fecha": "2026-11-09T13:29:28.634420+00:00",
-        "motivo": null,
+        "motivo": "La muestra de licitaciones repite encabezados sin objeto ni recepción comprobada. Ya se monitorea boletin.php; raíz pendiente de extracción documental, no alta operativa adicional.",
         "ejemplos": [
           {
             "organismo": "Municipalidad de Colón",
@@ -19495,7 +19495,7 @@
       "origen": "INVESTIGACION_AGENTE",
       "fecha_descubrimiento": "2026-11-09T13:38:46.784260+00:00",
       "validacion": {
-        "estado": "VALIDADA",
+        "estado": "PENDIENTE",
         "identidad_verificada": true,
         "identidad": {
           "verificada": true,
@@ -19515,7 +19515,7 @@
         },
         "procedimientos_con_objeto": 1,
         "fecha": "2026-11-09T13:38:55.642824+00:00",
-        "motivo": null,
+        "motivo": "El supuesto aviso era el artículo histórico Acebal, nuestro lugar en el mundo. No es una convocatoria. Captura de Actions 42627183451; regresión de título institucional.",
         "ejemplos": [
           {
             "organismo": "Comuna de Acebal",
