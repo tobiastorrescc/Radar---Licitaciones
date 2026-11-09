@@ -1,0 +1,587 @@
+{
+  "lotes": [
+    {
+      "fecha": "2026-11-09T12:21:51.883293+00:00",
+      "github_run_id": "42616347170",
+      "descubiertas_automaticamente": 1,
+      "hallazgos_nuevos": 3,
+      "candidatos_acumulados": 176,
+      "hallazgos_acumulados": 303,
+      "consultadas": 26,
+      "validadas": 0,
+      "validadas_acumuladas": 4,
+      "incorporadas": 0,
+      "incorporadas_acumuladas": 4,
+      "pendientes": 172,
+      "errores_busqueda": [
+        {
+          "objetivo": "departamento:Santa Fe:belgrano",
+          "url": "https://www.bing.com/search?q=%22Belgrano%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "departamento:Santa Fe:caseros",
+          "url": "https://www.bing.com/search?q=%22Caseros%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "reparar:fuente-030",
+          "url": "https://www.bing.com/search?q=%22Instituto+Becario%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "territorio:060070",
+          "url": "https://www.bing.com/search?q=%22Baradero%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "departamento:Santa Fe:castellanos",
+          "url": "https://www.bing.com/search?q=%22Castellanos%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "departamento:Santa Fe:constitucion",
+          "url": "https://www.bing.com/search?q=%22Constituci%C3%B3n%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "directorio:fuente-029",
+          "url": "https://www.enersa.com.ar/",
+          "errores": [
+            {
+              "tipo": "URLError",
+              "categoria": "RED",
+              "timeout": false,
+              "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>",
+              "causa": "ERROR_CERTIFICADO_TLS",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "reparar:fuente-049",
+          "url": "https://www.bing.com/search?q=%22Municipalidad+de+Pergamino%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "departamento:Santa Fe:garay",
+          "url": "https://www.bing.com/search?q=%22Garay%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "departamento:Santa Fe:general lopez",
+          "url": "https://www.bing.com/search?q=%22General+L%C3%B3pez%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "reparar:fuente-039",
+          "url": "https://www.bing.com/search?q=%22Municipalidad+de+Crespo%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "reparar:fuente-053",
+          "url": "https://www.bing.com/search?q=%22Municipalidad+de+Rojas%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "departamento:Santa Fe:general obligado",
+          "url": "https://www.bing.com/search?q=%22General+Obligado%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "departamento:Santa Fe:iriondo",
+          "url": "https://www.bing.com/search?q=%22Iriondo%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "directorio:fuente-030",
+          "url": "https://institutobecario.gov.ar/",
+          "errores": [
+            {
+              "tipo": "URLError",
+              "categoria": "RED",
+              "timeout": false,
+              "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>",
+              "causa": "ERROR_CERTIFICADO_TLS",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "territorio:060175",
+          "url": "https://www.bing.com/search?q=%22Col%C3%B3n%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "departamento:Santa Fe:las colonias",
+          "url": "https://www.bing.com/search?q=%22Las+Colonias%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "reparar:fuente-041",
+          "url": "https://www.bing.com/search?q=%22Municipalidad+de+Federaci%C3%B3n%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "departamento:Santa Fe:9 de julio",
+          "url": "https://www.bing.com/search?q=%229+de+Julio%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "departamento:Santa Fe:rosario",
+          "url": "https://www.bing.com/search?q=%22Rosario%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "directorio:fuente-049",
+          "url": "https://compras.pergamino.gob.ar/",
+          "errores": [
+            {
+              "categoria": "PRESUPUESTO",
+              "tipo": "TIEMPO_FUENTE",
+              "timeout": true,
+              "error": "Plazo agotado; se conserva lo extraído",
+              "fase": null
+            }
+          ]
+        }
+      ],
+      "duracion_segundos": 100.64,
+      "cobertura_completa": false
+    },
+    {
+      "fecha": "2026-11-09T12:31:40.895731+00:00",
+      "github_run_id": "42617716565",
+      "descubiertas_automaticamente": 15,
+      "hallazgos_nuevos": 25,
+      "candidatos_acumulados": 191,
+      "hallazgos_acumulados": 328,
+      "consultadas": 26,
+      "validadas": 4,
+      "validadas_acumuladas": 8,
+      "incorporadas": 4,
+      "incorporadas_acumuladas": 8,
+      "pendientes": 183,
+      "errores_busqueda": [
+        {
+          "objetivo": "departamento:Santa Fe:san javier",
+          "url": "https://www.bing.com/search?q=%22San+Javier%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "reparar:fuente-044",
+          "url": "https://www.bing.com/search?q=%22Municipalidad+de+Villaguay%22+%22Entre+R%C3%ADos%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "departamento:Santa Fe:san jeronimo",
+          "url": "https://www.bing.com/search?q=%22San+Jer%C3%B3nimo%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "departamento:Santa Fe:san lorenzo",
+          "url": "https://www.bing.com/search?q=%22San+Lorenzo%22+%22Santa+Fe%22+%28licitaciones+OR+%22concursos+de+precios%22+OR+cotizacion%29+municipio+comuna+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "directorio:fuente-037",
+          "url": "https://municipalidad.gualeguay.gob.ar/",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Respuesta supera 12000000 bytes; recorrido parcial",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "directorio:fuente-019",
+          "url": "https://transparencia.santafeciudad.gov.ar/",
+          "errores": [
+            {
+              "tipo": "HTTPError",
+              "categoria": "RED",
+              "timeout": false,
+              "error": "HTTP Error 403: Forbidden",
+              "http_status": 403,
+              "causa": "RESTRICCION_HTTP",
+              "restriccion_acceso_comprobada": true,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "reparar:fuente-099",
+          "url": "https://www.bing.com/search?q=%22Ministerio+P%C3%BAblico+de+Buenos+Aires%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "territorio:823372",
+          "url": "https://www.bing.com/search?q=%22Alvear%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        }
+      ],
+      "duracion_segundos": 140.51,
+      "cobertura_completa": false
+    },
+    {
+      "fecha": "2026-11-09T12:37:26.282648+00:00",
+      "github_run_id": "42618519935",
+      "descubiertas_automaticamente": 0,
+      "hallazgos_nuevos": 0,
+      "candidatos_acumulados": 194,
+      "hallazgos_acumulados": 331,
+      "consultadas": 6,
+      "validadas": 0,
+      "validadas_acumuladas": 7,
+      "incorporadas": 0,
+      "incorporadas_acumuladas": 7,
+      "pendientes": 187,
+      "errores_busqueda": [
+        {
+          "objetivo": "reparar:fuente-063",
+          "url": "https://www.bing.com/search?q=%22Comuna+de+Arequito%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "reparar:fuente-064",
+          "url": "https://www.bing.com/search?q=%22Comuna+de+Chab%C3%A1s%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "directorio:fuente-042",
+          "url": "https://nuevo.nogoya.gob.ar/",
+          "errores": [
+            {
+              "tipo": "HTTPError",
+              "categoria": "RED",
+              "timeout": false,
+              "error": "HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Permanently",
+              "http_status": 301,
+              "causa": "ERROR_RED_POR_CONFIRMAR",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        },
+        {
+          "objetivo": "territorio:060413",
+          "url": "https://www.bing.com/search?q=%22Jun%C3%ADn%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        }
+      ],
+      "duracion_segundos": 41.9,
+      "cobertura_completa": false
+    },
+    {
+      "fecha": "2026-11-09T12:43:35.074612+00:00",
+      "github_run_id": "42619310716",
+      "descubiertas_automaticamente": 0,
+      "hallazgos_nuevos": 0,
+      "candidatos_acumulados": 194,
+      "hallazgos_acumulados": 331,
+      "consultadas": 3,
+      "validadas": 0,
+      "validadas_acumuladas": 7,
+      "incorporadas": 0,
+      "incorporadas_acumuladas": 7,
+      "pendientes": 187,
+      "errores_busqueda": [
+        {
+          "objetivo": "territorio:822028",
+          "url": "https://www.bing.com/search?q=%22Arequito%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+          "errores": [
+            {
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Buscador alternativo requiere verificación humana; no se elude",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            }
+          ]
+        }
+      ],
+      "duracion_segundos": 35.81,
+      "cobertura_completa": false
+    }
+  ],
+  "nota": "La cuarta validación automática de la segunda ronda fue un falso portal (felicitaciones-titan) retirado; tres altas válidas netas. Ninguna oportunidad se borró del historial."
+}

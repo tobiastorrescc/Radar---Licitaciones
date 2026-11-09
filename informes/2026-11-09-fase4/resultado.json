@@ -1,0 +1,107 @@
+{
+  "nuevas_compras_vigentes": 1,
+  "otras_convocatorias_vigentes_venta": 1,
+  "fecha": "2026-11-09T09:44:10.689342-03:00",
+  "plan": {
+    "base": 42615182790,
+    "descubrimiento": [
+      42616347170,
+      42617716565,
+      42618519935,
+      42619310716
+    ],
+    "descripcion": "Capturas oficiales completas en fuentes, contraste con copia del respaldo actual; sin red ni OCR",
+    "revision": "dependencias-nativas-de-pruebas-sin-ocr"
+  },
+  "base_medida": {
+    "fuentes_consultadas": 96,
+    "PARCIAL": 29,
+    "INACCESIBLE": 15,
+    "PENDIENTE": 8,
+    "OPERATIVA": 44,
+    "procedimientos": 6129,
+    "apertura_futura_documental": 138,
+    "recepcion_vigente_comprobada": 21
+  },
+  "despues_medido": {
+    "fuentes_consultadas": 101,
+    "PARCIAL": 31,
+    "INACCESIBLE": 15,
+    "PENDIENTE": 8,
+    "OPERATIVA": 47,
+    "procedimientos": 6358,
+    "apertura_futura_documental": 140,
+    "recepcion_vigente_comprobada": 23
+  },
+  "catalogo_vigentes_observadas": 28,
+  "categorias": {
+    "A_PUBLICACIONES_RECIENTES_NUEVAS_VIGENTES": 0,
+    "B_VIGENTES_PRIMERA_DETECCION": 2,
+    "C_CONOCIDAS_RECUPERADAS": 1
+  },
+  "nuevas_vigentes_no_catalogadas_antes": 2,
+  "ventanas": {
+    "24h": 0,
+    "48h": 0,
+    "72h": 0
+  },
+  "primera": {
+    "corrida": "fase4-42621183825",
+    "fecha": "2026-11-09T09:44:10.689342-03:00",
+    "primera_ejecucion": false,
+    "estado": "COMPLETA_CON_INCIDENCIAS",
+    "observadas": 6502,
+    "candidatos_sin_confirmar": 144,
+    "clasificacion": {
+      "SIN_CAMBIOS": 6074,
+      "DATOS_COMPLETADOS": 9,
+      "MODIFICADO": 40,
+      "RECUPERACION_LINEA_BASE": 210,
+      "NUEVA_DETECCION_FECHA_DESCONOCIDA": 22
+    },
+    "novedades": 71,
+    "eventos_emitidos": 281,
+    "total_historial": 7003,
+    "fuentes": {
+      "TIEMPO_FUENTE": 17,
+      "BLOQUEADA": 14,
+      "PARCIAL": 15,
+      "PENDIENTE": 8,
+      "OPERATIVA": 46,
+      "SIN_PUBLICACIONES": 1
+    },
+    "mensaje": "CON_NOVEDADES"
+  },
+  "segunda": {
+    "corrida": "fase4-42621183825-repeticion",
+    "fecha": "2026-11-09T09:44:10.689342-03:00",
+    "primera_ejecucion": false,
+    "estado": "COMPLETA_CON_INCIDENCIAS",
+    "observadas": 6502,
+    "candidatos_sin_confirmar": 144,
+    "clasificacion": {
+      "SIN_CAMBIOS": 6355
+    },
+    "novedades": 0,
+    "eventos_emitidos": 0,
+    "total_historial": 7003,
+    "fuentes": {
+      "TIEMPO_FUENTE": 17,
+      "BLOQUEADA": 14,
+      "PARCIAL": 15,
+      "PENDIENTE": 8,
+      "OPERATIVA": 46,
+      "SIN_PUBLICACIONES": 1
+    },
+    "mensaje": "SIN_NOVEDADES_CONFIRMADAS_CON_INCIDENCIAS"
+  },
+  "historial_total": 7003,
+  "protegidos_intactos": true,
+  "control_rosario": {
+    "muestra": 53,
+    "detectadas": 53,
+    "omisiones": [],
+    "alcance": "Muestra fija 7/11, no porcentaje territorial global"
+  },
+  "ocr_nuevo": 0
+}

@@ -1,0 +1,20 @@
+{
+  "base": "e59d7a0228c6d8893267d0ea8c0d44215757278c",
+  "actual": "81749a8b0d3b5cd8d1cf1253896919320d77b855",
+  "main": "c4c44de36b8064bf84db4fa1071004e0f8c45ad8",
+  "archivos": 59,
+  "cambiados": [],
+  "archivos_preexistentes": 532,
+  "archivos_preexistentes_modificados": [
+    "conectores.py",
+    "extractores.py",
+    "fuentes.json",
+    "fuentes.txt",
+    "inventario/descubrimiento_estado.json",
+    "inventario/fuentes.json",
+    "inventario/fuentes_auto.json",
+    "tools/descubrir_fuentes.py",
+    "tools/plan_fase2.json"
+  ],
+  "nota": "Se comprueba todo el árbol inicial y se enumeran las únicas modificaciones; ningún archivo de producción, respaldos, reportes del piloto, despliegue o workflows preexistentes fue modificado."
+}

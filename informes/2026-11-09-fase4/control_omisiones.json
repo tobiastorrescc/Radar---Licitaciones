@@ -1,0 +1,56 @@
+{
+  "fecha_control": "2026-11-09",
+  "alcance": "Dos omisiones nuevas verificadas en Santa Fe y muestra Rosario heredada; no acredita auditoría manual exhaustiva de tres provincias",
+  "casos": [
+    {
+      "organismo": "Municipalidad de Ceres",
+      "localidad": "Ceres",
+      "provincia": "Santa Fe",
+      "numero_procedimiento": "54/2026",
+      "url": "http://ceres.gob.ar/wp-content/uploads/2026/10/PLIEGO-DE-BASES-Y-COND-VENTA-3-LOTES-LIC-054-2026.docx.pdf",
+      "fuente": "https://ceres.gob.ar/compras/",
+      "causa": "Fuente faltante y tarjetas rotuladas Lic 054-2026 que el lector genérico no reconocía",
+      "correccion": "Adaptador de tarjetas Ceres, lectura nativa del PDF y monitoreo del índice",
+      "regresion": "tests/test_fase4_descubrimiento.py:CeresDocumental"
+    },
+    {
+      "organismo": "Comuna de María Teresa",
+      "localidad": "María Teresa",
+      "provincia": "Santa Fe",
+      "numero_procedimiento": null,
+      "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
+      "fuente": "https://mariateresa.gob.ar/",
+      "causa": "Aviso en noticias, omitido en categoría licitaciones; sin número y artículo superior al bloque genérico",
+      "correccion": "Navegar noticias institucionales, reconocer concurso sin número desde su artículo y estabilizar identidad por idp",
+      "regresion": "tests/test_fase4_descubrimiento.py:ComunaSinNumero"
+    }
+  ],
+  "resultados": [
+    {
+      "organismo": "Municipalidad de Ceres",
+      "localidad": "Ceres",
+      "provincia": "Santa Fe",
+      "numero_procedimiento": "54/2026",
+      "url": "http://ceres.gob.ar/wp-content/uploads/2026/10/PLIEGO-DE-BASES-Y-COND-VENTA-3-LOTES-LIC-054-2026.docx.pdf",
+      "fuente": "https://ceres.gob.ar/compras/",
+      "causa": "Fuente faltante y tarjetas rotuladas Lic 054-2026 que el lector genérico no reconocía",
+      "correccion": "Adaptador de tarjetas Ceres, lectura nativa del PDF y monitoreo del índice",
+      "regresion": "tests/test_fase4_descubrimiento.py:CeresDocumental",
+      "detectada_antes": false,
+      "detectada_despues": true
+    },
+    {
+      "organismo": "Comuna de María Teresa",
+      "localidad": "María Teresa",
+      "provincia": "Santa Fe",
+      "numero_procedimiento": null,
+      "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
+      "fuente": "https://mariateresa.gob.ar/",
+      "causa": "Aviso en noticias, omitido en categoría licitaciones; sin número y artículo superior al bloque genérico",
+      "correccion": "Navegar noticias institucionales, reconocer concurso sin número desde su artículo y estabilizar identidad por idp",
+      "regresion": "tests/test_fase4_descubrimiento.py:ComunaSinNumero",
+      "detectada_antes": false,
+      "detectada_despues": true
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "fecha": "2026-11-09T09:44:10.689342-03:00",
+  "total": 2,
+  "nota": "Dos convocatorias, de las cuales una compra a proveedores y una venta de lotes municipales. Ninguna es publicación reciente confirmada.",
+  "oportunidades": [
+    {
+      "organismo": "Comuna de María Teresa",
+      "provincia": "Santa Fe",
+      "localidad": "María Teresa",
+      "numero_procedimiento": null,
+      "objeto": "compra de doscientas (200) cajas navideñas",
+      "presupuesto": null,
+      "fecha_publicacion": "2026-10-26",
+      "primera_deteccion": "2026-11-09T09:44:10.689342-03:00",
+      "ultima_deteccion": "2026-11-09T09:44:10.689342-03:00",
+      "fecha_hora_limite_presentacion": "2026-11-10T11:00:00-03:00",
+      "fecha_hora_apertura": "2026-11-10T11:00:00-03:00",
+      "condiciones_pago": "Pendiente de verificar",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
+      "enlace_pliego": null,
+      "naturaleza_convocatoria": "COMPRA_O_SERVICIO",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
+          "texto": "se realizara el dia 10/11/2026 11:00 hs en la sede comunal (restituto alejandre n°235), en"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
+          "texto": "2026-11-10t11:00:00-03:00"
+        },
+        "fecha_publicacion": {
+          "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
+          "texto": "lunes, 26 de octubre de 2026 -- 179 vistas la comuna de maria teresa invita a proveedores"
+        },
+        "tipo_procedimiento": {
+          "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
+          "texto": ""
+        }
+      },
+      "evidencia_recepcion": null
+    },
+    {
+      "organismo": "Municipalidad de Ceres",
+      "provincia": "Santa Fe",
+      "localidad": "Ceres",
+      "numero_procedimiento": "54/2026",
+      "objeto": "Venta y Adjudicación de Tres (3) lotes de propiedad municipal.",
+      "presupuesto": null,
+      "fecha_publicacion": null,
+      "primera_deteccion": "2026-11-09T09:44:10.689342-03:00",
+      "ultima_deteccion": "2026-11-09T09:44:10.689342-03:00",
+      "fecha_hora_limite_presentacion": "2026-11-17T08:30:00-03:00",
+      "fecha_hora_apertura": "2026-11-17T09:00:00-03:00",
+      "condiciones_pago": "Pendiente de verificar",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "url": "http://ceres.gob.ar/wp-content/uploads/2026/10/PLIEGO-DE-BASES-Y-COND-VENTA-3-LOTES-LIC-054-2026.docx.pdf",
+      "enlace_pliego": "http://ceres.gob.ar/wp-content/uploads/2026/10/PLIEGO-DE-BASES-Y-COND-VENTA-3-LOTES-LIC-054-2026.docx.pdf",
+      "naturaleza_convocatoria": "VENTA_BIENES_PUBLICOS",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "http://ceres.gob.ar/wp-content/uploads/2026/10/PLIEGO-DE-BASES-Y-COND-VENTA-3-LOTES-LIC-054-2026.docx.pdf",
+          "texto": "17 de noviembre de 2026 a las 9:00 horas. lugar: municipalidad de ceres – av. hipolito iri"
+        },
+        "fecha_limite_presentacion": {
+          "url": "http://ceres.gob.ar/wp-content/uploads/2026/10/PLIEGO-DE-BASES-Y-COND-VENTA-3-LOTES-LIC-054-2026.docx.pdf",
+          "texto": "las ofertas seran recibidas hasta el dia 17 de noviembre de 2026 a las 8:30 horas. apertur"
+        },
+        "numero_procedimiento": {
+          "url": "http://ceres.gob.ar/wp-content/uploads/2026/10/PLIEGO-DE-BASES-Y-COND-VENTA-3-LOTES-LIC-054-2026.docx.pdf",
+          "texto": "licitacion publica 54/2026"
+        },
+        "tipo_procedimiento": {
+          "url": "http://ceres.gob.ar/wp-content/uploads/2026/10/PLIEGO-DE-BASES-Y-COND-VENTA-3-LOTES-LIC-054-2026.docx.pdf",
+          "texto": "licitacion publica 54/2026"
+        }
+      },
+      "evidencia_recepcion": null
+    }
+  ]
+}
