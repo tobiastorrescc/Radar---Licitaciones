@@ -1,1 +1,7 @@
-{"etapa":"fase3-revalidar-esquema-errores-corregido","tareas":["revalidar"]}
+{
+  "etapa": "fase3-ampliacion-santaana-figueira",
+  "tareas": [
+    "candidatas"
+  ],
+  "candidatas_extra": "inventario/candidatas_fase3.json"
+}

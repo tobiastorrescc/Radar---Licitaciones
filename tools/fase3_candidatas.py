@@ -7,7 +7,9 @@ from tools.radar_controlado import fuentes_configuradas,registros_checkpoint
 
 def main():
  conocidas={f['url'].rstrip('/') for f in fuentes_configuradas()};sect=json.load(open('inventario/candidatas_sectoriales.json'))['candidatos'];fs=[]
- for c in sect[:14]:
+ plan=json.load(open('tools/plan_fase3.json'))
+ candidatas=json.load(open(plan['candidatas_extra']))['fuentes'] if plan.get('candidatas_extra') else sect[:14]
+ for c in candidatas:
   if c['url'].rstrip('/') in conocidas:continue
   f={**c,'id':'fase3-'+str(len(fs)+1).zfill(3),'conector':'publicaciones','descubrir_contrataciones':True,'barrido_institucional':True,'indice_documentos':True,'priorizar_listados':True,'lectura_adjuntos':'necesarios','solo_descubrimiento':True,'ocr':False,'capturar_respuestas':True,'admitir_avisos_sin_numero':True,'conexion_timeout':4,'lectura_timeout':7}
   fs.append(f)

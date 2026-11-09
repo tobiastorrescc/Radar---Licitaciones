@@ -1,0 +1,26 @@
+{
+  "fuentes": [
+    {
+      "organismo": "Municipalidad de Santa Ana",
+      "localidad": "Santa Ana",
+      "provincia": "Entre Ríos",
+      "url": "https://www.santaana.gob.ar/home/licitaciones/",
+      "estado_verificacion": "PENDIENTE",
+      "evidencia_descubrimiento": {
+        "metodo": "Consulta web oficial 9/11 UTC; todavía no extracción nativa validada",
+        "url": "https://www.santaana.gob.ar/home/licitaciones/"
+      }
+    },
+    {
+      "organismo": "Comuna de Fighiera",
+      "localidad": "Fighiera",
+      "provincia": "Santa Fe",
+      "url": "https://comunadefighiera.gob.ar/",
+      "estado_verificacion": "PENDIENTE",
+      "evidencia_descubrimiento": {
+        "metodo": "Consulta web oficial 9/11 UTC; todavía no extracción nativa validada",
+        "url": "https://comunadefighiera.gob.ar/"
+      }
+    }
+  ]
+}
