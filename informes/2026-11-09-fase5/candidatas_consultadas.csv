@@ -1,0 +1,49 @@
+url,organismo,localidad,provincia,identidad_verificada,estado_lector,publicaciones_detectadas,estado_alta,motivo
+https://nuevo.nogoya.gob.ar/,,,,False,PENDIENTE,0,PENDIENTE,"HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+Moved Permanently"
+https://w3.gualeguaychu.gov.ar/,,,,False,PENDIENTE,0,PENDIENTE,<urlopen error timed out>
+https://sunchales.gob.ar/,Municipalidad de Sunchales,Sunchales,Santa Fe,True,TIEMPO_FUENTE,81,PENDIENTE,Ver auditoría nativa; no equivale a alta adicional
+https://www.sannicolasciudad.gob.ar/,,,,False,PENDIENTE,0,PENDIENTE,"Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+https://alvear.gob.ar/,,,,False,PENDIENTE,0,PENDIENTE,"Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+https://pavonarriba.gob.ar/,Comuna de Pavón Arriba,Pavón Arriba,Santa Fe,True,PENDIENTE,0,PENDIENTE,"Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias"
+https://www.cglagos.gob.ar/,,,,False,PENDIENTE,0,PENDIENTE,"Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+https://www.federacion.gob.ar/,Municipalidad de Federación,Federación,Entre Ríos,True,TIEMPO_FUENTE,42,PENDIENTE,Ver auditoría nativa; no equivale a alta adicional
+https://www.timbues.gob.ar/,Gobierno de Timbúes,Timbúes,Santa Fe,True,TIEMPO_FUENTE,1,PENDIENTE,Ver auditoría nativa; no equivale a alta adicional
+https://www.ramallo.gob.ar/,Municipalidad de Ramallo,Ramallo,Buenos Aires,True,PENDIENTE,0,PENDIENTE,"Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias"
+https://www.generalramirez.gob.ar/,Municipalidad de General Ramírez,General Ramírez,Entre Ríos,True,PARCIAL,2,PENDIENTE,"Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias"
+https://arrecifes.gob.ar/,Municipalidad de Arrecifes,Arrecifes,Buenos Aires,True,OPERATIVA,5,PENDIENTE,"Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias"
+https://www.larroque.gob.ar/,Municipalidad de Larroque,Larroque,Entre Ríos,True,TIEMPO_FUENTE,25,PENDIENTE,Ver auditoría nativa; no equivale a alta adicional
+https://ceres.gob.ar/,Municipalidad de Ceres,Ceres,Santa Fe,True,TIEMPO_FUENTE,20,PENDIENTE,Ver auditoría nativa; no equivale a alta adicional
+https://villaguay.gob.ar/,,,,False,PENDIENTE,0,PENDIENTE,"Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+https://municipalidad.gualeguay.gob.ar/,,,,False,PENDIENTE,0,PENDIENTE,Respuesta supera 12000000 bytes; recorrido parcial
+https://www.municipalidadcolonpba.gob.ar/,Municipalidad de Colón,Colón,Buenos Aires,True,OPERATIVA,57,PENDIENTE,"La muestra de licitaciones repite encabezados sin objeto ni recepción comprobada. Ya se monitorea boletin.php; raíz pendiente de extracción documental, no alta operativa adicional."
+https://gobiernoabierto.baradero.gob.ar/,Municipalidad de Baradero,Baradero,Buenos Aires,True,PENDIENTE,0,PENDIENTE,"Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias"
+https://oroverde.gob.ar/,,,,False,PENDIENTE,0,PENDIENTE,"Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+https://haciendalapaz.gob.ar/,Municipalidad de La Paz,La Paz,Entre Ríos,True,PENDIENTE,0,PENDIENTE,"Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias"
+https://mariagrande.gob.ar/,Municipalidad de María Grande,María Grande,Entre Ríos,True,TIEMPO_FUENTE,32,PENDIENTE,Ver auditoría nativa; no equivale a alta adicional
+https://colon.gov.ar/,Municipalidad de Colón,Colón,Entre Ríos,True,TIEMPO_FUENTE,0,PENDIENTE,Ver auditoría nativa; no equivale a alta adicional
+https://datosabiertos.gualeguaychu.gov.ar/,,,,False,PENDIENTE,0,PENDIENTE,"Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+https://www.comunasme.gob.ar/,Comuna de San Martín de las Escobas,San Martín de las Escobas,Santa Fe,True,PENDIENTE,0,PENDIENTE,"Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias"
+https://transparencia.rojas.gov.ar/,,,,False,PENDIENTE,0,PENDIENTE,"Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+https://comunaarequito.gob.ar/,Comuna de Arequito,Arequito,Santa Fe,True,TIEMPO_FUENTE,11,PENDIENTE,Ver auditoría nativa; no equivale a alta adicional
+https://www.segui.gob.ar/,,,,False,PENDIENTE,0,PENDIENTE,"Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+https://www.rafaela.gob.ar/,Municipalidad de Rafaela,Rafaela,Santa Fe,True,PENDIENTE,0,PENDIENTE,"Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias"
+https://coloniaavellaneda.gob.ar/,,,,False,PENDIENTE,0,PENDIENTE,"Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+https://transparencia.urdinarrain.gov.ar/,,,,False,PENDIENTE,0,PENDIENTE,"Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+https://www.ibicuy.gob.ar/,Municipalidad de Ibicuy,Ibicuy,Entre Ríos,True,TIEMPO_FUENTE,2,PENDIENTE,Ver auditoría nativa; no equivale a alta adicional
+https://viale.gob.ar/,Municipalidad de Viale,Viale,Entre Ríos,True,TIEMPO_FUENTE,0,PENDIENTE,Ver auditoría nativa; no equivale a alta adicional
+http://www.sannicolas.gov.ar:8080/,,,,False,PENDIENTE,0,PENDIENTE,<urlopen error timed out>
+https://victoria.gob.ar/,Municipalidad de Victoria,Victoria,Entre Ríos,True,PENDIENTE,0,PENDIENTE,"Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias"
+https://chabas.gob.ar/,Comuna de Chabás,Chabás,Santa Fe,True,TIEMPO_FUENTE,2,PENDIENTE,Ver auditoría nativa; no equivale a alta adicional
+https://compras.concordia.gob.ar/,,,,False,PENDIENTE,0,PENDIENTE,"Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+https://sanbenito.gob.ar/,,,,False,PENDIENTE,0,PENDIENTE,"Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+https://www.bigand.gob.ar/,Municipio de Bigand,Bigand,Santa Fe,True,PENDIENTE,0,PENDIENTE,"Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias"
+https://pujato.gob.ar/,Comuna de Pujato,Pujato,Santa Fe,True,PENDIENTE,0,PENDIENTE,"Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias"
+https://buenosaires.gob.ar/gcaba_historico/laciudad/barrios/boedo,,,,False,PENDIENTE,0,PENDIENTE,"Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+https://www.argentina.gob.ar/justicia/derechofacil/leysimple/codigo-penal-de-la-nacion-parte-general,,,,False,PENDIENTE,0,PENDIENTE,"Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+https://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/16546/texact.htm,,,,False,PENDIENTE,0,PENDIENTE,"Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste"
+https://www.alcorta.gob.ar/,Comuna de Alcorta,Alcorta,Santa Fe,True,PENDIENTE,0,PENDIENTE,"Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias"
+https://maximopaz.gob.ar/,Comuna de Máximo Paz,Máximo Paz,Santa Fe,True,PENDIENTE,0,PENDIENTE,"Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias"
+https://acebal.gob.ar/acebal/,Comuna de Acebal,Acebal,Santa Fe,True,OPERATIVA,1,PENDIENTE,"El supuesto aviso era el artículo histórico Acebal, nuestro lugar en el mundo. No es una convocatoria. Captura de Actions 42627183451; regresión de título institucional."
+https://www.mpf.gob.ar/pia/files/2015/04/codigo-penal.pdf,,,,False,PENDIENTE,0,PENDIENTE,La identidad requiere una página HTML oficial; PDF aislado queda pendiente

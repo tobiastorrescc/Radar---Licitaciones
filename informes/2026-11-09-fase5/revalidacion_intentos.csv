@@ -1,0 +1,15 @@
+id,url,estado,iniciada,publicaciones_detectadas,duracion_segundos
+pendiente-003,https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38657,PARCIAL,True,1,20.183
+pendiente-033,https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38659,PARCIAL,True,1,7.216
+pendiente-089,https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones,PENDIENTE,True,0,1.765
+pendiente-035,https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38737,PARCIAL,True,1,14.775
+pendiente-037,https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38734,PARCIAL,True,1,6.007
+pendiente-038,https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38732,ERROR_ACCESO,True,0,4.295
+pendiente-040,https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38729,PARCIAL,True,1,6.261
+pendiente-041,https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38728,PARCIAL,True,1,14.739
+pendiente-051,https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38698,ERROR_ACCESO,True,0,4.138
+pendiente-052,https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38697,PARCIAL,True,1,6.206
+pendiente-063,https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-14-26-por-obra-trabajos-de-mantenimiento-interior-en-inmueble-de-juzgado-de-paz-de-general-campos/,OPERATIVA,True,1,3.182
+pendiente-072,https://aeropuertorosario.com/licitaciones/lpu-2026-00000002-appsf-od-com-con-air-ros/,TIEMPO_TOTAL,True,0,16.971
+pendiente-006,https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38675,PARCIAL,True,1,10.49
+pendiente-019,https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38720,TIEMPO_TOTAL,True,0,3.198

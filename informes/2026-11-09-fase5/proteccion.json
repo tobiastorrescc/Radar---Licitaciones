@@ -1,0 +1,22 @@
+{
+  "base": "30b29e0a9d2b3c57f28ddb36495c0d88545b88fb",
+  "comparado_con": "007134512a3c5d65d616532d05d9a0260557aebb",
+  "main": "c4c44de36b8064bf84db4fa1071004e0f8c45ad8",
+  "archivos_protegidos": 78,
+  "cambiados": [],
+  "preexistentes_modificados": [
+    "calidad_comercial.py",
+    "conectores.py",
+    "descubrimiento_territorial.py",
+    "extractores.py",
+    "fuentes_fase4.py",
+    "incremental.py",
+    "inventario/descubrimiento_estado.json",
+    "tools/descubrir_fuentes.py",
+    "tools/radar_controlado.py"
+  ],
+  "programador_modificado": false,
+  "produccion_modificada": false,
+  "respaldos_modificados": false,
+  "workflow_diario_modificado": false
+}

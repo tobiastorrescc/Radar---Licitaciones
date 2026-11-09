@@ -1,0 +1,706 @@
+provincia,departamento_o_partido,localidad,codigo_padron,organismo,sitio_oficial,fuente_contrataciones,localidad_identificada,fuente_localizada,fuente_validada,fuente_incorporada,fuente_revisada,estado_extraccion,ultima_revision,convocatorias_vigentes,alcance_geografico_verificado
+Buenos Aires,Pendiente de padrón departamental,Alberti,060021,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Arrecifes,060077,Municipalidad de Arrecifes,https://arrecifes.gob.ar/informacion-publica/licitaciones/,https://arrecifes.gob.ar/informacion-publica/licitaciones/,True,True,True,True,True,OPERATIVA,2026-11-09T10:28:01.975461-03:00,0,True
+Buenos Aires,Pendiente de padrón departamental,Arrecifes,060077,Municipalidad de Arrecifes,https://arrecifes.gob.ar/informacion-publica/boletin-oficial/,https://arrecifes.gob.ar/informacion-publica/boletin-oficial/,True,True,True,True,True,OPERATIVA,2026-11-09T10:28:45.639341-03:00,0,True
+Buenos Aires,Pendiente de padrón departamental,Arrecifes,060077,Municipalidad de Arrecifes,https://arrecifes.gob.ar/,https://arrecifes.gob.ar/,True,True,False,False,True,OPERATIVA,2026-11-09T10:29:03.640879-03:00,0,True
+Buenos Aires,Pendiente de padrón departamental,Baradero,060070,Municipalidad de Baradero,https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones,https://gobiernoabierto.baradero.gob.ar/precios-y-licitaciones,True,True,True,True,True,OPERATIVA,2026-11-09T10:28:17.247270-03:00,0,True
+Buenos Aires,Pendiente de padrón departamental,Baradero,060070,Municipalidad de Baradero,https://gobiernoabierto.baradero.gob.ar/,https://gobiernoabierto.baradero.gob.ar/,True,True,False,False,True,PENDIENTE,2026-11-09T10:29:28.738620-03:00,0,True
+Buenos Aires,Pendiente de padrón departamental,Bragado,060112,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Campana,060126,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Capitán Sarmiento,060140,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Carmen de Areco,060161,Municipalidad de Carmen de Areco,https://carmendeareco.gob.ar/transparencia/,https://carmendeareco.gob.ar/transparencia/,True,True,True,True,True,OPERATIVA,2026-11-09T10:33:32.961209-03:00,0,False
+Buenos Aires,Pendiente de padrón departamental,Chacabuco,060210,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Chivilcoy,060224,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Colón,060175,Municipalidad de Colón,https://www.municipalidadcolonpba.gob.ar/boletin.php,https://www.municipalidadcolonpba.gob.ar/boletin.php,True,True,True,True,True,OPERATIVA,2026-11-09T10:28:43.313214-03:00,0,True
+Buenos Aires,Pendiente de padrón departamental,Colón,060175,Municipalidad de Colón,https://www.municipalidadcolonpba.gob.ar/licitaciones.php,https://www.municipalidadcolonpba.gob.ar/licitaciones.php,True,True,True,True,True,PARCIAL,2026-11-09T10:28:20.867871-03:00,0,True
+Buenos Aires,Pendiente de padrón departamental,Colón,060175,Municipalidad de Colón,https://www.municipalidadcolonpba.gob.ar/,https://www.municipalidadcolonpba.gob.ar/,True,True,False,False,True,OPERATIVA,2026-11-09T10:29:24.321306-03:00,0,True
+Buenos Aires,Pendiente de padrón departamental,Escobar,060252,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Exaltación de la Cruz,060266,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Florentino Ameghino,060277,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,General Arenales,060294,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,General Las Heras,060329,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,General Pinto,060351,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,General Rodríguez,060364,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,General San Martín,060371,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,General Viamonte,060385,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Hurlingham,060408,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Ituzaingó,060410,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,José C. Paz,060412,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Junín,060413,Municipalidad de Junín,https://www.junin.gob.ar/servicio/licitaciones-y-concursos,https://www.junin.gob.ar/servicio/licitaciones-y-concursos,True,True,True,True,True,TIEMPO_FUENTE,2026-11-09T10:32:47.861222-03:00,0,False
+Buenos Aires,Pendiente de padrón departamental,La Matanza,060427,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Leandro N. Alem,060462,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Lincoln,060469,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Luján,060497,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Malvinas Argentinas,060515,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Marcos Paz,060525,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Mercedes,060532,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Merlo,060539,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Moreno,060560,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Morón,060568,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Navarro,060574,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Pergamino,060623,Municipalidad de Pergamino,https://compras.pergamino.gob.ar/,https://compras.pergamino.gob.ar/,True,True,True,True,True,PENDIENTE,2026-11-09T10:32:23.938212-03:00,0,True
+Buenos Aires,Pendiente de padrón departamental,Pilar,060638,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Ramallo,060665,Municipalidad de Ramallo,https://ramallo.gob.ar/boletines,https://ramallo.gob.ar/boletines,True,True,True,True,True,TIEMPO_FUENTE,2026-11-09T10:30:53.838405-03:00,0,True
+Buenos Aires,Pendiente de padrón departamental,Ramallo,060665,Municipalidad de Ramallo,https://www.ramallo.gob.ar/,https://www.ramallo.gob.ar/,True,True,False,False,True,PENDIENTE,2026-11-09T10:28:56.571226-03:00,0,True
+Buenos Aires,Pendiente de padrón departamental,Rojas,060686,Municipalidad de Rojas,https://transparencia.rojas.gov.ar/index.php?action=17,https://transparencia.rojas.gov.ar/index.php?action=17,True,True,True,True,True,OPERATIVA,2026-11-09T10:31:00.515332-03:00,0,True
+Buenos Aires,Pendiente de padrón departamental,Rojas,060686,Municipalidad de Rojas,https://transparencia.rojas.gov.ar/index.php?action=24,https://transparencia.rojas.gov.ar/index.php?action=24,True,True,True,True,True,SIN_PUBLICACIONES,2026-11-09T10:32:24.611310-03:00,0,True
+Buenos Aires,Pendiente de padrón departamental,Salto,060714,Municipalidad de Salto,https://salto.gob.ar/licitaciones/,https://salto.gob.ar/licitaciones/,True,True,True,True,True,OPERATIVA,2026-11-09T10:31:38.901818-03:00,0,False
+Buenos Aires,Pendiente de padrón departamental,San Andrés de Giles,060728,Municipalidad de San Andrés de Giles,https://www.sanandresdegiles.gob.ar/?q=licitaciones-publicas,https://www.sanandresdegiles.gob.ar/?q=licitaciones-publicas,True,True,True,True,True,OPERATIVA,2026-11-09T10:28:40.786735-03:00,0,False
+Buenos Aires,Pendiente de padrón departamental,San Antonio de Areco,060735,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,San Fernando,060749,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,San Isidro,060756,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,San Miguel,060760,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,San Nicolás,060763,Municipalidad de San Nicolás,https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos,https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos,True,True,True,True,True,PARCIAL,2026-11-09T10:28:00.016743-03:00,0,True
+Buenos Aires,Pendiente de padrón departamental,San Pedro,060770,Municipalidad de San Pedro,https://sanpedro.net.ar/portal.php,https://sanpedro.net.ar/portal.php,True,True,True,True,True,PENDIENTE,2026-11-09T10:28:15.486188-03:00,0,True
+Buenos Aires,Pendiente de padrón departamental,Suipacha,060784,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Tigre,060805,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Tres de Febrero,060840,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Vicente López,060861,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,False
+Buenos Aires,Pendiente de padrón departamental,Zárate,060882,Municipalidad de Zárate,https://zarate.gob.ar/licitaciones-publicas/,https://zarate.gob.ar/licitaciones-publicas/,True,True,True,True,True,OPERATIVA,2026-11-09T10:28:32.202294-03:00,0,False
+Entre Ríos,Pendiente de padrón departamental,1° de Mayo,300437,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Alcaraz,300231,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Alcaraz Norte,309415,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Alcaraz Sur,309420,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Aldea Asunción,302383,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Aldea Brasilera,300074,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Aldea Eigenfeld,309575,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Aldea Grapschental,309080,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Aldea María Luisa,300291,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Aldea Protestante,302112,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Aldea Salto,309090,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Aldea San Antonio,309585,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Aldea San Juan,302453,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Aldea San Miguel,309515,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Aldea San Rafael,309590,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Aldea Santa María,302836,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Aldea Santa Rosa,302843,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Aldea Spatzenkutter,302126,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Altamirano Sur,309790,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Antonio Tomás,309605,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Aranguren,300266,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Arroyo Barú,302007,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Arroyo Burgos,309610,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Arroyo Clé,309795,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Arroyo Corralito,309615,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Arroyo Gená,309832,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Arroyo Las Tunas,309192,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Arroyo Palo Seco,309625,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Arroyo del Medio,309190,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Banderas,309193,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Basavilbaso,300413,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Betbeder,309520,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Bovril,300238,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Caseros,300420,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Ceibas,300210,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Cerrito,300294,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Chajarí,300105,Municipalidad de Chajarí,https://chajari.gob.ar/,https://chajari.gob.ar/,True,True,True,True,True,OPERATIVA,2026-11-09T10:30:33.780996-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Chañar,309230,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Chilcas,309880,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Chiqueros,309540,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Clodomiro Ledesma,309035,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Adivino,309917,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Alemana,309135,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Avellaneda,300297,Municipalidad de Colonia Avellaneda,https://coloniaavellaneda.gob.ar/web/informacion-publica/,https://coloniaavellaneda.gob.ar/web/informacion-publica/,True,True,True,True,True,OPERATIVA,2026-11-09T10:28:39.177969-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Avigdor,302596,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Ayuí,300035,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Baylina,309770,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Carrasco,309430,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Celina,309635,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Crespo,302899,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Elía,300423,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Ensayo,302133,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Hocker,309015,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia La Argentina,309140,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Merou,309650,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Oficial N° 3 y 14,309440,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Oficial N° 5,309775,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia San Anselmo y Aledañas,309007,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia San Justo,309070,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Santa María y Las Margaritas,309143,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Tunas,309145,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colonia Viraró,309445,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Colón,300007,Municipalidad de Colón,https://colon.gov.ar/compras-contratos-suministros/licitaciones/,https://colon.gov.ar/compras-contratos-suministros/licitaciones/,True,True,True,True,True,PENDIENTE,2026-11-09T10:27:56.397055-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Colón,300007,Municipalidad de Colón,https://colon.gov.ar/,https://colon.gov.ar/,True,True,False,False,True,TIEMPO_FUENTE,2026-11-09T10:29:46.267668-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Concepción del Uruguay,300427,Universidad Nacional de Entre Ríos (UNER),https://compras.uner.edu.ar/,https://compras.uner.edu.ar/,True,True,True,True,True,BLOQUEADA,2026-11-09T10:28:09.013875-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Concepción del Uruguay,300427,Municipalidad de Concepción del Uruguay,https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones,https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones,True,True,True,True,True,OPERATIVA,2026-11-09T10:28:08.340109-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Concordia,300042,CAFESG,https://cafesg.gob.ar/cafesg2/licitaciones/,https://cafesg.gob.ar/cafesg2/licitaciones/,True,True,True,True,True,OPERATIVA,2026-11-09T10:27:55.665225-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Conscripto Bernardi,300140,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Costa Grande,309105,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Costa Uruguay Norte,309330,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Crespo,300301,Municipalidad de Crespo,https://www.crespo.gob.ar/licitaciones-privadas-2026/,https://www.crespo.gob.ar/licitaciones-privadas-2026/,True,True,True,True,True,OPERATIVA,2026-11-09T10:27:58.104034-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Crespo,300301,Municipalidad de Crespo,https://www.crespo.gob.ar/category/licitacion-publica/,https://www.crespo.gob.ar/category/licitacion-publica/,True,True,True,True,True,PARCIAL,2026-11-09T10:28:08.935390-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Crespo,300301,Municipalidad de Crespo,https://municrespo.gov.ar/digesto/consulta.php?s=consulta,https://municrespo.gov.ar/digesto/consulta.php?s=consulta,True,True,False,True,True,TIEMPO_FUENTE,2026-11-09T10:31:43.787791-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Crucesitas Octava,309525,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Cuchilla Redonda,309340,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Diamante,300084,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Diego López,309195,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Distrito Sexto,302411,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Distrito Tala,309670,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Distrito Talitas,309345,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Don Cristóbal I,309545,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Don Cristóbal II,302780,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Durazno,303091,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,El Cimarrón,302287,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,El Gramiyal,309205,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,El Palenque,302927,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,El Pingo,300305,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,El Quebracho,309450,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,El Redomón,309045,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,"El Solar, Bertozzi y San Carlos",302638,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Enrique Carbó,300184,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Espinillo Norte,309685,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Estación Camps,309110,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Estación Escriña,309355,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Estación Parera,302512,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Estación Raíces,309920,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Estación Sosa,302941,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Estación Yeruá,309050,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Estación Yuquerí,309055,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Estancia Grande,300049,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Estaquitas,309460,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Febre,302787,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Federación,300112,Municipalidad de Federación,https://www.federacion.gob.ar/licitaciones,https://www.federacion.gob.ar/licitaciones,True,True,True,True,True,PARCIAL,2026-11-09T10:32:21.087224-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Federación,300112,Municipalidad de Federación,https://www.federacion.gob.ar/,https://www.federacion.gob.ar/,True,True,False,False,True,TIEMPO_FUENTE,2026-11-09T10:28:28.533772-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Federal,300147,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,General Almada,309365,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,General Alvear,309120,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,General Campos,300378,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,General Galarza,300168,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,General Racedo,302161,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,General Ramírez,300091,Municipalidad de General Ramírez,https://www.generalramirez.gob.ar/boletin-informativo/,https://www.generalramirez.gob.ar/boletin-informativo/,True,True,True,True,True,OPERATIVA,2026-11-09T10:52:04.181075-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,General Ramírez,300091,Municipalidad de General Ramírez,https://www.generalramirez.gob.ar/licitaciones-y-concursos/,https://www.generalramirez.gob.ar/licitaciones-y-concursos/,True,True,True,True,True,OPERATIVA,2026-11-09T10:51:53.515755-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,General Ramírez,300091,Municipalidad de General Ramírez,https://www.generalramirez.gob.ar/,https://www.generalramirez.gob.ar/,True,True,False,False,True,PARCIAL,2026-11-09T10:38:48.681648-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,General Roca,302077,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Gilbert,300185,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Gobernador Echagüe,303098,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Gobernador Mansilla,300392,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Gobernador Sola,303112,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Gualeguay,300175,Municipalidad de Gualeguay,https://municipalidad.gualeguay.gob.ar/modulos/transparencia/licitaciones_publicas.php,https://municipalidad.gualeguay.gob.ar/modulos/transparencia/licitaciones_publicas.php,True,True,True,True,True,OPERATIVA,2026-11-09T10:32:20.649468-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Gualeguaychú,300189,Municipalidad de Gualeguaychú,https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones,https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones,True,True,False,True,True,PARCIAL,2026-11-09T10:28:57.968962-03:00,2,True
+Entre Ríos,Pendiente de padrón departamental,Gualeguaychú,300189,Municipalidad de Gualeguaychú,https://w3.gualeguaychu.gov.ar/tramites/compras-y-licitaciones/acceso-a-licitaciones-p%C3%BAblicas,https://w3.gualeguaychu.gov.ar/tramites/compras-y-licitaciones/acceso-a-licitaciones-p%C3%BAblicas,True,True,True,True,True,BLOQUEADA,2026-11-09T10:30:28.481981-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Gualeguaycito,309150,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Guardamonte,303119,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Hambis,309010,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Hasenkamp,300308,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Herrera,300434,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Hinojal,309890,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Ibicuy,300217,Municipalidad de Ibicuy,https://www.ibicuy.gob.ar/,https://www.ibicuy.gob.ar/,True,True,False,False,True,TIEMPO_FUENTE,2026-11-09T10:30:30.909140-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Ingeniero Sajaroff,303273,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Irazusta,302526,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Isla Las Lechiguanas,309302,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Isletas,309125,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Jubileo,303280,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Justo José de Urquiza,309560,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,La Criolla,300056,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,La Florida,309155,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,La Fraternidad y Santa Juana,309160,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,La Ollita,309820,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,La Paz,300245,Municipalidad de La Paz,https://haciendalapaz.gob.ar/compras/,https://haciendalapaz.gob.ar/compras/,True,True,True,True,True,OPERATIVA,2026-11-09T10:28:09.781187-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,La Paz,300245,Municipalidad de La Paz,https://haciendalapaz.gob.ar/,https://haciendalapaz.gob.ar/,True,True,False,False,True,PENDIENTE,2026-11-09T10:29:35.373186-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,La Picada,302955,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,La Providencia,309465,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,La Verbena,309245,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Laguna Benítez,309250,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Laguna del Pescado,309895,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Larroque,300196,Municipalidad de Larroque,https://www.larroque.gob.ar/,https://www.larroque.gob.ar/,True,True,False,False,True,TIEMPO_FUENTE,2026-11-09T10:38:55.760516-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Las Cuevas,302175,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Las Garzas,302962,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Las Guachas,309825,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Las Mercedes,309375,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Las Moscas,303161,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Laurencena,309565,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Libertador San Martín,300098,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Los Charrúas,300063,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Los Conquistadores,300115,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Lucas González,300280,Municipalidad de Lucas González,https://lucasgonzalez.gob.ar/licitaciones-y-concursos/,https://lucasgonzalez.gob.ar/licitaciones-y-concursos/,True,True,True,True,True,OPERATIVA,2026-11-09T10:28:29.808988-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Lucas Norte,309935,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Lucas Sur 1ro,309940,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Lucas Sur 2do,309945,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Maciá,300399,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,María Grande,300322,Municipalidad de María Grande,https://mariagrande.gob.ar/,https://mariagrande.gob.ar/,True,True,False,False,True,TIEMPO_FUENTE,2026-11-09T10:29:41.226671-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,María Grande 2da,309705,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Mojones Norte,309950,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Mojones Sur,309955,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Médanos,309405,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Nogoyá,300287,Municipalidad de Nogoyá,https://nuevo.nogoya.gob.ar/compras-licitaciones-y-concursos-nuevo/,https://nuevo.nogoya.gob.ar/compras-licitaciones-y-concursos-nuevo/,True,True,True,True,True,OPERATIVA,2026-11-09T10:27:58.929840-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Nueva Escocia,302084,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Ombú,302666,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Oro Verde,300329,Municipio de Oro Verde,https://oroverde.gob.ar/portal/secciones/licitaciones/,https://oroverde.gob.ar/portal/secciones/licitaciones/,True,True,True,True,True,TIEMPO_FUENTE,2026-11-09T10:33:19.491006-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Pajonal,309885,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Paraje Arroyo Maturrango,309620,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Paraje Las Tunas,302976,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Paraje Los Algarrobos,309957,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Paraná,300336,ENERSA,https://www.enersa.com.ar/area-proveedores/,https://www.enersa.com.ar/area-proveedores/,True,True,True,True,True,BLOQUEADA,2026-11-09T10:27:55.828652-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Paraná,300336,Poder Judicial de Entre Ríos,https://www.jusentrerios.gov.ar/contrataciones/,https://www.jusentrerios.gov.ar/contrataciones/,True,True,True,True,True,OPERATIVA,2026-11-09T10:27:59.277464-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Paraná,300336,Instituto Becario,https://institutobecario.gov.ar/licitaciones.php,https://institutobecario.gov.ar/licitaciones.php,True,True,True,True,True,BLOQUEADA,2026-11-09T10:28:08.172659-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Paraná,300336,Vialidad Entre Ríos,https://aplicaciones.vialidadentrerios.gob.ar/contrataciones-licitaciones,https://aplicaciones.vialidadentrerios.gob.ar/contrataciones-licitaciones,True,True,True,True,True,OPERATIVA,2026-11-09T10:29:08.904162-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Paraná,300336,Gobierno de Entre Ríos,https://portal.entrerios.gov.ar/haciendayfinanzas/contrataciones/,https://portal.entrerios.gov.ar/haciendayfinanzas/contrataciones/,True,True,True,True,True,OPERATIVA,2026-11-09T10:30:13.365960-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Paraná,300336,ATER,https://www.ater.gob.ar/ater2/licitaciones.asp,https://www.ater.gob.ar/ater2/licitaciones.asp,True,True,True,True,True,OPERATIVA,2026-11-09T10:30:14.639888-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Paraná,300336,Ministerio de Planeamiento e Infraestructura,https://www.entrerios.gov.ar/minplan/licitaciones,https://www.entrerios.gov.ar/minplan/licitaciones,True,True,True,True,True,OPERATIVA,2026-11-09T10:32:13.832802-03:00,3,True
+Entre Ríos,Pendiente de padrón departamental,Paraná,300336,Vialidad Entre Ríos,https://www.dpver.gov.ar/category/licitaciones-2026/,https://www.dpver.gov.ar/category/licitaciones-2026/,True,True,True,True,True,OPERATIVA,2026-11-09T10:32:15.819212-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Paraná,300336,IAFAS,https://www.iafas.gov.ar/proveedores/licitaciones/,https://www.iafas.gov.ar/proveedores/licitaciones/,True,True,True,True,True,PARCIAL,2026-11-09T10:32:25.129160-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Paso Duarte,309220,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Paso de la Arena,309710,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Paso de la Laguna,303329,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Paso de las Piedras,309715,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Pedernal,302091,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Picada Berón,309480,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Piedras Blancas,300252,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Primer Distrito Cuchilla,309280,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Pronunciamiento,300441,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Pueblo Brugo,300340,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Pueblo Cazes,302042,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Pueblo General Belgrano,300199,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Pueblo Liebig,300011,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Puerto Algarrobo,309485,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Puerto Curtiembre,302999,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Puerto Yeruá,300070,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Quebracho,309730,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Raíces Oeste,309965,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Rincón de Nogoyá,303245,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Rincón del Cinto,309395,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Rincón del Doll,303252,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Rincón del Gato,309400,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Rocamora,303175,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Rosario del Tala,300406,Municipalidad de Rosario del Tala,https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas,https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas,True,True,True,True,True,PARCIAL,2026-11-09T10:32:21.152811-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,San Benito,300343,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,San Cipriano,303182,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,San Ernesto,309780,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,San Gustavo,300255,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,San Jaime de la Frontera,300119,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,San José,300014,Municipalidad de San José,https://sanjose.gob.ar/concursos-licitaciones/,https://sanjose.gob.ar/concursos-licitaciones/,True,True,True,True,True,OPERATIVA,2026-11-09T10:32:17.233119-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,San José de Feliciano,300161,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,San Justo,300448,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,San Marcial,303189,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,San Miguel,309029,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,San Pedro,309175,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,San Ramírez,309495,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,San Ramón,309180,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,San Roque,309185,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,San Salvador,300385,Municipalidad de San Salvador,https://sansalvadorer.gob.ar/,https://sansalvadorer.gob.ar/,True,True,True,True,True,OPERATIVA,2026-11-09T10:28:30.592752-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,San Víctor,302376,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Santa Ana,300126,Municipalidad de Santa Ana,https://www.santaana.gob.ar/home/licitaciones/,https://www.santaana.gob.ar/home/licitaciones/,True,True,True,True,True,PARCIAL,2026-11-09T10:33:32.583974-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Santa Anita,300455,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Santa Elena,300259,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Santa Luisa,309735,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Sauce Montrull,303020,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Sauce Pinto,303027,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Sauce de Luna,300154,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Saucesito,309497,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Seguí,300350,Municipalidad de Seguí,https://www.segui.gob.ar/sitio/?cat=26,https://www.segui.gob.ar/sitio/?cat=26,True,True,True,True,True,PARCIAL,2026-11-09T10:28:36.683902-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Sir Leonard,309500,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Tabossi,300357,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Tala,303154,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Tezanos Pinto,303034,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Ubajay,300021,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Urdinarrain,300203,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Valle María,300077,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Viale,300364,Municipalidad de Viale,https://viale.gob.ar/pliegos/,https://viale.gob.ar/pliegos/,True,True,True,True,True,TIEMPO_FUENTE,2026-11-09T10:31:42.820704-03:00,1,True
+Entre Ríos,Pendiente de padrón departamental,Viale,300364,Municipalidad de Viale,https://viale.gob.ar/,https://viale.gob.ar/,True,True,False,False,True,TIEMPO_FUENTE,2026-11-09T10:30:33.914964-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Victoria,300469,Municipalidad de Victoria,https://victoria.gob.ar/web-compras/Invitaciones-Compras/concurso-de-precios/,https://victoria.gob.ar/web-compras/Invitaciones-Compras/concurso-de-precios/,True,True,True,True,True,PARCIAL,2026-11-09T10:30:19.203876-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Victoria,300469,Municipalidad de Victoria,https://victoria.gob.ar/,https://victoria.gob.ar/,True,True,False,False,True,PENDIENTE,2026-11-09T10:30:40.581062-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Villa Clara,300476,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Villa Domínguez,300483,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Villa Elisa,300028,Municipalidad de Villa Elisa,https://villaelisa.gov.ar/transparencia/,https://villaelisa.gov.ar/transparencia/,True,True,True,True,True,PARCIAL,2026-11-09T10:31:12.285887-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Villa Fontana,303041,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Villa Gobernador Luis F. Etchevehere,302948,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Villa Hernandarias,300315,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Villa Mantero,300462,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Villa Paranacito,300224,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Villa Sabá Z. Hernández,300273,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Villa Urquiza,300371,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Villa del Rosario,300133,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Villaguay,300490,Municipalidad de Villaguay,https://villaguay.gob.ar/boletindigital/,https://villaguay.gob.ar/boletindigital/,True,True,True,True,True,PENDIENTE,2026-11-09T10:30:53.834982-03:00,0,True
+Entre Ríos,Pendiente de padrón departamental,Walter Moss,309785,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,XX de Septiembre,302808,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Yacaré,309505,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Entre Ríos,Pendiente de padrón departamental,Yeso Oeste,309510,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Aarón Castellanos,822574,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Acebal,823351,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Aguará Grande,823477,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Albarellos,823358,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Alcorta,822413,Comuna de Alcorta,https://www.alcorta.gob.ar/,https://www.alcorta.gob.ar/,True,True,False,False,True,PENDIENTE,2026-11-09T10:38:47.510198-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Aldao,823981,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Alejandra,823687,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Alvear,823372,Municipalidad de Alvear,https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones,https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones,True,True,True,True,True,TIEMPO_FUENTE,2026-11-09T10:28:18.363165-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Ambrosetti,823484,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Amenábar,822581,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Angeloni,823862,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Angélica,822112,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Arequito,822028,Comuna de Arequito,https://comunaarequito.gob.ar/licitaciones/,https://comunaarequito.gob.ar/licitaciones/,True,True,True,True,True,OPERATIVA,2026-11-09T10:28:22.102423-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Arequito,822028,Comuna de Arequito,https://comunaarequito.gob.ar/,https://comunaarequito.gob.ar/,True,True,False,False,True,TIEMPO_FUENTE,2026-11-09T10:39:14.150230-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Arminda,823379,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Armstrong,820007,Municipalidad de Armstrong,https://armstrong.gov.ar/index.php/transparencia,https://armstrong.gov.ar/index.php/transparencia,True,True,True,True,True,TIEMPO_FUENTE,2026-11-09T10:30:08.745290-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Arocena,823722,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Arroyo Aguiar,822952,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Arroyo Ceibal,822763,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Arroyo Leyes,822959,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Arroyo Seco,820182,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Arrufo,823491,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Arteaga,822035,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Ataliva,822119,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Aurelia,822126,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Avellaneda,820091,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Barrancas,823729,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Bauer y Sigel,822133,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Bella Italia,822140,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Berabevú,822042,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Berna,822770,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Bernardo de Irigoyen,823736,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Bigand,822049,Municipio de Bigand,https://www.bigand.gob.ar/,https://www.bigand.gob.ar/,True,True,False,False,True,PENDIENTE,2026-11-09T10:31:09.006152-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Bombal,822420,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Bouquet,822007,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Bustinza,822882,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Cabal,822966,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Cacique Ariacaiquín,823694,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Cafferata,822588,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Calchaquí,820329,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Campo Andino,822973,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Campo Piaggio,823743,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Candioti,822980,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Capitán Bermúdez,820266,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Capivara,823498,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Carcarañá,820273,Municipalidad de Carcarañá,https://xn--carcaraa-j3a.gob.ar/,https://xn--carcaraa-j3a.gob.ar/,True,True,True,True,True,TIEMPO_FUENTE,2026-11-09T10:27:51.230575-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Carlos Pellegrini,824051,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Carmen,822602,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Carmen del Sauce,823386,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Carreras,822609,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Carrizales,822889,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Casalegno,823750,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Casas,824058,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Casilda,820028,Municipalidad de Casilda,https://www.casilda.gob.ar/web/licitaciones-casilda/,https://www.casilda.gob.ar/web/licitaciones-casilda/,True,True,True,True,True,OPERATIVA,2026-11-09T10:32:11.532132-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Castelar,824065,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Castellanos,822168,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Cavour,823036,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Cayastacito,823869,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Cayastá,822539,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Cañada Ombú,824142,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Cañada Rica,822427,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Cañada Rosquín,824044,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Cañada de Gómez,820126,Municipalidad de Cañada de Gómez,https://cdg.gob.ar/transparencia/licitaciones-y-concursos/,https://cdg.gob.ar/transparencia/licitaciones-y-concursos/,True,True,True,True,True,BLOQUEADA,2026-11-09T10:27:55.676670-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Cañada del Ucle,822595,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Centeno,823757,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Cepeda,822434,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Ceres,820224,Municipalidad de Ceres,https://ceres.gob.ar/compras/,https://ceres.gob.ar/compras/,True,True,True,True,True,TIEMPO_FUENTE,2026-11-09T10:28:40.508826-03:00,1,True
+Santa Fe,Pendiente de padrón departamental,Ceres,820224,Municipalidad de Ceres,https://ceres.gob.ar/,https://ceres.gob.ar/,True,True,False,False,True,TIEMPO_FUENTE,2026-11-09T10:29:19.374284-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Chabas,822056,Comuna de Chabás,https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5002-licitacion-publica-01-2026,https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5002-licitacion-publica-01-2026,True,True,True,True,True,OPERATIVA,2026-11-09T10:31:04.346733-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Chabas,822056,Comuna de Chabás,https://chabas.gob.ar/,https://chabas.gob.ar/,True,True,False,False,True,TIEMPO_FUENTE,2026-11-09T10:39:23.325002-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Chapuy,822616,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Chañar Ladeado,822063,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Chovet,822623,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Christophersen,822630,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Classon,822896,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Colonia Aldao,822147,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Colonia Ana,823505,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Colonia Belgrano,824072,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Colonia Bicha,822154,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Colonia Bigand,822161,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Colonia Bossi,823512,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Colonia Cello,822175,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Colonia Clara,823568,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Colonia Dolores,823876,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Colonia Durán,823701,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Colonia Iturraspe,822182,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Colonia Margarita,822189,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Colonia Mascías,822546,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Colonia Raquel,822196,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Colonia Rosa,823519,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Colonia Teresa,823704,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Constanza,823526,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Coronda,820245,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Coronel Arnold,823988,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Coronel Bogado,823393,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Coronel Domínguez,823470,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Coronel Fraga,822203,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Correa,822903,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Crispi,824079,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Cululú,823050,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Curupaity,823533,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Desvío Arijón,823764,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Diego de Alvear,822637,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Dos Rosas y La Legua,823540,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Díaz,823771,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Egusquiza,822210,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,El Araza,822777,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,El Rabón,822784,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,El Sombrerito,822791,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,El Trébol,820308,Municipalidad de El Trébol,https://eltrebol.gov.ar/tipo_licitaciones/licitacion-publica/,https://eltrebol.gov.ar/tipo_licitaciones/licitacion-publica/,True,True,True,True,True,OPERATIVA,2026-11-09T10:52:22.243437-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,El Trébol,820308,Municipalidad de El Trébol,https://eltrebol.gov.ar/licitaciones-y-contrataciones/,https://eltrebol.gov.ar/licitaciones-y-contrataciones/,True,True,True,True,True,OPERATIVA,2026-11-09T10:52:44.045937-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Elisa,823057,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Elortondo,822644,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Emilia,822987,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Empalme San Carlos,823064,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Empalme Villa Constitución,822441,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Esmeralda,822217,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Esperanza,820161,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Estación Clucellas,822224,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Esteban Rams,823281,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Esther,823883,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Eusebia y Carolina,822231,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Eustolia,822238,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Felicia,823071,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Fidela,822245,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Fighiera,823400,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Firmat,820063,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Florencia,820095,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Fortín Olmos,824149,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Franck,823078,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Fray Luis Beltrán,820280,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Frontera,820035,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Fuentes,823995,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Funes,820189,Municipalidad de Funes,https://funes.gob.ar/,https://funes.gob.ar/,True,True,True,True,True,PARCIAL,2026-11-09T10:27:51.236744-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Funes,820189,Municipalidad de Funes,https://funes.gob.ar/boletin_oficial,https://funes.gob.ar/boletin_oficial,True,True,True,True,True,PARCIAL,2026-11-09T10:32:08.860267-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Gaboto,823778,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Galisteo,822252,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Garabato,824156,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Garibaldi,822259,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Gato Colorado,823288,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,General Gelly,822448,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,General Lagos,823407,Comuna de General Lagos,https://cglagos.gob.ar/comuna/compras-y-licitaciones,https://cglagos.gob.ar/comuna/compras-y-licitaciones,True,True,True,True,True,PARCIAL,2026-11-09T10:28:11.366749-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Gessler,823785,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Gobernador Crespo,823890,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Godoy,822455,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Golondrina,824163,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Granadero Baigorria,820196,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Gregoria Pérez de Denis,823295,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Grutly,823085,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Guadalupe Norte,822805,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Gálvez,820252,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Gödeken,822070,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Hardy,822808,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Helvecia,822553,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Hersilia,823547,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Hipatía,823092,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Huanqueros,823554,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Hugentobler,822266,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Hughes,822651,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Humberto Primo,822273,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Humboldt,823099,Comuna de Humboldt,https://www.humboldt.gob.ar/,https://www.humboldt.gob.ar/,True,True,True,True,True,BLOQUEADA,2026-11-09T10:28:36.338426-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Ibarlucea,823414,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Ingeniero Chanourdie,822812,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Intiyaco,824170,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Irigoyen,823792,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Ituzaingó,823106,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Jacinto L. Aráuz,823113,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Josefina,822280,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Juan B. Molina,822462,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Juan de Garay,823302,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Juncal,822469,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,La Brava,823708,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,La Cabral,823561,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,La Camila,823897,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,La Chispa,822658,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,La Criolla,823904,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,La Gallareta,824177,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,La Lucila,823575,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,La Pelada,823120,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,La Penca y Caraguatá,823911,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,La Rubia,823582,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,La Sarita,822819,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,La Vanguardia,822476,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Labordeboy,822665,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Laguna Paiva,820140,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Landeta,824086,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Lanteri,822826,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Larrechea,823799,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Las Avispas,823589,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Las Bandurrias,824093,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Las Garzas,822833,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Las Palmeras,823596,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Las Parejas,820014,Municipalidad de Las Parejas,https://lasparejas.gov.ar/,https://lasparejas.gov.ar/,True,True,True,True,True,PENDIENTE,2026-11-09T10:32:11.534064-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Las Petacas,824100,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Las Rosas,820021,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Las Toscas,820098,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Las Tunas,823127,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Lazzarino,822672,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Lehmann,822287,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Llambí Campbell,822994,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Logroño,823309,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Loma Alta,823806,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Los Amores,824184,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Los Cardos,824107,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Los Laureles,822840,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Los Molinos,822077,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Los Quirquinchos,822084,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Los Tábanos,824188,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Lucio V. López,822910,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Luis Palacios,824002,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,López,823813,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Maciel,823820,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Maggiolo,822679,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Malabrigo,820105,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Marcelino Escalada,823918,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Margarita,824191,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,María Juana,822294,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,María Luisa,823134,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,María Susana,824114,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,María Teresa,822686,Comuna de María Teresa,https://mariateresa.gob.ar/,https://mariateresa.gob.ar/,True,True,True,True,True,OPERATIVA,2026-11-09T10:29:21.918521-03:00,1,True
+Santa Fe,Pendiente de padrón departamental,Matilde,823141,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Maua,822301,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Melincué,822693,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Miguel Torres,822700,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Moisés Ville,823603,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Monigotes,823610,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Monje,823827,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Monte Oscuridad,823617,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Monte Vera,823001,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Montefiore,823316,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Montes de Oca,822014,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Murphy,822707,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Máximo Paz,822483,Comuna de Máximo Paz,https://maximopaz.gob.ar/,https://maximopaz.gob.ar/,True,True,False,False,True,PENDIENTE,2026-11-09T10:38:47.511588-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Naré,823925,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Nelson,823008,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Nicanor Molinas,822847,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Nuevo Torino,823148,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Oliveros,822917,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Palacios,823631,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Pavón,822490,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Pavón Arriba,822497,Comuna de Pavón Arriba,https://pavonarriba.gob.ar/,https://pavonarriba.gob.ar/,True,True,False,False,True,PENDIENTE,2026-11-09T10:28:27.665980-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Pedro Gómez Cello,823932,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Peyrano,822504,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Piamonte,824121,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Pilar,823155,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Piñero,823421,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Plaza Clucellas,822308,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Portugalete,823638,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Pozo Borrado,823323,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Presidente Roca,822315,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Progreso,823162,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Providencia,823169,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Pueblo Andino,822924,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Pueblo Esther,820207,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Pueblo Marini,822322,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Pueblo Muñoz,823435,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Puerto General San Martín,820287,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Pujato,824009,Comuna de Pujato,https://pujato.gob.ar/,https://pujato.gob.ar/,True,True,False,False,True,PENDIENTE,2026-11-09T10:31:11.134650-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Pujato Norte,823176,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Pérez,820203,Municipalidad de Pérez,https://perez.opendata.junar.com/home/,https://perez.opendata.junar.com/home/,True,True,True,True,True,TIEMPO_FUENTE,2026-11-09T10:30:08.748075-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Rafaela,820042,Municipalidad de Rafaela,https://www.rafaela.gob.ar/gobiernoabierto/Licitaciones.aspx,https://www.rafaela.gob.ar/gobiernoabierto/Licitaciones.aspx,True,True,True,True,True,BLOQUEADA,2026-11-09T10:51:53.514758-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Rafaela,820042,Municipalidad de Rafaela,https://www.rafaela.gob.ar/,https://www.rafaela.gob.ar/,True,True,False,False,True,PENDIENTE,2026-11-09T10:30:21.358162-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Ramayón,823939,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Ramona,822329,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Reconquista,820112,Municipalidad de Reconquista,https://reconquista.gob.ar/licitaciones/,https://reconquista.gob.ar/licitaciones/,True,True,True,True,True,OPERATIVA,2026-11-09T10:27:56.398483-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Reconquista,820112,Municipalidad de Reconquista,https://reconquista.gob.ar/concurso-de-ofertas/,https://reconquista.gob.ar/concurso-de-ofertas/,True,True,True,True,True,OPERATIVA,2026-11-09T10:31:41.105608-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Reconquista,820112,Municipalidad de Reconquista,https://reconquista.gob.ar/concurso-de-precios/,https://reconquista.gob.ar/concurso-de-precios/,True,True,True,True,True,OPERATIVA,2026-11-09T10:33:16.965805-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Recreo,820142,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Ricardone,824016,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Rivadavia,823183,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Roldán,820294,Municipalidad de Roldán,https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/,https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/,True,True,True,True,True,TIEMPO_FUENTE,2026-11-09T10:27:55.679975-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Romang,820237,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Rosario,820210,Municipalidad de Rosario,https://www.rosario.gob.ar/inicio/compras-y-licitaciones,https://www.rosario.gob.ar/inicio/compras-y-licitaciones,True,True,True,True,True,TIEMPO_FUENTE,2026-11-09T10:27:51.224450-03:00,4,True
+Santa Fe,Pendiente de padrón departamental,Rosario,820210,UNR,https://compras.unr.edu.ar/,https://compras.unr.edu.ar/,True,True,True,True,True,BLOQUEADA,2026-11-09T10:27:51.226753-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Rosario,820210,Ente Administrador Puerto Rosario (ENAPRO),https://enapro.com.ar/category/licitaciones/,https://enapro.com.ar/category/licitaciones/,True,True,True,True,True,OPERATIVA,2026-11-09T10:28:03.168607-03:00,2,True
+Santa Fe,Pendiente de padrón departamental,Rosario,820210,Concejo Municipal de Rosario,https://compras.concejorosario.gov.ar/,https://compras.concejorosario.gov.ar/,True,True,True,True,True,OPERATIVA,2026-11-09T10:28:37.352978-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Rosario,820210,Universidad Nacional de Rosario,https://unr.edu.ar/obras-publicas/,https://unr.edu.ar/obras-publicas/,True,True,True,True,True,TIEMPO_FUENTE,2026-11-09T10:51:53.516961-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Rosario,820210,Aeropuerto Internacional Rosario,https://aeropuertorosario.com/institucional/licitaciones/,https://aeropuertorosario.com/institucional/licitaciones/,True,True,True,True,True,TIEMPO_FUENTE,2026-11-09T10:30:08.742097-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Rosario,820210,ASSA,https://www.aguassantafesinas.com.ar/portal/licitaciones,https://www.aguassantafesinas.com.ar/portal/licitaciones,True,True,True,True,True,OPERATIVA,2026-11-09T10:32:11.530407-03:00,4,True
+Santa Fe,Pendiente de padrón departamental,Rosario,820210,Concejo Municipal de Rosario,https://www.concejorosario.gov.ar/compras/,https://www.concejorosario.gov.ar/compras/,True,True,True,True,True,TIEMPO_FUENTE,2026-11-09T10:33:19.672274-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Rueda,822511,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Rufino,820070,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Sa Pereira,823190,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Saguier,822336,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Saladero Mariano Cabal,822560,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Salto Grande,822931,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Agustín,823197,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Antonio,822343,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Antonio de Obligado,822854,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Bernardo,823946,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Carlos Centro,820168,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Carlos Norte,823204,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Carlos Sud,823211,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Cristóbal,820231,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Eduardo,822714,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Eugenio,823834,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Fabián,823841,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Francisco de Santa Fe,822721,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Genaro,820256,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Gregorio,822728,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Guillermo,820233,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Javier,820238,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Jerónimo Norte,820171,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Jerónimo Sud,824023,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Jerónimo del Sauce,823218,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Jorge,820315,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San José,823043,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San José de la Esquina,822091,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San José del Rincón,820143,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Justo,820259,Municipalidad de San Justo,https://sanjusto.gov.ar/,https://sanjusto.gov.ar/,True,True,True,True,True,OPERATIVA,2026-11-09T10:31:47.522611-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,San Lorenzo,820301,Municipalidad de San Lorenzo,https://sanlorenzo.gob.ar/licitaciones/,https://sanlorenzo.gob.ar/licitaciones/,True,True,True,True,True,PENDIENTE,2026-11-09T10:31:01.361402-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,San Mariano,823232,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Martín Norte,823953,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,San Martín de las Escobas,824128,Comuna de San Martín de las Escobas,https://www.comunasme.gob.ar/,https://www.comunasme.gob.ar/,True,True,False,False,True,PENDIENTE,2026-11-09T10:39:12.697736-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,San Vicente,820045,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Sancti Spiritu,822735,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Sanford,822098,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Santa Clara de Buena Vista,823239,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Santa Clara de Saguier,822357,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Santa Fe,820147,Gobierno de Santa Fe,https://compras.santafe.gob.ar/,https://compras.santafe.gob.ar/,True,True,True,True,True,BLOQUEADA,2026-11-09T10:27:55.673481-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Santa Fe,820147,Poder Judicial de Santa Fe,https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/,https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/,True,True,True,True,True,BLOQUEADA,2026-11-09T10:27:55.674951-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Santa Fe,820147,Municipalidad de Santa Fe,https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/,https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/,True,True,True,True,True,BLOQUEADA,2026-11-09T10:27:56.042152-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Santa Fe,820147,Concejo Municipal de Santa Fe,https://www.concejosantafe.gov.ar/concursos-y-licitaciones,https://www.concejosantafe.gov.ar/concursos-y-licitaciones,True,True,True,True,True,OPERATIVA,2026-11-09T10:28:24.664999-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Santa Fe,820147,Gobierno de Santa Fe - Gestiones de Compras,https://www.santafe.gob.ar/gestionesdecompras/site/index.php,https://www.santafe.gob.ar/gestionesdecompras/site/index.php,True,True,False,True,True,BLOQUEADA,2026-11-09T10:29:03.435766-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Santa Fe,820147,EPE,https://www.epe.santafe.gov.ar/app2/aperturas,https://www.epe.santafe.gov.ar/app2/aperturas,True,True,True,True,True,BLOQUEADA,2026-11-09T10:30:08.740473-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Santa Fe,820147,Municipalidad de Santa Fe,https://transparencia.santafeciudad.gov.ar/contrataciones-obra/,https://transparencia.santafeciudad.gov.ar/contrataciones-obra/,True,True,True,True,True,BLOQUEADA,2026-11-09T10:30:13.006949-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Santa Isabel,822742,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Santa Margarita,823337,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Santa María Centro,823246,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Santa María Norte,823253,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Santa Rosa de Calchines,822567,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Santa Teresa,822518,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Santo Domingo,823260,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Santo Tomé,820154,Municipalidad de Santo Tomé,https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia,https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia,True,True,True,True,True,PENDIENTE,2026-11-09T10:27:52.515447-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Santurce,823652,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Sargento Cabral,822525,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Sarmiento,823267,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Sastre y Ortiz,820322,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Sauce Viejo,820158,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Serodino,822938,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Silva,823960,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Soldini,823442,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Soledad,823659,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Soutomayor,823274,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Suardi,820235,Municipalidad de Suardi,https://www.suardiciudad.ar/,https://www.suardiciudad.ar/,True,True,True,True,True,PARCIAL,2026-11-09T10:33:28.097589-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Sunchales,820049,Municipalidad de Sunchales,https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/,https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/,True,True,True,True,True,OPERATIVA,2026-11-09T10:28:12.368112-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Sunchales,820049,Municipalidad de Sunchales,https://sunchales.gob.ar/,https://sunchales.gob.ar/,True,True,False,False,True,TIEMPO_FUENTE,2026-11-09T10:28:21.456938-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Susana,822364,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Tacuarendi,822861,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Tacural,822371,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Tacurales,822378,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Tartagal,824198,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Teodelina,822749,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Theobald,822532,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Timbúes,824030,Gobierno de Timbúes,https://www.timbues.gob.ar/index.php?pagina=lista&sec=210,https://www.timbues.gob.ar/index.php?pagina=lista&sec=210,True,True,True,True,True,TIEMPO_FUENTE,2026-11-09T10:32:34.576675-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Timbúes,824030,Gobierno de Timbúes,https://www.timbues.gob.ar/,https://www.timbues.gob.ar/,True,True,False,False,True,TIEMPO_FUENTE,2026-11-09T10:38:48.224734-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Toba,824205,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Tortugas,822021,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Tostado,820175,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Totoras,820133,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Traill,824135,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Uranga,823449,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Venado Tuerto,820077,Municipalidad de Venado Tuerto,https://venadotuerto.gob.ar/licitaciones/,https://venadotuerto.gob.ar/licitaciones/,True,True,True,True,True,OPERATIVA,2026-11-09T10:27:53.631888-03:00,1,True
+Santa Fe,Pendiente de padrón departamental,Vera,820336,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Vera y Pintado,823967,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Videla,823974,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Vila,822385,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Villa Amelia,823456,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Villa Ana,822868,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Villa Cañás,820084,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Villa Constitución,820056,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Villa Eloísa,822945,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Villa Gobernador Gálvez,820217,Municipalidad de Villa Gobernador Gálvez,https://vggmunicipalidad.gov.ar/licitaciones/,https://vggmunicipalidad.gov.ar/licitaciones/,True,True,True,True,True,OPERATIVA,2026-11-09T10:32:11.537900-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Villa Guillermina,822875,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Villa Minetti,823344,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Villa Mugueta,824037,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Villa Ocampo,820119,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Villa San José,822392,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Villa Saralegui,823673,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Villa Trinidad,823680,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Villada,822105,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Virginia,822399,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Wheelwright,822756,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Zavalla,823463,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Zenón Pereyra,822406,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Álvarez,823365,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Ñanducita,823624,Pendiente de identificar,,,True,False,False,False,False,NO_REVISADA,,0,True
+Santa Fe,Pendiente de padrón departamental,Chabás,,Comuna de Chabás,https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5002-licitacion-publica-01-2026,https://chabas.gob.ar/descargas/92-licitaciones/129-licitaciones-2026/5002-licitacion-publica-01-2026,True,True,True,True,True,OPERATIVA,2026-11-09T10:31:04.346733-03:00,0,True
+Santa Fe,Pendiente de padrón departamental,Chabás,,Comuna de Chabás,https://chabas.gob.ar/,https://chabas.gob.ar/,True,True,False,False,True,TIEMPO_FUENTE,2026-11-09T10:39:23.325002-03:00,0,True

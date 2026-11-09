@@ -1,0 +1,123 @@
+{
+  "configuradas_efectivas": 101,
+  "fuentes_y_candidatas_identificadas_revisadas": 126,
+  "fecha": "2026-11-09T10:52:53.906851-03:00",
+  "plan": {
+    "revision": "final-sin-dependencia-de-macos",
+    "barrido": 42625654538,
+    "descubrimientos": [
+      42625654538,
+      42627183451
+    ],
+    "referencia": 42621183825,
+    "recuperacion": 42629154257,
+    "ensayo_sin_runner": 42628480358
+  },
+  "antes": {
+    "fuentes_consultadas": 101,
+    "PARCIAL": 31,
+    "INACCESIBLE": 15,
+    "PENDIENTE": 8,
+    "OPERATIVA": 47,
+    "procedimientos": 6358,
+    "apertura_futura_documental": 140,
+    "recepcion_vigente_comprobada": 23
+  },
+  "despues": {
+    "fuentes_consultadas": 101,
+    "PARCIAL": 32,
+    "INACCESIBLE": 16,
+    "PENDIENTE": 7,
+    "OPERATIVA": 46,
+    "procedimientos": 6155,
+    "apertura_futura_documental": 137,
+    "recepcion_vigente_comprobada": 26
+  },
+  "antes_catalogo_recepecion_verificada_incluye_ventas": 28,
+  "despues_compras_vigentes": 28,
+  "categorias": {
+    "A_PUBLICACIONES_NUEVAS_VIGENTES": 0,
+    "B_VIGENTES_DESCONOCIDAS": 0,
+    "C_CONOCIDAS_RECUPERADAS": 1,
+    "D_PENDIENTES": 3352,
+    "VENTAS_MUNICIPALES": 1,
+    "CONOCIDAS_VIGENTES": 27
+  },
+  "nuevas_compras_vigentes": 0,
+  "candidatas_consultadas": 52,
+  "fuentes_incorporadas_efectivas": 101,
+  "primera": {
+    "corrida": "fase5-final-sin-dependencia-de-macos",
+    "fecha": "2026-11-09T10:52:53.906851-03:00",
+    "primera_ejecucion": false,
+    "estado": "COMPLETA_CON_INCIDENCIAS",
+    "observadas": 6481,
+    "candidatos_sin_confirmar": 131,
+    "clasificacion": {
+      "SIN_CAMBIOS": 6160,
+      "DATOS_COMPLETADOS": 10,
+      "MODIFICADO": 71,
+      "RECUPERACION_LINEA_BASE": 74,
+      "NUEVA_DETECCION_FECHA_DESCONOCIDA": 33
+    },
+    "novedades": 114,
+    "eventos_emitidos": 188,
+    "total_historial": 7110,
+    "fuentes": {
+      "TIEMPO_FUENTE": 30,
+      "BLOQUEADA": 14,
+      "PARCIAL": 16,
+      "PENDIENTE": 18,
+      "OPERATIVA": 47,
+      "SIN_PUBLICACIONES": 1
+    },
+    "mensaje": "CON_NOVEDADES"
+  },
+  "segunda": {
+    "corrida": "fase5-final-sin-dependencia-de-macos-repeticion",
+    "fecha": "2026-11-09T10:52:53.906851-03:00",
+    "primera_ejecucion": false,
+    "estado": "COMPLETA_CON_INCIDENCIAS",
+    "observadas": 6481,
+    "candidatos_sin_confirmar": 131,
+    "clasificacion": {
+      "SIN_CAMBIOS": 6348
+    },
+    "novedades": 0,
+    "eventos_emitidos": 0,
+    "total_historial": 7110,
+    "fuentes": {
+      "TIEMPO_FUENTE": 30,
+      "BLOQUEADA": 14,
+      "PARCIAL": 16,
+      "PENDIENTE": 18,
+      "OPERATIVA": 47,
+      "SIN_PUBLICACIONES": 1
+    },
+    "mensaje": "SIN_NOVEDADES_CONFIRMADAS_CON_INCIDENCIAS"
+  },
+  "cobertura": {
+    "Santa Fe": {
+      "localidades_identificadas": 365,
+      "con_fuente": 35,
+      "revisadas": 35
+    },
+    "Entre Ríos": {
+      "localidades_identificadas": 239,
+      "con_fuente": 27,
+      "revisadas": 27
+    },
+    "Buenos Aires": {
+      "localidades_identificadas": 51,
+      "con_fuente": 13,
+      "revisadas": 13
+    }
+  },
+  "rosario": {
+    "muestra": 53,
+    "detectadas": 53,
+    "omisiones": []
+  },
+  "protegidos_intactos": true,
+  "ocr_nuevo": 0
+}

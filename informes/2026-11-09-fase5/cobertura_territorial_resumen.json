@@ -1,0 +1,22 @@
+{
+  "fecha": "2026-11-09T10:52:53.906851-03:00",
+  "jurisdicciones": {
+    "Santa Fe": {
+      "localidades_identificadas": 365,
+      "con_fuente": 35,
+      "revisadas": 35
+    },
+    "Entre Ríos": {
+      "localidades_identificadas": 239,
+      "con_fuente": 27,
+      "revisadas": 27
+    },
+    "Buenos Aires": {
+      "localidades_identificadas": 51,
+      "con_fuente": 13,
+      "revisadas": 13
+    }
+  },
+  "cobertura_exhaustiva": false,
+  "advertencia": "Buenos Aires incluye identificadas pendientes de distancia vial; el departamento se deja pendiente cuando el padrón no lo publica. Las fuentes sectoriales se informan además en la auditoría por organismo."
+}

@@ -21,7 +21,7 @@ def main():
  for run in plan['descubrimientos']:
   r=ROOT/'descubrimiento'/str(run)/'work/fase5/descubrimiento';d=json.load(open(r/'verificacion.json'));fechas.append(d['actualizado'])
   for s in d['observaciones']:
-   matches=list(r.rglob(Path(s.get('resultado_archivo','')).name));cp=json.load(open(matches[0])) if matches else {};ident=cp.get('identidad') or cp.get('validacion',{}).get('identidad',{});cfg=cp.get('config');candidatas.append({**s,'identidad_verificada':ident.get('verificada',False),'validacion':cp.get('validacion',{}),'config':cfg})
+   nombre=Path(s.get('resultado_archivo','')).name;matches=[p for p in r.rglob(nombre) if p.is_file()] if nombre else [];cp=json.load(open(matches[0])) if matches else {};ident=cp.get('identidad') or cp.get('validacion',{}).get('identidad',{});cfg=cp.get('config');candidatas.append({**s,'identidad_verificada':ident.get('verificada',False),'validacion':cp.get('validacion',{}),'config':cfg})
    if not ident.get('verificada') or not cfg or s['url']=='https://acebal.gob.ar/acebal/':continue
    u=s['url'];f=permitidas.get(u) or {**cfg,'url':u,'id':s['id'],'incorporada':False,'estado_verificacion':'PARCIAL_NO_INCORPORADA'}
    fs[u]=f;obs[u]={**s,**{k:f.get(k) for k in ('organismo','provincia','localidad')}}
