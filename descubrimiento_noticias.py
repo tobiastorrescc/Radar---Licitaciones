@@ -15,7 +15,7 @@ def noticia(dom,url):
  hs=[n for n in dom.root.iter() if n.tag=='h1' and not e.excluido(n)]
  if len(hs)!=1:return []
  h=hs[0];titulo=h.text
- if es_seccion(titulo):return []
+ if es_seccion(titulo) or e.norm(titulo).startswith('resultados de busqueda'):return []
  bloque=next((n for n in h.padres() if n.tag=='article'),None)
  if bloque is None:bloque=next((n for n in h.padres() if n.tag=='main'),None)
  if bloque is None:return []

@@ -467,4 +467,5 @@ def extraer(html,url,config=None):
         from descubrimiento_noticias import noticia
         nuevos=noticia(dom,url)
         if nuevos:return nuevos,enlaces,dom
-    return list(agrupados.values()),enlaces,dom
+    registros_finales=[r for r in agrupados.values() if not (r.get('aviso_oficial_sin_numero') and r.get('url')==url and norm(r.get('titulo','')).startswith('resultados de busqueda'))]
+    return registros_finales,enlaces,dom

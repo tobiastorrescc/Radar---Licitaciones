@@ -644,7 +644,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                 if config.get('descubrir_contrataciones') and clase=='LISTADO' and len(et)<120 and not extractores.procesos(et):
                     navegar=navegar or bool(re.search(r'\b(?:licitacion(?:es)?|concursos? de precios|compras|contrataciones|bolet(?:in|ines) oficial(?:es)?)\b',et))
                 if config.get('barrido_institucional') and clase=='LISTADO' and len(et)<120:
-                    navegar=navegar or bool(re.fullmatch(r'(?:todas? las? )?(?:noticias|novedades|boletines?(?: oficiales?)?|decretos|resoluciones|publicaciones administrativas|transparencia|gobierno abierto|cuentas claras|informacion publica|normativa municipal|digesto municipal)',et))
+                    navegar=navegar or bool(re.fullmatch(r'(?:todas? las? )?(?:noticias(?: y eventos)?|informacion y noticias|ordenanzas y presupuestos|novedades|boletines?(?: oficiales?)?|decretos|resoluciones|publicaciones administrativas|transparencia|gobierno abierto|cuentas claras|informacion publica|normativa municipal|digesto municipal)',et))
                 if config.get('adaptador')=='rosario' and path.endswith('/result-busq-compras-licitaciones') and 'verTipo=' in urlparse(destino).query:
                     navegar=True
                 if config.get('adaptador')=='rosario' and re.fullmatch(r'/inicio/compras-licitaciones/detalle/\d+',path):

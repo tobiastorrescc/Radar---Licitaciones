@@ -1,0 +1,14 @@
+{
+  "lote": "01",
+  "revision": "reparar-omisiones-del-primer-barrido",
+  "ids": [
+    "fase6-01-03",
+    "fase6-01-04",
+    "fase6-01-08",
+    "fase6-01-11",
+    "fase6-01-12"
+  ],
+  "total_segundos": 240,
+  "por_fuente_segundos": 60,
+  "concurrencia": 3
+}

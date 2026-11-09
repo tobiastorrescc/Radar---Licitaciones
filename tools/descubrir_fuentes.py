@@ -99,8 +99,8 @@ def verificar_identidad(html,url,candidato):
     if prov=='buenos aires':jurisdiccion=jurisdiccion or bool(re.search(r'\bbs\.?\s*as\.?\b',texto))
     if candidato.get('tipo')=='TERRITORIAL':
         loc=o.norm(candidato['localidad'])
-        nombre=bool(re.search(r'\b(?:municipalidad|municipio|comuna|gobierno|ciudad)(?:\s+de)?\s+'+re.escape(loc)+r'\b',o.norm(cabeceras)) or re.search(r'\b'+re.escape(loc)+r'\s*[-–|]\s*municipio\b',o.norm(cabeceras)))
-        nombre=nombre or bool(re.search(r'\b'+re.escape(loc)+r'\b',o.norm(cabeceras)) and re.search(r'\b(?:municipalidad|municipio|comuna)(?:\s+de)?\s+'+re.escape(loc)+r'\b',texto))
+        nombre=bool(re.search(r'\b(?:municipalidad|municipio|comuna|gobierno|ciudad)(?:\s+de)?\s+'+re.escape(loc)+r'\b',o.norm(cabeceras)) or re.search(r'\b'+re.escape(loc)+r'\s*(?:[-–|]\s*)?(?:municipio|municipalidad)\b',o.norm(cabeceras)))
+        nombre=nombre or bool(re.search(r'\b'+re.escape(loc)+r'\b',o.norm(cabeceras)) and re.search(r'\b(?:municipalidad|municipio|comuna|intendencia)\b',texto))
         organismo=candidato['organismo'];localidad=candidato['localidad']
     else:
         # Nombre publicado en título, nunca derivado del dominio o búsqueda.
@@ -118,6 +118,7 @@ def verificar_identidad(html,url,candidato):
         'motivo':None if valida else 'Falta dominio oficial, identidad, provincia explícita o ubicación sectorial dentro del alcance; requiere contraste'}
 
 def objeto_comprobado(r):
+    if o.norm(r.get('objeto')).startswith('resultados de busqueda'):return False
     # Calidad de extracción, no filtro de rubro: rechazar sólo encabezados/archivos genéricos.
     t=o.norm(r.get('objeto'))
     t=re.sub(r'\b(?:licitacion|concurso|publica|privada|precios|pliego|pdf|descarga|detalles|fecha|publicacion|lunes|martes|miercoles|jueves|viernes|sabado|domingo|publicado|publicada|segundo|tercer|llamado|prorroga|convocatoria|n|no|de|del|la|el|y)\b|[\d\W_]+',' ',t)
@@ -149,7 +150,8 @@ def worker(entrada,salida):
         identidad=verificar_identidad(html,final,c)
         if not identidad['verificada'] and oficial(final) and c.get('tipo')=='TERRITORIAL':
             origen=urlparse(final);raiz=c.get('identidad_url') or origen.scheme+'://'+origen.netloc+'/'
-            if oficial(raiz) and (host(final)==host(raiz) or host(final).endswith('.'+host(raiz))):
+            referencia_enlazada=raiz in {l['url'] for l in extractores.DOM(html).root.enlaces(final)} and identidad.get('nombre_publicado')
+            if oficial(raiz) and (host(final)==host(raiz) or host(final).endswith('.'+host(raiz)) or referencia_enlazada):
                 try:
                     rb,rt,rf=conectores.descargar(raiz,conexion_timeout=4,lectura_timeout=6)
                     rh=conectores.decodificar_html(rb,rt);ident=verificar_identidad(rh,rf,c)
@@ -159,7 +161,7 @@ def worker(entrada,salida):
                             ub,ut,uf=conectores.descargar(enlace,conexion_timeout=3,lectura_timeout=4)
                             candidata=verificar_identidad(conectores.decodificar_html(ub,ut),uf,c)
                             if candidata['verificada']:ident=candidata;rb=ub;rf=uf;break
-                    if ident['verificada'] and (host(final)==host(rf) or host(final).endswith('.'+host(rf))):
+                    if ident['verificada'] and (host(final)==host(rf) or host(final).endswith('.'+host(rf)) or referencia_enlazada):
                         identidad={**ident,'url':final,'sha256':sha256(html.encode()).hexdigest(),'evidencia_raiz':{'url':rf,'sha256':sha256(rb).hexdigest(),'criterio':'IDENTIDAD_PUBLICADA_EN_RAIZ_OFICIAL_MISMO_ORGANISMO'}}
                 except Exception:pass # Incidencia de identidad conserva la sección pendiente, nunca valida por HTTP.
         if not identidad['verificada']:

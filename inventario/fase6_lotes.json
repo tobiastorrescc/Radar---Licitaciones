@@ -168,7 +168,8 @@
             "documentos_para_descubrimiento": true
           },
           "origen": "BUSQUEDA_WEB_OFICIAL_2026_11_09",
-          "identidad_pendiente_validacion_nativa": true
+          "identidad_pendiente_validacion_nativa": true,
+          "identidad_url": "https://concejosanguillermo.gob.ar/"
         },
         {
           "id": "fase6-01-12",
