@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-09T08:57:32.920433-03:00",
+  "fecha": "2026-11-10T08:55:56.499719-03:00",
   "pendientes": [
     {
       "id": "cf892a5fa00e38595d57b6ea999fa09518ba2b7b00647f64cb84ee802da014dc",
@@ -242,15 +242,6 @@
       ]
     },
     {
-      "id": "eb9b099e3474f2ec03a4e096c3d7909506d8ab660b0ac1bef79f23aa80466dea",
-      "organismo": "EPE",
-      "numero_procedimiento": "7060002931",
-      "objeto": "Adquisición de aisladores con destino a mantenimiento – Plan 2027",
-      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
-      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
-      "documentos": []
-    },
-    {
       "id": "7dcf77a2a71d596ab8d337cca5cf9da7d293ad3db68e900e596bc7691cd69ba0",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "104/2026",
@@ -301,13 +292,32 @@
       "documentos": []
     },
     {
-      "id": "cb35153e8f1e4d9ac138dbd55925b833da298934e42ec002baa2119d797d2167",
-      "organismo": "EPE",
-      "numero_procedimiento": "7050001923",
-      "objeto": "ADQUISICIÓN DE TRAILERS PARA CABINA DE GU MÓVIL",
-      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
-      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
-      "documentos": []
+      "id": "69bd049f38ccb2847f908671ce1cd537925ffe7081421267b550c8b18798497b",
+      "organismo": "Municipalidad de Concepción del Uruguay",
+      "numero_procedimiento": "40/2026",
+      "objeto": "-- -- --\n                                 MUNICIPALIDAD DE CONCEPCION DEL URUGUAY\n                                            Licitación Pública Nº 40/2026\n  OBJETO: “Pavimento Rígido – 04 (cuatro) Cuadras Boulevard Díaz Vélez entre calles Rubisnky y Goytía”, en un\ntodo de acuerdo a los Pliegos de Bases, Condiciones Particulares y demás documentación.\n  FECHA APERTURA: 24 de noviembre de 2026 Hora: 11:00\n  RECEPCION DE PROPUESTAS: Departamento Suministros - Municipalidad de Concepción del Uruguay - San\nMartín y Moreno - Concepción del Uruguay - Entre Ríos.\n  LUGAR APERTURA: Departamento Suministros - Municipalidad de Concepción del Uruguay - San Martín y\nMoreno - Concepción del Uruguay - Entre Ríos.\n  PRESUPUESTO OFICIAL: $ 147.370.155,00.\n  PLIEGO CONDICIONES: $ 125.000,00. A la venta Tesorería Municipal hasta 24 horas hábiles anteriores al Acto\nde Apertura.\n  GARANTIA OFERTA: 1% del presupuesto oficial.\n  FIANZA CONTRATO: 5% del monto total contratado.\n  En caso que la fecha de apertura resultare feriado o no laborable, la misma se efectuará el día hábil siguiente.\n  Dr. Ezequiel Valdunciel, Secretaría de Coordinación General y Jefatura de Gabinete, noviembre de 2026.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+        }
+      ]
+    },
+    {
+      "id": "4d39f931d27621b907b5efd605257b880246f780d9bc61d6b8729d31fcad10d8",
+      "organismo": "Municipalidad de Concepción del Uruguay",
+      "numero_procedimiento": "39/2026",
+      "objeto": "-- -- --\n                               MUNICIPALIDAD DE CONCEPCION DEL URUGUAY\n                                        Licitación Pública Nº 39/2026\n OBJETO: “Adquisición de 575 (quinientos setenta y cinco) m3 de Hormigón Calidad H25 para 04 (cuatro)\nCuadras de Pavimento Rígido en Boulevard Díaz Vélez”, en un todo de acuerdo a los Pliegos de Bases,\nCondiciones Particulares y demás documentación.\n\n\n FECHA APERTURA: 24 de noviembre de 2026 Hora: 10:00\n RECEPCION DE PROPUESTAS: Departamento Suministros - Municipalidad de Concepción del Uruguay - San\nMartín y Moreno - Concepción del Uruguay - Entre Ríos.\n LUGAR APERTURA: Departamento Suministros - Municipalidad de Concepción del Uruguay - San Martín y\nMoreno - Concepción del Uruguay - Entre Ríos.\n PRESUPUESTO OFICIAL: $ 129.375.000,00.\n PLIEGO CONDICIONES: $ 125.000,00. A la venta Tesorería Municipal hasta 24 horas hábiles anteriores al Acto\nde Apertura.\n GARANTIA OFERTA: 1% del presupuesto oficial.\n FIANZA CONTRATO: 5% del monto total contratado.\n En caso que la fecha de apertura resultare feriado o no laborable, la misma se efectuará el día hábil siguiente.\n Dr. Ezequiel Valdunciel, Secretaría de Coordinación General y Jefatura de Gabinete, noviembre de 2026.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+        }
+      ]
     },
     {
       "id": "8c43e61863046d6107b7f88e35debfd8aa08ba03655f4e6537ceebf70cde2e22",
@@ -347,42 +357,30 @@
       ]
     },
     {
-      "id": "17286849e0f3ab63b9d5ae2086b06d0f5f55a70c421f912493a52da7f96978e4",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "48/2026",
-      "objeto": "QUÍMICA CLÍNICA AUTOANALIZADORES HECA DIRECCIÓN DE BIOQUÍMICA",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38657",
-      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
+      "id": "935f1c080fc8a92d932168593a559139e7f78cf050810e2b11b7306fb86cc268",
+      "organismo": "Municipalidad de Concepción del Uruguay",
+      "numero_procedimiento": "41/2026",
+      "objeto": "-- -- --\n                                 MUNICIPALIDAD DE CONCEPCION DEL URUGUAY\n                                            Licitación Pública Nº 41/2026\n  OBJETO: “Adquisición de seiscientas (600) Luminarias Leds para Alumbrado Público”, en un todo de acuerdo a\nlos Pliegos de Bases, Condiciones Particulares y demás documentación.\n  FECHA APERTURA: 25 de noviembre de 2026 Hora: 10:00\n  RECEPCION DE PROPUESTAS: Departamento Suministros - Municipalidad de Concepción del Uruguay - San\nMartín y Moreno - Concepción del Uruguay - Entre Ríos.\n  LUGAR APERTURA: Departamento Suministros - Municipalidad de Concepción del Uruguay - San Martín y\nMoreno - Concepción del Uruguay - Entre Ríos.\n  PRESUPUESTO OFICIAL: $ 84.720.000,00.\n  PLIEGO CONDICIONES: $ 84.720,00. A la venta Tesorería Municipal hasta 24 horas hábiles anteriores al Acto\nde Apertura.\n  GARANTIA OFERTA: 1% del presupuesto oficial.\n  FIANZA CONTRATO: 5% del monto total contratado.\n  En caso que la fecha de apertura resultare feriado o no laborable, la misma se efectuará el día hábil siguiente.\n  Dr. Ezequiel Valdunciel, Secretaría de Coordinación General y Jefatura de Gabinete, noviembre de 2026.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": [
         {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: l.p11-048-26autoanalizadoresquimicaheca.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38657/documentos/102929"
-        },
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+        }
+      ]
+    },
+    {
+      "id": "4815390bd0f663e939505493c0bb2ef492db693b2deff29b4f8f85d1b81c74b8",
+      "organismo": "Municipalidad de Concepción del Uruguay",
+      "numero_procedimiento": "43/2026",
+      "objeto": "-- -- --\n                                MUNICIPALIDAD DE CONCEPCION DEL URUGUAY\n                                           Licitación Pública Nº 43/2026\n OBJETO: “Pavimento Rígido – 03 (tres) Cuadras Calle 12 del Oeste Norte Bis - Barrio Malvinas Argentinas”, en\nun todo de acuerdo a los Pliegos de Bases, Condiciones Particulares y demás documentación.\n FECHA APERTURA: 27 de noviembre de 2026 Hora: 10:00\n RECEPCION DE PROPUESTAS: Departamento Suministros - Municipalidad de Concepción del Uruguay - San\nMartín y Moreno - Concepción del Uruguay - Entre Ríos.\n LUGAR APERTURA: Departamento Suministros - Municipalidad de Concepción del Uruguay - San Martín y\nMoreno - Concepción del Uruguay - Entre Ríos.\n PRESUPUESTO OFICIAL: $ 78.808.505,15.\n PLIEGO CONDICIONES: $ 70.000,00. A la venta Tesorería Municipal hasta 24 horas hábiles anteriores al Acto\nde Apertura.\n GARANTIA OFERTA: 1% del presupuesto oficial.\n FIANZA CONTRATO: 5% del monto total contratado.\n En caso que la fecha de apertura resultare feriado o no laborable, la misma se efectuará el día hábil siguiente.\n Dr. Ezequiel Valdunciel, Secretaría de Coordinación General y Jefatura de Gabinete, noviembre de 2026.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
         {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: anexogral01-09-2026.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38657/documentos/102829"
-        },
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: anexogral01-09-2026.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38657/documentos/102828"
-        },
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: normativalicitacionesprivadas.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38657/documentos/102827"
-        },
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: anexoreactivosydescartables01-09-2026.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38657/documentos/102826"
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
         }
       ]
     },
@@ -583,13 +581,17 @@
       "id": "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4",
       "organismo": "Municipalidad de El Pingo",
       "numero_procedimiento": "3/2026",
-      "objeto": "-- -- --\n                                             MUNICIPIO DE EL PINGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE COLUMNAS Y ARTEFACTOS DE\nILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE NUESTRA\nLOCALIDAD.-\n  PRIMER LLAMADO A:\n                                           Licitación Pública Nº 03/2026\n                                          Decreto de Llamado Nº 069/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 23/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 24/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $ 41.000.000,00 (Pesos CUARENTA Y UN MILLONES CON 00/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE COLUMNAS Y\nARTEFACTOS DE ILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE\nNUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA La presente gestión tiene por objeto la adquisición de columnas y artefactos de\niluminación, nuevos y sin uso, destinados a la reforma de la Plaza Central \"San Martín\" de nuestra localidad,\nconforme a los ítems y características que se detallan a continuación. La cotización deberá presentarse por ítem,\nindicando precio unitario y precio total.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+      "objeto": "-- -- --\n                                              MUNICIPIO DE EL PINGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE COLUMNAS Y ARTEFACTOS DE\nILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE NUESTRA\nLOCALIDAD.-\n  PRIMER LLAMADO A:\n                                            Licitación Pública Nº 03/2026\n                                          Decreto De Llamado Nº 069/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 23/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 24/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $ 41.000.000,00 (Pesos CUARENTA Y UN MILLONES CON 00/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE COLUMNAS Y\nARTEFACTOS DE ILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE\nNUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA La presente gestión tiene por objeto la adquisición de columnas y artefactos de\niluminación, nuevos y sin uso, destinados a la reforma de la Plaza Central \"San Martín\" de nuestra localidad,\nconforme a los ítems y características que se detallan a continuación. La cotización deberá presentarse por ítem,\nindicando precio unitario y precio total.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": [
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
         }
       ]
     },
@@ -723,7 +725,7 @@
       "organismo": "Comuna de El Palenque",
       "numero_procedimiento": "8/2026",
       "objeto": "Adquisición de inmueble urbano destinado a la construcción de una sala de velatorios.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": [
         {
@@ -733,6 +735,10 @@
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
         }
       ]
     },
@@ -751,28 +757,6 @@
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
-        }
-      ]
-    },
-    {
-      "id": "55ceab9f32a2784713a5fecb88f0087020760299481dae607a981b7200b83c97",
-      "organismo": "Municipalidad de El Pingo",
-      "numero_procedimiento": "2/2026",
-      "objeto": "-- -- --\n                                               MUNICIPALIDAD EL PI NGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE 2 (DOS) GARITAS DE COLECTIVOS\nDESTINADAS A SER EMPLAZADAS SOBRE AV. 9 DE JULIO DE NUESTRA LOCALIDAD.-\n                                    Prim er Llam ado a: Licitación Pública Nº 02/2026\n                                             Decreto de Llamado Nº 65/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 10/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 11/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $16.868.978,35 (Pesos DIECISÉIS MILLONES OCHOCIENTOS SESENTA Y OCHO\nMIL NOVECIENTOS SETENTA Y OCHO CON 35/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE 2 (DOS) GARITAS\nDE COLECTIVOS DESTINADAS A SER EMPLAZADAS SOBRE AV. 9 DE JULIO DE NUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA\n  La presente gestión tiene por objeto la adquisición de dos (2) garitas de colectivos nuevas, sin uso, destinadas a\nser emplazadas sobre Av. 9 de Julio de nuestra localidad, conforme a las características que se detallan en las\npresentes especificaciones.\n  DETALLE ESPECÍFICO DE LAS GARITAS\n  Tipo de Unidad: Garita para parada de colectivos, tipo modelo \"IRON\" o similar de igual o superior calidad.\n  - Cantidad: Dos (2) unidades.\n  - Dimensiones: Largo de tres (3) metros.\n  - Componentes: Con cesto de residuos y cerramiento lateral.\n  - Iluminación: Dos (2) reflectores solares de 30 W por garita.\n  - Materiales: Resistentes, sostenibles y de bajo mantenimiento, con posibilidad de adaptar paneles informativos\ny/o publicitarios.\n  - Pintura: Las garitas deberán entregarse pintadas, utilizando pinturas térmicas o reflectantes que reduzcan el\nimpacto del calor extremo. La aplicación deberá realizarse bajo un control estricto de las condiciones ambientales\n(temperatura y humedad), conforme a las recomendaciones del fabricante de la pintura.\n  - Ploteo: El precio cotizado deberá incluir el ploteo de las garitas con las imágenes que el Municipio disponga.\n  Rupp, Laura Verónica, presidente municipal.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": [
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf"
         }
       ]
     },
@@ -1174,7 +1158,7 @@
       "id": "4d052ad9ea97e39d2456bd7af19286e3454b3f1b48f7ec07dd2a9879a061e3bb",
       "organismo": "Municipalidad de San Salvador",
       "numero_procedimiento": "29/2026",
-      "objeto": "Desarrollo Social Destacadas Noticias Portada Llamado a Concurso de Precios N° 29-2026 05/11/2026 143 El Departamento de Compras y Suministros llama a Concurso de Precios N° 29-2026 que tiene por objeto la Compra de 200 cargas de Gas Envasado en garrafas de 10kg – con Destino a Ayuda Directa ; y se regirá por las condiciones establecidas en Pliego de Bases, Condiciones Generales y Particulares aprobados por Decreto N° 347/26. Apertura de sobres: 11 de noviembre de 2026 a las 11:00 horas , en la oficina de compras –planta baja – edificio municipal. Presupuesto oficial: $5.000.000- (Pesos cinco millones.-). Se adjunta PLIEGO en total de diez fojas. Artículo anterior La Municipalidad realizará una subasta pública online de bienes municipales en desuso MSS",
+      "objeto": "Desarrollo Social Destacadas Noticias Portada Llamado a Concurso de Precios N° 29-2026 05/11/2026 151 El Departamento de Compras y Suministros llama a Concurso de Precios N° 29-2026 que tiene por objeto la Compra de 200 cargas de Gas Envasado en garrafas de 10kg – con Destino a Ayuda Directa ; y se regirá por las condiciones establecidas en Pliego de Bases, Condiciones Generales y Particulares aprobados por Decreto N° 347/26. Apertura de sobres: 11 de noviembre de 2026 a las 11:00 horas , en la oficina de compras –planta baja – edificio municipal. Presupuesto oficial: $5.000.000- (Pesos cinco millones.-). Se adjunta PLIEGO en total de diez fojas. Artículo anterior La Municipalidad realizará una subasta pública online de bienes municipales en desuso MSS",
       "url": "https://sansalvadorer.gob.ar/llamado-a-concurso-de-precios-n-29-2026/",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
@@ -1402,22 +1386,6 @@
       ]
     },
     {
-      "id": "5a830109b95726c8d5a5ea8d94d5f63ca710e368913839c7a98c8b90ec5625a5",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "63/2026",
-      "objeto": "ADQUISICIÓN DE EXTINTORES PARA EL HOSPITAL I CARRASCO.",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38659",
-      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
-      "documentos": [
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: 063extintores.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38659/documentos/102831"
-        }
-      ]
-    },
-    {
       "id": "ba2704c608c790b46fd1a01b1ba7389584331c7bccc382e1ba99e0a76d58fec2",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "475/2026",
@@ -1563,8 +1531,8 @@
       "id": "ce90c17f46787895e1900c0776f64d19debbd96aacd110f4c090570a5a380070",
       "organismo": "Municipalidad de Basavilbaso",
       "numero_procedimiento": "2/2026",
-      "objeto": "URUGUAY\n\n                                          MUNICIPIO DE BASAVI LBASO\n                               Llam ado a Licitación Pública N° 02/2026 – D.E.M.B.\n                                 Convocada por Decreto N° 3343/26 – D.E.M.B.\n Convocase a Licitación Pública N° 02/2026 para la Adquisición de Un (1) Camión nuevo.-\n OBJETO: El objeto del presente llamado a Licitación Pública es la adquisición de Un (1) Camión nuevo, de\nacuerdo al Pliego de Condiciones Particulares y Generales, y de Especificaciones Técnicas.-\n La adquisición del Camión nuevo se ejecutará con fondos propios del Municipio de Basavilbaso.-\n PRESUPUESTO OFICIAL: Pesos Ciento Cinco Millones Tres Mil Doscientos Cincuenta con 00/100 ($\n105.003.250,00).-\n GARANTIA: Un (1) año, como mínimo.-\n\n\n  MANTENIMIENTO DE OFERTA: Por Sesenta (60) días, desde la apertura de Sobres.-\n  APERTURA DE SOBRES: Jueves 03 de Diciembre de 2026 a las 08:00 horas, en la oficina de la Dirección de\nAsuntos Institucionales y Jurídicos del Municipio, o el día hábil siguiente en la misma hora si el fijado resultare\ninhábil.-\n  PRESENTACION DE PROPUESTAS: Por Mesa de Entradas Municipal hasta las 07:30 horas del día fijado para\napertura de sobres.-\n  VALOR DEL PLIEGO: Pesos Ciento Cinco Mil Tres con Veinticinco Centavos ($ 105.003,25).-\n  Víctor Daniel Rinaldi, Secretaría de Gobierno.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+      "objeto": "URUGUAY\n\n                                            MUNICIPIO DE BASAVILBASO\n                                   Llamado a Licitación Pública N° 02/2026 – D.E.M.B.\n                                    Convocada por Decreto N° 3343/26 – D.E.M.B.\n  Convocase a Licitación Pública N° 02/2026 para la Adquisición de Un (1) Camión nuevo.-\n  OBJETO: El objeto del presente llamado a Licitación Pública es la adquisición de Un (1) Camión nuevo, de\nacuerdo al Pliego de Condiciones Particulares y Generales, y de Especificaciones Técnicas.-\n  La adquisición del Camión nuevo se ejecutará con fondos propios del Municipio de Basavilbaso.-\n  PRESUPUESTO OFICIAL: Pesos Ciento Cinco Millones Tres Mil Doscientos Cincuenta con 00/100 ($\n105.003.250,00).-\n  GARANTIA: Un (1) año, como mínimo.-\n  MANTENIMIENTO DE OFERTA: Por Sesenta (60) días, desde la apertura de Sobres.-\n  APERTURA DE SOBRES: Jueves 03 de Diciembre de 2026 a las 08:00 horas, en la oficina de la Dirección de\nAsuntos Institucionales y Jurídicos del Municipio, o el día hábil siguiente en la misma hora si el fijado resultare\ninhábil.-\n  PRESENTACION DE PROPUESTAS: Por Mesa de Entradas Municipal hasta las 07:30 horas del día fijado para\napertura de sobres.-\n  VALOR DEL PLIEGO: Pesos Ciento Cinco Mil Tres con Veinticinco Centavos ($ 105.003,25).-\n  Víctor Daniel Rinaldi, Secretaría de Gobierno.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": [
         {
@@ -1582,6 +1550,10 @@
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
         }
       ]
     },
@@ -1611,13 +1583,17 @@
       "id": "57bbc15035fe34e57fa4b1428cc4b16b4de1cc980cee0cd7c2cc6ab25b86be61",
       "organismo": "Comuna de Aldea Santa María",
       "numero_procedimiento": "4/2026",
-      "objeto": "COMUNA DE ALDEA SANTA MARÍA\n                                               Licitación Pública N.º 04/2026\n ADQUISICION DE TRACTOR CORTACESPED RADIO CERO. UBICACIÓN: COMUNA DE ALDEA SANTA\nMARÍA\n OBJETO: Adquisición de un tractor cortacésped radio cero nuevo. Uso intensivo para el mantenimiento de\nespacios verdes de la comuna.\n PRESUPUESTO OFICIAL: PESOS TREINTA MILLONES CUATROCIENTOS MIL ($ 30.400.000), conforme al\npresupuesto oficial establecido para la presente contratación.\n LUGAR Y FORMA DONDE CONSULTAR: Los Pliegos de Bases y Condiciones se encuentran disponibles para\nconsulta en la página web de la Comuna: https://www.facebook.com/comuna.aldeasantamaria . Asimismo, podrán\nser solicitados al correo institucional: a. santamariacomuna@gmail.com.\n Por consultas relativas a los pliegos, los interesados podrán dirigirse en días hábiles administrativos, en el horario\nde 8:30 a 12:00 horas, al teléfono 343 - 4705315, al correo electrónico a. santamariacomuna@gmail.com, o\nmediante mensaje privado a la página oficial de la Comuna.\n LUGAR, FORMA, FECHA Y HORA DE LA APERTURA: Las propuestas podrán presentarse en las oficinas\ncomunales, sitas en calle Los Fundadores N.º 311, Aldea Santa María, en sobre cerrado, de acuerdo con lo\ndispuesto en el Pliego de Condiciones Generales y Particulares, hasta el momento fijado para la apertura de\nsobres.\n La apertura de las propuestas se realizará el día MIÉRCOLES 25 DE NOVIEMBRE DE 2026 A LAS 11:00\nHORAS, en las oficinas de la Comuna de Aldea Santa María, calle Los Fundadores N.º 311.\n COMUNA DE ALDEA SANTA MARÍA CUIT: 30-71670903-1 – IVA EXENTO.\n Sacks Gustavo, Presidente Comunal.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+      "objeto": "PARANA\n\n                                         COMUNA DE ALDEA SANTA MARÍA\n                                            Licitación Pública N.º 04/2026\n ADQUISICION DE TRACTOR CORTACESPED RADIO CERO. UBICACIÓN: COMUNA DE ALDEA SANTA\nMARÍA\n OBJETO: Adquisición de un tractor cortacésped radio cero nuevo. Uso intensivo para el mantenimiento de\nespacios verdes de la comuna.\n PRESUPUESTO OFICIAL: PESOS TREINTA MILLONES CUATROCIENTOS MIL ($ 30.400.000), conforme al\npresupuesto oficial establecido para la presente contratación.\n\n\n\n LUGAR Y FORMA DONDE CONSULTAR: Los Pliegos de Bases y Condiciones se encuentran disponibles para\nconsulta en la página web de la Comuna: https://www.facebook.com/comuna.aldeasantamaria. Asimismo, podrán\nser solicitados al correo institucional: a. santamariacomuna@gmail.com.\n Por consultas relativas a los pliegos, los interesados podrán dirigirse en días hábiles administrativos, en el horario\nde 8:30 a 12:00 horas, al teléfono 343 - 4705315, al correo electrónico a. santamariacomuna@gmail.com, o\nmediante mensaje privado a la página oficial de la Comuna.\n LUGAR, FORMA, FECHA Y HORA DE LA APERTURA: Las propuestas podrán presentarse en las oficinas\ncomunales, sitas en calle Los Fundadores Nº 311, Aldea Santa María, en sobre cerrado, de acuerdo con lo\ndispuesto en el Pliego de Condiciones Generales y Particulares, hasta el momento fijado para la apertura de\nsobres.\n La apertura de las propuestas se realizará el día MIÉRCOLES 25 DE NOVIEMBRE DE 2026 A LAS 11:00\nHORAS, en las oficinas de la Comuna de Aldea Santa María, calle Los Fundadores Nº 311.\n COMUNA DE ALDEA SANTA MARÍA CUIT: 30-71670903-1 – IVA EXENTO.\n Sacks Gustavo, Presidente Comunal.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": [
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
         }
       ]
     },
@@ -1686,15 +1662,6 @@
           "url": "https://aeropuertorosario.com/wp-content/uploads/2026/11/Pliego-de-Bases-y-Condiciones-Tecnicas.pdf"
         }
       ]
-    },
-    {
-      "id": "beee170ab8c4f021663d1bc801ffc8e0f00b66e54d10c0a7648fa44d813a7b7c",
-      "organismo": "CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO",
-      "numero_procedimiento": "240/2026",
-      "objeto": "servicio completo con mano de obra sprinter AF952RN",
-      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
     },
     {
       "id": "0fd6882ff40743233aa70be314a6391eae327bd000ce13874136a9ed33e059ff",
@@ -1791,6 +1758,20 @@
         {
           "titulo": "Cotejo de Precios 14-26",
           "url": "https://www.jusentrerios.gov.ar/wp-content/uploads/2026/10/Cotejo-de-Precios-14-26.zip"
+        }
+      ]
+    },
+    {
+      "id": "8ad948f538f666fac8a29d2a8eac61af90df76666a7ded67bdfeb6e19ffcb29f",
+      "organismo": "Comuna de María Teresa",
+      "numero_procedimiento": null,
+      "objeto": "compra de doscientas (200) cajas navideñas",
+      "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "CONCURSO DE PRECIOS CAJAS NAVIDEÑAS 2026.pdf",
+          "url": "https://mariateresa.gob.ar/archivos/859_1793054655_CONCURSODEPRECIOSCAJASNAVIDE%C3%91AS2026.pdf"
         }
       ]
     },
@@ -1913,6 +1894,20 @@
       "documentos": []
     },
     {
+      "id": "81201471be8c60b5efe492ff5d43c7dcb35b1a952585a1bd24b791999ebcd5c3",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "30/2026",
+      "objeto": "De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, por Resolución Nº 129/26, llámese a Licitación Privada Nº 30/26: “Provisión y envío de artículos de toner para stock de la Oficina de Suministros del STJ” .",
+      "url": "https://www.jusentrerios.gov.ar/compras/licitacion-privada-no-30-26-provision-y-envio-de-articulos-de-toner-para-stock-de-la-oficina-de-suministros-del-stj/lic-privada-30-26/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "LIC PRIVADA 30-26",
+          "url": "https://www.jusentrerios.gov.ar/wp-content/uploads/2026/11/LIC-PRIVADA-30-26.zip"
+        }
+      ]
+    },
+    {
       "id": "17d09da7fe9747097ca66f708d4a01463160144d472a92912775962a2e4c47c7",
       "organismo": "ASSA",
       "numero_procedimiento": "1728",
@@ -1975,6 +1970,15 @@
       "documentos": []
     },
     {
+      "id": "6c5a7d403903f15b960cadb265ea606ac09423a5c4cf31d6e2f796aa36ea3822",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "81551/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38747",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "1befdfe4d546a4d9df99849cfc06696ada65fe5877a9bf27d10d270ee42b26fc",
       "organismo": "CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO",
       "numero_procedimiento": "10/2026",
@@ -2020,6 +2024,24 @@
       "documentos": []
     },
     {
+      "id": "5022457e744947fde949e12e5a02b67545dac14349fb0923785ff00c64c456d7",
+      "organismo": "Vialidad Entre Ríos",
+      "numero_procedimiento": "87/2026",
+      "objeto": "CONTRATACIÓN DEL SERVICIO DE RECARGA Y PRUEBA HIDRÁULICA PARA EXTINTORES/MATAFUEGOS",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "39d22c1552d67e381074adf37bc0d8edce8f5ccce0ab066aef4aee59d395a5c2",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "81561/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38748",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "77e07a1a115c283f4ac7c0e9fbe142a0030f9952324b6f2a92aeb281101445eb",
       "organismo": "Poder Judicial de Entre Ríos",
       "numero_procedimiento": "17/2026",
@@ -2034,11 +2056,25 @@
       ]
     },
     {
+      "id": "6effb18260d310a6f83acf8d851c8d38ae613e7e5717b6fb8592d83fd66e2416",
+      "organismo": "ENERSA (Energía de Entre Ríos S.A.)",
+      "numero_procedimiento": "2026-1892",
+      "objeto": " N.º 2026-1892: Obra de iluminación “Intercambiador Av. Jorge Newbery”, de Paraná.\n Presentación de ofertas hasta el 16 de noviembre de 2026 inclusive.\n Los Pliegos y documentos anexos serán públicos y estarán disponibles en todo momento en la página web de\nENERSA.\n Demás datos y condiciones, remitirse a: https://www.enersa.com.ar/area-proveedores/#ConcursoDePrecios\n Contacto: registroproveedores@enersa.com.ar\n Energía de Entre Ríos S.A. - Sede Social: Buenos Aires 87 (E3100 BQA) Paraná - Entre Ríos Inscripción: Reg.\nPco. Com. - DIPJ E. R. Nro. 1858 Secc. Legajo Social\n Rubén D. Clivio, Coordinador de Compras ENERSA.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+        }
+      ]
+    },
+    {
       "id": "8c36de4c4c1763fef9dbf793ce6d87d266d37f2e76dfc28cd0c10351fe91f3dc",
       "organismo": "Municipalidad de GDOR. MACIÁ",
       "numero_procedimiento": "6/2026",
       "objeto": "TALA\n\n                                           MUNICIPIO DE GDOR. MACIÁ\n                                           Licitación Pública Nº 06/2026\n  OBJETO: La necesidad de otorgar en Concesión el servicio de Cantina y Buffet del Camping Municipal del\nMunicipio de Gdor. Maciá, ubicado en dependencia del Polideportivo Municipal sito sobre Ruta Nº 30, según\nPliego de Bases y Condiciones respectivo de la Licitación Pública Nº 06/2026 convocada a través de Decreto\nMunicipal Nº 119/2026.-\n  APERTURA DE PROPUESTAS: Lunes 16 de Noviembre de 2026. En caso de resultar feriado o inhábil, se\ntrasladará al siguiente día hábil.-\n  HORA: 10:00 hs.-\n  LUGAR: Dependencia Municipal de Gdor. Maciá, sita en calle Raúl Ricardo Alfonsín Nº 175 – Tel. Fax (03445)\n461240 - (03445) 461363.-\n  E-Mail: secretariamunicipiomacia@gmail.com – compras@macia.gob.ar\n   VALOR DEL PLIEGO: El Pliego de Bases y Condiciones no tendrá costo alguno y se pondrá a disposición de\nquién lo solicite vía email o presencial.-\n  Gdor. Maciá, 02 de Noviembre de 2026.- Ariel Alberto Müller – Pte. Municipal Gdor. Maciá.-",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": [
         {
@@ -2048,6 +2084,10 @@
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
         }
       ]
     },
@@ -2072,6 +2112,15 @@
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf"
         }
       ]
+    },
+    {
+      "id": "8fea30794aca2a68bb254f30758c68cf57dd8654ad77369d0989e796d8e97e71",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "60721/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38746",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
     },
     {
       "id": "9f08698ba7d856168f3f4d781482e723ba791f6e58f4662f594a753152b3d0c8",
@@ -2140,6 +2189,20 @@
       "documentos": []
     },
     {
+      "id": "0fd1dd1b9529cb0495576af1ab1251a3c5816b8cf93e944c3a5f9a092191ee4f",
+      "organismo": "Municipalidad de Ceres",
+      "numero_procedimiento": "54/2026",
+      "objeto": "Venta y Adjudicación de Tres (3) lotes de propiedad municipal.",
+      "url": "http://ceres.gob.ar/wp-content/uploads/2026/10/PLIEGO-DE-BASES-Y-COND-VENTA-3-LOTES-LIC-054-2026.docx.pdf",
+      "motivo": "CONDICIONES_DIFERENTES_REQUIEREN_REVISION",
+      "documentos": [
+        {
+          "titulo": "Documento",
+          "url": "http://ceres.gob.ar/wp-content/uploads/2026/10/PLIEGO-DE-BASES-Y-COND-VENTA-3-LOTES-LIC-054-2026.docx.pdf"
+        }
+      ]
+    },
+    {
       "id": "9b6816d1442519e95d96bf67719b800ad736ce3c120a0b82d6e37db9bdb0dea7",
       "organismo": "IAFAS",
       "numero_procedimiento": "8/2026",
@@ -2158,6 +2221,20 @@
         {
           "titulo": "2026-lic privada 8 contadora de billetes - pliegos unidos",
           "url": "https://www.iafas.gov.ar/descargas/17711"
+        }
+      ]
+    },
+    {
+      "id": "d3497b90f98381a69dcb1b94655efddd43f4cf765c41edfd25a7f2a0c8969ada",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "34/2026",
+      "objeto": "De conformidad a lo dispuesto por Procuración General de la provincia de Entre Ríos, por Resolución Nº197/26 de fecha 28 de octubre de 2026 , llámese a Licitación Privada Nº34/26 : “Provisión y envío de equipamiento, componentes e insumos de informática para destinar al Ministerio Publico Fiscal de Entre Ríos”.",
+      "url": "https://www.jusentrerios.gov.ar/compras/licitacion-privada-no34-26-provision-y-envio-de-equipamiento-componentes-e-insumos-de-informatica-para-destinar-al-ministerio-publico-fiscal-de-entre-rios/lic-privada-34-26/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "LIC PRIVADA 34-26",
+          "url": "https://www.jusentrerios.gov.ar/wp-content/uploads/2026/11/LIC-PRIVADA-34-26.zip"
         }
       ]
     },
@@ -2196,6 +2273,20 @@
       "url": "https://cafesg.gob.ar/cafesg2/licitacion/licitacion-publica-15-2026/",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
       "documentos": []
+    },
+    {
+      "id": "5aadc03b9a83e0aec24aac77fa6345b264b9c9ce2971ee5f6d4c2a9123a58d3f",
+      "organismo": "Municipalidad de Urdinarrain",
+      "numero_procedimiento": "6/2026",
+      "objeto": "GUALEGUAYCHU\n\n                                         MUNICIPALIDAD DE URDINARRAIN\n                                             Licitacion Publica Nº 06/2026\n OBJETO: Para la Concesión de Cantina, Comedor y Proveeduría en Balneario Camping “Arenas Blancas” de la\nMunicipalidad de Urdinarrain, ubicado en el Distrito Costa San Antonio, Departamento Gualeguaychu, Provincia de\nEntre Ríos, y de servicios a prestarse en el lugar.\n PRESENTACION DE OFERTAS: Hasta el día 18 de noviembre 2026, a la hora 10:00 hs. En la Oficina de\nContrataciones del Municipio.\n CONSULTAS, INFORMES Y ENTREGA DE PLIEGOS: MUNICIPALIDAD DE URDINARRAIN Dr. V. Silva nº 417\nCP.: 2826 – URDINARRAIN – ENTRE RIOS.\n TEL. FAX Nº: 03446 – 480616 / Interno 206 En días hábiles, en el horario de 7:00 h. a 12:00 hs.\n Mail.: compras@urdinarrain.gov.ar\n  Urdinarrain, 04 de noviembre de 2026 GASTON G. ELENA CARLOS L. MOHLINGER A/C Secretarías A/C\nPresidencia Municipal",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+        }
+      ]
     },
     {
       "id": "eaf22f7bd6cd7740d57cbdd0760fa96cad0946eddb9a0d8104d14f90712fd63a",
@@ -2255,15 +2346,37 @@
       "id": "d6b1b5e99ea8c6b7fff1e29a14c3f58a3fa62a5f3abbcafc0bcc61f2438a0940",
       "organismo": "Municipalidad de Rosario del Tala",
       "numero_procedimiento": "1/2026",
-      "objeto": "-- -- --\n                                     MUNICIPALIDAD DE ROSARI O DEL TALA\n                                      Llam ado a Licitación Pública Nº 01/2026\n  Objeto: La Municipalidad de Rosario del Tala (Entre Ríos) llama a Licitación Pública Nº 01/2026 para otorgar en\nConcesión por el plazo de veintidós (22) meses la explotación del servicio de cantina “El Ceibo”, proveeduría,\nkiosco y venta de comidas, del Parque y Balneario Municipal “Dr. Delio Panizza”, conforme Pliego de Bases y\nCondiciones Generales; Ley Nº 10.027, sus modificatorias; Ordenanza 284/88, sus modificatorias y decretos\nreglamentarios.-\n  Base Económica por el Período Licitado: pesos dieciocho millones seiscientos mil ($ 18.600.000,00) por veintidós\n(22) meses.\n  Pliego de Bases y Condiciones: En Tesorería Municipal de lunes a viernes de 07:00 a 12:30 horas.\n  Precio del pliego: pesos cuarenta y cinco mil ($ 45.000,00).-\n  Apertura de ofertas: 20 de Noviembre de 2026 a las 10:00 hs. en la Secretaría Municipal o el día hábil siguiente\nsi este resultara feriado o asueto.-\n  Consultas: Oficina de Compras y Suministros, días hábiles de 07:00 a 12:30 hs.- Teléfonos: (03445) 421700 –\n(03445)-15471203 – Mail: comprasmunitala@gmail.com municipiordt2024@gmail.com – (03445) 422755.-\nwww.rosariodeltala.gob.ar\n   Rosario del Tala, 23 de Octubre de 2026.- MAURO ANDRÉS PANIZZA, Secretario General.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+      "objeto": "-- -- --\n                                     MUNICIPALIDAD DE ROSARIO DEL TALA\n                                      Llamado a Licitación Pública Nº 01/2026\n Objeto: La Municipalidad de Rosario del Tala (Entre Ríos) llama a Licitación Pública Nº 01/2026 para otorgar en\nConcesión por el plazo de veintidós (22) meses la explotación del servicio de cantina “El Ceibo”, proveeduría,\nkiosco y venta de comidas, del Parque y Balneario Municipal “Dr. Delio Panizza”, conforme Pliego de Bases y\nCondiciones Generales; Ley Nº 10.027, sus modificatorias; Ordenanza 284/88, sus modificatorias y decretos\nreglamentarios.-\n Base Económica por el Período Licitado: pesos dieciocho millones seiscientos mil ($ 18.600.000,00) por veintidós\n(22) meses.\n Pliego de Bases y Condiciones: En Tesorería Municipal de lunes a viernes de 07:00 a 12:30 horas.\n Precio del pliego: pesos cuarenta y cinco mil ($ 45.000,00).-\n Apertura de ofertas: 20 de Noviembre de 2026 a las 10:00 hs. en la Secretaría Municipal o el día hábil siguiente\nsi este resultara feriado o asueto.-\n\n\n\n Consultas: Oficina de Compras y Suministros, días hábiles de 07:00 a 12:30 hs.- Teléfonos: (03445) 421700 –\n(03445)-15471203 – Mail: comprasmunitala@gmail.com municipiordt2024@gmail.com – (03445) 422755.-\nwww.rosariodeltala.gob.ar\n  Rosario del Tala, 23 de Octubre de 2026.- MAURO ANDRÉS PANIZZA, Secretario General.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": [
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
         }
       ]
+    },
+    {
+      "id": "1f2f4ab374a0fccde00c39ee23ae236ffacda593eea36f1dce3cc7ff923f3ede",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "80240/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38749",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "a0ac3ea0a6cc853cdac6db56aa6c919b601f08783ece804d35dbd133dfb6a593",
+      "organismo": "DIR. GRAL. DE CONTRATACIONES DEL ESTADO - MIN. DE ECONOMIA Y SERVICIOS PUBLICOS - PODER EJECUTIVO",
+      "numero_procedimiento": "18/2026",
+      "objeto": "Contratar un servicio de traslado de sacas de correspondencia",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
     },
     {
       "id": "564fb6a0432f629d352811f431b7896a2e5b636ed216e6eb9b7444ddb7bf58e9",
@@ -2359,16 +2472,43 @@
       "documentos": []
     },
     {
+      "id": "33c87b6993e965bb494ab08dbda740b9612c37a21a281d141e6071b81a41b890",
+      "organismo": "MIN. SALUD - PODER EJECUTIVO",
+      "numero_procedimiento": "26/2026",
+      "objeto": "Provisión y Adquisición de un Elevador para silla de ruedas",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "745af56dc78e224658445fb47e4b520e1d08aa7731d348372657607e46cd2406",
+      "organismo": "Municipalidad de Concepción del Uruguay",
+      "numero_procedimiento": "42/2026",
+      "objeto": "MUNICIPALIDAD DE CONCEPCION DEL URUGUAY\n                                           Licitación Pública Nº 42/2026\n OBJETO: \"Concesión de la Explotación Comercial de dos (02) puestos, a ser ocupados por dos (02) Camiones\nde Comidas Rápidas (food trucks), en la Zona Joven - Parque La Salamanca de la Municipalidad de Concepción\ndel Uruguay - Entre Ríos\", en un todo de acuerdo a los Pliegos de Bases, Condiciones Particulares y demás\ndocumentación.\n FECHA APERTURA: 26 de noviembre de 2026 Hora: 10:00\n RECEPCION DE PROPUESTAS: Departamento Suministros - Municipalidad de Concepción del Uruguay - San\nMartín y Moreno - Concepción del Uruguay - Entre Ríos.\n LUGAR APERTURA: Departamento Suministros - Municipalidad de Concepción del Uruguay - San Martín y\nMoreno - Concepción del Uruguay - Entre Ríos.\n PLIEGO CONDICIONES: $ 50.000,00. A la venta Tesorería Municipal hasta 24 horas hábiles anteriores al Acto\nde Apertura.\n GARANTIA OFERTA: $ 1.000.000,00.\n FIANZA CONTRATO: 5% del monto total contratado.\n En caso que la fecha de apertura resultare feriado o no laborable, la misma se efectuará el día hábil siguiente.\n Lic. Norma Sosa, Secretaría de Desarrollo Social y Educación, noviembre de 2026.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+        }
+      ]
+    },
+    {
       "id": "6ed2f26c5a4210ca3cb08a93a7f25c19b2e4120dc3cf3bdf863313fccc868a82",
       "organismo": "Comuna de ANTELO - CORRALES",
       "numero_procedimiento": "4/2026",
-      "objeto": "VICTORIA\n\n                                         COMUNA DE ANTELO - CORRALES\n                                                  Li citación Nº 04/2026\n  La Comuna de Antelo - Corrales, departamento Victoria, Provincia de Entre Ríos Llama a Licitación Publica N.º\n04/2026 - Autorizada y aprobada por el Concejo Comunal en fecha 8 de Octubre, para la compra de una máquina\nretroexcavadora 0 km.- Publicación por 3 días – Condiciones: Monto presupuesto estimado en Pesos Ciento\nCincuenta millones ($ 150.000.000).\n  Valor del Pliego: Sin costo.\n  Retiro de Pliegos: Los Pliegos de Condiciones se encuentran a disposición de los interesados para su consulta y\nretiro en forma gratuita en la Sede Comunal ubicada en calle 7 de Octubre S/N de la localidad de Antelo. También\npodrán solicitarse por correo electrónico a la siguiente dirección: comunaantelocorrales@gmail.com.\n  Consultas y Aclaraciones: Quienes hayan retirado el Pliego de Condiciones podrán formular consultas\ndirectamente en la sede comunal, días hábiles en horario de 8 a 12 hs., hasta el día anterior al de la apertura de\nlos sobres. La presentación implica el conocimiento y conformidad respecto del pliego. Las ofertas deberán\nformularse por escrito, en la Sede Comunal de Antelo, en un sobre cerrado, consignando en la cubierta del mismo:\nLicitación Nº 04/2026, día y hora de apertura: 27 de Noviembre de 2026 a la hora 9:00, en la sede comunal.-\n  Fdo. CLAUDIO TABORDA - Presidente\n  Fdo. CECILIA VERBAUVEDE - Secretaria\n  COMUNA DE ANTELO.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+      "objeto": "VICTORIA\n\n                                         COMUNA DE ANTELO - CORRALES\n                                                  Licitación N.º 04/2026\n  La Comuna de Antelo - Corrales, departamento Victoria, Provincia de Entre Ríos Llama a Licitación Publica N.º\n04/2026 - Autorizada y aprobada por el Concejo Comunal en fecha 8 de Octubre, para la compra de una máquina\nretroexcavadora 0 km.- Publicación por 3 días – Condiciones: Monto presupuesto estimado en Pesos Ciento\nCincuenta millones ($ 150.000.000).\n  Valor del Pliego: Sin costo.\n  Retiro de Pliegos: Los Pliegos de Condiciones se encuentran a disposición de los interesados para su consulta y\nretiro en forma gratuita en la Sede Comunal ubicada en calle 7 de Octubre S/N de la localidad de Antelo. También\npodrán solicitarse por correo electrónico a la siguiente dirección: comunaantelocorrales@gmail.com.\n  Consultas y Aclaraciones: Quienes hayan retirado el Pliego de Condiciones podrán formular consultas\ndirectamente en la sede comunal, días hábiles en horario de 8 a 12 hs., hasta el día anterior al de la apertura de\nlos sobres. La presentación implica el conocimiento y conformidad respecto del pliego. Las ofertas deberán\nformularse por escrito, en la Sede Comunal de Antelo, en un sobre cerrado, consignando en la cubierta del mismo:\nLicitación Nº 04/2026, día y hora de apertura: 27 de Noviembre de 2026 a la hora 9:00, en la sede comunal.-\n  Fdo. CLAUDIO TABORDA - Presidente Fdo. CECILIA VERBAUVEDE - Secretaria\n  COMUNA DE ANTELO.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": [
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
         }
       ]
     },

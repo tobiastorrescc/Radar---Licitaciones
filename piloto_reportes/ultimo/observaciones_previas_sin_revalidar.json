@@ -1640,6 +1640,21 @@
       "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
+      "id": "0a4e1421a87659ffb95e636c2a4c7ca1ba11d93177cbd9b1c691ab64124ffc6d",
+      "organismo": "Municipalidad de Rosario",
+      "procedimiento": "20073/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38616",
+      "objeto": "Licitación Privada 20073/2026 Publicada para Apertura Trabajos necesarios para poner en condiciones las instalaciones relevadas en el Polideportivo Cristalería, sito en Alberdi 3200 de la ciudad de Rosario Apertura: 06/11/2026 09:00",
+      "fecha_publicacion_anterior": null,
+      "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
+      "fecha_publicacion_diaria": null,
+      "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-06",
+      "hora_apertura_observada": "09:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
+    },
+    {
       "id": "2d824702a45b54f6dcf1eee302d76b4de1ce23eb069757d4764786c838dbd6c2",
       "organismo": "Municipalidad de Rosario",
       "procedimiento": "19/2026",
@@ -1712,6 +1727,36 @@
       "ultima_observacion_diaria": null,
       "fecha_apertura_observada": "2026-11-06",
       "hora_apertura_observada": "12:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
+    },
+    {
+      "id": "17286849e0f3ab63b9d5ae2086b06d0f5f55a70c421f912493a52da7f96978e4",
+      "organismo": "Municipalidad de Rosario",
+      "procedimiento": "110480/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38657",
+      "objeto": "Licitación Privada 110480/2026 Publicada para Apertura QUÍMICA CLÍNICA AUTOANALIZADORES HECA DIRECCIÓN DE BIOQUÍMICA Apertura: 09/11/2026 10:00",
+      "fecha_publicacion_anterior": null,
+      "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
+      "fecha_publicacion_diaria": null,
+      "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-09",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
+    },
+    {
+      "id": "5a830109b95726c8d5a5ea8d94d5f63ca710e368913839c7a98c8b90ec5625a5",
+      "organismo": "Municipalidad de Rosario",
+      "procedimiento": "40631/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38659",
+      "objeto": "Compra Agil 40631/2026 Publicada para Apertura ADQUISICIÓN DE EXTINTORES PARA EL HOSPITAL I CARRASCO. Apertura: 09/11/2026 11:00",
+      "fecha_publicacion_anterior": null,
+      "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
+      "fecha_publicacion_diaria": null,
+      "primera_deteccion_diaria": null,
+      "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-09",
+      "hora_apertura_observada": "11:00",
       "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     }
   ]

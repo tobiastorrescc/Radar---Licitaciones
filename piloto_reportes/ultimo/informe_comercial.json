@@ -1,6 +1,6 @@
 {
-  "fecha": "2026-11-09T08:57:32.920433-03:00",
-  "total": 25,
+  "fecha": "2026-11-10T08:55:56.499719-03:00",
+  "total": 24,
   "oportunidades": [
     {
       "detalle_completo": true,
@@ -160,7 +160,7 @@
       ],
       "id": "5231a9468b54e221860f9af7e1adaa07efd7beef1de4f8bf63342e7ee6bdd1d3",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "5231a9468b54e221860f9af7e1adaa07efd7beef1de4f8bf63342e7ee6bdd1d3"
@@ -195,30 +195,34 @@
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
         }
       ],
       "enlace_pliego": null,
       "evento_publicado": null,
-      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
       "evidencias_campos": {
         "fecha_apertura": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
           "texto": "24/11/2026"
         },
         "fecha_limite_presentacion": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
           "texto": "23/11/2026- 12 hs fecha de "
         },
         "numero_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
           "texto": "licitacion publica 3/2026"
         },
         "presupuesto": {
           "texto": "presupuesto oficial $ 41.000.000,00",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf"
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
         },
         "tipo_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
           "texto": "licitacion publica 3/2026"
         }
       },
@@ -227,6 +231,9 @@
       "fecha_limite_presentacion": "2026-11-23",
       "fecha_publicacion": null,
       "fuente": "https://www.entrerios.gov.ar/boletin/",
+      "fuentes_observadas": [
+        "https://www.entrerios.gov.ar/boletin/"
+      ],
       "hora_apertura": null,
       "hora_limite_presentacion": null,
       "localidad": "El Pingo",
@@ -234,7 +241,7 @@
       "numero_convocatoria": "1",
       "numero_oficial_sin_interpretar": "3/2026",
       "numero_procedimiento": "3/2026",
-      "objeto": "-- -- --\n                                             MUNICIPIO DE EL PINGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE COLUMNAS Y ARTEFACTOS DE\nILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE NUESTRA\nLOCALIDAD.-\n  PRIMER LLAMADO A:\n                                           Licitación Pública Nº 03/2026\n                                          Decreto de Llamado Nº 069/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 23/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 24/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $ 41.000.000,00 (Pesos CUARENTA Y UN MILLONES CON 00/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE COLUMNAS Y\nARTEFACTOS DE ILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE\nNUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA La presente gestión tiene por objeto la adquisición de columnas y artefactos de\niluminación, nuevos y sin uso, destinados a la reforma de la Plaza Central \"San Martín\" de nuestra localidad,\nconforme a los ítems y características que se detallan a continuación. La cotización deberá presentarse por ítem,\nindicando precio unitario y precio total.",
+      "objeto": "-- -- --\n                                              MUNICIPIO DE EL PINGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE COLUMNAS Y ARTEFACTOS DE\nILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE NUESTRA\nLOCALIDAD.-\n  PRIMER LLAMADO A:\n                                            Licitación Pública Nº 03/2026\n                                          Decreto De Llamado Nº 069/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 23/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 24/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $ 41.000.000,00 (Pesos CUARENTA Y UN MILLONES CON 00/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE COLUMNAS Y\nARTEFACTOS DE ILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE\nNUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA La presente gestión tiene por objeto la adquisición de columnas y artefactos de\niluminación, nuevos y sin uso, destinados a la reforma de la Plaza Central \"San Martín\" de nuestra localidad,\nconforme a los ítems y características que se detallan a continuación. La cotización deberá presentarse por ítem,\nindicando precio unitario y precio total.",
       "organismo": "Municipalidad de El Pingo",
       "pago_evidencias": [],
       "presupuesto": {
@@ -247,8 +254,12 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "licitacion publica 3/2026 -- -- --\n                                             MUNICIPIO DE EL PINGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE COLUMNAS Y ARTEFACTOS DE\nILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE NUESTRA\nLOCALIDAD.-\n  PRIMER LLAMADO A:\n                                           Licitación Pública Nº 03/2026\n                                          Decreto de Llamado Nº 069/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 23/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 24/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $ 41.000.000,00 (Pesos CUARENTA Y UN MILLONES CON 00/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE COLUMNAS Y\nARTEFACTOS DE ILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE\nNUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA La presente gestión tiene por objeto la adquisición de columnas y artefactos de\niluminación, nuevos y sin uso, destinados a la reforma de la Plaza Central \"San Martín\" de nuestra localidad,\nconforme a los ítems y características que se detallan a continuación. La cotización deberá presentarse por ítem,\nindicando precio unitario y precio total.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+      "titulo": "licitacion publica 3/2026 -- -- --\n                                              MUNICIPIO DE EL PINGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE COLUMNAS Y ARTEFACTOS DE\nILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE NUESTRA\nLOCALIDAD.-\n  PRIMER LLAMADO A:\n                                            Licitación Pública Nº 03/2026\n                                          Decreto De Llamado Nº 069/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 23/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 24/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $ 41.000.000,00 (Pesos CUARENTA Y UN MILLONES CON 00/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE COLUMNAS Y\nARTEFACTOS DE ILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE\nNUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA La presente gestión tiene por objeto la adquisición de columnas y artefactos de\niluminación, nuevos y sin uso, destinados a la reforma de la Plaza Central \"San Martín\" de nuestra localidad,\nconforme a los ítems y características que se detallan a continuación. La cotización deberá presentarse por ítem,\nindicando precio unitario y precio total.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "urls_publicacion": [
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+      ],
       "pago": {
         "estado": "PENDIENTE",
         "clasificacion": "NO_INFORMADO",
@@ -287,7 +298,7 @@
       ],
       "id": "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4"
@@ -296,21 +307,26 @@
         {
           "id": "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4",
           "numero_procedimiento": "3/2026",
-          "objeto": "-- -- --\n                                             MUNICIPIO DE EL PINGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE COLUMNAS Y ARTEFACTOS DE\nILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE NUESTRA\nLOCALIDAD.-\n  PRIMER LLAMADO A:\n                                           Licitación Pública Nº 03/2026\n                                          Decreto de Llamado Nº 069/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 23/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 24/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $ 41.000.000,00 (Pesos CUARENTA Y UN MILLONES CON 00/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE COLUMNAS Y\nARTEFACTOS DE ILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE\nNUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA La presente gestión tiene por objeto la adquisición de columnas y artefactos de\niluminación, nuevos y sin uso, destinados a la reforma de la Plaza Central \"San Martín\" de nuestra localidad,\nconforme a los ítems y características que se detallan a continuación. La cotización deberá presentarse por ítem,\nindicando precio unitario y precio total.",
+          "objeto": "-- -- --\n                                              MUNICIPIO DE EL PINGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE COLUMNAS Y ARTEFACTOS DE\nILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE NUESTRA\nLOCALIDAD.-\n  PRIMER LLAMADO A:\n                                            Licitación Pública Nº 03/2026\n                                          Decreto De Llamado Nº 069/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 23/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 24/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $ 41.000.000,00 (Pesos CUARENTA Y UN MILLONES CON 00/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE COLUMNAS Y\nARTEFACTOS DE ILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE\nNUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA La presente gestión tiene por objeto la adquisición de columnas y artefactos de\niluminación, nuevos y sin uso, destinados a la reforma de la Plaza Central \"San Martín\" de nuestra localidad,\nconforme a los ítems y características que se detallan a continuación. La cotización deberá presentarse por ítem,\nindicando precio unitario y precio total.",
           "fecha_apertura": "2026-11-24",
           "fecha_limite_presentacion": "2026-11-23",
           "evento_publicado": null,
           "numero_convocatoria": "1",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
           "documentos": [
             {
               "titulo": "Boletín complementario",
               "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf"
+            },
+            {
+              "titulo": "Boletín complementario",
+              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
             }
           ]
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -418,7 +434,7 @@
       ],
       "id": "fdda2824c3aeb064b939506c593c09a5768c0e5dfe45716069beb517ccbf601d",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fdda2824c3aeb064b939506c593c09a5768c0e5dfe45716069beb517ccbf601d"
@@ -553,7 +569,7 @@
       ],
       "id": "9f2a2203870d1d1e5a2558753f16733eaa800a413047e7bc812bd6f9bd19a586",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9f2a2203870d1d1e5a2558753f16733eaa800a413047e7bc812bd6f9bd19a586"
@@ -688,7 +704,7 @@
       ],
       "id": "c77572e3ac53491f5ee882a61d10579490bd6e40eb4efbb222a942e7812f77ec",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "c77572e3ac53491f5ee882a61d10579490bd6e40eb4efbb222a942e7812f77ec"
@@ -731,30 +747,34 @@
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
         }
       ],
       "enlace_pliego": null,
       "evento_publicado": null,
-      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
       "evidencias_campos": {
         "fecha_apertura": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
           "texto": "20/11/2026 a las 11:00"
         },
         "fecha_limite_presentacion": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
           "texto": "2026-11-20t10:59:00-03:00"
         },
         "numero_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
           "texto": "licitacion publica 8/2026"
         },
         "presupuesto": {
-          "texto": "presupuesto oficial $ 25.470.000,00",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf"
+          "texto": "presupuesto oficial $ 25.470.000,",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
         },
         "tipo_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
           "texto": "licitacion publica 8/2026"
         }
       },
@@ -778,7 +798,7 @@
       "organismo": "Comuna de El Palenque",
       "pago_evidencias": [],
       "presupuesto": {
-        "importe": "25470000.00",
+        "importe": "25470000",
         "moneda": null
       },
       "procedimiento": "licitacion publica 8/2026",
@@ -787,11 +807,12 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "licitacion publica 8/2026 -- -- --\n                                           COMUNA DE EL PALENQUE\n                                            Licitación Pública Nº 08/26\n OBJETO: Adquisición de inmueble urbano destinado a la construcción de una sala de velatorios.\n PRESUPUESTO OFICIAL: $ 25.470.000,00 (pesos veinticinco millones cuatrocientos setenta mil)\n RECEPCIÓN DE PROPUESTAS: 20/11/2026 hasta las 10:59 hs. en Sede Administrativa de El Palenque.\n APERTURA DE OFERTAS: 20/11/2026 a las 11:00 horas, Lugar: Sede Administrativa de la Comuna de El\nPalenque, sito en calle San Martín sin número, El Palenque (E.R.).\n VALOR DEL PLIEGO: pesos cero ($ 0,00).\n Por consulta de pliegos dirigirse a la Comuna de El Palenque en días hábiles administrativos, en horario de 8:30\na 13:00 horas, teléfono 0343-156115732, comunaelpalenque@gmail.com.\n Comuna de El Palenque, Grosso, Ricardo Rubén, Presidente Comunal.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+      "titulo": "licitacion publica 8/2026 -- -- --\n                                             COMUNA DE EL PALENQUE\n                                             Licitación Pública Nº 08/26.\n OBJETO: Adquisición de inmueble urbano destinado a la construcción de una sala de velatorios.\nPRESUPUESTO OFICIAL: $ 25.470.000, 00 (pesos veinticinco millones cuatrocientos setenta mil)\n RECEPCIÓN DE PROPUESTAS: 20/11/2026 hasta las 10:59 hs. en Sede Administrativa de El Palenque.\n APERTURA DE OFERTAS: 20/11/2026 a las 11:00 horas, Lugar: Sede Administrativa de la Comuna de El\nPalenque, sito en calle San Martín sin número, El Palenque (E.R.).\n VALOR DEL PLIEGO: pesos cero ($ 0, 00). Por consulta de pliegos dirigirse a la Comuna de El Palenque en días\nhábiles   administrativos,   en      horario    de    8:30    a    13:00  horas,  teléfono   0343-156115732,\ncomunaelpalenque@gmail.com.\n Comuna de El Palenque, Grosso, Ricardo Rubén, Presidente Comunal.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
       "urls_publicacion": [
         "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
-        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf"
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
       ],
       "pago": {
         "estado": "PENDIENTE",
@@ -831,7 +852,7 @@
       ],
       "id": "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59"
@@ -845,7 +866,7 @@
           "fecha_limite_presentacion": "2026-11-20",
           "evento_publicado": null,
           "numero_convocatoria": "1",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
           "documentos": [
             {
               "titulo": "Boletín complementario",
@@ -854,12 +875,16 @@
             {
               "titulo": "Boletín complementario",
               "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
+            },
+            {
+              "titulo": "Boletín complementario",
+              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
             }
           ]
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "DATOS_COMPLETADOS",
+      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -980,7 +1005,7 @@
       ],
       "id": "9993d4ab51a5152f5cb866fb2602e3a93fad53f53096f18e166ca7746911450d",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9993d4ab51a5152f5cb866fb2602e3a93fad53f53096f18e166ca7746911450d"
@@ -1012,157 +1037,6 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-19T16:00:00-03:00"
-    },
-    {
-      "detalle_completo": true,
-      "documentos": [
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf"
-        }
-      ],
-      "enlace_pliego": null,
-      "evento_publicado": null,
-      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf",
-      "evidencias_campos": {
-        "fecha_apertura": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf",
-          "texto": "11/11/2026"
-        },
-        "fecha_limite_presentacion": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf",
-          "texto": "10/11/2026- 12 hs fecha de "
-        },
-        "numero_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf",
-          "texto": "licitacion publica 2/2026"
-        },
-        "presupuesto": {
-          "texto": "presupuesto oficial $ 16.868.978,35",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf"
-        },
-        "tipo_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf",
-          "texto": "licitacion publica 2/2026"
-        }
-      },
-      "fecha_apertura": "2026-11-11",
-      "fecha_apertura_texto": "11/11/2026",
-      "fecha_limite_presentacion": "2026-11-10",
-      "fecha_publicacion": null,
-      "fuente": "https://www.entrerios.gov.ar/boletin/",
-      "fuentes_observadas": [
-        "https://www.entrerios.gov.ar/boletin/"
-      ],
-      "hora_apertura": null,
-      "hora_limite_presentacion": null,
-      "localidad": "El Pingo",
-      "modalidad_presentacion": [],
-      "numero_convocatoria": "1",
-      "numero_oficial_sin_interpretar": "2/2026",
-      "numero_procedimiento": "2/2026",
-      "objeto": "-- -- --\n                                               MUNICIPALIDAD EL PI NGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE 2 (DOS) GARITAS DE COLECTIVOS\nDESTINADAS A SER EMPLAZADAS SOBRE AV. 9 DE JULIO DE NUESTRA LOCALIDAD.-\n                                    Prim er Llam ado a: Licitación Pública Nº 02/2026\n                                             Decreto de Llamado Nº 65/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 10/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 11/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $16.868.978,35 (Pesos DIECISÉIS MILLONES OCHOCIENTOS SESENTA Y OCHO\nMIL NOVECIENTOS SETENTA Y OCHO CON 35/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE 2 (DOS) GARITAS\nDE COLECTIVOS DESTINADAS A SER EMPLAZADAS SOBRE AV. 9 DE JULIO DE NUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA\n  La presente gestión tiene por objeto la adquisición de dos (2) garitas de colectivos nuevas, sin uso, destinadas a\nser emplazadas sobre Av. 9 de Julio de nuestra localidad, conforme a las características que se detallan en las\npresentes especificaciones.\n  DETALLE ESPECÍFICO DE LAS GARITAS\n  Tipo de Unidad: Garita para parada de colectivos, tipo modelo \"IRON\" o similar de igual o superior calidad.\n  - Cantidad: Dos (2) unidades.\n  - Dimensiones: Largo de tres (3) metros.\n  - Componentes: Con cesto de residuos y cerramiento lateral.\n  - Iluminación: Dos (2) reflectores solares de 30 W por garita.\n  - Materiales: Resistentes, sostenibles y de bajo mantenimiento, con posibilidad de adaptar paneles informativos\ny/o publicitarios.\n  - Pintura: Las garitas deberán entregarse pintadas, utilizando pinturas térmicas o reflectantes que reduzcan el\nimpacto del calor extremo. La aplicación deberá realizarse bajo un control estricto de las condiciones ambientales\n(temperatura y humedad), conforme a las recomendaciones del fabricante de la pintura.\n  - Ploteo: El precio cotizado deberá incluir el ploteo de las garitas con las imágenes que el Municipio disponga.\n  Rupp, Laura Verónica, presidente municipal.",
-      "organismo": "Municipalidad de El Pingo",
-      "pago_evidencias": [],
-      "presupuesto": {
-        "importe": "16868978.35",
-        "moneda": null
-      },
-      "procedimiento": "licitacion publica 2/2026",
-      "provincia": "Entre Ríos",
-      "registro_estructurado": true,
-      "requiere_revalidacion": false,
-      "situacion_publicada": null,
-      "tipo_procedimiento": "licitacion publica",
-      "titulo": "licitacion publica 2/2026 -- -- --\n                                               MUNICIPALIDAD EL PI NGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE 2 (DOS) GARITAS DE COLECTIVOS\nDESTINADAS A SER EMPLAZADAS SOBRE AV. 9 DE JULIO DE NUESTRA LOCALIDAD.-\n                                    Prim er Llam ado a: Licitación Pública Nº 02/2026\n                                             Decreto de Llamado Nº 65/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 10/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 11/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $16.868.978,35 (Pesos DIECISÉIS MILLONES OCHOCIENTOS SESENTA Y OCHO\nMIL NOVECIENTOS SETENTA Y OCHO CON 35/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE 2 (DOS) GARITAS\nDE COLECTIVOS DESTINADAS A SER EMPLAZADAS SOBRE AV. 9 DE JULIO DE NUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA\n  La presente gestión tiene por objeto la adquisición de dos (2) garitas de colectivos nuevas, sin uso, destinadas a\nser emplazadas sobre Av. 9 de Julio de nuestra localidad, conforme a las características que se detallan en las\npresentes especificaciones.\n  DETALLE ESPECÍFICO DE LAS GARITAS\n  Tipo de Unidad: Garita para parada de colectivos, tipo modelo \"IRON\" o similar de igual o superior calidad.\n  - Cantidad: Dos (2) unidades.\n  - Dimensiones: Largo de tres (3) metros.\n  - Componentes: Con cesto de residuos y cerramiento lateral.\n  - Iluminación: Dos (2) reflectores solares de 30 W por garita.\n  - Materiales: Resistentes, sostenibles y de bajo mantenimiento, con posibilidad de adaptar paneles informativos\ny/o publicitarios.\n  - Pintura: Las garitas deberán entregarse pintadas, utilizando pinturas térmicas o reflectantes que reduzcan el\nimpacto del calor extremo. La aplicación deberá realizarse bajo un control estricto de las condiciones ambientales\n(temperatura y humedad), conforme a las recomendaciones del fabricante de la pintura.\n  - Ploteo: El precio cotizado deberá incluir el ploteo de las garitas con las imágenes que el Municipio disponga.\n  Rupp, Laura Verónica, presidente municipal.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf",
-      "urls_publicacion": [
-        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
-        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf",
-        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf"
-      ],
-      "pago": {
-        "estado": "PENDIENTE",
-        "clasificacion": "NO_INFORMADO",
-        "etiqueta": "Pendiente de verificar",
-        "plazos_dias": [],
-        "hitos_inicio": [],
-        "documento_respaldo": null,
-        "documentos_respaldo": [],
-        "evidencias": [],
-        "prioritario": false,
-        "motivo": "SIN_CLAUSULA_COMPROBADA"
-      },
-      "condiciones_pago": "Pendiente de verificar",
-      "enlace_condiciones_pago": null,
-      "pago_prioritario": false,
-      "desierta": false,
-      "fracasada": false,
-      "segundo_llamado": false,
-      "reapertura": false,
-      "llamado_especial": false,
-      "procedimiento_canonico": "licitacion publica 2/2026",
-      "convocatoria": "1",
-      "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": null,
-      "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": null,
-      "fecha_referencia_vencimiento": "2026-11-10",
-      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
-      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "DESCONOCIDA",
-      "estimacion_comercial": null,
-      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
-      "campos_desconocidos": [
-        "fecha_publicacion",
-        "enlace_pliego"
-      ],
-      "id": "55ceab9f32a2784713a5fecb88f0087020760299481dae607a981b7200b83c97",
-      "primera_deteccion": "2026-11-01T08:31:08.968829-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
-      "observada_esta_corrida": true,
-      "ids_historial": [
-        "55ceab9f32a2784713a5fecb88f0087020760299481dae607a981b7200b83c97"
-      ],
-      "variantes_historial": [
-        {
-          "id": "55ceab9f32a2784713a5fecb88f0087020760299481dae607a981b7200b83c97",
-          "numero_procedimiento": "2/2026",
-          "objeto": "-- -- --\n                                               MUNICIPALIDAD EL PI NGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE 2 (DOS) GARITAS DE COLECTIVOS\nDESTINADAS A SER EMPLAZADAS SOBRE AV. 9 DE JULIO DE NUESTRA LOCALIDAD.-\n                                    Prim er Llam ado a: Licitación Pública Nº 02/2026\n                                             Decreto de Llamado Nº 65/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 10/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 11/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $16.868.978,35 (Pesos DIECISÉIS MILLONES OCHOCIENTOS SESENTA Y OCHO\nMIL NOVECIENTOS SETENTA Y OCHO CON 35/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE 2 (DOS) GARITAS\nDE COLECTIVOS DESTINADAS A SER EMPLAZADAS SOBRE AV. 9 DE JULIO DE NUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA\n  La presente gestión tiene por objeto la adquisición de dos (2) garitas de colectivos nuevas, sin uso, destinadas a\nser emplazadas sobre Av. 9 de Julio de nuestra localidad, conforme a las características que se detallan en las\npresentes especificaciones.\n  DETALLE ESPECÍFICO DE LAS GARITAS\n  Tipo de Unidad: Garita para parada de colectivos, tipo modelo \"IRON\" o similar de igual o superior calidad.\n  - Cantidad: Dos (2) unidades.\n  - Dimensiones: Largo de tres (3) metros.\n  - Componentes: Con cesto de residuos y cerramiento lateral.\n  - Iluminación: Dos (2) reflectores solares de 30 W por garita.\n  - Materiales: Resistentes, sostenibles y de bajo mantenimiento, con posibilidad de adaptar paneles informativos\ny/o publicitarios.\n  - Pintura: Las garitas deberán entregarse pintadas, utilizando pinturas térmicas o reflectantes que reduzcan el\nimpacto del calor extremo. La aplicación deberá realizarse bajo un control estricto de las condiciones ambientales\n(temperatura y humedad), conforme a las recomendaciones del fabricante de la pintura.\n  - Ploteo: El precio cotizado deberá incluir el ploteo de las garitas con las imágenes que el Municipio disponga.\n  Rupp, Laura Verónica, presidente municipal.",
-          "fecha_apertura": "2026-11-11",
-          "fecha_limite_presentacion": "2026-11-10",
-          "evento_publicado": null,
-          "numero_convocatoria": "1",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf",
-          "documentos": [
-            {
-              "titulo": "Boletín complementario",
-              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/30-10-26.pdf"
-            },
-            {
-              "titulo": "Boletín complementario",
-              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf"
-            },
-            {
-              "titulo": "Boletín complementario",
-              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf"
-            }
-          ]
-        }
-      ],
-      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "estado_comercial": "VIGENTE_VERIFICADA",
-      "presentacion_verificada": true,
-      "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-10"
     },
     {
       "campos_oficiales": {
@@ -1199,31 +1073,23 @@
       ],
       "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38721/documentos/102945",
       "evento_publicado": null,
-      "evidencia_url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
+      "evidencia_url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
       "evidencias_campos": {
         "fecha_apertura": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
           "texto": "11/11/2026 11:00"
         },
-        "fecha_limite_presentacion": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
-          "texto": "2026-11-11t11:00:00-03:00"
-        },
-        "fecha_publicacion": {
-          "texto": "fecha de publicacion: 04/11/2026",
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721"
-        },
         "numero_procedimiento": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
           "texto": "compra agil 469/2026"
-        },
-        "presupuesto": {
-          "texto": "presupuesto oficial $ 10.000.000,00",
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721"
         },
         "tipo_procedimiento": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
           "texto": "compra agil 469/2026"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
+          "texto": "2026-11-11t11:00:00-03:00"
         }
       },
       "fecha_apertura": "2026-11-11",
@@ -1266,7 +1132,7 @@
       "situacion_publicada": null,
       "texto_listado": "Compra Agil 50/2026 Publicada para Apertura Provisión de accesorios para pintura para la Secretaría de Obras Públicas - Dirección General de Arquitectura Apertura: 11/11/2026 11:00",
       "tipo_procedimiento": "compra agil",
-      "titulo": "Compra Agil 469/2026 Provisión de accesorios para pintura para la Secretaría de Obras Públicas - Dirección General de Arquitectura",
+      "titulo": "Compra Agil 50/2026 Publicada para Apertura Provisión de accesorios para pintura para la Secretaría de Obras Públicas - Dirección General de Arquitectura Apertura: 11/11/2026 11:00",
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
       "urls_publicacion": [
         "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
@@ -1310,7 +1176,7 @@
       "campos_desconocidos": [],
       "id": "fd993510e3fcfd9793d6b5db3fd906298808493728062f6aab923817c2f309c6",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fd993510e3fcfd9793d6b5db3fd906298808493728062f6aab923817c2f309c6"
@@ -1342,189 +1208,10 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "DATOS_COMPLETADOS",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-11T11:00:00-03:00"
-    },
-    {
-      "campos_oficiales": {
-        "consulta pliego": "Dirección General de Defunciones y Cementerios - FRANCIA 1821 - notificaciones_dgdc@rosario.gob.ar - Of. de COMPRAS De 8 a 12hs",
-        "declaracion jurada de presentacion de ofertas": "Para presentar una oferta, completá la Declaración Jurada de conocimiento de Pliegos y Normativas a través de tu Perfil Digital. Luego, imprimila, firmala y adjuntala a tu oferta en papel. Al presentar la Declaración Jurada, se reemplaza la presentación en papel de los pliegos y normativas correspondientes a la licitación. Completar DDJJ",
-        "estado": "Publicada para Apertura",
-        "expediente": "6/2026",
-        "fecha de apertura": "12/11/2026 09:00",
-        "fecha de publicacion": "06/11/2026",
-        "fecha ultima actualizacion": "06/11/2026",
-        "lugar de apertura": "Dirección General de Defunciones y Cementerios - FRANCIA 1821 - Oficina de compras",
-        "n° de contratacion": "471/2026",
-        "objeto": "Compra de artículos de limpieza para la Dirección General de Defunciones y Cementerios - Sec. de Ambiente y Espacio Público",
-        "presupuesto oficial": "$ 6.369.600,49",
-        "recepcion de ofertas": "Dirección General de Defunciones y Cementerios - FRANCIA 1821 - Of. de COMPRAS de 8 a 12hs. Plazo: Hasta el momento de la apertura",
-        "reparticion licitante": "Dirección General de Defunciones y Cementerios - FRANCIA 1821",
-        "tipo de contratacion": "Compra Agil",
-        "ver pliego adjunto apto para cotizar": "decreton°1431-anexoideclaracionjurada.pdf pliegocompraagiln°6compradeartlimpieza.pdf"
-      },
-      "detalle_completo": true,
-      "documentos": [
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: decreton°1431-anexoideclaracionjurada.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38741/documentos/102983"
-        },
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: pliegocompraagiln°6compradeartlimpieza.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38741/documentos/102982"
-        }
-      ],
-      "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38741/documentos/102983",
-      "evento_publicado": null,
-      "evidencia_url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38741",
-      "evidencias_campos": {
-        "fecha_apertura": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38741",
-          "texto": "12/11/2026 09:00"
-        },
-        "fecha_limite_presentacion": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38741",
-          "texto": "2026-11-12t09:00:00-03:00"
-        },
-        "fecha_publicacion": {
-          "texto": "fecha de publicacion: 06/11/2026",
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38741"
-        },
-        "numero_procedimiento": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38741",
-          "texto": "compra agil 471/2026"
-        },
-        "presupuesto": {
-          "texto": "presupuesto oficial $ 6.369.600,49",
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38741"
-        },
-        "tipo_procedimiento": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38741",
-          "texto": "compra agil 471/2026"
-        }
-      },
-      "fecha_apertura": "2026-11-12",
-      "fecha_apertura_texto": "12/11/2026 09:00",
-      "fecha_limite_presentacion": "2026-11-12",
-      "fecha_limite_presentacion_texto": "2026-11-12T09:00:00-03:00",
-      "fecha_publicacion": "2026-11-06",
-      "fecha_publicacion_texto": null,
-      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
-      "fuentes_observadas": [
-        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones"
-      ],
-      "hora_apertura": "09:00",
-      "hora_limite_presentacion": "09:00",
-      "id_origen": "38741",
-      "identidad_ambito": "ficha-rosario-38741",
-      "localidad": "Rosario",
-      "modalidad_presentacion": [
-        "PRESENCIAL"
-      ],
-      "numero_oficial_sin_interpretar": "6/2026",
-      "numero_procedimiento": "471/2026",
-      "objeto": "Compra de artículos de limpieza para la Dirección General de Defunciones y Cementerios - Sec. de Ambiente y Espacio Público",
-      "organismo": "Municipalidad de Rosario",
-      "pago_evidencias": [],
-      "presupuesto": {
-        "importe": "6369600.49",
-        "moneda": null
-      },
-      "procedimiento": "compra agil 471/2026",
-      "provincia": "Santa Fe",
-      "rango_evidencia": 3,
-      "registro_estructurado": true,
-      "requiere_revalidacion": false,
-      "situacion_publicada": null,
-      "texto_listado": "Compra Agil 6/2026 Publicada para Apertura Compra de artículos de limpieza para la Dirección General de Defunciones y Cementerios - Sec. de Ambiente y Espacio Público Apertura: 12/11/2026 09:00",
-      "tipo_procedimiento": "compra agil",
-      "titulo": "Compra Agil 471/2026 Compra de artículos de limpieza para la Dirección General de Defunciones y Cementerios - Sec. de Ambiente y Espacio Público",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38741",
-      "urls_publicacion": [
-        "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38741",
-        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
-        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=1",
-        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5"
-      ],
-      "pago": {
-        "estado": "PENDIENTE",
-        "clasificacion": "NO_INFORMADO",
-        "etiqueta": "Pendiente de verificar",
-        "plazos_dias": [],
-        "hitos_inicio": [],
-        "documento_respaldo": null,
-        "documentos_respaldo": [],
-        "evidencias": [],
-        "prioritario": false,
-        "motivo": "SIN_CLAUSULA_COMPROBADA"
-      },
-      "condiciones_pago": "Pendiente de verificar",
-      "enlace_condiciones_pago": null,
-      "pago_prioritario": false,
-      "desierta": false,
-      "fracasada": false,
-      "segundo_llamado": false,
-      "reapertura": false,
-      "llamado_especial": false,
-      "procedimiento_canonico": "compra agil 471/2026",
-      "convocatoria": "1",
-      "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": "2026-11-12T09:00:00-03:00",
-      "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": "2026-11-12T09:00:00-03:00",
-      "fecha_referencia_vencimiento": "2026-11-12",
-      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
-      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "HISTORICA",
-      "estimacion_comercial": null,
-      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
-      "campos_desconocidos": [],
-      "id": "3cefc9967f3d5e47a80c37eb3ce5ef2e68ca379d31076aa4179a095289e09105",
-      "primera_deteccion": "2026-11-08T08:38:47.945269-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
-      "observada_esta_corrida": true,
-      "ids_historial": [
-        "3cefc9967f3d5e47a80c37eb3ce5ef2e68ca379d31076aa4179a095289e09105"
-      ],
-      "variantes_historial": [
-        {
-          "id": "3cefc9967f3d5e47a80c37eb3ce5ef2e68ca379d31076aa4179a095289e09105",
-          "numero_procedimiento": "471/2026",
-          "objeto": "Compra de artículos de limpieza para la Dirección General de Defunciones y Cementerios - Sec. de Ambiente y Espacio Público",
-          "fecha_apertura": "2026-11-12",
-          "fecha_limite_presentacion": "2026-11-12",
-          "evento_publicado": null,
-          "numero_convocatoria": null,
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38741",
-          "documentos": [
-            {
-              "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-              "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-              "titulo": "ver pliego adjunto apto para cotizar: decreton°1431-anexoideclaracionjurada.pdf",
-              "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38741/documentos/102983"
-            },
-            {
-              "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-              "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-              "titulo": "ver pliego adjunto apto para cotizar: pliegocompraagiln°6compradeartlimpieza.pdf",
-              "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38741/documentos/102982"
-            }
-          ]
-        }
-      ],
-      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "DATOS_COMPLETADOS",
-      "estado_comercial": "VIGENTE_VERIFICADA",
-      "presentacion_verificada": true,
-      "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-12T09:00:00-03:00"
     },
     {
       "campos_oficiales": {
@@ -1555,31 +1242,23 @@
       ],
       "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38736/documentos/102974",
       "evento_publicado": null,
-      "evidencia_url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736",
+      "evidencia_url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
       "evidencias_campos": {
         "fecha_apertura": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
           "texto": "10/11/2026 10:00"
         },
-        "fecha_limite_presentacion": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736",
-          "texto": "2026-11-10t10:00:00-03:00"
-        },
-        "fecha_publicacion": {
-          "texto": "fecha de publicacion: 05/11/2026",
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736"
-        },
         "numero_procedimiento": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
           "texto": "compra agil 128/2026"
-        },
-        "presupuesto": {
-          "texto": "presupuesto oficial $ 5.800.000,00",
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736"
         },
         "tipo_procedimiento": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
           "texto": "compra agil 128/2026"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
+          "texto": "2026-11-10t10:00:00-03:00"
         }
       },
       "fecha_apertura": "2026-11-10",
@@ -1617,7 +1296,7 @@
       "situacion_publicada": null,
       "texto_listado": "Compra Agil 36308/2026 Publicada para Apertura Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa» Apertura: 10/11/2026 10:00",
       "tipo_procedimiento": "compra agil",
-      "titulo": "Compra Agil 128/2026 Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa»",
+      "titulo": "Compra Agil 36308/2026 Publicada para Apertura Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa» Apertura: 10/11/2026 10:00",
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736",
       "urls_publicacion": [
         "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736",
@@ -1660,7 +1339,7 @@
       "campos_desconocidos": [],
       "id": "7d202e7e182f73335074088d19c7e397382e2c3663a7f0e9caa591ae88387588",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7d202e7e182f73335074088d19c7e397382e2c3663a7f0e9caa591ae88387588"
@@ -1690,343 +1369,6 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-10T10:00:00-03:00"
-    },
-    {
-      "campos_oficiales": {
-        "consulta pliego": "Dirección de Administración Económica Financiera (Sec. Igualdad, Género y DDHH) - BUENOS AIRES 856 - 4° piso, de lunes a viernes de 9 a 14hs notificaciones_daefSGDH@rosario.gob.ar",
-        "declaracion jurada de presentacion de ofertas": "Para presentar una oferta, completá la Declaración Jurada de conocimiento de Pliegos y Normativas a través de tu Perfil Digital. Luego, imprimila, firmala y adjuntala a tu oferta en papel. Al presentar la Declaración Jurada, se reemplaza la presentación en papel de los pliegos y normativas correspondientes a la licitación. Completar DDJJ",
-        "estado": "Publicada para Apertura",
-        "expediente": "10/2026",
-        "fecha de apertura": "10/11/2026 09:00",
-        "fecha de publicacion": "04/11/2026",
-        "fecha ultima actualizacion": "04/11/2026",
-        "lugar de apertura": "Dirección de Administración Económica Financiera (Sec. Igualdad, Género y DDHH) - BUENOS AIRES 856 - 4° piso (ala derecha, final del pasillo, última oficina)",
-        "n° de contratacion": "467/2026",
-        "objeto": "Contratación del servicio de impresiones para la Secretaría de Igualdad, Género y DDHH",
-        "presupuesto oficial": "$ 4.921.000,00",
-        "recepcion de ofertas": "Dirección de Administración Económica Financiera (Sec. Igualdad, Género y DDHH) - BUENOS AIRES 856 - 4° piso (ala derecha, final del pasillo, última oficina) De lunes a viernes de 9 a 14hs Hasta el momento de la apertura",
-        "reparticion licitante": "Secretaría de Igualdad, Género y Derechos Humanos - PASEO DE LAS ARTES 301",
-        "tipo de contratacion": "Compra Agil",
-        "ver pliego adjunto apto para cotizar": "pliegoimpresionesdef.pdf"
-      },
-      "detalle_completo": true,
-      "documentos": [
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: pliegoimpresionesdef.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38717/documentos/102938"
-        }
-      ],
-      "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38717/documentos/102938",
-      "evento_publicado": null,
-      "evidencia_url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
-      "evidencias_campos": {
-        "fecha_apertura": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
-          "texto": "10/11/2026 09:00"
-        },
-        "fecha_limite_presentacion": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
-          "texto": "2026-11-10t09:00:00-03:00"
-        },
-        "fecha_publicacion": {
-          "texto": "fecha de publicacion: 04/11/2026",
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717"
-        },
-        "numero_procedimiento": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
-          "texto": "compra agil 467/2026"
-        },
-        "presupuesto": {
-          "texto": "presupuesto oficial $ 4.921.000,00",
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717"
-        },
-        "tipo_procedimiento": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
-          "texto": "compra agil 467/2026"
-        }
-      },
-      "fecha_apertura": "2026-11-10",
-      "fecha_apertura_texto": "10/11/2026 09:00",
-      "fecha_limite_presentacion": "2026-11-10",
-      "fecha_limite_presentacion_texto": "2026-11-10T09:00:00-03:00",
-      "fecha_publicacion": "2026-11-04",
-      "fecha_publicacion_texto": null,
-      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
-      "fuentes_observadas": [
-        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones"
-      ],
-      "hora_apertura": "09:00",
-      "hora_limite_presentacion": "09:00",
-      "id_origen": "38717",
-      "identidad_ambito": "ficha-rosario-38717",
-      "localidad": "Rosario",
-      "modalidad_presentacion": [
-        "PRESENCIAL"
-      ],
-      "numero_oficial_sin_interpretar": "10/2026",
-      "numero_procedimiento": "467/2026",
-      "objeto": "Contratación del servicio de impresiones para la Secretaría de Igualdad, Género y DDHH",
-      "observacion_previa_documentada": {
-        "fecha": "2026-11-05T01:26:31.321004-03:00",
-        "github_run_id": 41969428731,
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717"
-      },
-      "organismo": "Municipalidad de Rosario",
-      "presupuesto": {
-        "importe": "4921000.00",
-        "moneda": null
-      },
-      "procedimiento": "compra agil 467/2026",
-      "provincia": "Santa Fe",
-      "rango_evidencia": 3,
-      "registro_estructurado": true,
-      "requiere_revalidacion": false,
-      "situacion_publicada": null,
-      "texto_listado": "Compra Agil 10/2026 Publicada para Apertura Contratación del servicio de impresiones para la Secretaría de Igualdad, Género y DDHH Apertura: 10/11/2026 09:00",
-      "tipo_procedimiento": "compra agil",
-      "titulo": "Compra Agil 467/2026 Contratación del servicio de impresiones para la Secretaría de Igualdad, Género y DDHH",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
-      "urls_publicacion": [
-        "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
-        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=2",
-        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5"
-      ],
-      "pago": {
-        "estado": "PENDIENTE",
-        "clasificacion": "NO_INFORMADO",
-        "etiqueta": "Pendiente de verificar",
-        "plazos_dias": [],
-        "hitos_inicio": [],
-        "documento_respaldo": null,
-        "documentos_respaldo": [],
-        "evidencias": [],
-        "prioritario": false,
-        "motivo": "SIN_CLAUSULA_COMPROBADA"
-      },
-      "condiciones_pago": "Pendiente de verificar",
-      "enlace_condiciones_pago": null,
-      "pago_prioritario": false,
-      "desierta": false,
-      "fracasada": false,
-      "segundo_llamado": false,
-      "reapertura": false,
-      "llamado_especial": false,
-      "procedimiento_canonico": "compra agil 467/2026",
-      "convocatoria": "1",
-      "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": "2026-11-10T09:00:00-03:00",
-      "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": "2026-11-10T09:00:00-03:00",
-      "fecha_referencia_vencimiento": "2026-11-10",
-      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
-      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "HISTORICA",
-      "estimacion_comercial": null,
-      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
-      "campos_desconocidos": [],
-      "id": "7e6c53e2ba010869bab8a5d3574836517b040a6d096d94b6037aea617c9331aa",
-      "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
-      "observada_esta_corrida": true,
-      "ids_historial": [
-        "7e6c53e2ba010869bab8a5d3574836517b040a6d096d94b6037aea617c9331aa"
-      ],
-      "variantes_historial": [
-        {
-          "id": "7e6c53e2ba010869bab8a5d3574836517b040a6d096d94b6037aea617c9331aa",
-          "numero_procedimiento": "467/2026",
-          "objeto": "Contratación del servicio de impresiones para la Secretaría de Igualdad, Género y DDHH",
-          "fecha_apertura": "2026-11-10",
-          "fecha_limite_presentacion": "2026-11-10",
-          "evento_publicado": null,
-          "numero_convocatoria": null,
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717",
-          "documentos": [
-            {
-              "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-              "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-              "titulo": "ver pliego adjunto apto para cotizar: pliegoimpresionesdef.pdf",
-              "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38717/documentos/102938"
-            }
-          ]
-        }
-      ],
-      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "DATOS_COMPLETADOS",
-      "estado_comercial": "VIGENTE_VERIFICADA",
-      "presentacion_verificada": true,
-      "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-10T09:00:00-03:00"
-    },
-    {
-      "campos_oficiales": {
-        "consulta pliego": "Programa Salud de los Trabajadores - SAN LUIS 2020 - 4° piso, oficina 13 de lunes a viernes de 9 a 14hs artmunicipal@rosario.gov.ar",
-        "declaracion jurada de presentacion de ofertas": "Para presentar una oferta, completá la Declaración Jurada de conocimiento de Pliegos y Normativas a través de tu Perfil Digital. Luego, imprimila, firmala y adjuntala a tu oferta en papel. Al presentar la Declaración Jurada, se reemplaza la presentación en papel de los pliegos y normativas correspondientes a la licitación. Completar DDJJ",
-        "estado": "Publicada para Apertura",
-        "expediente": "7/2026",
-        "fecha de apertura": "10/11/2026 11:00",
-        "fecha de publicacion": "02/11/2026",
-        "fecha ultima actualizacion": "02/11/2026",
-        "lugar de apertura": "Programa Salud de los Trabajadores - SAN LUIS 2020 - 4°piso, oficina 13 Oficina de Contaduría",
-        "n° de contratacion": "463/2026",
-        "objeto": "Compra y alquiler de elementos ortopédicos para el Programa de Salud de las Trabajadoras y los Trabajadores",
-        "presupuesto oficial": "$ 4.500.000,00",
-        "recepcion de ofertas": "Programa Salud de los Trabajadores - SAN LUIS 2020 - 4°piso, oficina 13 Hasta el momento de la apertura",
-        "reparticion licitante": "Programa Salud de los Trabajadores - SAN LUIS 2020",
-        "tipo de contratacion": "Compra Agil",
-        "ver pliego adjunto apto para cotizar": "pliegocompraagil7-2026ortopedia.pdf"
-      },
-      "detalle_completo": true,
-      "documentos": [
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: pliegocompraagil7-2026ortopedia.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38692/documentos/102898"
-        }
-      ],
-      "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38692/documentos/102898",
-      "evento_publicado": null,
-      "evidencia_url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
-      "evidencias_campos": {
-        "fecha_apertura": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
-          "texto": "10/11/2026 11:00"
-        },
-        "fecha_limite_presentacion": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
-          "texto": "2026-11-10t11:00:00-03:00"
-        },
-        "fecha_publicacion": {
-          "texto": "fecha de publicacion: 02/11/2026",
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692"
-        },
-        "numero_procedimiento": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
-          "texto": "compra agil 463/2026"
-        },
-        "presupuesto": {
-          "texto": "presupuesto oficial $ 4.500.000,00",
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692"
-        },
-        "tipo_procedimiento": {
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
-          "texto": "compra agil 463/2026"
-        }
-      },
-      "fecha_apertura": "2026-11-10",
-      "fecha_apertura_texto": "10/11/2026 11:00",
-      "fecha_limite_presentacion": "2026-11-10",
-      "fecha_limite_presentacion_texto": "2026-11-10T11:00:00-03:00",
-      "fecha_publicacion": "2026-11-02",
-      "fecha_publicacion_texto": null,
-      "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
-      "fuentes_observadas": [
-        "https://www.rosario.gob.ar/inicio/compras-y-licitaciones"
-      ],
-      "hora_apertura": "11:00",
-      "hora_limite_presentacion": "11:00",
-      "id_origen": "38692",
-      "identidad_ambito": "ficha-rosario-38692",
-      "localidad": "Rosario",
-      "modalidad_presentacion": [
-        "PRESENCIAL"
-      ],
-      "numero_oficial_sin_interpretar": "7/2026",
-      "numero_procedimiento": "463/2026",
-      "objeto": "Compra y alquiler de elementos ortopédicos para el Programa de Salud de las Trabajadoras y los Trabajadores",
-      "observacion_previa_documentada": {
-        "fecha": "2026-11-05T01:26:31.321004-03:00",
-        "github_run_id": 41969428731,
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692"
-      },
-      "organismo": "Municipalidad de Rosario",
-      "presupuesto": {
-        "importe": "4500000.00",
-        "moneda": null
-      },
-      "procedimiento": "compra agil 463/2026",
-      "provincia": "Santa Fe",
-      "rango_evidencia": 3,
-      "registro_estructurado": true,
-      "requiere_revalidacion": false,
-      "situacion_publicada": null,
-      "texto_listado": "Compra Agil 7/2026 Publicada para Apertura Compra y alquiler de elementos ortopédicos para el Programa de Salud de las Trabajadoras y los Trabajadores Apertura: 10/11/2026 11:00",
-      "tipo_procedimiento": "compra agil",
-      "titulo": "Compra Agil 463/2026 Compra y alquiler de elementos ortopédicos para el Programa de Salud de las Trabajadoras y los Trabajadores",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
-      "urls_publicacion": [
-        "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
-        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=3"
-      ],
-      "pago": {
-        "estado": "PENDIENTE",
-        "clasificacion": "NO_INFORMADO",
-        "etiqueta": "Pendiente de verificar",
-        "plazos_dias": [],
-        "hitos_inicio": [],
-        "documento_respaldo": null,
-        "documentos_respaldo": [],
-        "evidencias": [],
-        "prioritario": false,
-        "motivo": "SIN_CLAUSULA_COMPROBADA"
-      },
-      "condiciones_pago": "Pendiente de verificar",
-      "enlace_condiciones_pago": null,
-      "pago_prioritario": false,
-      "desierta": false,
-      "fracasada": false,
-      "segundo_llamado": false,
-      "reapertura": false,
-      "llamado_especial": false,
-      "procedimiento_canonico": "compra agil 463/2026",
-      "convocatoria": "1",
-      "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": "2026-11-10T11:00:00-03:00",
-      "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": "2026-11-10T11:00:00-03:00",
-      "fecha_referencia_vencimiento": "2026-11-10",
-      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
-      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "HISTORICA",
-      "estimacion_comercial": null,
-      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
-      "campos_desconocidos": [],
-      "id": "55edb00b043a6d87b7a4e67266d66ca441b0ad91a7db38573425a087188f5fd3",
-      "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
-      "observada_esta_corrida": true,
-      "ids_historial": [
-        "55edb00b043a6d87b7a4e67266d66ca441b0ad91a7db38573425a087188f5fd3"
-      ],
-      "variantes_historial": [
-        {
-          "id": "55edb00b043a6d87b7a4e67266d66ca441b0ad91a7db38573425a087188f5fd3",
-          "numero_procedimiento": "463/2026",
-          "objeto": "Compra y alquiler de elementos ortopédicos para el Programa de Salud de las Trabajadoras y los Trabajadores",
-          "fecha_apertura": "2026-11-10",
-          "fecha_limite_presentacion": "2026-11-10",
-          "evento_publicado": null,
-          "numero_convocatoria": null,
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38692",
-          "documentos": [
-            {
-              "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-              "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-              "titulo": "ver pliego adjunto apto para cotizar: pliegocompraagil7-2026ortopedia.pdf",
-              "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38692/documentos/102898"
-            }
-          ]
-        }
-      ],
-      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "DATOS_COMPLETADOS",
-      "estado_comercial": "VIGENTE_VERIFICADA",
-      "presentacion_verificada": true,
-      "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-10T11:00:00-03:00"
     },
     {
       "detalle_completo": true,
@@ -2137,7 +1479,7 @@
       ],
       "id": "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0",
       "primera_deteccion": "2026-11-01T08:31:08.968829-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0"
@@ -2285,7 +1627,7 @@
       ],
       "id": "feaa8290be244ba40a2e124362aaebe9b552587220cd2b1fb95084194c3932d2",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "feaa8290be244ba40a2e124362aaebe9b552587220cd2b1fb95084194c3932d2"
@@ -2581,7 +1923,7 @@
       ],
       "id": "3d8a5b2d0b09fb7c8dd2ec3c67796892d074a749ba8ad230f2b4b3fde4ea3f4b",
       "primera_deteccion": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3d8a5b2d0b09fb7c8dd2ec3c67796892d074a749ba8ad230f2b4b3fde4ea3f4b"
@@ -2625,6 +1967,137 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-10T09:59:00-03:00"
+    },
+    {
+      "aviso_oficial_sin_numero": true,
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "CONCURSO DE PRECIOS CAJAS NAVIDEÑAS 2026.pdf",
+          "url": "https://mariateresa.gob.ar/archivos/859_1793054655_CONCURSODEPRECIOSCAJASNAVIDE%C3%91AS2026.pdf"
+        }
+      ],
+      "enlace_pliego": null,
+      "evento_publicado": null,
+      "evidencia_url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "texto": "se realizara el dia 10/11/2026 11:00 hs en la sede comunal (restituto alejandre n°235), en",
+          "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
+          "texto": "2026-11-10t11:00:00-03:00"
+        },
+        "fecha_publicacion": {
+          "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
+          "texto": "lunes, 26 de octubre de 2026 -- 194 vistas la comuna de maria teresa invita a proveedores"
+        },
+        "tipo_procedimiento": {
+          "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
+          "texto": null
+        }
+      },
+      "fecha_apertura": "2026-11-10",
+      "fecha_limite_presentacion": "2026-11-10",
+      "fecha_limite_presentacion_texto": "2026-11-10T11:00:00-03:00",
+      "fecha_publicacion": "2026-10-26",
+      "fecha_publicacion_texto": "lunes, 26 de octubre de 2026 -- 194 vistas La Comuna de María Teresa invita a proveedores ",
+      "fuente": "https://mariateresa.gob.ar/",
+      "hora_apertura": "11:00",
+      "hora_limite_presentacion": "11:00",
+      "huella_aviso_oficial": "23cfd496d9a857fec42eaff9102abd26f935e0e862042937fc46e45267024f2d",
+      "localidad": "María Teresa",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_procedimiento": null,
+      "objeto": "compra de doscientas (200) cajas navideñas",
+      "observacion_previa_documentada": {
+        "evidencia": "informes/2026-11-09-fase4/nuevas_verificadas.json",
+        "fecha": "2026-11-09T09:44:10.689342-03:00",
+        "github_run_id": 42621183825,
+        "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859"
+      },
+      "organismo": "Comuna de María Teresa",
+      "presupuesto": null,
+      "procedimiento": null,
+      "provincia": "Santa Fe",
+      "rango_evidencia": 1,
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "concurso de precios",
+      "titulo": "CONCURSO DE PRECIOS PARA LA COMPRA DE CAJAS NAVIDEÑAS 2026",
+      "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": null,
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": "2026-11-10T11:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": "2026-11-10T11:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-10",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "HISTORICA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "numero_procedimiento",
+        "presupuesto",
+        "enlace_pliego"
+      ],
+      "id": "8ad948f538f666fac8a29d2a8eac61af90df76666a7ded67bdfeb6e19ffcb29f",
+      "primera_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "8ad948f538f666fac8a29d2a8eac61af90df76666a7ded67bdfeb6e19ffcb29f"
+      ],
+      "variantes_historial": [
+        {
+          "id": "8ad948f538f666fac8a29d2a8eac61af90df76666a7ded67bdfeb6e19ffcb29f",
+          "numero_procedimiento": null,
+          "objeto": "compra de doscientas (200) cajas navideñas",
+          "fecha_apertura": "2026-11-10",
+          "fecha_limite_presentacion": "2026-11-10",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
+          "documentos": [
+            {
+              "titulo": "CONCURSO DE PRECIOS CAJAS NAVIDEÑAS 2026.pdf",
+              "url": "https://mariateresa.gob.ar/archivos/859_1793054655_CONCURSODEPRECIOSCAJASNAVIDE%C3%91AS2026.pdf"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "RECUPERACION_LINEA_BASE",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-10T11:00:00-03:00"
     },
     {
       "campos_oficiales": {
@@ -2929,7 +2402,7 @@
       ],
       "id": "17d09da7fe9747097ca66f708d4a01463160144d472a92912775962a2e4c47c7",
       "primera_deteccion": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "17d09da7fe9747097ca66f708d4a01463160144d472a92912775962a2e4c47c7"
@@ -3084,7 +2557,7 @@
       ],
       "id": "9a57dd9d2d120a269675af49fa10d4bb1c1a1c444db20d6f99d116efa42db6b4",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9a57dd9d2d120a269675af49fa10d4bb1c1a1c444db20d6f99d116efa42db6b4"
@@ -3116,6 +2589,126 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-13T10:00:00-03:00"
+    },
+    {
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+        }
+      ],
+      "enlace_pliego": null,
+      "evento_publicado": null,
+      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "evidencias_campos": {
+        "fecha_limite_presentacion": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "texto": "2026-11-16"
+        },
+        "numero_procedimiento": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "texto": "concurso de precios 2026-1892"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "texto": "concurso de precios 2026-1892"
+        }
+      },
+      "fecha_apertura": null,
+      "fecha_apertura_texto": null,
+      "fecha_limite_presentacion": "2026-11-16",
+      "fecha_limite_presentacion_texto": "2026-11-16",
+      "fecha_publicacion": null,
+      "fuente": "https://www.entrerios.gov.ar/boletin/",
+      "hora_apertura": null,
+      "hora_limite_presentacion": null,
+      "localidad": null,
+      "modalidad_presentacion": [],
+      "numero_oficial_sin_interpretar": "2026-1892",
+      "numero_procedimiento": "2026-1892",
+      "objeto": " N.º 2026-1892: Obra de iluminación “Intercambiador Av. Jorge Newbery”, de Paraná.\n Presentación de ofertas hasta el 16 de noviembre de 2026 inclusive.\n Los Pliegos y documentos anexos serán públicos y estarán disponibles en todo momento en la página web de\nENERSA.\n Demás datos y condiciones, remitirse a: https://www.enersa.com.ar/area-proveedores/#ConcursoDePrecios\n Contacto: registroproveedores@enersa.com.ar\n Energía de Entre Ríos S.A. - Sede Social: Buenos Aires 87 (E3100 BQA) Paraná - Entre Ríos Inscripción: Reg.\nPco. Com. - DIPJ E. R. Nro. 1858 Secc. Legajo Social\n Rubén D. Clivio, Coordinador de Compras ENERSA.",
+      "organismo": "ENERSA (Energía de Entre Ríos S.A.)",
+      "pago_evidencias": [],
+      "presupuesto": null,
+      "procedimiento": "concurso de precios 2026-1892",
+      "provincia": "Entre Ríos",
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "concurso de precios",
+      "titulo": "concurso de precios 2026-1892  N.º 2026-1892: Obra de iluminación “Intercambiador Av. Jorge Newbery”, de Paraná.\n Presentación de ofertas hasta el 16 de noviembre de 2026 inclusive.\n Los Pliegos y documentos anexos serán públicos y estarán disponibles en todo momento en la página web de\nENERSA.\n Demás datos y condiciones, remitirse a: https://www.enersa.com.ar/area-proveedores/#ConcursoDePrecios\n Contacto: registroproveedores@enersa.com.ar\n Energía de Entre Ríos S.A. - Sede Social: Buenos Aires 87 (E3100 BQA) Paraná - Entre Ríos Inscripción: Reg.\nPco. Com. - DIPJ E. R. Nro. 1858 Secc. Legajo Social\n Rubén D. Clivio, Coordinador de Compras ENERSA.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "concurso de precios ENERSA-2026-1892",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": null,
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-11-16",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "localidad",
+        "presupuesto",
+        "fecha_apertura",
+        "fecha_publicacion",
+        "enlace_pliego"
+      ],
+      "id": "6effb18260d310a6f83acf8d851c8d38ae613e7e5717b6fb8592d83fd66e2416",
+      "primera_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "6effb18260d310a6f83acf8d851c8d38ae613e7e5717b6fb8592d83fd66e2416"
+      ],
+      "variantes_historial": [
+        {
+          "id": "6effb18260d310a6f83acf8d851c8d38ae613e7e5717b6fb8592d83fd66e2416",
+          "numero_procedimiento": "2026-1892",
+          "objeto": " N.º 2026-1892: Obra de iluminación “Intercambiador Av. Jorge Newbery”, de Paraná.\n Presentación de ofertas hasta el 16 de noviembre de 2026 inclusive.\n Los Pliegos y documentos anexos serán públicos y estarán disponibles en todo momento en la página web de\nENERSA.\n Demás datos y condiciones, remitirse a: https://www.enersa.com.ar/area-proveedores/#ConcursoDePrecios\n Contacto: registroproveedores@enersa.com.ar\n Energía de Entre Ríos S.A. - Sede Social: Buenos Aires 87 (E3100 BQA) Paraná - Entre Ríos Inscripción: Reg.\nPco. Com. - DIPJ E. R. Nro. 1858 Secc. Legajo Social\n Rubén D. Clivio, Coordinador de Compras ENERSA.",
+          "fecha_apertura": null,
+          "fecha_limite_presentacion": "2026-11-16",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "documentos": [
+            {
+              "titulo": "Boletín complementario",
+              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-16"
     },
     {
       "detalle_completo": true,
@@ -3233,7 +2826,7 @@
       ],
       "id": "15fefaf42a5305f8a3edfd7bb63471f4e1cc32c4af236122cda8d55842668c26",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "15fefaf42a5305f8a3edfd7bb63471f4e1cc32c4af236122cda8d55842668c26"
@@ -3265,7 +2858,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "DATOS_COMPLETADOS",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -3381,7 +2973,7 @@
       ],
       "id": "f0b099f3d1a1b4e9ecbd40a7aa89371a7954c9f56f52bb301ac9ec6b93c2558d",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "f0b099f3d1a1b4e9ecbd40a7aa89371a7954c9f56f52bb301ac9ec6b93c2558d"
@@ -3721,7 +3313,7 @@
       ],
       "id": "4b6f68e57c711f667e4430a7df9957d3145707878b242696961c0d1405d285cb",
       "primera_deteccion": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "4b6f68e57c711f667e4430a7df9957d3145707878b242696961c0d1405d285cb"
@@ -3765,6 +3357,125 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-16T10:00:00-03:00"
+    },
+    {
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+        }
+      ],
+      "enlace_pliego": null,
+      "evento_publicado": null,
+      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "evidencias_campos": {
+        "fecha_limite_presentacion": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "texto": "2026-11-18t10:00:00-03:00"
+        },
+        "numero_procedimiento": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "texto": "licitacion publica 6/2026"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "texto": "licitacion publica 6/2026"
+        }
+      },
+      "fecha_apertura": null,
+      "fecha_apertura_texto": null,
+      "fecha_limite_presentacion": "2026-11-18",
+      "fecha_limite_presentacion_texto": "2026-11-18T10:00:00-03:00",
+      "fecha_publicacion": null,
+      "fuente": "https://www.entrerios.gov.ar/boletin/",
+      "hora_apertura": null,
+      "hora_limite_presentacion": "10:00",
+      "localidad": "Urdinarrain",
+      "modalidad_presentacion": [],
+      "numero_oficial_sin_interpretar": "6/2026",
+      "numero_procedimiento": "6/2026",
+      "objeto": "GUALEGUAYCHU\n\n                                         MUNICIPALIDAD DE URDINARRAIN\n                                             Licitacion Publica Nº 06/2026\n OBJETO: Para la Concesión de Cantina, Comedor y Proveeduría en Balneario Camping “Arenas Blancas” de la\nMunicipalidad de Urdinarrain, ubicado en el Distrito Costa San Antonio, Departamento Gualeguaychu, Provincia de\nEntre Ríos, y de servicios a prestarse en el lugar.\n PRESENTACION DE OFERTAS: Hasta el día 18 de noviembre 2026, a la hora 10:00 hs. En la Oficina de\nContrataciones del Municipio.\n CONSULTAS, INFORMES Y ENTREGA DE PLIEGOS: MUNICIPALIDAD DE URDINARRAIN Dr. V. Silva nº 417\nCP.: 2826 – URDINARRAIN – ENTRE RIOS.\n TEL. FAX Nº: 03446 – 480616 / Interno 206 En días hábiles, en el horario de 7:00 h. a 12:00 hs.\n Mail.: compras@urdinarrain.gov.ar\n  Urdinarrain, 04 de noviembre de 2026 GASTON G. ELENA CARLOS L. MOHLINGER A/C Secretarías A/C\nPresidencia Municipal",
+      "organismo": "Municipalidad de Urdinarrain",
+      "pago_evidencias": [],
+      "presupuesto": null,
+      "procedimiento": "licitacion publica 6/2026",
+      "provincia": "Entre Ríos",
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "licitacion publica",
+      "titulo": "licitacion publica 6/2026 GUALEGUAYCHU\n\n                                         MUNICIPALIDAD DE URDINARRAIN\n                                             Licitacion Publica Nº 06/2026\n OBJETO: Para la Concesión de Cantina, Comedor y Proveeduría en Balneario Camping “Arenas Blancas” de la\nMunicipalidad de Urdinarrain, ubicado en el Distrito Costa San Antonio, Departamento Gualeguaychu, Provincia de\nEntre Ríos, y de servicios a prestarse en el lugar.\n PRESENTACION DE OFERTAS: Hasta el día 18 de noviembre 2026, a la hora 10:00 hs. En la Oficina de\nContrataciones del Municipio.\n CONSULTAS, INFORMES Y ENTREGA DE PLIEGOS: MUNICIPALIDAD DE URDINARRAIN Dr. V. Silva nº 417\nCP.: 2826 – URDINARRAIN – ENTRE RIOS.\n TEL. FAX Nº: 03446 – 480616 / Interno 206 En días hábiles, en el horario de 7:00 h. a 12:00 hs.\n Mail.: compras@urdinarrain.gov.ar\n  Urdinarrain, 04 de noviembre de 2026 GASTON G. ELENA CARLOS L. MOHLINGER A/C Secretarías A/C\nPresidencia Municipal",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "licitacion publica 6/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": null,
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": "2026-11-18T10:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-18",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_apertura",
+        "fecha_publicacion",
+        "enlace_pliego"
+      ],
+      "id": "5aadc03b9a83e0aec24aac77fa6345b264b9c9ce2971ee5f6d4c2a9123a58d3f",
+      "primera_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "5aadc03b9a83e0aec24aac77fa6345b264b9c9ce2971ee5f6d4c2a9123a58d3f"
+      ],
+      "variantes_historial": [
+        {
+          "id": "5aadc03b9a83e0aec24aac77fa6345b264b9c9ce2971ee5f6d4c2a9123a58d3f",
+          "numero_procedimiento": "6/2026",
+          "objeto": "GUALEGUAYCHU\n\n                                         MUNICIPALIDAD DE URDINARRAIN\n                                             Licitacion Publica Nº 06/2026\n OBJETO: Para la Concesión de Cantina, Comedor y Proveeduría en Balneario Camping “Arenas Blancas” de la\nMunicipalidad de Urdinarrain, ubicado en el Distrito Costa San Antonio, Departamento Gualeguaychu, Provincia de\nEntre Ríos, y de servicios a prestarse en el lugar.\n PRESENTACION DE OFERTAS: Hasta el día 18 de noviembre 2026, a la hora 10:00 hs. En la Oficina de\nContrataciones del Municipio.\n CONSULTAS, INFORMES Y ENTREGA DE PLIEGOS: MUNICIPALIDAD DE URDINARRAIN Dr. V. Silva nº 417\nCP.: 2826 – URDINARRAIN – ENTRE RIOS.\n TEL. FAX Nº: 03446 – 480616 / Interno 206 En días hábiles, en el horario de 7:00 h. a 12:00 hs.\n Mail.: compras@urdinarrain.gov.ar\n  Urdinarrain, 04 de noviembre de 2026 GASTON G. ELENA CARLOS L. MOHLINGER A/C Secretarías A/C\nPresidencia Municipal",
+          "fecha_apertura": null,
+          "fecha_limite_presentacion": "2026-11-18",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "documentos": [
+            {
+              "titulo": "Boletín complementario",
+              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-18T10:00:00-03:00"
     },
     {
       "campos_oficiales": {
@@ -4041,7 +3752,7 @@
       ],
       "id": "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7",
       "primera_deteccion": "2026-11-07T08:36:35.631351-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7"
@@ -4143,7 +3854,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 116 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 87 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 72 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 68 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 75 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 78 click 9 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 119 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 87 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 72 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 68 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 75 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 78 click 9 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
@@ -4188,7 +3899,7 @@
       ],
       "id": "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a"
@@ -4312,7 +4023,7 @@
       ],
       "id": "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9"
@@ -4402,7 +4113,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 198 click 19 octubre, 2026 ANEXO I • 2 MB • 118 click 19 octubre, 2026 Anexo II • 112 kB • 96 click 19 octubre, 2026 Anexo III • 174 kB • 106 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 102 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 101 click 19 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 201 click 19 octubre, 2026 ANEXO I • 2 MB • 119 click 19 octubre, 2026 Anexo II • 112 kB • 97 click 19 octubre, 2026 Anexo III • 174 kB • 106 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 103 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 102 click 19 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
@@ -4447,7 +4158,7 @@
       ],
       "id": "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-09T08:57:32.920433-03:00",
+      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99"
