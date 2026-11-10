@@ -1,0 +1,58 @@
+{
+  "fecha": "2026-11-09T22:39:43.536796-03:00",
+  "total": 2,
+  "oportunidades": [
+    {
+      "organismo": "Municipalidad de San Salvador",
+      "provincia": "Entre Ríos",
+      "localidad": "San Salvador",
+      "numero_procedimiento": "8/2026",
+      "objeto": "Llamado a Licitación Privada N° 08-2026 – previsto para la compra de Materiales de construcción con destino a Ejecución de Obras de bacheos y reparaciones en calles pavimentadas; conforme a las características y especificaciones detalladas en planilla Anexo Técnico 01 y sujeto a pliegos aprobados por Decreto N° 336/26",
+      "presupuesto": {
+        "importe": "26684000",
+        "moneda": null
+      },
+      "fecha_publicacion": "2026-11-02",
+      "primera_deteccion": "2026-11-02T08:50:13.547966-03:00",
+      "ultima_deteccion": "2026-11-09T22:39:43.536796-03:00",
+      "fecha_limite_presentacion": "2026-11-10",
+      "fecha_hora_limite_presentacion": "2026-11-10T11:00:00-03:00",
+      "condiciones_pago": "Pendiente de verificar",
+      "modalidad_presentacion": [
+        "PRESENCIAL",
+        "CORREO_ELECTRONICO",
+        "FAX"
+      ],
+      "url": "https://sansalvadorer.gob.ar/llamado-a-licitacion-privada-n-08-2026/",
+      "enlace_pliego": "https://drive.google.com/file/d/1YN808x5rPq1mo_Ar5aK6b5bBUR0y_wJd/view?usp=sharing",
+      "urgencia": "MENOS_24H",
+      "logistica_presencial": true
+    },
+    {
+      "organismo": "Municipalidad de San Salvador",
+      "provincia": "Entre Ríos",
+      "localidad": "San Salvador",
+      "numero_procedimiento": "29/2026",
+      "objeto": "El Departamento de Compras y Suministros llama a Concurso de Precios N° 29-2026 que tiene por objeto la Compra de 200 cargas de Gas Envasado en garrafas de 10kg – con Destino a Ayuda Directa ; y se regirá por las condiciones establecidas en Pliego de Bases, Condiciones Generales y Particulares aprobados por Decreto N° 347/26.",
+      "presupuesto": {
+        "importe": "5000000",
+        "moneda": null
+      },
+      "fecha_publicacion": "2026-11-05",
+      "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
+      "ultima_deteccion": "2026-11-09T22:39:43.536796-03:00",
+      "fecha_limite_presentacion": "2026-11-11",
+      "fecha_hora_limite_presentacion": "2026-11-11T11:00:00-03:00",
+      "condiciones_pago": "Pendiente de verificar",
+      "modalidad_presentacion": [
+        "PRESENCIAL",
+        "CORREO_ELECTRONICO",
+        "FAX"
+      ],
+      "url": "https://sansalvadorer.gob.ar/llamado-a-concurso-de-precios-n-29-2026/",
+      "enlace_pliego": "https://drive.google.com/file/d/1GyIX_YfNSPSX6WvGXOQa6ldmlrw9DJXG/view?usp=sharing",
+      "urgencia": "24_A_48H",
+      "logistica_presencial": true
+    }
+  ]
+}

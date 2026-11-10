@@ -1,0 +1,10 @@
+{
+  "referencia": "98bfebd2dfa9331edddadcbe03271684cb9092ae",
+  "revision_comparada": "427aac6b85fed69e553fa3989048a13c2d7de0e6",
+  "main": "c4c44de36b8064bf84db4fa1071004e0f8c45ad8",
+  "archivos_requeridos": 83,
+  "cambiados": [],
+  "proteccion_ampliada": 86,
+  "cambiados_ampliada": [],
+  "nuevo_workflow_prueba_unicamente": ".github/workflows/fase7.yml"
+}

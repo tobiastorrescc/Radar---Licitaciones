@@ -1,0 +1,94 @@
+{
+  "fecha": "2026-11-09T22:39:43.536796-03:00",
+  "rapida_localidades_programadas": 67,
+  "sitios_intentados": 51,
+  "localidades_con_html": 46,
+  "identidades_automaticas": 27,
+  "rapida_segundos": 46.748000000000005,
+  "categorias": {
+    "A_PUBLICACIONES_NUEVAS_VIGENTES": 0,
+    "B_VIGENTES_DESCONOCIDAS": 0,
+    "C_CONOCIDAS_RECUPERADAS": 2,
+    "D_PENDIENTES": 163,
+    "VENTAS_MUNICIPALES": 0,
+    "CONOCIDAS_VIGENTES": 0
+  },
+  "comercial_muestra": {
+    "vigentes_presentacion_verificada": 2,
+    "pendientes_presentacion_o_revalidacion": 163
+  },
+  "coincidencias_catalogo_fase5": 17,
+  "registros_respaldo_inicial": 6771,
+  "registros_observados_unicos": 253,
+  "primera": {
+    "corrida": "fase7-cierre-aislado",
+    "fecha": "2026-11-09T22:39:43.536796-03:00",
+    "primera_ejecucion": false,
+    "estado": "COMPLETA_CON_INCIDENCIAS",
+    "observadas": 253,
+    "candidatos_sin_confirmar": 5,
+    "clasificacion": {
+      "NUEVA_DETECCION_FECHA_DESCONOCIDA": 43,
+      "RECUPERACION_LINEA_BASE": 188,
+      "SIN_CAMBIOS": 9,
+      "MODIFICADO": 8
+    },
+    "novedades": 51,
+    "eventos_emitidos": 239,
+    "total_historial": 7011,
+    "fuentes": {
+      "TIEMPO_FUENTE": 10,
+      "PARCIAL": 2,
+      "OPERATIVA": 4,
+      "PENDIENTE": 8
+    },
+    "mensaje": "CON_NOVEDADES"
+  },
+  "segunda": {
+    "corrida": "fase7-cierre-repeticion",
+    "fecha": "2026-11-09T22:39:43.536796-03:00",
+    "primera_ejecucion": false,
+    "estado": "COMPLETA_CON_INCIDENCIAS",
+    "observadas": 253,
+    "candidatos_sin_confirmar": 5,
+    "clasificacion": {
+      "SIN_CAMBIOS": 248
+    },
+    "novedades": 0,
+    "eventos_emitidos": 0,
+    "total_historial": 7011,
+    "fuentes": {
+      "TIEMPO_FUENTE": 10,
+      "PARCIAL": 2,
+      "OPERATIVA": 4,
+      "PENDIENTE": 8
+    },
+    "mensaje": "SIN_NOVEDADES_CONFIRMADAS_CON_INCIDENCIAS"
+  },
+  "protegidos_intactos": true,
+  "ocr_nuevo": 0,
+  "nota": "Las dos recepciones de San Salvador se verificaron visualmente en documentos oficiales. No son extracción automática de texto de esos PDF ni publicaciones inéditas.",
+  "fuentes_configuradas_antes": 103,
+  "fuentes_configuradas_despues": 105,
+  "fuentes_nuevas_operativas_html": 2,
+  "publicaciones_nuevas_vigentes": 0,
+  "oportunidades_vigentes_desconocidas": 0,
+  "conocidas_revalidadas_documentalmente": 2,
+  "cola_previa_pendiente_al_corte": 110,
+  "localidades_sin_fuente_operativa_antes": 619,
+  "localidades_sin_fuente_operativa_despues": 617,
+  "rosario": {
+    "control_detectadas": 53,
+    "control_total": 53,
+    "recorrido_global_completo": false,
+    "segundos": 26.927,
+    "run": 42737639135,
+    "cambio_oficial_documentado": "Ficha 38659, Compra Ágil 63/2026, apertura 9/11 11:00 y estado Abierta en Evaluación"
+  },
+  "integracion_periodica": {
+    "run": 42737639135,
+    "conclusion": "success",
+    "exploracion_rapida_ejecutada": true
+  },
+  "advertencia_novedades": "Las 51 novedades internas de la copia incluyen 43 detecciones sin fecha y ocho modificaciones. No son 51 publicaciones nuevas ni compras inéditas."
+}

@@ -1,0 +1,12 @@
+{
+  "segundos": 0.001,
+  "programadas": 2,
+  "reutilizadas_sin_red": 2,
+  "con_sitio_consultado": 0,
+  "con_respuesta_html": 0,
+  "con_identidad_automatica": 0,
+  "dominios_solicitudes": {},
+  "limite_por_dominio": 1,
+  "concurrencia_global": 3,
+  "documentos_descargados": 0
+}

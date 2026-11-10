@@ -1,0 +1,21 @@
+{
+  "referencia": "informes/2026-11-09-fase5/pendientes_revalidacion_112.csv",
+  "fecha_verificacion": "2026-11-09T22:39:43.536796-03:00",
+  "cola_original_intacta": true,
+  "resueltas_en_control_documental": [
+    {
+      "caso_id": "pendiente-067",
+      "url": "https://sansalvadorer.gob.ar/llamado-a-licitacion-privada-n-08-2026/",
+      "numero_procedimiento": "8/2026",
+      "evidencia": "inventario/fase7_control_manual.json"
+    },
+    {
+      "caso_id": "pendiente-066",
+      "url": "https://sansalvadorer.gob.ar/llamado-a-concurso-de-precios-n-29-2026/",
+      "numero_procedimiento": "29/2026",
+      "evidencia": "inventario/fase7_control_manual.json"
+    }
+  ],
+  "pendientes_al_corte": 110,
+  "advertencia": "Overlay de resultados; no modifica el archivo original ni presupone que las otras 110 estén vigentes."
+}

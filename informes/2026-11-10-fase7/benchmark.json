@@ -1,0 +1,28 @@
+{
+  "localidades": 4,
+  "secuencial_segundos": 9.711,
+  "concurrente_segundos": 5.465,
+  "comparables": {
+    "fase7-001": {
+      "secuencial_estado": "PENDIENTE_IDENTIDAD_O_CONVOCATORIAS",
+      "concurrente_estado": "PENDIENTE_IDENTIDAD_O_CONVOCATORIAS",
+      "mismos_enlaces": true
+    },
+    "fase7-002": {
+      "secuencial_estado": "PENDIENTE_IDENTIDAD_O_CONVOCATORIAS",
+      "concurrente_estado": "PENDIENTE_IDENTIDAD_O_CONVOCATORIAS",
+      "mismos_enlaces": true
+    },
+    "fase7-003": {
+      "secuencial_estado": "CANDIDATA_CON_SENALES",
+      "concurrente_estado": "CANDIDATA_CON_SENALES",
+      "mismos_enlaces": true
+    },
+    "fase7-004": {
+      "secuencial_estado": "CANDIDATA_CON_SENALES",
+      "concurrente_estado": "CANDIDATA_CON_SENALES",
+      "mismos_enlaces": true
+    }
+  },
+  "alcance": "Nivel rápido sobre cuatro sitios; no prueba ausencia de omisiones en toda la provincia"
+}

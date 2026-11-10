@@ -1,0 +1,174 @@
+{
+  "fuentes": [
+    {
+      "id": "auto-fase7-villa-canas-html",
+      "url": "https://www.muvc.gob.ar/licitaciones.php",
+      "config": {
+        "organismo": "Municipalidad de Villa Cañás",
+        "localidad": "Villa Cañás",
+        "provincia": "Santa Fe",
+        "conector": "publicaciones",
+        "descubrir_menu": true,
+        "descubrir_contrataciones": true,
+        "barrido_institucional": false,
+        "buscador_institucional": false,
+        "solo_descubrimiento": true,
+        "lectura_adjuntos": "necesarios",
+        "ocr": false,
+        "admitir_avisos_sin_numero": true,
+        "capturar_respuestas": true,
+        "documentos_para_descubrimiento": false,
+        "noticias_comunales": true,
+        "alcance_publicaciones": "Descubrimiento de avisos HTML con número, objeto y enlace. Pliegos en enriquecimiento posterior; no se presume vigencia.",
+        "ignorar_suscripciones_feed": true,
+        "priorizar_documentos_recientes": true
+      },
+      "validacion": {
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Villa Cañás",
+          "localidad": "Villa Cañás",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://www.muvc.gob.ar/licitaciones.php",
+          "sha256": "c0c93d1875b71ab80d0679990c5edcb7e2d0629e161e57f43f29df99a2b756fc",
+          "cabecera": "Municipalidad de Villa Cañas",
+          "motivo": null,
+          "evidencia_raiz": {
+            "url": "https://www.muvc.gob.ar/",
+            "sha256": "090905a8e280bd15021c07e39829598e6d4d61b2acaeb0c7560dc07663a87311",
+            "criterio": "IDENTIDAD_PUBLICADA_EN_RAIZ_OFICIAL_MISMO_ORGANISMO"
+          }
+        },
+        "procedimientos_con_objeto": 27,
+        "fecha": "2026-11-10T01:39:03.447790+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "6/2026",
+            "objeto": "Licitación Pública N° 06/2026 - Octubre Compra de camión volcador y tractor",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/175.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "5/2026",
+            "objeto": "Licitación Pública N° 05/2026 - Agosto Compra de arena, piedra y cemento a granel",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/174.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "4/2026",
+            "objeto": "Licitación Pública N°04/2026 - Junio Contratación de Seguros",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/173.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          }
+        ],
+        "ejemplos_en_evidencia_completa": 27,
+        "evidencia_completa": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/42737102388"
+      },
+      "origen_busqueda": "https://www.muvc.gob.ar/"
+    },
+    {
+      "id": "auto-fase7-hasenkamp-html",
+      "url": "https://www.hasenkamp.gob.ar/licitaciones/",
+      "config": {
+        "organismo": "Municipalidad de Hasenkamp",
+        "localidad": "Hasenkamp",
+        "provincia": "Entre Ríos",
+        "conector": "publicaciones",
+        "descubrir_menu": true,
+        "descubrir_contrataciones": true,
+        "barrido_institucional": false,
+        "buscador_institucional": false,
+        "solo_descubrimiento": true,
+        "lectura_adjuntos": "necesarios",
+        "ocr": false,
+        "admitir_avisos_sin_numero": true,
+        "capturar_respuestas": true,
+        "documentos_para_descubrimiento": false,
+        "noticias_comunales": true,
+        "alcance_publicaciones": "Descubrimiento de avisos HTML con número, objeto y enlace. Pliegos en enriquecimiento posterior; no se presume vigencia.",
+        "ignorar_suscripciones_feed": true,
+        "priorizar_documentos_recientes": true
+      },
+      "validacion": {
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Hasenkamp",
+          "localidad": "Hasenkamp",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://www.hasenkamp.gob.ar/licitaciones/",
+          "sha256": "0f1bcd81b935f5f75b589e6c023cbe269d66f168dab4c9d22249d8732e02a380",
+          "cabecera": "Licitaciones – Municipalidad de Hasenkamp  Licitaciones Dependencia Jerárquica",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 33,
+        "fecha": "2026-11-10T01:39:06.233972+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Municipalidad de Hasenkamp",
+            "numero_procedimiento": "4/2026",
+            "objeto": "Adquisición de acoplado bivuelco lateral de cuatro ejes con neumáticos APERTURA: 14 de agosto de 2026 a las 09:00hs, en EMAO.",
+            "fecha_apertura": "2026-08-14",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://www.hasenkamp.gob.ar/wp-content/uploads/2026/07/LLAMADO-LIC.-PUB.-4.pdf",
+            "evidencia_url": "https://www.hasenkamp.gob.ar/licitaciones/"
+          },
+          {
+            "organismo": "Municipalidad de Hasenkamp",
+            "numero_procedimiento": "3/2026",
+            "objeto": "Adquisición de bienes destinados al parque automotor municipal: camión sin carrocería 0 km, carrocería bivuelco lateral, acoplado bivuelco lateral de cuatro ejes y camión usado con caja volcadora. APERTURA: 16 de julio de 2026 a las 09:00hs, en EMAO.",
+            "fecha_apertura": "2026-07-16",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://www.hasenkamp.gob.ar/wp-content/uploads/2026/06/doc04622420260630093715.pdf",
+            "evidencia_url": "https://www.hasenkamp.gob.ar/licitaciones/"
+          },
+          {
+            "organismo": "Municipalidad de Hasenkamp",
+            "numero_procedimiento": "1/2026",
+            "objeto": "Adquisición de 4840 mts2 de Adoquines tipo Holanda 10X20X8 cm. Calles: San Lorenzo, entre calle Mitre y Mendoza. Calle 25 de Mayo, entre 3 de Febrero y San Lorenzo. Calle 25 de Mayo, entre Av. Ramírez y San Lorenzo. Calle Dr. Haedo, entre San Lorenzo y Av. Ramírez. Calle Dr. Haedo, entre Urquiza y Dr. Elberg. Diagonal Libertad, entre San Lorenzo y Av. Ramírez. APERTURA: 28 de mayo de 2026 a las 09:00hs. en EMAO.",
+            "fecha_apertura": "2026-05-28",
+            "fecha_publicacion": null,
+            "vigencia": "VENCIDA",
+            "url": "https://www.hasenkamp.gob.ar/wp-content/uploads/2026/05/DEC-Y-PLIEGO-LIC.-PRIV.-1-26.pdf",
+            "evidencia_url": "https://www.hasenkamp.gob.ar/licitaciones/"
+          }
+        ],
+        "ejemplos_en_evidencia_completa": 33,
+        "evidencia_completa": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/42737102388"
+      },
+      "origen_busqueda": "https://www.hasenkamp.gob.ar/"
+    }
+  ],
+  "advertencia": "Operativa la extracción HTML. No acredita vigencia de todos sus avisos ni lectura de pliegos escaneados."
+}
