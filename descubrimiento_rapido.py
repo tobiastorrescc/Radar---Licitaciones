@@ -91,7 +91,7 @@ def ejecutar(candidatos,raiz,estado,concurrencia=4,reanudar=True):
    c=futuros[f]
    try:r=f.result()
    except Exception as e:r={**c,'estado':'ERROR_INDIVIDUAL','error':str(e),'paginas':[]}
-   prev['localidades'][c['id']]=r;salidas.append(r);guardar(estado,prev);print('RAPIDA '+json.dumps({'localidad':c['localidad'],'estado':r['estado'],'paginas':len(r['paginas']),'segundos':r.get('segundos')},ensure_ascii=False),flush=True)
+   prev['localidades'][c['id']]=r;salidas.append(r);guardar(estado,prev);print('RAPIDA '+json.dumps({'localidad':c.get('localidad'),'organismo':c.get('organismo'),'estado':r['estado'],'paginas':len(r['paginas']),'segundos':r.get('segundos')},ensure_ascii=False),flush=True)
  resumen={'segundos':round(time.monotonic()-inicio,3),'programadas':len(candidatos),'reutilizadas_sin_red':len(reutilizadas),'con_sitio_consultado':sum(bool(r['paginas']) for r in salidas),'con_respuesta_html':sum(any(p['estado']=='REVISADA' for p in r['paginas']) for r in salidas),'con_identidad_automatica':sum(r.get('identidad_verificada') is True for r in salidas),'dominios_solicitudes':trans.contadores,'limite_por_dominio':1,'concurrencia_global':concurrencia,'documentos_descargados':0}
  guardar(raiz/'resultado.json',{'resumen':resumen,'localidades':salidas+reutilizadas});return salidas+reutilizadas,resumen
 

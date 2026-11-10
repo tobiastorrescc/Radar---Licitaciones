@@ -38,3 +38,10 @@ class ControlCompleto(unittest.TestCase):
  def test_llamado_sin_objeto_no_valida_fuente(self):
   from tools.descubrir_fuentes import objeto_comprobado
   self.assertFalse(objeto_comprobado({'objeto':'Llamado a Concurso de Precios N° 29-2026'}))
+ def test_fuente_sectorial_sin_localidad_no_interrumpe_lote(self):
+  import tempfile
+  from unittest.mock import patch
+  from descubrimiento_rapido import ejecutar
+  c={'id':'sectorial-sin-localidad','provincia':'Santa Fe','organismo':'Hospital provincial','tipo':'SECTORIAL','url':None}
+  with tempfile.TemporaryDirectory() as d:
+   rs,s=ejecutar([c],Path(d)/'evidencia',Path(d)/'estado.json');self.assertEqual(len(rs),1);self.assertEqual(rs[0]['estado'],'SIN_SITIO_LOCALIZADO')

@@ -1,6 +1,6 @@
 {
-  "fase": "validacion_final",
-  "revision": "avisos-html-sin-bloqueo-por-escaneos-y-recepcion-documental",
+  "fase": "preflight",
+  "revision": "corregir-organismos-sectoriales-sin-localidad",
   "referencia": "98bfebd",
   "lote_rapido": 50
 }
