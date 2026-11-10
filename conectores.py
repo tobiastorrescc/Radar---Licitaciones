@@ -300,6 +300,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
 
     hosts={_host(fuente),*(_host('https://'+h) for h in config.get('dominios_documentos',[]))}
     documento_pendiente={};vacios=[];paginas_api=set()
+    diferir_fichas=bool(config.get('descubrimiento_prioritario'));enriquecimiento_pendiente={}
     modo=config.get('lectura_adjuntos','todos')
     semillas_listado={u for u,c,_ in pending if c=='LISTADO'}
     def snapshot(fase,actual=None,finalizado=False):
@@ -310,6 +311,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
            'paginas_visitadas':len(seen),'paginas_correctas':correctas,'documentos_leidos':documentos_leidos,
            'cobertura_completa':False,'fase':fase,'url_actual':actual,'finalizado':finalizado,
            'alcance':config.get('alcance_publicaciones','Listado completo de publicaciones reconocidas y sus enlaces; adjuntos necesarios para extraer objeto'),
+           'enriquecimiento_pendiente':list(enriquecimiento_pendiente.values()),'descubrimiento_prioritario':diferir_fichas,
            'totales_publicados_rosario':{t:sorted(v) for t,v in conteos_rosario.items()},'intentos_http':list(intentos_http),'documentos_pendientes':list(documento_pendiente.values()),'evidencias_listado_vacio':list(vacios),'rutas_respaldo_descubiertas':list(rutas_respaldo),'busqueda_respaldo_intentada':respaldo_intentado}
         if progreso:progreso(r)
         return r
@@ -620,7 +622,8 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                         documento_pendiente[destino]={'url':destino,'publicacion_id':key}
                         pending.append((destino,'DOCUMENTO',key))
                 if (not r.get('detalle_completo') or config.get('enriquecer_fichas')) and r['url']!=url and not urlparse(r['url']).path.lower().endswith(extractores.ADJUNTOS):
-                    pending.appendleft((r['url'],'DETALLE',key))
+                    if diferir_fichas:enriquecimiento_pendiente[r['url']]={'url':r['url'],'publicacion_id':key,'motivo':'FICHA_DIFERIDA_TRAS_REGISTRAR_AVISO'}
+                    else:pending.appendleft((r['url'],'DETALLE',key))
             if config.get('barrido_institucional') and not config.get('ignorar_suscripciones_feed'):
                 from barrido_institucional import feeds_publicados
                 for u in feeds_publicados(dom,final):pending.append((u,'LISTADO',{}))
@@ -649,7 +652,8 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     navegar=True
                 if config.get('adaptador')=='rosario' and re.fullmatch(r'/inicio/compras-licitaciones/detalle/\d+',path):
                     # Nunca reclasificar la ficha como LISTADO por seguir_patrones.
-                    if not any(u==destino and c=='DETALLE' for u,c,_ in pending):pending.append((destino,'DETALLE',None))
+                    if diferir_fichas:enriquecimiento_pendiente.setdefault(destino,{'url':destino,'motivo':'FICHA_DIFERIDA_TRAS_LISTADOS'})
+                    elif not any(u==destino and c=='DETALLE' for u,c,_ in pending):pending.append((destino,'DETALLE',None))
                     continue
                 if config.get('noticias_comunales') and clase=='LISTADO':
                     from descubrimiento_noticias import pertinente,es_seccion
@@ -709,9 +713,11 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
     if totales_gestiones and len(items)<max(totales_gestiones):
         errors.append({'url':fuente,'tipo':'ConteoGestionesIncompleto','categoria':'EXTRACCION','timeout':False,'error':'No se alcanzó el total publicado; conservar parciales','publicadas':max(totales_gestiones),'extraidas':len(items)})
     incompletas=[r['id'] for r in items.values() if not r.get('detalle_completo') and not r.get('documento_desglosado')]
-    if incompletas:
+    if incompletas and not diferir_fichas:
         errors.append({'url':fuente,'tipo':'DetalleIncompleto','categoria':'EXTRACCION','timeout':False,
                        'error':'Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso','publicaciones':incompletas})
+    if config.get('adaptador')=='siglo-publicdoc' and len(items)>=10:
+        limits.append('PAGINACION_SIGLO_PENDIENTE: diez filas no acreditan archivo completo')
     estado='OPERATIVA' if items else 'PENDIENTE'
     if not items and vacios and not errors and not limits:estado='SIN_PUBLICACIONES'
     if not correctas and errors:estado='BLOQUEADA' if all(e['categoria'] in ('RED','ACCESO') for e in errors) else 'PENDIENTE'

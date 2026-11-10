@@ -249,7 +249,7 @@ def seleccionar_validaciones(candidatos,existentes,auto,limite,revisar_pendiente
         anterior=por_url.get(c['url'])
         if anterior is None or (c.get('validacion',{}).get('identidad_verificada',False) and not anterior.get('validacion',{}).get('identidad_verificada',False)):
             por_url[c['url']]=c
-    return sorted(por_url.values(),key=lambda c:(c['url'] not in priorizar_urls,c.get('ultima_revision',''),c.get('fecha_descubrimiento',''),c['id']))[:limite]
+    return sorted(por_url.values(),key=lambda c:(c['url'] not in priorizar_urls,-c.get('prioridad_rapida',{}).get('puntos',0),c.get('ultima_revision',''),c.get('fecha_descubrimiento',''),c['id']))[:limite]
 
 def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_pendientes=False,priorizar_urls=()):
     inicio=time.monotonic();raiz=Path(salida);raiz.mkdir(parents=True,exist_ok=True)
@@ -305,13 +305,20 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_
         estado['candidatos'].setdefault(key,{**f,'tipo':'TERRITORIAL' if o.norm(f['organismo']).startswith(('municipalidad','comuna')) else 'SECTORIAL','id':'auto-'+key,'clave':key,'origen':'INVENTARIO_PREVIO','fecha_descubrimiento':fecha})
     # Semillas descubiertas por investigación del agente: nunca se promueven sin
     # pasar la misma verificación de identidad, jurisdicción y publicaciones.
-    for semillas_path in (Path('inventario/candidatas_sectoriales.json'),Path('inventario/candidatas_historia.json'),Path('tools/fase4_semillas.json'),Path('tools/fase5_semillas.json')):
+    for semillas_path in (Path('inventario/candidatas_sectoriales.json'),Path('inventario/candidatas_historia.json'),Path('tools/fase4_semillas.json'),Path('tools/fase5_semillas.json'),Path('inventario/fase7_semillas.json')):
         if semillas_path.exists():
             for c in json.loads(semillas_path.read_text()).get('candidatos',[]):
+                if not c.get('url'):continue
                 key='contraste-'+sha256((c['url']+'|'+c['organismo']).encode()).hexdigest()[:20]
                 estado['candidatos'].setdefault(key,{**c,'id':'auto-'+key,'origen':'HISTORIAL_GIT' if semillas_path.name=='candidatas_historia.json' else 'INVESTIGACION_AGENTE',
                     'fecha_descubrimiento':fecha,'validacion':{'estado':'PENDIENTE','motivo':c.get('motivo_previo')}})
                 if semillas_path.name in ('fase4_semillas.json','fase5_semillas.json'):estado['candidatos'][key].update({k:v for k,v in c.items() if k in ('identidad_url','config_publica','solo_control')})
+    rapida_path=Path('inventario/fase7_estado.json')
+    if rapida_path.exists():
+        rapidas={host(r.get('url') or ''):r for r in json.loads(rapida_path.read_text()).get('localidades',{}).values() if r.get('url')}
+        for c in estado['candidatos'].values():
+            r=rapidas.get(host(c['url']))
+            if r and r.get('identidad_verificada') and o.norm(r.get('localidad'))==o.norm(c.get('localidad')):c['prioridad_rapida']=r['prioridad']
     lote=seleccionar_validaciones(estado['candidatos'].values(),existentes,auto,candidatos,revisar_pendientes,priorizar_urls)
     limite=max(1,total-(time.monotonic()-inicio)-3)
     entradas=raiz/'entradas';entradas.mkdir(exist_ok=True)

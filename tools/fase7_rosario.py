@@ -35,13 +35,18 @@ def main():
      if u not in vistas and u not in cola:cola.append(u)
    resultados.append({k:v for k,v in r.items() if k not in ('registros','links')});print(json.dumps(resultados[-1],ensure_ascii=False),flush=True)
   guardar(ROOT/'parcial.json',{'rutas':resultados,'registros':list(registros.values()),'cola_pendiente':cola})
+ reintentos=[]
+ for fallida in [r for r in resultados if r['estado']=='ERROR_ACCESO']:
+  if time.monotonic()-inicio>150:break
+  r=consultar(fallida['url']);reintentos.append({k:v for k,v in r.items() if k not in ('registros','links')})
+  for p in r['registros']:registros[p['url']]=p
  faltan=[c for c in control if c['url'] not in registros];fichas=[]
  # Diagnóstico de avisos ya documentados, sin insertar el contenido de referencia.
  for c in faltan:
   if time.monotonic()-inicio>175:break
   r=consultar(c['url']);fichas.append({k:v for k,v in r.items() if k not in ('registros','links')})
   for p in r['registros']:registros[p['url']]=p
- faltan=[c for c in control if c['url'] not in registros];errores=[r for r in resultados if r['estado']=='ERROR_ACCESO'];completo=not cola and not errores
- resumen={'fecha':o.datetime.now(o.ZONA).isoformat(),'run':os.environ.get('GITHUB_RUN_ID'),'segundos':round(time.monotonic()-inicio,3),'antes_segundos':240.015,'paginas_consultadas':len(resultados),'timeouts':sum('TIEMPO' in str(r.get('error')) for r in resultados),'reintentos':0,'documentos_procesados':0,'publicaciones':len(registros),'control_detectadas':len(control)-len(faltan),'control_total':len(control),'faltantes':faltan,'completo_listados':completo,'cola_pendiente':cola,'errores':errores,'fichas_contraste':fichas,'duplicados_por_url':0,'limite_por_dominio':2,'enriquecimiento_separado':True}
+ faltan=[c for c in control if c['url'] not in registros];resueltas={r['url'] for r in reintentos if r['estado']=='REVISADA'};errores=[r for r in resultados if r['estado']=='ERROR_ACCESO' and r['url'] not in resueltas];completo=not cola and not errores
+ resumen={'fecha':o.datetime.now(o.ZONA).isoformat(),'run':os.environ.get('GITHUB_RUN_ID'),'segundos':round(time.monotonic()-inicio,3),'antes_segundos':240.015,'paginas_consultadas':len(resultados),'timeouts':sum('TIEMPO' in str(r.get('error')) for r in resultados),'reintentos':len(reintentos),'auditoria_reintentos':reintentos,'documentos_procesados':0,'publicaciones':len(registros),'control_detectadas':len(control)-len(faltan),'control_total':len(control),'faltantes':faltan,'completo_listados':completo,'cola_pendiente':cola,'errores':errores,'fichas_contraste':fichas,'duplicados_por_url':0,'limite_por_dominio':2,'enriquecimiento_separado':True}
  guardar(ROOT/'resultado.json',resumen);guardar(ROOT/'registros.json',{'fecha':resumen['fecha'],'oportunidades':list(registros.values())});print('RESUMEN '+json.dumps(resumen,ensure_ascii=False),flush=True)
 if __name__=='__main__':main()

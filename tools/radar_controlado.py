@@ -137,7 +137,7 @@ def _ejecutar_corrida(raiz,*,total=600,documentos=120,informe_previo=None):
     raiz=validar_salida(raiz);antes=huellas_produccion();config=fuentes_configuradas()
     prioridad=Path('inventario/prioridad_radar.json')
     enriquecer=json.loads(prioridad.read_text()).get('enriquecimiento_sincrono',True) if prioridad.exists() else True
-    if not enriquecer:config=[{**f,'solo_descubrimiento':True,'ocr':False,'admitir_avisos_sin_numero':True} for f in config]
+    if not enriquecer:config=[{**f,'solo_descubrimiento':True,'ocr':False,'admitir_avisos_sin_numero':True,'descubrimiento_prioritario':bool(f.get('adaptador')=='rosario')} for f in config]
     carpeta=raiz/'ejecuciones'/(datetime.now(o.ZONA).strftime('%Y%m%dT%H%M%S')+'-'+uuid.uuid4().hex[:8]);carpeta.mkdir(parents=True)
     informe=informe_previo or ejecutar(config,carpeta/'verificacion.json',concurrencia=4,conexion=5,lectura=10,por_fuente=60,total=total)
     registros=registros_checkpoint(informe)

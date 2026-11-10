@@ -148,6 +148,10 @@ def situacion(texto):
 def extraer(html,url,config=None):
     config=config or {}
     dom=DOM(html);raiz=dom.root
+    if config.get('adaptador')=='siglo-publicdoc':
+        from fuentes_fase7 import siglo
+        rs,_=siglo(html,url)
+        return rs,[],dom
     if config.get('adaptador')=='comuna-cms':
         from fuentes_fase4 import comuna_cms
         rs=comuna_cms(dom,url)
