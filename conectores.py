@@ -716,7 +716,7 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
     if incompletas and not diferir_fichas:
         errors.append({'url':fuente,'tipo':'DetalleIncompleto','categoria':'EXTRACCION','timeout':False,
                        'error':'Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso','publicaciones':incompletas})
-    if config.get('adaptador')=='siglo-publicdoc' and len(items)>=10:
+    if config.get('adaptador') in ('siglo-publicdoc','hughes-grid') and len(items)>=10:
         limits.append('PAGINACION_SIGLO_PENDIENTE: diez filas no acreditan archivo completo')
     estado='OPERATIVA' if items else 'PENDIENTE'
     if not items and vacios and not errors and not limits:estado='SIN_PUBLICACIONES'

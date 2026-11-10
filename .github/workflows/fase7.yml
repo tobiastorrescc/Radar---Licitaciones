@@ -32,7 +32,12 @@ jobs:
       - name: Rosario, cambio de estado y recorrido con reintento acotado
         run: python -u tools/fase7_rosario.py
       - name: Siete localidades incompletas, exploración rápida y validación profunda
-        run: python -u tools/fase7_barrido.py
+        run: |
+          if python -c 'import json,sys;sys.exit(json.load(open("tools/plan_fase7.json"))["fase"]!="continuacion")'; then
+            python -u tools/fase7_continuar.py
+          else
+            python -u tools/fase7_barrido.py
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:

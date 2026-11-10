@@ -29,3 +29,6 @@ class ControlCompleto(unittest.TestCase):
    return html.encode(),'text/html',url
   r=conectores.explorar(u,{'adaptador':'rosario','descubrimiento_prioritario':True,'requerir_ficha':True,'urls_inicio':[u]},fetch=fetch,max_paginas=1)
   self.assertTrue(r['oportunidades']);self.assertTrue(r['enriquecimiento_pendiente']);self.assertFalse(any('/detalle/' in x for x in llamadas))
+ def test_indice_de_salto_precede_a_pdf_individual(self):
+  from descubrimiento_rapido import elegir_seccion
+  r=json.loads(Path('tests/fixtures/fase7/salto-enlaces.json').read_text());self.assertEqual(elegir_seccion(r),'https://saltogrande.gob.ar/contrataciones/')

@@ -148,7 +148,7 @@ def situacion(texto):
 def extraer(html,url,config=None):
     config=config or {}
     dom=DOM(html);raiz=dom.root
-    if config.get('adaptador')=='siglo-publicdoc':
+    if config.get('adaptador')=='siglo-publicdoc' or (config.get('adaptador')=='hughes-grid' and urlsplit(url).hostname=='sigloservicios.com' and urlsplit(url).path.lower()=='/publicdoc/publicdoc.aspx'):
         from fuentes_fase7 import siglo
         rs,_=siglo(html,url)
         return rs,[],dom

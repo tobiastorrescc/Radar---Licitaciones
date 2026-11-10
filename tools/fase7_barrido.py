@@ -8,7 +8,7 @@ from tools.verificar_fuentes import ejecutar,guardar
 from tools.radar_controlado import fuentes_configuradas,registros_checkpoint
 from tools.fase2_cerrar import huellas
 from tools.descubrir_fuentes import aceptacion
-from descubrimiento_rapido import ejecutar as rapido,explorar,TransporteLimitado
+from descubrimiento_rapido import ejecutar as rapido,explorar,TransporteLimitado,elegir_seccion
 from calidad_comercial import escribir,presentacion
 ROOT=Path('work/fase7/territorial')
 
@@ -38,8 +38,8 @@ def main():
  seleccion=[]
  for r in validables[:10]:
   # Sección oficial publicada antes de archivo completo; identidad en raíz.
-  secciones=[x['url'] for x in r['enlaces_candidatos'] if any(t in o.norm(x['texto']) for t in ['licitacion','concurso de precios','compras']) and x['url'].startswith(r['url'].split('/',3)[0]+'//'+r['url'].split('/')[2])]
-  seleccion.append({**{k:r[k] for k in ['id','organismo','localidad','provincia','tipo']},'url':secciones[0] if secciones else r['url'],'identidad_url':r['url'],'config_publica':{'documentos_para_descubrimiento':True,'noticias_comunales':True},'prioridad_rapida':r['prioridad']})
+  secciones=[x['url'] for x in r['enlaces_candidatos'] if any(t in o.norm(x['texto']) for t in ['licitacion','concurso de precios','compras']) and not __import__('extractores').procesos(x['texto']) and not __import__('urllib.parse',fromlist=['urlparse']).urlparse(x['url']).path.lower().endswith(__import__('extractores').ADJUNTOS) and x['url'].startswith(r['url'].split('/',3)[0]+'//'+r['url'].split('/')[2])]
+  seleccion.append({**{k:r[k] for k in ['id','organismo','localidad','provincia','tipo']},'url':elegir_seccion(r),'identidad_url':r['url'],'config_publica':{'documentos_para_descubrimiento':True,'noticias_comunales':True},'prioridad_rapida':r['prioridad']})
  profundas,ip=validar(seleccion,'profunda',segundos=40,total=180) if seleccion else ([],{'actualizado':o.datetime.now(o.ZONA).isoformat(),'observaciones':[],'duracion_segundos':0})
  auto=json.load(open('inventario/fuentes_auto.json'));incorporadas=[]
  for d in profundas:

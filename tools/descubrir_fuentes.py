@@ -168,8 +168,10 @@ def worker(entrada,salida):
             guardar(salida,{'estado':'PENDIENTE','finalizado':True,'validacion':aceptacion({},identidad),'oportunidades':[]});return
         config={'organismo':identidad['organismo'],'localidad':identidad['localidad'],'provincia':c['provincia'],
             'conector':'publicaciones','descubrir_menu':True,'descubrir_contrataciones':True,'barrido_institucional':True,'buscador_institucional':True,'solo_descubrimiento':True,'lectura_adjuntos':'necesarios','ocr':False,'admitir_avisos_sin_numero':True,'capturar_respuestas':True}
-        for k in ('adaptador','documentos_para_descubrimiento','indice_documentos','resolver_numero_documental','noticias_comunales'):
+        for k in ('adaptador','documentos_para_descubrimiento','indice_documentos','resolver_numero_documental','noticias_comunales','dominios_documentos','seguir_patrones'):
             if k in c.get('config_publica',{}):config[k]=c['config_publica'][k]
+        if c.get('config_publica',{}).get('foco_listado_actual'):
+            config.update(buscador_institucional=False,barrido_institucional=False,ignorar_suscripciones_feed=True)
         inicial={url:(datos,tipo,final)}
         def capturar(u,respuesta):
             b,t,f=respuesta

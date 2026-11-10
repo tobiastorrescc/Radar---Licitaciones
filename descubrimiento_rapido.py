@@ -90,3 +90,13 @@ def ejecutar(candidatos,raiz,estado,concurrencia=4):
 
 def guardar(p,v):
  p=Path(p);p.parent.mkdir(parents=True,exist_ok=True);t=p.with_suffix(p.suffix+'.tmp');t.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n');t.replace(p)
+
+def elegir_seccion(r):
+ """Un documento/aviso individual no sustituye al portal reutilizable."""
+ h=urlparse(r['url']).hostname
+ for l in r.get('enlaces_candidatos',[]):
+  u=l['url'];t=o.norm(l['texto'])
+  if urlparse(u).hostname!=h or urlparse(u).path.lower().endswith(extractores.ADJUNTOS):continue
+  if extractores.procesos(l['texto']):continue
+  if re.search(r'licitacion|concursos? de precios|compras|contrataciones',t):return u
+ return r['url']
