@@ -1,0 +1,31 @@
+name: Fase 7 auditoría de rama y descubrimiento aislado
+on:
+  push:
+    branches: [mejora/radar-auditable]
+    paths: [tools/plan_fase7.json]
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: fase7-aislado
+  cancel-in-progress: false
+jobs:
+  ejecutar:
+    if: github.ref == 'refs/heads/mejora/radar-auditable'
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Ejecución real con límites y resultados parciales
+        run: python -u tools/fase7_rosario.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fase7-${{ github.run_id }}
+          path: work/fase7/
+          retention-days: 90
