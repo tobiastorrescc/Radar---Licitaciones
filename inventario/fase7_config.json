@@ -1,0 +1,7 @@
+{
+  "activa": true,
+  "maximo_preexploraciones_por_corrida": 8,
+  "concurrencia": 3,
+  "reutilizar_hasta_horas": 24,
+  "criterio": "Validación profunda sólo tras señales observadas; pendientes rotan, no se excluyen definitivamente."
+}

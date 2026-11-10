@@ -32,3 +32,9 @@ class ControlCompleto(unittest.TestCase):
  def test_indice_de_salto_precede_a_pdf_individual(self):
   from descubrimiento_rapido import elegir_seccion
   r=json.loads(Path('tests/fixtures/fase7/salto-enlaces.json').read_text());self.assertEqual(elegir_seccion(r),'https://saltogrande.gob.ar/contrataciones/')
+ def test_san_salvador_objeto_fecha_y_drive_de_publicacion_real(self):
+  html=Path('tests/fixtures/fase7/san-salvador-29.html').read_text();u='https://sansalvadorer.gob.ar/llamado-a-concurso-de-precios-n-29-2026/'
+  rs=extractores.extraer(html,u,{'noticias_comunales':True})[0];self.assertEqual(len(rs),1);self.assertIn('200 cargas',rs[0]['objeto']);r=o.normalizar(rs[0],'2026-11-10T00:00:00-03:00');self.assertEqual(r['fecha_publicacion'],'2026-11-05');self.assertTrue(any('drive.google.com' in d['url'] for d in rs[0]['documentos']))
+ def test_llamado_sin_objeto_no_valida_fuente(self):
+  from tools.descubrir_fuentes import objeto_comprobado
+  self.assertFalse(objeto_comprobado({'objeto':'Llamado a Concurso de Precios N° 29-2026'}))

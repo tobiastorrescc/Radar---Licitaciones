@@ -121,7 +121,7 @@ def objeto_comprobado(r):
     if o.norm(r.get('objeto')).startswith('resultados de busqueda'):return False
     # Calidad de extracción, no filtro de rubro: rechazar sólo encabezados/archivos genéricos.
     t=o.norm(r.get('objeto'))
-    t=re.sub(r'\b(?:licitacion|concurso|publica|privada|precios|pliego|pdf|descarga|detalles|fecha|publicacion|lunes|martes|miercoles|jueves|viernes|sabado|domingo|publicado|publicada|segundo|tercer|llamado|prorroga|convocatoria|n|no|de|del|la|el|y)\b|[\d\W_]+',' ',t)
+    t=re.sub(r'\b(?:licitacion|concurso|publica|privada|precios|pliego|pdf|descarga|detalles|fecha|publicacion|lunes|martes|miercoles|jueves|viernes|sabado|domingo|publicado|publicada|segundo|tercer|llamado|prorroga|convocatoria|n|no|de|del|la|el|y|a|al|para)\b|[\d\W_]+',' ',t)
     return bool(t.strip())
 
 def aceptacion(resultado,identidad):
@@ -168,10 +168,10 @@ def worker(entrada,salida):
             guardar(salida,{'estado':'PENDIENTE','finalizado':True,'validacion':aceptacion({},identidad),'oportunidades':[]});return
         config={'organismo':identidad['organismo'],'localidad':identidad['localidad'],'provincia':c['provincia'],
             'conector':'publicaciones','descubrir_menu':True,'descubrir_contrataciones':True,'barrido_institucional':True,'buscador_institucional':True,'solo_descubrimiento':True,'lectura_adjuntos':'necesarios','ocr':False,'admitir_avisos_sin_numero':True,'capturar_respuestas':True}
-        for k in ('adaptador','documentos_para_descubrimiento','indice_documentos','resolver_numero_documental','noticias_comunales','dominios_documentos','seguir_patrones'):
+        for k in ('adaptador','documentos_para_descubrimiento','indice_documentos','resolver_numero_documental','noticias_comunales','dominios_documentos','seguir_patrones','alcance_publicaciones'):
             if k in c.get('config_publica',{}):config[k]=c['config_publica'][k]
         if c.get('config_publica',{}).get('foco_listado_actual'):
-            config.update(buscador_institucional=False,barrido_institucional=False,ignorar_suscripciones_feed=True)
+            config.update(buscador_institucional=False,barrido_institucional=False,ignorar_suscripciones_feed=True,priorizar_documentos_recientes=True)
         inicial={url:(datos,tipo,final)}
         def capturar(u,respuesta):
             b,t,f=respuesta
@@ -322,6 +322,17 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_
             r=rapidas.get(host(c['url']))
             if r and r.get('identidad_verificada') and o.norm(r.get('localidad'))==o.norm(c.get('localidad')):c['prioridad_rapida']=r['prioridad']
     lote=seleccionar_validaciones(estado['candidatos'].values(),existentes,auto,candidatos,revisar_pendientes,priorizar_urls)
+    rapida_conf=Path('inventario/fase7_config.json');resumen_rapido=None
+    if rapida_conf.exists() and json.loads(rapida_conf.read_text()).get('activa') and lote:
+        from descubrimiento_rapido import ejecutar as explorar_rapido
+        conf=json.loads(rapida_conf.read_text());muestra=lote[:min(8,max(1,int(conf.get('maximo_preexploraciones_por_corrida',8))))]
+        resultados_rapidos,resumen_rapido=explorar_rapido(muestra,raiz/'nivel1',raiz/'nivel1_estado.json',concurrencia=min(3,max(1,int(conf.get('concurrencia',3)))))
+        por_rapida={r['id']:r for r in resultados_rapidos};seleccionadas=[]
+        for c in muestra:
+            r=por_rapida[c['id']];c['prioridad_rapida']=r.get('prioridad',{});c['ultima_exploracion_rapida']=fecha;c['estado_nivel1']=r['estado']
+            if r.get('identidad_verificada') and r.get('estado')=='CANDIDATA_CON_SENALES':seleccionadas.append(c)
+            else:c.update(ultima_revision=fecha,validacion={'estado':'PENDIENTE','motivo':'Nivel rápido sin identidad/señales suficientes; no acredita ausencia de compras'})
+        lote=seleccionadas;persistir()
     limite=max(1,total-(time.monotonic()-inicio)-3)
     entradas=raiz/'entradas';entradas.mkdir(exist_ok=True)
     for c in lote:guardar(entradas/(c['id']+'.json'),c)
@@ -360,7 +371,7 @@ def ejecutar_descubrimiento(salida,total=240,busquedas=12,candidatos=24,revisar_
         'hallazgos_nuevos':len(descubiertos),'candidatos_acumulados':sum(portales.values()),'hallazgos_acumulados':len(estado['candidatos']),
         'consultadas':len({r['url'] for r in informe['observaciones'] if r['iniciada']}),'validadas':len(validadas),'validadas_acumuladas':portales.get('VALIDADA',0),'incorporadas':len(nuevos),
         'incorporadas_acumuladas':len(registro['fuentes']),'pendientes':portales.get('PENDIENTE',0),
-        'errores_busqueda':errores,'duracion_segundos':round(time.monotonic()-inicio,2),'cobertura_completa':False}
+        'nivel1':resumen_rapido,'errores_busqueda':errores,'duracion_segundos':round(time.monotonic()-inicio,2),'cobertura_completa':False}
     estado['ultima_ejecucion']=fecha
     guardar(raiz/'resumen.json',{'resumen':resumen,'incorporadas':nuevos});persistir()
     print('DESCUBRIMIENTO_RESUMEN '+json.dumps(resumen,ensure_ascii=False),flush=True)

@@ -75,18 +75,25 @@ def explorar(c,raiz,transporte):
  r['estado']='CANDIDATA_CON_SENALES' if r['identidad_verificada'] and (r['seccion_compras'] or r['historial_convocatorias']) else 'PENDIENTE_IDENTIDAD_O_CONVOCATORIAS' if r['accesible'] else 'INACCESIBLE'
  r['segundos']=round(time.monotonic()-inicio,3);r['prioridad']=puntuar(r);return r
 
-def ejecutar(candidatos,raiz,estado,concurrencia=4):
+def ejecutar(candidatos,raiz,estado,concurrencia=4,reanudar=True):
  raiz=Path(raiz);raiz.mkdir(parents=True,exist_ok=True);trans=TransporteLimitado();inicio=time.monotonic();prev=json.load(open(estado)) if Path(estado).exists() else {'schema_version':1,'localidades':{}};salidas=[]
+ reutilizadas=[];pendientes=[]
+ for c in candidatos:
+  r=prev['localidades'].get(c['id']);reciente=False
+  try:reciente=bool(r and r.get('url')==c.get('url') and datetime.now(o.ZONA)-datetime.fromisoformat(r['fecha'])<timedelta(hours=24) and any(p['estado']=='REVISADA' for p in r.get('paginas',[])))
+  except (KeyError,ValueError,TypeError):pass
+  if reanudar and reciente:reutilizadas.append(r)
+  else:pendientes.append(c)
  # Cada resultado terminado se guarda antes de esperar a los demás.
  with ThreadPoolExecutor(max_workers=concurrencia) as pool:
-  futuros={pool.submit(explorar,c,raiz/'capturas',trans):c for c in candidatos}
+  futuros={pool.submit(explorar,c,raiz/'capturas',trans):c for c in pendientes}
   for f in as_completed(futuros):
    c=futuros[f]
    try:r=f.result()
    except Exception as e:r={**c,'estado':'ERROR_INDIVIDUAL','error':str(e),'paginas':[]}
    prev['localidades'][c['id']]=r;salidas.append(r);guardar(estado,prev);print('RAPIDA '+json.dumps({'localidad':c['localidad'],'estado':r['estado'],'paginas':len(r['paginas']),'segundos':r.get('segundos')},ensure_ascii=False),flush=True)
- resumen={'segundos':round(time.monotonic()-inicio,3),'programadas':len(candidatos),'con_sitio_consultado':sum(bool(r['paginas']) for r in salidas),'con_respuesta_html':sum(any(p['estado']=='REVISADA' for p in r['paginas']) for r in salidas),'con_identidad_automatica':sum(r.get('identidad_verificada') is True for r in salidas),'dominios_solicitudes':trans.contadores,'limite_por_dominio':1,'concurrencia_global':concurrencia,'documentos_descargados':0}
- guardar(raiz/'resultado.json',{'resumen':resumen,'localidades':salidas});return salidas,resumen
+ resumen={'segundos':round(time.monotonic()-inicio,3),'programadas':len(candidatos),'reutilizadas_sin_red':len(reutilizadas),'con_sitio_consultado':sum(bool(r['paginas']) for r in salidas),'con_respuesta_html':sum(any(p['estado']=='REVISADA' for p in r['paginas']) for r in salidas),'con_identidad_automatica':sum(r.get('identidad_verificada') is True for r in salidas),'dominios_solicitudes':trans.contadores,'limite_por_dominio':1,'concurrencia_global':concurrencia,'documentos_descargados':0}
+ guardar(raiz/'resultado.json',{'resumen':resumen,'localidades':salidas+reutilizadas});return salidas+reutilizadas,resumen
 
 def guardar(p,v):
  p=Path(p);p.parent.mkdir(parents=True,exist_ok=True);t=p.with_suffix(p.suffix+'.tmp');t.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n');t.replace(p)
@@ -94,7 +101,8 @@ def guardar(p,v):
 def elegir_seccion(r):
  """Un documento/aviso individual no sustituye al portal reutilizable."""
  h=urlparse(r['url']).hostname
- for l in r.get('enlaces_candidatos',[]):
+ enlaces=sorted(r.get('enlaces_candidatos',[]),key=lambda l:l['url']==r['url'])
+ for l in enlaces:
   u=l['url'];t=o.norm(l['texto'])
   if urlparse(u).hostname!=h or urlparse(u).path.lower().endswith(extractores.ADJUNTOS):continue
   if extractores.procesos(l['texto']):continue

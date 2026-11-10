@@ -1,0 +1,79 @@
+{
+  "fuentes": [
+    {
+      "id": "fase7-villa-canas-html",
+      "organismo": "Municipalidad de Villa Cañás",
+      "provincia": "Santa Fe",
+      "localidad": "Villa Cañás",
+      "tipo": "TERRITORIAL",
+      "url": "https://www.muvc.gob.ar/licitaciones.php",
+      "identidad_url": "https://www.muvc.gob.ar/",
+      "config_publica": {
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": false,
+        "foco_listado_actual": true,
+        "alcance_publicaciones": "Descubrimiento de avisos HTML con número, objeto y enlace. Pliegos en enriquecimiento posterior; no se presume vigencia."
+      }
+    },
+    {
+      "id": "fase7-hasenkamp-html",
+      "organismo": "Municipalidad de Hasenkamp",
+      "provincia": "Entre Ríos",
+      "localidad": "Hasenkamp",
+      "tipo": "TERRITORIAL",
+      "url": "https://www.hasenkamp.gob.ar/licitaciones/",
+      "identidad_url": "https://www.hasenkamp.gob.ar/",
+      "config_publica": {
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": false,
+        "foco_listado_actual": true,
+        "alcance_publicaciones": "Descubrimiento de avisos HTML con número, objeto y enlace. Pliegos en enriquecimiento posterior; no se presume vigencia."
+      }
+    },
+    {
+      "id": "fase7-villa-rosario-html",
+      "organismo": "Municipalidad de Villa del Rosario",
+      "provincia": "Entre Ríos",
+      "localidad": "Villa del Rosario",
+      "tipo": "TERRITORIAL",
+      "url": "https://vrosario.gob.ar/?page_id=595",
+      "identidad_url": "https://vrosario.gob.ar/",
+      "config_publica": {
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": false,
+        "foco_listado_actual": true,
+        "alcance_publicaciones": "Descubrimiento de avisos HTML con número, objeto y enlace. Pliegos en enriquecimiento posterior; no se presume vigencia."
+      }
+    },
+    {
+      "id": "fase7-salto-actual",
+      "organismo": "Comuna de Salto Grande",
+      "provincia": "Santa Fe",
+      "localidad": "Salto Grande",
+      "tipo": "TERRITORIAL",
+      "url": "https://saltogrande.gob.ar/contrataciones/",
+      "identidad_url": "https://saltogrande.gob.ar/",
+      "config_publica": {
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": true,
+        "foco_listado_actual": true,
+        "alcance_publicaciones": "Descubrimiento de avisos HTML con número, objeto y enlace. Pliegos en enriquecimiento posterior; no se presume vigencia."
+      }
+    },
+    {
+      "id": "fase7-san-salvador-final",
+      "organismo": "Municipalidad de San Salvador",
+      "provincia": "Entre Ríos",
+      "localidad": "San Salvador",
+      "tipo": "TERRITORIAL",
+      "url": "https://sansalvadorer.gob.ar/",
+      "identidad_url": "https://sansalvadorer.gob.ar/",
+      "config_publica": {
+        "noticias_comunales": true,
+        "documentos_para_descubrimiento": false,
+        "foco_listado_actual": true,
+        "alcance_publicaciones": "Descubrimiento de avisos HTML con número, objeto y enlace. Pliegos en enriquecimiento posterior; no se presume vigencia."
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "casos": [
+    {
+      "organismo": "Municipalidad de San Salvador",
+      "provincia": "Entre Ríos",
+      "localidad": "San Salvador",
+      "numero_procedimiento": "29/2026",
+      "tipo_procedimiento": "concurso de precios",
+      "url": "https://sansalvadorer.gob.ar/llamado-a-concurso-de-precios-n-29-2026/",
+      "documento": "https://drive.google.com/file/d/1GyIX_YfNSPSX6WvGXOQa6ldmlrw9DJXG/view",
+      "sha256_documento": "f2a53dcede7462a931df9163e94d2c45bee3df6dbdf5e61ee136c44d39899550",
+      "fecha_hora_limite_presentacion": "2026-11-11T11:00:00-03:00",
+      "evidencia_recepcion": {
+        "url": "https://drive.google.com/file/d/1GyIX_YfNSPSX6WvGXOQa6ldmlrw9DJXG/view",
+        "pagina_pdf": 2,
+        "articulo": 8,
+        "resumen_visual_no_cita_literal": "Sólo se consideran sobres presentados hasta la apertura; después de esa hora no se aceptan nuevas propuestas."
+      },
+      "modalidad_presentacion": [
+        "PRESENCIAL",
+        "CORREO_ELECTRONICO",
+        "FAX"
+      ],
+      "requisito_presentacion": "Original o ratificación dentro de dos días hábiles posteriores si se usa fax/email; verificar pliego y garantías.",
+      "forma_pago_revision_manual": "Cláusulas contradictorias: particulares art.4 indica 30 días desde adjudicación; art.8 contra entrega y plazo del decreto. Pendiente de aclaración.",
+      "metodo": "LECTURA_VISUAL_PDF_OFICIAL; sin OCR nuevo; no acredita descarga anónima en Actions",
+      "momento_verificacion": "2026-11-10T01:17:00+00:00"
+    },
+    {
+      "organismo": "Municipalidad de San Salvador",
+      "provincia": "Entre Ríos",
+      "localidad": "San Salvador",
+      "numero_procedimiento": "8/2026",
+      "tipo_procedimiento": "licitacion privada",
+      "url": "https://sansalvadorer.gob.ar/llamado-a-licitacion-privada-n-08-2026/",
+      "documento": "https://drive.google.com/file/d/1YN808x5rPq1mo_Ar5aK6b5bBUR0y_wJd/view",
+      "sha256_documento": "929f3776db2b6885ed0cf42406b31b9999b76545ec820cb835fb3b0866bd77af",
+      "fecha_hora_limite_presentacion": "2026-11-10T11:00:00-03:00",
+      "evidencia_recepcion": {
+        "url": "https://drive.google.com/file/d/1YN808x5rPq1mo_Ar5aK6b5bBUR0y_wJd/view",
+        "pagina_pdf": 3,
+        "articulo": 9,
+        "resumen_visual_no_cita_literal": "Sólo se consideran sobres presentados hasta la apertura; después de esa hora no se aceptan nuevas propuestas."
+      },
+      "modalidad_presentacion": [
+        "PRESENCIAL",
+        "CORREO_ELECTRONICO",
+        "FAX"
+      ],
+      "requisito_presentacion": "Original o ratificación dentro de dos días hábiles posteriores si se usa fax/email; verificar pliego y garantías.",
+      "forma_pago_revision_manual": "15 días hábiles desde factura presentada y remitos conformados; no pago inmediato contra entrega.",
+      "metodo": "LECTURA_VISUAL_PDF_OFICIAL; sin OCR nuevo; no acredita descarga anónima en Actions",
+      "momento_verificacion": "2026-11-10T01:17:00+00:00"
+    }
+  ],
+  "regla": "Sólo enriquecer registros extraídos automáticamente con misma URL, tipo y número; nunca crear convocatorias."
+}

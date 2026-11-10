@@ -680,6 +680,9 @@ def explorar(fuente, config, fetch=None, max_paginas=1000, progreso=None):
                     # manteniendo todos los anteriores en la cola y en la auditoría.
                     anios=re.findall(r'(?<!\d)20\d{2}(?!\d)',urlparse(u).path+'?'+urlparse(u).query)
                 # Presupuesto de lectura: documentos recientes primero; no se descarta el archivo.
+                if config.get('priorizar_documentos_recientes') and c=='DOCUMENTO':
+                    fm=re.search(r'/(20\d{2})/(0[1-9]|1[0-2])/',urlparse(u).path)
+                    return (1,-int(fm[1]) if fm else 0,-int(fm[2]) if fm else 0,u)
                 if config.get('adaptador')=='rosario' and c=='DETALLE' and config.get('priorizar_listados'):
                     ficha=re.search(r'/detalle/(\d+)',u)
                     return (1,-int(ficha[1]) if ficha else 0,0,'',u)

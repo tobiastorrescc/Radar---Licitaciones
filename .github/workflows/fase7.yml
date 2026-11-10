@@ -25,6 +25,14 @@ jobs:
         run: |
           python -m pip install --disable-pip-version-check --timeout 15 --retries 1 openpyxl==3.1.5 xlrd==2.0.2
           if ! command -v pdftotext; then sudo apt-get -o Acquire::Retries=0 -o Acquire::http::Timeout=8 install -y --no-install-recommends poppler-utils; fi
+      - uses: actions/cache@v4
+        with:
+          path: work/cache-documentos
+          key: fase7-documentos-${{ github.run_id }}
+          restore-keys: |
+            fase7-documentos-
+            fase6-documentos-
+            textos-v1-
       - name: Pruebas Python y Node
         run: |
           python -m unittest discover -s tests
@@ -36,7 +44,12 @@ jobs:
           if python -c 'import json,sys;sys.exit(json.load(open("tools/plan_fase7.json"))["fase"]!="continuacion")'; then
             python -u tools/fase7_continuar.py
           else
-            python -u tools/fase7_barrido.py
+            if python -c 'import json,sys;sys.exit(json.load(open("tools/plan_fase7.json"))["fase"]!="validacion_final")'; then
+              python -u tools/fase7_final.py
+              python -u tools/descubrir_fuentes.py --salida work/fase7/preflight-periodico --total 60 --busquedas 1 --candidatos 2 --revisar-pendientes
+            else
+              python -u tools/fase7_barrido.py
+            fi
           fi
       - uses: actions/upload-artifact@v4
         if: always()

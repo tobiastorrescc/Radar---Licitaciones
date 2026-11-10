@@ -33,11 +33,16 @@ def noticia(dom,url):
  p=ps[0] if ps else None
  u=urlsplit(url);q=[(k,v) for k,v in parse_qsl(u.query) if not k.startswith('utm_')]
  estable=urlunsplit((u.scheme,(u.hostname or '').removeprefix('www.'),u.path,urlencode(sorted(q)),''))
- r={'titulo':titulo,'objeto':titulo,'texto_documento':texto,'url':url,'evidencia_url':url,'registro_estructurado':True,'detalle_completo':True,'numero_procedimiento':p['numero'] if p else None,'tipo_procedimiento':p['tipo'] if p else 'aviso de contratacion','procedimiento':p['procedimiento'] if p else None,'aviso_oficial_sin_numero':not bool(p),'situacion_publicada':e.situacion(titulo),'documentos':[{'url':l['url'],'titulo':l['texto']} for l in bloque.enlaces(url) if urlsplit(l['url']).path.lower().endswith(e.ADJUNTOS)]}
+ contenido=next((n for n in bloque.iter() if n.clase('entry-content') or n.clase('td-post-content') or n.attrs.get('itemprop')=='articleBody'),bloque)
+ parrafos=[n.text.strip() for n in contenido.iter() if n.tag=='p' and n.text.strip()]
+ objeto=next((p for p in parrafos if re.search(r'\b(?:objeto|adquisicion|provision|compra de|contratacion de|previsto para la compra)\b',e.norm(p)) and not re.search(r'valor del pliego|costo del pliego',e.norm(p))),titulo)
+ r={'titulo':titulo,'objeto':objeto,'texto_documento':texto,'url':url,'evidencia_url':url,'registro_estructurado':True,'detalle_completo':True,'numero_procedimiento':p['numero'] if p else None,'tipo_procedimiento':p['tipo'] if p else 'aviso de contratacion','procedimiento':p['procedimiento'] if p else None,'aviso_oficial_sin_numero':not bool(p),'situacion_publicada':e.situacion(titulo),'documentos':[{'url':l['url'],'titulo':l['texto']} for l in bloque.enlaces(url) if (urlsplit(l['url']).path.lower().endswith(e.ADJUNTOS) or urlsplit(l['url']).hostname=='drive.google.com' and re.search(r'/file/d/[^/]+|/open\?id=',l['url']))]}
  if not p:r['huella_aviso_oficial']=sha256(estable.encode()).hexdigest()
  # Sólo fecha publicada explícitamente. dateModified nunca reemplaza publicación.
  fechas={n.attrs.get('datetime') for n in bloque.iter() if n.tag=='time' and n.attrs.get('datetime') and ('published' in n.attrs.get('class','') or n.attrs.get('itemprop')=='datePublished')}
- if len(fechas)==1:r['fecha_publicacion_texto']=next(iter(fechas))[:10]
+ fechas.update(n.attrs.get('content') for n in bloque.iter() if n.tag=='meta' and n.attrs.get('itemprop')=='datePublished' and n.attrs.get('content'))
+ fechas.update(n.attrs.get('content') for n in dom.root.iter() if n.tag=='meta' and n.attrs.get('property')=='article:published_time' and n.attrs.get('content'))
+ if len({f[:10] for f in fechas})==1:r['fecha_publicacion_texto']=next(iter(fechas))[:10]
  from presentacion_documental import clausula
  import oportunidades as o
  r.update(clausula(texto,o.normalizar(r),url))
