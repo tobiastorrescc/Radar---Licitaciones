@@ -1,193 +1,159 @@
 {
-  "fecha": "2026-11-10T08:55:56.499719-03:00",
+  "fecha": "2026-11-11T08:57:15.954137-03:00",
   "total": 24,
   "oportunidades": [
     {
+      "campos_oficiales": {
+        "fecha_hora_apertura": "",
+        "fecha_hora_cierre": "2026-11-17 14:00:00",
+        "id": 716,
+        "name": "056/2026",
+        "pliego_y_decreto_id": "6425",
+        "presupuesto_oficial": 51000000.0,
+        "state": "para_apertura",
+        "title": "Provisión de mallas para la ejecución de la obra de pavimento en Avenida Belgrano entre calle Mandisovi y Rocamora",
+        "type": "privada"
+      },
       "detalle_completo": true,
       "documentos": [
         {
-          "titulo": "Descargar PDF",
-          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2539.pdf"
+          "consulta_post": {
+            "json": {
+              "atta_id": "6425",
+              "file_name": "pliego_y_decreto",
+              "licitacion_id": 716
+            },
+            "url": "https://licitaciones.chajari.gob.ar/return_file"
+          },
+          "titulo": "Pliego y decreto — descarga pública desde el procedimiento",
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716"
         }
       ],
-      "enlace_pliego": null,
+      "enlace_pliego": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716",
       "evento_publicado": null,
-      "evidencia_url": "https://viale.gob.ar/wp-content/uploads/2026/11/2539.pdf",
+      "evidencia_url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716",
       "evidencias_campos": {
         "fecha_limite_presentacion": {
-          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2539.pdf",
-          "texto": "10/11/2026 a las 10.00"
-        },
-        "fecha_publicacion": {
-          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2539.pdf",
-          "texto": "2026-11-05"
-        },
-        "modalidad_presentacion": {
-          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2539.pdf",
-          "texto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2539\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     10/11/2026 A Las 10.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                                          Objeto : ADQ. DE TANZA PARA MOTOGUADAÑA\n                           WEB : www.viale.gob.ar\n\n\n\n                                                                                                                                           Viale 04 de noviembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                             Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : POR FAVOR, INCLUIR EN EL PRESUPUESTO EL COSTO DE ENVÍO DETALLADO O INTEGRADO EN EL\n    PRECIO FINAL\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario       Precio Total\n\n   0         40,00           ROLLOS              TANZA 3MM CUADRADA POR ROLLO DE 1KG.\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f"
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716",
+          "texto": "2026-11-17 11:00"
         },
         "numero_procedimiento": {
-          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2539.pdf",
-          "texto": "cotejo de precios 2539"
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716",
+          "texto": "licitacion privada 56/2026"
+        },
+        "presupuesto": {
+          "consulta_url": "https://licitaciones.chajari.gob.ar/licitaciones/para_apertura/0",
+          "metodo": "POST",
+          "texto": "presupuesto_oficial: 51000000.0",
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716"
         },
         "tipo_procedimiento": {
-          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2539.pdf",
-          "texto": "cotejo de precios 2539"
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716",
+          "texto": "licitacion privada 56/2026"
         }
       },
       "fecha_apertura": null,
       "fecha_apertura_texto": null,
-      "fecha_limite_presentacion": "2026-11-10",
-      "fecha_limite_presentacion_texto": "10/11/2026 a las 10.00",
-      "fecha_publicacion": "2026-11-05",
-      "fecha_publicacion_texto": "2026-11-05",
-      "fuente": "https://viale.gob.ar/pliegos/",
-      "fuentes_observadas": [
-        "https://viale.gob.ar/pliegos/"
-      ],
+      "fecha_limite_presentacion": "2026-11-17",
+      "fecha_limite_presentacion_texto": "2026-11-17 11:00",
+      "fecha_publicacion": null,
+      "fuente": "https://chajari.gob.ar/",
       "hora_apertura": null,
-      "hora_limite_presentacion": "10:00",
-      "localidad": "Viale",
-      "modalidad_presentacion": [
-        "PRESENCIAL"
-      ],
-      "numero_oficial_sin_interpretar": "2539",
-      "numero_procedimiento": "2539",
-      "objeto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2539\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     10/11/2026 A Las 10.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                                          Objeto : ADQ. DE TANZA PARA MOTOGUADAÑA\n                           WEB : www.viale.gob.ar\n\n\n\n                                                                                                                                           Viale 04 de noviembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                             Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : POR FAVOR, INCLUIR EN EL PRESUPUESTO EL COSTO DE ENVÍO DETALLADO O INTEGRADO EN EL\n    PRECIO FINAL\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario       Precio Total\n\n   0         40,00           ROLLOS              TANZA 3MM CUADRADA POR ROLLO DE 1KG.\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f",
-      "organismo": "Municipalidad de Viale",
-      "pago_evidencias": [
-        {
-          "acreditacion_inmediata_comprobada": false,
-          "anticipo_publicado": false,
-          "categoria": "CONTADO",
-          "cita": "CONDICIONES DE PAGO : - CONTADO : - FINANCIADO :",
-          "clausula": null,
-          "contado_mencionado": true,
-          "contra_entrega_mencionado": false,
-          "direccion": "NO_ESPECIFICADA",
-          "etiqueta": "Pago contado",
-          "facturacion_parcial": false,
-          "hitos_inicio": [],
-          "metodo_extraccion": "SECCION_DOCUMENTO",
-          "pagina": null,
-          "pagos_parciales": false,
-          "plazos_dias": [],
-          "prioritario": true,
-          "sha256": "d88e12762e4d6ecbe6c35de4160c4389dbf8ff36139e4c47aa5066abcb553ab6",
-          "unidades_dias": [],
-          "url_documento": "https://viale.gob.ar/wp-content/uploads/2026/11/2539.pdf",
-          "version_analizador": 15
-        }
-      ],
-      "presupuesto": null,
-      "procedimiento": "cotejo de precios 2539",
+      "hora_limite_presentacion": "11:00",
+      "id_origen": "716",
+      "localidad": "Chajarí",
+      "modalidad_presentacion": [],
+      "numero_procedimiento": "56/2026",
+      "objeto": "Provisión de mallas para la ejecución de la obra de pavimento en Avenida Belgrano entre calle Mandisovi y Rocamora",
+      "organismo": "Municipalidad de Chajarí",
+      "presupuesto": {
+        "importe": "51000000.0",
+        "moneda": null
+      },
+      "procedimiento": "licitacion privada 56/2026",
       "provincia": "Entre Ríos",
       "rango_evidencia": 3,
       "registro_estructurado": true,
       "requiere_revalidacion": false,
       "situacion_publicada": null,
-      "tipo_procedimiento": "cotejo de precios",
-      "titulo": "Horario de atención de Lunes a Viernes: 6.30 hs a 12.00 hs Noticias Publicaciones Gobierno Autoridades Secretarías y Direcciones Secretaría de Gobierno Secretaría de Ingresos Públicos, Estadísticas y Modernización Subsecretaría de cultura y educación Secretaría de Desarrollo Social y Humano Subsecretaría de la mujer Subsecretaría de Obras Sanitarias Subsecretaría de Desarrollo Local y Productivo Dirección de Deportes HCD Autoridades HCD Transparente Comunicados Libro de Visitas Trámites y Servicios Atención Ciudadana Boletín Oficial Bromatologia Centro de Salud Compras Cuentas Claras Cultura y Educación Defensa Al Consumidor Emprendedurismo Expedientes Licencias de Conducir Punto Digital Recaudaciones Obras Sanitarias Subsecretaría de Servicios Públicos Sistema de ahorro previo para obras de infraestructura Ciudad Turismo Parque Industrial Recaudaciones Cotejo de Precios N° 2539 – Adquisición de Tanza para Motoguadaña 5 noviembre, 2026 | In Pliegos | By pliegos Descargar PDF Guía Telefónica y Servicios de la Ciudad Bomberos100 Policía101 Emergencias Médicas107 Mesa de Entrada PalacioInt. 101 Reclamos CentralInt. 111 Honorable Concejo Delib.Int. 113 Juzgado de FaltasInt. 142 Guardia UrbanaInt. 120 Centro de MonitoreoInt. 121 Centro Salud «R. Carrillo»Int. 119 Hogar «Madre Teresa»Int. 127 Sec. Desarrollo SocialInt. 129 Subsecretaría de la MujerInt. 130 ANAFInt. 131 Desarrollo Local y Prod.Int. 137 Defensa del ConsumidorInt. 136 Licencias de ConducirInt. 132 Cultura y EducaciónInt. 134 Dirección de DeportesInt. 135 Obras SanitariasInt. 141 Servicios PúblicosInt. 125 ComprasInt. 115 CatastroInt. 116 RecaudacionesInt. 117 Bromatología y AmbienteInt. 143 Obras Públicas (Tinglado)Int. 144 Guardias y Urgencias fuera de horario administrativo: Salud: 3434151615 Guardia Urbana/Monitoreo: 3434676828 Subsec. Mujer: 3434055981 ANAF: 3434524860 Licencias: 3434283457 Reclamos: 3434282868 Diseño y desarrollo por AV consultora + Minds",
-      "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2539.pdf",
-      "urls_publicacion": [
-        "https://viale.gob.ar/cotejo-de-precios-n-2539-adquisicion-de-tanza-para-motoguadana/",
-        "https://viale.gob.ar/pliegos/",
-        "https://viale.gob.ar/wp-content/uploads/2026/11/2539.pdf"
-      ],
+      "tipo_procedimiento": "licitacion privada",
+      "titulo": "Licitación privada Nº 056/2026 — Provisión de mallas para la ejecución de la obra de pavimento en Avenida Belgrano entre calle Mandisovi y Rocamora",
+      "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716",
       "pago": {
-        "estado": "VERIFICADO",
-        "clasificacion": "CONTADO",
-        "etiqueta": "Pago contado",
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
         "plazos_dias": [],
         "hitos_inicio": [],
-        "unidades_dias": [],
-        "direccion": "NO_ESPECIFICADA",
-        "documento_respaldo": "https://viale.gob.ar/wp-content/uploads/2026/11/2539.pdf",
-        "documentos_respaldo": [
-          "https://viale.gob.ar/wp-content/uploads/2026/11/2539.pdf"
-        ],
-        "evidencias": [
-          {
-            "acreditacion_inmediata_comprobada": false,
-            "anticipo_publicado": false,
-            "categoria": "CONTADO",
-            "cita": "CONDICIONES DE PAGO : - CONTADO : - FINANCIADO :",
-            "clausula": null,
-            "contado_mencionado": true,
-            "contra_entrega_mencionado": false,
-            "direccion": "NO_ESPECIFICADA",
-            "etiqueta": "Pago contado",
-            "facturacion_parcial": false,
-            "hitos_inicio": [],
-            "metodo_extraccion": "SECCION_DOCUMENTO",
-            "pagina": null,
-            "pagos_parciales": false,
-            "plazos_dias": [],
-            "prioritario": true,
-            "sha256": "d88e12762e4d6ecbe6c35de4160c4389dbf8ff36139e4c47aa5066abcb553ab6",
-            "unidades_dias": [],
-            "url_documento": "https://viale.gob.ar/wp-content/uploads/2026/11/2539.pdf",
-            "version_analizador": 15
-          }
-        ],
-        "prioritario": true,
-        "motivo": null
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
       },
-      "condiciones_pago": "Pago contado",
-      "enlace_condiciones_pago": "https://viale.gob.ar/wp-content/uploads/2026/11/2539.pdf",
-      "pago_prioritario": true,
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
       "desierta": false,
       "fracasada": false,
       "segundo_llamado": false,
       "reapertura": false,
       "llamado_especial": false,
-      "procedimiento_canonico": "cotejo de precios VIALE-2539",
+      "procedimiento_canonico": "licitacion privada 56/2026",
       "convocatoria": "1",
       "clasificacion_registro": "PROCEDIMIENTO",
       "fecha_hora_apertura": null,
       "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": "2026-11-10T10:00:00-03:00",
-      "fecha_referencia_vencimiento": "2026-11-10",
+      "fecha_hora_limite_presentacion": "2026-11-17T11:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-17",
       "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
       "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "HISTORICA",
+      "antiguedad_publicacion": "DESCONOCIDA",
       "estimacion_comercial": null,
       "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
       "campos_desconocidos": [
-        "presupuesto",
         "fecha_apertura",
-        "enlace_pliego"
+        "fecha_publicacion"
       ],
-      "id": "5231a9468b54e221860f9af7e1adaa07efd7beef1de4f8bf63342e7ee6bdd1d3",
-      "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "id": "a8fe11f3aba927d1f4be63d56357cb7b493c89865872c59e07c24e96021823d7",
+      "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
-        "5231a9468b54e221860f9af7e1adaa07efd7beef1de4f8bf63342e7ee6bdd1d3"
+        "a8fe11f3aba927d1f4be63d56357cb7b493c89865872c59e07c24e96021823d7"
       ],
       "variantes_historial": [
         {
-          "id": "5231a9468b54e221860f9af7e1adaa07efd7beef1de4f8bf63342e7ee6bdd1d3",
-          "numero_procedimiento": "2539",
-          "objeto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2539\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     10/11/2026 A Las 10.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                                          Objeto : ADQ. DE TANZA PARA MOTOGUADAÑA\n                           WEB : www.viale.gob.ar\n\n\n\n                                                                                                                                           Viale 04 de noviembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                             Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : POR FAVOR, INCLUIR EN EL PRESUPUESTO EL COSTO DE ENVÍO DETALLADO O INTEGRADO EN EL\n    PRECIO FINAL\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario       Precio Total\n\n   0         40,00           ROLLOS              TANZA 3MM CUADRADA POR ROLLO DE 1KG.\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f",
+          "id": "a8fe11f3aba927d1f4be63d56357cb7b493c89865872c59e07c24e96021823d7",
+          "numero_procedimiento": "56/2026",
+          "objeto": "Provisión de mallas para la ejecución de la obra de pavimento en Avenida Belgrano entre calle Mandisovi y Rocamora",
           "fecha_apertura": null,
-          "fecha_limite_presentacion": "2026-11-10",
+          "fecha_limite_presentacion": "2026-11-17",
           "evento_publicado": null,
           "numero_convocatoria": null,
-          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2539.pdf",
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716",
           "documentos": [
             {
-              "titulo": "Descargar PDF",
-              "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2539.pdf"
+              "consulta_post": {
+                "json": {
+                  "atta_id": "6425",
+                  "file_name": "pliego_y_decreto",
+                  "licitacion_id": 716
+                },
+                "url": "https://licitaciones.chajari.gob.ar/return_file"
+              },
+              "titulo": "Pliego y decreto — descarga pública desde el procedimiento",
+              "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716"
             }
           ]
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-10T10:00:00-03:00"
+      "limite_presentacion_comprobado": "2026-11-17T11:00:00-03:00"
     },
     {
       "detalle_completo": true,
@@ -199,30 +165,34 @@
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf"
         }
       ],
       "enlace_pliego": null,
       "evento_publicado": null,
-      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf",
       "evidencias_campos": {
         "fecha_apertura": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf",
           "texto": "24/11/2026"
         },
         "fecha_limite_presentacion": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf",
           "texto": "23/11/2026- 12 hs fecha de "
         },
         "numero_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf",
           "texto": "licitacion publica 3/2026"
         },
         "presupuesto": {
           "texto": "presupuesto oficial $ 41.000.000,00",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf"
         },
         "tipo_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf",
           "texto": "licitacion publica 3/2026"
         }
       },
@@ -241,7 +211,7 @@
       "numero_convocatoria": "1",
       "numero_oficial_sin_interpretar": "3/2026",
       "numero_procedimiento": "3/2026",
-      "objeto": "-- -- --\n                                              MUNICIPIO DE EL PINGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE COLUMNAS Y ARTEFACTOS DE\nILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE NUESTRA\nLOCALIDAD.-\n  PRIMER LLAMADO A:\n                                            Licitación Pública Nº 03/2026\n                                          Decreto De Llamado Nº 069/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 23/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 24/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $ 41.000.000,00 (Pesos CUARENTA Y UN MILLONES CON 00/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE COLUMNAS Y\nARTEFACTOS DE ILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE\nNUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA La presente gestión tiene por objeto la adquisición de columnas y artefactos de\niluminación, nuevos y sin uso, destinados a la reforma de la Plaza Central \"San Martín\" de nuestra localidad,\nconforme a los ítems y características que se detallan a continuación. La cotización deberá presentarse por ítem,\nindicando precio unitario y precio total.",
+      "objeto": "PARANA\n\n                                             MUNICIPIO DE EL PINGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE COLUMNAS Y ARTEFACTOS DE\nILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE NUESTRA\nLOCALIDAD.-\n  PRIMER LLAMADO A:\n                                           Licitación Pública Nº 03/2026\n                                          Decreto De Llamado Nº 069/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 23/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 24/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $ 41.000.000,00 (Pesos CUARENTA Y UN MILLONES CON 00/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE COLUMNAS Y\nARTEFACTOS DE ILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE\nNUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA La presente gestión tiene por objeto la adquisición de columnas y artefactos de\niluminación, nuevos y sin uso, destinados a la reforma de la Plaza Central \"San Martín\" de nuestra localidad,\nconforme a los ítems y características que se detallan a continuación. La cotización deberá presentarse por ítem,\nindicando precio unitario y precio total.",
       "organismo": "Municipalidad de El Pingo",
       "pago_evidencias": [],
       "presupuesto": {
@@ -254,11 +224,12 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "licitacion publica 3/2026 -- -- --\n                                              MUNICIPIO DE EL PINGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE COLUMNAS Y ARTEFACTOS DE\nILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE NUESTRA\nLOCALIDAD.-\n  PRIMER LLAMADO A:\n                                            Licitación Pública Nº 03/2026\n                                          Decreto De Llamado Nº 069/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 23/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 24/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $ 41.000.000,00 (Pesos CUARENTA Y UN MILLONES CON 00/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE COLUMNAS Y\nARTEFACTOS DE ILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE\nNUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA La presente gestión tiene por objeto la adquisición de columnas y artefactos de\niluminación, nuevos y sin uso, destinados a la reforma de la Plaza Central \"San Martín\" de nuestra localidad,\nconforme a los ítems y características que se detallan a continuación. La cotización deberá presentarse por ítem,\nindicando precio unitario y precio total.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "titulo": "licitacion publica 3/2026 PARANA\n\n                                             MUNICIPIO DE EL PINGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE COLUMNAS Y ARTEFACTOS DE\nILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE NUESTRA\nLOCALIDAD.-\n  PRIMER LLAMADO A:\n                                           Licitación Pública Nº 03/2026\n                                          Decreto De Llamado Nº 069/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 23/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 24/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $ 41.000.000,00 (Pesos CUARENTA Y UN MILLONES CON 00/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE COLUMNAS Y\nARTEFACTOS DE ILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE\nNUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA La presente gestión tiene por objeto la adquisición de columnas y artefactos de\niluminación, nuevos y sin uso, destinados a la reforma de la Plaza Central \"San Martín\" de nuestra localidad,\nconforme a los ítems y características que se detallan a continuación. La cotización deberá presentarse por ítem,\nindicando precio unitario y precio total.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf",
       "urls_publicacion": [
         "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf",
-        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf"
       ],
       "pago": {
         "estado": "PENDIENTE",
@@ -298,7 +269,7 @@
       ],
       "id": "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4"
@@ -307,12 +278,12 @@
         {
           "id": "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4",
           "numero_procedimiento": "3/2026",
-          "objeto": "-- -- --\n                                              MUNICIPIO DE EL PINGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE COLUMNAS Y ARTEFACTOS DE\nILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE NUESTRA\nLOCALIDAD.-\n  PRIMER LLAMADO A:\n                                            Licitación Pública Nº 03/2026\n                                          Decreto De Llamado Nº 069/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 23/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 24/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $ 41.000.000,00 (Pesos CUARENTA Y UN MILLONES CON 00/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE COLUMNAS Y\nARTEFACTOS DE ILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE\nNUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA La presente gestión tiene por objeto la adquisición de columnas y artefactos de\niluminación, nuevos y sin uso, destinados a la reforma de la Plaza Central \"San Martín\" de nuestra localidad,\nconforme a los ítems y características que se detallan a continuación. La cotización deberá presentarse por ítem,\nindicando precio unitario y precio total.",
+          "objeto": "PARANA\n\n                                             MUNICIPIO DE EL PINGO\n  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE COLUMNAS Y ARTEFACTOS DE\nILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE NUESTRA\nLOCALIDAD.-\n  PRIMER LLAMADO A:\n                                           Licitación Pública Nº 03/2026\n                                          Decreto De Llamado Nº 069/2026\n  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 23/11/2026- 12 HS\n  FECHA DE APERTURA DE OFERTA: 24/11/2026- 10 HS\n  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232\n  PRESUPUESTO OFICIAL: $ 41.000.000,00 (Pesos CUARENTA Y UN MILLONES CON 00/100) IVA INCLUIDO\n  VALOR DEL PLIEGO: SIN COSTO\n  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE COLUMNAS Y\nARTEFACTOS DE ILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL \"SAN MARTÍN\" DE\nNUESTRA LOCALIDAD.-\n  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS\n  OBJETO DE LA COMPRA La presente gestión tiene por objeto la adquisición de columnas y artefactos de\niluminación, nuevos y sin uso, destinados a la reforma de la Plaza Central \"San Martín\" de nuestra localidad,\nconforme a los ítems y características que se detallan a continuación. La cotización deberá presentarse por ítem,\nindicando precio unitario y precio total.",
           "fecha_apertura": "2026-11-24",
           "fecha_limite_presentacion": "2026-11-23",
           "evento_publicado": null,
           "numero_convocatoria": "1",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf",
           "documentos": [
             {
               "titulo": "Boletín complementario",
@@ -321,6 +292,10 @@
             {
               "titulo": "Boletín complementario",
               "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+            },
+            {
+              "titulo": "Boletín complementario",
+              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf"
             }
           ]
         }
@@ -331,6 +306,150 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-23"
+    },
+    {
+      "aviso_oficial_sin_numero": true,
+      "campos_oficiales": {
+        "consultas tecnicas": "zonalgchuarquitectura@gmail.com",
+        "documentos": "Ver proyecto y pliego (PDF, 5,0 MB) Ver declaración jurada (PDF, 241 KB) Ver requisitos para presentar cotizaciones (PDF, 69 KB)",
+        "lugar de presentacion": "Jefatura Zonal Gualeguaychú, Aguado 61, ciudad de Gualeguaychú.",
+        "plazo de ejecucion": "45 días corridos",
+        "presupuesto oficial": "$ 40.939.804,14"
+      },
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "Ver proyecto y pliego (PDF, 5,0 MB)",
+          "url": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/pliego_emergencia_escuelas_21_y_109_gualeguaychu.pdf"
+        },
+        {
+          "titulo": "Ver declaración jurada (PDF, 241 KB)",
+          "url": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/declaracion_jurada_emergencia_escuelas_21_y_109_gualeguaychu.pdf"
+        },
+        {
+          "titulo": "Ver requisitos para presentar cotizaciones (PDF, 69 KB)",
+          "url": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/requisitos_presentacion_cotizaciones_dec_3627_17.pdf"
+        }
+      ],
+      "enlace_pliego": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/pliego_emergencia_escuelas_21_y_109_gualeguaychu.pdf",
+      "evento_publicado": null,
+      "evidencia_url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "evidencias_campos": {
+        "fecha_limite_presentacion": {
+          "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+          "texto": "2026-11-17t10:00:00-03:00"
+        },
+        "presupuesto": {
+          "texto": "presupuesto oficial $ 40.939.804,14",
+          "url": "https://www.entrerios.gov.ar/minplan/licitaciones"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+          "texto": null
+        }
+      },
+      "fecha_apertura": null,
+      "fecha_apertura_texto": null,
+      "fecha_limite_presentacion": "2026-11-17",
+      "fecha_limite_presentacion_texto": "2026-11-17T10:00:00-03:00",
+      "fecha_publicacion": null,
+      "fuente": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "hora_apertura": null,
+      "hora_limite_presentacion": "10:00",
+      "localidad": "Costa Uruguay Norte",
+      "modalidad_presentacion": [],
+      "numero_procedimiento": null,
+      "objeto": "Nueva Instalación Eléctrica. Escuela Secundaria Nº 21 “Esteban Piacenza” y Escuela Primaria Nº 109 “Juan Zorrilla de San Martín”",
+      "organismo": "Coordinación Ministerial del MPeI",
+      "presupuesto": {
+        "importe": "40939804.14",
+        "moneda": null
+      },
+      "procedimiento": null,
+      "provincia": "Entre Ríos",
+      "rango_evidencia": 1,
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "emergencia (decreto 3627/17)",
+      "titulo": "Emergencia (Decreto 3627/17) Nueva Instalación Eléctrica. Escuela Secundaria Nº 21 “Esteban Piacenza” y Escuela Primaria Nº 109 “Juan Zorrilla de San Martín”",
+      "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": null,
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": null,
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": "2026-11-17T10:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-17",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "numero_procedimiento",
+        "fecha_apertura",
+        "fecha_publicacion"
+      ],
+      "id": "ec4564068758a53e23210b5f5a43139b7ce208badd7d7ee645c1442743d8523d",
+      "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "ec4564068758a53e23210b5f5a43139b7ce208badd7d7ee645c1442743d8523d"
+      ],
+      "variantes_historial": [
+        {
+          "id": "ec4564068758a53e23210b5f5a43139b7ce208badd7d7ee645c1442743d8523d",
+          "numero_procedimiento": null,
+          "objeto": "Nueva Instalación Eléctrica. Escuela Secundaria Nº 21 “Esteban Piacenza” y Escuela Primaria Nº 109 “Juan Zorrilla de San Martín”",
+          "fecha_apertura": null,
+          "fecha_limite_presentacion": "2026-11-17",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
+          "documentos": [
+            {
+              "titulo": "Ver proyecto y pliego (PDF, 5,0 MB)",
+              "url": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/pliego_emergencia_escuelas_21_y_109_gualeguaychu.pdf"
+            },
+            {
+              "titulo": "Ver declaración jurada (PDF, 241 KB)",
+              "url": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/declaracion_jurada_emergencia_escuelas_21_y_109_gualeguaychu.pdf"
+            },
+            {
+              "titulo": "Ver requisitos para presentar cotizaciones (PDF, 69 KB)",
+              "url": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/requisitos_presentacion_cotizaciones_dec_3627_17.pdf"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-17T10:00:00-03:00"
     },
     {
       "aviso_oficial_sin_numero": true,
@@ -434,7 +553,7 @@
       ],
       "id": "fdda2824c3aeb064b939506c593c09a5768c0e5dfe45716069beb517ccbf601d",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fdda2824c3aeb064b939506c593c09a5768c0e5dfe45716069beb517ccbf601d"
@@ -569,7 +688,7 @@
       ],
       "id": "9f2a2203870d1d1e5a2558753f16733eaa800a413047e7bc812bd6f9bd19a586",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9f2a2203870d1d1e5a2558753f16733eaa800a413047e7bc812bd6f9bd19a586"
@@ -601,141 +720,6 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-11T10:00:00-03:00"
-    },
-    {
-      "aviso_oficial_sin_numero": true,
-      "campos_oficiales": {
-        "consultas tecnicas": "zonalparanacamparquitectura@gmail.com",
-        "documentos": "Ver proyecto y pliego (PDF, 1,7 MB) Ver requisitos para presentar cotizaciones (PDF, 69 KB)",
-        "lugar de presentacion": "Jefatura Zonal Paraná Campaña, Casa de Gobierno, 2º Piso, Paraná.",
-        "plazo de ejecucion": "30 días",
-        "presupuesto oficial": "$ 37.652.698,62"
-      },
-      "detalle_completo": true,
-      "documentos": [
-        {
-          "titulo": "Ver proyecto y pliego (PDF, 1,7 MB)",
-          "url": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/pliego_emergencia_escuela_27_tabossi.pdf"
-        },
-        {
-          "titulo": "Ver requisitos para presentar cotizaciones (PDF, 69 KB)",
-          "url": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/requisitos_presentacion_cotizaciones_dec_3627_17.pdf"
-        }
-      ],
-      "enlace_pliego": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/pliego_emergencia_escuela_27_tabossi.pdf",
-      "evento_publicado": null,
-      "evidencia_url": "https://www.entrerios.gov.ar/minplan/licitaciones",
-      "evidencias_campos": {
-        "fecha_limite_presentacion": {
-          "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
-          "texto": "2026-11-10t10:00:00-03:00"
-        },
-        "presupuesto": {
-          "texto": "presupuesto oficial $ 37.652.698,62",
-          "url": "https://www.entrerios.gov.ar/minplan/licitaciones"
-        },
-        "tipo_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
-          "texto": null
-        }
-      },
-      "fecha_apertura": null,
-      "fecha_apertura_texto": null,
-      "fecha_limite_presentacion": "2026-11-10",
-      "fecha_limite_presentacion_texto": "2026-11-10T10:00:00-03:00",
-      "fecha_publicacion": null,
-      "fuente": "https://www.entrerios.gov.ar/minplan/licitaciones",
-      "hora_apertura": null,
-      "hora_limite_presentacion": "10:00",
-      "localidad": "Tabossi",
-      "modalidad_presentacion": [],
-      "numero_procedimiento": null,
-      "objeto": "Reparación Cubiertas de Techos, Instalación Eléctrica e Instalación Sanitaria. Escuela Nº 27 “Antonia L. de Moreyra”",
-      "organismo": "Coordinación Ministerial del MPeI",
-      "presupuesto": {
-        "importe": "37652698.62",
-        "moneda": null
-      },
-      "procedimiento": null,
-      "provincia": "Entre Ríos",
-      "rango_evidencia": 1,
-      "registro_estructurado": true,
-      "requiere_revalidacion": false,
-      "situacion_publicada": null,
-      "tipo_procedimiento": "emergencia (decreto 3627/17)",
-      "titulo": "Emergencia (Decreto 3627/17) Reparación Cubiertas de Techos, Instalación Eléctrica e Instalación Sanitaria. Escuela Nº 27 “Antonia L. de Moreyra”",
-      "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
-      "pago": {
-        "estado": "PENDIENTE",
-        "clasificacion": "NO_INFORMADO",
-        "etiqueta": "Pendiente de verificar",
-        "plazos_dias": [],
-        "hitos_inicio": [],
-        "documento_respaldo": null,
-        "documentos_respaldo": [],
-        "evidencias": [],
-        "prioritario": false,
-        "motivo": "SIN_CLAUSULA_COMPROBADA"
-      },
-      "condiciones_pago": "Pendiente de verificar",
-      "enlace_condiciones_pago": null,
-      "pago_prioritario": false,
-      "desierta": false,
-      "fracasada": false,
-      "segundo_llamado": false,
-      "reapertura": false,
-      "llamado_especial": false,
-      "procedimiento_canonico": null,
-      "convocatoria": "1",
-      "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": null,
-      "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": "2026-11-10T10:00:00-03:00",
-      "fecha_referencia_vencimiento": "2026-11-10",
-      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
-      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "DESCONOCIDA",
-      "estimacion_comercial": null,
-      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
-      "campos_desconocidos": [
-        "numero_procedimiento",
-        "fecha_apertura",
-        "fecha_publicacion"
-      ],
-      "id": "c77572e3ac53491f5ee882a61d10579490bd6e40eb4efbb222a942e7812f77ec",
-      "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
-      "observada_esta_corrida": true,
-      "ids_historial": [
-        "c77572e3ac53491f5ee882a61d10579490bd6e40eb4efbb222a942e7812f77ec"
-      ],
-      "variantes_historial": [
-        {
-          "id": "c77572e3ac53491f5ee882a61d10579490bd6e40eb4efbb222a942e7812f77ec",
-          "numero_procedimiento": null,
-          "objeto": "Reparación Cubiertas de Techos, Instalación Eléctrica e Instalación Sanitaria. Escuela Nº 27 “Antonia L. de Moreyra”",
-          "fecha_apertura": null,
-          "fecha_limite_presentacion": "2026-11-10",
-          "evento_publicado": null,
-          "numero_convocatoria": null,
-          "url": "https://www.entrerios.gov.ar/minplan/licitaciones",
-          "documentos": [
-            {
-              "titulo": "Ver proyecto y pliego (PDF, 1,7 MB)",
-              "url": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/pliego_emergencia_escuela_27_tabossi.pdf"
-            },
-            {
-              "titulo": "Ver requisitos para presentar cotizaciones (PDF, 69 KB)",
-              "url": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/requisitos_presentacion_cotizaciones_dec_3627_17.pdf"
-            }
-          ]
-        }
-      ],
-      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "estado_comercial": "VIGENTE_VERIFICADA",
-      "presentacion_verificada": true,
-      "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-10T10:00:00-03:00"
     },
     {
       "detalle_completo": true,
@@ -852,7 +836,7 @@
       ],
       "id": "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59"
@@ -884,7 +868,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -1005,7 +988,7 @@
       ],
       "id": "9993d4ab51a5152f5cb866fb2602e3a93fad53f53096f18e166ca7746911450d",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9993d4ab51a5152f5cb866fb2602e3a93fad53f53096f18e166ca7746911450d"
@@ -1073,22 +1056,22 @@
       ],
       "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38721/documentos/102945",
       "evento_publicado": null,
-      "evidencia_url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
+      "evidencia_url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=2",
       "evidencias_campos": {
         "fecha_apertura": {
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=2",
           "texto": "11/11/2026 11:00"
         },
         "numero_procedimiento": {
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=2",
           "texto": "compra agil 469/2026"
         },
         "tipo_procedimiento": {
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=2",
           "texto": "compra agil 469/2026"
         },
         "fecha_limite_presentacion": {
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=2",
           "texto": "2026-11-11t11:00:00-03:00"
         }
       },
@@ -1138,6 +1121,7 @@
         "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38721",
         "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
         "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=1",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=2",
         "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
         "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5"
       ],
@@ -1176,7 +1160,7 @@
       "campos_desconocidos": [],
       "id": "fd993510e3fcfd9793d6b5db3fd906298808493728062f6aab923817c2f309c6",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fd993510e3fcfd9793d6b5db3fd906298808493728062f6aab923817c2f309c6"
@@ -1215,94 +1199,101 @@
     },
     {
       "campos_oficiales": {
-        "consulta pliego": "Oficina de Compras (SCyE) - DEL VALLE ARISTOBULO 2734 - Lunes a viernes (hábiles administrativos) de 08:00 a 14:00 | Consultas: notificaciones_sce@rosario.gob.ar",
+        "consulta pliego": "Dirección General de Defunciones y Cementerios - FRANCIA 1821 - notificaciones_dgdc@rosario.gob.ar - Of. de COMPRAS De 8 a 12hs",
         "declaracion jurada de presentacion de ofertas": "Para presentar una oferta, completá la Declaración Jurada de conocimiento de Pliegos y Normativas a través de tu Perfil Digital. Luego, imprimila, firmala y adjuntala a tu oferta en papel. Al presentar la Declaración Jurada, se reemplaza la presentación en papel de los pliegos y normativas correspondientes a la licitación. Completar DDJJ",
         "estado": "Publicada para Apertura",
-        "expediente": "36308/2026",
-        "fecha de apertura": "10/11/2026 10:00",
-        "fecha de publicacion": "05/11/2026",
-        "fecha ultima actualizacion": "05/11/2026",
-        "lugar de apertura": "Oficina de Compras (SCyE) - DEL VALLE ARISTOBULO 2734 - -",
-        "n° de contratacion": "128/2026",
-        "objeto": "Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa»",
-        "presupuesto oficial": "$ 5.800.000,00",
-        "recepcion de ofertas": "Oficina de Compras (SCyE) - DEL VALLE ARISTOBULO 2734 - Lunes a viernes (hábiles administrativos) de 08:00 a 14:00, hasta el día y hora de apertura de sobres.",
-        "reparticion licitante": "Secretaría de Cultura y Educación - DEL VALLE ARISTOBULO 2734",
+        "expediente": "6/2026",
+        "fecha de apertura": "12/11/2026 09:00",
+        "fecha de publicacion": "06/11/2026",
+        "fecha ultima actualizacion": "06/11/2026",
+        "lugar de apertura": "Dirección General de Defunciones y Cementerios - FRANCIA 1821 - Oficina de compras",
+        "n° de contratacion": "471/2026",
+        "objeto": "Compra de artículos de limpieza para la Dirección General de Defunciones y Cementerios - Sec. de Ambiente y Espacio Público",
+        "presupuesto oficial": "$ 6.369.600,49",
+        "recepcion de ofertas": "Dirección General de Defunciones y Cementerios - FRANCIA 1821 - Of. de COMPRAS de 8 a 12hs. Plazo: Hasta el momento de la apertura",
+        "reparticion licitante": "Dirección General de Defunciones y Cementerios - FRANCIA 1821",
         "tipo de contratacion": "Compra Agil",
-        "ver pliego adjunto apto para cotizar": "128-36308.2026-pliego.pdf"
+        "ver pliego adjunto apto para cotizar": "decreton°1431-anexoideclaracionjurada.pdf pliegocompraagiln°6compradeartlimpieza.pdf"
       },
       "detalle_completo": true,
       "documentos": [
         {
           "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
           "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: 128-36308.2026-pliego.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38736/documentos/102974"
+          "titulo": "ver pliego adjunto apto para cotizar: decreton°1431-anexoideclaracionjurada.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38741/documentos/102983"
+        },
+        {
+          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+          "titulo": "ver pliego adjunto apto para cotizar: pliegocompraagiln°6compradeartlimpieza.pdf",
+          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38741/documentos/102982"
         }
       ],
-      "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38736/documentos/102974",
+      "enlace_pliego": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38741/documentos/102983",
       "evento_publicado": null,
-      "evidencia_url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
+      "evidencia_url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
       "evidencias_campos": {
         "fecha_apertura": {
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
-          "texto": "10/11/2026 10:00"
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "12/11/2026 09:00"
         },
         "numero_procedimiento": {
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
-          "texto": "compra agil 128/2026"
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "compra agil 471/2026"
         },
         "tipo_procedimiento": {
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
-          "texto": "compra agil 128/2026"
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "compra agil 471/2026"
         },
         "fecha_limite_presentacion": {
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
-          "texto": "2026-11-10t10:00:00-03:00"
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
+          "texto": "2026-11-12t09:00:00-03:00"
         }
       },
-      "fecha_apertura": "2026-11-10",
-      "fecha_apertura_texto": "10/11/2026 10:00",
-      "fecha_limite_presentacion": "2026-11-10",
-      "fecha_limite_presentacion_texto": "2026-11-10T10:00:00-03:00",
-      "fecha_publicacion": "2026-11-05",
+      "fecha_apertura": "2026-11-12",
+      "fecha_apertura_texto": "12/11/2026 09:00",
+      "fecha_limite_presentacion": "2026-11-12",
+      "fecha_limite_presentacion_texto": "2026-11-12T09:00:00-03:00",
+      "fecha_publicacion": "2026-11-06",
       "fecha_publicacion_texto": null,
       "fuente": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
       "fuentes_observadas": [
         "https://www.rosario.gob.ar/inicio/compras-y-licitaciones"
       ],
-      "hora_apertura": "10:00",
-      "hora_limite_presentacion": "10:00",
-      "id_origen": "38736",
-      "identidad_ambito": "ficha-rosario-38736",
+      "hora_apertura": "09:00",
+      "hora_limite_presentacion": "09:00",
+      "id_origen": "38741",
+      "identidad_ambito": "ficha-rosario-38741",
       "localidad": "Rosario",
       "modalidad_presentacion": [
         "PRESENCIAL"
       ],
-      "numero_oficial_sin_interpretar": "36308/2026",
-      "numero_procedimiento": "128/2026",
-      "objeto": "Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa»",
+      "numero_oficial_sin_interpretar": "6/2026",
+      "numero_procedimiento": "471/2026",
+      "objeto": "Compra de artículos de limpieza para la Dirección General de Defunciones y Cementerios - Sec. de Ambiente y Espacio Público",
       "organismo": "Municipalidad de Rosario",
       "pago_evidencias": [],
       "presupuesto": {
-        "importe": "5800000.00",
+        "importe": "6369600.49",
         "moneda": null
       },
-      "procedimiento": "compra agil 128/2026",
+      "procedimiento": "compra agil 471/2026",
       "provincia": "Santa Fe",
       "rango_evidencia": 3,
       "registro_estructurado": true,
       "requiere_revalidacion": false,
       "situacion_publicada": null,
-      "texto_listado": "Compra Agil 36308/2026 Publicada para Apertura Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa» Apertura: 10/11/2026 10:00",
+      "texto_listado": "Compra Agil 6/2026 Publicada para Apertura Compra de artículos de limpieza para la Dirección General de Defunciones y Cementerios - Sec. de Ambiente y Espacio Público Apertura: 12/11/2026 09:00",
       "tipo_procedimiento": "compra agil",
-      "titulo": "Compra Agil 36308/2026 Publicada para Apertura Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa» Apertura: 10/11/2026 10:00",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736",
+      "titulo": "Compra Agil 6/2026 Publicada para Apertura Compra de artículos de limpieza para la Dirección General de Defunciones y Cementerios - Sec. de Ambiente y Espacio Público Apertura: 12/11/2026 09:00",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38741",
       "urls_publicacion": [
-        "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736",
+        "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38741",
         "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
         "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=1",
-        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5"
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5",
+        "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5"
       ],
       "pago": {
         "estado": "PENDIENTE",
@@ -1324,42 +1315,48 @@
       "segundo_llamado": false,
       "reapertura": false,
       "llamado_especial": false,
-      "procedimiento_canonico": "compra agil 128/2026",
+      "procedimiento_canonico": "compra agil 471/2026",
       "convocatoria": "1",
       "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": "2026-11-10T10:00:00-03:00",
+      "fecha_hora_apertura": "2026-11-12T09:00:00-03:00",
       "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": "2026-11-10T10:00:00-03:00",
-      "fecha_referencia_vencimiento": "2026-11-10",
+      "fecha_hora_limite_presentacion": "2026-11-12T09:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-12",
       "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
       "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
       "antiguedad_publicacion": "HISTORICA",
       "estimacion_comercial": null,
       "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
       "campos_desconocidos": [],
-      "id": "7d202e7e182f73335074088d19c7e397382e2c3663a7f0e9caa591ae88387588",
-      "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "id": "3cefc9967f3d5e47a80c37eb3ce5ef2e68ca379d31076aa4179a095289e09105",
+      "primera_deteccion": "2026-11-08T08:38:47.945269-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
-        "7d202e7e182f73335074088d19c7e397382e2c3663a7f0e9caa591ae88387588"
+        "3cefc9967f3d5e47a80c37eb3ce5ef2e68ca379d31076aa4179a095289e09105"
       ],
       "variantes_historial": [
         {
-          "id": "7d202e7e182f73335074088d19c7e397382e2c3663a7f0e9caa591ae88387588",
-          "numero_procedimiento": "128/2026",
-          "objeto": "Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa»",
-          "fecha_apertura": "2026-11-10",
-          "fecha_limite_presentacion": "2026-11-10",
+          "id": "3cefc9967f3d5e47a80c37eb3ce5ef2e68ca379d31076aa4179a095289e09105",
+          "numero_procedimiento": "471/2026",
+          "objeto": "Compra de artículos de limpieza para la Dirección General de Defunciones y Cementerios - Sec. de Ambiente y Espacio Público",
+          "fecha_apertura": "2026-11-12",
+          "fecha_limite_presentacion": "2026-11-12",
           "evento_publicado": null,
           "numero_convocatoria": null,
-          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736",
+          "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38741",
           "documentos": [
             {
               "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
               "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-              "titulo": "ver pliego adjunto apto para cotizar: 128-36308.2026-pliego.pdf",
-              "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38736/documentos/102974"
+              "titulo": "ver pliego adjunto apto para cotizar: decreton°1431-anexoideclaracionjurada.pdf",
+              "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38741/documentos/102983"
+            },
+            {
+              "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
+              "rotulo_oficial": "ver pliego adjunto apto para cotizar",
+              "titulo": "ver pliego adjunto apto para cotizar: pliegocompraagiln°6compradeartlimpieza.pdf",
+              "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38741/documentos/102982"
             }
           ]
         }
@@ -1368,7 +1365,7 @@
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-10T10:00:00-03:00"
+      "limite_presentacion_comprobado": "2026-11-12T09:00:00-03:00"
     },
     {
       "detalle_completo": true,
@@ -1479,7 +1476,7 @@
       ],
       "id": "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0",
       "primera_deteccion": "2026-11-01T08:31:08.968829-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0"
@@ -1627,7 +1624,7 @@
       ],
       "id": "feaa8290be244ba40a2e124362aaebe9b552587220cd2b1fb95084194c3932d2",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "feaa8290be244ba40a2e124362aaebe9b552587220cd2b1fb95084194c3932d2"
@@ -1663,441 +1660,6 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-13T09:00:00-03:00"
-    },
-    {
-      "campos_oficiales": {
-        "actas": [],
-        "aperturasSobre": [
-          {
-            "contactoEntrega": null,
-            "fechaApertura": "2026-11-10T13:00:00Z",
-            "noEsSede": false,
-            "numeroSobre": 1,
-            "oficina": {
-              "direccion": null,
-              "nombreOficina": "Compras",
-              "uuid": "5ec4a8afe39e4386998f448aadf11d29"
-            },
-            "uuid": "f0f2e85ca49747b7b10b26747e26f3c7"
-          }
-        ],
-        "categoria": {
-          "nombreCategoria": "Bienes",
-          "uuid": "801b7a815bdb4b458d71352f08d507f5"
-        },
-        "circulares": [],
-        "consideracionesGenerales": null,
-        "contactosAdministrativos": [
-          {
-            "apellido": "RAMACCIONI",
-            "email": "vanesa.ramaccioni@aguassantafesinas.com.ar",
-            "nombre": "VANESA",
-            "sector": "Licitaciones y Compras Centralizadas",
-            "telefono": "0342-4504598",
-            "uuid": "a8d272110a7f4491a3e80d8fe531c9e5"
-          }
-        ],
-        "contactosEntrega": [],
-        "contactosTecnicos": [
-          {
-            "apellido": "KAPPES",
-            "email": "santiago.kappes@aguassantafesinas.com.ar",
-            "nombre": "SANTIAGO",
-            "sector": null,
-            "sede": "Esperanza - Rivadavia 2928    ",
-            "telefono": "3496660979",
-            "uuid": "72976ddfc04747c4b8f0889c65cd258e"
-          }
-        ],
-        "documentosAdjuntos": [
-          {
-            "generico": false,
-            "mostrarPublico": false,
-            "nombreDocumento": "ANEXOS",
-            "tipoDocumento": "",
-            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/1f4c1de2-709e-43bc-ba84-74c0690bf5a9.pdf",
-            "uuid": "8df8ac121f2d45789b91fcad58feaeae"
-          },
-          {
-            "generico": false,
-            "mostrarPublico": false,
-            "nombreDocumento": "EETT-ElectrobombaEst1E-1401L.3125HP_20261026171553.368_X",
-            "tipoDocumento": "",
-            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/77bcb9cd-a72c-431c-8a58-7fb81d010668.pdf",
-            "uuid": "87e5056f31c24cb58e55488e8a42cea4"
-          },
-          {
-            "generico": false,
-            "mostrarPublico": false,
-            "nombreDocumento": "Pliego Particular Lic. Privada 1277",
-            "tipoDocumento": "",
-            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/53186898-f471-4b60-ada1-83631dd1dafd.pdf",
-            "uuid": "b61d82bf51954d5d8069cc0421b1b404"
-          }
-        ],
-        "documentosGenericos": [
-          {
-            "generico": true,
-            "mostrarPublico": true,
-            "nombreDocumento": "Condiciones Generales de Compra",
-            "tipoDocumento": "Legal",
-            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/82520124-e264-447b-a5cc-3d3a01249b4d.pdf",
-            "uuid": "c482d8baa472432697c452a35513da7f"
-          },
-          {
-            "generico": true,
-            "mostrarPublico": true,
-            "nombreDocumento": "LEY COMPRE SANTAFESINO",
-            "tipoDocumento": "Legal",
-            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/2339de25-7826-4855-a013-79d1f9bdfd22.pdf",
-            "uuid": "8e4adb5e52f4425fac32828607b38485"
-          }
-        ],
-        "estado": "ESTADO_APROBADO",
-        "fecha": "2026-10-26T03:00:00Z",
-        "fechaLimiteEntregaOfertasDesde": "2026-10-27T11:00:00Z",
-        "fechaLimiteEntregaOfertasHasta": "2026-11-10T12:59:00Z",
-        "fechaLimiteOferta": "2026-11-10T12:59:00Z",
-        "fechaSugeridaPublicacion": "2026-10-28T03:00:00Z",
-        "informacionGarantia": "422000",
-        "informacionPresupuestaria": "34872600",
-        "localidades": [
-          {
-            "descripcion": "Esperanza",
-            "uuid": "71de3d6983324fcab4321cc8eede5c4f"
-          }
-        ],
-        "mediosComunicacion": [
-          {
-            "descripcion": "El Litoral (Sta Fe)",
-            "uuid": "9fdb6c62-85bf-4f1d-8b20-40fef03805d6"
-          }
-        ],
-        "numeroPliego": "1277",
-        "numeroSolicitud": "10028517",
-        "objetoLicitacion": "<p>REPARACIÓN Y MANTENIMIENTO DE ELECTROBOMBA DE 125HP - ESPERANZA</p>",
-        "otrasPresentaciones": null,
-        "rubros": [
-          {
-            "nombre": "Bienes",
-            "uuid": "1a3f4ba2-ad92-4b3b-85f7-fce1e20380ba"
-          }
-        ],
-        "soloPaginaWeb": true,
-        "subrubros": [
-          {
-            "nombreSubrubro": "Adquisición de bombas - motores - válvulas - filtros",
-            "uuid": "47c4d2e988f247e99f91df6d8f6f6e91"
-          }
-        ],
-        "tipoPliego": {
-          "nombreTipo": "Licitación privada",
-          "uuid": "0fcd338f25134c03b027dae67ba71a44"
-        },
-        "titulo": "REPARACIÓN Y MANTENIMIENTO DE ELECTROBOMBA DE 125HP - ESPERANZA",
-        "usuarioModificador": null,
-        "uuid": "5e038b0268194c08997676c0300ef5b0"
-      },
-      "comprobacion_pliego": {
-        "estado": "NO_IDENTIFICADO",
-        "fecha_comprobacion": "2026-10-30T08:33:56.099440-03:00"
-      },
-      "detalle_completo": true,
-      "documentos": [
-        {
-          "titulo": "Adjunto oficial",
-          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/1f4c1de2-709e-43bc-ba84-74c0690bf5a9.pdf"
-        },
-        {
-          "titulo": "Adjunto oficial",
-          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/77bcb9cd-a72c-431c-8a58-7fb81d010668.pdf"
-        },
-        {
-          "titulo": "Adjunto oficial",
-          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/53186898-f471-4b60-ada1-83631dd1dafd.pdf"
-        },
-        {
-          "titulo": "Adjunto oficial",
-          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/82520124-e264-447b-a5cc-3d3a01249b4d.pdf"
-        },
-        {
-          "titulo": "Adjunto oficial",
-          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/2339de25-7826-4855-a013-79d1f9bdfd22.pdf"
-        }
-      ],
-      "enlace_pliego": null,
-      "evento_publicado": null,
-      "evidencia_url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/5e038b0268194c08997676c0300ef5b0",
-      "evidencias_campos": {
-        "fecha_apertura": {
-          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/5e038b0268194c08997676c0300ef5b0",
-          "texto": "2026-11-10 10:00"
-        },
-        "fecha_limite_presentacion": {
-          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/5e038b0268194c08997676c0300ef5b0",
-          "texto": "2026-11-10 09:59"
-        },
-        "localidad": {
-          "texto": "API: localidades=[]; localidad del procedimiento desconocida",
-          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/5e038b0268194c08997676c0300ef5b0"
-        },
-        "numero_procedimiento": {
-          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/5e038b0268194c08997676c0300ef5b0",
-          "texto": "licitacion privada no 1277"
-        },
-        "tipo_procedimiento": {
-          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/5e038b0268194c08997676c0300ef5b0",
-          "texto": "licitacion privada no 1277"
-        }
-      },
-      "fecha_apertura": "2026-11-10",
-      "fecha_apertura_texto": "2026-11-10 10:00",
-      "fecha_limite_presentacion": "2026-11-10",
-      "fecha_limite_presentacion_texto": "2026-11-10 09:59",
-      "fecha_publicacion": null,
-      "fuente": "https://www.aguassantafesinas.com.ar/portal/licitaciones",
-      "fuentes_observadas": [
-        "https://www.aguassantafesinas.com.ar/portal/licitaciones"
-      ],
-      "hora_apertura": "10:00",
-      "hora_limite_presentacion": "09:59",
-      "id_origen": "5e038b0268194c08997676c0300ef5b0",
-      "identidad_ambito": "5e038b0268194c08997676c0300ef5b0",
-      "localidad": "Rosario",
-      "modalidad_presentacion": [],
-      "numero_oficial_sin_interpretar": "1277",
-      "numero_procedimiento": "1277",
-      "objeto": "REPARACIÓN Y MANTENIMIENTO DE ELECTROBOMBA DE 125HP - ESPERANZA",
-      "organismo": "ASSA",
-      "pago_evidencias": [],
-      "pago_motivo_pendiente": "DOCUMENTO_NO_COMPROBADO",
-      "presupuesto": null,
-      "procedimiento": "licitacion privada no 1277",
-      "provincia": "Santa Fe",
-      "rango_evidencia": 3,
-      "registro_estructurado": true,
-      "requiere_revalidacion": false,
-      "situacion_publicada": null,
-      "tipo_procedimiento": "licitacion privada",
-      "titulo": "Licitación privada Nº 1277 — REPARACIÓN Y MANTENIMIENTO DE ELECTROBOMBA DE 125HP - ESPERANZA",
-      "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/5e038b0268194c08997676c0300ef5b0",
-      "urls_publicacion": [
-        "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/5e038b0268194c08997676c0300ef5b0"
-      ],
-      "pago": {
-        "estado": "PENDIENTE",
-        "clasificacion": "NO_INFORMADO",
-        "etiqueta": "Pendiente de verificar",
-        "plazos_dias": [],
-        "hitos_inicio": [],
-        "documento_respaldo": null,
-        "documentos_respaldo": [],
-        "evidencias": [],
-        "prioritario": false,
-        "motivo": "DOCUMENTO_NO_COMPROBADO"
-      },
-      "condiciones_pago": "Pendiente de verificar",
-      "enlace_condiciones_pago": null,
-      "pago_prioritario": false,
-      "desierta": false,
-      "fracasada": false,
-      "segundo_llamado": false,
-      "reapertura": false,
-      "llamado_especial": false,
-      "procedimiento_canonico": "licitacion privada ASSA-1277",
-      "convocatoria": "1",
-      "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": "2026-11-10T10:00:00-03:00",
-      "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": "2026-11-10T09:59:00-03:00",
-      "fecha_referencia_vencimiento": "2026-11-10",
-      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
-      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "DESCONOCIDA",
-      "estimacion_comercial": null,
-      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
-      "campos_desconocidos": [
-        "presupuesto",
-        "fecha_publicacion",
-        "enlace_pliego"
-      ],
-      "id": "3d8a5b2d0b09fb7c8dd2ec3c67796892d074a749ba8ad230f2b4b3fde4ea3f4b",
-      "primera_deteccion": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
-      "observada_esta_corrida": true,
-      "ids_historial": [
-        "3d8a5b2d0b09fb7c8dd2ec3c67796892d074a749ba8ad230f2b4b3fde4ea3f4b"
-      ],
-      "variantes_historial": [
-        {
-          "id": "3d8a5b2d0b09fb7c8dd2ec3c67796892d074a749ba8ad230f2b4b3fde4ea3f4b",
-          "numero_procedimiento": "1277",
-          "objeto": "REPARACIÓN Y MANTENIMIENTO DE ELECTROBOMBA DE 125HP - ESPERANZA",
-          "fecha_apertura": "2026-11-10",
-          "fecha_limite_presentacion": "2026-11-10",
-          "evento_publicado": null,
-          "numero_convocatoria": null,
-          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/5e038b0268194c08997676c0300ef5b0",
-          "documentos": [
-            {
-              "titulo": "Adjunto oficial",
-              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/1f4c1de2-709e-43bc-ba84-74c0690bf5a9.pdf"
-            },
-            {
-              "titulo": "Adjunto oficial",
-              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/77bcb9cd-a72c-431c-8a58-7fb81d010668.pdf"
-            },
-            {
-              "titulo": "Adjunto oficial",
-              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/53186898-f471-4b60-ada1-83631dd1dafd.pdf"
-            },
-            {
-              "titulo": "Adjunto oficial",
-              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/82520124-e264-447b-a5cc-3d3a01249b4d.pdf"
-            },
-            {
-              "titulo": "Adjunto oficial",
-              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/2339de25-7826-4855-a013-79d1f9bdfd22.pdf"
-            }
-          ]
-        }
-      ],
-      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "estado_comercial": "VIGENTE_VERIFICADA",
-      "presentacion_verificada": true,
-      "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-10T09:59:00-03:00"
-    },
-    {
-      "aviso_oficial_sin_numero": true,
-      "detalle_completo": true,
-      "documentos": [
-        {
-          "titulo": "CONCURSO DE PRECIOS CAJAS NAVIDEÑAS 2026.pdf",
-          "url": "https://mariateresa.gob.ar/archivos/859_1793054655_CONCURSODEPRECIOSCAJASNAVIDE%C3%91AS2026.pdf"
-        }
-      ],
-      "enlace_pliego": null,
-      "evento_publicado": null,
-      "evidencia_url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
-      "evidencias_campos": {
-        "fecha_apertura": {
-          "texto": "se realizara el dia 10/11/2026 11:00 hs en la sede comunal (restituto alejandre n°235), en",
-          "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859"
-        },
-        "fecha_limite_presentacion": {
-          "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
-          "texto": "2026-11-10t11:00:00-03:00"
-        },
-        "fecha_publicacion": {
-          "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
-          "texto": "lunes, 26 de octubre de 2026 -- 194 vistas la comuna de maria teresa invita a proveedores"
-        },
-        "tipo_procedimiento": {
-          "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
-          "texto": null
-        }
-      },
-      "fecha_apertura": "2026-11-10",
-      "fecha_limite_presentacion": "2026-11-10",
-      "fecha_limite_presentacion_texto": "2026-11-10T11:00:00-03:00",
-      "fecha_publicacion": "2026-10-26",
-      "fecha_publicacion_texto": "lunes, 26 de octubre de 2026 -- 194 vistas La Comuna de María Teresa invita a proveedores ",
-      "fuente": "https://mariateresa.gob.ar/",
-      "hora_apertura": "11:00",
-      "hora_limite_presentacion": "11:00",
-      "huella_aviso_oficial": "23cfd496d9a857fec42eaff9102abd26f935e0e862042937fc46e45267024f2d",
-      "localidad": "María Teresa",
-      "modalidad_presentacion": [
-        "PRESENCIAL"
-      ],
-      "numero_procedimiento": null,
-      "objeto": "compra de doscientas (200) cajas navideñas",
-      "observacion_previa_documentada": {
-        "evidencia": "informes/2026-11-09-fase4/nuevas_verificadas.json",
-        "fecha": "2026-11-09T09:44:10.689342-03:00",
-        "github_run_id": 42621183825,
-        "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859"
-      },
-      "organismo": "Comuna de María Teresa",
-      "presupuesto": null,
-      "procedimiento": null,
-      "provincia": "Santa Fe",
-      "rango_evidencia": 1,
-      "registro_estructurado": true,
-      "requiere_revalidacion": false,
-      "situacion_publicada": null,
-      "tipo_procedimiento": "concurso de precios",
-      "titulo": "CONCURSO DE PRECIOS PARA LA COMPRA DE CAJAS NAVIDEÑAS 2026",
-      "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
-      "pago": {
-        "estado": "PENDIENTE",
-        "clasificacion": "NO_INFORMADO",
-        "etiqueta": "Pendiente de verificar",
-        "plazos_dias": [],
-        "hitos_inicio": [],
-        "documento_respaldo": null,
-        "documentos_respaldo": [],
-        "evidencias": [],
-        "prioritario": false,
-        "motivo": "SIN_CLAUSULA_COMPROBADA"
-      },
-      "condiciones_pago": "Pendiente de verificar",
-      "enlace_condiciones_pago": null,
-      "pago_prioritario": false,
-      "desierta": false,
-      "fracasada": false,
-      "segundo_llamado": false,
-      "reapertura": false,
-      "llamado_especial": false,
-      "procedimiento_canonico": null,
-      "convocatoria": "1",
-      "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": "2026-11-10T11:00:00-03:00",
-      "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": "2026-11-10T11:00:00-03:00",
-      "fecha_referencia_vencimiento": "2026-11-10",
-      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
-      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "HISTORICA",
-      "estimacion_comercial": null,
-      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
-      "campos_desconocidos": [
-        "numero_procedimiento",
-        "presupuesto",
-        "enlace_pliego"
-      ],
-      "id": "8ad948f538f666fac8a29d2a8eac61af90df76666a7ded67bdfeb6e19ffcb29f",
-      "primera_deteccion": "2026-11-10T08:55:56.499719-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
-      "observada_esta_corrida": true,
-      "ids_historial": [
-        "8ad948f538f666fac8a29d2a8eac61af90df76666a7ded67bdfeb6e19ffcb29f"
-      ],
-      "variantes_historial": [
-        {
-          "id": "8ad948f538f666fac8a29d2a8eac61af90df76666a7ded67bdfeb6e19ffcb29f",
-          "numero_procedimiento": null,
-          "objeto": "compra de doscientas (200) cajas navideñas",
-          "fecha_apertura": "2026-11-10",
-          "fecha_limite_presentacion": "2026-11-10",
-          "evento_publicado": null,
-          "numero_convocatoria": null,
-          "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859",
-          "documentos": [
-            {
-              "titulo": "CONCURSO DE PRECIOS CAJAS NAVIDEÑAS 2026.pdf",
-              "url": "https://mariateresa.gob.ar/archivos/859_1793054655_CONCURSODEPRECIOSCAJASNAVIDE%C3%91AS2026.pdf"
-            }
-          ]
-        }
-      ],
-      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "RECUPERACION_LINEA_BASE",
-      "estado_comercial": "VIGENTE_VERIFICADA",
-      "presentacion_verificada": true,
-      "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-10T11:00:00-03:00"
     },
     {
       "campos_oficiales": {
@@ -2402,7 +1964,7 @@
       ],
       "id": "17d09da7fe9747097ca66f708d4a01463160144d472a92912775962a2e4c47c7",
       "primera_deteccion": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "17d09da7fe9747097ca66f708d4a01463160144d472a92912775962a2e4c47c7"
@@ -2557,7 +2119,7 @@
       ],
       "id": "9a57dd9d2d120a269675af49fa10d4bb1c1a1c444db20d6f99d116efa42db6b4",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9a57dd9d2d120a269675af49fa10d4bb1c1a1c444db20d6f99d116efa42db6b4"
@@ -2596,22 +2158,26 @@
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf"
         }
       ],
       "enlace_pliego": null,
       "evento_publicado": null,
-      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf",
       "evidencias_campos": {
         "fecha_limite_presentacion": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf",
           "texto": "2026-11-16"
         },
         "numero_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf",
           "texto": "concurso de precios 2026-1892"
         },
         "tipo_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf",
           "texto": "concurso de precios 2026-1892"
         }
       },
@@ -2621,13 +2187,16 @@
       "fecha_limite_presentacion_texto": "2026-11-16",
       "fecha_publicacion": null,
       "fuente": "https://www.entrerios.gov.ar/boletin/",
+      "fuentes_observadas": [
+        "https://www.entrerios.gov.ar/boletin/"
+      ],
       "hora_apertura": null,
       "hora_limite_presentacion": null,
       "localidad": null,
       "modalidad_presentacion": [],
       "numero_oficial_sin_interpretar": "2026-1892",
       "numero_procedimiento": "2026-1892",
-      "objeto": " N.º 2026-1892: Obra de iluminación “Intercambiador Av. Jorge Newbery”, de Paraná.\n Presentación de ofertas hasta el 16 de noviembre de 2026 inclusive.\n Los Pliegos y documentos anexos serán públicos y estarán disponibles en todo momento en la página web de\nENERSA.\n Demás datos y condiciones, remitirse a: https://www.enersa.com.ar/area-proveedores/#ConcursoDePrecios\n Contacto: registroproveedores@enersa.com.ar\n Energía de Entre Ríos S.A. - Sede Social: Buenos Aires 87 (E3100 BQA) Paraná - Entre Ríos Inscripción: Reg.\nPco. Com. - DIPJ E. R. Nro. 1858 Secc. Legajo Social\n Rubén D. Clivio, Coordinador de Compras ENERSA.",
+      "objeto": " N.º 2026-1892: Obra de iluminación “Intercambiador Av. Jorge Newbery”, de Paraná.\n Presentación de ofertas hasta el 16 de noviembre de 2026 inclusive.\n Los Pliegos y documentos anexos serán públicos y estarán disponibles en todo momento en la página web de\nENERSA.\n Demás datos y condiciones, remitirse a: https://www.enersa.com.ar/area-proveedores/#ConcursoDeP recios\n Contacto: registroproveedores@enersa.com.ar\n Energía de Entre Ríos S.A. - Sede Social: Buenos Aires 87 (E3100 BQA) Paraná - Entre Ríos Inscripción: Reg.\nPco. Com. - DIPJ E. R. Nro. 1858 Secc. Legajo Social\n Rubén D. Clivio, Coordinador de Compras ENERSA.",
       "organismo": "ENERSA (Energía de Entre Ríos S.A.)",
       "pago_evidencias": [],
       "presupuesto": null,
@@ -2637,8 +2206,12 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "concurso de precios",
-      "titulo": "concurso de precios 2026-1892  N.º 2026-1892: Obra de iluminación “Intercambiador Av. Jorge Newbery”, de Paraná.\n Presentación de ofertas hasta el 16 de noviembre de 2026 inclusive.\n Los Pliegos y documentos anexos serán públicos y estarán disponibles en todo momento en la página web de\nENERSA.\n Demás datos y condiciones, remitirse a: https://www.enersa.com.ar/area-proveedores/#ConcursoDePrecios\n Contacto: registroproveedores@enersa.com.ar\n Energía de Entre Ríos S.A. - Sede Social: Buenos Aires 87 (E3100 BQA) Paraná - Entre Ríos Inscripción: Reg.\nPco. Com. - DIPJ E. R. Nro. 1858 Secc. Legajo Social\n Rubén D. Clivio, Coordinador de Compras ENERSA.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "titulo": "concurso de precios 2026-1892  N.º 2026-1892: Obra de iluminación “Intercambiador Av. Jorge Newbery”, de Paraná.\n Presentación de ofertas hasta el 16 de noviembre de 2026 inclusive.\n Los Pliegos y documentos anexos serán públicos y estarán disponibles en todo momento en la página web de\nENERSA.\n Demás datos y condiciones, remitirse a: https://www.enersa.com.ar/area-proveedores/#ConcursoDeP recios\n Contacto: registroproveedores@enersa.com.ar\n Energía de Entre Ríos S.A. - Sede Social: Buenos Aires 87 (E3100 BQA) Paraná - Entre Ríos Inscripción: Reg.\nPco. Com. - DIPJ E. R. Nro. 1858 Secc. Legajo Social\n Rubén D. Clivio, Coordinador de Compras ENERSA.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf",
+      "urls_publicacion": [
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf"
+      ],
       "pago": {
         "estado": "PENDIENTE",
         "clasificacion": "NO_INFORMADO",
@@ -2680,7 +2253,7 @@
       ],
       "id": "6effb18260d310a6f83acf8d851c8d38ae613e7e5717b6fb8592d83fd66e2416",
       "primera_deteccion": "2026-11-10T08:55:56.499719-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "6effb18260d310a6f83acf8d851c8d38ae613e7e5717b6fb8592d83fd66e2416"
@@ -2689,22 +2262,26 @@
         {
           "id": "6effb18260d310a6f83acf8d851c8d38ae613e7e5717b6fb8592d83fd66e2416",
           "numero_procedimiento": "2026-1892",
-          "objeto": " N.º 2026-1892: Obra de iluminación “Intercambiador Av. Jorge Newbery”, de Paraná.\n Presentación de ofertas hasta el 16 de noviembre de 2026 inclusive.\n Los Pliegos y documentos anexos serán públicos y estarán disponibles en todo momento en la página web de\nENERSA.\n Demás datos y condiciones, remitirse a: https://www.enersa.com.ar/area-proveedores/#ConcursoDePrecios\n Contacto: registroproveedores@enersa.com.ar\n Energía de Entre Ríos S.A. - Sede Social: Buenos Aires 87 (E3100 BQA) Paraná - Entre Ríos Inscripción: Reg.\nPco. Com. - DIPJ E. R. Nro. 1858 Secc. Legajo Social\n Rubén D. Clivio, Coordinador de Compras ENERSA.",
+          "objeto": " N.º 2026-1892: Obra de iluminación “Intercambiador Av. Jorge Newbery”, de Paraná.\n Presentación de ofertas hasta el 16 de noviembre de 2026 inclusive.\n Los Pliegos y documentos anexos serán públicos y estarán disponibles en todo momento en la página web de\nENERSA.\n Demás datos y condiciones, remitirse a: https://www.enersa.com.ar/area-proveedores/#ConcursoDeP recios\n Contacto: registroproveedores@enersa.com.ar\n Energía de Entre Ríos S.A. - Sede Social: Buenos Aires 87 (E3100 BQA) Paraná - Entre Ríos Inscripción: Reg.\nPco. Com. - DIPJ E. R. Nro. 1858 Secc. Legajo Social\n Rubén D. Clivio, Coordinador de Compras ENERSA.",
           "fecha_apertura": null,
           "fecha_limite_presentacion": "2026-11-16",
           "evento_publicado": null,
           "numero_convocatoria": null,
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf",
           "documentos": [
             {
               "titulo": "Boletín complementario",
               "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+            },
+            {
+              "titulo": "Boletín complementario",
+              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf"
             }
           ]
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -2826,7 +2403,7 @@
       ],
       "id": "15fefaf42a5305f8a3edfd7bb63471f4e1cc32c4af236122cda8d55842668c26",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "15fefaf42a5305f8a3edfd7bb63471f4e1cc32c4af236122cda8d55842668c26"
@@ -2973,7 +2550,7 @@
       ],
       "id": "f0b099f3d1a1b4e9ecbd40a7aa89371a7954c9f56f52bb301ac9ec6b93c2558d",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "f0b099f3d1a1b4e9ecbd40a7aa89371a7954c9f56f52bb301ac9ec6b93c2558d"
@@ -3313,7 +2890,7 @@
       ],
       "id": "4b6f68e57c711f667e4430a7df9957d3145707878b242696961c0d1405d285cb",
       "primera_deteccion": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "4b6f68e57c711f667e4430a7df9957d3145707878b242696961c0d1405d285cb"
@@ -3447,7 +3024,7 @@
       ],
       "id": "5aadc03b9a83e0aec24aac77fa6345b264b9c9ce2971ee5f6d4c2a9123a58d3f",
       "primera_deteccion": "2026-11-10T08:55:56.499719-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "5aadc03b9a83e0aec24aac77fa6345b264b9c9ce2971ee5f6d4c2a9123a58d3f"
@@ -3471,7 +3048,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -3498,7 +3074,21 @@
           "nombreCategoria": "Bienes",
           "uuid": "801b7a815bdb4b458d71352f08d507f5"
         },
-        "circulares": [],
+        "circulares": [
+          {
+            "adjuntos": [
+              {
+                "nombre": "Circular Nº 1 Sin Consulta Lic. Pública Nº 1730.pdf",
+                "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/5cea11f4-ddb8-4239-9d53-e00bd64bfc6e.pdf"
+              }
+            ],
+            "descripcion": "Circular Nº 1 Sin Consulta Licitación Pública Nº 1730",
+            "documentoAdjuntoUrl": null,
+            "estado": "ESTADO_APROBADA",
+            "fechaCircular": "2026-11-10T00:00:00Z",
+            "uuid": "9458c404be0a4f9780a191791f5a12b8"
+          }
+        ],
         "consideracionesGenerales": null,
         "contactosAdministrativos": [
           {
@@ -3752,7 +3342,7 @@
       ],
       "id": "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7",
       "primera_deteccion": "2026-11-07T08:36:35.631351-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7"
@@ -3796,6 +3386,272 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-24T10:00:00-03:00"
+    },
+    {
+      "campos_oficiales": {
+        "actas": [],
+        "aperturasSobre": [
+          {
+            "contactoEntrega": null,
+            "fechaApertura": "2026-11-25T14:01:00Z",
+            "noEsSede": false,
+            "numeroSobre": 1,
+            "oficina": {
+              "direccion": null,
+              "nombreOficina": "Depto. Licitaciones Públicas - Salta 1451 - Rosario",
+              "uuid": "f6403dba00754a63afba6f846f72434b"
+            },
+            "uuid": "5f6668c242da4dc48bd9d308670d68f2"
+          }
+        ],
+        "categoria": {
+          "nombreCategoria": "Servicios",
+          "uuid": "0b2b0451b80c49e8910a1e72052eed79"
+        },
+        "circulares": [
+          {
+            "adjuntos": [
+              {
+                "nombre": "1- Circular Aclaratoria Nº 1 - Sin Consulta.pdf",
+                "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/607ecee7-cf62-4392-9196-a8e6814f1692.pdf"
+              }
+            ],
+            "descripcion": "Circular Nro.1",
+            "documentoAdjuntoUrl": null,
+            "estado": "ESTADO_APROBADA",
+            "fechaCircular": "2026-11-10T00:00:00Z",
+            "uuid": "aa71035a8a9846cfaf18220372e0a15d"
+          }
+        ],
+        "consideracionesGenerales": null,
+        "contactosAdministrativos": [],
+        "contactosEntrega": [],
+        "contactosTecnicos": [],
+        "documentosAdjuntos": [
+          {
+            "generico": false,
+            "mostrarPublico": false,
+            "nombreDocumento": "01. Pliego Complementario, EETT y Planilla de Cotización",
+            "tipoDocumento": "",
+            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/631f0033-4335-47aa-a244-af1bfa1a8e0e.pdf",
+            "uuid": "755d608b5945401994d0aa8a4ac01b68"
+          },
+          {
+            "generico": false,
+            "mostrarPublico": false,
+            "nombreDocumento": "02. Pliego_General de Servicios",
+            "tipoDocumento": "",
+            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/02ac8347-ce17-4020-a765-5e448c01e216.pdf",
+            "uuid": "7657e6dcc3ce4534a5166945f9041d7c"
+          },
+          {
+            "generico": false,
+            "mostrarPublico": false,
+            "nombreDocumento": "03. Normas HyS",
+            "tipoDocumento": "",
+            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/4dafac10-ec33-4291-b564-a43811e182c9.pdf",
+            "uuid": "9e26b645ed5b449e9e8b82c56c76abcd"
+          }
+        ],
+        "documentosGenericos": [],
+        "estado": "ESTADO_APROBADO",
+        "fecha": "2026-11-10T03:00:00Z",
+        "fechaLimiteEntregaOfertasDesde": "2026-11-10T11:00:00Z",
+        "fechaLimiteEntregaOfertasHasta": "2026-11-25T14:00:00Z",
+        "fechaLimiteOferta": "2026-11-25T14:00:00Z",
+        "fechaSugeridaPublicacion": "2026-11-11T03:00:00Z",
+        "informacionGarantia": "786000",
+        "informacionPresupuestaria": "82135050",
+        "localidades": [
+          {
+            "descripcion": "Rosario",
+            "uuid": "a4ade3c5e3b9449e8a286f280584ca73"
+          },
+          {
+            "descripcion": "Santa Fe",
+            "uuid": "cf58f5b948e14d8fb32e7e07461621dc"
+          }
+        ],
+        "mediosComunicacion": [
+          {
+            "descripcion": "La Capital (Rosario)",
+            "uuid": "8bd7047b-ac87-46a7-8946-3ad6784966f6"
+          }
+        ],
+        "numeroPliego": "1731",
+        "numeroSolicitud": "10028737",
+        "objetoLicitacion": "<p><span>La presente licitación tiene por objeto contratar el Servicio de provisión de gases especiales (Argón, Acetileno, Óxido Nitroso, Nitrógeno, Aire Sintético, Hidrógeno y Helio) en cilindros, para abastecimiento de los Laboratorios de Calidad Rosario y Santa Fe, durante el período correspondiente al año 2027.</span></p><p style=\"text-align: justify;\"><span>En un todo de acuerdo con las Especificaciones Técnicas Particulares, Pliego de Bases y Condiciones Generales para la Contratación de Servicios, Pliego de Condiciones Complementarias y sus correspondientes Anexos.</span></p>",
+        "otrasPresentaciones": null,
+        "rubros": [
+          {
+            "nombre": "Servicios",
+            "uuid": "b12c8e1b-fba2-4523-83af-bac95742b9ac"
+          }
+        ],
+        "soloPaginaWeb": true,
+        "subrubros": [
+          {
+            "nombreSubrubro": "Otros servicios",
+            "uuid": "39df7322bddc42bd90d568d825572632"
+          }
+        ],
+        "tipoPliego": {
+          "nombreTipo": "Licitación pública",
+          "uuid": "17ab2090bc784629ac594a81cb65349e"
+        },
+        "titulo": "PROVISIÓN DE GASES ESPECIALES 2027 PARA AGUAS SANTAFESINAS S.A.",
+        "usuarioModificador": null,
+        "uuid": "8f4fcfb3474a4db2a435b3407cdcda07"
+      },
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "Adjunto oficial",
+          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/631f0033-4335-47aa-a244-af1bfa1a8e0e.pdf"
+        },
+        {
+          "titulo": "Adjunto oficial",
+          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/02ac8347-ce17-4020-a765-5e448c01e216.pdf"
+        },
+        {
+          "titulo": "Adjunto oficial",
+          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/4dafac10-ec33-4291-b564-a43811e182c9.pdf"
+        }
+      ],
+      "enlace_pliego": null,
+      "evento_publicado": null,
+      "evidencia_url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/8f4fcfb3474a4db2a435b3407cdcda07",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/8f4fcfb3474a4db2a435b3407cdcda07",
+          "texto": "2026-11-25 11:01"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/8f4fcfb3474a4db2a435b3407cdcda07",
+          "texto": "2026-11-25 11:00"
+        },
+        "localidad": {
+          "texto": "API: localidades=[]; localidad del procedimiento desconocida",
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/8f4fcfb3474a4db2a435b3407cdcda07"
+        },
+        "numero_procedimiento": {
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/8f4fcfb3474a4db2a435b3407cdcda07",
+          "texto": "licitacion publica no 1731"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/8f4fcfb3474a4db2a435b3407cdcda07",
+          "texto": "licitacion publica no 1731"
+        }
+      },
+      "fecha_apertura": "2026-11-25",
+      "fecha_apertura_texto": "2026-11-25 11:01",
+      "fecha_limite_presentacion": "2026-11-25",
+      "fecha_limite_presentacion_texto": "2026-11-25 11:00",
+      "fecha_publicacion": null,
+      "fuente": "https://www.aguassantafesinas.com.ar/portal/licitaciones",
+      "fuentes_observadas": [
+        "https://www.aguassantafesinas.com.ar/portal/licitaciones"
+      ],
+      "hora_apertura": "11:01",
+      "hora_limite_presentacion": "11:00",
+      "id_origen": "8f4fcfb3474a4db2a435b3407cdcda07",
+      "identidad_ambito": "8f4fcfb3474a4db2a435b3407cdcda07",
+      "localidad": "Rosario",
+      "modalidad_presentacion": [],
+      "numero_oficial_sin_interpretar": "1731",
+      "numero_procedimiento": "1731",
+      "objeto": "La presente licitación tiene por objeto contratar el Servicio de provisión de gases especiales (Argón, Acetileno, Óxido Nitroso, Nitrógeno, Aire Sintético, Hidrógeno y Helio) en cilindros, para abastecimiento de los Laboratorios de Calidad Rosario y Santa Fe, durante el período correspondiente al año 2027. En un todo de acuerdo con las Especificaciones Técnicas Particulares, Pliego de Bases y Condiciones Generales para la Contratación de Servicios, Pliego de Condiciones Complementarias y sus correspondientes Anexos.",
+      "organismo": "ASSA",
+      "pago_evidencias": [],
+      "presupuesto": null,
+      "procedimiento": "licitacion publica no 1731",
+      "provincia": "Santa Fe",
+      "rango_evidencia": 3,
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "licitacion publica",
+      "titulo": "Licitación pública Nº 1731 — PROVISIÓN DE GASES ESPECIALES 2027 PARA AGUAS SANTAFESINAS S.A.",
+      "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/8f4fcfb3474a4db2a435b3407cdcda07",
+      "urls_publicacion": [
+        "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/8f4fcfb3474a4db2a435b3407cdcda07"
+      ],
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "licitacion publica ASSA-1731",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": "2026-11-25T11:01:00-03:00",
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": "2026-11-25T11:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-25",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_publicacion",
+        "enlace_pliego"
+      ],
+      "id": "94f8805a0e854f14925878d49e0f56ae0624aceaa6f23c72741ec9a348205178",
+      "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "94f8805a0e854f14925878d49e0f56ae0624aceaa6f23c72741ec9a348205178"
+      ],
+      "variantes_historial": [
+        {
+          "id": "94f8805a0e854f14925878d49e0f56ae0624aceaa6f23c72741ec9a348205178",
+          "numero_procedimiento": "1731",
+          "objeto": "La presente licitación tiene por objeto contratar el Servicio de provisión de gases especiales (Argón, Acetileno, Óxido Nitroso, Nitrógeno, Aire Sintético, Hidrógeno y Helio) en cilindros, para abastecimiento de los Laboratorios de Calidad Rosario y Santa Fe, durante el período correspondiente al año 2027. En un todo de acuerdo con las Especificaciones Técnicas Particulares, Pliego de Bases y Condiciones Generales para la Contratación de Servicios, Pliego de Condiciones Complementarias y sus correspondientes Anexos.",
+          "fecha_apertura": "2026-11-25",
+          "fecha_limite_presentacion": "2026-11-25",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/8f4fcfb3474a4db2a435b3407cdcda07",
+          "documentos": [
+            {
+              "titulo": "Adjunto oficial",
+              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/631f0033-4335-47aa-a244-af1bfa1a8e0e.pdf"
+            },
+            {
+              "titulo": "Adjunto oficial",
+              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/02ac8347-ce17-4020-a765-5e448c01e216.pdf"
+            },
+            {
+              "titulo": "Adjunto oficial",
+              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/4dafac10-ec33-4291-b564-a43811e182c9.pdf"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-25T11:00:00-03:00"
     },
     {
       "comprobacion_pliego": {
@@ -3854,7 +3710,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 119 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 87 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 72 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 68 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 75 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 78 click 9 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 128 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 92 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 76 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 72 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 80 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 82 click 9 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
@@ -3899,7 +3755,7 @@
       ],
       "id": "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a"
@@ -3918,6 +3774,344 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-26T10:00:00-03:00"
+    },
+    {
+      "campos_oficiales": {
+        "actas": [],
+        "aperturasSobre": [
+          {
+            "contactoEntrega": null,
+            "fechaApertura": "2026-11-26T13:00:00Z",
+            "noEsSede": false,
+            "numeroSobre": 1,
+            "oficina": {
+              "direccion": null,
+              "nombreOficina": "Dpto. Licitaciones y Compras Centralizadas -  Ituzaingo 1501 - Santa fe -",
+              "uuid": "4140aac7c95042ea82fe569c8df13809"
+            },
+            "uuid": "6980a1a5265b407bbb7195ca9f92cc66"
+          }
+        ],
+        "categoria": {
+          "nombreCategoria": "Bienes",
+          "uuid": "801b7a815bdb4b458d71352f08d507f5"
+        },
+        "circulares": [],
+        "consideracionesGenerales": null,
+        "contactosAdministrativos": [
+          {
+            "apellido": "RAMIREZ",
+            "email": "cecilia.ramirez@aguassantafesinas.com.ar",
+            "nombre": "CECILIA",
+            "sector": "Compras ",
+            "telefono": "342-4504507",
+            "uuid": "b892dae1b3df48a3adb46fea3ca24526"
+          }
+        ],
+        "contactosEntrega": [],
+        "contactosTecnicos": [
+          {
+            "apellido": "MAGLIANESI",
+            "email": "dante.maglianesi@aguassantafesinas.com.ar",
+            "nombre": "DANTE ANTONIO",
+            "sector": null,
+            "sede": "Santa Fe - Ituzaingo 1501     ",
+            "telefono": "3424504548",
+            "uuid": "2885e33c2aae43babcf93a46a13004d1"
+          },
+          {
+            "apellido": "MARS",
+            "email": "mauricio.mars@aguassantafesinas.com.ar",
+            "nombre": "MAURICIO ESTEBAN",
+            "sector": null,
+            "sede": "Santa Fe - Ituzaingo 1501     ",
+            "telefono": "3424504539",
+            "uuid": "8dc6e3450b2b4ea282bee55440450b3a"
+          },
+          {
+            "apellido": "ORUE",
+            "email": "silvio.orue@aguassantafesinas.com.ar",
+            "nombre": "SILVIO RAFAEL",
+            "sector": null,
+            "sede": "Santa Fe - Ituzaingo 1501     ",
+            "telefono": "",
+            "uuid": "914e012314b74089b98708a4c2d739a9"
+          }
+        ],
+        "documentosAdjuntos": [
+          {
+            "generico": false,
+            "mostrarPublico": false,
+            "nombreDocumento": "Anexos",
+            "tipoDocumento": "",
+            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/4f58ac05-8bdd-48b3-9cad-e70223ae8b25.pdf",
+            "uuid": "94e7528348f844e2a4ce78f7429dd323"
+          },
+          {
+            "generico": false,
+            "mostrarPublico": false,
+            "nombreDocumento": "PLIEGO",
+            "tipoDocumento": "",
+            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/87e4a1bc-1c62-4f31-ba16-fd656685590d.pdf",
+            "uuid": "1f74f441ae8f4c50b338b48e303d0cef"
+          },
+          {
+            "generico": false,
+            "mostrarPublico": false,
+            "nombreDocumento": "Pliego EETT",
+            "tipoDocumento": "",
+            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/c5d4a1c8-e2df-4876-b774-fcb5975a2754.pdf",
+            "uuid": "ed3c0e216efd4357b7d3c193a250c93f"
+          }
+        ],
+        "documentosGenericos": [
+          {
+            "generico": true,
+            "mostrarPublico": true,
+            "nombreDocumento": "Condiciones Generales de Compra",
+            "tipoDocumento": "Legal",
+            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/82520124-e264-447b-a5cc-3d3a01249b4d.pdf",
+            "uuid": "c482d8baa472432697c452a35513da7f"
+          },
+          {
+            "generico": true,
+            "mostrarPublico": true,
+            "nombreDocumento": "LEY COMPRE SANTAFESINO",
+            "tipoDocumento": "Legal",
+            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/2339de25-7826-4855-a013-79d1f9bdfd22.pdf",
+            "uuid": "8e4adb5e52f4425fac32828607b38485"
+          },
+          {
+            "generico": true,
+            "mostrarPublico": true,
+            "nombreDocumento": "Normas HyS",
+            "tipoDocumento": "Técnico",
+            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/621cadee-2b9d-4cf6-841f-3213aefbe34d.pdf",
+            "uuid": "829c64ee0b7f4222b4f36c681957bf04"
+          }
+        ],
+        "estado": "ESTADO_APROBADO",
+        "fecha": "2026-11-10T03:00:00Z",
+        "fechaLimiteEntregaOfertasDesde": "2026-11-11T13:00:00Z",
+        "fechaLimiteEntregaOfertasHasta": "2026-11-26T12:00:00Z",
+        "fechaLimiteOferta": "2026-11-26T13:00:00Z",
+        "fechaSugeridaPublicacion": "2026-11-11T03:00:00Z",
+        "informacionGarantia": "1050000",
+        "informacionPresupuestaria": "86548000",
+        "localidades": [
+          {
+            "descripcion": "Santa Fe",
+            "uuid": "cf58f5b948e14d8fb32e7e07461621dc"
+          }
+        ],
+        "mediosComunicacion": [
+          {
+            "descripcion": "El Ciudadano (Rosario)",
+            "uuid": "b33da770-c5ac-496e-b877-a0fc4af0ac16"
+          },
+          {
+            "descripcion": "El Litoral (Sta Fe)",
+            "uuid": "9fdb6c62-85bf-4f1d-8b20-40fef03805d6"
+          }
+        ],
+        "numeroPliego": "1732",
+        "numeroSolicitud": "10028596",
+        "objetoLicitacion": "<p>ADQUISICION DE CARBON ACTIVADO - PLANTA SANTA FE</p>",
+        "otrasPresentaciones": null,
+        "rubros": [
+          {
+            "nombre": "Bienes",
+            "uuid": "1a3f4ba2-ad92-4b3b-85f7-fce1e20380ba"
+          }
+        ],
+        "soloPaginaWeb": true,
+        "subrubros": [
+          {
+            "nombreSubrubro": "Insumos quimicos",
+            "uuid": "6fd532511d30477da41d1c77d17cb390"
+          }
+        ],
+        "tipoPliego": {
+          "nombreTipo": "Licitación pública",
+          "uuid": "17ab2090bc784629ac594a81cb65349e"
+        },
+        "titulo": "ADQUISICION DE CARBON ACTIVADO - PLANTA SANTA FE",
+        "usuarioModificador": null,
+        "uuid": "e694ce2c72be4b98ab50edfbcf761b71"
+      },
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "Adjunto oficial",
+          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/4f58ac05-8bdd-48b3-9cad-e70223ae8b25.pdf"
+        },
+        {
+          "titulo": "Adjunto oficial",
+          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/87e4a1bc-1c62-4f31-ba16-fd656685590d.pdf"
+        },
+        {
+          "titulo": "Adjunto oficial",
+          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/c5d4a1c8-e2df-4876-b774-fcb5975a2754.pdf"
+        },
+        {
+          "titulo": "Adjunto oficial",
+          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/82520124-e264-447b-a5cc-3d3a01249b4d.pdf"
+        },
+        {
+          "titulo": "Adjunto oficial",
+          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/2339de25-7826-4855-a013-79d1f9bdfd22.pdf"
+        },
+        {
+          "titulo": "Adjunto oficial",
+          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/621cadee-2b9d-4cf6-841f-3213aefbe34d.pdf"
+        }
+      ],
+      "enlace_pliego": null,
+      "evento_publicado": null,
+      "evidencia_url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/e694ce2c72be4b98ab50edfbcf761b71",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/e694ce2c72be4b98ab50edfbcf761b71",
+          "texto": "2026-11-26 10:00"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/e694ce2c72be4b98ab50edfbcf761b71",
+          "texto": "2026-11-26 10:00"
+        },
+        "localidad": {
+          "texto": "API: localidades=[]; localidad del procedimiento desconocida",
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/e694ce2c72be4b98ab50edfbcf761b71"
+        },
+        "numero_procedimiento": {
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/e694ce2c72be4b98ab50edfbcf761b71",
+          "texto": "licitacion publica no 1732"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/e694ce2c72be4b98ab50edfbcf761b71",
+          "texto": "licitacion publica no 1732"
+        }
+      },
+      "fecha_apertura": "2026-11-26",
+      "fecha_apertura_texto": "2026-11-26 10:00",
+      "fecha_limite_presentacion": "2026-11-26",
+      "fecha_limite_presentacion_texto": "2026-11-26 10:00",
+      "fecha_publicacion": null,
+      "fuente": "https://www.aguassantafesinas.com.ar/portal/licitaciones",
+      "fuentes_observadas": [
+        "https://www.aguassantafesinas.com.ar/portal/licitaciones"
+      ],
+      "hora_apertura": "10:00",
+      "hora_limite_presentacion": "10:00",
+      "id_origen": "e694ce2c72be4b98ab50edfbcf761b71",
+      "identidad_ambito": "e694ce2c72be4b98ab50edfbcf761b71",
+      "localidad": "Rosario",
+      "modalidad_presentacion": [],
+      "numero_oficial_sin_interpretar": "1732",
+      "numero_procedimiento": "1732",
+      "objeto": "ADQUISICION DE CARBON ACTIVADO - PLANTA SANTA FE",
+      "organismo": "ASSA",
+      "pago_evidencias": [],
+      "presupuesto": null,
+      "procedimiento": "licitacion publica no 1732",
+      "provincia": "Santa Fe",
+      "rango_evidencia": 3,
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "licitacion publica",
+      "titulo": "Licitación pública Nº 1732 — ADQUISICION DE CARBON ACTIVADO - PLANTA SANTA FE",
+      "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/e694ce2c72be4b98ab50edfbcf761b71",
+      "urls_publicacion": [
+        "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/e694ce2c72be4b98ab50edfbcf761b71"
+      ],
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "licitacion publica ASSA-1732",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": "2026-11-26T10:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": "2026-11-26T10:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-26",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_publicacion",
+        "enlace_pliego"
+      ],
+      "id": "af809a1a2301fd5ac19ea9d2f78fdf59162c9bbcca0ec3e17a9bc081e3e49c32",
+      "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "af809a1a2301fd5ac19ea9d2f78fdf59162c9bbcca0ec3e17a9bc081e3e49c32"
+      ],
+      "variantes_historial": [
+        {
+          "id": "af809a1a2301fd5ac19ea9d2f78fdf59162c9bbcca0ec3e17a9bc081e3e49c32",
+          "numero_procedimiento": "1732",
+          "objeto": "ADQUISICION DE CARBON ACTIVADO - PLANTA SANTA FE",
+          "fecha_apertura": "2026-11-26",
+          "fecha_limite_presentacion": "2026-11-26",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/e694ce2c72be4b98ab50edfbcf761b71",
+          "documentos": [
+            {
+              "titulo": "Adjunto oficial",
+              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/4f58ac05-8bdd-48b3-9cad-e70223ae8b25.pdf"
+            },
+            {
+              "titulo": "Adjunto oficial",
+              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/87e4a1bc-1c62-4f31-ba16-fd656685590d.pdf"
+            },
+            {
+              "titulo": "Adjunto oficial",
+              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/c5d4a1c8-e2df-4876-b774-fcb5975a2754.pdf"
+            },
+            {
+              "titulo": "Adjunto oficial",
+              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/82520124-e264-447b-a5cc-3d3a01249b4d.pdf"
+            },
+            {
+              "titulo": "Adjunto oficial",
+              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/2339de25-7826-4855-a013-79d1f9bdfd22.pdf"
+            },
+            {
+              "titulo": "Adjunto oficial",
+              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/621cadee-2b9d-4cf6-841f-3213aefbe34d.pdf"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -4023,7 +4217,7 @@
       ],
       "id": "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9"
@@ -4113,7 +4307,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 201 click 19 octubre, 2026 ANEXO I • 2 MB • 119 click 19 octubre, 2026 Anexo II • 112 kB • 97 click 19 octubre, 2026 Anexo III • 174 kB • 106 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 103 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 102 click 19 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 205 click 19 octubre, 2026 ANEXO I • 2 MB • 125 click 19 octubre, 2026 Anexo II • 112 kB • 101 click 19 octubre, 2026 Anexo III • 174 kB • 110 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 108 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 108 click 19 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
@@ -4158,7 +4352,7 @@
       ],
       "id": "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-10T08:55:56.499719-03:00",
+      "ultima_deteccion": "2026-11-11T08:57:15.954137-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99"
