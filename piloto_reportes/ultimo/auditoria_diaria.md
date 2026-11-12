@@ -1,294 +1,176 @@
 # Comparación diaria del piloto
 Estado: AUDITADA; consulta: COMPLETA_CON_INCIDENCIAS.
-Base: 20261110T114627-8db84eef; actual: 20261111T114826-7bd8560e.
-Historial: 7105 → 7142; perdidos: 0; versiones perdidas: 0.
-- nuevas_confirmadas: 0
-- detecciones_sin_fecha_suficiente: 33
-- recuperaciones_historicas: 4
-- modificaciones: 52
-- datos_completados: 20
+Base: 20261111T114826-7bd8560e; actual: 20261112T115056-9691ca56.
+Historial: 7142 → 7181; perdidos: 0; versiones perdidas: 0.
+- nuevas_confirmadas: 1
+- detecciones_sin_fecha_suficiente: 26
+- recuperaciones_historicas: 12
+- modificaciones: 38
+- datos_completados: 7
 
 ## nuevas_confirmadas
 
+- IAFAS — 9/2026: Adquisición de Artículos de Merchandising para promocionar Casinos de Entre Ríos.- ([oficial](https://www.iafas.gov.ar/proveedores/licitaciones/))
 
 ## detecciones_sin_fecha_suficiente
 
-- Municipalidad de Chajarí — 20/2026: Provision de 1450m3 de hormigon elaborado tipo H30 para ser utilizado en la obra de pavimento en Avenida Belgrano entre calles Rocamora y Mandisovi ([oficial](https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=714))
-- PODER JUDICIAL DE ENTRE RI OS — 15/2026: PARANA
+- Municipalidad de Concepción del Uruguay — 45/2026: -- -- --
+                               MUNICIPALIDAD DE CONCEPCION DEL URUGUAY
+                                         Licitación Pública Nº 45/2026
+ OBJETO: ”Pavimento Rígido – 13 (trece) Cuadras Barrio 30 de Octubre”, en un todo de acuerdo a los Pliegos de
+Bases, Condiciones Particulares y demás documentación.
 
-                                          PODER JUDICIAL DE ENTRE RI OS
-                                              Licitación Pública Nº 15/26
- De conformidad a lo dispuesto por el Tribunal de Superintendencia de la Provincia de Entre Ríos, por Resolución
-Nº 133/26, llámese a Licitación Pública Nº 15/26, por la Provisión y envío de insumos para el Servicio de Genética
-Forense del S.T.J.
- PROVISION DE PLIEGOS: Consultas en la Oficina de Compras y Asesoramiento del Poder Judicial, sita en
-Planta Baja - Edificio Tribunales – Laprida Nº 250 - Paraná - Entre Ríos - de Lunes a Viernes de 7.00 hs a 13.00
-hs. Tel: 0343-206100 Interno 6306.- Mail: compras@jusentrerios.gov.ar
- VALOR DEL PLIEGO: Sin costo.
- PRESUPUESTO OFICIAL: $ 95.000.000, 00 (PESOS: noventa y cinco mil millones con 00/100).-
- LUGAR DE PRESENTACION DE LAS OFERTAS: en la Oficina de Compras y Asesoramiento del Poder Judicial
-– Planta Baja - Edificio Tribunales – Laprida Nº 250- Paraná - Entre Ríos.-
- APERTURA DE LAS PROPUESTAS: 27 de Noviembre de 2026 a las 10:00 horas en el Superior Tribunal de
-Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Edificio Tribunales – Laprida Nº 250 - Paraná -
-Entre Ríos. ([oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf))
-- Municipalidad de Chajarí — 55/2026: Provision de 220m2 de hormigon elaborado H30 para ser utilizado en obras de bacheo en la ciudad ([oficial](https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=715))
-- Municipalidad de Chajarí — 56/2026: Provisión de mallas para la ejecución de la obra de pavimento en Avenida Belgrano entre calle Mandisovi y Rocamora ([oficial](https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716))
-- Municipalidad de Chajarí — 57/2026: Provisión de bolsas de cemento para la ejecución de la obra de pavimento en Avenida Belgrano entre calle Mandisovi y Rocamora ([oficial](https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=717))
-- Coordinación Ministerial del MPeI — None: Nueva Instalación Eléctrica. Escuela Secundaria Nº 21 “Esteban Piacenza” y Escuela Primaria Nº 109 “Juan Zorrilla de San Martín” ([oficial](https://www.entrerios.gov.ar/minplan/licitaciones))
-- Municipalidad de Villa Gobernador Gálvez — None: CONCURSO DE OFERTAS PARA OTORGAMIENTO DE CONCESIÓN DEL SERVICIO DE BUFFET EN EL PREDIO DEL PARQUE REGIONAL ([oficial](https://vggmunicipalidad.gov.ar/galeria/licitaciones/17943188193329.pdf))
-- Comuna de Aldea Santa Rosa — 1/2026: “ADQUISICIÓN DE TRACTOR AGRICOLA NUEVO” ([oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf))
-- Municipalidad de Rosario — 3219/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38751))
-- Municipalidad de Rosario — 24835/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38757))
-- Poder Judicial de Entre Ríos — 278/2026: Contrataciones Solicitud de Cotización Nº 278/26: “Servicios de mantenimiento de un (01) ascensor ubicado en el Edificio de calle La Paz Nº5 y dos (02) ascensores centrales ubicados en el Edificio Tribunales de esta ciudad” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 278/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 278/26: “Servicios de mantenimiento de un (01) ascensor ubicado en el Edificio de calle La Paz Nº5 y dos (02) ascensores centrales ubicados en el Edificio Tribunales de esta ciudad”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 13 de noviembre de 2026 a las 09:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 278-26 Descargar Imprmir ([oficial](https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-278-26-servicios-de-mantenimiento-de-un-01-ascensor-ubicado-en-el-edificio-de-calle-la-paz-no5-y-dos-02-ascensores-centrales-ubicados-en-el-edificio-tribunales/))
-- Municipalidad de Rosario — 24805/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38752))
-- CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 263/2026: CONTRATACION DE SERVICIO DE TRANSPORTE P/ 15 PASAJEROS PARANA-NOGOYA PARA EL 19/11/2026 ([oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones))
-- Municipalidad de Rosario — 24795/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38753))
-- Municipalidad de Rosario — 24815/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38754))
-- Poder Judicial de Entre Ríos — 269/2026: Contrataciones SOLICITUD DE COTIZACIÓN Nº269/26: “Alquiler de 1 (un) nuevo inmueble para el funcionamiento de la Cámara Contencioso Administrativo Nº2 de la ciudad de Concepción del Uruguay” PODER JUDICIAL DE ENTRE RIOS SOLICITUD DE COTIZACIÓN Nº269/26 De conformidad a lo dispuesto por Resolución de Secretaría General del S.T.J. Nº397/26, llámese a Solicitud de Cotización para: Alquiler de 1 (un) nuevo inmueble para el funcionamiento de la Cámara Contencioso Administrativo Nº2 de la ciudad de Concepción del Uruguay , con las siguientes características referenciales: • Localizarse preferiblemente en un entorno de seis (6) cuadras alrededor del edificio de Tribunales • Tener entre 8 y 9 ambientes de uso, o una superficie equivalente aproximada de 170m2 cubiertos, mínima • Contar con los servicios de luz (trifásica), agua, teléfono, red cloacal • Contar con dos (2) baños mínimo • Desarrollarse con un 50% mínimo de su superficie cubierta a nivel de planta baja • Entregarse en perfecto estado de conservación general y pintada • Disponibilidad inmediata (máximo 30 días). DURACIÓN DEL CONTRATO: Plazo. La presente locación tendrá una vigencia de dos (2) años. LUGAR DE PRESENTACION DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta Baja – Edificio Tribunales – Paraná – Entre Ríos. APERTURA DE LAS PROPUESTAS : 13 de noviembre de 2026 a las 11:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. CONSULTAS : para más información consultar requisitos y condiciones para la presentación de las ofertas en la página web del Poder Judicial de Entre Ríos www.jusentrerios.gov.ar–Sección Contrataciones ó al Tel.:4206100 INT. 6306 o 6312 (Of. de Compras y Asesoramiento). DESCARGAS : SC 269-26 Descargar Imprmir ([oficial](https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no269-26-alquiler-de-1-un-nuevo-inmueble-para-el-funcionamiento-de-la-camara-contencioso-administrativo-no2-de-la-ciudad-de-concepcion-del-uruguay/))
-- Municipalidad de Rosario — 51/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38756))
-- Municipalidad de Rosario — 3218/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38760))
-- Municipalidad de Rosario — 20/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38742))
-- Municipalidad de Rosario — 24825/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38755))
-- Municipalidad de Rosario — 101291/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38759))
-- Poder Judicial de Entre Ríos — 33/2026: De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, por Resolución Nº 134/26, llámese a Licitación Privada Nº 33/26: “Provisión y envío de artículos de librería para la Oficina de Suministros del STJ” . ([oficial](https://www.jusentrerios.gov.ar/compras/licitacion-privada-no-33-26-provision-y-envio-de-articulos-de-libreria-para-la-oficina-de-suministros-del-stj/lic-privada-33-26/))
-- Municipalidad de Rosario — 3/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38758))
-- Poder Judicial de Entre Ríos — 31/2026: De conformidad a lo dispuesto por el Superior Tribunal de Justicia de Entre Ríos, por Resolución Nº127/26 de fecha 28 de octubre de 2026 , llámese a Licitación Privada Nº31/26 por la obra “ Reparación Interior Sectores Varios Edificio Tribunales La Paz”. ([oficial](https://www.jusentrerios.gov.ar/compras/licitacion-privada-no31-26-obra-reparacion-interior-sectores-varios-edificio-tribunales-la-paz/))
-- Poder Judicial de Entre Ríos — 32/2026: De conformidad a lo dispuesto por la Defensoría General de la provincia de Entre Ríos, por Resolución Nº289/2026 D.G.-C, llámese a Licitación Privada Nº 32/26: “Provisión y envío de bienes informáticos para destinar al Ministerio Publico de la Defensa de Entre Ríos” . ([oficial](https://www.jusentrerios.gov.ar/compras/licitacion-privada-no-32-26-provision-y-envio-de-bienes-informaticos-para-destinar-al-ministerio-publico-de-la-defensa-de-entre-rios/lic-privada-32-26/))
-- Municipalidad de Rosario — 16699/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38761))
-- Municipalidad de Rosario — 20270/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38762))
-- ASSA — 1731: La presente licitación tiene por objeto contratar el Servicio de provisión de gases especiales (Argón, Acetileno, Óxido Nitroso, Nitrógeno, Aire Sintético, Hidrógeno y Helio) en cilindros, para abastecimiento de los Laboratorios de Calidad Rosario y Santa Fe, durante el período correspondiente al año 2027. En un todo de acuerdo con las Especificaciones Técnicas Particulares, Pliego de Bases y Condiciones Generales para la Contratación de Servicios, Pliego de Condiciones Complementarias y sus correspondientes Anexos. ([oficial](https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/8f4fcfb3474a4db2a435b3407cdcda07))
-- ASSA — 1732: ADQUISICION DE CARBON ACTIVADO - PLANTA SANTA FE ([oficial](https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/e694ce2c72be4b98ab50edfbcf761b71))
-- MIN. SALUD - PODER EJECUTIVO — 27/2026: Un (01) Autoanalizador Clínico.- ([oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones))
-- Poder Judicial de Entre Ríos — None: De conformidad a lo dispuesto por Resolución de Secretaría General del S.T.J. Nº397/26, llámese a Solicitud de Cotización para: Alquiler de 1 (un) nuevo inmueble para el funcionamiento de la Cámara Contencioso Administrativo Nº2 de la ciudad de Concepción del Uruguay , con las siguientes características referenciales: • Localizarse preferiblemente en un entorno de seis (6) cuadras alrededor del edificio de Tribunales • Tener entre 8 y 9 ambientes de uso, o una superficie equivalente aproximada de 170m2 cubiertos, mínima • Contar con los servicios de luz (trifásica), agua, teléfono, red cloacal • Contar con dos (2) baños mínimo • Desarrollarse con un 50% mínimo de su superficie cubierta a nivel de planta baja • Entregarse en perfecto estado de conservación general y pintada • Disponibilidad inmediata (máximo 30 días). ([oficial](https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no269-26-alquiler-de-1-un-nuevo-inmueble-para-el-funcionamiento-de-la-camara-contencioso-administrativo-no2-de-la-ciudad-de-concepcion-del-uruguay/))
-- Municipalidad de Crespo — 88/2026: Decreto 2026-11-10 06/11/2026 1100 2026 Decreto-1100-2026-llamado-concurso-088-2026-canos-para-entubado-calle-Heinze.pdf Llamado a Concurso de Precios Nº 088/2026 adquisición de caños helicoidal para entubado de calle Heinze ([oficial](http://municrespo.gov.ar/digesto/mod/subidas/Decreto-1100-2026-llamado-concurso-088-2026-canos-para-entubado-calle-Heinze.pdf))
-- Municipalidad de Crespo — 89/2026: Decreto 2026-11-10 10/11/2026 1101 2026 Decreto-1101-2026-llamado-concurso-089-2026-gas-oil-grado-3-consumo-segunda-quincena-noviembre.pdf Llamado a Concurso de Precios Nº 089/2026 adquisición de gas oil grado 3 consumo segunda quincena mes de noviembre de 2026 ([oficial](http://municrespo.gov.ar/digesto/mod/subidas/Decreto-1101-2026-llamado-concurso-089-2026-gas-oil-grado-3-consumo-segunda-quincena-noviembre.pdf))
+
+ FECHA APERTURA: 01 de diciembre de 2026 Hora: 11:00.
+ RECEPCION DE PROPUESTAS: Departamento Suministros - Municipalidad de Concepción del Uruguay - San
+Martín y Moreno - Concepción del Uruguay - Entre Ríos.
+ LUGAR APERTURA: Departamento Suministros - Municipalidad de Concepción del Uruguay - San Martín y
+Moreno - Concepción del Uruguay - Entre Ríos.
+ PRESUPUESTO OFICIAL: $ 437.999.549,16.
+ PLIEGO CONDICIONES: $ 430.000,00. A la venta Tesorería Municipal hasta 24 horas hábiles anteriores al Acto
+de Apertura.
+ GARANTIA OFERTA: 1% del presupuesto oficial.
+ FIANZA CONTRATO: 5% del monto total contratado.
+ En caso que la fecha de apertura resultare feriado o no laborable, la misma se efectuará el día hábil siguiente.
+ Dr. Ezequiel Valdunciel, Secretaría de Coordinación General y Jefatura de Gabinete, noviembre de 2026. ([oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/12-11-26.pdf))
+- Municipalidad de Concepción del Uruguay — 44/2026: -- -- --
+                                MUNICIPALIDAD DE CONCEPCION DEL URUGUAY
+                                           Licitación Pública Nº 44/2026
+ OBJETO: “Adquisición de 1.610 (mil seiscientos diez) m3 de Hormigón Calidad H25 para 13 (trece) Cuadras de
+Pavimento Rígido en Barrio 30 de Octubre”, en un todo de acuerdo a los Pliegos de Bases, Condiciones
+Particulares y demás documentación.
+ FECHA APERTURA: 01 de diciembre de 2026 Hora: 10:00.
+ RECEPCION DE PROPUESTAS: Departamento Suministros - Municipalidad de Concepción del Uruguay - San
+Martín y Moreno - Concepción del Uruguay - Entre Ríos.
+ LUGAR APERTURA: Departamento Suministros - Municipalidad de Concepción del Uruguay - San Martín y
+Moreno - Concepción del Uruguay - Entre Ríos.
+ PRESUPUESTO OFICIAL: $ 362.250.000,00.
+ PLIEGO CONDICIONES: $ 360.000,00. A la venta Tesorería Municipal hasta 24 horas hábiles anteriores al Acto
+de Apertura.
+ GARANTIA OFERTA: 1% del presupuesto oficial.
+ FIANZA CONTRATO: 5% del monto total contratado.
+ En caso que la fecha de apertura resultare feriado o no laborable, la misma se efectuará el día hábil siguiente.
+ Dr. Ezequiel Valdunciel, Secretaría de Coordinación General y Jefatura de Gabinete, noviembre de 2026. ([oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/12-11-26.pdf))
+- Poder Judicial de Entre Ríos — 15/2026: De conformidad a lo dispuesto por el Tribunal de Superintendencia de la Provincia de Entre Ríos, por Resolución Nº133/26, llámese a Licitación Pública Nº15/26 , por la Provisión y envío de insumos para el Servicio de Genética Forense del S.T.J. ([oficial](https://www.jusentrerios.gov.ar/compras/licitacion-publica-no15-26-provision-y-envio-de-insumos-para-el-servicio-de-genetica-forense-del-s-t-j/))
+- Municipalidad de Concepción del Uruguay — 47/2026: -- -- --
+                                MUNICIPALIDAD DE CONCEPCION DEL URUGUAY
+                                           Licitación Pública Nº 47/2026
+ OBJETO: "Solado Central Plaza Ramírez”, en un todo de acuerdo a los Pliegos de Bases, Condiciones
+Particulares y demás documentación.
+ FECHA APERTURA: 03 de diciembre de 2026 Hora: 10:00.
+ RECEPCION DE PROPUESTAS: Departamento Suministros - Municipalidad de Concepción del Uruguay - San
+Martín y Moreno - Concepción del Uruguay - Entre Ríos.
+ LUGAR APERTURA: Departamento Suministros - Municipalidad de Concepción del Uruguay - San Martín y
+Moreno - Concepción del Uruguay - Entre Ríos.
+ PRESUPUESTO OFICIAL: $ 89.030.839,03.
+ PLIEGO CONDICIONES: $ 89.000,00. A la venta Tesorería Municipal hasta 24 horas hábiles anteriores al Acto
+de Apertura.
+ GARANTIA OFERTA: 1% del presupuesto oficial.
+ FIANZA CONTRATO: 5% del monto total contratado.
+ En caso que la fecha de apertura resultare feriado o no laborable, la misma se efectuará el día hábil siguiente.
+ Dr. Ezequiel Valdunciel, Secretaría de Coordinación General y Jefatura de Gabinete, noviembre de 2026. ([oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/12-11-26.pdf))
+- Municipalidad de Concepción del Uruguay — 46/2026: URUGUAY
+
+                                MUNICIPALIDAD DE CONCEPCION DEL URUGUAY
+                                           Licitación Pública Nº 46/2026
+ OBJETO: ”Adquisición de Lajas de Pórfido Patagónico”, en un todo de acuerdo a los Pliegos de Bases,
+Condiciones Particulares y demás documentación.
+ FECHA APERTURA: 02 de diciembre de 2026 Hora: 10:00.
+ RECEPCION DE PROPUESTAS: Departamento Suministros - Municipalidad de Concepción del Uruguay - San
+Martín y Moreno - Concepción del Uruguay - Entre Ríos.
+ LUGAR APERTURA: Departamento Suministros - Municipalidad de Concepción del Uruguay - San Martín y
+Moreno - Concepción del Uruguay - Entre Ríos.
+ PRESUPUESTO OFICIAL: $ 63.972.639,50.
+ PLIEGO CONDICIONES: $ 64.000,00. A la venta Tesorería Municipal hasta 24 horas hábiles anteriores al Acto
+de Apertura.
+ GARANTIA OFERTA: 1% del presupuesto oficial.
+ FIANZA CONTRATO: 5% del monto total contratado.
+ En caso que la fecha de apertura resultare feriado o no laborable, la misma se efectuará el día hábil siguiente.
+ Dr. Ezequiel Valdunciel, Secretaría de Coordinación General y Jefatura de Gabinete, noviembre de 2026. ([oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/12-11-26.pdf))
+- Comuna de General Almada — 4/2026: GUALEGUAYCHU
+
+                                          COMUNA DE GENERAL ALMADA
+                                               Licitación Pública 04-2026
+ OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 04-2026 COMUNA DE GENERAL ALMADA AUTORIZADA
+POR LA RESOLUCIÓN Nº 231-2026 DEL DEPARTAMENTO EJECUTIVO. COMPRA DE TANQUE DE AGUA
+POTABLE COMUNAL (MATERIALES Y MANO DE OBRA DE INSTALACIÓN) EN EL MARCO DEL PLIEGO DE
+BASES Y CONDICIONES GENERALES Y PLIEGO DE CONDICIONES ESPECIFICAS Y TECNICAS.
+ PRESUPUESTO OFICIAL: $ 55.000.000 (PESOS CINCUENTA Y CINCO MILLONES CON 00/100).
+ PLIEGO: El Pliego de Bases y Condiciones Generales y el Pliego de Condiciones Específicas y Técnicas puede
+adquirirse por Mesa de Entradas de la Comuna de General Almada o en el siguiente link de acceso público:
+https://drive.google.com/drive/folders/1B8sIltssAwiNkJq9OjlURnB0juQ6bQE7 .
+ VALOR DEL PLIEGO: SIN COSTO.
+ LUGAR DE PRESENTACION: Mesa de Entradas del Edificio Comunal, sito en calle Jorge Weitzel S/N, Comuna
+de General Almada, Departamento Gualeguaychú, Entre Ríos.
+ FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 20 de noviembre de 2026 a las 16:00 horas.
+ FECHA Y HORA DE APERTURA DE PROPUESTAS: 20 de noviembre de 2026 a las 17:00 horas en el Edificio
+Comunal, sito en calle Jorge Weitzel S/N, Comuna de General Almada, Depto. Gualeguaychú, Entre Ríos.
+ CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la
+casilla oficial del correo de la Comuna de General Almada, sito en comunadealmada@hotmail.com. ([oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/12-11-26.pdf))
+- Aeropuerto Internacional Rosario — LPR-2026-00000001-APPSF-OD-OF-LEGALES-AIR: Adquisición de semáforos aleatorios de control aeroportuario con selección configurable y señalización LED. ([oficial](https://aeropuertorosario.com/licitaciones/lpr-2026-00000001-appsf-od-of-legales-air/))
+- Municipalidad de Lucas González — 10/2026: NOGOYA
+
+                              MUNICIPALIDAD DE LUCAS GONZALEZ
+                                    Licitación Pública N.º 10/2026
+ OBJETO: CONCESION CANTINA Y COMEDOR DEL COMPLEJO POLIDEPORTIVO MUNICIPAL DE LUCAS
+GONZALEZ. -
+ FECHA DE APERTURA: 25/11/2026 - HORA 10:00
+ PRESUPUESTO OFICIAL: $ 843.000,00 (PESOS OCHOCIENTOS CUARENTA Y TRES MIL)
+
+
+
+ VALOR DEL PLIEGO: $ 2.000.- (PESOS: DOS MIL.-)
+ INFORMES Y VENTA DE PLIEGOS EN MUNICIPALIDAD DE LUCAS GONZALEZ, en horario de 6:30 a 12:30
+hs.-
+ LUCAS GONZALEZ, 10 DE NOVIEMBRE DE 2026.- ([oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/12-11-26.pdf))
+- Municipalidad de Rosario — 81581/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38775))
+- Municipalidad de Rosario — 73496/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38764))
+- CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO — 264/2026: COMPRA DE ARTICULOS DE LIBRERIA ([oficial](https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones))
+- Municipalidad de Rosario — 73017/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38772))
+- Municipalidad de Rosario — 60731/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38768))
+- Municipalidad de Rosario — 60741/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38771))
+- Municipalidad de Rosario — 81571/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38767))
+- Municipalidad de Rosario — 69008/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38766))
+- Municipalidad de Rosario — 110891/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38773))
+- Municipalidad de Rosario — 120841/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38778))
+- Municipalidad de Concepción del Uruguay — 38/2026: Adquisición de 325 (trescientos veinticinco) m3 de Hormigón Calidad H25 para 03 (tres) Cuadras de Pavimento en Barrio Malvinas Argentinas, calle 12 de Oeste Norte Bis ([oficial](https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones))
+- Municipalidad de Rosario — 131521/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38769))
+- ASSA — 1280: REHABILITACIÓN INTEGRAL MOTOR TRIFÁSICO SIEMENS - ROSARIO ([oficial](https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/4c989e273fb04e048d2ff4cd85fb66e2))
+- Municipalidad de Rosario — 32274/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38765))
+- Municipalidad de Rosario — 20280/2026: None ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38777))
+- Municipalidad de Casilda — 27/2026: DECRETO Nº 140-2026 – LLAMA LIC PUB N° 27-26 – ADQUISICION MATERIALES ESTABILIZADO Y REESTABILIZADO DE CALLES Descarga ([oficial](https://www.casilda.gob.ar/web/wp-content/uploads/2026/11/DECRETO-No-140-2026-LLAMA-LIC-PUB-N%C2%B0-27-26-ADQUISICION-MATERIALES-ESTABILIZADO-Y-REESTABILIZADO-DE-CALLES.pdf))
+- Municipalidad de Casilda — 28/2026: DECRETO Nº 141-2026 – LLAMA LIC PUB N° 28-26 – ADQUISICION MATERIALES PARA DEMARCACION VIAL Descarga ([oficial](https://www.casilda.gob.ar/web/wp-content/uploads/2026/11/DECRETO-No-141-2026-LLAMA-LIC-PUB-N%C2%B0-28-26-ADQUISICION-MATERIALES-PARA-DEMARCACION-VIAL.pdf))
+- Municipalidad de Crespo — 90/2026: Decreto 2026-11-12 11/11/2026 1114 2026 Decreto-1114-2026-llamado-concurso-090-2026-materiales-para-tendido-electrico.pdf Llamado a Concurso de Precios Nº 090/2026 adquisición de materiales para tendido eléctrico en loteo social calle Los Ombúes ([oficial](http://municrespo.gov.ar/digesto/mod/subidas/Decreto-1114-2026-llamado-concurso-090-2026-materiales-para-tendido-electrico.pdf))
 
 ## recuperaciones_historicas
 
-- Ministerio Público de Buenos Aires — 36/2006: Tramita la busqueda de un inmueble en alquiler en la ciudad de San Nicolás para el funcionamiento de dependencias del Ministerio Público ([oficial](https://www.mpba.gov.ar/v2021/licitaciones?p=18&keyword=Col%C3%B3n))
-- Comuna de María Teresa — 7/2024: LICITACIÓN PARA ADQUISICIÓN DE PICK-UP 4X2- 0KM (CERRADA) ([oficial](https://mariateresa.gob.ar/index.php?pagina=detalle&idp=592))
-- Gobierno de Timbúes — 15: LICITACIÓN PÚBLICA N° 15 2026 PISOS, ZOCALOS Y REVESTIMIENTOS Publicado, lunes, 19 de octubre de 2026 -- 195 vistas 03-COMPUTO PISOS ,ZOCALOS Y REVESTIMIENTOSEET 712 .pdf 02-ANEXOI PISOS, ZOCALOS Y REVESTIMIENTOS EET 712.pdf 01-LIC.PUB. 015 PISOS, ZOCALOS Y REVESTIMIENTOS ESCUELA TECNICA 712.pdf ([oficial](https://www.timbues.gob.ar/archivos/1440_1792614149_03-COMPUTOPISOS,ZOCALOSYREVESTIMIENTOSEET712.pdf))
-- Gobierno de Timbúes — 15: LICITACIÓN PÚBLICA N° 15 2026 PISOS, ZOCALOS Y REVESTIMIENTOS Publicado, lunes, 19 de octubre de 2026 -- 196 vistas 03-COMPUTO PISOS ,ZOCALOS Y REVESTIMIENTOSEET 712 .pdf 02-ANEXOI PISOS, ZOCALOS Y REVESTIMIENTOS EET 712.pdf 01-LIC.PUB. 015 PISOS, ZOCALOS Y REVESTIMIENTOS ESCUELA TECNICA 712.pdf ([oficial](https://timbues.gob.ar/archivos/1440_1792614149_03-COMPUTOPISOS,ZOCALOSYREVESTIMIENTOSEET712.pdf))
+- Municipalidad de Crespo — 2/2020: Decreto 2026-11-12 23/12/2020 311 2020 Decreto-311-2020-Adjudicacion-Convocatoria-02-2020-segundo-llamado-sector-b-concesion-carribares.pdf Adjudicación Convocatoria Pública N° 02/2020- Segundo llamado para la concesión de un espacio público ubicado en el Predio Ferial de la Avicultura, Sector B, a los fines de instalar un Carribar ([oficial](http://municrespo.gov.ar/digesto/mod/subidas/Decreto-311-2020-Adjudicacion-Convocatoria-02-2020-segundo-llamado-sector-b-concesion-carribares.pdf))
+- Aeropuerto Internacional Rosario — 94/2025: Contratación Directa Nº 94/2025 En trámite Fecha de apertura 25-11-2025 11:00 Provisión e instalación de bandejas para drenajes. Ampliar ([oficial](https://aeropuertorosario.com/licitaciones/contratacion-directa-no-94-2025/))
+- Aeropuerto Internacional Rosario — 96/2025: Contratación Directa Nº 96/2025 En trámite Fecha de apertura 26-11-2025 11:00 Compra de antenas para bases fijas vehiculares, aplicación al sistema VHF. Ampliar ([oficial](https://aeropuertorosario.com/licitaciones/contratacion-directa-no-96-2025/))
+- Aeropuerto Internacional Rosario — 97/2025: Contratación Directa Nº 97/2025 En trámite Fecha de apertura 26-11-2025 11:00 Compra de papel térmico para impresoras fiscales en playa de estacionamiento. Ampliar ([oficial](https://aeropuertorosario.com/licitaciones/contratacion-directa-no-97-2025/))
+- Aeropuerto Internacional Rosario — 98/2025: Contratación Directa Nº 98/2025 En trámite Fecha de apertura 27-11-2025 11:00 Provisión de proyectores led para reemplazo de luminaria de barrisol, arco y mirador del Aeropuerto Internacional De Rosario Ampliar ([oficial](https://aeropuertorosario.com/licitaciones/contratacion-directa-no-98-2025/))
+- Aeropuerto Internacional Rosario — 99/2025: Contratación Directa Nº 99/2025 En trámite Fecha de apertura 27-11-2025 11:00 Servicio de retiro de residuos peligrosos del Aeropuerto Internacional de Rosario Ampliar ([oficial](https://aeropuertorosario.com/licitaciones/contratacion-directa-no-99-2025/))
+- Aeropuerto Internacional Rosario — 38/2025: Licitación Privada Nº 38/2025 En trámite Fecha de apertura 03-12-2025 11:00 Reacondicionamiento de placas de cinta de equipaje del Aeropuerto Internacional de Rosario. Ampliar ([oficial](https://aeropuertorosario.com/licitaciones/licitacion-privada-no-38-2025/))
+- Aeropuerto Internacional Rosario — 100/2025: Contratación Directa Nº 100/2025 En trámite Fecha de apertura 04-12-2025 11:00 Adquisición de Remeras de trabajo destinadas al personal de las áreas: Mantenimiento, infraestructura, SHYMA, SMS, técnica, TI, CGO del Aeropuerto Internacional Rosario Ampliar ([oficial](https://aeropuertorosario.com/licitaciones/contratacion-directa-no-100-2025/))
+- Aeropuerto Internacional Rosario — 39/2025: Licitación Privada Nº 39/2025 En trámite Fecha de apertura 10-12-2025 11:00 Servicio de mantenimiento preventivo de escaleras y ascensores para la nueva terminal del Aeropuerto Internacional de Rosario. Ampliar ([oficial](https://aeropuertorosario.com/licitaciones/licitacion-privada-no-39-2025/))
+- Aeropuerto Internacional Rosario — 44/2025: Licitación Privada Nº 44/2025 En trámite Fecha de apertura 17-12-2025 11:00 Alquiler de plataforma elevadora tipo tijera para el AIR Ampliar ([oficial](https://aeropuertorosario.com/licitaciones/licitacion-privada-no-44-2025/))
+- Gobierno de Timbúes — 15: LICITACIÓN PÚBLICA N° 15 2026 PISOS, ZOCALOS Y REVESTIMIENTOS Publicado, lunes, 19 de octubre de 2026 -- 202 vistas 03-COMPUTO PISOS ,ZOCALOS Y REVESTIMIENTOSEET 712 .pdf 02-ANEXOI PISOS, ZOCALOS Y REVESTIMIENTOS EET 712.pdf 01-LIC.PUB. 015 PISOS, ZOCALOS Y REVESTIMIENTOS ESCUELA TECNICA 712.pdf ([oficial](https://www.timbues.gob.ar/archivos/1440_1792614149_03-COMPUTOPISOS,ZOCALOSYREVESTIMIENTOSEET712.pdf))
+- Gobierno de Timbúes — 15: LICITACIÓN PÚBLICA N° 15 2026 PISOS, ZOCALOS Y REVESTIMIENTOS Publicado, lunes, 19 de octubre de 2026 -- 203 vistas 03-COMPUTO PISOS ,ZOCALOS Y REVESTIMIENTOSEET 712 .pdf 02-ANEXOI PISOS, ZOCALOS Y REVESTIMIENTOS EET 712.pdf 01-LIC.PUB. 015 PISOS, ZOCALOS Y REVESTIMIENTOS ESCUELA TECNICA 712.pdf ([oficial](https://timbues.gob.ar/archivos/1440_1792614149_03-COMPUTOPISOS,ZOCALOSYREVESTIMIENTOSEET712.pdf))
 
 ## modificaciones
 
-- Municipalidad de Viale — 2518:                    Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2518
-                              9 de Julio y Estrada
-                        C.P. : (3109) - Viale - E.Ríos
-                      Tel. : (0343) - 4920011-4920135
-                                                                                                                               Para El :     18/09/2026 A Las 11.00 HS.
-                    IVA : Exento - CUIT : 30-99903611-9
-                     eMail : municipalidad@viale.gob.ar                                                   Objeto : ADQ. DE BROZA CALCAREA
-                          WEB : www.viale.gob.ar
-
-
-
-                                                                                                                                           Viale 15 de septiembre de 2026
-                                Señor/es : - - (0)
-                               Domicilio : -
-                               Localidad : (0000) - -
-
-                              Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie
-    Observaciones : A RETIRAR EN CANTERA
-Decreto Nº 242/26: Las ofertas presentadas por comerciantes locales y
-contribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización
-final al momento de ser evaluadas y comparadas frente a oferentes de otras
-localidades.
-                                                                                                                                  Jefe de Compras
- Orden      Cantidad          Unidad          Descripción                                                                                                 P.Unitario        Precio Total
-
-   0        1500,00              M3             BROZA COMUN
-
-                                                                                                                                                       TOTAL $
-
-       Duración de la Oferta :
-            CONDICIONES DE PAGO : - CONTADO :
-                                    - FINANCIADO :
-             PLAZO DE ENTREGA DE MATERIALES :
-                       IMPORTA LA SUMA DE PESOS :
-
-                                                    OBSERVACIONES :
-
-                                        LUGAR, FECHA Y HORA :
-Rogamos cotizar marca y especificaciones técnicas.
-Presentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.
-
-
-
- Hoja : 1 de 1
-
-arielm_130093_pc-168-093
-                                                                                                                                                           Firma y Sello
- ([oficial](https://viale.gob.ar/wp-content/uploads/2026/09/2518.pdf))
-- Municipalidad de Viale — 2519:                    Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2519
+- Municipalidad de Viale — 2527:                    Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2527
                                9 de Julio y Estrada
                          C.P. : (3109) - Viale - E.Ríos
                        Tel. : (0343) - 4920011-4920135
-                                                                                                                               Para El :     22/09/2026 A Las 10.00 HS.
+                                                                                                                               Para El :     13/10/2026 A Las 10.00 HS.
                      IVA : Exento - CUIT : 30-99903611-9
-                      eMail : municipalidad@viale.gob.ar                        Objeto : REFACCION Y MANTENIMIENTO DE NATATORIO MUNICIPAL
+                      eMail : municipalidad@viale.gob.ar                      Objeto : DESMONTAR ESTRUCTURA DE LA PILETA DEL POLIDEPORTIVO
                            WEB : www.viale.gob.ar
 
 
 
-                                                                                                                                           Viale 17 de septiembre de 2026
-                                 Señor/es : - - (0)
-                                Domicilio : -
-                                Localidad : (0000) - -
-
-                               Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie
-    Observaciones : ANTICIPO FINANCIERO DEL 40%
-Decreto Nº 242/26: Las ofertas presentadas por comerciantes locales y
-contribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización
-final al momento de ser evaluadas y comparadas frente a oferentes de otras
-localidades.
-                                                                                                                                  Jefe de Compras
- Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario        Precio Total
-
-   0          1,00           GLOBAL              PULIDO DE CARA SUPERIOR DE LOS MUROS LATERALES DE LA PILETA
-
-   1          1,00           GLOBAL              CARPETA DE TRATAMIENTO ATERMICO SOBRE LA CARA SUPERIOR DE
-                                                 LOS MUROS LATERALES
-
-   2          1,00           GLOBAL              LIMPIEZA PARCIAL Y FINAL DE OBRA, RETIRO DE ESCOMBROS Y
-                                                 EBTREGA DEL PREDIO EN CONDICIONES OPERATIVAS
-
-                                                                                                                                                       TOTAL $
-
-       Duración de la Oferta :
-            CONDICIONES DE PAGO : - CONTADO :
-                                    - FINANCIADO :
-             PLAZO DE ENTREGA DE MATERIALES :
-                       IMPORTA LA SUMA DE PESOS :
-
-                                                     OBSERVACIONES :
-
-                                         LUGAR, FECHA Y HORA :
-Rogamos cotizar marca y especificaciones técnicas.
-Presentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.
-
-
-
- Hoja : 1 de 1
-
-arielm_130093_pc-168-093
-                                                                                                                                                           Firma y Sello
- ([oficial](https://viale.gob.ar/wp-content/uploads/2026/09/2519.pdf))
-- Municipalidad de Viale — 2520:                    Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2520
-                               9 de Julio y Estrada
-                         C.P. : (3109) - Viale - E.Ríos
-                       Tel. : (0343) - 4920011-4920135
-                                                                                                                               Para El :     25/09/2026 A Las 10.00 HS.
-                     IVA : Exento - CUIT : 30-99903611-9
-                      eMail : municipalidad@viale.gob.ar                                       Objeto : ADQ, DE MOLDES PARA CORDON CUNETA
-                           WEB : www.viale.gob.ar
-
-
-
-                                                                                                                                           Viale 22 de septiembre de 2026
-                                 Señor/es : - - (0)
-                                Domicilio : -
-                                Localidad : (0000) - -
-
-                             Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie
-    Observaciones : POR FAVOR, INCLUIR EN EL PRESUPUESTO EL COSTO DE ENVÍO DETALLADO O INTEGRADO EN EL
-    PRECIO FINAL
-Decreto Nº 242/26: Las ofertas presentadas por comerciantes locales y
-contribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización
-final al momento de ser evaluadas y comparadas frente a oferentes de otras
-localidades.
-                                                                                                                                  Jefe de Compras
- Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario        Precio Total
-
-   0         20,00                U.             MOLDE CORDON RECTO: LARGO 3M, ALTURA 15CM, RESPALDO CHAPA
-                                                 DE 3.20MM Y CARAVISTA CHAPA DE 4.75MM
-
-   1          2,00         CONJUNTOS MOLDE CORDON CURVO: RESPALDO ALTURA 15CM, CHAPA DE 3.20MM
-                                     Y CARAVISTA ALTURA 15CM CHAPA DE 4.75MM, UNA ESQUINA (90º),
-                                     RADIO 6M EN 4 TRAMOS, DESARROLLO 9.42M (CONJUNTO DE 4
-                                     TRAMOS)
-
-                                                                                                                                                       TOTAL $
-
-       Duración de la Oferta :
-            CONDICIONES DE PAGO : - CONTADO :
-                                    - FINANCIADO :
-             PLAZO DE ENTREGA DE MATERIALES :
-                       IMPORTA LA SUMA DE PESOS :
-
-                                                     OBSERVACIONES :
-
-                                         LUGAR, FECHA Y HORA :
-Rogamos cotizar marca y especificaciones técnicas.
-Presentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.
-
-
-
- Hoja : 1 de 1
-
-arielm_130093_pc-168-093
-                                                                                                                                                           Firma y Sello
- ([oficial](https://viale.gob.ar/wp-content/uploads/2026/09/2520.pdf))
-- Municipalidad de Viale — 2521:                    Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2521
-                              9 de Julio y Estrada
-                        C.P. : (3109) - Viale - E.Ríos
-                      Tel. : (0343) - 4920011-4920135
-                                                                                                                               Para El :     28/09/2026 A Las 10.00 HS.
-                    IVA : Exento - CUIT : 30-99903611-9
-                     eMail : municipalidad@viale.gob.ar                                                       Objeto : ADQ. GAS OIL GRADO 2
-                          WEB : www.viale.gob.ar
-
-
-
-                                                                                                                                           Viale 23 de septiembre de 2026
-                                Señor/es : - - (0)
-                               Domicilio : -
-                               Localidad : (0000) - -
-
-                                                Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie
-    Observaciones : -
-Decreto Nº 242/26: Las ofertas presentadas por comerciantes locales y
-contribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización
-final al momento de ser evaluadas y comparadas frente a oferentes de otras
-localidades.
-                                                                                                                                  Jefe de Compras
- Orden      Cantidad          Unidad          Descripción                                                                                                 P.Unitario        Precio Total
-
-   0        7000,00               L.            GAS OIL GRADO 2
-
-                                                                                                                                                       TOTAL $
-
-       Duración de la Oferta :
-            CONDICIONES DE PAGO : - CONTADO :
-                                    - FINANCIADO :
-             PLAZO DE ENTREGA DE MATERIALES :
-                       IMPORTA LA SUMA DE PESOS :
-
-                                                    OBSERVACIONES :
-
-                                        LUGAR, FECHA Y HORA :
-Rogamos cotizar marca y especificaciones técnicas.
-Presentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.
-
-
-
- Hoja : 1 de 1
-
-arielm_130093_pc-168-093
-                                                                                                                                                           Firma y Sello
- ([oficial](https://viale.gob.ar/wp-content/uploads/2026/09/2521.pdf))
-- Municipalidad de Viale — 2522:                    Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2522
-                               9 de Julio y Estrada
-                         C.P. : (3109) - Viale - E.Ríos
-                       Tel. : (0343) - 4920011-4920135
-                                                                                                                               Para El :     28/09/2026 A Las 11.00 HS.
-                     IVA : Exento - CUIT : 30-99903611-9
-                      eMail : municipalidad@viale.gob.ar                                                         Objeto : ADQ. DE EMULSION
-                           WEB : www.viale.gob.ar
-
-
-
-                                                                                                                                           Viale 23 de septiembre de 2026
+                                                                                                                                           Viale 08 de octubre de 2026
                                  Señor/es : - - (0)
                                 Domicilio : -
                                 Localidad : (0000) - -
@@ -302,154 +184,9 @@ localidades.
                                                                                                                                   Jefe de Compras
  Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario        Precio Total
 
-   0          5,00               TN.             EMULSION EBCR IM GR-42183
-
-                                                                                                                                                       TOTAL $
-
-       Duración de la Oferta :
-            CONDICIONES DE PAGO : - CONTADO :
-                                    - FINANCIADO :
-             PLAZO DE ENTREGA DE MATERIALES :
-                       IMPORTA LA SUMA DE PESOS :
-
-                                                     OBSERVACIONES :
-
-                                         LUGAR, FECHA Y HORA :
-Rogamos cotizar marca y especificaciones técnicas.
-Presentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.
-
-
-
- Hoja : 1 de 1
-
-arielm_130093_pc-168-093
-                                                                                                                                                           Firma y Sello
- ([oficial](https://viale.gob.ar/wp-content/uploads/2026/09/2522.pdf))
-- Municipalidad de Viale — 2523:                    Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2523
-                               9 de Julio y Estrada
-                         C.P. : (3109) - Viale - E.Ríos
-                       Tel. : (0343) - 4920011-4920135
-                                                                                                                               Para El :     30/09/2026 A Las 10.00 HS.
-                     IVA : Exento - CUIT : 30-99903611-9
-                      eMail : municipalidad@viale.gob.ar                      Objeto : INTALACION DE COLUMNAS CON CARTELES NOMENCLADORES
-                           WEB : www.viale.gob.ar
-
-
-
-                                                                                                                                           Viale 25 de septiembre de 2026
-                                 Señor/es : - - (0)
-                                Domicilio : -
-                                Localidad : (0000) - -
-
-                                                 Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie
-    Observaciones : -
-Decreto Nº 242/26: Las ofertas presentadas por comerciantes locales y
-contribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización
-final al momento de ser evaluadas y comparadas frente a oferentes de otras
-localidades.
-                                                                                                                                  Jefe de Compras
- Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario        Precio Total
-
-   0         38,00                U.             INTALACION DE COLUMNAS CON CARTELES NOMENCLADORES
-
-                                                                                                                                                       TOTAL $
-
-       Duración de la Oferta :
-            CONDICIONES DE PAGO : - CONTADO :
-                                    - FINANCIADO :
-             PLAZO DE ENTREGA DE MATERIALES :
-                       IMPORTA LA SUMA DE PESOS :
-
-                                                     OBSERVACIONES :
-
-                                         LUGAR, FECHA Y HORA :
-Rogamos cotizar marca y especificaciones técnicas.
-Presentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.
-
-
-
- Hoja : 1 de 1
-
-arielm_130093_pc-168-093
-                                                                                                                                                           Firma y Sello
- ([oficial](https://viale.gob.ar/wp-content/uploads/2026/10/2523.pdf))
-- Municipalidad de Viale — 2524:                    Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2524
-                               9 de Julio y Estrada
-                         C.P. : (3109) - Viale - E.Ríos
-                       Tel. : (0343) - 4920011-4920135
-                                                                                                                               Para El :     30/09/2026 A Las 11.00 HS.
-                     IVA : Exento - CUIT : 30-99903611-9
-                      eMail : municipalidad@viale.gob.ar                                                      Objeto : PINTURA PARA PILETA
-                           WEB : www.viale.gob.ar
-
-
-
-                                                                                                                                           Viale 25 de septiembre de 2026
-                                 Señor/es : - - (0)
-                                Domicilio : -
-                                Localidad : (0000) - -
-
-                             Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie
-    Observaciones : POR FAVOR, INCLUIR EN EL PRESUPUESTO EL COSTO DE ENVÍO DETALLADO O INTEGRADO EN EL
-    PRECIO FINAL
-Decreto Nº 242/26: Las ofertas presentadas por comerciantes locales y
-contribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización
-final al momento de ser evaluadas y comparadas frente a oferentes de otras
-localidades.
-                                                                                                                                  Jefe de Compras
- Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario        Precio Total
-
-   0         14,00            BALDE              PINTURA PARA PILETA BASE ACUOSA AZUL POR 20L.
-
-   1          1,00            BALDE              FIJADOR SELLADOR AL AGUA POR 20L.
-
-                                                                                                                                                       TOTAL $
-
-       Duración de la Oferta :
-            CONDICIONES DE PAGO : - CONTADO :
-                                    - FINANCIADO :
-             PLAZO DE ENTREGA DE MATERIALES :
-                       IMPORTA LA SUMA DE PESOS :
-
-                                                     OBSERVACIONES :
-
-                                         LUGAR, FECHA Y HORA :
-Rogamos cotizar marca y especificaciones técnicas.
-Presentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.
-
-
-
- Hoja : 1 de 1
-
-arielm_130093_pc-168-093
-                                                                                                                                                           Firma y Sello
- ([oficial](https://viale.gob.ar/wp-content/uploads/2026/10/2524.pdf))
-- Municipalidad de Viale — 2525:                    Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2525
-                               9 de Julio y Estrada
-                         C.P. : (3109) - Viale - E.Ríos
-                       Tel. : (0343) - 4920011-4920135
-                                                                                                                               Para El :     09/10/2026 A Las 10.00 HS.
-                     IVA : Exento - CUIT : 30-99903611-9
-                      eMail : municipalidad@viale.gob.ar                      Objeto : REFACCION, ACONDICIONAMIENTO, PINTURA E INSTALACION
-                           WEB : www.viale.gob.ar
-                                                                                 DE PASAMANOS ESTRUCTURADOS EN PILETA POLIDEPORTIVO
-                                                                                                        MUNICIPAL
-
-                                                                                                                                           Viale 05 de octubre de 2026
-                                 Señor/es : - - (0)
-                                Domicilio : -
-                                Localidad : (0000) - -
-
-                                                 Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie
-    Observaciones : -
-Decreto Nº 242/26: Las ofertas presentadas por comerciantes locales y
-contribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización
-final al momento de ser evaluadas y comparadas frente a oferentes de otras
-localidades.
-                                                                                                                                  Jefe de Compras
- Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario        Precio Total
-
-   0          1,00                  -            TRABAJOS SEGUN DETALLE ADJUNTO
+   0          1,00                  -            DESMONTAR ESTRUCTURA DE PERFILES TECHO DE LA PILETA DEL
+                                                 POLIDEPORTIVO, CORTAR 16 PLACAS DE PATAS Y TAPAR 32 BOCAS DE
+                                                 CAÑOS
 
                                                                                                                                                         TOTAL $
 
@@ -471,26 +208,25 @@ Presentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin l
 
 arielm_130093_pc-168-093
                                                                                                                                                             Firma y Sello
- ([oficial](https://viale.gob.ar/wp-content/uploads/2026/10/2525.pdf))
-- Municipalidad de Viale — 2526:                    Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2526
+ ([oficial](https://viale.gob.ar/wp-content/uploads/2026/10/2527.pdf))
+- Municipalidad de Viale — 2528:                    Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2528
                                9 de Julio y Estrada
                          C.P. : (3109) - Viale - E.Ríos
                        Tel. : (0343) - 4920011-4920135
-                                                                                                                               Para El :     09/10/2026 A Las 11.00 HS.
+                                                                                                                               Para El :     15/10/2026 A Las 10.00 HS.
                      IVA : Exento - CUIT : 30-99903611-9
-                      eMail : municipalidad@viale.gob.ar                                                      Objeto : ADQ. DE LUBRICANTES
+                      eMail : municipalidad@viale.gob.ar                             Objeto : REPARACIONES CAMION ELEVADOR FORD CARGO 712
                            WEB : www.viale.gob.ar
 
 
 
-                                                                                                                                           Viale 07 de octubre de 2026
+                                                                                                                                           Viale 13 de octubre de 2026
                                  Señor/es : - - (0)
                                 Domicilio : -
                                 Localidad : (0000) - -
 
-                             Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie
-    Observaciones : POR FAVOR, INCLUIR EN EL PRESUPUESTO EL COSTO DE ENVÍO DETALLADO O INTEGRADO EN EL
-    PRECIO FINAL
+                                                 Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie
+    Observaciones : -
 Decreto Nº 242/26: Las ofertas presentadas por comerciantes locales y
 contribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización
 final al momento de ser evaluadas y comparadas frente a oferentes de otras
@@ -498,13 +234,17 @@ localidades.
                                                                                                                                   Jefe de Compras
  Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario        Precio Total
 
-   0          1,00           TAMBOR              ACEITE HIDRAULICO 68 POR TAMBOR
+   0          1,00                  -            REPARAR CILINDRO SECUNDARIO
 
-   1          1,00           TAMBOR              ACEITE MOTOR 15W40
+   1          1,00                  -            CAMBIAR BUJES Y RODAMIENTOS DE TORRES DE GIRO
 
-   2          1,00           TAMBOR              ACEITE MOTOR 20W50
+   2          1,00                  -            REPARACION DE BANCO DE VALVULAS
 
-   3          1,00           TAMBOR              ACEITE ATF
+   3          1,00                  -            CAMBIO DE ACEITE Y FILTROS
+
+   4          1,00                  -            REPARACION DE CANASTO ELEVADOR
+
+   5          1,00                  -            CAMBIO DE SELLOS DE BOMBA HIDRAULICA
 
                                                                                                                                                         TOTAL $
 
@@ -526,302 +266,71 @@ Presentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin l
 
 arielm_130093_pc-168-093
                                                                                                                                                             Firma y Sello
- ([oficial](https://viale.gob.ar/wp-content/uploads/2026/10/2526-corregido.pdf))
-- Municipalidad de Viale — 12/2026:                                                  LICITACION PRIVADA Nº 12/26
-                                                    Decreto D.E.M. Nº 450/26
-                                           Objeto: Adquisición de combustible gas-
-                                           oil grado 2.
-                                           Lugar, fecha y hora de apertura: Sede
-                                           Municipal, 20/10/2026, a las 10:00 hs.
-                                           Presupuesto Estimativo: $ 37.950.000,00
-
-
-
-PLIEGO DE BASES Y CONDICIONES.-
-
-ARTICULO 1º.- La Municipalidad de Viale, invita a las firmas interesadas a presentar
-ofertas combustible destinado a las maquinarias municipales, y que a continuación se
-detalla:
-
-Nº              DESCRIPCION                                        LITROS
-
-1.-      Combustible Gas-Oil, grado 2                               15.000
-
-ARTICULO 2º.- Los oferentes deberán presentar junto a la propuesta el Pliego de Bases
-y condiciones firmado y Resolución que acredite su incorporación al Registro de
-Proveedores de la Municipalidad, (Decreto Nº 670/16).-
-
-ARTICULO 3º.- La Municipalidad de Viale, se reserva el derecho de adjudicar la oferta
-que mejor considere a sus intereses, como así también se reserva el derecho de
-aumentar o disminuir la adquisición de la presente Licitación, conforme al artículo Nº 64
-del Decreto Reglamentario Nº 795/96 de la ley Nº 5140 y sus modificaciones.-
-
-ARTICULO 4º.- El elemento licitado, deberá cotizarse puesto en el Depósito Municipal,
-sito en Avda. San Martín s/Nº de la Ciudad de Viale, libre de fletes u otros gastos si los
-hubiere y será entregado en el mismo lugar de acuerdo a las necesidades del Municipio
-y en las cantidades que éste requiera.-
-
-ARTICULO 5º.- El precio se indicará por unidad y/o en su totalidad, serán al
-consumidor final con IVA incluido y otros impuestos si los hubiere. Dicha oferta se
-mantendrá por un plazo de treinta días. Se deja aclarado que en cualquiera de los casos
-de las ofertas que se presenten, ya sea de pago contado o financiado, el pago se
-efectivizará contra entregas realizadas.-
-
-ARTICULO 6º.- Será proponente toda persona física o jurídica que se presente a ésta
-Licitación. Los representantes de personas jurídicas deberán acompañar poder de
-representación y/o acta de asamblea de designación, y/o Declaración Jurada
-manifestando que dicha documental obra en el Legajo del Registro de Proveedores y
-que se encuentra vigente y sin modificaciones. Es condición ineludible para la
-adjudicación de la oferta que el proponente se encuentre inscripto en el Registro de
-Proveedores de la Municipalidad de Viale.-
-
-ARTICULO 7º.- Los Oferentes deberán presentar sus propuestas en sobre cerrado que
-exteriormente solo contendrá con caracteres bien visibles, la siguiente leyenda:
-                     Municipio de Viale
-                     9 de Julio y Estrada - Viale
-                     Licitación Privada Nº 12/26
-                     Apertura: 20/10/2026 ó su siguiente hábil
-                     Hora: 10:00 hs.
-
-El sobre contendrá los siguientes elementos:
-      a) El Pliego de Bases y Condiciones firmado y sellado en todas sus hojas;
-      b) Declaración Jurada aceptando la Jurisdicción de los Tribunales Ordinarios de la
-Ciudad de Paraná, para cualquier cuestión judicial que se suscite;
-      c) Oferta de la Licitación en original debidamente firmada;
-      d) Garantía de la oferta;
-      e) Constancia de Inscripción en el Registro de Proveedores Municipal;
-
-ARTICULO 8º.- Las Propuestas deberán presentarse:
-
-        a) Personalmente o por Carta Certificada;
-        b) En original en sobre cerrado sin membrete, dirigido a la Municipalidad de
-Viale, estableciendo en forma clara y precisa el número de licitación, fecha y hora de
-apertura.-
-
-ARTICULO 9º.- La Comisión de compras abrirá los sobres en presencia de los oferentes
-que deseen asistir al acto en el lugar, fecha y hora indicados para la apertura de la
-licitación. Los oferentes que asistan firmarán el acta de apertura para dejar constancia
-de su presencia.
-
-ARTICULO 10º.- A fin de facilitar el examen, evaluación y comparación de ofertas, la
-Municipalidad podrá a su discreción, solicitar aclaración de oferta, siempre que ello no
-implique modificación sustancial de la oferta original.
-
-ARTICULO 11º.- La Municipalidad tendrá la facultad de prorrogar el plazo para la
-presentación de las ofertas, a fin de dar a los oferentes el tiempo razonable para la
-preparación de las mismas, en caso de realizarse enmiendas al Pliego que impliquen
-modificaciones sustanciales.
-
-ARTICULO 12º.- Todos los posibles oferentes serán notificados por escrito o mediante
-fax de las enmiendas que realice la Municipalidad, las que serán de cumplimiento
-obligatorio para los oferentes.
-ARTICULO 13º.- Los oferentes se obligan a mantener sus propuestas por el lapso de
-Treinta días a partir de la fecha fijada para la apertura de sobres. El Municipio podrá
-previo al vencimiento del plazo solicitar ampliación de validez, lo que deberá ser
-ratificado por escrito por el proponente.
-
-ARTICULO 14º.- La Municipalidad se reserva el derecho de rechazar toda o parte de las
-propuestas, así como declarar desierta la licitación y rechazar todas las ofertas, sin que
-por ello incurra en responsabilidad alguna respecto de los oferentes afectados por ésta
-decisión y sin obligación de comunicar los motivos de ella.
-
-ARTICULO 15º.- La Garantía de Oferta será del UNO POR CIENTO (1%) del valor
-ofertado. En caso de presentar alternativas, deberá tomarse la de mayor valor a fin de
-calcular dicha garantía.
-
-ARTICULO 16º.- La Garantía de Adjudicación será del CINCO POR CIENTO (5%) del
-monto adjudicado, éste requisito se cumplimentará a los diez (10) días, contados a
-partir de la fecha de notificación al adjudicatario.
-
-ARTICULO 17º.- Las Garantías deberán presentarse:
-      a) En efectivo mediante depósito Municipal;
-      b) En documento a la Vista, sobre plaza Viale, con el sellado de ley;
-
-ARTICULO 18º.- Por aplicación del Decreto Nº428/14 se ha dispuesto un beneficio a
-los comerciantes de la Localidad de Viale y contribuyentes del Municipio que se
-presenten en licitaciones públicas y/o privadas, el que se eleva al Tres por Ciento (3%).
-Dicho porcentaje será aplicado al precio final a contratar ofrecido por el comerciante
-local, el que será tenido en cuenta por la Comisión de Compras designada en el proceso
-licitatorio al momento de evaluar las propuestas y previo a la comparación con otras
-propuestas efectuadas por oferentes que no pertenecen a la Localidad.-
-
-ARTICULO 19º.- Con arreglo a la Ordenanza Nº 1649/16, se aplicará una alícuota del
-DOS POR CIENTO (2%) de retención en concepto de Tasa por Inspección Sanitaria,
-Higiene, Profilaxis y Seguridad, a los proveedores no locales no inscriptos en la misma,
-al momento de realizarse el pago.-
-
-ARTICULO 20º.- Será desestimada cualquier oferta que no se ajuste al presente Pliego
-de Bases y Condiciones.-.
-
-ARTICULO 21º.- En cumplimiento del Artículo 179 de la ley de Municipios, se
-transcriben los artículos 176, 177 y 178 de dicho Cuerpo Legal:
-“ARTICULO 176 - Las Corporaciones Municipales como personas jurídicas, responden de
-sus obligaciones con todas sus rentas no afectadas a servicios públicos o en garantía de
-una obligación. La afectación para ser válida será previa a la acción de los acreedores y
-sancionada por Ordenanza.
-ARTICULO 177 - Los inmuebles de propiedad municipal afectado a un uso o servicio
-público o destinados a esos fines por ordenanzas o leyes no se considerarán prenda de
-los acreedores de la Corporación ni podrán ser embargados.
-ARTICULO 178 - Cuando las Corporaciones Municipales fueren condenadas al pago de
-una suma de dinero, solo podrán ser ejecutadas y embargadas sus rentas hasta un
-veinte por ciento. Por Ordenanza podrá autorizarse un embargo mayor que no podrá
-superar el treinta y cinco por ciento de sus rentas”.-
-
-                                                         Viale, 02 de octubre de 2.026
-                                      VIALE, ……….. de ………………………………….. de 2.026
-
-
-
-      En carácter de DECLARACION JURADA manifiesto que ACEPTO la Jurisdicción
-
-de los Tribunales Ordinarios de la Ciudad de Paraná, con renuncia expresa a todo otro
-
-fuero o jurisdicción que pudiera corresponderme, incluso el Federal, para cualquier
-
-cuestión judicial que se suscite.
-
-      Asimismo, en carácter de DECLARACION JURADA manifiesto que toda la
-
-documentación obrante en el Registro de Proveedores se encuentra vigente y sin
-
-modificaciones.
-
-      Quedando cumplimentados de este modo los artículos 7º inciso B y 6º del Pliego
-
-de Bases y Condiciones.-
- ([oficial](https://viale.gob.ar/wp-content/uploads/2026/10/lic.-12-26.pdf))
+ ([oficial](https://viale.gob.ar/wp-content/uploads/2026/10/2528-1.pdf))
 - Concejo Municipal de Rosario — 13/2026: Contratación de tareas de “Trabajos de yesería y pintura de ingresos en los edificios Palacio Vasallo y Oficina Municipal de los Derechos Ciudadanos, Consumidores y Usuarios”, ubicados en calle 1º de Mayo 828 y Córdoba 852, respectivamente. Incluye tareas de preparación de paredes y cielorrasos, modificación de cielorraso de roca de yeso y pintura.  El/La       proponente...............................................................................................................,   con domicilio legal en calle ........................................................................ N.º ............, de la ciudad de ………………………………………………………………………….., presenta su oferta para la ejecución de la obra objeto de la presente Compra Ágil, conforme a los Pliegos de Bases y Condiciones, Especificaciones Técnicas y demás documentación que rige la contratación.  Monto total de la oferta: $ ........................................................................  En letras: pesos ............................................................................................  La presente oferta tendrá una vigencia de treinta (30) días corridos, de acuerdo con lo establecido en el artículo 4 del Pliego de Bases y Condiciones.    Rosario, ........................................................ de 2026.    Firma: ..............................................................  Aclaración: .........................................................................................................................  Carácter: ............................................................................................................................  ANEXO IV - PLANILLA MODELO DE LA OFERTA  ANEXO V HIGIENE Y SEGURIDAD La empresa CONTRATISTA ADJUDICATARIA y sus SUBCONTRATISTAS (si hubiera) deberán cumplir con todas las normas de seguridad e higiene en el trabajo normado por la Ley 19.587 de Higiene y Seguridad en el Trabajo, Decreto 351/79 y del Decreto 911/96 “Reglamento de Higiene y Seguridad para la industria de la Construcción”. Ley 24.557 de Riesgos del Trabajo, y sus modificatorias. Resoluciones S.R.T 231/96; 51/97; 35/98; 319/99; y toda Resolución SRT aplicable. Ley 11717 de la Provincia de Santa Fe (Medio Ambiente y Desarrollo Sustentable). Y demás Leyes, Decretos, Ordenanzas y/o Reglamentos Nacionales, Provinciales y/o Municipales aplicables al momento de la ejecución de obra. Antes del inicio de los trabajos, la Contratista/Subcontratista deberá presentar la documentación requerida para obtener la autorización del ingreso a obra y poder iniciar los mismos. Toda la documentación debe presentarse con antelación en la Dirección de Arquitectura para su revisión y aprobación. El mero hecho de la presentación de documentación por cualquier vía no autoriza al ingreso a obra hasta tanto se obtenga la aprobación por parte del Área de Higiene y Seguridad del Concejo Municipal de Rosario. Los responsables de Higiene y Seguridad de las empresas involucradas serán los interlocutores directos con el personal de Higiene y Seguridad del Concejo Municipal de Rosario y deberán dejar registro de las visitas a obra semanales con recomendaciones en Libro de Actas de Visitas de Profesionales de Higiene y Seguridad, que se encuentra en la Dirección de Arquitectura del Concejo Municipal de Rosario. Todo accidente o incidente que ocurra debe ser denunciado a Higiene y Seguridad del Concejo Municipal de Rosario en forma inmediata para su registro e investigación. El uso de Elementos de Protección Personal básicos es obligatorio en todos los sectores de obra. Los mismos consisten en ropa adecuada de trabajo, casco de seguridad con mentonera, calzado con puntera de acero y protección visual. Otros EPP serán exigidos para situaciones especiales de acuerdo a lo recomendado por el responsable de Higiene y Seguridad de cada empresa y su análisis de riesgo. La empresa CONTRATISTA es la única responsable por el cumplimiento de todas las obligaciones frente al personal propio y contratado para el desarrollo de los trabajos y se hace responsable por sus bienes y herramientas durante la obra. Asimismo, es responsable por las consecuencias derivadas de todas las actividades desarrolladas en la obra por su personal, contratistas y subcontratistas y de todos los daños ocasionados por estos y/o con las cosas de propiedad y/o por el vicio o riesgo de estas. La CONTRATISTA ADJUDICATARIA deberá contratar seguros necesarios a fin de cubrir todos los riesgos que conlleven las actividades a desarrollar.  1. Seguros Seguro de Accidentes del trabajo (Ley de Riesgos del Trabajo): La CONTRATISTA deberá contratar un Seguro de Riesgos del Trabajo, realizado ante una ART, controlada por la Superintendencia de Riesgos del Trabajo, que cubra en los términos de la Ley N° 24.557 y sus modificatorias, a todo el personal en relación de dependencia laboral afectado a tareas en obra. El mismo deberá contar con cláusula de NO REPETICIÓN a favor del Concejo Municipal de Rosario, sus funcionarios y empleados en caso de que le ocurra un siniestro a alguno de los empleados y/o al personal dependiente de la CONTRATISTA. La CONTRATISTA deberá entregar previamente al inicio de obra, copia sellada por la ART del Certificado de Cobertura del personal cubierto en póliza, donde se aclara que no existe deuda pendiente al período de pago inmediato anterior. Dicho certificado será actualizado en forma mensual. Convenio Colectivo de Trabajo según actividad: Certificado con nómina de personal y libre deuda a la fecha de ingreso. Seguro de Vida: El Contratista deberá contratar para su personal, el seguro de vida obligatorio (Decreto/Ley N° 1.567/74 y sus modificatorias), como asimismo todo otro seguro de vida que, por convenio de trabajo, convención colectiva u otra disposición específica al gremio en cuestión, fuese obligatorio contratar. Seguro de Accidentes Personales: La CONTRATISTA deberá contratar además una póliza de seguro de accidentes personales completa, realizado ante una Compañía de seguros, controlada por la Superintendencia de Seguros de la Nación, para su personal autónomo, monotributista y/o el personal autónomo, monotributista de sus contratistas y subcontratistas, si los hubiere. El monto mínimo de la misma será de $ 100.000.000 (cien millones de pesos), por muerte accidental e invalidez, sin franquicia; y para asistencia médica y farmacia el monto mínimo de la misma será de $ 10.000.000 (diez millones de pesos), sin franquicia. La misma deberá contar con cláusula de NO REPETICIÓN a favor del Concejo Municipal de Rosario, sus funcionarios y empleados en caso de que le ocurra un accidente a dicho personal autónomo o monotributista. Asimismo, el Concejo Municipal de Rosario, titular de la C.U.I.T. N° 30-68467937-2, debe figurar en la póliza y/o certificado como beneficiario principal. La CONTRATISTA deberá presentar el certificado de cobertura de la referida póliza conteniendo los nombres de dicho personal autónomo o monotributista, N° de CUIT, actividad, límites asegurados y constancia de inscripción de esas personas ante la ARCA. Seguro de Responsabilidad Civil: La CONTRATISTA deberá presentar una póliza de seguro amparando la Responsabilidad Civil como consecuencia de todas las tareas a desarrollar por la empresa contratista y subcontratistas a su cargo. Debe cubrir lesiones y/o daños a terceros y/o a bienes de terceros, ocasionados por la Contratista o Subcontratistas de ella en el ejercicio de su actividad en obra. La misma deberá contar con cláusula de NO  REPETICIÓN a favor del Concejo Municipal de Rosario, sus funcionarios y empleados en caso de que ocurra alguno de dichos hechos. La suma asegurada deberá ser acorde con los riesgos frente a terceros que implican los trabajos en cuestión. La suma asegurada mínima debe ser de $100.000.000 (cien millones de pesos), sin franquicia.   Los equipos y vehículos afectados a las tareas deberán contar con la documentación actualizada requerida para su habilitación y/o circulación. El o los conductores de los vehículos deberán contar con carnet habilitante para el uso de los mismos. El COMITENTE no admitirá en los edificios objeto la presente contratación la presencia de personal y/o equipos por los que no se haya acreditado la cobertura correspondiente. A tal efecto, se establece que la CONTRATISTA deberá presentar, obligatoriamente, copia certificada del recibo o factura que acredite fehacientemente el cumplimiento de las obligaciones emanadas del plan de pagos acordado para la Póliza contratada. La fecha de pago deberá ser, inexcusablemente, coincidente o anterior a la establecida en el correspondiente plan de pagos. Dicha presentación deberá hacerse, obligatoriamente, dentro de las veinticuatro (24) horas de haberse efectuado el pago, ante las áreas encargadas de la INSPECCIÓN que se licita. De no cumplimentarse lo dispuesto precedentemente, en tiempo y/o en forma, el COMITENTE suspenderá la prestación del servicio hasta tanto se revierta la situación planteada. El incumplimiento de lo dispuesto por este artículo faculta al COMITENTE a anular la adjudicación y a aplicar las sanciones que pudieren corresponder según las normas en vigencia.   2. Requisitos para el inicio de las tareas objeto de la contratación La CONTRATISTA, deberá presentar previo al inicio de las tareas licitadas la siguiente documentación: 1.     Nómina de personal autorizado por la adjudicataria a efectuar las tareas objeto de la presente contratación, el cual deberá mantener actualizado en caso de cambios. El personal que concurra deberá presentar acreditación por parte de la empresa; 2.     Fotocopia de la matrícula del Responsable de Higiene y Seguridad y habilitación del Colegio Profesional correspondiente para el año en curso; 3.     Nota que acredita la relación contractual de la empresa con el profesional de Higiene y Seguridad actuante, firmado por ambas partes, donde se especifiquen número de matrícula, teléfono y mail de contacto.  Además, la CONTRATISTA deberá presentar previo al inicio de las tareas licitadas la documentación indicada en los puntos 2.1 y/o 2.2, según el personal afectado a la presente se encuentre en relación de dependencia o autónomo/monotributista.   2.1. Empresas con personal en relación de dependencia y ART contratada De forma adicional a lo expresado en el punto 3 del presente Anexo, en caso de que la empresa que resultare adjudicataria cuente con personal en relación de dependencia y ART contratada, deberá presentar previo a la firma del contrato los siguientes elementos: 1.     Programa de Higiene y Seguridad (Res. SRT 51/97, Res. 35/98, Res. SRT 319/99 o Programa de Trabajo Seguro, según correspondiere) conforme lo exige la legislación vigente, aprobado por la ART; 2.     Aviso de Inicio de Obra presentado con 5 días antes del inicio de obra en la ART, con datos coincidentes con el Programa de Seguridad presentado; 3.     Certificado de Cobertura de la ART, con actualización mensual de la nómina de personal asegurado y comprobantes de pago mensuales; 4.     Cláusula de No Repetición a favor del Concejo Municipal de Rosario y sus funcionarios y empleados. Constancias firmadas de capacitación inicial en Higiene y Seguridad a todo el personal, de acuerdo a lo indicado en el Programa de Higiene y Seguridad; 5.     Constancia de capacitación al personal afectado a la presente de acuerdo a lo Previsto por el programa de Higiene y Seguridad; 6.    Constancias de entrega de Elementos de Protección Personal (EPP) y de prevención, de acuerdo a lo previsto por el Programa de Higiene y Seguridad, al personal a ingresar y con una antigüedad menor a 3 meses de la fecha de entrega.   2.2. Empresas con personal monotributista o autónomo De forma adicional a lo expresado en el punto 3 del presente Anexo, en caso de que la empresa que resultare adjudicataria cuente con personal monotributista o autónomo, deberá presentar previo a la firma del contrato los siguientes elementos: 1.      Listado de personal contratado con número de CUIT; 2.      Constancia de Pago mensual del Monotributo de cada persona; 3.      Seguro de Accidentes Personales por el monto mínimo de $ 100.000.000 por muerte accidental e invalidez, sin franquicia; y de $ 10.000.000 para asistencia médica y farmacia, sin franquicia, para titulares de empresas y/o personal técnico sin relación de dependencia que preste servicios por encargo de la CONTRATISTA. Dicha póliza deberá contar con cláusula de NO REPETICIÓN a favor del Concejo Municipal de Rosario, sus funcionarios y  empleados en caso de que le ocurra un accidente al personal sin relación de dependencia (monotributista o autónomo) de la CONTRATISTA. 4.      Constancia de pago mensual de la Póliza de Accidentes Personales con cláusula de No Repetición a favor del Concejo Municipal de Rosario y sus funcionarios y empleados. 5.      Programa de Seguridad (PS) firmado por el profesional habilitado y por el titular de la CONTRATISTA, que abarque cada una de las tareas a realizar por sus empleados en los distintos puestos de trabajo, donde se declaren los pasos de las tareas a realizar, sus riesgos asociados, medidas de mitigación de los mismos y elementos de protección personal necesarios. El tipo de conformación societaria de la CONTRATISTA (Sociedad, Cooperativa, Asociaciones, ONG, etc. de cualquier tipo) no exime a la misma de contar con un Profesional (propio o contratado) como Responsable de Higiene y Seguridad de la misma con las mismas obligaciones que para empresas con ART; 6.      Constancias firmadas de capacitación en Higiene y Seguridad a todo el personal, de acuerdo a lo indicado en el PS. 7.      Constancias de entrega de Elementos de Protección Personal (EPP) y de prevención correspondientes al personal a ingresar y con una antigüedad menor a 3 meses de la fecha de entrega, de acuerdo a lo indicado en el PS.    3. Equipos y elementos de protección personal (EPP) La CONTRATISTA sin perjuicio del cumplimiento de la Legislación vigente respecto a las normativas de Higiene y Seguridad en el Trabajo (Ley Nº 19.587 de Seguridad e Higiene en el Trabajo, los Artículos 98 al 115 del Decreto 911/96 y la Resolución SRT 231/96, Resoluciones SRT, Leyes y Disposiciones Nacionales, Provinciales y Municipales), deberá cumplir con las siguientes obligaciones básicas: 1.      Proveer a todo su personal de los equipos y elementos de protección personal y de prevención que fuera a ser necesario según el Análisis de Riesgo por Puesto de Trabajo realizado por la empresa (calzado de seguridad, ropa de trabajo acorde a la tarea que realiza, guantes, máscara facial, lentes de seguridad, protectores auditivos, etc). Dicho análisis deberá estar documentado. No obstante, el Área de Higiene y Seguridad del CONCEJO MUNICIPAL DE ROSARIO puede requerir el uso de EPP específicos o adicionales en sus auditorías periódicas de seguridad. 2.      Los EPP deberán conservarse en buen estado de uso y cambiarse ante el primer signo de envejecimiento o deterioro. No podrá repararse ningún elemento de protección personal, debiéndose reemplazar por otro nuevo. Su tipo y calidad darán cumplimiento con las normas IRAM vigentes para cada uno de ellos. 3.      El personal operativo deberá cumplir con las normas de Higiene y Seguridad Laboral vigente, debiendo utilizar todo elemento de Protección Personal (EPP) que le fuera provisto por la empresa.  4. Política de seguridad y medio ambiente Todos los accidentes pueden y deben ser evitados. La prevención de riesgos en el trabajo es un compromiso de toda persona física y/o jurídica que se encuentre, aunque sea temporalmente, desarrollando tareas o prestando servicios en los distintos edificios donde desarrolla sus funciones el Concejo Municipal de Rosario, constituyendo además una condición de empleo. Es obligación de la CONTRATISTA, cumplir con todas las leyes, decretos y/o reglamentos provinciales y/o municipales referidos a Protección y Conservación del Medio Ambiente. En consecuencia, la CONTRATISTA debe asumir el compromiso y responsabilidad para el logro de las siguientes metas: 1.     Cumplimiento de toda la legislación vigente en materia de Higiene y Seguridad y Medio Ambiente; 2.     La prevención de riesgos es tan importante como la calidad, la productividad y los costos; 3.     Disponer los controles y acciones en el sentido de la preservación y cuidado ambiental. 4.     Integrar a toda práctica laboral, la preservación de vidas y bienes; 5.     Intervenir activamente en los programas y metas de prevención; 6.     Asumir la prevención mediante actitudes seguras. 7.     Disponer de sus propios residuos y de los que la obra genere en forma segura. 8.     Capacitar al personal en forma permanente sobre prácticas de trabajo seguro y buenas prácticas ambientales en el trabajo.   5. Prohibiciones Queda estrictamente prohibido: 1.      Ingresar a los edificios con bebidas alcohólicas, drogas o estupefacientes, como así también en estado de ebriedad o bajo efecto de drogas o estupefacientes; 2.      Ingresar armas de cualquier tipo, incluido armas blancas; 3.      Dejar materiales, vehículos o cualquier otro elemento obstruyendo pasos y circulaciones. 4.      Hacer fuego o utilizar equipos o herramientas de llama abierta sin previa autorización. 5.      Tomar mate. 6.     Ingresar animales de cualquier especie. 7.     Ingresar personas ajenas a la obra. En caso de requerirse el ingreso de alguna persona como proveedor, asesor profesional, etc. deberá solicitarse autorización de ingreso a la oficina de Higiene y Seguridad del CONCEJO MUNICIPAL DE ROSARIO y deberá cumplir lo requerido en cada caso.  8.     Realizar actividades no autorizadas por el Comitente que generen ruidos molestos o residuos peligrosos. 9.     Instalar cables aéreos o conexiones no indicadas expresamente por el Comitente. 10.    Circular dentro del Concejo en sectores ajenos a la obra. 11.    Filmar, transmitir en vivo o sacar fotos. 12.    Utilizar instalaciones sanitarias del Concejo Municipal, el Contratista deberá proveer sus propios servicios sanitarios que serán ubicados donde indique la inspección de obra. 13.    Escuchar música con cualquier dispositivo, incluido los celulares. 14.    Fumar dentro del ámbito del Concejo Municipal.  ANEXO VI REGISTRO FOTOGRÁFICO Ingreso Palacio Vassallo – 1º de Mayo 828, Rosario:  Ingreso Oficina Municipal de los Derechos Ciudadanos, Consumidores y Usuarios:  ANEXO VI PLANOS  01 – Palacio Vassallo – 1º de Mayo 828 02 – Oficina Municipal de los Derechos Ciudadanos, Consumidores y Usuarios  00-29 Deposito                                                                                                             5,15 1,32 m2                                                                                                                                                                               CORTINA DE AIRE                                                                                                                                           PROYECCIÓN NUEVO CAJÓN                                                                                                                                                                               A COLOCAR                                                                                               00-36 Recepción                                                  2,50                                           00-31 Despacho Concejal                                                                                                                                    00-36 Ingreso 1º de Mayo                                                                                      3,63                                                                             3,85         00-30 Despacho Concejal                                                               19,50 m2         14,20 m2                          15,00 m2                                                                                                                                                   7,75 m2                                                                                              ALTURA 2,20 metros                                                                                              CIELORRASO 33,00 m²                                                                                                                                         0,55                                                                                                                                     2,27                                                   12,00   1,37                                                 CIELORRASO DESMONTABLE                                             10,54                             00-32 Asesores                              00-33 Asesores                         15,40 m2                                    12,40 m2                                        00-35 Depósito                                                                                                         6,90                                                                                                5,77                   00-32 Despacho Concejal                      00-33 Despacho Concejal                                                                                                 00-34 Protocolo               14,40 m2                                     12,20 m2                                                                                                                15,36 m2                                                                                                     1,15                                                                                                                                                                           CONCEJO MUNICIPAL DE ROSARIO                                                                                              EDIFICIO:              CONCEJO MUNCIPAL DE ROSARIO                                                 DIBUJO:     DIRECCIÓN DE ARQUITECTURA   PLANTA BAJA                                                                                              DIRECCION: 1º DE MAYO 828                                                                          INICIO:     07/2026                     RECEPCIÓN                                                                                              OBRA:                                                                                              REVISION: 09/2026                       PLANO N°       01                                                                                             TRABAJOS EN INGRESOS CMR                                                                                                                                                                                                APROBO: Arq. Graciela Garate            ESC.:         1:75                             00-02 Sala de audiencias                                                                  6,37                                                      00-01 Recepción                                                  35 m2                  5,47                                                 ALTURA 2,70 metros                                                                                                   4,92                                                 CIELORRASO 35,00 m²                   2 TAPAS INSPECCIÓN                                            2 TAPAS INSPECCIÓN                    40x40 cm                                                            40x40 cm                                                       6,23                                                       2,20                                                                          PROYECCIÓN NUEVO CAJÓN                                    0,50                                            CORTINA DE AIRE A COLOCAR     L.E.            L.M.                                                                                              L.M.                                    PEATONAL CÓRDOBA                                                                                                                     CONCEJO MUNICIPAL DE ROSARIO                                                                      EDIFICIO:       OFICINA MUNICIPAL CONSUMIDOR        DIBUJO:   DIRECCIÓN DE ARQUITECTURA   PLANTA BAJA                                                                      DIRECCION: CÓRDOBA 852                              INICIO:   07/2026                     RECEPCIÓN                                                                      OBRA:                                               REVISION: 09/2026                     PLANO N°       02                                                                     TRABAJOS EN INGRESOS CMR                                                                                                                         APROBO: Arq. Graciela Garate          ESC.:         1:75  Firmado digitalmente por Firmador de la Provincia de Santa Fe Fecha: 2026.09.21 13:27:51 ART Razón: 27331900767 ARPI, PAOLA ANDREA ([oficial](https://compras.concejorosario.gov.ar/compras/3185/descargar/2))
-- MINISTERIO DE PLANEAMIENTO E INFRAESTRUCTURA — 11/2026: Licitación Pública 11/2026 DGAyC Terminación Escuela N° 40 "José Enrique Rodó", Séptimo Distrito Apertura: viernes, 23 de octubre de 2026 - 10:00hs ([oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Septiembre/25-09-26.pdf))
-- Poder Judicial de Entre Ríos — 10/2026: De conformidad a lo dispuesto por el Tribunal de Superintendencia de la Provincia de Entre Ríos, por Resolución Nº98/26, llámese a Licitación Pública Nº10/26 , por la Provisión y envío de equipos de PC de Escritorio para la Modernización Tecnológica del Poder Judicial de Entre Ríos y de sus salas de Oralidad. ([oficial](https://www.jusentrerios.gov.ar/compras/licitacion-publica-no10-26-provision-y-envio-de-equipos-de-pc-de-escritorio-para-la-modernizacion-tecnologica-del-poder-judicial-de-entre-rios-y-de-sus-salas-de-oralidad/lic-publica-10-26/))
-- Gobierno de Timbúes — 4/2022: LLAMADO A LICITACIÓN PÚBLICA N° 4/2022 PARA CONSTRUCCIÓN DE CUARENTA VIVIENDAS DE DOS DORMITORIOS Publicado, viernes, 11 de marzo de 2022 -- 1104 vistas PRESUPUESTO OFICIAL: $ 239.036.000,00 ORDENANZA 052/2022 La Comuna de Timbúes llama a la licitación Pública N° 04/2022 a partir del día 11 Marzo de 2022 y hasta el día 22 de marzo a las 12:00 horas o el día inmediato posterior si éste fuera inhábil, para la Construcción de 40 Viviendas de 2 dormitorios, en la localidad de Timbúes - Departamento San Lorenzo, conforme a la base y condiciones establecidas en el pliego licitatorio. PRESUPUESTO OFICIAL: $ 239.036.000,00. ORDENANZA 052/2022 Venta y consulta de Pliegos de bases y condiciones a partir del 11 de Marzo en el horario de 8:00 a 12:00, en la sede comunal con domicilio Gaboto 553 Timbúes. Apertura de Ofertas día 23 de marzo de 2022 a las 14:30 hs. Costo del Pliego: Cuatrocientos setenta y Ocho mil setenta y dos pesos ($478.072). - ([oficial](https://timbues.gob.ar/index.php?pagina=detalle&idp=256))
-- Municipalidad de Roldán — 9/2023: Licitación Pública N°009/23 LicitaciónPúblicaN°009 File extension: pdf ([oficial](https://www.roldan.gov.ar/wp/document-category/licitacion-publica-n009-23/))
-- Municipalidad de El Pingo — 3/2026: PARANA
-
-                                             MUNICIPIO DE EL PINGO
-  PLIEGO DE BASES Y CONDICIONES PARA LA ADQUISICIÓN DE COLUMNAS Y ARTEFACTOS DE
-ILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL "SAN MARTÍN" DE NUESTRA
-LOCALIDAD.-
-  PRIMER LLAMADO A:
-                                           Licitación Pública Nº 03/2026
-                                          Decreto De Llamado Nº 069/2026
-  FECHA LÍMITE DE RECEPCIÓN DE OFERTAS: 23/11/2026- 12 HS
-  FECHA DE APERTURA DE OFERTA: 24/11/2026- 10 HS
-  LUGAR DE APERTURA DE OFERTAS: – Oficina de Compras, Edificio Municipal, calle Juan D. Perón 232
-  PRESUPUESTO OFICIAL: $ 41.000.000,00 (Pesos CUARENTA Y UN MILLONES CON 00/100) IVA INCLUIDO
-  VALOR DEL PLIEGO: SIN COSTO
-  ARTÍCULO 1º: El presente llamado a Licitación Pública tiene por objeto LA ADQUISICIÓN DE COLUMNAS Y
-ARTEFACTOS DE ILUMINACIÓN DESTINADOS A LA REFORMA DE LA PLAZA CENTRAL "SAN MARTÍN" DE
-NUESTRA LOCALIDAD.-
-  ARTÍCULO 2º: CANTIDADES Y CARACTERÍSTICAS
-  OBJETO DE LA COMPRA La presente gestión tiene por objeto la adquisición de columnas y artefactos de
-iluminación, nuevos y sin uso, destinados a la reforma de la Plaza Central "San Martín" de nuestra localidad,
-conforme a los ítems y características que se detallan a continuación. La cotización deberá presentarse por ítem,
-indicando precio unitario y precio total. ([oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf))
-- Municipalidad de San Salvador — 29/2026: Desarrollo Social Destacadas Noticias Portada Llamado a Concurso de Precios N° 29-2026 05/11/2026 161 El Departamento de Compras y Suministros llama a Concurso de Precios N° 29-2026 que tiene por objeto la Compra de 200 cargas de Gas Envasado en garrafas de 10kg – con Destino a Ayuda Directa ; y se regirá por las condiciones establecidas en Pliego de Bases, Condiciones Generales y Particulares aprobados por Decreto N° 347/26. Apertura de sobres: 11 de noviembre de 2026 a las 11:00 horas , en la oficina de compras –planta baja – edificio municipal. Presupuesto oficial: $5.000.000- (Pesos cinco millones.-). Se adjunta PLIEGO en total de diez fojas. Artículo anterior La Municipalidad realizará una subasta pública online de bienes municipales en desuso MSS ([oficial](https://sansalvadorer.gob.ar/llamado-a-concurso-de-precios-n-29-2026/))
-- Municipalidad de Rosario — 214/2026: CONTRATACION DE SERVICIOS DE LAVANDERIA PARA PACIENTES (KIT DE ROPA) "HOSPITAL DE NIÑOS VICTOR J. VILELA" ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38711))
-- Municipalidad de El Trébol — 10/2015: NewsPaper El Trébol NewsPaper the art of publishing 17.2 C El Trébol Estación Meteorológica Facebook Instagram X Licitaciones Reclamos La Ciudad Gobierno Gabinete Ejecutivo Informes de Gestión Reseña Histórica Ubicación Mapas de la Ciudad Organismos y Ámbitos Públicos Espacios Municipales Festejos Populares Concejo Municipal Banco de Ordenanzas Teléfonos Útiles El Trébol a Futuro Plan de Ordenamiento Urbano y Desarrollo Territorial 2009 Plan de ordenamiento urbano y desarrollo territorial 2019 Boletín Oficial Áreas Intendencia D. Humano y Acción Comunitaria Cultura y Comunicación Producción, Capac. y Empleo Hacienda y Finanzas Convivencia y Seguridad Gestión Urbana y Obras Públicas Servicios Públicos Desarrollo Educativo Ambiente Oficina Virtual Contacto Protección Civil LICITACIÓN PÚBLICA PARA LA GESTIÓN Y EL COBRO EXTRAJUDICIAL DE LAS DEUDAS DE PATENTE 23 de julio de 2015 Facebook X Pinterest WhatsApp El Gobierno de la ciudad comunica que a través de Licitación Nº 10/2015 se implementará la gestión y cobro extrajudicial de las deudas generadas por el impuesto provincial de patente única sobre vehículos. ADQUISICIÓN DEL PLIEGO: En la Administración de la Municipalidad de El Trébol, de 7.15 a 12.15, hasta el día 04/08/2015, a las 9.45 horas. VALOR DEL PLIEGO: $ 2000 (pesos dos mil) RECEPCIÓN DE OFERTAS: Hasta el 04/08/2015, a las 9.45 hs. Informes: Secretaría de Coordinación y Logística – Mail: produccion@eltrebol.gov.ar. Teléfonos: (03401) 422181 – 422271. DÍA DE APERTURA: 04/08/2015, a las 10 hs, en Salón Municipal, sito en Bv. América 1091 – El Trébol. Adjudicado Volver Francisco Díaz de Azevedo Corsaliniweb © Municipalidad de El Trébol - Todos los derechos reservados ([oficial](https://eltrebol.gov.ar/wp-content/uploads/2022/04/POUyDT-2009.pdf))
-- Municipalidad de Roldán — 5/2023: Licitación Pública N°005/23 decretoLU00523 File extension: pdf File size: 2 MB licitacionpublica00523_2 File extension: pdf File size: 22 MB prorroga File extension: pdf File size: 276 kB ([oficial](https://www.roldan.gov.ar/wp/document-category/licitacion-publica-n005-23/))
-- Municipalidad de Roldán — 8/2023: Licitación Pública N°008/23 Licitación Publica N_ 08_23 File extension: pdf File size: 13 MB CIRCULAR SIN CONSULTA Nº 01 File extension: pdf File size: 135 kB ([oficial](https://www.roldan.gov.ar/wp/document-category/licitacion-publica-n008-23/))
-- Municipalidad de Sastre y Ortiz — 2/2026: Inicio › Noticias › La Municipalidad de Sastre y Ortiz llamó a Licitación Pública para adquirir una niveladora de arrastre Institucional 📅 07 de August de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz anunció el llamado a Licitación Pública N.º 02/2026 para la adquisición de una niveladora de arrastre, destinada a fortalecer y ampliar el equipamiento municipal. De acuerdo con la convocatoria, el objeto de la licitación es la compra de una (1) niveladora de arrastre , herramienta que será incorporada al parque de maquinaria del municipio para acompañar las tareas y servicios que se desarrollan en la ciudad. Los interesados en participar podrán retirar el Pliego de Bases en el Palacio Municipal, en días hábiles, de 7:15 a 12:00 horas . También podrán solicitarlo por correo electrónico a arealegal@sastre.gob.ar . El valor del pliego fue establecido en $85.000 (pesos ochenta y cinco mil) . La apertura de sobres se realizará el próximo 3 de septiembre de 2026, a las 10:00 horas , en el Palacio Municipal de Sastre y Ortiz. Desde el municipio indicaron que quienes requieran mayor información podrán acercarse a la sede municipal o comunicarse a través de los medios habilitados. La convocatoria forma parte de las acciones orientadas a fortalecer el equipamiento municipal y mejorar las herramientas disponibles para el desarrollo de obras y la prestación de servicios a la comunidad. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Defensa Civil de Sastre coordinó acciones preventivas ante posibles contingencias climáticas 10/11/2026 Comenzaron los trabajos de nivelación para la pavimentación de avenida Belgrano 07/11/2026 Sistema de provisión de agua para Sastre y Ortiz: preguntas frecuentes sobre la primera etapa de la obra 07/11/2026 Sastre y Ortiz incorpora un asistente virtual para mejorar la atención a los vecinos 06/11/2026 ([oficial](https://sastreciudad.gob.ar/la-municipalidad-de-sastre-y-ortiz-llamo-a-licitacion-publica-para-adquirir-una-niveladora-de-arrastre/))
-- Municipalidad de Sastre y Ortiz — 1/2026: Inicio › Noticias › Licitación Pública N.º 01/2026: Concesión del Bar-Confitería de la Terminal de Ómnibus “Manuel Belgrano” Institucional 📅 06 de August de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz informa a la comunidad y a los interesados que se encuentra abierta la Licitación Pública N.º 01/2026, destinada a la concesión en arrendamiento del servicio de Bar-Confitería de la Terminal de Ómnibus Municipal “Manuel Belgrano”. Objeto de la licitación Concesión del servicio de Bar-Confitería ubicado en la Terminal de Ómnibus Municipal. Pliego de Bases y Condiciones Los interesados podrán retirar el Pliego de Bases y Condiciones en el Palacio Municipal, de lunes a viernes, en el horario de 7:15 a 12:30 horas. Valor del pliego: $30.000 (pesos treinta mil). Apertura de sobres Fecha: 4 de septiembre de 2026 Hora: 10:00 horas Lugar: Palacio Municipal. Para obtener mayor información, los interesados deberán dirigirse a la Municipalidad dentro del horario de atención establecido. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Defensa Civil de Sastre coordinó acciones preventivas ante posibles contingencias climáticas 10/11/2026 Comenzaron los trabajos de nivelación para la pavimentación de avenida Belgrano 07/11/2026 Sistema de provisión de agua para Sastre y Ortiz: preguntas frecuentes sobre la primera etapa de la obra 07/11/2026 Sastre y Ortiz incorpora un asistente virtual para mejorar la atención a los vecinos 06/11/2026 ([oficial](https://sastreciudad.gob.ar/licitacion-publica-n-o-01-2026-concesion-del-bar-confiteria-de-la-terminal-de-omnibus-manuel-belgrano/))
-- Municipalidad de Sastre y Ortiz — 3/2026: Inicio › Noticias › La Municipalidad de Sastre y Ortiz llamó a Licitación Pública para adquirir un tractor Institucional 📅 07 de August de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz anunció el llamado a Licitación Pública N.º 03/2026 para la adquisición de un tractor, con el objetivo de fortalecer el equipamiento y las tareas operativas que lleva adelante el municipio. El proceso contempla la compra de un (1) tractor , que será destinado a ampliar y mejorar el parque de maquinaria municipal y acompañar las distintas labores que se desarrollan en la ciudad. Los interesados podrán retirar el Pliego de Bases en el Palacio Municipal, en días hábiles, de 7:15 a 12:00 horas . Asimismo, podrán solicitarlo vía correo electrónico a arealegal@sastre.gob.ar . El valor del pliego fue fijado en $65.000 (pesos sesenta y cinco mil) . La apertura de sobres tendrá lugar el 8 de septiembre de 2026, a las 10:00 horas , en el Palacio Municipal de Sastre y Ortiz. Para obtener mayor información, los interesados podrán acercarse a la Municipalidad o comunicarse a través de los medios habilitados. La convocatoria se enmarca en el objetivo de continuar fortaleciendo el equipamiento municipal y mejorar las herramientas disponibles para las tareas operativas y la prestación de servicios a la comunidad. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Defensa Civil de Sastre coordinó acciones preventivas ante posibles contingencias climáticas 10/11/2026 Comenzaron los trabajos de nivelación para la pavimentación de avenida Belgrano 07/11/2026 Sistema de provisión de agua para Sastre y Ortiz: preguntas frecuentes sobre la primera etapa de la obra 07/11/2026 Sastre y Ortiz incorpora un asistente virtual para mejorar la atención a los vecinos 06/11/2026 ([oficial](https://sastreciudad.gob.ar/la-municipalidad-de-sastre-y-ortiz-llamo-a-licitacion-publica-para-adquirir-un-tractor/))
-- Municipalidad de Sastre y Ortiz — 4/2026: Inicio › Noticias › La Municipalidad de Sastre y Ortiz llamó a Licitación Pública para adquirir un nuevo tractor Institucional 📅 07 de August de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz anunció el llamado a Licitación Pública N.º 04/2026 para la adquisición de un tractor, con el objetivo de continuar fortaleciendo el equipamiento municipal y mejorar la prestación de servicios a la comunidad. El objeto de la convocatoria es la compra de un (1) tractor, que será incorporado al parque de maquinaria municipal para acompañar las distintas tareas operativas que se desarrollan en la localidad. Los interesados podrán retirar el Pliego de Bases en el Palacio Municipal, en días hábiles, de 7:15 a 12:00 horas. También podrán solicitarlo vía correo electrónico a arealegal@sastre.gob.ar . El valor del pliego fue establecido en $90.000 (pesos noventa mil). La apertura de sobres se realizará el 8 de septiembre de 2026, a las 11:30 horas, en el Palacio Municipal de Sastre y Ortiz. Para mayor información, los interesados podrán acercarse a la Municipalidad o comunicarse a través de los medios habilitados. Con esta nueva convocatoria, el municipio continúa avanzando en el fortalecimiento de su equipamiento, con el propósito de contar con mejores herramientas para el desarrollo de las tareas y la prestación de servicios en la comunidad. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Defensa Civil de Sastre coordinó acciones preventivas ante posibles contingencias climáticas 10/11/2026 Comenzaron los trabajos de nivelación para la pavimentación de avenida Belgrano 07/11/2026 Sistema de provisión de agua para Sastre y Ortiz: preguntas frecuentes sobre la primera etapa de la obra 07/11/2026 Sastre y Ortiz incorpora un asistente virtual para mejorar la atención a los vecinos 06/11/2026 ([oficial](https://sastreciudad.gob.ar/la-municipalidad-de-sastre-y-ortiz-llamo-a-licitacion-publica-para-adquirir-un-nuevo-tractor/))
-- Municipalidad de Sastre y Ortiz — 5/2026: Inicio › Noticias › Licitación Pública N.º 05/2026: el Municipio convoca a la presentación de ofertas Institucional 📅 28 de September de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz informa el llamado a Licitación Pública N.º 05/2026 para la adquisición de hormigón elaborado destinado a obras y trabajos que se llevarán adelante en la ciudad. El objeto de la licitación contempla la compra de 826 m³ de hormigón elaborado tipo H-25, con piedra granítica 1:3 y un asentamiento de 6 cm, admitiéndose una variación de más o menos el 20%. Los interesados podrán retirar el Pliego de Bases y Condiciones en el Palacio Municipal, de lunes a viernes, en el horario de 7:15 a 12:30 hs., durante los días hábiles. El valor del pliego es de $200.000. La apertura de sobres se realizará el domingo 18 de octubre de 2026, a las 10:00 hs., en el Palacio Municipal. La Municipalidad de Sastre y Ortiz continúa impulsando los procesos administrativos necesarios para la ejecución de obras y el mejoramiento de la infraestructura de la ciudad. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Defensa Civil de Sastre coordinó acciones preventivas ante posibles contingencias climáticas 10/11/2026 Comenzaron los trabajos de nivelación para la pavimentación de avenida Belgrano 07/11/2026 Sistema de provisión de agua para Sastre y Ortiz: preguntas frecuentes sobre la primera etapa de la obra 07/11/2026 Sastre y Ortiz incorpora un asistente virtual para mejorar la atención a los vecinos 06/11/2026 ([oficial](https://sastreciudad.gob.ar/licitacion-publica-n-o-05-2026-el-municipio-convoca-a-la-presentacion-de-ofertas/))
-- Municipalidad de Sastre y Ortiz — 6/2026: Inicio › Noticias › Licitación Pública N.º 06/2026: el Municipio convoca a la presentación de ofertas Institucional 📅 28 de September de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz informa el llamado a Licitación Pública N.º 06/2026 para la adquisición de un hidroelevador nuevo, destinado a fortalecer el equipamiento y las herramientas de trabajo del Municipio. El objeto de la licitación contempla la compra de un (1) hidroelevador nuevo, montado sobre tráiler, con un alcance no menor a 12 metros de altura. Los interesados podrán retirar el Pliego de Bases y Condiciones en el Palacio Municipal, de lunes a viernes, de 7:15 a 12:00 hs., durante los días hábiles. También podrán solicitarlo vía correo electrónico a arealegal@sastre.gob.ar. El valor del pliego es de $70.000. La apertura de sobres se realizará el miércoles 21 de octubre de 2026, a las 10:00 hs., en el Palacio Municipal. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Defensa Civil de Sastre coordinó acciones preventivas ante posibles contingencias climáticas 10/11/2026 Comenzaron los trabajos de nivelación para la pavimentación de avenida Belgrano 07/11/2026 Sistema de provisión de agua para Sastre y Ortiz: preguntas frecuentes sobre la primera etapa de la obra 07/11/2026 Sastre y Ortiz incorpora un asistente virtual para mejorar la atención a los vecinos 06/11/2026 ([oficial](https://sastreciudad.gob.ar/licitacion-publica-n-o-06-2026-el-municipio-convoca-a-la-presentacion-de-ofertas/))
-- Concejo Municipal de Rosario — 6/2026: Lic. Priv. 06/2026 Adquisición de artículos e insumos informáticos Tipo: Licitación Privada Apertura: 03/11/2026 08:00:00 En evaluación Ver detalle ([oficial](https://compras.concejorosario.gov.ar/compras/3209))
-- ENERSA (Energía de Entre Ríos S.A.) — 2026-1892:  N.º 2026-1892: Obra de iluminación “Intercambiador Av. Jorge Newbery”, de Paraná.
- Presentación de ofertas hasta el 16 de noviembre de 2026 inclusive.
- Los Pliegos y documentos anexos serán públicos y estarán disponibles en todo momento en la página web de
-ENERSA.
- Demás datos y condiciones, remitirse a: https://www.enersa.com.ar/area-proveedores/#ConcursoDeP recios
- Contacto: registroproveedores@enersa.com.ar
- Energía de Entre Ríos S.A. - Sede Social: Buenos Aires 87 (E3100 BQA) Paraná - Entre Ríos Inscripción: Reg.
-Pco. Com. - DIPJ E. R. Nro. 1858 Secc. Legajo Social
- Rubén D. Clivio, Coordinador de Compras ENERSA. ([oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf))
+- Municipalidad de Concepción del Uruguay — 39/2026: Adquisición de 575 (quinientos setenta y cinco) m3 de Hormigón Calidad H25 para 04 (cuatro) Cuadras de Pavimento Rígido en Boulevard Díaz Vélez ([oficial](https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones))
+- Municipalidad de Chajarí — 53/2026: Provision 20.000 lts Gasoil Euro Diesel para vehiculos del corralon municipal ([oficial](https://licitaciones.chajari.gob.ar/licitaciones?state=en_evaluacion?id=712))
+- Municipalidad de Crespo — 12/2020: Adquisición de 800 m3 de hormigón elaborado H21 con fibra – Hierros lisos de 20 mm y hierros nervados de 10 mm. ([oficial](https://www.crespo.gob.ar/wp-content/uploads/2020/12/ACTA-DE-LIC.-PUBLICA-N%C2%BA-12-20-H21-fibrado.pdf))
+- Municipalidad de San Salvador — 29/2026: Desarrollo Social Destacadas Noticias Portada Llamado a Concurso de Precios N° 29-2026 05/11/2026 168 El Departamento de Compras y Suministros llama a Concurso de Precios N° 29-2026 que tiene por objeto la Compra de 200 cargas de Gas Envasado en garrafas de 10kg – con Destino a Ayuda Directa ; y se regirá por las condiciones establecidas en Pliego de Bases, Condiciones Generales y Particulares aprobados por Decreto N° 347/26. Apertura de sobres: 11 de noviembre de 2026 a las 11:00 horas , en la oficina de compras –planta baja – edificio municipal. Presupuesto oficial: $5.000.000- (Pesos cinco millones.-). Se adjunta PLIEGO en total de diez fojas. Artículo anterior La Municipalidad realizará una subasta pública online de bienes municipales en desuso MSS ([oficial](https://sansalvadorer.gob.ar/llamado-a-concurso-de-precios-n-29-2026/))
+- Comuna de Aldea Santa Rosa — 1/2026: “ADQUISICIÓN DE TRACTOR AGRICOLA NUEVO” ([oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/12-11-26.pdf))
+- Municipalidad de El Trébol — 10/2015: NewsPaper El Trébol NewsPaper the art of publishing 20.3 C El Trébol Estación Meteorológica Facebook Instagram X Licitaciones Reclamos La Ciudad Gobierno Gabinete Ejecutivo Informes de Gestión Reseña Histórica Ubicación Mapas de la Ciudad Organismos y Ámbitos Públicos Espacios Municipales Festejos Populares Concejo Municipal Banco de Ordenanzas Teléfonos Útiles El Trébol a Futuro Plan de Ordenamiento Urbano y Desarrollo Territorial 2009 Plan de ordenamiento urbano y desarrollo territorial 2019 Boletín Oficial Áreas Intendencia D. Humano y Acción Comunitaria Cultura y Comunicación Producción, Capac. y Empleo Hacienda y Finanzas Convivencia y Seguridad Gestión Urbana y Obras Públicas Servicios Públicos Desarrollo Educativo Ambiente Oficina Virtual Contacto Protección Civil LICITACIÓN PÚBLICA PARA LA GESTIÓN Y EL COBRO EXTRAJUDICIAL DE LAS DEUDAS DE PATENTE 23 de julio de 2015 Facebook X Pinterest WhatsApp El Gobierno de la ciudad comunica que a través de Licitación Nº 10/2015 se implementará la gestión y cobro extrajudicial de las deudas generadas por el impuesto provincial de patente única sobre vehículos. ADQUISICIÓN DEL PLIEGO: En la Administración de la Municipalidad de El Trébol, de 7.15 a 12.15, hasta el día 04/08/2015, a las 9.45 horas. VALOR DEL PLIEGO: $ 2000 (pesos dos mil) RECEPCIÓN DE OFERTAS: Hasta el 04/08/2015, a las 9.45 hs. Informes: Secretaría de Coordinación y Logística – Mail: produccion@eltrebol.gov.ar. Teléfonos: (03401) 422181 – 422271. DÍA DE APERTURA: 04/08/2015, a las 10 hs, en Salón Municipal, sito en Bv. América 1091 – El Trébol. Adjudicado Volver Francisco Díaz de Azevedo Corsaliniweb © Municipalidad de El Trébol - Todos los derechos reservados ([oficial](https://eltrebol.gov.ar/wp-content/uploads/2022/04/POUyDT-2009.pdf))
+- Municipalidad de Roldán — 5/2023: LICITACION PÚBLICA N° 005/2023 Home / Formularios y Descargas / ADQUISICIÓN DE EQUIPOS: LOTE 1: UN MINIBUS 23+1 LOTE 2: UN MINIBUS 23+1 LOTE 3: UN MINIBUS 17+1 Financiados con recursos provenientes de Fondo Municipal de Inversiones – Operatoria en Pesos – PROMUDI” APERTURA DE OFERTAS: 9 hs. de 18/05/2023 FECHA Y HORA DE RECEPCIÓN DE OFERTAS: 18/05/2023 – 8.45 Horas VALOR DEL PLIEGO: $10.000 (pesos diez mil) MODIFICADO POR CIRCULAR ACLARATORIA SIN CONSULTA: FECHA APERTURA 24/5/23 Consultas al email: obraspublicas@roldan.gov.ar Archivos adjuntos decretoLU00523 File extension: pdf File size: 2 MB licitacionpublica00523_2 File extension: pdf File size: 22 MB prorroga File extension: pdf File size: 276 kB Licitación Pública N°005/23 ([oficial](https://www.roldan.gov.ar/wp/document-category/licitacion-publica-n005-23/))
+- Concejo Municipal de Rosario — 6/2026: Lic. Priv. 06/2026 Adquisición de artículos e insumos informáticos Tipo: Licitación Privada Apertura: 03/11/2026 09:00:00 En evaluación Ver detalle ([oficial](https://compras.concejorosario.gov.ar/compras/3209))
+- Comuna de María Teresa — None: compra de doscientas (200) cajas navideñas ([oficial](https://mariateresa.gob.ar/index.php?pagina=detalle&idp=859))
+- Instituto Autárquico de Planeamiento y Vivienda (IAPV) — 1/2026: Terminación General Ramírez 10 viviendas (P.P.) ([oficial](https://www.entrerios.gov.ar/minplan/licitaciones))
 - Municipalidad de Rosario del Tala — 1/2026: TALA
 
-                                     MUNICIPALIDAD DE ROSARI O DEL TALA
-                                      Llam ado a Licitación Pública Nº 01/2026
-  Objeto: La Municipalidad de Rosario del Tala (Entre Ríos) llama a Licitación Pública Nº 01/2026 para otorgar en
+                                     MUNICIPALIDAD DE ROSARIO DEL TALA
+                                      Llamado a Licitación Pública Nº 01/2026
+ Objeto: La Municipalidad de Rosario del Tala (Entre Ríos) llama a Licitación Pública Nº 01/2026 para otorgar en
 Concesión por el plazo de veintidós (22) meses la explotación del servicio de cantina “El Ceibo”, proveeduría,
 kiosco y venta de comidas, del Parque y Balneario Municipal “Dr. Delio Panizza”, conforme Pliego de Bases y
 Condiciones Generales; Ley Nº 10.027, sus modificatorias; Ordenanza 284/88, sus modificatorias y decretos
 reglamentarios.-
-  Base Económica por el Período Licitado: pesos dieciocho millones seiscientos mil ($ 18.600.000,00) por veintidós
+ Base Económica por el Período Licitado: pesos dieciocho millones seiscientos mil ($ 18.600.000,00) por veintidós
 (22) meses.
-  Pliego de Bases y Condiciones: En Tesorería Municipal de lunes a viernes de 07:00 a 12:30 horas.
-  Precio del pliego: pesos cuarenta y cinco mil ($ 45.000,00).-
-  Apertura de ofertas: 20 de Noviembre de 2026 a las 10:00 hs. en la Secretaría Municipal o el día hábil siguiente
+ Pliego de Bases y Condiciones: En Tesorería Municipal de lunes a viernes de 07:00 a 12:30 horas.
+ Precio del pliego: pesos cuarenta y cinco mil ($ 45.000,00).-
+ Apertura de ofertas: 20 de Noviembre de 2026 a las 10:00 hs. en la Secretaría Municipal o el día hábil siguiente
 si este resultara feriado o asueto.-
-  Consultas: Oficina de Compras y Suministros, días hábiles de 07:00 a 12:30 hs.- Teléfonos: (03445) 421700 –
+ Consultas: Oficina de Compras y Suministros, días hábiles de 07:00 a 12:30 hs.- Teléfonos: (03445) 421700 –
 (03445)-15471203 – Mail: comprasmunitala@gmail.com municipiordt2024@gmail.com – (03445) 422755.-
 www.rosariodeltala.gob.ar
-   Rosario del Tala, 23 de Octubre de 2026.- MAURO ANDRÉS PANIZZA, Secretario General. ([oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf))
-- Comuna de ANTELO - CORRALES — 4/2026: VICTORIA
-
-                                      COMUNA DE ANTELO - CORRALES
-                                            Li citación N.º 04/2026
-  La Comuna de Antelo - Corrales, departamento Victoria, Provincia de Entre Ríos Llama a Licitación Publica N.º
-04/2026 - Autorizada y aprobada por el Concejo Comunal en fecha 8 de Octubre, para la compra de una máquina
-retroexcavadora 0 km.- Publicación por 3 días – Condiciones: Monto presupuesto estimado en Pesos Ciento
-Cincuenta millones ($ 150.000.000).
-  Valor del Pliego: Sin costo.
-
-
-  Retiro de Pliegos: Los Pliegos de Condiciones se encuentran a disposición de los interesados para su consulta y
-retiro en forma gratuita en la Sede Comunal ubicada en calle 7 de Octubre S/N de la localidad de Antelo. También
-podrán solicitarse por correo electrónico a la siguiente dirección: comunaantelocorrales@gmail.com.
-  Consultas y Aclaraciones: Quienes hayan retirado el Pliego de Condiciones podrán formular consultas
-directamente en la sede comunal, días hábiles en horario de 8 a 12 hs., hasta el día anterior al de la apertura de
-los sobres. La presentación implica el conocimiento y conformidad respecto del pliego. Las ofertas deberán
-formularse por escrito, en la Sede Comunal de Antelo, en un sobre cerrado, consignando en la cubierta del mismo:
-Licitación Nº 04/2026, día y hora de apertura: 27 de Noviembre de 2026 a la hora 9:00, en la sede comunal.-
-  Fdo. CLAUDIO TABORDA - Presidente - Fdo. CECILIA VERBAUVEDE – Secretaria.
-  COMUNA DE ANTELO. ([oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf))
-- Municipalidad de Armstrong — 1/2025: Categoría: 2025 Visitas: 82 Licitación 01/2025 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2025/Licitacion%2001-2025.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-01-2025))
-- Municipalidad de Armstrong — 2/2025: Categoría: 2025 Visitas: 89 Licitación 02/2025 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2025/Licitacion%2002-2025.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-02-2025))
-- Municipalidad de Armstrong — 1/2026: Categoría: 2026 Visitas: 141 Licitación 01/2026 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2026/Licitacion%2001-2026.pdf">Descargar PDF</a> 1 2 Página 2 de 2 ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2026/licitacion-01-2026))
-- Municipalidad de Crespo — 86/2026: Decreto 2026-10-28 28/10/2026 1059 2026 Decreto-1059-2026-llamado-concurso-086-2026-materiales-de-construccion-para-construccion-sub-base-canos-pluviales.pdf Llamado a Concurso de Precios Nº 086/2026 adquisición de materiales de construcción para ejecutar sub base de apoyo y relleno para caños pluviales de 600mm en calle Federación ([oficial](http://municrespo.gov.ar/digesto/mod/subidas/Decreto-1059-2026-llamado-concurso-086-2026-materiales-de-construccion-para-construccion-sub-base-canos-pluviales.pdf))
-- Municipalidad de Crespo — 87/2026: Decreto 2026-11-10 10/11/2026 1107 2026 Decreto-1107-2026-adjudicacion-concurso-087-2026-malla-sima-para-pavimentacion-calle-La-Rioja.pdf Adjudicación Concurso de Precios N° 087/2026 adquisición de materiales de construcción para pavimentación de calle La Rioja, entre calles Entre Ríos y Córdoba ([oficial](http://municrespo.gov.ar/digesto/mod/subidas/Decreto-1107-2026-adjudicacion-concurso-087-2026-malla-sima-para-pavimentacion-calle-La-Rioja.pdf))
-- Municipalidad de Seguí — 1/2021: Home Licitaciones Apertura de sobres de la Licitación Pública Nº 01/2021 Licitaciones Noticias Apertura de sobres de la Licitación Pública Nº 01/2021 by arcast 11 febrero, 2021 0 226 0 En la mañana de hoy, el Presidente Municipal Dr. Gerardo Heberlein junto a su equipo de Gestión y titulares de empresas llevaron a cabo la apertura de sobres de la Licitación Pública Nº 01/2021 aprobada por Decreto Nº 001/2021 DEM en el Salón Auditorio Municipal.El objetivo de este proceso es adquirir los materiales para la ejecución de la obra denominada “Pavimentación con Hormigón Armado, Cordones Cuneta y Alumbrado Público en el Parque Industrial Seguí”. Gerardo Heberlein Municipalidad de Segui segui entre rios 0 previous post No Habrá recolección de Residuos next post Torneo de Golf Croquet y de Tejo ([oficial](https://www.segui.gob.ar/sitio/?p=3668))
-- Municipalidad de Seguí — 1/2024: Licitaciones Noticias Apertura de sobres – Solicitud de cotización N° 01/2024 by arcast 9 marzo, 2024 9 marzo, 2024 0 227 0 Objeto de la cotización: Adquisición de materiales con destino a la obra y mejora de la traza vial en el Barrio «Nuestra Señora de la Merced» de la localidad de Seguí. 0 ([oficial](https://www.segui.gob.ar/sitio/?p=7537))
-- Municipalidad de Armstrong — 7/2026: Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 66 Licitación 07/2026 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2026/Licitacion%2007-2026.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2026/licitacion-07-2026))
-- Municipalidad de Armstrong — 8/2025: Categoría: 2025 Visitas: 128 Licitación 08/2025 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2025/Licitacion%2008-2025.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-08-2025))
-- Municipalidad de Armstrong — 8/2026: Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 65 Licitación 08/2026 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2026/Licitacion%2008-2026.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2026/licitacion-08-2026))
-- Municipalidad de Armstrong — 9/2025: Categoría: 2025 Visitas: 129 Licitación 09/2025 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2025/Licitacion%2009-2025.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-09-2025))
-- Municipalidad de Armstrong — 9/2026: Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 93 Licitación 09/2026 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2026/Licitacion%2009-2026.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2026/licitacion-09-2026))
-- Municipalidad de Armstrong — 10/2025: Categoría: 2025 Visitas: 121 Licitación 10/2025 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2025/Licitacion%2010-2025.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-10-2025))
-- Municipalidad de Armstrong — 11/2025: Categoría: 2025 Visitas: 131 Licitación 11/2025 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2025/Licitacion%2011-2025.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-11-2025))
-- Municipalidad de Armstrong — 12/2025: Categoría: 2025 Visitas: 129 Licitación 12/2025 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2025/Licitacion%2012-2025.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-12-2025))
-- Municipalidad de Armstrong — 13/2023: Categoría: 2023 Visitas: 129 Licitación 13/2023 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2023/Licitacion%2013-2023.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2023/licitacion-13-2023))
-- Municipalidad de Armstrong — 15/2024: Categoría: 2024 Visitas: 117 Licitación 15/2024 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2024/Licitacion%2015-2024.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-15-2024))
-- Municipalidad de Armstrong — 16/2024: Categoría: 2024 Visitas: 123 Licitación 16/2024 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2024/Licitacion%2016-2024.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-16-2024))
-- Municipalidad de Armstrong — 17/2024: Categoría: 2024 Visitas: 126 Licitación 17/2024 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2024/Licitacion%2017-2024.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-17-2024))
-- Municipalidad de Armstrong — 18/2024: Categoría: 2024 Visitas: 129 Licitación 18/2024 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2024/Licitacion%2018-2024.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-18-2024))
-- Municipalidad de Armstrong — 19/2024: Categoría: 2024 Visitas: 109 Licitación 19/2024 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2024/Licitacion%2019-2024.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-19-2024))
+  Rosario del Tala, 23 de Octubre de 2026.- MAURO ANDRÉS PANIZZA, Secretario General. ([oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/12-11-26.pdf))
+- Municipalidad de Armstrong — 7/2024: Categoría: 2024 Visitas: 106 Licitación 07/2024 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2024/Licitacion%2007-2024.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-07-2024))
+- Municipalidad de Armstrong — 6/2024: Categoría: 2024 Visitas: 75 Licitación 06/2024 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2024/Licitacion%2006-2024.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-06-2024))
+- Municipalidad de Armstrong — 8/2024: Categoría: 2024 Visitas: 76 Licitación 08/2024 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2024/Licitacion%2008-2024.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-08-2024))
+- Municipalidad de Armstrong — 5/2024: Categoría: 2024 Visitas: 77 Licitación 05/2024 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2023/Licitacion%2005-2024.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-05-2024))
+- Municipalidad de Armstrong — 9/2024: Categoría: 2024 Visitas: 77 Licitación 09/2024 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2024/Licitacion%2009-2024.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-09-2024))
+- Municipalidad de Armstrong — 1/2025: Categoría: 2025 Visitas: 84 Licitación 01/2025 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2025/Licitacion%2001-2025.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-01-2025))
+- Municipalidad de Armstrong — 2/2025: Categoría: 2025 Visitas: 91 Licitación 02/2025 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2025/Licitacion%2002-2025.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-02-2025))
+- Municipalidad de Armstrong — 1/2026: Categoría: 2026 Visitas: 143 Licitación 01/2026 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2026/Licitacion%2001-2026.pdf">Descargar PDF</a> 1 2 Página 2 de 2 ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2026/licitacion-01-2026))
+- Municipalidad de Seguí — 1/2021: Home Licitaciones Apertura de sobres de la Licitación Pública Nº 01/2021 Licitaciones Noticias Apertura de sobres de la Licitación Pública Nº 01/2021 by arcast 11 febrero, 2021 0 229 0 En la mañana de hoy, el Presidente Municipal Dr. Gerardo Heberlein junto a su equipo de Gestión y titulares de empresas llevaron a cabo la apertura de sobres de la Licitación Pública Nº 01/2021 aprobada por Decreto Nº 001/2021 DEM en el Salón Auditorio Municipal.El objetivo de este proceso es adquirir los materiales para la ejecución de la obra denominada “Pavimentación con Hormigón Armado, Cordones Cuneta y Alumbrado Público en el Parque Industrial Seguí”. Gerardo Heberlein Municipalidad de Segui segui entre rios 0 previous post No Habrá recolección de Residuos next post Torneo de Golf Croquet y de Tejo ([oficial](https://www.segui.gob.ar/sitio/?p=3668))
+- Municipalidad de Seguí — 1/2024: Licitaciones Noticias Apertura de sobres – Solicitud de cotización N° 01/2024 by arcast 9 marzo, 2024 9 marzo, 2024 0 230 0 Objeto de la cotización: Adquisición de materiales con destino a la obra y mejora de la traza vial en el Barrio «Nuestra Señora de la Merced» de la localidad de Seguí. 0 ([oficial](https://www.segui.gob.ar/sitio/?p=7537))
+- Municipalidad de Armstrong — 7/2026: Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 68 Licitación 07/2026 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2026/Licitacion%2007-2026.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2026/licitacion-07-2026))
+- Municipalidad de Armstrong — 8/2025: Categoría: 2025 Visitas: 130 Licitación 08/2025 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2025/Licitacion%2008-2025.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-08-2025))
+- Municipalidad de Armstrong — 8/2026: Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 67 Licitación 08/2026 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2026/Licitacion%2008-2026.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2026/licitacion-08-2026))
+- Municipalidad de Armstrong — 9/2025: Categoría: 2025 Visitas: 131 Licitación 09/2025 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2025/Licitacion%2009-2025.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-09-2025))
+- Municipalidad de Armstrong — 9/2026: Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 95 Licitación 09/2026 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2026/Licitacion%2009-2026.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2026/licitacion-09-2026))
+- Municipalidad de Armstrong — 10/2025: Categoría: 2025 Visitas: 123 Licitación 10/2025 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2025/Licitacion%2010-2025.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-10-2025))
+- Municipalidad de Armstrong — 11/2025: Categoría: 2025 Visitas: 134 Licitación 11/2025 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2025/Licitacion%2011-2025.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-11-2025))
+- Municipalidad de Armstrong — 12/2025: Categoría: 2025 Visitas: 132 Licitación 12/2025 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2025/Licitacion%2012-2025.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-12-2025))
+- Municipalidad de Armstrong — 13/2023: Categoría: 2023 Visitas: 131 Licitación 13/2023 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2023/Licitacion%2013-2023.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2023/licitacion-13-2023))
+- Municipalidad de Armstrong — 15/2024: Categoría: 2024 Visitas: 119 Licitación 15/2024 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2024/Licitacion%2015-2024.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-15-2024))
+- Municipalidad de Armstrong — 16/2024: Categoría: 2024 Visitas: 125 Licitación 16/2024 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2024/Licitacion%2016-2024.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-16-2024))
+- Municipalidad de Armstrong — 17/2024: Categoría: 2024 Visitas: 128 Licitación 17/2024 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2024/Licitacion%2017-2024.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-17-2024))
+- Municipalidad de Armstrong — 18/2024: Categoría: 2024 Visitas: 131 Licitación 18/2024 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2024/Licitacion%2018-2024.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-18-2024))
+- Municipalidad de Armstrong — 19/2024: Categoría: 2024 Visitas: 111 Licitación 19/2024 Este navegador no soporta PDFs. <a href="/images/Licitaciones/2024/Licitacion%2019-2024.pdf">Descargar PDF</a> ([oficial](https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-19-2024))
 
 ## datos_completados
 
-- Municipalidad de Rosario — 104/2026: ORDENANZA 10586 PRORROGADA POR ORD.10750- COMPRA DE CAJAS CON ALIMENTOS PARA LA DIRECCIÓN GENERAL DE INTEGRACIÓN COMUNITARIA "SECRETARÍA DE DESARROLLO HUMANO Y HÁBITAT" ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38697))
-- Municipalidad de Rosario — 105/2026: ORDENANZA 10586, PRORROGADA POR ORD.10750 PARA LA CONTRATACIÓN DEL SERVICIO DE SEGURIDAD PRIVADA PARA PARQUE HUERTA NORTE,PUNTO CUIDAR LATINOAMERICANO Y PARQUE HUERTA EL BOSQUE DEPENDIENTES DE LA SUBSECRETARÍA DE ECONOMÍA SOCIAL"SECRETARÍA DE DESARROLLO HUMANO Y HÁBITAT" ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38698))
-- Aeropuerto Internacional Rosario — 37/2025: Servicio de fumigación en espacios abiertos e interiores del AIR. ([oficial](https://aeropuertorosario.com/licitaciones/licitacion-privada-no-37-2025/))
-- Municipalidad de Rosario — 150/2026: Compra de puertas y ventanas para el centro de salud "Elena Bazet" y para los centros de salud. ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38705))
-- Municipalidad de Rosario — 113/2026: COntratación del servicio de braquiterapia- Secretaría de Salud Pública ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38734))
-- Municipalidad de Rosario — 474/2026: BIOM. PARA UNIDAD RENAL Y ESPECIALIDADES UROLOGICAS H.E.C.A ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38706))
-- Municipalidad de Rosario — 128/2026: Servicio de impresión, rotulación y colocación de vinilo y PVC espumado para el Centro Cultural «Roberto Fontanarrosa» ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38736))
-- Municipalidad de Rosario — 467/2026: Contratación del servicio de impresiones para la Secretaría de Igualdad, Género y DDHH ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38717))
-- Municipalidad de Rosario — 468/2026: Provisión de Resmas de Papel para ser distribuidas por las diferentes áreas que dependen de la Sec. de Obras Públicas ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38720))
-- Aeropuerto Internacional Rosario — 105/2025: Compra de Rollos de Papel Térmico (grandes) para postes de ingreso a la playa de estacionamiento del AIR. ([oficial](https://aeropuertorosario.com/licitaciones/compra-directa-n105-2025/))
-- Municipalidad de Rosario — 215/2026: MEDICION DE PUESTA A TIERRA * HOSPITAL DE NIÑOS VICTOR J. VILELA * ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38716))
-- Municipalidad de Rosario — 112/2026: Compra de carpetas institucionales- Secretaría de Salud Pública ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38732))
-- Aeropuerto Internacional Rosario — 104/2025: Adquisición de rodamientos para reemplazo en las puertas automáticas del AIR. ([oficial](https://aeropuertorosario.com/licitaciones/contratacion-directa-no-104-2025/))
-- Aeropuerto Internacional Rosario — 101/2025: Cestos de residuos para oficinas, baños y nuevos espacios del Aeropuerto Internacional de Rosario. ([oficial](https://aeropuertorosario.com/licitaciones/contratacion-directa-no-101-2025/))
-- Aeropuerto Internacional Rosario — 102/2025: Insumos eléctricos para instalación de nuevo tablero de distribución en sala de máquinas del AIR. ([oficial](https://aeropuertorosario.com/licitaciones/contratacion-directa-no-102-2025/))
-- Aeropuerto Internacional Rosario — 106/2025: Alimentación de alumbrado publico para calle del AIR. ([oficial](https://aeropuertorosario.com/licitaciones/contratacion-directa-no-106-2025/))
-- Municipalidad de Rosario — 83/2026: Adquisición de Instrumental Quirúrgico para Salud Animal Rosario. ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38729))
-- Municipalidad de Rosario — 478/2026: PLACA ANATOMICA HÚMERO PROXIMAL ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38737))
-- Municipalidad de Rosario — 477/2026: PUNTA DE RADIOFRECUENCIA Y PUNTA DE SHAVER ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38728))
-- Municipalidad de Rosario — 70/2026: Materiales Eléctricos Hospital J. B. Alberdi ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38701))
+- Municipalidad de Rosario — 48/2026: QUÍMICA CLÍNICA AUTOANALIZADORES HECA DIRECCIÓN DE BIOQUÍMICA ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38657))
+- Municipalidad de Rosario — 12/2026: UNIFORMES "HOSPITAL DE NIÑOS VICTOR J. VILELA" ([oficial](https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38675))
+- Aeropuerto Internacional Rosario — 107/2025: Adquisición de proyectores led para iluminación de plataforma del Aeropuerto Internacional de Rosario ([oficial](https://aeropuertorosario.com/licitaciones/contratacion-directa-no-107-2025/))
+- Aeropuerto Internacional Rosario — 84/2025: Compra de elementos tecnológicos para proyecto check in combinados del AIR. ([oficial](https://aeropuertorosario.com/licitaciones/contratacion-directa-no-84-2025/))
+- Aeropuerto Internacional Rosario — 103/2025: Compra de insumos para personal del AIR. ([oficial](https://aeropuertorosario.com/licitaciones/contratacion-directa-no-103-2025/))
+- Aeropuerto Internacional Rosario — 108/2025: "Provisión y colocación de cubiertas Hilux AG057CX y rotación, alineación y balanceo AG del Aeropuerto Internacional de Rosario ([oficial](https://aeropuertorosario.com/licitaciones/contratacion-directa-no-108-2025/))
+- Municipalidad de Viale — 2509: Horario de atención de Lunes a Viernes: 6.30 hs a 12.00 hs Noticias Publicaciones Gobierno Autoridades Secretarías y Direcciones Secretaría de Gobierno Secretaría de Ingresos Públicos, Estadísticas y Modernización Subsecretaría de cultura y educación Secretaría de Desarrollo Social y Humano Subsecretaría de la mujer Subsecretaría de Obras Sanitarias Subsecretaría de Desarrollo Local y Productivo Dirección de Deportes HCD Autoridades HCD Transparente Comunicados Libro de Visitas Trámites y Servicios Atención Ciudadana Boletín Oficial Bromatologia Centro de Salud Compras Cuentas Claras Cultura y Educación Defensa Al Consumidor Emprendedurismo Expedientes Licencias de Conducir Punto Digital Recaudaciones Obras Sanitarias Subsecretaría de Servicios Públicos Sistema de ahorro previo para obras de infraestructura Ciudad Turismo Parque Industrial Recaudaciones Cotejo de Precios N° 2509 – Adq. de PIEDRA BASALTICA 3 septiembre, 2026 | In Pliegos | By Lautaro Ledesma Descargar PDF Guía Telefónica y Servicios de la Ciudad Bomberos100 Policía101 Emergencias Médicas107 Mesa de Entrada PalacioInt. 101 Reclamos CentralInt. 111 Honorable Concejo Delib.Int. 113 Juzgado de FaltasInt. 142 Guardia UrbanaInt. 120 Centro de MonitoreoInt. 121 Centro Salud «R. Carrillo»Int. 119 Hogar «Madre Teresa»Int. 127 Sec. Desarrollo SocialInt. 129 Subsecretaría de la MujerInt. 130 ANAFInt. 131 Desarrollo Local y Prod.Int. 137 Defensa del ConsumidorInt. 136 Licencias de ConducirInt. 132 Cultura y EducaciónInt. 134 Dirección de DeportesInt. 135 Obras SanitariasInt. 141 Servicios PúblicosInt. 125 ComprasInt. 115 CatastroInt. 116 RecaudacionesInt. 117 Bromatología y AmbienteInt. 143 Obras Públicas (Tinglado)Int. 144 Guardias y Urgencias fuera de horario administrativo: Salud: 3434151615 Guardia Urbana/Monitoreo: 3434676828 Subsec. Mujer: 3434055981 ANAF: 3434524860 Licencias: 3434283457 Reclamos: 3434282868 Diseño y desarrollo por AV consultora + Minds ([oficial](https://viale.gob.ar/wp-content/uploads/2026/09/2509.pdf))
 
 ## Cobertura por organismo
 
@@ -830,34 +339,34 @@ Licitación Nº 04/2026, día y hora de apertura: 27 de Noviembre de 2026 a la h
 | Municipalidad de Villa Elisa | PARCIAL | PARCIAL | 86 | 1 |
 | Municipalidad de Ceres | PARCIAL | PARCIAL | 8 | 2 |
 | Municipalidad de Crespo | PARCIAL | PARCIAL | 172 | 5 |
-| Aeropuerto Internacional Rosario | PARCIAL | PARCIAL | 162 | 1 |
-| IAFAS | PARCIAL | OPERATIVA | 94 | 0 |
+| Aeropuerto Internacional Rosario | PARCIAL | PARCIAL | 172 | 1 |
+| IAFAS | OPERATIVA | OPERATIVA | 100 | 0 |
 | Municipalidad de Salto | OPERATIVA | OPERATIVA | 22 | 0 |
-| Municipalidad de Sunchales | OPERATIVA | OPERATIVA | 81 | 0 |
-| Municipalidad de Villa Gobernador Gálvez | OPERATIVA | OPERATIVA | 106 | 0 |
-| Municipalidad de Concepción del Uruguay | OPERATIVA | OPERATIVA | 266 | 0 |
+| Municipalidad de Sunchales | OPERATIVA | BLOQUEADA | 81 | 1 |
+| Municipalidad de Villa Gobernador Gálvez | OPERATIVA | BLOQUEADA | 106 | 1 |
+| Municipalidad de Concepción del Uruguay | OPERATIVA | OPERATIVA | 268 | 0 |
 | Municipalidad de La Paz | OPERATIVA | OPERATIVA | 50 | 0 |
 | Municipalidad de Alvear | PARCIAL | PARCIAL | 65 | 1 |
 | Municipalidad de Colón | OPERATIVA | OPERATIVA | 57 | 0 |
 | Municipalidad de Hasenkamp | OPERATIVA | OPERATIVA | 33 | 0 |
-| Gobierno de Timbúes | PARCIAL | PARCIAL | 159 | 1 |
+| Gobierno de Timbúes | PARCIAL | PARCIAL | 161 | 1 |
 | Municipalidad de Chajarí | OPERATIVA | OPERATIVA | 705 | 0 |
 | Municipalidad de General Ramírez | OPERATIVA | OPERATIVA | 88 | 0 |
 | ATER | OPERATIVA | OPERATIVA | 219 | 0 |
 | Municipalidad de Seguí | PARCIAL | PARCIAL | 28 | 2 |
-| Municipalidad de Junín | PARCIAL | PARCIAL | 34 | 3 |
+| Municipalidad de Junín | PARCIAL | PARCIAL | 34 | 1 |
 | Ministerio de Planeamiento e Infraestructura | OPERATIVA | OPERATIVA | 492 | 0 |
-| IAFAS | PARCIAL | PARCIAL | 98 | 2 |
-| Comuna de María Teresa | PARCIAL | OPERATIVA | 25 | 0 |
+| IAFAS | PARCIAL | PARCIAL | 99 | 2 |
+| Comuna de María Teresa | OPERATIVA | OPERATIVA | 25 | 0 |
 | CAFESG | OPERATIVA | OPERATIVA | 68 | 0 |
 | Municipalidad de Reconquista | OPERATIVA | OPERATIVA | 4 | 0 |
-| Municipalidad de Crespo | PARCIAL | PARCIAL | 693 | 1 |
-| Poder Judicial de Entre Ríos | OPERATIVA | OPERATIVA | 67 | 0 |
+| Municipalidad de Crespo | PARCIAL | PARCIAL | 696 | 1 |
+| Poder Judicial de Entre Ríos | OPERATIVA | OPERATIVA | 68 | 0 |
 | Municipalidad de Villaguay | PENDIENTE | PENDIENTE | 238 | 3 |
 | Municipalidad de General Ramírez | OPERATIVA | OPERATIVA | 1 | 0 |
 | Municipalidad de El Trébol | OPERATIVA | OPERATIVA | 201 | 0 |
 | Municipalidad de Victoria | PARCIAL | PARCIAL | 398 | 2 |
-| Municipalidad de Casilda | OPERATIVA | OPERATIVA | 74 | 0 |
+| Municipalidad de Casilda | OPERATIVA | OPERATIVA | 76 | 0 |
 | Municipalidad de Baradero | OPERATIVA | OPERATIVA | 128 | 0 |
 | Municipalidad de Nogoyá | OPERATIVA | OPERATIVA | 20 | 0 |
 | Municipalidad de Reconquista | OPERATIVA | OPERATIVA | 13 | 0 |
@@ -865,15 +374,15 @@ Licitación Nº 04/2026, día y hora de apertura: 27 de Noviembre de 2026 a la h
 | Municipalidad de San José | OPERATIVA | OPERATIVA | 152 | 0 |
 | Municipalidad de Funes | PARCIAL | PARCIAL | 40 | 2 |
 | Municipalidad de Federación | PARCIAL | PARCIAL | 101 | 3 |
-| Municipalidad de Viale | PARCIAL | PARCIAL | 40 | 1 |
-| Municipalidad de Armstrong | PARCIAL | PARCIAL | 89 | 14 |
+| Municipalidad de Viale | PARCIAL | PARCIAL | 40 | 2 |
+| Municipalidad de Armstrong | PARCIAL | PARCIAL | 89 | 16 |
 | Concejo Municipal de Rosario | OPERATIVA | OPERATIVA | 2 | 0 |
-| Municipalidad de Crespo | OPERATIVA | OPERATIVA | 5 | 0 |
+| Municipalidad de Crespo | OPERATIVA | OPERATIVA | 4 | 0 |
 | Comuna de General Lagos | PARCIAL | PARCIAL | 10 | 1 |
 | EPE | BLOQUEADA | BLOQUEADA | 37 | 2 |
 | Ente Administrador Puerto Rosario (ENAPRO) | OPERATIVA | OPERATIVA | 12 | 0 |
-| Universidad Nacional de Rosario | PARCIAL | OPERATIVA | 14 | 0 |
-| Municipalidad de Rosario | PARCIAL | PARCIAL | 157 | 8 |
+| Universidad Nacional de Rosario | OPERATIVA | OPERATIVA | 14 | 0 |
+| Municipalidad de Rosario | PARCIAL | PARCIAL | 169 | 7 |
 | Municipalidad de Roldán | PARCIAL | PARCIAL | 214 | 1 |
 | Municipalidad de Arrecifes | OPERATIVA | OPERATIVA | 7 | 0 |
 | Municipalidad de Colonia Avellaneda | OPERATIVA | OPERATIVA | 9 | 0 |
@@ -881,19 +390,19 @@ Licitación Nº 04/2026, día y hora de apertura: 27 de Noviembre de 2026 a la h
 | Municipalidad de Colón | PARCIAL | PARCIAL | 3 | 1 |
 | Municipalidad de San Salvador | OPERATIVA | OPERATIVA | 14 | 0 |
 | Municipalidad de San Nicolás | PARCIAL | PARCIAL | 21 | 1 |
-| Municipalidad de Gualeguaychú | PARCIAL | PARCIAL | 281 | 1 |
-| Municipalidad de Arrecifes | OPERATIVA | PENDIENTE | 7 | 1 |
+| Municipalidad de Gualeguaychú | PARCIAL | PARCIAL | 281 | 4 |
+| Municipalidad de Arrecifes | PENDIENTE | PARCIAL | 7 | 1 |
 | Municipalidad de Santa Ana | PARCIAL | PARCIAL | 33 | 1 |
 | Ministerio Público de Buenos Aires | PARCIAL | PARCIAL | 120 | 1 |
-| Vialidad Entre Ríos | OPERATIVA | OPERATIVA | 520 | 0 |
+| Vialidad Entre Ríos | OPERATIVA | BLOQUEADA | 520 | 1 |
 | Municipalidad de Carcarañá | PARCIAL | PARCIAL | 10 | 1 |
 | Municipalidad de Carmen de Areco | OPERATIVA | OPERATIVA | 7 | 0 |
 | Comuna de Chabás | OPERATIVA | OPERATIVA | 3 | 0 |
 | Municipalidad de Reconquista | OPERATIVA | OPERATIVA | 14 | 0 |
-| Comuna de Humboldt | BLOQUEADA | OPERATIVA | 2 | 0 |
+| Comuna de Humboldt | OPERATIVA | OPERATIVA | 2 | 0 |
 | Municipalidad de Sastre y Ortiz | OPERATIVA | OPERATIVA | 10 | 0 |
 | Vialidad Entre Ríos | OPERATIVA | OPERATIVA | 21 | 0 |
-| ASSA | OPERATIVA | OPERATIVA | 7 | 0 |
+| ASSA | OPERATIVA | OPERATIVA | 8 | 0 |
 | DIR. GRAL. DE CONTRATACIONES DEL ESTADO - MIN. DE ECONOMIA Y SERVICIOS PUBLICOS - PODER EJECUTIVO | OPERATIVA | OPERATIVA | 39 | 0 |
 | Municipalidad de Venado Tuerto | OPERATIVA | OPERATIVA | 27 | 0 |
 | Comuna de Arequito | OPERATIVA | OPERATIVA | 10 | 0 |
@@ -909,7 +418,7 @@ Licitación Nº 04/2026, día y hora de apertura: 27 de Noviembre de 2026 a la h
 | Municipalidad de Lucas González | OPERATIVA | OPERATIVA | 2 | 0 |
 | Municipalidad de Villa Cañás | OPERATIVA | OPERATIVA | 27 | 0 |
 | Municipalidad de San Andrés de Giles | OPERATIVA | OPERATIVA | 3 | 0 |
-| Municipalidad de General Galarza | OPERATIVA | OPERATIVA | 1 | 0 |
+| Municipalidad de General Galarza | OPERATIVA | PENDIENTE | 1 | 1 |
 | Municipalidad de Cañada de Gómez | BLOQUEADA | BLOQUEADA | 0 | 1 |
 | Municipalidad de Colón | PENDIENTE | PENDIENTE | 0 | 1 |
 | Municipalidad de Pergamino | PENDIENTE | PENDIENTE | 0 | 1 |
