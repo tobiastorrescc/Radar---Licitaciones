@@ -715,7 +715,19 @@
     "territorio:820007": "2026-11-09T13:28:17.622625+00:00",
     "directorio:fuente-043": "2026-11-09T13:28:17.622625+00:00",
     "directorio:fuente-075": "2026-11-09T13:28:17.622625+00:00",
-    "reparar:fuente-085": "2026-11-09T13:38:46.784260+00:00"
+    "reparar:fuente-085": "2026-11-09T13:38:46.784260+00:00",
+    "reparar:fuente-087": "2026-11-13T11:58:54.416318+00:00",
+    "directorio:fuente-062": "2026-11-13T11:58:54.416318+00:00",
+    "directorio:fuente-044": "2026-11-13T11:58:54.416318+00:00",
+    "directorio:fuente-099": "2026-11-13T11:58:54.416318+00:00",
+    "reparar:fuente-093": "2026-11-13T11:58:54.416318+00:00",
+    "directorio:fuente-063": "2026-11-13T11:58:54.416318+00:00",
+    "directorio:fuente-045": "2026-11-13T11:58:54.416318+00:00",
+    "territorio:060623": "2026-11-13T11:58:54.416318+00:00",
+    "directorio:fuente-064": "2026-11-13T11:58:54.416318+00:00",
+    "reparar:fuente-103": "2026-11-13T11:58:54.416318+00:00",
+    "reparar:fuente-071": "2026-11-13T11:58:54.416318+00:00",
+    "territorio:060686": "2026-11-13T11:58:54.416318+00:00"
   },
   "candidatos": {
     "inventario-fuente-034": {
@@ -9263,7 +9275,34 @@
       "ultima_revision": "2026-10-31T12:06:25.688428+00:00",
       "version_verificador": 4,
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120626-193e272a/0001.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120626-193e272a/0001.json",
+      "prioridad_rapida": {
+        "puntos": 6,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          },
+          {
+            "criterio": "documentos_publicados",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias"
+        ],
+        "distancia_geodesica_km": 187.7,
+        "ultima_revision": null
+      }
     },
     "contraste-6633b08307ea72b43ab0": {
       "organismo": "Municipalidad de Chacabuco",
@@ -9300,7 +9339,34 @@
       "ultima_revision": "2026-10-31T12:06:25.688428+00:00",
       "version_verificador": 4,
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120626-193e272a/0002.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120626-193e272a/0002.json",
+      "prioridad_rapida": {
+        "puntos": 6,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          },
+          {
+            "criterio": "documentos_publicados",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias"
+        ],
+        "distancia_geodesica_km": 187.7,
+        "ultima_revision": null
+      }
     },
     "contraste-9ee3f23a152084b09571": {
       "organismo": "Municipalidad de Chacabuco",
@@ -9337,7 +9403,34 @@
       "ultima_revision": "2026-10-31T12:06:25.688428+00:00",
       "version_verificador": 4,
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120626-193e272a/0006.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120626-193e272a/0006.json",
+      "prioridad_rapida": {
+        "puntos": 6,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          },
+          {
+            "criterio": "documentos_publicados",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias"
+        ],
+        "distancia_geodesica_km": 187.7,
+        "ultima_revision": null
+      }
     },
     "contraste-6b5fc6834def2add0155": {
       "organismo": "Municipalidad de Carmen de Areco",
@@ -11212,6 +11305,29 @@
       "config_publica": {
         "noticias_comunales": true,
         "documentos_para_descubrimiento": true
+      },
+      "prioridad_rapida": {
+        "puntos": 5,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 69.29,
+        "ultima_revision": null
       }
     },
     "contraste-89e2ffb55568d2a06970": {
@@ -11258,7 +11374,34 @@
           "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261109T120013-77121b8a/0010.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261109T120013-77121b8a/0010.json",
+      "prioridad_rapida": {
+        "puntos": 9,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 12.29,
+        "ultima_revision": null
+      }
     },
     "contraste-d7fcb0585e932c70f66c": {
       "organismo": "Comuna de Pujato",
@@ -11312,6 +11455,33 @@
       "config_publica": {
         "noticias_comunales": true,
         "documentos_para_descubrimiento": true
+      },
+      "prioridad_rapida": {
+        "puntos": 9,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 38.55,
+        "ultima_revision": null
       }
     },
     "contraste-589ecca9cfe42860c58e": {
@@ -11358,7 +11528,34 @@
           "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261109T120013-77121b8a/0009.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261109T120013-77121b8a/0009.json",
+      "prioridad_rapida": {
+        "puntos": 6,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          },
+          {
+            "criterio": "documentos_publicados",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias"
+        ],
+        "distancia_geodesica_km": 19.92,
+        "ultima_revision": null
+      }
     },
     "contraste-bd8d7585627dbdd6ba6d": {
       "organismo": "Municipalidad de María Grande",
@@ -11928,7 +12125,34 @@
           "permanencia": "NO_DETERMINADA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261109T120013-77121b8a/0012.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261109T120013-77121b8a/0012.json",
+      "prioridad_rapida": {
+        "puntos": 9,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 159.04,
+        "ultima_revision": null
+      }
     },
     "contraste-2a9c9db420d4820a158f": {
       "organismo": "Municipalidad de San Benito",
@@ -16026,7 +16250,42 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123149-ed8a2f3d/0014.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123149-ed8a2f3d/0014.json",
+      "prioridad_rapida": {
+        "puntos": 12,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "historial_convocatorias",
+            "peso": 2,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          },
+          {
+            "criterio": "documentos_publicados",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias"
+        ],
+        "distancia_geodesica_km": 153.62,
+        "ultima_revision": null
+      }
     },
     "contraste-ed8d46d54e3e33b0f3d2": {
       "tipo": "TERRITORIAL",
@@ -16054,7 +16313,42 @@
           "fase": "EXTRACCION"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123149-ed8a2f3d/0015.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123149-ed8a2f3d/0015.json",
+      "prioridad_rapida": {
+        "puntos": 12,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "historial_convocatorias",
+            "peso": 2,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          },
+          {
+            "criterio": "documentos_publicados",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias"
+        ],
+        "distancia_geodesica_km": 153.62,
+        "ultima_revision": null
+      }
     },
     "contraste-c5be17888381e26f2acc": {
       "tipo": "TERRITORIAL",
@@ -16082,7 +16376,42 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123149-ed8a2f3d/0013.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123149-ed8a2f3d/0013.json",
+      "prioridad_rapida": {
+        "puntos": 12,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "historial_convocatorias",
+            "peso": 2,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          },
+          {
+            "criterio": "documentos_publicados",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias"
+        ],
+        "distancia_geodesica_km": 153.62,
+        "ultima_revision": null
+      }
     },
     "contraste-bb0735d982707f361f2f": {
       "tipo": "TERRITORIAL",
@@ -16150,7 +16479,38 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123149-ed8a2f3d/0009.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123149-ed8a2f3d/0009.json",
+      "prioridad_rapida": {
+        "puntos": 11,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "historial_convocatorias",
+            "peso": 2,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 165.34,
+        "ultima_revision": null
+      }
     },
     "contraste-31a38639b6e55f3e5ebf": {
       "tipo": "TERRITORIAL",
@@ -18375,7 +18735,34 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0020.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0020.json",
+      "prioridad_rapida": {
+        "puntos": 9,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 159.04,
+        "ultima_revision": null
+      }
     },
     "contraste-571baa3d5dc65fe9ebd7": {
       "url": "https://ceres.gob.ar/",
@@ -18437,7 +18824,42 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0005.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0005.json",
+      "prioridad_rapida": {
+        "puntos": 12,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "historial_convocatorias",
+            "peso": 2,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          },
+          {
+            "criterio": "documentos_publicados",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias"
+        ],
+        "distancia_geodesica_km": 153.62,
+        "ultima_revision": null
+      }
     },
     "contraste-c2cad7e488ba79eb67f3": {
       "url": "https://transparencia.urdinarrain.gov.ar/",
@@ -18511,7 +18933,38 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0030.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0030.json",
+      "prioridad_rapida": {
+        "puntos": 11,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "historial_convocatorias",
+            "peso": 2,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 165.34,
+        "ultima_revision": null
+      }
     },
     "contraste-51829e55452257e786a9": {
       "url": "https://arrecifes.gob.ar/",
@@ -19333,7 +19786,30 @@
           "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0005.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0005.json",
+      "prioridad_rapida": {
+        "puntos": 5,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 48.75,
+        "ultima_revision": null
+      }
     },
     "contraste-2c2c062c4d1298b36622": {
       "url": "https://www.cglagos.gob.ar/",
@@ -19478,7 +19954,30 @@
           "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0000.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0000.json",
+      "prioridad_rapida": {
+        "puntos": 5,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 83.96,
+        "ultima_revision": null
+      }
     },
     "contraste-f51628f7964f3620425c": {
       "url": "https://acebal.gob.ar/acebal/",
@@ -19532,7 +20031,30 @@
       "ultima_revision": "2026-11-09T13:38:46.784260+00:00",
       "version_verificador": 4,
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0002.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0002.json",
+      "prioridad_rapida": {
+        "puntos": 5,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 39.9,
+        "ultima_revision": null
+      }
     },
     "contraste-cc068bf890f1a51977ec": {
       "url": "https://maximopaz.gob.ar/",
@@ -19583,8 +20105,1707 @@
           "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0001.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0001.json",
+      "prioridad_rapida": {
+        "puntos": 5,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 68.94,
+        "ultima_revision": null
+      }
+    },
+    "c104d9ef7e8aaae69713": {
+      "clave": "reparar:fuente-087",
+      "tipo": "SECTORIAL",
+      "organismo": "Gobierno de Santa Fe - Gestiones de Compras",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "consulta": "\"Gobierno de Santa Fe - Gestiones de Compras\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "id": "auto-c104d9ef7e8aaae69713",
+      "url": "https://buenosaires.gob.ar/gcaba_historico/laciudad/barrios/boedo",
+      "titulo": "Boedo | Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma de Buenos ...",
+      "descripcion": "Este barrio debe su nombre a Mariano Joaquín Boedo, prócer de la independencia argentina y diputado nacional por la provincia de Salta. Fue abogado y jurisconsulto.",
+      "busqueda_url": "https://www.bing.com/search?q=%22Gobierno+de+Santa+Fe+-+Gestiones+de+Compras%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00"
+    },
+    "eae931699eb651b40fd2": {
+      "clave": "reparar:fuente-087",
+      "tipo": "SECTORIAL",
+      "organismo": "Gobierno de Santa Fe - Gestiones de Compras",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "consulta": "\"Gobierno de Santa Fe - Gestiones de Compras\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "id": "auto-eae931699eb651b40fd2",
+      "url": "https://buenosaires.gob.ar/gcaba_historico/laciudad/boedo",
+      "titulo": "Boedo | Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma de Buenos ...",
+      "descripcion": "Este barrio debe su nombre a Mariano Joaquín Boedo, prócer de la independencia argentina y diputado nacional por la provincia de Salta. Fue abogado y jurisconsulto.",
+      "busqueda_url": "https://www.bing.com/search?q=%22Gobierno+de+Santa+Fe+-+Gestiones+de+Compras%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00"
+    },
+    "fa4875519f3b1c6aa0c7": {
+      "clave": "reparar:fuente-087",
+      "tipo": "SECTORIAL",
+      "organismo": "Gobierno de Santa Fe - Gestiones de Compras",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "consulta": "\"Gobierno de Santa Fe - Gestiones de Compras\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "id": "auto-fa4875519f3b1c6aa0c7",
+      "url": "https://turismo.buenosaires.gob.ar/es/barrios/boedo",
+      "titulo": "Boedo - Sitio oficial de turismo de la Ciudad de Buenos Aires",
+      "descripcion": "Presente desde 1904 en el barrio de Boedo, el edificio de Café Margot recupera el espíritu bohemio de los artistas del barrio y la camaradería de sus vecinos. Ver más . Aquí fue donde el gran Homero Manzi, en una de sus mesas, escribió el tango Sur… Ver más .",
+      "busqueda_url": "https://www.bing.com/search?q=%22Gobierno+de+Santa+Fe+-+Gestiones+de+Compras%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00"
+    },
+    "b3dd1dd82a152e730e55": {
+      "clave": "reparar:fuente-087",
+      "tipo": "SECTORIAL",
+      "organismo": "Gobierno de Santa Fe - Gestiones de Compras",
+      "localidad": "Santa Fe",
+      "provincia": "Santa Fe",
+      "consulta": "\"Gobierno de Santa Fe - Gestiones de Compras\" \"Santa Fe\" compras licitaciones sitio oficial",
+      "id": "auto-b3dd1dd82a152e730e55",
+      "url": "https://turismo.buenosaires.gob.ar/es/atractivo/boedo",
+      "titulo": "Boedo - Sitio oficial de turismo de la Ciudad de Buenos Aires",
+      "descripcion": "Fue abogado, jurisconsulto y participó activamente de las jornadas de 1816 que aquel 9 de julio declararon la independencia de las Provincias Unidas del Río de la Plata del rey de España. Como vicepresidente del Congreso de Tucumán fue uno de los firmantes del Acta de la Independencia.",
+      "busqueda_url": "https://www.bing.com/search?q=%22Gobierno+de+Santa+Fe+-+Gestiones+de+Compras%22+%22Santa+Fe%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00"
+    },
+    "58b261c4c7dc6fa98c20": {
+      "clave": "directorio:fuente-045",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Rosario del Tala",
+      "localidad": "Rosario del Tala",
+      "provincia": "Entre Ríos",
+      "metodo": "ENLACES_OFICIALES",
+      "url_directorio": "https://www.rosariodeltala.gob.ar/",
+      "id": "auto-58b261c4c7dc6fa98c20",
+      "url": "http://www.rosariodeltala.gob.ar/?q=boletin-oficial",
+      "titulo": "Boletin Oficial",
+      "evidencia_enlace": "https://www.rosariodeltala.gob.ar/",
+      "busqueda_url": "https://www.rosariodeltala.gob.ar/",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00"
+    },
+    "contraste-b56c96f0d58adf8564ab": {
+      "localidad": "Bigand",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bigand",
+      "codigo": "822049",
+      "distancia_geodesica_rosario_km": 69.29,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-b56c96f0d58adf8564ab",
+      "url": "https://www.bigand.gob.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": "Candidata antigua sin alta: contrastar noticias y menú con nivel rápido",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      },
+      "prioridad_rapida": {
+        "puntos": 5,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 69.29,
+        "ultima_revision": null
+      }
+    },
+    "contraste-8927d19eb92cea954b47": {
+      "localidad": "Los Molinos",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Los Molinos",
+      "codigo": "822077",
+      "distancia_geodesica_rosario_km": 67.67,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-8927d19eb92cea954b47",
+      "url": "https://losmolinos.miportal.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-da0642114e1ab71d809b": {
+      "localidad": "Fuentes",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Fuentes",
+      "codigo": "823995",
+      "distancia_geodesica_rosario_km": 46.32,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-da0642114e1ab71d809b",
+      "url": "https://www.fuentes.gob.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "prioridad_rapida": {
+        "puntos": 10,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          },
+          {
+            "criterio": "documentos_publicados",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias"
+        ],
+        "distancia_geodesica_km": 46.32,
+        "ultima_revision": null
+      },
+      "ultima_exploracion_rapida": "2026-11-13T11:58:54.416318+00:00",
+      "estado_nivel1": "CANDIDATA_CON_SENALES",
+      "ultima_revision": "2026-11-13T11:58:54.416318+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261113T115914-692240db/0004.json"
+    },
+    "contraste-ee6b40d3593487020036": {
+      "localidad": "Máximo Paz",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Máximo Paz",
+      "codigo": "822483",
+      "distancia_geodesica_rosario_km": 68.94,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-ee6b40d3593487020036",
+      "url": "https://www.maximopaz.gob.ar/index",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      },
+      "prioridad_rapida": {
+        "puntos": 5,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 68.94,
+        "ultima_revision": null
+      }
+    },
+    "contraste-880f0e3f9829c635adbb": {
+      "localidad": "Acebal",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Acebal",
+      "codigo": "823351",
+      "distancia_geodesica_rosario_km": 39.9,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-880f0e3f9829c635adbb",
+      "url": "https://acebal.gob.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": "Candidata antigua sin alta: contrastar noticias y menú con nivel rápido",
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      },
+      "prioridad_rapida": {
+        "puntos": 5,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 39.9,
+        "ultima_revision": null
+      }
+    },
+    "contraste-f97e7ac6cf346e58f68c": {
+      "localidad": "Álvarez",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Álvarez",
+      "codigo": "823365",
+      "distancia_geodesica_rosario_km": 26.55,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-f97e7ac6cf346e58f68c",
+      "url": "https://alvarezweb.gob.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-19fc9ee167eedafbea81": {
+      "localidad": "Piñero",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Piñero",
+      "codigo": "823421",
+      "distancia_geodesica_rosario_km": 19.58,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-19fc9ee167eedafbea81",
+      "url": "https://comunadepinero.com/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-8c5c0e1ffd7132682438": {
+      "localidad": "Pueblo Esther",
+      "provincia": "Santa Fe",
+      "organismo": "Municipalidad de Pueblo Esther",
+      "codigo": "820207",
+      "distancia_geodesica_rosario_km": 16.05,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-8c5c0e1ffd7132682438",
+      "url": "https://puebloesther.gob.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-59464653876c3928e589": {
+      "localidad": "Ricardone",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Ricardone",
+      "codigo": "824016",
+      "distancia_geodesica_rosario_km": 23.44,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-59464653876c3928e589",
+      "url": "https://www.ricardone.com.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-610c53dc03be30ec5787": {
+      "localidad": "Monje",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Monje",
+      "codigo": "823827",
+      "distancia_geodesica_rosario_km": 71.7,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-610c53dc03be30ec5787",
+      "url": "https://monje.gob.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-00070ea6b7365f9dd526": {
+      "localidad": "Barrancas",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Barrancas",
+      "codigo": "823729",
+      "distancia_geodesica_rosario_km": 80.93,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-00070ea6b7365f9dd526",
+      "url": "https://comunadebarrancas.com.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-d45e3cbb2554f2882580": {
+      "localidad": "Coronda",
+      "provincia": "Santa Fe",
+      "organismo": "Concejo Municipal de Coronda",
+      "codigo": "820245",
+      "distancia_geodesica_rosario_km": 109.56,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-d45e3cbb2554f2882580",
+      "url": "https://concejocoronda.gob.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-28a0adbc778c67602b64": {
+      "localidad": "Gálvez",
+      "provincia": "Santa Fe",
+      "organismo": "Municipalidad de Gálvez",
+      "codigo": "820252",
+      "distancia_geodesica_rosario_km": 115.17,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-28a0adbc778c67602b64",
+      "url": "https://www.galvez.gob.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-f253cece7e9903e0252f": {
+      "localidad": "Centeno",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Centeno",
+      "codigo": "823757",
+      "distancia_geodesica_rosario_km": 102.06,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-f253cece7e9903e0252f",
+      "url": "https://centeno.miportal.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-8d7a7e10791d9edd4b81": {
+      "localidad": "Bustinza",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Bustinza",
+      "codigo": "822882",
+      "distancia_geodesica_rosario_km": 72.52,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-8d7a7e10791d9edd4b81",
+      "url": "https://bustinza.gob.ar/site/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      },
+      "prioridad_rapida": {
+        "puntos": 5,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 72.52,
+        "ultima_revision": null
+      }
+    },
+    "contraste-f7411d92e2551f0bb091": {
+      "localidad": "Salto Grande",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Salto Grande",
+      "codigo": "822931",
+      "distancia_geodesica_rosario_km": 52.97,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-f7411d92e2551f0bb091",
+      "url": "https://saltogrande.gob.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "HTTP Error 429: Too Many Requests",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "prioridad_rapida": {
+        "puntos": 10,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          },
+          {
+            "criterio": "documentos_publicados",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias"
+        ],
+        "distancia_geodesica_km": 52.97,
+        "ultima_revision": null
+      },
+      "ultima_exploracion_rapida": "2026-11-13T11:58:54.416318+00:00",
+      "estado_nivel1": "CANDIDATA_CON_SENALES",
+      "ultima_revision": "2026-11-13T11:58:54.416318+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "tipo": "HTTPError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "HTTP Error 429: Too Many Requests",
+          "http_status": 429,
+          "causa": "LIMITE_SOLICITUDES_TEMPORAL",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261113T115914-692240db/0006.json"
+    },
+    "contraste-3e822485e7900ba1d0ec": {
+      "localidad": "Serodino",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Serodino",
+      "codigo": "822938",
+      "distancia_geodesica_rosario_km": 48.03,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-3e822485e7900ba1d0ec",
+      "url": "https://comunadeserodino.com/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-c82adb579ffd3938d6e0": {
+      "localidad": "Pueblo Andino",
+      "provincia": "Santa Fe",
+      "organismo": "Comuna de Pueblo Andino",
+      "codigo": "822924",
+      "distancia_geodesica_rosario_km": 40.19,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-c82adb579ffd3938d6e0",
+      "url": "https://puebloandino.gob.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-7d39f37c24c9a1738579": {
+      "localidad": "Hasenkamp",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Hasenkamp",
+      "codigo": "300308",
+      "distancia_geodesica_rosario_km": 175.67,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-7d39f37c24c9a1738579",
+      "url": "https://www.hasenkamp.gob.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "HTTP Error 429: Too Many Requests",
+        "identidad_verificada": false,
+        "procedimientos_con_objeto": 0
+      },
+      "prioridad_rapida": {
+        "puntos": 12,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "historial_convocatorias",
+            "peso": 2,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          },
+          {
+            "criterio": "documentos_publicados",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias"
+        ],
+        "distancia_geodesica_km": 175.67,
+        "ultima_revision": null
+      },
+      "ultima_exploracion_rapida": "2026-11-13T11:58:54.416318+00:00",
+      "estado_nivel1": "CANDIDATA_CON_SENALES",
+      "ultima_revision": "2026-11-13T11:58:54.416318+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "tipo": "HTTPError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "HTTP Error 429: Too Many Requests",
+          "http_status": 429,
+          "causa": "LIMITE_SOLICITUDES_TEMPORAL",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261113T115914-692240db/0002.json"
+    },
+    "contraste-5a84f92066c1f8d5905d": {
+      "localidad": "Tabossi",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Tabossi",
+      "codigo": "300357",
+      "distancia_geodesica_rosario_km": 144.47,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-5a84f92066c1f8d5905d",
+      "url": "https://municipiodetabossi.gob.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      },
+      "prioridad_rapida": {
+        "puntos": 5,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 144.47,
+        "ultima_revision": null
+      }
+    },
+    "contraste-937f02a8fbc5e4db9446": {
+      "localidad": "Villa Urquiza",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Villa Urquiza",
+      "codigo": "300371",
+      "distancia_geodesica_rosario_km": 145.06,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-937f02a8fbc5e4db9446",
+      "url": "https://villaurquiza.gob.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-95fa84925b38c21cac19": {
+      "localidad": "Bovril",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Bovril",
+      "codigo": "300238",
+      "distancia_geodesica_rosario_km": 212.03,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-95fa84925b38c21cac19",
+      "url": "https://bovril.gob.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      },
+      "prioridad_rapida": {
+        "puntos": 6,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          },
+          {
+            "criterio": "documentos_publicados",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias"
+        ],
+        "distancia_geodesica_km": 212.03,
+        "ultima_revision": null
+      }
+    },
+    "contraste-b5eb8bed757dcae9b60f": {
+      "localidad": "Santa Elena",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Santa Elena",
+      "codigo": "300259",
+      "distancia_geodesica_rosario_km": 238.78,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-b5eb8bed757dcae9b60f",
+      "url": "https://www.santaelenaciudad.com.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-c846f1ed420a92d15fb6": {
+      "localidad": "Aranguren",
+      "provincia": "Entre Ríos",
+      "organismo": "Municipalidad de Aranguren",
+      "codigo": "300266",
+      "distancia_geodesica_rosario_km": 95.68,
+      "tipo": "TERRITORIAL",
+      "id": "auto-contraste-c846f1ed420a92d15fb6",
+      "url": "https://aranguren.gob.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-7134996e3c82fd44ecd5": {
+      "localidad": "Chacabuco",
+      "provincia": "Buenos Aires",
+      "organismo": "Municipalidad de Chacabuco",
+      "codigo": "060210",
+      "distancia_geodesica_rosario_km": 187.7,
+      "tipo": "TERRITORIAL",
+      "alta_condicionada_distancia_vial": true,
+      "id": "auto-contraste-7134996e3c82fd44ecd5",
+      "url": "https://chacabuco.gob.ar/proveedores/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      },
+      "prioridad_rapida": {
+        "puntos": 6,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          },
+          {
+            "criterio": "documentos_publicados",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias"
+        ],
+        "distancia_geodesica_km": 187.7,
+        "ultima_revision": null
+      }
+    },
+    "contraste-c0c640c50e6b42ad940e": {
+      "localidad": "Capitán Sarmiento",
+      "provincia": "Buenos Aires",
+      "organismo": "Honorable Concejo Deliberante de Capitán Sarmiento",
+      "codigo": "060140",
+      "distancia_geodesica_rosario_km": 152.23,
+      "tipo": "TERRITORIAL",
+      "alta_condicionada_distancia_vial": true,
+      "id": "auto-contraste-c0c640c50e6b42ad940e",
+      "url": "https://hcdcapitansarmiento.gob.ar/",
+      "origen_url": "Búsqueda pública del agente y/o candidato histórico; validar identidad actual",
+      "motivo_repeticion": null,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-3af9cc7d14387787798f": {
+      "id": "auto-contraste-3af9cc7d14387787798f",
+      "localidad": "Recreo",
+      "provincia": "Santa Fe",
+      "url": "https://recreo.gob.ar/news/",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Recreo",
+      "origen_url": "URL observada en búsqueda pública; verificar identidad y padrón antes de validar",
+      "codigo": "820142",
+      "distancia_geodesica_rosario_km": 161.86,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      },
+      "prioridad_rapida": {
+        "puntos": 8,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "publicacion_ultimos_7_dias",
+            "peso": 3,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "seccion_compras",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 161.86,
+        "ultima_revision": null
+      }
+    },
+    "contraste-b51f7a51019b72263e52": {
+      "id": "auto-contraste-b51f7a51019b72263e52",
+      "localidad": "Sauce Viejo",
+      "provincia": "Santa Fe",
+      "url": "https://sauceviejo.gob.ar/sauceonline/",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Sauce Viejo",
+      "origen_url": "URL observada en búsqueda pública; verificar identidad y padrón antes de validar",
+      "codigo": "820158",
+      "distancia_geodesica_rosario_km": 128.95,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "prioridad_rapida": {
+        "puntos": 9,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 128.95,
+        "ultima_revision": null
+      },
+      "ultima_exploracion_rapida": "2026-11-13T11:58:54.416318+00:00",
+      "estado_nivel1": "CANDIDATA_CON_SENALES",
+      "ultima_revision": "2026-11-13T11:58:54.416318+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "url": "https://sauceviejo.gob.ar/sauceonline/concursos-y-licitaciones/",
+          "tipo": "HTTPError",
+          "categoria": "RED",
+          "timeout": false,
+          "error": "HTTP Error 404: Not Found",
+          "http_status": 404,
+          "causa": "ERROR_RED_POR_CONFIRMAR",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261113T115914-692240db/0007.json"
+    },
+    "contraste-3d5a78314c2b71afbe38": {
+      "id": "auto-contraste-3d5a78314c2b71afbe38",
+      "localidad": "Esperanza",
+      "provincia": "Santa Fe",
+      "url": "https://esperanza.gob.ar/",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Esperanza",
+      "origen_url": "URL observada en búsqueda pública; verificar identidad y padrón antes de validar",
+      "codigo": "820161",
+      "distancia_geodesica_rosario_km": 169.35,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-8f882c5acc6a30ff3642": {
+      "id": "auto-contraste-8f882c5acc6a30ff3642",
+      "localidad": "Humboldt",
+      "provincia": "Santa Fe",
+      "url": "https://www.humboldt.gob.ar/",
+      "tipo": "TERRITORIAL",
+      "organismo": "Comuna de Humboldt",
+      "origen_url": "URL observada en búsqueda pública; verificar identidad y padrón antes de validar",
+      "codigo": "823099",
+      "distancia_geodesica_rosario_km": 177.61,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-ac8a559fdf4f5715fcc2": {
+      "id": "auto-contraste-ac8a559fdf4f5715fcc2",
+      "localidad": "Las Toscas",
+      "provincia": "Santa Fe",
+      "url": "https://www.lastoscas.gob.ar/",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Las Toscas",
+      "origen_url": "URL observada en búsqueda pública; verificar identidad y padrón antes de validar",
+      "codigo": "820098",
+      "distancia_geodesica_rosario_km": 529.91,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-0eaaca228cf1de681000": {
+      "id": "auto-contraste-0eaaca228cf1de681000",
+      "localidad": "Basavilbaso",
+      "provincia": "Entre Ríos",
+      "url": "https://basavilbaso.gob.ar/",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Basavilbaso",
+      "origen_url": "URL observada en búsqueda pública; verificar identidad y padrón antes de validar",
+      "codigo": "300413",
+      "distancia_geodesica_rosario_km": 177.18,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "prioridad_rapida": {
+        "puntos": 12,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "historial_convocatorias",
+            "peso": 2,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          },
+          {
+            "criterio": "documentos_publicados",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias"
+        ],
+        "distancia_geodesica_km": 177.18,
+        "ultima_revision": null
+      },
+      "ultima_exploracion_rapida": "2026-11-13T11:58:54.416318+00:00",
+      "estado_nivel1": "CANDIDATA_CON_SENALES",
+      "ultima_revision": "2026-11-13T11:58:54.416318+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261113T115914-692240db/0000.json"
+    },
+    "contraste-a407d0343e2a7a4c7677": {
+      "id": "auto-contraste-a407d0343e2a7a4c7677",
+      "localidad": "Maciá",
+      "provincia": "Entre Ríos",
+      "url": "https://www.macia.gob.ar/",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Maciá",
+      "origen_url": "URL observada en búsqueda pública; verificar identidad y padrón antes de validar",
+      "codigo": "300399",
+      "distancia_geodesica_rosario_km": 145.62,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
+      },
+      "prioridad_rapida": {
+        "puntos": 9,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias",
+          "documentos_publicados"
+        ],
+        "distancia_geodesica_km": 145.62,
+        "ultima_revision": null
+      },
+      "ultima_exploracion_rapida": "2026-11-13T11:58:54.416318+00:00",
+      "estado_nivel1": "CANDIDATA_CON_SENALES",
+      "ultima_revision": "2026-11-13T11:58:54.416318+00:00",
+      "version_verificador": 4,
+      "errores": [
+        {
+          "categoria": "RED",
+          "tipo": "TIEMPO_FUENTE",
+          "timeout": true,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA"
+        }
+      ],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261113T115914-692240db/0003.json"
+    },
+    "contraste-785f62a580e00d748d85": {
+      "id": "auto-contraste-785f62a580e00d748d85",
+      "localidad": "San Salvador",
+      "provincia": "Entre Ríos",
+      "url": "https://sansalvadorer.gob.ar/",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de San Salvador",
+      "origen_url": "URL observada en búsqueda pública; verificar identidad y padrón antes de validar",
+      "codigo": "300385",
+      "distancia_geodesica_rosario_km": 249.47,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-a17f80a913eb03b7a6a3": {
+      "id": "auto-contraste-a17f80a913eb03b7a6a3",
+      "localidad": "Herrera",
+      "provincia": "Entre Ríos",
+      "url": "https://muniherrera.gov.ar/",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Herrera",
+      "origen_url": "URL observada en búsqueda pública; verificar identidad y padrón antes de validar",
+      "codigo": "300434",
+      "distancia_geodesica_rosario_km": 197.99,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-2d833ec83524e9417a9e": {
+      "id": "auto-contraste-2d833ec83524e9417a9e",
+      "localidad": "Pronunciamiento",
+      "provincia": "Entre Ríos",
+      "url": "https://pronunciamiento.gob.ar/noticias/",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Pronunciamiento",
+      "origen_url": "URL observada en búsqueda pública; verificar identidad y padrón antes de validar",
+      "codigo": "300441",
+      "distancia_geodesica_rosario_km": 215.36,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-331bdfce5ff0c229044a": {
+      "id": "auto-contraste-331bdfce5ff0c229044a",
+      "localidad": "Lucas González",
+      "provincia": "Entre Ríos",
+      "url": "https://lucasgonzalez.gob.ar/",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Lucas González",
+      "origen_url": "URL observada en búsqueda pública; verificar identidad y padrón antes de validar",
+      "codigo": "300280",
+      "distancia_geodesica_rosario_km": 120.37,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
+    },
+    "contraste-dc856d5b999aa77dca91": {
+      "id": "auto-contraste-dc856d5b999aa77dca91",
+      "localidad": "Villa del Rosario",
+      "provincia": "Entre Ríos",
+      "url": "https://vrosario.gob.ar/",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Villa del Rosario",
+      "origen_url": "URL observada en búsqueda pública; verificar identidad y padrón antes de validar",
+      "codigo": "300133",
+      "distancia_geodesica_rosario_km": 354.1,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Villa del Rosario",
+          "localidad": "Villa del Rosario",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://vrosario.gob.ar/",
+          "sha256": "5555be5faf46e9f2b94e87abade8a75872c37c373dbd0e1aae9a976e8bad8cce",
+          "cabecera": "Municipio Villa del Rosario | SERVICIO DE NEUROLOGÍA CHARLA INFORMATIVA: ACCIÓN TEMPRANA CONTRA LA DIABETES EDUCACIÓN EMOCIONAL Y VÍNCULOS SALUDABLES TRABAJANDO JUNTOS POR LA SEGURIDAD DE TODOS POTENCIÁ TU COMERCIO ONLINE ANSES EN VILLA DEL ROSARIO FONDOS PARA FORTALECER LA SEGURIDAD ENCUENTRO AMISTOSO DE FÚTBOL VERANO SEGURO: COORDINACIÓN ENTRE MUNICIPIOS Y FUERZAS DE SEGURIDAD MAS SERVICOS TRÁMITES TELÉFONOS ÚTILES",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 2,
+        "fecha": "2026-11-13T12:00:10.729793+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Municipalidad de Villa del Rosario",
+            "numero_procedimiento": "4/2025",
+            "objeto": "Facebook instagram youtube INICIO CIUDAD AUTORIDADES Gabinete de Gobierno Concejo Deliberante Organigrama Municipal NORMATIVAS D. Ejecutivo D. Legislativo REPARTICIONES Gobierno y Hacienda Secretaría Municipal Obras Públicas Cultura Deportes Salud Turismo DEPENDENCIAS Acción Social Discapacidad Familia Catastro Planeamiento Liquidaciones Compras y Contrataciones CONTACTOS PORTAL ACCESO Seleccionar página LLAMADO A LICITACIÓN PARA LA COMPRA DE MOTONIVELADORA OKM por Prensa Municipal | Jun 13, 2025 (𝗜𝗺𝗮𝗴𝗲𝗻 𝗶𝗹𝘂𝘀𝘁𝗿𝗮𝘁𝗶𝘃𝗮) La Municipalidad de Villa del Rosario llama a Licitación Pública Nº 04/2025, a fines de adquirir una Motoniveladora nueva OKm. PRESUPUESTO OFICIAL: $350.000.000,00 (pesos trescientos cincuenta millones con 00/100).- VALOR DEL PLIEGO: pesos cero ($ 0,00) sin costo.- APERTURA DE OFERTAS: La apertura de ofertas será el 25 de Junio de 2025, a la hora 10.00, en la sala Lorenzo Malgarín del Honorable Concejo Deliberante de la Municipalidad de Villa del Rosario, Entre Ríos. CONSULTAS Y ENTREGA DE PLIEGOS: Oficina de Compras Municipal (Tratado del Pilar 334) Tel. 03456 491000/491090) E-mail: compras@vrosario.gob.ar Facebook instagram youtube Todos Los Derechos Municipalidad de Villa del Rosario 2024 Desarrollo | Consultora Pautas",
+            "fecha_apertura": "2025-06-25",
+            "fecha_publicacion": "2025-06-26",
+            "vigencia": "VENCIDA",
+            "url": "https://vrosario.gob.ar/Organigrama.pdf",
+            "evidencia_url": "https://vrosario.gob.ar/?p=1241"
+          },
+          {
+            "organismo": "Municipalidad de Villa del Rosario",
+            "numero_procedimiento": null,
+            "objeto": "LLAMADO A LICITACIÓN PARA LA COMPRA DE MOTONIVELADORA OKM",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://vrosario.gob.ar/?p=1241",
+            "evidencia_url": "https://vrosario.gob.ar/?s=compra"
+          }
+        ]
+      },
+      "prioridad_rapida": {
+        "puntos": 10,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          },
+          {
+            "criterio": "documentos_publicados",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias"
+        ],
+        "distancia_geodesica_km": 354.1,
+        "ultima_revision": null
+      },
+      "ultima_exploracion_rapida": "2026-11-13T11:58:54.416318+00:00",
+      "estado_nivel1": "CANDIDATA_CON_SENALES",
+      "ultima_revision": "2026-11-13T11:58:54.416318+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261113T115914-692240db/0005.json"
+    },
+    "contraste-356aef1e689182cc8043": {
+      "id": "auto-contraste-356aef1e689182cc8043",
+      "localidad": "Villa Cañás",
+      "provincia": "Santa Fe",
+      "url": "https://www.muvc.gob.ar/",
+      "organismo": "Municipalidad de Villa Cañás",
+      "tipo": "TERRITORIAL",
+      "codigo": "820084",
+      "origen_url": "URL observada en búsqueda pública del agente",
+      "distancia_geodesica_rosario_km": 149.14,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Villa Cañás",
+          "localidad": "Villa Cañás",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://www.muvc.gob.ar/",
+          "sha256": "1679a740d0eeb39dddb8c4d98db1b3789b7b53609b057ce0f84db53c56e2dfdb",
+          "cabecera": "Municipalidad de Villa Cañas",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 27,
+        "fecha": "2026-11-13T11:59:16.942608+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "6/2026",
+            "objeto": "Licitación Pública N° 06/2026 - Octubre Compra de camión volcador y tractor",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/175.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "5/2026",
+            "objeto": "Licitación Pública N° 05/2026 - Agosto Compra de arena, piedra y cemento a granel",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/174.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "4/2026",
+            "objeto": "Licitación Pública N°04/2026 - Junio Contratación de Seguros",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/173.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "3/2026",
+            "objeto": "Licitación Pública N°03/2026 - Abril Compra de hormigón",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/172.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "2/2026",
+            "objeto": "Licitación Pública N° 02/2026 - Marzo Compra de escoria descargada en obra",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/171.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "1/2026",
+            "objeto": "Licitación Pública N° 01/2026 - Enero Compra de 1 camión ligero apto para transporte de materiales y herramientas",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/170.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "11/2025",
+            "objeto": "Lictación Pública N°11/2025-Diciembre Compra y venta de motoniveladora",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/169.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "10/2025",
+            "objeto": "Lictación Pública N°10/2025-Diciembre Compra de hormigón",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/168.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "9/2025",
+            "objeto": "Licitación Pública N°09/2025-Diciembre Compra de 1 camión ligero apto para transporte de materiales y herramientas",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/167.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "8/2025",
+            "objeto": "Licitación Pública N° 08/2025 - Noviembre Concesión de la administración y explotación del quincho del Balneario Municipal",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/166.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "7/2025",
+            "objeto": "Licitación Pública N° 07/2025 - Noviembre Compra de 1 camión ligero apto para transporte de materiales y herramientas",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/165.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "6/2025",
+            "objeto": "Licitación Pública N° 06/2025 - Agosto Adquisición de tanque regador, una pick up, una niveladora de arrastre y un tractor usado",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/164.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "5/2025",
+            "objeto": "Licitación Pública N°05/2025 - Agosto Contratación obra de cordón cuneta, compra de módulos de hormigos y compra de hormigon H30 y H8",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/163.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "4/2025",
+            "objeto": "Licitación Pública N° 04/2025 - Julio Contratación de Seguros",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/162.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "3/2025",
+            "objeto": "Licitación Pública N° 03/2025 - Abril Compra de hormigón",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/161.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "2/2025",
+            "objeto": "Licitación Pública N° 02/2025 - Abril Compra de escoria descargada en obra",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/160.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "1/2025",
+            "objeto": "Licitación Pública N° 01/2025 - Abril Compra de luminarias de tecnología LED",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/159.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "10/2024",
+            "objeto": "Licitación Pública N° 10/2024 - Diciembre Compra de escoria descargada en obra",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/158.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "9/2024",
+            "objeto": "Licitación Pública N° 09/2024 - Diciembre Compra luminarias, contenedores y nomecladores",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/157.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "8/2024",
+            "objeto": "Licitación Pública N° 08/2024 - Noviembre Compra de tractor y niveladora de arrastre",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/156.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "7/2024",
+            "objeto": "Licitación Pública N° 07/2024 - Octubre Compra de cemento a granel",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/155.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "6/2024",
+            "objeto": "Licitación Pública N° 06/2024 - Agosto Compra de luminarias de tecnología LED",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/154.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "5/2024",
+            "objeto": "Licitación Pública N° 05/2024 - Agosto Compra de piedra granítica o escoria",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/153.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "4/2024",
+            "objeto": "Licitación Pública N° 04/2024 - Julio Contratación de Seguros",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/152.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "3/2024",
+            "objeto": "Licitación Pública N° 03/2024 - Julio Compra de cemento a granel",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/151.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "2/2024",
+            "objeto": "Licitación Pública N° 02/2024 - Abril Compra de movilidad para tareas generales",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/150.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "1/2024",
+            "objeto": "Licitación Pública N° 01/2024 - Abril Compra de luminarias de tecnología LED",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/149.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          }
+        ]
+      },
+      "prioridad_rapida": {
+        "puntos": 12,
+        "razones": [
+          {
+            "criterio": "identidad_verificada",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "seccion_compras",
+            "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "historial_convocatorias",
+            "peso": 2,
+            "evidencia": true
+          },
+          {
+            "criterio": "accesible",
+            "peso": 1,
+            "evidencia": true
+          },
+          {
+            "criterio": "documentos_publicados",
+            "peso": 1,
+            "evidencia": true
+          }
+        ],
+        "desconocidos": [
+          "publicacion_ultimos_7_dias"
+        ],
+        "distancia_geodesica_km": 149.14,
+        "ultima_revision": null
+      },
+      "ultima_exploracion_rapida": "2026-11-13T11:58:54.416318+00:00",
+      "estado_nivel1": "CANDIDATA_CON_SENALES",
+      "ultima_revision": "2026-11-13T11:58:54.416318+00:00",
+      "version_verificador": 4,
+      "errores": [],
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261113T115914-692240db/0001.json"
+    },
+    "contraste-0caa4d8b60ae860b0222": {
+      "id": "auto-contraste-0caa4d8b60ae860b0222",
+      "localidad": "Firmat",
+      "provincia": "Santa Fe",
+      "url": "https://www.firmat.gov.ar/",
+      "organismo": "Municipalidad de Firmat",
+      "tipo": "TERRITORIAL",
+      "codigo": "820063",
+      "origen_url": "URL observada en búsqueda pública del agente",
+      "distancia_geodesica_rosario_km": 96.32,
+      "origen": "INVESTIGACION_AGENTE",
+      "fecha_descubrimiento": "2026-11-13T11:58:54.416318+00:00",
+      "validacion": {
+        "estado": "PENDIENTE",
+        "motivo": null
+      }
     }
   },
-  "ultima_ejecucion": "2026-11-09T13:38:46.784260+00:00"
+  "ultima_ejecucion": "2026-11-13T11:58:54.416318+00:00"
 }

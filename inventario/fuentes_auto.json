@@ -5274,6 +5274,386 @@
         "evidencia_completa": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/42737102388"
       },
       "origen_busqueda": "https://www.hasenkamp.gob.ar/"
+    },
+    {
+      "id": "auto-contraste-356aef1e689182cc8043",
+      "url": "https://www.muvc.gob.ar/",
+      "config": {
+        "organismo": "Municipalidad de Villa Cañás",
+        "localidad": "Villa Cañás",
+        "provincia": "Santa Fe",
+        "conector": "publicaciones",
+        "descubrir_menu": true,
+        "descubrir_contrataciones": true,
+        "barrido_institucional": true,
+        "buscador_institucional": true,
+        "solo_descubrimiento": true,
+        "lectura_adjuntos": "necesarios",
+        "ocr": false,
+        "admitir_avisos_sin_numero": true,
+        "capturar_respuestas": true
+      },
+      "validacion": {
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Villa Cañás",
+          "localidad": "Villa Cañás",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://www.muvc.gob.ar/",
+          "sha256": "1679a740d0eeb39dddb8c4d98db1b3789b7b53609b057ce0f84db53c56e2dfdb",
+          "cabecera": "Municipalidad de Villa Cañas",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 27,
+        "fecha": "2026-11-13T11:59:16.942608+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "6/2026",
+            "objeto": "Licitación Pública N° 06/2026 - Octubre Compra de camión volcador y tractor",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/175.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "5/2026",
+            "objeto": "Licitación Pública N° 05/2026 - Agosto Compra de arena, piedra y cemento a granel",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/174.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "4/2026",
+            "objeto": "Licitación Pública N°04/2026 - Junio Contratación de Seguros",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/173.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "3/2026",
+            "objeto": "Licitación Pública N°03/2026 - Abril Compra de hormigón",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/172.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "2/2026",
+            "objeto": "Licitación Pública N° 02/2026 - Marzo Compra de escoria descargada en obra",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/171.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "1/2026",
+            "objeto": "Licitación Pública N° 01/2026 - Enero Compra de 1 camión ligero apto para transporte de materiales y herramientas",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/170.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "11/2025",
+            "objeto": "Lictación Pública N°11/2025-Diciembre Compra y venta de motoniveladora",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/169.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "10/2025",
+            "objeto": "Lictación Pública N°10/2025-Diciembre Compra de hormigón",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/168.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "9/2025",
+            "objeto": "Licitación Pública N°09/2025-Diciembre Compra de 1 camión ligero apto para transporte de materiales y herramientas",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/167.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "8/2025",
+            "objeto": "Licitación Pública N° 08/2025 - Noviembre Concesión de la administración y explotación del quincho del Balneario Municipal",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/166.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "7/2025",
+            "objeto": "Licitación Pública N° 07/2025 - Noviembre Compra de 1 camión ligero apto para transporte de materiales y herramientas",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/165.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "6/2025",
+            "objeto": "Licitación Pública N° 06/2025 - Agosto Adquisición de tanque regador, una pick up, una niveladora de arrastre y un tractor usado",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/164.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "5/2025",
+            "objeto": "Licitación Pública N°05/2025 - Agosto Contratación obra de cordón cuneta, compra de módulos de hormigos y compra de hormigon H30 y H8",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/163.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "4/2025",
+            "objeto": "Licitación Pública N° 04/2025 - Julio Contratación de Seguros",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/162.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "3/2025",
+            "objeto": "Licitación Pública N° 03/2025 - Abril Compra de hormigón",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/161.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "2/2025",
+            "objeto": "Licitación Pública N° 02/2025 - Abril Compra de escoria descargada en obra",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/160.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "1/2025",
+            "objeto": "Licitación Pública N° 01/2025 - Abril Compra de luminarias de tecnología LED",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/159.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "10/2024",
+            "objeto": "Licitación Pública N° 10/2024 - Diciembre Compra de escoria descargada en obra",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/158.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "9/2024",
+            "objeto": "Licitación Pública N° 09/2024 - Diciembre Compra luminarias, contenedores y nomecladores",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/157.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "8/2024",
+            "objeto": "Licitación Pública N° 08/2024 - Noviembre Compra de tractor y niveladora de arrastre",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/156.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "7/2024",
+            "objeto": "Licitación Pública N° 07/2024 - Octubre Compra de cemento a granel",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/155.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "6/2024",
+            "objeto": "Licitación Pública N° 06/2024 - Agosto Compra de luminarias de tecnología LED",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/154.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "5/2024",
+            "objeto": "Licitación Pública N° 05/2024 - Agosto Compra de piedra granítica o escoria",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/153.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "4/2024",
+            "objeto": "Licitación Pública N° 04/2024 - Julio Contratación de Seguros",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/152.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "3/2024",
+            "objeto": "Licitación Pública N° 03/2024 - Julio Compra de cemento a granel",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/151.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "2/2024",
+            "objeto": "Licitación Pública N° 02/2024 - Abril Compra de movilidad para tareas generales",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/150.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          },
+          {
+            "organismo": "Municipalidad de Villa Cañás",
+            "numero_procedimiento": "1/2024",
+            "objeto": "Licitación Pública N° 01/2024 - Abril Compra de luminarias de tecnología LED",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://www.muvc.gob.ar/imagenes/licitaciones/149.pdf",
+            "evidencia_url": "https://www.muvc.gob.ar/licitaciones.php"
+          }
+        ]
+      },
+      "origen_busqueda": null
+    },
+    {
+      "id": "auto-contraste-dc856d5b999aa77dca91",
+      "url": "https://vrosario.gob.ar/",
+      "config": {
+        "organismo": "Municipalidad de Villa del Rosario",
+        "localidad": "Villa del Rosario",
+        "provincia": "Entre Ríos",
+        "conector": "publicaciones",
+        "descubrir_menu": true,
+        "descubrir_contrataciones": true,
+        "barrido_institucional": true,
+        "buscador_institucional": true,
+        "solo_descubrimiento": true,
+        "lectura_adjuntos": "necesarios",
+        "ocr": false,
+        "admitir_avisos_sin_numero": true,
+        "capturar_respuestas": true
+      },
+      "validacion": {
+        "estado": "VALIDADA",
+        "identidad_verificada": true,
+        "identidad": {
+          "verificada": true,
+          "organismo": "Municipalidad de Villa del Rosario",
+          "localidad": "Villa del Rosario",
+          "ubicacion": {
+            "verificado": true,
+            "criterio": "PROVINCIA_DENTRO_DEL_ALCANCE"
+          },
+          "dominio_oficial": true,
+          "nombre_publicado": true,
+          "jurisdiccion_publicada": true,
+          "url": "https://vrosario.gob.ar/",
+          "sha256": "5555be5faf46e9f2b94e87abade8a75872c37c373dbd0e1aae9a976e8bad8cce",
+          "cabecera": "Municipio Villa del Rosario | SERVICIO DE NEUROLOGÍA CHARLA INFORMATIVA: ACCIÓN TEMPRANA CONTRA LA DIABETES EDUCACIÓN EMOCIONAL Y VÍNCULOS SALUDABLES TRABAJANDO JUNTOS POR LA SEGURIDAD DE TODOS POTENCIÁ TU COMERCIO ONLINE ANSES EN VILLA DEL ROSARIO FONDOS PARA FORTALECER LA SEGURIDAD ENCUENTRO AMISTOSO DE FÚTBOL VERANO SEGURO: COORDINACIÓN ENTRE MUNICIPIOS Y FUERZAS DE SEGURIDAD MAS SERVICOS TRÁMITES TELÉFONOS ÚTILES",
+          "motivo": null
+        },
+        "procedimientos_con_objeto": 2,
+        "fecha": "2026-11-13T12:00:10.729793+00:00",
+        "motivo": null,
+        "ejemplos": [
+          {
+            "organismo": "Municipalidad de Villa del Rosario",
+            "numero_procedimiento": "4/2025",
+            "objeto": "Facebook instagram youtube INICIO CIUDAD AUTORIDADES Gabinete de Gobierno Concejo Deliberante Organigrama Municipal NORMATIVAS D. Ejecutivo D. Legislativo REPARTICIONES Gobierno y Hacienda Secretaría Municipal Obras Públicas Cultura Deportes Salud Turismo DEPENDENCIAS Acción Social Discapacidad Familia Catastro Planeamiento Liquidaciones Compras y Contrataciones CONTACTOS PORTAL ACCESO Seleccionar página LLAMADO A LICITACIÓN PARA LA COMPRA DE MOTONIVELADORA OKM por Prensa Municipal | Jun 13, 2025 (𝗜𝗺𝗮𝗴𝗲𝗻 𝗶𝗹𝘂𝘀𝘁𝗿𝗮𝘁𝗶𝘃𝗮) La Municipalidad de Villa del Rosario llama a Licitación Pública Nº 04/2025, a fines de adquirir una Motoniveladora nueva OKm. PRESUPUESTO OFICIAL: $350.000.000,00 (pesos trescientos cincuenta millones con 00/100).- VALOR DEL PLIEGO: pesos cero ($ 0,00) sin costo.- APERTURA DE OFERTAS: La apertura de ofertas será el 25 de Junio de 2025, a la hora 10.00, en la sala Lorenzo Malgarín del Honorable Concejo Deliberante de la Municipalidad de Villa del Rosario, Entre Ríos. CONSULTAS Y ENTREGA DE PLIEGOS: Oficina de Compras Municipal (Tratado del Pilar 334) Tel. 03456 491000/491090) E-mail: compras@vrosario.gob.ar Facebook instagram youtube Todos Los Derechos Municipalidad de Villa del Rosario 2024 Desarrollo | Consultora Pautas",
+            "fecha_apertura": "2025-06-25",
+            "fecha_publicacion": "2025-06-26",
+            "vigencia": "VENCIDA",
+            "url": "https://vrosario.gob.ar/Organigrama.pdf",
+            "evidencia_url": "https://vrosario.gob.ar/?p=1241"
+          },
+          {
+            "organismo": "Municipalidad de Villa del Rosario",
+            "numero_procedimiento": null,
+            "objeto": "LLAMADO A LICITACIÓN PARA LA COMPRA DE MOTONIVELADORA OKM",
+            "fecha_apertura": null,
+            "fecha_publicacion": null,
+            "vigencia": "DESCONOCIDA",
+            "url": "https://vrosario.gob.ar/?p=1241",
+            "evidencia_url": "https://vrosario.gob.ar/?s=compra"
+          }
+        ]
+      },
+      "origen_busqueda": null
     }
   ]
 }
