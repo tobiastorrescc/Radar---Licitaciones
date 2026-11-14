@@ -1190,21 +1190,6 @@
       "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
-      "id": "2149035a7e912e83cc9d5f0d67383512c8ff05797f7a5e9458a1f0ff7616e6db",
-      "organismo": "Municipalidad de Rosario",
-      "procedimiento": "11/2026",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38648",
-      "objeto": "Compra Agil 11/2026 Publicada para Apertura Provisión de elementos de ferretería para la Secretaría de Ambiente y Espacio Público - Dirección Gral de Señalización Apertura: 02/11/2026 09:00",
-      "fecha_publicacion_anterior": null,
-      "resultado": "SOLO_EN_AUDITORIA_PREVIA; PAGINACION_INCOMPLETA_EN_DIARIO",
-      "fecha_publicacion_diaria": null,
-      "primera_deteccion_diaria": null,
-      "ultima_observacion_diaria": null,
-      "fecha_apertura_observada": "2026-11-02",
-      "hora_apertura_observada": "09:00",
-      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
-    },
-    {
       "id": "fbefbc1a643736a4f7b9d8522510d7383139fe254b7e9946b02c63c1b8ca9be6",
       "organismo": "Municipalidad de Rosario",
       "procedimiento": "11091/2026",
@@ -1260,6 +1245,21 @@
       "fecha_publicacion_diaria": null,
       "primera_deteccion_diaria": null,
       "ultima_observacion_diaria": null,
+      "fecha_apertura_observada": "2026-11-02",
+      "hora_apertura_observada": "10:00",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
+    },
+    {
+      "id": "1927dd5bb68001a50cfcd06a5ae42288790de251b4735857554ff297c8d1de20",
+      "organismo": "Municipalidad de Rosario",
+      "procedimiento": "81491/2026",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38627",
+      "objeto": "Compra Agil 81491/2026 Publicada para Apertura Compra de tensiómetros para adultos, pediátricos y para obesos, para el sector de mantenimiento para los centros de salud, dependiente de la Dirección de Centros de Salud.- Apertura: 02/11/2026 10:00",
+      "fecha_publicacion_anterior": null,
+      "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
+      "fecha_publicacion_diaria": null,
+      "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
       "fecha_apertura_observada": "2026-11-02",
       "hora_apertura_observada": "10:00",
       "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
@@ -1640,21 +1640,6 @@
       "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
-      "id": "0a4e1421a87659ffb95e636c2a4c7ca1ba11d93177cbd9b1c691ab64124ffc6d",
-      "organismo": "Municipalidad de Rosario",
-      "procedimiento": "20073/2026",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38616",
-      "objeto": "Licitación Privada 20073/2026 Publicada para Apertura Trabajos necesarios para poner en condiciones las instalaciones relevadas en el Polideportivo Cristalería, sito en Alberdi 3200 de la ciudad de Rosario Apertura: 06/11/2026 09:00",
-      "fecha_publicacion_anterior": null,
-      "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
-      "fecha_publicacion_diaria": null,
-      "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "fecha_apertura_observada": "2026-11-06",
-      "hora_apertura_observada": "09:00",
-      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
-    },
-    {
       "id": "2d824702a45b54f6dcf1eee302d76b4de1ce23eb069757d4764786c838dbd6c2",
       "organismo": "Municipalidad de Rosario",
       "procedimiento": "19/2026",
@@ -1730,21 +1715,6 @@
       "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
-      "id": "17286849e0f3ab63b9d5ae2086b06d0f5f55a70c421f912493a52da7f96978e4",
-      "organismo": "Municipalidad de Rosario",
-      "procedimiento": "110480/2026",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38657",
-      "objeto": "Licitación Privada 110480/2026 Publicada para Apertura QUÍMICA CLÍNICA AUTOANALIZADORES HECA DIRECCIÓN DE BIOQUÍMICA Apertura: 09/11/2026 10:00",
-      "fecha_publicacion_anterior": null,
-      "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
-      "fecha_publicacion_diaria": null,
-      "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "fecha_apertura_observada": "2026-11-09",
-      "hora_apertura_observada": "10:00",
-      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
-    },
-    {
       "id": "5a830109b95726c8d5a5ea8d94d5f63ca710e368913839c7a98c8b90ec5625a5",
       "organismo": "Municipalidad de Rosario",
       "procedimiento": "40631/2026",
@@ -1757,21 +1727,6 @@
       "ultima_observacion_diaria": null,
       "fecha_apertura_observada": "2026-11-09",
       "hora_apertura_observada": "11:00",
-      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
-    },
-    {
-      "id": "97ffc5a5411c7faebc48dfc27b0f597caddf906279851d82d825324b4bed962d",
-      "organismo": "Municipalidad de Rosario",
-      "procedimiento": "30120/2026",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38675",
-      "objeto": "Licitación Privada 30120/2026 Publicada para Apertura UNIFORMES \"HOSPITAL DE NIÑOS VICTOR J. VILELA\" Apertura: 10/11/2026 10:00",
-      "fecha_publicacion_anterior": null,
-      "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
-      "fecha_publicacion_diaria": null,
-      "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
-      "fecha_apertura_observada": "2026-11-10",
-      "hora_apertura_observada": "10:00",
       "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     },
     {
@@ -1832,6 +1787,21 @@
       "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
       "fecha_apertura_observada": "2026-11-13",
       "hora_apertura_observada": "09:15",
+      "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
+    },
+    {
+      "id": "db0614da98180a3046963a7d94aa32e629b63c53dbaf534e34ecc8f379f3cf25",
+      "organismo": "Ministerio de Planeamiento e Infraestructura",
+      "procedimiento": "12/2026",
+      "url": "https://www.entrerios.gov.ar/minplan/licitaciones/lpn_dgayc_2026-12",
+      "objeto": "Próximas Aperturas de Licitación Pública Dirección General de Arquitectura y Construcciones Licitación Pública 12/2026 DGAyC Cambio de tanques, cubierta, accesibilidad y refacción en baños Escuela de Educación Integral N° 9 \"Dr. Luis Agote\", San Salvador Apertura: miércoles, 25 de noviembre de 2026 - 10:00hs",
+      "fecha_publicacion_anterior": null,
+      "resultado": "OBSERVADA_EN_CORRIDA_DIARIA",
+      "fecha_publicacion_diaria": null,
+      "primera_deteccion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "ultima_observacion_diaria": "2026-10-30T08:33:56.099440-03:00",
+      "fecha_apertura_observada": "2026-11-25",
+      "hora_apertura_observada": "10:00",
       "primera_deteccion_auditoria": "2026-10-29T22:15:18.919539-03:00"
     }
   ]

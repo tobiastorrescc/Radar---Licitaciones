@@ -1,6 +1,6 @@
 {
-  "fecha": "2026-11-13T08:56:48.728586-03:00",
-  "total": 29,
+  "fecha": "2026-11-14T08:37:49.537518-03:00",
+  "total": 28,
   "oportunidades": [
     {
       "detalle_completo": true,
@@ -160,7 +160,7 @@
       ],
       "id": "06037342e04b42388b7586bfa2be51080b9cdaa68ce4d5a745a32e3b85160d24",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "06037342e04b42388b7586bfa2be51080b9cdaa68ce4d5a745a32e3b85160d24"
@@ -184,7 +184,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "NUEVO_CONFIRMADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -305,7 +304,7 @@
       ],
       "id": "c6a6e4f1bb9a3fa0588268a67d53ffffe4965e0b69290a8da326f5b3462a3683",
       "primera_deteccion": "2026-11-12T08:58:51.069853-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "c6a6e4f1bb9a3fa0588268a67d53ffffe4965e0b69290a8da326f5b3462a3683"
@@ -333,7 +332,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -454,7 +452,7 @@
       ],
       "id": "a8fe11f3aba927d1f4be63d56357cb7b493c89865872c59e07c24e96021823d7",
       "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "a8fe11f3aba927d1f4be63d56357cb7b493c89865872c59e07c24e96021823d7"
@@ -605,7 +603,7 @@
       ],
       "id": "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4"
@@ -748,7 +746,7 @@
       ],
       "id": "a219ce3932649436860c51bb3f6baabc293c5358db027f9eddbbee725d0d58d6",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "a219ce3932649436860c51bb3f6baabc293c5358db027f9eddbbee725d0d58d6"
@@ -780,7 +778,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -901,7 +898,7 @@
       ],
       "id": "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59"
@@ -1053,7 +1050,7 @@
       ],
       "id": "9993d4ab51a5152f5cb866fb2602e3a93fad53f53096f18e166ca7746911450d",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9993d4ab51a5152f5cb866fb2602e3a93fad53f53096f18e166ca7746911450d"
@@ -1195,7 +1192,7 @@
       ],
       "id": "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0",
       "primera_deteccion": "2026-11-01T08:31:08.968829-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0"
@@ -1227,301 +1224,6 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-25T09:45:00-03:00"
-    },
-    {
-      "detalle_completo": true,
-      "documentos": [
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/04-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
-        }
-      ],
-      "enlace_pliego": null,
-      "evento_publicado": null,
-      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
-      "evidencias_campos": {
-        "fecha_apertura": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
-          "texto": "dia 13 de noviembre de 2026, a las 10:00 horas. lugar de "
-        },
-        "fecha_limite_presentacion": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
-          "texto": "2026-11-13t09:00:00-03:00"
-        },
-        "numero_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
-          "texto": "licitacion publica 3/2026"
-        },
-        "presupuesto": {
-          "texto": "presupuesto oficial ARS 22.000.000",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
-        },
-        "tipo_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
-          "texto": "licitacion publica 3/2026"
-        }
-      },
-      "fecha_apertura": "2026-11-13",
-      "fecha_apertura_texto": null,
-      "fecha_limite_presentacion": "2026-11-13",
-      "fecha_limite_presentacion_texto": "2026-11-13T09:00:00-03:00",
-      "fecha_publicacion": null,
-      "fuente": "https://www.entrerios.gov.ar/boletin/",
-      "fuentes_observadas": [
-        "https://www.entrerios.gov.ar/boletin/"
-      ],
-      "hora_apertura": "10:00",
-      "hora_limite_presentacion": "09:00",
-      "localidad": "Médanos",
-      "modalidad_presentacion": [],
-      "numero_convocatoria": "1",
-      "numero_oficial_sin_interpretar": "3/2026",
-      "numero_procedimiento": "3/2026",
-      "objeto": "ISLAS DEL IBICUY\n\n                                           COMUNA DE MÉDANOS\n                                        Licitación Pública N° 003/2026\n  La Comuna de Médanos llama a Licitación Publica N° 003/2026 para la adquisición de: arco identificatorio de la\nlocalidad de Médanos, conforme al Pliego de Bases y Condiciones Generales, Pliego de Condiciones Particulares\ny Especificaciones Técnicas.\n  Presupuesto Oficial: PESOS VEINTIDOS MILLONES ($ 22.000.000).\n  Valor del Pliego: / sin cargo.\n\n\n  Consulta y retiro de pliegos: Sede de la Comuna de Médanos, sita en calle 9 de julio Médanos, Entre Ríos, de\nlunes a viernes de 8 a 13 horas, o mediante solicitud al correo electrónico comunamedanos@gmail.com o al\nteléfono N° 03444-15568513\n  Presentación de ofertas: hasta el día 13 de noviembre de 2026, a las 9:00 horas. Apertura de ofertas: día 13 de\nnoviembre de 2026, a las 10:00 horas. Lugar de apertura: Sede de la Comuna de Médanos, calle 9 de julio\nMédanos, Entre Ríos.\n  Firmado por: Mauricio Migueles (presidente comuna Médanos).",
-      "organismo": "Comuna de Médanos",
-      "pago_evidencias": [],
-      "presupuesto": {
-        "importe": "22000000",
-        "moneda": "ARS"
-      },
-      "procedimiento": "licitacion publica 3/2026",
-      "provincia": "Entre Ríos",
-      "registro_estructurado": true,
-      "requiere_revalidacion": false,
-      "situacion_publicada": null,
-      "tipo_procedimiento": "licitacion publica",
-      "titulo": "licitacion publica 3/2026 ISLAS DEL IBICUY\n\n                                           COMUNA DE MÉDANOS\n                                        Licitación Pública N° 003/2026\n  La Comuna de Médanos llama a Licitación Publica N° 003/2026 para la adquisición de: arco identificatorio de la\nlocalidad de Médanos, conforme al Pliego de Bases y Condiciones Generales, Pliego de Condiciones Particulares\ny Especificaciones Técnicas.\n  Presupuesto Oficial: PESOS VEINTIDOS MILLONES ($ 22.000.000).\n  Valor del Pliego: / sin cargo.\n\n\n  Consulta y retiro de pliegos: Sede de la Comuna de Médanos, sita en calle 9 de julio Médanos, Entre Ríos, de\nlunes a viernes de 8 a 13 horas, o mediante solicitud al correo electrónico comunamedanos@gmail.com o al\nteléfono N° 03444-15568513\n  Presentación de ofertas: hasta el día 13 de noviembre de 2026, a las 9:00 horas. Apertura de ofertas: día 13 de\nnoviembre de 2026, a las 10:00 horas. Lugar de apertura: Sede de la Comuna de Médanos, calle 9 de julio\nMédanos, Entre Ríos.\n  Firmado por: Mauricio Migueles (presidente comuna Médanos).",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
-      "urls_publicacion": [
-        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf",
-        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/04-11-26.pdf",
-        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
-      ],
-      "pago": {
-        "estado": "PENDIENTE",
-        "clasificacion": "NO_INFORMADO",
-        "etiqueta": "Pendiente de verificar",
-        "plazos_dias": [],
-        "hitos_inicio": [],
-        "documento_respaldo": null,
-        "documentos_respaldo": [],
-        "evidencias": [],
-        "prioritario": false,
-        "motivo": "SIN_CLAUSULA_COMPROBADA"
-      },
-      "condiciones_pago": "Pendiente de verificar",
-      "enlace_condiciones_pago": null,
-      "pago_prioritario": false,
-      "desierta": false,
-      "fracasada": false,
-      "segundo_llamado": false,
-      "reapertura": false,
-      "llamado_especial": false,
-      "procedimiento_canonico": "licitacion publica 3/2026",
-      "convocatoria": "1",
-      "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": "2026-11-13T10:00:00-03:00",
-      "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": "2026-11-13T09:00:00-03:00",
-      "fecha_referencia_vencimiento": "2026-11-13",
-      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
-      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "DESCONOCIDA",
-      "estimacion_comercial": null,
-      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
-      "campos_desconocidos": [
-        "fecha_publicacion",
-        "enlace_pliego"
-      ],
-      "id": "feaa8290be244ba40a2e124362aaebe9b552587220cd2b1fb95084194c3932d2",
-      "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "observada_esta_corrida": true,
-      "ids_historial": [
-        "feaa8290be244ba40a2e124362aaebe9b552587220cd2b1fb95084194c3932d2"
-      ],
-      "variantes_historial": [
-        {
-          "id": "feaa8290be244ba40a2e124362aaebe9b552587220cd2b1fb95084194c3932d2",
-          "numero_procedimiento": "3/2026",
-          "objeto": "ISLAS DEL IBICUY\n\n                                           COMUNA DE MÉDANOS\n                                        Licitación Pública N° 003/2026\n  La Comuna de Médanos llama a Licitación Publica N° 003/2026 para la adquisición de: arco identificatorio de la\nlocalidad de Médanos, conforme al Pliego de Bases y Condiciones Generales, Pliego de Condiciones Particulares\ny Especificaciones Técnicas.\n  Presupuesto Oficial: PESOS VEINTIDOS MILLONES ($ 22.000.000).\n  Valor del Pliego: / sin cargo.\n\n\n  Consulta y retiro de pliegos: Sede de la Comuna de Médanos, sita en calle 9 de julio Médanos, Entre Ríos, de\nlunes a viernes de 8 a 13 horas, o mediante solicitud al correo electrónico comunamedanos@gmail.com o al\nteléfono N° 03444-15568513\n  Presentación de ofertas: hasta el día 13 de noviembre de 2026, a las 9:00 horas. Apertura de ofertas: día 13 de\nnoviembre de 2026, a las 10:00 horas. Lugar de apertura: Sede de la Comuna de Médanos, calle 9 de julio\nMédanos, Entre Ríos.\n  Firmado por: Mauricio Migueles (presidente comuna Médanos).",
-          "fecha_apertura": "2026-11-13",
-          "fecha_limite_presentacion": "2026-11-13",
-          "evento_publicado": null,
-          "numero_convocatoria": "1",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
-          "documentos": [
-            {
-              "titulo": "Boletín complementario",
-              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/04-11-26.pdf"
-            },
-            {
-              "titulo": "Boletín complementario",
-              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf"
-            },
-            {
-              "titulo": "Boletín complementario",
-              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
-            }
-          ]
-        }
-      ],
-      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "estado_comercial": "VIGENTE_VERIFICADA",
-      "presentacion_verificada": true,
-      "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-13T09:00:00-03:00"
-    },
-    {
-      "detalle_completo": true,
-      "documentos": [
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf"
-        }
-      ],
-      "enlace_pliego": null,
-      "evento_publicado": null,
-      "evidencia_url": "https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones",
-      "evidencias_campos": {
-        "fecha_apertura": {
-          "texto": "el dia 13 de noviembre del ano 2026 a las 11:00 horas. ",
-          "url": "https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones"
-        },
-        "fecha_limite_presentacion": {
-          "url": "https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones",
-          "texto": "2026-11-13t10:00:00-03:00"
-        },
-        "numero_procedimiento": {
-          "url": "https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones",
-          "texto": "licitacion publica 24/2026"
-        },
-        "tipo_procedimiento": {
-          "url": "https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones",
-          "texto": "licitacion publica 24/2026"
-        }
-      },
-      "fecha_apertura": "2026-11-13",
-      "fecha_apertura_texto": null,
-      "fecha_limite_presentacion": "2026-11-13",
-      "fecha_limite_presentacion_texto": "2026-11-13T10:00:00-03:00",
-      "fecha_publicacion": null,
-      "fecha_publicacion_texto": null,
-      "fuente": "https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones",
-      "fuentes_observadas": [
-        "https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones",
-        "https://www.entrerios.gov.ar/boletin/"
-      ],
-      "hora_apertura": "11:00",
-      "hora_limite_presentacion": "10:00",
-      "localidad": "Gualeguaychú",
-      "modalidad_presentacion": [],
-      "numero_convocatoria": "1",
-      "numero_oficial_sin_interpretar": "24/2026",
-      "numero_procedimiento": "24/2026",
-      "objeto": "LICITACIÓN PÚBLICA Nº 24/2026 SECRETARÍA DE DESARROLLO TERRITORIAL E INFRAESTRUCTURA ADQUISICIÓN de CUATROCIENTOS CUARENTA Y CUATRO (444) ESCALONES de HORMIGÓN PREMOLDEADO, los cuales serán instalados en las tribunas de hormigón del Corsódromo “José Luis Gestro” del Parque de... pdf",
-      "organismo": "Municipalidad de Gualeguaychú",
-      "pago_evidencias": [],
-      "presupuesto": null,
-      "procedimiento": "licitacion publica 24/2026",
-      "provincia": "Entre Ríos",
-      "rango_evidencia": 1,
-      "registro_estructurado": false,
-      "requiere_revalidacion": false,
-      "situacion_publicada": null,
-      "tipo_procedimiento": "licitacion publica",
-      "titulo": "LICITACIÓN PÚBLICA Nº 24/2026 SECRETARÍA DE DESARROLLO TERRITORIAL E INFRAESTRUCTURA ADQUISICIÓN de CUATROCIENTOS CUARENTA Y CUATRO (444) ESCALONES de HORMIGÓN PREMOLDEADO, los cuales serán instalados en las tribunas de hormigón del Corsódromo “José Luis Gestro” del Parque de... pdf",
-      "url": "https://datosabiertos.gualeguaychu.gov.ar/dataset/licitacion-publica-n-24-2026",
-      "urls_publicacion": [
-        "https://datosabiertos.gualeguaychu.gov.ar/dataset/licitacion-publica-n-24-2026",
-        "https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones",
-        "https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones&page=1",
-        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf",
-        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf"
-      ],
-      "pago": {
-        "estado": "PENDIENTE",
-        "clasificacion": "NO_INFORMADO",
-        "etiqueta": "Pendiente de verificar",
-        "plazos_dias": [],
-        "hitos_inicio": [],
-        "documento_respaldo": null,
-        "documentos_respaldo": [],
-        "evidencias": [],
-        "prioritario": false,
-        "motivo": "SIN_CLAUSULA_COMPROBADA"
-      },
-      "condiciones_pago": "Pendiente de verificar",
-      "enlace_condiciones_pago": null,
-      "pago_prioritario": false,
-      "desierta": false,
-      "fracasada": false,
-      "segundo_llamado": false,
-      "reapertura": false,
-      "llamado_especial": false,
-      "procedimiento_canonico": "licitacion publica 24/2026",
-      "convocatoria": "1",
-      "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": "2026-11-13T11:00:00-03:00",
-      "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": "2026-11-13T10:00:00-03:00",
-      "fecha_referencia_vencimiento": "2026-11-13",
-      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
-      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "DESCONOCIDA",
-      "estimacion_comercial": null,
-      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
-      "campos_desconocidos": [
-        "presupuesto",
-        "fecha_publicacion",
-        "enlace_pliego"
-      ],
-      "id": "9a57dd9d2d120a269675af49fa10d4bb1c1a1c444db20d6f99d116efa42db6b4",
-      "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "observada_esta_corrida": true,
-      "ids_historial": [
-        "9a57dd9d2d120a269675af49fa10d4bb1c1a1c444db20d6f99d116efa42db6b4"
-      ],
-      "variantes_historial": [
-        {
-          "id": "9a57dd9d2d120a269675af49fa10d4bb1c1a1c444db20d6f99d116efa42db6b4",
-          "numero_procedimiento": "24/2026",
-          "objeto": "LICITACIÓN PÚBLICA Nº 24/2026 SECRETARÍA DE DESARROLLO TERRITORIAL E INFRAESTRUCTURA ADQUISICIÓN de CUATROCIENTOS CUARENTA Y CUATRO (444) ESCALONES de HORMIGÓN PREMOLDEADO, los cuales serán instalados en las tribunas de hormigón del Corsódromo “José Luis Gestro” del Parque de... pdf",
-          "fecha_apertura": "2026-11-13",
-          "fecha_limite_presentacion": "2026-11-13",
-          "evento_publicado": null,
-          "numero_convocatoria": "1",
-          "url": "https://datosabiertos.gualeguaychu.gov.ar/dataset/licitacion-publica-n-24-2026",
-          "documentos": [
-            {
-              "titulo": "Boletín complementario",
-              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf"
-            },
-            {
-              "titulo": "Boletín complementario",
-              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf"
-            }
-          ]
-        }
-      ],
-      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "estado_comercial": "VIGENTE_VERIFICADA",
-      "presentacion_verificada": true,
-      "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-13T10:00:00-03:00"
     },
     {
       "detalle_completo": true,
@@ -1624,7 +1326,7 @@
       ],
       "id": "6effb18260d310a6f83acf8d851c8d38ae613e7e5717b6fb8592d83fd66e2416",
       "primera_deteccion": "2026-11-10T08:55:56.499719-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "6effb18260d310a6f83acf8d851c8d38ae613e7e5717b6fb8592d83fd66e2416"
@@ -1773,7 +1475,7 @@
       ],
       "id": "15fefaf42a5305f8a3edfd7bb63471f4e1cc32c4af236122cda8d55842668c26",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "15fefaf42a5305f8a3edfd7bb63471f4e1cc32c4af236122cda8d55842668c26"
@@ -1920,7 +1622,7 @@
       ],
       "id": "f0b099f3d1a1b4e9ecbd40a7aa89371a7954c9f56f52bb301ac9ec6b93c2558d",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "f0b099f3d1a1b4e9ecbd40a7aa89371a7954c9f56f52bb301ac9ec6b93c2558d"
@@ -2273,7 +1975,7 @@
       ],
       "id": "4b6f68e57c711f667e4430a7df9957d3145707878b242696961c0d1405d285cb",
       "primera_deteccion": "2026-10-30T08:33:56.099440-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "4b6f68e57c711f667e4430a7df9957d3145707878b242696961c0d1405d285cb"
@@ -2407,7 +2109,7 @@
       ],
       "id": "5aadc03b9a83e0aec24aac77fa6345b264b9c9ce2971ee5f6d4c2a9123a58d3f",
       "primera_deteccion": "2026-11-10T08:55:56.499719-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "5aadc03b9a83e0aec24aac77fa6345b264b9c9ce2971ee5f6d4c2a9123a58d3f"
@@ -2526,7 +2228,7 @@
       ],
       "id": "8ec7898f1853f968c04e60669482cbc7ce8fac3999f74798ae3277cc7c44adb0",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "8ec7898f1853f968c04e60669482cbc7ce8fac3999f74798ae3277cc7c44adb0"
@@ -2550,7 +2252,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -2646,7 +2347,7 @@
       ],
       "id": "5a1668b5ea4f410f3abaf313d5aec9592bbb774429babfc0dd0a11f6c299492c",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "5a1668b5ea4f410f3abaf313d5aec9592bbb774429babfc0dd0a11f6c299492c"
@@ -2670,7 +2371,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -2965,7 +2665,7 @@
       ],
       "id": "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7",
       "primera_deteccion": "2026-11-07T08:36:35.631351-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7"
@@ -3261,7 +2961,7 @@
       ],
       "id": "7e9776874b9913a0d573cb2af62014d60ea14ecf1220020cec5674d45103bc3c",
       "primera_deteccion": "2026-11-12T08:58:51.069853-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7e9776874b9913a0d573cb2af62014d60ea14ecf1220020cec5674d45103bc3c"
@@ -3530,7 +3230,7 @@
       ],
       "id": "94f8805a0e854f14925878d49e0f56ae0624aceaa6f23c72741ec9a348205178",
       "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "94f8805a0e854f14925878d49e0f56ae0624aceaa6f23c72741ec9a348205178"
@@ -3657,7 +3357,7 @@
       ],
       "id": "3102ff1411f55c90562db9fa8517e4629a88830f095019ecb08dcb25ed0a71d4",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3102ff1411f55c90562db9fa8517e4629a88830f095019ecb08dcb25ed0a71d4"
@@ -3681,7 +3381,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -3777,7 +3476,7 @@
       ],
       "id": "fc4c9a80f2129ecfc1543a0501279fb803035a454da54777dbff5ad451a2db70",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fc4c9a80f2129ecfc1543a0501279fb803035a454da54777dbff5ad451a2db70"
@@ -3801,7 +3500,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -3897,7 +3595,7 @@
       ],
       "id": "a5e318b44082ae5ebf9eaf719609249ecb40d19ec8df1e8547360a4886c633b9",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "a5e318b44082ae5ebf9eaf719609249ecb40d19ec8df1e8547360a4886c633b9"
@@ -3921,7 +3619,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -4017,7 +3714,7 @@
       ],
       "id": "fdeaee316d53bb9c1e02cbcec386f5f776a9368c1a2f62e8fe4c6ea6b468ef6f",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fdeaee316d53bb9c1e02cbcec386f5f776a9368c1a2f62e8fe4c6ea6b468ef6f"
@@ -4041,7 +3738,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -4104,7 +3800,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas LP N3-2026. circular aclaratoria nº1 • 468 kB • 4 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 137 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 99 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 77 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 73 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 81 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 84 click 9 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas LP N3-2026. circular aclaratoria nº1 • 468 kB • 11 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 142 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 106 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 78 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 75 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 83 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 87 click 9 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
@@ -4149,7 +3845,7 @@
       ],
       "id": "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a"
@@ -4475,7 +4171,7 @@
       ],
       "id": "af809a1a2301fd5ac19ea9d2f78fdf59162c9bbcca0ec3e17a9bc081e3e49c32",
       "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "af809a1a2301fd5ac19ea9d2f78fdf59162c9bbcca0ec3e17a9bc081e3e49c32"
@@ -4822,7 +4518,7 @@
       ],
       "id": "2d840d3f136208e858d4981960e53bcfca64a1034194dbbc716f800078f33a42",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "2d840d3f136208e858d4981960e53bcfca64a1034194dbbc716f800078f33a42"
@@ -4874,11 +4570,331 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-27T10:00:00-03:00"
+    },
+    {
+      "campos_oficiales": {
+        "actas": [],
+        "aperturasSobre": [
+          {
+            "contactoEntrega": null,
+            "fechaApertura": "2026-12-01T13:00:00Z",
+            "noEsSede": false,
+            "numeroSobre": 1,
+            "oficina": {
+              "direccion": null,
+              "nombreOficina": "Departamento Compras Santa Fe - Ituzaingo 1501 - Santa Fe",
+              "uuid": "e3dbff0936154ed888e70730ac7c31dc"
+            },
+            "uuid": "caadf39b9642490aad7b7fe3f1c32e8a"
+          }
+        ],
+        "categoria": {
+          "nombreCategoria": "Bienes",
+          "uuid": "801b7a815bdb4b458d71352f08d507f5"
+        },
+        "circulares": [],
+        "consideracionesGenerales": null,
+        "contactosAdministrativos": [
+          {
+            "apellido": "DOMINGUEZ",
+            "email": "maria.dominguez@aguassantafesinas.com.ar",
+            "nombre": "MARIA JIMENA",
+            "sector": "",
+            "telefono": "342-4504594",
+            "uuid": "547af7d7f33d4299993e16b6d1c8bd4a"
+          }
+        ],
+        "contactosEntrega": [],
+        "contactosTecnicos": [
+          {
+            "apellido": "PALADINI",
+            "email": "carlos.paladini@aguassantafesinas.com.ar ",
+            "nombre": "CARLOS ANDRES CEFERINO",
+            "sector": null,
+            "sede": "Rosario - Bv. Avellaneda 650 b",
+            "telefono": "3414378579",
+            "uuid": "983a5c800c9b4731b0e5158c7fca2f85"
+          },
+          {
+            "apellido": "PALADINI",
+            "email": "carlos.paladini@aguassantafesinas.com.ar ",
+            "nombre": "CARLOS ANDRES CEFERINO",
+            "sector": null,
+            "sede": "Rosario - Bv. Avellaneda 650 b",
+            "telefono": "3414378579",
+            "uuid": "05edda2c9423448c995d88fabd9972c8"
+          }
+        ],
+        "documentosAdjuntos": [
+          {
+            "generico": false,
+            "mostrarPublico": false,
+            "nombreDocumento": "ANEXOS",
+            "tipoDocumento": "",
+            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/af99cd64-7577-4053-82ef-65009712b259.pdf",
+            "uuid": "c4c6a8810204496abcd2b4634c54bc04"
+          },
+          {
+            "generico": false,
+            "mostrarPublico": false,
+            "nombreDocumento": "EETT ABRAZADERAS",
+            "tipoDocumento": "",
+            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/e9cd2c02-306f-4d0a-91a9-87941c2c82c7.pdf",
+            "uuid": "bcb5c195c8ba4e479ef59022a12214d4"
+          },
+          {
+            "generico": false,
+            "mostrarPublico": false,
+            "nombreDocumento": "Pliego Particular Licitación Pública N° 1733",
+            "tipoDocumento": "",
+            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/e11b0d52-e970-4769-9ddb-e0d1831b3761.pdf",
+            "uuid": "ca944cd9c4bb438db88151c1395f92ff"
+          }
+        ],
+        "documentosGenericos": [
+          {
+            "generico": true,
+            "mostrarPublico": true,
+            "nombreDocumento": "Condiciones Generales de Compra",
+            "tipoDocumento": "Legal",
+            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/82520124-e264-447b-a5cc-3d3a01249b4d.pdf",
+            "uuid": "c482d8baa472432697c452a35513da7f"
+          },
+          {
+            "generico": true,
+            "mostrarPublico": true,
+            "nombreDocumento": "LEY COMPRE SANTAFESINO",
+            "tipoDocumento": "Legal",
+            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/2339de25-7826-4855-a013-79d1f9bdfd22.pdf",
+            "uuid": "8e4adb5e52f4425fac32828607b38485"
+          }
+        ],
+        "estado": "ESTADO_APROBADO",
+        "fecha": "2026-11-13T03:00:00Z",
+        "fechaLimiteEntregaOfertasDesde": "2026-11-13T15:00:00Z",
+        "fechaLimiteEntregaOfertasHasta": "2026-12-01T13:00:00Z",
+        "fechaLimiteOferta": "2026-12-01T13:00:00Z",
+        "fechaSugeridaPublicacion": "2026-11-16T03:00:00Z",
+        "informacionGarantia": "",
+        "informacionPresupuestaria": "756920000",
+        "localidades": [
+          {
+            "descripcion": "Rosario",
+            "uuid": "a4ade3c5e3b9449e8a286f280584ca73"
+          },
+          {
+            "descripcion": "Santa Fe",
+            "uuid": "cf58f5b948e14d8fb32e7e07461621dc"
+          }
+        ],
+        "mediosComunicacion": [
+          {
+            "descripcion": "Boletin Oficial",
+            "uuid": "674e3cb5eec643ea8a75d9bab7de7328"
+          },
+          {
+            "descripcion": "El Ciudadano (Rosario)",
+            "uuid": "b33da770-c5ac-496e-b877-a0fc4af0ac16"
+          },
+          {
+            "descripcion": "El Litoral (Sta Fe)",
+            "uuid": "9fdb6c62-85bf-4f1d-8b20-40fef03805d6"
+          }
+        ],
+        "numeroPliego": "1733",
+        "numeroSolicitud": "10028789",
+        "objetoLicitacion": "<p>ADQUISICIÓN DE ABRAZADERAS DE REPARACION PARA AGUAS SANTAFESINAS S.A.</p>",
+        "otrasPresentaciones": null,
+        "rubros": [
+          {
+            "nombre": "Bienes",
+            "uuid": "1a3f4ba2-ad92-4b3b-85f7-fce1e20380ba"
+          }
+        ],
+        "soloPaginaWeb": true,
+        "subrubros": [
+          {
+            "nombreSubrubro": "Materiales de linea",
+            "uuid": "2808a1df4b5648bfb464ff4eceefc61d"
+          }
+        ],
+        "tipoPliego": {
+          "nombreTipo": "Licitación pública",
+          "uuid": "17ab2090bc784629ac594a81cb65349e"
+        },
+        "titulo": "ADQUISICIÓN DE ABRAZADERAS DE REPARACION PARA AGUAS SANTAFESINAS S.A.",
+        "usuarioModificador": null,
+        "uuid": "68f4d0f402184a92a1b051b6cad93399"
+      },
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "Adjunto oficial",
+          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/af99cd64-7577-4053-82ef-65009712b259.pdf"
+        },
+        {
+          "titulo": "Adjunto oficial",
+          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/e9cd2c02-306f-4d0a-91a9-87941c2c82c7.pdf"
+        },
+        {
+          "titulo": "Adjunto oficial",
+          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/e11b0d52-e970-4769-9ddb-e0d1831b3761.pdf"
+        },
+        {
+          "titulo": "Adjunto oficial",
+          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/82520124-e264-447b-a5cc-3d3a01249b4d.pdf"
+        },
+        {
+          "titulo": "Adjunto oficial",
+          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/2339de25-7826-4855-a013-79d1f9bdfd22.pdf"
+        }
+      ],
+      "enlace_pliego": null,
+      "evento_publicado": null,
+      "evidencia_url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/68f4d0f402184a92a1b051b6cad93399",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/68f4d0f402184a92a1b051b6cad93399",
+          "texto": "2026-12-01 10:00"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/68f4d0f402184a92a1b051b6cad93399",
+          "texto": "2026-12-01 10:00"
+        },
+        "localidad": {
+          "texto": "API: localidades=[]; localidad del procedimiento desconocida",
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/68f4d0f402184a92a1b051b6cad93399"
+        },
+        "numero_procedimiento": {
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/68f4d0f402184a92a1b051b6cad93399",
+          "texto": "licitacion publica no 1733"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/68f4d0f402184a92a1b051b6cad93399",
+          "texto": "licitacion publica no 1733"
+        }
+      },
+      "fecha_apertura": "2026-12-01",
+      "fecha_apertura_texto": "2026-12-01 10:00",
+      "fecha_limite_presentacion": "2026-12-01",
+      "fecha_limite_presentacion_texto": "2026-12-01 10:00",
+      "fecha_publicacion": null,
+      "fuente": "https://www.aguassantafesinas.com.ar/portal/licitaciones",
+      "fuentes_observadas": [
+        "https://www.aguassantafesinas.com.ar/portal/licitaciones"
+      ],
+      "hora_apertura": "10:00",
+      "hora_limite_presentacion": "10:00",
+      "id_origen": "68f4d0f402184a92a1b051b6cad93399",
+      "identidad_ambito": "68f4d0f402184a92a1b051b6cad93399",
+      "localidad": "Rosario",
+      "modalidad_presentacion": [],
+      "numero_oficial_sin_interpretar": "1733",
+      "numero_procedimiento": "1733",
+      "objeto": "ADQUISICIÓN DE ABRAZADERAS DE REPARACION PARA AGUAS SANTAFESINAS S.A.",
+      "organismo": "ASSA",
+      "pago_evidencias": [],
+      "presupuesto": null,
+      "procedimiento": "licitacion publica no 1733",
+      "provincia": "Santa Fe",
+      "rango_evidencia": 3,
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "licitacion publica",
+      "titulo": "Licitación pública Nº 1733 — ADQUISICIÓN DE ABRAZADERAS DE REPARACION PARA AGUAS SANTAFESINAS S.A.",
+      "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/68f4d0f402184a92a1b051b6cad93399",
+      "urls_publicacion": [
+        "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/68f4d0f402184a92a1b051b6cad93399"
+      ],
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "licitacion publica ASSA-1733",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": "2026-12-01T10:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": "2026-12-01T10:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-12-01",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_publicacion",
+        "enlace_pliego"
+      ],
+      "id": "7b55a45170f5e26bad678e0d89ab7d62a58af4691f82eac497e53358048c2794",
+      "primera_deteccion": "2026-11-14T08:37:49.537518-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "7b55a45170f5e26bad678e0d89ab7d62a58af4691f82eac497e53358048c2794"
+      ],
+      "variantes_historial": [
+        {
+          "id": "7b55a45170f5e26bad678e0d89ab7d62a58af4691f82eac497e53358048c2794",
+          "numero_procedimiento": "1733",
+          "objeto": "ADQUISICIÓN DE ABRAZADERAS DE REPARACION PARA AGUAS SANTAFESINAS S.A.",
+          "fecha_apertura": "2026-12-01",
+          "fecha_limite_presentacion": "2026-12-01",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/68f4d0f402184a92a1b051b6cad93399",
+          "documentos": [
+            {
+              "titulo": "Adjunto oficial",
+              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/af99cd64-7577-4053-82ef-65009712b259.pdf"
+            },
+            {
+              "titulo": "Adjunto oficial",
+              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/e9cd2c02-306f-4d0a-91a9-87941c2c82c7.pdf"
+            },
+            {
+              "titulo": "Adjunto oficial",
+              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/e11b0d52-e970-4769-9ddb-e0d1831b3761.pdf"
+            },
+            {
+              "titulo": "Adjunto oficial",
+              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/82520124-e264-447b-a5cc-3d3a01249b4d.pdf"
+            },
+            {
+              "titulo": "Adjunto oficial",
+              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/2339de25-7826-4855-a013-79d1f9bdfd22.pdf"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-12-01T10:00:00-03:00"
     },
     {
       "detalle_completo": true,
@@ -4980,7 +4996,7 @@
       ],
       "id": "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9"
@@ -5070,7 +5086,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 216 click 19 octubre, 2026 ANEXO I • 2 MB • 134 click 19 octubre, 2026 Anexo II • 112 kB • 107 click 19 octubre, 2026 Anexo III • 174 kB • 114 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 115 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 115 click 19 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 221 click 19 octubre, 2026 ANEXO I • 2 MB • 138 click 19 octubre, 2026 Anexo II • 112 kB • 112 click 19 octubre, 2026 Anexo III • 174 kB • 119 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 119 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 120 click 19 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
@@ -5115,7 +5131,7 @@
       ],
       "id": "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-13T08:56:48.728586-03:00",
+      "ultima_deteccion": "2026-11-14T08:37:49.537518-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99"
