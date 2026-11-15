@@ -1,10 +1,10 @@
 # Informe diario del piloto
 
-Fecha: 2026-11-14T08:37:49.537518-03:00. Estado: **COMPLETA_CON_INCIDENCIAS**.
+Fecha: 2026-11-15T08:40:14.844102-03:00. Estado: **COMPLETA_CON_INCIDENCIAS**.
 
 No hay novedades confirmadas no significa ausencia de licitaciones si hay incidencias. Detecciones sin fecha no son publicaciones nuevas comprobadas.
 
-Nuevas vigentes con publicación comprobada: 0. Primeras detecciones abiertas con publicación pendiente: 1. Cambios abiertos: 0. El archivo de auditoría conserva 84 eventos de toda vigencia, incluidas 3 recuperaciones.
+Nuevas vigentes con publicación comprobada: 0. Primeras detecciones abiertas con publicación pendiente: 0. Cambios abiertos: 0. El archivo de auditoría conserva 93 eventos de toda vigencia, incluidas 2 recuperaciones.
 
 [Recepción vigente comprobada](informe_comercial.md) · [Presentación pendiente](presentacion_pendiente.json) · [CSV completo de auditoría](oportunidades.csv) · [JSON completo](oportunidades.json). Sin límite de cantidad.
 
@@ -14,22 +14,22 @@ Total de publicaciones genuinamente nuevas confirmadas del día: **0**.
 
 | Provincia | Nuevas confirmadas | Abiertas observadas | Abiertas sólo por historial | Vigencia pendiente | Pago rápido en abiertas | Omitidas / comprobadas en muestra | Fuentes con incidencias |
 |---|---:|---:|---:|---:|---:|---|---:|
-| Santa Fe | 0 | 73 | 15 | 838 | 0 | 2 omitidas, 1 incompletas / 12 | 27 |
-| Entre Ríos | 0 | 80 | 6 | 2168 | 2 | 0 omitidas, 0 incompletas / 6 | 19 |
+| Santa Fe | 0 | 84 | 8 | 840 | 0 | 2 omitidas, 1 incompletas / 12 | 27 |
+| Entre Ríos | 0 | 92 | 6 | 2168 | 2 | 0 omitidas, 0 incompletas / 6 | 20 |
 | Buenos Aires | 0 | 4 | 0 | 222 | 0 | 0 omitidas, 0 incompletas / 4 | 8 |
 
 Conjunto de Santa Fe, Entre Ríos y Buenos Aires dentro del alcance de Rosario; condicionado al volumen real. Sin límite de resultados.
 Sólo NUEVO_CONFIRMADO con fecha publicada comprobada en la ventana reciente de72horas por día disponible (sin inventar hora). Históricas, duplicados, primeras detecciones sin fecha y modificaciones no integran la meta. Días sin ejecución no se imputan como cero. Abierta observada no acredita exhaustividad de la fuente.
 
-Promedio de siete días: 0.42857142857142855. Días disponibles: 7/7. La muestra manual se limita a sus URLs y fechas de revisión.
+Promedio de siete días: 0.2857142857142857. Días disponibles: 7/7. La muestra manual se limita a sus URLs y fechas de revisión.
 
 [Métricas completas](metricas_territoriales.json) · [Comparación de avisos y omisiones](auditoria_manual.json)
 
-[Auditoría, abiertas, próximas a vencer y catálogo íntegro](https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/43590148034) (artefacto radar-controlado).
+[Auditoría, abiertas, próximas a vencer y catálogo íntegro](https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/43709222779) (artefacto radar-controlado).
 
 ## Convocatorias recuperadas que siguen abiertas (no son publicaciones nuevas comprobadas del día)
 
-# Oportunidades detectadas — 2026-11-14T08:37:49.537518-03:00
+# Oportunidades detectadas — 2026-11-15T08:40:14.844102-03:00
 
 Primera detección no significa publicación reciente. Se incluyen todas las novedades válidas, también vencidas y de vigencia desconocida. Orden: anticipos; contado/contra entrega; plazos comprobados de 5, 10, 15, 30, 60 y más días; señales de desiertas, segundos llamados y reaperturas; presupuesto por moneda; límite de presentación o apertura referencial. Sin filtros comerciales ni límite de cantidad. Pendiente de verificar indica investigación documental pendiente; no es una evaluación de rentabilidad.
 
@@ -41,7 +41,7 @@ Primera detección no significa publicación reciente. Se incluyen todas las nov
 
 ## Nuevas confirmadas
 
-# Oportunidades detectadas — 2026-11-14T08:37:49.537518-03:00
+# Oportunidades detectadas — 2026-11-15T08:40:14.844102-03:00
 
 Primera detección no significa publicación reciente. Se incluyen todas las novedades válidas, también vencidas y de vigencia desconocida. Orden: anticipos; contado/contra entrega; plazos comprobados de 5, 10, 15, 30, 60 y más días; señales de desiertas, segundos llamados y reaperturas; presupuesto por moneda; límite de presentación o apertura referencial. Sin filtros comerciales ni límite de cantidad. Pendiente de verificar indica investigación documental pendiente; no es una evaluación de rentabilidad.
 
@@ -53,20 +53,19 @@ Primera detección no significa publicación reciente. Se incluyen todas las nov
 
 ## Primera detección, fecha pendiente o sin ventana horaria suficiente
 
-# Oportunidades detectadas — 2026-11-14T08:37:49.537518-03:00
+# Oportunidades detectadas — 2026-11-15T08:40:14.844102-03:00
 
 Primera detección no significa publicación reciente. Se incluyen todas las novedades válidas, también vencidas y de vigencia desconocida. Orden: anticipos; contado/contra entrega; plazos comprobados de 5, 10, 15, 30, 60 y más días; señales de desiertas, segundos llamados y reaperturas; presupuesto por moneda; límite de presentación o apertura referencial. Sin filtros comerciales ni límite de cantidad. Pendiente de verificar indica investigación documental pendiente; no es una evaluación de rentabilidad.
 
 | Organismo / procedimiento | Localidad / provincia | Objeto | Presupuesto oficial | Vigencia / apertura | Fecha de publicación | Límite de presentación | Presentación | Pliego | Condiciones de pago | Documento de respaldo | Señales | Publicación oficial | Novedad |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| ASSA / 1733 | Rosario / Santa Fe | ADQUISICIÓN DE ABRAZADERAS DE REPARACION PARA AGUAS SANTAFESINAS S.A. | desconocido | ABIERTA / 2026-12-01T10:00:00-03:00 | desconocida | 2026-12-01T10:00:00-03:00 | No informada | No identificado | Pendiente de verificar | No comprobado | — | [Oficial](https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/68f4d0f402184a92a1b051b6cad93399) | NUEVA_DETECCION_FECHA_DESCONOCIDA |
 
 ## Evidencia de las condiciones de pago
 
 
 ## Modificaciones, circulares y datos completados
 
-# Oportunidades detectadas — 2026-11-14T08:37:49.537518-03:00
+# Oportunidades detectadas — 2026-11-15T08:40:14.844102-03:00
 
 Primera detección no significa publicación reciente. Se incluyen todas las novedades válidas, también vencidas y de vigencia desconocida. Orden: anticipos; contado/contra entrega; plazos comprobados de 5, 10, 15, 30, 60 y más días; señales de desiertas, segundos llamados y reaperturas; presupuesto por moneda; límite de presentación o apertura referencial. Sin filtros comerciales ni límite de cantidad. Pendiente de verificar indica investigación documental pendiente; no es una evaluación de rentabilidad.
 

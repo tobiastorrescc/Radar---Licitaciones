@@ -1,6 +1,6 @@
 # Convocatorias con recepción vigente comprobada
 
-Fecha: 2026-11-14T08:37:49.537518-03:00. Total: 28. Sin recortes por rubro, monto ni pago.
+Fecha: 2026-11-15T08:40:14.844102-03:00. Total: 28. Sin recortes por rubro, monto ni pago.
 
 | organismo | provincia | localidad | numero | objeto | fecha_publicacion_comprobada | apertura | limite_presentacion | estado_vigencia | presupuesto | pago | modalidad_presentacion | url | pliego |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -35,30 +35,30 @@ Fecha: 2026-11-14T08:37:49.537518-03:00. Total: 28. Sin recortes por rubro, mont
 
 ## Fuentes que requieren revisión manual
 
-- [Municipalidad de Rosario](https://www.rosario.gob.ar/inicio/compras-y-licitaciones): PARCIAL
 - [Gobierno de Santa Fe](https://compras.santafe.gob.ar/): BLOQUEADA
 - [EPE](https://www.epe.santafe.gov.ar/app2/aperturas): BLOQUEADA
 - [UNR](https://compras.unr.edu.ar/): BLOQUEADA
 - [Poder Judicial de Santa Fe](https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/): BLOQUEADA
 - [Aeropuerto Internacional Rosario](https://aeropuertorosario.com/institucional/licitaciones/): TIEMPO_FUENTE
+- [Municipalidad de Casilda](https://www.casilda.gob.ar/web/licitaciones-casilda/): BLOQUEADA
 - [Municipalidad de Carcarañá](https://xn--carcaraa-j3a.gob.ar/): TIEMPO_FUENTE
 - [Municipalidad de Cañada de Gómez](https://cdg.gob.ar/transparencia/licitaciones-y-concursos/): BLOQUEADA
 - [Municipalidad de Armstrong](https://armstrong.gov.ar/index.php/transparencia): TIEMPO_FUENTE
 - [Municipalidad de Las Parejas](https://lasparejas.gov.ar/): PENDIENTE
 - [Municipalidad de Funes](https://funes.gob.ar/): PARCIAL
 - [Municipalidad de Roldán](https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/): TIEMPO_FUENTE
-- [Municipalidad de Pérez](https://perez.opendata.junar.com/home/): PENDIENTE
-- [Municipalidad de Villa Gobernador Gálvez](https://vggmunicipalidad.gov.ar/licitaciones/): BLOQUEADA
+- [Municipalidad de Pérez](https://perez.opendata.junar.com/home/): TIEMPO_FUENTE
 - [Municipalidad de Santo Tomé](https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia): PENDIENTE
 - [Municipalidad de Santa Fe](https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/): BLOQUEADA
 - [Municipalidad de Santa Fe](https://transparencia.santafeciudad.gov.ar/contrataciones-obra/): BLOQUEADA
+- [Poder Judicial de Entre Ríos](https://www.jusentrerios.gov.ar/contrataciones/): TIEMPO_FUENTE
 - [ENERSA](https://www.enersa.com.ar/area-proveedores/): BLOQUEADA
 - [Instituto Becario](https://institutobecario.gov.ar/licitaciones.php): BLOQUEADA
 - [Municipalidad de Victoria](https://victoria.gob.ar/web-compras/Invitaciones-Compras/concurso-de-precios/): PARCIAL
 - [Municipalidad de Colón](https://colon.gov.ar/compras-contratos-suministros/licitaciones/): PENDIENTE
 - [Municipalidad de Gualeguaychú](https://w3.gualeguaychu.gov.ar/tramites/compras-y-licitaciones/acceso-a-licitaciones-p%C3%BAblicas): BLOQUEADA
 - [Municipalidad de Crespo](https://www.crespo.gob.ar/category/licitacion-publica/): PARCIAL
-- [Municipalidad de Federación](https://www.federacion.gob.ar/licitaciones): PARCIAL
+- [Municipalidad de Federación](https://www.federacion.gob.ar/licitaciones): BLOQUEADA
 - [Municipalidad de Villaguay](https://villaguay.gob.ar/boletindigital/): PENDIENTE
 - [Municipalidad de Rosario del Tala](https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas): PARCIAL
 - [Municipalidad de San Nicolás](https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos): PARCIAL

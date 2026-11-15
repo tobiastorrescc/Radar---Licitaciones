@@ -1,6 +1,15 @@
 {
-  "fecha": "2026-11-14T08:37:49.537518-03:00",
+  "fecha": "2026-11-15T08:40:14.844102-03:00",
   "pendientes": [
+    {
+      "id": "1ba6bd2bc39cc28483653314a727161043e2c64188f9917dac86ddd55840baa2",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "262/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº 262/26 SEGUNDO LLAMADO: “Servicio de provisión y colocación de películas de control solar para ventanas destinadas al JUZGADO DE PAZ JURISDICCIÓN VILLA LIBERTADORSAN MARTÍN” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 262/26 -SEGUNDO LLAMADO- De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 262/26 SEGUNDO LLAMADO: “Servicio de provisión y colocación de películas de control solar para ventanas destinadas al JUZGADO DE PAZ JURISDICCIÓN VILLA LIBERTADORSAN MARTÍN”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 19 de noviembre de 2026 a las 09:00 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 262-26 SEGUNDO LLAMADO Descargar Imprmir",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-262-26-segundo-llamado-servicio-de-provision-y-colocacion-de-peliculas-de-control-solar-para-ventanas-destinadas-al-juzgado-de-paz-jurisdiccion-villa-libertadorsan/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
     {
       "id": "cf892a5fa00e38595d57b6ea999fa09518ba2b7b00647f64cb84ee802da014dc",
       "organismo": "EPE",
@@ -363,34 +372,6 @@
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
-        }
-      ]
-    },
-    {
-      "id": "8b535217d54b4c66a3250f6f0b03f6743b27ef2bbf1d1f68541959b6e0226de7",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "13/2026",
-      "objeto": "ADQUISICION DE ESTACION DE ANESTESIA DE ALTA COMPEJIDAD \"HOSPITAL DE NIÑOS VICTOR J. VILELA\"",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38722",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": [
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: anexolicitacion.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38722/documentos/102947"
-        },
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: estacionmesadeanestesia.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38722/documentos/102946"
-        },
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: circular.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38722/documentos/102975"
         }
       ]
     },
@@ -1271,6 +1252,15 @@
       "documentos": []
     },
     {
+      "id": "0242ea2e3e2d33b8943770854eb74a35ce78722bfc2d85d4842ac3df78f0086c",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "280/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº 280/26: “Provisión y envío a la Oficina de Compras y Asesoramiento de equipos celulares para ser destinados al Dpto. Patrimonio del STJ” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 280/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 280/26: “Provisión y envío a la Oficina de Compras y Asesoramiento de equipos celulares para ser destinados al Dpto. Patrimonio del STJ”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 17 de noviembre de 2026 a las 09:00 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 280-26 Descargar Imprmir",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-280-26-provision-y-envio-a-la-oficina-de-compras-y-asesoramiento-de-equipos-celulares-para-ser-destinados-al-dpto-patrimonio-del-stj/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "9b6816d1442519e95d96bf67719b800ad736ce3c120a0b82d6e37db9bdb0dea7",
       "organismo": "IAFAS",
       "numero_procedimiento": "8/2026",
@@ -1298,6 +1288,15 @@
       "numero_procedimiento": "73017/2026",
       "objeto": null,
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38772",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "67df1a322743910dafa8433ff6dbcbc6320c66b110efe922cce3710be97e638e",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "279/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº 279/26: “Provisión y colocación de cortinas para el nuevo salón para el Área Juicio por Jurados – Edificio Tribunales Paraná de calle Laprida N° 250” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 279/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 279/26: “Provisión y colocación de cortinas para el nuevo salón para el Área Juicio por Jurados – Edificio Tribunales Paraná de calle Laprida N° 250 ”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 17 de noviembre de 2026 a las 09:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 279-26 Descargar Imprmir",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-279-26-provision-y-colocacion-de-cortinas-para-el-nuevo-salon-para-el-area-juicio-por-jurados-edificio-tribunales-parana-de-calle-laprida-n-250/",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
@@ -1488,6 +1487,15 @@
       "documentos": []
     },
     {
+      "id": "a0d81fd1f01b8108d4d3a933600d271b4f6702d282788d20df47d1aa289543e1",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "281/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº 281/26: “Servicio mensual de acceso a internet para ser destinado al inmueble de calle Gral. Justo José de Urquiza N° 1850 de la ciudad de Chajarí” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 281/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 281/26: “Servicio mensual de acceso a internet para ser destinado al inmueble de calle Gral. Justo José de Urquiza N° 1850 de la ciudad de Chajarí”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 18 de noviembre de 2026 a las 09:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 281-26 Descargar Imprmir",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-281-26-servicio-mensual-de-acceso-a-internet-para-ser-destinado-al-inmueble-de-calle-gral-justo-jose-de-urquiza-n-1850-de-la-ciudad-de-chajari/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "6a0fc7f7235b0cd2371728509c9cc54afa5a7390a98c5a95a5e62cc06abfa523",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "110891/2026",
@@ -1583,6 +1591,20 @@
       ]
     },
     {
+      "id": "0e140d7a59f6972526e83ede514031ef457c420db52f29785ddd4c8fb71de2ec",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "18/2026",
+      "objeto": "De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Cotejo de Precios Nº 18/26: “Obra: Nuevos tanque de reserva, cambio colectores tanque, reparaciones zinguería sector tanque cubierta Edificio Tribunales Colón”.",
+      "url": "https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-18-26-obra-nuevos-tanque-de-reserva-cambio-colectores-tanque-reparaciones-zingueria-sector-tanque-cubierta-edificio-tribunales-colon/cotejo-de-precios-18-26/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "COTEJO DE PRECIOS 18-26",
+          "url": "https://www.jusentrerios.gov.ar/wp-content/uploads/2026/11/COTEJO-DE-PRECIOS-18-26.zip"
+        }
+      ]
+    },
+    {
       "id": "3776805b821164b192ac86200ab3e0061f845b48c39a83b7b57966ae6230e9cb",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "110911/2026",
@@ -1597,6 +1619,24 @@
       "numero_procedimiento": "40691/2026",
       "objeto": null,
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38800",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "2aed800c6da6ab22b1324ef06edb241fb2d23becd67118dda9ce248e976ec137",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "24925/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38814",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "a3c19d1899414f30a5242e7462e23df8cefd92754a119729d250590eb7225955",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "286/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº 286/26: “Servicio de reparación de chapa y pintura, con provisión de repuestos y materiales necesarios para el vehículo Toyota Hilux asignado a la jurisdicción Gualeguaychú a disposición del Ministerio Público de la Defensa” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 286/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 286/26: “Servicio de reparación de chapa y pintura, con provisión de repuestos y materiales necesarios para el vehículo Toyota Hilux asignado a la jurisdicción Gualeguaychú a disposición del Ministerio Público de la Defensa”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 18 de noviembre de 2026 a las 11:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 286-26 Descargar Imprmir",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-286-26-servicio-de-reparacion-de-chapa-y-pintura-con-provision-de-repuestos-y-materiales-necesarios-para-el-vehiculo-toyota-hilux-asignado-a-la-jurisdiccion-guale/",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
@@ -1655,6 +1695,15 @@
       "documentos": []
     },
     {
+      "id": "5a030b7b77da4583a2fb16334f7a618f19d6759c98c3827a69c356654d4a94d8",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "283/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº 283/26: “Servicio de contratación de mano de obra para culminar la reparación de los ascensores centrales hidráulicos del Edificio Tribunales de Concepción del Uruguay” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 283/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 283/26: “Servicio de contratación de mano de obra para culminar la reparación de los ascensores centrales hidráulicos del Edificio Tribunales de Concepción del Uruguay”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 19 de noviembre de 2026 a las 09:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 283-26 Descargar Imprmir",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-283-26-servicio-de-contratacion-de-mano-de-obra-para-culminar-la-reparacion-de-los-ascensores-centrales-hidraulicos-del-edificio-tribunales-de-concepcion-del-urugu/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "a42c2254e1a27811269202939e72343c84fb1a6fea9cb82dfe017296fb35ce64",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "11161/2026",
@@ -1678,6 +1727,15 @@
       "numero_procedimiento": "21/2026",
       "objeto": null,
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38770",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "708f398991715e015cba73e5ed2b86f906fdbcae30e1ccbd40627f5dc369ab79",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "22/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38795",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
@@ -1715,6 +1773,15 @@
       "numero_procedimiento": "262/2026",
       "objeto": "COMPRA DE MATERIALES CONSTRUCCION EN SECO",
       "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "0df7c770d21209f063c9e059ba4acadd35e6f52b25560da809a98e0d06826b5e",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "287/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº 287/26: “Provisión, envío y/o instalación de mobiliario y accesorios para destinar a distintos Organismos Judiciales del Poder Judicial de Entre Ríos” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 287/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 287/26: “Provisión, envío y/o instalación de mobiliario y accesorios para destinar a distintos Organismos Judiciales del Poder Judicial de Entre Ríos”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 19 de noviembre de 2026 a las 10:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 287-26 Descargar Imprmir",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-287-26-provision-envio-y-o-instalacion-de-mobiliario-y-accesorios-para-destinar-a-distintos-organismos-judiciales-del-poder-judicial-de-entre-rios/",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
@@ -1791,6 +1858,15 @@
       ]
     },
     {
+      "id": "5aa07540b90934ae47a58214d3e0e0d6d31bcaa7a1c3aae729433566597a8b03",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "285/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº 285/26: “Contratación del servicio anual de revisión, limpieza, control y prueba de funcionamiento, con cambio de packs de baterías (solo Alcaidía) de los sistemas de detección, aviso y extinción de incendios (este último solo para Data Center Paraná) de los equipos distribuidos en la ciudad de Paraná, ubicados en la Dirección de Informática, Alcaidía y Archivo Judicial, y en el edificio central de calle Mitre N°26 de la ciudad de Concordia” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 285/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 285/26: “Contratación del servicio anual de revisión, limpieza, control y prueba de funcionamiento, con cambio de packs de baterías (solo Alcaidía) de los sistemas de detección, aviso y extinción de incendios (este último solo para Data Center Paraná) de los equipos distribuidos en la ciudad de Paraná, ubicados en la Dirección de Informática, Alcaidía y Archivo Judicial, y en el edificio central de calle Mitre N°26 de la ciudad de Concordia”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 20 de noviembre de 2026 a las 09:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 285-26 Descargar Imprmir",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-285-26-contratacion-del-servicio-anual-de-revision-limpieza-control-y-prueba-de-funcionamiento-con-cambio-de-packs-de-baterias-solo-alcaidia-de-los-sistemas-d/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "9bb486e1a1d661698c2778a446b6b571e27f9ea384eb2620cf0e8d60164c3b71",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "120851/2026",
@@ -1862,6 +1938,20 @@
       ]
     },
     {
+      "id": "b4cc5ba1ba226b12e97e02ada7c5d0ef7cee6a37d93144a9933c7012eb9ab7e6",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "19/2026",
+      "objeto": "De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Cotejo de Precios Nº 19/26: “Obra: Ejecución de nueva estructura y terminación de pisos de oficinas. Tribunales Concordia”.",
+      "url": "https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-19-26-obra-ejecucion-de-nueva-estructura-y-terminacion-de-pisos-de-oficinas-tribunales-concordia/cotejo-de-precios-n19-26/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "COTEJO DE PRECIOS N°19-26",
+          "url": "https://www.jusentrerios.gov.ar/wp-content/uploads/2026/11/COTEJO-DE-PRECIOS-N%C2%B019-26.zip"
+        }
+      ]
+    },
+    {
       "id": "cb6c8ef5a81503b23a60fa9711523e2b11fb749b75fe4c468317d07f76e1f3f5",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "120861/2026",
@@ -1926,11 +2016,29 @@
       "documentos": []
     },
     {
+      "id": "8db90506657ad09bcab0e3fadb48a4d0eeee36e439396462dd48103f28888534",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "288/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº 288/26: “Provisión, envío y/o instalación del mobiliario y silloneria para ser destinado a la nueva Oficina de Conciliación del Ministerio Público Fiscal” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 288/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 288/26: “Provisión, envío y/o instalación del mobiliario y silloneria para ser destinado a la nueva Oficina de Conciliación del Ministerio Público Fiscal”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 24 de noviembre de 2026 a las 09:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : Descargar Imprmir",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-288-26-provision-envio-y-o-instalacion-del-mobiliario-y-silloneria-para-ser-destinado-a-la-nueva-oficina-de-conciliacion-del-ministerio-publico-fiscal/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "e6f402ea6c9da3411bb460978d8e14e7b30f43031bb8234cfd7c3104de6f4e65",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "131521/2026",
       "objeto": null,
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38769",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "e3325eb3adbf3c699881b038641c07e7b79a4f452bfa0569d1e3cefa3d28ab7c",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "25/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38799",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
@@ -2010,6 +2118,33 @@
       ]
     },
     {
+      "id": "47712a061c3e0d448ce967df1d20e54c96eeb9558b1ae6914b9af5fafb25e166",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "289/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº 289/26: “Provisión y colocación de cuatro (4) cubiertas medida 225/75 R16, con su correspondiente alineación y balanceo, para el vehículo Mercedes Benz Sprinter” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 289/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 289/26: “ Provisión y colocación de cuatro (4) cubiertas medida 225/75 R16, con su correspondiente alineación y balanceo, para el vehículo Mercedes Benz Sprinter ”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 24 de noviembre de 2026 a las 10:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 289-26 Descargar Imprmir",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-289-26-provision-y-colocacion-de-cuatro-4-cubiertas-medida-225-75-r16-con-su-correspondiente-alineacion-y-balanceo-para-el-vehiculo-mercedes-benz-sprinter/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "1a6dda443587c6350c26638a8f6c555ece71b5e3567646e616b43b0638f9d800",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "26/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38809",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "cd7145b49675ebbb124dd7f609236472fa5ae5560cf821f8ab07b9b0462591bd",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "6/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38807",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "a50b0ef527468554b142c40998bffe987f365cfbd8cc0344cf8f9ba5ad381f13",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "110490/2026",
@@ -2031,7 +2166,7 @@
       "id": "e7414e21b95f006aa752afd7d9d3a001fce1651bca564814f8f653a8f20feff3",
       "organismo": "Concejo Municipal de Rosario",
       "numero_procedimiento": "16/2026",
-      "objeto": "Compra ágil 16/2026 Contratación del servicio de \"Verificación anual de disyuntores, medición de puesta a tierra y continuidad de las masas\" en los edificios del Concejo Municipal de Rosario. Tipo: Compra Ágil Apertura: 25/11/2026 09:00:00 Para Apertura Ver detalle",
+      "objeto": "Compra ágil 16/2026 Contratación del servicio de \"Verificación anual de disyuntores, medición de puesta a tierra y continuidad de las masas\" en los edificios del Concejo Municipal de Rosario. Tipo: Compra Ágil Apertura: 25/11/2026 08:00:00 Para Apertura Ver detalle",
       "url": "https://compras.concejorosario.gov.ar/compras/3281",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
