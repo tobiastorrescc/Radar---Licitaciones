@@ -1,6 +1,6 @@
 # Convocatorias con recepción vigente comprobada
 
-Fecha: 2026-11-15T08:40:14.844102-03:00. Total: 28. Sin recortes por rubro, monto ni pago.
+Fecha: 2026-11-16T09:08:25.070973-03:00. Total: 27. Sin recortes por rubro, monto ni pago.
 
 | organismo | provincia | localidad | numero | objeto | fecha_publicacion_comprobada | apertura | limite_presentacion | estado_vigencia | presupuesto | pago | modalidad_presentacion | url | pliego |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -12,7 +12,6 @@ Fecha: 2026-11-15T08:40:14.844102-03:00. Total: 28. Sin recortes por rubro, mont
 | Comuna de El Palenque | Entre Ríos | El Palenque | 8/2026 | Adquisición de inmueble urbano destinado a la construcción de una sala de velatorios. | Pendiente de verificar | 2026-11-20T11:00:00-03:00 | 2026-11-20T10:59:00-03:00 | VIGENTE_CONFIRMADA | {"importe": "25470000", "moneda": null} | Pendiente de verificar | Pendiente de verificar | https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf | Pendiente de verificar |
 | Comuna de General Almada | Entre Ríos | General Almada | 3/2026 | -- -- --                                           COMUNA DE GENERAL ALMADA                                                Licitación Pública 03-2026  OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 03-2026 COMUNA DE GENERAL ALMADA AUTORIZADA POR LA RESOLUCIÓN Nº 225-2026 DEL DEPARTAMENTO EJECUTIVO. COMPRA DE TRACTOR DE CORTAR PASTO EN EL MARCO DEL PLIEGO DE BASES Y CONDICIONES GENERALES Y PLIEGO DE CONDICIONES ESPECIFICAS Y TECNICAS.  PRESUPUESTO OFICIAL: $ 18.000.000 (DIECIOCHO MILLONES CON 00/100).  PLIEGO: El Pliego de Bases y Condiciones Generales y el Pliego de Condiciones Específicas y Técnicas puede adquirirse por Mesa de Entradas de la Comuna de General Almada o en el siguiente link de acceso público: https://drive.google.com/drive/folders/1B8sIltssAwiNkJq9OjlURnB0juQ6bQE 7 .  VALOR DEL PLIEGO: SIN COSTO.  LUGAR DE PRESENTACION: Mesa de Entradas del Edificio Comunal, sito en calle Jorge Weitzel S/N, Comuna de General Almada, Departamento Gualeguaychú, Entre Ríos.  FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 19 de noviembre de 2026 a las 16:00 horas.  FECHA Y HORA DE APERTURA DE PROPUESTAS: 19 de noviembre de 2026 a las 17:00 horas en el Edificio Comunal, sito en calle Jorge Weitzel S/N, Comuna de General Almada, Depto. Gualeguaychú, Entre Ríos.  CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la casilla oficial del correo de la Comuna de General Almada, sito en comunadealmada@hotmail.com. | Pendiente de verificar | 2026-11-19T17:00:00-03:00 | 2026-11-19T16:00:00-03:00 | VIGENTE_CONFIRMADA | {"importe": "18000000", "moneda": null} | Pendiente de verificar | PRESENCIAL | https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf | Pendiente de verificar |
 | Comuna de Colonia Tunas | Entre Ríos | Colonia Tunas | 3/2026 | -- -- --                                        COMUNA DE COLONIA TUNAS (E.R.)                                    DPTO. FEDERACIÓN - PROV. DE ENTRE RÍ OS                                             Licitación Pública N° 03/2026  OBJETO: “ADQUISICIÓN DE TRITURADOR DE RAMAS"  Decreto Nº 08/2026 - D.E.  APERTURA: Fecha – Hora: 25 de noviembre de 2026 - Hora 10:00  Lugar: Sede Comunal – Av. Corrientes S/N (Centro Cívico) - San Jaime de la Frontera, Departamento Federación, Provincia de Entre Ríos.  Recepción de Sobres: 09:45 horas (25/11/2026)  Presupuesto Oficial Estimado: PESOS VEINTISIETE MILLONES con 00/100 ($ 27.000.000,00).  Contacto: María Julieta Ornetti (Secretaria)  Telefonía móvil: 3456-461413 - E-mail: comunacoloniatuna@gmail.com | Pendiente de verificar | 2026-11-25 | 2026-11-25T09:45:00-03:00 | VIGENTE_CONFIRMADA | {"importe": "27000000.00", "moneda": "ARS"} | Pendiente de verificar | Pendiente de verificar | https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf | Pendiente de verificar |
-| ENERSA (Energía de Entre Ríos S.A.) | Entre Ríos | Pendiente de verificar | 2026-1892 |  N.º 2026-1892: Obra de iluminación “Intercambiador Av. Jorge Newbery”, de Paraná.  Presentación de ofertas hasta el 16 de noviembre de 2026 inclusive.  Los Pliegos y documentos anexos serán públicos y estarán disponibles en todo momento en la página web de ENERSA.  Demás datos y condiciones, remitirse a: https://www.enersa.com.ar/area-proveedores/#ConcursoDeP recios  Contacto: registroproveedores@enersa.com.ar  Energía de Entre Ríos S.A. - Sede Social: Buenos Aires 87 (E3100 BQA) Paraná - Entre Ríos Inscripción: Reg. Pco. Com. - DIPJ E. R. Nro. 1858 Secc. Legajo Social  Rubén D. Clivio, Coordinador de Compras ENERSA. | Pendiente de verificar | Pendiente de verificar | 2026-11-16 | VIGENTE_CONFIRMADA | Pendiente de verificar | Pendiente de verificar | Pendiente de verificar | https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf | Pendiente de verificar |
 | Municipalidad de Gualeguay | Entre Ríos | Gualeguay | 17/2026 | Licitacion Publica Nro 17-2026 - Alquiler de sonido, pantalla e iluminacion Corso 2027 27.10.26 09:48:48 679.81 KB | Pendiente de verificar | 2026-11-16T10:00:00-03:00 | 2026-11-16T09:30:00-03:00 | VIGENTE_CONFIRMADA | Pendiente de verificar | Pendiente de verificar | PRESENCIAL | https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/02-11-26.pdf | Pendiente de verificar |
 | Municipalidad de Gualeguaychú | Entre Ríos | Gualeguaychú | 25/2026 | LICITACIÓN PÚBLICA Nº 25/2026 SUBSECRETARÍA DE OBRAS PÚBLICAS ADQUISICIÓN de SESENTA (60) TONELADAS de CEMENTO ASFÁLTICO del TIPO CA30, destinados a los trabajos de pavimentación de mantenimiento de calles por parte de la Subsecretaría de Obras Públicas... pdf | Pendiente de verificar | 2026-11-16T11:00:00-03:00 | 2026-11-16T10:00:00-03:00 | VIGENTE_CONFIRMADA | Pendiente de verificar | Pendiente de verificar | Pendiente de verificar | https://datosabiertos.gualeguaychu.gov.ar/dataset/licitacion-publica-n-25-2026 | Pendiente de verificar |
 | ASSA | Santa Fe | Rosario | 1729 | ADQUISICION DE CAJAS Y BASES PARA CONEXIONES DOMICILIARIAS PARA AGUAS SANTAFESINAS S.A. | Pendiente de verificar | 2026-11-16T10:00:00-03:00 | 2026-11-16T10:00:00-03:00 | VIGENTE_CONFIRMADA | Pendiente de verificar | Pendiente de verificar | Pendiente de verificar | https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/e5f2051e251a46adbc356bc8a342145b | Pendiente de verificar |
@@ -35,19 +34,19 @@ Fecha: 2026-11-15T08:40:14.844102-03:00. Total: 28. Sin recortes por rubro, mont
 
 ## Fuentes que requieren revisión manual
 
+- [Municipalidad de Rosario](https://www.rosario.gob.ar/inicio/compras-y-licitaciones): PARCIAL
 - [Gobierno de Santa Fe](https://compras.santafe.gob.ar/): BLOQUEADA
 - [EPE](https://www.epe.santafe.gov.ar/app2/aperturas): BLOQUEADA
 - [UNR](https://compras.unr.edu.ar/): BLOQUEADA
 - [Poder Judicial de Santa Fe](https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/): BLOQUEADA
 - [Aeropuerto Internacional Rosario](https://aeropuertorosario.com/institucional/licitaciones/): TIEMPO_FUENTE
-- [Municipalidad de Casilda](https://www.casilda.gob.ar/web/licitaciones-casilda/): BLOQUEADA
 - [Municipalidad de Carcarañá](https://xn--carcaraa-j3a.gob.ar/): TIEMPO_FUENTE
 - [Municipalidad de Cañada de Gómez](https://cdg.gob.ar/transparencia/licitaciones-y-concursos/): BLOQUEADA
 - [Municipalidad de Armstrong](https://armstrong.gov.ar/index.php/transparencia): TIEMPO_FUENTE
 - [Municipalidad de Las Parejas](https://lasparejas.gov.ar/): PENDIENTE
 - [Municipalidad de Funes](https://funes.gob.ar/): PARCIAL
 - [Municipalidad de Roldán](https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/): TIEMPO_FUENTE
-- [Municipalidad de Pérez](https://perez.opendata.junar.com/home/): TIEMPO_FUENTE
+- [Municipalidad de Pérez](https://perez.opendata.junar.com/home/): PENDIENTE
 - [Municipalidad de Santo Tomé](https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia): PENDIENTE
 - [Municipalidad de Santa Fe](https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/): BLOQUEADA
 - [Municipalidad de Santa Fe](https://transparencia.santafeciudad.gov.ar/contrataciones-obra/): BLOQUEADA
@@ -58,14 +57,14 @@ Fecha: 2026-11-15T08:40:14.844102-03:00. Total: 28. Sin recortes por rubro, mont
 - [Municipalidad de Colón](https://colon.gov.ar/compras-contratos-suministros/licitaciones/): PENDIENTE
 - [Municipalidad de Gualeguaychú](https://w3.gualeguaychu.gov.ar/tramites/compras-y-licitaciones/acceso-a-licitaciones-p%C3%BAblicas): BLOQUEADA
 - [Municipalidad de Crespo](https://www.crespo.gob.ar/category/licitacion-publica/): PARCIAL
-- [Municipalidad de Federación](https://www.federacion.gob.ar/licitaciones): BLOQUEADA
+- [Municipalidad de Federación](https://www.federacion.gob.ar/licitaciones): PARCIAL
 - [Municipalidad de Villaguay](https://villaguay.gob.ar/boletindigital/): PENDIENTE
 - [Municipalidad de Rosario del Tala](https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas): PARCIAL
 - [Municipalidad de San Nicolás](https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos): PARCIAL
 - [Municipalidad de San Pedro](https://sanpedro.net.ar/portal.php): PENDIENTE
 - [Municipalidad de Ramallo](https://ramallo.gob.ar/boletines): TIEMPO_FUENTE
 - [Municipalidad de Pergamino](https://compras.pergamino.gob.ar/): PENDIENTE
-- [Municipalidad de Alvear](https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones): PARCIAL
+- [Municipalidad de Alvear](https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones): TIEMPO_FUENTE
 - [Municipalidad de San Lorenzo](https://sanlorenzo.gob.ar/licitaciones/): PENDIENTE
 - [IAFAS](https://www.iafas.gov.ar/proveedores/licitaciones/): PARCIAL
 - [Universidad Nacional de Entre Ríos (UNER)](https://compras.uner.edu.ar/): BLOQUEADA
@@ -75,6 +74,7 @@ Fecha: 2026-11-15T08:40:14.844102-03:00. Total: 28. Sin recortes por rubro, mont
 - [Gobierno de Timbúes](https://www.timbues.gob.ar/index.php?pagina=lista&sec=210): TIEMPO_FUENTE
 - [Municipalidad de Villa Elisa](https://villaelisa.gov.ar/transparencia/): PARCIAL
 - [Municipalidad de Junín](https://www.junin.gob.ar/servicio/licitaciones-y-concursos): TIEMPO_FUENTE
+- [Universidad Nacional de Rosario](https://unr.edu.ar/obras-publicas/): TIEMPO_FUENTE
 - [Municipalidad de Viale](https://viale.gob.ar/pliegos/): TIEMPO_FUENTE
 - [Municipio de Oro Verde](https://oroverde.gob.ar/portal/secciones/licitaciones/): TIEMPO_FUENTE
 - [Municipalidad de Seguí](https://www.segui.gob.ar/sitio/?cat=26): PARCIAL
@@ -86,6 +86,8 @@ Fecha: 2026-11-15T08:40:14.844102-03:00. Total: 28. Sin recortes por rubro, mont
 - [Ministerio Público de Buenos Aires](https://www.mpba.gov.ar/licitaciones): TIEMPO_FUENTE
 - [Municipalidad de Santa Ana](https://www.santaana.gob.ar/home/licitaciones/): PARCIAL
 - [Municipalidad de Ceres](https://ceres.gob.ar/compras/): PARCIAL
+- [Comuna de María Teresa](https://mariateresa.gob.ar/): TIEMPO_FUENTE
 - [Municipalidad de Funes](https://funes.gob.ar/boletin_oficial): PARCIAL
 - [Municipalidad de Arrecifes](https://arrecifes.gob.ar/informacion-publica/boletin-oficial/): PENDIENTE
+- [Municipalidad de Sastre y Ortiz](https://sastreciudad.gob.ar/intendencia/): TIEMPO_FUENTE
 - [Municipalidad de General Galarza](https://galarza.gov.ar/autoridades/): PENDIENTE

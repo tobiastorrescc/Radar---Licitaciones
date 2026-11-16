@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-15T08:40:14.844102-03:00",
+  "fecha": "2026-11-16T09:08:25.070973-03:00",
   "pendientes": [
     {
       "id": "1ba6bd2bc39cc28483653314a727161043e2c64188f9917dac86ddd55840baa2",
@@ -20,15 +20,6 @@
       "documentos": []
     },
     {
-      "id": "45b00b72769c29b0430ac0f74292ad491d5e8708b8d83b6e5276720b240996cc",
-      "organismo": "EPE",
-      "numero_procedimiento": "7060002934",
-      "objeto": "Adquisición de empalmes y terminales con destino a mantenimiento y obras menores – Plan 2027",
-      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
-      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
-      "documentos": []
-    },
-    {
       "id": "c10485b5a7aacb32220df379280e99072c359d0fc16c8ea31850edba4eb83d2d",
       "organismo": "EPE",
       "numero_procedimiento": "7060002923",
@@ -36,22 +27,6 @@
       "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
       "documentos": []
-    },
-    {
-      "id": "144746a43f4d9e30a1dcccedafbe550d25711925abc28198a970defc5ec9dfe6",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "58/2026",
-      "objeto": "Provisión de Iluminarias LED para Obras por administración de Alumbrado Público - Iluminación en Barrios y Avenida - 2026 - Secretaría de Ambiente y Espacio Público",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38744",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": [
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: lic_alumbradoexpte23340-26.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38744/documentos/102985"
-        }
-      ]
     },
     {
       "id": "db0614da98180a3046963a7d94aa32e629b63c53dbaf534e34ecc8f379f3cf25",
@@ -95,15 +70,6 @@
       "organismo": "EPE",
       "numero_procedimiento": "7060002932",
       "objeto": "REMODELACIÓN LAMT 13,2 KV ESTEBAN RAMS - CAMPO GARAY - DEPARTAMENTO 9 DE JULIO - LEY FER 13.414",
-      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
-      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
-      "documentos": []
-    },
-    {
-      "id": "24bfd038dafed24669513d1a16906cc57e473c91336f78fdd63430befe467d59",
-      "organismo": "EPE",
-      "numero_procedimiento": "7060002921",
-      "objeto": "Remodelación de L.A.B.T. en la localidad de Aarón Castellanos - Departamento General López - Ley 13.414 FER",
       "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
       "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
       "documentos": []
@@ -193,15 +159,6 @@
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/13-11-26.pdf"
         }
       ]
-    },
-    {
-      "id": "b867cfca5588ecfe3dfd95e85a174954e3eb2d692110cd71d6b4c2a384af15c5",
-      "organismo": "EPE",
-      "numero_procedimiento": "7060002930",
-      "objeto": "Adquisición de Postes PRFV con destino a Mantenimiento",
-      "url": "https://www.epe.santafe.gov.ar/app2/aperturas",
-      "motivo": "SIN_DOCUMENTO_IDENTIFICADO",
-      "documentos": []
     },
     {
       "id": "69bd049f38ccb2847f908671ce1cd537925ffe7081421267b550c8b18798497b",
@@ -301,13 +258,21 @@
       "id": "5e7e2aa27ff31c297e320468c2cb59daf32b52fd1cadf65433a70927d16798e4",
       "organismo": "Municipalidad de Concepción del Uruguay",
       "numero_procedimiento": "47/2026",
-      "objeto": "-- -- --\n                                MUNICIPALIDAD DE CONCEPCION DEL URUGUAY\n                                           Licitación Pública Nº 47/2026\n OBJETO: \"Solado Central Plaza Ramírez”, en un todo de acuerdo a los Pliegos de Bases, Condiciones\nParticulares y demás documentación.\n FECHA APERTURA: 03 de diciembre de 2026 Hora: 10:00.\n RECEPCION DE PROPUESTAS: Departamento Suministros - Municipalidad de Concepción del Uruguay - San\nMartín y Moreno - Concepción del Uruguay - Entre Ríos.\n LUGAR APERTURA: Departamento Suministros - Municipalidad de Concepción del Uruguay - San Martín y\nMoreno - Concepción del Uruguay - Entre Ríos.\n PRESUPUESTO OFICIAL: $ 89.030.839,03.\n PLIEGO CONDICIONES: $ 89.000,00. A la venta Tesorería Municipal hasta 24 horas hábiles anteriores al Acto\nde Apertura.\n GARANTIA OFERTA: 1% del presupuesto oficial.\n FIANZA CONTRATO: 5% del monto total contratado.\n En caso que la fecha de apertura resultare feriado o no laborable, la misma se efectuará el día hábil siguiente.\n Dr. Ezequiel Valdunciel, Secretaría de Coordinación General y Jefatura de Gabinete, noviembre de 2026.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/12-11-26.pdf",
+      "objeto": "Solado Central Plaza Ramírez",
+      "url": "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": [
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/12-11-26.pdf"
+        },
+        {
+          "titulo": "Edicto",
+          "url": "https://www.cdeluruguay.gob.ar/images/gobierno/GobiernoAbierto/2026/47/edicto.pdf"
+        },
+        {
+          "titulo": "Pliegos y documentación técnica",
+          "url": "https://www.cdeluruguay.gob.ar/images/gobierno/GobiernoAbierto/2026/47/pliegos.pdf"
         }
       ]
     },
@@ -365,13 +330,21 @@
       "id": "4815390bd0f663e939505493c0bb2ef492db693b2deff29b4f8f85d1b81c74b8",
       "organismo": "Municipalidad de Concepción del Uruguay",
       "numero_procedimiento": "43/2026",
-      "objeto": "-- -- --\n                                MUNICIPALIDAD DE CONCEPCION DEL URUGUAY\n                                           Licitación Pública Nº 43/2026\n OBJETO: “Pavimento Rígido – 03 (tres) Cuadras Calle 12 del Oeste Norte Bis - Barrio Malvinas Argentinas”, en\nun todo de acuerdo a los Pliegos de Bases, Condiciones Particulares y demás documentación.\n FECHA APERTURA: 27 de noviembre de 2026 Hora: 10:00\n RECEPCION DE PROPUESTAS: Departamento Suministros - Municipalidad de Concepción del Uruguay - San\nMartín y Moreno - Concepción del Uruguay - Entre Ríos.\n LUGAR APERTURA: Departamento Suministros - Municipalidad de Concepción del Uruguay - San Martín y\nMoreno - Concepción del Uruguay - Entre Ríos.\n PRESUPUESTO OFICIAL: $ 78.808.505,15.\n PLIEGO CONDICIONES: $ 70.000,00. A la venta Tesorería Municipal hasta 24 horas hábiles anteriores al Acto\nde Apertura.\n GARANTIA OFERTA: 1% del presupuesto oficial.\n FIANZA CONTRATO: 5% del monto total contratado.\n En caso que la fecha de apertura resultare feriado o no laborable, la misma se efectuará el día hábil siguiente.\n Dr. Ezequiel Valdunciel, Secretaría de Coordinación General y Jefatura de Gabinete, noviembre de 2026.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
+      "objeto": "Pavimento Rígido - 03 (tres) Cuadras Calle 12 del Oeste Norte Bis - Barrio Malvinas Argentinas",
+      "url": "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": [
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
+        },
+        {
+          "titulo": "Edicto",
+          "url": "https://www.cdeluruguay.gob.ar/images/gobierno/GobiernoAbierto/2026/43/edicto.pdf"
+        },
+        {
+          "titulo": "Pliegos y documentación técnica",
+          "url": "https://www.cdeluruguay.gob.ar/images/gobierno/GobiernoAbierto/2026/43/pliegos.pdf"
         }
       ]
     },
@@ -379,13 +352,21 @@
       "id": "2792ae1efe7a33d34b21d87f07d7942ed116f5795a88008c69db2b6370cec96e",
       "organismo": "Municipalidad de Concepción del Uruguay",
       "numero_procedimiento": "46/2026",
-      "objeto": "URUGUAY\n\n                                MUNICIPALIDAD DE CONCEPCION DEL URUGUAY\n                                           Licitación Pública Nº 46/2026\n OBJETO: ”Adquisición de Lajas de Pórfido Patagónico”, en un todo de acuerdo a los Pliegos de Bases,\nCondiciones Particulares y demás documentación.\n FECHA APERTURA: 02 de diciembre de 2026 Hora: 10:00.\n RECEPCION DE PROPUESTAS: Departamento Suministros - Municipalidad de Concepción del Uruguay - San\nMartín y Moreno - Concepción del Uruguay - Entre Ríos.\n LUGAR APERTURA: Departamento Suministros - Municipalidad de Concepción del Uruguay - San Martín y\nMoreno - Concepción del Uruguay - Entre Ríos.\n PRESUPUESTO OFICIAL: $ 63.972.639,50.\n PLIEGO CONDICIONES: $ 64.000,00. A la venta Tesorería Municipal hasta 24 horas hábiles anteriores al Acto\nde Apertura.\n GARANTIA OFERTA: 1% del presupuesto oficial.\n FIANZA CONTRATO: 5% del monto total contratado.\n En caso que la fecha de apertura resultare feriado o no laborable, la misma se efectuará el día hábil siguiente.\n Dr. Ezequiel Valdunciel, Secretaría de Coordinación General y Jefatura de Gabinete, noviembre de 2026.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/12-11-26.pdf",
+      "objeto": "Adquisición de Lajas de Pórfido Patagónico",
+      "url": "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": [
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/12-11-26.pdf"
+        },
+        {
+          "titulo": "Edicto",
+          "url": "https://www.cdeluruguay.gob.ar/images/gobierno/GobiernoAbierto/2026/46/edicto.pdf"
+        },
+        {
+          "titulo": "Pliegos y documentación técnica",
+          "url": "https://www.cdeluruguay.gob.ar/images/gobierno/GobiernoAbierto/2026/46/pliegos.pdf"
         }
       ]
     },
@@ -666,46 +647,6 @@
       ]
     },
     {
-      "id": "c7bb28635c2e037bc07b922935a2ffc1eeda33dc3cd56e4989b634baa42fb9ef",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "48/2026",
-      "objeto": "Servicio de Limpieza para la Sec. de Desarrollo Económico y Empleo",
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38707",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": [
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: planillacotizacion.licpri48.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38707/documentos/102960"
-        },
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: pliegotecnico.licpri48.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38707/documentos/102959"
-        },
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: pliego.licpri48.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38707/documentos/102958"
-        },
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: constanciadevisita.lic48.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38707/documentos/102918"
-        },
-        {
-          "estado": "ENLACE_PUBLICADO_SIN_DESCARGA",
-          "rotulo_oficial": "ver pliego adjunto apto para cotizar",
-          "titulo": "ver pliego adjunto apto para cotizar: antecedentes.lic48.pdf",
-          "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38707/documentos/102917"
-        }
-      ]
-    },
-    {
       "id": "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59",
       "organismo": "Comuna de El Palenque",
       "numero_procedimiento": "8/2026",
@@ -776,6 +717,28 @@
           "rotulo_oficial": "ver pliego adjunto apto para cotizar",
           "titulo": "ver pliego adjunto apto para cotizar: pliego1.pdf",
           "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38723/documentos/102949"
+        }
+      ]
+    },
+    {
+      "id": "49aa99c0a4d72566136b074593e1fc1cf535c77c415139b4202f540731743b8f",
+      "organismo": "Municipalidad de La Paz",
+      "numero_procedimiento": "42/2026",
+      "objeto": "ADQUISICIÓN DE MATERIALES PARA REALIZAR TRABAJOS EN EL OBRADOR MUNICIPAL.",
+      "url": "https://haciendalapaz.gob.ar/archivos/20261116080809-f_pliego.pdf",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "VER PLIEGO",
+          "url": "https://haciendalapaz.gob.ar/archivos/20261116080809-f_pliego.pdf"
+        },
+        {
+          "titulo": "PLANILLA COTIZACIÓN",
+          "url": "https://haciendalapaz.gob.ar/archivos/20261116080809-f_planilla.docx"
+        },
+        {
+          "titulo": "DJ CORREO ELECTRÓNICO",
+          "url": "https://haciendalapaz.gob.ar/archivos/20261116080809-f_dj.docx"
         }
       ]
     },
@@ -1000,55 +963,6 @@
           "url": "https://aeropuertorosario.com/wp-content/uploads/2026/11/Pliego-de-Bases-y-Condiciones-Tecnicas.pdf"
         }
       ]
-    },
-    {
-      "id": "6effb18260d310a6f83acf8d851c8d38ae613e7e5717b6fb8592d83fd66e2416",
-      "organismo": "ENERSA (Energía de Entre Ríos S.A.)",
-      "numero_procedimiento": "2026-1892",
-      "objeto": " N.º 2026-1892: Obra de iluminación “Intercambiador Av. Jorge Newbery”, de Paraná.\n Presentación de ofertas hasta el 16 de noviembre de 2026 inclusive.\n Los Pliegos y documentos anexos serán públicos y estarán disponibles en todo momento en la página web de\nENERSA.\n Demás datos y condiciones, remitirse a: https://www.enersa.com.ar/area-proveedores/#ConcursoDeP recios\n Contacto: registroproveedores@enersa.com.ar\n Energía de Entre Ríos S.A. - Sede Social: Buenos Aires 87 (E3100 BQA) Paraná - Entre Ríos Inscripción: Reg.\nPco. Com. - DIPJ E. R. Nro. 1858 Secc. Legajo Social\n Rubén D. Clivio, Coordinador de Compras ENERSA.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": [
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf"
-        }
-      ]
-    },
-    {
-      "id": "8c36de4c4c1763fef9dbf793ce6d87d266d37f2e76dfc28cd0c10351fe91f3dc",
-      "organismo": "Municipalidad de GDOR. MACIÁ",
-      "numero_procedimiento": "6/2026",
-      "objeto": "TALA\n\n                                           MUNICIPIO DE GDOR. MACIÁ\n                                           Licitación Pública Nº 06/2026\n  OBJETO: La necesidad de otorgar en Concesión el servicio de Cantina y Buffet del Camping Municipal del\nMunicipio de Gdor. Maciá, ubicado en dependencia del Polideportivo Municipal sito sobre Ruta Nº 30, según\nPliego de Bases y Condiciones respectivo de la Licitación Pública Nº 06/2026 convocada a través de Decreto\nMunicipal Nº 119/2026.-\n  APERTURA DE PROPUESTAS: Lunes 16 de Noviembre de 2026. En caso de resultar feriado o inhábil, se\ntrasladará al siguiente día hábil.-\n  HORA: 10:00 hs.-\n  LUGAR: Dependencia Municipal de Gdor. Maciá, sita en calle Raúl Ricardo Alfonsín Nº 175 – Tel. Fax (03445)\n461240 - (03445) 461363.-\n  E-Mail: secretariamunicipiomacia@gmail.com – compras@macia.gob.ar\n   VALOR DEL PLIEGO: El Pliego de Bases y Condiciones no tendrá costo alguno y se pondrá a disposición de\nquién lo solicite vía email o presencial.-\n  Gdor. Maciá, 02 de Noviembre de 2026.- Ariel Alberto Müller – Pte. Municipal Gdor. Maciá.-",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": [
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
-        }
-      ]
-    },
-    {
-      "id": "55f141a23f0a535f6961d9b37fa75328250cce0c90350d8161e6a978f3394594",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "50941/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38774",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
     },
     {
       "id": "62e8b2c5283c36e6eae2065a80892d943401c8bd412f11a065a3a21176aeee2a",
@@ -1650,6 +1564,20 @@
       "documentos": []
     },
     {
+      "id": "d2b737b5e618487ba2880b7aeba6773eec1ff2c4de894f8a831a1d9712b1aca4",
+      "organismo": "Vialidad Entre Ríos",
+      "numero_procedimiento": "29",
+      "objeto": "ADQUISICION DE INSUMOS DE ELECTRICIDAD, ELECTRONICA Y FERRETERIA PARA STOCK",
+      "url": "https://aplicaciones.vialidadentrerios.gob.ar/api/contrataciones-licitaciones/535/adjunto",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "Pliego oficial",
+          "url": "https://aplicaciones.vialidadentrerios.gob.ar/api/contrataciones-licitaciones/535/adjunto"
+        }
+      ]
+    },
+    {
       "id": "9d4c4b1dc8d8c46a5c305f2f3385368b28855a6dc0e1e295f0b1bd13dc1df784",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "81591/2026",
@@ -2166,7 +2094,7 @@
       "id": "e7414e21b95f006aa752afd7d9d3a001fce1651bca564814f8f653a8f20feff3",
       "organismo": "Concejo Municipal de Rosario",
       "numero_procedimiento": "16/2026",
-      "objeto": "Compra ágil 16/2026 Contratación del servicio de \"Verificación anual de disyuntores, medición de puesta a tierra y continuidad de las masas\" en los edificios del Concejo Municipal de Rosario. Tipo: Compra Ágil Apertura: 25/11/2026 08:00:00 Para Apertura Ver detalle",
+      "objeto": "Compra ágil 16/2026 Contratación del servicio de \"Verificación anual de disyuntores, medición de puesta a tierra y continuidad de las masas\" en los edificios del Concejo Municipal de Rosario. Tipo: Compra Ágil Apertura: 25/11/2026 06:00:00 Para Apertura Ver detalle",
       "url": "https://compras.concejorosario.gov.ar/compras/3281",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
