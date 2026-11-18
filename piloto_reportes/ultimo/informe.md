@@ -1,21 +1,21 @@
 # Informe diario del piloto
 
-Fecha: 2026-11-17T08:53:06.862067-03:00. Estado: **COMPLETA_CON_INCIDENCIAS**.
+Fecha: 2026-11-18T09:02:47.408939-03:00. Estado: **COMPLETA_CON_INCIDENCIAS**.
 
 No hay novedades confirmadas no significa ausencia de licitaciones si hay incidencias. Detecciones sin fecha no son publicaciones nuevas comprobadas.
 
-Nuevas vigentes con publicación comprobada: 0. Primeras detecciones abiertas con publicación pendiente: 0. Cambios abiertos: 7. El archivo de auditoría conserva 121 eventos de toda vigencia, incluidas 2 recuperaciones.
+Nuevas vigentes con publicación comprobada: 0. Primeras detecciones abiertas con publicación pendiente: 0. Cambios abiertos: 0. El archivo de auditoría conserva 98 eventos de toda vigencia, incluidas 2 recuperaciones.
 
 [Recepción vigente comprobada](informe_comercial.md) · [Presentación pendiente](presentacion_pendiente.json) · [CSV completo de auditoría](oportunidades.csv) · [JSON completo](oportunidades.json). Sin límite de cantidad.
 
 ## Descubrimiento diario en las tres jurisdicciones
 
-Total de publicaciones genuinamente nuevas confirmadas del día: **1**.
+Total de publicaciones genuinamente nuevas confirmadas del día: **0**.
 
 | Provincia | Nuevas confirmadas | Abiertas observadas | Abiertas sólo por historial | Vigencia pendiente | Pago rápido en abiertas | Omitidas / comprobadas en muestra | Fuentes con incidencias |
 |---|---:|---:|---:|---:|---:|---|---:|
-| Santa Fe | 0 | 85 | 4 | 845 | 0 | 2 omitidas, 1 incompletas / 12 | 27 |
-| Entre Ríos | 1 | 94 | 6 | 2170 | 2 | 0 omitidas, 0 incompletas / 6 | 20 |
+| Santa Fe | 0 | 90 | 4 | 848 | 0 | 2 omitidas, 1 incompletas / 12 | 26 |
+| Entre Ríos | 0 | 84 | 4 | 2171 | 2 | 0 omitidas, 0 incompletas / 6 | 21 |
 | Buenos Aires | 0 | 4 | 0 | 222 | 0 | 0 omitidas, 0 incompletas / 4 | 8 |
 
 Conjunto de Santa Fe, Entre Ríos y Buenos Aires dentro del alcance de Rosario; condicionado al volumen real. Sin límite de resultados.
@@ -25,11 +25,11 @@ Promedio de siete días: 0.42857142857142855. Días disponibles: 7/7. La muestra
 
 [Métricas completas](metricas_territoriales.json) · [Comparación de avisos y omisiones](auditoria_manual.json)
 
-[Auditoría, abiertas, próximas a vencer y catálogo íntegro](https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/44076502112) (artefacto radar-controlado).
+[Auditoría, abiertas, próximas a vencer y catálogo íntegro](https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/44298538841) (artefacto radar-controlado).
 
 ## Convocatorias recuperadas que siguen abiertas (no son publicaciones nuevas comprobadas del día)
 
-# Oportunidades detectadas — 2026-11-17T08:53:06.862067-03:00
+# Oportunidades detectadas — 2026-11-18T09:02:47.408939-03:00
 
 Primera detección no significa publicación reciente. Se incluyen todas las novedades válidas, también vencidas y de vigencia desconocida. Orden: anticipos; contado/contra entrega; plazos comprobados de 5, 10, 15, 30, 60 y más días; señales de desiertas, segundos llamados y reaperturas; presupuesto por moneda; límite de presentación o apertura referencial. Sin filtros comerciales ni límite de cantidad. Pendiente de verificar indica investigación documental pendiente; no es una evaluación de rentabilidad.
 
@@ -41,7 +41,7 @@ Primera detección no significa publicación reciente. Se incluyen todas las nov
 
 ## Nuevas confirmadas
 
-# Oportunidades detectadas — 2026-11-17T08:53:06.862067-03:00
+# Oportunidades detectadas — 2026-11-18T09:02:47.408939-03:00
 
 Primera detección no significa publicación reciente. Se incluyen todas las novedades válidas, también vencidas y de vigencia desconocida. Orden: anticipos; contado/contra entrega; plazos comprobados de 5, 10, 15, 30, 60 y más días; señales de desiertas, segundos llamados y reaperturas; presupuesto por moneda; límite de presentación o apertura referencial. Sin filtros comerciales ni límite de cantidad. Pendiente de verificar indica investigación documental pendiente; no es una evaluación de rentabilidad.
 
@@ -53,7 +53,7 @@ Primera detección no significa publicación reciente. Se incluyen todas las nov
 
 ## Primera detección, fecha pendiente o sin ventana horaria suficiente
 
-# Oportunidades detectadas — 2026-11-17T08:53:06.862067-03:00
+# Oportunidades detectadas — 2026-11-18T09:02:47.408939-03:00
 
 Primera detección no significa publicación reciente. Se incluyen todas las novedades válidas, también vencidas y de vigencia desconocida. Orden: anticipos; contado/contra entrega; plazos comprobados de 5, 10, 15, 30, 60 y más días; señales de desiertas, segundos llamados y reaperturas; presupuesto por moneda; límite de presentación o apertura referencial. Sin filtros comerciales ni límite de cantidad. Pendiente de verificar indica investigación documental pendiente; no es una evaluación de rentabilidad.
 
@@ -65,19 +65,12 @@ Primera detección no significa publicación reciente. Se incluyen todas las nov
 
 ## Modificaciones, circulares y datos completados
 
-# Oportunidades detectadas — 2026-11-17T08:53:06.862067-03:00
+# Oportunidades detectadas — 2026-11-18T09:02:47.408939-03:00
 
 Primera detección no significa publicación reciente. Se incluyen todas las novedades válidas, también vencidas y de vigencia desconocida. Orden: anticipos; contado/contra entrega; plazos comprobados de 5, 10, 15, 30, 60 y más días; señales de desiertas, segundos llamados y reaperturas; presupuesto por moneda; límite de presentación o apertura referencial. Sin filtros comerciales ni límite de cantidad. Pendiente de verificar indica investigación documental pendiente; no es una evaluación de rentabilidad.
 
 | Organismo / procedimiento | Localidad / provincia | Objeto | Presupuesto oficial | Vigencia / apertura | Fecha de publicación | Límite de presentación | Presentación | Pliego | Condiciones de pago | Documento de respaldo | Señales | Publicación oficial | Novedad |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| ENERSA (Energía de Entre Ríos S.A.) / 2026-1958 | desconocida / Entre Ríos |  N.º 2026-1958: Conectores para líneas preensambladas (Plan de Compras 2027).  Presentación de ofertas hasta el 24 de noviembre de 2026 inclusive.  | desconocido | ABIERTA / desconocida | desconocida | 2026-11-24 | No informada | No identificado | Pendiente de verificar | No comprobado | — | [Oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf) | MODIFICADO |
-| ENERSA (Energía de Entre Ríos S.A.) / 2026-1961 | desconocida / Entre Ríos |  N.º 2026-1961: Morsetería para líneas aéreas (Plan de Compras 2027).  Presentación de ofertas hasta el 24 de noviembre de 2026 inclusive.  | desconocido | ABIERTA / desconocida | desconocida | 2026-11-24 | No informada | No identificado | Pendiente de verificar | No comprobado | — | [Oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf) | MODIFICADO |
-| ENERSA (Energía de Entre Ríos S.A.) / 2026-1975 | desconocida / Entre Ríos |  N.º 2026-1975: Crucetas y soportes de acero (Plan de Compras 2027).  Presentación de ofertas hasta el 26 de noviembre de 2026 inclusive.  | desconocido | ABIERTA / desconocida | desconocida | 2026-11-26 | No informada | No identificado | Pendiente de verificar | No comprobado | — | [Oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf) | MODIFICADO |
-| ENERSA (Energía de Entre Ríos S.A.) / 2026-1979 | desconocida / Entre Ríos |  N.º 2026-1979: Transformadores rurales (Plan de Compras 2027).  Presentación de ofertas hasta el 26 de noviembre de 2026 inclusive.  | desconocido | ABIERTA / desconocida | desconocida | 2026-11-26 | No informada | No identificado | Pendiente de verificar | No comprobado | — | [Oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf) | MODIFICADO |
-| ENERSA (Energía de Entre Ríos S.A.) / 2026-1989 | desconocida / Entre Ríos |  N.º 2026-1989: Seccionadores tripolares bajo carga (Plan de Compras 2027).  Presentación de ofertas hasta el 26 de noviembre de 2026 inclusive.  | desconocido | ABIERTA / desconocida | desconocida | 2026-11-26 | No informada | No identificado | Pendiente de verificar | No comprobado | — | [Oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf) | MODIFICADO |
-| ENERSA (Energía de Entre Ríos S.A.) / 2026-1991 | desconocida / Entre Ríos |  N.º 2026-1991: Cables aislados y subterráneos para 1, 1 kV (Plan de Compras 2027).  Presentación de ofertas hasta el 26 de noviembre de 2026 inclusive.  Los Pliegos y documentos anexos serán públicos y estarán disponibles en todo momento en la página web de ENERSA.  Demás datos y condiciones, remitirse a: https://www.enersa.com.ar/area-proveedores/#ConcursoDeP recios  Contacto: registroproveedores@enersa.com.ar  Energía de Entre Ríos S.A. - Sede Social: Buenos Aires 87 (E3100 BQA) Paraná - Entre Ríos Inscripción: Reg. Pco. Com. - DIPJ E.R. Nro. 1858 Secc. Legajo Social  Rubén D. Clivio, Coordinador de Compras ENERSA. | desconocido | ABIERTA / desconocida | desconocida | 2026-11-26 | No informada | No identificado | Pendiente de verificar | No comprobado | — | [Oficial](https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf) | MODIFICADO |
-| Ente Administrador Puerto Rosario (ENAPRO) / 3/2026 | Rosario / Santa Fe | CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Apertura de ofertas: 26 de noviembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por | desconocido | ABIERTA / 2026-11-26T11:00:00-03:00 | 2026-10-09 | 2026-11-26T10:00:00-03:00 | No informada | No identificado | Pendiente de verificar | No comprobado | — | [Oficial](https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/) | MODIFICADO |
 
 ## Evidencia de las condiciones de pago
 

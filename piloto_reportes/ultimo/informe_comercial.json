@@ -1,6 +1,6 @@
 {
-  "fecha": "2026-11-17T08:53:06.862067-03:00",
-  "total": 23,
+  "fecha": "2026-11-18T09:02:47.408939-03:00",
+  "total": 21,
   "oportunidades": [
     {
       "detalle_completo": true,
@@ -117,7 +117,7 @@
       ],
       "id": "c6a6e4f1bb9a3fa0588268a67d53ffffe4965e0b69290a8da326f5b3462a3683",
       "primera_deteccion": "2026-11-12T08:58:51.069853-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "c6a6e4f1bb9a3fa0588268a67d53ffffe4965e0b69290a8da326f5b3462a3683"
@@ -149,158 +149,6 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-20T16:00:00-03:00"
-    },
-    {
-      "campos_oficiales": {
-        "fecha_hora_apertura": "",
-        "fecha_hora_cierre": "2026-11-17 14:00:00",
-        "id": 716,
-        "name": "056/2026",
-        "pliego_y_decreto_id": "6425",
-        "presupuesto_oficial": 51000000.0,
-        "state": "para_apertura",
-        "title": "Provisión de mallas para la ejecución de la obra de pavimento en Avenida Belgrano entre calle Mandisovi y Rocamora",
-        "type": "privada"
-      },
-      "detalle_completo": true,
-      "documentos": [
-        {
-          "consulta_post": {
-            "json": {
-              "atta_id": "6425",
-              "file_name": "pliego_y_decreto",
-              "licitacion_id": 716
-            },
-            "url": "https://licitaciones.chajari.gob.ar/return_file"
-          },
-          "titulo": "Pliego y decreto — descarga pública desde el procedimiento",
-          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716"
-        }
-      ],
-      "enlace_pliego": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716",
-      "evento_publicado": null,
-      "evidencia_url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716",
-      "evidencias_campos": {
-        "fecha_limite_presentacion": {
-          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716",
-          "texto": "2026-11-17 11:00"
-        },
-        "numero_procedimiento": {
-          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716",
-          "texto": "licitacion privada 56/2026"
-        },
-        "presupuesto": {
-          "consulta_url": "https://licitaciones.chajari.gob.ar/licitaciones/para_apertura/0",
-          "metodo": "POST",
-          "texto": "presupuesto_oficial: 51000000.0",
-          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716"
-        },
-        "tipo_procedimiento": {
-          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716",
-          "texto": "licitacion privada 56/2026"
-        }
-      },
-      "fecha_apertura": null,
-      "fecha_apertura_texto": null,
-      "fecha_limite_presentacion": "2026-11-17",
-      "fecha_limite_presentacion_texto": "2026-11-17 11:00",
-      "fecha_publicacion": null,
-      "fuente": "https://chajari.gob.ar/",
-      "hora_apertura": null,
-      "hora_limite_presentacion": "11:00",
-      "id_origen": "716",
-      "localidad": "Chajarí",
-      "modalidad_presentacion": [],
-      "numero_procedimiento": "56/2026",
-      "objeto": "Provisión de mallas para la ejecución de la obra de pavimento en Avenida Belgrano entre calle Mandisovi y Rocamora",
-      "organismo": "Municipalidad de Chajarí",
-      "presupuesto": {
-        "importe": "51000000.0",
-        "moneda": null
-      },
-      "procedimiento": "licitacion privada 56/2026",
-      "provincia": "Entre Ríos",
-      "rango_evidencia": 3,
-      "registro_estructurado": true,
-      "requiere_revalidacion": false,
-      "situacion_publicada": null,
-      "tipo_procedimiento": "licitacion privada",
-      "titulo": "Licitación privada Nº 056/2026 — Provisión de mallas para la ejecución de la obra de pavimento en Avenida Belgrano entre calle Mandisovi y Rocamora",
-      "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716",
-      "pago": {
-        "estado": "PENDIENTE",
-        "clasificacion": "NO_INFORMADO",
-        "etiqueta": "Pendiente de verificar",
-        "plazos_dias": [],
-        "hitos_inicio": [],
-        "documento_respaldo": null,
-        "documentos_respaldo": [],
-        "evidencias": [],
-        "prioritario": false,
-        "motivo": "SIN_CLAUSULA_COMPROBADA"
-      },
-      "condiciones_pago": "Pendiente de verificar",
-      "enlace_condiciones_pago": null,
-      "pago_prioritario": false,
-      "desierta": false,
-      "fracasada": false,
-      "segundo_llamado": false,
-      "reapertura": false,
-      "llamado_especial": false,
-      "procedimiento_canonico": "licitacion privada 56/2026",
-      "convocatoria": "1",
-      "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": null,
-      "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": "2026-11-17T11:00:00-03:00",
-      "fecha_referencia_vencimiento": "2026-11-17",
-      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
-      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "DESCONOCIDA",
-      "estimacion_comercial": null,
-      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
-      "campos_desconocidos": [
-        "fecha_apertura",
-        "fecha_publicacion"
-      ],
-      "id": "a8fe11f3aba927d1f4be63d56357cb7b493c89865872c59e07c24e96021823d7",
-      "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
-      "observada_esta_corrida": true,
-      "ids_historial": [
-        "a8fe11f3aba927d1f4be63d56357cb7b493c89865872c59e07c24e96021823d7"
-      ],
-      "variantes_historial": [
-        {
-          "id": "a8fe11f3aba927d1f4be63d56357cb7b493c89865872c59e07c24e96021823d7",
-          "numero_procedimiento": "56/2026",
-          "objeto": "Provisión de mallas para la ejecución de la obra de pavimento en Avenida Belgrano entre calle Mandisovi y Rocamora",
-          "fecha_apertura": null,
-          "fecha_limite_presentacion": "2026-11-17",
-          "evento_publicado": null,
-          "numero_convocatoria": null,
-          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716",
-          "documentos": [
-            {
-              "consulta_post": {
-                "json": {
-                  "atta_id": "6425",
-                  "file_name": "pliego_y_decreto",
-                  "licitacion_id": 716
-                },
-                "url": "https://licitaciones.chajari.gob.ar/return_file"
-              },
-              "titulo": "Pliego y decreto — descarga pública desde el procedimiento",
-              "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=716"
-            }
-          ]
-        }
-      ],
-      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "estado_comercial": "VIGENTE_VERIFICADA",
-      "presentacion_verificada": true,
-      "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-17T11:00:00-03:00"
     },
     {
       "detalle_completo": true,
@@ -416,7 +264,7 @@
       ],
       "id": "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4"
@@ -452,149 +300,6 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-23"
-    },
-    {
-      "aviso_oficial_sin_numero": true,
-      "campos_oficiales": {
-        "consultas tecnicas": "zonalgchuarquitectura@gmail.com",
-        "documentos": "Ver proyecto y pliego (PDF, 5,0 MB) Ver declaración jurada (PDF, 241 KB) Ver requisitos para presentar cotizaciones (PDF, 69 KB)",
-        "lugar de presentacion": "Jefatura Zonal Gualeguaychú, Aguado 61, ciudad de Gualeguaychú.",
-        "plazo de ejecucion": "45 días corridos",
-        "presupuesto oficial": "$ 40.939.804,14"
-      },
-      "detalle_completo": true,
-      "documentos": [
-        {
-          "titulo": "Ver proyecto y pliego (PDF, 5,0 MB)",
-          "url": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/pliego_emergencia_escuelas_21_y_109_gualeguaychu.pdf"
-        },
-        {
-          "titulo": "Ver declaración jurada (PDF, 241 KB)",
-          "url": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/declaracion_jurada_emergencia_escuelas_21_y_109_gualeguaychu.pdf"
-        },
-        {
-          "titulo": "Ver requisitos para presentar cotizaciones (PDF, 69 KB)",
-          "url": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/requisitos_presentacion_cotizaciones_dec_3627_17.pdf"
-        }
-      ],
-      "enlace_pliego": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/pliego_emergencia_escuelas_21_y_109_gualeguaychu.pdf",
-      "evento_publicado": null,
-      "evidencia_url": "https://www.entrerios.gov.ar/minplan/contrataciones",
-      "evidencias_campos": {
-        "fecha_limite_presentacion": {
-          "url": "https://www.entrerios.gov.ar/minplan/contrataciones",
-          "texto": "2026-11-17t10:00:00-03:00"
-        },
-        "presupuesto": {
-          "texto": "presupuesto oficial $ 40.939.804,14",
-          "url": "https://www.entrerios.gov.ar/minplan/contrataciones"
-        },
-        "tipo_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/minplan/contrataciones",
-          "texto": null
-        }
-      },
-      "fecha_apertura": null,
-      "fecha_apertura_texto": null,
-      "fecha_limite_presentacion": "2026-11-17",
-      "fecha_limite_presentacion_texto": "2026-11-17T10:00:00-03:00",
-      "fecha_publicacion": null,
-      "fuente": "https://www.entrerios.gov.ar/minplan/licitaciones",
-      "hora_apertura": null,
-      "hora_limite_presentacion": "10:00",
-      "localidad": "Costa Uruguay Norte",
-      "modalidad_presentacion": [],
-      "numero_procedimiento": null,
-      "objeto": "Nueva Instalación Eléctrica. Escuela Secundaria Nº 21 “Esteban Piacenza” y Escuela Primaria Nº 109 “Juan Zorrilla de San Martín”",
-      "organismo": "Coordinación Ministerial del MPeI",
-      "presupuesto": {
-        "importe": "40939804.14",
-        "moneda": null
-      },
-      "procedimiento": null,
-      "provincia": "Entre Ríos",
-      "rango_evidencia": 1,
-      "registro_estructurado": true,
-      "requiere_revalidacion": false,
-      "situacion_publicada": null,
-      "tipo_procedimiento": "emergencia (decreto 3627/17)",
-      "titulo": "Emergencia (Decreto 3627/17) Nueva Instalación Eléctrica. Escuela Secundaria Nº 21 “Esteban Piacenza” y Escuela Primaria Nº 109 “Juan Zorrilla de San Martín”",
-      "url": "https://www.entrerios.gov.ar/minplan/contrataciones",
-      "pago": {
-        "estado": "PENDIENTE",
-        "clasificacion": "NO_INFORMADO",
-        "etiqueta": "Pendiente de verificar",
-        "plazos_dias": [],
-        "hitos_inicio": [],
-        "documento_respaldo": null,
-        "documentos_respaldo": [],
-        "evidencias": [],
-        "prioritario": false,
-        "motivo": "SIN_CLAUSULA_COMPROBADA"
-      },
-      "condiciones_pago": "Pendiente de verificar",
-      "enlace_condiciones_pago": null,
-      "pago_prioritario": false,
-      "desierta": false,
-      "fracasada": false,
-      "segundo_llamado": false,
-      "reapertura": false,
-      "llamado_especial": false,
-      "procedimiento_canonico": null,
-      "convocatoria": "1",
-      "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": null,
-      "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": "2026-11-17T10:00:00-03:00",
-      "fecha_referencia_vencimiento": "2026-11-17",
-      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
-      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "DESCONOCIDA",
-      "estimacion_comercial": null,
-      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
-      "campos_desconocidos": [
-        "numero_procedimiento",
-        "fecha_apertura",
-        "fecha_publicacion"
-      ],
-      "id": "a219ce3932649436860c51bb3f6baabc293c5358db027f9eddbbee725d0d58d6",
-      "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
-      "observada_esta_corrida": true,
-      "ids_historial": [
-        "a219ce3932649436860c51bb3f6baabc293c5358db027f9eddbbee725d0d58d6"
-      ],
-      "variantes_historial": [
-        {
-          "id": "a219ce3932649436860c51bb3f6baabc293c5358db027f9eddbbee725d0d58d6",
-          "numero_procedimiento": null,
-          "objeto": "Nueva Instalación Eléctrica. Escuela Secundaria Nº 21 “Esteban Piacenza” y Escuela Primaria Nº 109 “Juan Zorrilla de San Martín”",
-          "fecha_apertura": null,
-          "fecha_limite_presentacion": "2026-11-17",
-          "evento_publicado": null,
-          "numero_convocatoria": null,
-          "url": "https://www.entrerios.gov.ar/minplan/contrataciones",
-          "documentos": [
-            {
-              "titulo": "Ver proyecto y pliego (PDF, 5,0 MB)",
-              "url": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/pliego_emergencia_escuelas_21_y_109_gualeguaychu.pdf"
-            },
-            {
-              "titulo": "Ver declaración jurada (PDF, 241 KB)",
-              "url": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/declaracion_jurada_emergencia_escuelas_21_y_109_gualeguaychu.pdf"
-            },
-            {
-              "titulo": "Ver requisitos para presentar cotizaciones (PDF, 69 KB)",
-              "url": "https://www.entrerios.gov.ar/minplan/lic/files/CM/emergencias-2026/requisitos_presentacion_cotizaciones_dec_3627_17.pdf"
-            }
-          ]
-        }
-      ],
-      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "estado_comercial": "VIGENTE_VERIFICADA",
-      "presentacion_verificada": true,
-      "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-17T10:00:00-03:00"
     },
     {
       "detalle_completo": true,
@@ -711,7 +416,7 @@
       ],
       "id": "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59"
@@ -863,7 +568,7 @@
       ],
       "id": "9993d4ab51a5152f5cb866fb2602e3a93fad53f53096f18e166ca7746911450d",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9993d4ab51a5152f5cb866fb2602e3a93fad53f53096f18e166ca7746911450d"
@@ -1005,7 +710,7 @@
       ],
       "id": "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0",
       "primera_deteccion": "2026-11-01T08:31:08.968829-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0"
@@ -1127,7 +832,7 @@
       ],
       "id": "5aadc03b9a83e0aec24aac77fa6345b264b9c9ce2971ee5f6d4c2a9123a58d3f",
       "primera_deteccion": "2026-11-10T08:55:56.499719-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "5aadc03b9a83e0aec24aac77fa6345b264b9c9ce2971ee5f6d4c2a9123a58d3f"
@@ -1257,7 +962,7 @@
       ],
       "id": "8ec7898f1853f968c04e60669482cbc7ce8fac3999f74798ae3277cc7c44adb0",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "8ec7898f1853f968c04e60669482cbc7ce8fac3999f74798ae3277cc7c44adb0"
@@ -1285,7 +990,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -1392,7 +1096,7 @@
       ],
       "id": "5a1668b5ea4f410f3abaf313d5aec9592bbb774429babfc0dd0a11f6c299492c",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "5a1668b5ea4f410f3abaf313d5aec9592bbb774429babfc0dd0a11f6c299492c"
@@ -1420,7 +1124,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -1715,7 +1418,7 @@
       ],
       "id": "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7",
       "primera_deteccion": "2026-11-07T08:36:35.631351-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7"
@@ -2011,7 +1714,7 @@
       ],
       "id": "7e9776874b9913a0d573cb2af62014d60ea14ecf1220020cec5674d45103bc3c",
       "primera_deteccion": "2026-11-12T08:58:51.069853-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7e9776874b9913a0d573cb2af62014d60ea14ecf1220020cec5674d45103bc3c"
@@ -2280,7 +1983,7 @@
       ],
       "id": "94f8805a0e854f14925878d49e0f56ae0624aceaa6f23c72741ec9a348205178",
       "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "94f8805a0e854f14925878d49e0f56ae0624aceaa6f23c72741ec9a348205178"
@@ -2418,7 +2121,7 @@
       ],
       "id": "3102ff1411f55c90562db9fa8517e4629a88830f095019ecb08dcb25ed0a71d4",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3102ff1411f55c90562db9fa8517e4629a88830f095019ecb08dcb25ed0a71d4"
@@ -2446,7 +2149,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -2553,7 +2255,7 @@
       ],
       "id": "fc4c9a80f2129ecfc1543a0501279fb803035a454da54777dbff5ad451a2db70",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fc4c9a80f2129ecfc1543a0501279fb803035a454da54777dbff5ad451a2db70"
@@ -2581,7 +2283,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -2688,7 +2389,7 @@
       ],
       "id": "a5e318b44082ae5ebf9eaf719609249ecb40d19ec8df1e8547360a4886c633b9",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "a5e318b44082ae5ebf9eaf719609249ecb40d19ec8df1e8547360a4886c633b9"
@@ -2716,7 +2417,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -2823,7 +2523,7 @@
       ],
       "id": "fdeaee316d53bb9c1e02cbcec386f5f776a9368c1a2f62e8fe4c6ea6b468ef6f",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fdeaee316d53bb9c1e02cbcec386f5f776a9368c1a2f62e8fe4c6ea6b468ef6f"
@@ -2851,7 +2551,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -2914,7 +2613,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Apertura de ofertas: 26 de noviembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas LP N3-2026. circular aclaratoria nº1 • 468 kB • 17 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 157 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 115 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 84 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 82 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 88 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 93 click 9 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Apertura de ofertas: 26 de noviembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas LP N3-2026. circular aclaratoria nº1 • 468 kB • 21 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 165 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 122 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 86 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 85 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 91 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 95 click 9 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
@@ -2959,7 +2658,7 @@
       ],
       "id": "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a"
@@ -2978,7 +2677,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -3299,7 +2997,7 @@
       ],
       "id": "af809a1a2301fd5ac19ea9d2f78fdf59162c9bbcca0ec3e17a9bc081e3e49c32",
       "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "af809a1a2301fd5ac19ea9d2f78fdf59162c9bbcca0ec3e17a9bc081e3e49c32"
@@ -3646,7 +3344,7 @@
       ],
       "id": "2d840d3f136208e858d4981960e53bcfca64a1034194dbbc716f800078f33a42",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "2d840d3f136208e858d4981960e53bcfca64a1034194dbbc716f800078f33a42"
@@ -3992,7 +3690,7 @@
       ],
       "id": "7b55a45170f5e26bad678e0d89ab7d62a58af4691f82eac497e53358048c2794",
       "primera_deteccion": "2026-11-14T08:37:49.537518-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7b55a45170f5e26bad678e0d89ab7d62a58af4691f82eac497e53358048c2794"
@@ -4137,7 +3835,7 @@
       ],
       "id": "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9"
@@ -4227,7 +3925,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 228 click 19 octubre, 2026 ANEXO I • 2 MB • 138 click 19 octubre, 2026 Anexo II • 112 kB • 114 click 19 octubre, 2026 Anexo III • 174 kB • 123 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 123 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 122 click 19 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 236 click 19 octubre, 2026 ANEXO I • 2 MB • 145 click 19 octubre, 2026 Anexo II • 112 kB • 119 click 19 octubre, 2026 Anexo III • 174 kB • 129 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 130 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 128 click 19 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
@@ -4272,7 +3970,7 @@
       ],
       "id": "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-17T08:53:06.862067-03:00",
+      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99"
