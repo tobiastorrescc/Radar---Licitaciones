@@ -1,7 +1,303 @@
 {
-  "fecha": "2026-11-18T09:02:47.408939-03:00",
-  "total": 21,
+  "fecha": "2026-11-19T09:01:25.836369-03:00",
+  "total": 22,
   "oportunidades": [
+    {
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "Descargar",
+          "url": "https://alvear.gob.ar/archivos/501_1795021250_PLIEGOBASESYCONDICIONES6-2026GENERAL.pdf"
+        }
+      ],
+      "enlace_pliego": "https://alvear.gob.ar/archivos/501_1795021250_PLIEGOBASESYCONDICIONES6-2026GENERAL.pdf",
+      "evento_publicado": null,
+      "evidencia_url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501",
+          "texto": "viernes 4 de diciembre de 2026 a las 9:00 hs. en sede municipal en calle buenos aires 1877"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501",
+          "texto": "4/12/2026 en sobre cerrado entregar personalmente en mesa de entrada en calle pellegrini 2"
+        },
+        "modalidad_presentacion": {
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501",
+          "texto": "Volver al listado LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 LICITACIÓN PÚBLICA N° 06/2026 OBRA: “OBRA DE CIRCULACIÓN INTERNA CAMPUS ASTENGO” PRESUPUESTO OFICIAL: $443.532.400 Valor del pliego: $70.200 Garantía de la oferta: $ 4.435.324 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: • planeamiento@alvear.gob.ar Por Teléfono: • 341 - 3177621 - Sec. de Planificación Urbana • 341 - 3 581298 - Área de Compras • 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 6-2026 PDF Ver Descargar"
+        },
+        "numero_procedimiento": {
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501",
+          "texto": "licitacion publica 6/2026"
+        },
+        "presupuesto": {
+          "texto": "presupuesto oficial: $443.532.400",
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501"
+        },
+        "tipo_procedimiento": {
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501",
+          "texto": "licitacion publica 6/2026"
+        }
+      },
+      "fecha_apertura": "2026-12-04",
+      "fecha_apertura_texto": null,
+      "fecha_limite_presentacion": "2026-12-04",
+      "fecha_publicacion": null,
+      "fecha_publicacion_texto": null,
+      "fuente": "https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones",
+      "fuentes_observadas": [
+        "https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones"
+      ],
+      "hora_apertura": "09:00",
+      "hora_limite_presentacion": null,
+      "localidad": "Alvear",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_procedimiento": "6/2026",
+      "objeto": "Volver al listado LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 LICITACIÓN PÚBLICA N° 06/2026 OBRA: “OBRA DE CIRCULACIÓN INTERNA CAMPUS ASTENGO” PRESUPUESTO OFICIAL: $443.532.400 Valor del pliego: $70.200 Garantía de la oferta: $ 4.435.324 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: • planeamiento@alvear.gob.ar Por Teléfono: • 341 - 3177621 - Sec. de Planificación Urbana • 341 - 3 581298 - Área de Compras • 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 6-2026 PDF Ver Descargar",
+      "organismo": "Municipalidad de Alvear",
+      "pago_evidencias": [],
+      "presupuesto": {
+        "importe": "443532400",
+        "moneda": null
+      },
+      "procedimiento": "licitacion publica 6/2026",
+      "provincia": "Santa Fe",
+      "rango_evidencia": 1,
+      "registro_estructurado": false,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "licitacion publica",
+      "titulo": "Volver al listado LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 LICITACIÓN PÚBLICA N° 06/2026 OBRA: “OBRA DE CIRCULACIÓN INTERNA CAMPUS ASTENGO” PRESUPUESTO OFICIAL: $443.532.400 Valor del pliego: $70.200 Garantía de la oferta: $ 4.435.324 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: • planeamiento@alvear.gob.ar Por Teléfono: • 341 - 3177621 - Sec. de Planificación Urbana • 341 - 3 581298 - Área de Compras • 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 6-2026 PDF Ver Descargar",
+      "url": "https://alvear.gob.ar/archivos/501_1795021250_PLIEGOBASESYCONDICIONES6-2026GENERAL.pdf",
+      "urls_publicacion": [
+        "https://alvear.gob.ar/archivos/501_1795021250_PLIEGOBASESYCONDICIONES6-2026GENERAL.pdf",
+        "https://alvear.gob.ar/index.php?pagina=licitaciones",
+        "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
+        "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501",
+        "https://alvear.gob.ar/index.php?pagina=licitaciones&pag=0",
+        "https://alvear.gob.ar/index.php?pagina=licitaciones&pag=1"
+      ],
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "licitacion publica 6/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": "2026-12-04T09:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-12-04",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "fecha_publicacion"
+      ],
+      "id": "e4906d645499e0b70adbbcb02fc4ccf657789be0c08f1690ac24c8d60fd93564",
+      "primera_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "e4906d645499e0b70adbbcb02fc4ccf657789be0c08f1690ac24c8d60fd93564"
+      ],
+      "variantes_historial": [
+        {
+          "id": "e4906d645499e0b70adbbcb02fc4ccf657789be0c08f1690ac24c8d60fd93564",
+          "numero_procedimiento": "6/2026",
+          "objeto": "Volver al listado LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 LICITACIÓN PÚBLICA N° 06/2026 OBRA: “OBRA DE CIRCULACIÓN INTERNA CAMPUS ASTENGO” PRESUPUESTO OFICIAL: $443.532.400 Valor del pliego: $70.200 Garantía de la oferta: $ 4.435.324 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: • planeamiento@alvear.gob.ar Por Teléfono: • 341 - 3177621 - Sec. de Planificación Urbana • 341 - 3 581298 - Área de Compras • 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 6-2026 PDF Ver Descargar",
+          "fecha_apertura": "2026-12-04",
+          "fecha_limite_presentacion": "2026-12-04",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://alvear.gob.ar/archivos/501_1795021250_PLIEGOBASESYCONDICIONES6-2026GENERAL.pdf",
+          "documentos": [
+            {
+              "titulo": "Descargar",
+              "url": "https://alvear.gob.ar/archivos/501_1795021250_PLIEGOBASESYCONDICIONES6-2026GENERAL.pdf"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-12-04"
+    },
+    {
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "Descargar",
+          "url": "https://alvear.gob.ar/archivos/500_1795018491_PLIEODEBASESYCONDICIONESLICITACINN5.pdf"
+        },
+        {
+          "titulo": "Descargar",
+          "url": "https://alvear.gob.ar/archivos/500_1795018521_PLIEGODEESPECIFICACIONESTECNICASYPROYECTOEJECUTIVON5.pdf"
+        }
+      ],
+      "enlace_pliego": "https://alvear.gob.ar/archivos/500_1795018521_PLIEGODEESPECIFICACIONESTECNICASYPROYECTOEJECUTIVON5.pdf",
+      "evento_publicado": null,
+      "evidencia_url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=500",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=500",
+          "texto": "viernes 4 de diciembre de 2026 a las 9:00 hs. en sede municipal en calle buenos aires 1877"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=500",
+          "texto": "4/12/2026 en sobre cerrado entregar personalmente en mesa de entrada en calle pellegrini 2"
+        },
+        "modalidad_presentacion": {
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=500",
+          "texto": "Volver al listado LICITACIÓN PÚBLICA N° 05/2026 17/11/2026 LICITACIÓN PÚBLICA N° 05/2026 OBRA: “PAVIMENTACIÓN ASFÁLTICA EN AV. BROWN E/ CALLE GUIDO SPANO Y CALLE PIEDRABUENA” PRESUPUESTO OFICIAL: $ 249.408.250,00 Valor del pliego: $ 70.200 Garantía de la oferta: $ 2.494.082,5 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: planeamiento@alvear.gob.ar Por Teléfono: 341 - 3177621 - Sec. de Planificación Urbana 341 - 3 581298 - Área de Compras 341- 4922109 - Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 5-2026 PDF Ver Descargar PLIEGO DE ESPECIFICACIONES TECNICAS LIC 5-2026 PDF Ver Descargar"
+        },
+        "numero_procedimiento": {
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=500",
+          "texto": "licitacion publica 5/2026"
+        },
+        "presupuesto": {
+          "texto": "presupuesto oficial: $ 249.408.250,00",
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=500"
+        },
+        "tipo_procedimiento": {
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=500",
+          "texto": "licitacion publica 5/2026"
+        }
+      },
+      "fecha_apertura": "2026-12-04",
+      "fecha_apertura_texto": null,
+      "fecha_limite_presentacion": "2026-12-04",
+      "fecha_publicacion": null,
+      "fecha_publicacion_texto": null,
+      "fuente": "https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones",
+      "fuentes_observadas": [
+        "https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones"
+      ],
+      "hora_apertura": "09:00",
+      "hora_limite_presentacion": null,
+      "localidad": "Alvear",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_procedimiento": "5/2026",
+      "objeto": "Volver al listado LICITACIÓN PÚBLICA N° 05/2026 17/11/2026 LICITACIÓN PÚBLICA N° 05/2026 OBRA: “PAVIMENTACIÓN ASFÁLTICA EN AV. BROWN E/ CALLE GUIDO SPANO Y CALLE PIEDRABUENA” PRESUPUESTO OFICIAL: $ 249.408.250,00 Valor del pliego: $ 70.200 Garantía de la oferta: $ 2.494.082,5 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: planeamiento@alvear.gob.ar Por Teléfono: 341 - 3177621 - Sec. de Planificación Urbana 341 - 3 581298 - Área de Compras 341- 4922109 - Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 5-2026 PDF Ver Descargar PLIEGO DE ESPECIFICACIONES TECNICAS LIC 5-2026 PDF Ver Descargar",
+      "organismo": "Municipalidad de Alvear",
+      "pago_evidencias": [],
+      "presupuesto": {
+        "importe": "249408250.00",
+        "moneda": null
+      },
+      "procedimiento": "licitacion publica 5/2026",
+      "provincia": "Santa Fe",
+      "rango_evidencia": 1,
+      "registro_estructurado": false,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "licitacion publica",
+      "titulo": "Volver al listado LICITACIÓN PÚBLICA N° 05/2026 17/11/2026 LICITACIÓN PÚBLICA N° 05/2026 OBRA: “PAVIMENTACIÓN ASFÁLTICA EN AV. BROWN E/ CALLE GUIDO SPANO Y CALLE PIEDRABUENA” PRESUPUESTO OFICIAL: $ 249.408.250,00 Valor del pliego: $ 70.200 Garantía de la oferta: $ 2.494.082,5 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: planeamiento@alvear.gob.ar Por Teléfono: 341 - 3177621 - Sec. de Planificación Urbana 341 - 3 581298 - Área de Compras 341- 4922109 - Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 5-2026 PDF Ver Descargar PLIEGO DE ESPECIFICACIONES TECNICAS LIC 5-2026 PDF Ver Descargar",
+      "url": "https://alvear.gob.ar/archivos/500_1795018491_PLIEODEBASESYCONDICIONESLICITACINN5.pdf",
+      "urls_publicacion": [
+        "https://alvear.gob.ar/archivos/500_1795018491_PLIEODEBASESYCONDICIONESLICITACINN5.pdf",
+        "https://alvear.gob.ar/index.php?pagina=licitaciones",
+        "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
+        "https://alvear.gob.ar/index.php?pagina=licitaciones&id=500",
+        "https://alvear.gob.ar/index.php?pagina=licitaciones&pag=0",
+        "https://alvear.gob.ar/index.php?pagina=licitaciones&pag=1"
+      ],
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "licitacion publica 5/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": "2026-12-04T09:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-12-04",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "fecha_publicacion"
+      ],
+      "id": "c17e2391c519e2c59fabf3773a29e1ef2728c9b23172fc8b219085d8a7990c78",
+      "primera_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "c17e2391c519e2c59fabf3773a29e1ef2728c9b23172fc8b219085d8a7990c78"
+      ],
+      "variantes_historial": [
+        {
+          "id": "c17e2391c519e2c59fabf3773a29e1ef2728c9b23172fc8b219085d8a7990c78",
+          "numero_procedimiento": "5/2026",
+          "objeto": "Volver al listado LICITACIÓN PÚBLICA N° 05/2026 17/11/2026 LICITACIÓN PÚBLICA N° 05/2026 OBRA: “PAVIMENTACIÓN ASFÁLTICA EN AV. BROWN E/ CALLE GUIDO SPANO Y CALLE PIEDRABUENA” PRESUPUESTO OFICIAL: $ 249.408.250,00 Valor del pliego: $ 70.200 Garantía de la oferta: $ 2.494.082,5 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: planeamiento@alvear.gob.ar Por Teléfono: 341 - 3177621 - Sec. de Planificación Urbana 341 - 3 581298 - Área de Compras 341- 4922109 - Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 5-2026 PDF Ver Descargar PLIEGO DE ESPECIFICACIONES TECNICAS LIC 5-2026 PDF Ver Descargar",
+          "fecha_apertura": "2026-12-04",
+          "fecha_limite_presentacion": "2026-12-04",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://alvear.gob.ar/archivos/500_1795018491_PLIEODEBASESYCONDICIONESLICITACINN5.pdf",
+          "documentos": [
+            {
+              "titulo": "Descargar",
+              "url": "https://alvear.gob.ar/archivos/500_1795018491_PLIEODEBASESYCONDICIONESLICITACINN5.pdf"
+            },
+            {
+              "titulo": "Descargar",
+              "url": "https://alvear.gob.ar/archivos/500_1795018521_PLIEGODEESPECIFICACIONESTECNICASYPROYECTOEJECUTIVON5.pdf"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-12-04"
+    },
     {
       "detalle_completo": true,
       "documentos": [
@@ -117,7 +413,7 @@
       ],
       "id": "c6a6e4f1bb9a3fa0588268a67d53ffffe4965e0b69290a8da326f5b3462a3683",
       "primera_deteccion": "2026-11-12T08:58:51.069853-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "c6a6e4f1bb9a3fa0588268a67d53ffffe4965e0b69290a8da326f5b3462a3683"
@@ -264,7 +560,7 @@
       ],
       "id": "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4"
@@ -416,7 +712,7 @@
       ],
       "id": "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59"
@@ -568,7 +864,7 @@
       ],
       "id": "9993d4ab51a5152f5cb866fb2602e3a93fad53f53096f18e166ca7746911450d",
       "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9993d4ab51a5152f5cb866fb2602e3a93fad53f53096f18e166ca7746911450d"
@@ -710,7 +1006,7 @@
       ],
       "id": "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0",
       "primera_deteccion": "2026-11-01T08:31:08.968829-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0"
@@ -742,124 +1038,6 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-25T09:45:00-03:00"
-    },
-    {
-      "detalle_completo": true,
-      "documentos": [
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
-        }
-      ],
-      "enlace_pliego": null,
-      "evento_publicado": null,
-      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
-      "evidencias_campos": {
-        "fecha_limite_presentacion": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
-          "texto": "2026-11-18t10:00:00-03:00"
-        },
-        "numero_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
-          "texto": "licitacion publica 6/2026"
-        },
-        "tipo_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
-          "texto": "licitacion publica 6/2026"
-        }
-      },
-      "fecha_apertura": null,
-      "fecha_apertura_texto": null,
-      "fecha_limite_presentacion": "2026-11-18",
-      "fecha_limite_presentacion_texto": "2026-11-18T10:00:00-03:00",
-      "fecha_publicacion": null,
-      "fuente": "https://www.entrerios.gov.ar/boletin/",
-      "hora_apertura": null,
-      "hora_limite_presentacion": "10:00",
-      "localidad": "Urdinarrain",
-      "modalidad_presentacion": [],
-      "numero_oficial_sin_interpretar": "6/2026",
-      "numero_procedimiento": "6/2026",
-      "objeto": "GUALEGUAYCHU\n\n                                         MUNICIPALIDAD DE URDINARRAIN\n                                             Licitacion Publica Nº 06/2026\n OBJETO: Para la Concesión de Cantina, Comedor y Proveeduría en Balneario Camping “Arenas Blancas” de la\nMunicipalidad de Urdinarrain, ubicado en el Distrito Costa San Antonio, Departamento Gualeguaychu, Provincia de\nEntre Ríos, y de servicios a prestarse en el lugar.\n PRESENTACION DE OFERTAS: Hasta el día 18 de noviembre 2026, a la hora 10:00 hs. En la Oficina de\nContrataciones del Municipio.\n CONSULTAS, INFORMES Y ENTREGA DE PLIEGOS: MUNICIPALIDAD DE URDINARRAIN Dr. V. Silva nº 417\nCP.: 2826 – URDINARRAIN – ENTRE RIOS.\n TEL. FAX Nº: 03446 – 480616 / Interno 206 En días hábiles, en el horario de 7:00 h. a 12:00 hs.\n Mail.: compras@urdinarrain.gov.ar\n  Urdinarrain, 04 de noviembre de 2026 GASTON G. ELENA CARLOS L. MOHLINGER A/C Secretarías A/C\nPresidencia Municipal",
-      "organismo": "Municipalidad de Urdinarrain",
-      "pago_evidencias": [],
-      "presupuesto": null,
-      "procedimiento": "licitacion publica 6/2026",
-      "provincia": "Entre Ríos",
-      "registro_estructurado": true,
-      "requiere_revalidacion": false,
-      "situacion_publicada": null,
-      "tipo_procedimiento": "licitacion publica",
-      "titulo": "licitacion publica 6/2026 GUALEGUAYCHU\n\n                                         MUNICIPALIDAD DE URDINARRAIN\n                                             Licitacion Publica Nº 06/2026\n OBJETO: Para la Concesión de Cantina, Comedor y Proveeduría en Balneario Camping “Arenas Blancas” de la\nMunicipalidad de Urdinarrain, ubicado en el Distrito Costa San Antonio, Departamento Gualeguaychu, Provincia de\nEntre Ríos, y de servicios a prestarse en el lugar.\n PRESENTACION DE OFERTAS: Hasta el día 18 de noviembre 2026, a la hora 10:00 hs. En la Oficina de\nContrataciones del Municipio.\n CONSULTAS, INFORMES Y ENTREGA DE PLIEGOS: MUNICIPALIDAD DE URDINARRAIN Dr. V. Silva nº 417\nCP.: 2826 – URDINARRAIN – ENTRE RIOS.\n TEL. FAX Nº: 03446 – 480616 / Interno 206 En días hábiles, en el horario de 7:00 h. a 12:00 hs.\n Mail.: compras@urdinarrain.gov.ar\n  Urdinarrain, 04 de noviembre de 2026 GASTON G. ELENA CARLOS L. MOHLINGER A/C Secretarías A/C\nPresidencia Municipal",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
-      "pago": {
-        "estado": "PENDIENTE",
-        "clasificacion": "NO_INFORMADO",
-        "etiqueta": "Pendiente de verificar",
-        "plazos_dias": [],
-        "hitos_inicio": [],
-        "documento_respaldo": null,
-        "documentos_respaldo": [],
-        "evidencias": [],
-        "prioritario": false,
-        "motivo": "SIN_CLAUSULA_COMPROBADA"
-      },
-      "condiciones_pago": "Pendiente de verificar",
-      "enlace_condiciones_pago": null,
-      "pago_prioritario": false,
-      "desierta": false,
-      "fracasada": false,
-      "segundo_llamado": false,
-      "reapertura": false,
-      "llamado_especial": false,
-      "procedimiento_canonico": "licitacion publica 6/2026",
-      "convocatoria": "1",
-      "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": null,
-      "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": "2026-11-18T10:00:00-03:00",
-      "fecha_referencia_vencimiento": "2026-11-18",
-      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
-      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "DESCONOCIDA",
-      "estimacion_comercial": null,
-      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
-      "campos_desconocidos": [
-        "presupuesto",
-        "fecha_apertura",
-        "fecha_publicacion",
-        "enlace_pliego"
-      ],
-      "id": "5aadc03b9a83e0aec24aac77fa6345b264b9c9ce2971ee5f6d4c2a9123a58d3f",
-      "primera_deteccion": "2026-11-10T08:55:56.499719-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
-      "observada_esta_corrida": true,
-      "ids_historial": [
-        "5aadc03b9a83e0aec24aac77fa6345b264b9c9ce2971ee5f6d4c2a9123a58d3f"
-      ],
-      "variantes_historial": [
-        {
-          "id": "5aadc03b9a83e0aec24aac77fa6345b264b9c9ce2971ee5f6d4c2a9123a58d3f",
-          "numero_procedimiento": "6/2026",
-          "objeto": "GUALEGUAYCHU\n\n                                         MUNICIPALIDAD DE URDINARRAIN\n                                             Licitacion Publica Nº 06/2026\n OBJETO: Para la Concesión de Cantina, Comedor y Proveeduría en Balneario Camping “Arenas Blancas” de la\nMunicipalidad de Urdinarrain, ubicado en el Distrito Costa San Antonio, Departamento Gualeguaychu, Provincia de\nEntre Ríos, y de servicios a prestarse en el lugar.\n PRESENTACION DE OFERTAS: Hasta el día 18 de noviembre 2026, a la hora 10:00 hs. En la Oficina de\nContrataciones del Municipio.\n CONSULTAS, INFORMES Y ENTREGA DE PLIEGOS: MUNICIPALIDAD DE URDINARRAIN Dr. V. Silva nº 417\nCP.: 2826 – URDINARRAIN – ENTRE RIOS.\n TEL. FAX Nº: 03446 – 480616 / Interno 206 En días hábiles, en el horario de 7:00 h. a 12:00 hs.\n Mail.: compras@urdinarrain.gov.ar\n  Urdinarrain, 04 de noviembre de 2026 GASTON G. ELENA CARLOS L. MOHLINGER A/C Secretarías A/C\nPresidencia Municipal",
-          "fecha_apertura": null,
-          "fecha_limite_presentacion": "2026-11-18",
-          "evento_publicado": null,
-          "numero_convocatoria": null,
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
-          "documentos": [
-            {
-              "titulo": "Boletín complementario",
-              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
-            }
-          ]
-        }
-      ],
-      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "estado_comercial": "VIGENTE_VERIFICADA",
-      "presentacion_verificada": true,
-      "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-18T10:00:00-03:00"
     },
     {
       "detalle_completo": true,
@@ -962,7 +1140,7 @@
       ],
       "id": "8ec7898f1853f968c04e60669482cbc7ce8fac3999f74798ae3277cc7c44adb0",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "8ec7898f1853f968c04e60669482cbc7ce8fac3999f74798ae3277cc7c44adb0"
@@ -1096,7 +1274,7 @@
       ],
       "id": "5a1668b5ea4f410f3abaf313d5aec9592bbb774429babfc0dd0a11f6c299492c",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "5a1668b5ea4f410f3abaf313d5aec9592bbb774429babfc0dd0a11f6c299492c"
@@ -1418,7 +1596,7 @@
       ],
       "id": "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7",
       "primera_deteccion": "2026-11-07T08:36:35.631351-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7"
@@ -1714,7 +1892,7 @@
       ],
       "id": "7e9776874b9913a0d573cb2af62014d60ea14ecf1220020cec5674d45103bc3c",
       "primera_deteccion": "2026-11-12T08:58:51.069853-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7e9776874b9913a0d573cb2af62014d60ea14ecf1220020cec5674d45103bc3c"
@@ -1983,7 +2161,7 @@
       ],
       "id": "94f8805a0e854f14925878d49e0f56ae0624aceaa6f23c72741ec9a348205178",
       "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "94f8805a0e854f14925878d49e0f56ae0624aceaa6f23c72741ec9a348205178"
@@ -2121,7 +2299,7 @@
       ],
       "id": "3102ff1411f55c90562db9fa8517e4629a88830f095019ecb08dcb25ed0a71d4",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3102ff1411f55c90562db9fa8517e4629a88830f095019ecb08dcb25ed0a71d4"
@@ -2255,7 +2433,7 @@
       ],
       "id": "fc4c9a80f2129ecfc1543a0501279fb803035a454da54777dbff5ad451a2db70",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fc4c9a80f2129ecfc1543a0501279fb803035a454da54777dbff5ad451a2db70"
@@ -2389,7 +2567,7 @@
       ],
       "id": "a5e318b44082ae5ebf9eaf719609249ecb40d19ec8df1e8547360a4886c633b9",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "a5e318b44082ae5ebf9eaf719609249ecb40d19ec8df1e8547360a4886c633b9"
@@ -2523,7 +2701,7 @@
       ],
       "id": "fdeaee316d53bb9c1e02cbcec386f5f776a9368c1a2f62e8fe4c6ea6b468ef6f",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fdeaee316d53bb9c1e02cbcec386f5f776a9368c1a2f62e8fe4c6ea6b468ef6f"
@@ -2613,7 +2791,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Apertura de ofertas: 26 de noviembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas LP N3-2026. circular aclaratoria nº1 • 468 kB • 21 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 165 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 122 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 86 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 85 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 91 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 95 click 9 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Apertura de ofertas: 26 de noviembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas LP N3-2026. circular aclaratoria nº1 • 468 kB • 23 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 174 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 129 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 90 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 89 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 94 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 99 click 9 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
@@ -2658,7 +2836,7 @@
       ],
       "id": "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a"
@@ -2997,7 +3175,7 @@
       ],
       "id": "af809a1a2301fd5ac19ea9d2f78fdf59162c9bbcca0ec3e17a9bc081e3e49c32",
       "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "af809a1a2301fd5ac19ea9d2f78fdf59162c9bbcca0ec3e17a9bc081e3e49c32"
@@ -3344,7 +3522,7 @@
       ],
       "id": "2d840d3f136208e858d4981960e53bcfca64a1034194dbbc716f800078f33a42",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "2d840d3f136208e858d4981960e53bcfca64a1034194dbbc716f800078f33a42"
@@ -3690,7 +3868,7 @@
       ],
       "id": "7b55a45170f5e26bad678e0d89ab7d62a58af4691f82eac497e53358048c2794",
       "primera_deteccion": "2026-11-14T08:37:49.537518-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7b55a45170f5e26bad678e0d89ab7d62a58af4691f82eac497e53358048c2794"
@@ -3835,7 +4013,7 @@
       ],
       "id": "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9"
@@ -3925,7 +4103,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 236 click 19 octubre, 2026 ANEXO I • 2 MB • 145 click 19 octubre, 2026 Anexo II • 112 kB • 119 click 19 octubre, 2026 Anexo III • 174 kB • 129 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 130 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 128 click 19 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 241 click 19 octubre, 2026 ANEXO I • 2 MB • 147 click 19 octubre, 2026 Anexo II • 112 kB • 122 click 19 octubre, 2026 Anexo III • 174 kB • 132 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 132 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 130 click 19 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
@@ -3970,7 +4148,7 @@
       ],
       "id": "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-18T09:02:47.408939-03:00",
+      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99"
