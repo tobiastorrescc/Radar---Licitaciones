@@ -1,6 +1,6 @@
 {
-  "fecha": "2026-11-19T09:01:25.836369-03:00",
-  "total": 22,
+  "fecha": "2026-11-20T08:59:50.283797-03:00",
+  "total": 24,
   "oportunidades": [
     {
       "detalle_completo": true,
@@ -8,6 +8,10 @@
         {
           "titulo": "Descargar",
           "url": "https://alvear.gob.ar/archivos/501_1795021250_PLIEGOBASESYCONDICIONES6-2026GENERAL.pdf"
+        },
+        {
+          "titulo": "Descargar",
+          "url": "https://alvear.gob.ar/archivos/501_1795112671_PLIEGODEESPECIFICACIONESTECNICASLIC6-2026_comprimido1.pdf"
         }
       ],
       "enlace_pliego": "https://alvear.gob.ar/archivos/501_1795021250_PLIEGOBASESYCONDICIONES6-2026GENERAL.pdf",
@@ -24,7 +28,7 @@
         },
         "modalidad_presentacion": {
           "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501",
-          "texto": "Volver al listado LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 LICITACIÓN PÚBLICA N° 06/2026 OBRA: “OBRA DE CIRCULACIÓN INTERNA CAMPUS ASTENGO” PRESUPUESTO OFICIAL: $443.532.400 Valor del pliego: $70.200 Garantía de la oferta: $ 4.435.324 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: • planeamiento@alvear.gob.ar Por Teléfono: • 341 - 3177621 - Sec. de Planificación Urbana • 341 - 3 581298 - Área de Compras • 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 6-2026 PDF Ver Descargar"
+          "texto": "Volver al listado LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 LICITACIÓN PÚBLICA N° 06/2026 OBRA: “OBRA DE CIRCULACIÓN INTERNA CAMPUS ASTENGO” PRESUPUESTO OFICIAL: $443.532.400 Valor del pliego: $70.200 Garantía de la oferta: $ 4.435.324 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: • planeamiento@alvear.gob.ar Por Teléfono: • 341 - 3177621 - Sec. de Planificación Urbana • 341 - 3 581298 - Área de Compras • 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 6-2026 PDF Ver Descargar PLIEGO ESPECIFICACIONES TECNICAS - LIC 5 PDF Ver Descargar"
         },
         "numero_procedimiento": {
           "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501",
@@ -55,7 +59,7 @@
         "PRESENCIAL"
       ],
       "numero_procedimiento": "6/2026",
-      "objeto": "Volver al listado LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 LICITACIÓN PÚBLICA N° 06/2026 OBRA: “OBRA DE CIRCULACIÓN INTERNA CAMPUS ASTENGO” PRESUPUESTO OFICIAL: $443.532.400 Valor del pliego: $70.200 Garantía de la oferta: $ 4.435.324 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: • planeamiento@alvear.gob.ar Por Teléfono: • 341 - 3177621 - Sec. de Planificación Urbana • 341 - 3 581298 - Área de Compras • 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 6-2026 PDF Ver Descargar",
+      "objeto": "Volver al listado LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 LICITACIÓN PÚBLICA N° 06/2026 OBRA: “OBRA DE CIRCULACIÓN INTERNA CAMPUS ASTENGO” PRESUPUESTO OFICIAL: $443.532.400 Valor del pliego: $70.200 Garantía de la oferta: $ 4.435.324 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: • planeamiento@alvear.gob.ar Por Teléfono: • 341 - 3177621 - Sec. de Planificación Urbana • 341 - 3 581298 - Área de Compras • 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 6-2026 PDF Ver Descargar PLIEGO ESPECIFICACIONES TECNICAS - LIC 5 PDF Ver Descargar",
       "organismo": "Municipalidad de Alvear",
       "pago_evidencias": [],
       "presupuesto": {
@@ -69,7 +73,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Volver al listado LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 LICITACIÓN PÚBLICA N° 06/2026 OBRA: “OBRA DE CIRCULACIÓN INTERNA CAMPUS ASTENGO” PRESUPUESTO OFICIAL: $443.532.400 Valor del pliego: $70.200 Garantía de la oferta: $ 4.435.324 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: • planeamiento@alvear.gob.ar Por Teléfono: • 341 - 3177621 - Sec. de Planificación Urbana • 341 - 3 581298 - Área de Compras • 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 6-2026 PDF Ver Descargar",
+      "titulo": "Volver al listado LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 LICITACIÓN PÚBLICA N° 06/2026 OBRA: “OBRA DE CIRCULACIÓN INTERNA CAMPUS ASTENGO” PRESUPUESTO OFICIAL: $443.532.400 Valor del pliego: $70.200 Garantía de la oferta: $ 4.435.324 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: • planeamiento@alvear.gob.ar Por Teléfono: • 341 - 3177621 - Sec. de Planificación Urbana • 341 - 3 581298 - Área de Compras • 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 6-2026 PDF Ver Descargar PLIEGO ESPECIFICACIONES TECNICAS - LIC 5 PDF Ver Descargar",
       "url": "https://alvear.gob.ar/archivos/501_1795021250_PLIEGOBASESYCONDICIONES6-2026GENERAL.pdf",
       "urls_publicacion": [
         "https://alvear.gob.ar/archivos/501_1795021250_PLIEGOBASESYCONDICIONES6-2026GENERAL.pdf",
@@ -116,7 +120,7 @@
       ],
       "id": "e4906d645499e0b70adbbcb02fc4ccf657789be0c08f1690ac24c8d60fd93564",
       "primera_deteccion": "2026-11-19T09:01:25.836369-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "e4906d645499e0b70adbbcb02fc4ccf657789be0c08f1690ac24c8d60fd93564"
@@ -125,7 +129,7 @@
         {
           "id": "e4906d645499e0b70adbbcb02fc4ccf657789be0c08f1690ac24c8d60fd93564",
           "numero_procedimiento": "6/2026",
-          "objeto": "Volver al listado LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 LICITACIÓN PÚBLICA N° 06/2026 OBRA: “OBRA DE CIRCULACIÓN INTERNA CAMPUS ASTENGO” PRESUPUESTO OFICIAL: $443.532.400 Valor del pliego: $70.200 Garantía de la oferta: $ 4.435.324 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: • planeamiento@alvear.gob.ar Por Teléfono: • 341 - 3177621 - Sec. de Planificación Urbana • 341 - 3 581298 - Área de Compras • 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 6-2026 PDF Ver Descargar",
+          "objeto": "Volver al listado LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 LICITACIÓN PÚBLICA N° 06/2026 OBRA: “OBRA DE CIRCULACIÓN INTERNA CAMPUS ASTENGO” PRESUPUESTO OFICIAL: $443.532.400 Valor del pliego: $70.200 Garantía de la oferta: $ 4.435.324 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: • planeamiento@alvear.gob.ar Por Teléfono: • 341 - 3177621 - Sec. de Planificación Urbana • 341 - 3 581298 - Área de Compras • 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 6-2026 PDF Ver Descargar PLIEGO ESPECIFICACIONES TECNICAS - LIC 5 PDF Ver Descargar",
           "fecha_apertura": "2026-12-04",
           "fecha_limite_presentacion": "2026-12-04",
           "evento_publicado": null,
@@ -135,12 +139,16 @@
             {
               "titulo": "Descargar",
               "url": "https://alvear.gob.ar/archivos/501_1795021250_PLIEGOBASESYCONDICIONES6-2026GENERAL.pdf"
+            },
+            {
+              "titulo": "Descargar",
+              "url": "https://alvear.gob.ar/archivos/501_1795112671_PLIEGODEESPECIFICACIONESTECNICASLIC6-2026_comprimido1.pdf"
             }
           ]
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -264,7 +272,7 @@
       ],
       "id": "c17e2391c519e2c59fabf3773a29e1ef2728c9b23172fc8b219085d8a7990c78",
       "primera_deteccion": "2026-11-19T09:01:25.836369-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "c17e2391c519e2c59fabf3773a29e1ef2728c9b23172fc8b219085d8a7990c78"
@@ -292,11 +300,162 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-12-04"
+    },
+    {
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "Descargar",
+          "url": "https://alvear.gob.ar/archivos/502_1795112430_PLIEGOBASESYCONDICIONESLIC7-2026.pdf"
+        },
+        {
+          "titulo": "Descargar",
+          "url": "https://alvear.gob.ar/archivos/502_1795112463_PLIEGOESPECIFICACIONESTECNICASLIC7-2026.pdf"
+        }
+      ],
+      "enlace_pliego": "https://alvear.gob.ar/archivos/502_1795112430_PLIEGOBASESYCONDICIONESLIC7-2026.pdf",
+      "evento_publicado": null,
+      "evidencia_url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=502",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=502",
+          "texto": "viernes 9 de diciembre de 2026 a las 9:00 hs. en sede municipal en calle buenos aires 1877"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=502",
+          "texto": "9/12/2026 en sobre cerrado entregar personalmente en mesa de entrada en calle pellegrini 2"
+        },
+        "modalidad_presentacion": {
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=502",
+          "texto": "Volver al listado LICITACIÓN PÚBLICA N° 07/2026 19/11/2026 LICITACIÓN PÚBLICA N° 07/2026 OBRA: “TRABAJOS DE ACONDICIONAMIENTO, PROTECCIÓN Y PINTURA DE LA BATERÍA DE SILOS DEL CEA” PRESUPUESTO OFICIAL: $110.000.000 Valor del pliego: $70.200 Garantía de la oferta: $ 1.100.000 Recepción de sobres: 9/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 9 de Diciembre de 2026. Apertura de ofertas: Viernes 9 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: planeamiento@alvear.gob.ar Por Teléfono: 341 - 3177621 - Sec. de Planificación Urbana 341 - 3 581298 - Área de Compras 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 7-2026 PDF Ver Descargar PLIEGO ESPECIFICACIONES TECNICAS - LIC 7-2026 PDF Ver Descargar"
+        },
+        "numero_procedimiento": {
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=502",
+          "texto": "licitacion publica 7/2026"
+        },
+        "presupuesto": {
+          "texto": "presupuesto oficial: $110.000.000",
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=502"
+        },
+        "tipo_procedimiento": {
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=502",
+          "texto": "licitacion publica 7/2026"
+        }
+      },
+      "fecha_apertura": "2026-12-09",
+      "fecha_apertura_texto": null,
+      "fecha_limite_presentacion": "2026-12-09",
+      "fecha_publicacion": null,
+      "fecha_publicacion_texto": null,
+      "fuente": "https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones",
+      "fuentes_observadas": [
+        "https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones"
+      ],
+      "hora_apertura": "09:00",
+      "hora_limite_presentacion": null,
+      "localidad": "Alvear",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_procedimiento": "7/2026",
+      "objeto": "Volver al listado LICITACIÓN PÚBLICA N° 07/2026 19/11/2026 LICITACIÓN PÚBLICA N° 07/2026 OBRA: “TRABAJOS DE ACONDICIONAMIENTO, PROTECCIÓN Y PINTURA DE LA BATERÍA DE SILOS DEL CEA” PRESUPUESTO OFICIAL: $110.000.000 Valor del pliego: $70.200 Garantía de la oferta: $ 1.100.000 Recepción de sobres: 9/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 9 de Diciembre de 2026. Apertura de ofertas: Viernes 9 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: planeamiento@alvear.gob.ar Por Teléfono: 341 - 3177621 - Sec. de Planificación Urbana 341 - 3 581298 - Área de Compras 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 7-2026 PDF Ver Descargar PLIEGO ESPECIFICACIONES TECNICAS - LIC 7-2026 PDF Ver Descargar",
+      "organismo": "Municipalidad de Alvear",
+      "pago_evidencias": [],
+      "presupuesto": {
+        "importe": "110000000",
+        "moneda": null
+      },
+      "procedimiento": "licitacion publica 7/2026",
+      "provincia": "Santa Fe",
+      "rango_evidencia": 1,
+      "registro_estructurado": false,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "licitacion publica",
+      "titulo": "Volver al listado LICITACIÓN PÚBLICA N° 07/2026 19/11/2026 LICITACIÓN PÚBLICA N° 07/2026 OBRA: “TRABAJOS DE ACONDICIONAMIENTO, PROTECCIÓN Y PINTURA DE LA BATERÍA DE SILOS DEL CEA” PRESUPUESTO OFICIAL: $110.000.000 Valor del pliego: $70.200 Garantía de la oferta: $ 1.100.000 Recepción de sobres: 9/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 9 de Diciembre de 2026. Apertura de ofertas: Viernes 9 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: planeamiento@alvear.gob.ar Por Teléfono: 341 - 3177621 - Sec. de Planificación Urbana 341 - 3 581298 - Área de Compras 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 7-2026 PDF Ver Descargar PLIEGO ESPECIFICACIONES TECNICAS - LIC 7-2026 PDF Ver Descargar",
+      "url": "https://alvear.gob.ar/archivos/502_1795112430_PLIEGOBASESYCONDICIONESLIC7-2026.pdf",
+      "urls_publicacion": [
+        "https://alvear.gob.ar/archivos/502_1795112430_PLIEGOBASESYCONDICIONESLIC7-2026.pdf",
+        "https://alvear.gob.ar/index.php?pagina=licitaciones",
+        "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
+        "https://alvear.gob.ar/index.php?pagina=licitaciones&id=502",
+        "https://alvear.gob.ar/index.php?pagina=licitaciones&pag=0",
+        "https://alvear.gob.ar/index.php?pagina=licitaciones&pag=1"
+      ],
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "licitacion publica 7/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": "2026-12-09T09:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": null,
+      "fecha_referencia_vencimiento": "2026-12-09",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "fecha_publicacion"
+      ],
+      "id": "b50f9685cd9b602852c8ecad5f641fd53d4a33141a9379218e62d2a0a3c001e3",
+      "primera_deteccion": "2026-11-20T08:59:50.283797-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "b50f9685cd9b602852c8ecad5f641fd53d4a33141a9379218e62d2a0a3c001e3"
+      ],
+      "variantes_historial": [
+        {
+          "id": "b50f9685cd9b602852c8ecad5f641fd53d4a33141a9379218e62d2a0a3c001e3",
+          "numero_procedimiento": "7/2026",
+          "objeto": "Volver al listado LICITACIÓN PÚBLICA N° 07/2026 19/11/2026 LICITACIÓN PÚBLICA N° 07/2026 OBRA: “TRABAJOS DE ACONDICIONAMIENTO, PROTECCIÓN Y PINTURA DE LA BATERÍA DE SILOS DEL CEA” PRESUPUESTO OFICIAL: $110.000.000 Valor del pliego: $70.200 Garantía de la oferta: $ 1.100.000 Recepción de sobres: 9/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 9 de Diciembre de 2026. Apertura de ofertas: Viernes 9 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: planeamiento@alvear.gob.ar Por Teléfono: 341 - 3177621 - Sec. de Planificación Urbana 341 - 3 581298 - Área de Compras 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 7-2026 PDF Ver Descargar PLIEGO ESPECIFICACIONES TECNICAS - LIC 7-2026 PDF Ver Descargar",
+          "fecha_apertura": "2026-12-09",
+          "fecha_limite_presentacion": "2026-12-09",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://alvear.gob.ar/archivos/502_1795112430_PLIEGOBASESYCONDICIONESLIC7-2026.pdf",
+          "documentos": [
+            {
+              "titulo": "Descargar",
+              "url": "https://alvear.gob.ar/archivos/502_1795112430_PLIEGOBASESYCONDICIONESLIC7-2026.pdf"
+            },
+            {
+              "titulo": "Descargar",
+              "url": "https://alvear.gob.ar/archivos/502_1795112463_PLIEGOESPECIFICACIONESTECNICASLIC7-2026.pdf"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-12-09"
     },
     {
       "detalle_completo": true,
@@ -413,7 +572,7 @@
       ],
       "id": "c6a6e4f1bb9a3fa0588268a67d53ffffe4965e0b69290a8da326f5b3462a3683",
       "primera_deteccion": "2026-11-12T08:58:51.069853-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "c6a6e4f1bb9a3fa0588268a67d53ffffe4965e0b69290a8da326f5b3462a3683"
@@ -560,7 +719,7 @@
       ],
       "id": "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4"
@@ -712,7 +871,7 @@
       ],
       "id": "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59"
@@ -748,154 +907,6 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-20T10:59:00-03:00"
-    },
-    {
-      "detalle_completo": true,
-      "documentos": [
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/04-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
-        }
-      ],
-      "enlace_pliego": null,
-      "evento_publicado": null,
-      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
-      "evidencias_campos": {
-        "fecha_apertura": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
-          "texto": "de propuestas: 19 de noviembre de 2026 a las 17:00 horas en el edificio comunal, sito en c"
-        },
-        "fecha_limite_presentacion": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
-          "texto": "de propuestas: 19 de noviembre de 2026 a las 16:00 horas. fecha y hora de "
-        },
-        "modalidad_presentacion": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
-          "texto": "-- -- --\n                                          COMUNA DE GENERAL ALMADA\n                                               Licitación Pública 03-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 03-2026 COMUNA DE GENERAL ALMADA AUTORIZADA\nPOR LA RESOLUCIÓN Nº 225-2026 DEL DEPARTAMENTO EJECUTIVO. COMPRA DE TRACTOR DE\nCORTAR PASTO EN EL MARCO DEL PLIEGO DE BASES Y CONDICIONES GENERALES Y PLIEGO DE\nCONDICIONES ESPECIFICAS Y TECNICAS.\n PRESUPUESTO OFICIAL: $ 18.000.000 (DIECIOCHO MILLONES CON 00/100).\n PLIEGO: El Pliego de Bases y Condiciones Generales y el Pliego de Condiciones Específicas y Técnicas puede\nadquirirse por Mesa de Entradas de la Comuna de General Almada o en el siguiente link de acceso público:\nhttps://drive.google.com/drive/folders/1B8sIltssAwiNkJq9OjlURnB0juQ6bQE 7 .\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACION: Mesa de Entradas del Edificio Comunal, sito en calle Jorge Weitzel S/N, Comuna\nde General Almada, Departamento Gualeguaychú, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 19 de noviembre de 2026 a las 16:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 19 de noviembre de 2026 a las 17:00 horas en el Edificio\nComunal, sito en calle Jorge Weitzel S/N, Comuna de General Almada, Depto. Gualeguaychú, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de General Almada, sito en comunadealmada@hotmail.com."
-        },
-        "numero_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
-          "texto": "licitacion publica 3-2026"
-        },
-        "presupuesto": {
-          "texto": "presupuesto oficial $ 18.000.000",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
-        },
-        "tipo_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
-          "texto": "licitacion publica 3-2026"
-        }
-      },
-      "fecha_apertura": "2026-11-19",
-      "fecha_apertura_texto": null,
-      "fecha_limite_presentacion": "2026-11-19",
-      "fecha_publicacion": null,
-      "fuente": "https://www.entrerios.gov.ar/boletin/",
-      "fuentes_observadas": [
-        "https://www.entrerios.gov.ar/boletin/"
-      ],
-      "hora_apertura": "17:00",
-      "hora_limite_presentacion": "16:00",
-      "localidad": "General Almada",
-      "modalidad_presentacion": [
-        "PRESENCIAL"
-      ],
-      "numero_convocatoria": "1",
-      "numero_oficial_sin_interpretar": "3-2026",
-      "numero_procedimiento": "3/2026",
-      "objeto": "-- -- --\n                                          COMUNA DE GENERAL ALMADA\n                                               Licitación Pública 03-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 03-2026 COMUNA DE GENERAL ALMADA AUTORIZADA\nPOR LA RESOLUCIÓN Nº 225-2026 DEL DEPARTAMENTO EJECUTIVO. COMPRA DE TRACTOR DE\nCORTAR PASTO EN EL MARCO DEL PLIEGO DE BASES Y CONDICIONES GENERALES Y PLIEGO DE\nCONDICIONES ESPECIFICAS Y TECNICAS.\n PRESUPUESTO OFICIAL: $ 18.000.000 (DIECIOCHO MILLONES CON 00/100).\n PLIEGO: El Pliego de Bases y Condiciones Generales y el Pliego de Condiciones Específicas y Técnicas puede\nadquirirse por Mesa de Entradas de la Comuna de General Almada o en el siguiente link de acceso público:\nhttps://drive.google.com/drive/folders/1B8sIltssAwiNkJq9OjlURnB0juQ6bQE 7 .\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACION: Mesa de Entradas del Edificio Comunal, sito en calle Jorge Weitzel S/N, Comuna\nde General Almada, Departamento Gualeguaychú, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 19 de noviembre de 2026 a las 16:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 19 de noviembre de 2026 a las 17:00 horas en el Edificio\nComunal, sito en calle Jorge Weitzel S/N, Comuna de General Almada, Depto. Gualeguaychú, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de General Almada, sito en comunadealmada@hotmail.com.",
-      "organismo": "Comuna de General Almada",
-      "pago_evidencias": [],
-      "presupuesto": {
-        "importe": "18000000",
-        "moneda": null
-      },
-      "procedimiento": "licitacion publica 3-2026",
-      "provincia": "Entre Ríos",
-      "registro_estructurado": true,
-      "requiere_revalidacion": false,
-      "situacion_publicada": null,
-      "tipo_procedimiento": "licitacion publica",
-      "titulo": "licitacion publica 3-2026 -- -- --\n                                          COMUNA DE GENERAL ALMADA\n                                               Licitación Pública 03-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 03-2026 COMUNA DE GENERAL ALMADA AUTORIZADA\nPOR LA RESOLUCIÓN Nº 225-2026 DEL DEPARTAMENTO EJECUTIVO. COMPRA DE TRACTOR DE\nCORTAR PASTO EN EL MARCO DEL PLIEGO DE BASES Y CONDICIONES GENERALES Y PLIEGO DE\nCONDICIONES ESPECIFICAS Y TECNICAS.\n PRESUPUESTO OFICIAL: $ 18.000.000 (DIECIOCHO MILLONES CON 00/100).\n PLIEGO: El Pliego de Bases y Condiciones Generales y el Pliego de Condiciones Específicas y Técnicas puede\nadquirirse por Mesa de Entradas de la Comuna de General Almada o en el siguiente link de acceso público:\nhttps://drive.google.com/drive/folders/1B8sIltssAwiNkJq9OjlURnB0juQ6bQE 7 .\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACION: Mesa de Entradas del Edificio Comunal, sito en calle Jorge Weitzel S/N, Comuna\nde General Almada, Departamento Gualeguaychú, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 19 de noviembre de 2026 a las 16:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 19 de noviembre de 2026 a las 17:00 horas en el Edificio\nComunal, sito en calle Jorge Weitzel S/N, Comuna de General Almada, Depto. Gualeguaychú, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de General Almada, sito en comunadealmada@hotmail.com.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
-      "urls_publicacion": [
-        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/04-11-26.pdf",
-        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
-      ],
-      "pago": {
-        "estado": "PENDIENTE",
-        "clasificacion": "NO_INFORMADO",
-        "etiqueta": "Pendiente de verificar",
-        "plazos_dias": [],
-        "hitos_inicio": [],
-        "documento_respaldo": null,
-        "documentos_respaldo": [],
-        "evidencias": [],
-        "prioritario": false,
-        "motivo": "SIN_CLAUSULA_COMPROBADA"
-      },
-      "condiciones_pago": "Pendiente de verificar",
-      "enlace_condiciones_pago": null,
-      "pago_prioritario": false,
-      "desierta": false,
-      "fracasada": false,
-      "segundo_llamado": false,
-      "reapertura": false,
-      "llamado_especial": false,
-      "procedimiento_canonico": "licitacion publica 3/2026",
-      "convocatoria": "1",
-      "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": "2026-11-19T17:00:00-03:00",
-      "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": "2026-11-19T16:00:00-03:00",
-      "fecha_referencia_vencimiento": "2026-11-19",
-      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
-      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "DESCONOCIDA",
-      "estimacion_comercial": null,
-      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
-      "campos_desconocidos": [
-        "fecha_publicacion",
-        "enlace_pliego"
-      ],
-      "id": "9993d4ab51a5152f5cb866fb2602e3a93fad53f53096f18e166ca7746911450d",
-      "primera_deteccion": "2026-11-05T08:55:06.617395-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
-      "observada_esta_corrida": true,
-      "ids_historial": [
-        "9993d4ab51a5152f5cb866fb2602e3a93fad53f53096f18e166ca7746911450d"
-      ],
-      "variantes_historial": [
-        {
-          "id": "9993d4ab51a5152f5cb866fb2602e3a93fad53f53096f18e166ca7746911450d",
-          "numero_procedimiento": "3/2026",
-          "objeto": "-- -- --\n                                          COMUNA DE GENERAL ALMADA\n                                               Licitación Pública 03-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 03-2026 COMUNA DE GENERAL ALMADA AUTORIZADA\nPOR LA RESOLUCIÓN Nº 225-2026 DEL DEPARTAMENTO EJECUTIVO. COMPRA DE TRACTOR DE\nCORTAR PASTO EN EL MARCO DEL PLIEGO DE BASES Y CONDICIONES GENERALES Y PLIEGO DE\nCONDICIONES ESPECIFICAS Y TECNICAS.\n PRESUPUESTO OFICIAL: $ 18.000.000 (DIECIOCHO MILLONES CON 00/100).\n PLIEGO: El Pliego de Bases y Condiciones Generales y el Pliego de Condiciones Específicas y Técnicas puede\nadquirirse por Mesa de Entradas de la Comuna de General Almada o en el siguiente link de acceso público:\nhttps://drive.google.com/drive/folders/1B8sIltssAwiNkJq9OjlURnB0juQ6bQE 7 .\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACION: Mesa de Entradas del Edificio Comunal, sito en calle Jorge Weitzel S/N, Comuna\nde General Almada, Departamento Gualeguaychú, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 19 de noviembre de 2026 a las 16:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 19 de noviembre de 2026 a las 17:00 horas en el Edificio\nComunal, sito en calle Jorge Weitzel S/N, Comuna de General Almada, Depto. Gualeguaychú, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de General Almada, sito en comunadealmada@hotmail.com.",
-          "fecha_apertura": "2026-11-19",
-          "fecha_limite_presentacion": "2026-11-19",
-          "evento_publicado": null,
-          "numero_convocatoria": "1",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf",
-          "documentos": [
-            {
-              "titulo": "Boletín complementario",
-              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/04-11-26.pdf"
-            },
-            {
-              "titulo": "Boletín complementario",
-              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
-            }
-          ]
-        }
-      ],
-      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "estado_comercial": "VIGENTE_VERIFICADA",
-      "presentacion_verificada": true,
-      "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-19T16:00:00-03:00"
     },
     {
       "detalle_completo": true,
@@ -1006,7 +1017,7 @@
       ],
       "id": "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0",
       "primera_deteccion": "2026-11-01T08:31:08.968829-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0"
@@ -1140,7 +1151,7 @@
       ],
       "id": "8ec7898f1853f968c04e60669482cbc7ce8fac3999f74798ae3277cc7c44adb0",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "8ec7898f1853f968c04e60669482cbc7ce8fac3999f74798ae3277cc7c44adb0"
@@ -1274,7 +1285,7 @@
       ],
       "id": "5a1668b5ea4f410f3abaf313d5aec9592bbb774429babfc0dd0a11f6c299492c",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "5a1668b5ea4f410f3abaf313d5aec9592bbb774429babfc0dd0a11f6c299492c"
@@ -1596,7 +1607,7 @@
       ],
       "id": "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7",
       "primera_deteccion": "2026-11-07T08:36:35.631351-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7"
@@ -1892,7 +1903,7 @@
       ],
       "id": "7e9776874b9913a0d573cb2af62014d60ea14ecf1220020cec5674d45103bc3c",
       "primera_deteccion": "2026-11-12T08:58:51.069853-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7e9776874b9913a0d573cb2af62014d60ea14ecf1220020cec5674d45103bc3c"
@@ -2161,7 +2172,7 @@
       ],
       "id": "94f8805a0e854f14925878d49e0f56ae0624aceaa6f23c72741ec9a348205178",
       "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "94f8805a0e854f14925878d49e0f56ae0624aceaa6f23c72741ec9a348205178"
@@ -2299,7 +2310,7 @@
       ],
       "id": "3102ff1411f55c90562db9fa8517e4629a88830f095019ecb08dcb25ed0a71d4",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3102ff1411f55c90562db9fa8517e4629a88830f095019ecb08dcb25ed0a71d4"
@@ -2433,7 +2444,7 @@
       ],
       "id": "fc4c9a80f2129ecfc1543a0501279fb803035a454da54777dbff5ad451a2db70",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fc4c9a80f2129ecfc1543a0501279fb803035a454da54777dbff5ad451a2db70"
@@ -2567,7 +2578,7 @@
       ],
       "id": "a5e318b44082ae5ebf9eaf719609249ecb40d19ec8df1e8547360a4886c633b9",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "a5e318b44082ae5ebf9eaf719609249ecb40d19ec8df1e8547360a4886c633b9"
@@ -2701,7 +2712,7 @@
       ],
       "id": "fdeaee316d53bb9c1e02cbcec386f5f776a9368c1a2f62e8fe4c6ea6b468ef6f",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fdeaee316d53bb9c1e02cbcec386f5f776a9368c1a2f62e8fe4c6ea6b468ef6f"
@@ -2791,7 +2802,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Apertura de ofertas: 26 de noviembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas LP N3-2026. circular aclaratoria nº1 • 468 kB • 23 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 174 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 129 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 90 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 89 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 94 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 99 click 9 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Apertura de ofertas: 26 de noviembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas LP N3-2026. circular aclaratoria nº1 • 468 kB • 24 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 185 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 138 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 95 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 94 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 97 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 102 click 9 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
@@ -2836,7 +2847,7 @@
       ],
       "id": "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a"
@@ -3175,7 +3186,7 @@
       ],
       "id": "af809a1a2301fd5ac19ea9d2f78fdf59162c9bbcca0ec3e17a9bc081e3e49c32",
       "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "af809a1a2301fd5ac19ea9d2f78fdf59162c9bbcca0ec3e17a9bc081e3e49c32"
@@ -3245,7 +3256,21 @@
           "nombreCategoria": "Obras",
           "uuid": "d3e6ccb9656c4c6cbaad2a0ad32ca380"
         },
-        "circulares": [],
+        "circulares": [
+          {
+            "adjuntos": [
+              {
+                "nombre": "Circular Nº 1 Lic Privada Nº 1279.pdf",
+                "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/f970f62d-b216-4ac2-81d4-0232308795d8.pdf"
+              }
+            ],
+            "descripcion": "VISITA DE OBRA ",
+            "documentoAdjuntoUrl": null,
+            "estado": "ESTADO_APROBADA",
+            "fechaCircular": "2026-11-19T00:00:00Z",
+            "uuid": "d46edefa47cb422b877a7a63065cb6a0"
+          }
+        ],
         "consideracionesGenerales": null,
         "contactosAdministrativos": [
           {
@@ -3522,7 +3547,7 @@
       ],
       "id": "2d840d3f136208e858d4981960e53bcfca64a1034194dbbc716f800078f33a42",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "2d840d3f136208e858d4981960e53bcfca64a1034194dbbc716f800078f33a42"
@@ -3868,7 +3893,7 @@
       ],
       "id": "7b55a45170f5e26bad678e0d89ab7d62a58af4691f82eac497e53358048c2794",
       "primera_deteccion": "2026-11-14T08:37:49.537518-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7b55a45170f5e26bad678e0d89ab7d62a58af4691f82eac497e53358048c2794"
@@ -4013,7 +4038,7 @@
       ],
       "id": "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9"
@@ -4045,6 +4070,261 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-12-10T09:00:00-03:00"
+    },
+    {
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf"
+        }
+      ],
+      "enlace_pliego": null,
+      "evento_publicado": null,
+      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "texto": "puerto yerua. palacio municipal, 10 de diciembre de 2026. licitacion publica – “adquisicio"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "texto": "2026-12-10t09:00:00-03:00"
+        },
+        "modalidad_presentacion": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "texto": "CONCORDIA\n\n                               MUNICIPALIDAD DE PUERTO YERUÁ\n                                 Licitación Pública N° 002/2026\n Para la “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”, a efectuarse en la ciudad de Puerto Yeruá,\ndepartamento Concordia.\n DECRETO Nº 229/2026.\n OBJETO DEL LLAMADO: La Municipalidad de Puerto Yeruá llama a Licitación Pública N° 002/2026 para la\n“ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”.\n\n\n\n PRESUPUESTO OFICIAL: el presupuesto oficial corresponde a la suma de pesos SESENTA MILLONES CON\n00/100 ($ 60.000.000,00).\n RETIRO DE LOS PLIEGOS: disponibles desde el día viernes 19 de Noviembre de 2026, para su retiro en la\nmunicipalidad de Puerto Yeruá, sito en calle Avenida Islas Malvinas Nº 516, y para su toma de conocimiento en la\npágina oficial de la Municipalidad de Puerto Yeruá, sin costo alguno para los oferentes.\n PRESENTACION DE LAS OFERTAS: Deberán ser presentadas en la municipalidad de Puerto Yeruá, mesa de\nentradas, hasta el día 10 de diciembre de 2026, a las 9:00 Horas, sito en calle Avenida Islas Malvinas nº 516, en\nun sobre liso con la enmienda Licitación Pública Nº 002/2026.\n LUGAR Y FECHA DE LA APERTURA: Puerto Yeruá. Palacio Municipal, 10 de diciembre de 2026.\n LICITACION PÚBLICA – “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR\nAL PARQUE AUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”\n APERTURA DE LAS PROPUESTAS: la apertura de los sobres con las respectivas ofertas será el día 10 de\ndiciembre de 2026, a las 9:00 Horas en el recinto de la Municipalidad de Puerto Yeruá sito en calle Av. Islas\nMalvinas Nº 516."
+        },
+        "numero_procedimiento": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "texto": "licitacion publica 2/2026"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "texto": "licitacion publica 2/2026"
+        }
+      },
+      "fecha_apertura": "2026-12-10",
+      "fecha_apertura_texto": null,
+      "fecha_limite_presentacion": "2026-12-10",
+      "fecha_limite_presentacion_texto": "2026-12-10T09:00:00-03:00",
+      "fecha_publicacion": null,
+      "fuente": "https://www.entrerios.gov.ar/boletin/",
+      "hora_apertura": null,
+      "hora_limite_presentacion": "09:00",
+      "localidad": "Puerto Yeruá",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_oficial_sin_interpretar": "2/2026",
+      "numero_procedimiento": "2/2026",
+      "objeto": "CONCORDIA\n\n                               MUNICIPALIDAD DE PUERTO YERUÁ\n                                 Licitación Pública N° 002/2026\n Para la “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”, a efectuarse en la ciudad de Puerto Yeruá,\ndepartamento Concordia.\n DECRETO Nº 229/2026.\n OBJETO DEL LLAMADO: La Municipalidad de Puerto Yeruá llama a Licitación Pública N° 002/2026 para la\n“ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”.\n\n\n\n PRESUPUESTO OFICIAL: el presupuesto oficial corresponde a la suma de pesos SESENTA MILLONES CON\n00/100 ($ 60.000.000,00).\n RETIRO DE LOS PLIEGOS: disponibles desde el día viernes 19 de Noviembre de 2026, para su retiro en la\nmunicipalidad de Puerto Yeruá, sito en calle Avenida Islas Malvinas Nº 516, y para su toma de conocimiento en la\npágina oficial de la Municipalidad de Puerto Yeruá, sin costo alguno para los oferentes.\n PRESENTACION DE LAS OFERTAS: Deberán ser presentadas en la municipalidad de Puerto Yeruá, mesa de\nentradas, hasta el día 10 de diciembre de 2026, a las 9:00 Horas, sito en calle Avenida Islas Malvinas nº 516, en\nun sobre liso con la enmienda Licitación Pública Nº 002/2026.\n LUGAR Y FECHA DE LA APERTURA: Puerto Yeruá. Palacio Municipal, 10 de diciembre de 2026.\n LICITACION PÚBLICA – “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR\nAL PARQUE AUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”\n APERTURA DE LAS PROPUESTAS: la apertura de los sobres con las respectivas ofertas será el día 10 de\ndiciembre de 2026, a las 9:00 Horas en el recinto de la Municipalidad de Puerto Yeruá sito en calle Av. Islas\nMalvinas Nº 516.",
+      "organismo": "Municipalidad de Puerto Yeruá",
+      "pago_evidencias": [],
+      "presupuesto": null,
+      "procedimiento": "licitacion publica 2/2026",
+      "provincia": "Entre Ríos",
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "licitacion publica",
+      "titulo": "licitacion publica 2/2026 CONCORDIA\n\n                               MUNICIPALIDAD DE PUERTO YERUÁ\n                                 Licitación Pública N° 002/2026\n Para la “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”, a efectuarse en la ciudad de Puerto Yeruá,\ndepartamento Concordia.\n DECRETO Nº 229/2026.\n OBJETO DEL LLAMADO: La Municipalidad de Puerto Yeruá llama a Licitación Pública N° 002/2026 para la\n“ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”.\n\n\n\n PRESUPUESTO OFICIAL: el presupuesto oficial corresponde a la suma de pesos SESENTA MILLONES CON\n00/100 ($ 60.000.000,00).\n RETIRO DE LOS PLIEGOS: disponibles desde el día viernes 19 de Noviembre de 2026, para su retiro en la\nmunicipalidad de Puerto Yeruá, sito en calle Avenida Islas Malvinas Nº 516, y para su toma de conocimiento en la\npágina oficial de la Municipalidad de Puerto Yeruá, sin costo alguno para los oferentes.\n PRESENTACION DE LAS OFERTAS: Deberán ser presentadas en la municipalidad de Puerto Yeruá, mesa de\nentradas, hasta el día 10 de diciembre de 2026, a las 9:00 Horas, sito en calle Avenida Islas Malvinas nº 516, en\nun sobre liso con la enmienda Licitación Pública Nº 002/2026.\n LUGAR Y FECHA DE LA APERTURA: Puerto Yeruá. Palacio Municipal, 10 de diciembre de 2026.\n LICITACION PÚBLICA – “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR\nAL PARQUE AUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”\n APERTURA DE LAS PROPUESTAS: la apertura de los sobres con las respectivas ofertas será el día 10 de\ndiciembre de 2026, a las 9:00 Horas en el recinto de la Municipalidad de Puerto Yeruá sito en calle Av. Islas\nMalvinas Nº 516.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "licitacion publica 2/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": null,
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": "2026-12-10T09:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-12-10",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_publicacion",
+        "enlace_pliego"
+      ],
+      "id": "acf7909ed028ea5e984c8a8d64810f6da3b4b73ac6f2a775fd23a997f852ae2a",
+      "primera_deteccion": "2026-11-20T08:59:50.283797-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "acf7909ed028ea5e984c8a8d64810f6da3b4b73ac6f2a775fd23a997f852ae2a"
+      ],
+      "variantes_historial": [
+        {
+          "id": "acf7909ed028ea5e984c8a8d64810f6da3b4b73ac6f2a775fd23a997f852ae2a",
+          "numero_procedimiento": "2/2026",
+          "objeto": "CONCORDIA\n\n                               MUNICIPALIDAD DE PUERTO YERUÁ\n                                 Licitación Pública N° 002/2026\n Para la “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”, a efectuarse en la ciudad de Puerto Yeruá,\ndepartamento Concordia.\n DECRETO Nº 229/2026.\n OBJETO DEL LLAMADO: La Municipalidad de Puerto Yeruá llama a Licitación Pública N° 002/2026 para la\n“ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”.\n\n\n\n PRESUPUESTO OFICIAL: el presupuesto oficial corresponde a la suma de pesos SESENTA MILLONES CON\n00/100 ($ 60.000.000,00).\n RETIRO DE LOS PLIEGOS: disponibles desde el día viernes 19 de Noviembre de 2026, para su retiro en la\nmunicipalidad de Puerto Yeruá, sito en calle Avenida Islas Malvinas Nº 516, y para su toma de conocimiento en la\npágina oficial de la Municipalidad de Puerto Yeruá, sin costo alguno para los oferentes.\n PRESENTACION DE LAS OFERTAS: Deberán ser presentadas en la municipalidad de Puerto Yeruá, mesa de\nentradas, hasta el día 10 de diciembre de 2026, a las 9:00 Horas, sito en calle Avenida Islas Malvinas nº 516, en\nun sobre liso con la enmienda Licitación Pública Nº 002/2026.\n LUGAR Y FECHA DE LA APERTURA: Puerto Yeruá. Palacio Municipal, 10 de diciembre de 2026.\n LICITACION PÚBLICA – “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR\nAL PARQUE AUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”\n APERTURA DE LAS PROPUESTAS: la apertura de los sobres con las respectivas ofertas será el día 10 de\ndiciembre de 2026, a las 9:00 Horas en el recinto de la Municipalidad de Puerto Yeruá sito en calle Av. Islas\nMalvinas Nº 516.",
+          "fecha_apertura": "2026-12-10",
+          "fecha_limite_presentacion": "2026-12-10",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "documentos": [
+            {
+              "titulo": "Boletín complementario",
+              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-12-10T09:00:00-03:00"
+    },
+    {
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf"
+        }
+      ],
+      "enlace_pliego": null,
+      "evento_publicado": null,
+      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "texto": "de propuestas: 16 de diciembre de 2026 a las 11:00 horas en el edificio comunal, sito en z"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "texto": "de propuestas: 15 de diciembre de 2026 a las 12:00 horas. fecha y hora de "
+        },
+        "modalidad_presentacion": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "texto": "NOGOYA\n\n                                   COMUNA DE JUSTO JOSÉ DE URQUI ZA\n                                        Licitación Pública N° 01-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 01-2026 COMUNA DE JUSTO JOSE DE URQUIZA\nAUTORIZADA POR LA ORDENANZA Nº 012-2026 DEL CONSEJO COMUNAL Y DECRETO N° 055-2026 DEL\nDEPARTAMENTO EJECUTIVO. ADQUISICIÓN DE UNA (1) RETROEXCAVADORA NUEVA SEGÚN PLIEGO DE\nBASES Y CONDICIONES GENERALES, PARTICULARES Y ANEXO DE ESPECIFICACIONES TÉCNICAS\nPARTICULARES\n PRESUPUESTO OFICIAL: Pesos Ciento Sesenta y Siete Millones Setecientos Siete Mil Seis Cientos Cuarenta\ncon 05/100 Centavos ($ 167.707.640,05).\n\n\n\n PLIEGO: El Pliego de Bases y Condiciones Generales, el Pliego de Bases y Condiciones Particulares, y el Anexo\nde Especificaciones Técnicas Particulares puede adquirirse en la Comuna de Justo José de Urquiza o solicitarse\nen el siguiente correo: comunajjurquiza7ma@gmail.com\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACIÓN: Mesa de Entradas del Edificio Comunal, sito en zona rural de Justo José de\nUrquiza, Departamento Nogoyá, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 15 de diciembre de 2026 a las 12:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 16 de diciembre de 2026 a las 11:00 horas en el Edificio\nComunal, sito en zona rural de Justo José de Urquiza, Departamento Nogoyá, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de Justo José de Urquiza, sito en comunajjurquiza7ma@gmail.com"
+        },
+        "numero_procedimiento": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "texto": "licitacion publica 1-2026"
+        },
+        "tipo_procedimiento": {
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "texto": "licitacion publica 1-2026"
+        }
+      },
+      "fecha_apertura": "2026-12-16",
+      "fecha_apertura_texto": null,
+      "fecha_limite_presentacion": "2026-12-15",
+      "fecha_publicacion": null,
+      "fuente": "https://www.entrerios.gov.ar/boletin/",
+      "hora_apertura": "11:00",
+      "hora_limite_presentacion": "12:00",
+      "localidad": "Justo José de Urquiza",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_oficial_sin_interpretar": "1-2026",
+      "numero_procedimiento": "1/2026",
+      "objeto": "NOGOYA\n\n                                   COMUNA DE JUSTO JOSÉ DE URQUI ZA\n                                        Licitación Pública N° 01-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 01-2026 COMUNA DE JUSTO JOSE DE URQUIZA\nAUTORIZADA POR LA ORDENANZA Nº 012-2026 DEL CONSEJO COMUNAL Y DECRETO N° 055-2026 DEL\nDEPARTAMENTO EJECUTIVO. ADQUISICIÓN DE UNA (1) RETROEXCAVADORA NUEVA SEGÚN PLIEGO DE\nBASES Y CONDICIONES GENERALES, PARTICULARES Y ANEXO DE ESPECIFICACIONES TÉCNICAS\nPARTICULARES\n PRESUPUESTO OFICIAL: Pesos Ciento Sesenta y Siete Millones Setecientos Siete Mil Seis Cientos Cuarenta\ncon 05/100 Centavos ($ 167.707.640,05).\n\n\n\n PLIEGO: El Pliego de Bases y Condiciones Generales, el Pliego de Bases y Condiciones Particulares, y el Anexo\nde Especificaciones Técnicas Particulares puede adquirirse en la Comuna de Justo José de Urquiza o solicitarse\nen el siguiente correo: comunajjurquiza7ma@gmail.com\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACIÓN: Mesa de Entradas del Edificio Comunal, sito en zona rural de Justo José de\nUrquiza, Departamento Nogoyá, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 15 de diciembre de 2026 a las 12:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 16 de diciembre de 2026 a las 11:00 horas en el Edificio\nComunal, sito en zona rural de Justo José de Urquiza, Departamento Nogoyá, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de Justo José de Urquiza, sito en comunajjurquiza7ma@gmail.com",
+      "organismo": "Comuna de Justo José de Urquiza",
+      "pago_evidencias": [],
+      "presupuesto": null,
+      "procedimiento": "licitacion publica 1-2026",
+      "provincia": "Entre Ríos",
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "licitacion publica",
+      "titulo": "licitacion publica 1-2026 NOGOYA\n\n                                   COMUNA DE JUSTO JOSÉ DE URQUI ZA\n                                        Licitación Pública N° 01-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 01-2026 COMUNA DE JUSTO JOSE DE URQUIZA\nAUTORIZADA POR LA ORDENANZA Nº 012-2026 DEL CONSEJO COMUNAL Y DECRETO N° 055-2026 DEL\nDEPARTAMENTO EJECUTIVO. ADQUISICIÓN DE UNA (1) RETROEXCAVADORA NUEVA SEGÚN PLIEGO DE\nBASES Y CONDICIONES GENERALES, PARTICULARES Y ANEXO DE ESPECIFICACIONES TÉCNICAS\nPARTICULARES\n PRESUPUESTO OFICIAL: Pesos Ciento Sesenta y Siete Millones Setecientos Siete Mil Seis Cientos Cuarenta\ncon 05/100 Centavos ($ 167.707.640,05).\n\n\n\n PLIEGO: El Pliego de Bases y Condiciones Generales, el Pliego de Bases y Condiciones Particulares, y el Anexo\nde Especificaciones Técnicas Particulares puede adquirirse en la Comuna de Justo José de Urquiza o solicitarse\nen el siguiente correo: comunajjurquiza7ma@gmail.com\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACIÓN: Mesa de Entradas del Edificio Comunal, sito en zona rural de Justo José de\nUrquiza, Departamento Nogoyá, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 15 de diciembre de 2026 a las 12:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 16 de diciembre de 2026 a las 11:00 horas en el Edificio\nComunal, sito en zona rural de Justo José de Urquiza, Departamento Nogoyá, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de Justo José de Urquiza, sito en comunajjurquiza7ma@gmail.com",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "licitacion publica 1/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": "2026-12-16T11:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": "2026-12-15T12:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-12-15",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_publicacion",
+        "enlace_pliego"
+      ],
+      "id": "0099dd82326ff35af76a79fd7b3b3c6add4ec3358add6b10e390abb82eaadc4d",
+      "primera_deteccion": "2026-11-20T08:59:50.283797-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "0099dd82326ff35af76a79fd7b3b3c6add4ec3358add6b10e390abb82eaadc4d"
+      ],
+      "variantes_historial": [
+        {
+          "id": "0099dd82326ff35af76a79fd7b3b3c6add4ec3358add6b10e390abb82eaadc4d",
+          "numero_procedimiento": "1/2026",
+          "objeto": "NOGOYA\n\n                                   COMUNA DE JUSTO JOSÉ DE URQUI ZA\n                                        Licitación Pública N° 01-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 01-2026 COMUNA DE JUSTO JOSE DE URQUIZA\nAUTORIZADA POR LA ORDENANZA Nº 012-2026 DEL CONSEJO COMUNAL Y DECRETO N° 055-2026 DEL\nDEPARTAMENTO EJECUTIVO. ADQUISICIÓN DE UNA (1) RETROEXCAVADORA NUEVA SEGÚN PLIEGO DE\nBASES Y CONDICIONES GENERALES, PARTICULARES Y ANEXO DE ESPECIFICACIONES TÉCNICAS\nPARTICULARES\n PRESUPUESTO OFICIAL: Pesos Ciento Sesenta y Siete Millones Setecientos Siete Mil Seis Cientos Cuarenta\ncon 05/100 Centavos ($ 167.707.640,05).\n\n\n\n PLIEGO: El Pliego de Bases y Condiciones Generales, el Pliego de Bases y Condiciones Particulares, y el Anexo\nde Especificaciones Técnicas Particulares puede adquirirse en la Comuna de Justo José de Urquiza o solicitarse\nen el siguiente correo: comunajjurquiza7ma@gmail.com\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACIÓN: Mesa de Entradas del Edificio Comunal, sito en zona rural de Justo José de\nUrquiza, Departamento Nogoyá, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 15 de diciembre de 2026 a las 12:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 16 de diciembre de 2026 a las 11:00 horas en el Edificio\nComunal, sito en zona rural de Justo José de Urquiza, Departamento Nogoyá, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de Justo José de Urquiza, sito en comunajjurquiza7ma@gmail.com",
+          "fecha_apertura": "2026-12-16",
+          "fecha_limite_presentacion": "2026-12-15",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "documentos": [
+            {
+              "titulo": "Boletín complementario",
+              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-12-15T12:00:00-03:00"
     },
     {
       "comprobacion_pliego": {
@@ -4103,7 +4383,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 241 click 19 octubre, 2026 ANEXO I • 2 MB • 147 click 19 octubre, 2026 Anexo II • 112 kB • 122 click 19 octubre, 2026 Anexo III • 174 kB • 132 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 132 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 130 click 19 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 248 click 19 octubre, 2026 ANEXO I • 2 MB • 151 click 19 octubre, 2026 Anexo II • 112 kB • 126 click 19 octubre, 2026 Anexo III • 174 kB • 136 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 138 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 138 click 19 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
@@ -4148,7 +4428,7 @@
       ],
       "id": "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-19T09:01:25.836369-03:00",
+      "ultima_deteccion": "2026-11-20T08:59:50.283797-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99"
