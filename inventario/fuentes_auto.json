@@ -5308,12 +5308,12 @@
           "nombre_publicado": true,
           "jurisdiccion_publicada": true,
           "url": "https://www.muvc.gob.ar/",
-          "sha256": "1679a740d0eeb39dddb8c4d98db1b3789b7b53609b057ce0f84db53c56e2dfdb",
+          "sha256": "fc5e4b0fae47f79afc77d12b3b971ab35050610d1e28e400e36fb0f7099d0728",
           "cabecera": "Municipalidad de Villa Cañas",
           "motivo": null
         },
         "procedimientos_con_objeto": 27,
-        "fecha": "2026-11-13T11:59:16.942608+00:00",
+        "fecha": "2026-11-20T12:03:54.100171+00:00",
         "motivo": null,
         "ejemplos": [
           {

@@ -4,7 +4,7 @@
     "reparar:fuente-004": "2026-10-27T23:13:42.954528+00:00",
     "sector:Santa Fe:hospital SAMCo": "2026-10-27T23:13:42.954528+00:00",
     "reparar:fuente-005": "2026-10-27T23:13:42.954528+00:00",
-    "territorio:060021": "2026-10-27T23:13:42.954528+00:00",
+    "territorio:060021": "2026-11-20T12:02:55.811059+00:00",
     "reparar:fuente-009": "2026-10-27T23:13:42.954528+00:00",
     "sector:Santa Fe:universidad nacional": "2026-10-27T23:13:42.954528+00:00",
     "reparar:fuente-012": "2026-10-27T23:13:42.954528+00:00",
@@ -739,7 +739,18 @@
     "directorio:fuente-078": "2026-11-16T12:10:27.342616+00:00",
     "directorio:fuente-085": "2026-11-16T12:10:27.342616+00:00",
     "reparar:fuente-082": "2026-11-16T12:10:27.342616+00:00",
-    "territorio:060763": "2026-11-16T12:10:27.342616+00:00"
+    "territorio:060763": "2026-11-16T12:10:27.342616+00:00",
+    "directorio:fuente-087": "2026-11-20T12:02:55.811059+00:00",
+    "directorio:fuente-088": "2026-11-20T12:02:55.811059+00:00",
+    "reparar:fuente-083": "2026-11-20T12:02:55.811059+00:00",
+    "territorio:060770": "2026-11-20T12:02:55.811059+00:00",
+    "directorio:fuente-092": "2026-11-20T12:02:55.811059+00:00",
+    "directorio:fuente-093": "2026-11-20T12:02:55.811059+00:00",
+    "reparar:fuente-084": "2026-11-20T12:02:55.811059+00:00",
+    "territorio:060882": "2026-11-20T12:02:55.811059+00:00",
+    "directorio:fuente-103": "2026-11-20T12:02:55.811059+00:00",
+    "directorio:fuente-104": "2026-11-20T12:02:55.811059+00:00",
+    "reparar:fuente-102": "2026-11-20T12:02:55.811059+00:00"
   },
   "candidatos": {
     "inventario-fuente-034": {
@@ -9273,16 +9284,11 @@
       "errores": [],
       "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento/verificacion_ejecuciones/20261031T120626-193e272a/0001.json",
       "prioridad_rapida": {
-        "puntos": 8,
+        "puntos": 6,
         "razones": [
           {
-            "criterio": "seccion_compras",
+            "criterio": "identidad_verificada",
             "peso": 4,
-            "evidencia": true
-          },
-          {
-            "criterio": "historial_convocatorias",
-            "peso": 2,
             "evidencia": true
           },
           {
@@ -9297,10 +9303,12 @@
           }
         ],
         "desconocidos": [
-          "publicacion_ultimos_7_dias"
+          "seccion_compras",
+          "publicacion_ultimos_7_dias",
+          "historial_convocatorias"
         ],
-        "distancia_geodesica_km": null,
-        "ultima_revision": "2026-10-31T12:06:25.688428+00:00"
+        "distancia_geodesica_km": 187.7,
+        "ultima_revision": null
       },
       "ultima_exploracion_rapida": "2026-11-16T12:10:27.342616+00:00",
       "estado_nivel1": "PENDIENTE_IDENTIDAD_O_CONVOCATORIAS"
@@ -9329,7 +9337,7 @@
         "puntos": 6,
         "razones": [
           {
-            "criterio": "seccion_compras",
+            "criterio": "identidad_verificada",
             "peso": 4,
             "evidencia": true
           },
@@ -9345,11 +9353,12 @@
           }
         ],
         "desconocidos": [
+          "seccion_compras",
           "publicacion_ultimos_7_dias",
           "historial_convocatorias"
         ],
-        "distancia_geodesica_km": null,
-        "ultima_revision": "2026-10-31T12:06:25.688428+00:00"
+        "distancia_geodesica_km": 187.7,
+        "ultima_revision": null
       },
       "ultima_exploracion_rapida": "2026-11-16T12:10:27.342616+00:00",
       "estado_nivel1": "PENDIENTE_IDENTIDAD_O_CONVOCATORIAS"
@@ -9378,7 +9387,7 @@
         "puntos": 6,
         "razones": [
           {
-            "criterio": "seccion_compras",
+            "criterio": "identidad_verificada",
             "peso": 4,
             "evidencia": true
           },
@@ -9394,11 +9403,12 @@
           }
         ],
         "desconocidos": [
+          "seccion_compras",
           "publicacion_ultimos_7_dias",
           "historial_convocatorias"
         ],
-        "distancia_geodesica_km": null,
-        "ultima_revision": "2026-10-31T12:06:25.688428+00:00"
+        "distancia_geodesica_km": 187.7,
+        "ultima_revision": null
       },
       "ultima_exploracion_rapida": "2026-11-16T12:10:27.342616+00:00",
       "estado_nivel1": "PENDIENTE_IDENTIDAD_O_CONVOCATORIAS"
@@ -11374,8 +11384,8 @@
           "historial_convocatorias",
           "documentos_publicados"
         ],
-        "distancia_geodesica_km": null,
-        "ultima_revision": "2026-11-09T12:00:09.556636+00:00"
+        "distancia_geodesica_km": 12.29,
+        "ultima_revision": null
       },
       "ultima_exploracion_rapida": "2026-11-16T12:10:27.342616+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES"
@@ -11587,8 +11597,8 @@
           "historial_convocatorias",
           "documentos_publicados"
         ],
-        "distancia_geodesica_km": null,
-        "ultima_revision": "2026-11-09T12:00:09.556636+00:00"
+        "distancia_geodesica_km": 159.04,
+        "ultima_revision": null
       },
       "ultima_exploracion_rapida": "2026-11-16T12:10:27.342616+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES"
@@ -15678,7 +15688,7 @@
         "estado": "PENDIENTE",
         "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
       },
-      "ultima_revision": "2026-11-09T12:31:40.895731+00:00",
+      "ultima_revision": "2026-11-20T12:02:55.811059+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -15689,7 +15699,7 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123149-ed8a2f3d/0014.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261120T120316-d0a2de37/0001.json",
       "prioridad_rapida": {
         "puntos": 12,
         "razones": [
@@ -15722,9 +15732,11 @@
         "desconocidos": [
           "publicacion_ultimos_7_dias"
         ],
-        "distancia_geodesica_km": 153.62,
-        "ultima_revision": null
-      }
+        "distancia_geodesica_km": null,
+        "ultima_revision": "2026-11-09T12:31:40.895731+00:00"
+      },
+      "ultima_exploracion_rapida": "2026-11-20T12:02:55.811059+00:00",
+      "estado_nivel1": "CANDIDATA_CON_SENALES"
     },
     "contraste-ed8d46d54e3e33b0f3d2": {
       "tipo": "TERRITORIAL",
@@ -15741,18 +15753,18 @@
         "estado": "PENDIENTE",
         "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
       },
-      "ultima_revision": "2026-11-09T12:31:40.895731+00:00",
+      "ultima_revision": "2026-11-20T12:02:55.811059+00:00",
       "version_verificador": 4,
       "errores": [
         {
-          "categoria": "EXTRACCION",
+          "categoria": "RED",
           "tipo": "TIEMPO_FUENTE",
           "timeout": true,
           "error": "Plazo agotado; se conserva lo extraído",
-          "fase": "EXTRACCION"
+          "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123149-ed8a2f3d/0015.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261120T120316-d0a2de37/0002.json",
       "prioridad_rapida": {
         "puntos": 12,
         "razones": [
@@ -15785,9 +15797,11 @@
         "desconocidos": [
           "publicacion_ultimos_7_dias"
         ],
-        "distancia_geodesica_km": 153.62,
-        "ultima_revision": null
-      }
+        "distancia_geodesica_km": null,
+        "ultima_revision": "2026-11-09T12:31:40.895731+00:00"
+      },
+      "ultima_exploracion_rapida": "2026-11-20T12:02:55.811059+00:00",
+      "estado_nivel1": "CANDIDATA_CON_SENALES"
     },
     "contraste-c5be17888381e26f2acc": {
       "tipo": "TERRITORIAL",
@@ -15804,7 +15818,7 @@
         "estado": "PENDIENTE",
         "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
       },
-      "ultima_revision": "2026-11-09T12:31:40.895731+00:00",
+      "ultima_revision": "2026-11-20T12:02:55.811059+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -15815,7 +15829,7 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123149-ed8a2f3d/0013.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261120T120316-d0a2de37/0000.json",
       "prioridad_rapida": {
         "puntos": 12,
         "razones": [
@@ -15848,9 +15862,11 @@
         "desconocidos": [
           "publicacion_ultimos_7_dias"
         ],
-        "distancia_geodesica_km": 153.62,
-        "ultima_revision": null
-      }
+        "distancia_geodesica_km": null,
+        "ultima_revision": "2026-11-09T12:31:40.895731+00:00"
+      },
+      "ultima_exploracion_rapida": "2026-11-20T12:02:55.811059+00:00",
+      "estado_nivel1": "CANDIDATA_CON_SENALES"
     },
     "contraste-bb0735d982707f361f2f": {
       "tipo": "TERRITORIAL",
@@ -18252,7 +18268,7 @@
         "estado": "PENDIENTE",
         "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
       },
-      "ultima_revision": "2026-11-09T13:38:46.784260+00:00",
+      "ultima_revision": "2026-11-20T12:02:55.811059+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -18263,7 +18279,7 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T133847-ba4c9baa/0005.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261120T120316-d0a2de37/0003.json",
       "prioridad_rapida": {
         "puntos": 12,
         "razones": [
@@ -18296,9 +18312,11 @@
         "desconocidos": [
           "publicacion_ultimos_7_dias"
         ],
-        "distancia_geodesica_km": 153.62,
-        "ultima_revision": null
-      }
+        "distancia_geodesica_km": null,
+        "ultima_revision": "2026-11-09T13:38:46.784260+00:00"
+      },
+      "ultima_exploracion_rapida": "2026-11-20T12:02:55.811059+00:00",
+      "estado_nivel1": "CANDIDATA_CON_SENALES"
     },
     "contraste-c2cad7e488ba79eb67f3": {
       "url": "https://transparencia.urdinarrain.gov.ar/",
@@ -20203,11 +20221,11 @@
           "publicacion_ultimos_7_dias"
         ],
         "distancia_geodesica_km": 175.67,
-        "ultima_revision": null
+        "ultima_revision": "2026-11-13T11:58:54.416318+00:00"
       },
-      "ultima_exploracion_rapida": "2026-11-13T11:58:54.416318+00:00",
+      "ultima_exploracion_rapida": "2026-11-20T12:02:55.811059+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES",
-      "ultima_revision": "2026-11-13T11:58:54.416318+00:00",
+      "ultima_revision": "2026-11-20T12:02:55.811059+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -20221,7 +20239,7 @@
           "permanencia": "NO_DETERMINADA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261113T115914-692240db/0002.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261120T120316-d0a2de37/0006.json"
     },
     "contraste-5a84f92066c1f8d5905d": {
       "localidad": "Tabossi",
@@ -20300,16 +20318,11 @@
         "motivo": "Nivel rápido sin identidad/señales suficientes; no acredita ausencia de compras"
       },
       "prioridad_rapida": {
-        "puntos": 9,
+        "puntos": 6,
         "razones": [
           {
             "criterio": "identidad_verificada",
             "peso": 4,
-            "evidencia": true
-          },
-          {
-            "criterio": "publicacion_ultimos_7_dias",
-            "peso": 3,
             "evidencia": true
           },
           {
@@ -20325,6 +20338,7 @@
         ],
         "desconocidos": [
           "seccion_compras",
+          "publicacion_ultimos_7_dias",
           "historial_convocatorias"
         ],
         "distancia_geodesica_km": 212.03,
@@ -20455,11 +20469,16 @@
         "motivo": "Nivel rápido sin identidad/señales suficientes; no acredita ausencia de compras"
       },
       "prioridad_rapida": {
-        "puntos": 5,
+        "puntos": 8,
         "razones": [
           {
             "criterio": "identidad_verificada",
             "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "publicacion_ultimos_7_dias",
+            "peso": 3,
             "evidencia": true
           },
           {
@@ -20470,7 +20489,6 @@
         ],
         "desconocidos": [
           "seccion_compras",
-          "publicacion_ultimos_7_dias",
           "historial_convocatorias",
           "documentos_publicados"
         ],
@@ -20650,11 +20668,11 @@
           "publicacion_ultimos_7_dias"
         ],
         "distancia_geodesica_km": 177.18,
-        "ultima_revision": null
+        "ultima_revision": "2026-11-13T11:58:54.416318+00:00"
       },
-      "ultima_exploracion_rapida": "2026-11-13T11:58:54.416318+00:00",
+      "ultima_exploracion_rapida": "2026-11-20T12:02:55.811059+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES",
-      "ultima_revision": "2026-11-13T11:58:54.416318+00:00",
+      "ultima_revision": "2026-11-20T12:02:55.811059+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -20665,7 +20683,7 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261113T115914-692240db/0000.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261120T120316-d0a2de37/0004.json"
     },
     "contraste-a407d0343e2a7a4c7677": {
       "id": "auto-contraste-a407d0343e2a7a4c7677",
@@ -20712,11 +20730,11 @@
           "documentos_publicados"
         ],
         "distancia_geodesica_km": 145.62,
-        "ultima_revision": null
+        "ultima_revision": "2026-11-13T11:58:54.416318+00:00"
       },
-      "ultima_exploracion_rapida": "2026-11-13T11:58:54.416318+00:00",
+      "ultima_exploracion_rapida": "2026-11-20T12:02:55.811059+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES",
-      "ultima_revision": "2026-11-13T11:58:54.416318+00:00",
+      "ultima_revision": "2026-11-20T12:02:55.811059+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -20727,7 +20745,7 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261113T115914-692240db/0003.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261120T120316-d0a2de37/0007.json"
     },
     "contraste-785f62a580e00d748d85": {
       "id": "auto-contraste-785f62a580e00d748d85",
@@ -20919,12 +20937,12 @@
           "nombre_publicado": true,
           "jurisdiccion_publicada": true,
           "url": "https://www.muvc.gob.ar/",
-          "sha256": "1679a740d0eeb39dddb8c4d98db1b3789b7b53609b057ce0f84db53c56e2dfdb",
+          "sha256": "fc5e4b0fae47f79afc77d12b3b971ab35050610d1e28e400e36fb0f7099d0728",
           "cabecera": "Municipalidad de Villa Cañas",
           "motivo": null
         },
         "procedimientos_con_objeto": 27,
-        "fecha": "2026-11-13T11:59:16.942608+00:00",
+        "fecha": "2026-11-20T12:03:54.100171+00:00",
         "motivo": null,
         "ejemplos": [
           {
@@ -21232,14 +21250,14 @@
           "publicacion_ultimos_7_dias"
         ],
         "distancia_geodesica_km": 149.14,
-        "ultima_revision": null
+        "ultima_revision": "2026-11-13T11:58:54.416318+00:00"
       },
-      "ultima_exploracion_rapida": "2026-11-13T11:58:54.416318+00:00",
+      "ultima_exploracion_rapida": "2026-11-20T12:02:55.811059+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES",
-      "ultima_revision": "2026-11-13T11:58:54.416318+00:00",
+      "ultima_revision": "2026-11-20T12:02:55.811059+00:00",
       "version_verificador": 4,
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261113T115914-692240db/0001.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261120T120316-d0a2de37/0005.json"
     },
     "contraste-0caa4d8b60ae860b0222": {
       "id": "auto-contraste-0caa4d8b60ae860b0222",
@@ -21302,7 +21320,37 @@
       "evidencia_enlace": "https://www.concejorosario.gov.ar/",
       "busqueda_url": "https://www.concejorosario.gov.ar/",
       "fecha_descubrimiento": "2026-11-16T12:10:27.342616+00:00"
+    },
+    "82f625774310b0e30a92": {
+      "clave": "directorio:fuente-093",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Suardi",
+      "localidad": "Suardi",
+      "provincia": "Santa Fe",
+      "metodo": "ENLACES_OFICIALES",
+      "url_directorio": "https://www.suardiciudad.ar/",
+      "id": "auto-82f625774310b0e30a92",
+      "url": "https://www.suardiciudad.ar/boletin-oficial/",
+      "titulo": "Boletín Oficial",
+      "evidencia_enlace": "https://www.suardiciudad.ar/",
+      "busqueda_url": "https://www.suardiciudad.ar/",
+      "fecha_descubrimiento": "2026-11-20T12:02:55.811059+00:00"
+    },
+    "8d43293b31c38a9564c9": {
+      "clave": "directorio:fuente-104",
+      "tipo": "TERRITORIAL",
+      "organismo": "Comuna de María Teresa",
+      "localidad": "María Teresa",
+      "provincia": "Santa Fe",
+      "metodo": "ENLACES_OFICIALES",
+      "url_directorio": "https://mariateresa.gob.ar/",
+      "id": "auto-8d43293b31c38a9564c9",
+      "url": "https://mariateresa.gob.ar/index.php?pagina=lista&sec=270",
+      "titulo": "LICITACIONES",
+      "evidencia_enlace": "https://mariateresa.gob.ar/",
+      "busqueda_url": "https://mariateresa.gob.ar/",
+      "fecha_descubrimiento": "2026-11-20T12:02:55.811059+00:00"
     }
   },
-  "ultima_ejecucion": "2026-11-16T12:10:27.342616+00:00"
+  "ultima_ejecucion": "2026-11-20T12:02:55.811059+00:00"
 }
