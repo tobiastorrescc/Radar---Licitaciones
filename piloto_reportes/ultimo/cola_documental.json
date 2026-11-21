@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-20T08:59:50.283797-03:00",
+  "fecha": "2026-11-21T08:48:27.547867-03:00",
   "pendientes": [
     {
       "id": "cf892a5fa00e38595d57b6ea999fa09518ba2b7b00647f64cb84ee802da014dc",
@@ -44,24 +44,6 @@
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Octubre/29-10-26.pdf"
-        }
-      ]
-    },
-    {
-      "id": "b76812e9976609b514b2cae65c8923abbd3320c4975a5b515eb8157bdf003108",
-      "organismo": "Municipalidad de Funes",
-      "numero_procedimiento": "12/2026",
-      "objeto": "“ADQUISICION 2.800 M3 DE HORMIGON ELABORADO H30”",
-      "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
-      "motivo": "PLAZO_O_HITO_PENDIENTE_DE_PRECISION",
-      "documentos": [
-        {
-          "titulo": "LICITACION PUBLICA N° 012-2026 2.800 M3 HORMIGON FONDO OBRAS MENORES",
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/49/LICITACION_PUBLICA_N___012-2026_2_800_M3_HORMIGON_FONDO_OBRAS_MENORES_6ae4a0872d1f98.37437365.pdf"
-        },
-        {
-          "titulo": "DECRETO APERTURA 0432-2026 LP 012-2026 2.800 M3 HORMIGON",
-          "url": "https://funes.gob.ar/views/assets/pdfs/licitaciones/49/DECRETO_APERTURA_0432-2026_LP_012-2026_2_800_M3_HORMIGON_6ae4a625baf9b2.20493446.pdf"
         }
       ]
     },
@@ -220,6 +202,20 @@
       ]
     },
     {
+      "id": "d7c2dbbe3d62d48c65d5887854f507f625ca500167006de013a4afb5d96a614f",
+      "organismo": "Municipalidad de La Paz",
+      "numero_procedimiento": "11/2026",
+      "objeto": "PLANTA DE TRANSFERENCIA Y CLASIFICACIÓN DE RESIDUOS SÓLIDOS URBANOS (RSU).",
+      "url": "https://haciendalapaz.gob.ar/archivos/20261120093525-f_pliego.pdf",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "VER PLIEGO",
+          "url": "https://haciendalapaz.gob.ar/archivos/20261120093525-f_pliego.pdf"
+        }
+      ]
+    },
+    {
       "id": "4d39f931d27621b907b5efd605257b880246f780d9bc61d6b8729d31fcad10d8",
       "organismo": "Municipalidad de Concepción del Uruguay",
       "numero_procedimiento": "39/2026",
@@ -286,8 +282,8 @@
       "id": "2b179de325a51df714332244ce8a752dec8cbe0b8b0d5e80bfb8e5ccd27f1147",
       "organismo": "Poder Judicial de Entre Ríos",
       "numero_procedimiento": "15/2026",
-      "objeto": "Provisión y envío de insumos para el Servicio de Genética Forense del S.T.J.",
-      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "objeto": "De conformidad a lo dispuesto por el Tribunal de Superintendencia de la Provincia de Entre Ríos, por Resolución Nº133/26, llámese a Licitación Pública Nº15/26 , por la Provisión y envío de insumos para el Servicio de Genética Forense del S.T.J.",
+      "url": "https://www.jusentrerios.gov.ar/compras/licitacion-publica-no15-26-provision-y-envio-de-insumos-para-el-servicio-de-genetica-forense-del-s-t-j/",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": [
         {
@@ -388,8 +384,8 @@
       "id": "7375346e38b01717e259704bd82ab2073deade9a770dde2a118aced299e3e8db",
       "organismo": "Poder Judicial de Entre Ríos",
       "numero_procedimiento": "11/2026",
-      "objeto": "Adquisición de 1 (un) vehículo 0 Km para flota del Área de Choferes del S.T.J.",
-      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "objeto": "De conformidad a lo dispuesto por el Tribunal de Superintendencia de la Provincia de Entre Ríos, por Resolución Nº120/26, llámese a Licitación Pública Nº11/26 , por la Adquisición de 1 (un) vehículo 0 Km para flota del Área de Choferes del S.T.J.",
+      "url": "https://www.jusentrerios.gov.ar/compras/licitacion-publica-no11-26-adquisicion-de-1-un-vehiculo-0-km-para-flota-del-area-de-choferes-del-s-t-j/lic-publica-11-26/",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": [
         {
@@ -457,20 +453,24 @@
       ]
     },
     {
-      "id": "c6a6e4f1bb9a3fa0588268a67d53ffffe4965e0b69290a8da326f5b3462a3683",
-      "organismo": "Comuna de General Almada",
-      "numero_procedimiento": "4/2026",
-      "objeto": "GUALEGUAYCHU\n\n                                          COMUNA DE GENERAL ALMADA\n                                               Licitación Pública 04-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 04-2026 COMUNA DE GENERAL ALMADA AUTORIZADA\nPOR LA RESOLUCIÓN Nº 231-2026 DEL DEPARTAMENTO EJECUTIVO. COMPRA DE TANQUE DE AGUA\nPOTABLE COMUNAL (MATERIALES Y MANO DE OBRA DE INSTALACIÓN) EN EL MARCO DEL PLIEGO DE\nBASES Y CONDICIONES GENERALES Y PLIEGO DE CONDICIONES ESPECIFICAS Y TECNICAS.\n PRESUPUESTO OFICIAL: $ 55.000.000 (PESOS CINCUENTA Y CINCO MILLONES CON 00/100).\n PLIEGO: El Pliego de Bases y Condiciones Generales y el Pliego de Condiciones Específicas y Técnicas puede\nadquirirse por Mesa de Entradas de la Comuna de General Almada o en el siguiente link de acceso público:\nhttps://drive.google.com/drive/folders/1B8sIltssAwiNkJq9OjlURnB0juQ6bQE 7 .\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACION: Mesa de Entradas del Edificio Comunal, sito en calle Jorge Weitzel S/N, Comuna\nde General Almada, Departamento Gualeguaychú, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 20 de noviembre de 2026 a las 16:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 20 de noviembre de 2026 a las 17:00 horas en el Edificio\nComunal, sito en calle Jorge Weitzel S/N, Comuna de General Almada, Depto. Gualeguaychú, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de General Almada, sito en comunadealmada@hotmail.com.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/13-11-26.pdf",
+      "id": "17c4f807871b97702d00df637062d77f1b9930bb6c49b140d2b2645234c549ec",
+      "organismo": "Municipalidad de Chajarí",
+      "numero_procedimiento": "60/2026",
+      "objeto": "Provisión de 20.000 litros de gasoil EURO DIESEL para vehículos pertenecientes al parque automotor municipal.",
+      "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=720",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": [
         {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/12-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/13-11-26.pdf"
+          "consulta_post": {
+            "json": {
+              "atta_id": "6463",
+              "file_name": "pliego_y_decreto",
+              "licitacion_id": 720
+            },
+            "url": "https://licitaciones.chajari.gob.ar/return_file"
+          },
+          "titulo": "Pliego y decreto — descarga pública desde el procedimiento",
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=720"
         }
       ]
     },
@@ -553,6 +553,28 @@
           "rotulo_oficial": "ver pliego adjunto apto para cotizar",
           "titulo": "ver pliego adjunto apto para cotizar: lp10-010-26mantenimientodeflota-sies.pdf",
           "url": "https://apimgw.rosario.gob.ar/licitaciones-api/v1/licitaciones/38743/documentos/102984"
+        }
+      ]
+    },
+    {
+      "id": "994357c7df8559cd237af52ed6c384ee975a3b298f95909934c9d488a64938a5",
+      "organismo": "Municipalidad de Chajarí",
+      "numero_procedimiento": "61/2026",
+      "objeto": "Provisión de materiales - kit de filtros - para la flota del parque automotor municipal.",
+      "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=721",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "consulta_post": {
+            "json": {
+              "atta_id": "6462",
+              "file_name": "pliego_y_decreto",
+              "licitacion_id": 721
+            },
+            "url": "https://licitaciones.chajari.gob.ar/return_file"
+          },
+          "titulo": "Pliego y decreto — descarga pública desde el procedimiento",
+          "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=721"
         }
       ]
     },
@@ -649,28 +671,6 @@
       ]
     },
     {
-      "id": "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59",
-      "organismo": "Comuna de El Palenque",
-      "numero_procedimiento": "8/2026",
-      "objeto": "Adquisición de inmueble urbano destinado a la construcción de una sala de velatorios.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": [
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/05-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
-        }
-      ]
-    },
-    {
       "id": "6dac483e88ef74b836e5342741fcc404b3493d18c88e0023eac7292245744855",
       "organismo": "Aeropuerto Internacional Rosario",
       "numero_procedimiento": "LPR-2026-00000004-APPSF-OD-COM-CON-AIR-ROS",
@@ -718,52 +718,6 @@
       "url": "https://sansalvadorer.gob.ar/llamado-a-concurso-de-precios-n-31-2026-2/",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
-    },
-    {
-      "id": "1da489dc72c4eef911718ed52742a6b7709238303ad3ead35c3dc39e642454a8",
-      "organismo": "Aeropuerto Internacional Rosario",
-      "numero_procedimiento": "55/2026",
-      "objeto": "Contratación del servicio de impresión, colocación y retiro de vinilos y señalética en el paseo comercial, en el marco de la reubicación del ingreso al embarque internacional del Aeropuerto Internacional de Rosario.",
-      "url": "https://aeropuertorosario.com/licitaciones/contratacion-directa-no55-2026/",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": [
-        {
-          "titulo": "DOC-2026-00014302-APPSF-ODAeroRos.pdf",
-          "url": "https://aeropuertorosario.com/wp-content/uploads/2026/11/DOC-2026-00014302-APPSF-ODAeroRos.pdf"
-        },
-        {
-          "titulo": "DDJJ-Persona-Fisica-Anexo.pdf",
-          "url": "https://aeropuertorosario.com/wp-content/uploads/2026/11/DDJJ-Persona-Fisica-Anexo.pdf"
-        },
-        {
-          "titulo": "DDJJ-Persona-Juridica-Anexo.pdf",
-          "url": "https://aeropuertorosario.com/wp-content/uploads/2026/11/DDJJ-Persona-Juridica-Anexo.pdf"
-        },
-        {
-          "titulo": "Detalle-Especificaciones-tecnicas.pdf",
-          "url": "https://aeropuertorosario.com/wp-content/uploads/2026/11/Detalle-Especificaciones-tecnicas.pdf"
-        },
-        {
-          "titulo": "Anexo-tecnico.pdf",
-          "url": "https://aeropuertorosario.com/wp-content/uploads/2026/11/Anexo-tecnico.pdf"
-        },
-        {
-          "titulo": "Anexo-a-Entrada-Sector-B-Plano.pdf",
-          "url": "https://aeropuertorosario.com/wp-content/uploads/2026/11/Anexo-a-Entrada-Sector-B-Plano.pdf"
-        },
-        {
-          "titulo": "Anexo-b-Diseno-Entrada-Sector-B.pdf",
-          "url": "https://aeropuertorosario.com/wp-content/uploads/2026/11/Anexo-b-Diseno-Entrada-Sector-B.pdf"
-        },
-        {
-          "titulo": "Anexo-c-Diseno-Placa-Alucobond.pdf",
-          "url": "https://aeropuertorosario.com/wp-content/uploads/2026/11/Anexo-c-Diseno-Placa-Alucobond.pdf"
-        },
-        {
-          "titulo": "Especificacion-Tecnica-Aclaratoria.pdf",
-          "url": "https://aeropuertorosario.com/wp-content/uploads/2026/11/Especificacion-Tecnica-Aclaratoria.pdf"
-        }
-      ]
     },
     {
       "id": "fd5528d5eb62e6ac34c1854c1c99431dca3bec73eadd319efba948d2493d20c5",
@@ -908,6 +862,32 @@
       ]
     },
     {
+      "id": "f1baee4636938a6a5efa8bd0bfee1ba606198e76f769bb5e47116ef929f83fe4",
+      "organismo": "Aeropuerto Internacional Rosario",
+      "numero_procedimiento": "LPU-2026-00000005-APPSF-OD-COM-CON-AIR-ROS",
+      "objeto": "Incorporación de puertas biométricas para sector migraciones del Aeropuerto Internacional Rosario",
+      "url": "https://aeropuertorosario.com/licitaciones/lpu-2026-00000005-appsf-od-com-con-air-ros/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "00-CGR-HYS-MA-01-Rev-007-Manual-SHyMA-3.pdf",
+          "url": "https://aeropuertorosario.com/wp-content/uploads/2026/11/00-CGR-HYS-MA-01-Rev-007-Manual-SHyMA-3.pdf"
+        },
+        {
+          "titulo": "PBCP-LPU-2026-00000005-APPSF-ODAeroRosCOM-CON-AIR-ROS.pdf",
+          "url": "https://aeropuertorosario.com/wp-content/uploads/2026/11/PBCP-LPU-2026-00000005-APPSF-ODAeroRosCOM-CON-AIR-ROS.pdf"
+        },
+        {
+          "titulo": "RESCONJ-2026-00000375-APPSF-ODAeroRosMEyD-AIR-ROS.pdf",
+          "url": "https://aeropuertorosario.com/wp-content/uploads/2026/11/RESCONJ-2026-00000375-APPSF-ODAeroRosMEyD-AIR-ROS.pdf"
+        },
+        {
+          "titulo": "PET-LPU-2026-00000005-APPSF-ODAeroRosCOM-CON-AIR-ROS.pdf",
+          "url": "https://aeropuertorosario.com/wp-content/uploads/2026/11/PET-LPU-2026-00000005-APPSF-ODAeroRosCOM-CON-AIR-ROS.pdf"
+        }
+      ]
+    },
+    {
       "id": "3157f09145c38f1c611d12f939a8108dbcbed494a6412e6cbfd7337beae138ed",
       "organismo": "Aeropuerto Internacional Rosario",
       "numero_procedimiento": "LPU-2026-00000004-APPSF-OD-COM-CON-AIR-ROS",
@@ -932,244 +912,6 @@
           "url": "https://aeropuertorosario.com/wp-content/uploads/2026/11/Pliego-de-Bases-y-Condiciones-Tecnicas.pdf"
         }
       ]
-    },
-    {
-      "id": "1a754160cfcb7519e273310ec92c15b15eab0ad6245d7eea6e22addd17fcb1e8",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "11334/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38851",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "706788fd1acac34ca61f78fb4070504686ad8b098b15a58da311ad76a8c3222a",
-      "organismo": "Municipalidad de Villa Urquiza",
-      "numero_procedimiento": "2/2026",
-      "objeto": "-- -- --\n                                        MUNICIPALIDAD DE VILLA URQUIZA\n                                            Licitación Pública Nº 02/2026\n OBJETO: Otorgamiento de permiso de uso precario de inmuebles de dominio público municipal con destino a su\nexplotación y prestación de servicios: Puesto Nº 1, Puesto Nº 2 y Puesto Nº 3 ubicados en zona de playa\nmunicipal; Puesto Nº 4 ubicado en Camping Municipal y Puesto “El Mirador” ubicado en calle Los Sauces.-\n APERTURA DE SOBRES: viernes 20 de noviembre de 2026 a las 9:00 horas.-\n LUGAR: Sede del Municipio de Villa Urquiza Int. Edgardo Klocker Nº 534 – Villa Urquiza VALOR DEL PLIEGO:\nPesos Diez Mil ($ 10.000).-\n DEMÁS CONDICIONES EN EL PLIEGO GENERAL Domicilio: Intendente Klocker Nº 534 Villa Urquiza, Dpto.\nParaná, Entre Ríos E-mail: villaurquiza.secretaria@gmail.com\n MANUEL A. TENNEN, Presidente Municipal, VALENTINA S. RIVERO, Secretaria de Gobierno y Gestión\nAdministrativa.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/04-11-26.pdf",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": [
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/04-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/03-11-26.pdf"
-        }
-      ]
-    },
-    {
-      "id": "ee0ab2e426b9ef397c5f8df2ea4935790bdcf2f32ba0d8b3ff2b68a81152102e",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "76105/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38827",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "5aa07540b90934ae47a58214d3e0e0d6d31bcaa7a1c3aae729433566597a8b03",
-      "organismo": "Poder Judicial de Entre Ríos",
-      "numero_procedimiento": "285/2026",
-      "objeto": "Contratación del servicio anual de revisión, limpieza, control y prueba de funcionamiento, con cambio de packs de baterías (solo Alcaidía) de los sistemas de detección, aviso y extinción de incendios (este último solo para Data Center Paraná) de los equipos distribuidos en la ciudad de Paraná, ubicados en la Dirección de Informática, Alcaidía y Archivo Judicial, y en el edificio central de calle Mitre N°26 de la ciudad de Concordia",
-      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "a10b73ed2e69df5e28ead53ce6b2981461199f636d79f451e3560290d8fec943",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "11181/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38841",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "9bb486e1a1d661698c2778a446b6b571e27f9ea384eb2620cf0e8d60164c3b71",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "120851/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38785",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "a58603633f12851914fb81ce7a130c43706e8b31ad8adf4a8cbe8971cb83e0e0",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "131531/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38802",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "555142c6f5c29ee645381f60241e6a9482d38260ab2fa303dd30bac4807cb8e2",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "24955/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38838",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "6b86e63b29f6ddcd46d71fb1c74bfe122161a14cdfbd5fbcd28a85c741ffa53f",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "3221/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38846",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "cde2083be8431fa9ff86c58acfdc7764383bf3e3fc8af3dda365c8f489bde629",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "38506/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38845",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "d45734de196809578251e626b29a28402d7546a5bc1d6ede244757fe8d6a6dc3",
-      "organismo": "Poder Judicial de Entre Ríos",
-      "numero_procedimiento": "32/2026",
-      "objeto": "Provisión y envío de bienes informáticos para destinar al Ministerio Publico de la Defensa de Entre Ríos",
-      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": [
-        {
-          "titulo": "LIC PRIVADA 32-26",
-          "url": "https://www.jusentrerios.gov.ar/wp-content/uploads/2026/11/LIC-PRIVADA-32-26.zip"
-        }
-      ]
-    },
-    {
-      "id": "7c87962f54cbf90f5827eba5dc0f6c31cac91962998680a4c20f2a88db5f4426",
-      "organismo": "CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO",
-      "numero_procedimiento": "268/2026",
-      "objeto": "compra de tres dispositivos tipo tablet",
-      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "d6b1b5e99ea8c6b7fff1e29a14c3f58a3fa62a5f3abbcafc0bcc61f2438a0940",
-      "organismo": "Municipalidad de Rosario del Tala",
-      "numero_procedimiento": "1/2026",
-      "objeto": "TALA\n\n                                     MUNICIPALIDAD DE ROSARI O DEL TALA\n                                      Llam ado a Licitación Pública Nº 01/2026\n  Objeto: La Municipalidad de Rosario del Tala (Entre Ríos) llama a Licitación Pública Nº 01/2026 para otorgar en\nConcesión por el plazo de veintidós (22) meses la explotación del servicio de cantina “El Ceibo”, proveeduría,\nkiosco y venta de comidas, del Parque y Balneario Municipal “Dr. Delio Panizza”, conforme Pliego de Bases y\nCondiciones Generales; Ley Nº 10.027, sus modificatorias; Ordenanza 284/88, sus modificatorias y decretos\nreglamentarios.-\n  Base Económica por el Período Licitado: pesos dieciocho millones seiscientos mil ($ 18.600.000,00) por veintidós\n(22) meses.\n  Pliego de Bases y Condiciones: En Tesorería Municipal de lunes a viernes de 07:00 a 12:30 horas.\n  Precio del pliego: pesos cuarenta y cinco mil ($ 45.000,00).-\n  Apertura de ofertas: 20 de Noviembre de 2026 a las 10:00 hs. en la Secretaría Municipal o el día hábil siguiente\nsi este resultara feriado o asueto.-\n  Consultas: Oficina de Compras y Suministros, días hábiles de 07:00 a 12:30 hs.- Teléfonos: (03445) 421700 –\n(03445)-15471203 – Mail: comprasmunitala@gmail.com municipiordt2024@gmail.com – (03445) 422755.-\nwww.rosariodeltala.gob.ar\n   Rosario del Tala, 23 de Octubre de 2026.- MAURO ANDRÉS PANIZZA, Secretario General.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/13-11-26.pdf",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": [
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/06-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/10-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/11-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/12-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/13-11-26.pdf"
-        }
-      ]
-    },
-    {
-      "id": "46ce085a3020cca879390f5138fa529926bb340be7f8eaf544f819f709bbedc0",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "3222/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38847",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "c1fbc63197006db2453ec537e6a7779f6d5715bb30d0c31c98aa20f30295f9ec",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "24965/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38840",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "602b367c31f8449e8ff19d22530e532ed6fc18d2a59700015ddb42764cb4825c",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "3223/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38848",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "b4cc5ba1ba226b12e97e02ada7c5d0ef7cee6a37d93144a9933c7012eb9ab7e6",
-      "organismo": "Poder Judicial de Entre Ríos",
-      "numero_procedimiento": "19/2026",
-      "objeto": "Cotejo de Precios Nº 19/26: \"Obra: Ejecución de nueva estructura y terminación de pisos de oficinas. Tribunales Concordia\"",
-      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": [
-        {
-          "titulo": "COTEJO DE PRECIOS N°19-26",
-          "url": "https://www.jusentrerios.gov.ar/wp-content/uploads/2026/11/COTEJO-DE-PRECIOS-N%C2%B019-26.zip"
-        }
-      ]
-    },
-    {
-      "id": "65a90181873c151481e44a86c1235e233d2f24a5fe5663b184261120dadd22af",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "3224/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38849",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "cb6c8ef5a81503b23a60fa9711523e2b11fb749b75fe4c468317d07f76e1f3f5",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "120861/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38791",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "cd52573d098e775fab7dcbe68c11ad961af207abfc3e267464d79ecfe9b664cf",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "24975/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38844",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "b13691bf6d0f65cb11a3ce25e1000a8f2e5841cf6710a5067ed2366160c03ce3",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "52/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38786",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
-    },
-    {
-      "id": "448688fe765e0f86f83078032f0c29db80f48b4ccfd860a1fe3b50e2beada294",
-      "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "76102/2026",
-      "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38829",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
     },
     {
       "id": "1f2f4ab374a0fccde00c39ee23ae236ffacda593eea36f1dce3cc7ff923f3ede",
@@ -1220,7 +962,7 @@
       "id": "1f34e0bbcf756c9a0abaceb01fec2ead6d2d180c54eeebc4942ffbbc26fb7d28",
       "organismo": "Concejo Municipal de Rosario",
       "numero_procedimiento": "17/2026",
-      "objeto": "Compras y Contrataciones Compra Ágil 17/2026 Provisión de Cajas Navideñas Para Apertura Número Compra Ágil 17/2026 Tipo de compra Compra Ágil Valor oficial $ 7.820.000,00 Fecha y hora de Apertura 24/11/2026 06:00:00 Fecha de publicación 17/11/2026 Última actualización 17/11/2026 07:18:37 Documentación Pliego Compra Ágil 17/2026 Pliego",
+      "objeto": "Compras y Contrataciones Compra Ágil 17/2026 Provisión de Cajas Navideñas Para Apertura Número Compra Ágil 17/2026 Tipo de compra Compra Ágil Valor oficial $ 7.820.000,00 Fecha y hora de Apertura 24/11/2026 07:00:00 Fecha de publicación 17/11/2026 Última actualización 17/11/2026 08:18:37 Documentación Pliego Compra Ágil 17/2026 Pliego",
       "url": "https://compras.concejorosario.gov.ar/compras/3311/descargar/5",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
@@ -1253,6 +995,15 @@
       "documentos": []
     },
     {
+      "id": "8db90506657ad09bcab0e3fadb48a4d0eeee36e439396462dd48103f28888534",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "288/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº 288/26: “Provisión, envío y/o instalación del mobiliario y silloneria para ser destinado a la nueva Oficina de Conciliación del Ministerio Público Fiscal” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 288/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 288/26: “Provisión, envío y/o instalación del mobiliario y silloneria para ser destinado a la nueva Oficina de Conciliación del Ministerio Público Fiscal”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 24 de noviembre de 2026 a las 09:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : Descargar Imprmir",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-288-26-provision-envio-y-o-instalacion-del-mobiliario-y-silloneria-para-ser-destinado-a-la-nueva-oficina-de-conciliacion-del-ministerio-publico-fiscal/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "08bdb2f77b6a303e47160adb9d774edf1be54ace72ac58269d2475288b9f016d",
       "organismo": "Ministerio Público de Buenos Aires",
       "numero_procedimiento": "29/2026",
@@ -1265,15 +1016,6 @@
           "url": "https://www.mpba.gov.ar/auctions/5182/download_attachments/pliego"
         }
       ]
-    },
-    {
-      "id": "8db90506657ad09bcab0e3fadb48a4d0eeee36e439396462dd48103f28888534",
-      "organismo": "Poder Judicial de Entre Ríos",
-      "numero_procedimiento": "288/2026",
-      "objeto": "Provisión, envío y/o instalación del mobiliario y silloneria para ser destinado a la nueva Oficina de Conciliación del Ministerio Público Fiscal",
-      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": []
     },
     {
       "id": "86fb8fd286179e0543009e735bb9cc17a14d294fe5ae6d6e848bdc7d9a30d155",
@@ -1441,6 +1183,15 @@
       "documentos": []
     },
     {
+      "id": "93f6922977db484f36cb98f713b523814ed3c8cefe35a50e21daee3a65c6fc3a",
+      "organismo": "CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO",
+      "numero_procedimiento": "283/2026",
+      "objeto": "CONTRATACION DE SERVICIO DE CATERING PARA 50 PERSONAS EN LA LOCALIDAD DE VILLAGUAY PARA LE 30/11/2026",
+      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "2eb0c42230a5af8081ed8afb29f6ead20cfeaf9a2bfbea2482e4bf92265b61c5",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "131541/2026",
@@ -1453,8 +1204,8 @@
       "id": "47712a061c3e0d448ce967df1d20e54c96eeb9558b1ae6914b9af5fafb25e166",
       "organismo": "Poder Judicial de Entre Ríos",
       "numero_procedimiento": "289/2026",
-      "objeto": "Provisión y colocación de cuatro (4) cubiertas medida 225/75 R16, con su correspondiente alineación y balanceo, para el vehículo Mercedes Benz Sprinter",
-      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "objeto": "Contrataciones Solicitud de Cotización Nº 289/26: “Provisión y colocación de cuatro (4) cubiertas medida 225/75 R16, con su correspondiente alineación y balanceo, para el vehículo Mercedes Benz Sprinter” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 289/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 289/26: “ Provisión y colocación de cuatro (4) cubiertas medida 225/75 R16, con su correspondiente alineación y balanceo, para el vehículo Mercedes Benz Sprinter ”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 24 de noviembre de 2026 a las 10:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 289-26 Descargar Imprmir",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-289-26-provision-y-colocacion-de-cuatro-4-cubiertas-medida-225-75-r16-con-su-correspondiente-alineacion-y-balanceo-para-el-vehiculo-mercedes-benz-sprinter/",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
@@ -1513,10 +1264,28 @@
       "documentos": []
     },
     {
+      "id": "000cc42b7ef6f5efb03e9a6df69087f7b9f95a8199226cc8a5b27992327038a1",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "25025/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38884",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "d0f1423b24064cb2655cdf4d8a01e319164d53006260993c49f69113250d41a2",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "291/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº 291/26: “Provisión y envío de materiales de audio para ser destinados a la Oficina de Juicio por Jurados y OGA de la localidad de Paraná” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 291/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 291/26: “Provisión y envío de materiales de audio para ser destinados a la Oficina de Juicio por Jurados y OGA de la localidad de Paraná”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 24 de noviembre de 2026 a las 12:00 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 291-26 Descargar Imprmir",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-291-26-provision-y-envio-de-materiales-de-audio-para-ser-destinados-a-la-oficina-de-juicio-por-jurados-y-oga-de-la-localidad-de-parana/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "e7414e21b95f006aa752afd7d9d3a001fce1651bca564814f8f653a8f20feff3",
       "organismo": "Concejo Municipal de Rosario",
       "numero_procedimiento": "16/2026",
-      "objeto": "Compra ágil 16/2026 Contratación del servicio de \"Verificación anual de disyuntores, medición de puesta a tierra y continuidad de las masas\" en los edificios del Concejo Municipal de Rosario. Tipo: Compra Ágil Apertura: 25/11/2026 06:00:00 Para Apertura Ver detalle",
+      "objeto": "Compra ágil 16/2026 Contratación del servicio de \"Verificación anual de disyuntores, medición de puesta a tierra y continuidad de las masas\" en los edificios del Concejo Municipal de Rosario. Tipo: Compra Ágil Apertura: 25/11/2026 07:00:00 Para Apertura Ver detalle",
       "url": "https://compras.concejorosario.gov.ar/compras/3281",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
@@ -1538,6 +1307,15 @@
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf"
         }
       ]
+    },
+    {
+      "id": "748d3e78b80dfeeabf86602dc3dce928dd6e921a5e6b033331a2c43bee22dc49",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "282/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº282/26: “Provisión y envío de los elementos, para ser destinados a Agentes de las Morgues Judiciales de la Provincia de Entre Ríos” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 282/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº282/26: “Provisión y envío de los elementos, para ser destinados a Agentes de las Morgues Judiciales de la Provincia de Entre Ríos”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 25 de Noviembre de 2026 a las 09:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 282-26 Descargar Imprmir",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no282-26-provision-y-envio-de-los-elementos-para-ser-destinados-a-agentes-de-las-morgues-judiciales-de-la-provincia-de-entre-rios/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
     },
     {
       "id": "7e9776874b9913a0d573cb2af62014d60ea14ecf1220020cec5674d45103bc3c",
@@ -1638,6 +1416,15 @@
       "documentos": []
     },
     {
+      "id": "224b7420c36df1efc6028fafc9455fa63678ddcece49f79c5a2552ea956aff1a",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "71291/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38886",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "7ca25352ee8ffae334b334758cea683658614df3fb853793ef9e412b261fe31e",
       "organismo": "Ministerio de Planeamiento e Infraestructura",
       "numero_procedimiento": "12/2026",
@@ -1645,20 +1432,6 @@
       "url": "https://www.entrerios.gov.ar/minplan/contrataciones/lpn_dgayc_2026-12",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
-    },
-    {
-      "id": "a6d89765cbd5051a43efbaa00860a5c1e862270196169ec2dd8db3a6c2163a37",
-      "organismo": "Poder Judicial de Entre Ríos",
-      "numero_procedimiento": "14/2026",
-      "objeto": "Obra: Construcción Nuevo Edificio para Juzgado de Villa Mantero",
-      "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
-      "motivo": "SIN_CLAUSULA_COMPROBADA",
-      "documentos": [
-        {
-          "titulo": "LICITACION PUBLICA 14-26",
-          "url": "https://www.jusentrerios.gov.ar/wp-content/uploads/2026/11/LICITACION-PUBLICA-14-26.zip"
-        }
-      ]
     },
     {
       "id": "1178ce2e9f83fbdf39c77b23b91b16a55b1246101cb13d03111249a4d45e8e1d",
@@ -1686,6 +1459,20 @@
       "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
+    },
+    {
+      "id": "a6d89765cbd5051a43efbaa00860a5c1e862270196169ec2dd8db3a6c2163a37",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "14/2026",
+      "objeto": "UBICACIÓN DE LA OBRA : Juan M. Seró Nº775 – Villa Mantero – Dpto. Uruguay – Entre Ríos. PROVISION DE PLIEGOS : consultas en la Oficina de Compras y Asesoramiento del Poder Judicial, sita en PB – Edificio Tribunales – Laprida Nº250 – Paraná – Entre Ríos – de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: 0343-406142, correo electrónico compras@jusentrerios.gov.ar, los mismos podrán ser adquiridos hasta el 17/11/2026 inclusive. VALOR DEL PLIEGO : $1.000,00 (PESOS: UN MIL CON 00/100).- PRESUPUESTO OFICIAL : PESOS: TRESCIENTOS OCHENTA Y SEIS MILLONES DOSCIENTOS SIETE MIL CIENTO OCHENTA Y NUEVE CON 21/100 ($386.207.189,21). LUGAR DE PRESENTACION DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – PB – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 25 de noviembre de 2026 a las 10:00 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – PB – Paraná – Entre Ríos. DESCARGAS: LICITACION PUBLICA 14-26 Descargar Imprmir",
+      "url": "https://www.jusentrerios.gov.ar/compras/licitacion-publica-no14-26-obra-construccion-nuevo-edificio-para-juzgado-de-villa-mantero/licitacion-publica-14-26/",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": [
+        {
+          "titulo": "LICITACION PUBLICA 14-26",
+          "url": "https://www.jusentrerios.gov.ar/wp-content/uploads/2026/11/LICITACION-PUBLICA-14-26.zip"
+        }
+      ]
     },
     {
       "id": "30592543b15e9391fb00cc245cba9c39be0c8738befaaaa3b5f7249dd0b60be8",
@@ -1858,6 +1645,15 @@
       "documentos": []
     },
     {
+      "id": "a69437d395c5f19f57da8c71212e83bfbe4fb2d50bc01f26bcbe0c621dee2e3d",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "131571/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38879",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "36d36ca7cf798bb2180221d513475a032ccb7ce4de50c8cb9deab99cb815111c",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "28/2026",
@@ -1986,6 +1782,141 @@
       "documentos": []
     },
     {
+      "id": "c3a03927b34b7cae07e95f4e085a46f5fe6fbd51b1be79ecb5905dec9b21a2d4",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11384/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38894",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "74360436f734c5f0482010462d3784e9c6a2ee8851e3e0b6fbc61879a79f16c7",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11394/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38895",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "defca1c601750e81bc3a7675794c29a40a8ea7e5c4e84337b3533ab7b08e4dba",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11404/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38896",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "7b2df962bb5fec3aab5e2d7cc4bc454952d703096264be4faebdaafee036b0b6",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11414/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38897",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "b14d7db16a11a918f07e344324fc90b3353c67c38e08d0eba59b49b97a1976fb",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11434/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38900",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "c32f47b8ede6e5f316058a1ffc65a358e4c918fe348c5efb322259acc34dda9c",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11444/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38901",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "84c18f4d75c326ce156a107ed6d57b441046a1f9fd2a9e673f90cb976975665b",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11454/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38902",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "b97d37afc7ed4bf1f2cfea72597ad4e0b40aa90bac8febbf5e656588097077af",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11464/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38903",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "be7c8fff31c65b46c1eeed0eaacfb0725bc3e818e39a4194449274c8d12ba358",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11474/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38904",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "ae1dd751681db2854c5d71321d60e2785df47a8695cf72239de440590e667320",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11484/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38905",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "4e4d528f88027c79e3574c469f89e80e60e3a2474a0c242c3bfcbb0a9406ae4c",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11494/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38906",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "8b0a504e63e74dcc793f32d4f5fccc3b3151c644ae1b00d16da2d7666baeac8a",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11504/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38907",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "3c2158f7922e30f0e0c56260f5cfec12b7b706a0c81aabfe097550c301b3f4c2",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11514/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38908",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "20c69760b181d5a73dd947a73f0d86260696a441827a9e5dce06d396061eb218",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11524/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38909",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "8716f5f2f757924d0bba745f97b2178b43d04cb5f776f68b5428cf0abc1c06ef",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11424/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38899",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "a027bbaa3d7c40533599292f4c1ac10dbe2ba60f423b7f15359b1736e6d75e46",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "33597/2026",
@@ -2017,11 +1948,29 @@
       ]
     },
     {
+      "id": "ad326cc3f3f382bb516299235ff9b66f2bdcbd20f01f1a775b680768a2bdeea1",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "72658/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38885",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "41b0dfbf42d0700247fed4c03b140ee082b08acd16e784a7caa3c8834cefb17e",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "120901/2026",
       "objeto": null,
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38865",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "d2384c2b3f9a3d94f125b90c5201747dce5460bfb5f64197f0d1aecd0750f977",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "32003/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38898",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
@@ -2239,6 +2188,24 @@
       "documentos": []
     },
     {
+      "id": "d6438d247ea9ecb1e57f0ad349870119c12c4e179346b57ebc02b3f32092b9eb",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "35813/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38877",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "e2dcc2d92f4af019ef7f56dd7609cbda2083298a65f9148a3ecffc955e74d0b0",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "37133/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38889",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "7b55a45170f5e26bad678e0d89ab7d62a58af4691f82eac497e53358048c2794",
       "organismo": "ASSA",
       "numero_procedimiento": "1733",
@@ -2267,6 +2234,15 @@
           "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/2339de25-7826-4855-a013-79d1f9bdfd22.pdf"
         }
       ]
+    },
+    {
+      "id": "2ccbe378d3f7698c92c44ad9f41eb69e9641870c25981552ebc9700f35d2efe4",
+      "organismo": "Ministerio de Planeamiento e Infraestructura",
+      "numero_procedimiento": "2/2026",
+      "objeto": "Unidad Ejecutora Provincial Licitación Pública 02/2026 UEP Adquisición de Insumos y Equipamiento Apícola (Material Inerte) para el Fortalecimiento Productivo Apertura: martes, 01 de diciembre de 2026 - 10:00hs",
+      "url": "https://www.entrerios.gov.ar/minplan/contrataciones/lpn_uep_2026-02",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
     },
     {
       "id": "341c84f0829354a076ddeb78f9ca747ceb078dbdd4a855dbda73817a06e00b72",
@@ -2305,11 +2281,29 @@
       "documentos": []
     },
     {
+      "id": "be9d32f2451546e9aee184c8f75abd60205b7794b85482a36d6fc77c828f0cae",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "23/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38878",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "3f4a725b06fb24bbd482d75701d92715490980dd2fb51fa8e14503258f3cc381",
       "organismo": "DIR. GRAL. DE CONTRATACIONES DEL ESTADO - MIN. DE ECONOMIA Y SERVICIOS PUBLICOS - PODER EJECUTIVO",
       "numero_procedimiento": "15/2026",
       "objeto": "Contratar la provisión, instalación, configuración y puesta en funcionamiento de equipamiento de seguridad perimetral para la red de datos del Gobierno de la Provincia de Entre Ríos.",
       "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "fdd93be4b9c058618252bd0db8e6bb613d66dee903c08cc0582eb22eab400852",
+      "organismo": "Poder Judicial de Entre Ríos",
+      "numero_procedimiento": "290/2026",
+      "objeto": "Contrataciones Solicitud de Cotización Nº290/26: “Provisión, envío y colocación de películas de control solar y cortinas en distintos Organismos Judiciales del Poder Judicial de Entre Ríos” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 290/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº290/26: “Provisión, envío y colocación de películas de control solar y cortinas en distintos Organismos Judiciales del Poder Judicial de Entre Ríos”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 03 de Diciembre de 2026 a las 09:30hs en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 290-26 y Especificaciones Tecnicas Descargar Imprmir",
+      "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no290-26-provision-envio-y-colocacion-de-peliculas-de-control-solar-y-cortinas-en-distintos-organismos-judiciales-del-poder-judicial-de-entre-rios/",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
@@ -2341,6 +2335,15 @@
       "documentos": []
     },
     {
+      "id": "b663aba2001729b874bd67f90edf6db173cde6b763c4bb7832646f3d118776c2",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "50971/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38880",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9",
       "organismo": "Municipalidad de Venado Tuerto",
       "numero_procedimiento": "27/2026",
@@ -2355,6 +2358,10 @@
         {
           "titulo": "Haz clic aquí",
           "url": "https://venadotuerto.gob.ar/wp-content/uploads/2026/11/Pliego-de-Condiciones-Licitacion-Publica-N%C2%B0-027-26.pdf"
+        },
+        {
+          "titulo": "CIRCULAR Nº1",
+          "url": "https://venadotuerto.gob.ar/wp-content/uploads/2026/11/CIRCULAR-No-1.pdf"
         }
       ]
     },
@@ -2371,6 +2378,15 @@
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf"
         }
       ]
+    },
+    {
+      "id": "18e4174649097e116cd9a190bd818e73a34886223f6478fa4fc1a8a11564742d",
+      "organismo": "Ministerio de Planeamiento e Infraestructura",
+      "numero_procedimiento": "1/2026",
+      "objeto": "Unidad Ejecutora Provincial Licitación Pública 01/2026 UEP Ejecución de Obras Básicas, Calzadas de Ripio y Obras de Arte - PROSAF E.R. Apertura: jueves, 10 de diciembre de 2026 - 10:00hs",
+      "url": "https://www.entrerios.gov.ar/minplan/contrataciones/lpn_uep_2026-01",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
     },
     {
       "id": "1b8c5b61478412c967fc900acdbe0e84805df5862b16aa9e0c2c0f3b22517873",
@@ -2391,6 +2407,15 @@
       "documentos": []
     },
     {
+      "id": "f3f00517e1b74e905519b2e86e8fc9f720fdfbf6db3fc45c7ef272247da80e1b",
+      "organismo": "Ministerio de Planeamiento e Infraestructura",
+      "numero_procedimiento": "3/2026",
+      "objeto": "Unidad Ejecutora Provincial Licitación Pública 03/2026 UEP Adquisición de Equipamiento e Infraestructura para Salas Apícolas Apertura: martes, 15 de diciembre de 2026 - 10:00hs",
+      "url": "https://www.entrerios.gov.ar/minplan/contrataciones/lpn_uep_2026-03",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "0099dd82326ff35af76a79fd7b3b3c6add4ec3358add6b10e390abb82eaadc4d",
       "organismo": "Comuna de Justo José de Urquiza",
       "numero_procedimiento": "1/2026",
@@ -2403,6 +2428,15 @@
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf"
         }
       ]
+    },
+    {
+      "id": "de785da033c9d623f77e5579b8136dc4b36b98a6cb37035336e69883171278e1",
+      "organismo": "Ministerio de Planeamiento e Infraestructura",
+      "numero_procedimiento": "15/2026",
+      "objeto": "Dirección General de Arquitectura y Construcciones Licitación Pública 15/2026 DGAyC Refuncionalización y Reparaciones de Registro Civil y Capacidad de las Personas, Paraná Apertura: miércoles, 16 de diciembre de 2026 - 10:00hs",
+      "url": "https://www.entrerios.gov.ar/minplan/contrataciones/lpn_dgayc_2026-15",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
     },
     {
       "id": "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99",
