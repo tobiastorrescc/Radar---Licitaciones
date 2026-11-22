@@ -1,6 +1,6 @@
 # Convocatorias con recepción vigente comprobada
 
-Fecha: 2026-11-21T08:48:27.547867-03:00. Total: 22. Sin recortes por rubro, monto ni pago.
+Fecha: 2026-11-22T15:24:19.530870-03:00. Total: 22. Sin recortes por rubro, monto ni pago.
 
 | organismo | provincia | localidad | numero | objeto | fecha_publicacion_comprobada | apertura | limite_presentacion | estado_vigencia | presupuesto | pago | modalidad_presentacion | url | pliego |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -41,11 +41,10 @@ Fecha: 2026-11-21T08:48:27.547867-03:00. Total: 22. Sin recortes por rubro, mont
 - [Municipalidad de Las Parejas](https://lasparejas.gov.ar/): PENDIENTE
 - [Municipalidad de Funes](https://funes.gob.ar/): PARCIAL
 - [Municipalidad de Roldán](https://www.roldan.gov.ar/wp/documents/licitaciones-y-contrataciones/): TIEMPO_FUENTE
-- [Municipalidad de Pérez](https://perez.opendata.junar.com/home/): PENDIENTE
-- [Municipalidad de Santo Tomé](https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia): PENDIENTE
+- [Municipalidad de Pérez](https://perez.opendata.junar.com/home/): TIEMPO_FUENTE
+- [Municipalidad de Santo Tomé](https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia): BLOQUEADA
 - [Municipalidad de Santa Fe](https://transparencia.santafeciudad.gov.ar/compras-y-contrataciones/): BLOQUEADA
 - [Municipalidad de Santa Fe](https://transparencia.santafeciudad.gov.ar/contrataciones-obra/): BLOQUEADA
-- [CAFESG](https://cafesg.gob.ar/cafesg2/licitaciones/): BLOQUEADA
 - [Poder Judicial de Entre Ríos](https://www.jusentrerios.gov.ar/contrataciones/): TIEMPO_FUENTE
 - [ENERSA](https://www.enersa.com.ar/area-proveedores/): BLOQUEADA
 - [Instituto Becario](https://institutobecario.gov.ar/licitaciones.php): BLOQUEADA
@@ -70,7 +69,7 @@ Fecha: 2026-11-21T08:48:27.547867-03:00. Total: 22. Sin recortes por rubro, mont
 - [Gobierno de Timbúes](https://www.timbues.gob.ar/index.php?pagina=lista&sec=210): TIEMPO_FUENTE
 - [Municipalidad de Villa Elisa](https://villaelisa.gov.ar/transparencia/): PARCIAL
 - [Municipalidad de Lucas González](https://lucasgonzalez.gob.ar/licitaciones-y-concursos/): BLOQUEADA
-- [Municipalidad de Junín](https://www.junin.gob.ar/servicio/licitaciones-y-concursos): TIEMPO_FUENTE
+- [Municipalidad de Junín](https://www.junin.gob.ar/servicio/licitaciones-y-concursos): BLOQUEADA
 - [Municipalidad de Viale](https://viale.gob.ar/pliegos/): TIEMPO_FUENTE
 - [Municipio de Oro Verde](https://oroverde.gob.ar/portal/secciones/licitaciones/): TIEMPO_FUENTE
 - [Municipalidad de Seguí](https://www.segui.gob.ar/sitio/?cat=26): PARCIAL
@@ -83,5 +82,6 @@ Fecha: 2026-11-21T08:48:27.547867-03:00. Total: 22. Sin recortes por rubro, mont
 - [Municipalidad de Santa Ana](https://www.santaana.gob.ar/home/licitaciones/): PARCIAL
 - [Municipalidad de Ceres](https://ceres.gob.ar/compras/): PARCIAL
 - [Municipalidad de Funes](https://funes.gob.ar/boletin_oficial): PARCIAL
-- [Municipalidad de Arrecifes](https://arrecifes.gob.ar/informacion-publica/boletin-oficial/): PENDIENTE
+- [Municipalidad de Arrecifes](https://arrecifes.gob.ar/informacion-publica/boletin-oficial/): PARCIAL
+- [Municipalidad de Sastre y Ortiz](https://sastreciudad.gob.ar/intendencia/): TIEMPO_FUENTE
 - [Municipalidad de General Galarza](https://galarza.gov.ar/autoridades/): PENDIENTE

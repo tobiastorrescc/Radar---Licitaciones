@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-21T08:48:27.547867-03:00",
+  "fecha": "2026-11-22T15:24:19.530870-03:00",
   "total": 22,
   "oportunidades": [
     {
@@ -120,7 +120,7 @@
       ],
       "id": "e4906d645499e0b70adbbcb02fc4ccf657789be0c08f1690ac24c8d60fd93564",
       "primera_deteccion": "2026-11-19T09:01:25.836369-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "e4906d645499e0b70adbbcb02fc4ccf657789be0c08f1690ac24c8d60fd93564"
@@ -271,7 +271,7 @@
       ],
       "id": "c17e2391c519e2c59fabf3773a29e1ef2728c9b23172fc8b219085d8a7990c78",
       "primera_deteccion": "2026-11-19T09:01:25.836369-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "c17e2391c519e2c59fabf3773a29e1ef2728c9b23172fc8b219085d8a7990c78"
@@ -422,7 +422,7 @@
       ],
       "id": "b50f9685cd9b602852c8ecad5f641fd53d4a33141a9379218e62d2a0a3c001e3",
       "primera_deteccion": "2026-11-20T08:59:50.283797-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "b50f9685cd9b602852c8ecad5f641fd53d4a33141a9379218e62d2a0a3c001e3"
@@ -569,7 +569,7 @@
       ],
       "id": "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9d345e0888158367765adb99dcfe47c1659ff5a14904a809c33c2d92e58759c4"
@@ -715,7 +715,7 @@
       ],
       "id": "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0",
       "primera_deteccion": "2026-11-01T08:31:08.968829-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0"
@@ -849,7 +849,7 @@
       ],
       "id": "8ec7898f1853f968c04e60669482cbc7ce8fac3999f74798ae3277cc7c44adb0",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "8ec7898f1853f968c04e60669482cbc7ce8fac3999f74798ae3277cc7c44adb0"
@@ -983,7 +983,7 @@
       ],
       "id": "5a1668b5ea4f410f3abaf313d5aec9592bbb774429babfc0dd0a11f6c299492c",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "5a1668b5ea4f410f3abaf313d5aec9592bbb774429babfc0dd0a11f6c299492c"
@@ -1305,7 +1305,7 @@
       ],
       "id": "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7",
       "primera_deteccion": "2026-11-07T08:36:35.631351-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7"
@@ -1601,7 +1601,7 @@
       ],
       "id": "7e9776874b9913a0d573cb2af62014d60ea14ecf1220020cec5674d45103bc3c",
       "primera_deteccion": "2026-11-12T08:58:51.069853-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7e9776874b9913a0d573cb2af62014d60ea14ecf1220020cec5674d45103bc3c"
@@ -1870,7 +1870,7 @@
       ],
       "id": "94f8805a0e854f14925878d49e0f56ae0624aceaa6f23c72741ec9a348205178",
       "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "94f8805a0e854f14925878d49e0f56ae0624aceaa6f23c72741ec9a348205178"
@@ -2008,7 +2008,7 @@
       ],
       "id": "3102ff1411f55c90562db9fa8517e4629a88830f095019ecb08dcb25ed0a71d4",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3102ff1411f55c90562db9fa8517e4629a88830f095019ecb08dcb25ed0a71d4"
@@ -2142,7 +2142,7 @@
       ],
       "id": "fc4c9a80f2129ecfc1543a0501279fb803035a454da54777dbff5ad451a2db70",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fc4c9a80f2129ecfc1543a0501279fb803035a454da54777dbff5ad451a2db70"
@@ -2276,7 +2276,7 @@
       ],
       "id": "a5e318b44082ae5ebf9eaf719609249ecb40d19ec8df1e8547360a4886c633b9",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "a5e318b44082ae5ebf9eaf719609249ecb40d19ec8df1e8547360a4886c633b9"
@@ -2410,7 +2410,7 @@
       ],
       "id": "fdeaee316d53bb9c1e02cbcec386f5f776a9368c1a2f62e8fe4c6ea6b468ef6f",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fdeaee316d53bb9c1e02cbcec386f5f776a9368c1a2f62e8fe4c6ea6b468ef6f"
@@ -2500,7 +2500,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Apertura de ofertas: 26 de noviembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas LP N3-2026. circular aclaratoria nº1 • 468 kB • 29 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 188 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 139 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 97 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 97 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 99 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 104 click 9 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Apertura de ofertas: 26 de noviembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas LP N3-2026. circular aclaratoria nº1 • 468 kB • 37 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 195 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 146 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 99 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 99 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 103 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 106 click 9 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
@@ -2545,7 +2545,7 @@
       ],
       "id": "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a"
@@ -2884,7 +2884,7 @@
       ],
       "id": "af809a1a2301fd5ac19ea9d2f78fdf59162c9bbcca0ec3e17a9bc081e3e49c32",
       "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "af809a1a2301fd5ac19ea9d2f78fdf59162c9bbcca0ec3e17a9bc081e3e49c32"
@@ -3245,7 +3245,7 @@
       ],
       "id": "2d840d3f136208e858d4981960e53bcfca64a1034194dbbc716f800078f33a42",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "2d840d3f136208e858d4981960e53bcfca64a1034194dbbc716f800078f33a42"
@@ -3591,7 +3591,7 @@
       ],
       "id": "7b55a45170f5e26bad678e0d89ab7d62a58af4691f82eac497e53358048c2794",
       "primera_deteccion": "2026-11-14T08:37:49.537518-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7b55a45170f5e26bad678e0d89ab7d62a58af4691f82eac497e53358048c2794"
@@ -3741,7 +3741,7 @@
       ],
       "id": "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9"
@@ -3773,7 +3773,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -3878,7 +3877,7 @@
       ],
       "id": "acf7909ed028ea5e984c8a8d64810f6da3b4b73ac6f2a775fd23a997f852ae2a",
       "primera_deteccion": "2026-11-20T08:59:50.283797-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "acf7909ed028ea5e984c8a8d64810f6da3b4b73ac6f2a775fd23a997f852ae2a"
@@ -4005,7 +4004,7 @@
       ],
       "id": "0099dd82326ff35af76a79fd7b3b3c6add4ec3358add6b10e390abb82eaadc4d",
       "primera_deteccion": "2026-11-20T08:59:50.283797-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "0099dd82326ff35af76a79fd7b3b3c6add4ec3358add6b10e390abb82eaadc4d"
@@ -4091,7 +4090,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 252 click 19 octubre, 2026 ANEXO I • 2 MB • 153 click 19 octubre, 2026 Anexo II • 112 kB • 128 click 19 octubre, 2026 Anexo III • 174 kB • 138 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 140 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 139 click 19 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 261 click 19 octubre, 2026 ANEXO I • 2 MB • 160 click 19 octubre, 2026 Anexo II • 112 kB • 133 click 19 octubre, 2026 Anexo III • 174 kB • 145 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 145 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 143 click 19 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
@@ -4136,7 +4135,7 @@
       ],
       "id": "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-21T08:48:27.547867-03:00",
+      "ultima_deteccion": "2026-11-22T15:24:19.530870-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99"

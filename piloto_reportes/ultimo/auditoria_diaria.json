@@ -1,471 +1,151 @@
 {
-  "corrida_anterior": "20261120T115124-72b92bd5",
-  "corrida_actual": "20261121T113916-06bd4102",
-  "fecha": "2026-11-21T08:48:27.547867-03:00",
+  "corrida_anterior": "20261121T113916-06bd4102",
+  "corrida_actual": "20261122T181501-3159cce2",
+  "fecha": "2026-11-22T15:24:19.530870-03:00",
   "consulta_nueva_realizada": true,
   "estado": "AUDITADA",
-  "ids_anteriores": 7889,
-  "ids_actuales": 7931,
+  "ids_anteriores": 7931,
+  "ids_actuales": 7944,
   "ids_perdidos": [],
   "versiones_perdidas": [],
   "conteos": {
-    "nuevas_confirmadas": 1,
-    "detecciones_sin_fecha_suficiente": 39,
+    "nuevas_confirmadas": 0,
+    "detecciones_sin_fecha_suficiente": 11,
     "recuperaciones_historicas": 2,
-    "modificaciones": 70,
-    "datos_completados": 2
+    "modificaciones": 43,
+    "datos_completados": 41
   },
   "eventos": {
-    "nuevas_confirmadas": [
-      {
-        "id": "ede40a19b69bfb0a9a2bb3d2a82c2db52385f9f072ddb300dce607d4263144f3",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "14/2026",
-        "objeto": "Anterior Siguiente Apertura de sobres Licitación Pública N° 14/2026 Carga Noticias Categoría: Noticias Read Time: 2 mins Publicado: 13 Noviembre 2026 Visitas: 73 El jueves 12 de noviembre, en el salón San Martín de la Municipalidad de Armstrong se procedió a la apertura de sobres correspondiente al llamado a licitación pública N° 14/2026 para la provisión de mano de obra, materiales y equipos para obra de pavimentación urbana (una cuadra). Participaron del acto el Intendente Guillermo Luzzi, los secretarios de Gobierno Daniela Pérez, de Obras Públicas Ing. Natalia Martínez, y de Hacienda y Finanzas CPN Franco Sterrantino, y la Dra. Natallia Córdoba en representación del Departamento de Legales, quienes dejan constancia que, de acuerdo al pliego, el presupuesto oficial es de $ 74.295.062,64.- En la oportunidad se recepcionaron 3 ofertas de las siguientes firmas locales: ARMAR CONSTRUCCIONES SR., cotiza $ 72.808.702,44; INARQIS CONSTRUCCIONES S.R.L., cotiza $ 81.216.194,91; RABER S.R.L., cotiza $ 66.808.497,46.- Previa lectura y ratificación se firmó el acta correspondiente. De acuerdo a uno de los puntos previstos en el Pliego de bases y condiciones, las autoridades se reservan el derecho de aceptar o rechazar en forma total y/o parcial las propuestas recibidas, sin derecho a reclamo alguno por parte de los oferentes. Artículo anterior: Aliado Sustentable Anterior Artículo siguiente: La Municipalidad y la UTN firmaron un convenio para dictar la Licenciatura en Higiene y Seguridad en el Trabajo Siguiente",
-        "fecha_publicacion": "2026-11-13",
-        "fecha_apertura": null,
-        "url": "https://www.armstrong.gov.ar/index.php/blog/apertura-de-sobres-licitacion-publica-n-14-2026",
-        "clasificacion_novedad": "NUEVO_CONFIRMADO",
-        "campos_modificados": []
-      }
-    ],
+    "nuevas_confirmadas": [],
     "detecciones_sin_fecha_suficiente": [
       {
-        "id": "d7c2dbbe3d62d48c65d5887854f507f625ca500167006de013a4afb5d96a614f",
-        "organismo": "Municipalidad de La Paz",
-        "numero_procedimiento": "11/2026",
-        "objeto": "PLANTA DE TRANSFERENCIA Y CLASIFICACIÓN DE RESIDUOS SÓLIDOS URBANOS (RSU).",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-12-10",
-        "url": "https://haciendalapaz.gob.ar/archivos/20261120093525-f_pliego.pdf",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "17c4f807871b97702d00df637062d77f1b9930bb6c49b140d2b2645234c549ec",
-        "organismo": "Municipalidad de Chajarí",
-        "numero_procedimiento": "60/2026",
-        "objeto": "Provisión de 20.000 litros de gasoil EURO DIESEL para vehículos pertenecientes al parque automotor municipal.",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-12-02",
-        "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=720",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "994357c7df8559cd237af52ed6c384ee975a3b298f95909934c9d488a64938a5",
-        "organismo": "Municipalidad de Chajarí",
-        "numero_procedimiento": "61/2026",
-        "objeto": "Provisión de materiales - kit de filtros - para la flota del parque automotor municipal.",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-12-03",
-        "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=para_apertura?id=721",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "f1baee4636938a6a5efa8bd0bfee1ba606198e76f769bb5e47116ef929f83fe4",
-        "organismo": "Aeropuerto Internacional Rosario",
-        "numero_procedimiento": "LPU-2026-00000005-APPSF-OD-COM-CON-AIR-ROS",
-        "objeto": "Incorporación de puertas biométricas para sector migraciones del Aeropuerto Internacional Rosario",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-12-18",
-        "url": "https://aeropuertorosario.com/licitaciones/lpu-2026-00000005-appsf-od-com-con-air-ros/",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "93f6922977db484f36cb98f713b523814ed3c8cefe35a50e21daee3a65c6fc3a",
-        "organismo": "CONSEJO GRAL. EDUCACION - MIN. GOBIERNO Y TRABAJO - PODER EJECUTIVO",
-        "numero_procedimiento": "283/2026",
-        "objeto": "CONTRATACION DE SERVICIO DE CATERING PARA 50 PERSONAS EN LA LOCALIDAD DE VILLAGUAY PARA LE 30/11/2026",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-24",
-        "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "000cc42b7ef6f5efb03e9a6df69087f7b9f95a8199226cc8a5b27992327038a1",
+        "id": "7f463db71c96607bbef26dc2819c0aa6c888bdb85761afa62af1c717a795d894",
         "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "25025/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-24",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38884",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "d0f1423b24064cb2655cdf4d8a01e319164d53006260993c49f69113250d41a2",
-        "organismo": "Poder Judicial de Entre Ríos",
-        "numero_procedimiento": "291/2026",
-        "objeto": "Contrataciones Solicitud de Cotización Nº 291/26: “Provisión y envío de materiales de audio para ser destinados a la Oficina de Juicio por Jurados y OGA de la localidad de Paraná” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 291/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 291/26: “Provisión y envío de materiales de audio para ser destinados a la Oficina de Juicio por Jurados y OGA de la localidad de Paraná”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 24 de noviembre de 2026 a las 12:00 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 291-26 Descargar Imprmir",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-24",
-        "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-291-26-provision-y-envio-de-materiales-de-audio-para-ser-destinados-a-la-oficina-de-juicio-por-jurados-y-oga-de-la-localidad-de-parana/",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "748d3e78b80dfeeabf86602dc3dce928dd6e921a5e6b033331a2c43bee22dc49",
-        "organismo": "Poder Judicial de Entre Ríos",
-        "numero_procedimiento": "282/2026",
-        "objeto": "Contrataciones Solicitud de Cotización Nº282/26: “Provisión y envío de los elementos, para ser destinados a Agentes de las Morgues Judiciales de la Provincia de Entre Ríos” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 282/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº282/26: “Provisión y envío de los elementos, para ser destinados a Agentes de las Morgues Judiciales de la Provincia de Entre Ríos”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 25 de Noviembre de 2026 a las 09:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 282-26 Descargar Imprmir",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-25",
-        "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no282-26-provision-y-envio-de-los-elementos-para-ser-destinados-a-agentes-de-las-morgues-judiciales-de-la-provincia-de-entre-rios/",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "224b7420c36df1efc6028fafc9455fa63678ddcece49f79c5a2552ea956aff1a",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "71291/2026",
+        "numero_procedimiento": "50/2026",
         "objeto": null,
         "fecha_publicacion": null,
         "fecha_apertura": "2026-11-25",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38886",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38881",
         "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
         "campos_modificados": []
       },
       {
-        "id": "a69437d395c5f19f57da8c71212e83bfbe4fb2d50bc01f26bcbe0c621dee2e3d",
+        "id": "e5e66d564764a24173187d522d26105970ccb1c2c09b24b773dfc5b0843d5092",
         "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "131571/2026",
+        "numero_procedimiento": "3229/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-25",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38910",
+        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+        "campos_modificados": []
+      },
+      {
+        "id": "5310cd5a24cd556663f82dcc4a43d7942bb55cc85f0b0a10c83a5ac4db4ed578",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "11191/2026",
         "objeto": null,
         "fecha_publicacion": null,
         "fecha_apertura": "2026-11-26",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38879",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38882",
         "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
         "campos_modificados": []
       },
       {
-        "id": "c3a03927b34b7cae07e95f4e085a46f5fe6fbd51b1be79ecb5905dec9b21a2d4",
+        "id": "62cdc2d37f047ac11c5f5b418f00509c5602131866967b44e82c0758e25c2873",
         "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11384/2026",
+        "numero_procedimiento": "11344/2026",
         "objeto": null,
         "fecha_publicacion": null,
         "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38894",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38890",
         "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
         "campos_modificados": []
       },
       {
-        "id": "74360436f734c5f0482010462d3784e9c6a2ee8851e3e0b6fbc61879a79f16c7",
+        "id": "06bd7b681c27e5c76a48b2dfe60ef01fa1828b6ff03b3d99e3615e9bb53c8aa0",
         "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11394/2026",
+        "numero_procedimiento": "11354/2026",
         "objeto": null,
         "fecha_publicacion": null,
         "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38895",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38891",
         "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
         "campos_modificados": []
       },
       {
-        "id": "defca1c601750e81bc3a7675794c29a40a8ea7e5c4e84337b3533ab7b08e4dba",
+        "id": "38745e80158a5ac7b12ef152b9d7b3641e4075bd880512ad4f7d814584f065d8",
         "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11404/2026",
+        "numero_procedimiento": "11364/2026",
         "objeto": null,
         "fecha_publicacion": null,
         "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38896",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38892",
         "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
         "campos_modificados": []
       },
       {
-        "id": "7b2df962bb5fec3aab5e2d7cc4bc454952d703096264be4faebdaafee036b0b6",
+        "id": "9f4a0abebfa4257554d31fd3c16763306f9b316c1c7b3bc2d24abd5777e0bf69",
         "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11414/2026",
+        "numero_procedimiento": "11374/2026",
         "objeto": null,
         "fecha_publicacion": null,
         "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38897",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38893",
         "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
         "campos_modificados": []
       },
       {
-        "id": "b14d7db16a11a918f07e344324fc90b3353c67c38e08d0eba59b49b97a1976fb",
+        "id": "b1629047304c1e70729f1c453989e679819d4ffd623a366416be9da19be49a29",
         "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11434/2026",
+        "numero_procedimiento": "22/2026",
         "objeto": null,
         "fecha_publicacion": null,
         "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38900",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38868",
         "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
         "campos_modificados": []
       },
       {
-        "id": "c32f47b8ede6e5f316058a1ffc65a358e4c918fe348c5efb322259acc34dda9c",
+        "id": "f293e9d29a29aee26e2c9042829ed07516368561b0ff0ddf7dd44dd799a60489",
         "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11444/2026",
+        "numero_procedimiento": "54/2026",
         "objeto": null,
         "fecha_publicacion": null,
         "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38901",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38888",
         "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
         "campos_modificados": []
       },
       {
-        "id": "84c18f4d75c326ce156a107ed6d57b441046a1f9fd2a9e673f90cb976975665b",
+        "id": "b75ff6e07a483ee9e23d39bbee3ef0af0918aea7f14deb184f003af1a45b8b91",
         "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11454/2026",
+        "numero_procedimiento": "8/2026",
         "objeto": null,
         "fecha_publicacion": null,
         "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38902",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38883",
         "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
         "campos_modificados": []
       },
       {
-        "id": "b97d37afc7ed4bf1f2cfea72597ad4e0b40aa90bac8febbf5e656588097077af",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11464/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38903",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "be7c8fff31c65b46c1eeed0eaacfb0725bc3e818e39a4194449274c8d12ba358",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11474/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38904",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "ae1dd751681db2854c5d71321d60e2785df47a8695cf72239de440590e667320",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11484/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38905",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "4e4d528f88027c79e3574c469f89e80e60e3a2474a0c242c3bfcbb0a9406ae4c",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11494/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38906",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "8b0a504e63e74dcc793f32d4f5fccc3b3151c644ae1b00d16da2d7666baeac8a",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11504/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38907",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "3c2158f7922e30f0e0c56260f5cfec12b7b706a0c81aabfe097550c301b3f4c2",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11514/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38908",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "20c69760b181d5a73dd947a73f0d86260696a441827a9e5dce06d396061eb218",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11524/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38909",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "8716f5f2f757924d0bba745f97b2178b43d04cb5f776f68b5428cf0abc1c06ef",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11424/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38899",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "ad326cc3f3f382bb516299235ff9b66f2bdcbd20f01f1a775b680768a2bdeea1",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "72658/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38885",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "d2384c2b3f9a3d94f125b90c5201747dce5460bfb5f64197f0d1aecd0750f977",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "32003/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38898",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "d6438d247ea9ecb1e57f0ad349870119c12c4e179346b57ebc02b3f32092b9eb",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "35813/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-12-01",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38877",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "e2dcc2d92f4af019ef7f56dd7609cbda2083298a65f9148a3ecffc955e74d0b0",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "37133/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-12-01",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38889",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "2ccbe378d3f7698c92c44ad9f41eb69e9641870c25981552ebc9700f35d2efe4",
-        "organismo": "Ministerio de Planeamiento e Infraestructura",
-        "numero_procedimiento": "2/2026",
-        "objeto": "Unidad Ejecutora Provincial Licitación Pública 02/2026 UEP Adquisición de Insumos y Equipamiento Apícola (Material Inerte) para el Fortalecimiento Productivo Apertura: martes, 01 de diciembre de 2026 - 10:00hs",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-12-01",
-        "url": "https://www.entrerios.gov.ar/minplan/contrataciones/lpn_uep_2026-02",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "be9d32f2451546e9aee184c8f75abd60205b7794b85482a36d6fc77c828f0cae",
+        "id": "aaa9b7cda5ce5bad43ca5adf902617ba9cf96a70d161fe57667aef9350bce33e",
         "organismo": "Municipalidad de Rosario",
         "numero_procedimiento": "23/2026",
         "objeto": null,
         "fecha_publicacion": null,
-        "fecha_apertura": "2026-12-02",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38878",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "fdd93be4b9c058618252bd0db8e6bb613d66dee903c08cc0582eb22eab400852",
-        "organismo": "Poder Judicial de Entre Ríos",
-        "numero_procedimiento": "290/2026",
-        "objeto": "Contrataciones Solicitud de Cotización Nº290/26: “Provisión, envío y colocación de películas de control solar y cortinas en distintos Organismos Judiciales del Poder Judicial de Entre Ríos” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 290/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº290/26: “Provisión, envío y colocación de películas de control solar y cortinas en distintos Organismos Judiciales del Poder Judicial de Entre Ríos”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 03 de Diciembre de 2026 a las 09:30hs en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 290-26 y Especificaciones Tecnicas Descargar Imprmir",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-12-03",
-        "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no290-26-provision-envio-y-colocacion-de-peliculas-de-control-solar-y-cortinas-en-distintos-organismos-judiciales-del-poder-judicial-de-entre-rios/",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "b663aba2001729b874bd67f90edf6db173cde6b763c4bb7832646f3d118776c2",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "50971/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-12-09",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38880",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "18e4174649097e116cd9a190bd818e73a34886223f6478fa4fc1a8a11564742d",
-        "organismo": "Ministerio de Planeamiento e Infraestructura",
-        "numero_procedimiento": "1/2026",
-        "objeto": "Unidad Ejecutora Provincial Licitación Pública 01/2026 UEP Ejecución de Obras Básicas, Calzadas de Ripio y Obras de Arte - PROSAF E.R. Apertura: jueves, 10 de diciembre de 2026 - 10:00hs",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-12-10",
-        "url": "https://www.entrerios.gov.ar/minplan/contrataciones/lpn_uep_2026-01",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "f3f00517e1b74e905519b2e86e8fc9f720fdfbf6db3fc45c7ef272247da80e1b",
-        "organismo": "Ministerio de Planeamiento e Infraestructura",
-        "numero_procedimiento": "3/2026",
-        "objeto": "Unidad Ejecutora Provincial Licitación Pública 03/2026 UEP Adquisición de Equipamiento e Infraestructura para Salas Apícolas Apertura: martes, 15 de diciembre de 2026 - 10:00hs",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-12-15",
-        "url": "https://www.entrerios.gov.ar/minplan/contrataciones/lpn_uep_2026-03",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "de785da033c9d623f77e5579b8136dc4b36b98a6cb37035336e69883171278e1",
-        "organismo": "Ministerio de Planeamiento e Infraestructura",
-        "numero_procedimiento": "15/2026",
-        "objeto": "Dirección General de Arquitectura y Construcciones Licitación Pública 15/2026 DGAyC Refuncionalización y Reparaciones de Registro Civil y Capacidad de las Personas, Paraná Apertura: miércoles, 16 de diciembre de 2026 - 10:00hs",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-12-16",
-        "url": "https://www.entrerios.gov.ar/minplan/contrataciones/lpn_dgayc_2026-15",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "305ed4bb97e0631b50bccba353ac1abfc8f00518424362211a8ae1205232293b",
-        "organismo": "Municipalidad de Crespo",
-        "numero_procedimiento": "92/2026",
-        "objeto": "Decreto 2026-11-20 20/11/2026 1144 2026 Decreto-1144-2026-llamado-concurso-092-2026-nafta-grado-2-consumo-diciembre.pdf Llamado a Concurso de Precios Nº 092/2026 adquisición de nafta grado 2 consumo mes de diciembre de 2026",
-        "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "http://municrespo.gov.ar/digesto/mod/subidas/Decreto-1144-2026-llamado-concurso-092-2026-nafta-grado-2-consumo-diciembre.pdf",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "07d1e58b8a8a886070a747f73d132dddcfe716e18b19ea07ee3c623cdd5d6f68",
-        "organismo": "Municipalidad de Crespo",
-        "numero_procedimiento": "93/2026",
-        "objeto": "Decreto 2026-11-20 20/11/2026 1145 2026 Decreto-1145-2026-llamado-concurso-093-2026-gas-oil-grado-2-consumo-diciembre.pdf Llamado a Concurso de Precios Nº 093/2026 adquisición de gas oil grado 2 consumo mes de diciembre de 2026",
-        "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "http://municrespo.gov.ar/digesto/mod/subidas/Decreto-1145-2026-llamado-concurso-093-2026-gas-oil-grado-2-consumo-diciembre.pdf",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "44fc169131785bab5a2a3f591dcc45ecdbb0bf56de44af1b938a68110d8b3048",
-        "organismo": "Municipalidad de Crespo",
-        "numero_procedimiento": "94/2026",
-        "objeto": "Decreto 2026-11-20 20/11/2026 1146 2026 Decreto-1146-2026-llamado-concurso-094-2026-gas-oil-grado-3-consumo-primer-quincena-diciembre.pdf Llamado a Concurso de Precios Nº 094/2026 adquisición de gas oil grado 3 consumo primer quincena mes de diciembre de 2026",
-        "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "http://municrespo.gov.ar/digesto/mod/subidas/Decreto-1146-2026-llamado-concurso-094-2026-gas-oil-grado-3-consumo-primer-quincena-diciembre.pdf",
+        "fecha_apertura": "2026-11-30",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38887",
         "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
         "campos_modificados": []
       }
     ],
     "recuperaciones_historicas": [
       {
-        "id": "eb71808e6678e22c68666e1dfb6c598130cb683a6688e7debbd2656ab39ae03f",
+        "id": "15c8eb44d8ea0b813f06d4e1e7eb8d1f0cb64445772368b54a7b57b52685fe65",
         "organismo": "Gobierno de Timbúes",
         "numero_procedimiento": "15",
-        "objeto": "LICITACIÓN PÚBLICA N° 15 2026 PISOS, ZOCALOS Y REVESTIMIENTOS Publicado, lunes, 19 de octubre de 2026 -- 245 vistas 03-COMPUTO PISOS ,ZOCALOS Y REVESTIMIENTOSEET 712 .pdf 02-ANEXOI PISOS, ZOCALOS Y REVESTIMIENTOS EET 712.pdf 01-LIC.PUB. 015 PISOS, ZOCALOS Y REVESTIMIENTOS ESCUELA TECNICA 712.pdf",
+        "objeto": "LICITACIÓN PÚBLICA N° 15 2026 PISOS, ZOCALOS Y REVESTIMIENTOS Publicado, lunes, 19 de octubre de 2026 -- 250 vistas 03-COMPUTO PISOS ,ZOCALOS Y REVESTIMIENTOSEET 712 .pdf 02-ANEXOI PISOS, ZOCALOS Y REVESTIMIENTOS EET 712.pdf 01-LIC.PUB. 015 PISOS, ZOCALOS Y REVESTIMIENTOS ESCUELA TECNICA 712.pdf",
         "fecha_publicacion": "2026-10-19",
         "fecha_apertura": null,
         "url": "https://www.timbues.gob.ar/archivos/1440_1792614149_03-COMPUTOPISOS,ZOCALOSYREVESTIMIENTOSEET712.pdf",
@@ -473,10 +153,10 @@
         "campos_modificados": []
       },
       {
-        "id": "91a59bacb95b844e1bd345ecc55be4f336fbc3637b3c30daf53409a9cea46f6f",
+        "id": "6f515b0f12bbc9c60d939f54fe64b319d5559abf2e5549bf09d6ca58e79a371f",
         "organismo": "Gobierno de Timbúes",
         "numero_procedimiento": "15",
-        "objeto": "LICITACIÓN PÚBLICA N° 15 2026 PISOS, ZOCALOS Y REVESTIMIENTOS Publicado, lunes, 19 de octubre de 2026 -- 246 vistas 03-COMPUTO PISOS ,ZOCALOS Y REVESTIMIENTOSEET 712 .pdf 02-ANEXOI PISOS, ZOCALOS Y REVESTIMIENTOS EET 712.pdf 01-LIC.PUB. 015 PISOS, ZOCALOS Y REVESTIMIENTOS ESCUELA TECNICA 712.pdf",
+        "objeto": "LICITACIÓN PÚBLICA N° 15 2026 PISOS, ZOCALOS Y REVESTIMIENTOS Publicado, lunes, 19 de octubre de 2026 -- 251 vistas 03-COMPUTO PISOS ,ZOCALOS Y REVESTIMIENTOSEET 712 .pdf 02-ANEXOI PISOS, ZOCALOS Y REVESTIMIENTOS EET 712.pdf 01-LIC.PUB. 015 PISOS, ZOCALOS Y REVESTIMIENTOS ESCUELA TECNICA 712.pdf",
         "fecha_publicacion": "2026-10-19",
         "fecha_apertura": null,
         "url": "https://timbues.gob.ar/archivos/1440_1792614149_03-COMPUTOPISOS,ZOCALOSYREVESTIMIENTOSEET712.pdf",
@@ -486,62 +166,10 @@
     ],
     "modificaciones": [
       {
-        "id": "69cd452ba9bfa47bbd29f890fb4665223d1ee75150340634e22c8c3d359478a1",
-        "organismo": "Comuna de María Teresa",
-        "numero_procedimiento": "6/2024",
-        "objeto": "SEGUNDA LLAMADO A LICITACIÓN DE CONCESIÓN DE MÓDULO GASTRONOMICO (CERRADA)",
-        "fecha_publicacion": "2024-10-03",
-        "fecha_apertura": "2024-10-21",
-        "url": "https://mariateresa.gob.ar/index.php?pagina=detalle&idp=581",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "03ca0e7750d25badce1a7cbd914333e95785a911e638c481198476b74f62e1f5",
-        "organismo": "Municipalidad de Viale",
-        "numero_procedimiento": "2521",
-        "objeto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2521\n                              9 de Julio y Estrada\n                        C.P. : (3109) - Viale - E.Ríos\n                      Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     28/09/2026 A Las 10.00 HS.\n                    IVA : Exento - CUIT : 30-99903611-9\n                     eMail : municipalidad@viale.gob.ar                                                       Objeto : ADQ. GAS OIL GRADO 2\n                          WEB : www.viale.gob.ar\n\n\n\n                                                                                                                                           Viale 23 de septiembre de 2026\n                                Señor/es : - - (0)\n                               Domicilio : -\n                               Localidad : (0000) - -\n\n                                                Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : -\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad          Unidad          Descripción                                                                                                 P.Unitario        Precio Total\n\n   0        7000,00               L.            GAS OIL GRADO 2\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                    OBSERVACIONES :\n\n                                        LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f",
-        "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://viale.gob.ar/wp-content/uploads/2026/09/2521.pdf",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "c9ffe9a12b78753b3b7c19ac03fc2c94d2f57396db75b585cb0ad5a77a543a2c",
-        "organismo": "Municipalidad de Viale",
-        "numero_procedimiento": "2522",
-        "objeto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2522\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     28/09/2026 A Las 11.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                                                         Objeto : ADQ. DE EMULSION\n                           WEB : www.viale.gob.ar\n\n\n\n                                                                                                                                           Viale 23 de septiembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                                                 Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : -\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario        Precio Total\n\n   0          5,00               TN.             EMULSION EBCR IM GR-42183\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f",
-        "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://viale.gob.ar/wp-content/uploads/2026/09/2522.pdf",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "0a1a6fbf128fc73d70e2969168ea728fb99a746015eea6c4e95fa794a002d54a",
-        "organismo": "Municipalidad de Viale",
-        "numero_procedimiento": "2523",
-        "objeto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2523\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     30/09/2026 A Las 10.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                      Objeto : INTALACION DE COLUMNAS CON CARTELES NOMENCLADORES\n                           WEB : www.viale.gob.ar\n\n\n\n                                                                                                                                           Viale 25 de septiembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                                                 Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : -\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario        Precio Total\n\n   0         38,00                U.             INTALACION DE COLUMNAS CON CARTELES NOMENCLADORES\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f",
-        "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://viale.gob.ar/wp-content/uploads/2026/10/2523.pdf",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
         "id": "bc2fa1fe9a783358ad272fa629d77e788333cf7ba3ee0614a3ea97079993a400",
         "organismo": "Municipalidad de Viale",
         "numero_procedimiento": "2524",
-        "objeto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2524\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     30/09/2026 A Las 11.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                                                      Objeto : PINTURA PARA PILETA\n                           WEB : www.viale.gob.ar\n\n\n\n                                                                                                                                           Viale 25 de septiembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                             Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : POR FAVOR, INCLUIR EN EL PRESUPUESTO EL COSTO DE ENVÍO DETALLADO O INTEGRADO EN EL\n    PRECIO FINAL\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario        Precio Total\n\n   0         14,00            BALDE              PINTURA PARA PILETA BASE ACUOSA AZUL POR 20L.\n\n   1          1,00            BALDE              FIJADOR SELLADOR AL AGUA POR 20L.\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f",
+        "objeto": "Horario de atención de Lunes a Viernes: 6.30 hs a 12.00 hs Noticias Publicaciones Gobierno Autoridades Secretarías y Direcciones Secretaría de Gobierno Secretaría de Ingresos Públicos, Estadísticas y Modernización Subsecretaría de cultura y educación Secretaría de Desarrollo Social y Humano Subsecretaría de la mujer Subsecretaría de Obras Sanitarias Subsecretaría de Desarrollo Local y Productivo Dirección de Deportes HCD Autoridades HCD Transparente Comunicados Libro de Visitas Trámites y Servicios Atención Ciudadana Boletín Oficial Bromatologia Centro de Salud Compras Cuentas Claras Cultura y Educación Defensa Al Consumidor Emprendedurismo Expedientes Licencias de Conducir Punto Digital Recaudaciones Obras Sanitarias Subsecretaría de Servicios Públicos Sistema de ahorro previo para obras de infraestructura Ciudad Turismo Parque Industrial Recaudaciones Cotejo de Precios N° 2524 – PINTURA PARA PILETA 2 octubre, 2026 | In Pliegos | By Lautaro Ledesma Descargar PDF Guía Telefónica y Servicios de la Ciudad Bomberos100 Policía101 Emergencias Médicas107 Mesa de Entrada PalacioInt. 101 Reclamos CentralInt. 111 Honorable Concejo Delib.Int. 113 Juzgado de FaltasInt. 142 Guardia UrbanaInt. 120 Centro de MonitoreoInt. 121 Centro Salud «R. Carrillo»Int. 119 Hogar «Madre Teresa»Int. 127 Sec. Desarrollo SocialInt. 129 Subsecretaría de la MujerInt. 130 ANAFInt. 131 Desarrollo Local y Prod.Int. 137 Defensa del ConsumidorInt. 136 Licencias de ConducirInt. 132 Cultura y EducaciónInt. 134 Dirección de DeportesInt. 135 Obras SanitariasInt. 141 Servicios PúblicosInt. 125 ComprasInt. 115 CatastroInt. 116 RecaudacionesInt. 117 Bromatología y AmbienteInt. 143 Obras Públicas (Tinglado)Int. 144 Guardias y Urgencias fuera de horario administrativo: Salud: 3434151615 Guardia Urbana/Monitoreo: 3434676828 Subsec. Mujer: 3434055981 ANAF: 3434524860 Licencias: 3434283457 Reclamos: 3434282868 Diseño y desarrollo por AV consultora + Minds",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://viale.gob.ar/wp-content/uploads/2026/10/2524.pdf",
@@ -551,23 +179,10 @@
         ]
       },
       {
-        "id": "b76812e9976609b514b2cae65c8923abbd3320c4975a5b515eb8157bdf003108",
-        "organismo": "Municipalidad de Funes",
-        "numero_procedimiento": "12/2026",
-        "objeto": "“ADQUISICION 2.800 M3 DE HORMIGON ELABORADO H30”",
-        "fecha_publicacion": "2026-10-30",
-        "fecha_apertura": "2026-11-20",
-        "url": "https://funes.gob.ar/ajax/data-licitaciones-web.ajax.php",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "documentos"
-        ]
-      },
-      {
         "id": "5db599137b55141b83b43353ba155de65f0746f22b19a6b2da070c7dcf79f3d3",
         "organismo": "Municipalidad de Roldán",
         "numero_procedimiento": "18/2023",
-        "objeto": "LICITACIÓN PUBLICA N° 018/2023 Home / Formularios y Descargas / “CONTRATACION DE UN SEGURO DE RIESGO DE TRABAJO (ART) ley 24557 y SEGURO COLECTIVO DE VIDA OBLIGATORIO PARA EL PERSONAL DE LA MUNICIPALIDAD DE ROLDAN Presupuesto Oficial: $134.036.372, 18 Fecha y Hora de apertura de las Ofertas: 29/12/2023 a las 12 horas Lugar: Municipalidad de Roldán Sargento Cabral N° 48 Consultas: Secretaria Legal y Técnica E-mail: lyt@roldan.gov.ar Teléfono 3415926562 Archivos adjuntos Licitación Pública Nº018/23 File extension: pdf File size: 13 MB CircularAclaratoriaLicitacionPbca018 (1) File extension: pdf File size: 595 kB Licitación Pública N°018/23",
+        "objeto": "Licitación Pública N°018/23 Licitación Pública Nº018/23 File extension: pdf File size: 13 MB CircularAclaratoriaLicitacionPbca018 (1) File extension: pdf File size: 595 kB",
         "fecha_publicacion": null,
         "fecha_apertura": "2023-12-29",
         "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-publica-n018-23/",
@@ -577,144 +192,10 @@
         ]
       },
       {
-        "id": "2b179de325a51df714332244ce8a752dec8cbe0b8b0d5e80bfb8e5ccd27f1147",
-        "organismo": "Poder Judicial de Entre Ríos",
-        "numero_procedimiento": "15/2026",
-        "objeto": "De conformidad a lo dispuesto por el Tribunal de Superintendencia de la Provincia de Entre Ríos, por Resolución Nº133/26, llámese a Licitación Pública Nº15/26 , por la Provisión y envío de insumos para el Servicio de Genética Forense del S.T.J.",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.jusentrerios.gov.ar/compras/licitacion-publica-no15-26-provision-y-envio-de-insumos-para-el-servicio-de-genetica-forense-del-s-t-j/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "7375346e38b01717e259704bd82ab2073deade9a770dde2a118aced299e3e8db",
-        "organismo": "Poder Judicial de Entre Ríos",
-        "numero_procedimiento": "11/2026",
-        "objeto": "De conformidad a lo dispuesto por el Tribunal de Superintendencia de la Provincia de Entre Ríos, por Resolución Nº120/26, llámese a Licitación Pública Nº11/26 , por la Adquisición de 1 (un) vehículo 0 Km para flota del Área de Choferes del S.T.J.",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-12-02",
-        "url": "https://www.jusentrerios.gov.ar/compras/licitacion-publica-no11-26-adquisicion-de-1-un-vehiculo-0-km-para-flota-del-area-de-choferes-del-s-t-j/lic-publica-11-26/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "81bccdf6018408ee658956edc565740bf7d310c66b11c1e7dc3f07d72262e820",
-        "organismo": "Municipalidad de Chajarí",
-        "numero_procedimiento": "55/2026",
-        "objeto": "Provision de 220m2 de hormigon elaborado H30 para ser utilizado en obras de bacheo en la ciudad",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-17",
-        "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=adjudicada?id=715",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "situacion_publicada",
-          "documentos"
-        ]
-      },
-      {
-        "id": "a8fe11f3aba927d1f4be63d56357cb7b493c89865872c59e07c24e96021823d7",
-        "organismo": "Municipalidad de Chajarí",
-        "numero_procedimiento": "56/2026",
-        "objeto": "Provisión de mallas para la ejecución de la obra de pavimento en Avenida Belgrano entre calle Mandisovi y Rocamora",
-        "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=adjudicada?id=716",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "situacion_publicada",
-          "documentos"
-        ]
-      },
-      {
-        "id": "09c21491cacf960033d093238a979e531b3030cd4d4703cef51fe0b1303cae75",
-        "organismo": "Municipalidad de Chajarí",
-        "numero_procedimiento": "57/2026",
-        "objeto": "Provisión de bolsas de cemento para la ejecución de la obra de pavimento en Avenida Belgrano entre calle Mandisovi y Rocamora",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-18",
-        "url": "https://licitaciones.chajari.gob.ar/licitaciones?state=adjudicada?id=717",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "situacion_publicada",
-          "documentos"
-        ]
-      },
-      {
-        "id": "d1fd66f5d9dcce6668d3c5d2708a7665a871a7b6500efdb34646016bf8d0bc17",
-        "organismo": "Municipalidad de Roldán",
-        "numero_procedimiento": "9/2023",
-        "objeto": "LICITACIÓN PÚBLICA N° 009/2023 Home / Formularios y Descargas / “ADQUISICIÓN DE ELEMENTOS DE REPARACION ALUMBRADO PUBLICO” Presupuesto Oficial: $50.641.651,76 Lugar: Municipalidad de Roldán – Sargento Cabral N° 048 Consultas: Secretaría de Servicios Públicos Fecha y hora de apertura: 04/08/2023 a las 10 horas Recepción de Ofertas: 9 horas del día 04/08/2023 Garantía de la Oferta: 1% del presupuesto Oficial Archivos adjuntos LicitaciónPúblicaN°009 File extension: pdf Licitación Pública N°009/23",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2023-08-04",
-        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-publica-n009-23/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "21f16a750755508845288aa189d6566b3086e8be3fb9984dddf56d4d20ad2f76",
-        "organismo": "Gobierno de Timbúes",
-        "numero_procedimiento": "4/2022",
-        "objeto": "La Comuna de Timbúes llama a la licitación Pública N° 04/2022 a partir del día 18 de abril de 2022 y hasta el día 22 de abril a las 12:00 horas o el día inmediato posterior si éste fuera inhábil, para: “Provisión de materiales, mano de obra y equipos para la construcción de hasta 4100 m2 metros cuadrados de pavimento de hormigón simple en 0,30 metros de espesor, en calle España entre Moreno y 16 de julio. PRESUPUESTO OFICIAL: $ 33.800.000 / ORDENANZA 073/2022",
-        "fecha_publicacion": "2022-03-11",
-        "fecha_apertura": "2022-03-23",
-        "url": "https://timbues.gob.ar/index.php?pagina=detalle&idp=261",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto",
-          "presupuesto"
-        ]
-      },
-      {
-        "id": "6c3443804b9a02191c790cfc3a65e57347863831884828073cb0bc59f7acecfa",
-        "organismo": "Municipalidad de Roldán",
-        "numero_procedimiento": "12/2023",
-        "objeto": "LICITACIÓN PÚBLICA N° 012/2023 Home / Formularios y Descargas / “ADQUISICIÓN DE LUMINARIAS PARA ALUMBRADO PUBLICO” Presupuesto Oficial: $20.000.000 Lugar: Municipalidad de Roldán – Sargento Cabral N° 048 Consultas: Subsecretaría de Servicios Públicos – lyt@roldan.gov.ar Fecha y hora de apertura: 30/10/2023 a las 10 horas Recepción de Ofertas: 9 horas del día 30/10/2023 Garantía de la Oferta: 1% del presupuesto Oficial Archivos adjuntos LICITACION_PUBLICA_N0122023 File extension: pdf File size: 5 MB CircularAclaratoriaN1 File extension: pdf File size: 488 kB Licitación Pública N°012/23",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2023-10-30",
-        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-publica-n012-23/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "25568885cac55b858561d5f9357f94d5d01d5206f62ef95754a11c98cdd89f95",
-        "organismo": "Municipalidad de Roldán",
-        "numero_procedimiento": "14/2023",
-        "objeto": "LICITACIÓN PÚBLICA N° 014/2023 Home / Formularios y Descargas / “ADQUISICIÓN DE LUMINARIAS PARA ALUMBRADO PUBLICO” Presupuesto Oficial: $20.000.000 Lugar: Municipalidad de Roldán – Sargento Cabral N° 048 Consultas: Subsecretaría de Servicios Públicos – lyt@roldan.gov.ar Fecha y hora de apertura: 05/12/2023 a las 10 horas Recepción de Ofertas: 9 horas del día 05/12/2023 Garantía de la Oferta: 1% del presupuesto Oficial Archivos adjuntos LICITACIÓN PÚBLICA N° 014/2023 File extension: pdf File size: 3 MB Licitación Pública N°014/23",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2023-12-05",
-        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-publica-n014-23/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "d5738d553f2892eeae3ae4f76ce55fc818adb002ff96171b86a78185afe89cd2",
-        "organismo": "Municipalidad de Roldán",
-        "numero_procedimiento": "16/2023",
-        "objeto": "LICITACIÓN PÚBLICA N° 016/2023 Home / Formularios y Descargas / “PROVISIÓN, TRASLADO Y MONTAJE DE UN MÓDULO DE NICHO DE HORMIGÓN PREMOLDEADO” Presupuesto Oficial: $2.750.000 Lugar: Municipalidad de Roldán – Sargento Cabral N° 048 Consultas: Secretaría Legal y Técnica – lyt@roldan.gov.ar Fecha y hora de apertura: 29/12/2023 a las 11 horas Recepción de Ofertas: 10 horas del día 29/12/2023 Garantía de la Oferta: 1% del presupuesto Oficial Archivos adjuntos Licitación Pública Nº016/2023 File extension: pdf File size: 21 MB Licitación Pública Nº016/23",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2023-12-29",
-        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-publica-no016-2023/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
         "id": "7be9f266bce39f62ef5517df11432b38920fc3789dcc3ee9b5de201dc2036fbc",
         "organismo": "Municipalidad de El Trébol",
         "numero_procedimiento": "10/2015",
-        "objeto": "NewsPaper El Trébol NewsPaper the art of publishing 17.2 C El Trébol Estación Meteorológica Facebook Instagram X Licitaciones Reclamos La Ciudad Gobierno Gabinete Ejecutivo Informes de Gestión Reseña Histórica Ubicación Mapas de la Ciudad Organismos y Ámbitos Públicos Espacios Municipales Festejos Populares Concejo Municipal Banco de Ordenanzas Teléfonos Útiles El Trébol a Futuro Plan de Ordenamiento Urbano y Desarrollo Territorial 2009 Plan de ordenamiento urbano y desarrollo territorial 2019 Boletín Oficial Áreas Intendencia D. Humano y Acción Comunitaria Cultura y Comunicación Producción, Capac. y Empleo Hacienda y Finanzas Convivencia y Seguridad Gestión Urbana y Obras Públicas Servicios Públicos Desarrollo Educativo Ambiente Oficina Virtual Contacto Protección Civil LICITACIÓN PÚBLICA PARA LA GESTIÓN Y EL COBRO EXTRAJUDICIAL DE LAS DEUDAS DE PATENTE 23 de julio de 2015 Facebook X Pinterest WhatsApp El Gobierno de la ciudad comunica que a través de Licitación Nº 10/2015 se implementará la gestión y cobro extrajudicial de las deudas generadas por el impuesto provincial de patente única sobre vehículos. ADQUISICIÓN DEL PLIEGO: En la Administración de la Municipalidad de El Trébol, de 7.15 a 12.15, hasta el día 04/08/2015, a las 9.45 horas. VALOR DEL PLIEGO: $ 2000 (pesos dos mil) RECEPCIÓN DE OFERTAS: Hasta el 04/08/2015, a las 9.45 hs. Informes: Secretaría de Coordinación y Logística – Mail: produccion@eltrebol.gov.ar. Teléfonos: (03401) 422181 – 422271. DÍA DE APERTURA: 04/08/2015, a las 10 hs, en Salón Municipal, sito en Bv. América 1091 – El Trébol. Adjudicado Volver Francisco Díaz de Azevedo Corsaliniweb © Municipalidad de El Trébol - Todos los derechos reservados",
+        "objeto": "NewsPaper El Trébol NewsPaper the art of publishing 27.8 C El Trébol Estación Meteorológica Facebook Instagram X Licitaciones Reclamos La Ciudad Gobierno Gabinete Ejecutivo Informes de Gestión Reseña Histórica Ubicación Mapas de la Ciudad Organismos y Ámbitos Públicos Espacios Municipales Festejos Populares Concejo Municipal Banco de Ordenanzas Teléfonos Útiles El Trébol a Futuro Plan de Ordenamiento Urbano y Desarrollo Territorial 2009 Plan de ordenamiento urbano y desarrollo territorial 2019 Boletín Oficial Áreas Intendencia D. Humano y Acción Comunitaria Cultura y Comunicación Producción, Capac. y Empleo Hacienda y Finanzas Convivencia y Seguridad Gestión Urbana y Obras Públicas Servicios Públicos Desarrollo Educativo Ambiente Oficina Virtual Contacto Protección Civil LICITACIÓN PÚBLICA PARA LA GESTIÓN Y EL COBRO EXTRAJUDICIAL DE LAS DEUDAS DE PATENTE 23 de julio de 2015 Facebook X Pinterest WhatsApp El Gobierno de la ciudad comunica que a través de Licitación Nº 10/2015 se implementará la gestión y cobro extrajudicial de las deudas generadas por el impuesto provincial de patente única sobre vehículos. ADQUISICIÓN DEL PLIEGO: En la Administración de la Municipalidad de El Trébol, de 7.15 a 12.15, hasta el día 04/08/2015, a las 9.45 horas. VALOR DEL PLIEGO: $ 2000 (pesos dos mil) RECEPCIÓN DE OFERTAS: Hasta el 04/08/2015, a las 9.45 hs. Informes: Secretaría de Coordinación y Logística – Mail: produccion@eltrebol.gov.ar. Teléfonos: (03401) 422181 – 422271. DÍA DE APERTURA: 04/08/2015, a las 10 hs, en Salón Municipal, sito en Bv. América 1091 – El Trébol. Adjudicado Volver Francisco Díaz de Azevedo Corsaliniweb © Municipalidad de El Trébol - Todos los derechos reservados",
         "fecha_publicacion": null,
         "fecha_apertura": "2015-08-04",
         "url": "https://eltrebol.gov.ar/wp-content/uploads/2022/04/POUyDT-2009.pdf",
@@ -724,104 +205,143 @@
         ]
       },
       {
-        "id": "cdbea01dda00f76bfa9e0c16852afc00b975b9e1c14687e206010b7f4e88eccb",
-        "organismo": "Municipalidad de Roldán",
-        "numero_procedimiento": "5/2023",
-        "objeto": "LICITACION PÚBLICA N° 005/2023 Home / Formularios y Descargas / ADQUISICIÓN DE EQUIPOS: LOTE 1: UN MINIBUS 23+1 LOTE 2: UN MINIBUS 23+1 LOTE 3: UN MINIBUS 17+1 Financiados con recursos provenientes de Fondo Municipal de Inversiones – Operatoria en Pesos – PROMUDI” APERTURA DE OFERTAS: 9 hs. de 18/05/2023 FECHA Y HORA DE RECEPCIÓN DE OFERTAS: 18/05/2023 – 8.45 Horas VALOR DEL PLIEGO: $10.000 (pesos diez mil) MODIFICADO POR CIRCULAR ACLARATORIA SIN CONSULTA: FECHA APERTURA 24/5/23 Consultas al email: obraspublicas@roldan.gov.ar Archivos adjuntos decretoLU00523 File extension: pdf File size: 2 MB licitacionpublica00523_2 File extension: pdf File size: 22 MB prorroga File extension: pdf File size: 276 kB Licitación Pública N°005/23",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2023-05-18",
-        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-publica-n005-23/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "9a4c0401e08d466d4c31baaf67b4a74cd7771f47fef83c4fabd7d6dfb8a847db",
-        "organismo": "Municipalidad de Roldán",
-        "numero_procedimiento": "8/2023",
-        "objeto": "LICITACIÓN PÚBLICA N° 008/2023 Home / Formularios y Descargas / “ADQUISICIÓN DE EQUIPOS: LOTE 1: UN MINIBUS 19+1. LOTE 2: UN MINIBUS 19+1. LOTE 3: UN MINIBUS 17+1.” Lugar: Municipalidad de Roldán – Sargento Cabral N° 048 Consultas: Subsecretaría de Obras Públicas: obraspublicas@roldan.gov.ar Fecha y hora de apertura: 10/07/2023 a las 9 horas Recepción de Ofertas: 8.45 horas del día 10/07/2023 Archivos adjuntos Licitación Publica N_ 08_23 File extension: pdf File size: 13 MB CIRCULAR SIN CONSULTA Nº 01 File extension: pdf File size: 135 kB Licitación Pública N°008/23",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2023-07-10",
-        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-publica-n008-23/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "f335d9be6b472df7d55c9e7555c9417ac5354de81c2649db760bb51a85f2a761",
-        "organismo": "Municipalidad de Roldán",
-        "numero_procedimiento": "12/2023",
-        "objeto": "LICITACION PRIVADA N° 012/2023 Home / Formularios y Descargas / “CONTRATACIÓN DE UN TRACTOR CON CHOFER PARA REALIZAR REPARACIONES EN LOS CAMINOS RURALES” PRESUPUESTO OFICIAL: Hasta $ 2.200.000 LUGAR: Municipalidad de Roldán Sargento Cabral N° 48 CONSULTAS: obraspublicas@roldan.gov.ar lyt@roldan.gov.ar GARANTÍA PROPUESTA: $1% del presupuesto oficial FECHA Y HORA DE APERTURA OFERTAS: 11/12/2023 A LAS 12.30 HORAS Archivos adjuntos LicitaciónPrivada012_23 File extension: pdf File size: 10 MB Licitación Privada N°012/23",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2023-12-11",
-        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-privada-n012-23/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "f7d05f8836573daf77ff35b3c572bd2ede2d266484163b2576aeed17db1f4844",
-        "organismo": "Municipalidad de Sastre y Ortiz",
-        "numero_procedimiento": "2/2026",
-        "objeto": "Inicio › Noticias › La Municipalidad de Sastre y Ortiz llamó a Licitación Pública para adquirir una niveladora de arrastre Institucional 📅 07 de August de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz anunció el llamado a Licitación Pública N.º 02/2026 para la adquisición de una niveladora de arrastre, destinada a fortalecer y ampliar el equipamiento municipal. De acuerdo con la convocatoria, el objeto de la licitación es la compra de una (1) niveladora de arrastre , herramienta que será incorporada al parque de maquinaria del municipio para acompañar las tareas y servicios que se desarrollan en la ciudad. Los interesados en participar podrán retirar el Pliego de Bases en el Palacio Municipal, en días hábiles, de 7:15 a 12:00 horas . También podrán solicitarlo por correo electrónico a arealegal@sastre.gob.ar . El valor del pliego fue establecido en $85.000 (pesos ochenta y cinco mil) . La apertura de sobres se realizará el próximo 3 de septiembre de 2026, a las 10:00 horas , en el Palacio Municipal de Sastre y Ortiz. Desde el municipio indicaron que quienes requieran mayor información podrán acercarse a la sede municipal o comunicarse a través de los medios habilitados. La convocatoria forma parte de las acciones orientadas a fortalecer el equipamiento municipal y mejorar las herramientas disponibles para el desarrollo de obras y la prestación de servicios a la comunidad. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Representantes del Ministerio de Obras Públicas recorrieron la obra de pavimentación de avenida Belgrano 20/11/2026 Sastre incorporó dos nuevos tractores a su flota de maquinaria municipal 20/11/2026 Sastre y Ortiz se prepara para celebrar la Navidad con el tradicional encendido del árbol 19/11/2026 El Municipio convoca a inscribirse en el Registro Municipal de Cuidadores 18/11/2026",
-        "fecha_publicacion": "2026-10-29",
-        "fecha_apertura": "2026-09-03",
-        "url": "https://sastreciudad.gob.ar/la-municipalidad-de-sastre-y-ortiz-llamo-a-licitacion-publica-para-adquirir-una-niveladora-de-arrastre/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "44755f5a7d8ae0e1f9462eb32817dbd942227397d5d0974a808e675786bef573",
-        "organismo": "Municipalidad de Sastre y Ortiz",
-        "numero_procedimiento": "1/2026",
-        "objeto": "Inicio › Noticias › Licitación Pública N.º 01/2026: Concesión del Bar-Confitería de la Terminal de Ómnibus “Manuel Belgrano” Institucional 📅 06 de August de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz informa a la comunidad y a los interesados que se encuentra abierta la Licitación Pública N.º 01/2026, destinada a la concesión en arrendamiento del servicio de Bar-Confitería de la Terminal de Ómnibus Municipal “Manuel Belgrano”. Objeto de la licitación Concesión del servicio de Bar-Confitería ubicado en la Terminal de Ómnibus Municipal. Pliego de Bases y Condiciones Los interesados podrán retirar el Pliego de Bases y Condiciones en el Palacio Municipal, de lunes a viernes, en el horario de 7:15 a 12:30 horas. Valor del pliego: $30.000 (pesos treinta mil). Apertura de sobres Fecha: 4 de septiembre de 2026 Hora: 10:00 horas Lugar: Palacio Municipal. Para obtener mayor información, los interesados deberán dirigirse a la Municipalidad dentro del horario de atención establecido. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Representantes del Ministerio de Obras Públicas recorrieron la obra de pavimentación de avenida Belgrano 20/11/2026 Sastre incorporó dos nuevos tractores a su flota de maquinaria municipal 20/11/2026 Sastre y Ortiz se prepara para celebrar la Navidad con el tradicional encendido del árbol 19/11/2026 El Municipio convoca a inscribirse en el Registro Municipal de Cuidadores 18/11/2026",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-09-04",
-        "url": "https://sastreciudad.gob.ar/licitacion-publica-n-o-01-2026-concesion-del-bar-confiteria-de-la-terminal-de-omnibus-manuel-belgrano/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "2fe934e173e29628074b0831947f657c14dec0e423b8e87d1f41bb7e6b5ba481",
-        "organismo": "Municipalidad de Sastre y Ortiz",
-        "numero_procedimiento": "3/2026",
-        "objeto": "Inicio › Noticias › La Municipalidad de Sastre y Ortiz llamó a Licitación Pública para adquirir un tractor Institucional 📅 07 de August de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz anunció el llamado a Licitación Pública N.º 03/2026 para la adquisición de un tractor, con el objetivo de fortalecer el equipamiento y las tareas operativas que lleva adelante el municipio. El proceso contempla la compra de un (1) tractor , que será destinado a ampliar y mejorar el parque de maquinaria municipal y acompañar las distintas labores que se desarrollan en la ciudad. Los interesados podrán retirar el Pliego de Bases en el Palacio Municipal, en días hábiles, de 7:15 a 12:00 horas . Asimismo, podrán solicitarlo vía correo electrónico a arealegal@sastre.gob.ar . El valor del pliego fue fijado en $65.000 (pesos sesenta y cinco mil) . La apertura de sobres tendrá lugar el 8 de septiembre de 2026, a las 10:00 horas , en el Palacio Municipal de Sastre y Ortiz. Para obtener mayor información, los interesados podrán acercarse a la Municipalidad o comunicarse a través de los medios habilitados. La convocatoria se enmarca en el objetivo de continuar fortaleciendo el equipamiento municipal y mejorar las herramientas disponibles para las tareas operativas y la prestación de servicios a la comunidad. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Representantes del Ministerio de Obras Públicas recorrieron la obra de pavimentación de avenida Belgrano 20/11/2026 Sastre incorporó dos nuevos tractores a su flota de maquinaria municipal 20/11/2026 Sastre y Ortiz se prepara para celebrar la Navidad con el tradicional encendido del árbol 19/11/2026 El Municipio convoca a inscribirse en el Registro Municipal de Cuidadores 18/11/2026",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-09-08",
-        "url": "https://sastreciudad.gob.ar/la-municipalidad-de-sastre-y-ortiz-llamo-a-licitacion-publica-para-adquirir-un-tractor/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "15d15ccfbcc0db67984f2b6071c93b4d263336f6454a163754752820a19d2c89",
-        "organismo": "Municipalidad de Sastre y Ortiz",
-        "numero_procedimiento": "4/2026",
-        "objeto": "Inicio › Noticias › La Municipalidad de Sastre y Ortiz llamó a Licitación Pública para adquirir un nuevo tractor Institucional 📅 07 de August de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz anunció el llamado a Licitación Pública N.º 04/2026 para la adquisición de un tractor, con el objetivo de continuar fortaleciendo el equipamiento municipal y mejorar la prestación de servicios a la comunidad. El objeto de la convocatoria es la compra de un (1) tractor, que será incorporado al parque de maquinaria municipal para acompañar las distintas tareas operativas que se desarrollan en la localidad. Los interesados podrán retirar el Pliego de Bases en el Palacio Municipal, en días hábiles, de 7:15 a 12:00 horas. También podrán solicitarlo vía correo electrónico a arealegal@sastre.gob.ar . El valor del pliego fue establecido en $90.000 (pesos noventa mil). La apertura de sobres se realizará el 8 de septiembre de 2026, a las 11:30 horas, en el Palacio Municipal de Sastre y Ortiz. Para mayor información, los interesados podrán acercarse a la Municipalidad o comunicarse a través de los medios habilitados. Con esta nueva convocatoria, el municipio continúa avanzando en el fortalecimiento de su equipamiento, con el propósito de contar con mejores herramientas para el desarrollo de las tareas y la prestación de servicios en la comunidad. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Representantes del Ministerio de Obras Públicas recorrieron la obra de pavimentación de avenida Belgrano 20/11/2026 Sastre incorporó dos nuevos tractores a su flota de maquinaria municipal 20/11/2026 Sastre y Ortiz se prepara para celebrar la Navidad con el tradicional encendido del árbol 19/11/2026 El Municipio convoca a inscribirse en el Registro Municipal de Cuidadores 18/11/2026",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-09-08",
-        "url": "https://sastreciudad.gob.ar/la-municipalidad-de-sastre-y-ortiz-llamo-a-licitacion-publica-para-adquirir-un-nuevo-tractor/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
         "id": "e954216fdb52c81e224b8ee84c9d41550e8c9a0b6481595d21b04287f8293120",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "13/2026",
-        "objeto": "Anterior Siguiente Apertura de sobres Licitación N° 13/2026 Carga Noticias Categoría: Noticias Read Time: 2 mins Publicado: 26 Octubre 2026 Visitas: 74 El 22 de octubre en dependencias de la Municipalidad de Armstrong se procedió a la apertura de sobres correspondiente a la Licitación Pública N° 13/2026 para la adquisición de una pick up mediana cabina doble. Participaron del acto el Intendente Guillermo Luzzi, el Secretario de Hacienda y Finanzas CPN Franco Sterrantino, la Dra. Natalia Córdoba en representación del Departamento de Legales, y los Sres. Gastón Frascaroli, Danilo Zanoni, Maximiliano Vega, y Federico Abacca en representación de los oferentes. En la oportunidad se recepcionaron 3 ofertas de las siguientes firmas: LTA MOTORS SRL, de la ciudad de Rosario, quien cotiza por: oferta 1: una pick up marca Foton cabina doble modelo Tunland G7 4x2 MT $ 49.970.000; oferta 2: una pick up marca Foton cabina doble modelo Tunland G7 4x2 AT $ 52.100.000; oferta 3: una pick up marca Foton cabina doble modelo Tunland G7 4x4 AT $ 57.054.000: REUTEMMAN AUTOMOTORES S.A., de Rosario, cotiza: Pick up mediana cabina doble marca Volkswagen modelo Amarok 4x2 Trenline TDI MT 140 CV $ 49.100.000; NOALE S.A., de la ciudad de Pergamino (Bs. As.) cotiza Pick up cabina doble 4x2 marca Nissan versión Frontier – 2.3 Turbo Diesel $ 44.600.000.- Previa lectura y ratificación se firmó el acta correspondiente. De acuerdo a uno de los puntos previstos en el Pliego de bases y condiciones, las autoridades se reservan el derecho de aceptar o rechazar en forma total y/o parcial las propuestas recibidas, sin derecho a reclamo alguno por parte de los oferentes. Artículo anterior: Llega el Mercado Abierto de Armstrong Anterior Artículo siguiente: Defensa Civil de Armstrong se reunió para coordinar acciones ante el avance de El Niño Siguiente",
+        "objeto": "Anterior Siguiente Apertura de sobres Licitación N° 13/2026 Carga Noticias Categoría: Noticias Read Time: 2 mins Publicado: 26 Octubre 2026 Visitas: 77 El 22 de octubre en dependencias de la Municipalidad de Armstrong se procedió a la apertura de sobres correspondiente a la Licitación Pública N° 13/2026 para la adquisición de una pick up mediana cabina doble. Participaron del acto el Intendente Guillermo Luzzi, el Secretario de Hacienda y Finanzas CPN Franco Sterrantino, la Dra. Natalia Córdoba en representación del Departamento de Legales, y los Sres. Gastón Frascaroli, Danilo Zanoni, Maximiliano Vega, y Federico Abacca en representación de los oferentes. En la oportunidad se recepcionaron 3 ofertas de las siguientes firmas: LTA MOTORS SRL, de la ciudad de Rosario, quien cotiza por: oferta 1: una pick up marca Foton cabina doble modelo Tunland G7 4x2 MT $ 49.970.000; oferta 2: una pick up marca Foton cabina doble modelo Tunland G7 4x2 AT $ 52.100.000; oferta 3: una pick up marca Foton cabina doble modelo Tunland G7 4x4 AT $ 57.054.000: REUTEMMAN AUTOMOTORES S.A., de Rosario, cotiza: Pick up mediana cabina doble marca Volkswagen modelo Amarok 4x2 Trenline TDI MT 140 CV $ 49.100.000; NOALE S.A., de la ciudad de Pergamino (Bs. As.) cotiza Pick up cabina doble 4x2 marca Nissan versión Frontier – 2.3 Turbo Diesel $ 44.600.000.- Previa lectura y ratificación se firmó el acta correspondiente. De acuerdo a uno de los puntos previstos en el Pliego de bases y condiciones, las autoridades se reservan el derecho de aceptar o rechazar en forma total y/o parcial las propuestas recibidas, sin derecho a reclamo alguno por parte de los oferentes. Artículo anterior: Llega el Mercado Abierto de Armstrong Anterior Artículo siguiente: Defensa Civil de Armstrong se reunió para coordinar acciones ante el avance de El Niño Siguiente",
         "fecha_publicacion": "2026-10-26",
         "fecha_apertura": "2026-10-07",
         "url": "https://www.armstrong.gov.ar/index.php/blog/apertura-de-sobres-licitacion-n-13-2026",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
+        "id": "6c5a7d403903f15b960cadb265ea606ac09423a5c4cf31d6e2f796aa36ea3822",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "81551/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-13",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38747",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "70d049986e38696ee40cf47b9f8e4e9cca3925030114ea6704e528ed4203b0fc",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "24805/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-13",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38752",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "b7bde92d0a957ffd7ab18961397ae2ebc4b41aecf79de8daab1071982b2a4359",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "24795/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-13",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38753",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "62e8b2c5283c36e6eae2065a80892d943401c8bd412f11a065a3a21176aeee2a",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "3218/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-16",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38760",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "8fea30794aca2a68bb254f30758c68cf57dd8654ad77369d0989e796d8e97e71",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "60721/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-16",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38746",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "a90502da3f8b2553c85a2f485a3fca0186e90a2cbd9edfa6b9c31caea57748b3",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "24875/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-16",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38794",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "f3dd20179289cef7e6fdc44337234cb49b87d8d8939d4b6d802b2aa120169c82",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "101291/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-17",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38759",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "6d78178e3eb9c2656e02e3dad021630d7a3b571efc6937ddc9a75d71e715c074",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "60741/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-17",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38771",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "ee0afb8ad90c518b7988b7351d5ee721856f322bb497946ecdd6d4130375205e",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "40681/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-17",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38776",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "75b8321495167277f7547013d092da94cb5fa8ec0de77c7692f5577a474d2b4c",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "34/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-30",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38866",
         "clasificacion_novedad": "MODIFICADO",
         "campos_modificados": [
           "objeto",
@@ -829,221 +349,23 @@
         ]
       },
       {
-        "id": "54d65d1f8dfb4f1ba2d6f9e5a657594f8a1c68cfb23374dcd6cdbebbfe13f3c6",
-        "organismo": "Poder Judicial de Entre Ríos",
-        "numero_procedimiento": "8/2026",
-        "objeto": "De conformidad a lo dispuesto por el Superior Tribunal de Justicia de Entre Ríos, por Resolución Nº101/26 de fecha 10 de septiembre de 2026 , llámese a Licitación Pública Nº08/26 por la obra “ Readecuación del sistema de climatización –ala sur- Edificio Tribunales Gualeguay” .",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-10-16",
-        "url": "https://www.jusentrerios.gov.ar/compras/licitacion-publica-no08-26-obra-readecuacion-del-sistema-de-climatizacion-ala-sur-edificio-tribunales-gualeguay/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "organismo"
-        ]
-      },
-      {
-        "id": "f614da3a2920decdf00ec187bd798eb85079e2691a21de85f90f56aaa9d6ca2a",
-        "organismo": "Municipalidad de Sastre y Ortiz",
-        "numero_procedimiento": "5/2026",
-        "objeto": "Inicio › Noticias › Licitación Pública N.º 05/2026: el Municipio convoca a la presentación de ofertas Institucional 📅 28 de September de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz informa el llamado a Licitación Pública N.º 05/2026 para la adquisición de hormigón elaborado destinado a obras y trabajos que se llevarán adelante en la ciudad. El objeto de la licitación contempla la compra de 826 m³ de hormigón elaborado tipo H-25, con piedra granítica 1:3 y un asentamiento de 6 cm, admitiéndose una variación de más o menos el 20%. Los interesados podrán retirar el Pliego de Bases y Condiciones en el Palacio Municipal, de lunes a viernes, en el horario de 7:15 a 12:30 hs., durante los días hábiles. El valor del pliego es de $200.000. La apertura de sobres se realizará el domingo 18 de octubre de 2026, a las 10:00 hs., en el Palacio Municipal. La Municipalidad de Sastre y Ortiz continúa impulsando los procesos administrativos necesarios para la ejecución de obras y el mejoramiento de la infraestructura de la ciudad. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Representantes del Ministerio de Obras Públicas recorrieron la obra de pavimentación de avenida Belgrano 20/11/2026 Sastre incorporó dos nuevos tractores a su flota de maquinaria municipal 20/11/2026 Sastre y Ortiz se prepara para celebrar la Navidad con el tradicional encendido del árbol 19/11/2026 El Municipio convoca a inscribirse en el Registro Municipal de Cuidadores 18/11/2026",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-10-18",
-        "url": "https://sastreciudad.gob.ar/licitacion-publica-n-o-05-2026-el-municipio-convoca-a-la-presentacion-de-ofertas/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "dc264dce169fce4ffcf816207e8d1537bd4af30b5338990c26c10f0a8298c557",
-        "organismo": "Municipalidad de Sastre y Ortiz",
-        "numero_procedimiento": "6/2026",
-        "objeto": "Inicio › Noticias › Licitación Pública N.º 06/2026: el Municipio convoca a la presentación de ofertas Institucional 📅 28 de September de 2026 ✍️ Prensa Municipalidad Sastre & Ortiz La Municipalidad de Sastre y Ortiz informa el llamado a Licitación Pública N.º 06/2026 para la adquisición de un hidroelevador nuevo, destinado a fortalecer el equipamiento y las herramientas de trabajo del Municipio. El objeto de la licitación contempla la compra de un (1) hidroelevador nuevo, montado sobre tráiler, con un alcance no menor a 12 metros de altura. Los interesados podrán retirar el Pliego de Bases y Condiciones en el Palacio Municipal, de lunes a viernes, de 7:15 a 12:00 hs., durante los días hábiles. También podrán solicitarlo vía correo electrónico a arealegal@sastre.gob.ar. El valor del pliego es de $70.000. La apertura de sobres se realizará el miércoles 21 de octubre de 2026, a las 10:00 hs., en el Palacio Municipal. ← Volver a Noticias 🌤️ Estado del Tiempo 📍 Sastre, Santa Fe Cargando clima... ⛅ --° -- Sensación --° Humedad --% Viento -- km/h Actualizado --:-- Noticias Recientes Representantes del Ministerio de Obras Públicas recorrieron la obra de pavimentación de avenida Belgrano 20/11/2026 Sastre incorporó dos nuevos tractores a su flota de maquinaria municipal 20/11/2026 Sastre y Ortiz se prepara para celebrar la Navidad con el tradicional encendido del árbol 19/11/2026 El Municipio convoca a inscribirse en el Registro Municipal de Cuidadores 18/11/2026",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-10-21",
-        "url": "https://sastreciudad.gob.ar/licitacion-publica-n-o-06-2026-el-municipio-convoca-a-la-presentacion-de-ofertas/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "9d6cbaee8ed98c38821f1fb25416500e4f1aa379217b180fe593073da8fa65d3",
-        "organismo": "Concejo Municipal de Rosario",
-        "numero_procedimiento": "6/2026",
-        "objeto": "Lic. Priv. 06/2026 Adquisición de artículos e insumos informáticos Tipo: Licitación Privada Apertura: 03/11/2026 07:00:00 En evaluación Ver detalle",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-03",
-        "url": "https://compras.concejorosario.gov.ar/compras/3209",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto",
-          "hora_apertura"
-        ]
-      },
-      {
-        "id": "2d58a0e444072480e1a640a1e1707202c4d10d7a11cf0b2e7aef94a695e8de2c",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "120110/2026",
-        "objeto": "Licitación Privada 120110/2026 Publicada para Apertura Adquisición de Alimento para canes y felinos para Salud Animal Rosario Apertura: 03/11/2026 10:00",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-03",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38585",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "7a045fe6cfba7aae1e31ca28c0c30cbfa8d8a0d1685c7c8c7ed0a9ed3d5d9b94",
-        "organismo": "Poder Judicial de Entre Ríos",
-        "numero_procedimiento": "9/2026",
-        "objeto": "De conformidad a lo dispuesto por el Superior Tribunal de Justicia de Entre Ríos, por Resolución Nº100/26 de fecha 05 de octubre de 2026 , llámese a Licitación Pública Nº09/26 por la obra Construcción Nuevo Edificio para Juzgado de Lucas González.",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-05",
-        "url": "https://www.jusentrerios.gov.ar/compras/licitacion-publica-no09-26-obra-construccion-nuevo-edificio-para-juzgado-de-lucas-gonzalez/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "organismo"
-        ]
-      },
-      {
-        "id": "17ba020182b079f46d656a411c853c07e28de6b33616d1243e31c3f82f92ca17",
-        "organismo": "Municipalidad de Concepción del Uruguay",
-        "numero_procedimiento": "38/2026",
-        "objeto": "Adquisición de 325 (trescientos veinticinco) m3 de Hormigón Calidad H25 para 03 (tres) Cuadras de Pavimento en Barrio Malvinas Argentinas, calle 12 de Oeste Norte Bis",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.cdeluruguay.gob.ar/index.php/servicios-web/data-gov/licitaciones",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "documentos"
-        ]
-      },
-      {
-        "id": "5aa07540b90934ae47a58214d3e0e0d6d31bcaa7a1c3aae729433566597a8b03",
-        "organismo": "Poder Judicial de Entre Ríos",
-        "numero_procedimiento": "285/2026",
-        "objeto": "Contrataciones Solicitud de Cotización Nº 285/26: “Contratación del servicio anual de revisión, limpieza, control y prueba de funcionamiento, con cambio de packs de baterías (solo Alcaidía) de los sistemas de detección, aviso y extinción de incendios (este último solo para Data Center Paraná) de los equipos distribuidos en la ciudad de Paraná, ubicados en la Dirección de Informática, Alcaidía y Archivo Judicial, y en el edificio central de calle Mitre N°26 de la ciudad de Concordia” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 285/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 285/26: “Contratación del servicio anual de revisión, limpieza, control y prueba de funcionamiento, con cambio de packs de baterías (solo Alcaidía) de los sistemas de detección, aviso y extinción de incendios (este último solo para Data Center Paraná) de los equipos distribuidos en la ciudad de Paraná, ubicados en la Dirección de Informática, Alcaidía y Archivo Judicial, y en el edificio central de calle Mitre N°26 de la ciudad de Concordia”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 20 de noviembre de 2026 a las 09:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 285-26 Descargar Imprmir",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-285-26-contratacion-del-servicio-anual-de-revision-limpieza-control-y-prueba-de-funcionamiento-con-cambio-de-packs-de-baterias-solo-alcaidia-de-los-sistemas-d/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "d45734de196809578251e626b29a28402d7546a5bc1d6ede244757fe8d6a6dc3",
-        "organismo": "Poder Judicial de Entre Ríos",
-        "numero_procedimiento": "32/2026",
-        "objeto": "De conformidad a lo dispuesto por la Defensoría General de la provincia de Entre Ríos, por Resolución Nº289/2026 D.G.-C, llámese a Licitación Privada Nº 32/26: “Provisión y envío de bienes informáticos para destinar al Ministerio Publico de la Defensa de Entre Ríos” .",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.jusentrerios.gov.ar/compras/licitacion-privada-no-32-26-provision-y-envio-de-bienes-informaticos-para-destinar-al-ministerio-publico-de-la-defensa-de-entre-rios/lic-privada-32-26/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "b4cc5ba1ba226b12e97e02ada7c5d0ef7cee6a37d93144a9933c7012eb9ab7e6",
-        "organismo": "Poder Judicial de Entre Ríos",
-        "numero_procedimiento": "19/2026",
-        "objeto": "De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Cotejo de Precios Nº 19/26: “Obra: Ejecución de nueva estructura y terminación de pisos de oficinas. Tribunales Concordia”.",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.jusentrerios.gov.ar/compras/cotejo-de-precios-no-19-26-obra-ejecucion-de-nueva-estructura-y-terminacion-de-pisos-de-oficinas-tribunales-concordia/cotejo-de-precios-n19-26/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "1f34e0bbcf756c9a0abaceb01fec2ead6d2d180c54eeebc4942ffbbc26fb7d28",
-        "organismo": "Concejo Municipal de Rosario",
-        "numero_procedimiento": "17/2026",
-        "objeto": "Compras y Contrataciones Compra Ágil 17/2026 Provisión de Cajas Navideñas Para Apertura Número Compra Ágil 17/2026 Tipo de compra Compra Ágil Valor oficial $ 7.820.000,00 Fecha y hora de Apertura 24/11/2026 07:00:00 Fecha de publicación 17/11/2026 Última actualización 17/11/2026 08:18:37 Documentación Pliego Compra Ágil 17/2026 Pliego",
-        "fecha_publicacion": "2026-11-17",
-        "fecha_apertura": "2026-11-24",
-        "url": "https://compras.concejorosario.gov.ar/compras/3311/descargar/5",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto",
-          "hora_apertura"
-        ]
-      },
-      {
-        "id": "8db90506657ad09bcab0e3fadb48a4d0eeee36e439396462dd48103f28888534",
-        "organismo": "Poder Judicial de Entre Ríos",
-        "numero_procedimiento": "288/2026",
-        "objeto": "Contrataciones Solicitud de Cotización Nº 288/26: “Provisión, envío y/o instalación del mobiliario y silloneria para ser destinado a la nueva Oficina de Conciliación del Ministerio Público Fiscal” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 288/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 288/26: “Provisión, envío y/o instalación del mobiliario y silloneria para ser destinado a la nueva Oficina de Conciliación del Ministerio Público Fiscal”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 24 de noviembre de 2026 a las 09:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : Descargar Imprmir",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-24",
-        "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-288-26-provision-envio-y-o-instalacion-del-mobiliario-y-silloneria-para-ser-destinado-a-la-nueva-oficina-de-conciliacion-del-ministerio-publico-fiscal/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "47712a061c3e0d448ce967df1d20e54c96eeb9558b1ae6914b9af5fafb25e166",
-        "organismo": "Poder Judicial de Entre Ríos",
-        "numero_procedimiento": "289/2026",
-        "objeto": "Contrataciones Solicitud de Cotización Nº 289/26: “Provisión y colocación de cuatro (4) cubiertas medida 225/75 R16, con su correspondiente alineación y balanceo, para el vehículo Mercedes Benz Sprinter” PODER JUDICIAL DE ENTRE RIOS SUPERIOR TRIBUNAL DE JUSTICIA SOLICITUD DE COTIZACIÓN Nº 289/26 De conformidad a lo dispuesto por el Excmo. Superior Tribunal de Justicia de Entre Ríos, llámese a Solicitud de Cotización Nº 289/26: “ Provisión y colocación de cuatro (4) cubiertas medida 225/75 R16, con su correspondiente alineación y balanceo, para el vehículo Mercedes Benz Sprinter ”. PROVISIÓN DE PLIEGOS : por consultas dirigirse a la Oficina de Compras y Asesoramiento del Poder Judicial sita en planta baja del Edificio Tribunales de Paraná calle Laprida Nº 251 en el horario de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: (0343) 4206100 int. 6306.- VALOR DEL PLIEGO : sin costo.- LUGAR DE PRESENTACIÓN DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – Planta baja – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 24 de noviembre de 2026 a las 10:30 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – Planta Baja – Paraná – Entre Ríos. DESCARGAS : SC 289-26 Descargar Imprmir",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-24",
-        "url": "https://www.jusentrerios.gov.ar/compras/solicitud-de-cotizacion-no-289-26-provision-y-colocacion-de-cuatro-4-cubiertas-medida-225-75-r16-con-su-correspondiente-alineacion-y-balanceo-para-el-vehiculo-mercedes-benz-sprinter/",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "e7414e21b95f006aa752afd7d9d3a001fce1651bca564814f8f653a8f20feff3",
-        "organismo": "Concejo Municipal de Rosario",
-        "numero_procedimiento": "16/2026",
-        "objeto": "Compra ágil 16/2026 Contratación del servicio de \"Verificación anual de disyuntores, medición de puesta a tierra y continuidad de las masas\" en los edificios del Concejo Municipal de Rosario. Tipo: Compra Ágil Apertura: 25/11/2026 07:00:00 Para Apertura Ver detalle",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-25",
-        "url": "https://compras.concejorosario.gov.ar/compras/3281",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto",
-          "hora_apertura"
-        ]
-      },
-      {
-        "id": "a6d89765cbd5051a43efbaa00860a5c1e862270196169ec2dd8db3a6c2163a37",
-        "organismo": "Poder Judicial de Entre Ríos",
+        "id": "ede40a19b69bfb0a9a2bb3d2a82c2db52385f9f072ddb300dce607d4263144f3",
+        "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "14/2026",
-        "objeto": "UBICACIÓN DE LA OBRA : Juan M. Seró Nº775 – Villa Mantero – Dpto. Uruguay – Entre Ríos. PROVISION DE PLIEGOS : consultas en la Oficina de Compras y Asesoramiento del Poder Judicial, sita en PB – Edificio Tribunales – Laprida Nº250 – Paraná – Entre Ríos – de Lunes a Viernes de 7.00 hs a 13.00 hs. Tel: 0343-406142, correo electrónico compras@jusentrerios.gov.ar, los mismos podrán ser adquiridos hasta el 17/11/2026 inclusive. VALOR DEL PLIEGO : $1.000,00 (PESOS: UN MIL CON 00/100).- PRESUPUESTO OFICIAL : PESOS: TRESCIENTOS OCHENTA Y SEIS MILLONES DOSCIENTOS SIETE MIL CIENTO OCHENTA Y NUEVE CON 21/100 ($386.207.189,21). LUGAR DE PRESENTACION DE LAS OFERTAS : en la Oficina de Compras y Asesoramiento del Poder Judicial – PB – Edificio Tribunales – Paraná – Entre Ríos.- APERTURA DE LAS PROPUESTAS : 25 de noviembre de 2026 a las 10:00 horas en el Superior Tribunal de Justicia – Oficina de Compras y Asesoramiento – PB – Paraná – Entre Ríos. DESCARGAS: LICITACION PUBLICA 14-26 Descargar Imprmir",
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-25",
-        "url": "https://www.jusentrerios.gov.ar/compras/licitacion-publica-no14-26-obra-construccion-nuevo-edificio-para-juzgado-de-villa-mantero/licitacion-publica-14-26/",
+        "objeto": "Anterior Siguiente Apertura de sobres Licitación Pública N° 14/2026 Carga Noticias Categoría: Noticias Read Time: 2 mins Publicado: 13 Noviembre 2026 Visitas: 78 El jueves 12 de noviembre, en el salón San Martín de la Municipalidad de Armstrong se procedió a la apertura de sobres correspondiente al llamado a licitación pública N° 14/2026 para la provisión de mano de obra, materiales y equipos para obra de pavimentación urbana (una cuadra). Participaron del acto el Intendente Guillermo Luzzi, los secretarios de Gobierno Daniela Pérez, de Obras Públicas Ing. Natalia Martínez, y de Hacienda y Finanzas CPN Franco Sterrantino, y la Dra. Natallia Córdoba en representación del Departamento de Legales, quienes dejan constancia que, de acuerdo al pliego, el presupuesto oficial es de $ 74.295.062,64.- En la oportunidad se recepcionaron 3 ofertas de las siguientes firmas locales: ARMAR CONSTRUCCIONES SR., cotiza $ 72.808.702,44; INARQIS CONSTRUCCIONES S.R.L., cotiza $ 81.216.194,91; RABER S.R.L., cotiza $ 66.808.497,46.- Previa lectura y ratificación se firmó el acta correspondiente. De acuerdo a uno de los puntos previstos en el Pliego de bases y condiciones, las autoridades se reservan el derecho de aceptar o rechazar en forma total y/o parcial las propuestas recibidas, sin derecho a reclamo alguno por parte de los oferentes. Artículo anterior: Aliado Sustentable Anterior Artículo siguiente: La Municipalidad y la UTN firmaron un convenio para dictar la Licenciatura en Higiene y Seguridad en el Trabajo Siguiente",
+        "fecha_publicacion": "2026-11-13",
+        "fecha_apertura": null,
+        "url": "https://www.armstrong.gov.ar/index.php/blog/apertura-de-sobres-licitacion-publica-n-14-2026",
         "clasificacion_novedad": "MODIFICADO",
         "campos_modificados": [
           "objeto"
-        ]
-      },
-      {
-        "id": "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9",
-        "organismo": "Municipalidad de Venado Tuerto",
-        "numero_procedimiento": "27/2026",
-        "objeto": "Pliego de condiciones Licitación Pública Nº 027-26 Haz clic aquí",
-        "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://venadotuerto.gob.ar/wp-content/uploads/2026/11/Pliego-de-Condiciones-Licitacion-Publica-N%C2%B0-027-26.pdf",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "documentos"
         ]
       },
       {
         "id": "f47655948c7070512e60a59369472f17b2c8936bb7cb156ceedb8763640df4d4",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "3/2023",
-        "objeto": "Categoría: 2023 Visitas: 103 Licitación 03/2023 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2003-2023.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2023 Visitas: 105 Licitación 03/2023 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2003-2023.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2023/licitacion-03-2023",
@@ -1056,7 +378,7 @@
         "id": "9b30615179a056feeeb780329036eeb46a469c7a5fd358e2df8d3b413cf881ac",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "1/2023",
-        "objeto": "Categoría: 2023 Visitas: 132 Licitación 01/2023 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2001-2023.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2023 Visitas: 134 Licitación 01/2023 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2001-2023.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2023/licitacion-01-2023",
@@ -1069,7 +391,7 @@
         "id": "4f407e30aab4f67ea6e56ed6fdc64e910882a9904309f8c91e2c45d5b3385a13",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "2/2023",
-        "objeto": "Categoría: 2023 Visitas: 86 Licitación 02/2023 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2002-2023.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2023 Visitas: 88 Licitación 02/2023 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2002-2023.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2023/licitacion-02-2023",
@@ -1082,7 +404,7 @@
         "id": "85cfb3644a17e0ea223c3d9c626aa9d6c387f2e7154ec261d7822004d2ba5115",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "4/2023",
-        "objeto": "Categoría: 2023 Visitas: 97 Licitación 04/2023 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2004-2023.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2023 Visitas: 99 Licitación 04/2023 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2004-2023.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2023/licitacion-04-2023",
@@ -1095,7 +417,7 @@
         "id": "01dcf24790c72cc8ec127de9c83f7ec92552d9ee605e970788ef78447e4f9f6e",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "7/2024",
-        "objeto": "Categoría: 2024 Visitas: 117 Licitación 07/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2007-2024.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2024 Visitas: 119 Licitación 07/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2007-2024.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-07-2024",
@@ -1108,7 +430,7 @@
         "id": "ff350e43056acad03a85a2bef54c90c600a68d8b3d6db2d0fb2e43a6349568b4",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "6/2024",
-        "objeto": "Categoría: 2024 Visitas: 85 Licitación 06/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2006-2024.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2024 Visitas: 87 Licitación 06/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2006-2024.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-06-2024",
@@ -1121,7 +443,7 @@
         "id": "42553197c53bb75f083ad27dc000f14e3f75e8509308760f9aa2ad233e5bb1dd",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "8/2024",
-        "objeto": "Categoría: 2024 Visitas: 86 Licitación 08/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2008-2024.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2024 Visitas: 88 Licitación 08/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2008-2024.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-08-2024",
@@ -1134,7 +456,7 @@
         "id": "0f5d85c51eeeab1f3ad6494cc757aeb303d59e13b4c2495112c0c3e11c74bf79",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "9/2024",
-        "objeto": "Categoría: 2024 Visitas: 87 Licitación 09/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2009-2024.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2024 Visitas: 89 Licitación 09/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2009-2024.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-09-2024",
@@ -1147,7 +469,7 @@
         "id": "fa9739df40e47a0149ba827bf78de11326ba0a4d47544d6a5a22d95ae8a23ae5",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "5/2024",
-        "objeto": "Categoría: 2024 Visitas: 88 Licitación 05/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2005-2024.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2024 Visitas: 90 Licitación 05/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2005-2024.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-05-2024",
@@ -1157,23 +479,10 @@
         ]
       },
       {
-        "id": "fd50621fe4a0505b484ea95f665d0c8c3ab057d88d58bd0c220ec4f1eb2a77df",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "2/2025",
-        "objeto": "Categoría: 2025 Visitas: 106 Licitación 02/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2002-2025.pdf\">Descargar PDF</a>",
-        "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-02-2025",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
         "id": "fe0138b0f2f7cd0425e623d5cc3778225248e452c60cc3e942d373fcf56e2411",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "1/2025",
-        "objeto": "Categoría: 2025 Visitas: 99 Licitación 01/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2001-2025.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2025 Visitas: 101 Licitación 01/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2001-2025.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-01-2025",
@@ -1183,10 +492,23 @@
         ]
       },
       {
+        "id": "fd50621fe4a0505b484ea95f665d0c8c3ab057d88d58bd0c220ec4f1eb2a77df",
+        "organismo": "Municipalidad de Armstrong",
+        "numero_procedimiento": "2/2025",
+        "objeto": "Categoría: 2025 Visitas: 108 Licitación 02/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2002-2025.pdf\">Descargar PDF</a>",
+        "fecha_publicacion": null,
+        "fecha_apertura": null,
+        "url": "https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-02-2025",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
         "id": "9652bec25a013f8a4c36a6615762b66b167bc7a8e711b54dbf1f920bb8c2551c",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "1/2026",
-        "objeto": "Categoría: 2026 Visitas: 158 Licitación 01/2026 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2026/Licitacion%2001-2026.pdf\">Descargar PDF</a> 1 2 Página 2 de 2",
+        "objeto": "Categoría: 2026 Visitas: 160 Licitación 01/2026 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2026/Licitacion%2001-2026.pdf\">Descargar PDF</a> 1 2 Página 2 de 2",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2026/licitacion-01-2026",
@@ -1199,7 +521,7 @@
         "id": "2061bf5c684b468b31ba685c8c3d63897d015cacbb3ff641ccc101ffe368ceb4",
         "organismo": "Municipalidad de Seguí",
         "numero_procedimiento": "1/2021",
-        "objeto": "Home Licitaciones Apertura de sobres de la Licitación Pública Nº 01/2021 Licitaciones Noticias Apertura de sobres de la Licitación Pública Nº 01/2021 by arcast 11 febrero, 2021 0 248 0 En la mañana de hoy, el Presidente Municipal Dr. Gerardo Heberlein junto a su equipo de Gestión y titulares de empresas llevaron a cabo la apertura de sobres de la Licitación Pública Nº 01/2021 aprobada por Decreto Nº 001/2021 DEM en el Salón Auditorio Municipal.El objetivo de este proceso es adquirir los materiales para la ejecución de la obra denominada “Pavimentación con Hormigón Armado, Cordones Cuneta y Alumbrado Público en el Parque Industrial Seguí”. Gerardo Heberlein Municipalidad de Segui segui entre rios 0 previous post No Habrá recolección de Residuos next post Torneo de Golf Croquet y de Tejo",
+        "objeto": "Home Licitaciones Apertura de sobres de la Licitación Pública Nº 01/2021 Licitaciones Noticias Apertura de sobres de la Licitación Pública Nº 01/2021 by arcast 11 febrero, 2021 0 251 0 En la mañana de hoy, el Presidente Municipal Dr. Gerardo Heberlein junto a su equipo de Gestión y titulares de empresas llevaron a cabo la apertura de sobres de la Licitación Pública Nº 01/2021 aprobada por Decreto Nº 001/2021 DEM en el Salón Auditorio Municipal.El objetivo de este proceso es adquirir los materiales para la ejecución de la obra denominada “Pavimentación con Hormigón Armado, Cordones Cuneta y Alumbrado Público en el Parque Industrial Seguí”. Gerardo Heberlein Municipalidad de Segui segui entre rios 0 previous post No Habrá recolección de Residuos next post Torneo de Golf Croquet y de Tejo",
         "fecha_publicacion": "2021-02-11",
         "fecha_apertura": null,
         "url": "https://www.segui.gob.ar/sitio/?p=3668",
@@ -1212,7 +534,7 @@
         "id": "251cb4878ef2a5726b13f2be1fc6e492cb7b577af913909e50cc5291895ee7d6",
         "organismo": "Municipalidad de Seguí",
         "numero_procedimiento": "1/2024",
-        "objeto": "Licitaciones Noticias Apertura de sobres – Solicitud de cotización N° 01/2024 by arcast 9 marzo, 2024 9 marzo, 2024 0 252 0 Objeto de la cotización: Adquisición de materiales con destino a la obra y mejora de la traza vial en el Barrio «Nuestra Señora de la Merced» de la localidad de Seguí. 0",
+        "objeto": "Licitaciones Noticias Apertura de sobres – Solicitud de cotización N° 01/2024 by arcast 9 marzo, 2024 9 marzo, 2024 0 256 0 Objeto de la cotización: Adquisición de materiales con destino a la obra y mejora de la traza vial en el Barrio «Nuestra Señora de la Merced» de la localidad de Seguí. 0",
         "fecha_publicacion": "2024-03-09",
         "fecha_apertura": null,
         "url": "https://www.segui.gob.ar/sitio/?p=7537",
@@ -1225,7 +547,7 @@
         "id": "39aff9c4a272aaf527dded724f257a5844a3ccb0d652e64487f103dd7a99b79d",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "7/2026",
-        "objeto": "Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 84 Licitación 07/2026 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2026/Licitacion%2007-2026.pdf\">Descargar PDF</a>",
+        "objeto": "Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 87 Licitación 07/2026 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2026/Licitacion%2007-2026.pdf\">Descargar PDF</a>",
         "fecha_publicacion": "2026-09-18",
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2026/licitacion-07-2026",
@@ -1238,7 +560,7 @@
         "id": "7387eff03513bd9fa3afe8cafcc8755c5cfdce9f6b34847aba191b25ad6c8394",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "8/2025",
-        "objeto": "Categoría: 2025 Visitas: 142 Licitación 08/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2008-2025.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2025 Visitas: 145 Licitación 08/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2008-2025.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-08-2025",
@@ -1251,7 +573,7 @@
         "id": "d5051ec19f2759ccc49da0e0791fbe9cf4632a150c0906faa9a5f509953d2d17",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "8/2026",
-        "objeto": "Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 83 Licitación 08/2026 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2026/Licitacion%2008-2026.pdf\">Descargar PDF</a>",
+        "objeto": "Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 86 Licitación 08/2026 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2026/Licitacion%2008-2026.pdf\">Descargar PDF</a>",
         "fecha_publicacion": "2026-09-18",
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2026/licitacion-08-2026",
@@ -1264,7 +586,7 @@
         "id": "23f6dbc388e198f56fb0b34ca214a74647e7cb9ca867853434f3dfc49bf6d35d",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "9/2025",
-        "objeto": "Categoría: 2025 Visitas: 144 Licitación 09/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2009-2025.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2025 Visitas: 146 Licitación 09/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2009-2025.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-09-2025",
@@ -1277,7 +599,7 @@
         "id": "81097874d56937bc864c41d112b4b20f23744c678504d49634c55eb4681bfb05",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "9/2026",
-        "objeto": "Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 115 Licitación 09/2026 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2026/Licitacion%2009-2026.pdf\">Descargar PDF</a>",
+        "objeto": "Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 118 Licitación 09/2026 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2026/Licitacion%2009-2026.pdf\">Descargar PDF</a>",
         "fecha_publicacion": "2026-09-18",
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2026/licitacion-09-2026",
@@ -1290,7 +612,7 @@
         "id": "cb8c41c08c9e95fe7f9769c6887b1fbda110280b6e247a6f8506f616d96a05eb",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "10/2025",
-        "objeto": "Categoría: 2025 Visitas: 136 Licitación 10/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2010-2025.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2025 Visitas: 139 Licitación 10/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2010-2025.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-10-2025",
@@ -1303,7 +625,7 @@
         "id": "dce25b6f40beea4a6744b1eb443316f97d503ee9555326aabd44c4f259dc6094",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "11/2025",
-        "objeto": "Categoría: 2025 Visitas: 148 Licitación 11/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2011-2025.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2025 Visitas: 150 Licitación 11/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2011-2025.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-11-2025",
@@ -1316,7 +638,7 @@
         "id": "dbcfba2063658ee1c370eee9efa36dd11a9ee6c79ce85b30fe439a92c2361745",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "12/2025",
-        "objeto": "Categoría: 2025 Visitas: 149 Licitación 12/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2012-2025.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2025 Visitas: 151 Licitación 12/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2012-2025.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-12-2025",
@@ -1329,7 +651,7 @@
         "id": "3d22048c5737561acf91741e71c9427a8456e9dd5c8e2dfdfc1c39d854e48f5b",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "13/2023",
-        "objeto": "Categoría: 2023 Visitas: 145 Licitación 13/2023 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2013-2023.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2023 Visitas: 147 Licitación 13/2023 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2013-2023.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2023/licitacion-13-2023",
@@ -1342,7 +664,7 @@
         "id": "4dd5c8af943b52125e8a9939de3583370f54684c463918c64c3f6b1f9510dfa2",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "15/2024",
-        "objeto": "Categoría: 2024 Visitas: 138 Licitación 15/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2015-2024.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2024 Visitas: 141 Licitación 15/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2015-2024.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-15-2024",
@@ -1355,7 +677,7 @@
         "id": "70cc8f504c1117c4ad84b152794f61f13837f72d2f60f5f82c64b1a5d7970978",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "16/2024",
-        "objeto": "Categoría: 2024 Visitas: 139 Licitación 16/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2016-2024.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2024 Visitas: 141 Licitación 16/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2016-2024.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-16-2024",
@@ -1368,7 +690,7 @@
         "id": "f4bea3988861ef33db56983d68770c7361ab1b82b8b48ca6d09ed99a5744b158",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "17/2024",
-        "objeto": "Categoría: 2024 Visitas: 144 Licitación 17/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2017-2024.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2024 Visitas: 147 Licitación 17/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2017-2024.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-17-2024",
@@ -1381,7 +703,7 @@
         "id": "029b5818f67a34ada9b2ee7252c2a3c59618e08a850169652a0899cccc1978c7",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "18/2024",
-        "objeto": "Categoría: 2024 Visitas: 144 Licitación 18/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2018-2024.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2024 Visitas: 146 Licitación 18/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2018-2024.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-18-2024",
@@ -1394,7 +716,7 @@
         "id": "5d2a9feba100a0057e1ebbb0a5fa3c4464594e0a055b98140962da60ba6b1de7",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "19/2024",
-        "objeto": "Categoría: 2024 Visitas: 124 Licitación 19/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2019-2024.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2024 Visitas: 127 Licitación 19/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2019-2024.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-19-2024",
@@ -1406,29 +728,536 @@
     ],
     "datos_completados": [
       {
-        "id": "1b05b7f2f878aeb5b8c1f4de8804ebbdefd84daabb2049c4e2df0b952c041259",
-        "organismo": "Municipalidad de Crespo",
-        "numero_procedimiento": "4/2022",
-        "objeto": "en referencia a la Licitación Pública Nº 04/2022, y   CONSIDERANDO :                 Que a través de la misma solicita el reintegro del Fondo de Reparo retenido como garantía por los trabajos de mano de obra, herramientas y maquinarias para la construcción de canal de desagüe de calle Libertad.              Que la firma “BARMEN S.R.L CUIT 30-71446085-0” ofrece Póliza de Seguro de Caución IAPSER SEGUROS Nº 000135542, para sustituir los Fondos de Reparo correspondientes a los certificados del 1 al 8 por el importe total de Seiscientos Noventa y siete Mil Ochocientos Ochenta y tres Pesos con 65/100 ($ 697.883,65) y Póliza de Seguro de Caución IAPSER SEGUROS Nº 000135543 correspondiente al certificado 1 (único) por la ampliación de la Licitación Pública Nº 04/2022, por el importe de Ochenta y seis Mil Doscientos Pesos con 05/100 ($ 86.200,05).              Que del importe de cada certificado de obra se retuvo el 5% como garantía de obra, y que dicho depósito puede ser reemplazo en su equivalente por alguna de las garantías previstas en el Art. 19 del Pliego de Condiciones Generales, comprendiendo la Póliza de Seguro de Caución, una de ellas.         Que el presente se dicta en uso de las facultades que la Constitución de Entre Ríos y la Ley 10.027 y sus modificatorias, otorgan al Departamento Ejecutivo Municipal.                            Por ello y en uso de sus facultades                      EL PRESIDENTE MUNICIPAL                                    DECRETA:   Art.1º.- Acéptese la sustitución del fondo de reparo de la Licitación Pública Nº         04/2022, correspondiente a los certificados del 1 al 8 y certificado 1         (ampliación), constituido por la retención del cinco (5) por ciento de los         pagos realizados a BARMEN S.R.L CUIT 30-71446085-0, por las Póliza de         Seguro de Caución IAPSER SEGUROS Nº 000135542 y Póliza de Seguro         de Caución IAPSER SEGUROS Nº 000135543 , que cubran los montos          correspondientes a dichas deducciones y en consecuencia procédase al         pago de las sumas retenidas y que en total ascienden a la suma de         Setecientos Ochenta y cuatro Mil Ochenta y tres Pesos con 70/100 ($         784.083,70) , de acuerdo a los considerandos que anteceden.   Art.2°.- Pásese copia de la presente Resolución a Suministros, a Contaduría y         Almacenes, a sus efectos.   Art.3°.- Dispónese que la presente será refrendada por el Secretario de         Economía, Hacienda y Producción.   Art.4°.- Comuníquese, publíquese, etc. ",
+        "id": "c10a415d530890a632beb014aaec0d52b927da16cc92b37e8362efb8489392ae",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "81571/2026",
+        "objeto": null,
         "fecha_publicacion": null,
-        "fecha_apertura": "2022-03-09",
-        "url": "http://municrespo.gov.ar/digesto/mod/subidas/Decreto-836-2022-Devolucion-fondo-de-reparo-Licitacion-Publica-04-2022-construccion-de-canal-Libertad-Barmen-srl.pdf",
+        "fecha_apertura": "2026-11-18",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38767",
         "clasificacion_novedad": "DATOS_COMPLETADOS",
         "campos_modificados": [
-          "objeto"
+          "situacion_publicada"
         ]
       },
       {
-        "id": "3fe92b6d311c92b7bb69aaaa6ad883782ce05fa87f670993400f222e4d23ccf6",
-        "organismo": "Municipalidad de Crespo",
-        "numero_procedimiento": "2/2019",
-        "objeto": "             La Licitación Privada Nº 02/19, la nota elaborada por el Encargado de Cloacas y el Jefe de Almacenes y el Acuerdo de Partes entre la firma “ANALÍTICA S.A” y la Municipalidad de Crespo, y     CONSIDERANDO :              Que el Encargado de Cloacas “Loahiza Walter” y el Jefe de Almacenes “Muzzachiodi Jorge”, informan que los ítems 5) y 10) de la Licitación Privada Nº 02/19, correspondiente a Trescientas (300) Tapas de PVC 110 (Hembra) PLASTIFERRO y a Cien (100) Caños de PVC Cloacal 110 x 3,20 c/sello x 6 mts SELLO IRAM JUNTA ELASTICA                 PLASTIFERRO       adjudicados a la firma “ANALÍTICA S.A”, deberán darse de baja, ya que la obra para la cual se necesitaban se pudo finalizar con materiales existentes en el Municipio, resultando innecesario adquirir más elementos de obra sanitaria.              Que en fecha 11 de Marzo de 2019 se procede a firmar un acuerdo de partes entre la Municipalidad de Crespo y la firma “ANALÍTICA S.A” mediante el cual las partes acuerdan dar de baja la adjudicación de los ítems 5) y 10) de la Licitación Privada 02/19, por un importe total de Pesos Ciento Veintidós Mil Novecientos Noventa y cuatro con 24/100 ($ 122.994,24), por imposibilidad de cumplimiento, renunciando a realizar cualquier tipo de reclamo relacionado con los derechos y obligaciones derivados de la Licitación Privada 02/19 y Pliegos de Condiciones Generales y Particulares.               Que correspondería revocar la adjudicación de los ítems 5) y 10) de la Licitación Privada Nº 02/19.              Que el presente se dicta en uso de las facultades que la Constitución de Entre Ríos y la Ley 10.027 y sus modificatorias, otorgan al Departamento Ejecutivo Municipal.                               Por ello y en uso de sus facultades                      EL PRESIDENTE MUNICIPAL                                     D E C R E T A:  Art.1º.- Revóquese la adjudicación de los ítems 5) y 10) de la Licitación Privada Nº         02/19, correspondientes a Trescientas (300) Tapas de PVC 110 (Hembra)         PLASTIFERRO y a Cien (100) Caños de PVC Cloacal 110 x 3,20 c/sello x         6 mts SELLO IRAM JUNTA ELASTICA PLASTIFERRO, adjudicados         mediante Decreto Nº 034/19, de fecha 25 de Febrero de 2019, de         conformidad a los considerandos que anteceden.   Art.2º.- Pásese copia del presente Decreto a Suministros y a Contaduría, a sus         efectos.   Art.3º.- Dispónese que el presente será refrendado por el Secretario de Economía,         Hacienda y Producción.   Art.4º.- Comuníquese, publíquese, etc. ",
+        "id": "54b544110506c52ac0d6485b03f12177ad4336e165ae4127c6e8e60d728c6c78",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "69008/2026",
+        "objeto": null,
         "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "http://municrespo.gov.ar/digesto/mod/subidas/Decreto-005-2020-Licitacion-Privada-N-02-19-canos-para-red-cloacal-DADO-DE-BAJA-ITEMS-adjudicado-ANALITICA-S-A.pdf",
+        "fecha_apertura": "2026-11-18",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38766",
         "clasificacion_novedad": "DATOS_COMPLETADOS",
         "campos_modificados": [
-          "objeto"
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "6a0fc7f7235b0cd2371728509c9cc54afa5a7390a98c5a95a5e62cc06abfa523",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "110891/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-18",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38773",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "eb1f6cec7b08860e1c37506f2fe1495f7b04fe5e70605db6459f196232ce628f",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "11141/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-18",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38763",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "e59b477d1f38da3e23a3faa045540a7fc6d2cd84373e90d1758ff594dbc02a14",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "24845/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-18",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38787",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "0a35ae24c0ce53e1155f5c0613a8a15f6e8ba1794dff783bdeca106c7bd37153",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "37874/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-18",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38813",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "c9fccebfa4dfb2928ad5cf8e6bd41cce0c7a5aff8fb6e6bd1cb880af30997395",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "49/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-18",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38798",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "3776805b821164b192ac86200ab3e0061f845b48c39a83b7b57966ae6230e9cb",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "110911/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-18",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38801",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "1391d827bd96c30004e7cbaea6343aad90eee6c5af8949ad32d71b2944eb2137",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "40691/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-18",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38800",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "2aed800c6da6ab22b1324ef06edb241fb2d23becd67118dda9ce248e976ec137",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "24925/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-18",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38814",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "cfd3f281873fe6b11c00b4321125764bfd304e1dc4f45ee5f87321d46ea25e1f",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "3/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-18",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38758",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "4d3ac57c4353cda19aa6274b51cfddfc349aaae945185bd5180ce896ca02ec08",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "21/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-19",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38821",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "c57cc880bf4e0daf1fa12c7df3032d244b630d3fe6e9a664ec39ce5b868bcf4a",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "40711/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-19",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38818",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "9d4c4b1dc8d8c46a5c305f2f3385368b28855a6dc0e1e295f0b1bd13dc1df784",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "81591/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-19",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38784",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "e38e322f0c6376bf45eef0fb9c50ff7d1b6a31a5db684303459b86bf7bbb05a2",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "24945/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-19",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38824",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "05e20ea4980165471ded10cbce7b2081e9c60b948f9a950226ea1918da21ba0f",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "81601/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-19",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38788",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "a42c2254e1a27811269202939e72343c84fb1a6fea9cb82dfe017296fb35ce64",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "11161/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-19",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38812",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "7eb5d7043a63c7cb4a0c200d25a4c782284845e32cd01f84527132e246634192",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "21/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-19",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38770",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "708f398991715e015cba73e5ed2b86f906fdbcae30e1ccbd40627f5dc369ab79",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "22/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-19",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38795",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "5d89816fbb42f055d5f2eb6f78ff1ee006795bd336c9f65644d88fa645185e40",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "24905/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-19",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38816",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "bc192ad18afd3d64241a9aae86d90d515047ff8866f8957e5b31681682c0e6a6",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "24935/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-19",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38822",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "8c035ea4bb849c829f64a102e4fa32f8ef1af440f08c40062779dda7f58ab390",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "101301/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-19",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38803",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "8bf4177bcd5e80658ba33abd805e326dc407fc4ac6757b38f122cd5a548ad11c",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "24915/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-19",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38820",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "7d67dff1e5ed4075a474780ab52ee80b48bc0972c885042c177af1ff0d1feeea",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "40701/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-19",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38817",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "44d7db8e6d4c011dfae322cca1526b12fa62e1ce6914e03d86acc6030276f134",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "53/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-19",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38815",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "8ed0636f3f0354a859b29fa8444e4857726a19c788003eeec1fe823efd9ca0ec",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "4/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-19",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38792",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "1a754160cfcb7519e273310ec92c15b15eab0ad6245d7eea6e22addd17fcb1e8",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "11334/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-20",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38851",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "ee0ab2e426b9ef397c5f8df2ea4935790bdcf2f32ba0d8b3ff2b68a81152102e",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "76105/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-20",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38827",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "9bb486e1a1d661698c2778a446b6b571e27f9ea384eb2620cf0e8d60164c3b71",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "120851/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-20",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38785",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "a58603633f12851914fb81ce7a130c43706e8b31ad8adf4a8cbe8971cb83e0e0",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "131531/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-20",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38802",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "555142c6f5c29ee645381f60241e6a9482d38260ab2fa303dd30bac4807cb8e2",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "24955/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-20",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38838",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "6b86e63b29f6ddcd46d71fb1c74bfe122161a14cdfbd5fbcd28a85c741ffa53f",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "3221/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-20",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38846",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "cde2083be8431fa9ff86c58acfdc7764383bf3e3fc8af3dda365c8f489bde629",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "38506/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-20",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38845",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "46ce085a3020cca879390f5138fa529926bb340be7f8eaf544f819f709bbedc0",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "3222/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-20",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38847",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "c1fbc63197006db2453ec537e6a7779f6d5715bb30d0c31c98aa20f30295f9ec",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "24965/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-20",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38840",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "602b367c31f8449e8ff19d22530e532ed6fc18d2a59700015ddb42764cb4825c",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "3223/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-20",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38848",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "65a90181873c151481e44a86c1235e233d2f24a5fe5663b184261120dadd22af",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "3224/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-20",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38849",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "cb6c8ef5a81503b23a60fa9711523e2b11fb749b75fe4c468317d07f76e1f3f5",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "120861/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-20",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38791",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "cd52573d098e775fab7dcbe68c11ad961af207abfc3e267464d79ecfe9b664cf",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "24975/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-20",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38844",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "b13691bf6d0f65cb11a3ce25e1000a8f2e5841cf6710a5067ed2366160c03ce3",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "52/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-20",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38786",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
+        ]
+      },
+      {
+        "id": "448688fe765e0f86f83078032f0c29db80f48b4ccfd860a1fe3b50e2beada294",
+        "organismo": "Municipalidad de Rosario",
+        "numero_procedimiento": "76102/2026",
+        "objeto": null,
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-11-20",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38829",
+        "clasificacion_novedad": "DATOS_COMPLETADOS",
+        "campos_modificados": [
+          "situacion_publicada"
         ]
       }
     ]
@@ -1523,10 +1352,10 @@
       "organismo": "Municipalidad de Crespo",
       "provincia": "Entre Ríos",
       "localidad": "Crespo",
-      "procedimientos": 168,
+      "procedimientos": 175,
       "abiertas": 0,
       "proximas_a_vencer": 0,
-      "pagos_verificados": 2,
+      "pagos_verificados": 4,
       "unificaciones_revision": 0,
       "url": "https://www.crespo.gob.ar/category/licitacion-publica/",
       "estado_anterior": "PARCIAL",
@@ -1606,9 +1435,9 @@
       "estado_actual": "PARCIAL",
       "errores": [
         {
-          "categoria": "RED",
+          "categoria": "EXTRACCION",
           "error": "Plazo agotado; se conserva lo extraído",
-          "fase": "DESCARGA",
+          "fase": "EXTRACCION",
           "timeout": true,
           "tipo": "TIEMPO_FUENTE",
           "causa": "TIEMPO_ESPERA",
@@ -1761,8 +1590,8 @@
       "organismo": "Municipalidad de Rosario",
       "provincia": "Santa Fe",
       "localidad": "Rosario",
-      "procedimientos": 293,
-      "abiertas": 80,
+      "procedimientos": 304,
+      "abiertas": 91,
       "proximas_a_vencer": 0,
       "pagos_verificados": 0,
       "unificaciones_revision": 0,
@@ -1771,6 +1600,7 @@
       "estado_actual": "PARCIAL",
       "errores": [
         {
+          "acceso_recuperado": true,
           "categoria": "RED",
           "causa": "TIEMPO_ESPERA",
           "error": "<urlopen error timed out>",
@@ -1779,7 +1609,18 @@
           "restriccion_acceso_comprobada": false,
           "timeout": true,
           "tipo": "URLError",
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=1&page=1"
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=1&page=2"
+        },
+        {
+          "categoria": "RED",
+          "causa": "TIEMPO_ESPERA",
+          "error": "<urlopen error timed out>",
+          "permanencia": "NO_DETERMINADA",
+          "reintento_diferido": true,
+          "restriccion_acceso_comprobada": false,
+          "timeout": true,
+          "tipo": "URLError",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=2"
         },
         {
           "categoria": "RED",
@@ -1789,9 +1630,10 @@
           "restriccion_acceso_comprobada": false,
           "timeout": true,
           "tipo": "URLError",
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=1&page=1"
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=2"
         },
         {
+          "acceso_recuperado": true,
           "categoria": "RED",
           "causa": "TIEMPO_ESPERA",
           "error": "<urlopen error timed out>",
@@ -1807,10 +1649,11 @@
           "causa": "TIEMPO_ESPERA",
           "error": "<urlopen error timed out>",
           "permanencia": "NO_DETERMINADA",
+          "reintento_diferido": true,
           "restriccion_acceso_comprobada": false,
           "timeout": true,
           "tipo": "URLError",
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5"
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=8"
         },
         {
           "categoria": "RED",
@@ -1834,6 +1677,7 @@
           "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=12&anioApertura%5B0%5D=2026&verTipo=1"
         },
         {
+          "acceso_recuperado": true,
           "categoria": "RED",
           "causa": "TIEMPO_ESPERA",
           "error": "<urlopen error timed out>",
@@ -1852,7 +1696,19 @@
           "restriccion_acceso_comprobada": false,
           "timeout": true,
           "tipo": "URLError",
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=12&anioApertura%5B0%5D=2026&verTipo=2"
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=8"
+        },
+        {
+          "acceso_recuperado": true,
+          "categoria": "RED",
+          "causa": "TIEMPO_ESPERA",
+          "error": "<urlopen error timed out>",
+          "permanencia": "NO_DETERMINADA",
+          "reintento_diferido": true,
+          "restriccion_acceso_comprobada": false,
+          "timeout": true,
+          "tipo": "URLError",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5"
         },
         {
           "categoria": "RED",
@@ -1863,17 +1719,7 @@
           "restriccion_acceso_comprobada": false,
           "timeout": true,
           "tipo": "URLError",
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=12&anioApertura%5B0%5D=2026&verTipo=5"
-        },
-        {
-          "categoria": "RED",
-          "causa": "TIEMPO_ESPERA",
-          "error": "<urlopen error timed out>",
-          "permanencia": "NO_DETERMINADA",
-          "restriccion_acceso_comprobada": false,
-          "timeout": true,
-          "tipo": "URLError",
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=12&anioApertura%5B0%5D=2026&verTipo=5"
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=1&recomendada=apertura&tipoRecomendada=5"
         },
         {
           "categoria": "RED",
@@ -1894,23 +1740,17 @@
           "restriccion_acceso_comprobada": false,
           "timeout": true,
           "tipo": "URLError",
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5"
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=1&recomendada=apertura&tipoRecomendada=5"
         },
         {
-          "categoria": "EXTRACCION",
-          "error": "El recorrido no alcanza el total publicado por el portal; no se declara cobertura completa",
-          "por_tipo": {
-            "compra agil": {
-              "extraidas": 41,
-              "publicadas": 67
-            }
-          },
-          "timeout": false,
-          "tipo": "ConteoRosarioIncompleto",
-          "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
-          "causa": "ERROR_EXTRACCION",
+          "categoria": "RED",
+          "causa": "TIEMPO_ESPERA",
+          "error": "<urlopen error timed out>",
+          "permanencia": "NO_DETERMINADA",
           "restriccion_acceso_comprobada": false,
-          "permanencia": "NO_DETERMINADA"
+          "timeout": true,
+          "tipo": "URLError",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5"
         }
       ],
       "consultada_esta_corrida": true
@@ -1934,13 +1774,13 @@
       "organismo": "Gobierno de Timbúes",
       "provincia": "Santa Fe",
       "localidad": "Timbúes",
-      "procedimientos": 177,
+      "procedimientos": 179,
       "abiertas": 0,
       "proximas_a_vencer": 0,
       "pagos_verificados": 1,
       "unificaciones_revision": 0,
       "url": "https://www.timbues.gob.ar/index.php?pagina=lista&sec=210",
-      "estado_anterior": "BLOQUEADA",
+      "estado_anterior": "PARCIAL",
       "estado_actual": "PARCIAL",
       "errores": [
         {
@@ -2056,17 +1896,17 @@
       "unificaciones_revision": 0,
       "url": "https://www.junin.gob.ar/servicio/licitaciones-y-concursos",
       "estado_anterior": "PARCIAL",
-      "estado_actual": "PARCIAL",
+      "estado_actual": "BLOQUEADA",
       "errores": [
         {
           "categoria": "RED",
-          "error": "Plazo agotado; se conserva lo extraído",
-          "fase": "DESCARGA",
-          "timeout": true,
-          "tipo": "TIEMPO_FUENTE",
           "causa": "TIEMPO_ESPERA",
+          "error": "<urlopen error timed out>",
+          "permanencia": "NO_DETERMINADA",
           "restriccion_acceso_comprobada": false,
-          "permanencia": "NO_DETERMINADA"
+          "timeout": true,
+          "tipo": "URLError",
+          "url": "https://www.junin.gob.ar/servicio/licitaciones-y-concursos"
         }
       ],
       "consultada_esta_corrida": true
@@ -2136,7 +1976,7 @@
       "pagos_verificados": 0,
       "unificaciones_revision": 0,
       "url": "https://mariateresa.gob.ar/",
-      "estado_anterior": "PARCIAL",
+      "estado_anterior": "OPERATIVA",
       "estado_actual": "OPERATIVA",
       "errores": [],
       "consultada_esta_corrida": true
@@ -2151,20 +1991,9 @@
       "pagos_verificados": 0,
       "unificaciones_revision": 0,
       "url": "https://cafesg.gob.ar/cafesg2/licitaciones/",
-      "estado_anterior": "OPERATIVA",
-      "estado_actual": "BLOQUEADA",
-      "errores": [
-        {
-          "categoria": "RED",
-          "causa": "TIEMPO_ESPERA",
-          "error": "The read operation timed out",
-          "permanencia": "NO_DETERMINADA",
-          "restriccion_acceso_comprobada": false,
-          "timeout": true,
-          "tipo": "TimeoutError",
-          "url": "https://cafesg.gob.ar/cafesg2/licitaciones/"
-        }
-      ],
+      "estado_anterior": "BLOQUEADA",
+      "estado_actual": "OPERATIVA",
+      "errores": [],
       "consultada_esta_corrida": true
     },
     {
@@ -2186,10 +2015,10 @@
       "organismo": "Municipalidad de Crespo",
       "provincia": "Entre Ríos",
       "localidad": "Crespo",
-      "procedimientos": 706,
+      "procedimientos": 695,
       "abiertas": 0,
       "proximas_a_vencer": 0,
-      "pagos_verificados": 7,
+      "pagos_verificados": 1,
       "unificaciones_revision": 0,
       "url": "https://municrespo.gov.ar/digesto/consulta.php?s=consulta",
       "estado_anterior": "PARCIAL",
@@ -2218,7 +2047,7 @@
       "pagos_verificados": 0,
       "unificaciones_revision": 0,
       "url": "https://www.jusentrerios.gov.ar/contrataciones/",
-      "estado_anterior": "BLOQUEADA",
+      "estado_anterior": "PARCIAL",
       "estado_actual": "PARCIAL",
       "errores": [
         {
@@ -3102,10 +2931,10 @@
       "organismo": "Municipalidad de Crespo",
       "provincia": "Entre Ríos",
       "localidad": "Crespo",
-      "procedimientos": 2,
+      "procedimientos": 6,
       "abiertas": 0,
       "proximas_a_vencer": 0,
-      "pagos_verificados": 2,
+      "pagos_verificados": 6,
       "unificaciones_revision": 0,
       "url": "https://www.crespo.gob.ar/licitaciones-privadas-2026/",
       "estado_anterior": "OPERATIVA",
@@ -3169,8 +2998,8 @@
         },
         {
           "categoria": "RED",
-          "causa": "ERROR_RED_POR_CONFIRMAR",
-          "error": "<urlopen error [Errno 104] Connection reset by peer>",
+          "causa": "ERROR_CONEXION_TLS",
+          "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>",
           "permanencia": "NO_DETERMINADA",
           "restriccion_acceso_comprobada": false,
           "timeout": false,
@@ -3224,9 +3053,9 @@
       "estado_actual": "PARCIAL",
       "errores": [
         {
-          "categoria": "EXTRACCION",
+          "categoria": "RED",
           "error": "Plazo agotado; se conserva lo extraído",
-          "fase": "EXTRACCION",
+          "fase": "DESCARGA",
           "timeout": true,
           "tipo": "TIEMPO_FUENTE",
           "causa": "TIEMPO_ESPERA",
@@ -3470,7 +3299,7 @@
       "unificaciones_revision": 0,
       "url": "https://arrecifes.gob.ar/informacion-publica/boletin-oficial/",
       "estado_anterior": "PENDIENTE",
-      "estado_actual": "PENDIENTE",
+      "estado_actual": "PARCIAL",
       "errores": [
         {
           "categoria": "RED",
@@ -3481,7 +3310,7 @@
           "restriccion_acceso_comprobada": false,
           "timeout": false,
           "tipo": "HTTPError",
-          "url": "https://arrecifes.gob.ar/felicitaciones-titan/"
+          "url": "https://arrecifes.gob.ar/llamado-a-licitacion-publica/feed/"
         }
       ],
       "consultada_esta_corrida": true
@@ -3674,9 +3503,20 @@
       "pagos_verificados": 0,
       "unificaciones_revision": 0,
       "url": "https://sastreciudad.gob.ar/intendencia/",
-      "estado_anterior": "PARCIAL",
-      "estado_actual": "OPERATIVA",
-      "errores": [],
+      "estado_anterior": "OPERATIVA",
+      "estado_actual": "PARCIAL",
+      "errores": [
+        {
+          "categoria": "RED",
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA",
+          "timeout": true,
+          "tipo": "TIEMPO_FUENTE",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        }
+      ],
       "consultada_esta_corrida": true
     },
     {
@@ -3958,7 +3798,7 @@
       "pagos_verificados": 0,
       "unificaciones_revision": 0,
       "url": "https://lucasgonzalez.gob.ar/licitaciones-y-concursos/",
-      "estado_anterior": "OPERATIVA",
+      "estado_anterior": "BLOQUEADA",
       "estado_actual": "BLOQUEADA",
       "errores": [
         {
@@ -4285,14 +4125,24 @@
           "url": "https://perez.opendata.junar.com/datasets/199847-listados-de-licitaciones-publicas-2024.download/"
         },
         {
-          "categoria": "EXTRACCION",
-          "causa": "ERROR_EXTRACCION",
-          "error": "Redirección fuera de dominios oficiales declarados",
+          "categoria": "RED",
+          "causa": "TIEMPO_ESPERA",
+          "error": "The read operation timed out",
           "permanencia": "NO_DETERMINADA",
           "restriccion_acceso_comprobada": false,
-          "timeout": false,
-          "tipo": "ValueError",
-          "url": "https://perez.opendata.junar.com/datasets/199259-listados-de-licitaciones-publicas-2023.download/"
+          "timeout": true,
+          "tipo": "TimeoutError",
+          "url": "http://perez.opendata.junar.com/dashboards/21665/licitaciones-2023/"
+        },
+        {
+          "categoria": "RED",
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA",
+          "timeout": true,
+          "tipo": "TIEMPO_FUENTE",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
         }
       ],
       "consultada_esta_corrida": true
@@ -4563,17 +4413,17 @@
       "provincia": "Santa Fe",
       "url": "https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia",
       "estado_anterior": "PENDIENTE",
-      "estado_actual": "PENDIENTE",
+      "estado_actual": "BLOQUEADA",
       "errores": [
         {
-          "categoria": "EXTRACCION",
-          "error": "Listado no reconocido; no se declara vacío",
-          "timeout": false,
-          "tipo": "SinPublicacionesDetectadas",
-          "url": "https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia",
-          "causa": "ERROR_EXTRACCION",
+          "categoria": "RED",
+          "causa": "ERROR_RED_POR_CONFIRMAR",
+          "error": "<urlopen error [Errno -2] Name or service not known>",
+          "permanencia": "NO_DETERMINADA",
           "restriccion_acceso_comprobada": false,
-          "permanencia": "NO_DETERMINADA"
+          "timeout": false,
+          "tipo": "URLError",
+          "url": "https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia"
         }
       ],
       "consultada_esta_corrida": true
@@ -4641,12 +4491,12 @@
   ],
   "estado_ejecucion": "COMPLETA_CON_INCIDENCIAS",
   "cobertura_estricta": {
-    "PARCIAL": 31,
-    "BLOQUEADA": 15,
+    "PARCIAL": 32,
+    "BLOQUEADA": 16,
     "OPERATIVA": 50,
-    "PENDIENTE": 10,
+    "PENDIENTE": 8,
     "SIN_PUBLICACIONES_CONFIRMADO": 1
   },
-  "abiertas": 189,
-  "proximas_a_vencer": 127
+  "abiertas": 200,
+  "proximas_a_vencer": 136
 }

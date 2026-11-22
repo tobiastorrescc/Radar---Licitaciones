@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-21T08:48:27.547867-03:00",
+  "fecha": "2026-11-22T15:24:19.530870-03:00",
   "pendientes": [
     {
       "id": "cf892a5fa00e38595d57b6ea999fa09518ba2b7b00647f64cb84ee802da014dc",
@@ -1407,6 +1407,15 @@
       "documentos": []
     },
     {
+      "id": "7f463db71c96607bbef26dc2819c0aa6c888bdb85761afa62af1c717a795d894",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "50/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38881",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "0e614b39bf0d9eff2d072c68961e60f32f590e6fed405aca5566f56c3af85ffc",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "50961/2026",
@@ -1511,6 +1520,15 @@
       "numero_procedimiento": "3227/2026",
       "objeto": null,
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38862",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "e5e66d564764a24173187d522d26105970ccb1c2c09b24b773dfc5b0843d5092",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "3229/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38910",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
@@ -1641,6 +1659,15 @@
       "numero_procedimiento": "101351/2026",
       "objeto": null,
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38874",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "5310cd5a24cd556663f82dcc4a43d7942bb55cc85f0b0a10c83a5ac4db4ed578",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11191/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38882",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
@@ -1778,6 +1805,42 @@
       "numero_procedimiento": "75853/2026",
       "objeto": null,
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38875",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "62cdc2d37f047ac11c5f5b418f00509c5602131866967b44e82c0758e25c2873",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11344/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38890",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "06bd7b681c27e5c76a48b2dfe60ef01fa1828b6ff03b3d99e3615e9bb53c8aa0",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11354/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38891",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "38745e80158a5ac7b12ef152b9d7b3641e4075bd880512ad4f7d814584f065d8",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11364/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38892",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "9f4a0abebfa4257554d31fd3c16763306f9b316c1c7b3bc2d24abd5777e0bf69",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "11374/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38893",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
@@ -1966,11 +2029,29 @@
       "documentos": []
     },
     {
+      "id": "b1629047304c1e70729f1c453989e679819d4ffd623a366416be9da19be49a29",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "22/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38868",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
       "id": "d2384c2b3f9a3d94f125b90c5201747dce5460bfb5f64197f0d1aecd0750f977",
       "organismo": "Municipalidad de Rosario",
       "numero_procedimiento": "32003/2026",
       "objeto": null,
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38898",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "f293e9d29a29aee26e2c9042829ed07516368561b0ff0ddf7dd44dd799a60489",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "54/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38888",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
@@ -2044,11 +2125,11 @@
       "documentos": []
     },
     {
-      "id": "75b8321495167277f7547013d092da94cb5fa8ec0de77c7692f5577a474d2b4c",
+      "id": "b75ff6e07a483ee9e23d39bbee3ef0af0918aea7f14deb184f003af1a45b8b91",
       "organismo": "Municipalidad de Rosario",
-      "numero_procedimiento": "34/2026",
+      "numero_procedimiento": "8/2026",
       "objeto": null,
-      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38866",
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38883",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
@@ -2085,6 +2166,15 @@
       "numero_procedimiento": "131561/2026",
       "objeto": null,
       "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38867",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "aaa9b7cda5ce5bad43ca5adf902617ba9cf96a70d161fe57667aef9350bce33e",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "23/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38887",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
@@ -2148,6 +2238,15 @@
       "numero_procedimiento": "282/2026",
       "objeto": "COMPRA DE MOTOSIERRA Y SOPLADORA",
       "url": "https://portal.entrerios.gov.ar/api/public/consulta/contrataciones/licitaciones",
+      "motivo": "SIN_CLAUSULA_COMPROBADA",
+      "documentos": []
+    },
+    {
+      "id": "75b8321495167277f7547013d092da94cb5fa8ec0de77c7692f5577a474d2b4c",
+      "organismo": "Municipalidad de Rosario",
+      "numero_procedimiento": "34/2026",
+      "objeto": null,
+      "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38866",
       "motivo": "SIN_CLAUSULA_COMPROBADA",
       "documentos": []
     },
