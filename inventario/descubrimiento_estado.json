@@ -8,15 +8,15 @@
     "reparar:fuente-009": "2026-10-27T23:13:42.954528+00:00",
     "sector:Santa Fe:universidad nacional": "2026-10-27T23:13:42.954528+00:00",
     "reparar:fuente-012": "2026-10-27T23:13:42.954528+00:00",
-    "territorio:060112": "2026-10-27T23:13:42.954528+00:00",
+    "territorio:060112": "2026-11-23T22:41:25.297940+00:00",
     "reparar:fuente-013": "2026-10-27T23:13:42.954528+00:00",
     "sector:Santa Fe:empresa pública ente puerto vialidad": "2026-10-27T23:13:42.954528+00:00",
     "reparar:fuente-015": "2026-10-27T23:13:42.954528+00:00",
-    "territorio:060126": "2026-10-27T23:13:42.954528+00:00",
+    "territorio:060126": "2026-11-23T22:41:25.297940+00:00",
     "reparar:fuente-023": "2026-10-27T23:13:42.954528+00:00",
     "sector:Entre Ríos:hospital SAMCo": "2026-10-27T23:13:42.954528+00:00",
     "reparar:fuente-031": "2026-10-27T23:13:42.954528+00:00",
-    "territorio:060140": "2026-10-27T23:13:42.954528+00:00",
+    "territorio:060140": "2026-11-23T22:41:25.297940+00:00",
     "reparar:fuente-033": "2026-10-27T23:13:42.954528+00:00",
     "sector:Entre Ríos:universidad nacional": "2026-10-27T23:13:42.954528+00:00",
     "reparar:fuente-034": "2026-10-27T23:13:42.954528+00:00",
@@ -750,7 +750,16 @@
     "territorio:060882": "2026-11-20T12:02:55.811059+00:00",
     "directorio:fuente-103": "2026-11-20T12:02:55.811059+00:00",
     "directorio:fuente-104": "2026-11-20T12:02:55.811059+00:00",
-    "reparar:fuente-102": "2026-11-20T12:02:55.811059+00:00"
+    "reparar:fuente-102": "2026-11-20T12:02:55.811059+00:00",
+    "territorio:820273": "2026-11-23T22:41:25.297940+00:00",
+    "territorio:820028": "2026-11-23T22:41:25.297940+00:00",
+    "directorio:fuente-070": "2026-11-23T22:41:25.297940+00:00",
+    "territorio:820126": "2026-11-23T22:41:25.297940+00:00",
+    "territorio:822056": "2026-11-23T22:41:25.297940+00:00",
+    "directorio:fuente-071": "2026-11-23T22:41:25.297940+00:00",
+    "territorio:820189": "2026-11-23T22:41:25.297940+00:00",
+    "territorio:823407": "2026-11-23T22:41:25.297940+00:00",
+    "directorio:fuente-080": "2026-11-23T22:41:25.297940+00:00"
   },
   "candidatos": {
     "inventario-fuente-034": {
@@ -11418,16 +11427,16 @@
           "nombre_publicado": true,
           "jurisdiccion_publicada": true,
           "url": "https://pujato.gob.ar/",
-          "sha256": "df3dc36ad7ca0ee1f43814135ce3e8b115665230109129e5a032aed53f36936d",
+          "sha256": "13dbf7f4c5d33fc601328e4bdc4e290634a385d9f5440f1f0ec19d71f22e7702",
           "cabecera": "Pujato – El cambio lo hacemos juntos.  PUJATO. ORGULLO DE UN PUEBLO EN MOVIMIENTO Larga “La Scaloneta” en el Rally de Pujato. Pujato mejora, progresa y cambia. Continúan las mejoras en la ruta 33 La Comuna recupera un camión con personal propio. Obras en la Ruta 33: Avanzan las reparación entre Casilda y Pujato Así homenajeamos a nuestro Lionel. Se esperan 80 mil personas para la nueva edición de la Fiesta del Transporte en Pujato La gestión del Presidente Comunal prioriza la seguridad trabajando personalmente en conjunto con la policía. Daniel Quacquarini asumió su cuarta gestión al frente de la comuna de Pujato Nueva ambulancia para Pujato. Fue reelecto el presidente comunal de Pujato Daniel Quacquarini. Comenzamos con la recolección de residuos diferenciada. Eventos en noviembre 2026",
           "motivo": null
         },
         "procedimientos_con_objeto": 0,
-        "fecha": "2026-11-09T13:31:38.306129+00:00",
+        "fecha": "2026-11-23T22:42:53.901547+00:00",
         "motivo": "Extracción incompleta, sin procedimiento/objeto comprobado o con incidencias",
         "ejemplos": []
       },
-      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "ultima_revision": "2026-11-23T22:41:25.297940+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -11438,7 +11447,7 @@
           "error": "Listado no reconocido; no se declara vacío"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0038.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261123T224149-c795a579/0005.json",
       "config_publica": {
         "noticias_comunales": true,
         "documentos_para_descubrimiento": true
@@ -11467,9 +11476,11 @@
           "historial_convocatorias",
           "documentos_publicados"
         ],
-        "distancia_geodesica_km": 38.55,
-        "ultima_revision": null
-      }
+        "distancia_geodesica_km": null,
+        "ultima_revision": "2026-11-09T13:28:17.622625+00:00"
+      },
+      "ultima_exploracion_rapida": "2026-11-23T22:41:25.297940+00:00",
+      "estado_nivel1": "CANDIDATA_CON_SENALES"
     },
     "contraste-589ecca9cfe42860c58e": {
       "organismo": "Municipalidad de Fray Luis Beltrán",
@@ -15732,8 +15743,8 @@
         "desconocidos": [
           "publicacion_ultimos_7_dias"
         ],
-        "distancia_geodesica_km": null,
-        "ultima_revision": "2026-11-09T12:31:40.895731+00:00"
+        "distancia_geodesica_km": 153.62,
+        "ultima_revision": null
       },
       "ultima_exploracion_rapida": "2026-11-20T12:02:55.811059+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES"
@@ -15797,8 +15808,8 @@
         "desconocidos": [
           "publicacion_ultimos_7_dias"
         ],
-        "distancia_geodesica_km": null,
-        "ultima_revision": "2026-11-09T12:31:40.895731+00:00"
+        "distancia_geodesica_km": 153.62,
+        "ultima_revision": null
       },
       "ultima_exploracion_rapida": "2026-11-20T12:02:55.811059+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES"
@@ -15862,8 +15873,8 @@
         "desconocidos": [
           "publicacion_ultimos_7_dias"
         ],
-        "distancia_geodesica_km": null,
-        "ultima_revision": "2026-11-09T12:31:40.895731+00:00"
+        "distancia_geodesica_km": 153.62,
+        "ultima_revision": null
       },
       "ultima_exploracion_rapida": "2026-11-20T12:02:55.811059+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES"
@@ -15923,9 +15934,19 @@
         "estado": "PENDIENTE",
         "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
       },
-      "ultima_revision": "2026-11-09T12:31:40.895731+00:00",
+      "ultima_revision": "2026-11-23T22:41:25.297940+00:00",
       "version_verificador": 4,
       "errores": [
+        {
+          "url": "https://www.ibicuy.gob.ar/sites/default/files/copia_de_municipio_de_ibicuy_post_para_instagram_4_5_2.png",
+          "tipo": "ValueError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Imagen de publicación requiere OCR",
+          "causa": "ERROR_EXTRACCION",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
         {
           "categoria": "RED",
           "tipo": "TIEMPO_FUENTE",
@@ -15934,9 +15955,9 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase4/descubrimiento/verificacion_ejecuciones/20261109T123149-ed8a2f3d/0009.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261123T224149-c795a579/0000.json",
       "prioridad_rapida": {
-        "puntos": 11,
+        "puntos": 14,
         "razones": [
           {
             "criterio": "identidad_verificada",
@@ -15946,6 +15967,11 @@
           {
             "criterio": "seccion_compras",
             "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "publicacion_ultimos_7_dias",
+            "peso": 3,
             "evidencia": true
           },
           {
@@ -15960,12 +15986,13 @@
           }
         ],
         "desconocidos": [
-          "publicacion_ultimos_7_dias",
           "documentos_publicados"
         ],
-        "distancia_geodesica_km": 165.34,
-        "ultima_revision": null
-      }
+        "distancia_geodesica_km": null,
+        "ultima_revision": "2026-11-09T12:31:40.895731+00:00"
+      },
+      "ultima_exploracion_rapida": "2026-11-23T22:41:25.297940+00:00",
+      "estado_nivel1": "CANDIDATA_CON_SENALES"
     },
     "contraste-31a38639b6e55f3e5ebf": {
       "tipo": "TERRITORIAL",
@@ -18179,7 +18206,7 @@
         "estado": "PENDIENTE",
         "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
       },
-      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "ultima_revision": "2026-11-23T22:41:25.297940+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -18190,9 +18217,9 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0020.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261123T224149-c795a579/0006.json",
       "prioridad_rapida": {
-        "puntos": 9,
+        "puntos": 11,
         "razones": [
           {
             "criterio": "identidad_verificada",
@@ -18205,6 +18232,11 @@
             "evidencia": true
           },
           {
+            "criterio": "historial_convocatorias",
+            "peso": 2,
+            "evidencia": true
+          },
+          {
             "criterio": "accesible",
             "peso": 1,
             "evidencia": true
@@ -18212,12 +18244,13 @@
         ],
         "desconocidos": [
           "publicacion_ultimos_7_dias",
-          "historial_convocatorias",
           "documentos_publicados"
         ],
-        "distancia_geodesica_km": 159.04,
-        "ultima_revision": null
-      }
+        "distancia_geodesica_km": null,
+        "ultima_revision": "2026-11-09T13:28:17.622625+00:00"
+      },
+      "ultima_exploracion_rapida": "2026-11-23T22:41:25.297940+00:00",
+      "estado_nivel1": "CANDIDATA_CON_SENALES"
     },
     "contraste-571baa3d5dc65fe9ebd7": {
       "url": "https://ceres.gob.ar/",
@@ -18312,8 +18345,8 @@
         "desconocidos": [
           "publicacion_ultimos_7_dias"
         ],
-        "distancia_geodesica_km": null,
-        "ultima_revision": "2026-11-09T13:38:46.784260+00:00"
+        "distancia_geodesica_km": 153.62,
+        "ultima_revision": null
       },
       "ultima_exploracion_rapida": "2026-11-20T12:02:55.811059+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES"
@@ -18379,9 +18412,19 @@
         "estado": "PENDIENTE",
         "motivo": "Plazo agotado o worker incompleto; resultados parciales conservados"
       },
-      "ultima_revision": "2026-11-09T13:28:17.622625+00:00",
+      "ultima_revision": "2026-11-23T22:41:25.297940+00:00",
       "version_verificador": 4,
       "errores": [
+        {
+          "url": "https://www.ibicuy.gob.ar/sites/default/files/copia_de_municipio_de_ibicuy_post_para_instagram_4_5_2.png",
+          "tipo": "ValueError",
+          "categoria": "EXTRACCION",
+          "timeout": false,
+          "error": "Imagen de publicación requiere OCR",
+          "causa": "ERROR_EXTRACCION",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
+        },
         {
           "categoria": "RED",
           "tipo": "TIEMPO_FUENTE",
@@ -18390,9 +18433,9 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/fase5/descubrimiento/verificacion_ejecuciones/20261109T132821-c99253dc/0030.json",
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261123T224149-c795a579/0001.json",
       "prioridad_rapida": {
-        "puntos": 11,
+        "puntos": 14,
         "razones": [
           {
             "criterio": "identidad_verificada",
@@ -18402,6 +18445,11 @@
           {
             "criterio": "seccion_compras",
             "peso": 4,
+            "evidencia": true
+          },
+          {
+            "criterio": "publicacion_ultimos_7_dias",
+            "peso": 3,
             "evidencia": true
           },
           {
@@ -18416,12 +18464,13 @@
           }
         ],
         "desconocidos": [
-          "publicacion_ultimos_7_dias",
           "documentos_publicados"
         ],
-        "distancia_geodesica_km": 165.34,
-        "ultima_revision": null
-      }
+        "distancia_geodesica_km": null,
+        "ultima_revision": "2026-11-09T13:28:17.622625+00:00"
+      },
+      "ultima_exploracion_rapida": "2026-11-23T22:41:25.297940+00:00",
+      "estado_nivel1": "CANDIDATA_CON_SENALES"
     },
     "contraste-51829e55452257e786a9": {
       "url": "https://arrecifes.gob.ar/",
@@ -19763,11 +19812,11 @@
           "historial_convocatorias"
         ],
         "distancia_geodesica_km": 46.32,
-        "ultima_revision": null
+        "ultima_revision": "2026-11-13T11:58:54.416318+00:00"
       },
-      "ultima_exploracion_rapida": "2026-11-13T11:58:54.416318+00:00",
+      "ultima_exploracion_rapida": "2026-11-23T22:41:25.297940+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES",
-      "ultima_revision": "2026-11-13T11:58:54.416318+00:00",
+      "ultima_revision": "2026-11-23T22:41:25.297940+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -19778,7 +19827,7 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261113T115914-692240db/0004.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261123T224149-c795a579/0002.json"
     },
     "contraste-ee6b40d3593487020036": {
       "localidad": "Máximo Paz",
@@ -20113,11 +20162,11 @@
           "historial_convocatorias"
         ],
         "distancia_geodesica_km": 52.97,
-        "ultima_revision": null
+        "ultima_revision": "2026-11-13T11:58:54.416318+00:00"
       },
-      "ultima_exploracion_rapida": "2026-11-13T11:58:54.416318+00:00",
+      "ultima_exploracion_rapida": "2026-11-23T22:41:25.297940+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES",
-      "ultima_revision": "2026-11-13T11:58:54.416318+00:00",
+      "ultima_revision": "2026-11-23T22:41:25.297940+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -20131,7 +20180,7 @@
           "permanencia": "NO_DETERMINADA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261113T115914-692240db/0006.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261123T224149-c795a579/0004.json"
     },
     "contraste-3e822485e7900ba1d0ec": {
       "localidad": "Serodino",
@@ -20221,7 +20270,7 @@
           "publicacion_ultimos_7_dias"
         ],
         "distancia_geodesica_km": 175.67,
-        "ultima_revision": "2026-11-13T11:58:54.416318+00:00"
+        "ultima_revision": null
       },
       "ultima_exploracion_rapida": "2026-11-20T12:02:55.811059+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES",
@@ -20540,11 +20589,11 @@
           "documentos_publicados"
         ],
         "distancia_geodesica_km": 128.95,
-        "ultima_revision": null
+        "ultima_revision": "2026-11-13T11:58:54.416318+00:00"
       },
-      "ultima_exploracion_rapida": "2026-11-13T11:58:54.416318+00:00",
+      "ultima_exploracion_rapida": "2026-11-23T22:41:25.297940+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES",
-      "ultima_revision": "2026-11-13T11:58:54.416318+00:00",
+      "ultima_revision": "2026-11-23T22:41:25.297940+00:00",
       "version_verificador": 4,
       "errores": [
         {
@@ -20566,7 +20615,7 @@
           "fase": "DESCARGA"
         }
       ],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261113T115914-692240db/0007.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261123T224149-c795a579/0007.json"
     },
     "contraste-3d5a78314c2b71afbe38": {
       "id": "auto-contraste-3d5a78314c2b71afbe38",
@@ -20668,7 +20717,7 @@
           "publicacion_ultimos_7_dias"
         ],
         "distancia_geodesica_km": 177.18,
-        "ultima_revision": "2026-11-13T11:58:54.416318+00:00"
+        "ultima_revision": null
       },
       "ultima_exploracion_rapida": "2026-11-20T12:02:55.811059+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES",
@@ -20730,7 +20779,7 @@
           "documentos_publicados"
         ],
         "distancia_geodesica_km": 145.62,
-        "ultima_revision": "2026-11-13T11:58:54.416318+00:00"
+        "ultima_revision": null
       },
       "ultima_exploracion_rapida": "2026-11-20T12:02:55.811059+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES",
@@ -20842,12 +20891,12 @@
           "nombre_publicado": true,
           "jurisdiccion_publicada": true,
           "url": "https://vrosario.gob.ar/",
-          "sha256": "5555be5faf46e9f2b94e87abade8a75872c37c373dbd0e1aae9a976e8bad8cce",
-          "cabecera": "Municipio Villa del Rosario | SERVICIO DE NEUROLOGÍA CHARLA INFORMATIVA: ACCIÓN TEMPRANA CONTRA LA DIABETES EDUCACIÓN EMOCIONAL Y VÍNCULOS SALUDABLES TRABAJANDO JUNTOS POR LA SEGURIDAD DE TODOS POTENCIÁ TU COMERCIO ONLINE ANSES EN VILLA DEL ROSARIO FONDOS PARA FORTALECER LA SEGURIDAD ENCUENTRO AMISTOSO DE FÚTBOL VERANO SEGURO: COORDINACIÓN ENTRE MUNICIPIOS Y FUERZAS DE SEGURIDAD MAS SERVICOS TRÁMITES TELÉFONOS ÚTILES",
+          "sha256": "b1013d3b85e15ab616becb439d09c42972223170e2c11dcd75e7f23ea69424f9",
+          "cabecera": "Municipio Villa del Rosario | PADRÓN DE ELECTORES EXTRANJEROS COMUNICADO IMPORTANTE MUESTRA EDUCATIVA DEL C.E.I. N°12 RAÍCES INCLUSIVAS NUEVOS EQUIPOS VIALES DE LA PROVINCIA ACOMPAÑAMOS A NUESTROS ESTUDIANTES LA ALEGRÍA DE COMPARTIR CON LOS MÁS PEQUEÑOS CAPACITACIÓN EN RCP ABIERTA A LA COMUNIDAD CELEBRAMOS EL DÍA DEL GAUCHO MAS SERVICOS TRÁMITES TELÉFONOS ÚTILES",
           "motivo": null
         },
         "procedimientos_con_objeto": 2,
-        "fecha": "2026-11-13T12:00:10.729793+00:00",
+        "fecha": "2026-11-23T22:42:48.149386+00:00",
         "motivo": null,
         "ejemplos": [
           {
@@ -20901,14 +20950,14 @@
           "historial_convocatorias"
         ],
         "distancia_geodesica_km": 354.1,
-        "ultima_revision": null
+        "ultima_revision": "2026-11-13T11:58:54.416318+00:00"
       },
-      "ultima_exploracion_rapida": "2026-11-13T11:58:54.416318+00:00",
+      "ultima_exploracion_rapida": "2026-11-23T22:41:25.297940+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES",
-      "ultima_revision": "2026-11-13T11:58:54.416318+00:00",
+      "ultima_revision": "2026-11-23T22:41:25.297940+00:00",
       "version_verificador": 4,
       "errores": [],
-      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261113T115914-692240db/0005.json"
+      "resultado_archivo": "/home/runner/work/Radar---Licitaciones/Radar---Licitaciones/work/descubrimiento-piloto/verificacion_ejecuciones/20261123T224149-c795a579/0003.json"
     },
     "contraste-356aef1e689182cc8043": {
       "id": "auto-contraste-356aef1e689182cc8043",
@@ -21250,7 +21299,7 @@
           "publicacion_ultimos_7_dias"
         ],
         "distancia_geodesica_km": 149.14,
-        "ultima_revision": "2026-11-13T11:58:54.416318+00:00"
+        "ultima_revision": null
       },
       "ultima_exploracion_rapida": "2026-11-20T12:02:55.811059+00:00",
       "estado_nivel1": "CANDIDATA_CON_SENALES",
@@ -21350,7 +21399,82 @@
       "evidencia_enlace": "https://mariateresa.gob.ar/",
       "busqueda_url": "https://mariateresa.gob.ar/",
       "fecha_descubrimiento": "2026-11-20T12:02:55.811059+00:00"
+    },
+    "8292389a57274c7e1443": {
+      "clave": "territorio:060112",
+      "localidad": "Bragado",
+      "provincia": "Buenos Aires",
+      "organismo": "Municipalidad de Bragado",
+      "consulta": "\"Bragado\" \"Buenos Aires\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "fuente_operativa_previa": false,
+      "id": "auto-8292389a57274c7e1443",
+      "url": "https://www.bragado.gov.ar/",
+      "titulo": "Inicio - Municipalidad de Bragado",
+      "descripcion": "Se conmemoró el primer Día Municipal de Acompañamiento al Hombre Con Cáncer La iniciativa contó con fuerte respaldo de la comunidad. Bragado fue ciudad pionera en la celebración de esta jornada. (más…)",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bragado%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-11-23T22:41:25.297940+00:00"
+    },
+    "f43b7df9ed92fe2e8f04": {
+      "clave": "territorio:060112",
+      "localidad": "Bragado",
+      "provincia": "Buenos Aires",
+      "organismo": "Municipalidad de Bragado",
+      "consulta": "\"Bragado\" \"Buenos Aires\" compras licitaciones sitio oficial",
+      "tipo": "TERRITORIAL",
+      "fuente_operativa_previa": false,
+      "id": "auto-f43b7df9ed92fe2e8f04",
+      "url": "https://www.bragado.gov.ar/tramites/",
+      "titulo": "Trámites - Municipalidad de Bragado",
+      "descripcion": "Cuenta para Transferencias CBU: 0140317401643505071501 Alias: MuniBragado Cta. Cte.: 6435-50715/0 Enviar SIN FALTA el comprobante de transferencia a recaudacion@bragado.gov.ar .",
+      "busqueda_url": "https://www.bing.com/search?q=%22Bragado%22+%22Buenos+Aires%22+compras+licitaciones+sitio+oficial&format=rss&setlang=es&cc=ar",
+      "fecha_descubrimiento": "2026-11-23T22:41:25.297940+00:00"
+    },
+    "fdb8f503d5c41b3ec06c": {
+      "clave": "directorio:fuente-071",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de San Salvador",
+      "localidad": "San Salvador",
+      "provincia": "Entre Ríos",
+      "metodo": "ENLACES_OFICIALES",
+      "url_directorio": "https://sansalvadorer.gob.ar/",
+      "id": "auto-fdb8f503d5c41b3ec06c",
+      "url": "https://sansalvadorer.gob.ar/economia/procesos-de-compras/",
+      "titulo": "Procesos de Compra",
+      "evidencia_enlace": "https://sansalvadorer.gob.ar/",
+      "busqueda_url": "https://sansalvadorer.gob.ar/",
+      "fecha_descubrimiento": "2026-11-23T22:41:25.297940+00:00"
+    },
+    "0e5706c3237843cfee88": {
+      "clave": "directorio:fuente-071",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de San Salvador",
+      "localidad": "San Salvador",
+      "provincia": "Entre Ríos",
+      "metodo": "ENLACES_OFICIALES",
+      "url_directorio": "https://sansalvadorer.gob.ar/",
+      "id": "auto-0e5706c3237843cfee88",
+      "url": "https://sansalvadorer.gob.ar/servicios/boem/",
+      "titulo": "Boletín Oficial Electrónico Municipal",
+      "evidencia_enlace": "https://sansalvadorer.gob.ar/",
+      "busqueda_url": "https://sansalvadorer.gob.ar/",
+      "fecha_descubrimiento": "2026-11-23T22:41:25.297940+00:00"
+    },
+    "a0a841ae77b0281c2ecc": {
+      "clave": "directorio:fuente-080",
+      "tipo": "TERRITORIAL",
+      "organismo": "Municipalidad de Viale",
+      "localidad": "Viale",
+      "provincia": "Entre Ríos",
+      "metodo": "ENLACES_OFICIALES",
+      "url_directorio": "https://viale.gob.ar/",
+      "id": "auto-a0a841ae77b0281c2ecc",
+      "url": "https://viale.gob.ar/boletin-oficial/",
+      "titulo": "Boletín Oficial",
+      "evidencia_enlace": "https://viale.gob.ar/",
+      "busqueda_url": "https://viale.gob.ar/",
+      "fecha_descubrimiento": "2026-11-23T22:41:25.297940+00:00"
     }
   },
-  "ultima_ejecucion": "2026-11-20T12:02:55.811059+00:00"
+  "ultima_ejecucion": "2026-11-23T22:41:25.297940+00:00"
 }
