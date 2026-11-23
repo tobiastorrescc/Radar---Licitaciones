@@ -1,151 +1,29 @@
 {
-  "corrida_anterior": "20261121T113916-06bd4102",
-  "corrida_actual": "20261122T181501-3159cce2",
-  "fecha": "2026-11-22T15:24:19.530870-03:00",
+  "corrida_anterior": "20261122T181501-3159cce2",
+  "corrida_actual": "20261123T222914-8986239f",
+  "fecha": "2026-11-23T19:38:31.482042-03:00",
   "consulta_nueva_realizada": true,
   "estado": "AUDITADA",
-  "ids_anteriores": 7931,
-  "ids_actuales": 7944,
+  "ids_anteriores": 7944,
+  "ids_actuales": 7946,
   "ids_perdidos": [],
   "versiones_perdidas": [],
   "conteos": {
     "nuevas_confirmadas": 0,
-    "detecciones_sin_fecha_suficiente": 11,
+    "detecciones_sin_fecha_suficiente": 0,
     "recuperaciones_historicas": 2,
-    "modificaciones": 43,
-    "datos_completados": 41
+    "modificaciones": 39,
+    "datos_completados": 1
   },
   "eventos": {
     "nuevas_confirmadas": [],
-    "detecciones_sin_fecha_suficiente": [
-      {
-        "id": "7f463db71c96607bbef26dc2819c0aa6c888bdb85761afa62af1c717a795d894",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "50/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-25",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38881",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "e5e66d564764a24173187d522d26105970ccb1c2c09b24b773dfc5b0843d5092",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "3229/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-25",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38910",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "5310cd5a24cd556663f82dcc4a43d7942bb55cc85f0b0a10c83a5ac4db4ed578",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11191/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-26",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38882",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "62cdc2d37f047ac11c5f5b418f00509c5602131866967b44e82c0758e25c2873",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11344/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38890",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "06bd7b681c27e5c76a48b2dfe60ef01fa1828b6ff03b3d99e3615e9bb53c8aa0",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11354/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38891",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "38745e80158a5ac7b12ef152b9d7b3641e4075bd880512ad4f7d814584f065d8",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11364/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38892",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "9f4a0abebfa4257554d31fd3c16763306f9b316c1c7b3bc2d24abd5777e0bf69",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11374/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38893",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "b1629047304c1e70729f1c453989e679819d4ffd623a366416be9da19be49a29",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "22/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38868",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "f293e9d29a29aee26e2c9042829ed07516368561b0ff0ddf7dd44dd799a60489",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "54/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38888",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "b75ff6e07a483ee9e23d39bbee3ef0af0918aea7f14deb184f003af1a45b8b91",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "8/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-27",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38883",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      },
-      {
-        "id": "aaa9b7cda5ce5bad43ca5adf902617ba9cf96a70d161fe57667aef9350bce33e",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "23/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-30",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38887",
-        "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
-        "campos_modificados": []
-      }
-    ],
+    "detecciones_sin_fecha_suficiente": [],
     "recuperaciones_historicas": [
       {
-        "id": "15c8eb44d8ea0b813f06d4e1e7eb8d1f0cb64445772368b54a7b57b52685fe65",
+        "id": "69a42c2ef50e22ec9b7dbde74a222ae07166c91bbed73c20be7af47fbaa45ce1",
         "organismo": "Gobierno de Timbúes",
         "numero_procedimiento": "15",
-        "objeto": "LICITACIÓN PÚBLICA N° 15 2026 PISOS, ZOCALOS Y REVESTIMIENTOS Publicado, lunes, 19 de octubre de 2026 -- 250 vistas 03-COMPUTO PISOS ,ZOCALOS Y REVESTIMIENTOSEET 712 .pdf 02-ANEXOI PISOS, ZOCALOS Y REVESTIMIENTOS EET 712.pdf 01-LIC.PUB. 015 PISOS, ZOCALOS Y REVESTIMIENTOS ESCUELA TECNICA 712.pdf",
+        "objeto": "LICITACIÓN PÚBLICA N° 15 2026 PISOS, ZOCALOS Y REVESTIMIENTOS Publicado, lunes, 19 de octubre de 2026 -- 253 vistas 03-COMPUTO PISOS ,ZOCALOS Y REVESTIMIENTOSEET 712 .pdf 02-ANEXOI PISOS, ZOCALOS Y REVESTIMIENTOS EET 712.pdf 01-LIC.PUB. 015 PISOS, ZOCALOS Y REVESTIMIENTOS ESCUELA TECNICA 712.pdf",
         "fecha_publicacion": "2026-10-19",
         "fecha_apertura": null,
         "url": "https://www.timbues.gob.ar/archivos/1440_1792614149_03-COMPUTOPISOS,ZOCALOSYREVESTIMIENTOSEET712.pdf",
@@ -153,10 +31,10 @@
         "campos_modificados": []
       },
       {
-        "id": "6f515b0f12bbc9c60d939f54fe64b319d5559abf2e5549bf09d6ca58e79a371f",
+        "id": "c25d240bf6a80c63c441b077e35b9ae5a844349b2bddab1863950d365e8cfac2",
         "organismo": "Gobierno de Timbúes",
         "numero_procedimiento": "15",
-        "objeto": "LICITACIÓN PÚBLICA N° 15 2026 PISOS, ZOCALOS Y REVESTIMIENTOS Publicado, lunes, 19 de octubre de 2026 -- 251 vistas 03-COMPUTO PISOS ,ZOCALOS Y REVESTIMIENTOSEET 712 .pdf 02-ANEXOI PISOS, ZOCALOS Y REVESTIMIENTOS EET 712.pdf 01-LIC.PUB. 015 PISOS, ZOCALOS Y REVESTIMIENTOS ESCUELA TECNICA 712.pdf",
+        "objeto": "LICITACIÓN PÚBLICA N° 15 2026 PISOS, ZOCALOS Y REVESTIMIENTOS Publicado, lunes, 19 de octubre de 2026 -- 254 vistas 03-COMPUTO PISOS ,ZOCALOS Y REVESTIMIENTOSEET 712 .pdf 02-ANEXOI PISOS, ZOCALOS Y REVESTIMIENTOS EET 712.pdf 01-LIC.PUB. 015 PISOS, ZOCALOS Y REVESTIMIENTOS ESCUELA TECNICA 712.pdf",
         "fecha_publicacion": "2026-10-19",
         "fecha_apertura": null,
         "url": "https://timbues.gob.ar/archivos/1440_1792614149_03-COMPUTOPISOS,ZOCALOSYREVESTIMIENTOSEET712.pdf",
@@ -166,26 +44,117 @@
     ],
     "modificaciones": [
       {
-        "id": "bc2fa1fe9a783358ad272fa629d77e788333cf7ba3ee0614a3ea97079993a400",
+        "id": "b2deba2616bf7b410e61a5864714bc63a27d03844d74f9e3976e4816a5f32f70",
         "organismo": "Municipalidad de Viale",
-        "numero_procedimiento": "2524",
-        "objeto": "Horario de atención de Lunes a Viernes: 6.30 hs a 12.00 hs Noticias Publicaciones Gobierno Autoridades Secretarías y Direcciones Secretaría de Gobierno Secretaría de Ingresos Públicos, Estadísticas y Modernización Subsecretaría de cultura y educación Secretaría de Desarrollo Social y Humano Subsecretaría de la mujer Subsecretaría de Obras Sanitarias Subsecretaría de Desarrollo Local y Productivo Dirección de Deportes HCD Autoridades HCD Transparente Comunicados Libro de Visitas Trámites y Servicios Atención Ciudadana Boletín Oficial Bromatologia Centro de Salud Compras Cuentas Claras Cultura y Educación Defensa Al Consumidor Emprendedurismo Expedientes Licencias de Conducir Punto Digital Recaudaciones Obras Sanitarias Subsecretaría de Servicios Públicos Sistema de ahorro previo para obras de infraestructura Ciudad Turismo Parque Industrial Recaudaciones Cotejo de Precios N° 2524 – PINTURA PARA PILETA 2 octubre, 2026 | In Pliegos | By Lautaro Ledesma Descargar PDF Guía Telefónica y Servicios de la Ciudad Bomberos100 Policía101 Emergencias Médicas107 Mesa de Entrada PalacioInt. 101 Reclamos CentralInt. 111 Honorable Concejo Delib.Int. 113 Juzgado de FaltasInt. 142 Guardia UrbanaInt. 120 Centro de MonitoreoInt. 121 Centro Salud «R. Carrillo»Int. 119 Hogar «Madre Teresa»Int. 127 Sec. Desarrollo SocialInt. 129 Subsecretaría de la MujerInt. 130 ANAFInt. 131 Desarrollo Local y Prod.Int. 137 Defensa del ConsumidorInt. 136 Licencias de ConducirInt. 132 Cultura y EducaciónInt. 134 Dirección de DeportesInt. 135 Obras SanitariasInt. 141 Servicios PúblicosInt. 125 ComprasInt. 115 CatastroInt. 116 RecaudacionesInt. 117 Bromatología y AmbienteInt. 143 Obras Públicas (Tinglado)Int. 144 Guardias y Urgencias fuera de horario administrativo: Salud: 3434151615 Guardia Urbana/Monitoreo: 3434676828 Subsec. Mujer: 3434055981 ANAF: 3434524860 Licencias: 3434283457 Reclamos: 3434282868 Diseño y desarrollo por AV consultora + Minds",
+        "numero_procedimiento": "2520",
+        "objeto": "Horario de atención de Lunes a Viernes: 6.30 hs a 12.00 hs Noticias Publicaciones Gobierno Autoridades Secretarías y Direcciones Secretaría de Gobierno Secretaría de Ingresos Públicos, Estadísticas y Modernización Subsecretaría de cultura y educación Secretaría de Desarrollo Social y Humano Subsecretaría de la mujer Subsecretaría de Obras Sanitarias Subsecretaría de Desarrollo Local y Productivo Dirección de Deportes HCD Autoridades HCD Transparente Comunicados Libro de Visitas Trámites y Servicios Atención Ciudadana Boletín Oficial Bromatologia Centro de Salud Compras Cuentas Claras Cultura y Educación Defensa Al Consumidor Emprendedurismo Expedientes Licencias de Conducir Punto Digital Recaudaciones Obras Sanitarias Subsecretaría de Servicios Públicos Sistema de ahorro previo para obras de infraestructura Ciudad Turismo Parque Industrial Recaudaciones Cotejo de Precios N° 2520 – ADQ. DE MOLDES PARA CORDON CUNETA 24 septiembre, 2026 | In Pliegos | By Lautaro Ledesma Descargar PDF Guía Telefónica y Servicios de la Ciudad Bomberos100 Policía101 Emergencias Médicas107 Mesa de Entrada PalacioInt. 101 Reclamos CentralInt. 111 Honorable Concejo Delib.Int. 113 Juzgado de FaltasInt. 142 Guardia UrbanaInt. 120 Centro de MonitoreoInt. 121 Centro Salud «R. Carrillo»Int. 119 Hogar «Madre Teresa»Int. 127 Sec. Desarrollo SocialInt. 129 Subsecretaría de la MujerInt. 130 ANAFInt. 131 Desarrollo Local y Prod.Int. 137 Defensa del ConsumidorInt. 136 Licencias de ConducirInt. 132 Cultura y EducaciónInt. 134 Dirección de DeportesInt. 135 Obras SanitariasInt. 141 Servicios PúblicosInt. 125 ComprasInt. 115 CatastroInt. 116 RecaudacionesInt. 117 Bromatología y AmbienteInt. 143 Obras Públicas (Tinglado)Int. 144 Guardias y Urgencias fuera de horario administrativo: Salud: 3434151615 Guardia Urbana/Monitoreo: 3434676828 Subsec. Mujer: 3434055981 ANAF: 3434524860 Licencias: 3434283457 Reclamos: 3434282868 Diseño y desarrollo por AV consultora + Minds",
         "fecha_publicacion": null,
         "fecha_apertura": null,
-        "url": "https://viale.gob.ar/wp-content/uploads/2026/10/2524.pdf",
+        "url": "https://viale.gob.ar/wp-content/uploads/2026/09/2520.pdf",
         "clasificacion_novedad": "MODIFICADO",
         "campos_modificados": [
           "objeto"
         ]
       },
       {
-        "id": "5db599137b55141b83b43353ba155de65f0746f22b19a6b2da070c7dcf79f3d3",
+        "id": "03ca0e7750d25badce1a7cbd914333e95785a911e638c481198476b74f62e1f5",
+        "organismo": "Municipalidad de Viale",
+        "numero_procedimiento": "2521",
+        "objeto": "Horario de atención de Lunes a Viernes: 6.30 hs a 12.00 hs Noticias Publicaciones Gobierno Autoridades Secretarías y Direcciones Secretaría de Gobierno Secretaría de Ingresos Públicos, Estadísticas y Modernización Subsecretaría de cultura y educación Secretaría de Desarrollo Social y Humano Subsecretaría de la mujer Subsecretaría de Obras Sanitarias Subsecretaría de Desarrollo Local y Productivo Dirección de Deportes HCD Autoridades HCD Transparente Comunicados Libro de Visitas Trámites y Servicios Atención Ciudadana Boletín Oficial Bromatologia Centro de Salud Compras Cuentas Claras Cultura y Educación Defensa Al Consumidor Emprendedurismo Expedientes Licencias de Conducir Punto Digital Recaudaciones Obras Sanitarias Subsecretaría de Servicios Públicos Sistema de ahorro previo para obras de infraestructura Ciudad Turismo Parque Industrial Recaudaciones Cotejo de Precios N° 2521 – ADQ. GAS OIL GRADO 2 24 septiembre, 2026 | In Pliegos | By Lautaro Ledesma Descargar PDF Guía Telefónica y Servicios de la Ciudad Bomberos100 Policía101 Emergencias Médicas107 Mesa de Entrada PalacioInt. 101 Reclamos CentralInt. 111 Honorable Concejo Delib.Int. 113 Juzgado de FaltasInt. 142 Guardia UrbanaInt. 120 Centro de MonitoreoInt. 121 Centro Salud «R. Carrillo»Int. 119 Hogar «Madre Teresa»Int. 127 Sec. Desarrollo SocialInt. 129 Subsecretaría de la MujerInt. 130 ANAFInt. 131 Desarrollo Local y Prod.Int. 137 Defensa del ConsumidorInt. 136 Licencias de ConducirInt. 132 Cultura y EducaciónInt. 134 Dirección de DeportesInt. 135 Obras SanitariasInt. 141 Servicios PúblicosInt. 125 ComprasInt. 115 CatastroInt. 116 RecaudacionesInt. 117 Bromatología y AmbienteInt. 143 Obras Públicas (Tinglado)Int. 144 Guardias y Urgencias fuera de horario administrativo: Salud: 3434151615 Guardia Urbana/Monitoreo: 3434676828 Subsec. Mujer: 3434055981 ANAF: 3434524860 Licencias: 3434283457 Reclamos: 3434282868 Diseño y desarrollo por AV consultora + Minds",
+        "fecha_publicacion": null,
+        "fecha_apertura": null,
+        "url": "https://viale.gob.ar/wp-content/uploads/2026/09/2521.pdf",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
+        "id": "c9ffe9a12b78753b3b7c19ac03fc2c94d2f57396db75b585cb0ad5a77a543a2c",
+        "organismo": "Municipalidad de Viale",
+        "numero_procedimiento": "2522",
+        "objeto": "Horario de atención de Lunes a Viernes: 6.30 hs a 12.00 hs Noticias Publicaciones Gobierno Autoridades Secretarías y Direcciones Secretaría de Gobierno Secretaría de Ingresos Públicos, Estadísticas y Modernización Subsecretaría de cultura y educación Secretaría de Desarrollo Social y Humano Subsecretaría de la mujer Subsecretaría de Obras Sanitarias Subsecretaría de Desarrollo Local y Productivo Dirección de Deportes HCD Autoridades HCD Transparente Comunicados Libro de Visitas Trámites y Servicios Atención Ciudadana Boletín Oficial Bromatologia Centro de Salud Compras Cuentas Claras Cultura y Educación Defensa Al Consumidor Emprendedurismo Expedientes Licencias de Conducir Punto Digital Recaudaciones Obras Sanitarias Subsecretaría de Servicios Públicos Sistema de ahorro previo para obras de infraestructura Ciudad Turismo Parque Industrial Recaudaciones Cotejo de Precios N° 2522 – ADQ. DE EMULSION 24 septiembre, 2026 | In Pliegos | By Lautaro Ledesma Descargar PDF Guía Telefónica y Servicios de la Ciudad Bomberos100 Policía101 Emergencias Médicas107 Mesa de Entrada PalacioInt. 101 Reclamos CentralInt. 111 Honorable Concejo Delib.Int. 113 Juzgado de FaltasInt. 142 Guardia UrbanaInt. 120 Centro de MonitoreoInt. 121 Centro Salud «R. Carrillo»Int. 119 Hogar «Madre Teresa»Int. 127 Sec. Desarrollo SocialInt. 129 Subsecretaría de la MujerInt. 130 ANAFInt. 131 Desarrollo Local y Prod.Int. 137 Defensa del ConsumidorInt. 136 Licencias de ConducirInt. 132 Cultura y EducaciónInt. 134 Dirección de DeportesInt. 135 Obras SanitariasInt. 141 Servicios PúblicosInt. 125 ComprasInt. 115 CatastroInt. 116 RecaudacionesInt. 117 Bromatología y AmbienteInt. 143 Obras Públicas (Tinglado)Int. 144 Guardias y Urgencias fuera de horario administrativo: Salud: 3434151615 Guardia Urbana/Monitoreo: 3434676828 Subsec. Mujer: 3434055981 ANAF: 3434524860 Licencias: 3434283457 Reclamos: 3434282868 Diseño y desarrollo por AV consultora + Minds",
+        "fecha_publicacion": null,
+        "fecha_apertura": null,
+        "url": "https://viale.gob.ar/wp-content/uploads/2026/09/2522.pdf",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
+        "id": "0a1a6fbf128fc73d70e2969168ea728fb99a746015eea6c4e95fa794a002d54a",
+        "organismo": "Municipalidad de Viale",
+        "numero_procedimiento": "2523",
+        "objeto": "Horario de atención de Lunes a Viernes: 6.30 hs a 12.00 hs Noticias Publicaciones Gobierno Autoridades Secretarías y Direcciones Secretaría de Gobierno Secretaría de Ingresos Públicos, Estadísticas y Modernización Subsecretaría de cultura y educación Secretaría de Desarrollo Social y Humano Subsecretaría de la mujer Subsecretaría de Obras Sanitarias Subsecretaría de Desarrollo Local y Productivo Dirección de Deportes HCD Autoridades HCD Transparente Comunicados Libro de Visitas Trámites y Servicios Atención Ciudadana Boletín Oficial Bromatologia Centro de Salud Compras Cuentas Claras Cultura y Educación Defensa Al Consumidor Emprendedurismo Expedientes Licencias de Conducir Punto Digital Recaudaciones Obras Sanitarias Subsecretaría de Servicios Públicos Sistema de ahorro previo para obras de infraestructura Ciudad Turismo Parque Industrial Recaudaciones Cotejo de Precios N° 2523 – INTALACION DE COLUMNAS CON CARTELES NOMENCLADORES 2 octubre, 2026 | In Pliegos | By Lautaro Ledesma Descargar PDF Guía Telefónica y Servicios de la Ciudad Bomberos100 Policía101 Emergencias Médicas107 Mesa de Entrada PalacioInt. 101 Reclamos CentralInt. 111 Honorable Concejo Delib.Int. 113 Juzgado de FaltasInt. 142 Guardia UrbanaInt. 120 Centro de MonitoreoInt. 121 Centro Salud «R. Carrillo»Int. 119 Hogar «Madre Teresa»Int. 127 Sec. Desarrollo SocialInt. 129 Subsecretaría de la MujerInt. 130 ANAFInt. 131 Desarrollo Local y Prod.Int. 137 Defensa del ConsumidorInt. 136 Licencias de ConducirInt. 132 Cultura y EducaciónInt. 134 Dirección de DeportesInt. 135 Obras SanitariasInt. 141 Servicios PúblicosInt. 125 ComprasInt. 115 CatastroInt. 116 RecaudacionesInt. 117 Bromatología y AmbienteInt. 143 Obras Públicas (Tinglado)Int. 144 Guardias y Urgencias fuera de horario administrativo: Salud: 3434151615 Guardia Urbana/Monitoreo: 3434676828 Subsec. Mujer: 3434055981 ANAF: 3434524860 Licencias: 3434283457 Reclamos: 3434282868 Diseño y desarrollo por AV consultora + Minds",
+        "fecha_publicacion": null,
+        "fecha_apertura": null,
+        "url": "https://viale.gob.ar/wp-content/uploads/2026/10/2523.pdf",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
+        "id": "075b5e68b53573e995739f2a6496010d321a3e5a2288ecb14cbd93ec353dd69e",
+        "organismo": "Municipalidad de Viale",
+        "numero_procedimiento": "12/2026",
+        "objeto": "Horario de atención de Lunes a Viernes: 6.30 hs a 12.00 hs Noticias Publicaciones Gobierno Autoridades Secretarías y Direcciones Secretaría de Gobierno Secretaría de Ingresos Públicos, Estadísticas y Modernización Subsecretaría de cultura y educación Secretaría de Desarrollo Social y Humano Subsecretaría de la mujer Subsecretaría de Obras Sanitarias Subsecretaría de Desarrollo Local y Productivo Dirección de Deportes HCD Autoridades HCD Transparente Comunicados Libro de Visitas Trámites y Servicios Atención Ciudadana Boletín Oficial Bromatologia Centro de Salud Compras Cuentas Claras Cultura y Educación Defensa Al Consumidor Emprendedurismo Expedientes Licencias de Conducir Punto Digital Recaudaciones Obras Sanitarias Subsecretaría de Servicios Públicos Sistema de ahorro previo para obras de infraestructura Ciudad Turismo Parque Industrial Recaudaciones Licitación Privada Nº 12/26 – Adquisición de combustible gasoil grado 2. 7 octubre, 2026 | In Pliegos | By Lautaro Ledesma Descargar PDF Guía Telefónica y Servicios de la Ciudad Bomberos100 Policía101 Emergencias Médicas107 Mesa de Entrada PalacioInt. 101 Reclamos CentralInt. 111 Honorable Concejo Delib.Int. 113 Juzgado de FaltasInt. 142 Guardia UrbanaInt. 120 Centro de MonitoreoInt. 121 Centro Salud «R. Carrillo»Int. 119 Hogar «Madre Teresa»Int. 127 Sec. Desarrollo SocialInt. 129 Subsecretaría de la MujerInt. 130 ANAFInt. 131 Desarrollo Local y Prod.Int. 137 Defensa del ConsumidorInt. 136 Licencias de ConducirInt. 132 Cultura y EducaciónInt. 134 Dirección de DeportesInt. 135 Obras SanitariasInt. 141 Servicios PúblicosInt. 125 ComprasInt. 115 CatastroInt. 116 RecaudacionesInt. 117 Bromatología y AmbienteInt. 143 Obras Públicas (Tinglado)Int. 144 Guardias y Urgencias fuera de horario administrativo: Salud: 3434151615 Guardia Urbana/Monitoreo: 3434676828 Subsec. Mujer: 3434055981 ANAF: 3434524860 Licencias: 3434283457 Reclamos: 3434282868 Diseño y desarrollo por AV consultora + Minds",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2026-10-20",
+        "url": "https://viale.gob.ar/wp-content/uploads/2026/10/lic.-12-26.pdf",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
+        "id": "d1fd66f5d9dcce6668d3c5d2708a7665a871a7b6500efdb34646016bf8d0bc17",
         "organismo": "Municipalidad de Roldán",
-        "numero_procedimiento": "18/2023",
-        "objeto": "Licitación Pública N°018/23 Licitación Pública Nº018/23 File extension: pdf File size: 13 MB CircularAclaratoriaLicitacionPbca018 (1) File extension: pdf File size: 595 kB",
+        "numero_procedimiento": "9/2023",
+        "objeto": "Licitación Pública N°009/23 LicitaciónPúblicaN°009 File extension: pdf",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2023-08-04",
+        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-publica-n009-23/",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
+        "id": "6c3443804b9a02191c790cfc3a65e57347863831884828073cb0bc59f7acecfa",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "12/2023",
+        "objeto": "Licitación Pública N°012/23 LICITACION_PUBLICA_N0122023 File extension: pdf File size: 5 MB CircularAclaratoriaN1 File extension: pdf File size: 488 kB",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2023-10-30",
+        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-publica-n012-23/",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
+        "id": "25568885cac55b858561d5f9357f94d5d01d5206f62ef95754a11c98cdd89f95",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "14/2023",
+        "objeto": "Licitación Pública N°014/23 LICITACIÓN PÚBLICA N° 014/2023 File extension: pdf File size: 3 MB",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2023-12-05",
+        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-publica-n014-23/",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
+        "id": "d5738d553f2892eeae3ae4f76ce55fc818adb002ff96171b86a78185afe89cd2",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "16/2023",
+        "objeto": "Licitación Pública Nº016/23 Licitación Pública Nº016/2023 File extension: pdf File size: 21 MB",
         "fecha_publicacion": null,
         "fecha_apertura": "2023-12-29",
-        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-publica-n018-23/",
+        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-publica-no016-2023/",
         "clasificacion_novedad": "MODIFICADO",
         "campos_modificados": [
           "objeto"
@@ -195,7 +164,7 @@
         "id": "7be9f266bce39f62ef5517df11432b38920fc3789dcc3ee9b5de201dc2036fbc",
         "organismo": "Municipalidad de El Trébol",
         "numero_procedimiento": "10/2015",
-        "objeto": "NewsPaper El Trébol NewsPaper the art of publishing 27.8 C El Trébol Estación Meteorológica Facebook Instagram X Licitaciones Reclamos La Ciudad Gobierno Gabinete Ejecutivo Informes de Gestión Reseña Histórica Ubicación Mapas de la Ciudad Organismos y Ámbitos Públicos Espacios Municipales Festejos Populares Concejo Municipal Banco de Ordenanzas Teléfonos Útiles El Trébol a Futuro Plan de Ordenamiento Urbano y Desarrollo Territorial 2009 Plan de ordenamiento urbano y desarrollo territorial 2019 Boletín Oficial Áreas Intendencia D. Humano y Acción Comunitaria Cultura y Comunicación Producción, Capac. y Empleo Hacienda y Finanzas Convivencia y Seguridad Gestión Urbana y Obras Públicas Servicios Públicos Desarrollo Educativo Ambiente Oficina Virtual Contacto Protección Civil LICITACIÓN PÚBLICA PARA LA GESTIÓN Y EL COBRO EXTRAJUDICIAL DE LAS DEUDAS DE PATENTE 23 de julio de 2015 Facebook X Pinterest WhatsApp El Gobierno de la ciudad comunica que a través de Licitación Nº 10/2015 se implementará la gestión y cobro extrajudicial de las deudas generadas por el impuesto provincial de patente única sobre vehículos. ADQUISICIÓN DEL PLIEGO: En la Administración de la Municipalidad de El Trébol, de 7.15 a 12.15, hasta el día 04/08/2015, a las 9.45 horas. VALOR DEL PLIEGO: $ 2000 (pesos dos mil) RECEPCIÓN DE OFERTAS: Hasta el 04/08/2015, a las 9.45 hs. Informes: Secretaría de Coordinación y Logística – Mail: produccion@eltrebol.gov.ar. Teléfonos: (03401) 422181 – 422271. DÍA DE APERTURA: 04/08/2015, a las 10 hs, en Salón Municipal, sito en Bv. América 1091 – El Trébol. Adjudicado Volver Francisco Díaz de Azevedo Corsaliniweb © Municipalidad de El Trébol - Todos los derechos reservados",
+        "objeto": "NewsPaper El Trébol NewsPaper the art of publishing 22.3 C El Trébol Estación Meteorológica Facebook Instagram X Licitaciones Reclamos La Ciudad Gobierno Gabinete Ejecutivo Informes de Gestión Reseña Histórica Ubicación Mapas de la Ciudad Organismos y Ámbitos Públicos Espacios Municipales Festejos Populares Concejo Municipal Banco de Ordenanzas Teléfonos Útiles El Trébol a Futuro Plan de Ordenamiento Urbano y Desarrollo Territorial 2009 Plan de ordenamiento urbano y desarrollo territorial 2019 Boletín Oficial Áreas Intendencia D. Humano y Acción Comunitaria Cultura y Comunicación Producción, Capac. y Empleo Hacienda y Finanzas Convivencia y Seguridad Gestión Urbana y Obras Públicas Servicios Públicos Desarrollo Educativo Ambiente Oficina Virtual Contacto Protección Civil LICITACIÓN PÚBLICA PARA LA GESTIÓN Y EL COBRO EXTRAJUDICIAL DE LAS DEUDAS DE PATENTE 23 de julio de 2015 Facebook X Pinterest WhatsApp El Gobierno de la ciudad comunica que a través de Licitación Nº 10/2015 se implementará la gestión y cobro extrajudicial de las deudas generadas por el impuesto provincial de patente única sobre vehículos. ADQUISICIÓN DEL PLIEGO: En la Administración de la Municipalidad de El Trébol, de 7.15 a 12.15, hasta el día 04/08/2015, a las 9.45 horas. VALOR DEL PLIEGO: $ 2000 (pesos dos mil) RECEPCIÓN DE OFERTAS: Hasta el 04/08/2015, a las 9.45 hs. Informes: Secretaría de Coordinación y Logística – Mail: produccion@eltrebol.gov.ar. Teléfonos: (03401) 422181 – 422271. DÍA DE APERTURA: 04/08/2015, a las 10 hs, en Salón Municipal, sito en Bv. América 1091 – El Trébol. Adjudicado Volver Francisco Díaz de Azevedo Corsaliniweb © Municipalidad de El Trébol - Todos los derechos reservados",
         "fecha_publicacion": null,
         "fecha_apertura": "2015-08-04",
         "url": "https://eltrebol.gov.ar/wp-content/uploads/2022/04/POUyDT-2009.pdf",
@@ -205,274 +174,195 @@
         ]
       },
       {
-        "id": "e954216fdb52c81e224b8ee84c9d41550e8c9a0b6481595d21b04287f8293120",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "13/2026",
-        "objeto": "Anterior Siguiente Apertura de sobres Licitación N° 13/2026 Carga Noticias Categoría: Noticias Read Time: 2 mins Publicado: 26 Octubre 2026 Visitas: 77 El 22 de octubre en dependencias de la Municipalidad de Armstrong se procedió a la apertura de sobres correspondiente a la Licitación Pública N° 13/2026 para la adquisición de una pick up mediana cabina doble. Participaron del acto el Intendente Guillermo Luzzi, el Secretario de Hacienda y Finanzas CPN Franco Sterrantino, la Dra. Natalia Córdoba en representación del Departamento de Legales, y los Sres. Gastón Frascaroli, Danilo Zanoni, Maximiliano Vega, y Federico Abacca en representación de los oferentes. En la oportunidad se recepcionaron 3 ofertas de las siguientes firmas: LTA MOTORS SRL, de la ciudad de Rosario, quien cotiza por: oferta 1: una pick up marca Foton cabina doble modelo Tunland G7 4x2 MT $ 49.970.000; oferta 2: una pick up marca Foton cabina doble modelo Tunland G7 4x2 AT $ 52.100.000; oferta 3: una pick up marca Foton cabina doble modelo Tunland G7 4x4 AT $ 57.054.000: REUTEMMAN AUTOMOTORES S.A., de Rosario, cotiza: Pick up mediana cabina doble marca Volkswagen modelo Amarok 4x2 Trenline TDI MT 140 CV $ 49.100.000; NOALE S.A., de la ciudad de Pergamino (Bs. As.) cotiza Pick up cabina doble 4x2 marca Nissan versión Frontier – 2.3 Turbo Diesel $ 44.600.000.- Previa lectura y ratificación se firmó el acta correspondiente. De acuerdo a uno de los puntos previstos en el Pliego de bases y condiciones, las autoridades se reservan el derecho de aceptar o rechazar en forma total y/o parcial las propuestas recibidas, sin derecho a reclamo alguno por parte de los oferentes. Artículo anterior: Llega el Mercado Abierto de Armstrong Anterior Artículo siguiente: Defensa Civil de Armstrong se reunió para coordinar acciones ante el avance de El Niño Siguiente",
-        "fecha_publicacion": "2026-10-26",
-        "fecha_apertura": "2026-10-07",
-        "url": "https://www.armstrong.gov.ar/index.php/blog/apertura-de-sobres-licitacion-n-13-2026",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "6c5a7d403903f15b960cadb265ea606ac09423a5c4cf31d6e2f796aa36ea3822",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "81551/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-13",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38747",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "70d049986e38696ee40cf47b9f8e4e9cca3925030114ea6704e528ed4203b0fc",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "24805/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-13",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38752",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "b7bde92d0a957ffd7ab18961397ae2ebc4b41aecf79de8daab1071982b2a4359",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "24795/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-13",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38753",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "62e8b2c5283c36e6eae2065a80892d943401c8bd412f11a065a3a21176aeee2a",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "3218/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-16",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38760",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "8fea30794aca2a68bb254f30758c68cf57dd8654ad77369d0989e796d8e97e71",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "60721/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-16",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38746",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "a90502da3f8b2553c85a2f485a3fca0186e90a2cbd9edfa6b9c31caea57748b3",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "24875/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-16",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38794",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "f3dd20179289cef7e6fdc44337234cb49b87d8d8939d4b6d802b2aa120169c82",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "101291/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-17",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38759",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "6d78178e3eb9c2656e02e3dad021630d7a3b571efc6937ddc9a75d71e715c074",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "60741/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-17",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38771",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "ee0afb8ad90c518b7988b7351d5ee721856f322bb497946ecdd6d4130375205e",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "40681/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-17",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38776",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "75b8321495167277f7547013d092da94cb5fa8ec0de77c7692f5577a474d2b4c",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "34/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-30",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38866",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto",
-          "fecha_apertura"
-        ]
-      },
-      {
-        "id": "ede40a19b69bfb0a9a2bb3d2a82c2db52385f9f072ddb300dce607d4263144f3",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "14/2026",
-        "objeto": "Anterior Siguiente Apertura de sobres Licitación Pública N° 14/2026 Carga Noticias Categoría: Noticias Read Time: 2 mins Publicado: 13 Noviembre 2026 Visitas: 78 El jueves 12 de noviembre, en el salón San Martín de la Municipalidad de Armstrong se procedió a la apertura de sobres correspondiente al llamado a licitación pública N° 14/2026 para la provisión de mano de obra, materiales y equipos para obra de pavimentación urbana (una cuadra). Participaron del acto el Intendente Guillermo Luzzi, los secretarios de Gobierno Daniela Pérez, de Obras Públicas Ing. Natalia Martínez, y de Hacienda y Finanzas CPN Franco Sterrantino, y la Dra. Natallia Córdoba en representación del Departamento de Legales, quienes dejan constancia que, de acuerdo al pliego, el presupuesto oficial es de $ 74.295.062,64.- En la oportunidad se recepcionaron 3 ofertas de las siguientes firmas locales: ARMAR CONSTRUCCIONES SR., cotiza $ 72.808.702,44; INARQIS CONSTRUCCIONES S.R.L., cotiza $ 81.216.194,91; RABER S.R.L., cotiza $ 66.808.497,46.- Previa lectura y ratificación se firmó el acta correspondiente. De acuerdo a uno de los puntos previstos en el Pliego de bases y condiciones, las autoridades se reservan el derecho de aceptar o rechazar en forma total y/o parcial las propuestas recibidas, sin derecho a reclamo alguno por parte de los oferentes. Artículo anterior: Aliado Sustentable Anterior Artículo siguiente: La Municipalidad y la UTN firmaron un convenio para dictar la Licenciatura en Higiene y Seguridad en el Trabajo Siguiente",
-        "fecha_publicacion": "2026-11-13",
-        "fecha_apertura": null,
-        "url": "https://www.armstrong.gov.ar/index.php/blog/apertura-de-sobres-licitacion-publica-n-14-2026",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "f47655948c7070512e60a59369472f17b2c8936bb7cb156ceedb8763640df4d4",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "3/2023",
-        "objeto": "Categoría: 2023 Visitas: 105 Licitación 03/2023 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2003-2023.pdf\">Descargar PDF</a>",
-        "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://armstrong.gov.ar/index.php/licitaciones/2023/licitacion-03-2023",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "9b30615179a056feeeb780329036eeb46a469c7a5fd358e2df8d3b413cf881ac",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "1/2023",
-        "objeto": "Categoría: 2023 Visitas: 134 Licitación 01/2023 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2001-2023.pdf\">Descargar PDF</a>",
-        "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://armstrong.gov.ar/index.php/licitaciones/2023/licitacion-01-2023",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "4f407e30aab4f67ea6e56ed6fdc64e910882a9904309f8c91e2c45d5b3385a13",
-        "organismo": "Municipalidad de Armstrong",
+        "id": "585360f40fa26bfe5a70b8f644eca1f1d72b1d697d548b7aebc73f16b122d839",
+        "organismo": "Municipalidad de Roldán",
         "numero_procedimiento": "2/2023",
-        "objeto": "Categoría: 2023 Visitas: 88 Licitación 02/2023 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2002-2023.pdf\">Descargar PDF</a>",
+        "objeto": "Concurso de Precios N°002/23 concurso002 File extension: pdf File size: 13 MB decretollamadoconcurso002 File extension: pdf File size: 3 MB",
         "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://armstrong.gov.ar/index.php/licitaciones/2023/licitacion-02-2023",
+        "fecha_apertura": "2023-05-15",
+        "url": "https://www.roldan.gov.ar/wp/document-category/concurso-de-precios-n002-23/",
         "clasificacion_novedad": "MODIFICADO",
         "campos_modificados": [
           "objeto"
         ]
       },
       {
-        "id": "85cfb3644a17e0ea223c3d9c626aa9d6c387f2e7154ec261d7822004d2ba5115",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "4/2023",
-        "objeto": "Categoría: 2023 Visitas: 99 Licitación 04/2023 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2004-2023.pdf\">Descargar PDF</a>",
+        "id": "cdbea01dda00f76bfa9e0c16852afc00b975b9e1c14687e206010b7f4e88eccb",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "5/2023",
+        "objeto": "Licitación Pública N°005/23 decretoLU00523 File extension: pdf File size: 2 MB licitacionpublica00523_2 File extension: pdf File size: 22 MB prorroga File extension: pdf File size: 276 kB",
         "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://armstrong.gov.ar/index.php/licitaciones/2023/licitacion-04-2023",
+        "fecha_apertura": "2023-05-18",
+        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-publica-n005-23/",
         "clasificacion_novedad": "MODIFICADO",
         "campos_modificados": [
           "objeto"
         ]
       },
       {
-        "id": "01dcf24790c72cc8ec127de9c83f7ec92552d9ee605e970788ef78447e4f9f6e",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "7/2024",
-        "objeto": "Categoría: 2024 Visitas: 119 Licitación 07/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2007-2024.pdf\">Descargar PDF</a>",
+        "id": "4bf11ba4c88b7fb0fdfda36e04e21f33a003cba7ad34c95a8a75962778ec29ef",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "5/2023",
+        "objeto": "Licitación Privada N°005/23 Licitación Privada N°005/23 File extension: pdf File size: 15 MB",
         "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-07-2024",
+        "fecha_apertura": "2023-06-29",
+        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-privada-n005-23/",
         "clasificacion_novedad": "MODIFICADO",
         "campos_modificados": [
           "objeto"
         ]
       },
       {
-        "id": "ff350e43056acad03a85a2bef54c90c600a68d8b3d6db2d0fb2e43a6349568b4",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "6/2024",
-        "objeto": "Categoría: 2024 Visitas: 87 Licitación 06/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2006-2024.pdf\">Descargar PDF</a>",
+        "id": "9a4c0401e08d466d4c31baaf67b4a74cd7771f47fef83c4fabd7d6dfb8a847db",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "8/2023",
+        "objeto": "Licitación Pública N°008/23 Licitación Publica N_ 08_23 File extension: pdf File size: 13 MB CIRCULAR SIN CONSULTA Nº 01 File extension: pdf File size: 135 kB",
         "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-06-2024",
+        "fecha_apertura": "2023-07-10",
+        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-publica-n008-23/",
         "clasificacion_novedad": "MODIFICADO",
         "campos_modificados": [
           "objeto"
         ]
       },
       {
-        "id": "42553197c53bb75f083ad27dc000f14e3f75e8509308760f9aa2ad233e5bb1dd",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "8/2024",
-        "objeto": "Categoría: 2024 Visitas: 88 Licitación 08/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2008-2024.pdf\">Descargar PDF</a>",
+        "id": "0643ee5de5310fd6be41a2b9ab0b18785c7bc55b45dc2fe359fb74e4a553c9c7",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "6/2023",
+        "objeto": "Concurso de Precios N°006/23 ConcursoPrecios006 File extension: pdf File size: 3 MB",
         "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-08-2024",
+        "fecha_apertura": "2023-07-25",
+        "url": "https://www.roldan.gov.ar/wp/document-category/concurso-de-precios-n006-23/",
         "clasificacion_novedad": "MODIFICADO",
         "campos_modificados": [
           "objeto"
         ]
       },
       {
-        "id": "0f5d85c51eeeab1f3ad6494cc757aeb303d59e13b4c2495112c0c3e11c74bf79",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "9/2024",
-        "objeto": "Categoría: 2024 Visitas: 89 Licitación 09/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2009-2024.pdf\">Descargar PDF</a>",
+        "id": "ce5310df05cd9afcd5a9f1972489092d6deb51443b528b3d6288ccf74bc004d6",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "7/2023",
+        "objeto": "Concurso de Precios N°007/23 CONCURSO DE PRECIOS N° 007/2023 File extension: pdf File size: 3 MB",
         "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-09-2024",
+        "fecha_apertura": "2023-08-07",
+        "url": "https://www.roldan.gov.ar/wp/document-category/concurso-de-precios-n-007-23/",
         "clasificacion_novedad": "MODIFICADO",
         "campos_modificados": [
           "objeto"
         ]
       },
       {
-        "id": "fa9739df40e47a0149ba827bf78de11326ba0a4d47544d6a5a22d95ae8a23ae5",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "5/2024",
-        "objeto": "Categoría: 2024 Visitas: 90 Licitación 05/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2005-2024.pdf\">Descargar PDF</a>",
+        "id": "b6b8d92805557d03cd173dbdc1e351823bcc550c9bd5b14d1d8433ba70377a81",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "8/2023",
+        "objeto": "Concurso de Precios N°008/23 CONCURSO DE PRECIOS N° 008/2023 File extension: pdf File size: 14 MB",
         "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-05-2024",
+        "fecha_apertura": "2023-10-04",
+        "url": "https://www.roldan.gov.ar/wp/document-category/concurso-de-precios-n-00-2023/",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
+        "id": "d566206f9a55b5d0b02aa561eba3a5239cb6fa30dda9be2e8717f896473454b6",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "7/2023",
+        "objeto": "Licitación Privada N°007/23 Licitación Privada N°007/23 File extension: pdf File size: 19 MB",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2023-10-04",
+        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-privada-n007-23/",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
+        "id": "6b201c852f52ec0f7c1017cdc6c50368550b10aa9a0c5e10ea043b67fb51fa2d",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "9/2023",
+        "objeto": "Concurso de precios N°009/23 Concurso de precios N°009/23 File extension: pdf File size: 3 MB",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2023-10-18",
+        "url": "https://www.roldan.gov.ar/wp/document-category/concurso-de-precios-n009-23/",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
+        "id": "7343121cd8962ce6474438cafe453fd52fad229190d68ca71a00e9812d37849a",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "9/2023",
+        "objeto": "Licitación privada N°009/23 Pliego Licitación Privada N °9_2023 File extension: pdf File size: 5 MB",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2023-11-16",
+        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-privada-n009-23/",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
+        "id": "4a5e65d2decf0619128c783bd328dca1231ee4a99599133873b969cfd84e4cfe",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "8/2023",
+        "objeto": "Licitación Privada N°008/23 Licitación Privada N°008/23 File extension: pdf File size: 4 MB",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2023-11-17",
+        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-privada-n008-23/",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
+        "id": "bba6506ff4eef2fd661abe33b7cf290a81338244497cd3f09ed7c01c54997e67",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "11/2023",
+        "objeto": "Concurso de Precios N°011/23 ConcursoDePrecios011 File extension: pdf File size: 10 MB",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2023-12-11",
+        "url": "https://www.roldan.gov.ar/wp/document-category/concurso-de-precios-n011-23/",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
+        "id": "f448c5fae70660e97bc9fc0d426df5205d3cabde3a2a87d0d9fceaf4e862c3f7",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "10/2023",
+        "objeto": "Licitación Privada N°010/23 licitacionPrivada010_23 File extension: pdf File size: 10 MB",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2023-12-11",
+        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-privada-n010-23/",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
+        "id": "893e25f47fe931c35bb67eea47249f8b4d352b5695a2d4c1a70d539cc5cc578b",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "11/2023",
+        "objeto": "Licitación Privada N°011/23 LicitacionPrivada011_23 File extension: pdf File size: 10 MB",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2023-12-11",
+        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-privada-n011-23/",
+        "clasificacion_novedad": "MODIFICADO",
+        "campos_modificados": [
+          "objeto"
+        ]
+      },
+      {
+        "id": "f335d9be6b472df7d55c9e7555c9417ac5354de81c2649db760bb51a85f2a761",
+        "organismo": "Municipalidad de Roldán",
+        "numero_procedimiento": "12/2023",
+        "objeto": "Licitación Privada N°012/23 LicitaciónPrivada012_23 File extension: pdf File size: 10 MB",
+        "fecha_publicacion": null,
+        "fecha_apertura": "2023-12-11",
+        "url": "https://www.roldan.gov.ar/wp/document-category/licitacion-privada-n012-23/",
         "clasificacion_novedad": "MODIFICADO",
         "campos_modificados": [
           "objeto"
@@ -482,7 +372,7 @@
         "id": "fe0138b0f2f7cd0425e623d5cc3778225248e452c60cc3e942d373fcf56e2411",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "1/2025",
-        "objeto": "Categoría: 2025 Visitas: 101 Licitación 01/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2001-2025.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2025 Visitas: 103 Licitación 01/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2001-2025.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-01-2025",
@@ -495,7 +385,7 @@
         "id": "fd50621fe4a0505b484ea95f665d0c8c3ab057d88d58bd0c220ec4f1eb2a77df",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "2/2025",
-        "objeto": "Categoría: 2025 Visitas: 108 Licitación 02/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2002-2025.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2025 Visitas: 109 Licitación 02/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2002-2025.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-02-2025",
@@ -508,7 +398,7 @@
         "id": "9652bec25a013f8a4c36a6615762b66b167bc7a8e711b54dbf1f920bb8c2551c",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "1/2026",
-        "objeto": "Categoría: 2026 Visitas: 160 Licitación 01/2026 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2026/Licitacion%2001-2026.pdf\">Descargar PDF</a> 1 2 Página 2 de 2",
+        "objeto": "Categoría: 2026 Visitas: 162 Licitación 01/2026 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2026/Licitacion%2001-2026.pdf\">Descargar PDF</a> 1 2 Página 2 de 2",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2026/licitacion-01-2026",
@@ -521,7 +411,7 @@
         "id": "2061bf5c684b468b31ba685c8c3d63897d015cacbb3ff641ccc101ffe368ceb4",
         "organismo": "Municipalidad de Seguí",
         "numero_procedimiento": "1/2021",
-        "objeto": "Home Licitaciones Apertura de sobres de la Licitación Pública Nº 01/2021 Licitaciones Noticias Apertura de sobres de la Licitación Pública Nº 01/2021 by arcast 11 febrero, 2021 0 251 0 En la mañana de hoy, el Presidente Municipal Dr. Gerardo Heberlein junto a su equipo de Gestión y titulares de empresas llevaron a cabo la apertura de sobres de la Licitación Pública Nº 01/2021 aprobada por Decreto Nº 001/2021 DEM en el Salón Auditorio Municipal.El objetivo de este proceso es adquirir los materiales para la ejecución de la obra denominada “Pavimentación con Hormigón Armado, Cordones Cuneta y Alumbrado Público en el Parque Industrial Seguí”. Gerardo Heberlein Municipalidad de Segui segui entre rios 0 previous post No Habrá recolección de Residuos next post Torneo de Golf Croquet y de Tejo",
+        "objeto": "Home Licitaciones Apertura de sobres de la Licitación Pública Nº 01/2021 Licitaciones Noticias Apertura de sobres de la Licitación Pública Nº 01/2021 by arcast 11 febrero, 2021 0 253 0 En la mañana de hoy, el Presidente Municipal Dr. Gerardo Heberlein junto a su equipo de Gestión y titulares de empresas llevaron a cabo la apertura de sobres de la Licitación Pública Nº 01/2021 aprobada por Decreto Nº 001/2021 DEM en el Salón Auditorio Municipal.El objetivo de este proceso es adquirir los materiales para la ejecución de la obra denominada “Pavimentación con Hormigón Armado, Cordones Cuneta y Alumbrado Público en el Parque Industrial Seguí”. Gerardo Heberlein Municipalidad de Segui segui entre rios 0 previous post No Habrá recolección de Residuos next post Torneo de Golf Croquet y de Tejo",
         "fecha_publicacion": "2021-02-11",
         "fecha_apertura": null,
         "url": "https://www.segui.gob.ar/sitio/?p=3668",
@@ -534,7 +424,7 @@
         "id": "251cb4878ef2a5726b13f2be1fc6e492cb7b577af913909e50cc5291895ee7d6",
         "organismo": "Municipalidad de Seguí",
         "numero_procedimiento": "1/2024",
-        "objeto": "Licitaciones Noticias Apertura de sobres – Solicitud de cotización N° 01/2024 by arcast 9 marzo, 2024 9 marzo, 2024 0 256 0 Objeto de la cotización: Adquisición de materiales con destino a la obra y mejora de la traza vial en el Barrio «Nuestra Señora de la Merced» de la localidad de Seguí. 0",
+        "objeto": "Licitaciones Noticias Apertura de sobres – Solicitud de cotización N° 01/2024 by arcast 9 marzo, 2024 9 marzo, 2024 0 258 0 Objeto de la cotización: Adquisición de materiales con destino a la obra y mejora de la traza vial en el Barrio «Nuestra Señora de la Merced» de la localidad de Seguí. 0",
         "fecha_publicacion": "2024-03-09",
         "fecha_apertura": null,
         "url": "https://www.segui.gob.ar/sitio/?p=7537",
@@ -547,7 +437,7 @@
         "id": "39aff9c4a272aaf527dded724f257a5844a3ccb0d652e64487f103dd7a99b79d",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "7/2026",
-        "objeto": "Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 87 Licitación 07/2026 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2026/Licitacion%2007-2026.pdf\">Descargar PDF</a>",
+        "objeto": "Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 89 Licitación 07/2026 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2026/Licitacion%2007-2026.pdf\">Descargar PDF</a>",
         "fecha_publicacion": "2026-09-18",
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2026/licitacion-07-2026",
@@ -560,7 +450,7 @@
         "id": "7387eff03513bd9fa3afe8cafcc8755c5cfdce9f6b34847aba191b25ad6c8394",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "8/2025",
-        "objeto": "Categoría: 2025 Visitas: 145 Licitación 08/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2008-2025.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2025 Visitas: 146 Licitación 08/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2008-2025.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-08-2025",
@@ -573,7 +463,7 @@
         "id": "d5051ec19f2759ccc49da0e0791fbe9cf4632a150c0906faa9a5f509953d2d17",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "8/2026",
-        "objeto": "Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 86 Licitación 08/2026 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2026/Licitacion%2008-2026.pdf\">Descargar PDF</a>",
+        "objeto": "Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 88 Licitación 08/2026 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2026/Licitacion%2008-2026.pdf\">Descargar PDF</a>",
         "fecha_publicacion": "2026-09-18",
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2026/licitacion-08-2026",
@@ -586,7 +476,7 @@
         "id": "23f6dbc388e198f56fb0b34ca214a74647e7cb9ca867853434f3dfc49bf6d35d",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "9/2025",
-        "objeto": "Categoría: 2025 Visitas: 146 Licitación 09/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2009-2025.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2025 Visitas: 148 Licitación 09/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2009-2025.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-09-2025",
@@ -599,7 +489,7 @@
         "id": "81097874d56937bc864c41d112b4b20f23744c678504d49634c55eb4681bfb05",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "9/2026",
-        "objeto": "Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 118 Licitación 09/2026 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2026/Licitacion%2009-2026.pdf\">Descargar PDF</a>",
+        "objeto": "Carga Noticias Categoría: 2026 Publicado: 18 Septiembre 2026 Visitas: 120 Licitación 09/2026 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2026/Licitacion%2009-2026.pdf\">Descargar PDF</a>",
         "fecha_publicacion": "2026-09-18",
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2026/licitacion-09-2026",
@@ -612,7 +502,7 @@
         "id": "cb8c41c08c9e95fe7f9769c6887b1fbda110280b6e247a6f8506f616d96a05eb",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "10/2025",
-        "objeto": "Categoría: 2025 Visitas: 139 Licitación 10/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2010-2025.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2025 Visitas: 140 Licitación 10/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2010-2025.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-10-2025",
@@ -625,7 +515,7 @@
         "id": "dce25b6f40beea4a6744b1eb443316f97d503ee9555326aabd44c4f259dc6094",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "11/2025",
-        "objeto": "Categoría: 2025 Visitas: 150 Licitación 11/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2011-2025.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2025 Visitas: 151 Licitación 11/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2011-2025.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-11-2025",
@@ -638,7 +528,7 @@
         "id": "dbcfba2063658ee1c370eee9efa36dd11a9ee6c79ce85b30fe439a92c2361745",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "12/2025",
-        "objeto": "Categoría: 2025 Visitas: 151 Licitación 12/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2012-2025.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2025 Visitas: 152 Licitación 12/2025 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2025/Licitacion%2012-2025.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2025/licitacion-12-2025",
@@ -651,75 +541,10 @@
         "id": "3d22048c5737561acf91741e71c9427a8456e9dd5c8e2dfdfc1c39d854e48f5b",
         "organismo": "Municipalidad de Armstrong",
         "numero_procedimiento": "13/2023",
-        "objeto": "Categoría: 2023 Visitas: 147 Licitación 13/2023 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2013-2023.pdf\">Descargar PDF</a>",
+        "objeto": "Categoría: 2023 Visitas: 148 Licitación 13/2023 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2023/Licitacion%2013-2023.pdf\">Descargar PDF</a>",
         "fecha_publicacion": null,
         "fecha_apertura": null,
         "url": "https://armstrong.gov.ar/index.php/licitaciones/2023/licitacion-13-2023",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "4dd5c8af943b52125e8a9939de3583370f54684c463918c64c3f6b1f9510dfa2",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "15/2024",
-        "objeto": "Categoría: 2024 Visitas: 141 Licitación 15/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2015-2024.pdf\">Descargar PDF</a>",
-        "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-15-2024",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "70cc8f504c1117c4ad84b152794f61f13837f72d2f60f5f82c64b1a5d7970978",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "16/2024",
-        "objeto": "Categoría: 2024 Visitas: 141 Licitación 16/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2016-2024.pdf\">Descargar PDF</a>",
-        "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-16-2024",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "f4bea3988861ef33db56983d68770c7361ab1b82b8b48ca6d09ed99a5744b158",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "17/2024",
-        "objeto": "Categoría: 2024 Visitas: 147 Licitación 17/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2017-2024.pdf\">Descargar PDF</a>",
-        "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-17-2024",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "029b5818f67a34ada9b2ee7252c2a3c59618e08a850169652a0899cccc1978c7",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "18/2024",
-        "objeto": "Categoría: 2024 Visitas: 146 Licitación 18/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2018-2024.pdf\">Descargar PDF</a>",
-        "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-18-2024",
-        "clasificacion_novedad": "MODIFICADO",
-        "campos_modificados": [
-          "objeto"
-        ]
-      },
-      {
-        "id": "5d2a9feba100a0057e1ebbb0a5fa3c4464594e0a055b98140962da60ba6b1de7",
-        "organismo": "Municipalidad de Armstrong",
-        "numero_procedimiento": "19/2024",
-        "objeto": "Categoría: 2024 Visitas: 127 Licitación 19/2024 Este navegador no soporta PDFs. <a href=\"/images/Licitaciones/2024/Licitacion%2019-2024.pdf\">Descargar PDF</a>",
-        "fecha_publicacion": null,
-        "fecha_apertura": null,
-        "url": "https://armstrong.gov.ar/index.php/licitaciones/2024/licitacion-19-2024",
         "clasificacion_novedad": "MODIFICADO",
         "campos_modificados": [
           "objeto"
@@ -728,533 +553,13 @@
     ],
     "datos_completados": [
       {
-        "id": "c10a415d530890a632beb014aaec0d52b927da16cc92b37e8362efb8489392ae",
+        "id": "1f2f4ab374a0fccde00c39ee23ae236ffacda593eea36f1dce3cc7ff923f3ede",
         "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "81571/2026",
+        "numero_procedimiento": "80240/2026",
         "objeto": null,
         "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-18",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38767",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "54b544110506c52ac0d6485b03f12177ad4336e165ae4127c6e8e60d728c6c78",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "69008/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-18",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38766",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "6a0fc7f7235b0cd2371728509c9cc54afa5a7390a98c5a95a5e62cc06abfa523",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "110891/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-18",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38773",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "eb1f6cec7b08860e1c37506f2fe1495f7b04fe5e70605db6459f196232ce628f",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11141/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-18",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38763",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "e59b477d1f38da3e23a3faa045540a7fc6d2cd84373e90d1758ff594dbc02a14",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "24845/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-18",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38787",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "0a35ae24c0ce53e1155f5c0613a8a15f6e8ba1794dff783bdeca106c7bd37153",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "37874/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-18",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38813",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "c9fccebfa4dfb2928ad5cf8e6bd41cce0c7a5aff8fb6e6bd1cb880af30997395",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "49/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-18",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38798",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "3776805b821164b192ac86200ab3e0061f845b48c39a83b7b57966ae6230e9cb",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "110911/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-18",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38801",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "1391d827bd96c30004e7cbaea6343aad90eee6c5af8949ad32d71b2944eb2137",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "40691/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-18",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38800",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "2aed800c6da6ab22b1324ef06edb241fb2d23becd67118dda9ce248e976ec137",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "24925/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-18",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38814",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "cfd3f281873fe6b11c00b4321125764bfd304e1dc4f45ee5f87321d46ea25e1f",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "3/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-18",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38758",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "4d3ac57c4353cda19aa6274b51cfddfc349aaae945185bd5180ce896ca02ec08",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "21/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-19",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38821",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "c57cc880bf4e0daf1fa12c7df3032d244b630d3fe6e9a664ec39ce5b868bcf4a",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "40711/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-19",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38818",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "9d4c4b1dc8d8c46a5c305f2f3385368b28855a6dc0e1e295f0b1bd13dc1df784",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "81591/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-19",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38784",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "e38e322f0c6376bf45eef0fb9c50ff7d1b6a31a5db684303459b86bf7bbb05a2",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "24945/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-19",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38824",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "05e20ea4980165471ded10cbce7b2081e9c60b948f9a950226ea1918da21ba0f",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "81601/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-19",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38788",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "a42c2254e1a27811269202939e72343c84fb1a6fea9cb82dfe017296fb35ce64",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11161/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-19",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38812",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "7eb5d7043a63c7cb4a0c200d25a4c782284845e32cd01f84527132e246634192",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "21/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-19",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38770",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "708f398991715e015cba73e5ed2b86f906fdbcae30e1ccbd40627f5dc369ab79",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "22/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-19",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38795",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "5d89816fbb42f055d5f2eb6f78ff1ee006795bd336c9f65644d88fa645185e40",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "24905/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-19",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38816",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "bc192ad18afd3d64241a9aae86d90d515047ff8866f8957e5b31681682c0e6a6",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "24935/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-19",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38822",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "8c035ea4bb849c829f64a102e4fa32f8ef1af440f08c40062779dda7f58ab390",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "101301/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-19",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38803",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "8bf4177bcd5e80658ba33abd805e326dc407fc4ac6757b38f122cd5a548ad11c",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "24915/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-19",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38820",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "7d67dff1e5ed4075a474780ab52ee80b48bc0972c885042c177af1ff0d1feeea",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "40701/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-19",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38817",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "44d7db8e6d4c011dfae322cca1526b12fa62e1ce6914e03d86acc6030276f134",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "53/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-19",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38815",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "8ed0636f3f0354a859b29fa8444e4857726a19c788003eeec1fe823efd9ca0ec",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "4/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-19",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38792",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "1a754160cfcb7519e273310ec92c15b15eab0ad6245d7eea6e22addd17fcb1e8",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "11334/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38851",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "ee0ab2e426b9ef397c5f8df2ea4935790bdcf2f32ba0d8b3ff2b68a81152102e",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "76105/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38827",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "9bb486e1a1d661698c2778a446b6b571e27f9ea384eb2620cf0e8d60164c3b71",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "120851/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38785",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "a58603633f12851914fb81ce7a130c43706e8b31ad8adf4a8cbe8971cb83e0e0",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "131531/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38802",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "555142c6f5c29ee645381f60241e6a9482d38260ab2fa303dd30bac4807cb8e2",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "24955/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38838",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "6b86e63b29f6ddcd46d71fb1c74bfe122161a14cdfbd5fbcd28a85c741ffa53f",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "3221/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38846",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "cde2083be8431fa9ff86c58acfdc7764383bf3e3fc8af3dda365c8f489bde629",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "38506/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38845",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "46ce085a3020cca879390f5138fa529926bb340be7f8eaf544f819f709bbedc0",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "3222/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38847",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "c1fbc63197006db2453ec537e6a7779f6d5715bb30d0c31c98aa20f30295f9ec",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "24965/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38840",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "602b367c31f8449e8ff19d22530e532ed6fc18d2a59700015ddb42764cb4825c",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "3223/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38848",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "65a90181873c151481e44a86c1235e233d2f24a5fe5663b184261120dadd22af",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "3224/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38849",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "cb6c8ef5a81503b23a60fa9711523e2b11fb749b75fe4c468317d07f76e1f3f5",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "120861/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38791",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "cd52573d098e775fab7dcbe68c11ad961af207abfc3e267464d79ecfe9b664cf",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "24975/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38844",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "b13691bf6d0f65cb11a3ce25e1000a8f2e5841cf6710a5067ed2366160c03ce3",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "52/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38786",
-        "clasificacion_novedad": "DATOS_COMPLETADOS",
-        "campos_modificados": [
-          "situacion_publicada"
-        ]
-      },
-      {
-        "id": "448688fe765e0f86f83078032f0c29db80f48b4ccfd860a1fe3b50e2beada294",
-        "organismo": "Municipalidad de Rosario",
-        "numero_procedimiento": "76102/2026",
-        "objeto": null,
-        "fecha_publicacion": null,
-        "fecha_apertura": "2026-11-20",
-        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38829",
+        "fecha_apertura": "2026-11-23",
+        "url": "https://www.rosario.gob.ar/inicio/compras-licitaciones/detalle/38749",
         "clasificacion_novedad": "DATOS_COMPLETADOS",
         "campos_modificados": [
           "situacion_publicada"
@@ -1352,10 +657,10 @@
       "organismo": "Municipalidad de Crespo",
       "provincia": "Entre Ríos",
       "localidad": "Crespo",
-      "procedimientos": 175,
+      "procedimientos": 172,
       "abiertas": 0,
       "proximas_a_vencer": 0,
-      "pagos_verificados": 4,
+      "pagos_verificados": 3,
       "unificaciones_revision": 0,
       "url": "https://www.crespo.gob.ar/category/licitacion-publica/",
       "estado_anterior": "PARCIAL",
@@ -1435,9 +740,9 @@
       "estado_actual": "PARCIAL",
       "errores": [
         {
-          "categoria": "EXTRACCION",
+          "categoria": "RED",
           "error": "Plazo agotado; se conserva lo extraído",
-          "fase": "EXTRACCION",
+          "fase": "DESCARGA",
           "timeout": true,
           "tipo": "TIEMPO_FUENTE",
           "causa": "TIEMPO_ESPERA",
@@ -1452,7 +757,7 @@
       "provincia": "Entre Ríos",
       "localidad": "Paraná",
       "procedimientos": 111,
-      "abiertas": 22,
+      "abiertas": 21,
       "proximas_a_vencer": 0,
       "pagos_verificados": 4,
       "unificaciones_revision": 0,
@@ -1591,7 +896,7 @@
       "provincia": "Santa Fe",
       "localidad": "Rosario",
       "procedimientos": 304,
-      "abiertas": 91,
+      "abiertas": 90,
       "proximas_a_vencer": 0,
       "pagos_verificados": 0,
       "unificaciones_revision": 0,
@@ -1600,7 +905,6 @@
       "estado_actual": "PARCIAL",
       "errores": [
         {
-          "acceso_recuperado": true,
           "categoria": "RED",
           "causa": "TIEMPO_ESPERA",
           "error": "<urlopen error timed out>",
@@ -1633,7 +937,6 @@
           "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=2"
         },
         {
-          "acceso_recuperado": true,
           "categoria": "RED",
           "causa": "TIEMPO_ESPERA",
           "error": "<urlopen error timed out>",
@@ -1649,22 +952,10 @@
           "causa": "TIEMPO_ESPERA",
           "error": "<urlopen error timed out>",
           "permanencia": "NO_DETERMINADA",
-          "reintento_diferido": true,
           "restriccion_acceso_comprobada": false,
           "timeout": true,
           "tipo": "URLError",
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=8"
-        },
-        {
-          "categoria": "RED",
-          "causa": "TIEMPO_ESPERA",
-          "error": "<urlopen error timed out>",
-          "permanencia": "NO_DETERMINADA",
-          "reintento_diferido": true,
-          "restriccion_acceso_comprobada": false,
-          "timeout": true,
-          "tipo": "URLError",
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=12&anioApertura%5B0%5D=2026&verTipo=1"
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5"
         },
         {
           "categoria": "RED",
@@ -1674,10 +965,9 @@
           "restriccion_acceso_comprobada": false,
           "timeout": true,
           "tipo": "URLError",
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=12&anioApertura%5B0%5D=2026&verTipo=1"
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=1&page=2"
         },
         {
-          "acceso_recuperado": true,
           "categoria": "RED",
           "causa": "TIEMPO_ESPERA",
           "error": "<urlopen error timed out>",
@@ -1696,10 +986,30 @@
           "restriccion_acceso_comprobada": false,
           "timeout": true,
           "tipo": "URLError",
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=8"
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=12&anioApertura%5B0%5D=2026&verTipo=2"
         },
         {
-          "acceso_recuperado": true,
+          "categoria": "RED",
+          "causa": "TIEMPO_ESPERA",
+          "error": "<urlopen error timed out>",
+          "permanencia": "NO_DETERMINADA",
+          "reintento_diferido": true,
+          "restriccion_acceso_comprobada": false,
+          "timeout": true,
+          "tipo": "URLError",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=12&anioApertura%5B0%5D=2026&verTipo=5"
+        },
+        {
+          "categoria": "RED",
+          "causa": "TIEMPO_ESPERA",
+          "error": "<urlopen error timed out>",
+          "permanencia": "NO_DETERMINADA",
+          "restriccion_acceso_comprobada": false,
+          "timeout": true,
+          "tipo": "URLError",
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=12&anioApertura%5B0%5D=2026&verTipo=5"
+        },
+        {
           "categoria": "RED",
           "causa": "TIEMPO_ESPERA",
           "error": "<urlopen error timed out>",
@@ -1715,42 +1025,26 @@
           "causa": "TIEMPO_ESPERA",
           "error": "<urlopen error timed out>",
           "permanencia": "NO_DETERMINADA",
-          "reintento_diferido": true,
           "restriccion_acceso_comprobada": false,
           "timeout": true,
           "tipo": "URLError",
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=1&recomendada=apertura&tipoRecomendada=5"
+          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=2&recomendada=apertura&tipoRecomendada=5"
         },
         {
-          "categoria": "RED",
-          "causa": "TIEMPO_ESPERA",
-          "error": "<urlopen error timed out>",
-          "permanencia": "NO_DETERMINADA",
-          "reintento_diferido": true,
+          "categoria": "EXTRACCION",
+          "error": "El recorrido no alcanza el total publicado por el portal; no se declara cobertura completa",
+          "por_tipo": {
+            "compra agil": {
+              "extraidas": 21,
+              "publicadas": 67
+            }
+          },
+          "timeout": false,
+          "tipo": "ConteoRosarioIncompleto",
+          "url": "https://www.rosario.gob.ar/inicio/compras-y-licitaciones",
+          "causa": "ERROR_EXTRACCION",
           "restriccion_acceso_comprobada": false,
-          "timeout": true,
-          "tipo": "URLError",
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5"
-        },
-        {
-          "categoria": "RED",
-          "causa": "TIEMPO_ESPERA",
-          "error": "<urlopen error timed out>",
-          "permanencia": "NO_DETERMINADA",
-          "restriccion_acceso_comprobada": false,
-          "timeout": true,
-          "tipo": "URLError",
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=1&recomendada=apertura&tipoRecomendada=5"
-        },
-        {
-          "categoria": "RED",
-          "causa": "TIEMPO_ESPERA",
-          "error": "<urlopen error timed out>",
-          "permanencia": "NO_DETERMINADA",
-          "restriccion_acceso_comprobada": false,
-          "timeout": true,
-          "tipo": "URLError",
-          "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5"
+          "permanencia": "NO_DETERMINADA"
         }
       ],
       "consultada_esta_corrida": true
@@ -1774,7 +1068,7 @@
       "organismo": "Gobierno de Timbúes",
       "provincia": "Santa Fe",
       "localidad": "Timbúes",
-      "procedimientos": 179,
+      "procedimientos": 181,
       "abiertas": 0,
       "proximas_a_vencer": 0,
       "pagos_verificados": 1,
@@ -1895,18 +1189,18 @@
       "pagos_verificados": 0,
       "unificaciones_revision": 0,
       "url": "https://www.junin.gob.ar/servicio/licitaciones-y-concursos",
-      "estado_anterior": "PARCIAL",
-      "estado_actual": "BLOQUEADA",
+      "estado_anterior": "BLOQUEADA",
+      "estado_actual": "PARCIAL",
       "errores": [
         {
           "categoria": "RED",
-          "causa": "TIEMPO_ESPERA",
-          "error": "<urlopen error timed out>",
-          "permanencia": "NO_DETERMINADA",
-          "restriccion_acceso_comprobada": false,
+          "error": "Plazo agotado; se conserva lo extraído",
+          "fase": "DESCARGA",
           "timeout": true,
-          "tipo": "URLError",
-          "url": "https://www.junin.gob.ar/servicio/licitaciones-y-concursos"
+          "tipo": "TIEMPO_FUENTE",
+          "causa": "TIEMPO_ESPERA",
+          "restriccion_acceso_comprobada": false,
+          "permanencia": "NO_DETERMINADA"
         }
       ],
       "consultada_esta_corrida": true
@@ -1991,7 +1285,7 @@
       "pagos_verificados": 0,
       "unificaciones_revision": 0,
       "url": "https://cafesg.gob.ar/cafesg2/licitaciones/",
-      "estado_anterior": "BLOQUEADA",
+      "estado_anterior": "OPERATIVA",
       "estado_actual": "OPERATIVA",
       "errores": [],
       "consultada_esta_corrida": true
@@ -2015,10 +1309,10 @@
       "organismo": "Municipalidad de Crespo",
       "provincia": "Entre Ríos",
       "localidad": "Crespo",
-      "procedimientos": 695,
+      "procedimientos": 700,
       "abiertas": 0,
       "proximas_a_vencer": 0,
-      "pagos_verificados": 1,
+      "pagos_verificados": 4,
       "unificaciones_revision": 0,
       "url": "https://municrespo.gov.ar/digesto/consulta.php?s=consulta",
       "estado_anterior": "PARCIAL",
@@ -2860,46 +2154,6 @@
           "url": "https://armstrong.gov.ar/index.php/licitaciones/2025?format=feed&type=rss"
         },
         {
-          "categoria": "EXTRACCION",
-          "causa": "ERROR_EXTRACCION",
-          "error": "Formato de documento no admitido: application/atom+xml; charset=utf-8",
-          "permanencia": "NO_DETERMINADA",
-          "restriccion_acceso_comprobada": false,
-          "timeout": false,
-          "tipo": "ValueError",
-          "url": "https://armstrong.gov.ar/index.php/licitaciones/2024?format=feed&type=atom"
-        },
-        {
-          "categoria": "EXTRACCION",
-          "causa": "ERROR_EXTRACCION",
-          "error": "Formato de documento no admitido: application/rss+xml; charset=utf-8",
-          "permanencia": "NO_DETERMINADA",
-          "restriccion_acceso_comprobada": false,
-          "timeout": false,
-          "tipo": "ValueError",
-          "url": "https://armstrong.gov.ar/index.php/licitaciones/2024?format=feed&type=rss"
-        },
-        {
-          "categoria": "EXTRACCION",
-          "causa": "ERROR_EXTRACCION",
-          "error": "Formato de documento no admitido: application/atom+xml; charset=utf-8",
-          "permanencia": "NO_DETERMINADA",
-          "restriccion_acceso_comprobada": false,
-          "timeout": false,
-          "tipo": "ValueError",
-          "url": "https://armstrong.gov.ar/index.php/licitaciones/2023?format=feed&type=atom"
-        },
-        {
-          "categoria": "EXTRACCION",
-          "causa": "ERROR_EXTRACCION",
-          "error": "Formato de documento no admitido: application/rss+xml; charset=utf-8",
-          "permanencia": "NO_DETERMINADA",
-          "restriccion_acceso_comprobada": false,
-          "timeout": false,
-          "tipo": "ValueError",
-          "url": "https://armstrong.gov.ar/index.php/licitaciones/2023?format=feed&type=rss"
-        },
-        {
           "categoria": "RED",
           "error": "Plazo agotado; se conserva lo extraído",
           "fase": "DESCARGA",
@@ -2931,10 +2185,10 @@
       "organismo": "Municipalidad de Crespo",
       "provincia": "Entre Ríos",
       "localidad": "Crespo",
-      "procedimientos": 6,
+      "procedimientos": 4,
       "abiertas": 0,
       "proximas_a_vencer": 0,
-      "pagos_verificados": 6,
+      "pagos_verificados": 4,
       "unificaciones_revision": 0,
       "url": "https://www.crespo.gob.ar/licitaciones-privadas-2026/",
       "estado_anterior": "OPERATIVA",
@@ -2988,8 +2242,8 @@
       "errores": [
         {
           "categoria": "RED",
-          "causa": "ERROR_CONEXION_TLS",
-          "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>",
+          "causa": "ERROR_RED_POR_CONFIRMAR",
+          "error": "<urlopen error [Errno 104] Connection reset by peer>",
           "permanencia": "NO_DETERMINADA",
           "restriccion_acceso_comprobada": false,
           "timeout": false,
@@ -3262,11 +2516,26 @@
       "errores": [
         {
           "categoria": "RED",
-          "error": "Plazo agotado; se conserva lo extraído",
-          "fase": "DESCARGA",
-          "timeout": true,
-          "tipo": "TIEMPO_FUENTE",
-          "causa": "TIEMPO_ESPERA",
+          "causa": "LIMITE_SOLICITUDES_TEMPORAL",
+          "error": "HTTP Error 429: Too Many Requests",
+          "http_status": 429,
+          "permanencia": "NO_DETERMINADA",
+          "restriccion_acceso_comprobada": false,
+          "timeout": false,
+          "tipo": "HTTPError",
+          "url": "https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones&tags=Licitaciones&tags=Licitacion&tags=licitacion"
+        },
+        {
+          "categoria": "EXTRACCION",
+          "error": "Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso",
+          "publicaciones": [
+            "54fb0be29330d12c52b333ad3151df4e2d1b6b4cd803c827ee2cf3b45a54e6cd",
+            "5c6e75cd34a7b7bea4a1f952ec6175ca757f0c3ef40f0610e8d301a7f5c903be"
+          ],
+          "timeout": false,
+          "tipo": "DetalleIncompleto",
+          "url": "https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones",
+          "causa": "ERROR_EXTRACCION",
           "restriccion_acceso_comprobada": false,
           "permanencia": "NO_DETERMINADA"
         }
@@ -3298,7 +2567,7 @@
       "pagos_verificados": 0,
       "unificaciones_revision": 0,
       "url": "https://arrecifes.gob.ar/informacion-publica/boletin-oficial/",
-      "estado_anterior": "PENDIENTE",
+      "estado_anterior": "PARCIAL",
       "estado_actual": "PARCIAL",
       "errores": [
         {
@@ -3310,7 +2579,7 @@
           "restriccion_acceso_comprobada": false,
           "timeout": false,
           "tipo": "HTTPError",
-          "url": "https://arrecifes.gob.ar/llamado-a-licitacion-publica/feed/"
+          "url": "https://arrecifes.gob.ar/llamado-a-licitacion-publica/"
         }
       ],
       "consultada_esta_corrida": true
@@ -3380,9 +2649,9 @@
       "estado_actual": "PARCIAL",
       "errores": [
         {
-          "categoria": "RED",
+          "categoria": "PRESUPUESTO",
           "error": "Plazo agotado; se conserva lo extraído",
-          "fase": "DESCARGA",
+          "fase": "PAGINA_FINALIZADA",
           "timeout": true,
           "tipo": "TIEMPO_FUENTE",
           "causa": "TIEMPO_ESPERA",
@@ -3503,7 +2772,7 @@
       "pagos_verificados": 0,
       "unificaciones_revision": 0,
       "url": "https://sastreciudad.gob.ar/intendencia/",
-      "estado_anterior": "OPERATIVA",
+      "estado_anterior": "PARCIAL",
       "estado_actual": "PARCIAL",
       "errores": [
         {
@@ -4125,14 +3394,14 @@
           "url": "https://perez.opendata.junar.com/datasets/199847-listados-de-licitaciones-publicas-2024.download/"
         },
         {
-          "categoria": "RED",
-          "causa": "TIEMPO_ESPERA",
-          "error": "The read operation timed out",
+          "categoria": "EXTRACCION",
+          "causa": "ERROR_EXTRACCION",
+          "error": "Redirección fuera de dominios oficiales declarados",
           "permanencia": "NO_DETERMINADA",
           "restriccion_acceso_comprobada": false,
-          "timeout": true,
-          "tipo": "TimeoutError",
-          "url": "http://perez.opendata.junar.com/dashboards/21665/licitaciones-2023/"
+          "timeout": false,
+          "tipo": "ValueError",
+          "url": "https://perez.opendata.junar.com/datasets/199259-listados-de-licitaciones-publicas-2023.download/"
         },
         {
           "categoria": "RED",
@@ -4349,6 +3618,16 @@
           "restriccion_acceso_comprobada": false,
           "timeout": true,
           "tipo": "URLError",
+          "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-23licitaciones.html"
+        },
+        {
+          "categoria": "RED",
+          "causa": "TIEMPO_ESPERA",
+          "error": "<urlopen error timed out>",
+          "permanencia": "NO_DETERMINADA",
+          "restriccion_acceso_comprobada": false,
+          "timeout": true,
+          "tipo": "URLError",
           "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-20licitaciones.html"
         },
         {
@@ -4379,16 +3658,6 @@
           "restriccion_acceso_comprobada": false,
           "timeout": true,
           "tipo": "URLError",
-          "url": "https://www.santafe.gov.ar/boletinoficial/ver.php?seccion=2026%2F2026-11-17licitaciones.html"
-        },
-        {
-          "categoria": "RED",
-          "causa": "TIEMPO_ESPERA",
-          "error": "<urlopen error timed out>",
-          "permanencia": "NO_DETERMINADA",
-          "restriccion_acceso_comprobada": false,
-          "timeout": true,
-          "tipo": "URLError",
           "url": "https://www.santafe.gov.ar/boletinoficial/"
         },
         {
@@ -4399,7 +3668,7 @@
           "restriccion_acceso_comprobada": false,
           "timeout": true,
           "tipo": "URLError",
-          "url": "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/pdf/2026/11/BO20112026.pdf"
+          "url": "https://www.santafe.gov.ar/boletinoficial/recursos/boletines/pdf/2026/11/BO23112026.pdf"
         }
       ],
       "consultada_esta_corrida": true
@@ -4412,7 +3681,7 @@
       "localidad": "Santo Tomé",
       "provincia": "Santa Fe",
       "url": "https://www.santotome.gob.ar/ciudadania/Informacion_Publica_y_Transparencia",
-      "estado_anterior": "PENDIENTE",
+      "estado_anterior": "BLOQUEADA",
       "estado_actual": "BLOQUEADA",
       "errores": [
         {
@@ -4491,12 +3760,12 @@
   ],
   "estado_ejecucion": "COMPLETA_CON_INCIDENCIAS",
   "cobertura_estricta": {
-    "PARCIAL": 32,
-    "BLOQUEADA": 16,
+    "PARCIAL": 33,
+    "BLOQUEADA": 15,
     "OPERATIVA": 50,
     "PENDIENTE": 8,
     "SIN_PUBLICACIONES_CONFIRMADO": 1
   },
-  "abiertas": 200,
-  "proximas_a_vencer": 136
+  "abiertas": 198,
+  "proximas_a_vencer": 152
 }
