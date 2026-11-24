@@ -1,7 +1,1115 @@
 {
-  "fecha": "2026-11-23T19:38:31.482042-03:00",
-  "total": 21,
+  "fecha": "2026-11-24T18:10:31.411068-03:00",
+  "total": 23,
   "oportunidades": [
+    {
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "Descargar PDF",
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2543.pdf"
+        }
+      ],
+      "enlace_pliego": null,
+      "evento_publicado": null,
+      "evidencia_url": "https://viale.gob.ar/wp-content/uploads/2026/11/2543.pdf",
+      "evidencias_campos": {
+        "fecha_limite_presentacion": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2543.pdf",
+          "texto": "25/11/2026 a las 10.00"
+        },
+        "fecha_publicacion": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2543.pdf",
+          "texto": "2026-11-24"
+        },
+        "modalidad_presentacion": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2543.pdf",
+          "texto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2543\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     25/11/2026 A Las 10.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                           Objeto : REPARAR CAJA VOLCADORA MERCEDES BENZ DOMINIO\n                           WEB : www.viale.gob.ar\n                                                                                                            AYO712\n\n                                                                                                                                           Viale 19 de noviembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                                                 Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : -\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario       Precio Total\n\n   0          1,00                U.             CAMBIO DE PISO, CHAPAS LATERALES Y REPARAR PUERTAS\n                                                 LATERALES Y TRASERA\n\n   1          1,00                 U             ARENADO Y PINTADO COMPLETO\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f"
+        },
+        "numero_procedimiento": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2543.pdf",
+          "texto": "cotejo de precios 2543"
+        },
+        "tipo_procedimiento": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2543.pdf",
+          "texto": "cotejo de precios 2543"
+        }
+      },
+      "fecha_apertura": null,
+      "fecha_apertura_texto": null,
+      "fecha_limite_presentacion": "2026-11-25",
+      "fecha_limite_presentacion_texto": "25/11/2026 a las 10.00",
+      "fecha_publicacion": "2026-11-24",
+      "fecha_publicacion_texto": "2026-11-24",
+      "fuente": "https://viale.gob.ar/pliegos/",
+      "fuentes_observadas": [
+        "https://viale.gob.ar/pliegos/"
+      ],
+      "hora_apertura": null,
+      "hora_limite_presentacion": "10:00",
+      "localidad": "Viale",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_oficial_sin_interpretar": "2543",
+      "numero_procedimiento": "2543",
+      "objeto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2543\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     25/11/2026 A Las 10.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                           Objeto : REPARAR CAJA VOLCADORA MERCEDES BENZ DOMINIO\n                           WEB : www.viale.gob.ar\n                                                                                                            AYO712\n\n                                                                                                                                           Viale 19 de noviembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                                                 Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : -\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario       Precio Total\n\n   0          1,00                U.             CAMBIO DE PISO, CHAPAS LATERALES Y REPARAR PUERTAS\n                                                 LATERALES Y TRASERA\n\n   1          1,00                 U             ARENADO Y PINTADO COMPLETO\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f",
+      "organismo": "Municipalidad de Viale",
+      "pago_evidencias": [
+        {
+          "acreditacion_inmediata_comprobada": false,
+          "anticipo_publicado": false,
+          "categoria": "CONTADO",
+          "cita": "CONDICIONES DE PAGO : - CONTADO : - FINANCIADO :",
+          "clausula": null,
+          "contado_mencionado": true,
+          "contra_entrega_mencionado": false,
+          "direccion": "NO_ESPECIFICADA",
+          "etiqueta": "Pago contado",
+          "facturacion_parcial": false,
+          "hitos_inicio": [],
+          "metodo_extraccion": "SECCION_DOCUMENTO",
+          "pagina": null,
+          "pagos_parciales": false,
+          "plazos_dias": [],
+          "prioritario": true,
+          "sha256": "ec31b260b3b992007aedede532b229ab98f7ca15efbeac099da0f564dda6c122",
+          "unidades_dias": [],
+          "url_documento": "https://viale.gob.ar/wp-content/uploads/2026/11/2543.pdf",
+          "version_analizador": 15
+        }
+      ],
+      "presupuesto": null,
+      "procedimiento": "cotejo de precios 2543",
+      "provincia": "Entre Ríos",
+      "rango_evidencia": 3,
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "cotejo de precios",
+      "titulo": "Horario de atención de Lunes a Viernes: 6.30 hs a 12.00 hs Noticias Publicaciones Gobierno Autoridades Secretarías y Direcciones Secretaría de Gobierno Secretaría de Ingresos Públicos, Estadísticas y Modernización Subsecretaría de cultura y educación Secretaría de Desarrollo Social y Humano Subsecretaría de la mujer Subsecretaría de Obras Sanitarias Subsecretaría de Desarrollo Local y Productivo Dirección de Deportes HCD Autoridades HCD Transparente Comunicados Libro de Visitas Trámites y Servicios Atención Ciudadana Boletín Oficial Bromatologia Centro de Salud Compras Cuentas Claras Cultura y Educación Defensa Al Consumidor Emprendedurismo Expedientes Licencias de Conducir Punto Digital Recaudaciones Obras Sanitarias Subsecretaría de Servicios Públicos Sistema de ahorro previo para obras de infraestructura Ciudad Turismo Parque Industrial Recaudaciones Cotejo de Precios N° 2543 – Reparar Caja Volcadora Mercedes Benz Dominio 24 noviembre, 2026 | In Pliegos | By pliegos Descargar PDF Guía Telefónica y Servicios de la Ciudad Bomberos100 Policía101 Emergencias Médicas107 Mesa de Entrada PalacioInt. 101 Reclamos CentralInt. 111 Honorable Concejo Delib.Int. 113 Juzgado de FaltasInt. 142 Guardia UrbanaInt. 120 Centro de MonitoreoInt. 121 Centro Salud «R. Carrillo»Int. 119 Hogar «Madre Teresa»Int. 127 Sec. Desarrollo SocialInt. 129 Subsecretaría de la MujerInt. 130 ANAFInt. 131 Desarrollo Local y Prod.Int. 137 Defensa del ConsumidorInt. 136 Licencias de ConducirInt. 132 Cultura y EducaciónInt. 134 Dirección de DeportesInt. 135 Obras SanitariasInt. 141 Servicios PúblicosInt. 125 ComprasInt. 115 CatastroInt. 116 RecaudacionesInt. 117 Bromatología y AmbienteInt. 143 Obras Públicas (Tinglado)Int. 144 Guardias y Urgencias fuera de horario administrativo: Salud: 3434151615 Guardia Urbana/Monitoreo: 3434676828 Subsec. Mujer: 3434055981 ANAF: 3434524860 Licencias: 3434283457 Reclamos: 3434282868 Diseño y desarrollo por AV consultora + Minds",
+      "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2543.pdf",
+      "urls_publicacion": [
+        "https://viale.gob.ar/cotejo-de-precios-n-2543-reparar-caja-volcadora-mercedes-benz-dominio/",
+        "https://viale.gob.ar/pliegos/",
+        "https://viale.gob.ar/wp-content/uploads/2026/11/2543.pdf"
+      ],
+      "pago": {
+        "estado": "VERIFICADO",
+        "clasificacion": "CONTADO",
+        "etiqueta": "Pago contado",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "unidades_dias": [],
+        "direccion": "NO_ESPECIFICADA",
+        "documento_respaldo": "https://viale.gob.ar/wp-content/uploads/2026/11/2543.pdf",
+        "documentos_respaldo": [
+          "https://viale.gob.ar/wp-content/uploads/2026/11/2543.pdf"
+        ],
+        "evidencias": [
+          {
+            "acreditacion_inmediata_comprobada": false,
+            "anticipo_publicado": false,
+            "categoria": "CONTADO",
+            "cita": "CONDICIONES DE PAGO : - CONTADO : - FINANCIADO :",
+            "clausula": null,
+            "contado_mencionado": true,
+            "contra_entrega_mencionado": false,
+            "direccion": "NO_ESPECIFICADA",
+            "etiqueta": "Pago contado",
+            "facturacion_parcial": false,
+            "hitos_inicio": [],
+            "metodo_extraccion": "SECCION_DOCUMENTO",
+            "pagina": null,
+            "pagos_parciales": false,
+            "plazos_dias": [],
+            "prioritario": true,
+            "sha256": "ec31b260b3b992007aedede532b229ab98f7ca15efbeac099da0f564dda6c122",
+            "unidades_dias": [],
+            "url_documento": "https://viale.gob.ar/wp-content/uploads/2026/11/2543.pdf",
+            "version_analizador": 15
+          }
+        ],
+        "prioritario": true,
+        "motivo": null
+      },
+      "condiciones_pago": "Pago contado",
+      "enlace_condiciones_pago": "https://viale.gob.ar/wp-content/uploads/2026/11/2543.pdf",
+      "pago_prioritario": true,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "cotejo de precios VIALE-2543",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": null,
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": "2026-11-25T10:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-25",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_apertura",
+        "enlace_pliego"
+      ],
+      "id": "86bea9c240babed40a692ff5448888854a972af0fab429df850cd4143d97a541",
+      "primera_deteccion": "2026-11-24T18:10:31.411068-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "86bea9c240babed40a692ff5448888854a972af0fab429df850cd4143d97a541"
+      ],
+      "variantes_historial": [
+        {
+          "id": "86bea9c240babed40a692ff5448888854a972af0fab429df850cd4143d97a541",
+          "numero_procedimiento": "2543",
+          "objeto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2543\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     25/11/2026 A Las 10.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                           Objeto : REPARAR CAJA VOLCADORA MERCEDES BENZ DOMINIO\n                           WEB : www.viale.gob.ar\n                                                                                                            AYO712\n\n                                                                                                                                           Viale 19 de noviembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                                                 Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : -\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario       Precio Total\n\n   0          1,00                U.             CAMBIO DE PISO, CHAPAS LATERALES Y REPARAR PUERTAS\n                                                 LATERALES Y TRASERA\n\n   1          1,00                 U             ARENADO Y PINTADO COMPLETO\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f",
+          "fecha_apertura": null,
+          "fecha_limite_presentacion": "2026-11-25",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2543.pdf",
+          "documentos": [
+            {
+              "titulo": "Descargar PDF",
+              "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2543.pdf"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVO_CONFIRMADO",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-25T10:00:00-03:00"
+    },
+    {
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "Descargar PDF",
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2544.pdf"
+        }
+      ],
+      "enlace_pliego": null,
+      "evento_publicado": null,
+      "evidencia_url": "https://viale.gob.ar/wp-content/uploads/2026/11/2544.pdf",
+      "evidencias_campos": {
+        "fecha_limite_presentacion": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2544.pdf",
+          "texto": "26/11/2026 a las 10.00"
+        },
+        "fecha_publicacion": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2544.pdf",
+          "texto": "2026-11-24"
+        },
+        "modalidad_presentacion": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2544.pdf",
+          "texto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2544\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     26/11/2026 A Las 10.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                             Objeto : REPARACION Y MANTENIMIENTO PISCINA MUNICIPAL\n                           WEB : www.viale.gob.ar\n\n\n\n                                                                                                                                           Viale 24 de noviembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                                                 Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : -\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario       Precio Total\n\n   0          1,00                  -            EXTRACCION DE GRAVA FILTRANTE Y REPOSICION\n\n   1          2,00                U.             CAMBIO DE VALVULAS ESFERICAS Y REPARACION DE COLECTOR DE\n                                                 ASPIRACION DE BOMBA\n\n   2          1,00                U.             DESINTALAR BOMBA DE FILTRO DE PISCINA, REACONDICIONAR Y\n                                                 VOLVER A INSTALAR\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f"
+        },
+        "numero_procedimiento": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2544.pdf",
+          "texto": "cotejo de precios 2544"
+        },
+        "tipo_procedimiento": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2544.pdf",
+          "texto": "cotejo de precios 2544"
+        }
+      },
+      "fecha_apertura": null,
+      "fecha_apertura_texto": null,
+      "fecha_limite_presentacion": "2026-11-26",
+      "fecha_limite_presentacion_texto": "26/11/2026 a las 10.00",
+      "fecha_publicacion": "2026-11-24",
+      "fecha_publicacion_texto": "2026-11-24",
+      "fuente": "https://viale.gob.ar/pliegos/",
+      "fuentes_observadas": [
+        "https://viale.gob.ar/pliegos/"
+      ],
+      "hora_apertura": null,
+      "hora_limite_presentacion": "10:00",
+      "localidad": "Viale",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_oficial_sin_interpretar": "2544",
+      "numero_procedimiento": "2544",
+      "objeto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2544\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     26/11/2026 A Las 10.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                             Objeto : REPARACION Y MANTENIMIENTO PISCINA MUNICIPAL\n                           WEB : www.viale.gob.ar\n\n\n\n                                                                                                                                           Viale 24 de noviembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                                                 Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : -\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario       Precio Total\n\n   0          1,00                  -            EXTRACCION DE GRAVA FILTRANTE Y REPOSICION\n\n   1          2,00                U.             CAMBIO DE VALVULAS ESFERICAS Y REPARACION DE COLECTOR DE\n                                                 ASPIRACION DE BOMBA\n\n   2          1,00                U.             DESINTALAR BOMBA DE FILTRO DE PISCINA, REACONDICIONAR Y\n                                                 VOLVER A INSTALAR\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f",
+      "organismo": "Municipalidad de Viale",
+      "pago_evidencias": [
+        {
+          "acreditacion_inmediata_comprobada": false,
+          "anticipo_publicado": false,
+          "categoria": "CONTADO",
+          "cita": "CONDICIONES DE PAGO : - CONTADO : - FINANCIADO :",
+          "clausula": null,
+          "contado_mencionado": true,
+          "contra_entrega_mencionado": false,
+          "direccion": "NO_ESPECIFICADA",
+          "etiqueta": "Pago contado",
+          "facturacion_parcial": false,
+          "hitos_inicio": [],
+          "metodo_extraccion": "SECCION_DOCUMENTO",
+          "pagina": null,
+          "pagos_parciales": false,
+          "plazos_dias": [],
+          "prioritario": true,
+          "sha256": "791262e40efaf4026a455b8e9ddfaf8ef184e9149fc7dfdf4597095aeb1ae6c5",
+          "unidades_dias": [],
+          "url_documento": "https://viale.gob.ar/wp-content/uploads/2026/11/2544.pdf",
+          "version_analizador": 15
+        }
+      ],
+      "presupuesto": null,
+      "procedimiento": "cotejo de precios 2544",
+      "provincia": "Entre Ríos",
+      "rango_evidencia": 3,
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "cotejo de precios",
+      "titulo": "Horario de atención de Lunes a Viernes: 6.30 hs a 12.00 hs Noticias Publicaciones Gobierno Autoridades Secretarías y Direcciones Secretaría de Gobierno Secretaría de Ingresos Públicos, Estadísticas y Modernización Subsecretaría de cultura y educación Secretaría de Desarrollo Social y Humano Subsecretaría de la mujer Subsecretaría de Obras Sanitarias Subsecretaría de Desarrollo Local y Productivo Dirección de Deportes HCD Autoridades HCD Transparente Comunicados Libro de Visitas Trámites y Servicios Atención Ciudadana Boletín Oficial Bromatologia Centro de Salud Compras Cuentas Claras Cultura y Educación Defensa Al Consumidor Emprendedurismo Expedientes Licencias de Conducir Punto Digital Recaudaciones Obras Sanitarias Subsecretaría de Servicios Públicos Sistema de ahorro previo para obras de infraestructura Ciudad Turismo Parque Industrial Recaudaciones Cotejo de Precios N° 2544 – Reparacion y Mantenimiento Piscina Municipal 24 noviembre, 2026 | In Pliegos | By pliegos Descargar PDF Guía Telefónica y Servicios de la Ciudad Bomberos100 Policía101 Emergencias Médicas107 Mesa de Entrada PalacioInt. 101 Reclamos CentralInt. 111 Honorable Concejo Delib.Int. 113 Juzgado de FaltasInt. 142 Guardia UrbanaInt. 120 Centro de MonitoreoInt. 121 Centro Salud «R. Carrillo»Int. 119 Hogar «Madre Teresa»Int. 127 Sec. Desarrollo SocialInt. 129 Subsecretaría de la MujerInt. 130 ANAFInt. 131 Desarrollo Local y Prod.Int. 137 Defensa del ConsumidorInt. 136 Licencias de ConducirInt. 132 Cultura y EducaciónInt. 134 Dirección de DeportesInt. 135 Obras SanitariasInt. 141 Servicios PúblicosInt. 125 ComprasInt. 115 CatastroInt. 116 RecaudacionesInt. 117 Bromatología y AmbienteInt. 143 Obras Públicas (Tinglado)Int. 144 Guardias y Urgencias fuera de horario administrativo: Salud: 3434151615 Guardia Urbana/Monitoreo: 3434676828 Subsec. Mujer: 3434055981 ANAF: 3434524860 Licencias: 3434283457 Reclamos: 3434282868 Diseño y desarrollo por AV consultora + Minds",
+      "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2544.pdf",
+      "urls_publicacion": [
+        "https://viale.gob.ar/cotejo-de-precios-n-2544-reparacion-y-mantenimiento-piscina-municipal/",
+        "https://viale.gob.ar/pliegos/",
+        "https://viale.gob.ar/wp-content/uploads/2026/11/2544.pdf"
+      ],
+      "pago": {
+        "estado": "VERIFICADO",
+        "clasificacion": "CONTADO",
+        "etiqueta": "Pago contado",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "unidades_dias": [],
+        "direccion": "NO_ESPECIFICADA",
+        "documento_respaldo": "https://viale.gob.ar/wp-content/uploads/2026/11/2544.pdf",
+        "documentos_respaldo": [
+          "https://viale.gob.ar/wp-content/uploads/2026/11/2544.pdf"
+        ],
+        "evidencias": [
+          {
+            "acreditacion_inmediata_comprobada": false,
+            "anticipo_publicado": false,
+            "categoria": "CONTADO",
+            "cita": "CONDICIONES DE PAGO : - CONTADO : - FINANCIADO :",
+            "clausula": null,
+            "contado_mencionado": true,
+            "contra_entrega_mencionado": false,
+            "direccion": "NO_ESPECIFICADA",
+            "etiqueta": "Pago contado",
+            "facturacion_parcial": false,
+            "hitos_inicio": [],
+            "metodo_extraccion": "SECCION_DOCUMENTO",
+            "pagina": null,
+            "pagos_parciales": false,
+            "plazos_dias": [],
+            "prioritario": true,
+            "sha256": "791262e40efaf4026a455b8e9ddfaf8ef184e9149fc7dfdf4597095aeb1ae6c5",
+            "unidades_dias": [],
+            "url_documento": "https://viale.gob.ar/wp-content/uploads/2026/11/2544.pdf",
+            "version_analizador": 15
+          }
+        ],
+        "prioritario": true,
+        "motivo": null
+      },
+      "condiciones_pago": "Pago contado",
+      "enlace_condiciones_pago": "https://viale.gob.ar/wp-content/uploads/2026/11/2544.pdf",
+      "pago_prioritario": true,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "cotejo de precios VIALE-2544",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": null,
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": "2026-11-26T10:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-26",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_apertura",
+        "enlace_pliego"
+      ],
+      "id": "e4f8524dae83a5fdfe114a0a77cd2db98557974d6e0b9029cb458efdc84ee29b",
+      "primera_deteccion": "2026-11-24T18:10:31.411068-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "e4f8524dae83a5fdfe114a0a77cd2db98557974d6e0b9029cb458efdc84ee29b"
+      ],
+      "variantes_historial": [
+        {
+          "id": "e4f8524dae83a5fdfe114a0a77cd2db98557974d6e0b9029cb458efdc84ee29b",
+          "numero_procedimiento": "2544",
+          "objeto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2544\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     26/11/2026 A Las 10.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                             Objeto : REPARACION Y MANTENIMIENTO PISCINA MUNICIPAL\n                           WEB : www.viale.gob.ar\n\n\n\n                                                                                                                                           Viale 24 de noviembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                                                 Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : -\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario       Precio Total\n\n   0          1,00                  -            EXTRACCION DE GRAVA FILTRANTE Y REPOSICION\n\n   1          2,00                U.             CAMBIO DE VALVULAS ESFERICAS Y REPARACION DE COLECTOR DE\n                                                 ASPIRACION DE BOMBA\n\n   2          1,00                U.             DESINTALAR BOMBA DE FILTRO DE PISCINA, REACONDICIONAR Y\n                                                 VOLVER A INSTALAR\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f",
+          "fecha_apertura": null,
+          "fecha_limite_presentacion": "2026-11-26",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2544.pdf",
+          "documentos": [
+            {
+              "titulo": "Descargar PDF",
+              "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2544.pdf"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVO_CONFIRMADO",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-26T10:00:00-03:00"
+    },
+    {
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "Descargar PDF",
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2545.pdf"
+        }
+      ],
+      "enlace_pliego": null,
+      "evento_publicado": null,
+      "evidencia_url": "https://viale.gob.ar/wp-content/uploads/2026/11/2545.pdf",
+      "evidencias_campos": {
+        "fecha_limite_presentacion": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2545.pdf",
+          "texto": "27/11/2026 a las 10.00"
+        },
+        "fecha_publicacion": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2545.pdf",
+          "texto": "2026-11-24"
+        },
+        "modalidad_presentacion": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2545.pdf",
+          "texto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2545\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     27/11/2026 A Las 10.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                                Objeto : ADQ. DE LUMINARIAS PARA ALUMBRADO PUBLICO\n                           WEB : www.viale.gob.ar\n\n\n\n                                                                                                                                           Viale 24 de noviembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                             Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : POR FAVOR, INCLUIR EN EL PRESUPUESTO EL COSTO DE ENVÍO DETALLADO O INTEGRADO EN EL\n    PRECIO FINAL\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario       Precio Total\n\n   0         20,00                U.             LUMINARIAS DE 180W\n\n   1         50,00                U.             LUMINARIAS DE 120W\n\n   2         10,00                U.             LUMINARIAS DE PLAZA 100 O 120W.\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f"
+        },
+        "numero_procedimiento": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2545.pdf",
+          "texto": "cotejo de precios 2545"
+        },
+        "tipo_procedimiento": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2545.pdf",
+          "texto": "cotejo de precios 2545"
+        }
+      },
+      "fecha_apertura": null,
+      "fecha_apertura_texto": null,
+      "fecha_limite_presentacion": "2026-11-27",
+      "fecha_limite_presentacion_texto": "27/11/2026 a las 10.00",
+      "fecha_publicacion": "2026-11-24",
+      "fecha_publicacion_texto": "2026-11-24",
+      "fuente": "https://viale.gob.ar/pliegos/",
+      "fuentes_observadas": [
+        "https://viale.gob.ar/pliegos/"
+      ],
+      "hora_apertura": null,
+      "hora_limite_presentacion": "10:00",
+      "localidad": "Viale",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_oficial_sin_interpretar": "2545",
+      "numero_procedimiento": "2545",
+      "objeto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2545\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     27/11/2026 A Las 10.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                                Objeto : ADQ. DE LUMINARIAS PARA ALUMBRADO PUBLICO\n                           WEB : www.viale.gob.ar\n\n\n\n                                                                                                                                           Viale 24 de noviembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                             Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : POR FAVOR, INCLUIR EN EL PRESUPUESTO EL COSTO DE ENVÍO DETALLADO O INTEGRADO EN EL\n    PRECIO FINAL\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario       Precio Total\n\n   0         20,00                U.             LUMINARIAS DE 180W\n\n   1         50,00                U.             LUMINARIAS DE 120W\n\n   2         10,00                U.             LUMINARIAS DE PLAZA 100 O 120W.\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f",
+      "organismo": "Municipalidad de Viale",
+      "pago_evidencias": [
+        {
+          "acreditacion_inmediata_comprobada": false,
+          "anticipo_publicado": false,
+          "categoria": "CONTADO",
+          "cita": "CONDICIONES DE PAGO : - CONTADO : - FINANCIADO :",
+          "clausula": null,
+          "contado_mencionado": true,
+          "contra_entrega_mencionado": false,
+          "direccion": "NO_ESPECIFICADA",
+          "etiqueta": "Pago contado",
+          "facturacion_parcial": false,
+          "hitos_inicio": [],
+          "metodo_extraccion": "SECCION_DOCUMENTO",
+          "pagina": null,
+          "pagos_parciales": false,
+          "plazos_dias": [],
+          "prioritario": true,
+          "sha256": "0f3f9f86c46083b47705ed256c5f017cee428819334cb0a043261ca5e73d57c6",
+          "unidades_dias": [],
+          "url_documento": "https://viale.gob.ar/wp-content/uploads/2026/11/2545.pdf",
+          "version_analizador": 15
+        }
+      ],
+      "presupuesto": null,
+      "procedimiento": "cotejo de precios 2545",
+      "provincia": "Entre Ríos",
+      "rango_evidencia": 3,
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "cotejo de precios",
+      "titulo": "Horario de atención de Lunes a Viernes: 6.30 hs a 12.00 hs Noticias Publicaciones Gobierno Autoridades Secretarías y Direcciones Secretaría de Gobierno Secretaría de Ingresos Públicos, Estadísticas y Modernización Subsecretaría de cultura y educación Secretaría de Desarrollo Social y Humano Subsecretaría de la mujer Subsecretaría de Obras Sanitarias Subsecretaría de Desarrollo Local y Productivo Dirección de Deportes HCD Autoridades HCD Transparente Comunicados Libro de Visitas Trámites y Servicios Atención Ciudadana Boletín Oficial Bromatologia Centro de Salud Compras Cuentas Claras Cultura y Educación Defensa Al Consumidor Emprendedurismo Expedientes Licencias de Conducir Punto Digital Recaudaciones Obras Sanitarias Subsecretaría de Servicios Públicos Sistema de ahorro previo para obras de infraestructura Ciudad Turismo Parque Industrial Recaudaciones Cotejo de Precios N° 2545 – Adquisición de Luminarias para Alumbrado Publico 24 noviembre, 2026 | In Pliegos | By pliegos Descargar PDF Guía Telefónica y Servicios de la Ciudad Bomberos100 Policía101 Emergencias Médicas107 Mesa de Entrada PalacioInt. 101 Reclamos CentralInt. 111 Honorable Concejo Delib.Int. 113 Juzgado de FaltasInt. 142 Guardia UrbanaInt. 120 Centro de MonitoreoInt. 121 Centro Salud «R. Carrillo»Int. 119 Hogar «Madre Teresa»Int. 127 Sec. Desarrollo SocialInt. 129 Subsecretaría de la MujerInt. 130 ANAFInt. 131 Desarrollo Local y Prod.Int. 137 Defensa del ConsumidorInt. 136 Licencias de ConducirInt. 132 Cultura y EducaciónInt. 134 Dirección de DeportesInt. 135 Obras SanitariasInt. 141 Servicios PúblicosInt. 125 ComprasInt. 115 CatastroInt. 116 RecaudacionesInt. 117 Bromatología y AmbienteInt. 143 Obras Públicas (Tinglado)Int. 144 Guardias y Urgencias fuera de horario administrativo: Salud: 3434151615 Guardia Urbana/Monitoreo: 3434676828 Subsec. Mujer: 3434055981 ANAF: 3434524860 Licencias: 3434283457 Reclamos: 3434282868 Diseño y desarrollo por AV consultora + Minds",
+      "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2545.pdf",
+      "urls_publicacion": [
+        "https://viale.gob.ar/cotejo-de-precios-n-2545-adquisicion-de-luminarias-para-alumbrado-publico/",
+        "https://viale.gob.ar/pliegos/",
+        "https://viale.gob.ar/wp-content/uploads/2026/11/2545.pdf"
+      ],
+      "pago": {
+        "estado": "VERIFICADO",
+        "clasificacion": "CONTADO",
+        "etiqueta": "Pago contado",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "unidades_dias": [],
+        "direccion": "NO_ESPECIFICADA",
+        "documento_respaldo": "https://viale.gob.ar/wp-content/uploads/2026/11/2545.pdf",
+        "documentos_respaldo": [
+          "https://viale.gob.ar/wp-content/uploads/2026/11/2545.pdf"
+        ],
+        "evidencias": [
+          {
+            "acreditacion_inmediata_comprobada": false,
+            "anticipo_publicado": false,
+            "categoria": "CONTADO",
+            "cita": "CONDICIONES DE PAGO : - CONTADO : - FINANCIADO :",
+            "clausula": null,
+            "contado_mencionado": true,
+            "contra_entrega_mencionado": false,
+            "direccion": "NO_ESPECIFICADA",
+            "etiqueta": "Pago contado",
+            "facturacion_parcial": false,
+            "hitos_inicio": [],
+            "metodo_extraccion": "SECCION_DOCUMENTO",
+            "pagina": null,
+            "pagos_parciales": false,
+            "plazos_dias": [],
+            "prioritario": true,
+            "sha256": "0f3f9f86c46083b47705ed256c5f017cee428819334cb0a043261ca5e73d57c6",
+            "unidades_dias": [],
+            "url_documento": "https://viale.gob.ar/wp-content/uploads/2026/11/2545.pdf",
+            "version_analizador": 15
+          }
+        ],
+        "prioritario": true,
+        "motivo": null
+      },
+      "condiciones_pago": "Pago contado",
+      "enlace_condiciones_pago": "https://viale.gob.ar/wp-content/uploads/2026/11/2545.pdf",
+      "pago_prioritario": true,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "cotejo de precios VIALE-2545",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": null,
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": "2026-11-27T10:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-27",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_apertura",
+        "enlace_pliego"
+      ],
+      "id": "8d284872ed0bc0f58fae631085ff30996b37d35f30ed948b40b40851dfd81bfd",
+      "primera_deteccion": "2026-11-24T18:10:31.411068-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "8d284872ed0bc0f58fae631085ff30996b37d35f30ed948b40b40851dfd81bfd"
+      ],
+      "variantes_historial": [
+        {
+          "id": "8d284872ed0bc0f58fae631085ff30996b37d35f30ed948b40b40851dfd81bfd",
+          "numero_procedimiento": "2545",
+          "objeto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2545\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     27/11/2026 A Las 10.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                                Objeto : ADQ. DE LUMINARIAS PARA ALUMBRADO PUBLICO\n                           WEB : www.viale.gob.ar\n\n\n\n                                                                                                                                           Viale 24 de noviembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                             Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : POR FAVOR, INCLUIR EN EL PRESUPUESTO EL COSTO DE ENVÍO DETALLADO O INTEGRADO EN EL\n    PRECIO FINAL\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario       Precio Total\n\n   0         20,00                U.             LUMINARIAS DE 180W\n\n   1         50,00                U.             LUMINARIAS DE 120W\n\n   2         10,00                U.             LUMINARIAS DE PLAZA 100 O 120W.\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f",
+          "fecha_apertura": null,
+          "fecha_limite_presentacion": "2026-11-27",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2545.pdf",
+          "documentos": [
+            {
+              "titulo": "Descargar PDF",
+              "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2545.pdf"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVO_CONFIRMADO",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-27T10:00:00-03:00"
+    },
+    {
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "Descargar PDF",
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2546.pdf"
+        }
+      ],
+      "enlace_pliego": null,
+      "evento_publicado": null,
+      "evidencia_url": "https://viale.gob.ar/wp-content/uploads/2026/11/2546.pdf",
+      "evidencias_campos": {
+        "fecha_limite_presentacion": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2546.pdf",
+          "texto": "27/11/2026 a las 11.00"
+        },
+        "fecha_publicacion": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2546.pdf",
+          "texto": "2026-11-24"
+        },
+        "modalidad_presentacion": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2546.pdf",
+          "texto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2546\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     27/11/2026 A Las 11.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                                                 Objeto : ADQ. DE CAÑOS 110 Y CURVAS\n                           WEB : www.viale.gob.ar\n\n\n\n                                                                                                                                           Viale 24 de noviembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                             Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : POR FAVOR, INCLUIR EN EL PRESUPUESTO EL COSTO DE ENVÍO DETALLADO O INTEGRADO EN EL\n    PRECIO FINAL\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario       Precio Total\n\n   0         30,00                U.             CAÑOS PVC DE 110 MMM\n\n   1         64,00                U.             CURVAS PVC DE 110MM 90º\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f"
+        },
+        "numero_procedimiento": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2546.pdf",
+          "texto": "cotejo de precios 2546"
+        },
+        "tipo_procedimiento": {
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2546.pdf",
+          "texto": "cotejo de precios 2546"
+        }
+      },
+      "fecha_apertura": null,
+      "fecha_apertura_texto": null,
+      "fecha_limite_presentacion": "2026-11-27",
+      "fecha_limite_presentacion_texto": "27/11/2026 a las 11.00",
+      "fecha_publicacion": "2026-11-24",
+      "fecha_publicacion_texto": "2026-11-24",
+      "fuente": "https://viale.gob.ar/pliegos/",
+      "fuentes_observadas": [
+        "https://viale.gob.ar/pliegos/"
+      ],
+      "hora_apertura": null,
+      "hora_limite_presentacion": "11:00",
+      "localidad": "Viale",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_oficial_sin_interpretar": "2546",
+      "numero_procedimiento": "2546",
+      "objeto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2546\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     27/11/2026 A Las 11.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                                                 Objeto : ADQ. DE CAÑOS 110 Y CURVAS\n                           WEB : www.viale.gob.ar\n\n\n\n                                                                                                                                           Viale 24 de noviembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                             Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : POR FAVOR, INCLUIR EN EL PRESUPUESTO EL COSTO DE ENVÍO DETALLADO O INTEGRADO EN EL\n    PRECIO FINAL\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario       Precio Total\n\n   0         30,00                U.             CAÑOS PVC DE 110 MMM\n\n   1         64,00                U.             CURVAS PVC DE 110MM 90º\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f",
+      "organismo": "Municipalidad de Viale",
+      "pago_evidencias": [
+        {
+          "acreditacion_inmediata_comprobada": false,
+          "anticipo_publicado": false,
+          "categoria": "CONTADO",
+          "cita": "CONDICIONES DE PAGO : - CONTADO : - FINANCIADO :",
+          "clausula": null,
+          "contado_mencionado": true,
+          "contra_entrega_mencionado": false,
+          "direccion": "NO_ESPECIFICADA",
+          "etiqueta": "Pago contado",
+          "facturacion_parcial": false,
+          "hitos_inicio": [],
+          "metodo_extraccion": "SECCION_DOCUMENTO",
+          "pagina": null,
+          "pagos_parciales": false,
+          "plazos_dias": [],
+          "prioritario": true,
+          "sha256": "804e8647e2dc7c24071819ff3a53560ac94c06ce0c21d9d655d3b3632a21fffd",
+          "unidades_dias": [],
+          "url_documento": "https://viale.gob.ar/wp-content/uploads/2026/11/2546.pdf",
+          "version_analizador": 15
+        }
+      ],
+      "presupuesto": null,
+      "procedimiento": "cotejo de precios 2546",
+      "provincia": "Entre Ríos",
+      "rango_evidencia": 3,
+      "registro_estructurado": true,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "cotejo de precios",
+      "titulo": "Horario de atención de Lunes a Viernes: 6.30 hs a 12.00 hs Noticias Publicaciones Gobierno Autoridades Secretarías y Direcciones Secretaría de Gobierno Secretaría de Ingresos Públicos, Estadísticas y Modernización Subsecretaría de cultura y educación Secretaría de Desarrollo Social y Humano Subsecretaría de la mujer Subsecretaría de Obras Sanitarias Subsecretaría de Desarrollo Local y Productivo Dirección de Deportes HCD Autoridades HCD Transparente Comunicados Libro de Visitas Trámites y Servicios Atención Ciudadana Boletín Oficial Bromatologia Centro de Salud Compras Cuentas Claras Cultura y Educación Defensa Al Consumidor Emprendedurismo Expedientes Licencias de Conducir Punto Digital Recaudaciones Obras Sanitarias Subsecretaría de Servicios Públicos Sistema de ahorro previo para obras de infraestructura Ciudad Turismo Parque Industrial Recaudaciones Cotejo de Precios N° 2546 – Adquisición de Caños 110 y Curvas 24 noviembre, 2026 | In Pliegos | By pliegos Descargar PDF Guía Telefónica y Servicios de la Ciudad Bomberos100 Policía101 Emergencias Médicas107 Mesa de Entrada PalacioInt. 101 Reclamos CentralInt. 111 Honorable Concejo Delib.Int. 113 Juzgado de FaltasInt. 142 Guardia UrbanaInt. 120 Centro de MonitoreoInt. 121 Centro Salud «R. Carrillo»Int. 119 Hogar «Madre Teresa»Int. 127 Sec. Desarrollo SocialInt. 129 Subsecretaría de la MujerInt. 130 ANAFInt. 131 Desarrollo Local y Prod.Int. 137 Defensa del ConsumidorInt. 136 Licencias de ConducirInt. 132 Cultura y EducaciónInt. 134 Dirección de DeportesInt. 135 Obras SanitariasInt. 141 Servicios PúblicosInt. 125 ComprasInt. 115 CatastroInt. 116 RecaudacionesInt. 117 Bromatología y AmbienteInt. 143 Obras Públicas (Tinglado)Int. 144 Guardias y Urgencias fuera de horario administrativo: Salud: 3434151615 Guardia Urbana/Monitoreo: 3434676828 Subsec. Mujer: 3434055981 ANAF: 3434524860 Licencias: 3434283457 Reclamos: 3434282868 Diseño y desarrollo por AV consultora + Minds",
+      "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2546.pdf",
+      "urls_publicacion": [
+        "https://viale.gob.ar/cotejo-de-precios-n-2546-adquisicion-de-canos-110-y-curvas/",
+        "https://viale.gob.ar/pliegos/",
+        "https://viale.gob.ar/wp-content/uploads/2026/11/2546.pdf"
+      ],
+      "pago": {
+        "estado": "VERIFICADO",
+        "clasificacion": "CONTADO",
+        "etiqueta": "Pago contado",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "unidades_dias": [],
+        "direccion": "NO_ESPECIFICADA",
+        "documento_respaldo": "https://viale.gob.ar/wp-content/uploads/2026/11/2546.pdf",
+        "documentos_respaldo": [
+          "https://viale.gob.ar/wp-content/uploads/2026/11/2546.pdf"
+        ],
+        "evidencias": [
+          {
+            "acreditacion_inmediata_comprobada": false,
+            "anticipo_publicado": false,
+            "categoria": "CONTADO",
+            "cita": "CONDICIONES DE PAGO : - CONTADO : - FINANCIADO :",
+            "clausula": null,
+            "contado_mencionado": true,
+            "contra_entrega_mencionado": false,
+            "direccion": "NO_ESPECIFICADA",
+            "etiqueta": "Pago contado",
+            "facturacion_parcial": false,
+            "hitos_inicio": [],
+            "metodo_extraccion": "SECCION_DOCUMENTO",
+            "pagina": null,
+            "pagos_parciales": false,
+            "plazos_dias": [],
+            "prioritario": true,
+            "sha256": "804e8647e2dc7c24071819ff3a53560ac94c06ce0c21d9d655d3b3632a21fffd",
+            "unidades_dias": [],
+            "url_documento": "https://viale.gob.ar/wp-content/uploads/2026/11/2546.pdf",
+            "version_analizador": 15
+          }
+        ],
+        "prioritario": true,
+        "motivo": null
+      },
+      "condiciones_pago": "Pago contado",
+      "enlace_condiciones_pago": "https://viale.gob.ar/wp-content/uploads/2026/11/2546.pdf",
+      "pago_prioritario": true,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "cotejo de precios VIALE-2546",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": null,
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": "2026-11-27T11:00:00-03:00",
+      "fecha_referencia_vencimiento": "2026-11-27",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "presupuesto",
+        "fecha_apertura",
+        "enlace_pliego"
+      ],
+      "id": "c01ec8f88914e58decff9d6c8bf6de9af726c387a2142186df40cbf4d686ba25",
+      "primera_deteccion": "2026-11-24T18:10:31.411068-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "c01ec8f88914e58decff9d6c8bf6de9af726c387a2142186df40cbf4d686ba25"
+      ],
+      "variantes_historial": [
+        {
+          "id": "c01ec8f88914e58decff9d6c8bf6de9af726c387a2142186df40cbf4d686ba25",
+          "numero_procedimiento": "2546",
+          "objeto": "                   Municipio de Viale                                                                          COTEJO DE PRECIOS Nro.2546\n                               9 de Julio y Estrada\n                         C.P. : (3109) - Viale - E.Ríos\n                       Tel. : (0343) - 4920011-4920135\n                                                                                                                               Para El :     27/11/2026 A Las 11.00 HS.\n                     IVA : Exento - CUIT : 30-99903611-9\n                      eMail : municipalidad@viale.gob.ar                                                 Objeto : ADQ. DE CAÑOS 110 Y CURVAS\n                           WEB : www.viale.gob.ar\n\n\n\n                                                                                                                                           Viale 24 de noviembre de 2026\n                                 Señor/es : - - (0)\n                                Domicilio : -\n                                Localidad : (0000) - -\n\n                             Sírvase/n cotizar la provisión ó servicio que se detalla a continuación y de acuerdo a las condiciones insertas al pie\n    Observaciones : POR FAVOR, INCLUIR EN EL PRESUPUESTO EL COSTO DE ENVÍO DETALLADO O INTEGRADO EN EL\n    PRECIO FINAL\nDecreto Nº 242/26: Las ofertas presentadas por comerciantes locales y\ncontribuyentes de Viale gozan de un beneficio del 3% a su favor sobre la cotización\nfinal al momento de ser evaluadas y comparadas frente a oferentes de otras\nlocalidades.\n                                                                                                                                  Jefe de Compras\n Orden      Cantidad           Unidad          Descripción                                                                                                P.Unitario       Precio Total\n\n   0         30,00                U.             CAÑOS PVC DE 110 MMM\n\n   1         64,00                U.             CURVAS PVC DE 110MM 90º\n\n                                                                                                                                                       TOTAL $\n\n       Duración de la Oferta :\n            CONDICIONES DE PAGO : - CONTADO :\n                                    - FINANCIADO :\n             PLAZO DE ENTREGA DE MATERIALES :\n                       IMPORTA LA SUMA DE PESOS :\n\n                                                     OBSERVACIONES :\n\n                                         LUGAR, FECHA Y HORA :\nRogamos cotizar marca y especificaciones técnicas.\nPresentar antes de la hora fijada, por Mesa de Entradas, en sobre cerrado, sin leyendas, con unica referencia a este cotejo.\n\n\n\n Hoja : 1 de 1\n\narielm_130093_pc-168-093\n                                                                                                                                                           Firma y Sello\n\f",
+          "fecha_apertura": null,
+          "fecha_limite_presentacion": "2026-11-27",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2546.pdf",
+          "documentos": [
+            {
+              "titulo": "Descargar PDF",
+              "url": "https://viale.gob.ar/wp-content/uploads/2026/11/2546.pdf"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVO_CONFIRMADO",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-11-27T11:00:00-03:00"
+    },
+    {
+      "detalle_completo": true,
+      "documentos": [
+        {
+          "titulo": "Decreto N° 3666-2026",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/Decreto-N%C2%B0-3666-2026.pdf"
+        },
+        {
+          "titulo": "Pliego de Especificaciones técnicas particulares_REHABILITACIÓN DEL PREDIO FERROVIARIO DE LA CIUDAD",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/Pliego-de-Especificaciones-tecnicas-particulares_REHABILITACION-DEL-PREDIO-FERROVIARIO-DE-LA-CIUDAD.pdf"
+        },
+        {
+          "titulo": "Pliego de Especificaciones técnicas generales_REHABILITACIÓN DEL PREDIO FERROVIARIO DE LA CIUDAD",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/Pliego-de-Especificaciones-tecnicas-generales_REHABILITACION-DEL-PREDIO-FERROVIARIO-DE-LA-CIUDAD.pdf"
+        },
+        {
+          "titulo": "Pliego de Bases y Condiciones_REHABILITACIÓN DEL PREDIO FERROVIARIO DE LA CIUDAD",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/Pliego-de-Bases-y-Condiciones_REHABILITACION-DEL-PREDIO-FERROVIARIO-DE-LA-CIUDAD.pdf"
+        },
+        {
+          "titulo": "01_BR_ARQ_RE_PL_PLANTA EXISTENTE",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/01_BR_ARQ_RE_PL_PLANTA-EXISTENTE.pdf"
+        },
+        {
+          "titulo": "02_BR_ARQ_RE_PL_PLANTA GENERAL",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/02_BR_ARQ_RE_PL_PLANTA-GENERAL.pdf"
+        },
+        {
+          "titulo": "03_BR_ARQ_RE_PL_PLAZA SECA",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/03_BR_ARQ_RE_PL_PLAZA-SECA.pdf"
+        },
+        {
+          "titulo": "04_BR_ARQ_RE_AX_PLAZA SECA",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/04_BR_ARQ_RE_AX_PLAZA-SECA.pdf"
+        },
+        {
+          "titulo": "05_BR_ARQ_RE_PL_DEMOLICION",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/05_BR_ARQ_RE_PL_DEMOLICION.pdf"
+        },
+        {
+          "titulo": "06_BR_ARQ_RE_PL_DEMOLICION",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/06_BR_ARQ_RE_PL_DEMOLICION.pdf"
+        },
+        {
+          "titulo": "07_BR_ARQ_RE_PL_MOV.DE SUELOS",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/07_BR_ARQ_RE_PL_MOV.DE-SUELOS.pdf"
+        },
+        {
+          "titulo": "08_BR_ARQ_RE_PL_ENTUBADO",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/08_BR_ARQ_RE_PL_ENTUBADO.pdf"
+        },
+        {
+          "titulo": "09_BR_ARQ_RE_PL_BICISENDA",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/09_BR_ARQ_RE_PL_BICISENDA.pdf"
+        },
+        {
+          "titulo": "10_BR_ARQ_RE_DET_BICISENDA",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/10_BR_ARQ_RE_DET_BICISENDA.pdf"
+        },
+        {
+          "titulo": "11_BR_ARQ_RE_AX_BICISENDA",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/11_BR_ARQ_RE_AX_BICISENDA.pdf"
+        },
+        {
+          "titulo": "12_BR_ARQ_RE_PL_GALPON NORTE",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/12_BR_ARQ_RE_PL_GALPON-NORTE.pdf"
+        },
+        {
+          "titulo": "13_BR_ARQ_RE_CO_GALPON NORTE",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/13_BR_ARQ_RE_CO_GALPON-NORTE.pdf"
+        },
+        {
+          "titulo": "14_BR_ARQ_RE_VI_GALPON NORTE",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/14_BR_ARQ_RE_VI_GALPON-NORTE.pdf"
+        },
+        {
+          "titulo": "15_BR_ARQ_RE_VI_GALPON NORTE",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/15_BR_ARQ_RE_VI_GALPON-NORTE.pdf"
+        },
+        {
+          "titulo": "16_BR_ARQ_RE_PL_GALPON SUR",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/16_BR_ARQ_RE_PL_GALPON-SUR.pdf"
+        },
+        {
+          "titulo": "17_BR_EQ_RE_PL_EQUIPAMIENTO URBANO GENERAL",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/17_BR_EQ_RE_PL_EQUIPAMIENTO-URBANO-GENERAL.pdf"
+        },
+        {
+          "titulo": "18_BR_EQ_RE_PL_EQUIPAMIENTO URBANO SECTOR",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/18_BR_EQ_RE_PL_EQUIPAMIENTO-URBANO-SECTOR.pdf"
+        },
+        {
+          "titulo": "19_BR_EQ_RE_PL_LETRAS CORPOREAS",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/19_BR_EQ_RE_PL_LETRAS-CORPOREAS.pdf"
+        },
+        {
+          "titulo": "20_BR_IE_RE_PL_ELECTRICA GENERAL",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/20_BR_IE_RE_PL_ELECTRICA-GENERAL.pdf"
+        },
+        {
+          "titulo": "21_BR_IE_RE_PL_ELECTRICA LUMINARIAS",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/21_BR_IE_RE_PL_ELECTRICA-LUMINARIAS.pdf"
+        },
+        {
+          "titulo": "22_BR_IE_RE_PL_ELECTRICA SECTOR PLAZA SECA",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/22_BR_IE_RE_PL_ELECTRICA-SECTOR-PLAZA-SECA.pdf"
+        },
+        {
+          "titulo": "23_BR_IS_RE_PL_SANITARIAS SECTOR PLAZA SECA",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/23_BR_IS_RE_PL_SANITARIAS-SECTOR-PLAZA-SECA.pdf"
+        },
+        {
+          "titulo": "REHABILITACIÓN DEL PREDIO FERROVIARIO-PLANILLA VACIA",
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/REHABILITACION-DEL-PREDIO-FERROVIARIO-PLANILLA-VACIA.xlsx"
+        }
+      ],
+      "enlace_pliego": "https://sunchales.gob.ar/wp-content/uploads/2026/11/Pliego-de-Especificaciones-tecnicas-particulares_REHABILITACION-DEL-PREDIO-FERROVIARIO-DE-LA-CIUDAD.pdf",
+      "evento_publicado": null,
+      "evidencia_url": "https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/",
+      "evidencias_campos": {
+        "fecha_apertura": {
+          "url": "https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/",
+          "texto": "lunes 21 de diciembre de 2026, a las 11:00 hs., en la sede administrativa de la municipali"
+        },
+        "fecha_limite_presentacion": {
+          "url": "https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/",
+          "texto": "el dia lunes 21 de diciembre de 2026, a las 10:30 hs., en la mesa de entradas de la sede a"
+        },
+        "modalidad_presentacion": {
+          "texto": "Licitación Pública N° 04/2026 DECRETO N° 3666/2026 Objeto : Ejecución de la obra “REHABILITACIÓN DEL PREDIO FERROVIARIO DE LA CIUDAD – MUNICIPALIDAD DE SUNCHALES – DEPARTAMENTO CASTELLANOS”; en un todo conforme con el Pliego de Bases y Condiciones, el Pliego de Especificaciones Técnicas Generales, el Pliego de Especificaciones Técnicas Particulares y los Planos Anexos.- Presupuesto Oficial : $806.500.000,00 (pesos ochocientos seis millones quinientos mil) finales, IVA incluido, a valor histórico de junio del año 2025.- Plazo recepción de ofertas : hasta el día lunes 21 de diciembre de 2026, a las 10:30 hs., en la Mesa de Entradas de la sede administrativa de la Municipalidad de Sunchales, Avda. Belgrano N° 103.- Fecha de apertura de ofertas : lunes 21 de diciembre de 2026, a las 11:00 hs., en la sede administrativa de la Municipalidad de Sunchales, Avda. Belgrano N° 103.- Valor del Pliego : 300.000,00.- Consultas : en la Subsecretaría de Obras y Servicios Públicos de la Municipalidad de Sunchales: gestion@sunchales.gov.ar, en Avda. Belgrano N° 103, Sunchales, hasta el 21/12/26 a las 09:00 hs.- Sunchales, 02 de Octubre de 2026. Decreto N° 3666-2026 Pliego de Especificaciones técnicas particulares_REHABILITACIÓN DEL PREDIO FERROVIARIO DE LA CIUDAD Pliego de Especificaciones técnicas generales_REHABILITACIÓN DEL PREDIO FERROVIARIO DE LA CIUDAD Pliego de Bases y Condiciones_REHABILITACIÓN DEL PREDIO FERROVIARIO DE LA CIUDAD 01_BR_ARQ_RE_PL_PLANTA EXISTENTE 02_BR_ARQ_RE_PL_PLANTA GENERAL 03_BR_ARQ_RE_PL_PLAZA SECA 04_BR_ARQ_RE_AX_PLAZA SECA 05_BR_ARQ_RE_PL_DEMOLICION 06_BR_ARQ_RE_PL_DEMOLICION 07_BR_ARQ_RE_PL_MOV.DE SUELOS 08_BR_ARQ_RE_PL_ENTUBADO 09_BR_ARQ_RE_PL_BICISENDA 10_BR_ARQ_RE_DET_BICISENDA 11_BR_ARQ_RE_AX_BICISENDA 12_BR_ARQ_RE_PL_GALPON NORTE 13_BR_ARQ_RE_CO_GALPON NORTE 14_BR_ARQ_RE_VI_GALPON NORTE 15_BR_ARQ_RE_VI_GALPON NORTE 16_BR_ARQ_RE_PL_GALPON SUR 17_BR_EQ_RE_PL_EQUIPAMIENTO URBANO GENERAL 18_BR_EQ_RE_PL_EQUIPAMIENTO URBANO SECTOR 19_BR_EQ_RE_PL_LETRAS CORPOREAS 20_BR_IE_RE_PL_ELECTRICA GENERAL 21_BR_IE_RE_PL_ELECTRICA LUMINARIAS 22_BR_IE_RE_PL_ELECTRICA SECTOR PLAZA SECA 23_BR_IS_RE_PL_SANITARIAS SECTOR PLAZA SECA REHABILITACIÓN DEL PREDIO FERROVIARIO-PLANILLA VACIA",
+          "url": "https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/"
+        },
+        "numero_procedimiento": {
+          "url": "https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/",
+          "texto": "licitacion publica 4/2026"
+        },
+        "presupuesto": {
+          "texto": "presupuesto oficial : $806.500.000,00",
+          "url": "https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/"
+        },
+        "tipo_procedimiento": {
+          "url": "https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/",
+          "texto": "licitacion publica 4/2026"
+        }
+      },
+      "fecha_apertura": "2026-12-21",
+      "fecha_apertura_texto": null,
+      "fecha_limite_presentacion": "2026-12-21",
+      "fecha_publicacion": null,
+      "fecha_publicacion_texto": null,
+      "fuente": "https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/",
+      "fuentes_observadas": [
+        "https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/"
+      ],
+      "hora_apertura": "11:00",
+      "hora_limite_presentacion": "10:30",
+      "localidad": "Sunchales",
+      "modalidad_presentacion": [
+        "PRESENCIAL"
+      ],
+      "numero_procedimiento": "4/2026",
+      "objeto": "Ejecución de la obra “REHABILITACIÓN DEL PREDIO FERROVIARIO DE LA CIUDAD – MUNICIPALIDAD DE SUNCHALES – DEPARTAMENTO CASTELLANOS”; en un todo conforme con el Pliego de Bases y Condiciones, el Pliego de Especificaciones Técnicas Generales, el Pliego de Especificaciones Técnicas Particulares y los Planos Anexos.-",
+      "organismo": "Municipalidad de Sunchales",
+      "pago_evidencias": [],
+      "presupuesto": {
+        "importe": "806500000.00",
+        "moneda": null
+      },
+      "procedimiento": "licitacion publica 4/2026",
+      "provincia": "Santa Fe",
+      "rango_evidencia": 1,
+      "registro_estructurado": false,
+      "requiere_revalidacion": false,
+      "situacion_publicada": null,
+      "tipo_procedimiento": "licitacion publica",
+      "titulo": "Licitación Pública N° 04/2026 DECRETO N° 3666/2026 Objeto : Ejecución de la obra “REHABILITACIÓN DEL PREDIO FERROVIARIO DE LA CIUDAD – MUNICIPALIDAD DE SUNCHALES – DEPARTAMENTO CASTELLANOS”; en un todo conforme con el Pliego de Bases y Condiciones, el Pliego de Especificaciones Técnicas Generales, el Pliego de Especificaciones Técnicas Particulares y los Planos Anexos.- Presupuesto Oficial : $806.500.000,00 (pesos ochocientos seis millones quinientos mil) finales, IVA incluido, a valor histórico de junio del año 2025.- Plazo recepción de ofertas : hasta el día lunes 21 de diciembre de 2026, a las 10:30 hs., en la Mesa de Entradas de la sede administrativa de la Municipalidad de Sunchales, Avda. Belgrano N° 103.- Fecha de apertura de ofertas : lunes 21 de diciembre de 2026, a las 11:00 hs., en la sede administrativa de la Municipalidad de Sunchales, Avda. Belgrano N° 103.- Valor del Pliego : 300.000,00.- Consultas : en la Subsecretaría de Obras y Servicios Públicos de la Municipalidad de Sunchales: gestion@sunchales.gov.ar, en Avda. Belgrano N° 103, Sunchales, hasta el 21/12/26 a las 09:00 hs.- Sunchales, 02 de Octubre de 2026. Decreto N° 3666-2026 Pliego de Especificaciones técnicas particulares_REHABILITACIÓN DEL PREDIO FERROVIARIO DE LA CIUDAD Pliego de Especificaciones técnicas generales_REHABILITACIÓN DEL PREDIO FERROVIARIO DE LA CIUDAD Pliego de Bases y Condiciones_REHABILITACIÓN DEL PREDIO FERROVIARIO DE LA CIUDAD 01_BR_ARQ_RE_PL_PLANTA EXISTENTE 02_BR_ARQ_RE_PL_PLANTA GENERAL 03_BR_ARQ_RE_PL_PLAZA SECA 04_BR_ARQ_RE_AX_PLAZA SECA 05_BR_ARQ_RE_PL_DEMOLICION 06_BR_ARQ_RE_PL_DEMOLICION 07_BR_ARQ_RE_PL_MOV.DE SUELOS 08_BR_ARQ_RE_PL_ENTUBADO 09_BR_ARQ_RE_PL_BICISENDA 10_BR_ARQ_RE_DET_BICISENDA 11_BR_ARQ_RE_AX_BICISENDA 12_BR_ARQ_RE_PL_GALPON NORTE 13_BR_ARQ_RE_CO_GALPON NORTE 14_BR_ARQ_RE_VI_GALPON NORTE 15_BR_ARQ_RE_VI_GALPON NORTE 16_BR_ARQ_RE_PL_GALPON SUR 17_BR_EQ_RE_PL_EQUIPAMIENTO URBANO GENERAL 18_BR_EQ_RE_PL_EQUIPAMIENTO URBANO SECTOR 19_BR_EQ_RE_PL_LETRAS CORPOREAS 20_BR_IE_RE_PL_ELECTRICA GENERAL 21_BR_IE_RE_PL_ELECTRICA LUMINARIAS 22_BR_IE_RE_PL_ELECTRICA SECTOR PLAZA SECA 23_BR_IS_RE_PL_SANITARIAS SECTOR PLAZA SECA REHABILITACIÓN DEL PREDIO FERROVIARIO-PLANILLA VACIA",
+      "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/Decreto-N%C2%B0-3666-2026.pdf",
+      "urls_publicacion": [
+        "https://sunchales.gob.ar/gestion/sunchales-impulsa/municipio-transparente/licitaciones-y-contrataciones/",
+        "https://sunchales.gob.ar/wp-content/uploads/2026/11/Decreto-N%C2%B0-3666-2026.pdf"
+      ],
+      "pago": {
+        "estado": "PENDIENTE",
+        "clasificacion": "NO_INFORMADO",
+        "etiqueta": "Pendiente de verificar",
+        "plazos_dias": [],
+        "hitos_inicio": [],
+        "documento_respaldo": null,
+        "documentos_respaldo": [],
+        "evidencias": [],
+        "prioritario": false,
+        "motivo": "SIN_CLAUSULA_COMPROBADA"
+      },
+      "condiciones_pago": "Pendiente de verificar",
+      "enlace_condiciones_pago": null,
+      "pago_prioritario": false,
+      "desierta": false,
+      "fracasada": false,
+      "segundo_llamado": false,
+      "reapertura": false,
+      "llamado_especial": false,
+      "procedimiento_canonico": "licitacion publica 4/2026",
+      "convocatoria": "1",
+      "clasificacion_registro": "PROCEDIMIENTO",
+      "fecha_hora_apertura": "2026-12-21T11:00:00-03:00",
+      "vigencia": "ABIERTA",
+      "fecha_hora_limite_presentacion": "2026-12-21T10:30:00-03:00",
+      "fecha_referencia_vencimiento": "2026-12-21",
+      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
+      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
+      "antiguedad_publicacion": "DESCONOCIDA",
+      "estimacion_comercial": null,
+      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
+      "campos_desconocidos": [
+        "fecha_publicacion"
+      ],
+      "id": "34d565f0222b37d67653f09c8db30b5945b36b2027ec19a665bd9d9bc76acfba",
+      "primera_deteccion": "2026-11-24T18:10:31.411068-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
+      "observada_esta_corrida": true,
+      "ids_historial": [
+        "34d565f0222b37d67653f09c8db30b5945b36b2027ec19a665bd9d9bc76acfba"
+      ],
+      "variantes_historial": [
+        {
+          "id": "34d565f0222b37d67653f09c8db30b5945b36b2027ec19a665bd9d9bc76acfba",
+          "numero_procedimiento": "4/2026",
+          "objeto": "Ejecución de la obra “REHABILITACIÓN DEL PREDIO FERROVIARIO DE LA CIUDAD – MUNICIPALIDAD DE SUNCHALES – DEPARTAMENTO CASTELLANOS”; en un todo conforme con el Pliego de Bases y Condiciones, el Pliego de Especificaciones Técnicas Generales, el Pliego de Especificaciones Técnicas Particulares y los Planos Anexos.-",
+          "fecha_apertura": "2026-12-21",
+          "fecha_limite_presentacion": "2026-12-21",
+          "evento_publicado": null,
+          "numero_convocatoria": null,
+          "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/Decreto-N%C2%B0-3666-2026.pdf",
+          "documentos": [
+            {
+              "titulo": "Decreto N° 3666-2026",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/Decreto-N%C2%B0-3666-2026.pdf"
+            },
+            {
+              "titulo": "Pliego de Especificaciones técnicas particulares_REHABILITACIÓN DEL PREDIO FERROVIARIO DE LA CIUDAD",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/Pliego-de-Especificaciones-tecnicas-particulares_REHABILITACION-DEL-PREDIO-FERROVIARIO-DE-LA-CIUDAD.pdf"
+            },
+            {
+              "titulo": "Pliego de Especificaciones técnicas generales_REHABILITACIÓN DEL PREDIO FERROVIARIO DE LA CIUDAD",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/Pliego-de-Especificaciones-tecnicas-generales_REHABILITACION-DEL-PREDIO-FERROVIARIO-DE-LA-CIUDAD.pdf"
+            },
+            {
+              "titulo": "Pliego de Bases y Condiciones_REHABILITACIÓN DEL PREDIO FERROVIARIO DE LA CIUDAD",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/Pliego-de-Bases-y-Condiciones_REHABILITACION-DEL-PREDIO-FERROVIARIO-DE-LA-CIUDAD.pdf"
+            },
+            {
+              "titulo": "01_BR_ARQ_RE_PL_PLANTA EXISTENTE",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/01_BR_ARQ_RE_PL_PLANTA-EXISTENTE.pdf"
+            },
+            {
+              "titulo": "02_BR_ARQ_RE_PL_PLANTA GENERAL",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/02_BR_ARQ_RE_PL_PLANTA-GENERAL.pdf"
+            },
+            {
+              "titulo": "03_BR_ARQ_RE_PL_PLAZA SECA",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/03_BR_ARQ_RE_PL_PLAZA-SECA.pdf"
+            },
+            {
+              "titulo": "04_BR_ARQ_RE_AX_PLAZA SECA",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/04_BR_ARQ_RE_AX_PLAZA-SECA.pdf"
+            },
+            {
+              "titulo": "05_BR_ARQ_RE_PL_DEMOLICION",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/05_BR_ARQ_RE_PL_DEMOLICION.pdf"
+            },
+            {
+              "titulo": "06_BR_ARQ_RE_PL_DEMOLICION",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/06_BR_ARQ_RE_PL_DEMOLICION.pdf"
+            },
+            {
+              "titulo": "07_BR_ARQ_RE_PL_MOV.DE SUELOS",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/07_BR_ARQ_RE_PL_MOV.DE-SUELOS.pdf"
+            },
+            {
+              "titulo": "08_BR_ARQ_RE_PL_ENTUBADO",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/08_BR_ARQ_RE_PL_ENTUBADO.pdf"
+            },
+            {
+              "titulo": "09_BR_ARQ_RE_PL_BICISENDA",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/09_BR_ARQ_RE_PL_BICISENDA.pdf"
+            },
+            {
+              "titulo": "10_BR_ARQ_RE_DET_BICISENDA",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/10_BR_ARQ_RE_DET_BICISENDA.pdf"
+            },
+            {
+              "titulo": "11_BR_ARQ_RE_AX_BICISENDA",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/11_BR_ARQ_RE_AX_BICISENDA.pdf"
+            },
+            {
+              "titulo": "12_BR_ARQ_RE_PL_GALPON NORTE",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/12_BR_ARQ_RE_PL_GALPON-NORTE.pdf"
+            },
+            {
+              "titulo": "13_BR_ARQ_RE_CO_GALPON NORTE",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/13_BR_ARQ_RE_CO_GALPON-NORTE.pdf"
+            },
+            {
+              "titulo": "14_BR_ARQ_RE_VI_GALPON NORTE",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/14_BR_ARQ_RE_VI_GALPON-NORTE.pdf"
+            },
+            {
+              "titulo": "15_BR_ARQ_RE_VI_GALPON NORTE",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/15_BR_ARQ_RE_VI_GALPON-NORTE.pdf"
+            },
+            {
+              "titulo": "16_BR_ARQ_RE_PL_GALPON SUR",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/16_BR_ARQ_RE_PL_GALPON-SUR.pdf"
+            },
+            {
+              "titulo": "17_BR_EQ_RE_PL_EQUIPAMIENTO URBANO GENERAL",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/17_BR_EQ_RE_PL_EQUIPAMIENTO-URBANO-GENERAL.pdf"
+            },
+            {
+              "titulo": "18_BR_EQ_RE_PL_EQUIPAMIENTO URBANO SECTOR",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/18_BR_EQ_RE_PL_EQUIPAMIENTO-URBANO-SECTOR.pdf"
+            },
+            {
+              "titulo": "19_BR_EQ_RE_PL_LETRAS CORPOREAS",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/19_BR_EQ_RE_PL_LETRAS-CORPOREAS.pdf"
+            },
+            {
+              "titulo": "20_BR_IE_RE_PL_ELECTRICA GENERAL",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/20_BR_IE_RE_PL_ELECTRICA-GENERAL.pdf"
+            },
+            {
+              "titulo": "21_BR_IE_RE_PL_ELECTRICA LUMINARIAS",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/21_BR_IE_RE_PL_ELECTRICA-LUMINARIAS.pdf"
+            },
+            {
+              "titulo": "22_BR_IE_RE_PL_ELECTRICA SECTOR PLAZA SECA",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/22_BR_IE_RE_PL_ELECTRICA-SECTOR-PLAZA-SECA.pdf"
+            },
+            {
+              "titulo": "23_BR_IS_RE_PL_SANITARIAS SECTOR PLAZA SECA",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/23_BR_IS_RE_PL_SANITARIAS-SECTOR-PLAZA-SECA.pdf"
+            },
+            {
+              "titulo": "REHABILITACIÓN DEL PREDIO FERROVIARIO-PLANILLA VACIA",
+              "url": "https://sunchales.gob.ar/wp-content/uploads/2026/11/REHABILITACION-DEL-PREDIO-FERROVIARIO-PLANILLA-VACIA.xlsx"
+            }
+          ]
+        }
+      ],
+      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
+      "estado_comercial": "VIGENTE_VERIFICADA",
+      "presentacion_verificada": true,
+      "motivo_comercial": "Plazo de presentación explícito y no vencido",
+      "limite_presentacion_comprobado": "2026-12-21T10:30:00-03:00"
+    },
     {
       "detalle_completo": true,
       "documentos": [
@@ -16,30 +1124,14 @@
       ],
       "enlace_pliego": "https://alvear.gob.ar/archivos/501_1795021250_PLIEGOBASESYCONDICIONES6-2026GENERAL.pdf",
       "evento_publicado": null,
-      "evidencia_url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501",
+      "evidencia_url": "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
       "evidencias_campos": {
-        "fecha_apertura": {
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501",
-          "texto": "viernes 4 de diciembre de 2026 a las 9:00 hs. en sede municipal en calle buenos aires 1877"
-        },
-        "fecha_limite_presentacion": {
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501",
-          "texto": "4/12/2026 en sobre cerrado entregar personalmente en mesa de entrada en calle pellegrini 2"
-        },
-        "modalidad_presentacion": {
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501",
-          "texto": "Volver al listado LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 LICITACIÓN PÚBLICA N° 06/2026 OBRA: “OBRA DE CIRCULACIÓN INTERNA CAMPUS ASTENGO” PRESUPUESTO OFICIAL: $443.532.400 Valor del pliego: $70.200 Garantía de la oferta: $ 4.435.324 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: • planeamiento@alvear.gob.ar Por Teléfono: • 341 - 3177621 - Sec. de Planificación Urbana • 341 - 3 581298 - Área de Compras • 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 6-2026 PDF Ver Descargar PLIEGO ESPECIFICACIONES TECNICAS - LIC 5 PDF Ver Descargar"
-        },
         "numero_procedimiento": {
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501",
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
           "texto": "licitacion publica 6/2026"
         },
-        "presupuesto": {
-          "texto": "presupuesto oficial: $443.532.400",
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501"
-        },
         "tipo_procedimiento": {
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=501",
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
           "texto": "licitacion publica 6/2026"
         }
       },
@@ -59,7 +1151,7 @@
         "PRESENCIAL"
       ],
       "numero_procedimiento": "6/2026",
-      "objeto": "Volver al listado LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 LICITACIÓN PÚBLICA N° 06/2026 OBRA: “OBRA DE CIRCULACIÓN INTERNA CAMPUS ASTENGO” PRESUPUESTO OFICIAL: $443.532.400 Valor del pliego: $70.200 Garantía de la oferta: $ 4.435.324 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: • planeamiento@alvear.gob.ar Por Teléfono: • 341 - 3177621 - Sec. de Planificación Urbana • 341 - 3 581298 - Área de Compras • 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 6-2026 PDF Ver Descargar PLIEGO ESPECIFICACIONES TECNICAS - LIC 5 PDF Ver Descargar",
+      "objeto": "LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 Ver detalle",
       "organismo": "Municipalidad de Alvear",
       "pago_evidencias": [],
       "presupuesto": {
@@ -73,8 +1165,8 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Volver al listado LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 LICITACIÓN PÚBLICA N° 06/2026 OBRA: “OBRA DE CIRCULACIÓN INTERNA CAMPUS ASTENGO” PRESUPUESTO OFICIAL: $443.532.400 Valor del pliego: $70.200 Garantía de la oferta: $ 4.435.324 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: • planeamiento@alvear.gob.ar Por Teléfono: • 341 - 3177621 - Sec. de Planificación Urbana • 341 - 3 581298 - Área de Compras • 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 6-2026 PDF Ver Descargar PLIEGO ESPECIFICACIONES TECNICAS - LIC 5 PDF Ver Descargar",
-      "url": "https://alvear.gob.ar/archivos/501_1795021250_PLIEGOBASESYCONDICIONES6-2026GENERAL.pdf",
+      "titulo": "LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 Ver detalle",
+      "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
       "urls_publicacion": [
         "https://alvear.gob.ar/archivos/501_1795021250_PLIEGOBASESYCONDICIONES6-2026GENERAL.pdf",
         "https://alvear.gob.ar/index.php?pagina=licitaciones",
@@ -120,7 +1212,7 @@
       ],
       "id": "e4906d645499e0b70adbbcb02fc4ccf657789be0c08f1690ac24c8d60fd93564",
       "primera_deteccion": "2026-11-19T09:01:25.836369-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "e4906d645499e0b70adbbcb02fc4ccf657789be0c08f1690ac24c8d60fd93564"
@@ -129,12 +1221,12 @@
         {
           "id": "e4906d645499e0b70adbbcb02fc4ccf657789be0c08f1690ac24c8d60fd93564",
           "numero_procedimiento": "6/2026",
-          "objeto": "Volver al listado LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 LICITACIÓN PÚBLICA N° 06/2026 OBRA: “OBRA DE CIRCULACIÓN INTERNA CAMPUS ASTENGO” PRESUPUESTO OFICIAL: $443.532.400 Valor del pliego: $70.200 Garantía de la oferta: $ 4.435.324 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: • planeamiento@alvear.gob.ar Por Teléfono: • 341 - 3177621 - Sec. de Planificación Urbana • 341 - 3 581298 - Área de Compras • 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 6-2026 PDF Ver Descargar PLIEGO ESPECIFICACIONES TECNICAS - LIC 5 PDF Ver Descargar",
+          "objeto": "LICITACIÓN PÚBLICA N° 06/2026 18/11/2026 Ver detalle",
           "fecha_apertura": "2026-12-04",
           "fecha_limite_presentacion": "2026-12-04",
           "evento_publicado": null,
           "numero_convocatoria": null,
-          "url": "https://alvear.gob.ar/archivos/501_1795021250_PLIEGOBASESYCONDICIONES6-2026GENERAL.pdf",
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
           "documentos": [
             {
               "titulo": "Descargar",
@@ -148,6 +1240,7 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -167,30 +1260,14 @@
       ],
       "enlace_pliego": "https://alvear.gob.ar/archivos/500_1795018521_PLIEGODEESPECIFICACIONESTECNICASYPROYECTOEJECUTIVON5.pdf",
       "evento_publicado": null,
-      "evidencia_url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=500",
+      "evidencia_url": "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
       "evidencias_campos": {
-        "fecha_apertura": {
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=500",
-          "texto": "viernes 4 de diciembre de 2026 a las 9:00 hs. en sede municipal en calle buenos aires 1877"
-        },
-        "fecha_limite_presentacion": {
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=500",
-          "texto": "4/12/2026 en sobre cerrado entregar personalmente en mesa de entrada en calle pellegrini 2"
-        },
-        "modalidad_presentacion": {
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=500",
-          "texto": "Volver al listado LICITACIÓN PÚBLICA N° 05/2026 17/11/2026 LICITACIÓN PÚBLICA N° 05/2026 OBRA: “PAVIMENTACIÓN ASFÁLTICA EN AV. BROWN E/ CALLE GUIDO SPANO Y CALLE PIEDRABUENA” PRESUPUESTO OFICIAL: $ 249.408.250,00 Valor del pliego: $ 70.200 Garantía de la oferta: $ 2.494.082,5 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: planeamiento@alvear.gob.ar Por Teléfono: 341 - 3177621 - Sec. de Planificación Urbana 341 - 3 581298 - Área de Compras 341- 4922109 - Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 5-2026 PDF Ver Descargar PLIEGO DE ESPECIFICACIONES TECNICAS LIC 5-2026 PDF Ver Descargar"
-        },
         "numero_procedimiento": {
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=500",
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
           "texto": "licitacion publica 5/2026"
         },
-        "presupuesto": {
-          "texto": "presupuesto oficial: $ 249.408.250,00",
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=500"
-        },
         "tipo_procedimiento": {
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=500",
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
           "texto": "licitacion publica 5/2026"
         }
       },
@@ -210,7 +1287,7 @@
         "PRESENCIAL"
       ],
       "numero_procedimiento": "5/2026",
-      "objeto": "Volver al listado LICITACIÓN PÚBLICA N° 05/2026 17/11/2026 LICITACIÓN PÚBLICA N° 05/2026 OBRA: “PAVIMENTACIÓN ASFÁLTICA EN AV. BROWN E/ CALLE GUIDO SPANO Y CALLE PIEDRABUENA” PRESUPUESTO OFICIAL: $ 249.408.250,00 Valor del pliego: $ 70.200 Garantía de la oferta: $ 2.494.082,5 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: planeamiento@alvear.gob.ar Por Teléfono: 341 - 3177621 - Sec. de Planificación Urbana 341 - 3 581298 - Área de Compras 341- 4922109 - Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 5-2026 PDF Ver Descargar PLIEGO DE ESPECIFICACIONES TECNICAS LIC 5-2026 PDF Ver Descargar",
+      "objeto": "LICITACIÓN PÚBLICA N° 05/2026 17/11/2026 Ver detalle",
       "organismo": "Municipalidad de Alvear",
       "pago_evidencias": [],
       "presupuesto": {
@@ -224,8 +1301,8 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Volver al listado LICITACIÓN PÚBLICA N° 05/2026 17/11/2026 LICITACIÓN PÚBLICA N° 05/2026 OBRA: “PAVIMENTACIÓN ASFÁLTICA EN AV. BROWN E/ CALLE GUIDO SPANO Y CALLE PIEDRABUENA” PRESUPUESTO OFICIAL: $ 249.408.250,00 Valor del pliego: $ 70.200 Garantía de la oferta: $ 2.494.082,5 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: planeamiento@alvear.gob.ar Por Teléfono: 341 - 3177621 - Sec. de Planificación Urbana 341 - 3 581298 - Área de Compras 341- 4922109 - Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 5-2026 PDF Ver Descargar PLIEGO DE ESPECIFICACIONES TECNICAS LIC 5-2026 PDF Ver Descargar",
-      "url": "https://alvear.gob.ar/archivos/500_1795018491_PLIEODEBASESYCONDICIONESLICITACINN5.pdf",
+      "titulo": "LICITACIÓN PÚBLICA N° 05/2026 17/11/2026 Ver detalle",
+      "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
       "urls_publicacion": [
         "https://alvear.gob.ar/archivos/500_1795018491_PLIEODEBASESYCONDICIONESLICITACINN5.pdf",
         "https://alvear.gob.ar/index.php?pagina=licitaciones",
@@ -271,7 +1348,7 @@
       ],
       "id": "c17e2391c519e2c59fabf3773a29e1ef2728c9b23172fc8b219085d8a7990c78",
       "primera_deteccion": "2026-11-19T09:01:25.836369-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "c17e2391c519e2c59fabf3773a29e1ef2728c9b23172fc8b219085d8a7990c78"
@@ -280,12 +1357,12 @@
         {
           "id": "c17e2391c519e2c59fabf3773a29e1ef2728c9b23172fc8b219085d8a7990c78",
           "numero_procedimiento": "5/2026",
-          "objeto": "Volver al listado LICITACIÓN PÚBLICA N° 05/2026 17/11/2026 LICITACIÓN PÚBLICA N° 05/2026 OBRA: “PAVIMENTACIÓN ASFÁLTICA EN AV. BROWN E/ CALLE GUIDO SPANO Y CALLE PIEDRABUENA” PRESUPUESTO OFICIAL: $ 249.408.250,00 Valor del pliego: $ 70.200 Garantía de la oferta: $ 2.494.082,5 Recepción de sobres: 4/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 4 de Diciembre de 2026. Apertura de ofertas: Viernes 4 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: planeamiento@alvear.gob.ar Por Teléfono: 341 - 3177621 - Sec. de Planificación Urbana 341 - 3 581298 - Área de Compras 341- 4922109 - Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 5-2026 PDF Ver Descargar PLIEGO DE ESPECIFICACIONES TECNICAS LIC 5-2026 PDF Ver Descargar",
+          "objeto": "LICITACIÓN PÚBLICA N° 05/2026 17/11/2026 Ver detalle",
           "fecha_apertura": "2026-12-04",
           "fecha_limite_presentacion": "2026-12-04",
           "evento_publicado": null,
           "numero_convocatoria": null,
-          "url": "https://alvear.gob.ar/archivos/500_1795018491_PLIEODEBASESYCONDICIONESLICITACINN5.pdf",
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
           "documentos": [
             {
               "titulo": "Descargar",
@@ -299,6 +1376,7 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -318,30 +1396,14 @@
       ],
       "enlace_pliego": "https://alvear.gob.ar/archivos/502_1795112430_PLIEGOBASESYCONDICIONESLIC7-2026.pdf",
       "evento_publicado": null,
-      "evidencia_url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=502",
+      "evidencia_url": "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
       "evidencias_campos": {
-        "fecha_apertura": {
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=502",
-          "texto": "viernes 9 de diciembre de 2026 a las 9:00 hs. en sede municipal en calle buenos aires 1877"
-        },
-        "fecha_limite_presentacion": {
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=502",
-          "texto": "9/12/2026 en sobre cerrado entregar personalmente en mesa de entrada en calle pellegrini 2"
-        },
-        "modalidad_presentacion": {
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=502",
-          "texto": "Volver al listado LICITACIÓN PÚBLICA N° 07/2026 19/11/2026 LICITACIÓN PÚBLICA N° 07/2026 OBRA: “TRABAJOS DE ACONDICIONAMIENTO, PROTECCIÓN Y PINTURA DE LA BATERÍA DE SILOS DEL CEA” PRESUPUESTO OFICIAL: $110.000.000 Valor del pliego: $70.200 Garantía de la oferta: $ 1.100.000 Recepción de sobres: 9/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 9 de Diciembre de 2026. Apertura de ofertas: Viernes 9 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: planeamiento@alvear.gob.ar Por Teléfono: 341 - 3177621 - Sec. de Planificación Urbana 341 - 3 581298 - Área de Compras 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 7-2026 PDF Ver Descargar PLIEGO ESPECIFICACIONES TECNICAS - LIC 7-2026 PDF Ver Descargar"
-        },
         "numero_procedimiento": {
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=502",
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
           "texto": "licitacion publica 7/2026"
         },
-        "presupuesto": {
-          "texto": "presupuesto oficial: $110.000.000",
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=502"
-        },
         "tipo_procedimiento": {
-          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&id=502",
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
           "texto": "licitacion publica 7/2026"
         }
       },
@@ -361,7 +1423,7 @@
         "PRESENCIAL"
       ],
       "numero_procedimiento": "7/2026",
-      "objeto": "Volver al listado LICITACIÓN PÚBLICA N° 07/2026 19/11/2026 LICITACIÓN PÚBLICA N° 07/2026 OBRA: “TRABAJOS DE ACONDICIONAMIENTO, PROTECCIÓN Y PINTURA DE LA BATERÍA DE SILOS DEL CEA” PRESUPUESTO OFICIAL: $110.000.000 Valor del pliego: $70.200 Garantía de la oferta: $ 1.100.000 Recepción de sobres: 9/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 9 de Diciembre de 2026. Apertura de ofertas: Viernes 9 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: planeamiento@alvear.gob.ar Por Teléfono: 341 - 3177621 - Sec. de Planificación Urbana 341 - 3 581298 - Área de Compras 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 7-2026 PDF Ver Descargar PLIEGO ESPECIFICACIONES TECNICAS - LIC 7-2026 PDF Ver Descargar",
+      "objeto": "LICITACIÓN PÚBLICA N° 07/2026 19/11/2026 Ver detalle",
       "organismo": "Municipalidad de Alvear",
       "pago_evidencias": [],
       "presupuesto": {
@@ -375,8 +1437,8 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Volver al listado LICITACIÓN PÚBLICA N° 07/2026 19/11/2026 LICITACIÓN PÚBLICA N° 07/2026 OBRA: “TRABAJOS DE ACONDICIONAMIENTO, PROTECCIÓN Y PINTURA DE LA BATERÍA DE SILOS DEL CEA” PRESUPUESTO OFICIAL: $110.000.000 Valor del pliego: $70.200 Garantía de la oferta: $ 1.100.000 Recepción de sobres: 9/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 9 de Diciembre de 2026. Apertura de ofertas: Viernes 9 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: planeamiento@alvear.gob.ar Por Teléfono: 341 - 3177621 - Sec. de Planificación Urbana 341 - 3 581298 - Área de Compras 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 7-2026 PDF Ver Descargar PLIEGO ESPECIFICACIONES TECNICAS - LIC 7-2026 PDF Ver Descargar",
-      "url": "https://alvear.gob.ar/archivos/502_1795112430_PLIEGOBASESYCONDICIONESLIC7-2026.pdf",
+      "titulo": "LICITACIÓN PÚBLICA N° 07/2026 19/11/2026 Ver detalle",
+      "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
       "urls_publicacion": [
         "https://alvear.gob.ar/archivos/502_1795112430_PLIEGOBASESYCONDICIONESLIC7-2026.pdf",
         "https://alvear.gob.ar/index.php?pagina=licitaciones",
@@ -422,7 +1484,7 @@
       ],
       "id": "b50f9685cd9b602852c8ecad5f641fd53d4a33141a9379218e62d2a0a3c001e3",
       "primera_deteccion": "2026-11-20T08:59:50.283797-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "b50f9685cd9b602852c8ecad5f641fd53d4a33141a9379218e62d2a0a3c001e3"
@@ -431,12 +1493,12 @@
         {
           "id": "b50f9685cd9b602852c8ecad5f641fd53d4a33141a9379218e62d2a0a3c001e3",
           "numero_procedimiento": "7/2026",
-          "objeto": "Volver al listado LICITACIÓN PÚBLICA N° 07/2026 19/11/2026 LICITACIÓN PÚBLICA N° 07/2026 OBRA: “TRABAJOS DE ACONDICIONAMIENTO, PROTECCIÓN Y PINTURA DE LA BATERÍA DE SILOS DEL CEA” PRESUPUESTO OFICIAL: $110.000.000 Valor del pliego: $70.200 Garantía de la oferta: $ 1.100.000 Recepción de sobres: 9/12/2026 En sobre cerrado entregar personalmente en Mesa de Entrada en calle Pellegrini 2064 hasta las 8:30 hs. Del día 9 de Diciembre de 2026. Apertura de ofertas: Viernes 9 de Diciembre de 2026 a las 9:00 hs. En sede Municipal en calle Buenos Aires 1877 Alvear. Informes: Secretaría de Planificación Urbana Por Correo: planeamiento@alvear.gob.ar Por Teléfono: 341 - 3177621 - Sec. de Planificación Urbana 341 - 3 581298 - Área de Compras 341- 4922109 – Conmutador Archivos PLIEGO DE BASES Y CONDICIONES LIC 7-2026 PDF Ver Descargar PLIEGO ESPECIFICACIONES TECNICAS - LIC 7-2026 PDF Ver Descargar",
+          "objeto": "LICITACIÓN PÚBLICA N° 07/2026 19/11/2026 Ver detalle",
           "fecha_apertura": "2026-12-09",
           "fecha_limite_presentacion": "2026-12-09",
           "evento_publicado": null,
           "numero_convocatoria": null,
-          "url": "https://alvear.gob.ar/archivos/502_1795112430_PLIEGOBASESYCONDICIONESLIC7-2026.pdf",
+          "url": "https://alvear.gob.ar/index.php?pagina=licitaciones&anio=2026",
           "documentos": [
             {
               "titulo": "Descargar",
@@ -450,6 +1512,7 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -564,7 +1627,7 @@
       ],
       "id": "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0",
       "primera_deteccion": "2026-11-01T08:31:08.968829-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3ea93685460e82e2c4217265ee95fc9501c272abc01161ad1b8384527fee58a0"
@@ -596,608 +1659,6 @@
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
       "limite_presentacion_comprobado": "2026-11-25T09:45:00-03:00"
-    },
-    {
-      "detalle_completo": true,
-      "documentos": [
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/13-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf"
-        }
-      ],
-      "enlace_pliego": null,
-      "evento_publicado": null,
-      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf",
-      "evidencias_campos": {
-        "fecha_limite_presentacion": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf",
-          "texto": "2026-11-24"
-        },
-        "numero_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf",
-          "texto": "concurso de precios 2026-1958"
-        },
-        "tipo_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf",
-          "texto": "concurso de precios 2026-1958"
-        }
-      },
-      "fecha_apertura": null,
-      "fecha_apertura_texto": null,
-      "fecha_limite_presentacion": "2026-11-24",
-      "fecha_limite_presentacion_texto": "2026-11-24",
-      "fecha_publicacion": null,
-      "fuente": "https://www.entrerios.gov.ar/boletin/",
-      "fuentes_observadas": [
-        "https://www.entrerios.gov.ar/boletin/"
-      ],
-      "hora_apertura": null,
-      "hora_limite_presentacion": null,
-      "localidad": null,
-      "modalidad_presentacion": [],
-      "numero_oficial_sin_interpretar": "2026-1958",
-      "numero_procedimiento": "2026-1958",
-      "objeto": " N.º 2026-1958: Conectores para líneas preensambladas (Plan de Compras 2027).\n Presentación de ofertas hasta el 24 de noviembre de 2026 inclusive.\n",
-      "organismo": "ENERSA (Energía de Entre Ríos S.A.)",
-      "pago_evidencias": [],
-      "presupuesto": null,
-      "procedimiento": "concurso de precios 2026-1958",
-      "provincia": "Entre Ríos",
-      "registro_estructurado": true,
-      "requiere_revalidacion": false,
-      "situacion_publicada": null,
-      "tipo_procedimiento": "concurso de precios",
-      "titulo": "concurso de precios 2026-1958  N.º 2026-1958: Conectores para líneas preensambladas (Plan de Compras 2027).\n Presentación de ofertas hasta el 24 de noviembre de 2026 inclusive.\n",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf",
-      "urls_publicacion": [
-        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/13-11-26.pdf",
-        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf"
-      ],
-      "pago": {
-        "estado": "PENDIENTE",
-        "clasificacion": "NO_INFORMADO",
-        "etiqueta": "Pendiente de verificar",
-        "plazos_dias": [],
-        "hitos_inicio": [],
-        "documento_respaldo": null,
-        "documentos_respaldo": [],
-        "evidencias": [],
-        "prioritario": false,
-        "motivo": "SIN_CLAUSULA_COMPROBADA"
-      },
-      "condiciones_pago": "Pendiente de verificar",
-      "enlace_condiciones_pago": null,
-      "pago_prioritario": false,
-      "desierta": false,
-      "fracasada": false,
-      "segundo_llamado": false,
-      "reapertura": false,
-      "llamado_especial": false,
-      "procedimiento_canonico": "concurso de precios ENERSA-2026-1958",
-      "convocatoria": "1",
-      "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": null,
-      "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": null,
-      "fecha_referencia_vencimiento": "2026-11-24",
-      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
-      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "DESCONOCIDA",
-      "estimacion_comercial": null,
-      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
-      "campos_desconocidos": [
-        "localidad",
-        "presupuesto",
-        "fecha_apertura",
-        "fecha_publicacion",
-        "enlace_pliego"
-      ],
-      "id": "8ec7898f1853f968c04e60669482cbc7ce8fac3999f74798ae3277cc7c44adb0",
-      "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
-      "observada_esta_corrida": true,
-      "ids_historial": [
-        "8ec7898f1853f968c04e60669482cbc7ce8fac3999f74798ae3277cc7c44adb0"
-      ],
-      "variantes_historial": [
-        {
-          "id": "8ec7898f1853f968c04e60669482cbc7ce8fac3999f74798ae3277cc7c44adb0",
-          "numero_procedimiento": "2026-1958",
-          "objeto": " N.º 2026-1958: Conectores para líneas preensambladas (Plan de Compras 2027).\n Presentación de ofertas hasta el 24 de noviembre de 2026 inclusive.\n",
-          "fecha_apertura": null,
-          "fecha_limite_presentacion": "2026-11-24",
-          "evento_publicado": null,
-          "numero_convocatoria": null,
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf",
-          "documentos": [
-            {
-              "titulo": "Boletín complementario",
-              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/13-11-26.pdf"
-            },
-            {
-              "titulo": "Boletín complementario",
-              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf"
-            }
-          ]
-        }
-      ],
-      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "estado_comercial": "VIGENTE_VERIFICADA",
-      "presentacion_verificada": true,
-      "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-24"
-    },
-    {
-      "detalle_completo": true,
-      "documentos": [
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/13-11-26.pdf"
-        },
-        {
-          "titulo": "Boletín complementario",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf"
-        }
-      ],
-      "enlace_pliego": null,
-      "evento_publicado": null,
-      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf",
-      "evidencias_campos": {
-        "fecha_limite_presentacion": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf",
-          "texto": "2026-11-24"
-        },
-        "numero_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf",
-          "texto": "concurso de precios 2026-1961"
-        },
-        "tipo_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf",
-          "texto": "concurso de precios 2026-1961"
-        }
-      },
-      "fecha_apertura": null,
-      "fecha_apertura_texto": null,
-      "fecha_limite_presentacion": "2026-11-24",
-      "fecha_limite_presentacion_texto": "2026-11-24",
-      "fecha_publicacion": null,
-      "fuente": "https://www.entrerios.gov.ar/boletin/",
-      "fuentes_observadas": [
-        "https://www.entrerios.gov.ar/boletin/"
-      ],
-      "hora_apertura": null,
-      "hora_limite_presentacion": null,
-      "localidad": null,
-      "modalidad_presentacion": [],
-      "numero_oficial_sin_interpretar": "2026-1961",
-      "numero_procedimiento": "2026-1961",
-      "objeto": " N.º 2026-1961: Morsetería para líneas aéreas (Plan de Compras 2027).\n Presentación de ofertas hasta el 24 de noviembre de 2026 inclusive.\n",
-      "organismo": "ENERSA (Energía de Entre Ríos S.A.)",
-      "pago_evidencias": [],
-      "presupuesto": null,
-      "procedimiento": "concurso de precios 2026-1961",
-      "provincia": "Entre Ríos",
-      "registro_estructurado": true,
-      "requiere_revalidacion": false,
-      "situacion_publicada": null,
-      "tipo_procedimiento": "concurso de precios",
-      "titulo": "concurso de precios 2026-1961  N.º 2026-1961: Morsetería para líneas aéreas (Plan de Compras 2027).\n Presentación de ofertas hasta el 24 de noviembre de 2026 inclusive.\n",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf",
-      "urls_publicacion": [
-        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/13-11-26.pdf",
-        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf"
-      ],
-      "pago": {
-        "estado": "PENDIENTE",
-        "clasificacion": "NO_INFORMADO",
-        "etiqueta": "Pendiente de verificar",
-        "plazos_dias": [],
-        "hitos_inicio": [],
-        "documento_respaldo": null,
-        "documentos_respaldo": [],
-        "evidencias": [],
-        "prioritario": false,
-        "motivo": "SIN_CLAUSULA_COMPROBADA"
-      },
-      "condiciones_pago": "Pendiente de verificar",
-      "enlace_condiciones_pago": null,
-      "pago_prioritario": false,
-      "desierta": false,
-      "fracasada": false,
-      "segundo_llamado": false,
-      "reapertura": false,
-      "llamado_especial": false,
-      "procedimiento_canonico": "concurso de precios ENERSA-2026-1961",
-      "convocatoria": "1",
-      "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": null,
-      "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": null,
-      "fecha_referencia_vencimiento": "2026-11-24",
-      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
-      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "DESCONOCIDA",
-      "estimacion_comercial": null,
-      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
-      "campos_desconocidos": [
-        "localidad",
-        "presupuesto",
-        "fecha_apertura",
-        "fecha_publicacion",
-        "enlace_pliego"
-      ],
-      "id": "5a1668b5ea4f410f3abaf313d5aec9592bbb774429babfc0dd0a11f6c299492c",
-      "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
-      "observada_esta_corrida": true,
-      "ids_historial": [
-        "5a1668b5ea4f410f3abaf313d5aec9592bbb774429babfc0dd0a11f6c299492c"
-      ],
-      "variantes_historial": [
-        {
-          "id": "5a1668b5ea4f410f3abaf313d5aec9592bbb774429babfc0dd0a11f6c299492c",
-          "numero_procedimiento": "2026-1961",
-          "objeto": " N.º 2026-1961: Morsetería para líneas aéreas (Plan de Compras 2027).\n Presentación de ofertas hasta el 24 de noviembre de 2026 inclusive.\n",
-          "fecha_apertura": null,
-          "fecha_limite_presentacion": "2026-11-24",
-          "evento_publicado": null,
-          "numero_convocatoria": null,
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf",
-          "documentos": [
-            {
-              "titulo": "Boletín complementario",
-              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/13-11-26.pdf"
-            },
-            {
-              "titulo": "Boletín complementario",
-              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/16-11-26.pdf"
-            }
-          ]
-        }
-      ],
-      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "estado_comercial": "VIGENTE_VERIFICADA",
-      "presentacion_verificada": true,
-      "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-24"
-    },
-    {
-      "campos_oficiales": {
-        "actas": [],
-        "aperturasSobre": [
-          {
-            "contactoEntrega": null,
-            "fechaApertura": "2026-11-24T13:00:00Z",
-            "noEsSede": false,
-            "numeroSobre": 1,
-            "oficina": {
-              "direccion": null,
-              "nombreOficina": "Departamento Compras Santa Fe - Ituzaingo 1501 - Santa Fe",
-              "uuid": "e3dbff0936154ed888e70730ac7c31dc"
-            },
-            "uuid": "e639b1c1cd73434587dfed08686920bb"
-          }
-        ],
-        "categoria": {
-          "nombreCategoria": "Bienes",
-          "uuid": "801b7a815bdb4b458d71352f08d507f5"
-        },
-        "circulares": [
-          {
-            "adjuntos": [
-              {
-                "nombre": "Circular Nº 1 Sin Consulta Lic. Pública Nº 1730.pdf",
-                "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/5cea11f4-ddb8-4239-9d53-e00bd64bfc6e.pdf"
-              }
-            ],
-            "descripcion": "Circular Nº 1 Sin Consulta Licitación Pública Nº 1730",
-            "documentoAdjuntoUrl": null,
-            "estado": "ESTADO_APROBADA",
-            "fechaCircular": "2026-11-10T00:00:00Z",
-            "uuid": "9458c404be0a4f9780a191791f5a12b8"
-          }
-        ],
-        "consideracionesGenerales": null,
-        "contactosAdministrativos": [
-          {
-            "apellido": "DOMINGUEZ",
-            "email": "maria.dominguez@aguassantafesinas.com.ar",
-            "nombre": "MARIA JIMENA",
-            "sector": "",
-            "telefono": "342-4504594",
-            "uuid": "547af7d7f33d4299993e16b6d1c8bd4a"
-          }
-        ],
-        "contactosEntrega": [],
-        "contactosTecnicos": [
-          {
-            "apellido": "PALADINI",
-            "email": "carlos.paladini@aguassantafesinas.com.ar ",
-            "nombre": "CARLOS ANDRES CEFERINO",
-            "sector": null,
-            "sede": "Rosario - Bv. Avellaneda 650 b",
-            "telefono": "3414378579",
-            "uuid": "983a5c800c9b4731b0e5158c7fca2f85"
-          },
-          {
-            "apellido": "PALADINI",
-            "email": "carlos.paladini@aguassantafesinas.com.ar ",
-            "nombre": "CARLOS ANDRES CEFERINO",
-            "sector": null,
-            "sede": "Rosario - Bv. Avellaneda 650 b",
-            "telefono": "3414378579",
-            "uuid": "05edda2c9423448c995d88fabd9972c8"
-          }
-        ],
-        "documentosAdjuntos": [
-          {
-            "generico": false,
-            "mostrarPublico": false,
-            "nombreDocumento": "ANEXOS",
-            "tipoDocumento": "",
-            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/e9377909-c976-416d-8693-1f0b60cc7c4a.pdf",
-            "uuid": "8edd2d5fb0e943c2bf46fb87f2ca2270"
-          },
-          {
-            "generico": false,
-            "mostrarPublico": false,
-            "nombreDocumento": "EETT Racorería",
-            "tipoDocumento": "",
-            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/44d54da6-41b9-4afb-a7b5-5ad205283203.pdf",
-            "uuid": "54d1a48d2a7445cf80a0be26d2dc0170"
-          },
-          {
-            "generico": false,
-            "mostrarPublico": false,
-            "nombreDocumento": "Pliego Particular Licitación Pública N° 1730",
-            "tipoDocumento": "",
-            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/38e47962-ca89-4fd9-b65f-1a4adca9cc49.pdf",
-            "uuid": "609211b6af20456cb71fc312b681d317"
-          }
-        ],
-        "documentosGenericos": [
-          {
-            "generico": true,
-            "mostrarPublico": true,
-            "nombreDocumento": "Condiciones Generales de Compra",
-            "tipoDocumento": "Legal",
-            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/82520124-e264-447b-a5cc-3d3a01249b4d.pdf",
-            "uuid": "c482d8baa472432697c452a35513da7f"
-          },
-          {
-            "generico": true,
-            "mostrarPublico": true,
-            "nombreDocumento": "LEY COMPRE SANTAFESINO",
-            "tipoDocumento": "Legal",
-            "urlDocumento": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/2339de25-7826-4855-a013-79d1f9bdfd22.pdf",
-            "uuid": "8e4adb5e52f4425fac32828607b38485"
-          }
-        ],
-        "estado": "ESTADO_APROBADO",
-        "fecha": "2026-11-06T03:00:00Z",
-        "fechaLimiteEntregaOfertasDesde": "2026-11-06T17:00:00Z",
-        "fechaLimiteEntregaOfertasHasta": "2026-11-24T13:00:00Z",
-        "fechaLimiteOferta": "2026-11-24T13:00:00Z",
-        "fechaSugeridaPublicacion": "2026-11-10T03:00:00Z",
-        "informacionGarantia": "",
-        "informacionPresupuestaria": "1522950912.28",
-        "localidades": [
-          {
-            "descripcion": "Rosario",
-            "uuid": "a4ade3c5e3b9449e8a286f280584ca73"
-          },
-          {
-            "descripcion": "Santa Fe",
-            "uuid": "cf58f5b948e14d8fb32e7e07461621dc"
-          }
-        ],
-        "mediosComunicacion": [
-          {
-            "descripcion": "Boletin Oficial",
-            "uuid": "674e3cb5eec643ea8a75d9bab7de7328"
-          },
-          {
-            "descripcion": "El Cronista (Bs As)",
-            "uuid": "03f061d3-d067-4699-a11b-5a673f06bcdf"
-          },
-          {
-            "descripcion": "El Litoral (Sta Fe)",
-            "uuid": "9fdb6c62-85bf-4f1d-8b20-40fef03805d6"
-          }
-        ],
-        "numeroPliego": "1730",
-        "numeroSolicitud": "10028753",
-        "objetoLicitacion": "<p>ADQUISICION DE PIEZAS DE RACORERIA PARA AGUAS SANTAFESINAS S.A.</p>",
-        "otrasPresentaciones": null,
-        "rubros": [
-          {
-            "nombre": "Bienes",
-            "uuid": "1a3f4ba2-ad92-4b3b-85f7-fce1e20380ba"
-          }
-        ],
-        "soloPaginaWeb": true,
-        "subrubros": [
-          {
-            "nombreSubrubro": "Materiales de linea",
-            "uuid": "2808a1df4b5648bfb464ff4eceefc61d"
-          }
-        ],
-        "tipoPliego": {
-          "nombreTipo": "Licitación pública",
-          "uuid": "17ab2090bc784629ac594a81cb65349e"
-        },
-        "titulo": "ADQUISICION DE PIEZAS DE RACORERIA PARA AGUAS SANTAFESINAS S.A.",
-        "usuarioModificador": null,
-        "uuid": "eca265b00de6496bb7f992e8dc0b4788"
-      },
-      "detalle_completo": true,
-      "documentos": [
-        {
-          "titulo": "Adjunto oficial",
-          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/e9377909-c976-416d-8693-1f0b60cc7c4a.pdf"
-        },
-        {
-          "titulo": "Adjunto oficial",
-          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/44d54da6-41b9-4afb-a7b5-5ad205283203.pdf"
-        },
-        {
-          "titulo": "Adjunto oficial",
-          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/38e47962-ca89-4fd9-b65f-1a4adca9cc49.pdf"
-        },
-        {
-          "titulo": "Adjunto oficial",
-          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/82520124-e264-447b-a5cc-3d3a01249b4d.pdf"
-        },
-        {
-          "titulo": "Adjunto oficial",
-          "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/2339de25-7826-4855-a013-79d1f9bdfd22.pdf"
-        }
-      ],
-      "enlace_pliego": null,
-      "evento_publicado": null,
-      "evidencia_url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/eca265b00de6496bb7f992e8dc0b4788",
-      "evidencias_campos": {
-        "fecha_apertura": {
-          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/eca265b00de6496bb7f992e8dc0b4788",
-          "texto": "2026-11-24 10:00"
-        },
-        "fecha_limite_presentacion": {
-          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/eca265b00de6496bb7f992e8dc0b4788",
-          "texto": "2026-11-24 10:00"
-        },
-        "localidad": {
-          "texto": "API: localidades=[]; localidad del procedimiento desconocida",
-          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/eca265b00de6496bb7f992e8dc0b4788"
-        },
-        "numero_procedimiento": {
-          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/eca265b00de6496bb7f992e8dc0b4788",
-          "texto": "licitacion publica no 1730"
-        },
-        "tipo_procedimiento": {
-          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/eca265b00de6496bb7f992e8dc0b4788",
-          "texto": "licitacion publica no 1730"
-        }
-      },
-      "fecha_apertura": "2026-11-24",
-      "fecha_apertura_texto": "2026-11-24 10:00",
-      "fecha_limite_presentacion": "2026-11-24",
-      "fecha_limite_presentacion_texto": "2026-11-24 10:00",
-      "fecha_publicacion": null,
-      "fuente": "https://www.aguassantafesinas.com.ar/portal/licitaciones",
-      "fuentes_observadas": [
-        "https://www.aguassantafesinas.com.ar/portal/licitaciones"
-      ],
-      "hora_apertura": "10:00",
-      "hora_limite_presentacion": "10:00",
-      "id_origen": "eca265b00de6496bb7f992e8dc0b4788",
-      "identidad_ambito": "eca265b00de6496bb7f992e8dc0b4788",
-      "localidad": "Rosario",
-      "modalidad_presentacion": [],
-      "numero_oficial_sin_interpretar": "1730",
-      "numero_procedimiento": "1730",
-      "objeto": "ADQUISICION DE PIEZAS DE RACORERIA PARA AGUAS SANTAFESINAS S.A.",
-      "organismo": "ASSA",
-      "pago_evidencias": [],
-      "presupuesto": null,
-      "procedimiento": "licitacion publica no 1730",
-      "provincia": "Santa Fe",
-      "rango_evidencia": 3,
-      "registro_estructurado": true,
-      "requiere_revalidacion": false,
-      "situacion_publicada": null,
-      "tipo_procedimiento": "licitacion publica",
-      "titulo": "Licitación pública Nº 1730 — ADQUISICION DE PIEZAS DE RACORERIA PARA AGUAS SANTAFESINAS S.A.",
-      "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/eca265b00de6496bb7f992e8dc0b4788",
-      "urls_publicacion": [
-        "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/eca265b00de6496bb7f992e8dc0b4788"
-      ],
-      "pago": {
-        "estado": "PENDIENTE",
-        "clasificacion": "NO_INFORMADO",
-        "etiqueta": "Pendiente de verificar",
-        "plazos_dias": [],
-        "hitos_inicio": [],
-        "documento_respaldo": null,
-        "documentos_respaldo": [],
-        "evidencias": [],
-        "prioritario": false,
-        "motivo": "SIN_CLAUSULA_COMPROBADA"
-      },
-      "condiciones_pago": "Pendiente de verificar",
-      "enlace_condiciones_pago": null,
-      "pago_prioritario": false,
-      "desierta": false,
-      "fracasada": false,
-      "segundo_llamado": false,
-      "reapertura": false,
-      "llamado_especial": false,
-      "procedimiento_canonico": "licitacion publica ASSA-1730",
-      "convocatoria": "1",
-      "clasificacion_registro": "PROCEDIMIENTO",
-      "fecha_hora_apertura": "2026-11-24T10:00:00-03:00",
-      "vigencia": "ABIERTA",
-      "fecha_hora_limite_presentacion": "2026-11-24T10:00:00-03:00",
-      "fecha_referencia_vencimiento": "2026-11-24",
-      "tipo_fecha_vencimiento": "LIMITE_PRESENTACION",
-      "motivo_vigencia": "LIMITE_PRESENTACION_ABIERTA",
-      "antiguedad_publicacion": "DESCONOCIDA",
-      "estimacion_comercial": null,
-      "motivo_sin_estimacion": "No hay costos propios, cantidades y precio de venta comprobables para estimar margen",
-      "campos_desconocidos": [
-        "presupuesto",
-        "fecha_publicacion",
-        "enlace_pliego"
-      ],
-      "id": "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7",
-      "primera_deteccion": "2026-11-07T08:36:35.631351-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
-      "observada_esta_corrida": true,
-      "ids_historial": [
-        "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7"
-      ],
-      "variantes_historial": [
-        {
-          "id": "7de74b70ee22967e0ef5fe467d39e1f28437acf45b2cffef994fca52e31600c7",
-          "numero_procedimiento": "1730",
-          "objeto": "ADQUISICION DE PIEZAS DE RACORERIA PARA AGUAS SANTAFESINAS S.A.",
-          "fecha_apertura": "2026-11-24",
-          "fecha_limite_presentacion": "2026-11-24",
-          "evento_publicado": null,
-          "numero_convocatoria": null,
-          "url": "https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/eca265b00de6496bb7f992e8dc0b4788",
-          "documentos": [
-            {
-              "titulo": "Adjunto oficial",
-              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/e9377909-c976-416d-8693-1f0b60cc7c4a.pdf"
-            },
-            {
-              "titulo": "Adjunto oficial",
-              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/44d54da6-41b9-4afb-a7b5-5ad205283203.pdf"
-            },
-            {
-              "titulo": "Adjunto oficial",
-              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/38e47962-ca89-4fd9-b65f-1a4adca9cc49.pdf"
-            },
-            {
-              "titulo": "Adjunto oficial",
-              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/82520124-e264-447b-a5cc-3d3a01249b4d.pdf"
-            },
-            {
-              "titulo": "Adjunto oficial",
-              "url": "https://archivos.aguassantafesinas.com.ar/uploads/public/compras/pliegos/temp/2339de25-7826-4855-a013-79d1f9bdfd22.pdf"
-            }
-          ]
-        }
-      ],
-      "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "estado_comercial": "VIGENTE_VERIFICADA",
-      "presentacion_verificada": true,
-      "motivo_comercial": "Plazo de presentación explícito y no vencido",
-      "limite_presentacion_comprobado": "2026-11-24T10:00:00-03:00"
     },
     {
       "campos_oficiales": {
@@ -1450,7 +1911,7 @@
       ],
       "id": "7e9776874b9913a0d573cb2af62014d60ea14ecf1220020cec5674d45103bc3c",
       "primera_deteccion": "2026-11-12T08:58:51.069853-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7e9776874b9913a0d573cb2af62014d60ea14ecf1220020cec5674d45103bc3c"
@@ -1719,7 +2180,7 @@
       ],
       "id": "94f8805a0e854f14925878d49e0f56ae0624aceaa6f23c72741ec9a348205178",
       "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "94f8805a0e854f14925878d49e0f56ae0624aceaa6f23c72741ec9a348205178"
@@ -1857,7 +2318,7 @@
       ],
       "id": "3102ff1411f55c90562db9fa8517e4629a88830f095019ecb08dcb25ed0a71d4",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "3102ff1411f55c90562db9fa8517e4629a88830f095019ecb08dcb25ed0a71d4"
@@ -1991,7 +2452,7 @@
       ],
       "id": "fc4c9a80f2129ecfc1543a0501279fb803035a454da54777dbff5ad451a2db70",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fc4c9a80f2129ecfc1543a0501279fb803035a454da54777dbff5ad451a2db70"
@@ -2125,7 +2586,7 @@
       ],
       "id": "a5e318b44082ae5ebf9eaf719609249ecb40d19ec8df1e8547360a4886c633b9",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "a5e318b44082ae5ebf9eaf719609249ecb40d19ec8df1e8547360a4886c633b9"
@@ -2259,7 +2720,7 @@
       ],
       "id": "fdeaee316d53bb9c1e02cbcec386f5f776a9368c1a2f62e8fe4c6ea6b468ef6f",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "fdeaee316d53bb9c1e02cbcec386f5f776a9368c1a2f62e8fe4c6ea6b468ef6f"
@@ -2349,7 +2810,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Apertura de ofertas: 26 de noviembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas LP N3-2026. circular aclaratoria nº1 • 468 kB • 45 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 201 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 152 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 100 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 101 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 104 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 106 click 9 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°003/2026 Estado Activa Número LICITACIÓN PÚBLICA N°003/2026 Fecha de publicación 09/10/2026 13:00 hs. Fecha de apertura 26/11/2026 11:00 hs. Asunto CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, REMODELACIÓN, ACONDICIONAMIENTO, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DE UN LOCAL GASTRONÓMICO UBICADO EN LA TERMINAL FLUVIAL DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 26 de noviembre de 2026 a las 10:00hs Apertura de ofertas: 26 de noviembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas LP N3-2026. circular aclaratoria nº1 • 468 kB • 50 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 213 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 157 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 101 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 104 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 106 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 109 click 9 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
@@ -2394,7 +2855,7 @@
       ],
       "id": "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7418612f3580b757317d39c451e413100c5657535d141c8be2f720492c0b360a"
@@ -2733,7 +3194,7 @@
       ],
       "id": "af809a1a2301fd5ac19ea9d2f78fdf59162c9bbcca0ec3e17a9bc081e3e49c32",
       "primera_deteccion": "2026-11-11T08:57:15.954137-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "af809a1a2301fd5ac19ea9d2f78fdf59162c9bbcca0ec3e17a9bc081e3e49c32"
@@ -3094,7 +3555,7 @@
       ],
       "id": "2d840d3f136208e858d4981960e53bcfca64a1034194dbbc716f800078f33a42",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "2d840d3f136208e858d4981960e53bcfca64a1034194dbbc716f800078f33a42"
@@ -3440,7 +3901,7 @@
       ],
       "id": "7b55a45170f5e26bad678e0d89ab7d62a58af4691f82eac497e53358048c2794",
       "primera_deteccion": "2026-11-14T08:37:49.537518-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7b55a45170f5e26bad678e0d89ab7d62a58af4691f82eac497e53358048c2794"
@@ -3590,7 +4051,7 @@
       ],
       "id": "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9"
@@ -3633,30 +4094,34 @@
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf"
         }
       ],
       "enlace_pliego": null,
       "evento_publicado": null,
-      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf",
       "evidencias_campos": {
         "fecha_apertura": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf",
           "texto": "puerto yerua. palacio municipal, 10 de diciembre de 2026. licitacion publica – “adquisicio"
         },
         "fecha_limite_presentacion": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf",
           "texto": "2026-12-10t09:00:00-03:00"
         },
         "modalidad_presentacion": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
-          "texto": "CONCORDIA\n\n                               MUNICIPALIDAD DE PUERTO YERUÁ\n                                 Licitación Pública N° 002/2026\n Para la “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”, a efectuarse en la ciudad de Puerto Yeruá,\ndepartamento Concordia.\n DECRETO Nº 229/2026.\n OBJETO DEL LLAMADO: La Municipalidad de Puerto Yeruá llama a Licitación Pública N° 002/2026 para la\n“ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”.\n\n\n\n PRESUPUESTO OFICIAL: el presupuesto oficial corresponde a la suma de pesos SESENTA MILLONES CON\n00/100 ($ 60.000.000,00).\n RETIRO DE LOS PLIEGOS: disponibles desde el día viernes 19 de Noviembre de 2026, para su retiro en la\nmunicipalidad de Puerto Yeruá, sito en calle Avenida Islas Malvinas Nº 516, y para su toma de conocimiento en la\npágina oficial de la Municipalidad de Puerto Yeruá, sin costo alguno para los oferentes.\n PRESENTACION DE LAS OFERTAS: Deberán ser presentadas en la municipalidad de Puerto Yeruá, mesa de\nentradas, hasta el día 10 de diciembre de 2026, a las 9:00 Horas, sito en calle Avenida Islas Malvinas nº 516, en\nun sobre liso con la enmienda Licitación Pública Nº 002/2026.\n LUGAR Y FECHA DE LA APERTURA: Puerto Yeruá. Palacio Municipal, 10 de diciembre de 2026.\n LICITACION PÚBLICA – “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR\nAL PARQUE AUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”\n APERTURA DE LAS PROPUESTAS: la apertura de los sobres con las respectivas ofertas será el día 10 de\ndiciembre de 2026, a las 9:00 Horas en el recinto de la Municipalidad de Puerto Yeruá sito en calle Av. Islas\nMalvinas Nº 516."
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf",
+          "texto": "CONCORDIA\n\n                                       MUNICIPALIDAD DE PUERTO YERUÁ\n                                           Licitación Pública N° 002/2026\n Para la “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”, a efectuarse en la ciudad de Puerto Yeruá,\ndepartamento Concordia.\n DECRETO Nº 229/2026.\n OBJETO DEL LLAMADO: La Municipalidad de Puerto Yeruá llama a Licitación Pública N° 002/2026 para la\n“ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”.\n PRESUPUESTO OFICIAL: el presupuesto oficial corresponde a la suma de pesos SESENTA MILLONES CON\n00/100 ($ 60.000.000,00).\n RETIRO DE LOS PLIEGOS: disponibles desde el día viernes 19 de Noviembre de 2026, para su retiro en la\nmunicipalidad de Puerto Yeruá, sito en calle Avenida Islas Malvinas Nº 516, y para su toma de conocimiento en la\npágina oficial de la Municipalidad de Puerto Yeruá, sin costo alguno para los oferentes.\n\n\n\n PRESENTACION DE LAS OFERTAS: Deberán ser presentadas en la municipalidad de Puerto Yeruá, mesa de\nentradas, hasta el día 10 de diciembre de 2026, a las 9:00 Horas, sito en calle Avenida Islas Malvinas nº 516, en\nun sobre liso con la enmienda Licitación Pública Nº 002/2026.\n LUGAR Y FECHA DE LA APERTURA: Puerto Yeruá. Palacio Municipal, 10 de diciembre de 2026.\n LICITACION PÚBLICA – “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR\nAL PARQUE AUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”\n APERTURA DE LAS PROPUESTAS: la apertura de los sobres con las respectivas ofertas será el día 10 de\ndiciembre de 2026, a las 9:00 Horas en el recinto de la Municipalidad de Puerto Yeruá sito en calle Av. Islas\nMalvinas Nº 516."
         },
         "numero_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf",
           "texto": "licitacion publica 2/2026"
         },
         "tipo_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf",
           "texto": "licitacion publica 2/2026"
         }
       },
@@ -3666,6 +4131,9 @@
       "fecha_limite_presentacion_texto": "2026-12-10T09:00:00-03:00",
       "fecha_publicacion": null,
       "fuente": "https://www.entrerios.gov.ar/boletin/",
+      "fuentes_observadas": [
+        "https://www.entrerios.gov.ar/boletin/"
+      ],
       "hora_apertura": null,
       "hora_limite_presentacion": "09:00",
       "localidad": "Puerto Yeruá",
@@ -3675,7 +4143,7 @@
       "numero_convocatoria": "1",
       "numero_oficial_sin_interpretar": "2/2026",
       "numero_procedimiento": "2/2026",
-      "objeto": "CONCORDIA\n\n                               MUNICIPALIDAD DE PUERTO YERUÁ\n                                 Licitación Pública N° 002/2026\n Para la “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”, a efectuarse en la ciudad de Puerto Yeruá,\ndepartamento Concordia.\n DECRETO Nº 229/2026.\n OBJETO DEL LLAMADO: La Municipalidad de Puerto Yeruá llama a Licitación Pública N° 002/2026 para la\n“ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”.\n\n\n\n PRESUPUESTO OFICIAL: el presupuesto oficial corresponde a la suma de pesos SESENTA MILLONES CON\n00/100 ($ 60.000.000,00).\n RETIRO DE LOS PLIEGOS: disponibles desde el día viernes 19 de Noviembre de 2026, para su retiro en la\nmunicipalidad de Puerto Yeruá, sito en calle Avenida Islas Malvinas Nº 516, y para su toma de conocimiento en la\npágina oficial de la Municipalidad de Puerto Yeruá, sin costo alguno para los oferentes.\n PRESENTACION DE LAS OFERTAS: Deberán ser presentadas en la municipalidad de Puerto Yeruá, mesa de\nentradas, hasta el día 10 de diciembre de 2026, a las 9:00 Horas, sito en calle Avenida Islas Malvinas nº 516, en\nun sobre liso con la enmienda Licitación Pública Nº 002/2026.\n LUGAR Y FECHA DE LA APERTURA: Puerto Yeruá. Palacio Municipal, 10 de diciembre de 2026.\n LICITACION PÚBLICA – “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR\nAL PARQUE AUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”\n APERTURA DE LAS PROPUESTAS: la apertura de los sobres con las respectivas ofertas será el día 10 de\ndiciembre de 2026, a las 9:00 Horas en el recinto de la Municipalidad de Puerto Yeruá sito en calle Av. Islas\nMalvinas Nº 516.",
+      "objeto": "CONCORDIA\n\n                                       MUNICIPALIDAD DE PUERTO YERUÁ\n                                           Licitación Pública N° 002/2026\n Para la “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”, a efectuarse en la ciudad de Puerto Yeruá,\ndepartamento Concordia.\n DECRETO Nº 229/2026.\n OBJETO DEL LLAMADO: La Municipalidad de Puerto Yeruá llama a Licitación Pública N° 002/2026 para la\n“ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”.\n PRESUPUESTO OFICIAL: el presupuesto oficial corresponde a la suma de pesos SESENTA MILLONES CON\n00/100 ($ 60.000.000,00).\n RETIRO DE LOS PLIEGOS: disponibles desde el día viernes 19 de Noviembre de 2026, para su retiro en la\nmunicipalidad de Puerto Yeruá, sito en calle Avenida Islas Malvinas Nº 516, y para su toma de conocimiento en la\npágina oficial de la Municipalidad de Puerto Yeruá, sin costo alguno para los oferentes.\n\n\n\n PRESENTACION DE LAS OFERTAS: Deberán ser presentadas en la municipalidad de Puerto Yeruá, mesa de\nentradas, hasta el día 10 de diciembre de 2026, a las 9:00 Horas, sito en calle Avenida Islas Malvinas nº 516, en\nun sobre liso con la enmienda Licitación Pública Nº 002/2026.\n LUGAR Y FECHA DE LA APERTURA: Puerto Yeruá. Palacio Municipal, 10 de diciembre de 2026.\n LICITACION PÚBLICA – “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR\nAL PARQUE AUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”\n APERTURA DE LAS PROPUESTAS: la apertura de los sobres con las respectivas ofertas será el día 10 de\ndiciembre de 2026, a las 9:00 Horas en el recinto de la Municipalidad de Puerto Yeruá sito en calle Av. Islas\nMalvinas Nº 516.",
       "organismo": "Municipalidad de Puerto Yeruá",
       "pago_evidencias": [],
       "presupuesto": null,
@@ -3685,8 +4153,12 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "licitacion publica 2/2026 CONCORDIA\n\n                               MUNICIPALIDAD DE PUERTO YERUÁ\n                                 Licitación Pública N° 002/2026\n Para la “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”, a efectuarse en la ciudad de Puerto Yeruá,\ndepartamento Concordia.\n DECRETO Nº 229/2026.\n OBJETO DEL LLAMADO: La Municipalidad de Puerto Yeruá llama a Licitación Pública N° 002/2026 para la\n“ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”.\n\n\n\n PRESUPUESTO OFICIAL: el presupuesto oficial corresponde a la suma de pesos SESENTA MILLONES CON\n00/100 ($ 60.000.000,00).\n RETIRO DE LOS PLIEGOS: disponibles desde el día viernes 19 de Noviembre de 2026, para su retiro en la\nmunicipalidad de Puerto Yeruá, sito en calle Avenida Islas Malvinas Nº 516, y para su toma de conocimiento en la\npágina oficial de la Municipalidad de Puerto Yeruá, sin costo alguno para los oferentes.\n PRESENTACION DE LAS OFERTAS: Deberán ser presentadas en la municipalidad de Puerto Yeruá, mesa de\nentradas, hasta el día 10 de diciembre de 2026, a las 9:00 Horas, sito en calle Avenida Islas Malvinas nº 516, en\nun sobre liso con la enmienda Licitación Pública Nº 002/2026.\n LUGAR Y FECHA DE LA APERTURA: Puerto Yeruá. Palacio Municipal, 10 de diciembre de 2026.\n LICITACION PÚBLICA – “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR\nAL PARQUE AUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”\n APERTURA DE LAS PROPUESTAS: la apertura de los sobres con las respectivas ofertas será el día 10 de\ndiciembre de 2026, a las 9:00 Horas en el recinto de la Municipalidad de Puerto Yeruá sito en calle Av. Islas\nMalvinas Nº 516.",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+      "titulo": "licitacion publica 2/2026 CONCORDIA\n\n                                       MUNICIPALIDAD DE PUERTO YERUÁ\n                                           Licitación Pública N° 002/2026\n Para la “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”, a efectuarse en la ciudad de Puerto Yeruá,\ndepartamento Concordia.\n DECRETO Nº 229/2026.\n OBJETO DEL LLAMADO: La Municipalidad de Puerto Yeruá llama a Licitación Pública N° 002/2026 para la\n“ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”.\n PRESUPUESTO OFICIAL: el presupuesto oficial corresponde a la suma de pesos SESENTA MILLONES CON\n00/100 ($ 60.000.000,00).\n RETIRO DE LOS PLIEGOS: disponibles desde el día viernes 19 de Noviembre de 2026, para su retiro en la\nmunicipalidad de Puerto Yeruá, sito en calle Avenida Islas Malvinas Nº 516, y para su toma de conocimiento en la\npágina oficial de la Municipalidad de Puerto Yeruá, sin costo alguno para los oferentes.\n\n\n\n PRESENTACION DE LAS OFERTAS: Deberán ser presentadas en la municipalidad de Puerto Yeruá, mesa de\nentradas, hasta el día 10 de diciembre de 2026, a las 9:00 Horas, sito en calle Avenida Islas Malvinas nº 516, en\nun sobre liso con la enmienda Licitación Pública Nº 002/2026.\n LUGAR Y FECHA DE LA APERTURA: Puerto Yeruá. Palacio Municipal, 10 de diciembre de 2026.\n LICITACION PÚBLICA – “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR\nAL PARQUE AUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”\n APERTURA DE LAS PROPUESTAS: la apertura de los sobres con las respectivas ofertas será el día 10 de\ndiciembre de 2026, a las 9:00 Horas en el recinto de la Municipalidad de Puerto Yeruá sito en calle Av. Islas\nMalvinas Nº 516.",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf",
+      "urls_publicacion": [
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf"
+      ],
       "pago": {
         "estado": "PENDIENTE",
         "clasificacion": "NO_INFORMADO",
@@ -3726,7 +4198,7 @@
       ],
       "id": "acf7909ed028ea5e984c8a8d64810f6da3b4b73ac6f2a775fd23a997f852ae2a",
       "primera_deteccion": "2026-11-20T08:59:50.283797-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "acf7909ed028ea5e984c8a8d64810f6da3b4b73ac6f2a775fd23a997f852ae2a"
@@ -3735,21 +4207,26 @@
         {
           "id": "acf7909ed028ea5e984c8a8d64810f6da3b4b73ac6f2a775fd23a997f852ae2a",
           "numero_procedimiento": "2/2026",
-          "objeto": "CONCORDIA\n\n                               MUNICIPALIDAD DE PUERTO YERUÁ\n                                 Licitación Pública N° 002/2026\n Para la “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”, a efectuarse en la ciudad de Puerto Yeruá,\ndepartamento Concordia.\n DECRETO Nº 229/2026.\n OBJETO DEL LLAMADO: La Municipalidad de Puerto Yeruá llama a Licitación Pública N° 002/2026 para la\n“ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”.\n\n\n\n PRESUPUESTO OFICIAL: el presupuesto oficial corresponde a la suma de pesos SESENTA MILLONES CON\n00/100 ($ 60.000.000,00).\n RETIRO DE LOS PLIEGOS: disponibles desde el día viernes 19 de Noviembre de 2026, para su retiro en la\nmunicipalidad de Puerto Yeruá, sito en calle Avenida Islas Malvinas Nº 516, y para su toma de conocimiento en la\npágina oficial de la Municipalidad de Puerto Yeruá, sin costo alguno para los oferentes.\n PRESENTACION DE LAS OFERTAS: Deberán ser presentadas en la municipalidad de Puerto Yeruá, mesa de\nentradas, hasta el día 10 de diciembre de 2026, a las 9:00 Horas, sito en calle Avenida Islas Malvinas nº 516, en\nun sobre liso con la enmienda Licitación Pública Nº 002/2026.\n LUGAR Y FECHA DE LA APERTURA: Puerto Yeruá. Palacio Municipal, 10 de diciembre de 2026.\n LICITACION PÚBLICA – “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR\nAL PARQUE AUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”\n APERTURA DE LAS PROPUESTAS: la apertura de los sobres con las respectivas ofertas será el día 10 de\ndiciembre de 2026, a las 9:00 Horas en el recinto de la Municipalidad de Puerto Yeruá sito en calle Av. Islas\nMalvinas Nº 516.",
+          "objeto": "CONCORDIA\n\n                                       MUNICIPALIDAD DE PUERTO YERUÁ\n                                           Licitación Pública N° 002/2026\n Para la “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”, a efectuarse en la ciudad de Puerto Yeruá,\ndepartamento Concordia.\n DECRETO Nº 229/2026.\n OBJETO DEL LLAMADO: La Municipalidad de Puerto Yeruá llama a Licitación Pública N° 002/2026 para la\n“ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE\nAUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”.\n PRESUPUESTO OFICIAL: el presupuesto oficial corresponde a la suma de pesos SESENTA MILLONES CON\n00/100 ($ 60.000.000,00).\n RETIRO DE LOS PLIEGOS: disponibles desde el día viernes 19 de Noviembre de 2026, para su retiro en la\nmunicipalidad de Puerto Yeruá, sito en calle Avenida Islas Malvinas Nº 516, y para su toma de conocimiento en la\npágina oficial de la Municipalidad de Puerto Yeruá, sin costo alguno para los oferentes.\n\n\n\n PRESENTACION DE LAS OFERTAS: Deberán ser presentadas en la municipalidad de Puerto Yeruá, mesa de\nentradas, hasta el día 10 de diciembre de 2026, a las 9:00 Horas, sito en calle Avenida Islas Malvinas nº 516, en\nun sobre liso con la enmienda Licitación Pública Nº 002/2026.\n LUGAR Y FECHA DE LA APERTURA: Puerto Yeruá. Palacio Municipal, 10 de diciembre de 2026.\n LICITACION PÚBLICA – “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR\nAL PARQUE AUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”\n APERTURA DE LAS PROPUESTAS: la apertura de los sobres con las respectivas ofertas será el día 10 de\ndiciembre de 2026, a las 9:00 Horas en el recinto de la Municipalidad de Puerto Yeruá sito en calle Av. Islas\nMalvinas Nº 516.",
           "fecha_apertura": "2026-12-10",
           "fecha_limite_presentacion": "2026-12-10",
           "evento_publicado": null,
           "numero_convocatoria": "1",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf",
           "documentos": [
             {
               "titulo": "Boletín complementario",
               "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf"
+            },
+            {
+              "titulo": "Boletín complementario",
+              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf"
             }
           ]
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -3761,30 +4238,34 @@
         {
           "titulo": "Boletín complementario",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf"
+        },
+        {
+          "titulo": "Boletín complementario",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf"
         }
       ],
       "enlace_pliego": null,
       "evento_publicado": null,
-      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+      "evidencia_url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf",
       "evidencias_campos": {
         "fecha_apertura": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf",
           "texto": "de propuestas: 16 de diciembre de 2026 a las 11:00 horas en el edificio comunal, sito en z"
         },
         "fecha_limite_presentacion": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf",
           "texto": "de propuestas: 15 de diciembre de 2026 a las 12:00 horas. fecha y hora de "
         },
         "modalidad_presentacion": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
-          "texto": "NOGOYA\n\n                                   COMUNA DE JUSTO JOSÉ DE URQUI ZA\n                                        Licitación Pública N° 01-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 01-2026 COMUNA DE JUSTO JOSE DE URQUIZA\nAUTORIZADA POR LA ORDENANZA Nº 012-2026 DEL CONSEJO COMUNAL Y DECRETO N° 055-2026 DEL\nDEPARTAMENTO EJECUTIVO. ADQUISICIÓN DE UNA (1) RETROEXCAVADORA NUEVA SEGÚN PLIEGO DE\nBASES Y CONDICIONES GENERALES, PARTICULARES Y ANEXO DE ESPECIFICACIONES TÉCNICAS\nPARTICULARES\n PRESUPUESTO OFICIAL: Pesos Ciento Sesenta y Siete Millones Setecientos Siete Mil Seis Cientos Cuarenta\ncon 05/100 Centavos ($ 167.707.640,05).\n\n\n\n PLIEGO: El Pliego de Bases y Condiciones Generales, el Pliego de Bases y Condiciones Particulares, y el Anexo\nde Especificaciones Técnicas Particulares puede adquirirse en la Comuna de Justo José de Urquiza o solicitarse\nen el siguiente correo: comunajjurquiza7ma@gmail.com\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACIÓN: Mesa de Entradas del Edificio Comunal, sito en zona rural de Justo José de\nUrquiza, Departamento Nogoyá, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 15 de diciembre de 2026 a las 12:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 16 de diciembre de 2026 a las 11:00 horas en el Edificio\nComunal, sito en zona rural de Justo José de Urquiza, Departamento Nogoyá, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de Justo José de Urquiza, sito en comunajjurquiza7ma@gmail.com"
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf",
+          "texto": "NOGOYA\n\n                                       COMUNA DE JUSTO JOSÉ DE URQUI ZA\n                                            Licitación Pública N° 01-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 01-2026 COMUNA DE JUSTO JOSE DE URQUIZA\nAUTORIZADA POR LA ORDENANZA Nº 012-2026 DEL CONSEJO COMUNAL Y DECRETO N° 055-2026 DEL\nDEPARTAMENTO EJECUTIVO. ADQUISICIÓN DE UNA (1) RETROEXCAVADORA NUEVA SEGÚN PLIEGO DE\nBASES Y CONDICIONES GENERALES, PARTICULARES Y ANEXO DE ESPECIFICACIONES TÉCNICAS\nPARTICULARES\n PRESUPUESTO OFICIAL: Pesos Ciento Sesenta y Siete Millones Setecientos Siete Mil Seis Cientos Cuarenta\ncon 05/100 Centavos ($ 167.707.640,05).\n PLIEGO: El Pliego de Bases y Condiciones Generales, el Pliego de Bases y Condiciones Particulares, y el Anexo\nde Especificaciones Técnicas Particulares puede adquirirse en la Comuna de Justo José de Urquiza o solicitarse\nen el siguiente correo: comunajjurquiza7ma@gmail.com\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACIÓN: Mesa de Entradas del Edificio Comunal, sito en zona rural de Justo José de\nUrquiza, Departamento Nogoyá, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 15 de diciembre de 2026 a las 12:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 16 de diciembre de 2026 a las 11:00 horas en el Edificio\nComunal, sito en zona rural de Justo José de Urquiza, Departamento Nogoyá, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de Justo José de Urquiza, sito en comunajjurquiza7ma@gmail.com"
         },
         "numero_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf",
           "texto": "licitacion publica 1-2026"
         },
         "tipo_procedimiento": {
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf",
           "texto": "licitacion publica 1-2026"
         }
       },
@@ -3793,6 +4274,9 @@
       "fecha_limite_presentacion": "2026-12-15",
       "fecha_publicacion": null,
       "fuente": "https://www.entrerios.gov.ar/boletin/",
+      "fuentes_observadas": [
+        "https://www.entrerios.gov.ar/boletin/"
+      ],
       "hora_apertura": "11:00",
       "hora_limite_presentacion": "12:00",
       "localidad": "Justo José de Urquiza",
@@ -3802,7 +4286,7 @@
       "numero_convocatoria": "1",
       "numero_oficial_sin_interpretar": "1-2026",
       "numero_procedimiento": "1/2026",
-      "objeto": "NOGOYA\n\n                                   COMUNA DE JUSTO JOSÉ DE URQUI ZA\n                                        Licitación Pública N° 01-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 01-2026 COMUNA DE JUSTO JOSE DE URQUIZA\nAUTORIZADA POR LA ORDENANZA Nº 012-2026 DEL CONSEJO COMUNAL Y DECRETO N° 055-2026 DEL\nDEPARTAMENTO EJECUTIVO. ADQUISICIÓN DE UNA (1) RETROEXCAVADORA NUEVA SEGÚN PLIEGO DE\nBASES Y CONDICIONES GENERALES, PARTICULARES Y ANEXO DE ESPECIFICACIONES TÉCNICAS\nPARTICULARES\n PRESUPUESTO OFICIAL: Pesos Ciento Sesenta y Siete Millones Setecientos Siete Mil Seis Cientos Cuarenta\ncon 05/100 Centavos ($ 167.707.640,05).\n\n\n\n PLIEGO: El Pliego de Bases y Condiciones Generales, el Pliego de Bases y Condiciones Particulares, y el Anexo\nde Especificaciones Técnicas Particulares puede adquirirse en la Comuna de Justo José de Urquiza o solicitarse\nen el siguiente correo: comunajjurquiza7ma@gmail.com\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACIÓN: Mesa de Entradas del Edificio Comunal, sito en zona rural de Justo José de\nUrquiza, Departamento Nogoyá, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 15 de diciembre de 2026 a las 12:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 16 de diciembre de 2026 a las 11:00 horas en el Edificio\nComunal, sito en zona rural de Justo José de Urquiza, Departamento Nogoyá, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de Justo José de Urquiza, sito en comunajjurquiza7ma@gmail.com",
+      "objeto": "NOGOYA\n\n                                       COMUNA DE JUSTO JOSÉ DE URQUI ZA\n                                            Licitación Pública N° 01-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 01-2026 COMUNA DE JUSTO JOSE DE URQUIZA\nAUTORIZADA POR LA ORDENANZA Nº 012-2026 DEL CONSEJO COMUNAL Y DECRETO N° 055-2026 DEL\nDEPARTAMENTO EJECUTIVO. ADQUISICIÓN DE UNA (1) RETROEXCAVADORA NUEVA SEGÚN PLIEGO DE\nBASES Y CONDICIONES GENERALES, PARTICULARES Y ANEXO DE ESPECIFICACIONES TÉCNICAS\nPARTICULARES\n PRESUPUESTO OFICIAL: Pesos Ciento Sesenta y Siete Millones Setecientos Siete Mil Seis Cientos Cuarenta\ncon 05/100 Centavos ($ 167.707.640,05).\n PLIEGO: El Pliego de Bases y Condiciones Generales, el Pliego de Bases y Condiciones Particulares, y el Anexo\nde Especificaciones Técnicas Particulares puede adquirirse en la Comuna de Justo José de Urquiza o solicitarse\nen el siguiente correo: comunajjurquiza7ma@gmail.com\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACIÓN: Mesa de Entradas del Edificio Comunal, sito en zona rural de Justo José de\nUrquiza, Departamento Nogoyá, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 15 de diciembre de 2026 a las 12:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 16 de diciembre de 2026 a las 11:00 horas en el Edificio\nComunal, sito en zona rural de Justo José de Urquiza, Departamento Nogoyá, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de Justo José de Urquiza, sito en comunajjurquiza7ma@gmail.com",
       "organismo": "Comuna de Justo José de Urquiza",
       "pago_evidencias": [],
       "presupuesto": null,
@@ -3812,8 +4296,12 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "licitacion publica 1-2026 NOGOYA\n\n                                   COMUNA DE JUSTO JOSÉ DE URQUI ZA\n                                        Licitación Pública N° 01-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 01-2026 COMUNA DE JUSTO JOSE DE URQUIZA\nAUTORIZADA POR LA ORDENANZA Nº 012-2026 DEL CONSEJO COMUNAL Y DECRETO N° 055-2026 DEL\nDEPARTAMENTO EJECUTIVO. ADQUISICIÓN DE UNA (1) RETROEXCAVADORA NUEVA SEGÚN PLIEGO DE\nBASES Y CONDICIONES GENERALES, PARTICULARES Y ANEXO DE ESPECIFICACIONES TÉCNICAS\nPARTICULARES\n PRESUPUESTO OFICIAL: Pesos Ciento Sesenta y Siete Millones Setecientos Siete Mil Seis Cientos Cuarenta\ncon 05/100 Centavos ($ 167.707.640,05).\n\n\n\n PLIEGO: El Pliego de Bases y Condiciones Generales, el Pliego de Bases y Condiciones Particulares, y el Anexo\nde Especificaciones Técnicas Particulares puede adquirirse en la Comuna de Justo José de Urquiza o solicitarse\nen el siguiente correo: comunajjurquiza7ma@gmail.com\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACIÓN: Mesa de Entradas del Edificio Comunal, sito en zona rural de Justo José de\nUrquiza, Departamento Nogoyá, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 15 de diciembre de 2026 a las 12:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 16 de diciembre de 2026 a las 11:00 horas en el Edificio\nComunal, sito en zona rural de Justo José de Urquiza, Departamento Nogoyá, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de Justo José de Urquiza, sito en comunajjurquiza7ma@gmail.com",
-      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+      "titulo": "licitacion publica 1-2026 NOGOYA\n\n                                       COMUNA DE JUSTO JOSÉ DE URQUI ZA\n                                            Licitación Pública N° 01-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 01-2026 COMUNA DE JUSTO JOSE DE URQUIZA\nAUTORIZADA POR LA ORDENANZA Nº 012-2026 DEL CONSEJO COMUNAL Y DECRETO N° 055-2026 DEL\nDEPARTAMENTO EJECUTIVO. ADQUISICIÓN DE UNA (1) RETROEXCAVADORA NUEVA SEGÚN PLIEGO DE\nBASES Y CONDICIONES GENERALES, PARTICULARES Y ANEXO DE ESPECIFICACIONES TÉCNICAS\nPARTICULARES\n PRESUPUESTO OFICIAL: Pesos Ciento Sesenta y Siete Millones Setecientos Siete Mil Seis Cientos Cuarenta\ncon 05/100 Centavos ($ 167.707.640,05).\n PLIEGO: El Pliego de Bases y Condiciones Generales, el Pliego de Bases y Condiciones Particulares, y el Anexo\nde Especificaciones Técnicas Particulares puede adquirirse en la Comuna de Justo José de Urquiza o solicitarse\nen el siguiente correo: comunajjurquiza7ma@gmail.com\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACIÓN: Mesa de Entradas del Edificio Comunal, sito en zona rural de Justo José de\nUrquiza, Departamento Nogoyá, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 15 de diciembre de 2026 a las 12:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 16 de diciembre de 2026 a las 11:00 horas en el Edificio\nComunal, sito en zona rural de Justo José de Urquiza, Departamento Nogoyá, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de Justo José de Urquiza, sito en comunajjurquiza7ma@gmail.com",
+      "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf",
+      "urls_publicacion": [
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+        "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf"
+      ],
       "pago": {
         "estado": "PENDIENTE",
         "clasificacion": "NO_INFORMADO",
@@ -3853,7 +4341,7 @@
       ],
       "id": "0099dd82326ff35af76a79fd7b3b3c6add4ec3358add6b10e390abb82eaadc4d",
       "primera_deteccion": "2026-11-20T08:59:50.283797-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "0099dd82326ff35af76a79fd7b3b3c6add4ec3358add6b10e390abb82eaadc4d"
@@ -3862,21 +4350,26 @@
         {
           "id": "0099dd82326ff35af76a79fd7b3b3c6add4ec3358add6b10e390abb82eaadc4d",
           "numero_procedimiento": "1/2026",
-          "objeto": "NOGOYA\n\n                                   COMUNA DE JUSTO JOSÉ DE URQUI ZA\n                                        Licitación Pública N° 01-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 01-2026 COMUNA DE JUSTO JOSE DE URQUIZA\nAUTORIZADA POR LA ORDENANZA Nº 012-2026 DEL CONSEJO COMUNAL Y DECRETO N° 055-2026 DEL\nDEPARTAMENTO EJECUTIVO. ADQUISICIÓN DE UNA (1) RETROEXCAVADORA NUEVA SEGÚN PLIEGO DE\nBASES Y CONDICIONES GENERALES, PARTICULARES Y ANEXO DE ESPECIFICACIONES TÉCNICAS\nPARTICULARES\n PRESUPUESTO OFICIAL: Pesos Ciento Sesenta y Siete Millones Setecientos Siete Mil Seis Cientos Cuarenta\ncon 05/100 Centavos ($ 167.707.640,05).\n\n\n\n PLIEGO: El Pliego de Bases y Condiciones Generales, el Pliego de Bases y Condiciones Particulares, y el Anexo\nde Especificaciones Técnicas Particulares puede adquirirse en la Comuna de Justo José de Urquiza o solicitarse\nen el siguiente correo: comunajjurquiza7ma@gmail.com\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACIÓN: Mesa de Entradas del Edificio Comunal, sito en zona rural de Justo José de\nUrquiza, Departamento Nogoyá, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 15 de diciembre de 2026 a las 12:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 16 de diciembre de 2026 a las 11:00 horas en el Edificio\nComunal, sito en zona rural de Justo José de Urquiza, Departamento Nogoyá, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de Justo José de Urquiza, sito en comunajjurquiza7ma@gmail.com",
+          "objeto": "NOGOYA\n\n                                       COMUNA DE JUSTO JOSÉ DE URQUI ZA\n                                            Licitación Pública N° 01-2026\n OBJETO: LLAMADO A LICITACIÓN PÚBLICA Nº 01-2026 COMUNA DE JUSTO JOSE DE URQUIZA\nAUTORIZADA POR LA ORDENANZA Nº 012-2026 DEL CONSEJO COMUNAL Y DECRETO N° 055-2026 DEL\nDEPARTAMENTO EJECUTIVO. ADQUISICIÓN DE UNA (1) RETROEXCAVADORA NUEVA SEGÚN PLIEGO DE\nBASES Y CONDICIONES GENERALES, PARTICULARES Y ANEXO DE ESPECIFICACIONES TÉCNICAS\nPARTICULARES\n PRESUPUESTO OFICIAL: Pesos Ciento Sesenta y Siete Millones Setecientos Siete Mil Seis Cientos Cuarenta\ncon 05/100 Centavos ($ 167.707.640,05).\n PLIEGO: El Pliego de Bases y Condiciones Generales, el Pliego de Bases y Condiciones Particulares, y el Anexo\nde Especificaciones Técnicas Particulares puede adquirirse en la Comuna de Justo José de Urquiza o solicitarse\nen el siguiente correo: comunajjurquiza7ma@gmail.com\n VALOR DEL PLIEGO: SIN COSTO.\n LUGAR DE PRESENTACIÓN: Mesa de Entradas del Edificio Comunal, sito en zona rural de Justo José de\nUrquiza, Departamento Nogoyá, Entre Ríos.\n FECHA Y HORA LIMITE DE PRESENTACIÓN DE PROPUESTAS: 15 de diciembre de 2026 a las 12:00 horas.\n FECHA Y HORA DE APERTURA DE PROPUESTAS: 16 de diciembre de 2026 a las 11:00 horas en el Edificio\nComunal, sito en zona rural de Justo José de Urquiza, Departamento Nogoyá, Entre Ríos.\n CONSULTAS Y CONTACTO: Todo oferente que requiera evacuar consultas podrá hacerlo mediante email a la\ncasilla oficial del correo de la Comuna de Justo José de Urquiza, sito en comunajjurquiza7ma@gmail.com",
           "fecha_apertura": "2026-12-16",
           "fecha_limite_presentacion": "2026-12-15",
           "evento_publicado": null,
           "numero_convocatoria": "1",
-          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf",
+          "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf",
           "documentos": [
             {
               "titulo": "Boletín complementario",
               "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/20-11-26.pdf"
+            },
+            {
+              "titulo": "Boletín complementario",
+              "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/24-11-26.pdf"
             }
           ]
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
+      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -3939,7 +4432,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 268 click 19 octubre, 2026 ANEXO I • 2 MB • 163 click 19 octubre, 2026 Anexo II • 112 kB • 135 click 19 octubre, 2026 Anexo III • 174 kB • 148 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 147 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 144 click 19 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 275 click 19 octubre, 2026 ANEXO I • 2 MB • 166 click 19 octubre, 2026 Anexo II • 112 kB • 139 click 19 octubre, 2026 Anexo III • 174 kB • 151 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 150 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 147 click 19 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
@@ -3984,7 +4477,7 @@
       ],
       "id": "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-23T19:38:31.482042-03:00",
+      "ultima_deteccion": "2026-11-24T18:10:31.411068-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99"
