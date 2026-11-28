@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-27T16:59:41.068239-03:00",
+  "fecha": "2026-11-28T15:51:17.201848-03:00",
   "total": 20,
   "oportunidades": [
     {
@@ -45,6 +45,7 @@
       "hora_limite_presentacion": "10:59",
       "localidad": "El Palenque",
       "modalidad_presentacion": [],
+      "numero_convocatoria": "2",
       "numero_oficial_sin_interpretar": "8/2026",
       "numero_procedimiento": "8/2026",
       "objeto": "Adquisición de inmueble urbano destinado a la construcción de una sala de velatorios.",
@@ -100,7 +101,7 @@
       ],
       "id": "9be9d2e091c47261b34e4ce1e3420ff94d05df345af5aedc3a0dc89755f38f14",
       "primera_deteccion": "2026-11-27T16:59:41.068239-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "9be9d2e091c47261b34e4ce1e3420ff94d05df345af5aedc3a0dc89755f38f14"
@@ -113,7 +114,7 @@
           "fecha_apertura": "2026-12-18",
           "fecha_limite_presentacion": "2026-12-18",
           "evento_publicado": "segundo llamado",
-          "numero_convocatoria": null,
+          "numero_convocatoria": "2",
           "url": "https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/27-11-26.pdf",
           "documentos": [
             {
@@ -124,7 +125,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "NUEVA_DETECCION_FECHA_DESCONOCIDA",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -332,7 +332,7 @@
       ],
       "id": "2ed10752bbe9ce7c8db665b035589ed1d013088097253f2a866b3df9c06a434d",
       "primera_deteccion": "2026-11-26T17:09:15.119437-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "2ed10752bbe9ce7c8db665b035589ed1d013088097253f2a866b3df9c06a434d"
@@ -579,7 +579,7 @@
       ],
       "id": "34d565f0222b37d67653f09c8db30b5945b36b2027ec19a665bd9d9bc76acfba",
       "primera_deteccion": "2026-11-24T18:10:31.411068-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "34d565f0222b37d67653f09c8db30b5945b36b2027ec19a665bd9d9bc76acfba"
@@ -834,7 +834,7 @@
       ],
       "id": "e4906d645499e0b70adbbcb02fc4ccf657789be0c08f1690ac24c8d60fd93564",
       "primera_deteccion": "2026-11-19T09:01:25.836369-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "e4906d645499e0b70adbbcb02fc4ccf657789be0c08f1690ac24c8d60fd93564"
@@ -985,7 +985,7 @@
       ],
       "id": "c17e2391c519e2c59fabf3773a29e1ef2728c9b23172fc8b219085d8a7990c78",
       "primera_deteccion": "2026-11-19T09:01:25.836369-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "c17e2391c519e2c59fabf3773a29e1ef2728c9b23172fc8b219085d8a7990c78"
@@ -1136,7 +1136,7 @@
       ],
       "id": "97b4e17a4ac179140d8f640ec62524b7070763a3a6f7a0cf62143502ef74c738",
       "primera_deteccion": "2026-11-25T17:33:59.808815-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "97b4e17a4ac179140d8f640ec62524b7070763a3a6f7a0cf62143502ef74c738"
@@ -1295,7 +1295,7 @@
       ],
       "id": "b50f9685cd9b602852c8ecad5f641fd53d4a33141a9379218e62d2a0a3c001e3",
       "primera_deteccion": "2026-11-20T08:59:50.283797-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "b50f9685cd9b602852c8ecad5f641fd53d4a33141a9379218e62d2a0a3c001e3"
@@ -1442,7 +1442,7 @@
       ],
       "id": "7316f785a587d5076c5a0388f8df970d717f86d8804286f7d11878a8aec1d038",
       "primera_deteccion": "2026-11-26T17:09:15.119437-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7316f785a587d5076c5a0388f8df970d717f86d8804286f7d11878a8aec1d038"
@@ -1585,7 +1585,7 @@
       ],
       "id": "6645e6d63cd1b1733e36d8bee01d2b43b34bc3267ca5c8b77c556499a8481b85",
       "primera_deteccion": "2026-11-25T17:33:59.808815-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "6645e6d63cd1b1733e36d8bee01d2b43b34bc3267ca5c8b77c556499a8481b85"
@@ -1728,7 +1728,7 @@
       ],
       "id": "b879f74d0544ca55bc611301f2b93c9f2726ac1445c89992dad7c38d62b4612f",
       "primera_deteccion": "2026-11-26T17:09:15.119437-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "b879f74d0544ca55bc611301f2b93c9f2726ac1445c89992dad7c38d62b4612f"
@@ -1885,7 +1885,7 @@
       ],
       "id": "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "b29aab0135e86eaa750337167cac966f3c1f3935936d2961d9a98ecb17395d59"
@@ -2215,7 +2215,7 @@
       ],
       "id": "7b55a45170f5e26bad678e0d89ab7d62a58af4691f82eac497e53358048c2794",
       "primera_deteccion": "2026-11-14T08:37:49.537518-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "7b55a45170f5e26bad678e0d89ab7d62a58af4691f82eac497e53358048c2794"
@@ -2598,7 +2598,7 @@
       ],
       "id": "2d840d3f136208e858d4981960e53bcfca64a1034194dbbc716f800078f33a42",
       "primera_deteccion": "2026-11-13T08:56:48.728586-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "2d840d3f136208e858d4981960e53bcfca64a1034194dbbc716f800078f33a42"
@@ -2698,7 +2698,7 @@
       "localidad": "Rosario",
       "modalidad_presentacion": [],
       "numero_procedimiento": "3/2026",
-      "objeto": "Cierre de presentación de ofertas: 04 de diciembre de 2026 a las 10:00hs Apertura de ofertas: 04 de diciembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Circular sin consulta nro 2 - Licitación 03-2026 • 117 kB • 26 click 25 noviembre, 2026 LP N3-2026. circular aclaratoria nº1 • 468 kB • 67 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 247 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 182 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 112 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 114 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 120 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 118 click 9 octubre, 2026",
+      "objeto": "Cierre de presentación de ofertas: 04 de diciembre de 2026 a las 10:00hs Apertura de ofertas: 04 de diciembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Circular sin consulta nro 2 - Licitación 03-2026 • 117 kB • 28 click 25 noviembre, 2026 LP N3-2026. circular aclaratoria nº1 • 468 kB • 70 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 253 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 187 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 113 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 115 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 121 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 119 click 9 octubre, 2026",
       "organismo": "Ente Administrador Puerto Rosario (ENAPRO)",
       "pago_evidencias": [],
       "presupuesto": null,
@@ -2709,7 +2709,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion",
-      "titulo": "Cierre de presentación de ofertas: 04 de diciembre de 2026 a las 10:00hs Apertura de ofertas: 04 de diciembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Circular sin consulta nro 2 - Licitación 03-2026 • 117 kB • 26 click 25 noviembre, 2026 LP N3-2026. circular aclaratoria nº1 • 468 kB • 67 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 247 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 182 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 112 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 114 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 120 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 118 click 9 octubre, 2026",
+      "titulo": "Cierre de presentación de ofertas: 04 de diciembre de 2026 a las 10:00hs Apertura de ofertas: 04 de diciembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Circular sin consulta nro 2 - Licitación 03-2026 • 117 kB • 28 click 25 noviembre, 2026 LP N3-2026. circular aclaratoria nº1 • 468 kB • 70 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 253 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 187 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 113 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 115 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 121 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 119 click 9 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/?download=3144",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/",
@@ -2754,7 +2754,7 @@
       ],
       "id": "eab397143963fa5d8227f92fd35a4980b5a94f6fc017e4c6709f6e1f46008525",
       "primera_deteccion": "2026-11-26T17:09:15.119437-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "eab397143963fa5d8227f92fd35a4980b5a94f6fc017e4c6709f6e1f46008525"
@@ -2763,7 +2763,7 @@
         {
           "id": "eab397143963fa5d8227f92fd35a4980b5a94f6fc017e4c6709f6e1f46008525",
           "numero_procedimiento": "3/2026",
-          "objeto": "Cierre de presentación de ofertas: 04 de diciembre de 2026 a las 10:00hs Apertura de ofertas: 04 de diciembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Circular sin consulta nro 2 - Licitación 03-2026 • 117 kB • 26 click 25 noviembre, 2026 LP N3-2026. circular aclaratoria nº1 • 468 kB • 67 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 247 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 182 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 112 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 114 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 120 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 118 click 9 octubre, 2026",
+          "objeto": "Cierre de presentación de ofertas: 04 de diciembre de 2026 a las 10:00hs Apertura de ofertas: 04 de diciembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Circular sin consulta nro 2 - Licitación 03-2026 • 117 kB • 28 click 25 noviembre, 2026 LP N3-2026. circular aclaratoria nº1 • 468 kB • 70 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 253 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 187 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 113 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 115 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 121 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 119 click 9 octubre, 2026",
           "fecha_apertura": "2026-12-04",
           "fecha_limite_presentacion": "2026-12-04",
           "evento_publicado": null,
@@ -2893,7 +2893,7 @@
       ],
       "id": "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9",
       "primera_deteccion": "2026-11-06T08:52:44.049074-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "411c5221e51d86e264efc9f7db9dacc971dce1d44e4f4976c3535f1f05c3c9d9"
@@ -3059,7 +3059,7 @@
       ],
       "id": "acf7909ed028ea5e984c8a8d64810f6da3b4b73ac6f2a775fd23a997f852ae2a",
       "primera_deteccion": "2026-11-20T08:59:50.283797-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "acf7909ed028ea5e984c8a8d64810f6da3b4b73ac6f2a775fd23a997f852ae2a"
@@ -3099,7 +3099,6 @@
         }
       ],
       "estado_vigencia": "ABIERTA_OBSERVADA_EN_CORRIDA",
-      "clasificacion_novedad": "MODIFICADO",
       "estado_comercial": "VIGENTE_VERIFICADA",
       "presentacion_verificada": true,
       "motivo_comercial": "Plazo de presentación explícito y no vencido",
@@ -3380,7 +3379,7 @@
       ],
       "id": "053677e4c64ac385df8057411117ede6e9d84417cab1b21bc28e0a575b777dee",
       "primera_deteccion": "2026-11-26T17:09:15.119437-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "053677e4c64ac385df8057411117ede6e9d84417cab1b21bc28e0a575b777dee"
@@ -3534,7 +3533,7 @@
       ],
       "id": "0099dd82326ff35af76a79fd7b3b3c6add4ec3358add6b10e390abb82eaadc4d",
       "primera_deteccion": "2026-11-20T08:59:50.283797-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "0099dd82326ff35af76a79fd7b3b3c6add4ec3358add6b10e390abb82eaadc4d"
@@ -3817,7 +3816,7 @@
       ],
       "id": "71301981e086044d5497dc8677dc97302ea0c0dce2e0be3e8afc27a14c048453",
       "primera_deteccion": "2026-11-26T17:09:15.119437-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "71301981e086044d5497dc8677dc97302ea0c0dce2e0be3e8afc27a14c048453"
@@ -3915,7 +3914,7 @@
       "requiere_revalidacion": false,
       "situacion_publicada": null,
       "tipo_procedimiento": "licitacion publica",
-      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 290 click 19 octubre, 2026 ANEXO I • 2 MB • 175 click 19 octubre, 2026 Anexo II • 112 kB • 144 click 19 octubre, 2026 Anexo III • 174 kB • 159 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 157 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 153 click 19 octubre, 2026",
+      "titulo": "Inicio / Licitaciones LICITACIÓN PÚBLICA N°004/2026 Estado Activa Número LICITACIÓN PÚBLICA N°004/2026 Fecha de publicación 19/10/2026 13:00 hs. Fecha de apertura 15/02/2027 11:00 hs. Asunto LICITACIÓN PÚBLICA 04/2026 : CONCESIÓN DE USO PARA LA CONSTRUCCIÓN, ADMINISTRACIÓN, OPERACIÓN, MANTENIMIENTO Y EXPLOTACIÓN COMERCIAL DEL PREDIO MANGRULLO DEL PUERTO DE ROSARIO Cierre de presentación de ofertas: 15 de Febrero de 2027 a las 10:00hs en Sede del ENAPRO – Av. Belgrano 341 – Rosario. Apertura de sobres: 15 de Febrero de 2027 a las 11:00hs en TERMINAL FLUVIAL – Av de los Inmigrantes 410 – Rosario Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Pliego de concesión Mangrullo • 523 kB • 295 click 19 octubre, 2026 ANEXO I • 2 MB • 176 click 19 octubre, 2026 Anexo II • 112 kB • 145 click 19 octubre, 2026 Anexo III • 174 kB • 163 click 19 octubre, 2026 ANEXO IV - Planialtimetría del sector • 3 MB • 161 click 19 octubre, 2026 ANEXO V - Planimetría del sector • 521 kB • 156 click 19 octubre, 2026",
       "url": "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
       "urls_publicacion": [
         "https://enapro.com.ar/2026/10/19/licitacion-publica-n004-2026/",
@@ -3960,7 +3959,7 @@
       ],
       "id": "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99",
       "primera_deteccion": "2026-10-28T09:35:53.101913-03:00",
-      "ultima_deteccion": "2026-11-27T16:59:41.068239-03:00",
+      "ultima_deteccion": "2026-11-28T15:51:17.201848-03:00",
       "observada_esta_corrida": true,
       "ids_historial": [
         "ac49ed60d73c8d4d585af726d7bf938121a877cdd4b65b0268c6d147d6074a99"

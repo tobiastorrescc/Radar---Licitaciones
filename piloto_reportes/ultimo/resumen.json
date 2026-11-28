@@ -1,32 +1,32 @@
 {
-  "fecha": "2026-11-27T16:59:41.068239-03:00",
+  "fecha": "2026-11-28T15:51:17.201848-03:00",
   "estado": "COMPLETA_CON_INCIDENCIAS",
   "totales": {
-    "recuperadas_vigentes": 1,
+    "recuperadas_vigentes": 0,
     "nuevas_confirmadas": 0,
     "publicaciones_nuevas_no_cotizables": 0,
-    "detecciones_sin_fecha_o_mismo_dia": 36,
-    "cambios": 56,
+    "detecciones_sin_fecha_o_mismo_dia": 0,
+    "cambios": 106,
     "recuperaciones_historicas": 0,
     "recuperaciones_vigencia_pendiente": 2
   },
   "linea_base_sin_alerta": 0,
-  "total_informadas": 95,
+  "total_informadas": 108,
   "limite_cantidad": null,
   "envio_activado": false,
-  "ejecucion": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/46059196907",
+  "ejecucion": "https://github.com/tobiastorrescc/Radar---Licitaciones/actions/runs/46177131608",
   "cobertura_estricta": {
-    "PARCIAL": 34,
-    "BLOQUEADA": 14,
-    "OPERATIVA": 48,
-    "PENDIENTE": 10,
+    "PARCIAL": 29,
+    "BLOQUEADA": 13,
+    "OPERATIVA": 52,
+    "PENDIENTE": 12,
     "SIN_PUBLICACIONES_CONFIRMADO": 1
   },
   "aviso": "No hay novedades confirmadas no significa ausencia de licitaciones si hay incidencias. Detecciones sin fecha no son publicaciones nuevas comprobadas.",
   "totales_comerciales": {
     "nuevas_confirmadas": 0,
-    "detecciones_sin_fecha_o_mismo_dia": 1,
-    "cambios": 2,
-    "recuperadas_vigentes": 1
+    "detecciones_sin_fecha_o_mismo_dia": 0,
+    "cambios": 1,
+    "recuperadas_vigentes": 0
   }
 }

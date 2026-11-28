@@ -1,12 +1,12 @@
 {
-  "fecha": "2026-11-27T16:59:41.068239-03:00",
+  "fecha": "2026-11-28T15:51:17.201848-03:00",
   "jurisdicciones": {
     "Santa Fe": {
       "nuevas_confirmadas": 0,
-      "primeras_detecciones_no_comprobadas": 20,
+      "primeras_detecciones_no_comprobadas": 0,
       "abiertas_observadas": 86,
       "abiertas_solo_historial": 1,
-      "vigencia_pendiente": 864,
+      "vigencia_pendiente": 866,
       "pago_rapido_verificado_abiertas": 0,
       "pago_rapido_observadas": 0,
       "fuentes_consultadas": 49,
@@ -16,7 +16,7 @@
           "estado": "PARCIAL",
           "errores": [
             {
-              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=1&page=2",
+              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=1",
               "tipo": "URLError",
               "categoria": "RED",
               "timeout": true,
@@ -28,7 +28,7 @@
               "acceso_recuperado": true
             },
             {
-              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=2",
+              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=5",
               "tipo": "URLError",
               "categoria": "RED",
               "timeout": true,
@@ -40,39 +40,7 @@
               "acceso_recuperado": true
             },
             {
-              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=1&page=1",
-              "tipo": "URLError",
-              "categoria": "RED",
-              "timeout": true,
-              "error": "<urlopen error timed out>",
-              "causa": "TIEMPO_ESPERA",
-              "restriccion_acceso_comprobada": false,
-              "permanencia": "NO_DETERMINADA",
-              "reintento_diferido": true
-            },
-            {
-              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
-              "tipo": "URLError",
-              "categoria": "RED",
-              "timeout": true,
-              "error": "<urlopen error timed out>",
-              "causa": "TIEMPO_ESPERA",
-              "restriccion_acceso_comprobada": false,
-              "permanencia": "NO_DETERMINADA",
-              "reintento_diferido": true
-            },
-            {
-              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5",
-              "tipo": "URLError",
-              "categoria": "RED",
-              "timeout": true,
-              "error": "<urlopen error timed out>",
-              "causa": "TIEMPO_ESPERA",
-              "restriccion_acceso_comprobada": false,
-              "permanencia": "NO_DETERMINADA"
-            },
-            {
-              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=12&anioApertura%5B0%5D=2026&verTipo=1",
+              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=7",
               "tipo": "URLError",
               "categoria": "RED",
               "timeout": true,
@@ -84,17 +52,19 @@
               "acceso_recuperado": true
             },
             {
-              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=1&page=1",
+              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=12&anioApertura%5B0%5D=2026&verTipo=2",
               "tipo": "URLError",
               "categoria": "RED",
               "timeout": true,
               "error": "<urlopen error timed out>",
               "causa": "TIEMPO_ESPERA",
               "restriccion_acceso_comprobada": false,
-              "permanencia": "NO_DETERMINADA"
+              "permanencia": "TRANSITORIA_RECUPERADA",
+              "reintento_diferido": true,
+              "acceso_recuperado": true
             },
             {
-              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=12&anioApertura%5B0%5D=2026&verTipo=5",
+              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=10",
               "tipo": "URLError",
               "categoria": "RED",
               "timeout": true,
@@ -112,7 +82,31 @@
               "error": "<urlopen error timed out>",
               "causa": "TIEMPO_ESPERA",
               "restriccion_acceso_comprobada": false,
+              "permanencia": "TRANSITORIA_RECUPERADA",
+              "reintento_diferido": true,
+              "acceso_recuperado": true
+            },
+            {
+              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?mesApertura%5B0%5D=11&anioApertura%5B0%5D=2026&verTipo=5&page=10",
+              "tipo": "URLError",
+              "categoria": "RED",
+              "timeout": true,
+              "error": "<urlopen error timed out>",
+              "causa": "TIEMPO_ESPERA",
+              "restriccion_acceso_comprobada": false,
               "permanencia": "NO_DETERMINADA"
+            },
+            {
+              "url": "https://www.rosario.gob.ar/inicio/result-busq-compras-licitaciones?page=3&recomendada=apertura&tipoRecomendada=5",
+              "tipo": "URLError",
+              "categoria": "RED",
+              "timeout": true,
+              "error": "<urlopen error timed out>",
+              "causa": "TIEMPO_ESPERA",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "TRANSITORIA_RECUPERADA",
+              "reintento_diferido": true,
+              "acceso_recuperado": true
             }
           ],
           "limites": []
@@ -212,17 +206,14 @@
         },
         {
           "url": "https://xn--carcaraa-j3a.gob.ar/",
-          "estado": "BLOQUEADA",
+          "estado": "TIEMPO_FUENTE",
           "errores": [
             {
-              "url": "https://xn--carcaraa-j3a.gob.ar/",
-              "tipo": "URLError",
               "categoria": "RED",
+              "tipo": "TIEMPO_FUENTE",
               "timeout": true,
-              "error": "<urlopen error _ssl.c:1001: The handshake operation timed out>",
-              "causa": "TIEMPO_ESPERA",
-              "restriccion_acceso_comprobada": false,
-              "permanencia": "NO_DETERMINADA"
+              "error": "Plazo agotado; se conserva lo extraído",
+              "fase": "DESCARGA"
             }
           ],
           "limites": []
@@ -380,6 +371,46 @@
               "permanencia": "NO_DETERMINADA"
             },
             {
+              "url": "https://armstrong.gov.ar/index.php/licitaciones/2024?format=feed&type=atom",
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Formato de documento no admitido: application/atom+xml; charset=utf-8",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            },
+            {
+              "url": "https://armstrong.gov.ar/index.php/licitaciones/2024?format=feed&type=rss",
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Formato de documento no admitido: application/rss+xml; charset=utf-8",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            },
+            {
+              "url": "https://armstrong.gov.ar/index.php/licitaciones/2023?format=feed&type=atom",
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Formato de documento no admitido: application/atom+xml; charset=utf-8",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            },
+            {
+              "url": "https://armstrong.gov.ar/index.php/licitaciones/2023?format=feed&type=rss",
+              "tipo": "ValueError",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Formato de documento no admitido: application/rss+xml; charset=utf-8",
+              "causa": "ERROR_EXTRACCION",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            },
+            {
               "categoria": "RED",
               "tipo": "TIEMPO_FUENTE",
               "timeout": true,
@@ -435,11 +466,22 @@
           "estado": "TIEMPO_FUENTE",
           "errores": [
             {
-              "categoria": "EXTRACCION",
+              "url": "https://www.roldan.gov.ar/wp/documents/concurso-de-precios-n-005-2024/",
+              "tipo": "HTTPError",
+              "categoria": "RED",
+              "timeout": false,
+              "error": "HTTP Error 504: Gateway Time-out",
+              "http_status": 504,
+              "causa": "ERROR_SERVIDOR_TEMPORAL",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            },
+            {
+              "categoria": "RED",
               "tipo": "TIEMPO_FUENTE",
               "timeout": true,
               "error": "Plazo agotado; se conserva lo extraído",
-              "fase": "EXTRACCION"
+              "fase": "DESCARGA"
             }
           ],
           "limites": []
@@ -450,16 +492,6 @@
           "errores": [
             {
               "url": "https://perez.opendata.junar.com/datasets/199847-listados-de-licitaciones-publicas-2024.download/",
-              "tipo": "ValueError",
-              "categoria": "EXTRACCION",
-              "timeout": false,
-              "error": "Redirección fuera de dominios oficiales declarados",
-              "causa": "ERROR_EXTRACCION",
-              "restriccion_acceso_comprobada": false,
-              "permanencia": "NO_DETERMINADA"
-            },
-            {
-              "url": "https://perez.opendata.junar.com/datasets/199259-listados-de-licitaciones-publicas-2023.download/",
               "tipo": "ValueError",
               "categoria": "EXTRACCION",
               "timeout": false,
@@ -530,14 +562,22 @@
         },
         {
           "url": "https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones",
-          "estado": "TIEMPO_FUENTE",
+          "estado": "PARCIAL",
           "errores": [
             {
-              "categoria": "RED",
-              "tipo": "TIEMPO_FUENTE",
-              "timeout": true,
-              "error": "Plazo agotado; se conserva lo extraído",
-              "fase": "DESCARGA"
+              "url": "https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones",
+              "tipo": "DetalleIncompleto",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso",
+              "publicaciones": [
+                "df9d31691a9f3885fb699c6ceab22e42b5cef7cec8c54a5e4c82f2b5ed1ad57a",
+                "887c41fe8a1ff44ba1d1f5a80a6b5e9da79f5e6afa0ce4d0794622e37c3b594a",
+                "e8e1f139f4235932f565f889a825fe76f0630c17d0d97923a823ae7548b8dabc",
+                "e278b589075da0bb4bd471040f7cb9ebb52749d8bd3ef4fa869b2191743c68dd",
+                "d9eb8c9b5c688f46882cabeb2384a706b803b8bf4a78fc451bc902f94112f4f5",
+                "6354c5c61bae9e69f509df791aabbec2c8a0d7ba84aa4d0d7a044ba1730fcb48"
+              ]
             }
           ],
           "limites": []
@@ -748,20 +788,6 @@
           ]
         },
         {
-          "url": "https://mariateresa.gob.ar/",
-          "estado": "TIEMPO_FUENTE",
-          "errores": [
-            {
-              "categoria": "RED",
-              "tipo": "TIEMPO_FUENTE",
-              "timeout": true,
-              "error": "Plazo agotado; se conserva lo extraído",
-              "fase": "DESCARGA"
-            }
-          ],
-          "limites": []
-        },
-        {
           "url": "https://funes.gob.ar/boletin_oficial",
           "estado": "PARCIAL",
           "errores": [
@@ -787,20 +813,6 @@
             }
           ],
           "limites": []
-        },
-        {
-          "url": "https://sastreciudad.gob.ar/intendencia/",
-          "estado": "TIEMPO_FUENTE",
-          "errores": [
-            {
-              "categoria": "RED",
-              "tipo": "TIEMPO_FUENTE",
-              "timeout": true,
-              "error": "Plazo agotado; se conserva lo extraído",
-              "fase": "DESCARGA"
-            }
-          ],
-          "limites": []
         }
       ],
       "auditoria_manual": {
@@ -816,10 +828,10 @@
     },
     "Entre Ríos": {
       "nuevas_confirmadas": 0,
-      "primeras_detecciones_no_comprobadas": 16,
+      "primeras_detecciones_no_comprobadas": 0,
       "abiertas_observadas": 77,
       "abiertas_solo_historial": 2,
-      "vigencia_pendiente": 2189,
+      "vigencia_pendiente": 2188,
       "pago_rapido_verificado_abiertas": 2,
       "pago_rapido_observadas": 2,
       "fuentes_consultadas": 41,
@@ -1548,54 +1560,45 @@
         },
         {
           "url": "https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones",
-          "estado": "TIEMPO_FUENTE",
+          "estado": "PARCIAL",
           "errores": [
             {
+              "url": "https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones&tags=Licitaciones&tags=Licitacion&tags=licitacion",
+              "tipo": "HTTPError",
               "categoria": "RED",
-              "tipo": "TIEMPO_FUENTE",
-              "timeout": true,
-              "error": "Plazo agotado; se conserva lo extraído",
-              "fase": "DESCARGA"
+              "timeout": false,
+              "error": "HTTP Error 429: Too Many Requests",
+              "http_status": 429,
+              "causa": "LIMITE_SOLICITUDES_TEMPORAL",
+              "restriccion_acceso_comprobada": false,
+              "permanencia": "NO_DETERMINADA"
+            },
+            {
+              "url": "https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones",
+              "tipo": "DetalleIncompleto",
+              "categoria": "EXTRACCION",
+              "timeout": false,
+              "error": "Fichas o datos complementarios pendientes; se conservan los campos comprobados del aviso",
+              "publicaciones": [
+                "54fb0be29330d12c52b333ad3151df4e2d1b6b4cd803c827ee2cf3b45a54e6cd",
+                "5c6e75cd34a7b7bea4a1f952ec6175ca757f0c3ef40f0610e8d301a7f5c903be"
+              ]
             }
           ],
-          "limites": []
+          "limites": [
+            "HTTP_429_REINTENTO_POSPUESTO"
+          ]
         },
         {
           "url": "https://municrespo.gov.ar/digesto/consulta.php?s=consulta",
           "estado": "TIEMPO_FUENTE",
           "errores": [
             {
-              "categoria": "RED",
+              "categoria": "EXTRACCION",
               "tipo": "TIEMPO_FUENTE",
               "timeout": true,
               "error": "Plazo agotado; se conserva lo extraído",
-              "fase": "DESCARGA"
-            }
-          ],
-          "limites": []
-        },
-        {
-          "url": "https://aplicaciones.vialidadentrerios.gob.ar/contrataciones-licitaciones",
-          "estado": "PARCIAL",
-          "errores": [
-            {
-              "url": "https://aplicaciones.vialidadentrerios.gob.ar/contrataciones-licitaciones?page=15",
-              "tipo": "TimeoutError",
-              "categoria": "RED",
-              "timeout": true,
-              "error": "The read operation timed out",
-              "causa": "TIEMPO_ESPERA",
-              "restriccion_acceso_comprobada": false,
-              "permanencia": "NO_DETERMINADA"
-            },
-            {
-              "url": "https://aplicaciones.vialidadentrerios.gob.ar/contrataciones-licitaciones",
-              "tipo": "ConteoDPVIncompleto",
-              "categoria": "EXTRACCION",
-              "timeout": false,
-              "error": "No se alcanzó el total publicado de tarjetas; no se declara cobertura completa",
-              "publicadas": 519,
-              "extraidas": 280
+              "fase": "EXTRACCION"
             }
           ],
           "limites": []
@@ -1722,10 +1725,10 @@
         },
         {
           "url": "https://ramallo.gob.ar/boletines",
-          "estado": "TIEMPO_FUENTE",
+          "estado": "PENDIENTE",
           "errores": [
             {
-              "url": "https://sibom.slyt.gba.gob.ar/bulletins/13933",
+              "url": "https://sibom.slyt.gba.gob.ar/cities/102",
               "tipo": "TimeoutError",
               "categoria": "RED",
               "timeout": true,
@@ -1733,13 +1736,6 @@
               "causa": "TIEMPO_ESPERA",
               "restriccion_acceso_comprobada": false,
               "permanencia": "NO_DETERMINADA"
-            },
-            {
-              "categoria": "RED",
-              "tipo": "TIEMPO_FUENTE",
-              "timeout": true,
-              "error": "Plazo agotado; se conserva lo extraído",
-              "fase": "DESCARGA"
             }
           ],
           "limites": []
@@ -1832,24 +1828,6 @@
           "limites": []
         },
         {
-          "url": "https://salto.gob.ar/licitaciones/",
-          "estado": "PARCIAL",
-          "errores": [
-            {
-              "url": "https://salto.gob.ar/boletin-oficial-municipal/",
-              "tipo": "HTTPError",
-              "categoria": "RED",
-              "timeout": false,
-              "error": "HTTP Error 403: Forbidden",
-              "http_status": 403,
-              "causa": "RESTRICCION_HTTP",
-              "restriccion_acceso_comprobada": true,
-              "permanencia": "NO_DETERMINADA"
-            }
-          ],
-          "limites": []
-        },
-        {
           "url": "https://www.junin.gob.ar/servicio/licitaciones-y-concursos",
           "estado": "TIEMPO_FUENTE",
           "errores": [
@@ -1915,11 +1893,6 @@
   "meta_alcance": "Conjunto de Santa Fe, Entre Ríos y Buenos Aires dentro del alcance de Rosario; condicionado al volumen real. Sin límite de resultados.",
   "serie_7_dias": [
     {
-      "fecha": "2026-11-21",
-      "nuevas_confirmadas": 0,
-      "ejecucion_disponible": true
-    },
-    {
       "fecha": "2026-11-22",
       "nuevas_confirmadas": 0,
       "ejecucion_disponible": true
@@ -1946,6 +1919,11 @@
     },
     {
       "fecha": "2026-11-27",
+      "nuevas_confirmadas": 0,
+      "ejecucion_disponible": true
+    },
+    {
+      "fecha": "2026-11-28",
       "nuevas_confirmadas": 0,
       "ejecucion_disponible": true
     }

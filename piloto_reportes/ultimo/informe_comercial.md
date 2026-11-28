@@ -1,6 +1,6 @@
 # Convocatorias con recepción vigente comprobada
 
-Fecha: 2026-11-27T16:59:41.068239-03:00. Total: 20. Sin recortes por rubro, monto ni pago.
+Fecha: 2026-11-28T15:51:17.201848-03:00. Total: 20. Sin recortes por rubro, monto ni pago.
 
 | organismo | provincia | localidad | numero | objeto | fecha_publicacion_comprobada | apertura | limite_presentacion | estado_vigencia | presupuesto | pago | modalidad_presentacion | url | pliego |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -17,7 +17,7 @@ Fecha: 2026-11-27T16:59:41.068239-03:00. Total: 20. Sin recortes por rubro, mont
 | Comuna de El Palenque | Entre Ríos | El Palenque | 8/2026 | Adquisición de inmueble urbano destinado a la construcción de una sala de velatorios. | Pendiente de verificar | 2026-12-18T11:00:00-03:00 | 2026-12-18T10:59:00-03:00 | VIGENTE_CONFIRMADA | {"importe": "25470000", "moneda": null} | Pendiente de verificar | Pendiente de verificar | https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/26-11-26.pdf | Pendiente de verificar |
 | ASSA | Santa Fe | Rosario | 1733 | ADQUISICIÓN DE ABRAZADERAS DE REPARACION PARA AGUAS SANTAFESINAS S.A. | Pendiente de verificar | 2026-12-01T10:00:00-03:00 | 2026-12-01T10:00:00-03:00 | VIGENTE_CONFIRMADA | Pendiente de verificar | Pendiente de verificar | Pendiente de verificar | https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/68f4d0f402184a92a1b051b6cad93399 | Pendiente de verificar |
 | ASSA | Santa Fe | Rosario | 1279 | OBRA E.P.E : TENDIDO SUBTERRÁNEO EN BAJA TENSIÓN E.E.C PALOS VERDES | Pendiente de verificar | 2026-12-03T10:00:00-03:00 | 2026-12-03T10:00:00-03:00 | VIGENTE_CONFIRMADA | Pendiente de verificar | Pendiente de verificar | Pendiente de verificar | https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/4aafba95bd43415a8d1a84cbd39dcefa | Pendiente de verificar |
-| Ente Administrador Puerto Rosario (ENAPRO) | Santa Fe | Rosario | 3/2026 | Cierre de presentación de ofertas: 04 de diciembre de 2026 a las 10:00hs Apertura de ofertas: 04 de diciembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Circular sin consulta nro 2 - Licitación 03-2026 • 117 kB • 26 click 25 noviembre, 2026 LP N3-2026. circular aclaratoria nº1 • 468 kB • 67 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 247 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 182 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 112 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 114 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 120 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 118 click 9 octubre, 2026 | Pendiente de verificar | 2026-12-04 | 2026-12-04T10:00:00-03:00 | VIGENTE_CONFIRMADA | Pendiente de verificar | Pendiente de verificar | Pendiente de verificar | https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/?download=3144 | Pendiente de verificar |
+| Ente Administrador Puerto Rosario (ENAPRO) | Santa Fe | Rosario | 3/2026 | Cierre de presentación de ofertas: 04 de diciembre de 2026 a las 10:00hs Apertura de ofertas: 04 de diciembre de 2026 a las 11 hs. en la Sala de Directorio de ENAPRO, Av. Belgrano 341 de Rosario. Por consultas comunicarse al siguiente correo: licitaciones@enapro.com.ar Descargas Circular sin consulta nro 2 - Licitación 03-2026 • 117 kB • 28 click 25 noviembre, 2026 LP N3-2026. circular aclaratoria nº1 • 468 kB • 70 click 12 noviembre, 2026 PBCGyP Bar Terminal Fluvial Puerto Rosario • 587 kB • 253 click 9 octubre, 2026 PET Bar Terminal Fluvial Puerto Rosario • 367 kB • 187 click 9 octubre, 2026 PET - Anexo I – Plano de uso de superficies general • 962 kB • 113 click 9 octubre, 2026 PET - Anexo II – Plano de uso de superficies particular • 789 kB • 115 click 9 octubre, 2026 PET - Anexo III - Anteproyecto de referencia • 4 MB • 121 click 9 octubre, 2026 PET - Anexo IV - Instalaciones existentes • 5 MB • 119 click 9 octubre, 2026 | Pendiente de verificar | 2026-12-04 | 2026-12-04T10:00:00-03:00 | VIGENTE_CONFIRMADA | Pendiente de verificar | Pendiente de verificar | Pendiente de verificar | https://enapro.com.ar/2026/10/09/licitacion-publica-n003-2026/?download=3144 | Pendiente de verificar |
 | Municipalidad de Venado Tuerto | Santa Fe | Venado Tuerto | 27/2026 | Pliego de condiciones Licitación Pública Nº 027-26 Haz clic aquí | Pendiente de verificar | Pendiente de verificar | 2026-12-10T09:00:00-03:00 | VIGENTE_CONFIRMADA | Pendiente de verificar | Pendiente de verificar | Pendiente de verificar | https://venadotuerto.gob.ar/wp-content/uploads/2026/11/Pliego-de-Condiciones-Licitacion-Publica-N%C2%B0-027-26.pdf | https://venadotuerto.gob.ar/wp-content/uploads/2026/11/Pliego-de-Condiciones-Licitacion-Publica-N%C2%B0-027-26.pdf |
 | Municipalidad de Puerto Yeruá | Entre Ríos | Puerto Yeruá | 2/2026 | CONCORDIA                                          MUNICIPALIDAD DE PUERTO YERUÁ                                             Licitación Pública N° 002/2026   Para la “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE AUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”, a efectuarse en la ciudad de Puerto Yeruá, departamento Concordia.   DECRETO Nº 229/2026.   OBJETO DEL LLAMADO: La Municipalidad de Puerto Yeruá llama a Licitación Pública N° 002/2026 para la “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE AUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ”.   PRESUPUESTO OFICIAL: el presupuesto oficial corresponde a la suma de pesos SESENTA MILLONES CON 00/100 ($ 60.000.000,00).   RETIRO DE LOS PLIEGOS: disponibles desde el día viernes 19 de Noviembre de 2026, para su retiro en la municipalidad de Puerto Yeruá, sito en calle Avenida Islas Malvinas Nº 516, y para su toma de conocimiento en la página oficial de la Municipalidad de Puerto Yeruá, sin costo alguno para los oferentes.   PRESENTACION DE LAS OFERTAS: Deberán ser presentadas en la municipalidad de Puerto Yeruá, mesa de entradas, hasta el día 10 de diciembre de 2026, a las 9:00 Horas, sito en calle Avenida Islas Malvinas nº 516, en un sobre liso con la enmienda Licitación Pública Nº 002/2026.   LUGAR Y FECHA DE LA APERTURA: Puerto Yeruá. Palacio Municipal, 10 de diciembre de 2026.   LICITACION PÚBLICA – “ADQUISICIÓN DE UNA CAMIONETA (PICK UP) CERO (0) KM PARA INCORPORAR AL PARQUE AUTOMOTOR DE LA MUNICIPALIDAD DE PUERTO YERUÁ” APERTURA DE LAS PROPUESTAS: la apertura de los sobres con las respectivas ofertas será el día 10 de diciembre de 2026, a las 9:00 Horas en el recinto de la Municipalidad de Puerto Yeruá sito en calle Av. Islas Malvinas Nº 516. | Pendiente de verificar | 2026-12-10 | 2026-12-10T09:00:00-03:00 | VIGENTE_CONFIRMADA | Pendiente de verificar | Pendiente de verificar | PRESENCIAL | https://www.entrerios.gov.ar/boletin/calendario/Boletin/2026/Noviembre/27-11-26.pdf | Pendiente de verificar |
 | ASSA | Santa Fe | Rosario | 1734 | ADQUISICIÓN DE CAÑOS PE ALTA Y BAJA DENSIDAD PARA AGUAS SANTAFESINAS S.A. | Pendiente de verificar | 2026-12-14T10:00:00-03:00 | 2026-12-14T10:00:00-03:00 | VIGENTE_CONFIRMADA | Pendiente de verificar | Pendiente de verificar | Pendiente de verificar | https://www.aguassantafesinas.com.ar/api/v1/publico/pliego/56f366c6798e4eac8513e592737399b5 | Pendiente de verificar |
@@ -33,7 +33,7 @@ Fecha: 2026-11-27T16:59:41.068239-03:00. Total: 20. Sin recortes por rubro, mont
 - [UNR](https://compras.unr.edu.ar/): BLOQUEADA
 - [Poder Judicial de Santa Fe](https://www.justiciasantafe.gov.ar/index.php/poder-judicial/informacion-general/compras-y-licitaciones/): BLOQUEADA
 - [Aeropuerto Internacional Rosario](https://aeropuertorosario.com/institucional/licitaciones/): TIEMPO_FUENTE
-- [Municipalidad de Carcarañá](https://xn--carcaraa-j3a.gob.ar/): BLOQUEADA
+- [Municipalidad de Carcarañá](https://xn--carcaraa-j3a.gob.ar/): TIEMPO_FUENTE
 - [Municipalidad de Cañada de Gómez](https://cdg.gob.ar/transparencia/licitaciones-y-concursos/): BLOQUEADA
 - [Municipalidad de Armstrong](https://armstrong.gov.ar/index.php/transparencia): TIEMPO_FUENTE
 - [Municipalidad de Las Parejas](https://lasparejas.gov.ar/): PENDIENTE
@@ -55,9 +55,9 @@ Fecha: 2026-11-27T16:59:41.068239-03:00. Total: 20. Sin recortes por rubro, mont
 - [Municipalidad de Rosario del Tala](https://www.rosariodeltala.gob.ar/?q=licitaciones-publicas): PARCIAL
 - [Municipalidad de San Nicolás](https://www.sannicolasciudad.gob.ar/areas/economia-y-finanzas/licitacionesyconcursos): PARCIAL
 - [Municipalidad de San Pedro](https://sanpedro.net.ar/portal.php): PENDIENTE
-- [Municipalidad de Ramallo](https://ramallo.gob.ar/boletines): TIEMPO_FUENTE
+- [Municipalidad de Ramallo](https://ramallo.gob.ar/boletines): PENDIENTE
 - [Municipalidad de Pergamino](https://compras.pergamino.gob.ar/): PENDIENTE
-- [Municipalidad de Alvear](https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones): TIEMPO_FUENTE
+- [Municipalidad de Alvear](https://alvear.gob.ar/index.php?anio=2025&pagina=licitaciones): PARCIAL
 - [Municipalidad de San Lorenzo](https://sanlorenzo.gob.ar/licitaciones/): PENDIENTE
 - [IAFAS](https://www.iafas.gov.ar/proveedores/licitaciones/): PARCIAL
 - [Universidad Nacional de Entre Ríos (UNER)](https://compras.uner.edu.ar/): BLOQUEADA
@@ -66,22 +66,18 @@ Fecha: 2026-11-27T16:59:41.068239-03:00. Total: 20. Sin recortes por rubro, mont
 - [Comuna de General Lagos](https://cglagos.gob.ar/comuna/compras-y-licitaciones): PARCIAL
 - [Gobierno de Timbúes](https://www.timbues.gob.ar/index.php?pagina=lista&sec=210): TIEMPO_FUENTE
 - [Municipalidad de Villa Elisa](https://villaelisa.gov.ar/transparencia/): PARCIAL
-- [Municipalidad de Salto](https://salto.gob.ar/licitaciones/): PARCIAL
 - [Municipalidad de Junín](https://www.junin.gob.ar/servicio/licitaciones-y-concursos): TIEMPO_FUENTE
 - [Municipalidad de Viale](https://viale.gob.ar/pliegos/): TIEMPO_FUENTE
 - [Municipio de Oro Verde](https://oroverde.gob.ar/portal/secciones/licitaciones/): TIEMPO_FUENTE
 - [Municipalidad de Seguí](https://www.segui.gob.ar/sitio/?cat=26): PARCIAL
-- [Municipalidad de Gualeguaychú](https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones): TIEMPO_FUENTE
+- [Municipalidad de Gualeguaychú](https://datosabiertos.gualeguaychu.gov.ar/dataset?groups=licitaciones): PARCIAL
 - [Municipalidad de Crespo](https://municrespo.gov.ar/digesto/consulta.php?s=consulta): TIEMPO_FUENTE
 - [Concejo Municipal de Rosario](https://www.concejorosario.gov.ar/compras/): TIEMPO_FUENTE
 - [Gobierno de Santa Fe - Gestiones de Compras](https://www.santafe.gob.ar/gestionesdecompras/site/index.php): BLOQUEADA
 - [Municipalidad de Suardi](https://www.suardiciudad.ar/): PARCIAL
-- [Vialidad Entre Ríos](https://aplicaciones.vialidadentrerios.gob.ar/contrataciones-licitaciones): PARCIAL
 - [Ministerio Público de Buenos Aires](https://www.mpba.gov.ar/licitaciones): TIEMPO_FUENTE
 - [Municipalidad de Santa Ana](https://www.santaana.gob.ar/home/licitaciones/): PARCIAL
 - [Municipalidad de Ceres](https://ceres.gob.ar/compras/): PARCIAL
-- [Comuna de María Teresa](https://mariateresa.gob.ar/): TIEMPO_FUENTE
 - [Municipalidad de Funes](https://funes.gob.ar/boletin_oficial): PARCIAL
 - [Municipalidad de Arrecifes](https://arrecifes.gob.ar/informacion-publica/boletin-oficial/): PENDIENTE
-- [Municipalidad de Sastre y Ortiz](https://sastreciudad.gob.ar/intendencia/): TIEMPO_FUENTE
 - [Municipalidad de General Galarza](https://galarza.gov.ar/autoridades/): PENDIENTE
